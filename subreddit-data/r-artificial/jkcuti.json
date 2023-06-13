@@ -1,0 +1,377 @@
+{
+    "id": "jkcuti",
+    "score": 462,
+    "title": "Exploring MNIST Latent Space",
+    "author": "goatman12341",
+    "date": 1603987589.0,
+    "url": "https://v.redd.it/3r9mrdw252w51",
+    "media_url": "https://v.redd.it/3r9mrdw252w51",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You can try it out for yourself here: [https://n8python.github.io/mnistLatentSpace/](https://n8python.github.io/mnistLatentSpace/)",
+            "score": 21,
+            "author": "goatman12341",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Incredibly cool. Is this \"theoretically\" possible/does this exist with, say, the data used by Artbreeder? I understand that's a lot of data, etc... As a total layman, I just never understood what \"latent space\" was until seeing your tool.",
+                    "score": 8,
+                    "author": "IvanAfterAll",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well, what my model does is it looks at a bunch of images of numbers (60,000 of them), and learns how to represent all the important stuff about what a number looks like in just two numbers.\n\nArtbreeder already does this. The sliders you use to control what image Artbreeder outputs - those are just dimensions of the latent space. My latent space is 2 dimensional, meaning that there are only 2 numbers. But with Artbreeder, their latent space probably has many, many more dimensions, as human faces are way more complex then pixelated images of numbers. The sliders they give you access to probably control those dimensions, and let you traverse the latent space of Artbreeder.\n\nFinally, you could technically represent a whole plethora of human faces in a 2 dimensional latent space (like the one I'm using here.). However, a lot of nuance and important information would be lost - that's why the latent space for Artbreeder is so much bigger.\n\nSo to answer your question, technically, yes, you could represent what Artbreeder with just a 2 dimensional latent space - at the cost losing a lot of important information.\n\n(Please note that I am only just learning about ML myself, and that my answer may have errors.)",
+                            "score": 16,
+                            "author": "goatman12341",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for the thorough answer. I didn't realize I was already exploring the \"latent space\" via Artbreeder, but that makes perfect sense.",
+                                    "score": 8,
+                                    "author": "IvanAfterAll",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You're welcome!",
+                                            "score": 5,
+                                            "author": "goatman12341"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Are you using PCA, an autoencoder, or another method?",
+                                    "score": 1,
+                                    "author": "vikarjramun",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm using an autoencoder.",
+                                            "score": 3,
+                                            "author": "goatman12341"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "can you explain how did you do this ? or give any resource.",
+            "score": 7,
+            "author": "rakib__hosen",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sure - I trained an autoencoder on MNIST, and use it to reduce the 28x28 images of numbers down to just two numbers. Then, I took the decoder part of the autoencoder network and put it in the browser. The decoder takes in the coordinates of the circle that I'm dragging around, and uses those to output an image.\n\nI ran a separate classifier that I trained on the decoder output to figure out which regions of the latent space correspond to which number.",
+                    "score": 31,
+                    "author": "goatman12341",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 5,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I am a true legend. /s\n\n(Srsly - thanks)",
+                                    "score": 4,
+                                    "author": "goatman12341"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I would have thought the number 1 would be closer to 7 in the latent space.",
+                            "score": 2,
+                            "author": "pickle_fucker",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I would have though so too. I think that the reason they are so far apart is that the base of a seven is a really titled 1 - and if you keep the circle at the top of the screen and drag it around, you'll that the one gets more titled, till it becomes a five, and then a seven. \n\nThat's my best guess - very interesting why the AI decided to encode sevens like that.",
+                                    "score": 3,
+                                    "author": "goatman12341",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You did a very good job. Is there a way to see the latent space without classification? I'm using unlabeled data for the work I do.",
+                                            "score": 1,
+                                            "author": "pickle_fucker",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yeah - you just don't run the classifier model. The autoencoder can learn the entire latent space without labels.",
+                                                    "score": 1,
+                                                    "author": "goatman12341"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So this is multiple networks working together. One uses the output from the other.\n\nKind of like specialized brain regions or even clusters within brain regions?",
+                            "score": 0,
+                            "author": "chaddjohnson",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes. There is an autoencoder network, part of which became a decoder network, the output of which was then classified by a third network.\n\nSort of like specialized brain regions, but the complexity of brain regions and the complexity of my model are on such different scales I'm not sure a comparison is warranted.",
+                                    "score": 2,
+                                    "author": "goatman12341",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Wonder why people downvoted my question. Was it ignorant in nature?\n\nI\u2019ve actually been thinking that connecting multiple specialized networks may be an interesting direction of research, but maybe this is ignorant?",
+                                            "score": 1,
+                                            "author": "chaddjohnson",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Connecting specialized networks is an area of research (to the best of my knowledge). Many papers &amp; innovations use multiple networks. GANs use two specialized neural nets (the generator and the discriminator) to make images.\n\nI think the reason your question was downvoted was because you compared neural networks to brain regions, which, as I stated above, is a comparison across many orders of magnitude - and an inaccurate one at that - brain regions are many dozen times more advanced and intricate than the neural networks used in this project (brain neurons are much more complex than artificial ones).",
+                                                    "score": 2,
+                                                    "author": "goatman12341",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Ah, yeah, good point on complexity \u2014 that makes sense.\n\nGood to see the idea of connecting networks is being explored. Reminds me of what they did here: https://www.csail.mit.edu/news/new-deep-learning-models-require-fewer-neurons. Camera visual data is processed first to extract key features by a first network, and the output is passed to a \u201ccontrol system\u201d (second network) which then steers the vehicle.",
+                                                            "score": 1,
+                                                            "author": "chaddjohnson",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Very cool!\n\nHere's an example of neural nets working together:\n\nI once saw a youtuber (carykh) who wanted to have AI create a video of a person dancing - he got a sample set of several thousand images of people dancing, compressed them using an autoencoder, and then trained an lstm on the compressed images, before scaling the output of the lstm back up to create the final video.\n\n(https://www.youtube.com/watch?v=Sc7RiNgHHaE)",
+                                                                    "score": 1,
+                                                                    "author": "goatman12341",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Awesome video! Definitely adding autoencoders to my list of things to study.",
+                                                                            "score": 1,
+                                                                            "author": "chaddjohnson",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Thank you!",
+                                                                                    "score": 1,
+                                                                                    "author": "goatman12341"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very vague question: How would OCR handle cursive writing?",
+            "score": 3,
+            "author": "rautonkar86",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don't know. I've only worked with the recognition of single numbers - not whole words and sentences - much less cursive writing.\n\nHowever, I assume that with modern ML techniques, a good model could do very well.\n\nHere's a paper I quickly found on this matter (from 2002): [https://www.researchgate.net/publication/3193409\\_Optical\\_character\\_recognition\\_for\\_cursive\\_handwriting](https://www.researchgate.net/publication/3193409_Optical_character_recognition_for_cursive_handwriting)\n\nThere is also this paper analyzing the results of OCR systems on historic writings (the model in the paper uses deep learning - more specifically, LSTMs):\n\n[https://arxiv.org/pdf/1810.03436.pdf](https://arxiv.org/pdf/1810.03436.pdf)",
+                    "score": 3,
+                    "author": "goatman12341",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The main difference with words is you need some form of sequence modeling or an easy way to reduce to characters. If you have enough space between letters/digits it\u2019s possible to break it up but even for non cursive things often touch so this path can be annoying in practice.\n\nFor sequence modeling the two major choices are seq2seq with encoder being cnn + rnn (or transformer/anything else people have tried in seq2seq) and decoder or you could do a cnn + ctc. Ctc is a loss function designed for sequences that lets you predict either a letter or a space. It works with the constraint that the encoded sequence must be longer than the decoded sequence. That practically works fine for word recognition.",
+                            "score": 1,
+                            "author": "Mehdi2277"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[https://www.youtube.com/watch?v=ycbMGyCPzvE&amp;t=43s](https://www.youtube.com/watch?v=ycbMGyCPzvE&amp;t=43s)",
+                    "score": 1,
+                    "author": "herrmann"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can someone please explain",
+            "score": 3,
+            "author": "nicksinai",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sure - I trained an autoencoder on MNIST, and use it to reduce the 28x28 images of numbers down to just two numbers. Then, I took the decoder part of the autoencoder network and put it in the browser. The decoder takes in the coordinates of the circle that I'm dragging around, and uses those to output an image.\n\nI ran a separate classifier that I trained on the decoder output to figure out which regions of the latent space correspond to which number.",
+                    "score": 2,
+                    "author": "goatman12341",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you!!",
+                            "score": 1,
+                            "author": "nicksinai",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You're welcome!",
+                                    "score": 1,
+                                    "author": "goatman12341"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did you use a VAE for the generator? Also how did you classify your latent space?",
+            "score": 1,
+            "author": "seventhuser",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I used a autoencoder (without the V part). I classified my latent space using a seperate classifier model that I built.\n\nThe classifier model: https://gist.github.com/N8python/5e447e5e6581404e1bfe8fac19df3c0a\n\nThe autoencoder model:\n\nhttps://gist.github.com/N8python/7cc0f3c07d049c28c8321b55befb7fdf\n\nThe decoder model (created from the autoencoder model):\n\nhttps://gist.github.com/N8python/579138a64e516f960c2d9dbd4a7df5b3",
+                    "score": 3,
+                    "author": "goatman12341",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As much as I know about generative modelling, AEs do not benefit from a continuous latent space, which is why VAE have been invented. Your model is clearly displaying a continuous latent space, but you also say you have not used a variational model so I'm a bit confused right now.\n\n(Great work btw!)",
+                            "score": 1,
+                            "author": "nexos90",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sorry, I must have used a variational autoencoder without realizing it - I'm still new to a lot of this terminology.",
+                                    "score": 2,
+                                    "author": "goatman12341",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You did not use a VAE. Just because a VAE can have a \u2018nicer\u2019 latent space doesn\u2019t mean an AE must have a bad latent space. The difference between VAE and an AE is in the loss function and glancing at your code you did not have a loss term that\u2019s needed for a VAE. Your model is a normal AE.\n\nAlso niceness here really is about being able to sample from the encoding distribution by constraining it to a known probability distribution. It\u2019s not directly about smoothness even though that often comes with it. A VAE trained to match a weird probability distribution could have a very non smooth latent space on purpose.",
+                                            "score": 2,
+                                            "author": "Mehdi2277",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ok, thanks for the info.",
+                                                    "score": 1,
+                                                    "author": "goatman12341"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Weird how there are two different splodges for 6\n\nThe two 4 splodges have the 4 being written in very different ways, but I can't think why the ai would separate those 6's into two groups",
+            "score": 1,
+            "author": "DowntownPomelo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think the reason that there are 2 6 splodges is that there is one splodge for the thin sixes that look a lot like 1s, and another one for the 6s that look more like 8s and 9s.",
+                    "score": 1,
+                    "author": "goatman12341"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very cool...I suppose this is a protection of a higher dimensional space... It would be interesting to which colored regions border one another.",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, you can see which regions border each other. Just click the link and you'll see that there is legend for the colored image map. Each color corresponds to a different number.",
+                    "score": 2,
+                    "author": "goatman12341"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So the mixture of colours in the latent space has an odd shape. I wonder - what if this 2D coloring was more structured, what would that mean? What needs to happen with the weights for those colors to be more structured?",
+            "score": 1,
+            "author": "kovkev",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There is a form of autoencoder called an adversarial autoencoder that creates a more organized, predictable latent space:\nhttps://arxiv.org/abs/1511.05644",
+                    "score": 1,
+                    "author": "goatman12341"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So the model is misinterpreting everything as may be its a number and most likely its that? (trying to understand what's going on. not dissing op)",
+            "score": 1,
+            "author": "brihamedit",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not at all. Basically, the AI looked at tens of thousands of images of numbers. It learned to represent an image of a number as only two numbers - so a 28x28 png of a number could be represented by two numbers between -1 and 1. \n\nThen by traversing the possible range of these two numbers, we can see all the different numbers that the model knows. This is interesting because we get to see where the model plots the numbers in this two-dimensional \"latent space\".\n\n Images of the same number will be close together, whereas images of topologically different numbers will be far apart. We also get to see the model generate interesting mixes of different numbers.\n\nI invite you to try it for yourself (the link is above), so you can see first-hand how the model understands and generates numbers.",
+                    "score": 7,
+                    "author": "goatman12341",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah.. I don't think I'm gonna get it. Because I got the same thing again.. the ai is interpreting different parts of the image as numbers.",
+                            "score": 1,
+                            "author": "brihamedit",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, it turns a point on the image into an image of a number.",
+                                    "score": 3,
+                                    "author": "goatman12341",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "So its not a misinterpretation like I thought earlier. Its learned reinterpretation through a filter.",
+                                            "score": 3,
+                                            "author": "brihamedit",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yes, you could think of it like that.",
+                                                    "score": 3,
+                                                    "author": "goatman12341"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

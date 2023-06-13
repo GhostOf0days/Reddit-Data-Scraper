@@ -1,0 +1,163 @@
+{
+    "id": "rdei6k",
+    "score": 362,
+    "title": "Does anyone know what AI software may have been used to make this?",
+    "author": "XenvezYT",
+    "date": 1639159310.0,
+    "url": "https://v.redd.it/5wx3jwao8r481",
+    "media_url": "https://v.redd.it/5wx3jwao8r481",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I'm a deep learning researcher and the implications of what this tik tok is saying is just silly. Someone trained it on similar images and played with the predicted output until they found something interesting enough that they could create some pseudo scientific random inspirational  visualization. This is just snake oil guys lol",
+            "score": 121,
+            "author": "blackliquerish",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "pretty sure they made this with vqgan+clip, using a colab like this one:\n\n[https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN+CLIP\\_(Zooming)\\_(z+quantize\\_method\\_with\\_addons).ipynb](https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN+CLIP_(Zooming)_(z+quantize_method_with_addons).ipynb)",
+                    "score": 20,
+                    "author": "aarondavidross",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "zooming/animation colabs that I know of:  \n\n~ https://colab.research.google.com/github/chigozienri/VQGAN-CLIP-animations/blob/main/VQGAN-CLIP-animations.ipynb  \n~ https://colab.research.google.com/github/justinjohn0306/VQGAN-CLIP/blob/main/VQGAN%2BCLIP_(Zooming)_(z%2Bquantize_method_with_addons).ipynb   \n~ https://colab.research.google.com/drive/1VJrfInU5RbciXXD_8jzY-FntFqiyj6au?usp=sharing    \n\nMore stuff [in this list](https://www.reddit.com/user/Wiskkey/comments/p2j673/list_part_created_on_august_11_2021/), and over at r/MediaSynthesis, r/MachineLearning and r/bigsleep. These \"zooming\" colabs are sortof old, but the video stuff gets more reddit-popular whenever animation features are applied to new methods.",
+                            "score": 9,
+                            "author": "theRIAA"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah colab is great, just make sure you're downloading the right models or that the code on a notebook isn't doing something funky that can harm your PC.",
+                            "score": 6,
+                            "author": "blackliquerish"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Like everything else on tiktok... monkeys.",
+                    "score": 1,
+                    "author": "Vulmathrax"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Aphantasia does that sort of thing too.  It's awesome.\n\nhttps://github.com/eps696/aphantasia",
+            "score": 15,
+            "author": "NeurogenicArtist"
+        },
+        {
+            "level": 0,
+            "comment": "Likely VQGAN+CLIP.\n\nThere are Colab notebooks on Google colaboratory which let you create them.\n\nThere are also similar models on Huggingface.\n\nShouldn't be too hard to find a youtube tutorial or online reference document for VQGAN+Clip.\n\nIf you prefer a less technical option, Wombo and NightCafe are good choices.",
+            "score": 11,
+            "author": "plexsoup"
+        },
+        {
+            "level": 0,
+            "comment": "This looks like VQGAN+CLIP to me!",
+            "score": 4,
+            "author": "ITomza"
+        },
+        {
+            "level": 0,
+            "comment": "Nightcafe is another possibility",
+            "score": 2,
+            "author": "BinaryCopper",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What is night cafe?",
+                    "score": 1,
+                    "author": "mcqua007"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm an AI/ML grad student. The title of the post is misleading. They may have used something similar to Google Deep Dream where they extracted some kind of video deep within a neural net, but there is absolutely NOTHING out there where you can just say \"The Pathway to Heaven\" and that pops out lol.",
+            "score": -1,
+            "author": "EvilDonut0",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not sure, but I think \"Nightcafe\" does exactly what you're saying can't be done.\n\nTry visiting r/Nightcafe",
+                    "score": 3,
+                    "author": "BinaryCopper",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Here's a sneak peek of /r/nightcafe using the [top posts](https://np.reddit.com/r/nightcafe/top/?sort=top&amp;t=all) of all time!\n\n\\#1: [Shaq stuck at work on Christmas](https://ik.imagekit.io/nightcafe/jobs/ERDAdHsMrygSOk5vD7lz/ERDAdHsMrygSOk5vD7lz.jpg?tr=w-1600) | [14 comments](https://np.reddit.com/r/nightcafe/comments/q24ph4/shaq_stuck_at_work_on_christmas/)  \n\\#2: [The Hermit prepares a magical enchantment](https://i.redd.it/1etdpjq95or71.jpg) | [34 comments](https://np.reddit.com/r/nightcafe/comments/q21ko4/the_hermit_prepares_a_magical_enchantment/)  \n\\#3: [Obama celebrating his birthday alone in McDonalds](https://i.redd.it/ht5yuln8ssr71.jpg) | [11 comments](https://np.reddit.com/r/nightcafe/comments/q2gt3q/obama_celebrating_his_birthday_alone_in_mcdonalds/)\n\n----\n^^I'm ^^a ^^bot, ^^beep ^^boop ^^| ^^Downvote ^^to ^^remove ^^| ^^[Contact](https://www.reddit.com/message/compose/?to=sneakpeekbot) ^^| ^^[Info](https://np.reddit.com/r/sneakpeekbot/) ^^| ^^[Opt-out](https://np.reddit.com/r/sneakpeekbot/comments/o8wk1r/blacklist_ix/) ^^| ^^[Source](https://github.com/ghnr/sneakpeekbot)",
+                            "score": 1,
+                            "author": "sneakpeekbot"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I feel like I went to heaven",
+            "score": 1,
+            "author": "BobDope"
+        },
+        {
+            "level": 0,
+            "comment": "I get it",
+            "score": 1,
+            "author": "Intel-Seeker-2021"
+        },
+        {
+            "level": 0,
+            "comment": "Obviously a drug experimenting AI Software was used",
+            "score": 1,
+            "author": "CastroEulis145"
+        },
+        {
+            "level": 0,
+            "comment": "Why are these videos always 15 or so seconds long?",
+            "score": 1,
+            "author": "Sci-4"
+        },
+        {
+            "level": 0,
+            "comment": "\u201cHello mr deep neural net pweeze make stairs to heaven\u201d \ud83d\udc49\ud83d\udc48\ud83e\udd7a",
+            "score": 1,
+            "author": "CkmCpvis"
+        },
+        {
+            "level": 0,
+            "comment": "Boooooring",
+            "score": 1,
+            "author": "Sleeper____Service"
+        },
+        {
+            "level": 0,
+            "comment": "check out deforum for stable diffusion",
+            "score": 1,
+            "author": "DrakeFruitDDG"
+        },
+        {
+            "level": 0,
+            "comment": "Nice work, but downvoted for tiktok overlay and voice over",
+            "score": -1,
+            "author": "Thorusss",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I didn\u2019t make this\u2026 if you look at the title i\u2019m trying to figure out how to make something similar",
+                    "score": 1,
+                    "author": "XenvezYT",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OP this is definitely made with NightCafe. Source: I am the NightCafe founder and I recognise the video.",
+                            "score": 1,
+                            "author": "GusRuss89"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

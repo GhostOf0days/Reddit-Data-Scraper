@@ -1,0 +1,209 @@
+{
+    "id": "10lxgic",
+    "score": 390,
+    "title": "AI \"Upscale\" With Only 1000 Training Examples(All examples were dogs)",
+    "author": "TheRPGGamerMan",
+    "date": 1674754504.0,
+    "url": "https://i.redd.it/qbgibw0cbfea1.png",
+    "media_url": "https://i.redd.it/qbgibw0cbfea1.png",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Some info:  This is just a demonstration of the weirdness of an upscaler that doesn't have enough data. This is all built from the ground up.  I coded a compute shader neural network in Unity which features back propagation for training.  This took roughly 2 hours to train 1000 images(Still optimizing).  I suspect things may start actually looking decent closer to 10k trained images.  I need to find more images of dogs as I am wondering how human faces may look with enough training(Hoping for more dog like details).\n\nThat said, it does appear it added some dog features to my face, the eyes nose and mouth do appear to be somewhat 'dog like'.  Ps, when I start scaling up training, I might show the same image being upscaled with different levels of training.",
+            "score": 35,
+            "author": "TheRPGGamerMan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I should try that.  My first guess is it may start to look really saturated too.",
+                            "score": 5,
+                            "author": "TheRPGGamerMan"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There\u2019s actually a dog between your jawline/neck",
+                    "score": 5,
+                    "author": "OperationCorporation"
+                },
+                {
+                    "level": 1,
+                    "comment": "[The Stanford Dogs dataset contains over 20,000 images of 120 breeds of dogs from around the world](https://www.kaggle.com/datasets/jessicali9530/stanford-dogs-dataset)",
+                    "score": 8,
+                    "author": "lennarn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Without looking into it, I'm guessing these aren't a square aspect ratio?",
+                            "score": 2,
+                            "author": "TheRPGGamerMan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They are not square, but batch cropping them should be trivial.",
+                                    "score": 12,
+                                    "author": "lennarn"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Which method are you using for upscaling? I.e model?",
+                    "score": 1,
+                    "author": "ZdsAlpha"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So by upscaling using dogs have you created the elusive Updog?",
+            "score": 37,
+            "author": "MajorMalafunkshun",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What\u2019s updog?",
+                    "score": 15,
+                    "author": "Superfissile",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nothing new dawg, what's up with you?",
+                            "score": 9,
+                            "author": "virtualfiend"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Gotcha!\n\n...oh, god. Crap!\n\n....Nothin'...how ya doing?",
+                            "score": 3,
+                            "author": "anunakiesque"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This made me laugh! \ud83d\ude02",
+            "score": 29,
+            "author": "Zyguard7777777",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What's so funny about state of the art 4k next generation upscaling? :P",
+                    "score": 14,
+                    "author": "TheRPGGamerMan"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is very good",
+            "score": 6,
+            "author": "brickman1444",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You are very good.",
+                    "score": 8,
+                    "author": "TheRPGGamerMan"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I am honestly confused at what i'm looking at, is the left the upscaled version?",
+            "score": 8,
+            "author": "Chadcash",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Haha, the right one is.  It's not supposed to be impressive.  Just showing the strange results of an 'upscale' with very little training, and only on dog images.",
+                    "score": 36,
+                    "author": "TheRPGGamerMan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Idk man, looks downscaled",
+                            "score": 2,
+                            "author": "Chadcash",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It does since it has such little training. You should see what a few hundred images of training looks like.  Remember the ai isn't modifying the image, it's recreating it from previous data.",
+                                    "score": 2,
+                                    "author": "TheRPGGamerMan"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is honestly some of my favorite weird AI art projects. Very cool and very funny!",
+            "score": 1,
+            "author": "jbuck594"
+        },
+        {
+            "level": 0,
+            "comment": "The upscaled version doesn't look like a dog at all",
+            "score": 0,
+            "author": "diamened",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not yet\u2026",
+                    "score": 3,
+                    "author": "eheun"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Deepdream flashbacks",
+            "score": 1,
+            "author": "enilea"
+        },
+        {
+            "level": 0,
+            "comment": "Lol, we all know it's a lot of work behind it, but AI systems like Chat keep demonstrating how powerful they can truly be. No wonder articles such as this one are already talking about numerous new possibilities, such as regulation of fake news is for example\n\n&amp;#x200B;\n\nhttps://metanews.com/how-artificial-intelligence-a-i-can-help-to-combat-fake-news/",
+            "score": 0,
+            "author": "erymnobervecekr"
+        },
+        {
+            "level": 0,
+            "comment": "Keep up the cool work friend \ud83d\ude00. When you have some extra time check out the link in my bio, unlimited free diamond generator will have your Minecraft realm looking like a absolute GILF. 010101111000010101010",
+            "score": 1,
+            "author": "Reddread8"
+        },
+        {
+            "level": 0,
+            "comment": "Do android dogs dream of android cats?",
+            "score": 1,
+            "author": "Emergency_Drummer899"
+        },
+        {
+            "level": 0,
+            "comment": "Cool! Are you planning to launch or have AI tool that you are working on? If so, pls let us know.",
+            "score": 0,
+            "author": "webdevteam"
+        },
+        {
+            "level": 0,
+            "comment": "Oh looks great AI is amazing, that's why I created [1000+ AI tools directory ](http://ai.omkarbirje.com) to make people's work easy.",
+            "score": 0,
+            "author": "iOmkarBirje"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "id": "dmww2b",
+    "score": 444,
+    "title": "The duck-rabbit illusion works on Google Cloud Vision. The system interprets it one way or the other, depending on the orientation of the image.",
+    "author": "Thorusss",
+    "date": 1572007236.0,
+    "url": "https://gfycat.com/famousgleefulchimpanzee",
+    "media_url": "https://gfycat.com/famousgleefulchimpanzee",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I always like these examples where an AI shows same idiosyncrasies as humans.",
+            "score": 32,
+            "author": "Thorusss"
+        },
+        {
+            "level": 0,
+            "comment": "We are accustomed to seeing rabbits with their ears up and ducks' beak being horizontal. The source data for the training probably also has those similar traits.",
+            "score": 22,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "when dealing with training data like animal images, doesnt it make sense to rotate them before feeding?",
+                    "score": 8,
+                    "author": "Norvig-Generis",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes, this is done to make the training more varied and the training more robust. It is especially done when your data set is smallish. It is called data augmentation ~~enrichment~~.",
+                            "score": 14,
+                            "author": "Thorusss",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It is usually called data augmentation. But usually the random rotations are limited, e.g. up to 30 degrees rotation, so the trained model was not exposed to a 90 degrees rotation of ducks/rabbits....",
+                                    "score": 9,
+                                    "author": "FSMer"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If you're talking about the most straightforward way of rotating the animal along with the background of an image, it probably only makes sense to train a neural net with that data if you expect it to be used on camera images that are taken upside-down",
+                            "score": 3,
+                            "author": "NNOTM"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You also should only do this if you think classifications really ought to be invariant to rotations. With numbers from mnist you can\u2019t just rotate freely as otherwise you\u2019d confuse the model on a 9 vs 6. For most problems small rotations are fine. Large rotations are a maybe. Similarly while translations are mostly fine, sometimes translations can be weird and make little semantic sense. Translating an object like a car into the middle of the sky is weird.",
+                            "score": 3,
+                            "author": "Mehdi2277"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As a big fan of both Wittgenstein and AI, I absolutely love this. \n\n\nThe interesting thing about the duck rabbit is that it swaps back and forth when I just stare at it. I wonder how sensitive the vision AI's classification of a static image of the duck rabbit is for marginal changes to its weights. I reckon that's basically what's happening as I stare at it and see the category switch back and forth; some sort of ambient noise in my neural weights is causing it to change. Or maybe I'm focusing my attention of specific parts of the image?",
+            "score": 8,
+            "author": "daermonn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I know what you mean. The switching could be noise and for sure attention, but also fatigue. The specific circuit for seeing the rabbit becomes slightly tired, and the duck circuit is now the strongest and takes over. You can replicated that with the retina and visual cortex by staring at your face in the mirror without moving your eyes for 2+ minutes.",
+                    "score": 3,
+                    "author": "Thorusss",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Interesting! What does neuronal fatigue mean? Like, how does the circuit get tired relative to an adjacent pattern?",
+                            "score": 3,
+                            "author": "daermonn",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "A circuit get tired when its neurons get tired. A neuron get tired by firing a lot of action potentials which release potassium outside and take in sodium. This has to be actively reversed, which requires energy/atp. Also the synapse get depleted of neurotransmitters, which takes time to replenish.",
+                                    "score": 4,
+                                    "author": "Thorusss"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I would assume that there are algorithms (maybe even the one used in this example) that take this into account when calculating the confidence in predicting what the image is.  So if you make tiny changes to the weights and you get a different classification then your confidence of your prediction goes down.  It seems similar to determining if a matrix is ill-conditioned.  Or there are probably lots of similar concepts in statistics.\n\nCan anybody who does this for a living give more explanation (high level) about this?",
+                    "score": 2,
+                    "author": "whatstheprobability"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can AI change perspectives?",
+            "score": 2,
+            "author": "nonaime7777777"
+        }
+    ]
+}

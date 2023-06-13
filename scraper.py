@@ -52,6 +52,33 @@ def parse_comments(subreddit, post_id):
         print(f'Error {response.status_code}')
         return None
 
+def parse_top(subreddit):
+    urlTemplate = 'https://www.reddit.com/r/{}/top.json?limit=100&t=all'
+    headers = {'User-agent': 'Reddit Data Scraper'}
+    url = urlTemplate.format(subreddit)
+
+    response = requests.get(url, headers=headers)
+    
+    if response.ok:
+        data = response.json()['data']
+        posts = []
+        for post in data['children']:
+            postData = post['data']
+            postID = postData['id']
+            score = postData['score']
+            postTitle = postData['title']
+            author = postData['author']
+            date = postData['created_utc']
+            url = postData.get('url_overridden_by_dest')
+            media_url = postData.get('url') if postData['is_video'] or 'preview' in postData else None
+            comments = parse_comments(subreddit, postID)
+            posts.append({'id': postID, 'score': score, 'title': postTitle,
+                          'author': author, 'date': date, 'url': url, 'media_url': media_url, 'comments': comments})
+        return posts
+    else:
+        print(f'Error {response.status_code}')
+        return None
+    
 def parse(subreddit, after=''):
     urlTemplate = 'https://www.reddit.com/r/{}.json?{}'
     headers = {'User-agent': 'Reddit Data Scraper'}
@@ -107,6 +134,13 @@ def main():
         if about_data:
             write_about(subreddit, about_data)
             print(f'About data for subreddit {subreddit} written to about.md')
+                
+        top_posts = parse_top(subreddit)
+        if top_posts:
+            for post in top_posts:
+                write_to_json(subreddit, post['id'], post)
+                print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
+
         after = ''
 
         while True:

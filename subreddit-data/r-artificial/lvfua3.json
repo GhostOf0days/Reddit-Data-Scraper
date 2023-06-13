@@ -1,0 +1,307 @@
+{
+    "id": "lvfua3",
+    "score": 700,
+    "title": "Made my computer trip balls (GAN trained on psychedelic and visionary artworks)",
+    "author": "new_confusion_2021",
+    "date": 1614621835.0,
+    "url": "https://v.redd.it/qcfaqkaxfgk61",
+    "media_url": "https://v.redd.it/qcfaqkaxfgk61",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 20,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "i started here [https://www.kaggle.com/lasarot/psychart](https://www.kaggle.com/lasarot/psychart)",
+                    "score": 10,
+                    "author": "new_confusion_2021",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Approx how many images were in the training set.",
+                            "score": 1,
+                            "author": "RetireLoop",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "varies. but minimum 1k",
+                                    "score": 2,
+                                    "author": "new_confusion_2021"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "looks like alex grey",
+                    "score": 6,
+                    "author": "CAMO_PEJB"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Love this!! You should post over in /r/Psychonaut as well!",
+            "score": 10,
+            "author": "SunnySam",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This community does not allow for crossposting of any posts, nor video",
+                    "score": 5,
+                    "author": "new_confusion_2021"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Please cross-post this in /r/deepdream.  They would love it.  So awesome.",
+            "score": 7,
+            "author": "bottleboy8"
+        },
+        {
+            "level": 0,
+            "comment": "Tool started writing new album after seeing this post.",
+            "score": 4,
+            "author": "Malbik465",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Came here to suggest op post this to r/ToolBand",
+                    "score": 1,
+                    "author": "lidderdj"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is fucking epic. Truly amazing",
+            "score": 3,
+            "author": "i-Wayfarer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thank you",
+                    "score": 2,
+                    "author": "new_confusion_2021"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can you explain (ELI5, if you care) why the main image composition remains the same throughout all transfomations?",
+            "score": 3,
+            "author": "m_born",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "the neural network is looking for similarities in the the data and generating new data within those parameters.  \n\n\nA big chunk of the dataset is generated images that were dark on the edges and uniform colors in the center.  \n\n\nI created part of the dataset by generating 12,000 images over successive training cycles then I created a grid of colored squares that are dark on the edges then used a photomosaic program called andreamosaic to place my generated images on the grid. then used photoshop to cut them back into squares and visipics to deduplicate.",
+                    "score": 9,
+                    "author": "new_confusion_2021",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Man. Appreciate your response. Kind of sure that at some point I'll understand what it all *means*",
+                            "score": 4,
+                            "author": "m_born",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "after 5 more months of working with this technology, I have come back to say \"I was actually completely wrong.\" So what is happening is that for some reason,  sometimes the model will do this. I call this idea \"shape variety.\" You get different shapes when making video with python, depending on which -init\\_random\\_seed=# number you use. 1 is different than 2 and so on. I've asked around and nobody seems to know exactly why all the images in a video are similar in shape sometimes and not others (depending on model or pkl file used)  \n\n\nI think it is because this tech is largely based off of classifying objects. And futher more, nvidias examples of PKL files are usually things like animal face, human faces, lung x-rays etc. Not nearly as much shape diversity in these things as \"Psychedelic abstract trippy art\". So basically they didn't build this tech to do what artists are doing with it.",
+                                    "score": 3,
+                                    "author": "new_confusion_2021"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How much cpu does it take to generate the animation once you've trained the model?",
+                            "score": 1,
+                            "author": "vriemeister",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "idk. i use colab. it uses a $5000 gpu and takes 2-3 seconds per frame",
+                                    "score": 4,
+                                    "author": "new_confusion_2021",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thanks. That's just what I was looking for.",
+                                            "score": 1,
+                                            "author": "vriemeister"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\n&gt; I created part of the dataset by generating 12,000 images over successive training cycles then I created a grid of colored squares that are dark on the edges then used a photomosaic program called andreamosaic to place my generated images on the grid. then used photoshop to cut them back into squares and visipics to deduplicate.\n\nI understood the first part, but could you elaborate on the second part? \nYou used images that where generated by the GAN to supplement your dataset, ok, but what is that about a grid and squares and cutting images in squares? Is that some kind of augmentation technique? Also still not sure what exactly you did there. I can\u2019t really visualize the last part well.\n\n&gt; place my generated images on the grid. then used photoshop to cut them back into squares and visipics to deduplicate.\n\nYou basically made a mosaic from the images of the dataset that resembles the generated grid square template? Why? And why cut it back into squares again after you had your mosaic? What was the point of making a mosaic in the first place and what was the point of cutting it back up?\n\nI\u2019m sorry I have SO many questions. Awesome work you did there",
+                            "score": 1,
+                            "author": "blkpingu",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "basically, i don't know how to sort images by color or patterns except manually. with 12k images it was going to take forever. but i am pretty good with photoshop so I just generated a large grid of the patterns I wanted.\n\nthis enabled me to imperfectly automate the pattern sorting process",
+                                    "score": 1,
+                                    "author": "new_confusion_2021",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That\u2019s super cool! Thank you for taking the time to make this.",
+                                            "score": 1,
+                                            "author": "levinalx101"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "looks like a dmt trip lol",
+            "score": 2,
+            "author": "actuallyrarer"
+        },
+        {
+            "level": 0,
+            "comment": "I'll have what he's having",
+            "score": 2,
+            "author": "ForAHamburgerToday"
+        },
+        {
+            "level": 0,
+            "comment": "Would you care to elaborate on your methodology and/or you have a git you wanna share? This is awesome and I'd love to learn what kind of data processing pipelines your using. I have never really ventured into computer vision work.",
+            "score": 1,
+            "author": "skeerp",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "check the pinned post on my profile and don't be afraid to follow me",
+                    "score": 1,
+                    "author": "new_confusion_2021"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is the reason I am learning ML",
+            "score": 1,
+            "author": "RetireLoop"
+        },
+        {
+            "level": 0,
+            "comment": "If you like this, psychedelics and machine generated art (with a bit of human input), you will love [Electric Sheep](https://electricsheep.org/)\n\n[sample (2h ;) ) HD video](https://www.youtube.com/watch?v=jVD67pMdv9k)",
+            "score": 1,
+            "author": "Thorusss"
+        },
+        {
+            "level": 0,
+            "comment": "Please make one using HR Giger's artwork.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "o0\n\nTool....",
+            "score": 1,
+            "author": "Harold_Spoomanndorf"
+        },
+        {
+            "level": 0,
+            "comment": "Where can a newbie like me learn gan? I tried doing this but my python modules always fail, there's always something wrong. The github page isn't that helpful either.",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "check the pinned post on my profile",
+                    "score": 1,
+                    "author": "new_confusion_2021"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fantastic work. I wish to do something similar with my own dataset. Did you do everything on colab? The data set training as well as the animation? Which GAN did you use?",
+            "score": 1,
+            "author": "Fauvist9",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Stylegan2-ada and yes. did it in colab with a little bit of aftereffects.",
+                    "score": 1,
+                    "author": "new_confusion_2021"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sweet! You should look into NFT or crypto art. It is a way to make digital art works an asset that can be acquired by art collectors or displayed in virtual galleries. I recently minted a token for one of my pieces of generative art. It was more expensive than I anticipated and annoyingly complicated, but I persevered and got it done. I think it was worthwhile to learn the process.",
+            "score": 0,
+            "author": "webauteur",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I would love to learn how to do that!",
+                    "score": 1,
+                    "author": "new_confusion_2021",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I used Rarible to mint the token, which required me to get a Fortmatic wallet. First I signed up for the Fortmatic API which isn't exactly the wallet. So I used the decentralized exchange Airswap to connect to my Fortmatic wallet. Everything had to be done in ETH and my credit cards would not allow me to purchase Ethereum. So I had to use Coinbase to purchase Ethereum via a bank account withdrawal. Then that ETH had to be transferred to my Fortmatic wallet. All this requires entering codes sent via SMS or email. Then on Rarible I had to connect to my Fortmatic wallet and follow all its steps. This entire process took hours although some of the steps may have been unnecessary, like using Airswap. I also found an Ethereum Blockchain Explorer which was useful for reviewing the history of my transactions on my Fortmatic wallet address. All this needs to be done very carefully.\n\nI don't think most artists will go through all this hassle. But hopefully I have gotten in on the ground floor of something that will become big. According to the Ethereum Blockchain Explorer I now have a RARI token of which there are 17,714 holders with a 38,724 max total supply. I think that means I am an early adopter. ;)",
+                            "score": 1,
+                            "author": "webauteur",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "yeah, just jumped through a similar set of loops and hoops to put something on mintable.",
+                                    "score": 1,
+                                    "author": "new_confusion_2021"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is awesome, How did you interpolate between these images?",
+            "score": 1,
+            "author": "KhanDescending123"
+        },
+        {
+            "level": 0,
+            "comment": "This would be real useful in my ecstasy days.",
+            "score": 1,
+            "author": "pumpfaketodeath"
+        },
+        {
+            "level": 0,
+            "comment": "u/savevideo",
+            "score": 1,
+            "author": "V0rtexGames"
+        },
+        {
+            "level": 0,
+            "comment": "Just take a tab already",
+            "score": 1,
+            "author": "IrRetardred"
+        },
+        {
+            "level": 0,
+            "comment": "How long till we train one of these to make another version of itself? Serious question.",
+            "score": 1,
+            "author": "Eduard1234"
+        }
+    ]
+}

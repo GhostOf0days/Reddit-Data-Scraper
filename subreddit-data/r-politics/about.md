@@ -1,6 +1,6 @@
 # About r/politics
 
-Subscribers: 8337559
+Subscribers: 8337586
 
 Created UTC: 1186377399.0
 

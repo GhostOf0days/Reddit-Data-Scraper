@@ -1,0 +1,355 @@
+{
+    "id": "plgcpb",
+    "score": 566,
+    "title": "Simulation of a Virtual Bustling City With Pedestrian / Vehicle AI",
+    "author": "Repok",
+    "date": 1631259268.0,
+    "url": "https://v.redd.it/ud6co1o6pmm71",
+    "media_url": "https://v.redd.it/ud6co1o6pmm71",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "It looks pretty cool - is it intended for game purposes &amp; if so, how much of a frame &amp; memory budget would this take up?",
+            "score": 19,
+            "author": "Yann4",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It could be!\n\nFor the moment, we are mostly working for simulation purposes !\n\nYou can simulate 2000 agents in real time on a standard computer and our AI is pretty-low in memory.",
+                    "score": 15,
+                    "author": "Repok",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sell this tech to rockstar before they release GTA6 lol, would be cool",
+                            "score": 16,
+                            "author": "SettingsSet",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So they still have another couple decades to polish up the AI",
+                                    "score": 1,
+                                    "author": "lilmann"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's a R&amp;D project at SpirOps ([spirops.com](https://www.spirops.com) / [crowd.spirops.com](https://crowd.spirops.com)) that we have been developing for various partners (industrial / academic) over time.",
+                                    "score": 3,
+                                    "author": "Repok"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This would have been so cool in Cyperpunk.",
+            "score": 14,
+            "author": "mobani"
+        },
+        {
+            "level": 0,
+            "comment": "The chances of two '69 hugger orange with white stripes Camaros on the same street, both making a right turn are astronomical.",
+            "score": 10,
+            "author": "BigOleJellyDonut",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They're probably heading to an old car convention where they'll be leading the parade.",
+                    "score": 3,
+                    "author": "toastjam"
+                },
+                {
+                    "level": 1,
+                    "comment": "I had a \"uh, The Matrix is having a glitch\" moment when I noticed. Then it turns out there were plenty of those with different colours. That procgen will need a bit more tweaking, methinks.\n\nGreat stuff, otherwise!",
+                    "score": 1,
+                    "author": "fibojoly"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You even managed to simulate jerksnthat stop on crosswalks. I'm impressed.",
+            "score": 7,
+            "author": "pticjagripa"
+        },
+        {
+            "level": 0,
+            "comment": "Can you add chaos elements like bad drivers? Or pedestrians crossing not at crosswalks?",
+            "score": 4,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If pretty simple, you can very easily change in real time the vehicle / pedestrian speed, destination, etc...\n\nEach agent has its own personality and can be changed in real time too.\n\nIn the future, we would like that some pedestrians cross not at crosswalks in an opportunist way (when there is no vehicle for example).",
+                    "score": 11,
+                    "author": "Repok",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Also, I think some people walking together or occasionally in groups would make it feel more realistic. Some in a hurry and some leisurely. Some not really having a destination at all (talking, waiting or loitering).\n\nYour cars go unnaturally far into the intersection before waiting to turn (slightly past the turn even).",
+                            "score": 1,
+                            "author": "sasksean",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Regarding the groups, we worked on it : [http://crowd.spirops.com/videos/groups.mp4](http://crowd.spirops.com/videos/groups.mp4) but it needs to be tested in an urban environment.  \n\n\nWe would like to implement this talking / waiting / loitering behaviours but with real intentions (waiting for a friend / talking with him before taking a leisure walk together, etc.)\n\nFor the turning cars, agree that it needs a bit of tweaking! :)",
+                                    "score": 2,
+                                    "author": "Repok"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Here in my city we have a type of crosswalk where cars have to give preference to pedestrians, would be possible to do that, I wondering this small types of behaviors earlier this week.",
+                            "score": 1,
+                            "author": "powerhcm8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "CD Projekt Red entered the chat",
+            "score": 4,
+            "author": "mistarz"
+        },
+        {
+            "level": 0,
+            "comment": "Why do they act like that?",
+            "score": 3,
+            "author": "BioDidact"
+        },
+        {
+            "level": 0,
+            "comment": "Y\u2019all see that blue car pull out of its spot, drive in a circle then move on? Totally accurate I would do some shit like that",
+            "score": 3,
+            "author": "duggedanddrowsy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well spotted!",
+                    "score": 1,
+                    "author": "fibojoly"
+                },
+                {
+                    "level": 1,
+                    "comment": "Hesitate to fix this bug before posting it but... we just thought that was a fun behaviour deserving to stay in the video!",
+                    "score": 1,
+                    "author": "Repok"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you want to see the video in normal mode (not fast forward) : [https://www.youtube.com/watch?v=Hl43dohfa0A&amp;t=1s](https://www.youtube.com/watch?v=Hl43dohfa0A&amp;t=1s)",
+            "score": 2,
+            "author": "Repok"
+        },
+        {
+            "level": 0,
+            "comment": "Oof, imagine adding cyclists.",
+            "score": 2,
+            "author": "Gatopianista",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We are thinking about it!",
+                    "score": 3,
+                    "author": "Repok"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Proof of roundabout masterrace",
+            "score": 2,
+            "author": "SunkenDrone"
+        },
+        {
+            "level": 0,
+            "comment": "Do you have a paper or anything like that on this that I can read?",
+            "score": 2,
+            "author": "vandelay_inds",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sorry we don't...\n\nBut I can tell you that the \"decision making\" part of our AIs (\"Do I avoid this this vehicle? / Do I stop at this traffic light? / Do I stop by right priority?\") used fuzzy logic.",
+                    "score": 1,
+                    "author": "Repok"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[Microsoft AirSim](https://www.youtube.com/watch?v=gnz1X3UNM5Y) (and all those who use it) could benefit a lot from your project.",
+            "score": 2,
+            "author": "Aspos",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We thought about it!\n\nIt could be AirSim or one of the following one : [LG simulator](https://www.svlsimulator.com/), [CARLA](https://carla.org/), [Righthook](https://righthook.io/), [Cognata](https://www.cognata.com/) or [Ansys](https://www.ansys.com/fr-fr/technology-trends/autonomous-engineering).",
+                    "score": 1,
+                    "author": "Repok"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very nice. Can you tell how you made it? I mean which software did you use?",
+            "score": 1,
+            "author": "kid_90",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Everything is homemade! It's our own AI and render engines (C++ / Open GL)! :)\n\nExcept for the 3D assets : [www.syntystudios.com](https://www.syntystudios.com)And we used Paris Open Data to build the city : [https://opendata.paris.fr/pages/home/](https://opendata.paris.fr/pages/home/) (sorry it's in French, seems there is no way to have it in English)",
+                    "score": 6,
+                    "author": "Repok",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Synty\u2019s Polygon Street Racer pack is 50% off right now and would add more variety to your vehicles.  ;)\n\nAside from the Synty plug, awesome work!",
+                            "score": 2,
+                            "author": "MattShotts",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks ! You're right, we are going to buy it ! ;)",
+                                    "score": 1,
+                                    "author": "Repok"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What were the reasons against reusing Unreal or other similar engines?",
+                            "score": 0,
+                            "author": "Aspos",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well, we are not against anything. It's just that we love programming everything in a software! Even if it can take a bit longer... ;)",
+                                    "score": 2,
+                                    "author": "Repok"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Aint City Skyline somehow doing that? Or is it cutting corners a bit so what looks good is good for gaming purpose.\n\nAnyway to compare it??? (Asking the moon here ah ha).",
+            "score": 1,
+            "author": "No_Chef_1869",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Probably cutting corners for memory purposes. I know people and vehicles phase through each other quite often, especially when there are a load of people crossing.",
+                    "score": 2,
+                    "author": "OptimistiCrow"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Looks cool. How about adding some dogs, bicyclists, skateboarders, electric scooters, some slower elderly walkers, wheelchairs. Life is so chaotic, it's cool to see AI try to simulate it.",
+            "score": 1,
+            "author": "johnne86",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We will love it but each element that you mention would take quite some time to implement (except from elderly walkers that already exists).  \n\n\nAmongst your list elements, bicyclists would probably be the first one that we will add!",
+                    "score": 1,
+                    "author": "Repok"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey, pretty neat. Get a paper uploaded on it..",
+            "score": 1,
+            "author": "Respawne"
+        },
+        {
+            "level": 0,
+            "comment": "I wonder what those simulated people do for a living?",
+            "score": 1,
+            "author": "curious764"
+        },
+        {
+            "level": 0,
+            "comment": "Where are these cars and pedestrians going after they leave the screen\u00bf",
+            "score": 1,
+            "author": "dangalg"
+        },
+        {
+            "level": 0,
+            "comment": "How am I supposed to jaywalk in that?",
+            "score": 1,
+            "author": "SerenityViolet"
+        },
+        {
+            "level": 0,
+            "comment": "The grey car is parked illegally and should be towed right away.",
+            "score": 1,
+            "author": "kvakvs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The grizzled car is park'd illegally and shouldst beest tow'd right hence\n\n***\n\n\n\n^(I am a bot and I swapp'd some of thy words with Shakespeare words.)\n\nCommands: `!ShakespeareInsult`, `!fordo`, `!optout`",
+                    "score": 1,
+                    "author": "Shakespeare-Bot"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I wish people on the road had as much sense as the AI",
+            "score": 1,
+            "author": "v7unit"
+        },
+        {
+            "level": 0,
+            "comment": "What CDPR promised \ud83d\ude14",
+            "score": 1,
+            "author": "R3adingSteiner"
+        },
+        {
+            "level": 0,
+            "comment": "Wow It looks very Amazing... future will be Automated...!!1",
+            "score": 1,
+            "author": "HDataBhavesh"
+        },
+        {
+            "level": 0,
+            "comment": "V nice",
+            "score": 1,
+            "author": "POTUSAI"
+        },
+        {
+            "level": 0,
+            "comment": "Cool project",
+            "score": 1,
+            "author": "Freyr_AI"
+        },
+        {
+            "level": 0,
+            "comment": "Okay fine I get it, we live in a simulation.",
+            "score": 1,
+            "author": "gthing"
+        }
+    ]
+}

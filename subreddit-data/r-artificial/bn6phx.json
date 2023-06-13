@@ -1,0 +1,391 @@
+{
+    "id": "bn6phx",
+    "score": 937,
+    "title": "First attempt at removing cars off the roads with neural nets. Will have to dream harder. - Chris Harris (@otduet)",
+    "author": "Icy_Thought",
+    "date": 1557539464.0,
+    "url": "https://v.redd.it/xxxjwocpmhx21",
+    "media_url": "https://v.redd.it/xxxjwocpmhx21",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "So what exactly is the purpose of this?\n\nWow. So basically in the future you could block everything through your AR glasses including certain people. Just like in Black Mirror",
+            "score": 99,
+            "author": "teachamax",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "One possible purpose would be to remove cars and people from Google Earth as they drive around taking snapshots.",
+                    "score": 55,
+                    "author": "Don_Patrick",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Or remove tourists from the shot of the Eiffel tower so its just you and your dog!",
+                            "score": 18,
+                            "author": "liminalsoup"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "To trick your friends about how empty the parking lot is at the event youre are meeting up at.",
+                    "score": 23,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "yuh. neuralink.",
+                            "score": 1,
+                            "author": "justintime06",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 1,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm not sure, but I think one of the bigger things that brain implants will be able to do is live translate, so you could have a normal conversation with someone speaking Spanish when you only know English. There are so many implications... immediate number calculations, live word definition look-up, etc.",
+                                            "score": 1,
+                                            "author": "justintime06"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm 99% sure we could do this now. Image recognition is pretty good already, so it's just a matter of tracing the borders of the recognized object, and filling them in with a black, or static background, or whatever you want.\n\nOP probably needs to train his more.",
+                    "score": -1,
+                    "author": "2Punx2Furious",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OP isn't trying to replace objects with black/static.  They're trying to fill in the scene behind the cars.",
+                            "score": 15,
+                            "author": "TheJCBand",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I was replying to the comment that mentioned Black Mirror, where they replace them with static.",
+                                    "score": 3,
+                                    "author": "2Punx2Furious",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They might be talking about Arkangel rather than White Christmas. In Arkangel the AI blurs the things determined to be dangerous into the background as if they aren\u2019t there.",
+                                            "score": 3,
+                                            "author": "Dickinmymouth1",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I think that might also be possible, but not perfect, as you can only predict, not know, what is behind someone at any given time.",
+                                                    "score": 1,
+                                                    "author": "2Punx2Furious"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Even then, that task is pretty much what image inpainting seeks to do, and modern inpainting is pretty damn good. All op would have to do is fill in the cars with some single, static color to then \"paint\" the predicted background into, patch by patch.",
+                                    "score": 1,
+                                    "author": "Altaraxia"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'm wanting someone to create a body recognition version of this, and attach it to some AR glasses...",
+                            "score": 3,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "to block out the visual pollution of cities. it's my greatest dream to augment reality so that i'm the only player, like a beautiful game.",
+                    "score": 0,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There's a paper on post estimation that gets over this flickering problem via some sort of smoothing in time series data. I forgot what it is, but would solve a bunch of the issues here.",
+            "score": 23,
+            "author": "SubtractOne",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wouldn't an adversarial setup do it? The flickering should be a dead giveaway to the post-processor that it's fake. In theory anyway.",
+                    "score": 6,
+                    "author": "mao_intheshower",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It should as long as the adversarial network is a time series network. Currently I'd guess they're doing image by image or something of that sort because any time series should smooth it a bit. When I get on my comp I might just check what they're doing but meh",
+                            "score": 1,
+                            "author": "SubtractOne"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\"Hallucinated\" in-painting can avoid this and still be beautifully wrong. I've seen labeled driving data filled with expected input pixels and scored by consistency from one frame to the next... and as a result, cars morph between brands, colors, and models, buildings transform as they pass behind trees, the lines in the road flow with traffic, etc. \n\nYou go from this Ghost In The Shell effect to A Scanner Darkly.",
+                            "score": 1,
+                            "author": "mindbleach"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\"I'll just walk across this completely empty road and -\" *POW*",
+            "score": 21,
+            "author": "Geminii27",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This needs to be higher! It's cool that science can do this but its EXTREMELY DANGEROUS!",
+                    "score": 3,
+                    "author": "_Something_Classy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't know if this has been posted before and thought why not share this with the rest.\n\nLink to original post: [https://twitter.com/otduet/status/1125390364691640321](https://twitter.com/otduet/status/1125390364691640321)",
+            "score": 13,
+            "author": "Icy_Thought",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thx bro",
+                    "score": 1,
+                    "author": "Le_swiss"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What cars?  It doesn't look like anything to me",
+            "score": 11,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "It's not what you wanted, but it is fucking cool.",
+            "score": 31,
+            "author": "mindbleach"
+        },
+        {
+            "level": 0,
+            "comment": "Could someone please explain how this is being done? Assume I understand perceptrons, weight, and bias at a certain level and have made basic convnets with keras so far.",
+            "score": 6,
+            "author": "NapalmRDT",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Paraphrasing the developer:\n\n&gt;The A.I. I use here isn't itself novel, I've adapted the code from two open-source repositories on GitHub. The\u00a0vehicle detection\u00a0is the same type as that which is used in self-driving cars. I detect and then remove vehicles using the code from a recent paper called Globally and Locally Consistent Image Completion. This model is trained on the Places2 dataset by MIT which contains a lot of images of outdoor places, I hoped therefore it would be able to bias the filling in of the cars towards more natural scenes.\n\nFurther explanation can be found at: http://harrischris.com/article/biophillic-vision-experiment-1",
+                    "score": 9,
+                    "author": "Icy_Thought",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you! This is fascinating.",
+                            "score": 1,
+                            "author": "NapalmRDT",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Glad you liked it \ud83d\ude0a",
+                                    "score": 1,
+                                    "author": "Icy_Thought"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are some glitches in the matrix",
+            "score": 4,
+            "author": "Fragore"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing :)",
+            "score": 5,
+            "author": "harrischris",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Happy to bring awareness to the this project! And if you are the developer (assuming from your username), very well done! \ud83d\udc4f\ud83d\udc4f",
+                    "score": 3,
+                    "author": "Icy_Thought"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I knew it! All those cars are holograms. How could there be that many cars anyway.",
+            "score": 3,
+            "author": "mro21"
+        },
+        {
+            "level": 0,
+            "comment": "Do this but for ads",
+            "score": 3,
+            "author": "Kafke"
+        },
+        {
+            "level": 0,
+            "comment": "Sometimes when you read about self-driving cars, you get the impression they implemented the reverse as well. Cars don't need to see pedestrians, do they?",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Dude. This would be great for a surrealistic sci-fi movie.",
+            "score": 2,
+            "author": "RadioMelon"
+        },
+        {
+            "level": 0,
+            "comment": "Are you employing object recognition (say a mask rcnn or similar) and then do cv2.inpaint to merge it into the background?",
+            "score": 2,
+            "author": "kookaburro",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Paraphrasing the developer:\n\n&gt; The A.I. I use here isn't itself novel, I've adapted the code from two open-source repositories on GitHub. The\u00a0vehicle detection\u00a0is the same type as that which is used in self-driving cars. I detect and then remove vehicles using the code from a recent paper called Globally and Locally Consistent Image Completion. This model is trained on the Places2 dataset by MIT which contains a lot of images of outdoor places, I hoped therefore it would be able to bias the filling in of the cars towards more natural scenes.\n\nMore about this can be found at: http://harrischris.com/article/biophillic-vision-experiment-1",
+                    "score": 3,
+                    "author": "Icy_Thought"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Awesome! It gets pretty good for some frames.",
+            "score": 2,
+            "author": "DoctorSoong"
+        },
+        {
+            "level": 0,
+            "comment": "Seems like the algorithm works well, but you keep just naively reapplying it to each frame, use SLAM to extract temporal coherence and this will work like a charm.",
+            "score": 2,
+            "author": "Revolutionalredstone",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'll make sure to tell that to the developer when I have some free time. If you want to contact him, use his Twitter username mentioned in the title of this post.\n\nThanks for the suggestion! \ud83d\ude0a\n\nEDIT: I managed to paraphrase what you mentioned in the following comment to the dev! Link: https://twitter.com/Icy_Thought/status/1127653589080473600?s=09",
+                    "score": 3,
+                    "author": "Icy_Thought"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s pretty incredible.",
+            "score": 1,
+            "author": "avgsuperhero"
+        },
+        {
+            "level": 0,
+            "comment": "This can\u2019t be perfect now, but what is it for?",
+            "score": 1,
+            "author": "smartromain",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "According to the developer himself:\n\n&gt;In part a response following the global movements to mitigate and rally against climate-change (Extinction Rebellion).\n\n&gt;In part stemming from my own personal abhorrence of the obnoxiousness of cars in what should be pedestrian friendly environments and the desire to live in greater harmony with nature.\n\n&gt;I dream of being rid of the pollution, the obstacles, but most of all for me personally, as someone who is highly sensitive, it's the cacophony of sounds and jarring relentlessness of a constant flow of traffic. \n\n&gt;The future of cities is good public transport, bikes and walkable streets. I see no need for the regular use of cars inside densely populated cities.",
+                    "score": 6,
+                    "author": "Icy_Thought",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cars make cities suck",
+                            "score": 2,
+                            "author": "odder_sea"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That's insane! And basically how reality actually works. \"Reality is an illusion, albeit a very persistent one\" said Albert Einstein",
+            "score": 1,
+            "author": "FINDTHESUN"
+        },
+        {
+            "level": 0,
+            "comment": "There is a glitch in the Matrix.",
+            "score": 1,
+            "author": "Cathy_Garrett"
+        },
+        {
+            "level": 0,
+            "comment": "[Want to read more?](http://harrischris.com/article/biophillic-vision-experiment-1)",
+            "score": 1,
+            "author": "ville1001"
+        },
+        {
+            "level": 0,
+            "comment": "AR sex will be fun",
+            "score": 1,
+            "author": "Villad_rock"
+        },
+        {
+            "level": 0,
+            "comment": "Black Mirror - Arkangel \ud83d\udc40",
+            "score": 1,
+            "author": "alfred_dent"
+        },
+        {
+            "level": 0,
+            "comment": "Doesnt look that shit",
+            "score": 1,
+            "author": "Rich-Objective8039"
+        },
+        {
+            "level": 0,
+            "comment": "u/SaveVideo",
+            "score": 1,
+            "author": "Vincensini",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "###[View link](https://redditsave.com/r/artificial/comments/bn6phx/first_attempt_at_removing_cars_off_the_roads_with/)\n\n\n --- \n [**Info**](https://np.reddit.com/user/SaveVideo/comments/jv323v/info/)&amp;#32;|&amp;#32; [**Feedback**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Feedback for savevideo)&amp;#32;|&amp;#32;[**Donate**](https://ko-fi.com/getvideo) &amp;#32;|&amp;#32; [**DMCA**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Content removal request for savevideo&amp;message=https://np.reddit.com//r/artificial/comments/bn6phx/first_attempt_at_removing_cars_off_the_roads_with/) &amp;#32;|&amp;#32; \n [^(reddit video downloader)](https://redditsave.com) &amp;#32;|&amp;#32; [^(download video tiktok)](https://taksave.com)",
+                    "score": 1,
+                    "author": "SaveVideo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "this using some modern ai like stable diffusion in real time could be pretty cool",
+            "score": 1,
+            "author": "TDEyeehaw"
+        },
+        {
+            "level": 0,
+            "comment": "Seems safe. I'm ready to run this in my glasses.",
+            "score": 1,
+            "author": "gthing"
+        }
+    ]
+}
