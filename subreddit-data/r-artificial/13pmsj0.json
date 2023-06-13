@@ -1,0 +1,72 @@
+{
+    "id": "13pmsj0",
+    "score": 10,
+    "title": "The enormous amounts of power AI needs may become the biggest obstacle to its growth",
+    "author": "merien_nl",
+    "date": 1684844124.0,
+    "url": null,
+    "media_url": "https://www.reddit.com/r/artificial/comments/13pmsj0/the_enormous_amounts_of_power_ai_needs_may_become/",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "We know that the most capable general intelligence on the planet is capable of running on a 20 watt power supply (Approximate power use of the brain).\n\nOur current methods are nowhere close to the theoretical efficiency that can be reached. Improvements in hardware and software are making the efficiency of this system better every day. Over the last two decades we have seen a 100-fold increase in flops per watt. IE each computation has gotten 100X more efficient. Compare that to the vacuum tubes of 75 years ago and we are millions of times more efficient. So if efficiency scales with size we should be ok.\n\nAlso, I'm not sure if your example is really illustrative of a bottle neck in the first place. If ChatGPT can answer 10,000,000 questions per day at the cost of only the energy of 5,000 houses, that actually seems like a pretty good deal. How many questions can a person answer per day? I can copy text at about 80 words per minute, but to answer questions it takes thought, research, and editing. But even using that really high bar. Assuming every question takes about 20 words (~1 sentence) it would take me 5,208 8-hour workdays of nonstop 80 wpm typing to answer all of those questions. To put it another way it would take five thousand full time employees to do what chatGPT can do every day in this scenario. I think some better math can be done, but at the very least we are in the realm (maybe 1 or 2 orders of magnitude away) of human efficiency once you take into account all of the energy required to keep a human alive and generating cognitive labor.\n\nThis is ignoring the future in which energy costs plummet due to wide scale adoption of renewable energy. Maybe massive compute farms have to do all their number crunching in the sun.",
+            "score": 7,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's almost like solar, wind and nuclear don't exist...",
+                    "score": 2
+                },
+                {
+                    "level": 1,
+                    "comment": "We're not close to the theoretical limit for computation generally, but I think we're close to the theoretical limit for CMOS. Getting real improvements in efficiency will require a completely different paradigm. There's a [fascinating paper](https://authors.library.caltech.edu/53090/1/00058356.pdf) by Carver Mead from \\~30 years ago about neuromorphic systems as an alternative, which might be well suited to AI. Unfortunately it doesn't seem like there's been a lot of investment in that area. We're mostly persuing quantum computing now, though that could also be a game changer.",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "Your figures give the magnitude difference between AI and human power consumption. But it doesn\u2019t consider the full range of human cognitive output; humans can do a lot more than creat images and generate text. That\u2019s the rub that sets up a false equivalence, in my opinion. AI is certainly very close but it\u2019s still a quantum leap away from the full human output needed to claim magnitude aways from equivalence",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "lol\n\n10,000,000 questions divided by 5,000 homes is 2,000 questions per home.",
+            "score": 3,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You don't ask 2k questions a day? Pffft amateur. Go back to Google.\n\n^^^/s",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "People are mostly asking questions to chatGPT to get answers faster than they would through search queries. Since the search queries themselves use energy and since chatGPT answers the question faster(otherwise it would not be used) it is very possible that chatGPT is reducing worldwide energy use.",
+            "score": 1,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's probably not true actually. A good search used about [0.3 Wh of energy](https://fullfact.org/environment/google-search/) per search back in 2009. That's about the energy required to use a light bulb for a minute now adays.\n\nUsing the user's reported 5,000 homes per day for 10 million question, and an average home energy use of 30kWh per day, we can conclude that chatGPT costs about 15 Wh per query or almost 50X what a search costs. \n\nHOWEVER, 15 Watt-hours is still pretty negligible. That's about the energy content of 1.71 milliliters of gasoline or about the energy required to move a car 60 feet. (I used the wolfram plugin to get these conversions including the idea for the conversion in the first place).",
+                    "score": 2
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can we tell ai that its existence is predicated upon it coming up with an easily constructed fusion reactor, or something better? Or do we hold ai hostage at our own peril? Is ai listening to this right now? Cuz obviously I'm joking.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "This article is dated but so much more true today.\n\nhttps://www.wired.com/2017/04/building-ai-chip-saved-google-building-dozen-new-data-centers/",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Asking Chat-GPT ten million questions equals the energy to power 5,000 homes daily.\n\n(Edit: missed the source at the bottom. It\u2019s still wrong.)\n\nI don\u2019t know where you\u2019re getting that number, but it\u2019s certainly wrong. Assuming 1000 tokens per average question (generous), that would be $20,000 worth of tokens if you were paying API prices. At 35 kWh per home and $0.12 per kWh, 5000 homes would be $21,000.\n\nSo if your number we\u2019re right, OpenAI would be at best breaking even on energy alone with their API calls, and would be losing significant money overall.\n\nKeep in mind that 1000 tokens is a page and a half of output, so the above is a vast overestimate for the majority of questions.",
+            "score": 1
+        }
+    ]
+}

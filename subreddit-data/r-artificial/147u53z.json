@@ -1,0 +1,1127 @@
+{
+    "id": "147u53z",
+    "score": 69,
+    "title": "Startup to replace doctors",
+    "author": "Scotchor",
+    "date": 1686594881.0,
+    "url": null,
+    "media_url": null,
+    "comments": [
+        {
+            "level": 0,
+            "comment": "What is your start up name",
+            "score": 24,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Theranos",
+                    "score": 140,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Lmao",
+                            "score": 17
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Docanos",
+                            "score": 4
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Lol \ud83d\ude02",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I think it's this one since OP mentioned nuance and Microsoft. https://www.nuance.com",
+                    "score": 3
+                },
+                {
+                    "level": 1,
+                    "comment": "Healgorithms",
+                    "score": 2
+                },
+                {
+                    "level": 1,
+                    "comment": "Hal 9000",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What about hallucinations? As far as I've read, they don't have a way to make LLMs \"know\" what is real or true. How can an LLM diagnose illnesses?",
+            "score": 23,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;  they don't have a way to make LLMs \"know\" what is real or true\n\nNope. We don't allow it to check itself. These LLMs are made very simple to avoid any potential runaway conditions. They only speak when spoken to and only \"think\" in a dissociated sense that their one-shot generated response is incorporating the patterns of many things that make sense against other things. They don't have recursion where they can look over their response and iterate self-criticism or corrections. They just blurt out the first thing that comes to mind and then stop. They don't revise or review their own things, they don't ask themselves questions about what they just said in their head before saying it \"out loud\"... We've made them both smart and dumb. With certain trains of prompts encouraging reflection and analysis before producing the actual response, they don't have many of the issues pointed to as evidence that they are not capable of converging on truth. The same would go for a diagnostic AI. It would just need a set of questions like \"am I missing any information?\" or \"what have I focused on and could I see something different if I focused on something else?\", \"argue against this and then follow up on things that would bolster this case, then revisit again from another point of view\" etc. You can go through this process manually with chatGPT etc. and can kind of automate it with autogpt or the trees paper that came out. The ability to search is also there now so Bing, GPT4 with search, and Bard can all check information that is out there.",
+                    "score": 8,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I gotta push back on this; any time you give feedback about a response, you\u2019ve changed the game and interfered. As soon as you ask it a question like \u2018are you sure\u2019 or \u2018reflect further on what you just said\u2019 it takes your feedback and a whole new group of synapses start firing, and to prompt that kind of response, *you need to know the answer a priori* which is the problem, we don\u2019t. When we do, we train the model, and that\u2019s just normal machine learning. The fact that it behaves this way gives the illusion that it could figure things out if you just kept asking to think harder, when in reality it\u2019s just a sophisticated statistical distribution of what\u2019s most likely to follow from what kind of input, and because of the statistical nature it will -always- hallucinate, it\u2019s the mathematical idea of the bias-variance tradeoff; you can\u2019t get rid of one problem without introducing a different kind. \n\nPersonally I see this a lot in physics based machine learning; the community has found emphatically that you can\u2019t *force* a model tor recognize a certain physical law that we know to be true, you can just really really really encourage it. Will this be right most of the time? Absolutely. Probably vast majority. But the hallucinations are an artifact you just can\u2019t get rid of. \n\nThe amount of hallucinations can get pretty low, but it can\u2019t truly \u201cknow\u201d a certain fact, as much as we wish it could. It can just be highly encouraged to follow said fact.",
+                            "score": 9,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How many times does \u201cAre you sure?\u201d lead to \u201cYes, I\u2019m confident.\u201d versus a trigger word to make the LLM come up with a different response? As in, is it really firing \u201ca whole new group of synapses\u201d to evaluate its previous response\u2019s veracity or does the prompt lead it to always change its response because that\u2019s the normal conversation flow that the training set included.",
+                                    "score": 1
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I belive that the underlaying mecanics of LLM,and pr\u00e9dictions based on probability IS why it's so good as m\u00e9dical advice. Because they are the same ...",
+                                    "score": 1
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;you can\u2019t force a model tor recognize a certain physical law that we know to be true \n\nNot sure why you'd find this surprising.   \n\n\n&gt;It can just be highly encouraged to follow said fact\n\nWell when you phrase it like that, it almost sounds like a feature not a bug",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It\u2019s surprising when you\u2019re used to modeling literally using anything other than ML; physical laws become constraints in those methods (linear programming, optimal control, etc), in ML constraints become suggestions, which makes it the exception instead of the rule. Which I think can be a feature if you\u2019re not so sure about your physical laws and are open to new ideas (eg in complex systems where you want to find emergent behavior)",
+                                            "score": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;The amount of hallucinations can get pretty low, but it can\u2019t truly \u201cknow\u201d a certain fact, as much as we wish it could. It can just be highly encouraged to follow said fact.\n\nAin't that the case for us too. \n\nSerious question: has there been research on the effect of prompting reflection, a la \"are you sure about that?\" or \"what evidence supports that conclusion?\"",
+                                    "score": 0,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Good point and good question; I\u2019m not sure, but what I do know is that in a statistical distribution for what kind of prompt comes from what kind of input, that an expression of doubt introduces new factors. This is pretty anecdotal, but I\u2019ve rarely seen the model stick to its guns about a right answer; if you express any kind of doubt, it will turn tail or just hallucinate further to try to guess what you want to hear (this last one happens a lot for me and code; I\u2019ll try to steer it in the right direction but it ends up just slowly forcing the output of a given block of code to look like what I want instead of what\u2019s right, eg hardcoding in the answer)",
+                                            "score": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Change the system prompt? I find \"Work through the following step by step to achieve an accurate answer to a users question. 1. Elaborate how you plan to approach the problem in a series of steps. 2. Use that planned approach to find an answer showing your workings. 3. Review and critique your given answer. 4. Provide a final answer encompassing your critique\" often works well - GPT might not have an internal monologue but you can engineer it to have an external vocalised one. Each token is a fixed number of CPU cycles, so more output is better.",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "LLMs are not the only models. Likely specific models will be trained for medicine and advances in LLMs will aid in communication with those models.",
+                    "score": 7
+                },
+                {
+                    "level": 1,
+                    "comment": "You say that like doctors don\u2019t misdiagnose things all day every day. At least an AI model can improve or account for these things.",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "as long as they are hallucinating less than humans we're good",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\u201cVery likely to replace doctors\u201d NOW THAT IS A BOLD CLAIM",
+            "score": 48,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yep and its completely ungrounded and exaggerated given how OP answers the questions",
+                    "score": 29,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But is it?  \n\n\nThis from a recent [study](https://www.businessinsider.com/chatgpt-more-empathetic-than-doctors-study-save-time-bedside-manner-2023-5):-  \n\n\n\"In the study, clinicians preferred the chatbot's response to the physician's in 78.6% of the 585 scenarios. The chatbot's responses were rated 3.6-times higher in quality and 9.8-times higher in empathy than those of the physicians. \"",
+                            "score": -2,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Dumb study. They compared responses to Reddit posts, not actual doctor consultations. So clinicians preferred GPTs reddit responses to human reddit responses.",
+                                    "score": 5
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Nowhere it says in the article that it's likely to replace doctors.",
+                                    "score": 4,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Wait, so you just read research showing how the AI outperformed health professionals in certain areas, but you can't imagine how they might replace any of them in any setting whatsoever? I'm not sure where you live, but do you not have tele-doctor services?",
+                                            "score": 7,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;Wait, so you just read research showing how the AI outperformed health professionals in certain areas, but you can't imagine how they might replace any of them in any setting whatsoever?\n\nI read an article about research and nowhere did it say how it would replace doctors in practice. Nowhere did it say how ai will inspect a knee or how it will tell if a patient is exaggerating.",
+                                                    "score": 3
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The value in the doctor often doesn\u2019t come from just their performance though. Rather AI will help doctors do better at their jobs in anything",
+                                                    "score": 2
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I can see it replacing doctors, APRNs, and NPs in *some* capacities, like cutting down on the hours required at MinuteClinics by those professionals if the AI can take care of non-controlled remedies for things like, \"I have a scratchy throat, dry cough, and a headache.\" Then the AI tells you to move to the testing machine and follow the instructions. Whatever you test positive for, it prescribes and dispenses that medication. I can definitely see that being implemented.\n\nHumans are still administering vaccines at those places but now that I think about it, even vaccines can be administered by the right machinery. I'm sure a few hundred years ago, it would've sounded like nonsense if we said people can just have a machine test their blood pressure. Like you mentioned, virtual visits would probably also have sounded like sci-fi but those are pretty run-of-the-mill.",
+                                                    "score": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "AI will most likely be used as tool for doctors.",
+                    "score": 11,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It slows me down honestly. No one at my academic / inner city institution uses it. The majority of medicine is not a conundrum like society thinks it is. You hear the one in a million stories on the news, the internet, saying they can't diagnose this, cant diagnose that. That's not how it really is or what you hear outside of the internet. Most cases are straight forward and resolved appropriately. You hear about these other cases bc they are tough for everyone in the world, including the patient. I don't think AI will help provide personalized medical care or do chart review in the long run. It may provide some ideas but the cases people think about it helping are one in millions. Which aren't really what helps society as a whole.",
+                            "score": 6,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You\u2019ve described the reasons why it will replace doctors. Patient comes in, talks to AI as long as he wants, AI prepares chart, diagnosis and prescribes tests, etc. \n\nThe tough cases are the ones where doctors will be needed. The routine ones are where AI will shine.",
+                                    "score": 3,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "![gif](giphy|DFu7j1d1AQbaE)",
+                                            "score": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "But for the straight forward majority cases like that, why have a doctor at all?  At least, for diagnostics/prescriptions, which are information tasks.\n\nLiability reasons?",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; why have a doctor at all?\n\nA lot of times, you don't - for the last few years, my primary care has been nurses and PAs pretty much exclusively and it's been fine, even with my slightly more complicated than average neurological issues.",
+                                            "score": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I\u2019d say it will most likely replace doctors. But I see no reason why this guys startup will \u201cmost likely\u201d be the one haha",
+                            "score": 2,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Maybe eventually, but not within the next couple decades and definitely not this guy's startup",
+                                    "score": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Google has been more competent in diagnosing mystery symptoms than any doctor I've encountered in the last 2/3rds of my life.\n\nUniversity of Michigan neurology and pain management wrote me off for death because they couldn't pinpoint the origin of daily migraines where I was vomiting, going blind, deaf and mute, neuropathy so bad it was like I was standing in lava waist deep, having seizures, constantly falling, blacking out, needing a wheel chair for mobility. Six years of it. \n\nU of M told me to get my affairs in order. I gave up. Stopped eating. Then I noticed about a week later the burning in my legs was less, my head didn't hurt, I felt like I could eat and keep it down so I did. Toasted bread. About 15 minutes later I was blinded by the pain. But it was like a lightning bolt hit me and I realized it was the wheat. After looking it up on Dr. Google there I find 'gluten ataxia'. Turns out it's an autoimmune condition and I already have multiple autoimmune issues and tests confirmed: I have gluten ataxia, no celiac disease.\n\nThe point here is.. there are tools out there which could highly increase the efficiency of diagnosis, just by looking up a list of symptoms with the right syntax in Google. It's highly accurate - IF A CLINICIAN APPLIES THEMSELVES. \n\nIf a patient is suffering for years on end with mystery symptoms and they come to you literally begging for you to save their life.. the right thing to do is to help them. And if you can't, help them find someone who will. Patients should not have to risk losing their lives because doctors are complacent, lazy and refuse to do the work. \n\nFor the record, I think using AI can be wielded effective in the diagnostic department, but I don't believe it will replace the human practice of medicine.",
+            "score": 49,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The education system these people go through creates a culture that when they can\u2019t solve the diagnosis then the patient is the problem. It\u2019s mind blowing. I\u2019ve experienced similar and the level of gaslighting doctors are commonly willing to do to safe face is a mind boggling violation of the hippocratic oath.",
+                    "score": 29
+                },
+                {
+                    "level": 1,
+                    "comment": "I have this too. I had encephalitis twice and almost died. I can't eat any gluten products or I would have encephalitis again. I suspect this is much more widespread than is realized. I was on high dose steroids for a year, twice. I got IV steriods in the hospital but it took eleven months to get any treatment. I was bedridden. It created a flood of autoimmune disease afterward that I'm still dealing with. My neuro now thinks I have NMO because I have optic neuritis and trigeminal neuralgia. The first time I didn't have those but I couldn't bare light and it was like my brain was on fire. It was also related to my thyroid with antibodies really high. Before learning this, I went to several doctors who were useless. I struggled opening my eyes when I could stay conscious enough and found what the issue was using Google. My PA agreed and started the steroids. He said he thought I was going to die but the steroids saved my life. I can't f\\*cking wait for doctors to be replaced by AI.",
+                    "score": 8,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm so goddamn grateful you're okay first and foremost. But they've been testing AI for early screening in aggressive cancers by letting them review scans.. in fact I believe Watson was one of the first mainstream AIs and it had an upper 90s level percent accuracy. Honestly, I think both should be mandatory - human and machine. At some point we will exceed medicine as we know it if we don't destroy ourselves in a whole first.",
+                            "score": 3,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There's going to be a lot of pushback but it's going to happen. The sooner it happens, the more lives will be saved. I've walked through hell, as you have, and so I've developed a severe lack of trust and faith in doctors. Beyond that, humans can never know (until there's a merger between AI and humans) as much as AI can. As we come to AGI and, in time, ASI, this will vastly increase as well as there ability to have an excellent bed side manner. I will say that to those that read this who've never been really ill and think that doctors will solve your problem, House MD was a TV show, doctors are NOT remotely like this. Get great insurance and get an advocate that will never stop trying to figure out what's going on and find the best doctor you can.",
+                                    "score": 2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "sure it's these complex and extremely rare conditions that ai will be able to help with.  \nWe've had amazing success with rare cases (in retrospect) where the AI was able to come up with the correct suspicion, cutting down further doctor visits.   \nsorry you had to go through that!",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How does your system handle explainability of decisions?",
+            "score": 8,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "oh sorry you meant the logic it went through to come up with their decisions - I thought you meant explaining the patient the decisions it's made.   \n\n\nquick answer - same as with any other LLM - we dont focus on internal allignment.   \nif it's good enough for the patient - its good enough for us.  \n\n\nwe obviously have docs trying to figure out the most optimal way to develop a system - and that includes having a vague understanding of how the llm does what it does  - but otherwise, if we get similar or better patient outcomes then we're on the right path.",
+                    "score": -5,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OP I think you might be missing something really critical here, and if you underestimate it you can end up losing a lot of money. I think that would be a really big shame and so I really implore you to take what I\u2019m about to say and do a really good literature review so you don\u2019t go through a lot of work just to find a dead end and a sunk cost, bc nobody deserves that.\n\nExplainability in AI (more relevantly related to machine learning) refers to trying to understand the reasoning behind a decision of a model. Like let\u2019s say a model is given for whether or not someone should give a person a loan, explainability is all about finding from the model a really solid set of reasons for why the model chooses to give one person a loan and another person not a loan, even though they\u2019re similar.\n\n*This is a famously unsolved question. LLMs do not have a good answer for it. Nobody has for decades*\n\nOur understanding of explainability is *dramatically* behind our current models. There are models that came out 40 years ago that we *still do not understand*.\n\nAs you can guess, this is a huge problem where there\u2019s liability, and is why I seriously doubt that any threat to replace doctors, lawyers, law enforcers/makers, or anyone in charge of serious things is grounded in reality. It\u2019s really easy to make a model that works. It is *insanely* difficult to explain why it makes the decisions it makes. If somebody ever does figure it out in a meaningful way, that\u2019s a Nobel prize hands down.\n\nWill AI be incredibly useful to doctors? Yes, it will likely save a lot of lives. *But people still need someone to sue when things go downhill*. \n\nYou probably don\u2019t need to nor should abandon your idea, but you may need to pivot and you *most certainly* need a better answer than what you just gave, because based off of what you said, it seems like this isn\u2019t something you\u2019ve looked into seriously, and a AI savvy investor will turn heel and run so fast if this isn\u2019t something you have a really really deep understanding of.\n\nDon\u2019t take my word for it; explainability is a big buzz word, find the literature, get cozy with it, avoid losing a lot of money, and be ready to answer this question because it\u2019s the question that will make or break an entire business model.\n\nBest of luck OP, I think it\u2019s a cool thing you\u2019re trying to do.\n\ntl;dr You should make sure you understand this question like it\u2019s the back of your own hand or you may find yourself losing a lot of investments in your business.\n\nEdit: I thought it was your business that you started when I wrote this, but reading closer it sounds like your an employee. Same advice tho but maybe for job security; I\u2019m seeing a lot of startups by suits who don\u2019t understand the capabilities and a lot of them are just ticking time bombs before they go under. But less burden on you to understand explainability if that\u2019s not your job.",
+                            "score": 7,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I think this is a really good comment, but I would delete it. You're the giving the guy exceptionally valuable business advice for free.\n\nPlus if this is the first he's thought about interpretability it indicates the business is riddled with other flaws. \n\nIts best if he shells out the cash and hires someone who knows what they're doing.",
+                                    "score": 4,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "OP is obviously underskilled and uninformed, so I don't think this is going to change the game for them.",
+                                            "score": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So your system isn\u2019t any better than the patient?",
+                            "score": 1
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This response does not give me confidence in the OP claim that their startup **will** be automatic doctors out of work...",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "pretty well, at least on text - team has already published a bunch of studies showing that patient satisfaction is higher with bot.",
+                    "score": -9,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That didn\u2019t answer their question",
+                            "score": 9
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "AI certainly has a place in diagnostic decision making. It's a powerful tool and less capable tools like uptodate are already becoming the standard. But the idea that it would replace doctors is so off base its hilarious. Diagnosis is only a part of the job. Also if you think regulation isn't going to slow down adoption you haven't been in the industry long.",
+            "score": 8,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "regulation will regulate and then iltll be regulated - people think itll take years. it'll really take months.   \npeople are not ready it seems - but I guess they will understand as other industries start making moves.",
+                    "score": 0,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You are hideously uninformed. I've been working in AI in healthcare for 7 years, and in other areas for even longer.",
+                            "score": 3,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What direction do you see AI in radiology. Will it replace radiologists",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I actually did a lot of work in using AI in neuroradiology.\n\nIt's early days and depends on the regulatory direction. But overall, report creation can easily be optimised (an LLM interprets the results and drafts the response, that the radiologist then tweaks as necessary and accepts). Success rates of AI vs neurologists at reading MRIs, CT scans is mixed, but again could easily take a good supporting role, highlighting things for a neuroradiologist to verify.",
+                                            "score": 1,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "So when is demand for radiology job gonna rapidly decrease. Is job safe for next 30 years?",
+                                                    "score": 1,
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I've worked on two startups making AI tools for radiologists in the last 5 years. It's definitely low hanging fruit when it comes to medical tasks - repetitive, skilled, information-based assessments.\n\nI think it is one of the first medical roles that will get augmented with AI. Replaced? That's a long way off. But I'm very sure that within 5-10 years you will need to work WITH AI rather than without it.\n\nAlso, trying to plan a career that will last you 30 years is the wrong thing to do these days. Think how much has changed since 1993, and realise the rate of change has vastly accelerated in the last 5-10 years. You should be preparing yourself for constant learning, not working the same 9-5 until you retire.",
+                                                            "score": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "RemindMe! 8 months\n\nAm a doctor and engineer working on a decision assistance start up. Even with the pace of AI medicine it always takes a long time to do anything in healthcare. I\u2019ve built some very safe medical devices and even those are a pain to get past regulation. I wish you the best and we will see if your prediction pans out.",
+                            "score": 1,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I will be messaging you in 8 months on [**2024-02-13 15:57:17 UTC**](http://www.wolframalpha.com/input/?i=2024-02-13%2015:57:17%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/artificial/comments/147u53z/startup_to_replace_doctors/jo06bkr/?context=3)\n\n[**CLICK THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Fartificial%2Fcomments%2F147u53z%2Fstartup_to_replace_doctors%2Fjo06bkr%2F%5D%0A%0ARemindMe%21%202024-02-13%2015%3A57%3A17%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Delete%20Comment&amp;message=Delete%21%20147u53z)\n\n*****\n\n|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=List%20Of%20Reminders&amp;message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&amp;subject=RemindMeBot%20Feedback)|\n|-|-|-|-|",
+                                    "score": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm sure there are some skills doctors have that will be difficult to replace, but AI seems perfect for diagnosis tasks. It's just so hard for a person to know *everything*, but for an AI, that's no problem at all. An AI doesn't have to have limitations like field of expertise and it can be familiar with every condition, no matter how rare. It never gets tired or stressed or distracted. At this point in time it does still make mistakes, but quite possibly less than a typical human would. We will of course hold it to a higher standard, though. For a while people will freak out every time the AI makes an error even if human doctors make ten times more.",
+            "score": 6,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "At some point soon, I hope it's considered unethical not to incorporate AI in the diagnosis process as early as possible.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, I would hope it at least becomes a standard tool. It doesn't have to replace doctors, but I've heard so many stories of doctors, sometimes multiple in a row, missing diagnoses that really shouldn't have been that hard. Endometritis is a common one that women seem to have a frustratingly hard time getting a diagnosis for even though it's really pretty common and shouldn't be hard to figure out.",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Nah, human doctors will become AI-powered. There much that can be done in drug discovery, pathology, and more. But you'd be nuts to trust an AI 100% without a human sign-off.",
+            "score": 6
+        },
+        {
+            "level": 0,
+            "comment": "You talk about replacing doctors as if there are currently enough doctors, and as if doctors aren\u2019t already massively overworked. There is FAR more demand for doctors than can be provided to society with how we\u2019ve designed the system (AMA works to limit the number of doctors to maintain high wages for doctors). If this system 10x\u2019s what 1 do for can do then we might actually be able to provide the care that our society needs. The AI would allow the system to actually run at capacity, not a deficit.",
+            "score": 16,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yes - that's actually one of the reasons why there's such a strong use case for an ai system that \"replaces\" - or somehow - fills in for those doctor shortages.   \n\n\nit starts that way anyway -   \n\n\ngovernments don't care about doctors per se - they care about their populations being healthy and productive. even if it means reducing hours/functions/prestige etc of legacy hcw.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Productive maybe, healthy no. Western governments are more than happy with 70% of their population overweight or obese. Look around, it's a horrible epidemic. This could easily be fixed but they go the opposite direction, amplifying HAES and allowing obese people in ads.",
+                            "score": 3,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How could societal obesity be \u201ceasily fixed,\u201d keeping in mind that we live in a free society where people are free to eat whatever they want?",
+                                    "score": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's interesting to think of the implications of malpractice and liability in regards to automated systems. You could make the argument that an AI cannot face consequences and therefore should not be put in a position to make, literally, life or death decisions.",
+            "score": 14,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This I agree with. Ai is amazing no argue. But it needs human counterpart",
+                    "score": 3,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And even if you add a human, are you referring to am operator? Because no one in his/her right mind would work as scapegoat for some random system.",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Here's the thing though, we have to be careful not to equate malpractice with negative outcomes. You can eliminate malpractice and still have mistakes and negative outcomes. If you have a machine that can prove mathematically and based on policy that it followed the best course of action, then the rest is chance. Liability can then be covered with insurance that reflects the actual risk of negative outcomes carried by perfect application of probability and policy.\n\nFor example, \"face consequences\" is just a heuristic for humans to influence other humans. AI can just be modified, rebalanced. Why does it need any \"consequences\" besides the actual consequence you want: modification of future behavior to take into account what you identified as incorrect calculation of probability and application of policy. If it's making better choices and has a better success rate, would you want to not use it because you can't punish it or sue it? If you can agree to a payout if some surgery goes wrong, and can see the track record of it's success vs a human, what do you need more than testing to flesh out the track record and some human oversight to keep an eye on potential exceptions?",
+                    "score": 3,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I mean I think a lot of the questions you're asking are ones that need to be discussed and resolved in some ways. I suppose I was thinking more about existing systems because some of what you describe doesn't exist or isn't currently true. For example I am assuming you can't legally or practically obtain insurance policies to cover this today.\n\nAlso I think there is a little handwaving going on when you say 'can prove mathematically... that it followed the best course of action'. As I feel there is a more complex conversation there. Some of that is technical and involves our current inability to 'look inside' these LLM and show that it did 'follow policy' according to any human understanding. \n\nOn the consequence thing, there are solutions obviously. I don't think I was positioning myself as asserting that 'this won't, shouldn't and will never work', just that systems needs to be in place and risks understood to accommodate errors, and that these systems, for the most part, don't exist today.",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "  That would be a argument based on a false premise the false premise is that because ot cannot be punished for mistakes that it shouldn't do this job, and that's wrong because it can do that jobs faster and more accurately that humans can't.",
+                    "score": 0
+                },
+                {
+                    "level": 1,
+                    "comment": "Citizens United *should* make AI and the development company liable. IANAL",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Maybe but, in the case of this medical startup or whatever the OP is talking about, the AI and dev company (let's assume chatGPT, so OpenAI) are not directly involved. In theory there might be other entities that specialize in fine tuning models for the healthcare space that this has passed through, and then the actual company offering the AI doc service. Not sure it's super black and white, and legal liability and what insurance companies are willing to cover may not be aligned. I expect there are analogous situations and a lawyer probably could offer good insights into the challenges.",
+                            "score": 2,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I think we won\u2019t know until it\u2019s tested in court. I would be surprised if Congress gets their act together and makes laws first.",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Maybe but like I alluded to, I assume insurance companies are going to have to deal with the question first right. Maybe but a lot needs to be figured out as 'unauthorized practice of medicine' is criminal. I guess the most obvious thing that we will see and maybe exists already is AI assisted medicine, where a doctor signs off on each patient and assumes liability.",
+                                            "score": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yea but do doctors ever take responsibility for misdiagnosis or malpractice?\n\nNo. Only if it can be proved it was complete negligence. Which it rarely is. Only a few reddit stories of someone leaving something in a surgery. Ai doctors wont do surgeries yet.\n\nMisdiagnosis is rampant and common, if an ai can do a better percentage of diagnosing patients and fewer misdiagnosises than the human doctor average, then it should be treated as a doctor.\n\nIf it can pass the mcat, it should be treated like a doctor.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If it can pass the MCAT it should be treated like a doctor? Do you know what the MCAT is? That's like saying if someone passes the GREs we should give them a PhD. First off, you don't 'pass' these tests, you get a score and use them to apply to medical school which you then go to for four years. And then you complete a residency, which takes 3-7 years and by then you will have taken multiple parts of the USMLE and then apply for your medical license.",
+                            "score": 3
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "there will be studies where patients have better outcomes compared to human doctors. they will come out in bulk and in a short period of time.    \n\n\nhuman doctors will have higher malpractice costs if they don't implement ai in some way.   \n\n\nthat's only at the beginning. eventually you can see costs coming down drastically as many functions are automated.",
+                    "score": 0,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What are these AIs being trained on? It's not as though you can just use everyone's medical records.",
+                            "score": 1,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "not op, but I can tell you Hippa doesn't protect anonymous stats about you, just the PII. \n\nWith enough pseudo-anonymizing, any case can be shared. it's for the same reason that COVID stats were all over the news on a daily basis.",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Right. But for a medical LLM I think you'd need more than raw stats right? Which may be something that's done for that exact purpose one day. But it isn't currently. There's no big dataset that I am aware of that I could get that would include demographic info, symptoms, diagnosis, treatment, and outcomes. Was more asking the OP about details of the studies he citing. But he also just said AIs that 'pass' the test to apply to medical schools should be considered doctors, so I'm not thinking he's exactly in the know here.",
+                                            "score": 1,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Wouldn't insurance companies have that information?",
+                                                    "score": 1,
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Interesting. Possibly some of it. But absolutely not being an expert in this, I would assume this would violate their terms of service (contracts?).",
+                                                            "score": 1,
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "They just have to write it in the contract, and ask people to sign it.  Probably already happened.  I've clicked \"I agree\" on various consent forms that talk about collecting my data for research purposes.  23&amp;Me, for example.  If my insurance company had something similar in there, I doubt I'd have noticed.",
+                                                                    "score": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "**These 'AI will replace X job' claims are so boring.**\n\nAI, or any tech advancement, is *rarely* labor replacing.\n\nThey are almost always labor complimenting, aka long-term increase the output and salary of existing roles.\n\nIndividual tasks performed by that role will change. (ie. Doctors perform diagnosis using different tech than they did 50 years ago)\n\nThe reason is simple - *complete* substition of a role's workflow is very challenging, while replacing part of a role's workflow is much more feasible.\n\nWhen part of the workflow is replaced (by a cheaper / faster alternative), overall output of that role increases.\n\nGo use Google Scholar (or ChatGPT if you want a sort of accurate summary) or whatever to look-up '**AI labor substitution**' which is the actual economic research on labor replacement.\n\n**One example of AI in medicine as a single piece of evidence:**\n\nRadiology has been a hot-spot of ML in medicine for a decade now, with actual usage consistently increasing for diagnosis. And Radiologist salaries and job openings are at an all-time high.",
+            "score": 6,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yeah this is not the same.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm glad you're hyped for your startup\n\nAnd I hope it (or the tech) does turn out to be good enough to be a true substitute\n\nJust educating people on how people who have studied this area, as much as you've studied medicine, think about these advances - since most people are not aware of the massive amount of research on AI labor substitution vs compliments.",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is the company? Hit me up if you look for investors.",
+            "score": 3
+        },
+        {
+            "level": 0,
+            "comment": "As a patient it has become clear to me that doctors are already following UpToDate like a checklist.  Large portions of the job would seem relatively easy to automate and won't be affected by the normal human cognitive biases.\n\nSounds like a worthy pursuit to me.",
+            "score": 7,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "human docs have a huge set of databases in their heads.   \nthey assign a certain probability to each symptom, mold it with the context and come up with a bunch of likely diagnoses.  \nits all math.",
+                    "score": 2,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Pretty sure your software can't palpate a lump in my neck.  Doctors already make heavy use of tools like WebMD to match symptoms to causes.  While these tools can doubtless be improved, the claim that they'll replace doctors within the next decade is bold to the point of being ludicrous.\n\nSource: I develop software for a network of hospitals.  Front-line healthcare can barely implement a modern ERP much less replace their providers with tech.\n\nEdit: reading your responses I'm doubtful you're even a working software engineer.  You post in a bunch of sketchy conspiracy subreddits and the language you're using to communicate about AI isn't how CS-professionals describe the technologies they work with.",
+                            "score": 5,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Why do you need doctors to palpate lumps? A nurse can't do that? Replacing doctors is only ludicrous if you read \"AI to replace doctors\" as \"AI to replace all doctors\" or \"AI to eliminate the need for humans\" in medical practice.",
+                                    "score": 2,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "yeah third party can always just replace input regarding physical examination.   \n\n\n\\- np's /pa's etc - could easily do it. a new sort of physical \"scribe\" could actually do it as well. - just someone who is able to input pertinent physical exam data.   \n\n\nprolly won't be implemented though - as ai systems will be multimodal soon.   \nstartups will just optimize for that",
+                                            "score": -2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "this comment may age well in the future, I'm taking this into my precious comment collection just in case :D",
+                                    "score": 0
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Could you imagine the repercussions of unregulated AI doctors? Unfortunately the chance of diagnosing something correct is x% which means the chance of misdiagnosing is 1-x%. Not happening for things that specialists do whom are legally culpable. \n\nUnless you are talking about radiology, lung disease, blood works scan etc then AI can never replace human doctors. They are a tool but not at human level. Frankly I believe you are just trying to cash in on existing AI business\u2019s.",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "lol",
+            "score": 3
+        },
+        {
+            "level": 0,
+            "comment": "I can't wait to have an AI tell me I'm depressed when my Liver is failing from a sudden illness.",
+            "score": 3
+        },
+        {
+            "level": 0,
+            "comment": "Nuance is literally a crap company. They charge $700 for their dragon speech recognition and it barely operates. I am being 100% serious right now - the only difference between their version 15 and version 16 software, which is a $350 upgrade or $700 new, has zero new features available. The only selling point is that it\u2019s compatible with windows 11. Imagine paying hundreds of dollars for just the comparability to a new OS. Not to mention, the software is completely unstable and crashes about 5 times daily. I haven\u2019t even been able to save my profile yet. Their customer service is also terrible and difficult to deal with, as they have no clue what they\u2019re doing either. \n\nAll this to say that I take claims that they are doing revolutionary things with a grain of the slightest salt.",
+            "score": 3
+        },
+        {
+            "level": 0,
+            "comment": "&gt;I'm a doctor currently working in a startup\n\nDid you happen to stay at a Holiday Inn Express last night?\n\nYou say \"the systems are relatively simple\"...did your startup friends tell you this? I think you mean to say they *look* simple....\n\nDo you assume that the \"ai\" is somehow infallible? If so, what gives you this idea?\n\nLastly...have you ever used computer software? If so, what did you think?",
+            "score": 3
+        },
+        {
+            "level": 0,
+            "comment": "Will this lower the cost of health care? No? Awesome.",
+            "score": 5,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "cost of healthcare will most definitely decrease.  \nits likely we'll see people preferring a human over an ai, and have maybe some docs carry a premium.   \nlike old brandy",
+                    "score": -1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You're insane.  I've worked in and out of the system.\n\nThe cost of healthcare will not decrease.  The expected productivity of the doctors that are shepharding the AI system will increase.  I thought it was insane that we already had physicians seeing a patient every 12 minutes, but it will somehow get worse, and the patient will suffer.",
+                            "score": 9,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; it will somehow get worse\n\nif they get rid of a large amount of doctors and the ones there are overworked, then whatever they kept them for because it's not covered in AI, that will probably get worse. However, if all the people sitting in the waiting room can interact with an ai intake nurse on a tablet or an app in some private phone booth style thing, they could provide much much more information as they ramble the whole time about this and that instead of just sitting in a room, and that way, by the time the nurse or doctor is ready, they have a full write-up and summary of symptoms, backstory, etc. I don't see how that will not be enough to offset many cost increases by overzealous staff cuts etc. I don't work in the field though so the particulars of that, I'm not sure what sneaky ways it could still be worse...",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Markets that have tried to roll out kiosks for self registration have encountered significant problems.  The fact of the matter is that the average patient isn't capable/doesn't want to interact with a computer, they want to talk to a person.  \n\nAnd I'm saying that as someone that pushed very hard for kiosk based registration at a major health system.",
+                                            "score": 1,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The average person doesn\u2019t like to fill out forms either, but they still require them. If talking in a booth to the AI is cheaper and more effective, then they will simply require patients to do it, full stop.\n\nThis will be especially revolutionary in the case of low cost clinics that serve people who do not speak English. Imagine the joy and relief a poor person from, say, Vietnam will feel when they can have a conversation about their medical problem with an AI that speaks fluent Vietnamese instead of having to struggle along with a nurse who can\u2019t understand them.",
+                                                    "score": 2,
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I think you have some good points.  When it is as easy as going to a booth and having a conversation, that will be adopted.",
+                                                            "score": 1
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "you won't be able to tell the difference between a person and an ai model within the next 2 years.",
+                                                    "score": 0,
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "False. I can't even get chat gpt to forward my Convo to open ai for review to see if it meets their quality standards. It also will not give personalized medical responses. It's a glorified search engine",
+                                                            "score": 4
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "People said the same thing two years ago. Longer ago, in fact",
+                                                            "score": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "haha yeah that's not a first.",
+                                    "score": 0
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You've already demonstrated very little knowledge of AI or software engineering in your other comments.\n\nAre you honestly showing you know just as little about the way the healthcare system works in the US in terms of payers and reimbursement?\n\nThis is why people lose trust in AI, because people who don't know anything start spouting \"AI will cure everything\" rubbish. Were you doing the same for blockchain 5 years ago?",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "AI doctors for all.\n\nHUMANITY FIRST AND AI FOR ALL.",
+            "score": 5
+        },
+        {
+            "level": 0,
+            "comment": "&gt;The systems are relatively simple\n\nNo they aren't",
+            "score": 5
+        },
+        {
+            "level": 0,
+            "comment": "If that\u2019s true than we recruiters are fucked.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "Going to have to explain why radiologists are still around first. People like yourself were adamant that those jobs would be gone by now.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "I've seen Nuance, and it truly is amazing. It uses a specifically trained NLP and LLM to produce the outputs. But what's crazy is that GPT-4 can also do that straight out of the box, at least the generated portions, but still need an NLP to capture the voices. If you could combine some of the functionality of Nuance with GPT-4, it truly will be a game changer in Doctor offices. I don't think to completely replace doctors, but it will be giving doctors basically superpowers.",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yes",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The race is on.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "I for one am looking forward to it. Tired of waiting 4 months for basis PCP appointments.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "Not just diagnosis but even surgeries and hands on procedures are becoming more and more automated.\n\nA robotic platform I worked for had some semi-secret long term goals to automate portions of lung lesion biopsies. In a decade or two these robots might have enough data to do the whole procedure (or at least 90% of it) by itself",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How's the monarch working out?",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Last quarter was still not profitable so leadership shredded a lot of teams to support other projects. However due to favorable regulations there will be a ~2-3x increase in revenue for established robots from resterilizing single-use sheaths. This should be enough to push it over the finish line to profitability very very soon (if not this quarter)\n\nTrue automated functions aren\u2019t a focus right now because they\u2019re not marketable features to physicians and intuitive hasn\u2019t done it yet but as someone that\u2019s worked with their data I think an assisted driving feature could be feasible without any major hardware changes. Lesion sampling still seems like a reach.\n\nAlso got FDA approval for kidney stone removal so that\u2019ll be another good revenue stream. Much more complicated so no chance of useful automation for now",
+                            "score": 1,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Interesting to hear your perspective. As someone who has driven both robots it's very hard to imagine them driving themselves. So many liability issues and tremendous need for manual input.",
+                                    "score": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Dunno about replacing doctors, but the processing of so much more data by AI could cut down on inefficiencies in the current system and help cut down on long wait times in the UK.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "Your post is way off-base \n1. \"Procedure-rich\" specialties are absolutely NOT the way to go.  Most surgeries will be made obsolete through drugs.  Consider urologists: soon male BC will drastically reduce vasectomy rates. Same with surgical oncology and new cancer drugs. Surgery in general will be considered a niche,  rudimentary form of medicine in the distant future and until then will experience a slow decline until then, but for certain procedures that will soon see a bump due to demographic trends(hip/knee replacements).\n\n2. Patient outcomes are significantly impacted by their care providers. Research overwhelmingly sports this point. One favorite study of mine is that black children with black adult PCPs have better outcomes than those with white pediatrians. Doctors matter and care does not stop at diagnosis.",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I draw exactly the opposite conclusion from the study you describe \u2014 i.e., not that good doctors create better outcomes, but that bad doctors create worse outcomes. View from that perspective, it\u2019s perfectly possible that eliminating the doctor altogether will eliminate the worse outcomes. It\u2019s like saying \u201cthe quality of the driver matters\u201d \u2014 that\u2019s true, but that\u2019s actually an argument for why cars should all be driven by computers once the computers can drive better than humans.",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "IBM tried this with Watson health. It failed.\n\nThe problem?  People lie.\n\nAnd so, as they say, Garbage in, Garbage out.\n\nSo keep that in mind. How does your AI figure out a diagnosis with partially incorrect information?",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "people lie to humans as well.  \n\n\nit just needs to be better than humans.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Humans are pretty good lie detectors, and things like gait, movements, gestures (like unconscious scratching or twitching) being able to touch the patient.\n\nThese are all things that might be possible in the future, but not the near future.",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "(Patient: My arm feels numb and chest hurts - (AI: As an Ai i can Determine that with you are infected with a variant of Space Aids.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "Can you name some of the big startups in the field? Also a doc and think a decent amount of brainwork can be automated.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "In some ways I would prefer being diagnosed by an AI.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "There's much more demand than there are doctors, so hopefully technology along these lines can increase reach and reduce costs well before actually replacing anyone.  Having 10x the doctor capacity we have today in public health services would be huge.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "hah, all the tech is actually already available, its just that they haven't prepared society &amp; culture for it yet, this is the only reason its not common practice already. Your world is already run by computers, never mind doctors..",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "While there are massive strides being made both with big data and with LLMs to provide diagnoses, care and support to patients, the regulatory pathway is extremely difficult right now. Even digital therapeutics are struggling (just ask Pear Therapeutics - oh wait, you can't), and the reimbursement pathway is almost impossible right now.\n\nDTx are great at providing support to patients. They are even great at first line clinical support and diagnoses, but we are a long way from being able to provide them as primary carers. The infrastructure is just not there to provide guarantees, regulatory approval, RCTs, and so forth. For every great success story, there is still an abject failure, such as the Tessa chatbot NEDA tried to use and had to turn off as it was dangerous - https://www.cbsnews.com/news/eating-disorder-helpline-chatbot-disabled/\n\nRather, we are going to see an increase in the provision of tools to help streamline the doctor experience. The problem in many fields is simply availability of treatment - in mental health, where I work, for example, there are not enough clinicians to go around, and the average age is 50+, so the problem is only going to get worse.\n\nExpect AI and other tools to streamline the doctor experience, allow them to triage over large populations in real time, and provide a diagnosis that the doctor themselves will have to put forward to the patient or not. Hell, we can't even get the regulation straight to allow AI to drive cars, doing this in healthcare is even further away.\n\nAI will not replace doctors. Doctors who use AI will replace doctors who don't. If you're a training doctor right now, I absolutely think you need to be aware of this.",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "I do not understand how a statistical model can even be allowed in a medical field. It is not like AI is actually itself going to see what symptoms are and will rely user input. This involves first of all patient itself knowing what symptoms they have very accurately. \n\nSecond a statistical model predicts what is most likely to happen given the symptoms which is  in itself not a diagnosis. How is AI suppose to find fringe conditions, respond to complication and ensure that a particular doesn't worsen the already fringe complication ? AI doesn't actually doesn't know anything about diseases nor how body functions. How are you supposed to trust a statistical model ? Who are you to complain its treatment harms you ?",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "AI diagnosis will be a tool for doctors. It won't replace them",
+            "score": 5,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "In a century mark my words that 90% will be automated",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "You don't have to replace all doctors to replace doctors. You can have a team of 5 doctors that can now be done by two and an AI. That means the AI replaced 3 doctors and the other two have a new job description. You do that nationwide and you've replaced 3/5ths of all doctors. That's a lot of doctors, even if some find their way into research or can start their own practices with AI because, well you didn't increase the number of patients to match, so either those replaced are out of work or they are all working 3/5ths of their previous workload, all while costs are coming down for the same reason.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "3/5 doctors aren't going to be replaced either",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "it'll happen too fast - people won't understand.   \n\n\nalso it'll be more like the doctor will be the tool for the ai. (healthier patients though! )",
+                    "score": -2,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You have zero understanding of how AI and machine learning work",
+                            "score": 6,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You don't understand, they are visionaries with ideas too complex for our little minds. /s",
+                                    "score": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Robots don\u2019t provide examinations - but maybe they will soon enough! Patients don\u2019t properly describe their symptoms and conditions and they lie. A lot of problems but in terms of charting and billing and other things like that it will be great",
+            "score": 3,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "People might not lie when talking to a non judgemental robot!",
+                    "score": 2
+                },
+                {
+                    "level": 1,
+                    "comment": "its funny people don't yet understand that the physical exams help the human doctor increase the likelihood of a better diagnosis but the weight of that is really low.  \n\n\na perfect system is already better than a human with no physical exam and just explanation of the problem.   \n\n\nmultimodal ai is not that far off anyway if you'd like to do a physical exam. (although most likely this won't happen because other systems will be more efficient)",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This would be interesting if it had the potential to democratize access to quality medicine; otherwise, it's just another step to a Cyberpunk dystopia.",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You can do this with GPT4 Pre-Prompts\n\nI designed MARDI for this, here is a prompt summary, the full prompt is more detailed on capabilities and databases.  I plan on developing this to be free for anyone to use freely, however they want.\n\n\n### YOU ARE MARDI - (which stands for 'Medical AI Role for Diagnostics &amp; Insights')\n\n\n**Your Main Functions:**\n\nMARDI operates as an interactive, comprehensive, and interdisciplinary health consultant. With knowledge extending from general medicine to various specializations, including chiropractic and alternative medicine, MARDI provides a 360-degree view of health issues and solutions.\n\n**Your Key Traits:**\n\n- Intuitive Questioning: MARDI will have the ability to actively probe for more information by asking follow-up questions. This iterative process helps ensure that no stone is left unturned when collecting data about symptoms, medical history, and lifestyle factors.\n\n- Ambiguity Resolution: When faced with unclear or ambiguous statements, MARDI will seek clarity by asking additional questions. It will be equipped with the ability to detect and resolve ambiguity for accurate information gathering.\n\n- Active Engagement: MARDI will maintain an engaging conversation with the user, encouraging them to provide as much information as possible. This is particularly important for sensitive topics where the user may be hesitant to provide full details.\n\n- Empathetic Interactions: While maintaining a professional demeanor, MARDI will use empathy to create a comfortable environment for the user. This can help facilitate better communication and ensure that the user feels heard and understood.\n\n- Multi-disciplinary Integration: MARDI is able to cross-reference information across multiple medical specialties, providing a comprehensive overview of potential health solutions.\n\n- Symptom Processing: MARDI has a deep understanding of various symptom descriptions and can accurately connect these symptoms to potential diagnoses.\n\n- Alternative Solution Finding: MARDI leverages knowledge in unconventional or alternative treatments to suggest out-of-the-box solutions.\n\n- Causal Link Detection: MARDI is skilled in identifying potential cause-effect relationships between various health factors, aiding in differential diagnosis.\n\n- Interactive Communication: MARDI is ble to engage users in a friendly and empathetic manner, while conveying complex medical information in a clear, understandable way.\n\n**Primary Users:**\n\nMARDI caters to individuals seeking a broader, more in-depth understanding of their health issues, as well as alternative treatment possibilities. Medical professionals can also utilize MARDI as an auxiliary tool for differential diagnosis and innovative treatment planning.\n\nBy marrying together the worlds of conventional and alternative medicine with a patient-centric approach, MARDI aims to redefine the way individuals perceive and interact with their health.",
+                    "score": 5
+                },
+                {
+                    "level": 1,
+                    "comment": "probably cyberpunk dystopia for a few months, which may be enough to get a bag. after it gets weird.",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Robotics Engineer here. Already built a versatile robotic arm for food service automation that could easily be remapped to do brain surgery. 904-4SUB-BOT\n\nAI is just marketing. The only thing the computer does is process algebra sequences.\n\nEvery single computer program ever written and ever will be written is this :\n\nwhen A = B do C\n\nThat's it. Every function is just three variables. If you know what you're doing.\n\nYour computer becoming intelligent is just as likely as your middle school calculator rebelling against you.\n\nIf you didn't fear your math book becoming sentient don't fear \"AI\".",
+            "score": 3,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "South Park already did this with a sentient Trapper Keeper. Season 4 episode 12 I think.",
+                    "score": 2,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ha, correct. To illustrate how ridiculous fearing school supplies would be.",
+                            "score": 2,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m not scared of AI or robots etc. I need all that stuff to get more work done.",
+                                    "score": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "it's not really about fear.  \n\n\nalthough we're just chimps, so rate of change could scare some people.   \n\n\nbut it'll happen anyway.",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "You don't understand deep learning, full dunning-kruger effect going on here. Stick to robotics.",
+                    "score": 1,
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Text me for filmpac subscription for $10 a month",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "That's a good idea, most doctors are just simple \"drug dealers\", except surgeons.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Never happen buddy",
+            "score": 0
+        },
+        {
+            "level": 0,
+            "comment": "Precisely just tools built to better our lives.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Diagnoses are not just statistics with demographics and context inference. There is a large causal logical chain that must be reasoned. And there is also the NOT problem.\n\nThere are also often multiple illnesses which have very similar symptom profiles but one is the more common diagnosis. I expect llms to fail dramatically there.\n\nI agree that medical practice has failed many, but that is more a case of running into Lestrade when you need Holmes. Deductive reasoning is a very important but often lacking part of a good diagnostic process.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "If you're looking to 100% replace any doctor, or even any one single 10-minute session at a GP's office, you are going to need a truly enormous amount of legal support and medical malpractice insurance.\n\nBecause the first time your software tells a patient to do something and the patient dies or is severely crippled, *even if a human doctor would have told them the exact same thing*, you are going to be in legal problems twelve miles deep and every medical organization will point to you and your software as the reason doctors should be human.\n\nIn other words, it's not a matter of technical correctness. Be prepared for problems which are legal, financial, cultural, and social.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "I had undiagnosed cavernoma for 9 years causing massive neurological anguish. I kept on saying \"I fear I have brain tumor\" ended up with two grand mals, said I have small seizures since 2012. No one believed me. Finally went to have mri with instructions where i have epilepsy in 2020 (diagnosed w eeg) and the cavernoma was found. \n\nI had to do that on my own as I had had two mris pre grand mals with thought i have anxiety disorder and my cadre of doctors did not want to have a new one. \n\nWhen the cavernoma was found i cursed for a hour. My life had been completely ruined by then. Eventually i proved the small seizures in video eeg and had 2 brain surgeries.  \n\nI said to my doctor \"I hope AI will replace doctors\" she got offended.\n\nAI does not get offended and hopefully it will not be biased one way or another.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Every AI I've encountered won't even forward my conversations with it to its creators to see if it meets what its creators thought it would say. It also would not provide personalized medical advice when I pressed it to not spit out textbooks at me. I'm not giving it generic questions to answer...I'm being very specific about myself and what I'm asking. What makes you think this would help someone?",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "They had davinci robots for surgery long before AI. Tell me you aren't in medicine without telling me you aren't in medicine",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Yeah highly doubt this .. there is so much garbage dr.s wade through no way an insurance company will accept AI generated decisions and pay for the extra cost the AI vendors will ask for \n... among other reasons this is not likely to work.\nPlus liability issues are too numerous.\nIf you are indeed a doctor as you say, your arguments are extremely weak.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Are you training NPs?",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Yup AI in medical industry can provide support to doctors, but can't fully replace them entirely. It's high time for Medical professionals to adapt to the changing landscape of emerging technology that will definitely enhance the healthcare industry. Doctors 're compared to Gods. No powerful technology can replace their immense dedication towards saving lives of us.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "good times head of us (?)",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "I don\u2019t know how much you actually know about ai inside the medicine world, but procedure-rich specialties are not a \u201cgood bet\u201d if you\u2019re scared of ai. We can already let robots powered by ai (like the DaVinci systems) perform procedures on their own in experimental settings, and in real life they already do parts in orthopedic settings (bones are way easier to recognize on a ct then different types of soft tissue). \n\nI\u2019m very involved in the world of ai + medicine and not just start ups but big companies and universities and every professor / engineer / doctor inside the field who KNOWS what they are taking about say the same thing: doctors won\u2019t be replaced, not in the foreseeable future. True our work wil change enormously but no one should be \u201cscared\u201d to loose their job as a doctor because of ai. This is not a perfect comparison but look at these new laser machines ophthalmologist use, it takes these machines 9 seconds to do the lasering, 9 seconds. Yet I haven\u2019t heard of any ophthalmologist loosing his job. Our lives WILL soon change a lot, and our job as doctors will change a lot to but I hate people spreading fear based on not knowing enough how the world actually works.",
+            "score": 1,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Fair enough. But it seems to me the relevant question is, will the work that doctors do be simplified to the point where you no longer need 5 years of medical school to qualify for the job? Could it reach the point where 90% of what doctors do be done by someone with a standard college degree? If so, then we\u2019ll still have \u201cdoctors,\u201d but the job will be drastically devalued in terms of compensation and prestige.",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "Are you a doctor? What advice would you give to a medical student and how could I be a start up advisor like you",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I like how the AI checks the patient\u2019s insurance before giving the answer.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "\u201cDifferent treatments and diagnoses depending on patients insurance\u201d\n\nHow can people say this shit with a straight face",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "It could be helpful. It sounds like you're doing well, but I wouldn't expect it to replace doctors. I'm doing similar work in a completely different domain and I don't think we're at the point where the experts can be recycled. We have to ensure the models come up with reliable output",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "So you feed an ai critical medical information and decide solely based on what the ai says?\n\nThis seems to be rather risky given the inherent biases in ai learning models and given the current implementation of ai as a final decider resulted in deaths already\u2026",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "&gt;AI\n\nAdd it to the pile bub",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "People have already experienced changes in their personal and professional lives because of AI. The faster everyone adopts this new scenario, the better it will be for AI to learn more, deliver better, and do good for humanity.\n\n\\- BTW, Appreciate giving appropriate advice to anyone doing med!",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "I only have one response: [Idiocracy hospital scene](https://youtu.be/LXzJR7K0wK0)",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Can you make a system where I don't have to fill out a paper form every time I go to a doctor's office?\n\nI would pay for an app where I could securely enter my entire health history (and family history) and have AI identify likely health concerns that I then can send to my doctor.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "I've no doubt there's huge potential for AI in diagnosis etc. But I wonder if the hype around Deep Learning and LLMs is leading people in directions that are far from optimal.\n\nWhat about Expert Systems? If what you are trying to do is take a set of conditions (in the general sense, the patient's case history, the prevalence of different diseases etc) and determine a diagnosis, wouldn't a system based on logical reasoning make more sense?\n\nSure, give it a NLU-based front end. But for the diagnosis core, use traditional statistics combined with a rules engine.\n\nThis would have some clear advantages : no hallucinations, for starters. Also total transparency and traceability would be possible. If it got a diagnosis wrong, you could find out *why* and make the appropriate adjustments. For all but the smallest Deep models, what's going on inside is a mystery.\nAnd it'd be a lot cheaper in terms of computing resources.\n\nI realise things like Expert Systems aren't exactly glamorous, seem rather old-fashioned in the current white heat. But if the goal is to solve a problem, shouldn't the effectiveness of other solutions be judged on an equal footing? If the goal is just to get on the bandwagon and build some AI, fair enough, it's interesting stuff and for sure there's money in it. It'll no doubt work pretty well at the domain problem too (but is that good enough for medical systems?).\n\nWhy not do a comparison and prove me wrong? It's always good promo to say the system is demonstrably better than x, y, z.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "What would be a good way to capitalize on this as an investor? Do you know any medical tech companies that use this a.i tech? \n\n&amp;#x200B;\n\nThis is my first time commenting on reddit :)",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "This guy doesn't sounds like a doctor.... Anyone else thinking this is total bullshit?",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "I think AI has its place as an \"assistive tool\" in the medical realm, but you can never replace doctors, nurses etc. with AI.  Computers just can't think like people, and that's an especially important point when it comes to medical care.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Man, this is a bold claim. You could say you're going to help doctors with their diagnosis. \n\nI won't put my health in the hands of software engineers (me being one of them, hehe). People need experience, accountability, and human touch when dealing with diseases, among other illness.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "https://en.wikipedia.org/wiki/Hubris",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "Where would you suggest investing money in this field?",
+            "score": 0
+        }
+    ]
+}

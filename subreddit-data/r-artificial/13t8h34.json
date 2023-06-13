@@ -1,0 +1,28 @@
+{
+    "id": "13t8h34",
+    "score": 1,
+    "title": "How to make a song with AI?",
+    "author": "BustlingBerryjuice",
+    "date": 1685196534.0,
+    "url": null,
+    "media_url": null,
+    "comments": [
+        {
+            "level": 0,
+            "comment": "well first off, you'd need to collect samples of the voice you want. then you need to clean out the background music; then remove any effects (like reverb) from the voice. You'd then need to normalize the samples. After that, slice them up into bite-size wave files (around 12-15 sec long) then use them to train the voice model (how you train them depends on what platform you want to use the voice for).\n\nthere are so many platforms to do the clone voice singing; lora-svc, ddsp, diff-svc, rvc, so-vits-svc...",
+            "score": 3,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "TYVM!",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "What's the difference between all these models? I can never seem to get a clear answer. \n\nI've seen people saying RVC is worse in quality than Sovits but faster, but on AI Hub people are saying it's superior. I've seen people saying Diff is better than Sovits with quality training data, but worse without it. And that Sovits is better than Diff at retaining the model's accent than the inference audio's. \n\nAnd as of now I have no idea what Fish SVC or DDSP does differently in results other than the first being faster at traning than Diff. This is also the first time hearing lora-svc, so what does this do?",
+                    "score": 1
+                }
+            ]
+        }
+    ]
+}

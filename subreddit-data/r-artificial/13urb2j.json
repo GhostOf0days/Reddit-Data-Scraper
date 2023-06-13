@@ -1,0 +1,45 @@
+{
+    "id": "13urb2j",
+    "score": 3,
+    "title": "\"In memory compute\"/neuromorphic chips",
+    "author": "BalorNG",
+    "date": 1685357051.0,
+    "url": null,
+    "media_url": "https://www.reddit.com/r/artificial/comments/13urb2j/in_memory_computeneuromorphic_chips/",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "These things are analog computers. Instead of processing result of multiplication, they let a little bit of current through, and the current accumulates in parallel from all the cells, in theory adding the results together. So it might be both fast and efficient implementation of something like column vector and row vector multiply, which is the kind of primary operation needed to get a full matrix multiplication done.\n\nHowever, I don't know how easy that is to generalize, as full matrix multiplication involves dot products between every single row and column vector in all their possible permutations. Such analog computer needs good deal of precision for storing the weights, as 4-bit models are actually more like 4.5 bit models, where the extra half bit is spent in describe scaling constants that are specified for groups of quantized weight values. Such scaling constants are probably not going to exist here, so the weight must be specified in higher precision than just 4 bits.",
+            "score": 4,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Also found this:\nhttps://news.stanford.edu/2022/08/18/new-chip-ramps-ai-computing-efficiency/\n\nWell, the tech seems to be in relative infancy... but given how hype around AI is progressing, I bet we'll be seeing large progress soon.",
+                    "score": 2
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Loosely related question: since artificial steaks made of organic meat are already being produced, is anyone planning or already doing the same with artificial brains made of neurons, which can be later interfaced to hardware interfaces or other silicon-based AIs? (not that I would second it, just asking).\n\nI also wonder if and when we will ever stop this quest, whether there is such as thing as too much AI or too high a price for it (be it economic, environmental, social, ethical etc).",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, it is already being done with brain organoids. Not sure at all this a good idea, too...",
+                    "score": 2
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "article is written kinda weird",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "This is more of a software problem than a hardware problem. \nWhy create it in silicon when a billion people and billions of livestock are ready to rent theirs at a fraction of cost.\n\nScience/Tech/AI should look for ways to build/run software in bio-hardware",
+            "score": 1
+        }
+    ]
+}

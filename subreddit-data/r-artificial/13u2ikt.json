@@ -1,0 +1,74 @@
+{
+    "id": "13u2ikt",
+    "score": 5,
+    "title": "I want to learn AI and Machine learning preferably free and at my own pace from absolute scratch.",
+    "author": "mthediavolo",
+    "date": 1685286111.0,
+    "url": null,
+    "media_url": null,
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Try this list of learning resources (the most complete I've found so far):\r  \n\r  \nhttps://a16z.com/2023/05/25/ai-canon/\r  \n\r  \nStart from the beginning of the list and progress step by step.",
+            "score": 8
+        },
+        {
+            "level": 0,
+            "comment": "I know everyone is guiding you towards learning algebra and calculus, and giving advice thet is generally good practice, but the reality is that it\u2019s unlikely you, or most people, will be building your own models or manually optimizing language models. It\u2019s far more likely that you\u2019ll get a lot further, faster, using open source models and learning to train them. You\u2019ll still need to learn some python, but you\u2019ll be able to do it along the way.\n\nI would suggest you first learn how to set up a local model, and then learn to train a model with your own datasets.\n\nRight now you can use software called KoboldAI to run small models locally on your computer, and there are a variety of models to choose from depending on your hardware.\n\nLast week, huggingface released a new framework known as QLoRA which allows models to be trained on reasonable hardware, and they even have a free google collab notebook that will basically walk you through training your own 20B guanaco model. \n\nFor example, if you have a favorite book series, you could gather the text of each book, and a handful of reviews and summaries of the book into a dataset, train the model in google collab, and run the resulting model on your computer, all for free.\n\nThis means that even if you\u2019re at 0 knowledge right now, within a few days you could have a LLM model you have trained yourself, that you can discuss your favorite book series with.\n\nDuring these few days, you\u2019ll learn how to use GitHub to install software on your computer, and get exposed to a little bit of python setting up the programs, and while training the model.\n\nLet me know what cpu you have in your computer, how much ram, and what GPU you have and I\u2019ll walk you through setting it up. (I have a 10 year old Dell with a 7 year old Nvidia gtx 1060, and can run 7 billion parameter models on it, so you don\u2019t need ridiculously powerful hardware to get this working either.)\n\nIf you don\u2019t have a powerful computer, you can also rent access to more powerful cloud systems for about $0.50 USD per hour.",
+            "score": 7,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "right sorry for replying late, had a family emergency. I have a HP Pavillion laptop with AMD Ryzen 5 5600H with Radeon Graphics 3.30 GHz with 16GB Ram (3200MHz) with RTX 3050 4GB",
+                    "score": 1
+                },
+                {
+                    "level": 1,
+                    "comment": "bro, can i dm you so you can tell me step by step what to do ?",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, unfortunately your GPU has about 2GB too little ram to run 6Billion parameter models (you could run 2.7Billion parameter models, but they\u2019re very dumb/incoherent at this size. 6B is when they start to get impressive), so you\u2019ll have to use a slightly different, slightly slower setup that runs in your CPU instead of your GPU.\n\nLooks like you have a nice CPU though, so you should be able to get usable performance running local models, like 30-45 seconds or so to generate replies.\n\nDM me though and I\u2019ll help you as much as I can. I\u2019ll be around this evening.",
+                            "score": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Freecodecamp",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "I mean at first you\u2019re best bet is just to get good at programming and math/statistics. These are fundamental building blocks of AI and machine learning, so without a good fundamental knowledge in these fields you will struggle to understand anything that you are doing. Once you have knowledge in the fundamentals then start learning about how to solve simple problems, then More complex, etc.",
+            "score": 1,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Bro i appreciate it, but it would be better if you could also guide me at what to learn specifically. For eg im an indian student so ik decent high school math. Again if you could specify what to learn at what step of the way, it would be really wonderful. Like a roadmap. That would be really appreciated.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Gotcha. I\u2019d start with calculus and linear algebra. At least have a somewhat decent understanding of these (you don\u2019t have to be an expert or anything but it will be necessary to understand at least true fundamentals of these disciplines) also optimization will be an important mathematical field for this and it relies heavily on concepts from calc and linear algebra.\n\nIn terms of programming, I\u2019d say python would be the best language to use as it is the most common for ai/ml applications. \n\nThat\u2019s just a very basic road map. The field of ML/AI is enormous and complex (so much so that no one person could ever hope to be knowledgeable in all aspects of it), so to know where to go after those fundamentals are learned you\u2019d really have to know more specifically what area you are interested in.",
+                            "score": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Try to find out what programming languages and IDE they will be using. Install that and start playing with it.  Learn how to make HTTP requests to an API.  Get the basics then read up on making your own bot. This is how I learned.",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "For the basic concepts: \n\nhttps://cloud.google.com/learn/what-is-artificial-intelligence\n\nI\u2019d recommend staying away from Math at all for the time being. You\u2019ll have plenty of time for that in College. \n\nWrite your own API and play with open-source models or use your free tokens with paid ones. Alternatively, just use a free, open-source, there\u2019re plenty to choose from.\n\nThat way, in two months\u2019 time, you\u2019ll be able to implement a few projects.\n\nI\u2019d say that\u2019s the best to do right now: get the gist of the underlying concepts and train the model.",
+            "score": 1
+        }
+    ]
+}

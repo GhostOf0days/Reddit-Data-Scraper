@@ -1,0 +1,51 @@
+{
+    "id": "147v94f",
+    "score": 1,
+    "title": "I need some help finding a program that can create a technical drawing from a photo prompt.",
+    "author": "frankieholmes447",
+    "date": 1686597790.0,
+    "url": null,
+    "media_url": null,
+    "comments": [
+        {
+            "level": 0,
+            "comment": "There are a large variety of programs, such as AutoCad or NanoCad, where you can create drawings. hopefully this will help you!",
+            "score": 3,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "from a photo?",
+                    "score": 2,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well, you can import a photo as a planar background, and trace it with a sketch. There is no way around this as the software does not know what the photograph is, and normally most software is built around the concept of a parametric tree of features. And that works bad even from a finished 3D object (looking at feature recognition in Autodesk Inventor), let alone just a photo. The program does know nothing about size or what of your picture is the desired object.",
+                            "score": 2,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "that's the entire point of the task of the AI.",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "CAD is a precise science. Neural nets normally only work yet by uncertainty recognition. That means theyare mostly doing highly trained guesswork. CAD, on the other hand, tries to create a very precise design which receives only fuzzyness in manufacturing. There are restricted uses for neural nets in technical design (mainly stuff where you input a few target parameters like load points and generate a frame freely between these points), but thats a different generation scenario again. OP might be able to generate a vector image from the pixel image via Illustrator or similar and somehow import that as a drawing, but still then, scale will be off and there will be a lot of noise and mess inside. @ u/frankieholmes447 perhaps you can describe your use case and we can help you find a different way?",
+                                            "score": 2,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thank you, that's useful.",
+                                                    "score": 1
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

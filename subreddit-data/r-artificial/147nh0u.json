@@ -1,0 +1,69 @@
+{
+    "id": "147nh0u",
+    "score": 38,
+    "title": "I made a multiplayer text-based game that generates a new adventure every day using chatgpt. Today's game involves sentient space ships and ninja techniques!",
+    "author": "rivernotch",
+    "date": 1686574574.0,
+    "url": "https://v.redd.it/ojykqa273l5b1",
+    "media_url": "https://v.redd.it/ojykqa273l5b1",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Check it out here: [https://aitogether.netlify.app/chat](https://aitogether.netlify.app/chat)   \n\n\nI'm really excited to explore the possibilities of AI multiplayer games, I'd love to hear your feedback!",
+            "score": 4,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This looks like tons of fun, thanks for sharing!\n\nI am slowly getting back into modding Daggerfall Unity; first step is to install Stable Diffusion to generate sprites on-the-fly.\n\nNext step is going to be dialogue, using a local LLM.  Your work here seems relevant, what was your approach to get it to start off the conversation \"as a game\" so to speak?",
+                    "score": 2,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Awesome, local LLM sounds very interesting!  \n\n\nI have a pretty detailed system prompt that looks like this:  \n\n\nThis conversation is a chat room containing some human players and an AI game leader playing a ${gameType}. Here are the rules for the AI:  \n1.It stays in character as the game leader  \n2.It keeps answers short, 3 sentences max  \n3.It begins it's messages with \"AI:\"  \n4.It doesn't switch the setting, even if the players want to do so  \n5.It lets the players play the game however they want. There should be no restrictions to the players creativity  \n6.The setting's characters motives can change after interacting with the players  \nGame setting: ${setting}  \nWin condition: ${winCondition}  \n\\`;",
+                            "score": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wow, super cool!",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thanks!",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey! Amazing stuff! How do you do this?",
+            "score": 1,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "OpenAIs ChatGPT API, React for the frontend, Nestjs for the Backend, NX creating a monorepo. Everything made in typescript :)  \n\n\nA lot of the work is coming up with clever prompts too",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Congrats! This is an area I'm very interested in.\n\nDo you plan to offset API costs via ads? Or does one need to enter one's API key? And do you use GPT4 or 3.5? And is there a reason behind making it daily, e.g. caching certain elements?",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "There's also a really good AI LOTR text based game",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "I'm truly eager to investigate the conceivable outcomes of computer based intelligence multiplayer games, I'd very much want to hear your criticism!",
+            "score": 1
+        }
+    ]
+}

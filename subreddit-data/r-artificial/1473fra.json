@@ -1,0 +1,23 @@
+{
+    "id": "1473fra",
+    "score": 9,
+    "title": "Request for Help: Code Generative AI vs Data Generative AI",
+    "author": "atryeba",
+    "date": 1686513086.0,
+    "url": null,
+    "media_url": null,
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is an interesting problem. Of course you can't just feed the request the 1000 different table schemas every time, but there may be a few optimizations you can do.\n\nIf the tables are at least partially-labeled with relevant names, I would firstly split up the schemas into manageable chunks and compile them into a single text file, and ask the AI to generate relevant short-hand names for each table that are 4-5 characters long. This is about the average length of a token, and 1000 tokens through gpt4 will cost you about 6 cents (although generating these names the first time will cost more). Feed the created names into the next chunk, so the AI doesn't repeat itself. Double check everything at the end to make sure there are no duplicates.\n\nOnce you have a list of these codes that the AI thinks would be relevant to its own semantic interpretation, you put them in a file that will be used to access individual table schemas. \n\n\nYou can put all the schemas for every database into an API that responds with the correct table schema that is indexed by its corresponding code, and write a program that works in the following manner:\n\nStep 1: User writes a natural-language prompt- \"Query all the orders of part number 090888 that were deferred until a later date.\"\n\nStep 2: Have the LLM generate a server request, to fetch the schemas of all the tables that may be relevant to the text prompt. Prepend a list of all the table codes to each request. An example text prompt that should be concatenated onto the user's input:\n\n\"Given the user's input, and a list of codes, please list all the tables you would find relevant to this request using the provided table codes\"\n\nStep 3: LLM selects the codes it needs, and have a script fetch those schemas and parse them into a single text file.\n\nStep 4: Automatically send the next prompt, \"Use the following schemas to accomplish the requested task: 'Query all the orders of part number 090888 that were deferred until a later date.'\n\n    ' //begin table schemas\n        {\n          \"Table Schema\": &lt;schema name&gt;,\n          \"Tables\": [\n            {\n              \"Table Name\": &lt;table name&gt;,\n              \"Table Columns\": [\n              // ...cont\n\nStep 5: LLM should theoretically write a proper SQL query now that it has the structure of each table. This is assuming you are using association tables, not just having loads of random tables with disorganized data.",
+            "score": 2,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is a good idea. Luckily I found a solution online to this specific issue but it still involves manual work. The solution is called AiHelperBot which reads your database tables and gives you a handy list of the tables that may be needed for you request. \n\nUntil I learn more about Machine Learning to be able to teach AI about the context of my DB and make it able to use all the tables and make a decision on its own, I will be using AIHelperBot. \n\nYou answer was great and I really appreciate your help woth this. \n\nHave a great day.",
+                    "score": 1
+                }
+            ]
+        }
+    ]
+}

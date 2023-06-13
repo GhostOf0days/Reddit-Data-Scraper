@@ -1,0 +1,335 @@
+{
+    "id": "13qwkbf",
+    "score": 706,
+    "title": "AI generated game environments by Blockade Labs",
+    "author": "XinYoung",
+    "date": 1684959692.0,
+    "url": "https://v.redd.it/n85o6909qv1b1",
+    "media_url": "https://v.redd.it/n85o6909qv1b1",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "These are essentially no different to what we've seen a lot of with AI image making, just projected onto a sphere for 360 degree perspectives that you can navigate around with your mouse... which would be useful for material baking or cube mapping.\n\nAS FAR AS I CAN TELL - it isn't a full 3D environment you can walk around in seamlessly. I'm only raising this point because it could be fairly confusing for someone who isn't paying attention to the details - what exactly is on show here and the way it is presented could easily convince someone that this is what was on offer.",
+            "score": 144,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Good call out. That's exactly what I interpreted it as.",
+                    "score": 33
+                },
+                {
+                    "level": 1,
+                    "comment": "Literally was about to point this out before I read this, yep. The most I could do from this is map it on a cubemap for a skybox (I use hammer still, I'm a dinosaur). Now for making backgrounds, this is great. But generating 'game environments' this is a bit wrong.\n\n\nEdit: Not ragging on the tool either. For what is actually does, it does well.",
+                    "score": 7,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Won\u2019t be long before you can generate depth maps and then, use control net to make a few consistent panoramas from different perspectives, and finally use the multiple panoramas to build radiance fields and extract models and textures from them.\n\nSomebody smarter than me will stitch all that together in a few months, and be generating 3D models out of these simple line drawings, and probably be doing it by the end of the year.",
+                            "score": 3,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Totally agree. How many tools have already been compounded together in insanely creative ways? This idea feels inevitable, wouldn't be surprised if someone saw this tool and already started making what you described.",
+                                    "score": 2,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I\u2019m Imagining VR chatbot games that will run multi-trillion parameter, uncensored models with like 100k context sizes, large enough to \u201cremember\u201d months worth of conversations, that can use its own descriptions to generate 3D environments, consistent characters, and 3D models in real time, and apply animations to the characters with something like text2performer, take inputs with speech to text, and reply via text to speech. An entire experience generated in real time, based on your own inputs and the AI\u2019s own responses.\n\nAlmost like Gmod mixed with VR chat, where the whole experience will change depending your conversation.\n\nWe already have alpha and beta versions of all these components, and at some point, probably sooner than later, the models will become competent enough to genuinely understand the very languages all these plugins and tools are written in, and will be able to use it\u2019s own \u201cintelligence\u201d to improve itself. At that point, there will basically be no limit to what it can achieve, especially within the digital realm.\n\nThis next decade is going to wild.",
+                                            "score": 2,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Dude, even though No Man's Sky released as crap, it was an amazing proof of concept from the beginning. Daggerfall even more so for it's time.\n\nI see a potential very ambitious future that could merge generative AI with procedurally generated games.\n\nIf any, RogueLike/Lites will probably be the first to pioneer this kind of idea. \n\n__\n\nThe biggest flaw with the current iteration of procedurally generated games is that they're a million miles wide, but only an inch deep.\nNo Man's Sky for example, has 15 quintillion planets, yet you feel like you've seen all the 'parameters' after visiting a hundred planets or so.   Turns out having a few dozen parameters in an infinitely large game still wasn't enough to make things feel unique.\n\nYour point :\n\n&gt;\"multi-trillion parameter\"\n\nI think it needed something like this.",
+                                                    "score": 1,
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Parameter is the term for the weights/variables in a large language model. For example, chat GPT-3 is a 175 billion parameter model. GPT-4 is 170 trillion model. Some leaked discussions about the upcoming GPT-5 put it at an estimated 20,000 trillion parameters.\n\nIt\u2019s not exactly the same as all the components NMS has to build a world from, but rather a measure of how accurately the model can infer a vector from the provided input context, when generating reply.",
+                                                            "score": 1,
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I should have been more specific, I was thinking more along the lines of using something like an AI's API on top of a procedural generation algorithm. Something along the lines of using the AI API to generate base assets/ models/ textures/ etc on the fly in tandem with procedural alogorithms.  Hard to describe what I mean exactly.\n\nMore along the lines of leveraging AI to create more variety with base assets that are fed into the procedural generation. And to add more complexity, maybe even using AI to add more variety to the 'procedures' themselves. \n\nI could probably explain my idea better with diagrams than with my words.",
+                                                                    "score": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 18,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It is not my intention to paint this as trivial. The technology behind it is amazing but not exclusive to this product. Within that context what they are doing with this product isn't all that amazing. Its a cool and interesting application, no doubt.\n\nAnd there are lots of ways you can make a skybox, including painting it by hand using a very similar approach in Photoshop. Make no mistake this could save lots of time. Crazy amounts of time, much like other AI related art products.\n\nMy point is that these aren't 3D, fully navigable spaces based on a limited sketch across a sphere projection. It's a clarification for those who might click this and make a snap judgement about what they are seeing.",
+                            "score": 19,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 8,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "https://developer.valvesoftware.com/wiki/3D_Skybox",
+                                            "score": 2,
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Good job pointing out that you need to specify \"3D skybox\" because the term \"skybox\" alone isn't natively 3D. They also reaffirm this statement in the page you linked.",
+                                                    "score": 1,
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "stop trying to be needlessly pedantic, or at least be correct if you can't help yourself\n\nhttps://developer.valvesoftware.com/wiki/Skybox_(2D)\n\n\nhttps://developer.valvesoftware.com/wiki/Skybox",
+                                                            "score": 1,
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Literally from your link:\n\n&gt;Standard skyboxes are simple 2D images\n\nAt least be correct if you're going to be pedantic.",
+                                                                    "score": 1,
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "exactly, \"standard skyboxes\" not just \"skyboxes\" or \"all skyboxes\".\n\nalso from the link \n\n    Skybox may refer to:\n        Skybox (2D)\n        Skybox (3D)\n\nthe other guy's comment literally meant that skyboxes are never 3d, which ironically is misleading when he only commented with the purpose of unmisleading people. so i linked the 3d skybox documentation and you wrongly decided to be pedantic about it based on the name of the page. if i had been less helpful/specific and just linked https://developer.valvesoftware.com/wiki/Skybox what would you have said?",
+                                                                            "score": 1,
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "\"Standard\" is implied if a standard exists and no other adjectives are used, you silly goose.\n\n&gt;if i had ~~been less helpful/specific and~~ just linked https://developer.valvesoftware.com/wiki/Skybox what would you have said?\n\nI can honestly say I would've just upvoted and moved on in that case.",
+                                                                                    "score": 1,
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Compared to the tech we'll see in the next few years, this is absolutely trivial. Whenever we look back on it 10 years down the line, the emotion we'll feel is \"Oh, that's cute.\" The key part though is it's also foundational. All the cool stuff built in the next few years will depend on these early products as inspiration and influence.",
+                            "score": 2
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is what VR needs. Or... Is this in VR? If so, damn. It Advanced fast already.",
+                    "score": 0,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "We definitely need this in vr. The next decade in the videogame industry is going to be amazing.",
+                            "score": 10
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It works from within a Quest headset. In the Quest, open the Quest's web browser and, visit the Blockade Labs site and tell it what you want to create.\n\nIt then generates a 360 photo you can view in VR with the headset on without taking the headset off.  As with any 360 photo, even those at Gala, Facebook and  [360Cities.net](https://360Cities.net), Google Earth VR, Wander and Google Maps Street View, you don't walk around in a 360 photo but you can look around in them and move between them in apps like Wander and Google EarthVR that pull 360 images from Google servers.\n\nMark Zuckerberg demonstrated a concept of an AI Builder bot he could talk to to generate a VR environment around him.\n\n&gt;([link](https://techcrunch.com/2022/02/23/mark-zuckerberg-demos-a-tool-for-building-virtual-worlds-using-voice-commands/)) Mark Zuckerberg demos a tool for building virtual worlds using voice commands\n\nIt's hard to tell if he generated  nothing but skyboxes or if the AI Builder Bot also created real 3D objects. Since the graphics are primitive, maybe Zuckerberg was able to speak real 3D objects into existence in the demo beach scene shown on the web page.\n\nSo for now, Blockade Labs and Skybox are the only apps that can generate a 360 Equirectangular photo that we can view using a VR headset. I told some apps such as Adobe FireFly and Bing Image Generator to try to create a 360 Equirectangular photo but those didn't work out. Adobe Firefly couldn't do it either so maybe Blockade Labs and Skybox are during extra processing to get Midjourney to create 360 Equirectangular photos with a 2:1 aspect ratio. AI can get the aspect ratio correct but not the Equirectangular part that produces undistorted VR images. If we put a 360 into an app like Blender or Unity, we can at least add real 3D models in the foreground and use the generated 360 photos as skyboxes.",
+                            "score": 7
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In VR you'd notice that it's a flat cube map or a flat sky sphere.",
+                            "score": 3
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You're right, but it has me wondering whether this could be a completely different way of having an interactive environment.\nIf this were able to get a temporal cohesive generation (and fast enough), you could have it generate new frames as you move through it.\n\nSure it wouldn't be able to be a cohesive narrative that's designed beforehand, but you could find yourself exploring this real-time generated  environment, making up your own narrative to what is happening.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I was thinking more something like then using image segmentation, then extrapolating it to generate 3d models kind of like how NERFs do it. Then place it back into some environment with the original generated image mapped onto it, then regenerated to be more coherent.",
+                            "score": 2,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh that's a cool idea too! Really excited to see where this takes us.",
+                                    "score": 1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I wonder how hard it will be to take it further though. Estimating a depth map to project onto the sphere is probably something you could just do right now (assuming they're not already) with decent results. The training data is pretty trivial to obtain, and there's plenty of prior art for depth estimation on non-spherical images.\n\nFrom there, turning it into an _incomplete_ 3D scene can be done with existing techniques (i.e. the same techniques you use for building 3D geometry with LiDAR scanning). The first issue is that anything in the immediate vicinity which is occluded from the initial POV will have holes in it which will need to be infilled. But that seems very solvable. The bigger issue is what happens when you get further away from that starting point and you need more creative input.\n\nBut you can imagine a pretty clear path from the above to a system where you draw a scene, write a prompt, let the computer crunch, then walk a little distance to where large chunks are missing, sketch some more, repeat, until you have an entire walkable environment built.\n\nDon't get me wrong: there's a lot of _engineering_ work between the video and what I just described, but I don't actually see any major breakthroughs. It's just a lot of sweat.",
+                    "score": 1,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "computer vision are already quite good at separating background objects. Could then use something like LiDAR (NERFs) and just have a model constantly regenerating from different camera points. Rinse and repeat till you have a 3d environment",
+                            "score": 1
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Can you imagine when it is able to create 3D environments. The future of gaming is pretty bright",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "its just a skybox, not really a \"game environment\"",
+            "score": 41,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Still, step in that direction. It'll get there sooner than we think",
+                    "score": 13,
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There's a pretty large gap between image generation and world design + graphics.  I think the clarification here that they are different is spot on, and not just a \"small step\" between them.",
+                            "score": 5,
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Is that because this is essentially just an AI image? So it can use masses of 2D images to generate it, like DALL-E/Midjourney. Whereas a 3D environment would require masses of 3D environments as training data, which are much harder to come by?",
+                                    "score": 1,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, that's absolutely part of it.  The way that computers render and interact with 3d spaces also means there's a lot more required to create a game environment.  Not only is it the textures and attributes for all the assets, it is the geospatial location, the hitboxes, the visual effects (this is HUGE).\n\nRight now even humans are not capable of creating the worlds in the images generated in this video.  The equivalent jump for the AI would be like jumping from a painting of a building to the physical building itself.  No doubt AI is moving fast and redefining how quickly things can move, but it's a MASSIVE step and the two are not at all equivalent.",
+                                            "score": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I don't think it's that far off really. I bet AI could get really close if you constrained it a bit. For example, have a team focus on creating assets and then train the AI to pick from those to build the world. You'd probably need a post processing step where designers come back in and clean things up a bit, but since they are working off of pre-built assets, it shouldn't be too cumbersome.\n\nI give it maybe 1-3 years before we see this sort of tech integrated into every aspect of content creation. Heck, I just used OpenAI today to write my resume for me.",
+                                    "score": -3,
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;I don't think it's that far off really.\n\nIt's a lot more difficult to build in 3D space. It's a completely different dimension. Not only is the complexity higher but it would take much longer, and then there are the shaders and effects added on top which need to be physically simulated adding more complexity.\n\n&amp;#x200B;\n\nIn 1-3 years, we're still not going to get there. You need training data for these 3D neural networks and right now they are simply too slow. There's efforts made in neural radiance fields but still too slow. And you want to output entire worlds with objects too? Get real.\n\nWe need neuromorphic hardware first, to be able to run these networks fast enough and then it's going to be doable. Right now these networks are run on GPUs with some built-in functions for accelerating these models but not specialized enough. The hardware is simply too slow for this level of complexity and in 1-3 years we might be at another generation of a generation and a half of new hardware. Still too slow.\n\nAll the big GPU makers have roadmaps for years ahead and I'm not seeing anything ground-breaking just yet.",
+                                            "score": 3
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "We have AI that takes images and builds 3D environments out of them already. I'd be very keen to see a pairing between this tech and Neural Radiance Fields for example, to generate something you really could move around and look at from many angles.",
+                                            "score": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Maybe I'm missing something but the initial drawing has something that looked vaguely dumpster-ish but that seems to be missing in all renderings. Still pretty cool. But the problem with a lot of the image AI is that 'cool' seems to be easy. Specific from a vision seems more difficult.",
+            "score": 9,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That\u2019s because this is horse shit.",
+                    "score": 2
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In the realm of AI, curiosity is the compass that leads to discovery.",
+            "score": 5,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Were you listening to me, Neo? Or were you looking at the woman in the red dress?",
+                    "score": 3
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 3,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That is what I am thinking.",
+                    "score": 2
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why closed source paywalled website when you already can do panoramas with SD?",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "We are one step closer to have a star trek holodeck",
+            "score": 2
+        },
+        {
+            "level": 0,
+            "comment": "To all the AI \u201cit\u2019s just a skybox\u201d naysayers I can assure you that a second AI converting skybox&gt;textured 3D mesh isn\u2019t the massive quantum leap you\u2019re thinking it is.\n\nWe\u2019re going to see entire levels built from collections of skybox POVs, the heavy lifting has already been done.",
+            "score": 5,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just a nitpick: quantum leaps are not massive. In fact, it's one of the smallest jumps physically possible.",
+                    "score": 2
+                },
+                {
+                    "level": 1,
+                    "comment": "Didn\u2019t they already do the hard work on the other side of this? Eg.No mans sky, procedurally generated universe",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "/u/savevideo",
+            "score": 1,
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "###[View link](https://rapidsave.com/info?url=/r/artificial/comments/13qwkbf/ai_generated_game_environments_by_blockade_labs/)\n\n\n --- \n [**Info**](https://np.reddit.com/user/SaveVideo/comments/jv323v/info/)&amp;#32;|&amp;#32; [**Feedback**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Feedback for savevideo)&amp;#32;|&amp;#32;[**Donate**](https://ko-fi.com/getvideo) &amp;#32;|&amp;#32; [**DMCA**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Content removal request for savevideo&amp;message=https://np.reddit.com//r/artificial/comments/13qwkbf/ai_generated_game_environments_by_blockade_labs/) &amp;#32;|&amp;#32; \n [^(reddit video downloader)](https://rapidsave.com) &amp;#32;|&amp;#32; [^(twitter video downloader)](https://twitsave.com)",
+                    "score": 1
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We are or base reality or in a simulation now tbh AI in about less than 100 years will already be able to create a life simulation imo",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "\"Create an adversary capable of defeating Data\".",
+            "score": 1
+        },
+        {
+            "level": 0,
+            "comment": "What, I gotta learn perspective now too?",
+            "score": 1
+        }
+    ]
+}
