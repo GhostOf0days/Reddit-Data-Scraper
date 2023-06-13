@@ -1,6 +1,6 @@
 {
     "id": "13ten6l",
-    "score": 5,
+    "score": 4,
     "title": "Opensource-models - low costs. Why?",
     "author": "CommitteeOk5696",
     "date": 1685212253.0,
@@ -10,27 +10,32 @@
         {
             "level": 0,
             "comment": "These small models are not necessarily all that knowledgeable. Standard tests clearly show that small models make more mistakes with even simple questions a child should get right, and generally know less.\n\nAlso consider that human brain has something like 100 billion neurons. I think it is all brute force, personally. Human-like performance is likely to require something of similar magnitude, though I am sure that we can wring more performance from smaller models if we combine them with more intelligent ways to query them that resist the various flaws of LLMs such as their lack of memory and fairly shocking lack of even basic reasoning ability. They are really just natural language processors, showing ability to follow meaning behind language to a degree.",
-            "score": 6
+            "score": 5,
+            "author": "audioen"
         },
         {
             "level": 0,
             "comment": "We need to know that the approach actually works before we can work towards bringing down the resource requirements.\n\nI have seen this happening even in my own work. The initial models are extravagant. Later we fine tune and tweak different steps in the process and bring down the resource requirements drastically.\n\nThe initial size is kind of the cost we pay for 'finding' something that actually works.",
-            "score": 2
+            "score": 2,
+            "author": "smilingcarbon"
         },
         {
             "level": 0,
             "comment": "You couldn't have it more backwards IMO.. my advice is read the actual articles not the media reporting on them.. when you read the articles it's very clear this is not the case at all.. the model size vs capabilities and accuracy correlation continues to hold true. No 30b model is anywhere near a 350b one, full stop, the OSS model authors tend to say this in their articles, it's the media grossly exaggerating what is being said. When the authors say this new style of training has massive potential, the media runs off and says the model has already realized that potential. AKA way overhyped.  \n\nYou want a LLM that is highly accurate, that's a huge model because language has endless patterns, it's a N-level problem, which means it's a extremely expensive to solve. N-level problems tend to need massive computing clusters &amp; super computers to solve. the fact that these enormous models run across a handful of GPUs instead thousands of machines running these calculations is a marvel of engineering. We've already hit a extraordinary level of efficiency which is why they are actually useful.\n\nYes new training methodologies are rapidly dropping the costs (resources, time, etc) and by next year we'll have far more performant models trained at lower costs in less time. Will they be smaller, maybe but probably not..\n\nNo the small open source models aren't even close, they are tested on a very narrow range of tests. They fall apart on the broad spectrum of use cases you get with the very large commerical models. Plenty of third party benchmarks have shown this. HOWEVER the fact they can run on consumer hardware (at reduced accuracy, due to quantization and less parameters) is also extraordinary and should be celebrated. Hopefully we'll get more narrowly defined models that are smaller that perform better. \n\nyes LLMs need massive amounts of resources and yes there absolutely is a correlation between model size it's capabilities, people are working on that but it's inherent to the transformer design. Transformers are the best solution at the moment but other (old &amp; new) solutions are getting closer.\n\nDon't believe the media hype. Read the articles, do you're own testing.. it's plain as daylight when you work on these models, they are waaaaay worse and are being overhyped.a",
             "score": 1,
+            "author": "Tiny_Arugula_5648",
             "replies": [
                 {
                     "level": 1,
                     "comment": "I think we\u2019ll see plenty of use cases for \u201cgood enough\u201d local models, especially in businesses that have proprietary information. We\u2019re already seeing companies like Samsung disallowing their engineers from sharing proprietary info with Chat-GPT.\n\nI think within a few years it may become pretty standard for companies to have their own systems with chips like AMD\u2019s upcoming MI300, which will support compute down to 4 bit precision and have 128GB of VRAM. In that same timespan, I think we\u2019ll see open source 100B 4bit models and backends that support context sizes in the tens of thousands, thet are effectively better than Chat-GPT 3.5. These models will be able to be trained on proprietary datasets locally in a few hours/days, never exposing the data to 3rd parties.\n\nImagine a factory with its own LLM that has all the docs for each piece of equipment in the factory, that understands their specific manufacturing pipeline, so the first line for support when something breaks down will just be asking their local model \u201cwhat do I do when this machine stops working and shows me error code XXYY. Their proprietary local LLM will be able to give basic maintenance/repair suggestions without paying for support from the manufacturers of the equipment.\n\nOr imagine a chain restaurant with an LLM that includes all the ingredients and allergy info for their whole menu, that a manager, or even customer, can ask \u201cwhat items don\u2019t have eggs and soy\u201d and it would provide a limited menu for them.\n\nI\u2019m sure there\u2019s way better use cases thwt will arise as the local models get better, more coherent, and easier to train.\n\nIn fact, Just this week, we got the QLoRA stuff that lets you train an open source, 20B parameter guanaco model using your own dataset, in a google collab notebook in a matter of a few hours. That kindof progress inside of a year is ridiculous, and things will only get better and faster as time marches on.",
-                    "score": 1
+                    "score": 1,
+                    "author": "BangkokPadang"
                 },
                 {
                     "level": 1,
                     "comment": "Thanks a lot \ud83d\udc4c",
-                    "score": 1
+                    "score": 1,
+                    "author": "CommitteeOk5696"
                 }
             ]
         }

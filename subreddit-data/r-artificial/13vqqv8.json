@@ -10,22 +10,26 @@
         {
             "level": 0,
             "comment": "Most of a CPU\u2019s capabilities are wasted on AI. It\u2019s like a master chef cooking computation in any dish you want. But the AI only wants sandwiches. The master chef\u2019s skills are wasted. Better to hand the task off to a row of line chefs (the GPU).\n\nThey will do the same job faster and cheaper than the CPU in terms of time and electricity.\n\nThis trend will continue until dedicated AI chips are ubiquitous. Then everyone will switch to AI chips. There is no sense in wasting energy and chips using a generalist chip for a task better given to a specialized chip.",
-            "score": 7,
+            "score": 8,
+            "author": "Eroticamancer",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Another example can be of plane and ships.\nAirplanes just like CPUs are faster but can't carry a large volume of goods.\nGPUs on the other hands are like ships which are slow in comparison to planes but are far more efficient if someone want to do lots of computation with more efficiency.",
-                    "score": 1
+                    "score": 1,
+                    "author": "Casanova_007_"
                 },
                 {
                     "level": 1,
                     "comment": "\\&gt; They will do the same job faster and cheaper than the CPU in terms of time and   \n\\&gt; electricity.\n\nIgnorant and stupid. Published numbers show you tthat the GPU is brutally faster than even a 96 core CPU for that AND the graphcis card - even a low end - has a way better RAM link.\n\nYou run that on a CPU you do not even manage to load the CPU fully - although it is way slower than the graphics card - because it will data-starve.",
                     "score": 0,
+                    "author": "NetTecture",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "Lol. Reread what I wrote. I *said* a GPU is faster. You are the ignorant and stupid one.",
-                            "score": 3
+                            "score": 3,
+                            "author": "Eroticamancer"
                         }
                     ]
                 }
@@ -34,17 +38,20 @@
         {
             "level": 0,
             "comment": "ML is matrix math and matrix math is 1000x faster on the gpu\n\nIt's simple really. That being said you can run both Llama and stable diffusion cpu side if you feel like it but it's insanely slow",
-            "score": 6,
+            "score": 7,
+            "author": "__SlimeQ__",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Stable diffusion is quick af on my laptop. It just depends on what hardware you\u2019re running.",
                     "score": 0,
+                    "author": "AreWeNotDoinPhrasing",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "I bet you\u2019re running it on a GPU if it\u2019s quick af on a laptop.",
-                            "score": 4
+                            "score": 4,
+                            "author": "BangkokPadang"
                         }
                     ]
                 }
@@ -53,52 +60,62 @@
         {
             "level": 0,
             "comment": "i believe when you say AI you\u2019re mainly referring to large language models, computer vision or other methods working with unstructured data such as text, image, video or audio. in that case, yes, pretty much everything is about GPU right now although there are a few signs that even LLMs might get efficient quickly to make them run on CPU in a practical setting. \n\nHowever, AI is frequently more broadly used, for example when referring to recommender engines used by pretty much every large digital platform. these are typically relying on more efficient algorithms and will run well on GPU.",
-            "score": 5
+            "score": 5,
+            "author": "First_Bullfrog_4861"
         },
         {
             "level": 0,
             "comment": "My understanding is that matrix multiplication is the core computation function for LLMs, and GPUs are incredibly optimized for that task.",
-            "score": 6
+            "score": 5,
+            "author": "leaky_wand"
         },
         {
             "level": 0,
             "comment": "gpus are faster but tensorflow and torch still run on cpu. dont really get your point",
-            "score": 12
+            "score": 12,
+            "author": "hans47"
         },
         {
             "level": 0,
             "comment": "Actually, OpenCV is amazing now and still uses a CPU for most of its functions.  So your code would probably run even more efficiently.  You can even run a large language model on a CPU as long as it's small enough.\n\nMost GPU compute is used for training models.  But running inference against a model can be handled by a CPU or dedicated tensor cores on something like a smartphone.",
-            "score": 7
+            "score": 6,
+            "author": "djstraylight"
         },
         {
             "level": 0,
             "comment": "GPU is just better for the sort of parallel computing involved in modern AI, so it's faster run on GPU than CPU. But a whole wave of AI specific hardware is either already rolling out or in development and on the way aiming to be more efficient particularly for inference than GPU. Efficient speed and power economy wise.",
-            "score": 3
+            "score": 3,
+            "author": "AstroFish69"
         },
         {
             "level": 0,
             "comment": "If you read the leaked google memo, one of the things that scares them is that it is suddenly easier for open source libraries on cheap hardware to get competitive results. I think that's why the big AI companies are suddenly pushing for AI regulation. You don't need a huge GPU cluster to be competitive anymore.",
-            "score": 3
+            "score": 4,
+            "author": "kbielefe"
         },
         {
             "level": 0,
             "comment": "that's because deep learning (especially training) needs tons of resources. it's not even always a better solution than classical CV (and other areas), just easier to do for the developer.\n\nthat being said, making models more efficient and makong them smaller is an ongoing effort, it's normal for prototypes and new tech to focus on functionality first. r\n\neducing resource requirements is constantly being worked on, it just takes time. commercially available AI (that doesn't run in a cloud somewhere) isn't nearly as advanced as models in current research. you just see a lot of tech demos everywhere right now, not the current application state of the art.",
-            "score": 2
+            "score": 2,
+            "author": "trexuth"
         },
         {
             "level": 0,
             "comment": "If you went to school before transformers were widely used that could be why.",
-            "score": 2
+            "score": 2,
+            "author": "Future_Comb_156"
         },
         {
             "level": 0,
             "comment": "Intel has OpenVino, which is technically hardware agnostic, but its main use case seems to be running AI inference on CPUs.\n\nhttps://docs.openvino.ai/2022.3/home.html",
             "score": 2,
+            "author": "_craq_",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Thank you, this is interesting.",
-                    "score": 1
+                    "score": 1,
+                    "author": "lawless_c"
                 }
             ]
         },
@@ -106,63 +123,75 @@
             "level": 0,
             "comment": "Bro Mediapipe.  It can do shit on CPU that used to require desktop GPU.  Object detection, pose detection, segmasking and more on old ass Android or ARM gear at like 20fps; robotics has never been easier.\n\nMore specifically, Tensorflow Lite.  Google it.  Tons of cool shit on cheap ass hardware.\n\nedit: here you go: dig in, this shit is so much fun https://developers.google.com/mediapipe",
             "score": 2,
+            "author": "Oswald_Hydrabot",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Cheers :-)",
-                    "score": 2
+                    "score": 2,
+                    "author": "lawless_c"
                 }
             ]
         },
         {
             "level": 0,
             "comment": "Inference or training? \n\nI think inference can be done on CPU reasonably well",
-            "score": 2
+            "score": 2,
+            "author": "iplaytheguitarntrip"
         },
         {
             "level": 0,
             "comment": "So I use both. Here is where the problem comes in. GPU is used right now heavier because it gives you better performance. Virtually all of them aren't ready yet for normal consumer, and the focus is more on function.\n\nI think in a few years this will flip. Even Microsoft is talking about localize Windows 11 AI. Right now they will require a good GPU. But the goal is to eventually aim for lesser hardware that can run on most laptops and mobile devices.\n\n&amp;#x200B;\n\nThere is some focus on getting some LLM to run on your CPU",
-            "score": 1
+            "score": 1,
+            "author": "crua9"
         },
         {
             "level": 0,
             "comment": "You can run any model on a CPU, it's just that today's networks are so deep and with so many neurons per layer that it's just not practical. Just try to eg retrain VGG19 (which is quite old and small now) on a CPU and you'll see",
-            "score": 1
+            "score": 1,
+            "author": "Enfiznar"
         },
         {
             "level": 0,
             "comment": "It's simple: If something can be done on a 10yr old CPU then people will be happy about it. But other things require GPUs, or are painfully slow otherwise.",
-            "score": 1
+            "score": 1,
+            "author": "NoidoDev"
         },
         {
             "level": 0,
             "comment": "Burn shiba and Luna",
-            "score": 1
+            "score": 1,
+            "author": "Various_Passion_8545"
         },
         {
             "level": 0,
             "comment": "You will see them more and more run on things like the Google TPUs.\n\nThey are optimized specifically for AI instead of something more generic like a GPU.",
-            "score": 1
+            "score": 1,
+            "author": "bartturner"
         },
         {
             "level": 0,
             "comment": "Graphics Processing Units (GPUs) have played a significant role in advancing the field of AI in recent years. While GPUs were originally developed for rendering graphics, their parallel processing capabilities and ability to handle large amounts of data have made them highly suitable for accelerating AI computations, particularly deep learning algorithms.\r  \n\r  \nDeep learning, a subset of AI, relies heavily on neural networks with many layers, and training these networks requires intensive computational power. GPUs, with their ability to perform parallel computations, have proven to be highly effective in accelerating training processes for deep learning models. They have enabled researchers and practitioners to train larger and more complex models, leading to significant advancements in various AI applications, including computer vision, natural language processing, and reinforcement learning.\r  \n\r  \nThe availability of GPUs has democratized AI to some extent, allowing researchers, developers, and organizations to leverage their computational power without relying on specialized hardware. This accessibility has contributed to the widespread adoption and development of AI technologies in diverse fields.\r  \n\r  \nHowever, it's important to note that GPUs are just one component of the AI ecosystem. AI encompasses a wide range of algorithms, frameworks, and hardware technologies. While GPUs have played a crucial role, other hardware accelerators, such as specialized chips (e.g., TPUs, FPGAs) and even dedicated AI hardware, continue to emerge and evolve.\r  \n\r  \nFurthermore, AI is not solely dependent on hardware but also relies on advancements in algorithms, data availability, and domain-specific expertise. The field of AI encompasses a multidisciplinary approach, including computer science, mathematics, cognitive science, and more.\r  \n\r  \nIn summary, while GPUs have played a significant role in accelerating AI computations, they are just one part of the larger AI landscape, and AI development and progress rely on a combination of hardware, algorithms, data, and expertise.",
-            "score": 1
+            "score": 1,
+            "author": "WilliamBrown35"
         },
         {
             "level": 0,
             "comment": "There-s also a tendency to integrate them, e.g. AMD's MI300 includes both GPU and CPU cores plus 128GB HBM RAM into the same package. \n\nShared memory space between CPU and GPU might enable new uses that aren't feasible otherwise.",
-            "score": 1
+            "score": 1,
+            "author": "blimpyway"
         },
         {
             "level": 0,
             "comment": "\\&gt; Wanted to ask is anyone focussing on non gpu AI still?\r  \n\r  \n2 problems here. First, most modern CPU include GPU functionality - not a lt, but some. Second, yes, some people are - and the reuslts are quite nice actually, but lastly - there is a REASON GPU is so dominant.\n\n\\&gt; A bit over ten years ago i did a final year college project with opencv and a simple feed   \n\\&gt; forward network\n\nYes, and the reason you did not get the level of AI you have today is exactly THAT - the networks must get a lot larger than you could do.\n\n\\&gt; It used the cpu and worked fine on a laptop in real time.\n\nYeah, and 30 years ago computer games did not have a real GPU and worked. Problem is that they did not have the graphics we have now. Your little neural network was stupid and could not do reasoning - lac of complexity.\n\n\\&gt; it feels like if was doing it now i would end up , by default, using some gpu powered deep   \n\\&gt; learning library that may not even be faster.\n\nThis is an argument of absolute stupidity. it would be thousands times faster - it would not FEEL faster (as in: it would take as long as before or longer) but that is because a modern GPT of any sensible size is millions times more complex to calculate than the stuff of old.\n\nHere is a hint: The best I could find in terms of speed was a LLM that is trained in 12 hours on a prosumer level GPU. That would take you years to do on a pro level GPU and months on a dual socket high end server (unless the RAM is limiting factor, then likely years again).\n\nThe assumption that there is no performance different is - sorry - utterly stupid. The throughput of high end graphics cards is insane compared to a CPU and the memory is BRUTALLY faster, and likely still not enough to feed the cores. The H100 uses HBM2 or HBM 3 - depending on version - which runs circles around the CPU / RAM link and.... it still is the limiting factor (hence the HBM 3 on the top end). And it is large - 90+ GB of HBM3.",
             "score": 0,
+            "author": "NetTecture",
             "replies": [
                 {
                     "level": 1,
                     "comment": "&gt;This is an argument of absolute stupidity.  \n&gt;  \n&gt;sorry - utterly stupid.  \n&gt;  \n&gt;Here is a hint:\n\nIt must be frustrating to be you.",
-                    "score": 1
+                    "score": 1,
+                    "author": "lawless_c"
                 }
             ]
         }

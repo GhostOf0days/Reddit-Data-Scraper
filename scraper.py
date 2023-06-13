@@ -2,7 +2,8 @@ import requests
 import json
 import os
 
-SUBREDDITS = ['emotions']  # Add subreddits to scrape as strings here (e.g. 'artificial')
+# Add subreddits to scrape as strings here (e.g. 'artificial') [Remove subreddits from array before commits]
+SUBREDDITS = []  
 DATA_DIRECTORY = 'subreddit-data'
 
 def parse_about(subreddit):
@@ -29,12 +30,13 @@ def parse_comments_recursive(data, level=0):
         if 'body' in child['data']:
             comment = child['data']['body']
             score = child['data']['score']
+            author = child['data']['author']
             replies = child['data']['replies']
             if replies and 'data' in replies:
                 reply_comments = parse_comments_recursive(replies['data'], level=level+1)
-                comments.append({'level': level, 'comment': comment, 'score': score, 'replies': reply_comments})
+                comments.append({'level': level, 'comment': comment, 'score': score, 'author': author, 'replies': reply_comments})
             else:
-                comments.append({'level': level, 'comment': comment, 'score': score})
+                comments.append({'level': level, 'comment': comment, 'score': score, 'author': author})
     return comments
 
 def parse_comments(subreddit, post_id):

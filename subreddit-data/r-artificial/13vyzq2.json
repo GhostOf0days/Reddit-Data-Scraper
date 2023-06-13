@@ -1,6 +1,6 @@
 {
     "id": "13vyzq2",
-    "score": 11,
+    "score": 12,
     "title": "Chatting with a textbook for exam studying purposes?",
     "author": "ventrolloquist",
     "date": 1685473528.0,
@@ -10,17 +10,20 @@
         {
             "level": 0,
             "comment": "Fucking hell am I excited for AI",
-            "score": 4
+            "score": 4,
+            "author": "yurib123"
         },
         {
             "level": 0,
             "comment": "[PDFgear](https://www.pdfgear.com/?utm_source=reddit&amp;utm_medium=social&amp;utm_campaign=comments) is a PDF editor with ChatBot. But I don't know if it is able to accept large pdf's (at least 2000 pages). You can have a try.",
             "score": 1,
+            "author": "smanears",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Thanks. I'll test it out",
-                    "score": 1
+                    "score": 1,
+                    "author": "ventrolloquist"
                 }
             ]
         },
@@ -28,21 +31,25 @@
             "level": 0,
             "comment": "Good luck - not going to work well. Problem is that the textbook is (a) not enough without a lot of context you also must load (b) unless you train an AI (expensive) you rely on embeddings that are inherently limited for this type of work.\n\nChatGPT is not going to keep a 2000  page document without using an embedder and the API with a custom frontend - and that in the 32k token version COSTS SOME SERIOUS MONEY TO USE. You also need more like an AI swarm working on a problem so that they can countercheck. See, this is all mostly a problem with solutions in papers that are quite good - but ChatGPT is a CHAT frontend (of the GPT) and that DOES NOT IMPLEMENT THEM.",
             "score": 1,
+            "author": "NetTecture",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Thanks. So you're saying as long as something uses chat gpt as it's AI base all the \"chat with a pdf\" apps will make similar errors? \n\nI really just need something that won't make up information that doesn't exist and won't reference false pages for that info.\n\nIt makes decent multiple choice questions but it references non-existent material on arbitrarily chosen pages sometimes.",
                     "score": 1,
+                    "author": "ventrolloquist",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "No. There are ways around it.\n\nFirst, ChatGPT 4 is a lot less prone to that - but even then, the solution is to run the result through multiple validation layers that are AI themselves. Read the research on that. Your problem in argument is that those ALSO can be GPT based. YOu mistake CHATGpt - which is a UI - with GPT - which is the AI core and also available as API. There is no ChatGPT based app - those are GPT based.\n\nNow, the API costs, and putting in a multiple validation layer approach blows the cost up by a factor or two (10 to 20) and also reduces responsiveness by that.\n\nOn top, you are really limited by the attention window - you can only inject so much. If you copy a large text into ChatGPT it forgets all that is out of the attention window. That is 2000 for GPT 3.5 (and the number includes system prompt and output!), 8000 for the small version of GPT 4 and 320000 for the large. The large is good for you - but a run is not parts of a dollar, it easily is dollar(s). Times 20 runs for validation and you talk of paying the AI more than a person per hour. Now, that WILL change - but we do not live in the future, we live in the now.\n\nWhat you look for is:\n\n* A specialized application (that you have no easy access to)\n* Using an AI logic that is cheap enough to not break your bank (that you have no access to).\n\nSeems you have to actually study the old fashion way for now. This is not me being snippy - it is just a reality point. I work on architectures like that (they are not that complex), but at the same time the cost must come down, which WILL happen (or faster near as good alternatives must come up - which also will happen), so my work is really targeting businesses IN THE FUTURE (which is ok - development takes time). I.e. I work on a system where you can upload a large database, and can talk to it daily and it remembers everything you told it. It may not always recall it easily, but it is there in a database and being searched on EVERY requests. But cost IS a factor. And it is not there yet.\n\nSorry.\n\nThere is so much coming out of academics at the moment, I expect a model like GPT-3.5-Turbo (that runs ChatGPT 3) to be running on a higher end graphics card within latest half a year and be openly available -  then the cost side is fixed. But again, we are not there yet.",
                             "score": 1,
+                            "author": "NetTecture",
                             "replies": [
                                 {
                                     "level": 3,
                                     "comment": "Thanks very much for explaining. Back to flipping through the index I guess \ud83d\ude43",
-                                    "score": 1
+                                    "score": 1,
+                                    "author": "ventrolloquist"
                                 }
                             ]
                         }
@@ -53,7 +60,8 @@
         {
             "level": 0,
             "comment": "Try this, perhaps?\n\nhttps://github.com/imartinez/privateGPT",
-            "score": 1
+            "score": 1,
+            "author": "MrVyngaard"
         }
     ]
 }

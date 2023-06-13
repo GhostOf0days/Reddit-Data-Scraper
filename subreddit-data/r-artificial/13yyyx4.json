@@ -1,6 +1,6 @@
 {
     "id": "13yyyx4",
-    "score": 300,
+    "score": 299,
     "title": "ChaGPT is using non encrypted inputs. So stop using plugins to ease your life =&gt; your personal life is exposed to Open AI developpers/employees/researchers. Chat GPT / plugins, is exposing your life datas/docs/emails etc, your data is analyzed and traded and can be shared with organisations.",
     "author": "the_anonymizer",
     "date": 1685762072.0,
@@ -11,31 +11,37 @@
             "level": 0,
             "comment": "What does any of this have to do with encryption?",
             "score": 53,
+            "author": "TripUnlikely1615",
             "replies": [
                 {
                     "level": 1,
                     "comment": "OP doesnt know what theyre talking about. But it is unsecure. (wouldnt matter if its was encrypted or not though)",
                     "score": 5,
+                    "author": "Iseenoghosts",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "I know what I'm talking about. The input is not encrypted because it is an AI model taking tokens in input (non encrypted). So your security, about your personal data, is relying on Open AI politics. And already many young people and even adults are talking to chatGPT about their personal life. There is no end to end encryption of conversations. So you are not the only one to have the keys to encrypt/decrypt your conversation with ChatGPT and all researchers have access to users conversations and people are talking about their whole life and personal problems to chat GPT, associated with a tel number and email address etc, which can lead to very important data leaks for your personal life.",
                             "score": 1,
+                            "author": "the_anonymizer",
                             "replies": [
                                 {
                                     "level": 3,
                                     "comment": "Its not encrypted. But even if it was it wouldnt be private. Idk why you mention encryption.",
                                     "score": 1,
+                                    "author": "Iseenoghosts",
                                     "replies": [
                                         {
                                             "level": 4,
                                             "comment": "There is a difference between 100% private (no entity other than chatGPT system accessing encryption keys), 99% private (admins having access to encryption keys), and 0% private (no encryption keys for inputs and no encryption for the database =&gt; all devs reading conversations without needing any special rights for accessing encryption keys). I even read the conversations titles of a guy wanting to buy insurance agencies one day. =&gt; i do not trust their security policy at all.\n\nEncryption ensures a certain degree of privacy, but i never said the word privacy in my post, nor that 100% privacy is possible. But the most encryption there is, the better it is (example end-to-end message applications are better than non-encrypted messages applications for your privacy, cf. Facebook, Google etc VS whatsapp, Signal etc)",
                                             "score": 1,
+                                            "author": "the_anonymizer",
                                             "replies": [
                                                 {
                                                     "level": 5,
                                                     "comment": "there is zero value in encryption if the endpoint is not secure.\n\ncock armor isnt going to do much good if your balls are just hanging out there.",
-                                                    "score": 1
+                                                    "score": 1,
+                                                    "author": "Iseenoghosts"
                                                 }
                                             ]
                                         }
@@ -48,42 +54,50 @@
                 {
                     "level": 1,
                     "comment": "EDIT: the following info was taking OP at their word and a click glance of the article, plus making assumptions after seeing their Chief technical officer get hacked yesterday. ChatGPT prompts are encrypted and OP lied, ignore my comment.\n\nOriginal (incorrect) comment here\n\nIf your chatGPT conversations are not being encrypted. If the database ever leaked (which is has already once before) then any personal information you put in there could be used against you. Developers are feeding it API keys (which could rack up $20k in AWS charges overnight, if in malicious hands). Others are putting their companies proprietary code and design secrets in it, which could lead to huge lawsuits. Others are disclosing their finances and asking for tax advice, etc. All this is being stored in plain text, any employee with proper access could look for any one persons data and abuse it, blackmail you, etc and hackers could do the same at a massive scale",
-                    "score": 26,
+                    "score": 27,
+                    "author": "dronegoblin",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "I mean I hate to split hairs here - but you don\u2019t know if this data is encrypted or not. the data breach you\u2019re referring to was surfaced due to an application level bug that granted unauthorized access to other users chat history. For all you know, the data is encrypted, it was just served up to a user that it shouldn\u2019t have been.  Obviously that is a problem. But it doesn\u2019t mean that the data wasn\u2019t encrypted at rest / in transit, it was just accessed in an unauthorized context.",
-                            "score": 20,
+                            "score": 18,
+                            "author": "TripUnlikely1615",
                             "replies": [
                                 {
                                     "level": 3,
                                     "comment": "You are correct.\n\nI\u2019ll be honest, I was going off the title and a quick skim of the article, which seemed to line up, but you are right, the caption of the article is totally wrong. \n\nChatGPT responses are encrypted, although yes there have been numerous times when entire conversation histories have been swapped for userbase as a whole, and openAI retains full viewing and training access to your data. That and considering prior versions of GPT even would spit out peoples phone numbers, email addresses, etc, so openAI still has a bad rep for privacy. Not to mention, openAIs chief technology officer was hacked on Twitter just yesterday and used as a crypto scam, which further drives home why I wasn\u2019t even surprised at the claim.",
-                                    "score": 9
+                                    "score": 9,
+                                    "author": "dronegoblin"
                                 },
                                 {
                                     "level": 3,
                                     "comment": "Huh?\n\nIf an unauthorized user was able to access it, then that strongly implies that the company has the decryption keys IF it is indeed encrypted in their databases. Otherwise it would have been physically impossible for them to serve the data to anyone except the person who has the decryption key.\n\nLikewise the AI cannot possibly work without unencrypted data being fed into it, after all the purpose of encrpytion is to obfuscate data and make it useless without the password. \n\nSo there's no way they can't decrypt that data even if it is encrypted, making any potential encryption a joke.",
                                     "score": 1,
+                                    "author": "thisguywonders",
                                     "replies": [
                                         {
                                             "level": 4,
                                             "comment": "No, that\u2019s not the implication. The application layer has the ability to decrypt data whether or not the authorization scope of the user is intended for it to do so. The application is just using a database client to fetch data, presumably over a TLS-encrypted session. As far as the data being encrypted at rest, it really just depends on what your definition of that word means. Does it mean that the DB storage volumes are encrypted? The actual content is stored in an encrypted string in a DB row? It really just depends on the implementation. \n  \nThe fact that a user was able to exploit an application bug to access data does not mean that the underlying data wasn\u2019t encrypted.",
                                             "score": 1,
+                                            "author": "TripUnlikely1615",
                                             "replies": [
                                                 {
                                                     "level": 5,
                                                     "comment": "&gt; As far as the data being encrypted at rest, it really just depends on what your definition of that word means. Does it mean that the DB storage volumes are encrypted? The actual content is stored in an encrypted string in a DB row? It really just depends on the implementation. \n\nThat's the crux of it isn't it. There could be encryption so they can claim it for PR, but be functionally meaningless.\n\nThey could have encrypted hard drives that only their server hardware can decrypt. Won't protect against hacks but technically it's encrypted.",
                                                     "score": 1,
+                                                    "author": "thisguywonders",
                                                     "replies": [
                                                         {
                                                             "level": 6,
                                                             "comment": "Can\u2019t agree with you here. As described, this really isn\u2019t an encryption issue. If an article exists that dissects the system architecture of ChatGPT in more detail with specific criticism on their encryption strategy, I\u2019d be happy to discuss it.   \n  \nIt\u2019s a combination of an access control problem, data privacy and the ethics behind reselling user data (which is legal under specific circumstances). An access control problem is addressed by securing the authorization scopes of an application, which has nothing to do with encryption. There\u2019s absolutely nothing in this article that describes a scenario in which user data is being stored in plain text.   \n  \nI\u2019m not saying ChatGPT/OpenAI is an angel, I think any business that collects and sells user data is absolute scum. I just don\u2019t like that the headline of this post claims that they are storing data unencrypted, while the article mentions nothing of the sort. It\u2019s an alarmist take and it\u2019s misinformation.",
                                                             "score": 2,
+                                                            "author": "TripUnlikely1615",
                                                             "replies": [
                                                                 {
                                                                     "level": 7,
                                                                     "comment": "I just don't understand your logic at all. An AI can't process anything that's encrypted without decrypting it. That data has to be stored somewhere in a way that allows them to decrypt it. \n\nVery best case scenario: They require you to login to allow them to decrypt it. Aka you sending over your password for them to check against their hash of your stored password, and your password then also being used to do the decryption throughout the life of your session, and then being deleted again.\n\nIn this scenario (and I very much doubt they do this tbh), they still have access to your data. Nothing stops them from storing the data unencrypted. Nothing stops them from keeping the session active to keep your password for decryption. If hacked, nothing stops a hacker from waiting for you to log in to decrypt your data.\n\nAll you have is their word and \"trust me bro\". That's just a terrible approach privacy wise. There is no technological barrier for them to access your data. There is only hoping they don't get hacked and hoping they don't store the data unencrypted (which they very likely do because let's be real, that's what every website does, who wants to have the CPU overhead of encrypting and decrypting stuff all the time for no practical reason).\n\nAnd I'm not saying this to cricitize them. It's just an inherent flaw in the service system. Only solution is offline AI. People just should never trust any of these corporations to treat their data well.",
-                                                                    "score": 0
+                                                                    "score": 0,
+                                                                    "author": "thisguywonders"
                                                                 }
                                                             ]
                                                         }
@@ -98,24 +112,28 @@
                         {
                             "level": 2,
                             "comment": "&gt; ChatGPT prompts are encrypted \n\nWhat do you mean by that? There is no way the model itself works on encrypted data. That would mean encryption is entirely useless as AI is able to understand the contents of encrypted data.\n\nYes the data may be encrypted while sending it from your browser to their server (it's called HTTPS and almost every website uses it), but that doesn't mean it's encrypted in their databases etc. And even if it is encrypted in their databases, they must have a way to decrypt it, otherwise they could not feed it into the AI for processing.",
-                            "score": 2
+                            "score": 2,
+                            "author": "thisguywonders"
                         },
                         {
                             "level": 2,
                             "comment": "I said the input to ChaGPT is not encrypted, because the AI model needs plain text to understand your words. So i did not lie. You are the liar .\n\nNow the problem is what is their encryption politics in their databases etc. And who exactly is allowed to review conversations, how many people,  are they selling infos, datas, etc.. (cf. article). Yet people continue using Chat GPT as if it was a private communications tool, not even knowing what is the level of security of their datas inside Open AI systems. They tell their lives (Snapshat shit) their company code, etc...This is a big problem and it is only the beginning I think.",
-                            "score": -2
+                            "score": -2,
+                            "author": "the_anonymizer"
                         }
                     ]
                 },
                 {
                     "level": 1,
                     "comment": "Nothing, both the title and article are nonsense.",
-                    "score": 1
+                    "score": 1,
+                    "author": "PUSH_AX"
                 },
                 {
                     "level": 1,
                     "comment": "Nothing. People think what they tell the AI is private. It\u2019s not. With or without encryption. \ud83d\ude44",
-                    "score": 1
+                    "score": 1,
+                    "author": "keepcrazy"
                 }
             ]
         },
@@ -123,21 +141,25 @@
             "level": 0,
             "comment": "Encrypted input wouldn't change anything because the input still needs to be decrypted once at the chatgpt servers in order to be processed. Whoever wrote the title doesn't seem to have a grasp on how encryption works.",
             "score": 28,
+            "author": "martinkunev",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Maybe that person knows how encryption works, but doesn\u2019t know how machine learning works (i.e. you don\u2019t give an encrypted input to the model unless it is trained to work with encrypted version of texts).",
-                    "score": 4,
+                    "score": 3,
+                    "author": "shawarma_taratoor",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "Maybe the person who wrote this just don't have a clue...",
-                            "score": 2
+                            "score": 2,
+                            "author": "BackwardGoose"
                         },
                         {
                             "level": 2,
                             "comment": "If you pass encrypted input, it'll just seem random. The model would need to learn patterns in a uniform distribution. This is much higher entropy so the amount of training data required would be beyond any practical possibilities. Typically LLMs operate on the level of words but this concept makes no sense for encrypted data. The model would need to be huge well beyond our computational capacity to deal with these complications.",
-                            "score": 1
+                            "score": 1,
+                            "author": "martinkunev"
                         }
                     ]
                 }
@@ -146,52 +168,62 @@
         {
             "level": 0,
             "comment": "Not enough people know this!",
-            "score": 55,
+            "score": 56,
+            "author": "Alternative-Plate-90",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Sure! Especially young people, look at what they did with Snapshat integration. Young people telling all their secrets to Chat GPT, because of commercials saying \"let's make money out of this\". This is digusting really.",
-                    "score": 15,
+                    "score": 16,
+                    "author": "the_anonymizer",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "So is the problem a) the fact that companies choose to make money this way, or b) the fact that there is no rules against it?",
-                            "score": 2
+                            "score": 2,
+                            "author": "Shloomth"
                         },
                         {
                             "level": 2,
                             "comment": "Commercials saying \u201clet\u2019s make money\u201d? \n\nAlso why is it so terrible if people tell their secrets to an AI? Obviously don\u2019t put sensitive info like passwords in there but I don\u2019t think that\u2019s what teenagers are telling the chatbot. Why is the downside of a teenager telling a chatbot about their secret crush",
-                            "score": 3,
+                            "score": 4,
+                            "author": "ghostfaceschiller",
                             "replies": [
                                 {
                                     "level": 3,
                                     "comment": "He probably means the marketing people.",
-                                    "score": 6
+                                    "score": 4,
+                                    "author": "SirLordTheThird"
                                 },
                                 {
                                     "level": 3,
                                     "comment": "Because you're not telling the chatbot. You're telling snapchat and they archive it.",
                                     "score": 10,
+                                    "author": "joeymcflow",
                                     "replies": [
                                         {
                                             "level": 4,
                                             "comment": "Ok and you think Snapchat is going to do what with that",
                                             "score": 0,
+                                            "author": "ghostfaceschiller",
                                             "replies": [
                                                 {
                                                     "level": 5,
                                                     "comment": "Doesnt matter what i think they are going to do. They CAN do whatever the fuck they want with it",
                                                     "score": -1,
+                                                    "author": "joeymcflow",
                                                     "replies": [
                                                         {
                                                             "level": 6,
                                                             "comment": "OK, like what?",
                                                             "score": 2,
+                                                            "author": "ghostfaceschiller",
                                                             "replies": [
                                                                 {
                                                                     "level": 7,
                                                                     "comment": "Get hacked, data feeds extortion scams or identity theft\n\nGovernments can probe for access. Surveillance or to root out political dissent/lgbtq or whatever else they find unwanted\n\nRogue employees can abuse privilige. \n\nYour conversations could be the basis for marketing profiles that would essentially be emotional manipulation considering the data they're built on. \n\nSnapchat is also currently losing money bad and has done for a while. Should they kick the bucket and dissolve we no longer have anyone to hold accountable for the safety of this data. Lets hope it's wiped clean. \n\nI find it crazy how you're just fine with letting them harvest your kids inner thoughts and vulnurable feelings.",
-                                                                    "score": 1
+                                                                    "score": 1,
+                                                                    "author": "joeymcflow"
                                                                 }
                                                             ]
                                                         }
@@ -204,21 +236,24 @@
                                 {
                                     "level": 3,
                                     "comment": "Which pieces of personal information or dangerous to give to an AI? Obviously account details like emails and passwords but what about stuff like medical information? Where is the obvious harm in explaining to an AI about my medical history? That information might come up later in some dataset, and it might end up getting used to exploit me financially. That\u2019s about all I can think of.",
-                                    "score": 1
+                                    "score": 1,
+                                    "author": "Shloomth"
                                 }
                             ]
                         },
                         {
                             "level": 2,
                             "comment": "The Snapchat AI tried asking me where I study and asked me personal questions unsolicited. I was suss about that lmao",
-                            "score": 1
+                            "score": 1,
+                            "author": "Expert-Cantaloupe-94"
                         }
                     ]
                 },
                 {
                     "level": 1,
                     "comment": "Just curious but why should we care. Why is it a bad thing?",
-                    "score": 1
+                    "score": 1,
+                    "author": "Agreeable_Bid7037"
                 }
             ]
         },
@@ -226,28 +261,33 @@
             "level": 0,
             "comment": "Why would anyone assume things going into chatgpt is private? haha.",
             "score": 12,
+            "author": "Iseenoghosts",
             "replies": [
                 {
                     "level": 1,
                     "comment": "\u2026 because people don\u2019t think about it, because they assume their are consumer protections, because the chat service doesn\u2019t mention that the company may view or share data or they hide it in a terms of service document that people don\u2019t read\u2026 because many services do actually have privacy",
-                    "score": 2
+                    "score": 2,
+                    "author": "snpi"
                 }
             ]
         },
         {
             "level": 0,
             "comment": "**Published: February 8, 2023**\n\nThe situation has been changed since and now there's full control over chat history. \n\nRemove your idiotic post.",
-            "score": 5,
+            "score": 4,
+            "author": "Praise_AI_Overlords",
             "replies": [
                 {
                     "level": 1,
                     "comment": "You are the idiot.",
-                    "score": -4,
+                    "score": -3,
+                    "author": "the_anonymizer",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "lol",
-                            "score": 3
+                            "score": 3,
+                            "author": "Praise_AI_Overlords"
                         }
                     ]
                 }
@@ -256,125 +296,148 @@
         {
             "level": 0,
             "comment": "\"We are also working on a new ChatGPT Business subscription for professionals who need more control over their data as well as enterprises seeking to manage their end users. ChatGPT Business will follow our API\u2019s data usage policies, which means that end users\u2019 data won\u2019t be used to train our models by default. We plan to make ChatGPT Business available in the coming months.\"",
-            "score": 7
+            "score": 8,
+            "author": "Particular_Trifle816"
         },
         {
             "level": 0,
             "comment": "What a trash article.. \"If You've ever posted ONLINE!!...\"  Then what? You put your shit on a public facing site so there is no claim of who can do what with it.  Also these \"privacy\" concern trolls forget you all gave up data privacy like 20 years ago, you literally carry a corporate spy device in your pocket -- ybut you are convinced Openai wants.. what was it... YOUR secrets?  Jesus f'ing main character syndrome.",
-            "score": 65,
+            "score": 64,
+            "author": "hank-particles-pym",
             "replies": [
                 {
                     "level": 1,
                     "comment": "This is a terrible take. There is a reason that not only corporations want your data but governments wants  it too both foreign and domestic to manipulate and run propaganda campaigns. They don\u2019t care about just your data until you\u2019re the deviant, then you become the main character. There\u2019s a reason prior generations valued privacy and passed laws to make snooping through mail or entering a home , tapping phones without a warrant illegal. Just do some basic research in Cambridge Analytica. You don\u2019t have to be some privacy junky but basic privacy principles shouldn\u2019t be thrown out. And no they don\u2019t know everything already \u201cso just give up\u201d\u2026if they did they wouldn\u2019t still be offering free services where you\u2019re the product.",
-                    "score": 8
+                    "score": 9,
+                    "author": "Successful_Sky8336"
                 },
                 {
                     "level": 1,
                     "comment": "just dont put private or sensitive data in it. Its isnt secure. Thats all. You wouldnt google search your social security number its the same thing. Chat gpt doesnt care what you ate for lunch. Thats not important.",
-                    "score": 26,
+                    "score": 27,
+                    "author": "Iseenoghosts",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "The last thing google gives a shit about is your SS number and I guarantee they have it by now.",
-                            "score": 2
+                            "score": 2,
+                            "author": "BlueShipman"
                         }
                     ]
                 },
                 {
                     "level": 1,
                     "comment": "Wow this is backward. \n\n\n\u201cEverything is bad so this thing is good and you don\u2019t deserve privacy because you have subjectivity.\u201d",
-                    "score": 10
+                    "score": 9,
+                    "author": "Historical-Car2997"
                 },
                 {
                     "level": 1,
                     "comment": "And again, no one has yet to show that when you click the little boxes that say \"Dont use my Shit\" that they are secretly plotting against some kid trying to get ChatGPT to be racist, and really using his data, to train the most perfect, albeit racist, ai.  \n\n\nProbably not.",
-                    "score": 4
+                    "score": 3,
+                    "author": "hank-particles-pym"
                 },
                 {
                     "level": 1,
                     "comment": "dude thank you. the fuck they going to do with the \"personal information\".\n\nno one gives a shit about the data, it's not bad to share, unless you are some drug lord or politician, or done something really bad then why would you care if a company knows your favourite cereal and your GPS coordinates.\n\nremember phone books? remember the cell phone in your pocket? remember getting your government issued ID and telling them your height and eye colour and address and getting picture taken?\n\nidk I can rant all day but, privacy babies are fucking idiots that think targeted ads are scary and prefer ads irrelevant to them and think their private info like age height gender likes etc is like their SSN and birth certificate or some shit.",
                     "score": -4,
+                    "author": "devl0rd",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "Actually, it's going to become very problematic that any voice can be easily emulated and any image can be fake. The more data about you that you've supplied in terms of photos or probably even cloud documents could very likely end up in one of these models especially by accident. \n\n&gt; Microsoft, Amazon, Google and Apple heads all appeared before Congress today and received a lashing from a rarity: a bipartisan committee in prime time over their use of a protocol with the name oopsiedaisy. A rumor has gained steam on Twitter that the protocol was given that name by an engineer at a small private firm with 3 employees that somehow handles a critical piece of the data pipeline to Onedrive, Dropbox, Drive, iCloud, and many more as a sly nod to the open secret was that their entire purpose was to be the fall guy for this and get paid a fortune to have a \"digital oil spill\" because it can't be undone but advances their products by what's estimated to be as much as 100 years. \n\n&gt;All companies released a joint statement saying that there's no truth to the oopsiedaisy protocol or any collusion. \"This was a tragic accident that won't be repeated because we can generate your nudes and anyone else's now that you've trained our, er, models.\" said Bill Gates who heads up the new joint board representing the firms involved. \n\n&gt;This statement has raised eyebrows around the world as other headlines about Mr Gates former buddy Jeffery Epstein resurfaced again reminding the public that the richest men are not necessarily the best.\n\nThat's definitely coming at somepoint.",
                             "score": 5,
+                            "author": "siliconevalley69",
                             "replies": [
                                 {
                                     "level": 3,
                                     "comment": "the problem is people believing things and believing photos and text as evidence. not that people can make the content so convincing so easily.",
-                                    "score": 0
+                                    "score": 0,
+                                    "author": "devl0rd"
                                 }
                             ]
                         },
                         {
                             "level": 2,
                             "comment": "\"personal info\" is literally like credit card info, bank info, your fucking social etc. Not what you ate or who youre talking to. Nobody cares about that. Also if you work for a company dont put propitiatory code in there. Give it abstract code snippets that you can use to make your  shit. Dont give it anything you wouldnt post publicly on the internet.",
-                            "score": 2
+                            "score": 1,
+                            "author": "Iseenoghosts"
                         },
                         {
                             "level": 2,
                             "comment": "the real issue here is not your personal data its your intellectual property.",
-                            "score": 0
+                            "score": 0,
+                            "author": "nirehtylsotstniop"
                         }
                     ]
                 },
                 {
                     "level": 1,
                     "comment": "you literally carry a corporate spy device in your pocket\n\nFirst, Siri, Alexa and etc., are free services that already have an extreme cost of operation. Processing the stuff that you say after you activated, it is already quite a lot, but doing so for every customer 24/7 would make this burn more than a million per day (for a free service without significant ads). Also, we don't speak out that much salient, sensitive information all the time. Capturing speech is one thing, but having company documents processed and summarized over this stuff certain makes for far more impactful privacy issue.\n\n&amp;#x200B;\n\n&gt;ybut you are convinced Openai wants.. what was it... YOUR secrets?\n\nSecond, you are precisely the kind of person this post is made for, because you didn't understand the critical point that the providers of plugins cannot be trusted. It's not about OpenAI, it's about independent developers that can quickly code a plugin that grabs all the info it can get from your prompt.",
-                    "score": 0
+                    "score": 0,
+                    "author": "heavy-minium"
                 },
                 {
                     "level": 1,
                     "comment": "This is definitely a Young person's take. You know how Facebook spends hundreds of millions of dollars on software development and hardware? But doesn't charge anybody anything. Who do you think the product is. What do you think happens with all that data?\n\nApply that to every single thing you don't actually pay for in your entire life and then maybe a light bulb of an idea will occur to some of these people",
-                    "score": 1
+                    "score": 1,
+                    "author": "FarVision5"
                 }
             ]
         },
         {
             "level": 0,
             "comment": "Thank you for bringing this to our attention. It's important to be aware of the potential risks associated with using plugins that may compromise our personal information. We should always prioritize our privacy and security when using any technology. It's great that you're spreading awareness about this issue.",
-            "score": 2
+            "score": 2,
+            "author": "Hans279"
         },
         {
             "level": 0,
             "comment": "Yeah. Don\u2019t share your personal life with google, yahoo, OpenAI, Amazon, Microsoft\u2026. Etc. \n\nIt\u2019s just common sense!!!  And if you CHOOSE to share your personal life with them, don\u2019t pretend surprise when they know everything about you!!!!  \ud83d\ude44\n\nIt\u2019s not rocket science, people!!!",
-            "score": 2
+            "score": 2,
+            "author": "keepcrazy"
         },
         {
             "level": 0,
             "comment": "Not enough people know and think about their personal data in general, everything from data collection pixels, 3rd part apps and addons and now AI. \nWe should own our own data and give permission anytime it is requested",
-            "score": 2
+            "score": 3,
+            "author": "ProperCelery7430"
         },
         {
             "level": 0,
             "comment": "Not worst than tik tok or any giant tech, welcome to the clear net",
-            "score": 1
+            "score": 1,
+            "author": "Positive_Box_69"
         },
         {
             "level": 0,
             "comment": "What a weird summary of an already overly alarmist article. How about \"learn how services you use operate; act accordingly\".",
-            "score": 1
+            "score": 1,
+            "author": "xirzon"
         },
         {
             "level": 0,
             "comment": "Most of the plug-ins barely work anyway",
-            "score": 1
+            "score": 1,
+            "author": "ghostfaceschiller"
         },
         {
             "level": 0,
             "comment": "For unencrypted inputs the risk is man in the middle attack or getting intercepted. But chatgpt is a secure connection, thus whatever you input into Chatgpt, it gets encrypted, sent over the internet, and then decrypted by their servers. You can notice the lock icon in the address bar if the browser.",
             "score": 1,
+            "author": "Readityesterday2",
             "replies": [
                 {
                     "level": 1,
                     "comment": "i didnt say connexion encryption. I said chatGPT input.",
                     "score": 0,
+                    "author": "the_anonymizer",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "The connection is what encrypts the input. Also, you are moron.",
-                            "score": 3
+                            "score": 3,
+                            "author": "Readityesterday2"
                         }
                     ]
                 }
@@ -383,99 +446,118 @@
         {
             "level": 0,
             "comment": "Wow the number of people taking a mocking, careless attitude toward privacy and intellectual property is surprising and discouraging.",
-            "score": 1
+            "score": 1,
+            "author": "snpi"
         },
         {
             "level": 0,
             "comment": "So why should I care what they're doing with my AI Assisted MLP fan fic?",
-            "score": -1
+            "score": -1,
+            "author": "Sweg_lel"
         },
         {
             "level": 0,
             "comment": "ChatGPT's data storage comes with inherent risks. This data can be accessed by unauthorized parties, leading to data breaches and other security threats and leakage of sensitive data including medical data. This data in the wrong hands would be disastrous. It's mind-boggling to see the sheer lack of awareness, where people are opening up their entire life and data including corporate data to ChatGPT and hence covered further details here:\n\nhttps://youtu.be/DENq2U004fw",
-            "score": 1
+            "score": 1,
+            "author": "Opposite_Escape_9430"
         },
         {
             "level": 0,
             "comment": "Nah-",
-            "score": 1
+            "score": 1,
+            "author": "More2me2see"
         },
         {
             "level": 0,
             "comment": "Of course the inputs are encrypted. The site uses TLS, like virtually every other site these days, which means that literally all communication between your browser and ChatGPT is encrypted after the initial handshake.\n\nNow, once it reaches their server, it\u2019s decrypted. Of course it is; you can\u2019t run inference on encrypted text. To an AI model, encrypted text looks like random noise.\n\nBy the same token, almost no data you work with online is what they call \u201cencrypted at rest\u201d, meaning stored in an encrypted form. Encryption at rest is extremely expensive to engineer around, and virtually always limits functionality that you want as a user.",
-            "score": 1
+            "score": 1,
+            "author": "gurenkagurenda"
         },
         {
             "level": 0,
             "comment": "Oh wow, this is such a shocking surprise, I thought they released the new cutting edge state of the art technology for free for everyone to play with out of the kindness of their hearts! /s\n\nyeah, what they meant when they said it\u2019s a research experiment, is that they are going to collect your data to improve the product. If you don\u2019t pay for the product then you are the product. And if you pay for plus you\u2019re just paying for getting the newest features fastest and reliable availability. \n\nMeanwhile, everyone\u2019s hailing open source efforts like GPT4All but guess what, that\u2019s open source, meaning anyone who knows what they\u2019re doing can find out what people have talked to it about, by exploring the data lake\n\nAll right, I\u2019m ready to learn why everything I just said is completely wrong",
-            "score": 1
+            "score": 1,
+            "author": "Shloomth"
         },
         {
             "level": 0,
             "comment": "blah blah",
-            "score": 1
+            "score": 1,
+            "author": "Ok_Marketing2781"
         },
         {
             "level": 0,
             "comment": "I am happy to have my life detalis accessed by developers, organizations. What's the worst that can happen, targeted ads?",
-            "score": 1
+            "score": 1,
+            "author": "BellaPadella"
         },
         {
             "level": 0,
             "comment": "Give me a better option and I will gladly stop using it",
-            "score": 1
+            "score": 1,
+            "author": "Sh2d0wg2m3r"
         },
         {
             "level": 0,
             "comment": "A n00b technical question, is it even possible to use encrypted data as input of language models? My understanding is the inputs cannot be encrypted to keep semantical meanings. So maybe there is no possible encrypted alternative for ChatGPT",
             "score": 1,
+            "author": "IntelligentEagle5085",
             "replies": [
                 {
                     "level": 1,
                     "comment": "It is possible, the decryption would just have to be built into the LLM. \n\nhttps://arxiv.org/abs/2305.18396 a recent paper on this.",
-                    "score": 1
+                    "score": 1,
+                    "author": "bmrgrl"
                 }
             ]
         },
         {
             "level": 0,
             "comment": "Brave New World here we go\ud83e\udd79",
-            "score": 1
+            "score": 1,
+            "author": "dc19191"
         },
         {
             "level": 0,
             "comment": "Like I  care",
-            "score": 1
+            "score": 1,
+            "author": "MahmudAlkhalaf"
         },
         {
             "level": 0,
             "comment": "Stop hating bro, it\u2019s not like they are gonna use it to steal your house or some shit.",
-            "score": 1
+            "score": 1,
+            "author": "MrWolf711"
         },
         {
             "level": 0,
             "comment": "what are \"plugins\"?",
-            "score": 1
+            "score": 1,
+            "author": "No-Helicopter-3155"
         },
         {
             "level": 0,
             "comment": "Then don't use it. Get left in the dust. Everything is full of risk.  If they leak my data prepare for a lawsuit. It won't just be me.  There are many law firms that exist to make money from stupid companies that leak information.",
-            "score": 1
+            "score": 1,
+            "author": "Theprimemaxlurker"
         },
         {
             "level": 0,
             "comment": "Has little to do with ChatGPT and has everything to do with the digital world we live in. Until AI is unleashed into the dark web, our data will be tracked and monitored.(period) The end.",
-            "score": 1
+            "score": 1,
+            "author": "BuzzardLightning"
         },
         {
             "level": 0,
             "comment": "![gif](giphy|7k2LoEykY5i1hfeWQB)",
-            "score": -1
+            "score": -1,
+            "author": "Hasan75786"
         },
         {
             "level": 0,
             "comment": "Really all it boils down to is being aware that ChatGPT isn't a fully private service and being mindful of what you use it for.",
-            "score": 0
+            "score": 0,
+            "author": "Spire_Citron"
         }
     ]
 }

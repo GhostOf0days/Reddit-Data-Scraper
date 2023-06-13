@@ -11,18 +11,21 @@
             "level": 0,
             "comment": "I've been planning to test that(what you posted). It seems you already did. It's a very concise way to express ideas inline without having to resort to structures such as outlines that split content among multiple lines.  And it looks like a good way to issue a prompt if models can interpret complex sets of embedded enclosures (brackets, parenthesis, etc). If coding IDEs such as VS can understand complex code bracketing, LLMs can probably do it too.\n\nI might test that in an image generator. Some editors help autocomplete brackets and parenthesis and even color code them to make it easier for humans understand ideas embedded within other ideas.",
             "score": 2,
+            "author": "president_josh",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Yes I've been frustrated with it trying make it work with complex prompt, it's not perfect but looks like it significantly lessens bad generations. I'm very excited actually!",
-                    "score": 1
+                    "score": 1,
+                    "author": "ExcitingDesign"
                 }
             ]
         },
         {
             "level": 0,
             "comment": "Without code-bracketing, it will generate less consistent, more bad results.\nExample of similar prompt with and without code-bracketing for testing:\n\nWith code-bracketing:\n\n```\nTotoro;in Susan Kare's pxl-art{\n    ,timeless&amp;iconic(\n        [ins:Pictogram Studio,Gerd Arntz,Lance Wyman],\n        user-centric[\n            purist-essentialism[\n                {ins:Bauhaus,Jony Ive,Rams,Spiekermann},\n                pxl-perfect-abstraction(eBoy,Paul Robertson),\n                accessib(\n                    skeuomorph[                    \n                        modular,adaptive-consistenc[\n                            optimized-legibi&amp;white-space(\n                                definit-outline{\n                                    hierarchi\n                                }\n                            )\n                        ]\n                    ],sophistication{\n                        (Mondrian),\n                        retro-chic cultur-playful,\n                        brand-harmony,\n                        strate-limtd-color-palette\n                    }\n                )\n            ]\n        ]\n    )\n}\n```\nSingle-line for easy copying:\n```\nTotoro;in Susan Kare's pxl-art{timeless&amp;iconic([ins:Pictogram Studio,Gerd Arntz,Lance Wyman],user-centric[purist-essentialism[{ins:Bauhaus,Jony Ive,Rams,Spiekermann},pxl-perfect-abstraction(eBoy,Paul Robertson),accessib(skeuomorph[modular,adaptive-consistenc[optimized-legibi&amp;white-space(definit-outline{hierarchi})]],sophistication{(Mondrian),retro-chic&amp;cultur-playful,brand-harmony,strate-limtd-color-palette})]])}\n```\n*comma is necessary.\n\nWithout code-bracketing:\n\n```\nTotoro;in Susan Kare's pxl-art=user-centric(accessib,skeuomorph,modular,hierarchic,adaptive-consistenc),timeless-purist-essentialism(Bauhaus,Jony Ive,Rams,Spiekermann),iconic-definit-outline(Pictogram Studio,Gerd Arntz,Lance Wyman),pxl-perfect-abstraction(eBoy,Paul Robertson)-optimized-legibi&amp;white-space,strate-limtd-color-palette,brand-harmony,retro-chic cultur-playful sophistication(Mondrian)\n```",
-            "score": 1
+            "score": 1,
+            "author": "ExcitingDesign"
         }
     ]
 }

@@ -1,6 +1,6 @@
 {
     "id": "146p6bd",
-    "score": 5,
+    "score": 6,
     "title": "is there any Ai tool that genrates images of a person in different poses ?",
     "author": "necheti",
     "date": 1686474657.0,
@@ -11,16 +11,19 @@
             "level": 0,
             "comment": "controlnet in stablediffusion does this. Reference and a openpose layers of controlnet would do if you dont want to train a lora for the person",
             "score": 3,
+            "author": "Sixhaunt",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Controlnet will get you an image of someone that looks like you, but typically not close enough to \"feel\" like you. To create images that are convincingly you you will need to train your own model, which requires much more work.",
                     "score": 1,
+                    "author": "herbys",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "You wouldn't need to necessarily train your own model but you would have to do some training, be it Dreambooth to produce a finetuned model, LoRA, hypernetworks, embeddings (textual inversion), etc...\n\nAlthough if you can generate the same person using an AI already, or if you have pre-existing images to use, then you can also use inpainting + ControlNet with OpenPose so you regenerate everything outside of their head or face while choosing the pose and stuff.\n\nThere are probably a variety of other options too but when I initially gave my suggestion, I think I just didn't want to go down any of the rabbit holes and the important part is for him to understand ControlNet since that's the only real posing method at the moment. (that I know of, but I would love to try others if they exist) How he wants to control keeping the person consistent is up to him and there's so many ways to go about it, so I would suggest that if he's new then he can start with just the control net layers and understand it more before looking into better ways to keep a consistent character then choosing one of the possible paths.",
-                            "score": 1
+                            "score": 1,
+                            "author": "Sixhaunt"
                         }
                     ]
                 },
@@ -28,11 +31,13 @@
                     "level": 1,
                     "comment": "Is there any phone app equivalent for that",
                     "score": -1,
+                    "author": "necheti",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "I dont know. I cant imagine it would be easy to use the tool and deal with all the settings and everything on a phone though",
-                            "score": 2
+                            "score": 2,
+                            "author": "Sixhaunt"
                         }
                     ]
                 }
@@ -41,27 +46,32 @@
         {
             "level": 0,
             "comment": "There are many, you can find the best ones here: https://aitools.fyi/category/ai-image-generation",
-            "score": 2
+            "score": 2,
+            "author": "rizit98"
         },
         {
             "level": 0,
             "comment": "Night Cafe is fun to use.",
-            "score": 2
+            "score": 2,
+            "author": "RedditIsNotOurFriend"
         },
         {
             "level": 0,
             "comment": "I came across this one before but I haven't used it. https://www.photoshed.com/. Watch the video they have on there. It looks like you can select images with poses you like or move the stick figure into different poses. And it will generate an image based off of the pose.",
-            "score": 1
+            "score": 1,
+            "author": "Plorboltrop"
         },
         {
             "level": 0,
             "comment": "you mean like lindsay lohan doing the crab walk?\n\nhttps://www.youtube.com/watch?v=ZQMvidmE5Cg&amp;t=4s",
             "score": 1,
+            "author": "imissyahoochatrooms",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Lmao yes",
-                    "score": 1
+                    "score": 1,
+                    "author": "necheti"
                 }
             ]
         },
@@ -69,11 +79,13 @@
             "level": 0,
             "comment": "Let the catfishing begin.",
             "score": 1,
+            "author": "snookfishgo",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Im using it on my own pictures but yeah that too ig",
-                    "score": 1
+                    "score": 1,
+                    "author": "necheti"
                 }
             ]
         }

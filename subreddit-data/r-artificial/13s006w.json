@@ -1,6 +1,6 @@
 {
     "id": "13s006w",
-    "score": 10,
+    "score": 9,
     "title": "Self hosting LLMs: when would it make sense?",
     "author": "geepytee",
     "date": 1685065900.0,
@@ -10,17 +10,20 @@
         {
             "level": 0,
             "comment": "Lots of people have. Check /r/localllama",
-            "score": 5,
+            "score": 6,
+            "author": "_nembery",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Looks promising, thank you! I should have clarified that I did not mean run locally but rather host in your own server so you can power your own SaaS applications",
-                    "score": 4,
+                    "score": 5,
+                    "author": "geepytee",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "Many of them do that too.",
-                            "score": 3
+                            "score": 3,
+                            "author": "Smallpaul"
                         }
                     ]
                 }
@@ -30,21 +33,25 @@
             "level": 0,
             "comment": "There are the likes of privateGPT, where the LLM and documents used as source information are both local: https://github.com/imartinez/privateGPT\n\nWhile the instructions are for Windows and Mac I got it running on Linux Mint pretty easy:\n\ngit clone https://github.com/imartinez/privateGPT.git\n\npip3 install -r requirements.txt\n\nDownload the LLM model and reference its file location in the .env file.\n\nPlace source documents in the source_documents directory\n\npython3 ingest.py\n\npython3 privateGPT.py",
             "score": 5,
+            "author": "noorbeast",
             "replies": [
                 {
                     "level": 1,
                     "comment": "Looks interesting, thank you! Need to figure out how to host this in a server to power a SaaS app",
                     "score": 2,
+                    "author": "geepytee",
                     "replies": [
                         {
                             "level": 2,
                             "comment": "It runs without a CPU, so you can just rent a cheap server from some major server organisation.",
                             "score": 1,
+                            "author": "smallfried",
                             "replies": [
                                 {
                                     "level": 3,
                                     "comment": "Nice, this will be my long weekend project",
-                                    "score": 1
+                                    "score": 1,
+                                    "author": "geepytee"
                                 }
                             ]
                         }
@@ -55,17 +62,20 @@
         {
             "level": 0,
             "comment": "Thank you for your interest. To provide further clarification, I kindly request that the hosting of the solution takes place on your own server, allowing you to empower your SaaS applications effectively.",
-            "score": 0
+            "score": 0,
+            "author": "Top_Rated_SEO_Expert"
         },
         {
             "level": 0,
             "comment": "The gpt4all project is a good one!",
-            "score": 1
+            "score": 1,
+            "author": "luquoo"
         },
         {
             "level": 0,
             "comment": "Wherever you want to transcend artificial limitations of the models or if you do not wish to have the rug pulled from under you.",
-            "score": 1
+            "score": 1,
+            "author": "transdimensionalmeme"
         }
     ]
 }
