@@ -1,0 +1,1276 @@
+{
+    "id": "6wdnnw",
+    "score": 15136,
+    "title": "Why does electricity always hum at a B-flat pitch?",
+    "author": "[deleted]",
+    "date": 1503856850.0,
+    "url": "https://www.reddit.com/r/askscience/comments/6wdnnw",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Whenever I pass a power plant or hear a lot of electricity running through my house, I always hear that pitch.\n\nEdit: To those asking, I am a musician.\n\n",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Electricity is run on an alternating current (AC) which reverses voltage in the pattern of a sine wave. In the US, the frequency of this alternating is 60 Hz, which is a B flat (more of a flat B or sharp B flat, really). Sometimes interactions with surroundings, especially at high voltages like in transformers, can cause a hum at the frequency the grid is run on. In most of Europe, as an example, it's run at 50 Hz not 60 Hz, so you would hear a G (a little sharp) instead of a B flat.",
+            "score": 12947,
+            "author": "lmxbftw",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Good answer! To expand on this, in the industry we call it \"60 cycle hum\":  Electrical current flow creates a magnetic field, and transformers have cores made of ferrous metal.  So the changing alternating-current is causing the big metal cores to move a little bit in a way that matches the rate at which the current changes.\n\nThe fundamental frequency is 60Hz like our power frequency, but because of a phenomenon called [\"magnetostriction\"](http://tdvib.com/magnetostriction/) the transformer iron vibrates at twice that rate, or 120Hz.\n\nIf an electrical load on a piece of equipment screws up that normal 60Hz current we can absolutely hear it:  Transformers that have a ton of current harmonics no longer produce a nice \"60 cycle hum\", but can have a much louder, sharper buzz that sounds very noticeably different.",
+                    "score": 2860,
+                    "author": "JohnProof",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I remember years ago reading that power plants couldn't keep the output exactly at 60Hz (there would always be slight variations) but they were able to keep the average frequency at 60 (by slightly raising and lowering the frequency) which they did so that all the electrical clocks that kept time via the cycles would remain more or less accurate. Do they still bother doing this, now that most clocks use quartz  or internet connectivity to stay accurate?",
+                            "score": 435,
+                            "author": "Garfield-1-23-23",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "All hydro, gas, nuclear, and coal plants connected to the grid have governor systems which control the amount of fuel (water, steam, etc) entering the turbine in an attempt to keep the system frequency at 60Hz. If system frequency falls, all generator governors connected to the grid pass more fuel to the turbine to speed it up. The opposite is true for high frequency. A perfect 60Hz AC on the grid requires an exact balance of generation and demand, but since load is varying all the time, frequency is mostly maintained within about 59.98 to 60.02 Hz. Beyond these ranges, if frequency starts to get really bad (like 59.8 to 60.2 Hz), then special protection systems will automatically disconnect loads or generators to return the frequency to normal. Since the Eastern and Western halves of North America are separate synchronous grids (with the exception of Quebec and Texas), every region in each of those grids has to be perfectly balanced to maintain frequency. If the grid as a whole has been under or over generated for a significant amount of time, it produces \"time error\", the slowing or speeding of a clock which runs on the 60Hz mains frequency compared to a reference clock. In the Eastern interconnect, time error is measured and recorded by one system operator designated the Time Monitor. Once time error exceeds 10 seconds positive or negative, all system operators in the interconnect participate in a \"time error correction\", in which they change their scheduled system frequency to 59.98 or 60.02Hz. This causes their automatic generation control systems (fast moving regulation for small changes in demand without requiring redispatch of the whole generation fleet) to trend generation slightly high or low for a time, reversing the time error until it reaches around 0 seconds again. If you look for time error correction on NERC's website, it dives into a lot of detail. Whether or not this is still necessary, I don't really know, but time error correction is definitely still done. ",
+                                    "score": 232,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Interesting about the time error corrections. I would guess there are very few electric clocks left in existence that rely on grid frequency for oscillation. Certainly none that are used for any critical purpose. Ever since the 1980s, when quartz oscillators and the related electronics became very cheap, any serious timing application would use internal quartz oscillation and not be sensitive to grid frequency. In addition, the automated solutions for correction / calibration are now so easy, with the Internet based Network Time Protocol or using a GPS receiver. ",
+                                            "score": 43,
+                                            "author": "SilverStar9192",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I have on occasion used mains frequency when I needed to keep track of time with a cheap Atmel (aka Arduino) circuit. If it's a device that is supposed to be powered by plugging it into the wall, then a stepped down AC signal is often readily available and can be directly connected to one of the inputs of the microcontroller.\n\nThis saves the hassle of having to add an external oscillator instead of relying on the builtin oscillator. That would have only been a small amount of extra parts, but why bother when it isn't actually needed.\n\nOf course, if I really cared about precise time keeping, I'd get an RTC chip instead. Cheap quartz oscillators often aren't all that precise either, but RTC chips tend to be pretty good even when temperatures fluctuate.",
+                                                    "score": 31,
+                                                    "author": "Grim-Sleeper",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "i2C chips are pretty easy to interface with, and are pretty cheap. Is there a reason why you'd use mains instead of just going with the RTC? ",
+                                                            "score": 3,
+                                                            "author": "kaluce",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[In the UK we have a quick-response generator (water at the top of a hill in Wales and a hydro generator 500m below it)](https://h2g2.com/entry/A754698/conversation/view/F90585/T185211) that can be activated by someone watching the telly to check when EastEnders finishes and a significant portion of the British population turn on their 3000W electric kettles.",
+                                            "score": 4,
+                                            "author": "simonjp",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I don't know how much time keeping plays into it anymore, but one of the main things that operators worry about is grid frequency because it's a very reliable indicator of load condition.  They work very hard to keep it at 60Hz probably just because all our gear is optimized to run at that speed.\n\nSimply put:  The more stuff that people turn on, the more it slows down the generators (and the more the frequency drops), so the more power has to be supplied to the grid.  [Here's a neat video of the process](https://www.youtube.com/watch?v=slDAvewWfrA) in Britain where they're trying to maintain 50Hz.",
+                                    "score": 24,
+                                    "author": "JohnProof",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What's fascinating is that variations in the frequency of main him [can be used to forensically date audio and video recordings](http://www.bbc.co.uk/news/science-environment-20629671).\n\nIf you have a record of all the tiny variations on the grid, all recording devices active on the same grid will have the same unique \"watermark\" of the hum.\n\nThis can be useful to prove a recording of events happened when it is claimed.",
+                                            "score": 47,
+                                            "author": "Kwintty7",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That is cool.  I'm always impressed by what people figure out how to do.",
+                                                    "score": 8,
+                                                    "author": "JohnProof"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "And so I've learnt recently, generators are infact by nature counter opposing within its magnetic field, so the more a generator tries to output from the rotor rotating within the stator, the harder the magnetic fields work against thenselves! ",
+                                            "score": 5,
+                                            "author": "steelchairframe",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The generator is acting as a motor as well.  It generates torque in the opposite direction as that which caused it's motion (counter-torque)\n\nSomthing similar can be said about induction motors as they generate a **voltage** opposite that which is applied to produce rotation.  That counter EMF (electromotive force) is what keeps the motors from becoming damaged due to excessive currents.  Whenever you have an electric AC motor stalled it is drawing much higher currents than it was designed to handle.",
+                                                    "score": 6,
+                                                    "author": "Labotomi"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "https://en.wikipedia.org/wiki/Utility_frequency#Time_error_correction_.28TEC.29\n\nAccording to wikipedia its still done today, but I am 99% sure it isn't. The grid today is kept very close to 60 because the north american networks are huge.\n\nhttps://en.wikipedia.org/wiki/Continental_U.S._power_transmission_grid#/media/File:NERC-map-en.svg\n\nThe frequency of the grid is consistent across an interconnection, so any drop in load or pickup of generation can only have a minimal effect on the grid frequency. Variations do occur during large system events, but those are very rare. Frequency isn't shared between interconnections because they are connected through DC lines. 'Island' systems with much smaller load/generation have a much harder time maintaining a conistent 60Hz.",
+                                    "score": 290,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I dispatch the electric grid for a living. We absolutely still do time error corrections. \n\nIt's impossible to keep the grid at exactly 60Hz forever. Even if it's slow by .001Hz, it will need correcting eventually. \n\nThe actual frequency is constantly changing due to load changes. ",
+                                            "score": 365,
+                                            "author": "nowhereian",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I know you know this but just adding this info here so readers know. Why does the frequency of the grid drop suddenly when the load goes up? And why does it go up when the load drops? This is because when there is a load increase, the additional load is supplied by a loss in the kinetic energy of the turbine which means it slows down ever so suddenly. The turbine rotating 60 times a second is what keeps the electric voltage at 60Hz. When the turbine slows, the frequency drops below 60. The generator detects this and ramps up the output to bring the turbine back to 60Hz. The opposite happens when load drops. The excess energy causes the turbine to spin a bit faster, before the generator detects and lowers output.",
+                                                    "score": 12,
+                                                    "author": "cloud9ineteen"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 35,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 136,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 27,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 29,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "[removed]",
+                                                                                    "score": 31,
+                                                                                    "author": "[deleted]",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 21,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "[removed]",
+                                                                                    "score": 5,
+                                                                                    "author": "[deleted]",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[deleted]",
+                                                                            "score": 2,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 7,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 13,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In general, individual power companies aren't responsible for maintaining voltage and frequency. Power companies provide generation resources and serve loads.\n\nThe entity controlling voltage, frequency, reliability, balancing, and a few other functions is called an Independent System Operator (at least in North America). There are 7 of these companies, and each oversees many power companies.\n\nWhen there is a surge in demand (or a sudden drop in generation), *every* online generator responds. This is simply because they have automatic governors in the generators themselves to maintain frequency at 60Hz. \n\n&gt; what is there to make sure Company B does their fair share of extra supply? \n\nHonestly, that's not built into real-time operations at all. Power is needed, power is supplied; that's it. Companies are paid for each MWh produced, just like you pay for each KWh you use in your house. There is an economic incentive for each company to produce what we call for. But there is a whole after-the-fact settlements process to make sure payments are made to where they need to go. ",
+                                                            "score": 42,
+                                                            "author": "nowhereian",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Not quite true. It really depends on where you are, even in North America. For instance, in Alberta (the energy market I am familiar with), a company sells a block of power at the market, say 30-40MW. The energy regulator then is given remote control of the plant and can operate it between those two limits. The company is paid for their block (just being available to provide that amount of power) AND the actual power consumed by the end users. Then there are all sorts of other services power companies can provide that they are paid for. I can expand on some points more if there's interest.",
+                                                                    "score": 23,
+                                                                    "author": "Echo8me",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Fair enough; I'm not too familiar with the Western Interconnect's markets. That does sound almost the same as what we do. The power company sends us a list of upper and lower limits for each hour, but they are not paid for the whole block, just the actual MW produced. We have separate offers for ancillary services.",
+                                                                            "score": 3,
+                                                                            "author": "nowhereian"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Reporting in from NZ to say that we still bother correcting for time error. It was reviewed last year and there's a shitload of industrial processes that still use it.",
+                                            "score": 15,
+                                            "author": "2manyredditstalkers",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh crazy, it must be dependent on the interconnection then, since mine doesn't. ",
+                                                    "score": 2,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; 'Island' systems with much smaller load/generation have a much harder time maintaining a conistent 60Hz. \n\n\nWhat do they *do* to maintain it?\n",
+                                            "score": 43,
+                                            "author": "hazpat",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Load generation balance. If your system is demanding 10MW of power, you need to supply exactly that plus the losses to maintain 60Hz. As the power demand goes up and down, the generation needs to match. This is done with individual generator governors (think of your cars cruise control) or by adding/removing generators from the grid.",
+                                                    "score": 88,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Why does a poorly matched load lead to a change in the frequency, and not just the voltage?  And what sets the AC frequency at 60 or 50 Hz?  The generators?",
+                                                            "score": 42,
+                                                            "author": "pyrophorus",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The frequency is directly linked to the mechanical rotation of the turbine. Less demand means less load, which means the turbine can spin faster.",
+                                                                    "score": 114,
+                                                                    "author": "dahud",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "This. Also explains why most old generators are so loud. Motor has to turn at 3600 rpm to keep the freq right. Diesel gennys are a little quieter because they have enough torque to run slower and step up rpm through a gearbox. Inverter gens are quiet because they can run slower, produce DC and then it's run through an Inverter to get 60hz AC (decoupling motor speed from electric freq).  ",
+                                                                            "score": 65,
+                                                                            "author": "TheBlackGuru",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "You don't need to increase the speed through a gearbox.  It's possible to increase the number of poles on the generator head to get the same frequency output with a lower generator speed.\nThis allows the speed to be closely matched to optimum for whatever prime mover is available.  Since Diesel engines are efficient at lower RPM, they are matched with generator heads having more poles\n\nThe equation is  Frequency = Number of poles * RPM/120\n\nA 2 pole generator requires 3600RPM to ouput 60hz\n\nA 4 pole generator requires 1800RPM\n\nan 8 pole generator requires 900RPM\n\nMore poles is also more expensive leading to consumer generators having 2 poles but needing to be run at 3600RPM",
+                                                                                    "score": 93,
+                                                                                    "author": "Labotomi",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "To add to what /u/labotomi said, the number of poles are matched with the performance of the engine. Small gasoline motors generate more horsepower at higher rpms so a 2 pole generator makes sense. You sacrifice some efficiency at lower loads as the engine Alesha has to spin at 3600 rpm, but get more high end capacity for a given size of engine. Medium size diesel engines produce gobs of low end torque, and don't do well at higher rpms, so 4 pole generators and 1800 rpm is more common. Large diesel engines sometimes will use 8 pole units and run at 900 rpm, continuing the tradeoff of rpms for torque. There's nothing preventing you from using a 4 pole generator with a small gasoline engine, but you'd need a higher horsepower unit to handle the lower rpms. ",
+                                                                                    "score": 11,
+                                                                                    "author": "paracelsus23",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Huh, interesting.  Thanks!",
+                                                                            "score": 5,
+                                                                            "author": "pyrophorus",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "There's a really interesting demo which is fairly easy to show. If you have a hand-cranked generator, first crank it with nothing attached, then with a light bulb or something similar attached to the circuit. There's a highly noticeable difference in effort needed. I remember seeing this in high school and it being a demonstration of the idea \"you can't get something for nothing\". \n\nThe same principle is used in regenerative braking in electric cars. It's basically a dynamo attached to the wheels, and when the brake pedal is pressed, a circuit is connected that immediately makes it harder for the wheels to turn because they are now charging the battery at the same time, which slows them down. \n\nIf this happens to a generator attached to a turbine in a power station (the load increases) then the turbine will turn slightly slower, decreasing the grid frequency. You can see the fluctuations on the National Grid site among others I think.  ",
+                                                                                    "score": 46,
+                                                                                    "author": "cypherspaceagain",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The generators spin at 60Hz (or some factor of 60, depending on how the coils are set up) and produce alternating current. If you start taking energy out of them, they will slow down, meaning  the frequency of AC coming out of them will go down. \n",
+                                                                    "score": 14,
+                                                                    "author": "rdm_box"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The generators set the frequency, it's a byproduct of the speed they are turning and their operating mechanism.\n\nAn increase on the electrical load makes the generator's rotor physically harder to turn, so until the turbines (or whatever system) physically driving the generator adjust their power output to the generator, the rotor slows down.\n\nThe rotor becomes physically harder to turn because... well, you have to do work to get power. Many museums have a hand powered generator that you turn and then you can turn lamps on and feel the increased resistance to turning.",
+                                                                    "score": 9,
+                                                                    "author": "PirateMud"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt;And what sets the AC frequency at 60 or 50 Hz? The generators?\n\nYes the generators. They are all designed to run at 60Hz, but if an entire interconnection control decided to run at 55Hz or 65Hz, they theoretically could (not accounting for equipment limitations).\n\n&gt;Why does a poorly matched load lead to a change in the frequency, and not just the voltage?\n\nIt leads to both, but voltage can be manipulated through the use of capacitors, tap changing transformers, regulators (another sort of transformer), and condensers (like generators but only provide voltage support, don't provide power). Frequency can only increased if the generators actually speed back up to 60Hz through increased torque applied to the rotors.\n\nThe grid acts like a mechanical rotating shaft, rotating at 60Hz. when you add more load to the shaft, the rotation will slow, so the generators/engine will need provide more power to maintain 60Hz. If the generator/engine doesn't provide more power, the system will find a new steady state at a lower frequency where the generation/load is balanced. Reducing a systems frequency reduces the systems power demand until a new balance is found. If the load doesn't reduce (which can happen for certain types of load) the system will collapse.",
+                                                                    "score": 15,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I thought condensers where just capacitors. How do they differ, and how do they provide voltage but no power? I'm a mechanical enineer but a lot of ac stuff is kinda black magic to me.",
+                                                                            "score": 5,
+                                                                            "author": "prosnoozer",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Roughly speaking, a synchronous generator (the most common type) works in two ways. The first is by using mechanical energy (water, steam etc..) to spin a shaft/rotor. Then by using DC electricity to produce an electromagnet on the rotor.\n\nThe mechanical energy spins the electromagnet (the rotor) which generates electricity in the stator. The mechanical energy used will change the speed of the generator and the current in the DC system will increase or decrease the generators voltage.\n\nBefore you connect a generator to the grid, you want to frequency and voltage to match the grids (think of dropping the clutch in a car, the better your engine is matched to the speed of the shaft, the smoother the connection).\n\nIf the frequency and voltage are matched perfectly, when the generator connects to the grid, nothing happens, no current flows, the generator is in a state we call \"speed no load\". At this point if we increase the mechanical energy we will start to export electrical power into the grid. If we reduce the mechanical energy, we will actually start using electrical power to spin the generator, called 'motoring'. (this can be done on purpose in 'pump storage' to bring water back into the dams reservoir).\n\nIf the DC current creating the electromagnet in the rotor is increased the generator will then start to output VARS into the system (reactive power), which supports the system voltage (exactly what a capacitor bank would do), and if we lower the DC current, the generator starts to take VARs from the system to produce the electromagnet.\n\nSo a condenser is basically a synchronous motor that using electrical power from the grid to spin the rotor, while providing a strong electromagnet which produces VARs for the system support the voltage. \n",
+                                                                                    "score": 15,
+                                                                                    "author": "[deleted]",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 7,
+                                                                    "author": "[deleted]",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "They match the electrical generation to the load/demand. Throughout the day, demand changes, so generation has to constantly adjust (ramp up/down, bring on or take out units) to keep this matched. The frequency is directly the result of the units generating power at a specific rpm; for example a generator must run at 3600 rpm to maintain 60 Hz, and the generator converts mechanical power to electrical power directly. The more load on the system, the harder the generator is to turn, so it has to work harder to maintain that 3600rpm. Likewise if it's got less load, it will be easier to turn. Changes in the system (both gradual and instant) need to be accounted for, and the rotating inertia of the network of spinning generators helps keep our 60 Hz at exactly 60.00 by working very hard (and manual correction a few times per month). \n\nThink of this- the less rotating mass that we have online, the less resiliency the grid has to absorb frequency deviations (caused by things tripping offline; again, generator trips results in a lower frequency, and a line trip may result in a higher frequency). Things connected to the grid can be seriously damaged as they were designed to operate on 60.00 Hz-- electric motors cannot sufficiently cool themselves if frequency goes too low (as a motor is a giant electromagnet, which is essentially a dead short at low frequency), and electronic equipment can be damaged on high frequency (as solid state devices do not like changes in frequency). \n\nThis is something that *must* be kept in mind as we retire more and more spinning units and replace them with DC generation (solar photovoltaic and wind). They will not be there to arrest frequency decay if we need them...\n\n\nedit: double negative",
+                                                    "score": 10,
+                                                    "author": "AtTheLeftThere",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "This is one of the big problems as we put more solar and wind power online. They are non-dispatchable, meaning you can't call them when you need them, unlike coal or especially natural gas turbines. If the generation is too much and the load low, you have to 'throw away' power. Unless you have some kind of storage: pumped water or Tesla Powerwall.",
+                                                            "score": 5,
+                                                            "author": "x31b",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Chemical storage is outrageously expensive on any large scale, and pumped hydro isn't available in most places (but it's awesome!!!). There has to be a variety of storage types that produce electricity *on demand* and they need to come before we prematurely retire all of the spinning plants.",
+                                                                    "score": 5,
+                                                                    "author": "AtTheLeftThere",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "here in Alabama we have a compressed air storage system made from an old mine for storage of excess solar!",
+                                                                            "score": 10,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Molten salt baths are promising as a long term storage medium. You're basically saving the solar power as heat, and then dropping that into your regular turbine system as necessary.\n\nAlso, man-made pumped hydro is become increasingly cheaper (ie pumped hydro into water tower-esque structures).",
+                                                                            "score": 6,
+                                                                            "author": "All_Work_All_Play",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "solid state inverters have no trouble maintaining the 60Hz standard, the thing they can't maintain when disconnected from the rest of the grid is the phase alignment.\n\nre connection requires some re-alignment and depending on which \"grid\" is stiffer, it will force the weaker grid into phase with it. \n\nit can get to be a bit of a tug-of-war if both are equally stiff.",
+                                                    "score": 3,
+                                                    "author": "skyfishgoo"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 9,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 3,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Do you use a manual synchroscope?",
+                                                    "score": 2,
+                                                    "author": "nowhereian",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "California here, the grid is definitely still slaved to atomic time. I have a clock I built running at my parent's house which uses the line for timekeeping. It is generally within about 30 seconds of the true time after a year of running. I know that they aren't setting it because they don't know how, they have to ask me to reset it whenever there is an outage :-)",
+                                            "score": 6,
+                                            "author": "InductorMan"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yes it still occurs. In the Eastern Interconnection, we keep track of the time error and enter what is called \"Time Error Correction.\" When it reaches +/- 10 seconds, the entire Interconnection enters either fast or slow time correction by changing the frequency schedules to 59.98 or 60.02. Time error schedules run for full hour increments. As the error approaches zero, the time error monitor (currently ISO New England I think) will declare an end time at the top of the hour. We don't necessarily get it to zero, just close. \n\nTime error in the west is a little different. All the grid operators in the east or west have a responsibility to meet the load inside their footprint. We use an error measurement called ACE (Area Control Error). This is a measurement of how close you are to perfect balance between load and generation. The goal is to maintain a zero ACE. \n\nAnyway, in the Western Interconnection, every hour they figure out the error each operator has caused and assign them a modifier to their ACE to correct the error back to zero. This modifier is calculated by each operator themselves and the operation is pretty much automated. I could have erred slightly in this western mechanism, I work on the Eastern Interconnection. The broad strokes should be accurate though. \n\nSource: Am a NERC certified reliability coordinator and operate the electric grid. ",
+                                    "score": 14,
+                                    "author": "daedalusesq"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;  Do they still bother doing this, now that most clocks use quartz or internet connectivity to stay accurate?\n\nNot only do they need to keep the frequency standardized they also need to keep in phase.  If a power source wants to feed onto the grid and it doesn't match, it will literally be working against the grid instead of adding to it.\n\nThat is true for all interconnections.  But there are multiple interconnections in North America.\n\nhttps://energy.gov/oe/services/electricity-policy-coordination-and-implementation/transmission-planning/recovery-act-0\n\nExample: Eastern Interconnect\n\nhttps://en.wikipedia.org/wiki/Eastern_Interconnection\n\nEDIT: I just learned this myself, but apparently the interconnects are tied together by DC\n\n\"The Eastern Interconnection is tied to the Western Interconnection with six DC ties, to the Texas Interconnection with two DC ties, and to the Quebec Interconnection with four DC ties and a VFT.\"",
+                                    "score": 11,
+                                    "author": "Lenny_Here"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You can watch frequency fluctuations across the grid in real time here.\n\nhttp://fnetpublic.utk.edu/frequencymap.html",
+                                    "score": 7,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Clocks aren't the only reason.\n\nWhen frequency maintenance is working correctly, most power production is at the same frequency _and_ phase - so that the electricity doesn't all cancel out (which effectively shorts out transformers, when frequency maintenance fails).\n\nThere are more sophisticated interconnects that can adjust the frequencies on either side, but these are more expensive, and more importantly, less efficient.  This is less true now than it was 40 years ago (digital power systems can do it with little loss), but they can still lose a significant amount of energy (energy loss = higher failure rate, since you have a component dissipating heat).  Where this matters less is long-distance transmission lines; these can jump to frequency and voltage ranges that are more efficient at long distances, so the conversion loss is offset by potentially larger transmission losses.\n\nPoint is, huge swaths of the US electrically vibrate, not just all at 60 Hz, but a near-simultaneous 60 Hz.  It's really an interesting thing to think about.",
+                                    "score": 4,
+                                    "author": "Fordiman"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If you're ever in Northern California, definitely make a point of going to the Folsom powerhouse. Amazing setup there. The system of centrifugal governors they had for keeping the generators turning at exactly 300rpm is really something worth seeing. \n\n[edit] failed to mention, for those that don't know: Folsom powerhouse was the first installation of what is considered a modern 3 phase power plant in the US. It was decommissioned in the 50s (I think) and is now a museum that offers free tours of the facility. ",
+                                    "score": 3,
+                                    "author": "rhymes_with_chicken",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "There are still applications for powerline synced clocks. Suppose you want a cheap, reliable wall clock that doesn't drift out over the long term. A powerline synced one requires no connections other than power, needs no microcontroller, doesn't have to pick up any RF signals, and will stay in sync as long as it has power.",
+                                    "score": 7,
+                                    "author": "dack42",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Example being the little mechanical timers in the base of zillions of street-lights.  Nobody's in a hurry to replace all those.",
+                                            "score": 2,
+                                            "author": "TonyMatter"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "To add to the other answers here with info from a different country, the Indian grid is synchronized at ~50 Hz. In practice, this used to be defined as 50+/- 0.8 Hz (iirc), and has now been tightened to a much smaller tolerance. \n\nGenerators with idle excess capacity were incentivized to pump spare power into the grid if the grid frequency dropped below the lower limit, so as to maintain grid stability. Too much generation going off the grid leads to large scale blackouts as in 2014( again, iirc).\n\nI don't believe there are clocks depending on grid frequency accuracy in India.",
+                                    "score": 2,
+                                    "author": "apjace",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Japan has always fascinated me, 50 Hz in Eastern Japan and 60 Hz in Western Japan, so their interconnects also have to convert frequency as well!",
+                                            "score": 2,
+                                            "author": "kiss_my_what",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's also a big issue in professional audio. If two devices are on different circuits, it can introduce something called a ground loop. Basically, a ground loop is what happens when two devices are on a common ground, but via different ground paths. So if, for instance, you plug one device in at one side of the room, and plug another device in at the other side of the room. Then run an analog audio signal between them. So if I plug my sound board in at my Front of House mixing location, and use powered speakers on the stage, for instance. Both of the devices will \"fight\" to control the ground, and it will produce an audible 60Hz hum in your speakers.\n\nWe get around this in a couple of different ways. The first (and cheapest,) way is to use something called a ground lift. Basically, you put it on the offending device, and it allows the signal to pass through while interrupting the ground's continuity - It lifts the ground. This eliminates the buzz, because now (as far as the analog signal is concerned,) you only have one grounded device on the signal chain. The other way is to use a digital signal, like fiber optic or Ethernet.\n\nAlternatively, we can prevent the issue altogether by making sure our devices aren't sharing ground anywhere. Either they're plugged in at the same place, (like on a power strip,) or they're on a completely different circuit.\n\nIt can also cause issues when we run cables - If there is an unbalanced signal somewhere, (like a quarter inch cable from a guitar, or a headphone cable from a laptop/phone/ipad/etc,) that is running next to a power cable with a heavy load, you'll actually be able to *hear* the power cable sitting next to the audio cable - When power runs through a cable, the push-pull of a 60Hz AC will produce an electromagnetic field, which unbalanced cables will pick up on. \n\nWe can get around this in a few ways. First off, we can shield the cable - This basically just means we sheath the cable in an extra wrap or lattice of metal. Then we connect that sheath to the ground wire. Just like with a faraday cage. This will try and direct any incoming EM interference to the ground. However, strong EM signals can still get through. \n\nWe can also balance the signal. An unbalanced cable, like a guitar plug, will only need two internal wires. A balanced cable will use three - Two signal carrier wires, and a common ground. An unbalanced signal will simply send the signal down the cable. Any interference that gets picked up along the path will be heard, because there's no way for the unbalanced cable to cancel out that signal. A balanced cable gets around this by using two copies of the same signal - One copy is sent like normal. The other copy is inverted, and then sent. So, while the first copy is going \"push pull push pull\" the second copy is going \"pull push pull push\". Basically, think back to high school algebra, and plotting waves on a graph - When you invert a wave, it will cancel out the original wave. Everything that the original signal is doing, the inverted signal is doing the exact opposite. Like adding 10 and -10 together. Under perfect conditions, the two waves will produce perfect silence... \n\nSo why would you want to do this? Because both signal cables will pick up the *same* interference as they travel. So now you have identical interference on both the regular and inverted signals. All you need to do is invert the inverted signal again, (essentially, you *un*invert it,) and add it to the original signal. Now you have identical signals that add together... And since both wires picked up the same interference, the positive interference on the second (inverted) signal just got inverted. Remember how a wave added to its invert will produce silence? The (now inverted) interference on the second signal cancels out the interference on the first when you add them together.",
+                            "score": 10,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "As an interesting aside from what you've just said, JET, the fusion reactor lab, has a really cool story to tell about how microphones places in the 'danger zone' for their (experimental) fusion reactor started hearing a strange noise, you can see the full story on Tom Scott's Youtube channel here:\n\nhttps://www.youtube.com/watch?v=IrtGp8hv-0Y\n",
+                            "score": 8,
+                            "author": "Stochastic_Method"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'd love to see someone make music with electrical currents",
+                            "score": 10,
+                            "author": "EarlyHemisphere",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Technically, that's exactly what happens whenever you hear music coming from a speaker.\n\nBut for less conventional sound recreation, look up \"floppy disk music\" or \"scanner music.\"  Both methods use PWM in the audible range and noisy motors to make music.\n\nHere's an [HP ScanJet playing the Fur Elise](https://youtu.be/NEdxWKwNlGA) to get you started down the rabbit hole.",
+                                    "score": 72,
+                                    "author": "Lusankya",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ooh that makes sense. Makes me wanna look into how they're able to replicate the input so well! Thanks!",
+                                            "score": 8,
+                                            "author": "EarlyHemisphere",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The electrical signal sent to a speaker is an electrical \"copy\" of the sound pressure wave that was recorded. When you use this signal to drive a speaker, the speaker cone will move along with the peaks and troughs of the electrical signal, recreating that same pressure wave as sound once again. ",
+                                                    "score": 3,
+                                                    "author": "GrandmaBogus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Is it safe to assume that in the UK they talk about 50 cycle hum?\n\n[Looks like it's called Mains Hum in the UK](https://en.wikipedia.org/wiki/Mains_hum) but it is at a lower pitch (50hz) than what you hear in the US.  This is in-between a G and a G#, based on A440.\n\nIncidentally, you appear to have perfect pitch, OP.  Congratulations!",
+                            "score": 8,
+                            "author": "majorthrownaway",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "To go along with this music, there's also a dance called the 60 cycle shuffle where you grab onto an energized  piece of equipment and the shock won't let your muscles relax to let go. ",
+                            "score": 7,
+                            "author": "Ron_Jeremy"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 5,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "so it strikes me that 60hz is quite a low pitch, sonically. For comparison A 440 which is what people tune instruments to, is the A below middle C on a piano. It seems like the Bb that people hear must be a harmonic coming from the 60hz. ",
+                            "score": 5,
+                            "author": "yogononium",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's not *that* low. A normal bass guitar in standard tuning can hit lower notes.\n\nKeep in mind each octave doubles in frequency. A4 is twice the frequency of A3. So, A3 is ~220 Hz, A2 is ~110 Hz and A1 is ~55 Hz. [The lowest note on a typical 88-key piano is A0 (which is around 27.5 Hz)](http://www.sengpielaudio.com/calculator-notenames.htm).\n\n[Here's another chart of note frequencies.](http://www.liutaiomottola.com/formulae/freqtab.htm)\n\nHuman hearing is logarithmic both in perception of volume and perception of tone.",
+                                    "score": 5,
+                                    "author": "Roboguy2",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Beside the magnetic field, there is also thermal expension from the current flowing in the wire twice per cycle, giving some 120Hz (100Hz in europe) component too.\n\nAlso, both for magnetic and thermal, the sound will change based on the load (current).",
+                            "score": 2,
+                            "author": "thephantom1492"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is also the same principle, slightly modified, that allows tesla coils, etc. [to produce music](https://www.youtube.com/watch?v=Snibt3CNqBA).  The coils themselves operate at a single frequency, but some clever software reading incoming audio signals turns the coil off/on at the frequency of input sounds/music.\n\nAt a smaller scale, this can be used with plasma arcs to [create pretty decent sound](https://youtu.be/cEeWtBAE5LY?t=126).\n\n",
+                    "score": 37,
+                    "author": "hughnibley",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;In most of Europe, as an example, it's run at 50 Hz not 60 Hz, \n\nIt's not most of Europe that uses 50Hz, it's most of the world. 60Hz is [used by most of the Americas, half of Japan and Saudi](http://photo.vanderkolk.info/images/utility-frequency.jpg)",
+                    "score": 206,
+                    "author": "Scary_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Is there a reason why? ",
+                            "score": 31,
+                            "author": "buzz120",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The reason it's only half of Japan is because in the 19th century, western Japan imported its generating equipment from Germany (50Hz) while eastern Japan imported equipment from the U.S. (60Hz), and by the time the whole country was electrified, it would have been vastly too expensive and a massive pain in the ass to unify the two separate grids. Nowadays it only comes up in odd situations (like when Fukushima knocked out a chunk of the east's generating capacity) because virtually all consumer electrical goods are compatible with both 50Hz and 60Hz. (There are also three converting stations but their capacity isn't huge.)",
+                                    "score": 108,
+                                    "author": "kottabaz",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What would happen if the grids were combined, without any converting stations? What does the frequency even matter for?\n\njust asking as someone who has no clue how this stuff works",
+                                            "score": 23,
+                                            "author": "padiwik",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The faster system would rapidly (hundredths of a second) pick up load from the slower system. In practice, all that would probably happen is the breaker would pop back open and someone would lose their job.",
+                                                    "score": 36,
+                                                    "author": "zenchowdah",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The frequency wouldn't have much to do with which wins.  Paralleled generators happen, where both start in voltage mode and one switches to current mode.  If one didn't switch though, it wouldn't be the higher frequency to win it'd be the one with the bigger balls. ",
+                                                            "score": 3,
+                                                            "author": "BigBobby2016",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It would result in a frequency mismatch, which would dump (and waste) a bunch of power into the line that can't be used.\n\n[Here's a quick visual demo I whipped up](http://lushprojects.com/circuitjs/circuitjs.html?cct=$+1+0.000005+3.9121283998153213+63+5+50%0Av+320+400+320+448+0+1+50+5+0+0+0.5%0Av+48+304+48+496+0+1+60+5+0+0+0.5%0Av+640+400+640+448+0+1+61+5+0+0+0.5%0Av+480+400+480+448+0+1+59+5+0+0+0.5%0Aw+176+304+320+304+0%0As+320+304+320+400+0+0+false%0Aw+320+304+480+304+0%0Aw+480+304+640+304+0%0As+480+304+480+400+0+1+false%0As+640+304+640+400+0+1+false%0Ar+320+448+320+496+0+1%0Ar+480+448+480+496+0+1%0Ar+640+448+640+496+0+1%0Ar+176+304+176+496+0+1%0Av+816+400+816+448+0+1+60+5+0+0+0.5%0Aw+640+304+816+304+0%0As+816+304+816+400+0+1+false%0Ar+816+448+816+496+0+1%0Aw+48+304+176+304+0%0Ax+197+408+250+411+4+24+Load%0Ax+-201+407+-13+410+4+24+60%5CsHz%5CsGeneration%0Ax+299+282+340+285+4+16+50%5CsHz%0Ax+456+285+497+288+4+16+59%5CsHz%0Ax+619+283+660+286+4+16+61%5CsHz%0Ax+751+285+878+288+4+16+60%5CsHz%5CsFreq%5CsMatch%0Aw+816+496+640+496+0%0Aw+640+496+480+496+0%0Aw+480+496+320+496+0%0Aw+48+496+176+496+0%0Aw+176+496+320+496+0%0Aw+1040+304+1200+304+0%0Aw+1040+496+1200+496+0%0Ax+1176+286+1227+289+4+16+Square%0Ar+1200+448+1200+496+0+1%0As+1200+304+1200+400+0+1+false%0Av+1200+400+1200+448+0+2+60+5+0+0+0.5%0Av+1328+400+1328+448+0+3+60+5+0+0+0.5%0As+1328+304+1328+400+0+1+false%0Ar+1328+448+1328+496+0+1%0Ax+1302+281+1359+284+4+16+Triangle%0Aw+1200+304+1328+304+0%0Aw+1200+496+1328+496+0%0Ax+49+286+178+289+4+16+Transmission%5CsLine%0Ar+1040+448+1040+496+0+1%0As+1040+304+1040+400+0+1+false%0Av+1040+448+1040+400+0+1+60+5+0+0+0.5%0Aw+1040+496+816+496+0%0Aw+1040+304+816+304+0%0Ax+970+286+1049+289+4+16+60%5CsHz%5Cs180%C2%B0%0Ao+1+64+0+4099+10.000000000000002+29.746258591586066+0+2+1+3%0Ao+18+64+0+4097+0.0000762939453125+25.6+1+2+18+3%0Ao+13+64+0+4099+10+6.4+2+2+13+3%0A) (excuse the long URL, all of the components are parameterized in the URL so it can be shared). It's not a SPICE-grade simulation or anything, but will give you an idea. \n\nYou can scroll in and out if it doesn't show everything.  1\u03a9 resistors are there because the sim doesn't like infinite current across superconductors. You can use the sim speed slider in the upper right to make it go faster, but be warned that it is CPU hungry.\n\nThere are 3 scopes: \n\n* Voltage (green) and current (yellow) at the generator. The product of the two is the load on the generator, in Watts.\n* Current on the transmission line\n* Voltage/Current through the load\n\nYou can click the switches to simulate putting different frequencies on the line. By default, the 50 Hz signal is connected in parallel with the 60 Hz signal.\n\nThe scope in the middle shows what happens on the transmission line between 2 \"generators\". You can also watch the scope on the left to see the load on the main generator. When all of the generation frequencies match, you'll only see 5A on the transmission line (because it's 5V through 1\u03a9). \n\n[Things get nasty when you start connecting generators to the grid when frequencies aren't matched](http://i.imgur.com/Apnhpqr.png), and current (and load on the generator) triples as the generators \"fight\" each other. With mismatching loads and/or voltages in the real world, this would be much more unpredictable.\n\nThere are circuit protection devices in place to keep things from actually exploding and catching fire, but it's generally frowned upon anyway. It will cost someone somewhere time, money, and probably sanity. Frequency monitoring of existing installations is important for the same reason. If frequency drifts, you have the same problem. If a generator or segment goes offline for any reason (maintenance, etc.), it has to be synchronized *exactly* (voltage, frequency, phase angle, and phase order in the case of new construction) before feeding the rest of the grid.",
+                                                    "score": 35,
+                                                    "author": "fistful_of_ideals",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "wow, in what did you make this simulation? in this \"lush projects\"? is it free?",
+                                                            "score": 4,
+                                                            "author": "oridjinal",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Non-regulated motors and electronics designed around 50hz supply would be working 1/5 faster/harder/hotter and eventually fail.  For example, I have a 50hz hair clipper.  Plugged into a 60hz outlet, it runs much faster and hotter - enough to discolor the plastic body and be too hot to hold after a few moments.\n\nMost computers would generally be fine, as their power supplies are usually designed to run on 50 or 60 hz and usually a voltage range as well (most here in Japan can do 50/60hz and 100-220v.)\n\nOn the countrywide grid scale, I can't imagine that anything good would happen to the turbines/generators on the 50hz side, and the increase in load on the 60hz side would probably be pretty tough on those generation systems as well...",
+                                                    "score": 7,
+                                                    "author": "bolotieshark",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Is this the reason why different countries have different plug ins for wall sockets?",
+                                                            "score": 2,
+                                                            "author": "myth134",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ignoring the complexities of power infrastructure and just looking at what might happen if you had both coming out of your outlets at home...\n\n[60 Hz 100v](https://www.google.com/search?q=100*sin%2860x%29&amp;oq=100*sin%2860x%29)\n\n[50 Hz 100v](https://www.google.com/search?q=100*sin%2850x%29&amp;oq=100*sin%2850x%29)\n\n[50 Hz 100v AND 60 Hz 100v](https://www.google.com/search?q=100*sin%2860x%29%2B100*sin%2850x%29&amp;oq=100*sin%2860x%29%2B100*sin%2850x%29)\n\nWhen waves overlap, they interfere, either constructively (they add together and get bigger) or destructively (they cancel out).  When they've got different frequencies, they kind of oscillate between constructive and destructive interference.  As you can see, sometimes the peaks are 200 volts and sometimes the peaks are 10 volts.  ",
+                                                    "score": 3,
+                                                    "author": "MattieShoes"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "America adopted wide spread AC electricity first and went with 60hz, because Edison's DC system already used  +110V, 0V and -110V. So naturally AC 60hz was easier to convert. For efficiency, 240v gets delivered to the house, and split to into 110-125v at the breaker. That's why our stoves and dryer outlets can work with that funky 220v plug. Europe went with 50hz later, because it was easier to calculate with metric standards.",
+                                    "score": 29,
+                                    "author": "magneticphoton",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It is acutely split at the transformer.  If you are on single phase power the voltages are 120 between neutral and the hot leg and 240 between the two hot legs.  If you are on three phase power then it is 110 between one phase and neutral and 208 between phases.  ",
+                                            "score": 23,
+                                            "author": "TM3-PO"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "There's also occasional large industrial 25Hz floating around, most notably in a lot of the electrified railroads in the Northeast US. ",
+                                            "score": 20,
+                                            "author": "gingerkid1234",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I have spent the last 6 years dispatching and maintaining a 25hz power system for the railroad. It's an amazing system with all kinds of interesting equipment. ",
+                                                    "score": 12,
+                                                    "author": "NotThatEasily",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What does 25Hz give you that 60Hz doesn't? ",
+                                                    "score": 6,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Old large slow moving ac motors worked better at 25 hz. But that wouldn't work well for lights or small appliances. Before revenue meters power company would charge per light bulb and motor horsepower.  Electric utilities would originally do building wiring and provide lamps and electrical equipment.  ",
+                                                            "score": 3,
+                                                            "author": "Solaterre",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I like your explanation. Have any source around? ",
+                                            "score": 5,
+                                            "author": "jesuskater",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This isn't the correct place for rambling, so I'll try to avoid it.\n\nA little bit ago a similar question came up (why is America on 60Hz) and there was a story of large appliance exchanges in places like California where 50Hz had already become popular. Things like clocks actually would not work on the new power grids as their time was kept electrically. And of course other appliances would not function optimally.\n\nMaybe that's worth googling or something.",
+                                                    "score": 5,
+                                                    "author": "mordiksplz",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "No, now I'm even more infuriated! As a musician, it would have been SO CONVENIENT if we had chosen 55Hz instead of 60Hz (or 50Hz). Then you could fairly reliably tune your \"A\" to the electrical hum instead of trying to ignore it or \"go up a smidge.\"\n\nOf course, choosing A at 440Hz is a relatively modern choice anyway. I guess it would be easier at this point for musicians to choose Bb @480Hz (or G @400Hz) as a new standard. Or have it depend on locale. Seems somehow culturally fitting that Americans would tune to Bb (common \"home base\" among a typical jazz horn section) and the rest of the world would tune to G, too.",
+                                            "score": 8,
+                                            "author": "LetterBoxSnatch",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 11,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I was curious and looked into it. B flat is 58.27 Hz,1.73 away from 60 and B is 61.74 Hz, 1.74 away. 60 is pretty much dead set between the two. It must be differences in individual hearing that discerns a sharp B flat or a flat B. ",
+                    "score": 110,
+                    "author": "evade1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The absolute difference in frequency is very similar yes, but musical notes aren't on a linear scale - they're based on the frequency of the ratios between each notes. For example, a 1:2 relationship is the same note in a different octave, a 3:2 ratio is a perfect fifth (eg C to G). That said, 1.74Hz both was is VERY small even relative to 60Hz so it might actually land quite close to being in the middle.",
+                            "score": 82,
+                            "author": "jackel119",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They are on a logarithmic scale, but if you want to talk about ratios and slight differences it's probably worth noting that the scale is entirely dependent on your tuning system. A \"perfect\" perfect fifth above A4 is 660Hz, but an equal tempered perfect fifth is 659.255Hz.",
+                                    "score": 13,
+                                    "author": "LetterBoxSnatch"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Halfway between 58.27 and 61.74 in the sense of addition is 60.005; in the sense of multiplication, it's 59.97991....  The difference between the two midpoints is about 0.04%.",
+                                    "score": 27,
+                                    "author": "existentialpenguin",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 139,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 50,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 23,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 6,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 10,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Fun fact, though it doesn't make any difference whatsoever in this case: since we perceive sound on a log scale, it's actually closer to B than B flat. Basically since octaves are a doubling in frequency, there are more Hz between each note as you go higher. Thus, going up 1.74 is less of a distance (in perception) than going down 1.73. The log-scale midpoint between B and B flat is 59.980 Hz, while the linear average of the two frequencies is 60.005.",
+                            "score": 27,
+                            "author": "da5id2701"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "When you look at it logarithmically, it's closer to a B. \n\nBb = 55x2^(1/12)\n\nB = 55x2^(2/12)\n\n60 = 55x2^(1.506/12)",
+                            "score": 20,
+                            "author": "Moosething",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Interestingly enough, when you use a guitar tuner pedal into an electric amp, you can see this exact pitch on the chromatic dial when a guitar is unplugged.  It's nestled right between A# and B, so the tuner keeps swinging between the two notes showing both being either too sharp or too flat.  You can meter the 60 cycle hum via pitch!\n\nI wish the tuners had a little program note that recognized it and showed a new screen that acknowledged \"60 cycle hum\".  It could have a little graphic of a power pole with lightning bolts or something.  That would be more satisfying than watching the meter struggle to pick the note.",
+                    "score": 11,
+                    "author": "1-900-OKFACE",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "but why does that interact with air?  electrons moving back and forth at 60hz moves the O2 molecules at that frequency? but why? \n\nwhy does the movement of electrons result in the movement of the entire atom? is it the magnetic property... the negative charge on the electron that pushes the nearby air molecule?",
+                    "score": 8,
+                    "author": "Teutonicfox",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'd say it moves metal objects not atoms, which is certainly possible. I quite like electric motors.\n\n/u/JohnProof:\n\n&gt; Good answer! To expand on this, in the industry we call it \"60 cycle hum\": Electrical current flow creates a magnetic field, and transformers have cores made of ferrous metal. So the changing alternating-current is causing the big metal cores to move a little bit in a way that matches the rate at which the current changes.",
+                            "score": 11,
+                            "author": "turunambartanen",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Or, to put it in slightly more laymans terms, the vibrating field makes the object itself vibrate, and vibrating objects translate rather well into sound. You're hearing the physical object itself resonating. \n\n",
+                                    "score": 5,
+                                    "author": "sohcgt96"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's also the sound you'll hear if you have a ground loop in your audio equipment",
+                    "score": 3,
+                    "author": "CaptainRuhrpott",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "What's the difference between a B flat and a flat B?",
+                    "score": 7,
+                    "author": "MyMomSaysIAmCool",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A B flat is a specific wavelength between an A and a B. A flat B would be a bit slower than a B but not as slow as a B flat.",
+                            "score": 23,
+                            "author": "ot1smile",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "a sharp b flat and a flat b. \n\nIt's a little higher (sharper) than the note named \"b flat\" and a little lower (flatter) than a note named \"b\".\n\n\"b flat\" is significantly lower than \"b\".   So it's a pitch between the two that doesn't have a specific name in traditional music nomenclature.",
+                            "score": 3,
+                            "author": "Xaxxon"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Flat B means just under B... Usually this would sound out of tune, or non-pleasing to our western ears. B-Flat is a note (aka A sharp depending on the scale) between A and B (on a piano it is one of those black keys)",
+                            "score": 2,
+                            "author": "curebdc"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The radar I used to work at had some powerful components in it that worked at 900mhz as they stepped up the frequency and voltage before it would be fed into the magnetron ... I'll never get that damn whine out of my head.",
+                    "score": 2,
+                    "author": "the_ocalhoun"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In the US, alternating current (AC) oscillates at 60Hz and the buzzing you hear is generated by the second harmonic, so 120Hz. The nearest B-flat is at 116.54Hz, so it's pretty close! The next B is at 123.47Hz, so really you're hearing something that is very much in the middle of B and B-flat. If you were in Europe, where the standard is 50Hz, you'd be hearing something between G (98Hz) and G-sharp (103.83Hz).\n\nAlso, excellent ear, are you a musician?",
+            "score": 516,
+            "author": "BijouPyramidette",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 102,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 14,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Also, excellent ear, are you a musician?\n\nI discovered this phenomenon by turning a tuner pedal on before plugging in my guitar. Always read A#. We had a sound guy over another day and he was complaining about a note my bass player kept hitting; it was rattling the speakers. He said its a Bb. I had also just done a ton of research before buying a gaming monitor and once confused operating frequency for frame rate. So when he said \"Bb,\" I sort of twitched and put all this information together all of a sudden and blurted \"I bet that's about 60Hz.\" Sound guy pulled out a device and said \"why do you know that?\" I could've saved a lot of time had I just had perfect pitch like OP. ",
+                    "score": 102,
+                    "author": "Sixty911",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Yea that's the more impressive part.  I now know what I hear everyday is a b flat ",
+                    "score": 39,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 25,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Being able to tell a note with no context requires a great talent for it, or a lot of time spent playing. Perfect pitch is exceedingly rare, where one can tell apart every note in a symphony. But the former, more common skill, is often called perfect pitch because people like to use the more impressive term. ",
+                                    "score": 47,
+                                    "author": "tombolger",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 7,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "That's not really what perfect pitch is. Perfect pitch is being able to identify or recreate a given musical note with no reference (eg. a tuning fork or tone). It's also called \"absolute pitch\" in contrast to the far more common \"relative pitch\". To my knowledge, Absolute Pitch is not something that can be learned. ",
+                                            "score": 5,
+                                            "author": "DannyFuckingCarey"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; The next B is at 123.47Hz, so really you're hearing something that is very much in the middle of B and B-flat.\n\nIn music theory, a note is flat when it is slightly lower in pitch than the closest natural. So even though B\u266d is 116.54 Hz in equal-tempered tuning, 120 Hz is still B\u266d because the closest natural is B^\u2020 , at 123.47 Hz.\n\n---\n\u2020In a key where B is one of the notes, like C-major. In other keys and tunings, it may even be written in sheet music as B\u266f (e.g. in B\u266d-minor key with equal-tempered tuning) or A\u266f (e.g. in F\u266f-major key with equal-tempered tuning).",
+                    "score": 15,
+                    "author": "ayane_m"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 55,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "what happens to a microwaved light bulb though?",
+                    "score": 10,
+                    "author": "ktkps",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Magnetic fields moving across a wire (either by the wire moving or by the magnetic field fluctuating) induce current into the wire.\n\nThe light bulb is basically a filament of wire inside of a closed gas bubble. The microwave is generating a varying magnetic field that induces a current into the wire inside of the light bulb.",
+                            "score": 3,
+                            "author": "xxbiohazrdxx",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Electricity oscillating doesn't produce the sound by itself; the oscillation of electricity needs to move air in order to produce a sound. Air is not influenced enough by electromagnetism at audible frequencies that we would hear any sounds from a direct interaction between the electricity and the air.\n\nThe oscillating current of AC electricity creates an oscillating magnetic field, which is especially strong in electrical transformers where the wire is wound around an iron core. The kind of iron used in transformers exhibits a phenomenon called \"megnetostriction\", where the crystal structure of the iron grains in the metal changes its length in the presence of a magnetic field. It is this rapid oscillating length change in the iron cores of transformers and other electromagnetic components that results in vibrations that we can hear.",
+            "score": 95,
+            "author": "Berkamin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; Electricity oscillating doesn't produce the sound by itself; the oscillation of electricity needs to move air in order to produce a sound.\n\nNot *strictly* true, in all circumstances. \n\nAs electronics were developed, scientists began to become aware of the 'microwave auditory effect' -- where microwave EM radiation could stimulate the human ear directly, without vibrating the air between. Some of them started experimenting with it, seeing if they could affect what people hear, changing the tone. One even managed to get people to hear rudimentary music ... and then the US government took over the project and made everything top secret. Nothing has been heard about it since. And it makes you wonder ... maybe those people putting tinfoil hats (faraday cages) on to stop the government from putting voices in their head ... maybe those people aren't quite so crazy after all.",
+                    "score": 11,
+                    "author": "the_ocalhoun",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; microwave auditory effect\n\nPerhaps it's true but only to a few people per million. Everyday we have millions of people going by the line of sight of high powered phone antenna yet never experience any of this. Microwaves are everywhere these days. WiFi transmits microwave. Phone transmits microwave.",
+                            "score": 7,
+                            "author": "ThatInternetGuy"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Microwaves at those energies more likely fry brain cells rather than stimulate the inner ear... And they're \"harmless\" at lower energies,",
+                            "score": 5,
+                            "author": "NowanIlfideme"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 43,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Interesting side note ... aircraft typically use 400 Hz AC generators. Sometimes you can hear the high 400 Hz hum when announcements are made over the PA. 400Hz is between G ~392 Hz and A 440 Hz. \n400 hz: https://www.youtube.com/watch?v=33qV3d3U0q4\n\n440hz: https://www.youtube.com/watch?v=rFOl-9SNxLY",
+            "score": 19,
+            "author": "woodykr",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "weird... when I listened to the 400hz sound I could almost smell the cabin of a passenger jet.",
+                    "score": 2,
+                    "author": "crazyprsn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A lot of answers here are \"electricity is produced at 60Hz in the united states\"\n\nbut none of them are answering why this is the case,\n\nthe frequency of AC mains power is selected to give Synchronous motors attached to grid power directly good operating characteristics. that is, stuff like vacuum cleaners, washing machines, fans for air systems etc.\n\nThese are most electric motors that plug into the wall that don't have a special power distribution mechanism built in, those that do have this kind of frequency controller hardware are called Variable Frequency Drives and are often used where the speed of the drive needs to vary rapidly.\n\nVFDs are limited to industrial use for the most part.\n\n*****\n\nThe reason the frequency matters for Synchronous motors has to do with the physical design of alternating current motors and the geometry, but the simple explanation is that for simple synchronous motors the speed of the motor in RPMs is dependent on the supplied frequency because the physical rotation of the motor is being driven by the rotation of a magnetic field and the magnetic field is going to rotate at the frequency of the alternating current in AC Synchronous motors.\n\nIf we imagine the motor in its most simple state as a set of magnets with a single North and South pole on the rotating part of the motor (the rotor) and a single North and South pole on the stationary part of the motor (the stator).\n\n  Our AC mains power drives the Stator magnets, and the magnets on the rotor is a fixed magnet, the rotor spins in normal operation as the poles on the stator switch positions, and the permanent magnet moves to correct its alignment.\n\nWith only one set of poles, the rotor speed will match the mains power speed, making one full rotation for each full cycle of switch in polarity.\n\nIn real motors the speed will be some multiple of the frequency because multiple poles are used as they provide better torque.\n\nbecause of this 60 Hz in the US, and 50 Hz is Europe was selected because it allows motor designers to easily build motors that will operate at safe speeds and torques when connected to mains power.\n\nEDIT: added information about how poles work in a motor\n",
+            "score": 221,
+            "author": "PrimeLegionnaire",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Other way around, motors were built to match the electric frequency. 50/60 hertz were selected due to a number of factors including generator design, size of transformers, and flickering lights.",
+                    "score": 108,
+                    "author": "Kendrome",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Now tell us why most generation is three phase, three separate 60 Hz sin waves, and not two or four phase. :)\n",
+                            "score": 16,
+                            "author": "censoredandagain",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well it's not called two phase it's called single phase.  All homes have it. Businesses and industry use three phase because it's much more efficient.  There is never that huge dip in the power output between the sine waves.   As far as why not four phase?  I imagine it's too complicated for a much smaller benefit.",
+                                    "score": 36,
+                                    "author": "Flaghammer",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Why isn't three-phase used for everything, then?",
+                                            "score": 11,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Don't need it - smaller motors run fine on single-phase, lightbulbs don't need constant power due to persistence of vision effects, home heating stuff (toasters, ovens) don't require constant power, and the rest of typical home and business loads rectify to DC and use leveling capacitors.\n\nNo need to waste the conductor running three separate phases to every single home and business when three-phase power is really only necessary for large industrial motors or when you've got a huge load that you don't want to have to balance across multiple phases.",
+                                                    "score": 48,
+                                                    "author": "freefrogs",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In Denmark it's pretty common to have a three phase plug in your garage to run tools etc. ",
+                                                            "score": 21,
+                                                            "author": "teuchuno",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I\u2019m so jealous. In North America, you need a VFD to run anything bigger than a small lathe unless you want to shell out $7000 for three-phase.",
+                                                                    "score": 18,
+                                                                    "author": "Rastafun36",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "&gt; I\u2019m so jealous. In North America, you need a VFD to run anything bigger than a small lathe unless you want to shell out $7000 for three-phase.\n\nSometimes utilities won't install three phase power to a residential customer no matter how much you pay.",
+                                                                            "score": 13,
+                                                                            "author": "asad137"
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Depends on the load, sometimes this need can be more economically filled by a rotary phase converter than getting three-phase installed.",
+                                                                            "score": 7,
+                                                                            "author": "freefrogs",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I don't see why one wouldn't be happy with the VFD solution in most circumstances.  You not only get phase conversion as a bonus of the AC-DC-AC design, but also full control of frequency, accel, decel, and a lot more.  ",
+                                                                                    "score": 8,
+                                                                                    "author": "HillBillyPilgrim"
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "A very fancy doily?",
+                                                                            "score": 2,
+                                                                            "author": "M8asonmiller"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; lightbulbs don\u2019t need constant power due to persistence of vision effects\n\nAre you sure it\u2019s not that the lamp itself stays lit momentarily even when the voltage goes to zero? If light bulbs dimmed significantly, I would expect to see this to show up occasionally in photographs.",
+                                                            "score": 6,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In Sweden we have 3-phase for our heavy electrical appliances such as oven and stove. \n\nWe also have them in our garage or basements too.",
+                                                            "score": 3,
+                                                            "author": "randomguyguy"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It is, in a way. From the point of view of the utility your house is an electrical load balanced against other loads on a three-phase grid. \n\nInside a house the efficiency benefits are not needed, and the added installation complexity and wiring cost would offset any advantages. ",
+                                                    "score": 10,
+                                                    "author": "Zomunieo"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I wish it were.\n\n(Motor control engineer here)\n\nThree-phase power distribution has the nice property that for balanced loads, the instantaneous power delivered is constant. Single-phase distribution does not; if you have a 60Hz single phase voltage source and you connect a 1000W resistive load, it will draw power that changes over time in a sine wave at 120Hz that varies from 0 to 2000W. Single phase systems put more stress on capacitors, diodes, induction motors, etc. than equivalent three-phase components with the same power rating.\n\nAll to save one wire.",
+                                                    "score": 8,
+                                                    "author": "jms_nh",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Not just one wire. It's the complexity of installation, the number of things that go wrong. There's a reason 3-phase is usually a different certification level for electricians. Another major problem is that 3-phase GFCI is a lot more complex (read: less safe) so more electrocutions would occur.\n\nIf we didn't have hundreds of millions of existing single phase installations *maybe* it would make sense to run residential on something like +48VDC for all lights (LED only), switches, small loads and electronics. High power devices would run on 3-phase VAC Delta connections for all motor and heater loads. \n\nWe'd get rid of every wall wart replacing them with tiny buck converters that would fit in most devices. While we were at it we could raise mains to 230V per phase to make better use of copper and make things like a 30 kW electric BBQ a serious possibility. ",
+                                                            "score": 9,
+                                                            "author": "Zomunieo"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "requires more wires and making sure the right phase is on the right leg.  Not really necessary for most in-home appliances that are far south of 1kw.    Dryers, hot tubs, electric water heaters etc can be found in 3-phase variants due to the greater efficiency... Your cell phone plugged into the wall? no need.",
+                                                    "score": 3,
+                                                    "author": "metarinka"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not sure about the details but at the very least you'd need an extra wire.",
+                                                    "score": 2,
+                                                    "author": "XkF21WNJ"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "There actually is such a thing as two-phase power, where you have two phases 90 degrees out of phase from each other, and it was fairly common before symmetrical components (and is still used in some machinery). It doesn't provide constant power and requires more conductor mass as compared to three-phase, so it's no longer used in most applications.",
+                                            "score": 9,
+                                            "author": "freefrogs",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Here in Belgium a lot of residential installations are three phase as well.\n\nFor instance my home installation is 3x400V + N at 40A\n\nMakes for a bit of juggling to distribute everything around though if you have a similar setup but at 20A",
+                                            "score": 4,
+                                            "author": "boran_blok",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Three phases requires three wires vs two for single phase so it's the more efficient in terms of hardware for power transmission.\n\n[Three-phase electric power - Advantages](https://en.wikipedia.org/wiki/Three-phase_electric_power#Advantages)\n\nMore phases are possible, but the efficiency doesn't scale with the cost.\n\n[Why 3 Phase Power? Why not 6 or 12? ](https://www.youtube.com/watch?v=HqZtptHnC2I)",
+                                    "score": 6,
+                                    "author": "ceedubdub",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Three phases spaced 120 degrees apart is the fewest you need in order to supply constant power and run motors in a reliable direction without starting circuitry. Four is just extra copper winding cost for no reason.",
+                                    "score": 17,
+                                    "author": "freefrogs",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "One reason is it cancels the third-order harmonics. I'm not sure if that was a design goal or just a coincidence, though. \n\nTwo phase is already a thing: 120/240 (common in the US) is an example of two phase. ",
+                                    "score": 5,
+                                    "author": "JohnFitzWeaver",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "120/240 is actually single-phase, or commonly called split-phase. It's a single phase but the transformer is tapped in two places to provide 120 volts between conductors but it's all still on the same phase.\n\nThere is such a thing as two-phase, where it's two phases separated by 90 degrees, but it's not very common and has largely been replaced by three-phase power.",
+                                            "score": 17,
+                                            "author": "freefrogs",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; \n&gt; the frequency of AC mains power is selected to give Synchronous motors attached to grid power directly good operating characteristics. that is, stuff like vacuum cleaners, washing machines, fans for air systems etc.\n\nnone of your examples use synchronous motors (with the exception of the mechanical timer in an old washing machine)\n\nThe vacuum will be a universal motor,  the washing machine would be an induction motor of some sort,   as would the fan for air systems",
+                    "score": 20,
+                    "author": "FredThe12th",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Link to article that lists the decision points for 60hz choice.\n\nhttps://www.quora.com/Why-is-60Hz-AC-used-in-America-What-are-the-advantages-and-disadvantages-of-using-60Hz",
+                    "score": 11,
+                    "author": "beatenintosubmission"
+                },
+                {
+                    "level": 1,
+                    "comment": "In Asia, \"inverter motors\" are common in most appliances, allowing them to run at variable speeds.  My aircon, refrigerator and washing machine are all inverter driven.  I assume that's marketing speak for a VFD, because the whole point is to start/stop in a controlled manner and throttle the compressors.",
+                    "score": 4,
+                    "author": "cacahootie",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Carrier's top of the line home AC has a VFD compressor, amazingly enough.  It's single phase too.",
+                    "score": 3,
+                    "author": "Flaghammer"
+                },
+                {
+                    "level": 1,
+                    "comment": "I heard otherwise.  Edison selected 60Hz because it was the lowest frequency that didn't result in flickering or filament vibration in light bulbs.  There are some old (bad) lightbulb designs that wildly whipped the filament around even at 60Hz.  Though I am confused, modern generators and transformers behave better at higher frequency.   I think the ones at the time didn't employ lamination and had severe eddy current problems at higher frequency.  This sounds like a very regrettable mistake to set it so low.\n\nMotor behavior were a secondary concern, it was not a strong application until after the 60Hz standard was established.\n",
+                    "score": 3,
+                    "author": "Oznog99",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "higher frequency would also mean higher transmission loss, that is one of the reasons for some big transmission lines being DC",
+                            "score": 4,
+                            "author": "therealdilbert"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; but none of them are answering why this is the case,\n&gt; \n\n\nDid anyone ask?",
+                    "score": 5,
+                    "author": "Xaxxon",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Some old analog synths use the 60hz of the electricity supply as a reference for their oscillator frequency. Needless to say, these are then tuned lower when used in Europe :/   And I once saw someone playing at a forest rave where everything was powered by a diesel generator, which didn't have a stable RPM, so some of the synths were drifting in and out of tune all the time :)  Not that it mattered...",
+            "score": 10,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "The power in your house is called Alternating current (AC) which inverts the voltage in a sin wave at a certain frequency. Depending on where you live, its either 60 or 50 hz. 60 hz tends to sound like a b flat (this is probably your case) and 50 is like a G sharp. ",
+            "score": 3,
+            "author": "XXRAYDIOACTIVEXX"
+        }
+    ]
+}

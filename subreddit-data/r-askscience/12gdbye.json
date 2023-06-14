@@ -1,0 +1,497 @@
+{
+    "id": "12gdbye",
+    "score": 1320,
+    "title": "Why gravity decreases with depth?",
+    "author": "fake_person67",
+    "date": 1681028770.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12gdbye",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "It doesn't always, with reference to the Earth at least, it actually increases first and then begins to decrease. When considering gravity as a function of depth for the Earth, we often use the PREM (Preliminary Reference Earth Model), which suggests that gravitational acceleration actually increases until the core-mantle boundary, before starting to decrease, but not linearly, e.g., [this figure](https://en.wikipedia.org/wiki/Preliminary_reference_Earth_model#/media/File:EarthGravityPREM.jpg). \n\nThe key concept here is the [shell theorem](https://en.wikipedia.org/wiki/Shell_theorem), which basically suggests that if you have a spherical object of radius X, at a depth Y, the gravitational acceleration will reflect only the influence of the mass of the object below depth Y (so effectively for a sphere of radius X-Y) because influence of the mass above depth Y is cancelled out. What begins to be important then is the distribution of mass, i.e., the density of the material within the sphere and how that's arranged. If the sphere had a constant density, then you would expect gravitational acceleration to uniformly decrease as a function of depth (and you can see this as one of the lines in the PREM figure from above). For Earth though, generally density increases with depth and does so very non-uniformly (e.g., [this model of density with depth, which is also part of PREM](https://en.wikipedia.org/wiki/Gravity_of_Earth#/media/File:RadialDensityPREM.jpg)).\n\nIf we put those two together, i.e., the shell theorem and the density changes with depth, what this implies is that as you get deeper, at first the increase in the average density of the shells \"below\" you compared to the average density of the shells \"above\" you results in an increase in gravitational acceleration. Once you get to the core-mantle boundary though, while density still increases with depth, it does so more consistently and over a narrower range (and you're broadly in the highest density portion of the planet) so now gravitational acceleration begins to decrease as there is less and less mass in the shells \"below\" you.\n\nAn obvious caveat is that PREM is a model (it's right there in the name) and assumes (1) the Earth is a perfect sphere (it's not, it's a lumpy oblate spheroid) and (2) density contrasts are perfectly radial (they're not, there are definitely contrasts in density within radial \"shells\"), but it's a much better approximation than either assuming a constant density or something like a linear increase in density. Also, obviously this is the model for Earth. If we wanted to consider another planetary body, we'd have to update it to whatever the correct change in density with depth would be, but the shell theorem would still apply. If our hypothetical body was closer to a constant density, then you would expect generally gravitational acceleration to decrease with depth everywhere throughout it.",
+            "score": 1232,
+            "author": "CrustalTrudger",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you, that\u2019s really interesting.",
+                    "score": 85,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is a perfect answer to the question. It's very interesting how gravity actually increases as you get to almost half way to the centre of the earth. I'd have expected the peak to be much closer to the surface.",
+                    "score": 76,
+                    "author": "Jimmy_Fromthepieshop",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The crust is about as thick as the skin of an apple compared to the earth as a whole. The crust-mantle boundary is still basically at the surface.\n\nedit: rereading the earlier comment I see that I misread \"core-mantle\" as \"crust-mantle\". The former is much closer to the midpoint, yes.",
+                            "score": 41,
+                            "author": "wlerin",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 14,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 26,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 19,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 1,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Consider how much more dense is the inside compared to the crust and things will make sense.\n\nThe crust is basically fluffy blanket getting close to center you get very high density metals. \n\nLike strip away everything but the core and not much will change.",
+                            "score": 2,
+                            "author": "PineappleLemur"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So it has nothing to do with the fact that the majority of the mass-y object whose gravitational pull you\u2019re under is now mostly over you and not under you?",
+                    "score": 6,
+                    "author": "FaxCelestis",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The shell theorem states that a thin shell of constant-density material creates the gravitational field of a point mass at the centre when you\u2019re outside of it, and no gravitational field inside of it. Since gravity is additive, this extends to being inside or outside a hollow ball.\n\nWhy? Well, consider being inside the ball. Not necessarily in the middle, in fact, let\u2019s say you\u2019re near one side. The inverse square law says that the mass pulling on you from the far side exerts far less force than the mass nearby to you. *But*, there\u2019s a lot more mass in the direction towards the centre than towards the edge. In fact, these two factors cancel out exactly - the intuition here is that if you look at a spot of fixed angular diameter, twice as far away that\u2019s going to cover twice the actual diameter, and so four times the material. As a result you experience no net force.\n\nTherefore inside the planet, all that matters is what\u2019s below you. A sphere of constant density gives a force that drops linearly as you approach the centre - at each point, if you\u2019re a distance *R* from the centre, the amount of material below you is proportional to R^3 but the force per unit mass drops off as 1/R\u00b2. Hence the net effect is the force is linear in *R*. \n\nBut since the core of the planet is much heavier, being mostly iron, the total mass below you drops off slowly at first, while you still get closer to the centre. Hence the force grows as you descend. Once you reach that heavier section, the force starts dropping.",
+                            "score": 8,
+                            "author": "jaredjeya"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The way I read it is that there is a lot of mass on the \u201cother side\u201d of the core pulling at you too\u2026. So at some point (like the actual very centre), the mass above pulls you up at the same acceleration as the mass below. And you just sit there aimlessly at the centre wondering how on earth you got there.",
+                            "score": 7,
+                            "author": "3rdslip"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you. How does the density of other planets in our solar system compare to ours as you go down to the center? Or can we not measure that?",
+                    "score": 10,
+                    "author": "swankpoppy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A lot of our understanding of the internal structure of the Earth comes from seismology. This can be applied to all terrestrial (i.e. rocky) bodies. It can also theoretically be applied to gas giants, although the analysis is much more complicated. \n\nThe main difficulty for applying seismological analysis is obtaining the quantity of data necessary to make accurate predictions. Furthermore, a body may be geologically inactive, meaning there are minimal naturally occurring, large magnitude seismic waves to study, which leads to a lack of available data, particularly for deeper internal structures. \n\nSeismic waves can be artificially created, but the amount of energy released is typically several orders of magnitude smaller than from natural events (i.e. quakes, meteorite impacts, etc.). Also, not all of the energy will be converted into seismic waves. Depending on the desired resolution, many waves will need to be generated in many different locations, as well as placing many seismometers in many different locations. This increases the logistical costs necessary to obtain adequate data.\n\nFor some in depth reading on current planetary seismology (specifically the Moon and Mars), take a look at the [Treatise on Geophysics, 2nd edition, (2015), vol. 10](https://www.eoas.ubc.ca/~cjohnson/CJPAPERS/paper71.pdf).\n\nTL;DR we probably could take such measurements, it would just be extraordinarily expensive to do so.",
+                            "score": 6,
+                            "author": "myselfelsewhere",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks! :D",
+                                    "score": 2,
+                                    "author": "swankpoppy"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How much faster is time moving at the center of the earth, compared to the surface?",
+                    "score": 3,
+                    "author": "kinghuang"
+                },
+                {
+                    "level": 1,
+                    "comment": "Does that mean that the part of the sphere further out than your radius that is below you is being perfectly cancelled out by the part that is above you? It's cool that the maths works out that way\n\n\nIs the increasing gravity then because you are closer to the denser inner part, and the square root fall off of gravity means it's having a proportionally much larger influence on you?",
+                    "score": 6,
+                    "author": "viridiformica",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes - the words \u201cabove\u201d and \u201cbelow\u201d can be confusing here but yes you\u2019re correct - if you\u2019re down some depth, and you consider the shell of the earth whose distance from the centre of the earth is &gt; than yours, some small portion of that shell is above you (but very close, so has a stronger effect on you due to gravity), and a much larger option of it is below you (but much further away, so less of an effect on you due to gravity), and it is elegant that the math works out so they cancel.",
+                            "score": 11,
+                            "author": "RibsNGibs"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No, it means that anywhere inside an empty shell the effect of gravity cancels out. \n\nYou can ignore the bits at a greater radius than you are. (Not going to use the word \"above\" here as it would be super confusing) \n\nSo if you drilled a hole halfway to the center of the earth, the gravity would be like if you stood on a half-sized earth.",
+                            "score": 6,
+                            "author": "PajamaPants4Life"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That\u2019s incredibly interesting. So gravity would be greater than 1G at a slightly lower depth! What is the maximum value it reaches? Ah so looking at the graph around 10.6 ms^-2? Wow. And that is halfway through the Earth!!! I expected it to be closer to the surface! You learn something new everyday folks.",
+                    "score": 2,
+                    "author": "fretnetic"
+                },
+                {
+                    "level": 1,
+                    "comment": "Doesn't this contradict the idea that gravity is a warp in spacetime?\n\nSurely the closer you get to the centre the greater the warp?  \n\nThis seems to fit better with Neutonian physics where mass has gravity so any mass above you will pull up, countering the mass below you like the moon's effect on tides.",
+                    "score": -1,
+                    "author": "spudmarsupial",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nope. \n\nYou can plug in all the same information from the model into General Relativity and it will get you nearly the same answer as Newtonian.\n\nGR cares about how [energy density](https://en.wikipedia.org/wiki/Stress%E2%80%93energy_tensor?wprov=sfla1) curves spacetime. \n\nSo even as you plunge into the earth, unless the density is changing, the only thing that is changing is the material below you providing the gravitational pull. This is explained in the Shell Theorem that was linked in the top comment.",
+                            "score": 3,
+                            "author": "I_AM_FERROUS_MAN"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not necessarily. It still warps space time. Just cancelled out by the mass above it.",
+                            "score": 3,
+                            "author": "lifewithnofilter"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah the commenter is talking about Newtonian physics and Newtonian gravity, which is extremely accurate in this context.  General relativity would be overkill here (in fact if you use the appropriate limits, i.e. static gravitational field and 'low velocity' objects experiencing gravity, then you will recover Newtonian gravity from general relativity).",
+                            "score": 1,
+                            "author": "Bulbasaur2000"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "One of the more interesting comments I\u2019ve read here. Thanks!",
+                    "score": 1,
+                    "author": "SeLaw20"
+                },
+                {
+                    "level": 1,
+                    "comment": "Perfectly explained!",
+                    "score": 1,
+                    "author": "alien_bigfoot"
+                },
+                {
+                    "level": 1,
+                    "comment": "An excellent and thorough answer. Thank you!",
+                    "score": 1,
+                    "author": "I_AM_FERROUS_MAN"
+                },
+                {
+                    "level": 1,
+                    "comment": "Fantastic answer. I'd like to add that the gravity is not consistent in orbit either. Orbit doesn't last forever, satellites have to make micro adjustments to stay in orbit and even the moon is slowly moving 3.8cm further away every year.",
+                    "score": 1,
+                    "author": "rainmouse"
+                },
+                {
+                    "level": 1,
+                    "comment": "But it doesn't matter how relatively light the crust is compared to higher densities below. At the surface (or on top of Everest) there is more mass between you and the earth's center than if you are at any depth. Changes in density with depth notwithstanding. Total mass is what's important, yes? The feather and the bowling ball have the same g. Density a tad different.",
+                    "score": 1,
+                    "author": "science_lake_ocean",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think what you are missing is that gravity falls off with the inverse square, so proximity is important.  Descending from the surface decreases the total mass below but gets closer to the heavy core.   The mantle is basically hot rock with a density like 4.5 g/cc, the core is like twice as dense, mostly iron with a bit of nickel etc with a density of 9.9-12.2 g/cc.\n\nAs an approximation, it's the difference between being a small radius from a dense little planet or at a larger radius to a big lighter planet.   At the Earth's numbers, the dense \"inner planet\" has a bit stronger gravity.",
+                            "score": 1,
+                            "author": "jimb2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In theory, with uniform distribution of mass and a perfect sphere (none of which hold for Earth), if you go deeper, then you have more mass around you and above you. Therefore you cancel a bit of pull from below. \n\nIf you want another way to think about it, in the center there should be no pull in any direction, so there must be a decrease from surface to the center.",
+            "score": 179,
+            "author": "Ishana92",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 70,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 43,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 45,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 8,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 0,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 2,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 48,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 8,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": -3,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 9,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 2,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "In the center, there *is* a pull in *ALL DIRECTIONS*. But since that pull is (almost) equal in all directions, the forces cancel out, and there is no overall net force.\n\nEven in the presence of forces, things can sometimes just not be moving. For example, you are exerting a force called \"weight\" on the Earth right now, but there is a contact force exerted on the earth upon you, with equal strength but pointing opposite to your \"weight\" force. Since these forces cancel each other (they balance out), you do not move and are thus standing still. \n\nIt is not merely a force which causes movement, it is **overall unbalanced set of forces** which does that.\n\nEdit: Last line and second paragraph as per replies.",
+                    "score": 11,
+                    "author": "SFN2048",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Even in the presence of forces, things can sometimes just not be moving. For example, you are exerting a force called \"weight\" on the Earth right now, but due to Newton's Third Law, there is a corresponding force, with the same strength, but pointing in the exact opposite direction of the weight force - the forces are equal but opposite and therefore cancel out.\n\nThis is true, but the way you've worded it makes it a bit misleading. The equal and opposite force to your gravitational pull on the Earth is the Earth's gravitational pull on you. *Both* of these forces would tend to move you and the Earth closer together. So Newton's 3rd law is not the reason why you can stand on the surface of the Earth without moving.\n\nIt's a different force that's cancelling the Earth's pull on you, and that's the force of the ground pushing against you (called the [\"normal force\"](https://en.wikipedia.org/wiki/Normal_force)). This is the force you feel in your feet when standing on the ground, and without it you would be in free fall (towards the center of the Earth) and would feel weightless.",
+                            "score": 4,
+                            "author": "amaurea",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The normal force is the 3rd law reaction to the force your feet exert on the ground due to gravity",
+                                    "score": 1,
+                                    "author": "OldWolf2",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not exactly. Forces here:\n\n1. Earth on you, that's \"weight\", due to gravity\n\n2. Your feet on the ground. When you're not moving that's the same as #1.\n\n3. The ground on your feet, the normal force of Force #2 from Newton's 3rd law.\n\nWe cannot say force #3 is the normal force of force #1. The Normal force is always the same strength and opposite direction. But Forces #1 and #3 are not always the same strength and opposite direction: it is only true when you are not moving. If you are jumping for example, the forces would be different.\n\nNot mentioned here is the normal force of #1, the attraction of the Earth towards you. But we usually ignore that.",
+                                            "score": 4,
+                                            "author": "sjcelvis"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Nitpick: It is an overall unbalanced _set of forces_ which does that. An individual force can't be unbalanced.",
+                            "score": 2,
+                            "author": "amazondrone"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\"There's something alive in here.\"\n\"That's your imagination.\"\nStar Wars",
+                            "score": -1,
+                            "author": "Ian_Christoph"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;Therefore you cancel a bit of pull from below. \n\nIncorrect. The mass at greater distance from the center has no net effect on gravity. The gravitational forces of the spherical shell outside your radius cancel themselves out--and only themselves, not anything at a smaller radius. See [the shell theorem](https://en.wikipedia.org/wiki/Shell_theorem). All that matters is the mass at smaller radius than you (\"below\" you), and your distance from its center.",
+                    "score": 0,
+                    "author": "OlympusMons94"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As you head down into the earth you are getting closer to bits of the earth that are beneath you, so they pull you more strongly down.\n\nAt the same time, you are getting below other bits of the earth, and they start pulling you upwards.\n\nThe overall effect is that gravity will first increase for a while, and decrease until it reaches effectively zero.\n\nAt the centre of the earth, you have matter pulling in all directions. The overall effect is nothing.",
+            "score": 38,
+            "author": "razovor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;you are getting closer to bits of the earth that are beneath you,\n\nThose bits below you are much denser than the bits around and above you, which is why there's still an increase.",
+                    "score": 10,
+                    "author": "Iz-kan-reddit"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 6,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 19,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 6,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 2,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Let\u2019s scoop out a nice space for you in the \u201ccenter\u201d of a planet of your choosing.  Teleport you in, and you\u2019d feel there would be zero gravity - the planet is pulling you in all directions equally, for a net zero. You\u2019d feel like you were in free fall. \n\nNow move in one direction (any direction is up from there). You are now putting more and more planet under you, and less above you. You slowly gain gravity and, when it adds up to enough, go ahead and grab the conveniently placed pull-up bar so you can feel the gravity pulling you down.",
+            "score": 11,
+            "author": "IonTheBall2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "But you're also getting closer to the planet above you and further from the planet below you.\n\nThe shell theorem tells us explicitly that if we have a spherically symmetric body with a void inside of it (which, by definition, means that the void is also spherically symmetric and centered on the center of the sphere), *anywhere within the void* the net gravitational force is zero. \n\nSo you don't need to be at the exact center of the void to be unaffected by gravity. Anywhere inside of the void, the net gravitational force is equally zero. If you're right next to the wall you don't feel any force any more than you do when you're right at the center.",
+                    "score": 9,
+                    "author": "Coomb",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks - that\u2019s a great point!\n\nSorry, I can see how it sounds like my space is big - didn\u2019t mean that. \n\nAs you go up, let\u2019s either have the small space move with you, filling in behind for good measure.  Or, it\u2019s a shaft with inconsequential size. \n\nI want it to still be a planet, with just a little room to play around in, didn\u2019t mean to hollow out the thing.",
+                            "score": 1,
+                            "author": "IonTheBall2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Aside from the great answers already in this thread, can anyone explain how this works with Einsteins framework of spacetime curvature? I'm obviously a complete nincompoop, but iirc, the PBS spacetime guy said that gravity mostly comes from the effect of time dilation due to the curvature (in this framework anyway). How does spacetime curve closer to the center of gravity, and how does this affect the passing of time?",
+            "score": 3,
+            "author": "lessthanperfect86",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's about scale - in particular velocities of things moving. Einstein's work explains things involving things moving at, or near the speed of light.\n\nThe work on gravity as a force in a planetary context was done by Isaac Newton in the 17thC \n\n&gt;  PBS spacetime guy said that gravity mostly comes from the effect of time dilation due to the curvature (in this framework anyway)\n\nThis curvature is detected and observed with beams of light (speed of light involved).\n\nPlanetary gravitatioal effects like an apple falling to the ground don't need Einstein. The orbit of the moon, planets, comets, rocket travel etc are all covered by Newtonian model of gravity.\n\nNewton described gravity as an ever-present force, a tug that all objects exert on nearby objects. The more mass an object has, the stronger its tug. Increasing the distance between two objects weakens the attraction. At the centre of the earth there is roughly equal gravitational attraction in all directions. So there is no net \"gravitational force\" acting on an object.\n\nEinstein\u2019s Theory of  General Relativity explains everything Newton\u2019s theory did (and some things it didn\u2019t), and better.",
+                    "score": 1,
+                    "author": "schoolme_straying"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There isn't any need to consider cancelling of mass \"below\" by mass \"above\". From the [the shell theorem](https://en.wikipedia.org/wiki/Shell_theorem), the net gravity is only dependent on your radius from the center, and on the mass contained within your radius (\"below\" you). The gravity from the spherical shell of mass \"above\" your radius cancels itself out, and therefore can be entirely ignored.",
+                    "score": 2,
+                    "author": "OlympusMons94",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah looked back and I phrased that weirdly. I meant the corresponding mass in the \u2018below\u2019 direction but on the other side, but \u2018below\u2019 is an exactly confusing word for that. \n\nMeant to emphasise the intuition of the trade-off between the mass between you and the centre (actually \u2018below\u2019) vs. the radius, without using technical language, but I see a couple of comments have already explained it better.",
+                            "score": 1,
+                            "author": "Harsimaja"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What do you mean here? the general formula for gravity at the surface would be g=GM/r^2. As you can see, when the radius or as you say \u2018depth\u2019 decreases, g would obviously increase.\n\n I\u2019m going to simplify as I don\u2019t know how much people here know so excuse me if I\u2019m being condescending. We could sub in say a radius of 1 or 2 to a constant and it would increase with a smaller radius according to the inverse square law. \n\nIf you\u2019re talking about actually being inside a planet, this follows a more linear value as suggested by UK a-level physics. If you think logically, when there are more particles and the object is bigger you are attracted towards it until (in the case of being inside the earth) the masses surrounding you are equivalent in each direction because there is equal mass in each direction. \n\nI hope I helped :) lmk",
+            "score": 1,
+            "author": "IndependentGolf5421"
+        },
+        {
+            "level": 0,
+            "comment": "When thinking about it very generally and assuming that the Earth is uniform and constant throughout in terms of mass density (which it isn't) ... understanding that is is mass that causes gravity in the first place, then as you get closer to the center of the Earth, you move past the bulk of the mass that is creating gravity in the first place so that when you get to the center you're at \"ground zero\" where it all starts. \n\nIf the Earth were able to implode in on itself as some stars can do when they die, then the Earth could condense into a smaller mass with stronger gravity but that gravity would be less influential more quickly as you moved away from it.\n\nI find black holes to be incredibly difficult to imagine since all of the mass from a star roughly 3 to 5 times the size of our sun collapses in on itself where all of that material condenses into a singularity that is so small, it has no dimensions at all. So that star condenses so tightly that it disappears and cannot be seen yet it's still there and the gravity that it creates is so strong that nothing near it, not even light has a chance of getting away from it, and also, time stops at the singularity. So for example, if you could go near a black hole and we were watching you from Earth, you would get to a distance where you would appear to stop completely from our point of view and you would be frozen there for the rest of time as we experience it out here.",
+            "score": 1,
+            "author": "EasyGoing1_1"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -16,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 10,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": -12,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Gravity doesn\u2019t increase\u2014it\u2019s a constant. What increases is the acceleration due to gravity.\n\nIt\u2019s hard to imagine since it\u2019s invisible but gravity warps space so imagine the planet makes like a sinkhole in space. If you\u2019re floating far enough way from the planet you\u2019re safe but as you get closer to it, you start to get accelerated by the planet. It\u2019s like going down a slide\u2014a planet size slide and invisible. You\u2019re slower at the top but as you go down you pickup acceleration.\n\nNow imagine that your imaginary slide could go through the center of the earth and out the other side and you wouldn\u2019t be crushed or roasted by the inner layers of the planet let\u2019s also ignore air resistance to make the illustration simpler.\n\nYour fastest acceleration would be reached exactly as you crossed the midpoint of the core of the earth. As soon as you cross the core, it would decelerate you but since you started outside the earth and we\u2019re ignoring air resistance, you would have enough momentum to exit out the other end.",
+            "score": 0,
+            "author": "Serious-Landscape859"
+        }
+    ]
+}

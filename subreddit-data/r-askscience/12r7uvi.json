@@ -1,0 +1,395 @@
+{
+    "id": "12r7uvi",
+    "score": 922,
+    "title": "How is Silver so electrically conductive, and yet non magnetic?",
+    "author": "thespacecase93",
+    "date": 1681858825.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12r7uvi",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "If electromagnetism is one force, how are electricity and magnetism behaving differently with this element in particular? Are there other materials that share these properties?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is a physics question. Electric fields and magnetic fields are linked, but you are looking at the behavior of electrons in materials here. The conductivity depends on how well electrons can move across the material, while the magnetic properties depend on how the magnetic moment of electrons (from their spin and their orbitals) align. These are generally independent things.\n\nSilver is diamagnetic, like many other elements. An external field will change the orientation of the magnetic moments of the electrons in silver, creating a weak opposing field. Copper, another excellent conductor, is diamagnetic as well.\n\nIn everyday use, \"magnetic\" usually refers to ferromagnetism, where the magnetic moments in the material will be aligned easily by an external field and point in the same direction (the material will be attracted by a magnet), and they can be aligned even in the absence of an external field, which means the material can be a permanent magnet. This is a very unusual condition and only a few pure elements show it, with iron being the most notable one. Usually we encounter iron as steel - some versions of it are ferromagnetic, others are not, it depends on the composition.",
+            "score": 1003,
+            "author": "mfb-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Very helpful and informative, thank you!",
+                    "score": 156,
+                    "author": "thespacecase93",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You may find [this video](https://www.youtube.com/watch?v=g0amdIcZt5I) demonstrating the effect of a giant magnet on conductive, yet non-magnetic, metals to be very interesting. Moving a conductive material through an electric field generates eddy currents in the object, and moving a current against the electromagnetic field (ex. dropping the object) takes force. Reminds me of the inertia that a spinning gyroscope has.",
+                            "score": 83,
+                            "author": "teawreckshero",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's amazing. I haven't finished the whole thing yet - I have to get back to work. I just paused it wherehe said 47,000A at 500V. That's 23.5MW.",
+                                    "score": 9,
+                                    "author": "DieFlavourMouse"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;Usually we encounter iron as steel - some versions of it are ferromagnetic, others are not, it depends on the composition.\n\nThis part is really annoying when you buy stainless steel fastenings expecting them to be magnetic (so they hang on your driver) but they are not lol",
+                    "score": 38,
+                    "author": "Emu1981",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Austenitic stainlesses like 304, 316, plus the manganese stainlesses (nickel and manganese are both austenite forming components) are not ferromagnetic unless they have been cold worked. Cold working creates martensitic phases in the metal.  \n\nFerritic stainlesses (409, 430, plus some others) and martinsitic stainlesses (knife and tool stainlesses) are ferromagnetic. \n\nThe main reason that some stainless is ferromagnetic while others are not has to do with their crystal structure. Austenite is a face-centered cubic structure- this configuration does not allow alignment of the dipole moments of the iron atoms in any direction. The martensite crystal structure is... sort of tetragonal (but with a lot of strain) and the ferrite crystal structure is body-centered cubic. Both of these phases allow for alignment of the magnetic domains when exposed to an external magnetic field. They're not typically aligned in any particular direction prior to being exposed to an external magnetic field, so they're not magnets.",
+                            "score": 50,
+                            "author": "NeverPlayF6",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "At my work it's a pain. We mainly use 304 or 316. But we can't guarantee it won't be magnetic and in systems we build with magnets we have to use titanium or something else. It may start off non-magnetic but it's quite easy to accidentally cold work it",
+                                    "score": 22,
+                                    "author": "gluepot1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Just a ~20\u00b0 bend is enough to change the magnetic permeability enough to measure... and a 180\u00b0 with a tight radius is enough to actually feel a magnet sticking to the metal.",
+                                            "score": 2,
+                                            "author": "NeverPlayF6"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If you exposed a white-hot piece of knife steel to a strong magnetic field as it cooled, would the resulting knife be magnetic?",
+                                    "score": 7,
+                                    "author": "grahampositive",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not necessarily white hot, but yeah you can make magnets by heating iron and applying a magnetic field. You also lose magnetic properties if it gets too hot.",
+                                            "score": 22,
+                                            "author": "Dante451"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yup, it's occasionally an issue when welding (you can do it with a polarized/DC electric current instead of a magnet) where they can accidentally magnetize parts, or even during some forging and production processes if they aren't careful/follow procedures.",
+                                            "score": 5,
+                                            "author": "paulHarkonen"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "What you are asking about is the [Curie temperature\n](https://en.wikipedia.org/wiki/Curie_temperature) which is the temperature above which certain materials lose their permanent magnetic properties. And then re-magnetizing the knife after heating it.\n\nYou can also re-magnetize iron/steel at any temperature. All you need is a strong enough magnetic field to overcome the magnetic inertia of the iron. You can [buy re-magnetizers very easily online](https://search.brave.com/search?q=re-magnetizer).",
+                                            "score": 5,
+                                            "author": "Lurker_IV"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In general, you want your nuts and bolts to be the same material, and ideally the same as material you're fastening. Most factories I have worked in have a magnet next to the workbench so you can tell the mild and stainless fasteners apart: Tap a bolt on the magnet and if it sticks it's mild steel. If it doesn't it must be stainless.",
+                            "score": 5,
+                            "author": "Iforgetmyusernm",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't know anything about stainless steel in factories specifically, but in other settings there are versions that are magnetic so this isn't always an accurate test.",
+                                    "score": 6,
+                                    "author": "DocPsychosis"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Or when you move to an apartment with an inductive stove and half your stainless steel pots and pans work and the other half are useless",
+                            "score": 4,
+                            "author": "BoopySkye"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks for the explanation.  Very cool.",
+                    "score": 12,
+                    "author": "Equal_Coach6307"
+                },
+                {
+                    "level": 1,
+                    "comment": "In undergrad, my professors used the word \"paramagnetic\" where you use \"diamagnetic,\" which I've never heard before. Is that a synonym?\n\nAnd ferromagnetic materials are materials which undergo magnetic hysteresis in response to an external magnetic field, meaning that once an external field aligns their spins, they remain somewhat aligned even after the field is removed.",
+                    "score": 23,
+                    "author": "8Splendiferous8",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Paramagnetic and Diamagnetic are different things. Paramagnetic materials are slightly attracted while in a magnetic field. In contrast Diamagnetic materials are repelled",
+                            "score": 77,
+                            "author": "Poputt_VIII",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Interesting. Thanks!",
+                                    "score": 15,
+                                    "author": "8Splendiferous8",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Everything is magnetic under 1 of three types of magnetism: ferromagnetic, paramagnetic, or diamagnetic. Back in 1997 the [first living things were levitated](https://www.youtube.com/watch?v=KlJsVqc0ywM) thanks to the development of super strong magnets. Things were wild back then when frogs started levitating.",
+                                            "score": 1,
+                                            "author": "Lurker_IV"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Great and informative answer - thanks!",
+                    "score": 3,
+                    "author": "bopcrane"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is very accurate reasoning for the question posted. Lot of us have misconception on magnetism. Ferro Magnetism isn\u2019t same as the magnetism. The blend of chemistry and physics is important to understand in this field",
+                    "score": 7,
+                    "author": "the_infinitegame"
+                },
+                {
+                    "level": 1,
+                    "comment": "Copper is the same no?",
+                    "score": 2,
+                    "author": "monkeyinanegligee",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Silver is diamagnetic, like many other elements. An external field will change the orientation of the magnetic moments of the electrons in silver, creating a weak opposing field. **Copper, another excellent conductor, is diamagnetic as well.**",
+                            "score": 2,
+                            "author": "mfb-",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I appear to be missing the part of my brain responsible for comprehension, thankyou",
+                                    "score": 2,
+                                    "author": "monkeyinanegligee"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Math guy, not a physics guy here, so I'm wondering,\n\nIs diamagnetism essentially self-destructively interfering magnetic fields coming from the same material, such that it has no measurable field until augmented by an external field?",
+                    "score": 1,
+                    "author": "aboatdatfloat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You always have these, no matter what material. Most electrons come in pairs with opposite magnetic moment within each atom (apart from hydrogen, which only has one electron per atom, but there you get the pairs across atoms). If you have some unpaired electrons then it's interesting how they align each other. Most of the time that's still largely in such a way that they cancel each other.",
+                            "score": 4,
+                            "author": "mfb-"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Precisely.  \nDiving in a 20 years old university memory here, in ferromagnetic materials molecules are \"grouped\" in Weiss domains all oriented in one direction so that they can be easily aligned in the same direction by a magnetic field",
+                    "score": 1,
+                    "author": "azzappu"
+                },
+                {
+                    "level": 1,
+                    "comment": "Dumb question: we talk about all of this motion and spin occurring at subatomic levels... Where is all of the energy driving this coming from? Is there a state where enough energy is taken from a system that all motion is stopped (e.g., what really happens at zero Kelvin?)... I assume that magnetism doesn't stop at zero Kelvin (assuming that that's got to be a closed system)...",
+                    "score": 1,
+                    "author": "mariospants",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You don't need an energy supply to just keep a state that doesn't emit any energy. And yes, these magnetic moments still exist at zero Kelvin.\n\nHaving a permanent magnetic field tends to be easier at lower temperatures: Ferromagnetic materials have what's called Curie temperature, above that they lose their magnetic field because there is sufficient thermal energy to break the ordering of the internal magnetic fields.",
+                            "score": 2,
+                            "author": "mfb-",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Where is the energy coming from, to keep the spin going that creates the magnetism, at 0 Kelvin?",
+                                    "score": 1,
+                                    "author": "mariospants",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Where would anything need an energy source?",
+                                            "score": 1,
+                                            "author": "mfb-",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It was mentioned that aligned + spinning electrons are causing magnetism. Even subatomic particles aren't perpetual motion machines. What's giving those electrons spin, if they are at zero Kelvin? Theoretically, I would expect that magnetism would slow and stop at zero Kelvin... can anyone explain otherwise?",
+                                                    "score": 1,
+                                                    "author": "mariospants",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Don't take \"spinning\" too literally here. Spin in quantum mechanics doesn't require anything to move or rotate in a classical way.\n\n&gt; Even subatomic particles aren't perpetual motion machines.\n\nRight, but they keep their state if there is no lower energy state available. That means they keep some non-zero energy even at absolute zero. Not that it would matter in this particular case: Electrons *always* have spin, in every state.",
+                                                            "score": 3,
+                                                            "author": "mfb-",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Great reply, but *how*. How are electrons *always* permitted to have spin?",
+                                                                    "score": 1,
+                                                                    "author": "mariospants",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Not just permitted -- must have. So the way to get there is really really math heavy: https://en.wikipedia.org/wiki/Spin%E2%80%93statistics_theorem\n\n\nAlmost everything you interact with other than light is made up of Dirac Fermions, https://en.wikipedia.org/wiki/Fermion\n\nIn a very reductive description, the fact things are made of Fermions is why things don't slide through each other.",
+                                                                            "score": 3,
+                                                                            "author": "JonseyCSGO",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I get that: Fermi energy still exists at close to absolute zero and there is still a concept of spin. I get that. I'm just asking where all of this spin energy/angular momentum comes from and how long does it last? Will a free electron/fermion in a cold enough environment long enough slow to a stop? What if we experimentally stop it between spins somehow? Will it spontaneously start up again? Etc. this angular spin is not a perpetual machine thing... how long can a magnet, spun, produce energy/work? Is there an end to this spin? In a trillion trillion, trillion, etc. years, will all fermions have stopped spinning?",
+                                                                                    "score": 1,
+                                                                                    "author": "mariospants"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You're right that the energy for this motion and spin is coming from the temperature. When at very low temperatures everything starts to stop moving. The thing is, zero kelvin is as far as I know, impossible. We just get closer and closer to it.\n\nConduction basically stops being a thing the closer you get to zero. Even in copper or silver, it will get to a point where it basically stops conducting. I assume that something will happen with the magnetic field too. I just don't know what it is.",
+                            "score": 1,
+                            "author": "gluepot1",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's what I was surmising: does magnetism and electrical conduction stop working at absolute zero (in what we'd hypothesize is a closed system)?",
+                                    "score": 1,
+                                    "author": "mariospants"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Isn't it the magnetic moment of protons that is responsible for magnetism, not electrons?",
+                    "score": -2,
+                    "author": "anon2282",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No, it's the electrons. The physics is the same, you can have nuclear ordering, but the temperatures associated with the nuclear magnetic interaction are much lower.",
+                            "score": 14,
+                            "author": "Boredgeouis",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah it's the atoms as a whole vs the nucleus/protons.  Haven't looked at this material in decades and remembered wrong because atoms' are overwhelmingly made up from the nucleus.",
+                                    "score": 4,
+                                    "author": "anon2282",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "These two things are directly connected. The magnetic dipole moment scales with q/m where q is the electric charge and m is the mass. Nucleons have 1800 times the mass, so their magnetic moment is much smaller.",
+                                            "score": 9,
+                                            "author": "mfb-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Is everything diamagmetic then?",
+                    "score": 0,
+                    "author": "uuddlrlrbas2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Everything has that mechanism, but if things are also reacting in a different way - paramagnetism or ferromagnetism (or some more exotic options) - then you don't notice the diamagnetism because these other interactions are stronger.",
+                            "score": 2,
+                            "author": "mfb-"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Aluminium and Copper is also conductive but non magnetic.\nIf you look at their valence electron configuration, Cu (3d10,4s1), Ag (4d10, 5s1) and Al (3s2, 3p1). They all have 1 unpaired electron, magnetic property of material comes from the spin of unpaired electron.\n\nCompares them to Fe (3d6, 4s2), there are 4 unpaired electrons in the 3d shell. But there are more to magnetism than just electron configuration of the elemnent. Cr (3d5, 4s1) is antiferromagnetic",
+            "score": 26,
+            "author": "mijsga"
+        },
+        {
+            "level": 0,
+            "comment": "Electricity and magnetism are \u201cdifferent\u201d phenomena. Conduction is the ability of a material to allow for the moment of charge through it. The electric charge is carried by the electrons, which have a negative charge. Metals usually have electrons in energy levels far from the positively charged nucleus to which they\u2019re attracted, so those electrons can easily hop around, carrying their charges with them. Magnetism, on the other hand, stems from the spin of the electrons. The \u201ctendency\u201d is for electrons to \u201corbit\u201d the nucleus in pairs of electrons with opposite spin, which cancel each other out. Elements with a number of unpaired electrons are susceptible to being magnetized. In other words, conductivity depends on how weakly nuclei hold to their electrons, whilst magnetism depends on whether those electrons are paired. Btw, I\u2019ve overly simplified a lot of things here.",
+            "score": 41,
+            "author": "dnyal"
+        },
+        {
+            "level": 0,
+            "comment": "As others have mentioned magnetism is a caused by a different attribute than electrical conductivity. Magnetic materials are relatively uncommon, mainly iron and nickel and it's due to the arrangement of the crystalline structure in the metal which means that the electrons field all faces the same way or can be induced to face the same way.\n\nRegular metals don't have this. But as a metal they allow for free movement of electrons within the structure and electrical conductivity is determined by how easily it is for these electrons to do so. With silver copper and gold being great, but iron, lead and titanium being poor.  With enough current, anything can be conductive, hence with enough charge electricity can jump in the air and is not limited to metals for example graphine or liquid helium. These electrical conductivity properties also can also change with temperature.\n\n&amp;#x200B;\n\n~~Electromagnetism as a field is essentially the study of the electron.~~ So while magnetism and electricity are both electromagnetism. That does not make them the same thing",
+            "score": 6,
+            "author": "gluepot1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hmm, I would say EM is the study of fields, less so than the study of electrons.",
+                    "score": 1,
+                    "author": "Proof_Cost_8194"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Electric conductivity is a metric of how easily a material conducts electric charge; that is allowing charge carrying electrons to move within the material when an attracting or repulsing field is applied.\n\nMagnetism is the result of motion of electrons. This motion can be linear, in which a charge carrying particle moves in a line. This happens when you have electric current in a wire and is explained by Ampere's law. The motion may also be circular, described by the a quality of electrons called spin. \n\nAt most times, with most materials, the total effect of spin from electrons cancels each other out. With some special material, the total spin is uneven, and the net effect is a \"static\" magnetic field. While \"static\" it's important to keep in mind that it is still due to motion of electric charge. \n\nSilver does not have a mismatch in electron spin, so there is no static magnetic field. However, it has a very loosely bound charge carrying electrons that will readily move when influenced by an electric field. This motion does create a magnetic field (per Ampere's law), but that field is only present when the linear motion is induced by an external field.",
+            "score": 4,
+            "author": "QueenSlapFight"
+        },
+        {
+            "level": 0,
+            "comment": "Pretty sure any metal has magnetism if you're passing current through it.\n\nLike the demonstration where induced current in a copper mass causes it to sink slower when dropped.\n\nIron only saves magnetism because it has mismatched poles, and sticks that way because it's solid.\n\nWater H2O molecules are mismatched too, but it's liquid. Which I know is how microwaves work- the field twists the molecules, then reverses, twisting then back, then reverses, rapidly. This heats up your food.\n\n(But water is a liquid, so it can't save the alignment, and ice... must be some reason why ice isn't magnetic. IDK!)\n\nWhich is why something dry, like wax paper or paper towel only heats up if it can get wet. Or the ceramic.glass stuff doesn't get hot itself, just maybe trace water inside.",
+            "score": 1,
+            "author": "emptybottleofdoom",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\"Pretty sure any metal has magnetism if you're passing current through it.\"\n\nThis isn't quite right. Magnetism is fundamentally caused by electric current and changing electric flux, according to Ampere's law. If you run a current through a nonmagnetic metal, you will indeed see a magnetic field, but the true source of this field is the electrical field (flux),  not the metal material.\n\nThis may be what you meant, but I wanted to be clear too for others' benefit.",
+                    "score": 3,
+                    "author": "sovemp"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "For a material to be magnetic, all of their magnetic domains must be aligned in one direction and this leads to formation of North and South poles; thus making it attracted to one pole Or another. Example iron, cobalt, nickel\nIn most materials, their magnetic domains do not align in one direction instead align everywhere and cannot respond to a magnetic field.\nWhen ferromagnetic materials get molten they are not magnetic and they crystallize in a way aligning with the earths magnetic field.",
+            "score": 1,
+            "author": "Kingofkovai"
+        },
+        {
+            "level": 0,
+            "comment": "WHAT MAKES A METAL MAGNETIC?\u00a0\n\nIf the crystalline structure of the atoms within a piece of metal is aligned so that all the spin of their electrons are the same, that metal will be magnetic, because the synchronic spin of the electrons generates a magnetic field.\n\nSome metals are ferromagnetic and capable of being magnetized. In their natural state, the atoms of ferromagnetic metals are usually not aligned but will need to be magnetized. When placing a ferromagnetic material under an external magnetic field the spin of electrons will strongly align with the direction of the field and it will become magnetic.\n\nSilver isn't ferromagnetic. The atoms are not aligned in any sort of way and the spin of their electrons is random and does not give rise to a magnetic field.",
+            "score": 1,
+            "author": "Rackendoodle"
+        }
+    ]
+}

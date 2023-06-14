@@ -1,0 +1,75 @@
+{
+    "id": "12y8lqp",
+    "score": 17,
+    "title": "How will you know a vacuum had been achieved ?",
+    "author": "[deleted]",
+    "date": 1682398481.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12y8lqp",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "There are really many different kinds of \"vacuum gauges.\" In summary, any physical phenomenon that depends on the background pressure can be used as a measure of the quality of the vacuum - just how little air is left in your experiment.  \n\n\n1-at reasonable pressures, \\~10% of atmospheric pressure, gauges that have mechanical dials and involve feeling the difference in force between the normal atmosphere and the vacuum using a spring can be used to measure how \"good\" the vacuum is (how little gas there is). But when the pressure is low, these gauges essentially just report 0, or their calibration error. And physics experiments are often sensitive to much lower densities of gas so we move onto better kinds of gauges.  \n\n\n2-Pirani gauges measure the heat conductivity between a hot wire and a metal chamber that it's inside of. If there's gas, it will help conduct heat between the two points. I would guess they are valid down to about 10\\^-3mbar (10\\^-5 atm), at which point blackbody radiation dominates the heat conductivity anyway.\n\n3-Ionization gauges typically involve a beam, or trapped plasma of electrons. These electrons ionize background gas, which find their way to a collector, and the electrical current through that collector is measured as a measure of the gas pressure. These measure down to about 10\\^-9 mbar (10\\^-12atm).\n\n4-[https://arxiv.org/pdf/1203.0189.pdf](https://arxiv.org/pdf/1203.0189.pdf) magnetooptical traps (MOTs) measure down to 10\\^-10 mbar by the way their laser cooled gas responds to the background gas. if I understand correctly, the advantage here over ionization gauges is that ionization gauges at low pressures measure... something that's kind of monotonic in pressure... but they aren't very accurate. I think the MOT measurements are expected to actually be accurate.\n\n5-experiments that have access to antiprotons (only a handful of experiments in the antimatter factory at CERN) measure their vacuum by how long it takes for an antiproton to make contact with an atom and the two destroy eachother. BASE has used this to upper bound their vacuum at 10\\^-18mbar. The vacuum at BASE is so good because it leverages the phenomenon of cold pumping - making the walls of the experiment 4K then all gasses freeze onto it.  [http://cds.cern.ch/record/2282371/files/fulltext.pdf](http://cds.cern.ch/record/2282371/files/fulltext.pdf)  \n\n\n6-the ionization gauge concept can be upgraded to meaure much lower pressures (10\\^-14mbar I'd guess) using something like an MCP, which gives a measurable signal from single ions. The experiment I work on uses this technique occasionally, but I don't think we've ever properly calibrated it so I have no idea how to convert a few dots on an MCP to an actual gas density/pressure.\n\n7-I don't have a paper in mind, but I know this is a thing - highly charged ions (a heavy atom with all or almost all its electrons stripped away) are expected to be an even better vacuum gage than antiprotons. When they come into contact with a gas atom, they happily rip away one or more electrons from that gas atom. If the particle trap is set up so that it only traps the highly charged ion, it will be lost and can be counted.",
+            "score": 19,
+            "author": "mesouschrist"
+        },
+        {
+            "level": 0,
+            "comment": "It isn't possible to achieve perfect vacuum.  A partial vacuum can only be achieved so long as you keep pumping air out or use an ion trap of some kind.\n\nThe best vacuum that can be achieved on Earth using human made tools is about 10^-10 Pa or about a trillion gas molecules per cubic meter. In space in between galaxies there are about 1000 gas molecules per cubic meter.  In the atmosphere there are about 10^24 gas molecules per cubic meter.",
+            "score": 8,
+            "author": "c00750ny3h",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Vacuum fired steel chambers, or even just baked steel chambers, with some care, are often brought to 10\\^-12 to 10\\^-14 mbar (1Pa=0.01mbar) (often unmeasurably low for those experimenters). In addition, cold pumping (which involves assembling a cryostat that can sustain temperatures around 4K) very easily achieves 10\\^-15mbar",
+                    "score": 9,
+                    "author": "mesouschrist"
+                },
+                {
+                    "level": 1,
+                    "comment": "The BASE experiment at CERN has created a vacuum so good that [they didn't measure any remaining gas in their chamber](https://home.cern/news/news/physics/base-antiprotons-celebrate-their-first-birthday), and set an upper limit of 3 atoms per cubic centimeter (3 million per m^(3)). It's expected that the vacuum is far better than this upper limit. It is even possible that they had no atoms at all in their vacuum chamber at some point, not counting the antiprotons they stored there for over a year.",
+                    "score": 15,
+                    "author": "mfb-",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "the BASE trap is 4K, so this is a vacuum of 10\\^-16Pa. But often vacuum gauges actually measure density, and convert to the equivalent pressure if that density was at 300K and composed of N2, so you might call it 10\\^-14Pa",
+                            "score": 8,
+                            "author": "mesouschrist"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "\u201cUsing human made tools\u201d\n\nAs opposed to using the monkey-made tools which utilizes two coconuts and a banana. Truly an ingenious design but left wanting in achieving a true vacuum.",
+                    "score": 0,
+                    "author": "subzero112001",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You missed their point, here. Also several animals create and use tools in their natural environment (crows, monkeys, spiders, some fish, octopi, porpoises, etc...), it's not like tools are a distinctly human creation. A tool is anything an animal uses to accomplish a task that it couldn't accomplish using its own appendages.\n\nBut also, they were clearly just ensuring their statement was valid by eliminating naturally-occuring vacuums from consideration. It's likely that they also opted for a gender neutral version of the older English language term \"man-made\" which is generally used to describe objects or structures that humans have created which aren't otherwise found in nature.",
+                            "score": 1,
+                            "author": "YouAreOnRedditNow"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A space has to have less than atmospheric pressure to be a vacuum.\n\nYou may mean a perfect vacuum which has no particles and therefor no pressure. It can\u2019t truly exist because quantum mechanics but we can get close enough for non-quantum based research.",
+            "score": 2,
+            "author": "Jonny7421",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It\u2019s like anything under 14.7 PSI at normal altitudes right?",
+                    "score": 1,
+                    "author": "Theometer1"
+                }
+            ]
+        }
+    ]
+}

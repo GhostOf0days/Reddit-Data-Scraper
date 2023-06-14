@@ -1,0 +1,63 @@
+{
+    "id": "12hautb",
+    "score": 24,
+    "title": "What are the names of the machines used to make recombinant vaccines?",
+    "author": "Nejums",
+    "date": 1681111858.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12hautb",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I am aware of how they are made (at least as much as a layman art major can be) and how they differ from subunit or inactivated vaccines, however I am trying to better understand the physical creation part of the process.\n\nWhat machine is used to process the proteins? What skills are needed to even use them?\n\nThe closest I got was to find a manufacturer of lab equipment (Microfluidics), but they list the machines as their model number (I'm assuming) and not their name which, even if I knew, I don't know which ones are or are not needed for recombinant vaccines specifically.\n\nAny help would be greatly appreciated, thanks!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The process to manufacture any vaccines is complex, consists of multiple steps. While there is a general workflow for production, a templated approach for manufacturing does not exist\n\nBut the start is always in bioreactor. Then the purification and other operations follow. While Microfuidics are great in getting say LNP, they are not a core for the process in vaccines. The manufacturers are many, also as machines required, but this depends on the process used quite widely.",
+            "score": 9,
+            "author": "chlorum_original",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah I figured it would be a complex matter, but while there is no official template on creating them is there a list of machines other than a bioreactor you could name that one would expect to see in a lab making recombinant vaccines?\n\nWhile there may be many answers depending on differing workflows I'll take as many as you can name and continue my research from there.",
+                    "score": 1,
+                    "author": "Nejums",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Basically, there should be kind of centrifuges or other filtration systems, some chromatography (e.g some gel-filtration f.e) and, in some cases, lyophilisation.\n\nHowever, this answer is enormously generic, as the workflow for baculovirus-generated subunit vaccines for PCV would be seriously different from, say, adenovirus-based anti-COVID ones or mRNA or common inactivated vaccine against influenza (BTW in this case there won\u2019t be a bioreactor even, as the virus mass could be grown in ovo, traditionally).\n\nThe story is really very different for various vaccines, as they are many by type, cultivation approaches and further attenuation/inactivation/purification/lyophilisation. The bioreactors would also differ:)",
+                            "score": 5,
+                            "author": "chlorum_original",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Wow okay thanks, that helps a lot! Though it does produce a slightly different problem for me research-wise I think. You said inactivated influenza could be grown in ovo.\n\nThe research I am doing is specifically towards recombinant vaccines in regards to an avian based H1N1 virus. So in such a case, with no need of a bioreactor what equipment is needed? I looked it up but all Wikipedia would tell me is that 'machines' are used :/",
+                                    "score": 1,
+                                    "author": "Nejums"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The moment you mentioned microfluidics i thought of these: https://shop.biosearchtech.com/nucleic-acid-chemistry-reagents-and-instruments/dna-and-rna-synthesis/dna-and-rna-oligonucleotide-synthesizers/mermade-192x/mermade-192x-synthesizer/p/NACINS-007\n\nI think others have answered your question more completely. Just thought I'd add on.",
+            "score": 2,
+            "author": "VanillaElectrical331"
+        },
+        {
+            "level": 0,
+            "comment": "A good place to start is how any lab produces recombinant proteins. First they need to generate a plasmid (round piece of DNA) that expresses your protein of interest. In the case of recombinant vaccines, it's usually some portion of the virus like the spike protein or a capsid protein. This plasmid will generally have several other genes as well that will help selection (IE puromycin resistance gene). This plasmid will be introduced into bacteria or eukaryotic cells which will produce the protein via lipid transfection, electroporation, or viral transduction. In most labs these cells are grown on petri dishes or flasks. For vaccine which need to produce much larger quantities, they use bioreactors which are essentially big pots of media that grow cells in suspension.\n\nOnce the cells are grown, they are harvested and lysed. The lysate is then processed to purify the protein of interest. The protein may be tagged with a specific sequence that can bind purification columns (HIS, FLAG, HA, etc) or the lysate can be run on a gel and the correct size band excised.\n\nAs for machines, you'll need a thermomixer (heat + mixing for microcentrifuge tubes), centrifuge, nanodrop (measuring DNA purity), electroporator if you're using that, incubator, cell culture hood if you're using eukaryotic cells, electrophoresis set up + UV lamp if you're gel purifying, and purification column if you're using that.\n\nScaling up production can be quite challenging. Bioreactors need to be used instead of flasks to grow cells but these need constant agitation to keep the cells from settling so they generally can't be used with normal hoods or incubators. Biotechs usually have automated cell culture platforms that can do routine culture on their own but also require additional equipment like a robotic fluid handler, specialized centrifuges and refrigerators etc. Additionally the purification process would require large pressurized columns. Needless to say its complex and requires numerous machines to do it. I'm in academia, not biotech so I don't know the commonly used brands. Nearly all of the set ups are custom made so you won't find any prices or catalog numbers. \n\nI have seen several automated cell culture systems and they are quite large and complex. They usually occupy most of a room. The machines I saw were made by Hamilton but I don't know how common they are overall. You can find some of their equipment at the link below\n\nHamilton - https://www.hamiltoncompany.com/automated-liquid-handling/assay-ready-workstations\n\nProtein production and purification - [https://www.nature.com/articles/nmeth.f.202](https://www.nature.com/articles/nmeth.f.202)\n\nAutomated cell culture - [https://www.frontiersin.org/articles/10.3389/fbioe.2020.00811/full](https://www.frontiersin.org/articles/10.3389/fbioe.2020.00811/full)",
+            "score": 3,
+            "author": "aTacoParty",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! This is very helpful!",
+                    "score": 1,
+                    "author": "Nejums"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": "12c8tqo",
+    "score": 6,
+    "title": "Is Lineweaver-Burk linearization only valid for constant enzyme concentration?",
+    "author": "DMelv2Ez",
+    "date": 1680670288.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12c8tqo",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Experiment involved hydrolyzing Maltose into two glucose molecules and finding Michaelis-Menton constant values. 6 total trials were performed over 3 different enzyme concentrations (2 trials for each concentration). Found initial reaction velocity for every trial. Lineweaver-Burk and other M-M linearizations are only valid for constant enzyme consentration, correct? This would mean I can only plot two points for each linearization model. Just want to make sure I am performing these calculations correctly.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Yes, a typical Michaelis-Menten assay is performed at a constant enzyme concentration, and the kinetics would change if you change the enzyme concentration. In order to make kinetic values comparable across enzymes, a high concentration of enzyme is used such that the kinetic equation reduces to a function of the substrate concentration(s) only. At a mechanistic level, this means that a very small fraction of the enzymes are in the substrate-bound state at any given time, such that the enzyme concentration is effectively unchanged at higher substrate concentrations.\n\nEdit: I looked back at this and saw I missed part of your scenario. See the other answer here for how to plot them on the same chart. The key point is that you have three different lines representing three different kinetic behaviors, one for each enzyme concentration.",
+            "score": 6,
+            "author": "newappeal"
+        },
+        {
+            "level": 0,
+            "comment": "Dividing each rate by the enzyme concentration, before taking the reciprocals, will put them on a constant basis.  Then you label the axis E/v rather than 1/v.  Use different symbols to plot the points from the 3 enzyme levels. If these all fit the same line the calculation is valid, otherwise you are back to 3 plots.",
+            "score": 1,
+            "author": "jonahsrevenge",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Greatly appreciate the help, sadly it looks like our data was invalid as the bioanalyzer quit working midway though and all datapoints from day one in lab do not follow the expected behavior (low concentration points had highest velocity). I believe my professor will be understanding because I feel confident in the answers I gave to her questions. The normalization tip was extremely helpful and she acknowledged the importance of that understanding after our presentation.",
+                    "score": 1,
+                    "author": "DMelv2Ez"
+                }
+            ]
+        }
+    ]
+}

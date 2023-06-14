@@ -1,0 +1,119 @@
+{
+    "id": "12ju879",
+    "score": 123,
+    "title": "Why are cesium atoms used in atomic clocks?",
+    "author": "giantbonsais",
+    "date": 1681323416.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12ju879",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "What is special about Cs that other atoms do not have? Or is this more for historical reasons? Is there a good source where I can read about the history and development of atomic clocks?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You want an element that you can prepare as isolated atoms, with a hyperfine transition that is strong enough to measure but also relatively long-living so it produces a narrow signal. For the clocks in the 1950s it had to be in the microwave range so electronics could follow it.\n\nIn addition, the resonance frequency shouldn't depend too strongly on external electric and magnetic fields. While you cannot avoid that dependence completely, you can measure the magnetic field directly together with the main clock measurement by observing other transitions that are affected more.\n\nHere is a publication discussing caesium as time standard: https://www.nature.com/articles/176280a0\n\nToday we can use transitions in the optical range (i.e. a much higher frequency), which allows more precise measurements. It has been proposed to redefine the second accordingly.",
+            "score": 31,
+            "author": "mfb-"
+        },
+        {
+            "level": 0,
+            "comment": "Caesium (the correct iupac spelling) moves relatively slowly at room temperature compared to other candidates for an atomic clock. Also the hyperfine frequency is higher than most other elements. This allows more accurate measurements. These properties together make it a good, reliable choice.\n\nMore info: https://en.wikipedia.org/wiki/Caesium_standard?wprov=sfla1\n\nhttps://en.wikipedia.org/wiki/Atomic_clock?wprov=sfla1",
+            "score": 76,
+            "author": "nhorvath",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Fun fact. Offshore Navigation Incorporated (ONI), a New Orleans based company specializing in navigation services for offshore seismic exploration, owned over 100 caesium atomic clocks. This was more than any other non-military organization. The clocks were at the heart of land based transmitters that broadcast navigation signals to ships offshore. ONI went out of business with the advent of GPS (which happens to be a caesium atomic clock space based navigation system).",
+                    "score": 32,
+                    "author": "mick_ward",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They are readily available and not hard to get. I have two rubidium clocks I picked up off eBay ages ago. The caesium clocks aren\u2019t quite in the price range I\u2019d spend on it but I\u2019ve seen some HP caesium clocks on eBay.",
+                            "score": 3,
+                            "author": "seriousnotshirley"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Well done, I understood most of that. Just curious, what makes it move more slowly than other candidates? Is it just a mass thing?",
+                    "score": 11,
+                    "author": "CassandraVindicated",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes temperature is just mass times average particle velocity so for a given temperature higher mass means slower movement.",
+                            "score": 12,
+                            "author": "nhorvath",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Doesn't it vibrate at like 33kHz? If that's slow I don't want to know what's fast. Actually I do.",
+                                    "score": 7,
+                                    "author": "OhHappyDay2day",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not sure where you got 33khz from, the average speed at room temp is 150 m/s (yes that's \"slow\") for comparison hydrogen is 1600 m/s. The vibration is not what's measured though, it's the electron state transition frequency (about 9.19 GHz). The lower velocity just makes measurements more consistent.",
+                                            "score": 6,
+                                            "author": "nhorvath",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "They probably mean 32768 Hz... this is the quartz crystal used in common digital watches, though not smart watches.",
+                                                    "score": 7,
+                                                    "author": "johnp299",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Worth also mentioning that that frequency is not inherent to quartz somehow, it's a convenient power of two the resonator has been tuned to (since chaining it to 15 flip flops that each cut the frequency in half gets you a nice 1 tick per second for a clock).",
+                                                            "score": 2,
+                                                            "author": "rpetre"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Semi related, there. Are some high accuracy quartz watches that run at 262kHz.",
+                                            "score": 2,
+                                            "author": "big_tom"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I figured, but you never know if they could be using magnets or lasers or something to change behavior. Lots of cool effects out there with rare/odd usage.",
+                                    "score": 1,
+                                    "author": "CassandraVindicated"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The resonance in Caesium is (thankfully) independent of temperature. The emission frequency is from the spin of the nucleus, not the electrons or bulk. (Atomic clocks operate at around absolute zero, but this is to isolate the resonant frequency. A deviation in temperature by a few degrees Celsius won't change the resonant frequency.) Half lives of radioactive nuclei are independent of temperature too.",
+                                    "score": 1,
+                                    "author": "remarkablemayonaise"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Cesium was suggested in 1940 by Rabi. It is convenient to work with and provides excellent performance, though the reasons for that are somewhat subtle. You can find some discussion in this very good history article: [\"Atomichron: The atomic clock from concept to commercial product\"](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C49&amp;q=Atomichron%3A+The+Atomic+Clock+from+Concept+to+Commercial+Product&amp;btnG=)\n\nBut the atom which is chosen is not the only thing that matters. The details of the design of the clock also matter enormously. There are several major designs for cesium atomic clocks, and even the clocks based on the same scheme can span many orders of magnitude in accuracy, depending on the minute details of how they are built. Removing various sources of variation in these devices to achieve utmost performance takes decades of research.\n\nAlthough all atomic clocks are exceptionally accurate, the very best [national standard level cesium clocks](https://en.wikipedia.org/wiki/NIST-F2) are several million times more accurate than the tiny and [relatively inexpensive commodity cesium atomic clocks](https://www.microchip.com/en-us/product/CSAC-SA65).",
+            "score": 2,
+            "author": "Origin_of_Mind",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thanks for sharing the atomichron article, it was a a good read to learn the history of the atomic clock.",
+                    "score": 1,
+                    "author": "giantbonsais"
+                }
+            ]
+        }
+    ]
+}

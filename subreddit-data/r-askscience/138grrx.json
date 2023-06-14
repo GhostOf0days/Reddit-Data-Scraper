@@ -1,0 +1,31 @@
+{
+    "id": "138grrx",
+    "score": 39,
+    "title": "Has the refractive index of the atmosphere at sea level changed over the last 100-200 years due to greenhouse gasses?",
+    "author": "adiliv3007",
+    "date": 1683280214.0,
+    "url": "https://www.reddit.com/r/askscience/comments/138grrx",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Generally speaking the refractive index is different based on your geographic location.  Radar manufacturers will publish a book that has refractive indexes for different locations.  I don't know how often they conduct their surveys to determine refractive indexes.",
+            "score": 9,
+            "author": "dave200204"
+        },
+        {
+            "level": 0,
+            "comment": "In principle yes, in practice other effects are far more important.\n\nTo a good approximation, the difference to 1 can be expressed as product of different factors: n-1 = f_1(lambda) f_2(T) f_3(p) f_4(x) where lambda is the wavelength, T is the temperature, p is the pressure, x is the gas composition, and f_1 to f_4 are different functions. If you want more precision then you need to consider the concentration of water vapor (but not CO2) in f_1, too.\n\nThe dependence on the gas composition is pretty linear. CO2 has a 50% higher refractive index than the rest of the air, so 420 ppm vs. 280 ppm is an increase by 0.5\\*(420-280)/10^6 = 7\\*10^(-5) (as relative change of the difference of the refractive index to 1).\n\nWater has a 15% lower refractive index and the concentration can easily vary by 1%, leading to a difference of 0.15*0.01 = 0.0015, a factor 20 larger than the effect of CO2.\n\nThe dependence on pressure is roughly linear: The pressure can easily vary by 1% from day to day, leading to a difference of 0.01, or ~150 times the effect of CO2.\n\nThe dependence on temperature is roughly linear with the inverse temperature. A chance by 10 Celsius, something that happens every day in most places, is a ~3% change, or ~400 times the effect of CO2. If we take a ~1 degree increase in the global average temperature then we still get 40 times the effect the increased CO2 concentration had.\n\n[More details and more precise formulas for the refractive index can be found here.](https://iopscience.iop.org/article/10.1088/0026-1394/2/2/002)",
+            "score": 8,
+            "author": "mfb-"
+        },
+        {
+            "level": 0,
+            "comment": "A change in temperature causes a change in refractive index, as does to change in chemical composition.\n\nIt'll be hard to find a reliable set of historic measurements though, as CO2 concentration, water vapor concentration, and temperature all vary greatly around places that people tend to live, and not all are likely to be recorded.",
+            "score": 9,
+            "author": "silence7"
+        }
+    ]
+}

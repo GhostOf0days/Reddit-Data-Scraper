@@ -1,0 +1,37 @@
+{
+    "id": "13oeao4",
+    "score": 10,
+    "title": "Why do shadows connect before the actual object does?",
+    "author": "Aluzuka",
+    "date": 1684723795.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13oeao4",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "So I was just using a flashlight and doing shadow puppets at like 1 am (don\u2019t judge me I was bored)\n\nAnd I realized that the shadows touch before my finger\u2019s actually touched. Like they connected, sorta like how water droplets connect with others. Why\u2019s this happen?\n\n(Also I\u2019m pretty sure this goes into physics idk tho)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Light from your flashlight comes out in a cone shape (actually, a [conical frustum](https://en.wikipedia.org/wiki/Frustum#/media/File:Tronco_cono_3D.stl)) which means the light is spreading out from the origin.\n\nThis means that shadows cast on the wall are slightly larger than the objects casting them (you'll also see the edges of them aren't sharp, they're fuzzy, or 'diffuse').\n\nIf you move your hands closer to the surface, you'll see the shadows shrink until you touch the surface. At which point they're the same size as their shadows.\n\nMove them further away from the surface (towards the light source) and the shadows get larger until they block all the light and cover the whole surface.",
+            "score": 34,
+            "author": "Canazza"
+        },
+        {
+            "level": 0,
+            "comment": "Generally the shadow is not uniform. There is a darker center, the umbra, and it is lighter at the edges, penumbra. This spreads out the further away from the light source so that the penumbra from adjacent objects will merge.",
+            "score": 5,
+            "author": "DdraigGwyn"
+        },
+        {
+            "level": 0,
+            "comment": "It's called the [shadow blister effect](https://en.wikipedia.org/wiki/Shadow_blister_effect), and it's caused by the two objects not being the exact same distance from the light source. Shadows have an umbra and a penumbra; the umbra is the darker part where all the light from a light source is blocked the object, and the penumbra is the transitional area where only some of the light is blocked because the light source has some non-zero size, so you can obscure some but not all of it. \n\nWhen you have two objects at different distances from a light source, and you move them so that their shadows overlap, the object closer to the light source starts blocking some of the light from reaching the penumbra of the more distant object. That makes the umbra of the more distant object expand, and so it appears to bulge outwards from the more distant object.\n\nTry this: take two objects and a single light source and try making their shadows touch when one object is closer to the light source than the other object. Then, swap them around, and do it again, and observe in each case which object's shadow seems to bulge or expand. If they're both exactly the same distance from the light source, the blister effect should be much smaller and it won't seem to come specifically from only one of the objects, but there'll still be some, caused by the overlapping penumbras.",
+            "score": 6,
+            "author": "Redingold"
+        },
+        {
+            "level": 0,
+            "comment": "Something other answers didnt include:  The size of the light source controls this.\n\nYour light bulb has a filament with a physical size (maybe a few millimeters).  Light from one side of the filament may be stopped by your finger on its way to the wall, while light from the other side makes it.  This is intentionally made much worse by the typical design of lightbulbs and flashlights.  A frosted light bulb scrambles the direction of light at the frosted surface, so it's as if the filament was as big as the bulb -- that's actually the whole point of frosted bulbs - to generate soft light without a lot of glare by smearing the light out.\n\nFor flashlights, there's a curved mirror backing that is approximately a parabaloid, but it's never exactly correct in shape, and the filament is rarely put in the exactly correct spot to generate a a beam.  Thus light leaving the flashlight from the left side spreads out in a cone as does light leaving the flashlight from the right side.  You can see this by putting a cover with an off-center pinhole in front of the flashlight -- you still get cones of light spreading from the pinhole instead of a narrow beam of light you'd expect if the bulb was tiny, correctly centered on the reflector, and the reflector was designed exactly right.   These cones overlap, but not perfectly of course.\n\nThat's how you get the umbra/penumbra effect mentioned by others.\n\nAnd now it's easy to understand why the shadows \"connect\" early.  It's because the setup where you say \"the shadows are touching\" is actually the setup where the shadow of your left hand from the light leaving the left side of the flashlight touches the shadow of your right hand from the light leaving the right side of the flashlight.\n\n&amp;#x200B;\n\nIf you use a laser instead of a flashlight or lightbulb, this won't happen.  Even if you spread the  light from the laser out by passing it through a lens (assuming it's not a totally crappy lens).  The effective size of the \"filament\" in a laser is usually much less than a millimeter.  The light (after passing through the lens)  is much closer to the shape of a single cone with a sharp edge.",
+            "score": 2,
+            "author": "drhunny"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": "13qlwj9",
+    "score": 118,
+    "title": "Why does Haumea's spin give it an egg/football shape? Shouldn't it be a flattened sphere that's symmetrical around its axis of rotation (so an oblate spheroid just like earth, just more oblate)?",
+    "author": "MrPresidentBanana",
+    "date": 1684935303.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13qlwj9",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "There are *two* equilibrium solutions for a rapidly spinning body: the oblate spheroid that you expect, but also the triaxial ellipsoid that Haumea assumes. The shape that an object would actually take is determined by its density and rotation rate, so that would be the direct answer to your question: because an object with the density and rotation rate of Haumea only admits a triaxial ellipsoid as stable solution.\n\nI assume you would find this answer unsatisfactory, and ask then: why is the triaxial ellipsoid the only stable solution? I don't know, I assume the answer is complicated mathematics. I looked in the [discovery paper](https://arxiv.org/abs/astro-ph/0509401), and they don't explain it, but just cite the book \"Ellipsoidal Figures of Equilibrium\" by Chandrasekhar to support their assertion.",
+            "score": 70,
+            "author": "araujoms",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Chandrasekhar of the famous limit? Looked it up, yep that's the guy.",
+                    "score": 3,
+                    "author": "Distinct-Hat-1011"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Physicists considered the equilibrium of a rotating self-gravitating body. The mass and angular momentum are kept constant, which for planetary mass objects that aren't experiencing collisions is an extremely precise approximation. The density is also taken as constant; for stuff like Haumea that's a fairly good approximation, though not for larger planetary bodies. The mechanical energy - that is, the sum of the gravitational potential plus rotational kinetic energy - is not constant because a deforming solid or a viscous fluid can dissipate energy as heat (which can then be radiated away).\n\nIt's then a case of finding the state with the minimum mechanical energy.\n\nThe maths is complicated, but the result is that if the angular momentum is high enough for a given body, the Jacobi ellipsoid (like Haumea) is a lower-energy state than the Maclaurin spheroid (oblate spheroid, like Earth).\n\nIn terms of shape the critical point is if the polar cross-section of the spheroid has an eccentricity of 0.81267 or more, which means the polar diameter is less than 58% of the equatorial diameter.\n\nAt still higher angular momentum, the Jacobi ellipsoid in turn becomes unstable, and lopsided \"pear shapes\" are thought to be the stable state. However there is quite a narrow range before the angular momentum gets so high the body cannot hold itself together at all.\n\nhttps://farside.ph.utexas.edu/teaching/336L/Fluid/node34.html for the maths.",
+            "score": 15,
+            "author": "rootofallworlds"
+        },
+        {
+            "level": 0,
+            "comment": "Tektites also form triaxial ellipsoides because they spun fast when still molten. Some stretch thin, forming [dumbell tektites](https://www.meteorite-times.com/Back_Links/2003/August/Tektite_of_Month.htm).\n\nHere's a good article, also applicable to Haumea:\n\nhttps://www.nature.com/articles/srep07660",
+            "score": 11,
+            "author": "Bbrhuft"
+        },
+        {
+            "level": 0,
+            "comment": "The solution to the puzzle appears to relate to why it's spinning so fast in the first place.  Or at the very least, the answer is *because* it's spinning so fast.\n\nPer [Wikipedia](https://en.wikipedia.org/wiki/Haumea):\n\n&gt;  While most rotating bodies in equilibrium are flattened into oblate spheroids, **Haumea rotates so quickly that it is distorted into a triaxial ellipsoid**. If Haumea were to rotate much more rapidly, it would distort itself into a dumbbell shape and split in two.\n\n[Another writeup](https://nineplanets.org/kids/haumea-planets/) suggests:\n\n&gt; Haumea has this egg- shape due to a collision that took place a long time ago, which made it spin really fast. Its shape is unique amongst the other dwarf planets.",
+            "score": 11,
+            "author": "ChromaticDragon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's the angular momentum driving the shape, not the reverse (after all, the shape is distortable).\n\nAt low angular momentum/spin rates, the body is symmetric and that's fine, but as you spin faster it bulges more, and eventually it would start to look like a ring; but that's not stable to perturbations so the ring would collapse along its length to two spheres, to minimise the gravitational potentional.  Haumea's not quite that far along, but it's the same principle, pulling the bulge into two lumps rather than being a disk is a lower-energy state because of the lumps' self-gravity.",
+                    "score": 9,
+                    "author": "MadcapHaskap"
+                }
+            ]
+        }
+    ]
+}

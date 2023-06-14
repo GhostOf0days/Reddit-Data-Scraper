@@ -1,0 +1,141 @@
+{
+    "id": "13cm3ab",
+    "score": 59,
+    "title": "If masses don\u2019t affect the falling speed of objects, why is mass required to calculate the terminal velocity?",
+    "author": "North_Recognition299",
+    "date": 1683629333.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13cm3ab",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I feel this is one of those questions that comes up precisely because this concept is taught so poorly in schools. Teachers drill into our heads that \"mass doesn't impact falling speed\" and \"the acceleration due to gravity is the same regardless of the mass\" and neglect to teach the limitations of that statement. This is a bit of a tangent, but when I was a TA in college teaching a freshman physics class I would always start the semester asking a variation of this question, and the answers I got were all over the place, and quite wrong. But what I found interesting was that the answers I got were elaborate enough, that it seemed like these students had really thought about this question, but were not given the tools to tackle it.\n\nSo, the very short answer is \"air resistance.\" Which, I'm sure you guessed had something to do with it. The full statement should be \"in a vacuum objects will fall at the same speed regardless of mass\" and that is very close to correct (we'll tackle why even that one is very close in a minute). And I do feel a lot of students have heard that, but even then didn't quite have the tools to answer it correctly. I saw a lot of students wrote things like \"they all fall at the same speed until they reach their terminal velocity\" or whatever, which still isn't true. \n\nSo, we can tackle this with Newton's First Law, which says F = ma (applied force is equal to mass times acceleration). In a vacuum, the only force acting on a falling object, and if the object falling is much smaller than the object it's falling onto, and if it's falling from a height where the gravity doesn't change much over the distance of it's fall, then you can approximate the force of gravity to just be `mg`, where `g` is a constant (on Earth, about 9.8 m/s^(2)). \n\nSo then, we can say `F = mg = ma`, and you see that the `m`s cancel, leaving `a = g`, the acceleration on an object is just equal to a constant, mass doesn't play a role. But of course this is only the case when the only force acting on the object is gravity. When something falls through the atmosphere, there is another force acting on it- drag (or air resistance). Actually calculating drag is a complicated process, but there are two things that matter for this discussion- the amount of drag an object undergoes depends on that object's cross-sectional area (the size of the object as viewed in the direction it is going), the shape of the object (for instance, pointy things have less drag than blunt things) and the speed of the object (the faster it goes, the more drag). Note, the mass of the object is not in here. \n\nThis means that a balloon blown up to the same size as a bowling ball will feel the same drag force acting on it as a bowling ball when traveling at the same speed. But of course, the bowling ball will fall a lot faster. Why? Well, Newton's Second Law comes back to the rescue. \n\nSo now, we can say `F = ma = mg - Fd` (`Fd`- the force of drag- is subtracted from `mg` since it is pointing in the opposite direction). So, since the force of drag is subtracted from the force of gravity, the fastest an object will accelerate is `g` since drag will always make it accelerate less. Also notice now that `m` doesn't cancel out. Instead `a = g - Fd/m`. And seeing this, we now have the equation that shows us how mass plays a role. `Fd/m` gets smaller when `Fd` gets smaller or `m` is larger. And for two objects where `Fd/m` is the same, they will fall at the same speed. So, now if we look at our balloon and bowling ball- the balloon and the bowling ball have the same `Fd` (same cross sectional area, same shape), but the bowling ball's mass is much bigger, so `Fd/m` is smaller, so the acceleration the bowling ball undergoes is closer to being just `g` than for the balloon. \n\nSo, it's important to realize it's not just mass what matters- being heavier doesn't make you fall faster if your size increases as the same time, but all else being equal, it does help. \n\nYou mentioned terminal velocity. Terminal velocity happens where acceleration is zero- that happens when `mg = Fd` (the force due to gravity equals the force due to drag). If you remember, the force of drag increases with speed. So, terminal velocity is just when the object speeds up to the point that this happens. One thing to note, normally we think of terminal velocity as \"starting from zero velocity, and speeding up until you reach this max velocity\" like a person jumping out of a plane. But if you start your decent with velocity (say, a bullet fired down out of a plane) the bullet will still reach terminal velocity (if it's up high enough), but instead it will be traveling faster and slow down to that speed. \n\nOK, and finally, coming back around to something I teased at the beginning- how even in a vacuum, a heavier object will fall ever so slightly faster than a light object. Now, I must warn you, this is such a small effect that you'd never notice it for anything reasonable, but it would play a role if say, the Moon was falling onto the Earth. When an object is falling to Earth, yes the Earth is tugging on the object, but actually the object is tugging on the Earth as well, and what may shock a lot of people- the object dropping actually pulls on the Earth with the exact same amount of force as the Earth is tugging on the object. So, if I drop a hammer on the Earth, the hammer applies the same force to the Earth as the Earth does the hammer- you can get this from Newton's Law of Gravity which says F = -G\\*M\\*m/r^(2) where `G` is a constant, and `M` and `m` are the masses of the two objects, and `r` is the distance between them. Note, the m's are treated the same, there isn't one that pulls and one that doesn't. So, as the hammer falls to Earth, the Earth also rises up to meet the hammer. But, since the mass of the Earth is so much bigger than the mass of the hammer, the acceleration of the Earth is so small, that it is completely and utterly immeasurable. But we know it must be there. But should something like the Moon fall on the Earth, well, that would actually be measurable. So, if you dropped a hammer and the Moon on the Earth, even in a complete vacuum, the Moon would impact the Earth faster.",
+            "score": 171,
+            "author": "Weed_O_Whirler",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just my 2 cents as a HS Physics teacher:\n\nWe teach this ad nauseum.  We teach it without friction, then go back and re-teach it with friction.\n\nOne way I re-teach this (specifically that mass does not affect terminal velocity without friction) is thru Potential and Kinetic energy conversion.  We use kinematics to calculate final velocity, then use Ug / K, paying spefic attention to how no matter what mass we give the object, the answer remains the same.\n\nTHEN we talk about how much energy might be lost due to air resistance etc.  Then we make an estimate and find the \u201cnew\u201d final velocity.\n\nThen we get to the part where we start actually calculating air resistance and toying with the idea of terminal velocity as Ff approaches Fg, and go from there.\n\nIt\u2019s a lot for most HS students to absorb I think.  And not to mention that MAYBE half of the students from my school who go on to 4 year colleges take Physics in HS at all.",
+                    "score": 36,
+                    "author": "OhioUBobcats"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you for the explanation! By the way,\n\n&gt;So, we can tackle this with Newton\u2019s first law, which says F=ma\u2026\n\nDid you mean Newton\u2019s **second** law? The first law is about resultant force or something.",
+                    "score": 7,
+                    "author": "North_Recognition299",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sorry, yeah. Second law. \n\nFirst law is the law of inertia (object in motion will stay in motion unless acted up by an outside force).",
+                            "score": 8,
+                            "author": "Weed_O_Whirler",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks. Now please fix it before people misunderstand.",
+                                    "score": -3,
+                                    "author": "North_Recognition299"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; I feel this is one of those questions that comes up precisely because this concept is taught so poorly in schools.\n\nPermit me to politely disagree. I feel that this question comes up because the concept is NOT taught in schools, not because it's taught poorly. I've dabbled in mathematics education, and this question strikes me as on par with \"How can the temperature drop 10 degrees when it's only 5 degrees because you can't subtract a big number from a little number?\" From that question I'd infer that the questioner hadn't been taught arithmetic. From OP's question I'd infer that OP hasn't been taught physics.",
+                    "score": 11,
+                    "author": "BrobdingnagLilliput"
+                },
+                {
+                    "level": 1,
+                    "comment": "Perfect explanation, Thank you !",
+                    "score": 2,
+                    "author": "Wind2021"
+                },
+                {
+                    "level": 1,
+                    "comment": "Edit.  Never mind. went back and see that I missed a paragraph somehow. My apologies.  Good explanation",
+                    "score": 2,
+                    "author": "DrBarry_McCockiner"
+                },
+                {
+                    "level": 1,
+                    "comment": "This was phenomenal. I never really *got* physics during undergrad, everything was passable through rote memorization, but this explanation was really easy to read anyway. Kudos for that",
+                    "score": 1,
+                    "author": "babbieabbi"
+                },
+                {
+                    "level": 1,
+                    "comment": "You made me read about physics in my bed at 1am, so kudos to you for the great explanation!",
+                    "score": 1,
+                    "author": "FraKenMas"
+                },
+                {
+                    "level": 1,
+                    "comment": "Doesn't it really piss you off when you spend so much time giving a great explanation and then the OP doesn't reply.",
+                    "score": -6,
+                    "author": "Dan19_82",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sorry. I was sleeping.",
+                            "score": 7,
+                            "author": "North_Recognition299"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "But just to add to this, if you drop the hammer and the moon at the same time, they will reach Earth at the same time because the masses are pulling in the same direction (assuming no moon-hammer interaction here), let\u2019s not get into 3-body problems in this one.",
+                    "score": -1,
+                    "author": "TheGrinningSkull"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There's a very detailed and complete answer already in this thread, but in case anyone wants a tl;dr.\n\nMass does not affect the falling speed of objects, IN A VACUUM.  \n\nIn an atmosphere, the air resistance provides a decelerative force on a falling object, which increases with speed.  Gravity produces an accelerative force that is proportional to mass, but which stays the same irrespective of speed\\*.   So at some point you go fast enough that the air resistance force equals the gravitational force, and that is your terminal velocity. \n\nA lighter object has a lower gravitational *force* acting on it, but because it has a smaller mass, this lower force results in the same *acceleration*, in a vacuum.   But a lighter object with the same size and shape as a heavier one will have a lower terminal velocity, because the aero-drag force equals the smaller gravitational force at a lower speed. \n\n\\*At non-relativistic velocities.",
+            "score": 7,
+            "author": "colcob"
+        },
+        {
+            "level": 0,
+            "comment": "To give a TLDR answer:\n\nMass doesn't directly affect falling speed.\n\nIt affects gravitonal force, but of course we know from Newton that acceleration is proportional to F/m, so twice the mass leads to twice the gravitonal force, but also twice the innertia, so on total it cancels out, and everything is accelerated down by gravity at the same rate, regardless of it's mass (in a vaccuum, called the Galilean principle)\n\n\nBut, outside of a vacuum gravity isn't the only force acting on a falling object, we also have air resistance, and air resistance **isn't** proportional to mass. Let's say we're at terminal velocity, that means the force of gravity is exactly equal to the force of  air resistance.\n\n\nNow when we change the mass of a thing, the force of gravity changes, because it depends on mass, but the air resistance *doesn't*, so the forces are no longer balanced, the object has to slow down or speed up to become stable again, in other words, the terminal velocity of the object jas changed.\n\nMathematically it's fairly easy to see, \n\nF_grav = g\u00d7m\n\nF_air = C \u00d7 A \u00d7 v\u00b2 \n\nWe reach terminal velocity when both are equal, so\n\ng\u00d7m = C\u00d7A\u00d7v\u00b2\n\nHence \n\nv_t = \u221a{g\u00d7m/(C\u00d7A)}\n\nAnd as you can see, our terminal velocity v_t depends on the local gravity g, the mass m, some constant C\u00b9, and the objects surface area.\n\n\nIf we increase mass and leave everything else the same, the terminal velocity will increase by the root of the mass gain. (4 times the mass, twice the v_t)\n\n\n1: C= \u03c1/2 c_D, depends on air density \u03c1 and shape of the object (drag factor) c_D",
+            "score": 3,
+            "author": "NameUnavail"
+        },
+        {
+            "level": 0,
+            "comment": "In a frictionless (air-less) situation, mass doesn't affect the falling speed.\n\nWith air, you're fighting against the air's displacement time where the air moves around the object.  The more size you have, the more air has to be displaced.  The heavier the object, the more gravity wins against the air.\n\nYou can test this is a balloon and a marble.  Put the marble in the balloon, and it will fall slower than if it is not in a balloon.",
+            "score": 3,
+            "author": "HarryHacker42"
+        },
+        {
+            "level": 0,
+            "comment": "There are a couple of very good, lengthy answers to this that go into way more detail than some readers may want.\n\nSo to TL;DR them:\n\nMass doesn't affect the falling speed in a vacuum at all; that's why you can see a video of an astronaut on the moon dropping a hammer and a feather at the same speed.\n\nBut assuming the objects are not in a vacuum, wind resistance will affect the falling speed. Mass and surface area are needed to calculate how dramatically the air will slow the object. Terminal velocity is the fastest an object can be pulled by gravity alone, based on those factors.",
+            "score": 1,
+            "author": "ItsGotToMakeSense"
+        },
+        {
+            "level": 0,
+            "comment": "Mass is relevant when it comes to it's interactions with air resistance. Things with more mass \"fall at the same speed\" as things with less mass, not because gravity doesn't pull on them harder (it absolutely does) but because it takes more energy to get them moving. As it happens, gravitational pull and resistance to moving increase with mass at the same rate.\n\nThe other effect of this is that it also takes more energy to slow them down If you have two objects with the same surface area profile in an atmosphere, the lighter one will be more affected by the same air resistance which makes a difference at high speeds and will ultimately limit the terminal velocity of the lighter object more.",
+            "score": 1,
+            "author": "Person012345"
+        },
+        {
+            "level": 0,
+            "comment": "Am I being pedantic and right, or pedantic and wrong, if I think a 10kg object would fall faster on an airless planet than an 1kg object? Parts per trillion faster, but faster still because the total mass is a bit larger and the 10kg object pulls the planet into itself by a little bit more.",
+            "score": 1,
+            "author": "BUKKAKELORD"
+        },
+        {
+            "level": 0,
+            "comment": "Ok lets break it down.\n\nF_r is air resistance F_g is gravity.\n\nWe reach terminal velocity when F_r+F_g = 0 so F_r=-F_g or we can say |F_r|=|F_g|. Direction is not that important we just say the are always pointing in opposite directions.\n\nF_r ~ v\u00b2A \n\nF_r is proportional to v\u00b2A where A is the surface of the falling object for the sake of simplicity lets use a ball. The other terms are constants lets call them C.\n\nCv\u00b2A=mg\n\nMass is a factor in F_g. Something that has more mass has more weight. The only thing that can change on the right side is v if m gets bigger v has to get bigger.\n\nDifferent mass objects accelerate at the same rate due to gravity.\n\nF_=mg\n\nN II.\n\nmg=ma\n\na=g\n\nFrom this its easy to see that v will depend on m because F_r doesn't. It doesn't fall out like with one point mass. \n\nBut note that F_r also depends on A. So for a homogeneous object with density q lets say a ball the larger it is the bigger the surface area. Now mass is linked to volume:\n\nm=qV\n\nSo bigger ball more A that decreases v but a lot more volume which increases mass increasing v. This is the square-cube law.\n\nTo see how the equations looks for our ball:\n\nCv\u00b24pir\u00b2=q4/3\u00d7r\u00b3pi g \n\nv\u00b2=qg/3C \u00d7 r\n\nv=Kr^\u00bd\n\nSo in this case v only grows by the squareroot of r.",
+            "score": 1,
+            "author": "adam12349"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "id": "12t1nqi",
+    "score": 24,
+    "title": "How does facial recognition work?",
+    "author": "eagle_565",
+    "date": 1682002034.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12t1nqi",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "How can a computer recognize someone's face showing different emotions, or at different angles, lighting, etc?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 15,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 3,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We don't know in the meaning that we can't embrace using common sense how it works, the same like you can understand how a mechanical clock works just by looking at its gears.\n\nIf you are interested how facial recognition is made then you have to understand how neural networks work in general. At the beginning read about the simplest examples so perceptrons and backward propagation. The networks used for facial recognition and other modern technologies are something similar but way more sophisticated.",
+            "score": 1,
+            "author": "GrimPloughman"
+        },
+        {
+            "level": 0,
+            "comment": "Many facial recognition systems are based on the encoder decoder model. This is a type of machine learning model which has two parts: the encoder, and the decoder. The input images are fed to the encoder and the output of the encoder is then stored. The key thing to note over here is that the size of the output of the encoder is considerably smaller than the size of the input. For example if the input images can be of 1024x1024 pixels, and the output of the encoder may only be a vector of 512 numbers. This encoder is paired with the decoder and this pair is trained together. During training, the output of the encoder is fed as the input to the decoder. The objective of the training process is to train this pair so that the overall outputs (i.e. the outputs of the decoder) for the images of the same person are close to each other under some distance measure. Once this pair is trained, the decoder can be thrown out under the assumption that the outputs of the trained encoder will also be close to one another if the input images are of the same person.\n\nOnce we have the trained encoder, we can compute the outputs of facial images of people and store it. Now whenever a new image is shown to the encoder, the new output is compared with the stored values. If it is close enough (within a certain specified threshold) to the stored outputs, then the model predicts that the image is of the same person whose outputs were stored before.\n\nThis process can be repeated for many individuals, each of which will give us a set of output values which we can store. Now whenever a new image is shown to the model, it compares its output to the stored list of outputs and returns the closest match. The set of outputs which was the closest match, also has metadata associated with it which identifies the person whose images gave these outputs. So using the closest set of outputs and the associated metadata, the model can recognise facial images of the people.\n\nOne might then ask that it is also possible that the encoder maps images of the same individual, which have different expressions, to wildly different outputs. Then in such a case this system will not work. This is why such models are very hard to train. Moreover, we don't really know what the encoder is learning, so making formal claims about its behaviour is also very difficult. That's the reason why there is so much focus these days on explainable AI which consists of models whose behaviour can be mathematically described. But that is still an open problem.",
+            "score": 1,
+            "author": "pro_dissapointment"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "id": "143xu8a",
+    "score": 42,
+    "title": "Is 0\u2019 elevation sea level the same everywhere across the globe?",
+    "author": "ThaFifSense",
+    "date": 1686194504.0,
+    "url": "https://www.reddit.com/r/askscience/comments/143xu8a",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "(Tides aside) say you take 0\u2019 elevation sea level on the east coast of the United States, is it at equal height to 0\u2019 elevation sea level for the west coast of the United States? And anywhere else in the world?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "When we say \"the same\", we need to ask \"the same relative to what?\" \n Let's drill down to what sea level is, based on what it *isn't*:\n\nSea level is not the same distance from the center of the Earth everywhere.  Because the Earth is spinning, it's wider at the equator than the poles by about 22 km.  A spinning ball of uniform material would form a fat 3-d oval shape called an \"oblate spheroid\", not a sphere.\n\nBut sea level is not the same everywhere relative to an oblate spheroid, either, because the Earth's composition varies.  Parts of the Earth with mountain ranges or denser rock or ice sheets have more gravitational pull, and pull the ocean towards them.  If the ocean were stagnant it would conform to the shape of a \"gravitational equipotential surface\", a complicated lumpy shape where every spot on the surface has the same gravitational energy.\n\nBut sea level is not the same everywhere relative to an equipotential surface either, because the ocean is moving.  It experiences forces from air pressure, winds, pressure and drag from the seafloor and coastlines, and all of these change its height relative to the geopotential.\n\nSo the only thing sea level is constant with respect to is itself.  It varies geographically for lots of reasons, and it varies over *time* too, on timescales ranging from seconds to billions of years.",
+            "score": 52,
+            "author": "agate_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The moon affects it too, right, like sea level will be farther from the center of the earth on whichever side is facing the moon?\n\nAnd would atmospheric density average pretty close to the same at the same distance above sea level?",
+                    "score": 3,
+                    "author": "dmnhntr86"
+                },
+                {
+                    "level": 1,
+                    "comment": "Is the sea level the level of the actual sea?",
+                    "score": 3,
+                    "author": "Zondartul",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's kind of the core of OP's question isn't it. It's an ambiguous term, or maybe just context-dependent. Usually when people say \"sea level\" they mean [the geoid](https://en.wikipedia.org/wiki/Geoid), which is a sort of *abstracted* idea of the average sea level extended through land (imagine lots of tiny fluid filled channels, or something; this is the gravitational equipotential surface /u/agate_ mentions). But even that is a rough concept that has to be defined more precisely if you want to do precise mapping or engineering.\n\nWhat you end up with if you have to be really precise is defining a [geodetic datum](https://en.wikipedia.org/wiki/Vertical_datum), meaning, as long as you're consistent about picking what you mean by \"zero altitude\" it doesn't really matter _what_ that altitude is ... but in practice it's usually pretty close to the mean sea level and people might call it that for short.\n\nOn the other hand, if what you're concerned with is literally _sea level_ as in, where does the salt water start, then you have to worry about waves and tides and salinity currents and storm surges, because the actual ocean is a dynamic moving sloshing terror.",
+                            "score": 3,
+                            "author": "Problem119V-0800"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So is acceleration/gravity at the ocean surface the exact same everywhere in the world?\nIf not, why doesn't the water flow to the highest gravity point?",
+                    "score": 1,
+                    "author": "ToineMP",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No. The post above gave several reasons why it is not: Air pressure, winds, seafloor drag. Another reason that he did not mention is inflow, sea level is going to be higher in areas where large rivers flow in, and lower in areas where evaporation dominates.",
+                            "score": 2,
+                            "author": "Kered13"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The question is a bit ambiguous and as such, the answer depends on; (1) the same height relative to what? and (2) which vertical datum are the spots of interest reported in?\n\nLet's assume what you're asking is \"Is the height of 0 feet/meters of elevation the same distance from the center of the Earth everywhere?\" to take care of the first bit. From there, the answer will depend on which vertical datum we're considering, i.e., to what theoretical surface are we referencing elevations, where a 0 elevation point indicates that the surface of the Earth intersects with the theoretical surface at that location. The answer to our modified question would only be \"yes, 0 elevation spots are all the same distance from the center of the Earth\" if we were using a spherical vertical datum, but these are really uncommon. Slightly more common would be either a [spheroid/oblate spheroid/ellipsoid](https://en.wikipedia.org/wiki/Spheroid) vertical datum, i.e., an 3D ellipse that accounts for the fact that the Earth is slightly bulged at the center because of its rotation, and most commonly would be a vertical datum referenced to the [geoid](https://en.wikipedia.org/wiki/Geoid), i.e., a theoretical (and somewhat \"lumpy\") surface that reflects what the ocean surface would be in the absence of tides, winds, etc. Technically, the geoid is a \"gravitational equipotential surface\", i.e., a surface where the force of gravity is all the same and thus is accounting for both distribution of masses from the rotational bulge (like the spheroid/ellipsoid) but also other mass variations within the Earth. Most vertical datums you would encounter (i.e., elevations reported on maps, etc) are referenced to the geoid, and because the geoid is basically a lumpy ellipsoid, the vast majority of 0 meter elevation locations will not be quite the same distance from the center of the Earth. This would still be the case if we were considering older maps where elevations were referenced to mean sea level from repeat and averaged sea level measurements (to account for and remove the effect of tides, currents, winds, etc) at various spots. These were effectively approximating the geoid, just in a less accurate way than we do now (with the help of gravity measurements from satellites, etc.).\n\nIt's worth clarifying that on the scale of the Earth, these differences in 0 elevation are not that huge. If we consider a standard ellipsoid (i.e., the one for the [WGS](https://en.wikipedia.org/wiki/World_Geodetic_System)), the difference in radii between the equator and the poles is around ~20 km (which is not that much given that the radius is in the ball park of 6,360 km). In comparison, the lumpiness of the geoid compared to the ellipsoid is *really* small, e.g., [this map](https://en.wikipedia.org/wiki/Geoid#/media/File:Earth_Gravitational_Model_1996.png) of geoid heights relative to an ellipsoid where the max deviation is ~100 meters. Thus, the biggest difference in distances to the center of the Earth of 0 elevation spots will result because of the ellipsoidal shape (i.e., we'd generally expect that 0 elevation spots closer to the poles will be closer to the center of the Earth than 0 elevation spots at the equator) with differences in the geoid shape adding a smaller amount of variation.\n\nFinally, in the context of the question, if you wanted to work out the exact differences, you could take the coordinates of a given 0 elevation spot and convert those to [Earth centered, Earth fixed](https://en.wikipedia.org/wiki/Earth-centered,_Earth-fixed_coordinate_system) coordinates, which is a cartesian coordinate system with an origin at the center of mass of the Earth and where positions are given in terms of X, Y, and Z distance from that point. That would allow you to work out what the true distance from the center of mass is to a given 0 elevation point of interest.",
+            "score": 34,
+            "author": "CrustalTrudger"
+        },
+        {
+            "level": 0,
+            "comment": "No, the Earth is actually a fairly irregular oblate spheroid and amongst other things the complex  geographical characteristics and gravimetric density differences throughout our crust create large variations in water level behaviour and tidal changes around the world. The average water level in any given place will be dependent on all these things and any given \u2018high tide\u2019 or whatever flow behaviour at any spot in Earth can have quite different measurements and characteristics than others. When the oceans rise because of climate change, the impacts will be felt much more in some places than others.",
+            "score": 9,
+            "author": "Changleen"
+        },
+        {
+            "level": 0,
+            "comment": "No.\n\nOnce they built a bridge between Italy and France. The bridge ought to fit in the middle. But the Italians used the Mediterranian sea level and the French the Rotterdam Gauge. They missed about over a metre in height.",
+            "score": 3,
+            "author": "kapege",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "So I looked this up, and I can't find any record of a bridgebuilding error involving sea level, France, and Italy.  The closest I can find is the High Rhine Bridge built between Switzerland and Germany around 2004.  In this case they knew there was a 27-cm difference in sea level between the German and Swiss systems, but they added it to the wrong side, and as the bridge spans got closer together they realized there would be a 54-cm offset.\n\nAnd all the sources for this in English are blog posts and internet anecdotes, so I don't know if it's actually true.\n\nhttps://www.reddit.com/r/todayilearned/comments/7qso6a/til_the_two_halves_of_the_high_rhine_bridge/\n\nhttps://www.science20.com/news_articles/what_happens_bridge_when_one_side_uses_mediterranean_sea_level_and_another_north_sea-121600\n\nhttps://en.wikipedia.org/wiki/Laufenburg,_Germany#Bridge_construction\n\nDo you have a source for this France/Italy story?",
+                    "score": 1,
+                    "author": "agate_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The question is kind of circular. Elevation and \"height\" are essentially synonymous. If an elevation is 0 in one place and 0 in another, then they are the same height because they have been defined that way. There are numerous ways to define elevation and they are not all the same. The simplest would be to take distance from the centre of the Earth. If this definitions is used, then no, 0 elevation will not correspond to the way it's defined now as the Earth is not perfectly spherical. I'll have to check this, but I believe elevation is currently defined on the basis of geopotential: the 0 elevation has approximately the same gravitational pull everywhere in the world.",
+            "score": 2,
+            "author": "PeteyMax"
+        },
+        {
+            "level": 0,
+            "comment": "Sea level is the standard by which other things, such as mountains and airplanes, are measured.  Because it is a standard, it is sort of by definition the same height everywhere.  Distance from the center of the Earth will be different in different places.",
+            "score": 0,
+            "author": "hawkwings",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Even sea level isnt the same depending on the sea, just like what happened to a bridge when one side used mediterranean sea level and another the north sea.",
+                    "score": 2,
+                    "author": "NoWizards"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "No, there even was a bridge between Germany and Switzerland, thd Hochrheinbr\u00fccke, which ended up having a gap because Swiss engineers planned according to Mediterranean (Marseilles) 0 and Germans according to Norh Sea 0 (Amsterdam). They knew about the difference of 27cm, of course, but the Swiss engineers deducted it from their height instead of adding it.",
+            "score": 1,
+            "author": "young_arkas"
+        }
+    ]
+}

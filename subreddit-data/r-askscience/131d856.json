@@ -1,0 +1,911 @@
+{
+    "id": "131d856",
+    "score": 3921,
+    "title": "When metal gets very hot, it turns, red, then orange, then yellow, then blue, then white. Why does it skip green and violet?",
+    "author": "fevertronic",
+    "date": 1682643814.0,
+    "url": "https://www.reddit.com/r/askscience/comments/131d856",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The phenomenon you're talking about is \"black body radiation\".\n\nThe name is weird, it comes from the concept to imagine a perfect black sphere floating in space, black to every frequency of electro magnetism, that is too say it absorbs everything. It will keep getting hotter and hotter and so must shed this heat energy, but how?\n\nThe way it emits heat is a modified bell curve of probability drawn on the electro magnetic spectrum, starting with its peak very low on the infrared. As the heat increases this bell curve moves towards higher frequencies as these carry more energy.\n\nThe higher frequencies (or shorter wavelengths) appear more blue than red. You are right that it appears the skip green and violet, the reason is that the bell curve of light emitted is broad, not a focused frequency like a laser, but we don't see the IR and UV which gives us this illusion.\n\nYour order is a little off, but here's an explanation of what's happening at each colour:\n- invisible (the peak is low in the IR spectrum)\n- red (peaking in IR)\n- yellow (the peak is red, but it is also shedding green if looked through a prism) \n- white (the peak is green, but the peak is now so high and broad all visible frequencies are emitting about the same brightness)\n- pale blue (the peak is now violet, but it still emits highly in the green frequencies)\n- edit: after this it just gets brighter pale blue, it never shifts violet (but the peak is moving towards higher frequencies)\n\nThe filament of an incandescent light bulb is a perfect example, the temperature of the filament, measured in degrees Kelvin, is equal to the light colour. We use this temperature to describe the \"colour temperature\" of LED lights which replace them, 3000K is orange 6000K is bright blue. These temperatures are 5000\u00b0f and 10,000\u00b0f respectively.\n\n[this](http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/wien3.html) page includes a graph which might help visualise this.\n\nIt is a property of all matter, but samples of pure elements will have specific frequency steps they naturally prefer to emit from, you might see flickers of green and blue on a camp fire, this is the same. Tricking these atoms to produce only specific frequencies is how we produce the colours of fireworks, the yellow of sodium street lights, or lasers. \n\nHope this helps.\n\nEdit: in bullet points it never goes more violet than pale blue perceivably.\n\nEdit 2: warm light bulbs are lower than 4000K",
+            "score": 4851,
+            "author": "IGetNakedAtParties",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, this is basically the same reason why we see red, white and blue stars, but no green ones.",
+                    "score": 845,
+                    "author": "scarisck",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In a way, our star, the sun, is a \"green\" star. It's just that our light perception is adjusted such that the blackbody radiation of a star as hot as the sun is perceived as white.",
+                            "score": 608,
+                            "author": "FlipskiZ",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The concept of color is purely dependent precisely on our light perception, otherwise pink wouldn't be a thing \n\nThe sun is not green since we don't see it as green, at best you could say it's \"green-peaking\" since the peak of its spectrum is green.",
+                                    "score": 475,
+                                    "author": "viliml",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Removed the flag on your post, because you\u2019re technically correct. \n\nI work in medical physics so have a professional role in discussing EM spectra. \n\nColors are perception, wavelengths are precise locations in the EM spectrum. We humans are sloppy with language so we cut a lot out. The full sentence should be:\n\n&gt;\tThe Sun peak emission is at a wavelength that in isolation is perceived as green by our brain.\n\nWhich could be shortened to\n\n&gt;\tthe sun spectrum peaks in green\n\nAnd further to\n\n&gt;\tthe sun *is* green\n\nThe last line is often repeated but is really an overstep. \n\n\nBut if you were to (safely use a flat, all pass filter to) look at the sun while preserving its relative spectrum, your brain would see it as white. \n\nAnother analogy for you: if you took a spectrometer to white paint, you would see that it is not perfectly flat but rather has a peak, probably in the blue range or maybe green.  does this mean you aren\u2019t looking at white paint? Of course not. The paint is white.  you look at it and see white paint therefore it is. \n\nTLDR color is the brain\u2019s perception of combinations of wavelengths, and our brains interpret the sun\u2019s whole spectrum as white, so the sun *is* white even though it doesn\u2019t have a flat spectrum.",
+                                            "score": 460,
+                                            "author": "BillyBuckets",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Really cool read! Thank you!",
+                                                    "score": 32,
+                                                    "author": "Long-Project2884"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Somewhat related, but is that why when i mix white with warmer reds i get a \"blush\" (pale flesh tone) color instead of a distinctly \"pink\" (light red) color?",
+                                                    "score": 15,
+                                                    "author": "dreadnaut1897",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Also, when you're talking about mixing paints the quality of the paint matters.\n\nCheaper paints use cheaper pigments which look ok on their own but may interact with other colors in unexpected ways, creating more muddy mixtures. (\"Flesh\" instead of \"pink\")\n\nHigher grade paints mix better, especially if you use paints from the same manufacturer, since they tend to use pigments they know mix well with each other.",
+                                                            "score": 15,
+                                                            "author": "havartifunk"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Are you talking about color of mixed light or mixed paints? Light is in an additative color space and paints are in a subtractive color space",
+                                                            "score": 31,
+                                                            "author": "Natanael_L",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "So the world is RGB but paint is CMYK?",
+                                                                    "score": 13,
+                                                                    "author": "TerraAdAstra",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "No, our eyes are RGB (additive/emissive color) but pigments are subtractive/absorptive color.",
+                                                                            "score": 10,
+                                                                            "author": "semininja",
+                                                                            "replies": []
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Paint uses all sorts of pigments with a huge gamut of colors.  CMYK is a shortcut you can use for printing when you want to minimize the number of inks required to look \"good enough\" because you can kinda add layers of translucent colors on top of paper to make what looks like a broad spectrum.\n\nThat said, the RGB system used by computer monitors isn't great either.  They suck at getting rich greens and really bright or dark values.  Again, it's just \"good enough\" to trick your eyes into thinking you're seeing something.\n\nTry this.  When you find yourself in a room with a projector screen (like a conference room or classroom) look at the screen with the projector off.  It'll generally look like a pale gray center rectangle, sometimes surrounded by a black border, right?  Now when the projector turns on, it's just adding light to what you see.  The \"black\" parts of your powerpoint presentation are just as dark/bright as the pale gray you were seeing before the projector turned on.  When your brain was comparing that color to the black border, you interpreted it as \"mostly white\" but when you're comparing it to the super bright light from the projector, you interpret it as \"mostly black.\"  But the universe as a whole creates way more color than what you can recreate on a screen.",
+                                                                            "score": 2,
+                                                                            "author": "RugosaMutabilis"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Not exactly.  Your elementary school teachers over-simplified when they said that pink is just light red.  The color you think of as generic \"pink\" is probably closer to a light fuchsia or light magenta.\n\nThere is no single wavelength of light that is pink.  Instead, it's what you perceive when you see a lot of red and a decent amount of blue, with a lot less yellow or green.  A very pale pink will have more yellow or green, but still less than the red and blue.\n\nBut when you see a color that is \"red\" it could be light of many wavelengths or it could be just a single red frequency.  Your brain doesn't really differentiate between those.  Making the color \"lighter\" does require adding more other frequencies, which is what you're doing when you mix in white paint (the white reflects all frequencies of visible light).",
+                                                            "score": 12,
+                                                            "author": "RugosaMutabilis"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Not necessarily, no. It depends on the type of pigments you're using. There are some weird effects that shouldn't be possible, solely based on the color wheel, when mixing oil paints that have varying degrees of opacity.\n\nThere's one in particular - I believe it's mixing a certain green (pthalo, possibly?) and yellow, which you would expect to get a lime green from, but instead it turns into a rich blue. It's been a while since I was in art school and I'm a photographer, so forgive me for not remembering the specifics.",
+                                                            "score": 3,
+                                                            "author": "digitalsmear"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The study of color perception of the human eye is known as *chromaticity* and it's a pretty neat science.  It's highly relevant to the development of visual display (TVs/monitors/projectors) and light capture (cameras) technologies.  Each piece of hardware has its own \"color gamut,\" which is the range of colors that can be displayed by it or captured by it.  Well, you don't really talk about an individual Monitor's gamut so much as the standard gamut -- standardized range of colors -- it is able to produce.  By using these standards, you can have relatively strong assurance that the movie which was color-adjusted within an inch of its life will display those colors correctly on a monitor.  And all of the gamuts come back to the standard sensitivities to different color of the rods and cones in one's eyes.  \n\nI work in video streaming, and color gamut is of great interest to my customers, and I admit I was surprised to learn the degree to which color capture/display and video compression was founded in the measured sensitivity to color of human retinas, just as lossy audio compression methods are founded in in the measured sensitivity and perception of human ears.",
+                                                    "score": 2,
+                                                    "author": "Sunfried"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "If we had to describe the colour of the sun to some aliens though, green would probably be the most accurate cross-species agreed colour.\n\nIt's just humans see green-suns as white.",
+                                                    "score": 1,
+                                                    "author": "Kandiru",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "If we are ignoring universally agreed upon perceptions of things when we describe them, then language will turn into a useless mush of caveats.",
+                                                            "score": 19,
+                                                            "author": "2legittoquit",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt;universally agreed\n\nThat's the whole point the user before was making, it's just that your idea of an universally agreed upon perceptions and his are different.-\n\nIt's very likely the universally agreed perception of our sun is that is green, meanwhile, we humans tend to be a little much too optimists when talking about \"universal things\". If there's life in the rest of the universe, we will eventually find out that what we proclaim as universal is planetary at best.-",
+                                                                    "score": 11,
+                                                                    "author": "heyugl",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Maybe we'll introduce \"color zones\" like time zones that provide color offsets for different species -- this star is UTC green but white in the human color zone.",
+                                                                            "score": 13,
+                                                                            "author": "sexy_guid_generator",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 7,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; it's \"green-peaking\" since the peak of its spectrum is green.\n\nIs this why most plant life / leaves on Earth are green?",
+                                            "score": 5,
+                                            "author": "generalization_guy",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The color of an object is actually decided by the light that gets reflected. So really what's going on when you look at plants is the original green EM waves from the sun are bouncing off the leaves and into your eyes. They're mostly absorbing red and blue instead.\n\nI don't believe there's scientific consensus as to what exactly the evolutionary advantage is to rejecting green waves; it would indeed be more efficient. [One hypothesis](https://www.quantamagazine.org/why-are-plants-green-to-reduce-the-noise-in-photosynthesis-20200730/) is that plants evolved this way for stability - if they specialized in high energy green from the sun, then there would be large fluctuations in their energy flow every time the light flickered. Diversifying to red and blue supports smooth and steady energy transfer. Or so goes the thought.",
+                                                    "score": 3,
+                                                    "author": "AnonymousBi"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "What is pink, optically?",
+                                            "score": 3,
+                                            "author": "hraun"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;the peak of its spectrum is green.\n\nIs that true?  This would suggest otherwise. \n\n[https://www.e-education.psu.edu/meteo300/node/683](https://www.e-education.psu.edu/meteo300/node/683)\n\nThis would say you could equally say the sun is blue.   Especially if you are discussing the sun before it is filtered through the atmosphere.  (If we're including atmosphere then we need to specify time of day since the sun becomes very red.  I think a more accurate/pedantic statement is that the sun is \"teal\". \n\nThe peak is \"around\" 500nm which is on the line between green and blue.  In RGB primaries for UHD wide gamut TV \"Green\" is 532nm and blue is defined as 467nm.  That puts 500nm firmly in the middle.  But if we ignore atmospheric filtering it definitely skews blue.",
+                                            "score": 4,
+                                            "author": "im_thatoneguy",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Looking at the isolated color of 500nm light (which, yeah, the Sun peaks almost exactly there), I would personally say my eyes see it as very very green and not really at all blue.",
+                                                    "score": 3,
+                                                    "author": "CapWasRight"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 4,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 31,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "On the chartreuse thing, if I remember correctly it has more to do with it being the color that the human eye and brain can most easily process and track.",
+                                                            "score": 5,
+                                                            "author": "DancesCloseToTheFire",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Chicken/egg.\n\nIt makes perfect sense that we as a diurnal species would evolve to best process and track the frequencies of light that are most strongly emitted by the sun.",
+                                                                    "score": 12,
+                                                                    "author": "Daripuff",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "No, it goes back further in evolution than that. Visible light is the only EM band that is transparent in the absorption of water.",
+                                                                            "score": 5,
+                                                                            "author": "SynbiosVyse",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Absolutely, but underwater, there is sufficient additional light filtering that chartreuse is no longer the most vibrant color. \n\nIt's terrestrial diurnal species that most benefit from having high sensitivity to chartreuse.\n\nUnderwater is what defined to us \"visible light\", but we favor chartreuse because we left the water.",
+                                                                                    "score": 13,
+                                                                                    "author": "Daripuff",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "How does the mantis shrimp and its ability to view a large spectrum outside of visible wavelength colors work into this?  Is UV or a wider range of color somehow more helpful underwater, etc.?",
+                                                                                    "score": 2,
+                                                                                    "author": "MercJ",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": -3,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 6,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Your computer only emits 3 wavelengths of light. Yet we can perceive them as producing the full color gamut by varying the intensity of those 3 wavelengths. How does your computer produce the wavelength of orange when the only available wavelengths are red, green, and blue?\n\nIt doesn't. Your computer cannot produce otange light. Your brain tells you it sees orange because the proportion of those 3 colors mimics what your brain expects to perceive as orange through the stimulation of three types of cone cells.\n\nIn the same way, we perceive the sun to be yellow-white because it emits frequencies that stimulate your retina in proportion to what a yellow source would also do.",
+                                                    "score": 9,
+                                                    "author": "wut3va",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The wavelength is not a color. Your perception of the wavelength is a color.\n\nIf 510nm is green, why don't some colorblind people see it? Not to mention a variety of other life forms sensing the same wavelengths as different colors.",
+                                                    "score": 9,
+                                                    "author": "Tpqowi",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "No, it's not a color, you're right. But it is an objective empirical means by which one quantifies color. People who are colorblind don't see it because they rods and cones in their eyes don't work correctly. It doesn't mean that the color is fundamentally different. This is a very postmodern take, but in this case, i side with science and empiricism. Also, you have no idea what any other lifeform senses, no more than you know what any other human experiences in their consciousness.\n\nTwo is not a number. Your perception of two is the result of your brain processing the sparse information it receives via the optical ganglia. We could argue that anything is only something because it's how humans perceive it. You should read Baudrillard if you haven't already.",
+                                                            "score": 8,
+                                                            "author": "CromulentInPDX",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt; Two is not a number.\n\nThat's going too far. If two is not a number then nothing is, so you might as well throw away the word \"number\".",
+                                                                    "score": 4,
+                                                                    "author": "viliml"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; at best you could say it's \"green-peaking\" since the peak of its spectrum is green.\n\nEven this is something to do cautiously though, since the blackbody radiation curve is a power density, and where its maximum is depends on the choice of x axis. It differs depending on whether you use wavelength or frequency. Both are reasonable choices.",
+                                            "score": 5,
+                                            "author": "scummos",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Uh, what?\n\nWavelength and frequency are reciprocals of each other times a constant. The conventional spectral radiance is plotted as a function of wavelength, but if you instead plot it as a function of frequency, the location of the maximum as a physical property doesn't change, you just have left and right flipped on the x-axis. And you definitely can't have a situation where, if you plot the peak of the spectral radiance as being in the green region when you plot by wavelength, it somehow ends up somewhere other than the green region if you plot by frequency.\n\nE: I wanted to clarify this comment in accordance with the reply. What I am talking about here is plotting the same physical quantity (watts per square meter per steradian per nanometer, for example) against an x axis that is either wavelength or frequency. In this case, you just get flipping and scaling. \n\nHowever, the same is not true if you are talking about changing to the analogous quantity in the frequency domain (watts per square meter per steradian per Hz, for example). The size of an infinitesimal unit of wavelength is not the same size as one of frequency because wavelength = c / frequency, so d(wavelength) = -c / (frequency)^2 * d(frequency) . Further, as you can see, the relationship between the size of the infinitesimals is different based on the absolute value of the frequency.",
+                                                    "score": 12,
+                                                    "author": "Coomb",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Adding to this, this is very well described in the book \"Fundamentals of Atmospheric Radiation\" by Craig Bohren..",
+                                                    "score": 2,
+                                                    "author": "agaminon22"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 2,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 0,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "And by pink, you mean magenta. What is usually called pink is light red / white light with extra red / desaturated red. Magenta is what we see when exposed to evenish amounts of blue and red light with no yellows or greens in between.",
+                                            "score": 2,
+                                            "author": "craigiest"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yep, and [you can even see how green it is at sunset](https://en.wikipedia.org/wiki/Green_flash) sometimes, if you're lucky.",
+                                    "score": 9,
+                                    "author": "new2bay",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I thought that green colour comes from the ocean the sun shines through, not from the sun itself.",
+                                            "score": 20,
+                                            "author": "platypodus",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No, it happens over land as well. Large water bodies just have cleaner horizons than most land.",
+                                                    "score": 6,
+                                                    "author": "Ouaouaron"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "This is not due to the Sun having peak emission in the green range (and nor is it to do with infrared like the other reply asserts). It's to do with green light being, very briefly, in a \"goldilocks zone\" of being refracted enough that it reaches your eyes (unlike red light, which is refracted less), but not scattered so much that it disperses into invisibility (unlike blue light, which is refracted more). You could see a green flash from a cooler or hotter black body.",
+                                            "score": 23,
+                                            "author": "F0sh"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 6,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Unfortunately this explanation has absolutely nothing to do with the green flash :-)\n\nIt's due to a combination of atmospheric refraction and the oddities of the human retinal system",
+                                                    "score": 5,
+                                                    "author": "roboticon"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "The green flash is due to a quirky perception of infrared light by our eyes, not by the sun's blackbody emission spectrum.",
+                                            "score": 11,
+                                            "author": "therift289"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That seem not what they say here https://www.wtamu.edu/~cbaird/sq/mobile/2013/07/03/what-is-the-color-of-the-sun/",
+                                    "score": 1,
+                                    "author": "newtoon",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Eh... actually it is. Or, close enough for a short comment on reddit. /u/FlipskiZ just omitted a lot of the details which make this a complicated topic, but the page you linked discusses some of those details.",
+                                            "score": 44,
+                                            "author": "diazona"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Once explained this to students before using an RGB LED analogy, and values on various Blackbody spectra to illustrate what color we\u2019d see! Low temps have high R values, but low G and B, high temps have high B, lower R and G, and medium temps have nearly equal R, G, and B\n\nEdit: RGB colors are high and low relative to each other, not to zero",
+                            "score": 7,
+                            "author": "b_enn_y",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You're doing the analogy wrong. Cooler things have only an R value with no G or B. As things get hotter, you add value to ALL the colors. A hot item that looks blue will have a higher R value than than the cool item that looks red. It just has an even higher B value that drowns out the higher R value.",
+                                    "score": 1,
+                                    "author": "Volsunga",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This is incorrect. Even a blackbody at 1K has a non-zero distribution of photons at every wavelength, including G and B. Perhaps I should have been more consistent and said that the *relative* RGB values changed in such a way that let us perceive red, white, then blue!\n\nI end up giving them made up numbers to illustrate the point:\n\nCold Star:\nR=50\nG=20\nB=5\n\nWarm Star:\nR=100\nG=120\nB=110\n\nHot Star:\nR=200\nG=250\nB=400",
+                                            "score": 7,
+                                            "author": "b_enn_y"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Are there then, or could there be, stars that emit entirely outside of the visible spectrum?",
+                            "score": 8,
+                            "author": "AlkaloidalAnecdote",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well yes. A dead star that has cooled down enough will only emit infra red and won't glow visibly at all.\nI don't think that it is possible iat the other end of the spectrum though",
+                                    "score": 39,
+                                    "author": "scarisck",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "As the body gets hotter, the amount it radiates *at each frequency* always increases. A body at 9000 K emits more blue light than red light, but it still emits more red light than a body at 1000 K.",
+                                            "score": 36,
+                                            "author": "taejo"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just to add, as the temperature increases the amount of radiation at lower frequencies never actually decreases. When the body is glowing blue, it's actually giving out more red light than ever! However the output at the higher frequencies grow much faster, such that the peak of the spectrum moves towards increasingly high frequencies.\n\nYour link near the end actually shows this well, when temperature increases, output at all frequencies increases, while the peak moves to higher frequencies.",
+                    "score": 112,
+                    "author": "Kered13",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Good point to add, thanks for this clarification.",
+                            "score": 9,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This explanation was amazing and very easy to understand. Thank you.",
+                    "score": 97,
+                    "author": "DriftinFool"
+                },
+                {
+                    "level": 1,
+                    "comment": "Wait, am I understanding you right that at higher temperatures, the object would transition from appearing white to appearing blue? Or would it still be perceived as white at that point?",
+                    "score": 9,
+                    "author": "Dead_Moss",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yep, it goes from white to blue/violet, because once the peak of emission is invisible UV, the strongest visible light is violet, but comparatively there's less of other visible wavelengths.",
+                            "score": 7,
+                            "author": "SpearmintPudding"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Correct. Here with examples:\n\n- invisible (but you can feel radiant heat)\n- red (and a lot of heat)\n- yellow (and even more heat)\n- white (and heat and noticeable UV)\n- pale blue (like a welding arc, why you need goggles to protect from the UV)\n- brighter pale blue (and a lot of UV and X-rays)\n- even brighter pale blue (tones of UV and X-rays)\n- visible from across the galaxy pale blue (Gamma rays from supernovas exploding)\n\nEdit: Factually incorrect, my apologies it stays pale blue but gets brighter.",
+                            "score": 24,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is the best, most simplified explanation of the black body phenomenon I have ever read anywhere. Thank you so much for sharing it. I will be quoting from you when I introduce the concept to my students.",
+                    "score": 10,
+                    "author": "OsuKannonier",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you very much, just don't plagiarize my errors.",
+                            "score": 8,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; We use this temperature to describe the \"colour temperature\" of LED lights which replace them, 4000K is orange 6000K is bright blue. \n\nIt's amusing that we call a bulb with a lower temperature \"warm white\" and a bulb with a higher temperature \"cool white\"",
+                    "score": 33,
+                    "author": "toodleroo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This!  It's so counter-intuitive to anybody who knows any physics.  Buying white LEDs is a minefield.  I blame the artists :-)",
+                            "score": 17,
+                            "author": "A_R3ddit_User",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; 4000K is orange 6000K is bright blue\n\nMost everything you said was correct except for these color temperatures. 4000K is a warmer color than 6000K, but both of these are blue-whites, with 6000K being very bluish like what you might see in floodlights at a stadium, and 4000K being less aggressively cool but still a cool white, like what you might have in an office building. The barrier between warm white and cool white is subjective, but is generally considered to be around 3500K. 2700K is a nice amber, perfect for bathrooms. 2400K is a very warm amber, perfect for sexy times.\n\nThis comment was brought to you by the luminaire gang",
+                    "score": 29,
+                    "author": "HollowofHaze",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Didn't expect for my issues buying the right color lightbulbs to be addressed by coming to this thread, but I'll certainly take it!",
+                            "score": 11,
+                            "author": "Valaurus",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm very much on the \"soft yellow\" camp (~3k) for most household applications... All of the bright whites make me feel clinical, like I'm perpetually heading into surgery!",
+                                    "score": 4,
+                                    "author": "sir_jamez",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I couldn't agree more! And somehow I always manage to buy the bright whites, but no longer haha",
+                                            "score": 2,
+                                            "author": "Valaurus"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Around here I can't find anything *but* 2700 K bulbs. I really want some around 3500-4000 for use when painting in the evening.",
+                                            "score": 2,
+                                            "author": "wasmic",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm pretty much the same for general lighting. I like cooler whites for task lighting, though.",
+                                            "score": 2,
+                                            "author": "ShanghaiShrek"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The scientific view of whether 4000k is warm or cool might say one thing, but as an interior designer, I beg of everyone reading this not to put 4000k light in their homes. Except maybe your garage, or in a workshop or craft room.\n\nTrying to recreate the color of daylight at night, or in rooms with no natural light, never looks good. Ever. You and your stuff all look awful. It looks like you live in a post-apocalyptic hospital.\n\nThink about what our primitive brains expect from light sources. The sun emits cool light that gradually gets warmer as the day progresses, until it turns very warm at sunset. What provides light after dark? Fire. Fire is a very warm light.\n\nIn the late afternoon into the night, when most people are home, the light in your house should look more like fire than like the sun. \n\nPersonally, I don\u2019t have any bulbs in my home cooler than 3000k. Cool light that isn\u2019t natural light makes me feel sickly.",
+                            "score": 7,
+                            "author": "ParlorSoldier",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I couldn\u2019t agree more. Anything cooler than 3500 makes me feel like I\u2019m in a hospital or an interrogation room",
+                                    "score": 3,
+                                    "author": "HollowofHaze"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thanks for this. I haven't bought bulbs in a while. Edited",
+                            "score": 5,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is the other diagram that helps. As the temperature increases, the color moves through the color space, but it does not cover all colors. Specifically, it does not really go into the purple/green axis. \n\nhttps://en.wikipedia.org/wiki/Planckian_locus",
+                    "score": 24,
+                    "author": "MrPuddington2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Purple isn't a wavelength of light though, so you can't really emit purple light.\n\nIt's just a mixture of red and blue without green.\n\nYou can have light of wavelengths of other colours.",
+                            "score": 1,
+                            "author": "Kandiru"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Dude, do you teach? If not you should. Perfect explanation and on point.",
+                    "score": 24,
+                    "author": "rantypundit"
+                },
+                {
+                    "level": 1,
+                    "comment": "If you get something hot enough to have a peak in the UV, the color is still blue rather than violet. I\u2019m pretty sure that the reason why is slightly more complicated than just that the spectrum is broad. Our eyes just aren\u2019t particularly sensitive to violet light. I don\u2019t know exactly how large that effect is, but I know it\u2019s part of the answer to \u201cwhy isn\u2019t the sky violet,\u201d along with that the sun\u2019s black body spectrum is more blue than violet.",
+                    "score": 5,
+                    "author": "Bumst3r",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I made this error first. I've edited it for clarification, thanks for calling me out. All frequencies get brighter, just that the shorter wavelengths are more brighter.",
+                            "score": 4,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just nitpicking but we don\u2019t say \u00ab\u00a0degree Kelvin\u00a0\u00bb because Kelvin is an absolute temperature scale.",
+                    "score": 12,
+                    "author": "Jarltruc"
+                },
+                {
+                    "level": 1,
+                    "comment": "So it does emit green light, but it's being swamped out by other frequencies?",
+                    "score": 3,
+                    "author": "baran_0486",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Something like this yes. Our eye's sensitivity to red and blue is more sensitive than green, but what happens between our ears is the reason you don't see green from the sun (which is this temperature).",
+                            "score": 3,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Regarding the Kelvin color temperature of light bulbs, I don't know if this is accurate from a black-body radiation perspective, but I am very familiar with the actual ratings of light bulbs.  4000K is not orange, it is close to the traditional \"cool white\" fluorescent bulb which is 4200K.  5000K to 6500K are blue, 3500K is considered \"neutral white,\" and 2700K to 3000K are more yellowish.",
+                    "score": 3,
+                    "author": "ShoulderChip",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for correcting me. Edited to reflect this. I haven't bought bulbs in a while, damn LEDs last too long.",
+                            "score": 2,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Why is there violet on the high end of the spectrum, if we see violet only when we see both red and blue light at the same time?",
+                    "score": 5,
+                    "author": "ArleiG",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Your red cones have a double peak in their sensitivity. They are sensitive to both monochromatic red light and monochromatic violet light. (The violet peak is much lower than the red peak.) \n\nMonochromatic violet stimulates both red and blue cones. If you didn't have blue cones, you would not be able to distinguish between violet and red, because both of those colors are detected by the same cone, despite violet and red being on opposite ends of the light spectrum. \n\nIf you cannot generate actual, monochromatic violet light, (there are no \"violet\" pixels in your screen) you can emit blue light to stimulate the blue cones, and red light to stimulate the red cones. Your eyes cannot tell the difference between this polychromatic violet simulation and actual, monochromatic violet.",
+                            "score": 66,
+                            "author": "rivalarrival",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "this broke my brain a little bit, but really helped explained a fact I was long curious about.\n\nOut of curiosity then, if someone had a genetic defect where red cones were not stimulated by monochromatic violet, they would then perceive monochromatic violet as blue but polychromatic violet as violet still?",
+                                    "score": 11,
+                                    "author": "ottawadeveloper",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "With the understanding that my explanation is a simplification, that's basically accurate. \n\nRemember that the sensitivity curves for all three cones overlap. You would get some information from the green cones. That person would still be able to distinguish between monochromatic blues and violets to some extent, but you're right: Monochromatic violet would not look at all like RGB violet to them.",
+                                            "score": 11,
+                                            "author": "rivalarrival"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Now you're taking biology not physics.\n\nYou know how the pixels of you screen are made up of red, green and blue LEDs which trigger the red, green and blue cone cells in our eyes.... Well actually that's not the whole story, and because it's biology, it's much more complex than physics!\n\nFirst, don't mistake wavelength with colour. Magenta is a colour your brain interpretes, but you won't find it on a rainbow, it doesn't have a wavelength. Violet is a wavelength, your screen does not have violet LEDs but it can trick your brain into seeing violet by using red and blue light.\n\nBut if the rainbow of wavelengths does go from red, to green to blue to violet in order, why does mixing red and blue make violet and not just \"fake\" colours like magenta? This is the weird part of biology, \"red\" cone cells are at their highest sensitivity in the red wavelengths, but actually have a second peak at the low wavelength violet end of the spectrum. Let's break this down:\n\n- When your brain receives red without blue, you perceive red, which corresponds to a long wavelength\n- When it receives blue without red it understands blue, which could also be a short wavelength\n- When it detects blue with a little red you see violet, this can only happen with a single wavelength on the very short end of the spectrum, where we have the second red peak of sensitivity\n- And when it detects blue and red equally your brain just makes a colour without any single wavelength source, such as a fuchsia's petals which have two chemicals, one which reflects a red wavelengths, and another which reflects blue wavelengths.",
+                            "score": 17,
+                            "author": "IGetNakedAtParties"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "A mixture of red and blue light is perceived as magenta, which is not a spectral color, meaning it can't be represented by any single color (wavelength) of light. Violet is a spectral color past blue at the high energy (short wavelength) end of the visible spectrum. They both appear purplish, though in my opinion are noticeably different. Qualitatively, to me violet appears more blue/white than magenta.\n\nIf you were to plot the sensitivity vs. wavelength of the \"R\", \"G\", and \"B\" cone cells in human eyes together in one plot, you'd notice that there is significant overlap between R and G, and still some small overlap of R&amp;G with B.\n\nSo as the wavelength of light decreases (moving towards higher energy, blue end of the spectrum, the R (and G) cones' drops off, but not to zero, even well into the range where the B cones have their peak.\n\nProgressing further through blue and into violet, the B cone sensitivity drops off faster than the R &amp; G and you reach an area where there's roughly comparable sensitivity in the B and R, (with less in G,) much lower than the peak sensitivities, but not zero.\n\nSo 440nm blue light stimulates R cones slightly and B cells a lot, and appears blue. 405nm violet light stimulates R and B slightly and G even less, so it appears much less bright than similar intensity blue light, and will appear as a mixture of blue and red with a little green, so some light shade of purple.",
+                            "score": 7,
+                            "author": "maxh2"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Amazing explanation, thank you!",
+                    "score": 2,
+                    "author": "Gordogato81"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you very much. Especially the explanation about the Kelvin. That really helped me understand this a lot better",
+                    "score": 2,
+                    "author": "Cantora"
+                },
+                {
+                    "level": 1,
+                    "comment": "this doesn\u2019t really explain why we don\u2019t see green. it it something more to do with how we perceive green?",
+                    "score": 2,
+                    "author": "slimejumper",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "White on your screen is just 100% red, 100% green, and 100% blue. Green from a hot thing like the sun is 99% red, 100% green, and 99% blue. It's not noticeable to the naked eye, there is a star \"Zubeneschamali\" which apparently was at one time noticeably green, but the reason is lost to history, maybe it actually was.",
+                            "score": 9,
+                            "author": "IGetNakedAtParties",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "1.  The filament temp of a light bulb is 5k F?\n2.  Is this also the reason you occasionally see green flashes at sunset?",
+                    "score": 2,
+                    "author": "thecasey1981",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "1. Yes, the bulb is filled with a vacuum to prevent the metal from oxidizing and insulate the heat. Sometimes a partial vacuum of inert gas does the same.\n\n2. The green flash is more a refractive artifact from the differing density of the atmosphere. Imagine a prism like on Pink Floyd's famous album cover. Of course it can only refract light which was present from the sun to begin with.",
+                            "score": 2,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "For this thought experiment I like to think of each molecule as a positive or negative charge. Temperature is the kinetic energy or velocity of each molecule. As each charge gets closer and further apart, an EM wave is generated. As you increase temperature, average velocity of the molecules increases, causing higher frequency em waves. As the momentum increases, the amplitude of each successive em wave increases. So both the amplitude and frequency of blackbody emissions adjusts with temperature. \n\nThis is all good, execpt, ionizing waves get absorbed locally. To fit blackbody radiation curve from the sun, we discovered plank's constant. I think of this as the birth of quantum mechanics.\n\nSo, down below uv, the curve follows the thought experiment quite nicely. Above uv, light emissions drop off, because that frequency of light is high enough to be absorbed by atoms in the same area/ resulting in hydrogen band emissions etc.\n\nJust another part of science showing how we dodged a bullet. Life would be hard if super heated objects emitted high frequency light without an upper limit.",
+                    "score": 2,
+                    "author": "smurficus103"
+                },
+                {
+                    "level": 1,
+                    "comment": "This really doesn't explain why we don't see green specifically in this transition even though there's a moment that peaks on green, this must be related to how our color perception works.",
+                    "score": 3,
+                    "author": "RiverRoll",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The peak of distribution is very broad, when the peak is on green it's almost the same level for red and blue.",
+                            "score": 12,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "But I thought the are no purple stars? Your explanation seems to say otherwise",
+                    "score": 0,
+                    "author": "Gotoro",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And this kids, is why you don't trust everything you read on the intent. Good catch.",
+                            "score": 3,
+                            "author": "IGetNakedAtParties"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is an excellent explanation! I'm a 40yo space nerd who thought I knew what I was talking about and I still learned something new. Thank you!",
+                    "score": 1,
+                    "author": "yoweigh"
+                },
+                {
+                    "level": 1,
+                    "comment": "I wouldn\u2019t call 3000k orange.  It\u2019s a pretty pale yellow.  2700k is more yellow\u2026still not very orange.",
+                    "score": 1,
+                    "author": "sleeknub"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; of light emitted is broad, not a focused frequency like a laser,\n\nGreen and violet are not a single frequency either. They are ranges of frequencies. Noticeably narrower than what we call yellow, but comparing them to \"focused frequency like a laser\" is incorrect.",
+                    "score": 1,
+                    "author": "SkyPL"
+                },
+                {
+                    "level": 1,
+                    "comment": "Is it a distribution of wavelengths because of uneven temperatures? Like, could you actually see a metal ingot turn green if the entire ingot was exactly the right temperature?",
+                    "score": 1,
+                    "author": "gBoostedMachinations"
+                },
+                {
+                    "level": 1,
+                    "comment": "Light aren\u2019t actually 4000K hot are they? Wouldn\u2019t the housing melt?",
+                    "score": 1,
+                    "author": "AdAdministrative2955"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It doesn't. The emission is so broad in terms of wavelength that you rarely can't make out one color, just the dominant one. Turns out the sun, at 5500 degrees or so, peaks around green, but it emits a lot of other wavelengths too. And our eyes evolved under sunlight, so for us it's white anyway.",
+            "score": 19,
+            "author": "Blakut",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "The black body emission is a broad band. To obtain a green color you'd need a sharp peak in the spectrum with yellows and blues attenuated with a filter. When a heated item is white like the sun, it still emits plenty of blue and red even though the peak is in the green.",
+            "score": 101,
+            "author": "Jason_Peterson",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Is there a way to make it some shade of green if we change the composition and heat precisely to a specific temperature?",
+                    "score": 4,
+                    "author": "jiggerjog",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You could come up with an object that glows green, but then it wouldn't be \"blackbody radiation\" anymore.  I.e. the object would need to either emit green light specifically, or absorb non-green light.  Blackbody radiation follows a specific spectrum at each temperature, and there is no temperature that produces a blackbody spectrum which we would recognize as green-colored.",
+                            "score": 5,
+                            "author": "tman_elite"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The light glowing from the metal is black body radiation.  It\u2019s following the black body radiation locus https://www.salsburg.com/lightcolor/fig2.jpg .  The colors you get are points along the line that starts in the red corner and goes across the middle.  That\u2019s how the mix of wavelengths that comprise black body radiation are perceived.",
+            "score": 112,
+            "author": "spacecampreject",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This image leaves me with so many questions.\n - Why are the axes only labelled as 'x-axis' and y-axis'\n - Why do the axes still have number scales?\n - Why does the wavelengths nanometer scale wander around the graph seeming to follow a tilted parabola with an irregular and ever-changing distance scale? \n -  Why are apparent changes to sunlight due to atmospheric changes (sunrise vs noon) being compared to blackbody radiation changes due only to changes in temperature?\n - Just cause the sun is a blackbody, doesn't mean the apparent light after passing through a filter (like the atmosphere) will also be on the blackbody radiation line right? Is it a coincidence?\n- Why does the arrow to one of the 'Sun and Sky' points lead to a black void instead of a name?\n - What do all the acronyms (WWX, SP30, MV11, etc.) mean?\n\nI'm not positive but I think a few of these are legitimate questions for someone more knowledgeable, and the rest are signs that the graph is cursed.  I need a physicist and an exorcist.",
+                    "score": 15,
+                    "author": "PM___ME",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;This image leaves me with so many questions\n\nIt's a color space diagram.  I think it's [CIE 1931](https://en.wikipedia.org/wiki/CIE_1931_color_space).  A color space represents human perception of colors using a theory of color vision, and shows all the colors visible to an average person at a particular level of luminance (brightness)  \n\n&gt; Why are the axes only labelled as 'x-axis' and y-axis'\n\nx and y have specific meanings in color space, so that's their actual name.  They are mathematical combinations of the ways you can stimulate the three kinds of cones in the human eye.  They let you chart on a 2d plane all the combinations of stimulations (aka colors) that are possible at a given luminence.  The numbers (roughly) indicate how much certain cone types are stimulated relative to others.  \n\n&gt;Why does the wavelengths nanometer scale wander around the graph seeming to follow a tilted parabola with an irregular and ever-changing distance scale? \n\nThe \"parabola\" on the top represents the colors you perceive if you see pure wavelength light.  The shape of the curve and spacing of the markings is due to the specific nature of human color vision.  We are more sensitive to certain colors than others and better at distinguishing certain colors.   Also note that key to the whole diagram is that you can get the colors (and only the colors) on a line in between two points if you mix light at the two points.  So the \"space\" of the diagram is all the colors you can get by mixing all the different pure wavelengths of light.\n\n&gt;Why are apparent changes to sunlight due to atmospheric changes (sunrise vs noon) being compared to blackbody radiation changes due only to changes in temperature?\n\nThis particular diagram was made for people who were doing lighting (for houses or buildings or whatever) with various forms of lights.  Most of these _produce_ light on a blackbody curve, since they produce light by heating up something...although note the \"clear mercury\" which is probably the color produced by mercury vapor lamps.  Sunlight is on there for comparison because when people are doing lighting they often want to replicate the color of light at certain times of day, or at least use that for comparison.  It's not because there's something intrinsically tied between atmospheric influence and blackbody radiation.\n\n&gt;Just cause the sun is a blackbody, doesn't mean the apparent light after passing through a filter (like the atmosphere) will also be on the blackbody radiation line right? Is it a coincidence?\n\nMore or less.  Well, sunlight at noon is of course on the blackbody spectrum because it hasn't been altered much by the atmosphere.  Sunrise is redder for reasons that aren't related to blackbody radiation, but it's close enough to the line that they just marked it on the line (since that's what lightbulbs produce and that's what people are interested in with this graph)\n\n&gt; Why does the arrow to one of the 'Sun and Sky' points lead to a black void instead of a name?\n\nI'm not 100% sure on this one.  I _think_ it's just been cropped off.  This looks like an image that was scanned from a book (note the blotchy pattern of colors that's probably due to the printing technique), was then cropped out, surrounded by a black background, and all the white text was added on top.  Also note that the sequence of printing -&gt; scanning -&gt; displaying on your screen has skewed the colors quite a bit from the diagrams you see in my first link above.\n\n&gt;What do all the acronyms (WWX, SP30, MV11, etc.) mean?\n\nThey are codes for different kinds of fluorescent or HID lights.  For example, WWX indicates a [deluxe warm white fluorescent light](https://www.ebay.com/itm/165339815524)",
+                            "score": 20,
+                            "author": "atomfullerene",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "For one thing, you\u2019ve got the order wrong. The colors are red, then orange, then yellow, then white, then cyan, then bluish.\n\nThe reason they appear in that order is because the light is emitted on a bell curve of wavelengths, and near the middle of the visible spectrum that curve spreads into both low and high wavelengths causing us to see white.\n\nThere\u2019s no green glow because something glowing strongly in green is glowing substantially in bluish and reddish wavelengths, again causing white.\n\nThere\u2019s no appreciable violet glow because violet is a difficult color to see. It looks dull and dim to our eyes, which aren\u2019t very well suited to perceiving light with wavelengths that short. The nearby bluish wavelengths massively outshine any violet light usually.\n\nRemember not to buy your Kindergarten teacher\u2019s lie that violet is another name for purple. It\u2019s not. Violet is a spectral color. Purple is a mix of long and short wavelengths without many middle wavelengths, where there are also more short than long wavelengths. For that reason, you can\u2019t get purple from a regular blackbody emitter like a normal star or hot metal. You *can* get purple or magenta from the right combination of atmospheric gasses in a brown dwarf absorbing only the middle wavelengths and letting the rest pass through, though this would be rare.",
+            "score": 7,
+            "author": "OhioanRunner"
+        },
+        {
+            "level": 0,
+            "comment": "At any temperature, the metal is glowing in all colours at the same time, and infrared and ultraviolet and at wavelengths beyond both ends of the visible spectrum (where we stop calling it \"light\", but it's still the same stuff).\n\nWe can measure the spectrum of wavelengths and intensities that an object emits at a given temperature, with various methods and devices. We can graph that as a curve, and it matches up very well with theory. For each temperature, there is a peak to that graph, and yes, there is a temperature where the peak is at a wavelength we would call \"green\" or \"violet\". In fact, there is something we see every day that is at this temperature and is emitting more green light than any other wavelength\\*: the sun.\n\nBut the human eye, as amazing as it is, isn't exactly a perfect prism with well-calibrated photodiodes behind it. It's a bunch of organic receptors that each responds to a wide range of wavelengths and then mixes those sensations together in our brains. If we experience a single wavelength of green light, we see it as green. But if we see a bunch of different wavelengths of light, even if the maximum intensity is in the \"green\" band, the other wavelengths will combine in our receptors and cause us to perceive something else. In the case of the sun, that mixing of colours means that we see it as white (if we're in space) or yellow (from inside Earth's atmosphere).\n\nIncidentally, the progression of colours for hot things is red, then orange, then yellow, then white, then blue. White happens when we're getting colours from all across the spectrum in decent amounts, whereas blue happens when the peak is actually ultraviolet and all we can see is little bits of blue, and there is comparatively little red or yellow left. Oh, and also bear in mind that for every wavelength, you get more of that wavelength the hotter the thing is. A blue star emits more red light than a red star, it's just a smaller fraction of the total.\n\n\\*Insert some caveat here about spectral density. There's no such thing as \"power at exactly one wavelength\", so you have to define some kind of spectral density per nanometre, but that's more complicated and annoying maths.",
+            "score": 26,
+            "author": "HopeFox",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; At any temperature, the metal is glowing in all colours at the same time\n\nAFAIK that's incorrect. They can't emit (glow) wavelengths above certain threshold. Also: at zero kelvin they won't emit at all.",
+                    "score": 4,
+                    "author": "SkyPL"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It doesn't. It has to do with how the colors are distributed and how we perceive colors of light. \n\nIts always emitting basically all wavelengths but the peak brightness corresponds to the temperature and the distribution is skewed left. \n\nWe see red first because red light is the only light bright enough to see. \n\nThen orange and yellow are added as their intensities ramp up. \n\nBy the time we would see something glow \"green\" it already producing much bright light that's mixing together to form white light.\n\nWe see blue as the peak intensity shifts out of the visible spectrum and blue is still brighter than the rest because of the distribution (same kind of reason we see red first but there's just relatively less lower frequency light instead of not enough for us to see). \n\nIf it helps understanding our sun  is green. The peak wavelength of the sun is closest to the wavelengths corresponding to green light. It appears yellowish because we actually perceive yellow as the brightest color so we're simply perceiving the yellow light more brightly over the green.",
+            "score": 5,
+            "author": "DouglerK"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 12,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 44,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 7,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In short, all things glow, and what color they glow at depends on how hot they are.\n\nNormally, earth-like tempertures (0\u00b0C - 100\u00b0C) glow only in infrared -- below-red -- so we can't see it, altho for example the James Webb Space Telescope is designed to see below-red colors. (In fact, that's why nighttime air temperatures are colder than daytime: overnight, the Earth is glowing in below-red, dumping heat into space, cooling off the air at the surface. So just before sunrise is typically the coldest part of each day. We can't see the Earth glowing its below-red colors, but we feel the air losing heat via the glowing.)\n\nThe sun, at about 5500\u00b0C, glows white -- more accurately, it glows at *all* colors that we we can see, red, green, blue, and everything in between. Our brains interpret \"all colors\" as \"white\". (The reason we think of it as yellow is more complicated, and has to do with the atmosphere and a little bit of psychology.)\n\nMetals in forges, or whatever similar process, don't tend to reach 5500\u00b0C, and instead are more commonly at 1000\u00b0C or 2000\u00b0C or 3000\u00b0C. As it gets hotter, its glow-color gets less below-red and more into actual-red, that we can see; as it gets hotter still, it starts getting also red and yellow (orangeish), then red and yellow and green (orangey-white), then red and yellow and green and blue -- white, all the colors we can see, like our sun at its 5500\u00b0C surface temperature.\n\nOf course we don't really get metals hotter than that, but the stars themselves still serve as good proxies. Larger stars get hotter and hotter surfaces, which means stars larger than our sun glow at a bluer color. They hotten from white to blue, that is to say they stop glowing in red, then they stop glowing in yellow, then they stop glowing in green etc as they get hotter and hotter. When they get hot enough, they glow only in blue and purple. In fact, at this point, they glow much brigher in ultraviolet, in above-purple, than they do in the blue-purple that we can see, but since we can only see blue-purple, we still see them as such. (Many species of animals can see above-purple colors that we humans cant, such as reindeer and bees, among others.) For example: https://en.wikipedia.org/wiki/Epsilon_Canis_Majoris glows as much or more in the above-purple colors as in the blue-purple range that we can see, so it appears blue. That's kinda like, but opposite to, the way that semi-cool metal glows a dull red, glowing more in below-red than human-red, but we still see it as red.\n\nSo that's the answer. All things glow, and the color depends on the temperature. Earthlike temperatures glow only in below-reds, 5500\u00b0C glows across all the colors we can see, temperatures in the 1000\u00b0C or 2000\u00b0C range glow a mix of below-red and red, temperatures of 10000\u00b0C glow  more blue and above-purple than red, and temperatures of 25000\u00b0C glow hardly any red at all, glow a bit in blue, and glow mostly in the above-purple realms. If you go hotter still, to 500 000\u00b0C or 1 000 000\u00b0C, you might start seeing Xrays, and hotter-still will get you glowing in gamma rays. Naturally we don't see a whole lot of glowing of these colors anywhere near our little corner of the galaxy lol.\n\n(Side note, yes stars smaller than our sun glow redder, showing the same colors as metals at the same temperature: white, orange, orange-red, red, dull/muddied red, and a lot of below-reds. We need below-red telescopes to easily see the smallest stars, much like the cooler end of metal forges.)",
+            "score": 3,
+            "author": "Bunslow"
+        },
+        {
+            "level": 0,
+            "comment": "In addition to all the other answers here, check out The Ultraviolet Catastrophe!! Physicists were grappling with this exact problem at the end of the 19th century. Planck worked on it, and described the phenomenon using a constant that is now named after him and Einstein solved the problem in 1905. It helped him win the noble prize in 1921 and this problem and its strange solution led to the birth of quantum physics!!\n\nhttps://en.m.wikipedia.org/wiki/Ultraviolet_catastrophe",
+            "score": 10,
+            "author": "HoboBronson"
+        },
+        {
+            "level": 0,
+            "comment": "Biologically, our eyes are adapted to see green-peak, broad-spectrum light, which altogether appears white.\n\nWhen it looks white, it's mostly green, but our eyes are not perfect detectors.\n\nThe sun is also mostly green, in fact, which is the root of our sight adaptation.",
+            "score": 9,
+            "author": "DenialZombie",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "An important part that is missing from these answers is the biology \u2014\u00a0not specifically how the eye works, but *why* it works that way.\n\nWhite is, by definition, the color of the sun's light. It's the thing that illuminates everything, and that means our eyes and our color perception evolved to perceive that as white. Yes, the sun is yellow \u2014\u00a0when it's low in the sky or very hazy. But most of the day, most places on earth, it's white, with the atmosphere not blocking much of the light in the visible spectrum.\n\nThus, since the sun is pretty well approximated as a blackbody (albeit with a few absorption lines being less bright), a blackbody at the temperature of the sun will be perceived as white, and so the [Planckian locus](https://en.wikipedia.org/wiki/Planckian_locus) *must* pass through the center of the color gamut. And since green cones pick up light in frequencies between the red and blue cones, that means that away from that temperature that produces bright white light, you'll get something redder or bluer; it will never be greener than it is either red or blue. The closest you'll get is yellow or cyan.\n\nThis explanation relies in part on some naturalness arguments about what the blackbody spectrum is, but given what the blackbody spectrum it is, our eyes are tuned so that white is somewhere on the Planckian locus, and specifically so that white corresponds to the sun's temperature.",
+            "score": 3,
+            "author": "alyssasaccount"
+        },
+        {
+            "level": 0,
+            "comment": "Are you talking about the colors it turns before it glows?  If so, those colors are due to diffraction of the thin, transparent oxide layer developing as the metal heats up.\n\nIf you are talking about glowing, then the color progression should be from red up to yellow, then white, then bluish white if it get suprt hot.",
+            "score": 2,
+            "author": "BFeely1"
+        }
+    ]
+}

@@ -1,0 +1,1413 @@
+{
+    "id": "ede6z0",
+    "score": 41394,
+    "title": "This guy is building an open-source E-reader. Please support him.",
+    "author": "[deleted]",
+    "date": 1576867581.0,
+    "url": "https://www.reddit.com/r/books/comments/ede6z0",
+    "media_urls": [
+        "https://www.vice.com/en_us/article/7x5kpb/anyone-can-build-this-open-source-drm-free-kindle-alternative"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Wow, it's wild to see this project of mine on the front page! Also wild how literal the timing was; you posted this while I was [actually building one of the boards](https://twitter.com/josecastillo/status/1208127994893668353) this afternoon. \n\nPacking for a trip tonight but happy to answer folks' questions as much as I can. To preempt a few: \n\n* Open source software for Linux-based eReaders [does exist](https://github.com/koreader/koreader), but I'm trying to build open source hardware, the idea being that that anyone can buy the parts and build the whole thing themselves.\n* It doesn't run Linux; in order to be as hand-solderable and simple as possible, it uses a SAMD51 microcontroller, which makes it more like a really powerful Arduino than an iPad.\n* [The project page on Hackaday.io](https://hackaday.io/project/168761-the-open-book-feather) lists some of the specs. Things to be stoked about: microSD slot, MP3 playback, e-ink screen, physical buttons, global language support. Things that folks will be unhappy with: 1-bit display (no grayscale for now); no touchscreen, no backlight, no wifi. I've been making tradeoffs in order to make it both as affordable and as DIY friendly as I can, and while I know that's not everyone's cup of tea, the design is open source so that anyone can use it as a baseline to build a device that makes more sense for them.\n* The software portion of things is still in its infancy; this is an idea I had earlier this year, and I'm proud of how far I've gotten the hardware, but we're still a ways out from the kind of user experience that the reporter described in this story. He didn't ask me any questions other than \"can I use the photos\", which is frustrating because I feel like he described a lot of capabilities that I hope one day to have, but that aren't nearly real yet.\n\n[Here's the GitHub page](https://github.com/joeycastillo/The-Open-Book) where I commit all the work I'm doing day to day, and on the advice of a colleague, I set up [a mailing list](https://joeycastillo.us18.list-manage.com/subscribe?u=d31d40071448f3aa8acc39836&amp;id=d9134648c8) where I plan to send out an update once I've nailed down manufacturing and this becomes a product you can actually buy (like if you don't want to solder one together yourself).",
+            "score": 1055,
+            "author": "joeycastillo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Holy shit, alright. I'm just glad I got you some more exposure. Maybe you can set up a donation system so all this buzz is actually useful to you.\n\nYeah, I just found that article while reading about SciHub, and thought, this is great! So I posted it here.",
+                    "score": 197,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks so much for posting it! I'd actually been considering launching a Patreon page next year, but right now this is all kind of a labor of love; it's an idea that was stuck in my head that I just needed to get out. The first time I read a story on it \u2014 [Brokeback Mountain by Annie Proulx](https://www.newyorker.com/magazine/1997/10/13/brokeback-mountain), incidentally; I copied the text from the New Yorker website to my prototype to read it in bed \u2014 I was so stoked, because as a reader and as a maker, it felt incredible to read something on something I made, and I sensed that people would feel really empowered by that as well. As long as folks are stoked about that idea, all the buzz is useful :)\n\nEDIT: as a side note, Brokeback Mountain is a short read and a really powerful story; I sense that readers of /r/books would love it. [link, one more time](https://www.newyorker.com/magazine/1997/10/13/brokeback-mountain)",
+                            "score": 89,
+                            "author": "joeycastillo",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "No questions from me, just wanted to say you are awesome. It\u2019s projects like these that make me love open source software/hardware and the philosophy behind them. I\u2019ll be following your github page and hopefully I will be able to pick one up soon. Kudos man :)",
+                    "score": 24,
+                    "author": "Rechirax",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Hey, Joey! I still follow you on Twitter and it's been pretty cool seeing your posts from time to time concerning this. :)",
+                    "score": 13,
+                    "author": "Musely",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I've been looking for some solution for writing that let's me use an ereader with a keyboard. I've found [this](https://www.yankodesign.com/2018/05/28/why-this-pocket-typewriter-in-2018-makes-absolute-sense/) and another integrated unit, but would be happy to use a separated solution. Could your device be useful for me in this regard? Bluetooth or usb?",
+                    "score": 4,
+                    "author": "peppigue",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It probably doesn't, unfortunately. No Bluetooth, and while it does have native USB, it can really only do USB device things (like act like a thumb drive), not USB host things (accept input from an external keyboard). Some really awesome hackers are working on some really awesome things; [this project](https://hackaday.io/project/165450-keyboard-featherwing) is all about adding a Blackberry style keyboard in a form that would be compatible with the book, but it's definitely not a full-size keyboard for writing, which would indeed be super rad.",
+                            "score": 10,
+                            "author": "joeycastillo"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Do you have an estimated date on when you can buy one of these?",
+                    "score": 2,
+                    "author": "PathOfTheProkopton",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hopefully sometime early next year! I entered the board into [a contest](https://hackaday.io/contest/168107-take-flight-with-feather), and the first prize is 100 boards getting manufactured and sold (at cost, but hey, it gets it into people's hands!). \n\nWhether it wins or not though, I've decided to take a leave of absence from other projects and just focus on this for a bit, so I hope to make some real progress on it in the new year.",
+                            "score": 18,
+                            "author": "joeycastillo",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Isn't the Kobo pretty much DRM free already? You can download ebooks from any source onto it.",
+            "score": 1796,
+            "author": "Volt-Hunter",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean I already can put any book I want on my kindle paperwhite (Calibre can convert into MOBI, and I can physically put books on the device), and since I own a kindle I can in fact download books from amazon to my PC, then make them epub if I want them elsewhere. At the moment this seems more of a exercise in electronics or precaution against Amazon overstepping (deleting either of the bits I mentioned from kindles) in the future, not an immediate problem.\n\nAlso, DRM free isn't really what this is about, its about full open source, like Linux. He wants this to be fully out of reach of one company",
+                    "score": 1518,
+                    "author": "Vipershark01",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 311,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is the thing I'm counting as the important part. There has always been and always will be people hacking, cracking, modding, and synthesizing on the software side. Having someone make an open source framework for a basic e-reader that will be easy or at least possible to upgrade, tinker, and modify will be a game changer.",
+                                    "score": 143,
+                                    "author": "tetractys_gnosys",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "As long as the result isn't too clunky or weighty, anyway.  Due to the primary usage for e-ink readers, weight and general comfort of use is kind of a top tier concern.",
+                                            "score": 25,
+                                            "author": "ScarsUnseen",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Of course, but that's another reason why having the open hardware is wonderful. The community can iterate and dev out smaller, more efficient, or alternative forms for the chunks or modules. Plus, for people like myself who are fine with having something that's clunky in comparison to a Kindle, we can choose to sacrifice smaller footprint for better display, *LARGE* display, a keyboard, whatever and the people that want the small form can make or get that version.",
+                                                    "score": 14,
+                                                    "author": "tetractys_gnosys",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I've always been the guy on the hardware end of things. That makes sense to me, and now I'm following along with the tech they're using. If it's hardware, I can build with it.       \n      \nSoftware, otoh, fuck me. I've never successfully managed to learn another language in 40+ years, including programing ones. It's just beyond me. I'll wait until the community comes up with mods, hacks, and tricks, then parrot them.",
+                                                            "score": 7,
+                                                            "author": "Mythdefied",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Have you guys heard of koreader?",
+                                            "score": 4,
+                                            "author": "mynameisearlb",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Negative! South or North Koreader?",
+                                                    "score": 17,
+                                                    "author": "tetractys_gnosys",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "There's only one koreader, the best koreader. For implying otherwise, you have been banned from /r/pyongyang",
+                                                            "score": 13,
+                                                            "author": "ExEmpire"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Same here. I don't care about the e-reader part, but having an open source board with design files that will drive a epaper display could really come in handy for some cool projects down the line. If this guy has already done the heavy lifting in the hardware front, it could really open the platform up to some interesting firmware.",
+                                            "score": 3,
+                                            "author": "nickajeglin"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Also true. Would be cool if someone made a 3d file for a plastic cover too. It didn't look like there was one.",
+                                    "score": 38,
+                                    "author": "Vipershark01",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What is pictured in the article is still a prototype, so I expect a 3d printable cover will also be made available when this gets further along in development.",
+                                            "score": 21,
+                                            "author": "impy695",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; And not just open (software) source, but open hardware.\n\nI'm currently searching for my next phone; I want to run Linage, work with my existing MVNO, have popular and easily purchased spare parts and factory fresh verified replacement batteries available from a company that desperately wants me to drop north of $1k on a new proprietary device every couple of years. I may just say fuck it, and make it run off of 18650s.",
+                                    "score": 23,
+                                    "author": "sticky-bit",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You may want to investigate the PinePhone. Here's [a review of it from a prominent linux dev](https://drewdevault.com/2019/12/18/PinePhone-review.html) written a few days ago.",
+                                            "score": 16,
+                                            "author": "WickedFlick",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That website is very [motherfuckingwebsite](https://www.motherfuckingwebsite.com)",
+                                                    "score": 10,
+                                                    "author": "Deceptichum"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I was going to suggest the Librem 5, but this looks like it\u2019s actually going to happen, while Librem is having some serious issues with releasing an actual product.",
+                                                    "score": 9,
+                                                    "author": "Hotspot3",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The librem has started shipping to backers now.",
+                                                            "score": 4,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thanks, the Pine Phone was new to me. The price point looks good and the only question is if they'll ship soon and how hard will it be for a moderately experienced person to load a working OS.",
+                                                    "score": 3,
+                                                    "author": "sticky-bit",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "There are tons of cheap and powerful LiPo pouch cells available these days thanks to their use in the RC hobby, in all shapes and cell count. I have slipped them into quite a few devices to replace proprietary LiPo cells. Most are just a single cell @ 3.7v.\n\nI love 18650s as a field replaceable cell and use them in a lot of equipment, but their cylindrical form factor is not ideal for pocket sized devices.",
+                                            "score": 16,
+                                            "author": "evranch",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "*glances at original Game Boy on bed next to pair of JNCOs*\n\n*nervous chuckle*",
+                                                    "score": 15,
+                                                    "author": "PM-ME-YOUR-HANDBRA",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "There are guides on accomplishing rechargability with the game boy out there my friend. Also replacing the screen with a very bright colorful efficient one.",
+                                                            "score": 7,
+                                                            "author": "R0GUEL0KI",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "You could have a look on the Fairphone.",
+                                            "score": 3,
+                                            "author": "Machiningbeast"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I jailbroke my paperwhite and never connect it to wifi. So at this point it's basically just a tiny linux computer with an epaper display. I have a terminal program, a bunch of open-source homebrew programs, alternative book readers, a calculator, a sudoku game, alternate fonts, custom screensaver, etc. I've even used it to run debian through chroot, or used a vnc client to use it as a second monitor on my PC.\n\nIt's not totally free and open source, but it's not tied to amazon in any way, and I can hack it as much as I want.\n\nAnyone who's a linux geek and into this sort of thing should check out the mobileread.com forums.",
+                            "score": 348,
+                            "author": "verylobsterlike",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 167,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm pretty sure it can but it's probably a really bad experience. I played angry birds on my old ereader and it was... challenging.",
+                                            "score": 96,
+                                            "author": "Hoelk",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 56,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "which version?",
+                                                            "score": 4,
+                                                            "author": "zagbag"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "/r/itrunsdoom",
+                                            "score": 14,
+                                            "author": "RamblingStoner"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "My cursory research says e-ink displays have very low refresh rates (single-digit per second) so the answer is probably yes, but only in slideshow form.",
+                                            "score": 6,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "On an e-ink display? That\u2019d be a trip alright",
+                                            "score": 12,
+                                            "author": "SustyRhackleford",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Unfortunately, they went with a hardware lock down so jailbreaking is no longer possible. As a result, I can't manage collections from Calibre on my new paperwhite where I could with my older kindle.",
+                                    "score": 13,
+                                    "author": "pharmacon",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 17,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Kobo Aura Edition 1 was my first e-reader, then I went to a Kobo Aura One, and just recently moved to a Kobo Forma, for the physical page turn buttons. I love my Kobos! Also use the Koreader 3rd party software which is insanely customizable.",
+                                                    "score": 6,
+                                                    "author": "the_boomr",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; Kobo Aura Edition 1\n\n&gt; Kobo Aura One\n\nWhoever comes up with Kobo's naming conventions needs to take a good hard look at themselves.",
+                                                            "score": 7,
+                                                            "author": "bluesam3",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Wait, when did this happen?",
+                                            "score": 11,
+                                            "author": "Kozyre"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 3,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It occurs to me that a *nix terminal and epaper are a good match, considering the history of the command line. Is there an explicit way to de-automate line-by-line scrolling during non-interactive output?",
+                                    "score": 12,
+                                    "author": "atimholt",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I think a pager such as \"less\" or \"more\" is what you're looking for.",
+                                            "score": 9,
+                                            "author": "Lampshader"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; Is there an explicit way to de-automate line-by-line scrolling during non-interactive output?\n\nDunno. I'm guessing no, but whatever you run in the terminal could probably do that. I'm thinking screen or tmux might have options like that. I guess you could try scrolling up, maybe with shift+pgup and see if it prevents scrolling, or bind a key on the virtual keyboard to scroll lock, but I haven't tried.\n\nHere's the terminal program I've used: https://www.fabiszewski.net/kindle-terminal/",
+                                            "score": 7,
+                                            "author": "verylobsterlike"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Maybe **watch**? From the man page:\n\n&gt;\nDESCRIPTION\n       watch  runs  command  repeatedly, displaying its output and errors (the\n       first screenfull).  This allows you to watch the program output  change\n       over  time.   By default, command is run every 2 seconds and watch will\n       run until interrupted.\n\nFor programs like top and htop the refresh might also be adjustable.",
+                                            "score": 2,
+                                            "author": "0OKM9IJN8UHB7",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "omg want, how hack is it?",
+                                    "score": 3,
+                                    "author": "Seven2Death"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Have you shown it off in a video? Very cool.",
+                                    "score": 3,
+                                    "author": "forgetfulnymph"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "..I had no idea this was a thing! As a fellow Linux (CentOS) geek, I thank you for spreading the word!",
+                                    "score": 11,
+                                    "author": "forabettersimonday",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Whoa what does it look like to use as a second monitor? Can it run video?",
+                                    "score": 5,
+                                    "author": "Purdaddy",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 32,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It would be good to show status information like a CPU temps graph, maybe a QR code for the wifi password, a list of all clients attached to the network, a recipe you're about to start throwing together in the kitchen, or a python3 cheat sheet. \n\neink doesn't require any power to maintain a display, which makes the kindle screensavers kinda like an anti-feature since you can't turn it off without hacking the OS.",
+                                                    "score": 19,
+                                                    "author": "sticky-bit",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You can turn off the lock screen saver, I think.\nPressing and holding the power button?",
+                                                            "score": 5,
+                                                            "author": "XcruelkillerX",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "~~The kindle screen-saver can actually be disabled from the search box. It does use battery more as it doesn't go into full sleep though.~~\n\nApparently this doesn't work anymore.",
+                                                            "score": 2,
+                                                            "author": "Richy_T"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "On a tangential note, any recommendations for a way to show clients on a network in real (or semi real)  time?\n\nI have tried a few things but nothing really worked for me.",
+                                                            "score": 2,
+                                                            "author": "RamenJunkie",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That's not entirely true. Technology Connections on YouTube bought a Chinese device that is basically a full tablet computer with a big eink display and it is possible to get relatively good animation on it, however you do end up with ghosting after a while because the picture elements don't get fully refreshed. \n\nYeah it is not great, and you couldn't play an fps on it with any success, but it's also significantly better than you would expect.",
+                                                    "score": 6,
+                                                    "author": "QuerulousPanda",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I do like having WiFi though because I can email books to it through Calibre!",
+                                    "score": 2,
+                                    "author": "GUILTIE"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This sounds fun and not fun at the same time, I'd imagine you'd like having a pet sloth",
+                                    "score": 2,
+                                    "author": "frank26080115",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Amazon's latest DRM AZM4 hasn't been broken since it came out a few years ago - Calibre can't remove it's DRM, so I think you are out of date with your info",
+                            "score": 17,
+                            "author": "the-bit-slinger",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Can't you just load an old version of the Kindle desktop software and it'll download the old file type?",
+                                    "score": 17,
+                                    "author": "DVDJunky",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's how I do it.",
+                                            "score": 4,
+                                            "author": "mynumberistwentynine"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You can download for device in azw3 using Download &amp; transfer via USB option if you have a kindle or similar so its irrelevant still.",
+                                    "score": 7,
+                                    "author": "Vipershark01",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "so don't buy amazon ebooks. buy it somewhere else and read it on on your kindle. as long as you can read drm free books on the device they're shooting themselves in the foot by not offering drm free ebooks, especially since they probably sell kindles at a loss in hopes of ebook purchases.",
+                                    "score": 10,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Pretty sure Sony e-readers ran on archlinux.",
+                            "score": 4,
+                            "author": "PuckSR",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Cool! Sony has such an excellent reputation with open hardware and open standards too! ^^/s\n\n^^^^^.\n\n\n^^I ^^remember ^^the ^^first ^^time ^^Sony ^^tried ^^to ^^install ^^a ^^root ^^kit ^^on ^^my ^^PC ^^like ^^it ^^was ^^yesterday!",
+                                    "score": 13,
+                                    "author": "sticky-bit",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The early models ran Linux, but the PRS-T1 to PRS-T3 ran Android.",
+                                    "score": 2,
+                                    "author": "aetius476",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Calibre master race",
+                            "score": 3,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "FYI, Amazon absolutely uses DRM on Kindle books of all sorts.",
+                            "score": 10,
+                            "author": "beldaran1224",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "DRM free != open source. He's basically trying to make a standard hardware design and OS that is free for anyone to manufacture.",
+                    "score": 152,
+                    "author": "treemoustache",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Can this lead to an ereader that can access both kindle and kobo (and other) library?",
+                            "score": 11,
+                            "author": "Clessiah",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 40,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "So... Yes?",
+                                            "score": 6,
+                                            "author": "yeah_but_no",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It could as long as someone is willing to put the time and the effort into making it a reality. Contrary to closed-source projects where you're limited to what the company deems acceptable.",
+                                                    "score": 9,
+                                                    "author": "GodSavesZelda",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 4,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You're already free to convert your ebooks into whatever you want. The only obstacle is DRM, which is imposed on you by the *seller* of the book, not the device it happens to be on. Provided you can find a source of DRM free e-books then you can pretty much already upload them to whatever device you want using Calibre.\n\nDon't expect a device to have support for both kobo's shop and amazon built in though, that's never going to happen.",
+                                                    "score": 6,
+                                                    "author": "XkF21WNJ"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes, I have one and it's great. And it supports OverDrive too. (library ebooks)",
+                    "score": 31,
+                    "author": "squirrelwithnut",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I have one and I agree it is great and works with everything I have thrown at it. That said I feel like the interfaces on these babies could be way more user friendly.",
+                            "score": 11,
+                            "author": "caninehere",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In my experience, Open Source coders are not GUI designers.  It's gotten better over the years but most of the time it's not great.\n\nThere almost needs to be some sort of Open Source GUI enthusiasts somewhere that OS programmers can toss to and say \"Hey, how can I fix the GUI here\" and they fix it.",
+                                    "score": 22,
+                                    "author": "RamenJunkie",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "A thousands times this, wholeheartedly agree.",
+                                            "score": 2,
+                                            "author": "pizza_loving_CEO"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Overdrive and it\u2019s connected apps are the way to go. It\u2019s incredible how little incentive there is to purchase electronic books when you can read so much for free.",
+                            "score": 6,
+                            "author": "C-Towner"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I have used a kobo for many years. It does take most formats. If you use calibre, it will format to your choice and you can upload to the kobo. Easy and convenient.",
+                    "score": 7,
+                    "author": "hit_hi"
+                },
+                {
+                    "level": 1,
+                    "comment": "He wants to make devices that aren\u2019t lock into a corporation. I like Kobo BUT it is still part of Rakuten which while not as large as Amazon is a pretty big corporation.",
+                    "score": 26,
+                    "author": "TooSmalley",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Is this an issue with any other ereader? I\u2019ve been pirating .epubs and putting them on my nooks for almost a decade.",
+                    "score": 7,
+                    "author": "BlandSlamwich",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Fucking love my kobo aura one. I'm sticking with it until ACeP launches on a non-kindle ereader",
+                    "score": 5,
+                    "author": "Orthodox-Waffle",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "This is correct as far as I'm aware. But I've only managed it in epub format. I have also managed to get DRM free ebooks on my Kindle too, so not sure why this is a thing other than breaking the monopoly of the huge companies in the ereader game.",
+                    "score": 14,
+                    "author": "phil4190",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I have a ton of epubs and put them on a kindle without much issue.  The amazon hardware is pretty good, imo.",
+                            "score": 7,
+                            "author": "alphabennettatwork",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The Kindle is as well, you can load any PDF/book you want and you are able to read it as any of book purchased through the Amazon marketplace. I think the real issue is how books are sold",
+                    "score": 13,
+                    "author": "iYellAtPuppys",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yea I don't see any potential problems with the Kindle. I have a paperwhite and I load any ebooks I want via Calibre. Calibre also has DRM removal. I just keep my Kindle permanently on airplane mode so I don't see how Amazon can fuck with me.",
+                            "score": 11,
+                            "author": "ClaireBear1123"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Do Kobo's let you read Google Play books? I wasn't sure so midyear I bought an Android e-reader (Onyx Boox Nova Pro) as I wouldn't be able to read my books on a kindle.",
+                    "score": 6,
+                    "author": "Komnenos_Kasuki",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm not sure if it depends on the title, but I bought a book on Google Play and I was able to download the Epub DRM-free and put it on my Nook. You probably could have converted the book to MOBI and put it on your Kindle.",
+                            "score": 3,
+                            "author": "someguy7734206",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh yeah I found out it can work with a kindle. However I wanted to keep my bookmarks, highlights and progress synched with my account.",
+                                    "score": 2,
+                                    "author": "Komnenos_Kasuki"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yep. I download them on my pc online then transfer them over to my kobo via Adobe digital editions. Comics bought from the play store work as well.",
+                            "score": 6,
+                            "author": "Arafyn",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I mean i just convert thinsg to mobi and email them to my kindle already, so things are easy enough.",
+                    "score": 2,
+                    "author": "flatspotting"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah I think a lot of people might confuse this with opening up books to the public which of course there are many programs out there you can achieve that with. This is just someone building an ereader.",
+                    "score": 2,
+                    "author": "BigDickRick77"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes. The real problem is them being expensive because people generally only buy one and use it to hell. Ive had my nook since 2013 and i have only now slightly considered buying a new one next year.",
+                    "score": 2,
+                    "author": "blueking13"
+                },
+                {
+                    "level": 1,
+                    "comment": "The article equates proprietary code with DRM, which is pretty damn far from accurate. Not least because DRM typically applies to the e-books, not the e-reader (although reverse engineering the e-reader is also discouraged, but that's not the kind of DRM people usually talk about)",
+                    "score": 2,
+                    "author": "XkF21WNJ"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "i just want an ereader that can display my d&amp;d and other ttrpg books without having to zoom/scroll.",
+            "score": 584,
+            "author": "t3hd0n",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I recommend Onyx Boox - I've bought 10 inch one, and it's amazing, both for reading and note taking.",
+                    "score": 193,
+                    "author": "swistak84",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "How much did you pay for it? Around 450$ as in their website?\n\nI looked for a e-reader around A4 format 1 or 2y ago, because I read a lot of document shaped in that side (and pdf, not epub unfortunately). But dang, the devices I found were really expansive and received bad rating overall...",
+                            "score": 67,
+                            "author": "eaiCCZ",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah A4 ebooks are a rarity, I'm planning to buy one in a few months though.",
+                                    "score": 33,
+                                    "author": "langlo94",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "At the end, I bought a kobo with a 8\" diagonal (forma, iirc). It checked a lot of thing I wanted, even if it's not adapted for A4 format...\nAnd it definitely convinced me that a e-reader in A4 format with the same spec than a kobo or kindle reader would be a terrific tool.",
+                                            "score": 9,
+                                            "author": "eaiCCZ"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I was able to pick up their 10.3\" for $300, refurbished. Haven't had an issue so far, just that it shipped with Japanese language selected and has a small scratch on the case. I highly recommend it as well, it's been great for reading scientific journal articles and taking notes.",
+                                    "score": 13,
+                                    "author": "KapitanWalnut",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I paid 600$ for my Onyx Boox note pro and it was worth every penny really. Loads pdf\u2019s pretty fast and the screen is big enough to where I don\u2019t have to zoom in too often. I put all my textbooks in there so it already pays for itself pretty much.\n\nIf you do decide to get one get it from shop.boox.com  as there is another russian based website that sells one as well but it gets longer to get the firmware updates.",
+                                    "score": 3,
+                                    "author": "Pikatoise",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Around $500 at the time. Totally worth it. I would say that for just reading it's even to big, and I wouldn't mind it being a bit smaller, but for note taking, and especially annotating references, its brilliant, you divide it into half read on one side, take notes on second.\n\nI was looking at several other ones, and found Boox to have best features &amp; size /price ratio. Couldn't justify to myself spending even mroe on remarkable, although I heard software there is much better. Big selling point was it can run android aps, so I could use Tachiyomi for mangas, browse net, read *Pocket, etc.*",
+                                    "score": 3,
+                                    "author": "swistak84",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I am curious, how does the screen compared to a Kindle Paperwhite? I saw a prototype of their Onyx 10.3\" reader a while back, and going from 300dpi of my Kindle to around 200dpi of the Onyx was a noticeable step down as far as eye comfort? Also how does battery life compare to a Kindle? The Onyx seems to be closer to a tablet as far as performance, so I wouldn't expect anywhere near Kindle battery life.  How many hours of reading can you get before recharging?",
+                            "score": 28,
+                            "author": "BeaversAreTasty",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Why are the onyx so expensive? Im browsing their site and i need to know why i should pay for a b&amp;w e reader that costs as much as a ps4?",
+                                    "score": 6,
+                                    "author": "poland626",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 15,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Don\u2019t forget the ad revenue they pull too unless you pay them more money.",
+                                                    "score": 6,
+                                                    "author": "R0GUEL0KI"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Dude it\u2019s worth it, I paid 600$ when it came out and I didnt regret it at all. It\u2019s only really worth it if you care about the e-ink technology and eye strain, else just read on an ipad. If you do have bad eyesight like me the thing is a lifesaver.",
+                                            "score": 5,
+                                            "author": "Pikatoise",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You are probably a rare case. I love my kindle to bits partially because it's small. I also can't imagine a bigger screen making it worth 5x times more.",
+                                                    "score": 5,
+                                                    "author": "AliveFromNewYork",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I get the sentiment, my gf has a kindle and though the thing is easier to hold and read for fiction books, my onyx is way better for pdf\u2019s/nonfiction/internet/anything else really. For me it was worth every penny, it\u2019s my favorite device (over my galaxy tab s6 which is also neat). They don\u2019t have the scale that amazon does to keep costs down, they\u2019re still a very unknown small company.",
+                                                            "score": 4,
+                                                            "author": "Pikatoise"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 11,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It costs around 8 paperwhites . So that\u2019s how it compares",
+                                    "score": 9,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I want one but damn is it expensive. Just for the sake of reading PDFs comfortably it's not worth it since you can buy an ipad for the price. I know it's not the same for reading (I have a paperwhite), but the price they want for it is not reasonable",
+                            "score": 13,
+                            "author": "trznx",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I was looking at that, but ended up getting a $100 Samsung tablet with a stylus that can do all that and more for way cheaper. Links and syncs to Google drive, can download things with chrome, etc. I love the look of the onyx, but right now it's too limited for the price imo",
+                            "score": 5,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I think that's more about PDFs in general. If the publishers were willing they could already convert their books to proper epub format that could be comfortably used on any eReader, but that probably wouldn't be very profitable.",
+                    "score": 14,
+                    "author": "Shinhan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "you're right, but i honestly don't know how much work it takes to set it up into an epub format. i'd like to think they could bundle an epub file and the pretty pdf together.\n\nhow the sourcebooks are set up add a layer of difficulty compared to story/narrative books. there's tons of sidebars, tables, lists, etc. its probably doable, but probably not profitable like you suggested. itd be more of an e-textbook than an ebook.",
+                            "score": 7,
+                            "author": "t3hd0n",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It\u2019s the page formatting that\u2019s important. With pdf it\u2019s completely static, but with the epub format is dynamic and adaptable to screen size and font size. \n\nImagine trying to provide a citation to an ebook format where your page 60 is someone else\u2019s page 65. I took a victorian lit class in grad school and a few people had ebook versions of the books cause it was free and the prof said it was fine but if they had to cite something they had to use a paper edition because there\u2019s just no reliable way to cite an ebook version.\n\nImagine this with a large text book. It would just be a nightmare if they couldn\u2019t fix the pages in place.",
+                                    "score": 8,
+                                    "author": "R0GUEL0KI",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I've created large-print books for students with disabilities and we just label every \"original\" page number at the beginning of the original page text, even if that means the \"Page x\" label falls in the middle of a page. I don't see why academic epubs couldn't do something similar. Or have a page number label so that even if you turn 4 virtual pages they display the paper book page numbers.",
+                                            "score": 5,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "ePub is a file format where each chapter is an HTML file. Citation can be easily solved by replacing them with hyperlinks to chapter/section/subsection. \n\nSo, think of this like converting PDF to a responsive HTML.",
+                                            "score": 3,
+                                            "author": "Shinhan"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Try the PocketBook InkPad X, it just came out and it has a 10.3\" screen.",
+                    "score": 10,
+                    "author": "Bauxitedev"
+                },
+                {
+                    "level": 1,
+                    "comment": "Remarkable or Sony Digital Paper Tablet. \n\nI use the former for carrying my textbooks.",
+                    "score": 7,
+                    "author": "bandhani",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "i checked into remarkable, that price tag tho.",
+                            "score": 7,
+                            "author": "t3hd0n",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Stunning device though. Had a chance to check one out in person, it really is a well designed product. Reminiscent of classic Sony",
+                                    "score": 3,
+                                    "author": "NotAnotherNekopan"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Text books are black ink on plain white pages, with a reasonably sized font.\n\nThe current D&amp;D manuals use a light weight font, in a small size and on a gimmicky parchment-like background.",
+                            "score": 4,
+                            "author": "frankinreddit"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Ya, I wish someone would make a large screen ereader with a keyboard so I could work from the park.   Sitting inside all day fucking sucks when the weather's nice.",
+                    "score": 3,
+                    "author": "rootbeer_racinette",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You can buy an eink external monitor but they're REALLY expensive. It's pretty neat, though. My office bought one as an accommodation for a student with a concussion who couldn't read off a regular screen, and it works really well. Look up the Dasung Paperlike.",
+                            "score": 3,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm thinking about making one with a raspberry pi and more than one e-ink panel to drive costs down.",
+                    "score": 3,
+                    "author": "OrShUnderscore"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That feeling when it seems easier to build your own e-reader than to get fucking windows to recognise your \"old\" Sony reader.\n\nAt this point I think I'd get more satisfaction snapping the useless thing in half than actually getting it to work.",
+            "score": 117,
+            "author": "Harbltron",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Kobo ftw. Copy and paste ePubs to it like it's a usb stick.",
+                    "score": 45,
+                    "author": "Ovv_Topik",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I use Calibre with my Kobo but yeah, they are pretty decent. Mine has had some issues but reset it and it works fine. It's probably 5 or 6 years old now and only cost about $100 back then.",
+                            "score": 10,
+                            "author": "VanJack",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Also now supports Dropbox",
+                            "score": 3,
+                            "author": "Jon-A-Thon"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I have a Sony PRS-T1 and it just works as a removable storage device, have you used a USB cable with data leads?",
+                    "score": 7,
+                    "author": "dryingsocks"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I use a Kindle Paperwhite and Calibre.  You can't beat the price and screen quality on a Paperwhite, and DRM isn't an issue if you use Calibre.  Really for me the size of e-reader screens is the big limitation.  I deal with a lot of PDFs with detailed diagrams, and typical e-reader screens are too limiting.  Really the perfect e-reader would need have a 10\"+ color e-ink screen, and near the battery life of a Kindle.  \n\nHopefully [Wacom goes beyond prototype with their product.](https://goodereader.com/blog/electronic-readers/e-ink-and-wacom-have-just-unveiled-a-new-type-of-color-e-paper)",
+            "score": 158,
+            "author": "BeaversAreTasty",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Glad to see someone did it. Amazon was working on color e-ink like 10 years ago but they axed it before it got anywhere.",
+                    "score": 27,
+                    "author": "HeydayNadir",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nobody has gotten color eink to really work unfortunately.  I really really really want it for comic books.",
+                            "score": 40,
+                            "author": "simcop2387",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's a supplier issue mainly as far as I know. E-ink who is the dominant player has been working on colour for some time. As of 2 or 3 years ago could do 3 colours but the refresh rate was low and it required a refresh each page. I am sure they've made advancements since then and that it will come at some point.  There are only about 15m or so ereaders sold each year as of a few years ago. Probably the same or just less this year so demand unfortunately isn't high enough to push up R&amp;D resources. Also, E-ink isn't the only manufacturer so they aren't selling all 15m of those screens. I would guess other manufacturers are working on it too but with smaller budgets.\n\nThis is based on my experience in the industry. I wasn't on hardware side mind you.",
+                                    "score": 11,
+                                    "author": "bjws",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It is ironic.  I had a Kindle DX, which was the perfect size, but Amazon chose to abandon the format.  I kept mine for the longest.",
+                            "score": 6,
+                            "author": "BeaversAreTasty"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "looks really cool and impressive. and expensive.",
+                    "score": 3,
+                    "author": "trznx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I am hoping the price point is less than a comparably sized retina display tablet.",
+                            "score": 2,
+                            "author": "BeaversAreTasty",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks for the heads up on calibre",
+                    "score": 3,
+                    "author": "stormhunter2"
+                },
+                {
+                    "level": 1,
+                    "comment": "The Pebble time had a color eink screen didn't it?",
+                    "score": 2,
+                    "author": "Waldemar-Firehammer",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This looks really cool, and I would love to support him, but the only link in the article that leads to him is the Github link:\n\nhttps://github.com/joeycastillo/The-Open-Book\n\nThere's also a link to sign up for a mailing list for info on the github page:\n\nhttps://joeycastillo.us18.list-manage.com/subscribe?u=d31d40071448f3aa8acc39836&amp;id=d9134648c8",
+            "score": 65,
+            "author": "jimboolaya",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, I sort of wondered myself how exactly someone would support him as i was posting this. Maybe that was a mistake. As long as more people know about it, I'm satisfied.",
+                    "score": 20,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Maytbe they could just shake their fist and say \"Yeah!\"?",
+                            "score": 16,
+                            "author": "ajantaju",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Following the GitHub repo is a small thing, but will be noticed by the dude I'm sure.",
+                            "score": 3,
+                            "author": "Lampshader"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If it runs Coolreader it instantly competes with all modern e-readers. I am pretty happy with my decade old Sony PRS-350. I added PRS+ to extend the features, it's a great little e-reader and has more features than most new models. I manage my library with Calibre, everything I have is epub, converted to epub or might be PDF.\n\nOne thing the market is missing are small e-readers. A 5\" e-reader can fit easily in a bag or even a pocket. It's too bad Sony got out of the market, their devices were excellent.",
+            "score": 7,
+            "author": "IndigoPill",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Not sure I get this.    \n\n\nIt is so easy to put DRM free books onto a Kindle with Calibre.    I guess luddites might have a problem figuring out Calibre, but my 87 year old brother (I am 58) turned me onto Calibre as he says he is on a \"fixed income\" so he gets DRM free books through some kind of black magic and puts them on his kindle with Calibre.   \n\n\nI buy all my ebooks from amazon because I also get the Audio book copy that comes at a discount when buying the ebook I can then move back and forth between reading and listening and everything stays in sync.  Plus I also love the x-ray and dictionary/wikipedia features that you get with Amazon purchased ebooks.  \n\n\nIf I was afraid of Amazon removing all my books I would just download a copy of them to my PC, but I am not worried that Amazon would kill their business model by removing paid for books from their customers.",
+            "score": 31,
+            "author": "RatFacedBoy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Copying them to your pc doesn't help. Amazon can just invalidate the DRM keys and the copies won't work anymore. https://www.theguardian.com/money/2012/oct/22/amazon-wipes-customers-kindle-deletes-account\n\nAs you say, it's unlikely that they'll do this, but from a technical pov, you're at their whim.",
+                    "score": 12,
+                    "author": "retorquere",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Except you can just strip the DRM with Calibre...",
+                            "score": 15,
+                            "author": "SideBTrack8",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wouldn't keeping your Kindle in airplane mode fix that?\n\nLocal copies of the books on your PC, never connect the Kindle to the internet.",
+                            "score": 3,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Its not about will they won't they, its about *could they*\n\nThe idea that they can take something I paid for disgusts me. Id rather steal it fair and square then give them the option to steal from me instead. If they play fair, I'll play fair",
+                    "score": 5,
+                    "author": "mylifeisashitjoke",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The open source e-reader seems cool, but the article is misleading (well, it's vice, so obviously). I have a Kindle, and I can easily upload and read free non-Amazon ebooks on it.",
+            "score": 62,
+            "author": "babulej",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Open source hardware and open source software are different things, and your Kindle is neither",
+                    "score": 24,
+                    "author": "PM_ME_UR_TRAP_SHIT",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Exactly. I don\u2019t understand this. I would rather have the option to use both my own books and have access to the Kindle store. The Kindle is not restrictive at all. \n\nSeems like a fun project though. To each their own.",
+                    "score": 13,
+                    "author": "8020GroundBeef",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;I don\u2019t understand this.\n\nThis project is for open source freaks and  for people who love to tinker, not for people who just simply want a device to read their ebooks on and nothing more. People who are going to spend all that time and effort to build their own are putting up with the extra hassle so they can have total control down to the last bit. Those types of people don't like black boxes running closed-source software doing who-knows-what controlled by some corporation, even if doing it yourself is a lot of extra hassle.",
+                            "score": 19,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I purchased a Kindle Paperwhite last week, works wonderfully converting ebooks and sending them over. Also got my \"special offers\" removed for free. So far it's been a great experience reading off it.",
+            "score": 13,
+            "author": "Zebatsu",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; got my \"special offers\" removed for free.\n\nHow?",
+                    "score": 5,
+                    "author": "imahik3r",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You can apparently just message support and they'll remove it.",
+                            "score": 6,
+                            "author": "Niedzielan"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah, gonna need to know how to get the special offers removed for free please",
+                    "score": 3,
+                    "author": "smackythefrog",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Use their chat support - Just tell them that you don't want the special offers and they'll remove it for you :)",
+                            "score": 3,
+                            "author": "KFJ943"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\ud835\udd04\ud835\udd2b\ud835\udd21 \ud835\udd31\ud835\udd25\ud835\udd22\ud835\udd2b \ud835\udd2f\ud835\udd22\ud835\udd1e\ud835\udd21\ud835\udd22\ud835\udd31\ud835\udd25 \ud835\udd31\ud835\udd25\ud835\udd22 \ud835\udd1f\ud835\udd2c\ud835\udd2c\ud835\udd28\ud835\udd30 \ud835\udd26 \ud835\udd34\ud835\udd2f\ud835\udd2c\ud835\udd31\ud835\udd22\ud835\udd31\ud835\udd25! \ud835\udd24\ud835\udd2c\ud835\udd21\ud835\udd21\ud835\udd1e\ud835\udd2a\ud835\udd2b\ud835\udd26\ud835\udd31",
+            "score": 40,
+            "author": "Shakespeare_William",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Why though? Kobo readers for example use pub that can be freely loaded onto the device. Even a Kindle can easily side load any public domain book via an app like Calibre.",
+            "score": 3,
+            "author": "Sup909"
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Kindles are popular, but they lock you into Amazon\u2019s ecosystem.\n\nHow?  Kindles read open source ebook formats like epub.",
+            "score": 3,
+            "author": "slayer_of_idiots",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "No one's heard of e-calibre?",
+            "score": 3,
+            "author": "Pyanfars"
+        },
+        {
+            "level": 0,
+            "comment": "Mmmm you can't make a fully open source eInk display device. The waveform necessary to drive the actual display is a closely held secret. He is using an entire module which hides this away.",
+            "score": 15,
+            "author": "chx_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean you're not wrong, but there's also a large amount of reverse engineering that's already been done so a lot of the lower res screen waveform drivers are known.\n\nhttps://github.com/fread-ink/inkwave\n(or more pointedly, the [hackaday article](https://hackaday.com/2018/07/25/hope-xii-a-foss-operating-system-for-e-readers/) the last paragraph in the 'first steps in a long journey')\n\n[Another Project](http://essentialscrap.com/eink/waveforms.html) talking about the waveform files, as well as [this](http://spritesmods.com/?art=einkdisplay) which is linked at the bottom. \n\nSo yeah there's propitiatory stuff onboard, but because this project has open sourced hardware, you can always swap it out and put your own driver in instead. \n\nI also feel like saying that the waveform driver being the barrier to entry in FOSS is a bit extreme.",
+                    "score": 10,
+                    "author": "IAmKindOfCreative"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; The waveform necessary to drive the actual display\n\ncan you explain this in simpler terms? I want to know what this means but I can't understand it.",
+                    "score": 3,
+                    "author": "trznx",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "It's probably not an open source CPU either. The transistors in the power supply are probably not open source, silicon doping regimes are tightly held secrets.\n\nBut it's a step closer than the alternatives, which is a good thing.",
+                    "score": 2,
+                    "author": "Lampshader"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I applaud him for what he built, but imo his premise is false; he says that there are no option for \"open source\" reading, I would argue that the [Kobo eReader](https://ca.kobobooks.com/collections/all) does this job decently. I've had one for many years and read a ton of free ePubs without any issues, I can even borrow free books from the library. Sure it's not an open source device, but it's \"open enough\" not to be locked in.",
+            "score": 75,
+            "author": "TheBistromath",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "So if it's not an open source device, how is the premise of \"there's no open source e-reader\" false?",
+                    "score": 9,
+                    "author": "Wetzilla"
+                },
+                {
+                    "level": 1,
+                    "comment": "well, kobo software isn't open source, so how is his premise wrong?\n\nhe didn't say \"you cannot read drm-free ebooks on any available device\", you did, and then you dunked on yourself.",
+                    "score": 144,
+                    "author": "sindulfo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, the first paragraph in the article is mixing up open source with digital rights and causing the confusion. You're both right in your arguments.",
+                            "score": 24,
+                            "author": "RAMAR713",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Isn't this the kobo software?\n\nhttps://github.com/kobolabs/Kobo-Reader",
+                            "score": 30,
+                            "author": "rysto32",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There are components in it that are proprietary (Kepub reader, Adobe DRM reader.) but you are correct the OS is Open source (I believe).",
+                                    "score": 39,
+                                    "author": "Vipershark01",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The hardware is also proprietary. This guy is releasing all the technical details on his hardware.",
+                                            "score": 15,
+                                            "author": "eva-unit-two",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Cool, now where are the Kobo schematics?",
+                                    "score": 4,
+                                    "author": "Lampshader"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "He is also taking about his actual device being open source, not just the software",
+                            "score": 6,
+                            "author": "Nicolascagebois"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Well, he wanted open source, not \"open enough\".",
+                    "score": 18,
+                    "author": "lordcirth"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; but imo his premise is false\n\n&gt; Sure it's not an open source device, but it's \"open enough\"\n\n:thinking:",
+                    "score": 19,
+                    "author": "DarthPneumono"
+                },
+                {
+                    "level": 1,
+                    "comment": "I love my kobo. Download books from anywhere to calibre then sideload onto the kobo to keep that one remove from Amazon or anyone else doing a takeback. Mostly I just like an organized library though, and calibre is great for that.",
+                    "score": 8,
+                    "author": "PerilousAll",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Calibre is awesome for that. I use it to remove the DRM from the Amazon-only book I buy and convert them to ePub.",
+                            "score": 7,
+                            "author": "TheBistromath"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's not open source.",
+                    "score": 2,
+                    "author": "ARM_64"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 7,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Have you heard of the Likebook and Onyx Boox Android ones?",
+                    "score": 2,
+                    "author": "Komnenos_Kasuki",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Everybody who cannot understand the implication behind being \"open-source\" simply hasn't grasped the concept of why open-source is so praised amongst various communities;\n\nIt's less about the practicality of the venture, more about the qualitative outcome of making source code available to the public; information should be free (to obtain).",
+            "score": 5,
+            "author": "1Zer0Her0"
+        },
+        {
+            "level": 0,
+            "comment": "Now add a solar panel to it",
+            "score": 2,
+            "author": "KahRiss"
+        },
+        {
+            "level": 0,
+            "comment": "I dont even know what this means. Help?",
+            "score": 2,
+            "author": "Car_Washed"
+        },
+        {
+            "level": 0,
+            "comment": "Would be really nice if he built this thing from the ground up to support screen readers for the blind so that it's much more accessible than others book readers",
+            "score": 2,
+            "author": "cebeezly82",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "color eink comes out next year.",
+            "score": 2,
+            "author": "kontekisuto",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "And the wall is made entirely of cocaine.",
+            "score": 2,
+            "author": "GeorgeYDesign"
+        },
+        {
+            "level": 0,
+            "comment": "I am in love with the silkscreen design for the [board](https://github.com/joeycastillo/The-Open-Book/blob/master/images/book-rev1.jpg?raw=true).  \n\nThat is truly a hardware hackers dream - clearly labeled components and details about how they work together.   \n\nI will absolutely do this on my next design.  Truly amazing.",
+            "score": 2,
+            "author": "Roofofcar"
+        },
+        {
+            "level": 0,
+            "comment": "This is where he updates stuff\n\nhttps://github.com/joeycastillo/The-Open-Book",
+            "score": 2,
+            "author": "redinator"
+        }
+    ]
+}

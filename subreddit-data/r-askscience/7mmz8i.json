@@ -1,0 +1,1258 @@
+{
+    "id": "7mmz8i",
+    "score": 21510,
+    "title": "Why do computers and game consoles need to restart in order to install software updates?",
+    "author": "DerangedDog1",
+    "date": 1514472415.0,
+    "url": "https://www.reddit.com/r/askscience/comments/7mmz8i",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Hey all,\n\nPlease remember that in /r/askscience we require _accurate, in-depth explanations_ to our questions and their concerns. Please refrain from posting analogies and \"ELI5\" explanations which don't directly answer the question.",
+            "score": 1,
+            "author": "mfukar",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "A CPU can only work on stuff in its cache and the RAM of the device (be it PC / Mac / console / mobile / etc). However, such memory is volatile, and loses all its data if it is not powered. To solve this problem, secondary storage exists: hard disk drives, DVD drives, USB disks, flash memory, etc. They hold persistent data that is then transferred to the RAM as and when needed, to be worked on by the CPU. \n\nNow, when a computer boots up, a lot of its core processes and functions are pre loaded into RAM and kept there permanently, for regular usage. (The first of this stuff that loads is known as the *kernel*.) They are also heavily dependent on each other; eg, the input manager talks to the process scheduler and the graphics and memory controllers when you press a button. Because these are so interconnected, shutting one down to update it is not usually possible without breaking the rest of the OS' functionality*.\n\nSo how do we update them? By replacing the files *on disk*, not touching anything already in memory, and then rebooting, so that the computer uses the new, updated files from the start. \n\n*In fact, Linux's OS architecture and process handling tackles this modularity so well that it can largely update without a restart.",
+            "score": 10963,
+            "author": "ludonarrator",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 2184,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 2228,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 622,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 340,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 604,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 181,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 75,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 36,
+                                                                            "author": "[deleted]"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 51,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 24,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 23,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 16,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 36,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 12,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 16,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 9,
+                                                                    "author": "[deleted]",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 31,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 20,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 17,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 7,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 52,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 18,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 11,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 11,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 137,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I took Intro to Computers, Progam Design, and several Progamming classes in the 80s. Program Design (and learning the architecture of a computer) are still so helpful today.  ",
+                                            "score": 9,
+                                            "author": "mylifenow1",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 18,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 112,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 72,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 22,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 42,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 85,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 89,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 56,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 24,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 17,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 27,
+                                                                    "author": "[deleted]",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 23,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 12,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 9,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 5,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 4,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 12,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 40,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 15,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 14,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 4,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 15,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 7,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 116,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 69,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 17,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 14,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 36,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 45,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 44,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 41,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 14,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 10,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 19,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 30,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 8,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 7,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 5,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 14,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "To expand upon the answer. The core processes and functions are referred to as the kernel.\n\nLinux processes that are already running during these updates will not be updated until the process is restart.\n\nAlso, there are mechanisms to update the kernel while it is running. One example of this is the ksplice project, but writing these patches is non-trivial.\n\nThe short answer, is that it's much easier to restart and have the system come up in a known consistent state.",
+                    "score": 286,
+                    "author": "archlich",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "To expand on this expansion. Not all shutdowns and reboots are strictly necessary just because the computer wants it. They reboot so that it's always a clean boot with a fresh system, not thinking to much about if it would be possible to avoid it. New patch =&gt; better reboot asap, its' easier than even starting to think about if the patch really needs it. \n\nA reboot may also be needed not because it's is impossible to patch the system in a way that it doesn't need one, but because it may be extremely difficult to do so reliable. \n\nTake Windows for example, if you install a patch that patches something you don't even use and the computer wants a reboot, it doesn't really need it, it just doesn't decide if it has to. It's always a yes.",
+                            "score": 120,
+                            "author": "mirziemlichegal",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is interesting to me. In what situations would using ksplice be absolutely necessary, where making a patch that could update without a restart be more convenient than simply shutting the system down for a few minutes?",
+                            "score": 14,
+                            "author": "VibraphoneFuckup",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't have experience with ksplice, but generally you don't want to do a restart in situations where uptime matters (think mission critical stuff). Preferably you always have an active system on standby, but that isn't always the case and even if you do I always get a bit of a bad feeling when we do the switch to the standby component.",
+                                    "score": 35,
+                                    "author": "HappyVlane",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "At least from what i encountered uptime &gt; everything is on some systems. They wont get updated at all. ",
+                                            "score": 19,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's true, but this never works long term.  You end up with an OS that's no longer supported by anything--we don't get drivers from the manufacturer anymore because we're on Centos 7.1 many places, and that's not even that old.  Everyone says to update, but management always freaks out about regressions.  If there is an update, it's the smallest incremental update possible and it's a giant pain in the ass over typically nothing.  \n\nI would love to be with an organization that factored in life cycles/updates better, but they never do. There's always something more important to work on.  ",
+                                                    "score": 23,
+                                                    "author": "combuchan",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt;because we're on Centos 7.1 many places, and that's not even that old.\n\nLordy, we're still running CentOS 5 in some places, scares the crap out of me. Working on replacing those but a lot of times they don't get decommed until we rebuild a Datacenter.",
+                                                            "score": 13,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 255,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 236,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Most of the time people still reboot for Linux kernel patching. Ksplice and live kernel patching isn't really something most production environments are comfortable with.",
+                                    "score": 53,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It is also super important to prove that a machine can and will reboot correctly. Also to make sure all of the software on the box will correctly come online. Rebooting often is a good thing.\n\nI once had a previous sysadmin setup our mail server as gentoo. He then upgraded the kernel but didn't reboot. A year plus later after I inherited the server our server room lost power. Turns out he incorrectly compiled the kernel, and had different configurations running on the box than were on the hard drive.\n\nIt took way way too long for me to fix the company mail server, I had all of the execs breathing down my neck. At this point I was finally had enough ammunition to convince the execs to let us move to a better mail solution.",
+                                            "score": 67,
+                                            "author": "VoidByte",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I have been running Linux boxes since 1995 and one of the best lessons I've learned has been \"Sure, it's up now, but will it reboot?\"  \n\nI've had everything from Ubuntu stable updates to bad disks/fsck hadn't been run in too long causing errors to broken configurations prevent normal startup after a power outage, intentional or otherwise.  ",
+                                                    "score": 67,
+                                                    "author": "combuchan",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; I have been running Linux boxes since 1995 and one of the best lessons I've learned has been \"Sure, it's up now, but will it reboot?\" \n\nFun things to discover: there ~~are~~ were a bunch of services running, some of them are critical, most of them aren't set up to come back up after a restart (i.e. they don't even have initscripts), and none of them are documented.",
+                                                            "score": 23,
+                                                            "author": "zebediah49",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I spent much of my career running networks for large data centers.  It was standard rule-of-thumb that 15-25% of servers would not return after a power outage.  Upgraded software applied but not restarted into, hardware failures, configurations changed but not written to disk, server software manually started long ago but never added to bootup scripts, broken software incapable of starting without manual intervention, and complex dependencies like servers that required other servers/appliances be running before they boot or else they fail, etc...",
+                                                    "score": 11,
+                                                    "author": "mattbuford"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It's actually feasible to so though which is pretty neat.  Unfortunately of limited usefulness since rebooting one server at a time shouldn't be a big deal if the system is architected for availability.",
+                                            "score": 10,
+                                            "author": "falsemyrm"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Anything is possible given enough resources and tolerance for an occasional system \u201chiccup\u201d. Given enough RAM, one could stand up a second copy of the kernel and switchover to it on the fly.  One could equip kernel subsystems with the ability to save state/quiesce/restore state (some of it is already there for power management/hibernation) and design kernel data structures in a way that allows to track every pointer that needs to change before such a switchover is possible. Hot-patching technologies like KSplice do something like that, albeit in a much more targeted manner - and even their applicability is greatly limited. So yeah, it is possible to design a non-rebooting system, but our efforts are better spent on things other than making the scheduler hot-swappable. Reducing boot time and making applications resumable go a long way towards making an occasional reboot more tolerable - and that\u2019s on top of other benefits. ",
+                                    "score": 14,
+                                    "author": "primatorn",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This is true, but there **are** use cases (HA OLTP) where unplanned \"down\" times of a single millisecond carry contractual penalties - As in, your SLA is 100% uptime with an allowance for \"only\" seven-nines (3 seconds per year) after factoring in planned (*well* in advance) downtime windows.\n\nThere's a reason mainframes (*real* ones, I don't mean those beefed up PCs running OpenVMS for backward compatibility with a 40-year-old accounting package your 80-year-old CFO can't live without) still exist in the modern world.  They're not about speed, they're about *reliability*.  Think \"*everything* is hot-swappable, even CPUs\" (which are often configured in pairs where one can fail without a single *instruction* failing)",
+                                            "score": 8,
+                                            "author": "ribnag"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; This isn't the actual answer. Persistent vs transient memory is part of it, yes, but it's absolutely possible to have a system which never requires a reboot, like Linux, it just takes more effort to do so.\n\nSignificantly so, and it's much harder to test as you need to handle both patching the executable in-memory and *migrating existing in-flight data*, and any corner case you missed will definitely lead to data corruption.\n\nErlang/OTP has built-in support for [hot code replacement](http://erlang.org/doc/reference_manual/code_loading.html#id90252)/[live upgrades](http://erlang.org/doc/design_principles/release_handling.html) yet even there it's a pretty rare thing as it gets hairy quickly for non-trivial systems.\n\nFor kernels/base systems, things get trickier as you may need to update bits of applications alongside the kernel.",
+                                    "score": 6,
+                                    "author": "masklinn"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 28,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is called a load/store architecture and is the most common, it's what ARM and all the other RISC designs use. On desktops we still generally use Intel/AMD x86 CPUs though which are a register memory architecture. They can read directly from memory for operations, although I believe they always have to write the result to registers.",
+                            "score": 15,
+                            "author": "SomeoneStoleMyName",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Quite right; I decided to pack it all up into just two groups to simplify the answer: \n\n`(CPU + RAM) || (SSD/HDD)`.",
+                            "score": 15,
+                            "author": "ludonarrator"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That feel when you absolutely absorb a new concept that's totally applicable.\n\nI want to compliment your ability to explain things and say a personal thank you for this explanation.",
+                    "score": 8,
+                    "author": "TheRecovery"
+                },
+                {
+                    "level": 1,
+                    "comment": "It should be noted that the image of the file on disk is locked while loaded in memory (depending on the type of file being updated) in this case a primary file that is part of the OS. I know Windows has a kernel level file replacement in the registry for files to replace during the next restart. \n",
+                    "score": 8,
+                    "author": "laughinfrog",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I used to work in a datacenter that housed a 911 system.  The big feature of the system was that it was always up, even during OS updates.  \n\nThe fine folks at MIT have [solved the issue of rebooting using kSplice](http://news.mit.edu/2014/bringing-the-world-reboot-less-updates-0124)",
+                    "score": 16,
+                    "author": "DrunkenGolfer",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 2400,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 706,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Linux handles its processes a bit differently. I believe it loads the entire executable and necessary shared libraries into memory at once, which allows it to be overwritten on disk without any concerns of affecting in-memory applications.\n\nNote that this is speculation and I just woke up, but it sounds logical enough in my head.\n\n**Edit:** 10 seconds of research conform I'm right. :p\n\n**Edit 2:** Or, technically right. Really it relies on the file system, I believe.",
+                            "score": 1127,
+                            "author": "scirc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You're correct, but bear in mind there are lots of ways of doing this in Linux and Linux-like kernel models. QNX for example is an  operating system commonly used in automotive and since version 7.0 runs a full micro-kernel architecture. This means an entire micro-OS can crash or be updated and then rebooted without affecting critical canbus functions, like your brakes.\n\n\n*Edit for clarification as another user pointed out my over simplistic explanation. QNX is not just used in cars but in mobile phones (BlackBerry OS), traffic light systems etc etc. The car example really highlights how it can work though.",
+                                    "score": 378,
+                                    "author": "HafFrecki",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It is more than an \"automotive Operating System\". Its first and foremost selling point was/is that it is a Real Time Operating System, as in, it will guaranteed respond to an event in a ~~determinant~~ determinate amount of time.",
+                                            "score": 159,
+                                            "author": "CrazyTillItHurts",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You are right.  I should have said \"commonly used in automotives\" but I was trying to keep it simple for the op with an easy example of why this architecture has uses where other kernels could be problematic.\n\nMy bad.",
+                                                    "score": 49,
+                                                    "author": "HafFrecki",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Which is stretching the definition of restarting. Even with Linux I could use kexec to jump into a new kernel, but 99% of the time it is just easier to restart when switching out the kernel.",
+                                            "score": 46,
+                                            "author": "Turmfalke_",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "With kexec running processes will not be preserved for the new kernel - it is like a reboot, just without having to go through the firmware initialization and the bootloader. Especially on really big systems with hardware checking and a lot of memory bypassing that saves a lot of time. \n\nThere are nowadays options for live patching a kernel, but that does not fully replace a running kernel, and doesn't really make much sense in most scenarios.",
+                                                    "score": 40,
+                                                    "author": "aard_fi"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "QNX also is very prominent in medical devices. I never knew about the automotive side, that's neat. ",
+                                            "score": 9,
+                                            "author": "_Yeoman_",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "How can the OS crash but the software that depends on it not?",
+                                            "score": 6,
+                                            "author": "calapine",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "A way of interpreting micro-kernel architecture would be to think of it as lots of little os running at the same time. Each is responsible for a single bit of software or a task.  E.g. traction control in a car. The micro-kernel (multiple for that particular task)  all talk to each other and send information over the canbus (the thing that connects everything in a car).  If one crashes it just restarts and doesn't affect the others. HTH. If you're interested there are lots of good resources online. ",
+                                                    "score": 14,
+                                                    "author": "HafFrecki",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 19,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 17,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; I believe it loads the entire executable and necessary shared libraries into memory at once\n\nNo.\n\nWhat happens is, a directory entry is just a reference to a file.  An open file is _also_ a reference to that file.  So if a file's referenced by a directory entry and a running process, that's two references, deleting the directory entry still leaves an active reference, and the file itself remains.\n\nAll such references to a file are peers\u00b9, you can e.g. `touch a; ln a b` and you've got two names for the file, two references to it.  `rm a` and the `b` reference and the file itself remain.  System upgrades replace the directory entries with new files, but the old files stick around as long as anybody's still using them.  _That's_ why upgrades generally don't need a reboot: it's fairly uncommon for the two versions to be so incompatible that having both in use at once causes a problem.\n\n\n\n\n----\n\u00b9 There are also \"symbolic links\" that muddy the waters here, they're breadcrumbs, a relative path to follow to find whatever happens to be there at the moment.",
+                                    "score": 61,
+                                    "author": "jthill",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Actually what you\u2019re explaining doesn\u2019t avoid reboots at all (it\u2019s the same refcounting Windows uses). Like you say, you end up with version mismatches between processes that may depend on each other. You suggest that usually it\u2019s fine when this happens, but it\u2019s actually the entire reason reboots are needed: you reboot to avoid version mismatching. There are certainly cases where it won\u2019t cause issues, but it\u2019s not a general case for anything with a kernel&lt;-&gt;user mode dependency.",
+                                            "score": 22,
+                                            "author": "dislikes_redditors",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; Why is it that Linux allows my to use my OS while updating while requiring no reboot?\n\nIt doesn't.\n\nCertain updates DO require a reboot, just as with any other OS. If you want to change your kernel or bootloader, most distributions will require a reboot.\n\nIt is possible to replace a running kernel while running, but most distributions don't bother supporting that as a means of updating. It's also still a very good idea to reboot. Why? Because you need to make sure your computer **will** boot. Otherwise when it DOES reboot, it might not come back up cleanly. Better to find and fix now than when a hardware component fails.\n\nAlso, updating major software components while running may produce strange results. Some applications load everything they need into memory when they launch, and they will happily carry on even if you pull the binary out from under them. Many applications include dynamic plugins, resource files on disk, configurations, etc. Those applications are not going to do so well when something changes.",
+                            "score": 108,
+                            "author": "Se7enLC",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "On Linux, updates can be installed, but they don't take effect until the process using the updated files is restarted. For certain system processes such as the kernel and init system, the updates won't be applied until the computer is restarted.\n\n*There are ways to avoid the restart requirement but the complexity involved generally means that a restart is easier.",
+                            "score": 12,
+                            "author": "ztherion"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 8,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "http://www.linuxjournal.com/content/no-reboot-kernel-patching-and-why-you-should-care offers a bit of info if you're technical -- and since you're running Linux, you probably are :D\n\nFWIW this applies to patching (ie: small changes) and not major updates. If a system call were to completely change, it would not be so simple.\n\nThanks for asking. It's actually a really good question, and the way that they made it work is very cool!",
+                            "score": 10,
+                            "author": "timrosenblatt"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Linux still requires a reboot for kernel updates. Whatever process is getting updated must be stopped so that the files can be replaced.",
+                            "score": 26,
+                            "author": "American_Libertarian",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Whatever process is getting updated must be stopped so that the files can be replaced.\n\nThe usual procedure is to update the files, then re-start the program. Most of the time, it's safe to leave a program running as you're deleting and replacing its files, because the program will continue to have access to the old versions until it closes those files. The only time that you'd have to stop the process for the duration of installing the update is if the program is closing and re-opening its own files during normal operation.",
+                                    "score": 37,
+                                    "author": "wtallis"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Technically there are ways to patch the kernel in memory or replace it with a new one while the system is still running. These aren't very popular though.",
+                                    "score": 5,
+                                    "author": "RenaKunisaki"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 7,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "depends on the kind of the update. a kernel update will require a restart",
+                            "score": 3,
+                            "author": "danielcw189"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That's not even half the story. It's not just, or even primarily about background programs.\n\nYour operating system is made up of thousands of code libraries that are loaded to perform various tasks for apps or the OS itself. When these are updated there isn't usually any easy mechanism to just stop whatever functions these libraries may have been performing, record their state and the state of anything they were interacting with, unload them, load new ones in, point the code that depends on them at the new interfaces, restore all the states and continue on.\n\nBeyond that, the OS is responsible for providing the environment all your apps work within -- filesystems, memory, windowing system, audio, etc. etc. If it's necessary to update the code that provides the environment you can't just shut down the old software, ripping those resources away from running apps, and substitute in new versions. When was the last time you wrote application code that handled its file system or memory (still in use) being destroyed at any moment? This would make app development hell (and dangerous).\n\nThe OS itself is even split into layers, you have things like the BIOS, the boot loader and security environment, virtualization, kernel, user mode, etc. If updates are needed to one of these layers it's likely the layers above have no way to know how to handle the change in environment below them, forcing a restart so everything  comes back up in the new state.\n\ntl;dr - Your computer is layers of stuff running in environments provided by other layers of stuff. When a lower layer needs updating there is usually no easy way for higher layers to handle changes and a restart lets everything come back up fresh in the new environment.\n",
+                    "score": 65,
+                    "author": "naeskivvies",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, you are essentially correct. Thanks for replying with the extra detail. \n\nI replied separately with a link that explained how they hot swap system calls to use the new code for minor patches. Very cool stuff. \n\nYour point is that it\u2019s not just individual system calls, but also the higher level functionality too. \n\nI\u2019d argue that technically these things could be worked around if there was a really good abstraction layer in place, but it\u2019s not worth investing in something like that to just avoid a reboot for nearly every use case. ",
+                            "score": 9,
+                            "author": "timrosenblatt"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The only correct answer is that it is simply easier to treat the code as immutable, and restart the program whenever you want to change the code. It is more than possible to design systems, even operating systems or other low level programs which don't need to be rebooted in order to update(this concept is called 'hot swapping'), but it is harder to design those systems and sometimes also harder to reason about their correctness. Imagine it this way: Rebooting to update software is like putting a car into a garage and upgrading the engine. Doing a live update is like upgrading your engine while you are going down the highway at 65mph.",
+            "score": 483,
+            "author": "ThisIsntGoldWorthy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Speaking as a software engineer, this answer makes sense to me.\n\nAnd rather than building a thing that does live code swapping you'd probably be better off optimizing the reboot.",
+                    "score": 171,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; And rather than building a thing that does live code swapping you'd probably be better off optimizing the reboot.\n\nEspecially because systems need to be turned off and on all the time.  A properly designed production system not only will deal with computers failing, but will also bring extra computers online when dealing with heavy loads.  The faster you can bring failed systems and new systems up, the less likely bad things (tm) are to happen.",
+                            "score": 4,
+                            "author": "EmperorArthur"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Another metaphor: it's like renovating an office building while people are working inside. You could do it, by moving desks and departments, and handing all the resulting confusion (think of the poor mail room), and doing a lot of cleanup and maintenance. If you mess up the temporary addressing, or your blueprint is off, things could grind to a halt (i.e. crash) real quick. Worse, you might send things to the wrong address and cause weird stuff to happen (send your important records to the incinerator instead of the archive, send salary information to a department other than accounting), causing permanent issues (i.e. data corruption).\n\nOr, you could kick the employees out, gut the building, rebuild, and then welcome the employees back.\n\nKey point: an in-place upgrade requires a plan for not just the new structure, but for the processes and daily goings-on (i.e. cached data, in-memory data structures, open files, and so on). You need to ensure that either things behave exactly as before, and that a brief interruption won't be an issue, or you need to plan how to handle the changes.",
+                    "score": 41,
+                    "author": "yiliu",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Rebooting to update software is like putting a car into a garage and upgrading the engine. Doing a live update is like upgrading your engine while you are going down the highway at 65mph.\n\nAnd, like in the metaphor, changing it while driving is not only much more *difficult*, but also far more likely to break when you hit something you didn't see coming.",
+                    "score": 95,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "My operating systems teacher always says: if something is very difficult.. We just don't do it. This is a prime example ",
+                    "score": 9,
+                    "author": "Alfrredu"
+                },
+                {
+                    "level": 1,
+                    "comment": "Absolutely correct. I'll add that a lot of updates fix bugs. When you have a bug, bad data can get all over the place. Tracking down and correcting the bad data is impractical, eg data has been copied around by many different programs. Programs are (mostly) designed to recompute all that runtime data from scratch whenever something changes with the system. That ensures you have a safe way of correcting all that stale data. Depending on the kind of update, you can't inform existing programs to reload and update specific data, you need to let them restart from scratch. Rebooting forces that.",
+                    "score": 22,
+                    "author": "jarail",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not just bugs. Imagine you want to modify a data type. Then imagine if a new bit of code that uses the new field of the data type gets an instance of the old data type. Best case scenario you hope the system just crashes. Worst case you end up corrupting data. Safer to restart the system.",
+                            "score": 11,
+                            "author": "SmokierTrout"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 504,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;the PS3/4 have a Linux backend they should be able to do it\n\nI'm pretty sure the Sony consoles use a FreeBSD backend, which doesn't have the hotpatching update mechanism that Linux does.  That's probably why they can't do an online update.",
+                    "score": 155,
+                    "author": "blue_collie",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Typical desktop Linux systems and Android don't use the hotpatching for kernel updates anyway, and also have middleware services that need to restart and need a new session to do it regardless. So the backend being capable wouldn't automatically mean PlayStation wouldn't have the same limitation.",
+                            "score": 90,
+                            "author": "Copper_Bezel",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Kernel and video drivers are two things that I need to restart for on Linux. Not sure of any others. ",
+                                    "score": 38,
+                                    "author": "SirNanigans",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "DBus and Systemd-journald. In theory you can restart them without rebooting, but they require you to restart pretty much everything else around them afterwards so you might as well reboot.",
+                                            "score": 27,
+                                            "author": "Turmfalke_",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You're thinking of systemd-logind. journald can be safely restarted without bringing down sessions.",
+                                                    "score": 9,
+                                                    "author": "leoetlino",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Restarting systemd-logind is usually fine, but apparently there was a bug about it taking the x server with it. At least on a server that is not a concern.  \n \nThe issue with restarting systemd-journald, which I think is being worked on, is that journald loses the file handles. So while it might be running after restarting it, everything that isn't restarted after it won't log. I think the plan is to temporary store the file handles in pid 1.",
+                                                            "score": 7,
+                                                            "author": "Turmfalke_",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 22,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "True, but for a casual user or someone with a fast SSD and lightweight distro, it makes sense to just hit the power button. Feels more complete that way too. ",
+                                                    "score": 19,
+                                                    "author": "SirNanigans",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 23,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 7,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Wasn't the OG Xbox based on an x86 Pentium III?",
+                                    "score": 9,
+                                    "author": "xandercusa",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Linux can largely be updated with no restarting required, but that's because it can disable individual sections of the system, update them, then turn them back on.\n\nThat's not how application software updates are usually handled for Unix systems. The typical procedure is to replace the files with the new copies, then quit and restart the program. That results in much less downtime. The reason this is safe is because deleting and replacing a file with a new version doesn't interfere with the already-running program accessing the old version that it already has open.",
+                    "score": 44,
+                    "author": "wtallis",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "For the Nintendo 3DS console, no online replacement of the OS core components is done, even though it is based on a microkernel design. The update system actually reboots the console using a copy/2nd version of the OS base (`SAFE_MODE_FIRM` and safe mode copies of services &amp; UI) in order to download and update the real system (`NATIVE_FIRM`, etc). Games/tools can however be updated while opened but still needs to be restarted for the update to take effect; the kernel keeps the old content until it can be safely removed and replaced by the new one.",
+                    "score": 8,
+                    "author": "gravgun"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Windows places locks on files in use.  The reasoning is you don't want to open a file, make changes but not save, and then have something else make changes to the file and save them.  Because when you do save the file, you'll overwrite the changes made by the other process.  So when your computer is on, a lot of system files are locked.  If windows needs to make changes to one in a patch, it'll set a flag and upon reboot, make the change since the file will no longer be in use at that point.",
+            "score": 1288,
+            "author": "BerugaBomb",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 234,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 12,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 8,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 57,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Even if it's read-only, each program reading the file needs a consistent copy. You don't want to load the first part of the file, have it completely change on disk, and then read the rest. To handle that problem they'd need to design for it from the beginning by keeping the old version around and not assuming two programs referencing the same file can share cached data.",
+                            "score": 54,
+                            "author": "Megatron_McLargeHuge",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 46,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 5,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 8,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 13,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Mac is Unix based which has been fine tuned since the '70s to allow updates to install without taking down core systems.\n\nMicrosoft tried to do this by restricting things but it's taken a long time for a couple decades of sloppy DOS/Win3.1/Win95/NT programming to come up to Unix standards. No one wants to rewrite from scratch which is what would be needed for some things to work like this.",
+                            "score": 62,
+                            "author": "Falcon_Rogue",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Windows 10 has gotten a bit better about it.  Most security updates and bug fixes can be implemented on the fly without a reboot.  Major updates however still require a reboot.",
+                                    "score": 22,
+                                    "author": "farva_06",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Less sloppy, more optimised for things that are no longer relevant. This is the source of most of Windows's modern problems \u00ad\u2014 a lot of it was designed for very low-power personal computers, most of which would interact with perhaps other computers in a single office at worst. Designing the OS to be secure when connected to a network of millions of other potentially malicious computers around the world was simply not important, because it would get in the way of making it run well on this low-powered hardware. Similarly, designing it to be able to be updated without a reboot was not important, because updates came on floppy disk and so were rare enough (and usually something the user actually requested or bought, since Microsoft didn't just send floppies out willy nilly) that not being able to apply the patch/update/whatever without a reboot was simply not important.\n\nWhy don't they just scrap it all and start again? They have, but they can't go as far as they might like because backwards compatibility is king. You make a new version of Windows that breaks some business-critical software, and guess what? That business won't upgrade.\n\nLinux and Mac OS by contrast are based conceptually around UNIX, which has almost since it began been designed for larger networks of comparatively high-powered connected computers. They are also both relatively OK with breaking compatibility, so redesigning components that prove to be suboptimal is much more likely to happen.",
+                                    "score": 4,
+                                    "author": "Muzer0"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 5,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Most Windows applications won't require restart either, most of the restart are to update drivers or going to use service processes that are currently in use.\n",
+                            "score": 17,
+                            "author": "DRLAR",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I used to work on Windows, so I can speak a bit as to why the xbox needs this.\n\nWindows requires rebooting because of a few key OS processes that cannot be simply replaced and restarted. For instance, lsass.exe, which is responsible for logging you in and taking care of lots of security \"stuff\", cannot be shut down and replaced at runtime. This could, possibly, be fixed. However, untangling the dependencies and sorting things out safely would be a nightmare.\n\nThere were so many things on Windows that would be a lot easier if back-compat wasn't so important. However, we always had to be sure the last 20+ years of applications would run after any changes. This makes things a bit tricky at times, to say the least :)\n\nThe reboot pain is understood, and that's why new features have been added over time to help make things easier. \"Use my sign in info to automatically finish setting up my device after an update or restart.\" is one such baby step.\n\nedit 1: Sorry if it wasn't obvious, but I'm talking about Windows because xbox runs Windows.\n\nedit 2: Also, if the hypervisor is being patched, a reboot is almost always needed. Reliably hot patching the hypervisor is possible, but it's much simpler to reboot when applying hypervisor updates.",
+            "score": 89,
+            "author": "robododo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Speaking of  \u201cUse my sign in info to automatically finish setting up my device\u201d, that default setting was causing huge problems. Up until I disabled it, periodically no matter what I did, the start menu and pretty much any Windows menus would not open.  A lot of people are having this problem too",
+                    "score": 6,
+                    "author": "Knock-first",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": ":(\n\nI'm not in Windows anymore, but I know the folks who implemented that. It was a super tricky feature to inplement, because they didn't want to just save your password to disk.\n\nI'll check with the main dev and see if it's a known issue and/or if there are mitigations.",
+                            "score": 7,
+                            "author": "robododo",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 53,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 48,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Two reasons. Simplicity and Security.\n\nThe kernel is the main component of any operating system. Modifying the kernel while it's loaded into RAM is both *difficult* and a *security risk*. Modifying the kernel files on disk is much *easier* and *safer*. \n\nIt's hard enough to write robust and reliable kernel code, trying to make it self modifying would be a nightmare. \n\nThe kernel has the highest privileges of any running process, it has the permission to do anything. Technically it could modify itself,  but if it allowed for such functionality it would open a significant security hole. A virus that could get inside the kernel would be a nightmare. The reboot process includes an integrity check, which isn't possible to perform on a running process.\n\nThat being said, a modern OS now allows for hardware drivers to be modified live, via Loadable Kernel Modules. Core system updates still require a reboot though.",
+            "score": 11,
+            "author": "0xBA11",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 19,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the best answer IMO. This is also why most applications have secondary 'installer' applications to do the update update instead of updating themselves. The installer application will make sure that the application it is updating is not running before doing the update, and will commonly have a 'run my application after this update is finished' checkbox. ",
+                    "score": 8,
+                    "author": "Business__Socks"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Many updates include newer versions of system files and services the entire operating system uses.  While these files are running, they can not be updated.\n\nIf they are shut down, the operating system can become unstable or flat-out not work.\n\nSome updates may include kernel or renderer updates which is the core of the operating system that controls every other system file or service.  In-place updates of these types of files or programs can not be done while it or anything else is in use.",
+            "score": 8,
+            "author": "MjrLeeStoned"
+        },
+        {
+            "level": 0,
+            "comment": "Because things at the kernel level are really complicated and it's so much easier to just reboot rather than manage how all these low level components update without the system crashing.\n\nOr, in other words, imagine asking a car mechanic to service your car while you are still driving. It's much easier to turn off the engine at rest and let him/her do his/her job.\n\nThis is about as layman as I can explain it.",
+            "score": 6,
+            "author": "thebuccaneersden"
+        },
+        {
+            "level": 0,
+            "comment": "They [don't necessarily](https://www.ubuntu.com/server/livepatch) at all, it's entirely a property of the particular systems you seem to have experience with. As far as I know it's possible on both desktops and servers, but on desktops it may have some additional caveats as servers typically have simpler setups, e.g. no graphical interface to complicate things. I couldn't immediately find out how difficult it is to pull this off for desktop systems.\n\nIt's easier to just expect people to restart a device though, and since there is little market demand for devices not to reboot, many companies are reluctant to put aside resources for this.\n\nEven as a home user who knows that this is possible, I don't require continuous uptime, so I too just reboot after receiving important updates.",
+            "score": 30,
+            "author": "hatessw"
+        },
+        {
+            "level": 0,
+            "comment": "In principle it would not be necessary. While, as per the other responses, the natural way to do an update is to stop the old software and start the new one (a.k.a a reboot if the software is an Operating System) many Operating Systems (including Windows) support Hot Patching of almost all OS components. But in order to support Hot Patching a fix needs to be written with that process in mind, which involves converting any persistent data structures that change in format or content, informing any dependent components, etc. Doing so can easily double the effort to write a patch, and more importantly also lenghten its development and test period.\nMost OS patches fix security vulnerabilities, so developers try to have them ready as quickly as possible (any minute a fix is delayed increases the odds of it being exploited by the bad guys), which means skipping Hot Patching altogether and getting the minimum viable fix on the shortest time possible.\nCombine that with the fact that patches often get installed in bundles, so a developer may not feel it is a good investment of his or her time to work on hot patching when most likely some other fix will require a restart anyway. \nIn many cases the fix gets rewritten after it ships with the incorporation of hot patching, but by then most people already installed the original one when it vane out, and so they already had to reboot.\nSo to summarize the reason is time to market (and in some cases laziness): requiring a reboot instead of coding a fix so it makes all required changes on the fly saves a lot of development time and when you are in a rush to ship something any minute counts. \nSource : I was a PM involved with reliability improvements for a major OS at the time this feature was being written. Biggest disappointment in my career how this feature ended up being ignored, but in all fairness I suspected what was going to happen when I started with it. ",
+            "score": 5,
+            "author": "herbys"
+        },
+        {
+            "level": 0,
+            "comment": "Short answer: It\u2019s cheaper, more secure and less costly. It has nothing to do with any technical limitations. \n\n\nThe technical answer is; they don\u2019t. The longer answer is called Return on Investment. The time it would take to make a OS, such as the Xbox Windows OS be patchable without requiring a reboot is too costly in time and in security vulnerabilities.\n\nLook at it this way, if all the squares on your screen on the Xbox were just websites, you\u2019d hit refresh and bam you may have a new version of the site. No rebooting. We can abstract this concept out all the way to the base kernel layer.\n\nThe \u201ckernel\u201d provides a set of common ways of talking to all the physical (hardware) pieces inside that Xbox. This way ever little app or game doesn\u2019t have to know the specifics of the physical pieces inside the box. It\u2019s told hey there\u2019s something that can do math, something that can draw on your tv, something to make sound, etc. and it doesn\u2019t care how it\u2019s done because the Kernel knows for you. For those that want me to say HAL. There I said it.\n\nNow, let\u2019s say App Netflix is talking to the Internet and all of a sudden the Xbox is told there\u2019s an update to the Kernel for the Internet piece. We can still keep the old version running and provide the new service for when you restart Netflix. But, what if the update included a security fix where a hacker can get into your machine if you keep using the old version? Now the Xbox has to force you to shutdown Netflix and reload it. \n\nNow let\u2019s take that a bit deeper. The Xbox itself uses the Internet for updating news feeds, player scores, friend lists, etc. before you know it there are 20 \u201cparts\u201d are are required to be restarted or else the security hole will still exist. All this is still technically possible to so without \u201crestarting\u201d the box. But at what point are you not restarting the box?\n\n",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 8,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "The absolute need to reboot depends on at what level you are applying the update.  You often need to access and replace locked files that are associated with these process and services.  Many can be stopped and started without a reboot but if these are at a sufficiently low level (e.g. associated with the OS Kernel itself) then you do need to restart the OS itself.",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Because in order to update specific components you need to have a system above it to handle the update. While this is possible it is often hard.\n\nFor instance suppose that a computer game has a patch and it involves updating the executable and a file containing a model (the graphical information like the vertices and colours, etc).\n\nFor the graphics file you could program your loader in such a way that you can invalidate models and be forced to unload them, then switch to the new one however this means it disappears on screen. You also might end up clipping because the new model has different sizes, and hit detection stopped working for a moment. You need to handle all of these cases.\n\nAlternatively you can make it update the file on disk but keep the old one but what happens if it's multiplayer and two people see different things? What happens if you're forced to unload the image (like if you alt tab and lose the graphics memory).\n\nThe executable is even harder - you need to build your executable in such a way that you can lose a part of the game for a moment then plug in a new one seemlessly. There's a lot of reasons that this is hard (optimization being the most difficult one as well as rewriting the entire executable in such a way to make this possible).\n\nInstead the game waits until it's not running to update - it's much easier, less bug prone, and good enough for 99% of applications. It leverages the operating system to do this.\n\n\nOperating systems are the next step up in complexity. You can write everything in such a way to let everything be able to disappear during an uninstall but it's very difficult to do so - Linux has tried but certain components still require a restart. You could write an operating system above the operating system - often called a hypervisor and done in data centres - but then how do you update that?\n\nThe difficulty in writing software to update on demand is the primary reason it's not done. Trying to retrofit an OS to do it would be a buggy nightmare. Generally speaking restarting is annoying but hardly damaging for regular consumers, the massive number of bugs would probably annoy you more.\n\n-A Microsoft OS dev",
+            "score": 9,
+            "author": "Droce",
+            "replies": []
+        }
+    ]
+}

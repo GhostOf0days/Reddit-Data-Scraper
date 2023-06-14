@@ -1,0 +1,245 @@
+{
+    "id": "13iv92c",
+    "score": 921,
+    "title": "If a reflection hologram is recorded using coherent laser light, why do some areas appear out of focus?",
+    "author": "yabaitanidehyousu",
+    "date": 1684212402.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13iv92c",
+    "media_urls": [],
+    "other_urls": [
+        "https://hologramplace.com/3d-boxer-multi-channel-hologram-picture-matted-collectible-photopolymer-type-film"
+    ],
+    "postText": "A hologram recorded in this way doesn\u2019t need a lens to focus the image, but some areas can appear out of focus. I\u2019m assuming that the object is stationary (and stable).\n\nHere is an example where there is a \u201cdepth of field\u201d blur centered around the model\u2019s head\n\nhttps://hologramplace.com/3d-boxer-multi-channel-hologram-picture-matted-collectible-photopolymer-type-film#PhotoSwipe1684212205635",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I can't give you a complete answer, but one major contribution to the blurriness is from viewing the hologram with white light. The hologram was made using monochromatic (or nearly monochromatic) light. Since holograms like this one work on the principle of diffraction, and diffraction depends explicitly on the wavelength, you expect all features in the viewed hologram to be distorted when viewing it with polychromatic light. My intuition is that the scale of the holographic image is changing with wavelength, so you are effectively looking at many different images of different colors, each with a slightly different scaling, which smears edges and gives the edges a color gradient (this is clearly visible on the ropes).",
+            "score": 225,
+            "author": "aberneth",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for answering!\n\nIt makes sense that there would be a general blurring due to this principle. \n\nWhat I see here though is a very marked variation in blurring which seems to correlate with depth. I would more expect a color shift (like iridescence) if the effect was feature specific.",
+                    "score": 49,
+                    "author": "yabaitanidehyousu"
+                },
+                {
+                    "level": 1,
+                    "comment": "This kind of reflection hologram contains the fringe pattern not just across the surface of the film, but also throughout its depth. This turns it into a wavelength filter, which is why you see only one colour, despite looking at it with white light. The reflected colour is slightly off from that of the laser wavelength used to record it, as the film shrinks a bit during processing.",
+                    "score": 13,
+                    "author": "PE1NUT"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "My dissertation relied heavily on the mathematics underlying optical holography.  I'm afraid that I must say, the answers you've received so far I've found to be quite troubling (ranging from accurate but incomplete to wildly incorrect).  \n\nA hologram is made by measuring the superposition of a monochromatic scatter and reference wave from a coherent source.  The superposition measurement, be it on film or ccd, allows for capture of the phase information of the light on the boundary/surface where the measurement takes place such that, when the hologram is re-illumined (optically or with digital simulation), diffraction of the incident light field occurs and the original wave field on the opposite side of the boundary is recreated.  In essence, the hologram itself is a measurement of the \"boundary condition\" of the light field across that particular surface.  What is important is that the light field that you view from holographic reconstruction is, in theory, the field you would view as if you were viewing the scattered light during the original recording.  Hence, you might as well treat the two (viewing the hologram vs the original scattered light) as being the same.\n\nSo what is it that you\u2019re actually viewing when you see the object?  Here, the object is being bombarded with a planar light source (presumably for a laser).  At each point on the object\u2019s surface, light scatters.  That scattered light is what you view.  To first order (the only important order), the scattered light may be viewed as a superposition of spherical waves emanating from point sources at each point on the object\u2019s surface.  \n\nNow, to view a crisp image from this scattered light, you must focus it.  Even if it were just a single point that you wished to view sharply (as opposed to a whole object), the light must be focused.  The spherical wave form is analogous to applying a diverging lens on a plane wave source.  If you were viewing the hologram/scatter with your own eyes, the lenses in your eyes would do this automatically (or In the case of the photo above, a lens is used to capture the photograph from the hologram).  And transverse resolution will suffer based on the lens\u2019 focal length vs the axial distance of the points on the scatter object source.  \n\nAn object being viewed from a hologram will generally have axial extent.  If the object were coplanar with the hologram surface, you could view the entire hologram in focus together (though the light still needed to be focused to begin with).  With axial extent, there will be increasing focal blur with distance that differs from the length at which you are focused (as is shown in the image you linked).  What\u2019s important about the hologram though, and (among other things) which distinguishes it from a photograph, is that since the light field is recreated, you may refocus on different depths when viewing, as if the object was actually in front of you.  That is in contrast with a photograph which has a fixed focus and will capture any blur without the option to refocus.  \n\n[This paper](https://opg.optica.org/viewmedia.cfm?r=1&amp;rwjcode=josaa&amp;uri=josaa-25-7-1744&amp;html=true) can give you a derivation of the math underlying your question.  It can (probably still) be found on scihub but does require a mathematical / optics background of a more senior undergraduate physics student.",
+            "score": 78,
+            "author": "ZeroPad",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Can you say this in a way that people without PhDs in mathematics can understand? I appreciate the thoroughness and the math behind it, but it's not much of an explanation for those who aren't already studying the field.",
+                    "score": 16,
+                    "author": "mdarena",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": " \"What\u2019s important about the hologram though, and (among other things) which distinguishes it from a photograph, is that since the light field is recreated, you may refocus on different depths when viewing, as if the object was actually in front of you. That is in contrast with a photograph which has a fixed focus and will capture any blur without the option to refocus.\"\n\nThis is the most important part \u2191\u2191\n\nThe gist is that since the hologram is a 3d representation, you can adjust the distance that your eye focuses, making it appear that the whole hologram is perfectly in focus, whereas a photo can only capture some of the hologram in focus, hence the blurring for the parts of the hologram that are in front of or behind the camera's focal point.",
+                            "score": 19,
+                            "author": "PSLWORK",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So, the reason is actually that we're viewing photographs of holograms taken by cameras with an insufficient depth of field to have the whole object be in focus?\n\nTherefore it would be possible to take photographs where the whole object is in focus, like many everyday photographs, assuming you can get a good enough depth of field camera setup?",
+                                    "score": 3,
+                                    "author": "ReidZB"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I *think* one of the takeaways from what he wrote is that the linked image is only blurry since the photograph of the hologram is only focused one part of it, you could refocus the camera to capture the same hologram with a different area of focus.",
+                            "score": 5,
+                            "author": "notimeforniceties"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;Can you say this in a way that people without PhDs in mathematics can understand? \n\nHmm... They say that the curse of becoming an expert is forgetting what it's like to not know.   Composing a sufficient yet succinct description for a range of audiences (or worse, not knowing your audience) can be quite difficult.  Particularly without the aid of diagrams.  Perhaps it would better you to give some notion of your technical background and then proceed more as a dialogue than a lecture, with you posing more specific questions where there are confusions or curiosities?",
+                            "score": 2,
+                            "author": "ZeroPad",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": -2,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Please don't be rude to the person who took time out of their presumably busy day to provide a well worded, sourced comment. It isn't their job to make you understand. That responsibility lies with you. They were very kindly volunteering to answer follow up questions. I see no reason to berate them.",
+                                            "score": 1,
+                                            "author": "mrcmnstr"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "All I know about math is from game development, thank you for this stellar writeup. Is there some sort of mathematical design for a lens surface to reduce the axial distortion? Does it even use lenses when recording the hologram? Do differing mediums and laser intensities) frequencies affect the quality of the hologram resolution? And when you say this:\n\n&gt; the scattered light may be viewed as a superposition of spherical waves emanating from point sources at each point on the object\u2019s surface.\n\nIs this truly a capture of the object's surface state down to the molecule? Will degradation of the material affect the quality of the image over time? \n\nThe idea of \"infinite resolution\" information capture is pretty cool when you're used to stuff described as a hollow shell of triangles, textures, and math tricks intended to look like \"the real thing\"",
+                    "score": 2,
+                    "author": "Technohazard",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Is there some sort of mathematical design for a lens surface to reduce the axial distortion?\n\nIsh... There are fundamental limits to the resolution that can be obtained both in the transverse and axial directions for a given measurement apparatus and light wavelength.  You may have heard of these as Nyquist limits or systems that are diffraction limited (these are essentially the same thing).  That said, yes are specific optimal geometries that you want your lens to have for a given wavelength and distance.  \n\n&gt;Does it even use lenses when recording the hologram?\n\nThe answer is again, \"ish\"... lol.  Strictly speaking, no it is not necessary to transform the light in this way.  With that said, there may be practical reasons to do so in the physical design of the recording setup.  For example, [Gabor's original paper](https://www.nature.com/articles/161777a0) indicated the use of a focusing lens for the scatter source light prior to its scattering from the target object.\n\n&gt;Do differing mediums and laser intensities) frequencies affect the quality of the hologram resolution? \n\nYes\n\n&gt;Is this truly a capture of the object's surface state down to the molecule?\n\nNo, and for a number of reasons.  \n\n1) Optical holography is a \"classical\" theory and doesn't have the precision to speak at the quantum (molecular) level.  \n\n2) The spatial resolution of the measurement apparatus matters.  Analogue recording media are not truly analogue.  There is a limit to their spatial precision but it is far below our own resolution capacities.  Digital devices also have spatial limits (worse than those of analogue media). \n\n3)  This reason will probably be less satisfying as it is mathematically dependent and that is difficult to describe here with only words and in such short form.  With that said... there is an inherent asymmetry in resolution from holography.  This follows more easily (at least on paper) by transforming the light field from the hologram into the Fourier domain to analyze the the measured frequency bandwidth in each direction.  The axial bandwidth is far less than the transverse bandwidths which means that the axial resolution will always be worse than the transverse directions (If you want to know more about why, the notion of \"Ewald Spheres\" in scattering theory are explanatory).  \n\n&gt; Will degradation of the material affect the quality of the image over time?\n\nFor a hologram measured on a physical substrate?  Yes?  For a digital recording?  It's just numbers.\n\n&gt;\"infinite resolution\"\n\nThe resolution is not infinite.",
+                            "score": 4,
+                            "author": "ZeroPad",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you for such a detailed answer! I have learned a lot and I hope others have too.\n\n&gt; The spatial resolution of the measurement apparatus matters. Analogue recording media are not truly analogue. There is a limit to their spatial precision but it is far below our own resolution capacities.\n\nCould this be improved by a bigger machine  with lensing to focus more precisely? Or does this run into the problem of the aforementioned spatial limits? \n\n&gt; there is an inherent asymmetry in resolution from holography.\n\nI am guessing if generations of math geniuses havent solved this by canceling out interference from multiple image/viewpoints, that probably isn't a valid option?\n\n&gt; The resolution is not infinite.\n\nThank you for clarifying, I put it in quotes to indicate I wasn't really serious, its just proportionate to the resolutions I normally work with. Seen some crazy materials rendering math these days that may work at that scale, too deep for me.",
+                                    "score": 1,
+                                    "author": "Technohazard"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 1,
+                    "author": "yabaitanidehyousu"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Holograms record the state of a field. They will reproduce the same field as the input when you recorded it.\n\nThat means if light hitting the hologram was not focused or aligned properly, neither will the recording. \n\nThe way to think of it is that holograms are actually made from 2 light sources. A reference wave and the actual light you are trying to record. The light you are trying to record is going to propagate the same way coming out of the hologram as it did when you recorded it. So light that was coming in as a blurry image will still look blurry later.",
+            "score": 28,
+            "author": "Bananawamajama",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Okay but what is doing the focusing there?\n\nThe reference and objective beams are aligned by their interference pattern before recording. In the above hologram, let\u2019s say the \u2018focal point\u2019 is at the models\u2019s head, and there is a depth of field of, say 2-inches(?). What then defines that depth of field?",
+                    "score": 10,
+                    "author": "yabaitanidehyousu",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The convergence/divergence of the field as it enters the hologram.\n\nLight is coherent as it exits the source, but even if it maintains its temporal coherence, as in frequency, the light also has spatial coherence. The beam is going to scatter off of whatever you are illuminating and that will incur diffraction that will change the field.\n\nIn the same way that you can focus light by refraction of a lens, you can also focus light by reflecting off a parabolic mirror. In this way you can think of scattering off of anything as a wonky sort of lens.",
+                            "score": 13,
+                            "author": "Bananawamajama",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sorry, I\u2019m still not getting it. The plate used to record the hologram is flat. Also the spatial coherence will be some fraction of one wavelength (i.e. having an upper/lower bound). It seems odd that this effect would appear as a depth of field effect over a space at macro scale.",
+                                    "score": 2,
+                                    "author": "yabaitanidehyousu",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, but the laser light gets dispersed by lenses and the target(s) to create the interference patterns on the film.\n\nhttps://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2hvbG9ncmFtLTcuZ2lmIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoyOTB9LCJ0b0Zvcm1hdCI6ImF2aWYifX0=",
+                                            "score": 2,
+                                            "author": "InfoSec812"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Isn't that what happens with regular vision? Things look blurrier at different distances?\n\nAlso, bear in mind that you are looking at a photograph of a hologram, and a camera has its own lens.",
+                                            "score": 1,
+                                            "author": "Bananawamajama",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;Isn't that what happens with regular vision? Things look blurrier at different distances?\n\nFor regular vision, yes. In the real world we deal with a massive field of incoherent light. There\u2019s simply too much to discern a coherent image so an aperture is required. An aperture and lens work to bring some space into focus, effectively concentrating the signal over the noise. (When using a lens and large aperture, anything out of the field of focus, with registrable intensity, comes through as the original noise - this is the source of the \u201cdepth of field\u201d)\n\nBut in these holograms there is a single source of coherent light. You are right that reflected light from the same source will cause it\u2019s own effects, but there is only one source of direct light and a fixed amount of light (over the duration of the recording)\n\n&gt;Also, bear in mind that you are looking at a photograph of a hologram, and a camera has its own lens.\n\nThis I had wondered about. Of all the pictures I\u2019ve seen the \u2018focus\u2019 effect seems to vary. I really want to get my hands on a real one again to see it with my own eyes :)\n\nEdit: formatting/wording",
+                                                    "score": 4,
+                                                    "author": "yabaitanidehyousu"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I agree with you. If the hologram records the whole light field nothing should be out of focus.\n\nIn theory different parts of the image should have different focus and the eye should be able to focus on them independently.",
+                                            "score": 1,
+                                            "author": "botle"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "sounds kinda like multipath signal interference with radio. Rays taking a longer path get out of phase. Does that make sense?",
+                                    "score": 1,
+                                    "author": "quatch"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you basing your observation solely on 2D images of holograms, or have you seen this depth of field effect in person? If the former, the camera may be the source of the blur, just like when photographing a 3D object.",
+            "score": 28,
+            "author": "iksbob"
+        },
+        {
+            "level": 0,
+            "comment": "In order for the hologram to be convincingly 3-dimensional, there are different etchings that are supposed to shine more brightly based upon the direction the light is reflecting. Each eye gets a slightly different reflection which makes it appear more 3-D.\n\nYou can still sort of see the scratching reflecting light that it isn\u2019t \u201cmade for\u201d each other eye. That appears as a bit of a blur. Depth of field is an understandable way to describe it, but the two things are separated.",
+            "score": 2,
+            "author": "shawster"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If a hologram uses a lenticular lens, it\u2019s lenticular printing which technically isn\u2019t a hologram at all. An actual hologram is a 3d photographic recording of an interference pattern of light, and doesn\u2019t necessarily need any lenses to view.",
+                    "score": 6,
+                    "author": "profossi",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Where can I read more about this? I've never heard of a way to make 3d holograms on a 2d surface other than lenticular printing.",
+                            "score": 2,
+                            "author": "My_New_Philosophy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "https://en.m.wikipedia.org/wiki/Physics_of_optical_holography\n\nOptical holography is actually pretty old and the theory contributed to many modern techniques.",
+                                    "score": 6,
+                                    "author": "yabaitanidehyousu"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "For an example you might have to hand, the metal stickers on the back of debit/credit cards and on some countries' banknotes are proper holograms.",
+                                    "score": 3,
+                                    "author": "uk100"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The further from the film or plate the object is the blurrier and darker it will be depending on the purity of the wavelength of laser light used. LASERs arent perfect and dont produce completly pure spectrums of light and thuse cause the interference patternes to be less pronounced the further the object because you have out if phase light reflecting back and causing an overall decrease in intensoty due to and overall interference.",
+            "score": 1,
+            "author": "perpetualwalnut"
+        },
+        {
+            "level": 0,
+            "comment": "Perhaps I'm missing the point but a hologram records intensity and phase of the light, whilst a photograph is just intensity. So when you illuminate a hologram it's like seeing the object used to record it again. That way if you image a hologram with a camera some areas can be out of focus, like with an actual object.",
+            "score": 1,
+            "author": "RogerKoulitt"
+        }
+    ]
+}

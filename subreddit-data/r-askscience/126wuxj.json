@@ -1,0 +1,65 @@
+{
+    "id": "126wuxj",
+    "score": 11,
+    "title": "If MRI Voxels are 1mm^3 how can MRIs identify something as thin as white matter?",
+    "author": "Zealousideal-Alarm37",
+    "date": 1680204708.0,
+    "url": "https://www.reddit.com/r/askscience/comments/126wuxj",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If an MRI voxel is 1 cubic mm, that just means that the MRI can\u2019t resolve anything smaller than that. If a significant proportion of that 1 cubic mm is made up of white matter, no matter the thickness of the white matter, you\u2019ll see evidence of the white matter in that voxel. \n\nAn analogy would be a pixelated image. If you look at a pixelated image of somebody wearing a shirt with some symbol on it that has a lot of thin lines, but is a distinctly different color than the rest of the shirt, you will still see a contribution from that colored symbol in a pixelated image of the shirt.",
+            "score": 15,
+            "author": "qazit",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "DTI, which has a lower resolution than other forms of MRI, supposedly maps the paths axons take in white matter and show the physical connectivity of the brain. \n\n\nAre these Voxels overlapping to any extent to artificially make higher resolutions? Or is there something I'm missing. \n\n\nThere's a fine line between mapping where white matter is and mapping the individual connections and directions within. I'm having trouble wrapping my head around that, I know that DTI can read for diffusion resistance and thus directionality, but that would seem to require a higher resolution given the complexity of the white matter tracts.",
+                    "score": 0,
+                    "author": "Zealousideal-Alarm37",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "DTI only maps coarse-scale connectivity patterns, i.e. big axon bundles rather than anything like individual axons or synapses. Its resolution is no better than the voxel resolution of the images.\n\nYou get the directionality by using a special MR technique. You might know that the signals actually you measure with MR are due to the magnetic precession of protons in water molecules. Anatomical and functional MRI essentially measure the rate of decay of this precession, which is different for different tissues (e.g. white matter has a longer T1-decay time than gray matter, and thus looks white on T1-weighted images). Some of the decay of the precession is due to protons moving around in the volume, resulting in dispersion of their precession phases. If the protons don't precess in-phase, this attenuates the magnetic resonance signal. This decay due to motion is called *dynamic dephasing*. There is also *static dephasing*, which is due to some photons precessing at slightly faster or slower frequencies depending on local differences in magnetic field strength. Since this static dephasing happens at a fixed rate for each proton, it can be undone by applying a refocusing pulse. If you do this, you are left with only the dynamic dephasing, and so what remains is a signal that is now sensitive to the degree of diffusion of free water molecules. By applying further magnetic gradients you can also get the (predominant) direction of diffusion. \n\n(This is the basic idea. There are more technical subtleties involved in getting this to actually work. E.g. dynamic dephasing also happens due to other reasons and you need to compensate for that.)\n\nIn this way, diffusion-weighted imaging tells you the main direction that water molecules are moving at a particular location. The idea is that water molecules will tend to move strongly in one direction if there are big axon bundles present at that location, since water can mainly move along the axons and not so much in the orthogonal direction. Thus, the diffusion tensor in each voxel becomes a measure of the direction of axon fibers in that voxel.",
+                            "score": 1,
+                            "author": "rubseb"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "First, the average thickness of the cortex is more like 2.5 mm\n\nSecond, we aren't explicitly measuring ig each voxel is cortex or non-cortex with a binary 1-0 mask. The way that cortical thickness is measured is by looking at the signal intensity to each voxel, and an algorithm estimates the barrier between gray matter and white matter, or gray matter and the dura matter on the outside of the brain. It does so by considering the intensity of this voxel relative to deeper voxels that are clearly white matter, or voxels that appear more likely to be gray matter.\n\nSo let's pretend a voxel that a cortical voxel would have an intensity value of one. Let's say that a voxel of white matter has an intensity value of 0.5\n\nIf you encountered a voxel that was roughly 0.75, you could infer that roughly half of that voxel was in the cortex.\n\nFree surfer runs the algorithm across the entire image and attempts to estimate the inner and outer barrier using this approach. I simplified it of course, it's not really saying 0.75 and half the voxel, the modeling is more complicated than that and frankly I don't understand it more than that.\n\nBut, the long story short is that by looking at signal intensity the different voxels we can build an estimate a model of where the ribbon of the cortex is relative to the edges of that voxel. \n\nInterestingly these estimates are very reliable across MRI scans. If I scan you today and scan you next week, most cortical thickness measurements will be very stable\n\nThen once you have the outer ribbon, representing the outside of the cortex, and the inner ribbon representing the inside, you can place a perpendicular vertex in that section and estimate the thickness of the cortex\n\nThe process isn't perfect, and errors are not uncommon. Particularly in lower quality MRI scans. \n\nI hope that help explains it",
+            "score": 6,
+            "author": "Brain_Hawk",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "My issue with this explanation is that techniques like diffusion tensor imaging (a form of dMRI) can map paths taken in the white matter (ie the actually axons of neurons, and the myelin on this axons that make white matter white in the first place). Axons are very thin iirc, and while the cortex is thicker than the resolution of the MRI, how can it map things smaller than that resolution? \n\n\nDo Voxels overlap?",
+                    "score": 1,
+                    "author": "Zealousideal-Alarm37",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Dti does not measure axons. \n\nIt makes a model of white matter tracts based on the characteristics os the direction of diffusion. Like so many things MRI, it's a model, and an estimate of how large bundles of axons are organized and traverse through the WM. \n\nIf you wanna learn more I bet you can find some good videos on YouTube. :)",
+                            "score": 3,
+                            "author": "Brain_Hawk",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So bundles of axons not singular paths, because it's 'tracts of white matter's. Thank you that helps a lot. So it's inherently incorrect to think that neurons themselves are being mapped. \n\n\nThank you.",
+                                    "score": 2,
+                                    "author": "Zealousideal-Alarm37"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

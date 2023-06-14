@@ -1,0 +1,820 @@
+{
+    "id": "12j8o4d",
+    "score": 2901,
+    "title": "Were the gas giants originally thought to be terrestrial like Earth? When were the gas giants known to be gaseous?",
+    "author": "from-the-void",
+    "date": 1681270745.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12j8o4d",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Looking at my encyclopedia from 1887,* they knew its density was much lower than earths .  They calculate jupiter at 338 times the mass of earth when today we believe 317.*  They also thought its size was 1400 times earths, today we say greater than 1300.*  They dont mention what the think it is made of but I think they could deduce it was not like earth.  Google give the answer as in 1930s the gas giant proposal was put forth.  But I have no supporting proof.\n\n*Chamber's encyclopedia , 1887",
+            "score": 2078,
+            "author": "dtagliaferri",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Giovanni Cassini, sometime around the year 1690, was [the first to observe that different parts of Jupiter rotated at different speeds](https://www.space.com/18902-giovanni-cassini.html), which made it pretty clear that the planet couldn't be a completely solid object.\n\nNewton was [the first to take a stab at its actual density](https://www.jstor.org/stable/41134054) in 1687, in his third book of *Principia*, coming up with figure that wasn't *too* far off what we know today. That really drove home that it couldn't be *completely* solid.",
+                    "score": 169,
+                    "author": "djublonskopf",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Why was it assumed that the difference in rotational speeds was due to the composition of the planet, and they weren't just seeing a layer of clouds?",
+                            "score": 33,
+                            "author": "ShakeItTilItPees",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sure, but take mars, for instance.  You observe it, and most of it rotates at the same speed.  You can be fairly certain that you're looking at the surface.  Now, you look at Jupiter.  You notice that different parts of it rotate at different speeds.  So you know you're looking at a cloud layer.  So that means that the surface has to be underneath it, and is thus smaller than the observed size of Jupiter.  How much smaller is the question.",
+                                    "score": 62,
+                                    "author": "MechaSandstar",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "How different is the effect from that of Venus's dense cloud layers?  \nI wonder if they ever presumed Venus to be gaseous. It doesn't have moons to help calculate density.",
+                                            "score": 13,
+                                            "author": "SuperSMT",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well, Venus is much much smaller than jupiter.  It's possible that they thought venus was much like the earth, due to the similar observed size.",
+                                                    "score": 9,
+                                                    "author": "MechaSandstar"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How do you estimate the density of a planet in that age and technology?",
+                    "score": 539,
+                    "author": "Y0rin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "When we observe jupiter, we also observe its moons. If we take one moon, and we can calculate the semi-major axis of its orbit, and how long it takes to complete an orbit (its period), Kepler's 3rd law allows us to relate an Orbit's period, semi-major axis, and the mass of the larger, Central body.\n\nMeasuring the period of an orbit is reasonably easy just through observation. To measure the semi-major axis is more challenging. It's a little complicated to get into in a brief comment, but if you're interested, there are techniques like trigonometric parallax that helps you determine the distance to Jupiter, and then some simpler trigonometry to work the distance from Jupiter to its moons.\n\nOnce we have the orbital parameters, we use Kepler's 3rd law to find the mass of jupiter.\n\nCalculating its size comes from knowing the distance between Earth and Jupiter and comparing that to it's angular size, and again using trigonometry to work out its diameter.\n\nAll you need are precise enough measurements of which good enough equipment was being developed in early modern europe, but the maths is thousands of years old.\n\nEdit: as another comment pointed out, there is a similar but far easier method where you can just use the angular measurements. \n\nStarting from Kepler's 3rd law: T^(2)=4pi^(2)a^(3)/GM\n\nKnowing that M = rho*volume and using the volume for a sphere. Rearranging for rho you get: rho =3pi/GT^(2) * (a/r)^3\n\nA is the semi major axis of a moon's orbit, T is its period, and r is Jupiter's radius. But as this involves just a ratio of lengths, similar triangles allows us to relate this to angular distance.\n\nFantastic! So you just need the angular measurements and the period of the orbit and you can work out the density!",
+                            "score": 1239,
+                            "author": "Pokiwar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Measuring the period of an orbit is reasonably easy just through observation.\n\nJupiter's moons and orbital periods were observed and measured extensively because they were used from the late 17th century onwards as a technique for calculating longitude. The moons experience eclipses about a thousand times a year; by observing a particular eclipse from somewhere in the world and comparing the time it occurs with its predicted time in Greenwich (available in a book published regularly by British astronomers expressly for this purpose), the location's longitude could be calculated very precisely.\n\nThis led to a very noticeable evolutionary leap in the accuracy of maps published from that time onwards. The technique of measuring Jovian eclipses was really only possible on land (although some ingenious attempts to observe these at sea were made); accurate *navigation* by ships required the invention of precise seagoing clocks a century later.",
+                                    "score": 217,
+                                    "author": "Garfield-1-23-23",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The history of this is really interesting. Governments (notably the British government) set up [longitude rewards](https://en.wikipedia.org/wiki/Longitude_rewards) to induce research into how to accurately calculate longitude on ships.",
+                                            "score": 59,
+                                            "author": "watts99",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "And the answer turned out to be \"really fancy clocks\". It's easy now, but just think how hard it must have been to come up with an accurate mechanical clock which isn't affected by the motion of the sea, pretty much at all.\n\nWhen Darwin sailed around the world, the Captain had over a dozen marine chronometers on board, because part of their journey was to survey parts of South America, and that required as much accuracy as possible.\n\nThat is something you would never say when asked to think of massive, world changing, life saving inventions, but accurate navigation at sea was huge.",
+                                                    "score": 8,
+                                                    "author": "useablelobster2"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I know this because of that infographic called \"Hang This In Your Time Machine\" that was around about a decade ago.",
+                                                    "score": 12,
+                                                    "author": "IndustrialLubeMan"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Do you have any idea how involved this was? A thousand eclipses per year, that\u2019s less than three a day. I have something in my head, but I have no idea how accurate it is. \n\nI\u2019m thinking, people would set up a stationary telescope and take readings from the sun to get an accurate local time. They\u2019d also check out Jupiter, and after watching for a while would know which moon is which. (I assume you can\u2019t tell them apart instantly? I haven\u2019t been able to in pictures I\u2019ve seen, not unless they\u2019re in a convenient position). Then once a moon disappears, mark the time?",
+                                            "score": 11,
+                                            "author": "Seicair",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You don't need to know which is which, just how many should be visible. If two should be visible until 6:32 AM GMT, then one more appears, you know that if you see three, it's after that time. And the fact that there should be a specific number on each side helps to distinguish them from each other. If there should have been 3 until 4:45 AM GMT, then the one that disappears at 4:45 is going to be on the opposite side from the one that appears at 6:32.",
+                                                    "score": 18,
+                                                    "author": "frogjg2003"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Wow I never knew that this technique existed. But why couldn't the longitude be estimated at sea?",
+                                            "score": 5,
+                                            "author": "udee79",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Too hard to keep a powerful-enough telescope trained on Jupiter on a ship that is pitching and rolling at sea. One of the interesting attempts to try and solve this problem was a self-leveling platform, something akin to a modern gyro-stabilized gun platform on a ship - and well beyond the technology of the time.",
+                                                    "score": 21,
+                                                    "author": "Garfield-1-23-23"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Wait, Greenwich? So, our modern time zones are set up the way they are because Jupiter has a ton of moons that are relatively easy to spot?",
+                                            "score": 5,
+                                            "author": "VindictiveJudge",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It probably has more to do with Britain's centuries-long dominance of world shipborne trade. [It officially dates to 1884.](https://en.wikipedia.org/wiki/International_Meridian_Conference)",
+                                                    "score": 29,
+                                                    "author": "Garfield-1-23-23",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Right, but choosing Greenwich specifically as the zero point for time zones might be because they could easily attach it to their existing longitude system. Really easy to take your Greenwich based longitude and derive your Greenwich based time zone. I just hadn't considered before that the prime meridian runs through Greenwich.",
+                                                            "score": 5,
+                                                            "author": "VindictiveJudge",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Given they are arbitrary points, having both \"zeros\" align just makes sense.",
+                                                                    "score": 5,
+                                                                    "author": "useablelobster2"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; The moons experience eclipses about a thousand times a year; by observing a particular eclipse from somewhere in the world and comparing the time it occurs with its predicted time in Greenwich (available in a book published regularly by British astronomers expressly for this purpose), the location's longitude could be calculated very precisely.\n\n\nSo how was the local time calculated, considering that traveling with a clock wasn't possible, knowing the exact location wasn't possible (since that's what they were trying to solve), and you'd have issues like local solar noon not being the same every day anyway, although that last one might have been known by then if they were predicting eclipses of this sort.",
+                                            "score": 1,
+                                            "author": "a_cute_epic_axis",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt; So how was the local time calculated, considering that traveling with a clock wasn't possible\n\nTraveling with a clock *was* possible. Mechanical clocks of that era were sufficiently accurate to only gain/lose a few seconds a day, which was enough to tell you the current time if you could accurately gauge when high noon was (which you can easily do via shadow lengths when the sun is out). They just weren't accurate enough to reliably keep Greenwich time over the course of the weeks or months of a sea journey, and thus weren't accurate enough to determine longitude.\n\n&gt; knowing the exact location wasn't possible\n\nKnowing the exact location requires calculating latitude and longitude. Latitude had for centuries been easy to measure with a sextant; calculating longitude required the Jovian technique I described, or later required super-accurate timepieces, or even much later required a GPS device.",
+                                                    "score": 12,
+                                                    "author": "Garfield-1-23-23",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yep. The accuracy developed in mechanical clock movements required for navigating the globe accurately worked out really well for astronomy as well. It was a ground (sky) breaking time. The real driver behind these innovations were money and the global spice trade.",
+                                                            "score": 1,
+                                                            "author": "UnarmedSnail"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Surprisingly, you do not need the distance to Jupiter to find its density (although the distance was known in 1887). You only need the angle of Jupiter in the sky (obviously, otherwise its volume is unconstrained), the angle between Jupiter and a moon at its largest separation, the orbital period and the gravitational constant\n\nConsider a random distance value. If Jupiter is twice as far but all angles stay the same then the moons have twice the acceleration at twice the distance, which means Jupiter's mass is 2\\*2^2 = 8 times as large. The same also applies to its volume, so the density is the same anyway.\n\nExpressed differently, the average density of an object determines the orbital period at a given multiple of the radius (including 1, i.e. orbiting just above the surface).",
+                                    "score": 312,
+                                    "author": "mfb-",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The beautiful mathematics of astrophysics is astounding. The simple fact we calculated the Earth's size to near perfection before satellite technology, LONG before satellites is amazing. Humans are clever little monkeys",
+                                            "score": 69,
+                                            "author": "ErrorProtocal404",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "In the 1800s we knew the size of the Earth to a remarkable precision, to the point we even knew that the distance pole-to-pole wasn't the same as the distance from opposite points on the equator. Pretty amazing what a bit of trig can do!",
+                                                    "score": 34,
+                                                    "author": "RoadsterTracker"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt; The simple fact we calculated the Earth's size to near perfection before satellite technology, LONG before satellites is amazing.\n\nEratosthenes is looking down and winking at you right now. He calculated it with astonishing accuracy about 200 bce.",
+                                                    "score": 28,
+                                                    "author": "IndustrialLubeMan"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Calculating the earth is pretty simple math actually . All you need is a couple of sticks and measure the shadow cast by the sun on a specific day like the summer solstice (which is about when the sun is highest in the sky annually) ideally, you pick a spot where there\u2019s no shadow, and the first guy to do this famously did it at the bottom of a well, which is sort of the same thing as an inverted stick. He noticed another city further north on that very same day the sun cast a small  shadow showing that the sun was not directly overhead of that stick.",
+                                                    "score": 10,
+                                                    "author": "jawshoeaw"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Absolutely. The idea that we had a rough estimate of the size of the earth more than 2,000  years ago is incredible.",
+                                                    "score": 31,
+                                                    "author": "PM_ME_YOUR_DARKNESS"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I've heard the ancient Egyptians had a pretty good ball park estimate of the size and shape of the earth 4,000 years ago using a long stick and the Sun and some math.",
+                                                    "score": 2,
+                                                    "author": "UnarmedSnail",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 2,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thats how I read it.  You don't for the density because density is mass over volume.  A ratio of two numbers for which we do need the distance but the unknown distance cancels when you divide one by the other.",
+                                                    "score": 6,
+                                                    "author": "StingerAE"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Are you an astrophysicist or just an enthusiast?",
+                                    "score": 14,
+                                    "author": "Unlikely-Distance-41",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Enthusiast, but I am a maths teacher, and did my undergraduate in the sciences",
+                                            "score": 32,
+                                            "author": "Pokiwar"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "So magic, cool. You could've just said that.\n\nFor real though, it boggles my mind how they were able to work these things out just by observation and hard, hard work. Real respect to these guys.",
+                                    "score": 58,
+                                    "author": "im_the_natman",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 45,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Don't forget that these guys had decades to work things out, and Kepler and such were paid by courts to just be scientists. It's the culmination of many generations of work built on top of each other.",
+                                            "score": 11,
+                                            "author": "goldfinger0303"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Interesting, so you can calculate Jupiter's mass using observations of a moon's orbit without actually ever knowing the mass of said moon? Just essentially treating the moon as having an arbitrary mass and seeing how Jupiter's pull tugs on it, more or less?",
+                                    "score": 8,
+                                    "author": "Brawler215",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You have to assume that the mass of the moon is much smaller than Jupiter's. Other than that, yes. \n\nAlso, using the work of Galileo and Kepler they could only give the mass of Jupiter as a multiple of Earth's, not in a regular unit like pounds. It wasn't until Cavendish's work on measuring gravity in 1798 that they could put a value to it in regular units.",
+                                            "score": 37,
+                                            "author": "lohborn"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yep! Kind of in the same way that a bowling ball and a rice grain will fall with the same acceleration because gravity only depends on the 'stationary' massive body's mass, the orbit of a moon is only meaningfully determined by the central body's mass.",
+                                            "score": 15,
+                                            "author": "Pokiwar"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "We should really be thankful that all planets are spherical.  Imagine how much harder this would have been if planets were shaped like a cow?",
+                                    "score": 6,
+                                    "author": "Naritai",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I don't know what you mean, aren't cows spherical already?",
+                                            "score": 14,
+                                            "author": "Pokiwar"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "In a vacuum you say?",
+                                            "score": 6,
+                                            "author": "AlaninMadrid"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You seem intelligent and helpful so I just wanted to point out, since it irritated me throughout your otherwise great comment, that \u201cit\u2019s\u201d is short for \u201cit is\u201d and nothing else.\n\nIt doesn\u2019t denote ownership like you - and many others - think it does.\n\nWhat you\u2019re looking for here is \u201cits\u201d.",
+                                    "score": 8,
+                                    "author": "Throwaway_J7NgP",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Aha that's likely just from typing on a phone that I missed! Thanks!\n\nEdit: this is true for other pronouns if I'm correct. For example 'belonging to her' is hers not her's, and theirs not their's.",
+                                            "score": 9,
+                                            "author": "Pokiwar"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "See this is how you know people didn't used to be stupid. Folks figured stuff out hundreds or thousands of years ago with some writing tools and angle measurements.\n\nIt just *seems* like we're smarter because in a post industrial revolution world, we have a far far larger number of educated people in the world than ever before.",
+                                    "score": 5,
+                                    "author": "1CEninja"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "How did they measure the distance to Jupiter back then?",
+                                    "score": 2,
+                                    "author": "NaomiNekomimi",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Using something called Parallax trigonometry. Parallax is the apparent relative motion of an object at a distance. Imagine that you were standing with two boxes in front of you; one 1 meter away, the other 100 meters away. If you take 1 step to the left, the closest box looks like it has moved a lot further than the more distant box. This is parallax.\n\nBy quantifying this parallax, and knowing how much distance there is in your step, you can determine the distance to far away objects.\n\nSo, you in London take measurements of where Jupiter is in the sky. You ask a colleague in Fez to do the same thing at roughly the same time. With enough precision in your measurements, and knowing the distance between you and your colleague, you can figure out the parallax of Jupiter, and hence determine it's distance from you.",
+                                            "score": 6,
+                                            "author": "Pokiwar"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Ancient mathematicians, astronomers, and physicists were some of the smartest people to ever live. To deduce so much with so little is astounding.",
+                                    "score": 2,
+                                    "author": "dawgz525"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 38,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 32,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 21,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You think that's impressive?  [Astronomers in the mid-19th Century discovered Neptune because the orbit of Uranus wasn't what they would expected based on Newtonian physics and their knowledge of the solar system.](https://www.nasa.gov/feature/175-years-ago-astronomers-discover-neptune-the-eighth-planet)  \n\nThe two ways to account for that fact were:\n\n* Revise Newton's Laws, declaring that something *other* than Newton's Laws applied to extraterestrial objects (despite apparently doing so for all other such objects)  \n*or* \n* Assume that our knowledge of the Solar System was incomplete, and that there is some other body out there influencing Uranus' orbit.\n\nSome people *way* smarter than me did the calculations as to where such a body must be in order to predict the orbit of Uranus, and published those calculations.  Someone else pointed a telescope at that location and boom: Neptune was discovered.",
+                            "score": 9,
+                            "author": "MuaddibMcFly"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 23,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Both things sound absolutely amazing to my ears. No idea how you would guess the speed and distance, just by looking at it.",
+                                    "score": 10,
+                                    "author": "Y0rin",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You would get asked and distance through observation over a period of time.",
+                                            "score": 5,
+                                            "author": "Kingshabaz"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "From my understanding of orbits, you wouldn't be able to estimate its mass from its orbit of the sun, at least not without good enough measurements to see its gravitational effects on the sun, which they probably didn't have in the 1800s. A planet's orbital speed is basically a function of its distance from the sun and the eccentricity of its orbit. It has nothing to do with the planet's mass. \n\nMy guess is that they could estimate the mass of Saturn and Jupiter from the orbits of their moons. I suppose you could also see its effects on nearby celestial objects like comets and asteroids, but its unlikely they had much of this kind of data.",
+                                    "score": 1,
+                                    "author": "Kraz_I",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You get the distance through observation of relative movement and keplers laws.\n\nYou take the universal law of gravitation to determine the mass of earth because you can measure how objects at earths surce are affected by the gravitational force\n\nEarth is orbiting sun at speed X and radius r, which means Sun and Earth need a Force proportional to X and r via Newtons mechanics \n\nSo you can determine the mass of the sun. \n\nIf you know the movement (distance, speed) of another planet, and assume that it is orbiting around the sun, than you can determine the mass of this planet.",
+                                            "score": 1,
+                                            "author": "ktElwood"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Mass over Volume.  Just taking the '338 times the mass' and dividing by the '1400 times the size' gives a crude density ratio of 1/4.  Even without other considerations like pressure gradients and non-hydrogen/he elements, it clearly isn't a giant ball of rock and would have to be mostly gas. Mass is determined by orbital periods of gravitationally coupled objects, and volume is determined by apparent angle and distance.\n\nWe now believe that the outer layers are gas and the rest is a hot, dense, super critical [fluid](https://en.wikipedia.org/wiki/Metallic_hydrogen) that dissolves any matter like asteroids and planets that fall into it, and depositing the remnants onto the surface of a solid core.  If you eased up on the pressure, this fluid would expand into a gas.",
+                            "score": 5,
+                            "author": "Ghosttwo"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Density equals mass divided by volume.  \n\nYou can figure out mass by observing the effects of gravity.\n\nYou can also figure out volume or how big it is by observing it.\n\nAdd some fancy math and you can start getting better and better  estimates of density",
+                            "score": 1,
+                            "author": "mrbananas"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's motion and effects on everything depend on the mass of the object. Once you can observe it you can work out decently the size and mass.",
+                            "score": 1,
+                            "author": "Folsomdsf"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 92,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 42,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 10,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Must make for an interesting read, an old encyclopedia like that. In this instance, though, the document dates from after the period of uncertainty so does not answer the primary question unless it gives a historical overview, which I am going to try to expand from memory below. Might be some errors in detail. \n\nThe issue is more a 1700s-era (18th century, and earlier too) questioning, the proto-science or naturalism period when people were looking and observing and actually thinking about the new info and what it all meant, and actually saying that the received knowledge (mostly the bible or the ancient greeks) was not correct, did not fit with what we can see (not a trivial thing when arguing against the bible could result in capital punishment).\n\nThe first step, of course, was to even imagine that planets were planets instead of some sort of moving lights in the sky.  We give credit for that to Galileo.  Kepler figured out the orbital behavior.  Playing with Newtonian ideas of gravity led to the demonstration of the existence of lower density (gaseous) planets.  (Jupiter, at least, was already thought of as gaseous just because of its appearance but it wasn't proven).\n\nWe have to remember that optics of old time telescopes were not the best so it was not easy to see the planets and discern there superficial appearances in detail, yet even Galileo thought that Jupiter was covered by an opaque atmosphere (was \"gaseous\"). Mars, sure, we could see the ground and even had decent maps of the surface by the late 1800s, but no solid surface was ever visible with Jupiter.\n\nThey kept working on it (thinking evolved as more and more people reported what they saw) and came to the idea that some planets were really rocky (high density like earth, and the moon which we can see really well) and some were low density, so gaseous more than rocky (like Jupiter). Outer planets=gaseous, inner planets=rocky.  This was all pretty well accepted by the late 1800s.\n\nModern (space age) studies have added loads and loads of details about the different planets.  Still learning new things though.",
+                    "score": 8,
+                    "author": "Busterwasmycat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think  the true answer is that it was graduation, as you started, that our understanding of the Composition of these Planet become more refined over time. There was no discovery, ah, these are gas.  No one responded yet explaining the  identifying the composition of the \nGas giants through elemental Absorption lines., anouther key to our understanding of these planets.  I guess the questions is flawed in the since that at no time did humans imagine jupiter as a large earth. (That statement being opinion)",
+                            "score": 6,
+                            "author": "dtagliaferri",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; Must make for an interesting read, an old encyclopedia like that.\n\nI've spent a pretty penny over the years because I can not leave an antique store or used bookstore without making a purchase if I find a geography textbook.",
+                            "score": 2,
+                            "author": "IndustrialLubeMan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've found a few pretty interesting old geo books now and again. Some are so hard to find though, that I have had to settle for pdf copies, if I can get one.",
+                                    "score": 1,
+                                    "author": "Busterwasmycat"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Those numbers don\u2019t seem that far off, considering the 136 year gap in study.",
+                    "score": 3,
+                    "author": "Alyx19"
+                },
+                {
+                    "level": 1,
+                    "comment": "I love looking through my childhood encyclopedias (pubd in 90s) because it\u2019s cool to see how much knowledge has evolved, but 19th century encyclopedias?? This is my new collecting endeavor so ty \ud83d\ude4f",
+                    "score": 2,
+                    "author": "frankstaturtle"
+                },
+                {
+                    "level": 1,
+                    "comment": "Ha, I love how different brains think. I just answered the question assuming that OP was asking when the gas giants became gaseous whereas you answered the question assuming that OP was asking when in history we knew that the gas giants were gaseous. It can be read either way! :D",
+                    "score": 0,
+                    "author": "Spanky2k",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Unless they edited the title (which I didn't think they could), it can't be read either way as it clearly asks if they were once *thought* to be terrestrial and when they were *known* to be gaseous. It's not ambiguous.  \n  \nYour answer was still really good though.",
+                            "score": 34,
+                            "author": "reddragon105"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The gas giants were all Earth sized terrestrial (rocky) planets at one point and they actually gained most of their mass in an incredibly short period of time (in terms of galactic or even evolutionary timescales).\n\nBillions of years ago, when the planets formed, there was what is known as a protoplanetary nebula around the Sun - basically a big puffy pancake of gas (mostly hydrogen but also helium, oxygen, nitrogen, oxygen etc) and dust (pretty much everything else). There is way more gas than dust though.\n\nThe dust clumped together, first into small lumps similar to how you get dust balls under a bed, then by bumping and sticking into each other, bigger and bigger until these lumps were the size of busses. Some of these lumps would then get 'ahead of the game' by pure chance and would dominate their local areas, growing up to about the size of the moon or Mars. These big bodies are known as \"protoplanets\" while the smaller ones are known as \"planetesimals\".\n\nThe protoplanets are then bombarded by the planetesimals over millions of years, the smaller lumps getting caught by the gravitational pull of the larger bodies, pulling them in. Some protoplanets crash into each other too. This is how planets form and for rocky planets like the Earth, this is pretty much it.\n\nHowever, remember that I said the protoplanetary nebula also had loads of gas in it too? Well all this planetary growth is going on in the middle of all this gas. It doesn't really do too much to the smaller lumps although the bigger protoplanets are, the more it drags them around in the disc. The larger protoplanets will be able to capture some of this gas, this is largely how planets get their atmospheres.\nMost planets don't manage to capture much of this gas before it disappears though (it only sticks around for a few million years before he heat from the Sun basically evaporates it away into surrounding space). However, some planets manage to get big enough that the way they can capture gas goes wild - they kind of get big enough that they grow faster, which makes them bigger which makes them grow even faster etc etc - it's called runaway growth. This happens when a planet is about 5-10 times the mass of the Earth. Note this can only happen if there is enough gas left in the disc, which is why rocky 'Super Earths' are discovered quite a lot by astronomers.\n\nThe planets that do manage to do this manage to soak up all the gas in their region of the disc and in doing so, become gas giants like Jupiter and Saturn. Others that start a bit late or start too far out in the disc where the gas is sparser become 'ice giants' like Uranus and Neptune.\n\nAs to when this all happened, well we're talking about 4.54 billions years ago as that's when the Earth was formed and as I said, this runaway growth phase for the gas giants lasted at most a couple of million years so, that also happened about 4.54 billion years ago. I think the error range for when the Earth was formed is about 1%, which is about 45 million years, so the runaway growth period lasted for the blink of the eye as far as the solar system is concerned!\n\nSource: My PhD thesis was in gas giant formation. Over a decade ago now though. :)\n\nEdit: Fixed a typo.",
+            "score": 552,
+            "author": "Spanky2k",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Now I can go impress some girls about planetesimals. Thanks!",
+                    "score": 76,
+                    "author": "make8gudd",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 25,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Make certain she doesn't have a PhD in Astrophysics **first**. These smart women are laying in wait for some overly confident man to pontificate when he should naught.",
+                            "score": 8,
+                            "author": "Darkness1231"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "something I'd add:\n\nthe composition of the protoplanetary nebula isn't uniform, with the outer Hemisphere of the nebula having more gas than the interior of the nebula, which is why gas/ice giants are typically on the outer Hemisphere of systems. if a gas giant is in the interior Hemisphere, it is probably a hot Jupiter, they usually form in the outer hemispheres and fall inwards.",
+                    "score": 27,
+                    "author": "Zyacon16",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Is this just be cause of the initial distribution of gas in the inner hemisphere being used to form the star?",
+                            "score": 4,
+                            "author": "Jack_Krauser",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes and because the gas that isn't used to form the star but is closer to the star gets pushed away first",
+                                    "score": 6,
+                                    "author": "ezpickins"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Fascinating read, thank you!",
+                    "score": 17,
+                    "author": "Deribus"
+                },
+                {
+                    "level": 1,
+                    "comment": "Was the nebula approximately the size of the solar system and the planets formed essentially where they are now with respect to the sun? Or did the planets at one point start closer and collisions forced them out further until gravity over took and put them in their orbits?",
+                    "score": 11,
+                    "author": "FlyersFanatic75",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's believed the nebula was sort of the size of the solar system is now but its precise shape is largely unknown. Terrestrial sized planets would have likely started a bit further out and migrated inwards a bit due to the drag of the disk but not by a huge amount, however the gas giants are likely to have moved a lot. This was the area where I was working in as there are various types of ways that a planet within a gas disc can move - known as type I or type II migration. Basically, one form is where they're small enough to be dragged around by the gas disc and the other is where they can carve out a gap in the disc at which point they move only a little. Type 1 is *fast* and usually moves only inwards (although models we were working on incorporated other factors that allowed for both inward and outward migration based on the local structure of the disc). By the time they enter type 2, they basically need to have accreted most of their mass. Gas giants likely accreted almost all of their mass within a timeframe of only hundreds, if not tens, of thousands of years.",
+                            "score": 17,
+                            "author": "Spanky2k",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Is planetary mass accreted because everything is super hot and so as the planet zooms around the rock/dust it encounters sticks onto the forming planet is it formed another way?",
+                                    "score": 2,
+                                    "author": "mrmoe198"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So do gas giants have solid planet cores? I don\u2019t understand",
+                    "score": 8,
+                    "author": "jdubbrude",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes and no. There's a fair bit of mixing going on of materials and things get weird under the high pressures in the centre of planets. It's not like you have solid core -&gt; atmosphere. It's more like fluid hyper dense rock mixed with gasses gradually blended out to less dense materials.",
+                            "score": 15,
+                            "author": "Spanky2k"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Jupiter and Saturn have \"fuzzy\" rocky cores that are partially dissolved into an outer layer of liquid metallic hydrogen. Uranus and Neptune have rocky cores surrounded by a dense supercritical fluid.",
+                            "score": 12,
+                            "author": "hooch"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Very interesting, but isn't really relevant to the question, as far as I read it.\n\nThe question was, did we previously think that all the planets were terrestrial, like Earth, and if so, at what time in history did our knowledge of the planets shift from them being like Earth, to them being gaseous.",
+                    "score": 15,
+                    "author": "neihuffda",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not really, it depends on how you read the question. Coming at it from a science perspective, it read to me as \"Do we think the gas giants were originally terrestrial like planets and when did they become gaseous?\". From a history of science perspective, it can clearly be read another way though.",
+                            "score": 1,
+                            "author": "Spanky2k",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Tbh it's clumsily written but not really ambiguous.\n\n\"Did we used to think they were rocky?\" \n\nGreat info dump tho, I'm thrilled that you misread it. I want to mine your post history now to see if you've dropped any other gems!",
+                                    "score": 13,
+                                    "author": "killbot0224",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You illustrate that the more you know, the more complicated the answers become as to properly provide the most correct answer and logic, you have to adjust your language in order to provide a concise answer in a \"simple\" question. I really do appreciate your response. It has given me a lot to think, I wish I knew more on the topic but I would assume there's a lot of mathematics, chemistry and physics involved to get a simplified understanding regarding to the complex answer.",
+                                    "score": 1,
+                                    "author": "darklyger64"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you so much for providing all that information. In the third paragraph you mention the dust clumping together, and there is a typo \u201chow you get dust balls hands a bed\u201d, can you tell me what you meant to type, because I\u2019m really interested in early formational stuff.\n\nAlso, I\u2019ve heard this \u201cgas and dust\u201c referred to many times. You describe what the gas is made out of\u2014which I thank you for\u2014but what is the dust composed of? And where does that dust come from?",
+                    "score": 2,
+                    "author": "mrmoe198",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ah, I meant to write 'dust balls under a bed'. :)\n\nDust is basically everything else. All the heavier elements left over from the previous star or stars in the region that went supernova.",
+                            "score": 1,
+                            "author": "Spanky2k",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So any physical elements that could be created in a supernova like carbon and iron and such?",
+                                    "score": 1,
+                                    "author": "mrmoe198"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The dust is *anything* heavier, basically, and is formed from the supernovae of previous stars iirc",
+                            "score": 1,
+                            "author": "killbot0224",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So any physical elements that could be created in a supernova like carbon and iron and such?",
+                                    "score": 1,
+                                    "author": "mrmoe198"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Nothing in your response relates to the question that was asked?",
+                    "score": 7,
+                    "author": "Fishinabowl11"
+                },
+                {
+                    "level": 1,
+                    "comment": "Why does the sun only evaporate it once it becomes an atmosphere and not before?",
+                    "score": 1,
+                    "author": "u8eR",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They are talking about solar wind. It doesn't start until the Sun has gotten enough mass to start fusion, but once the fusion and solar wind starts it will blow away the loose gas not captured by planets.",
+                            "score": 9,
+                            "author": "PhilosopherFLX"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It doesn't. The sun evaporates the gas in the disc pretty quickly after it's formed, over a few million years.",
+                            "score": 1,
+                            "author": "Spanky2k"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You said the gas not captured by planets doesn\u2019t stick around but for a few million years because the Sun \u201cevaporates it away into surrounding space\u201d.\n\nI\u2019m guessing you were speaking plainly for the audience, but I\u2019m curious as to what actually causes this. It\u2019s already gas so it can\u2019t be evaporating away as it\u2019s already evaporated. What\u2019s causing the gas to overcome the force of gravity exerted on it by the forming planets in the disk and causing it to disperse?",
+                    "score": 1,
+                    "author": "ols887",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Solar wind, from the newly fusioning Sun, push it further and further away.",
+                            "score": 4,
+                            "author": "PhilosopherFLX"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So if you were to be able to strip all the gas Jupiter, Saturn etc would be rocky planets just bigger than the earth?",
+                    "score": 1,
+                    "author": "cfp98",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes and no. They likely all started with solid earth like cores about 10 Earth masses in size but whether they still do is a little more murky as the difference in phases types solid-liquid etc get weird under the high pressures involved and there's a fair deal of 'mixing' going on. However, if you could slowly evaporate all the gas off the planet and let it gradually cool then yes, you'd likely have some rocky planets left over.",
+                            "score": 2,
+                            "author": "Spanky2k"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If you strip the gas away the Center is no longer so compressed from Gravitation.",
+                            "score": 1,
+                            "author": "dtagliaferri"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Isn\u2019t there also a relationship between gas giant formation and the liquefaction zone of the solar system? My understanding was that gasses  remained gaseous closer to the sun, but once you get past Mars or the asteroid belt\u2026there isn\u2019t enough energy from the sun to keep a gas gaseous. Gasses dew have a condensation point (bad pun, I know).",
+                    "score": 1,
+                    "author": "Davistele",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think what you're thinking of is the ice-line. Beyond this, it's cold enough for various compounds, in particular water, to condense into basically dust. So the 'dust' density is significantly increased. This does affect how things form, where the mass of the disc lies and how the gas moves etc which all affects planet migration within the gas disc.",
+                            "score": 2,
+                            "author": "Spanky2k"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Hi! This was so informative! I\u2019m genuinely very curious about how this all would look at the very beginning. Is this cloud of gas dense? If earth were dropped into one of these discs, could we see the gas and dust? This is the kind of thing I wish I could just sit in space and watch unfold over the course of millions of years!",
+                    "score": 1,
+                    "author": "Rosegold-Attorney",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There are some good artist's impressions (and radio telescope images of actual discs) on this wikipedia page: https://en.wikipedia.org/wiki/Protoplanetary_disk\n\nI imagine it'd look like a faint haze to human eyes, nothing nearly as bright as the artist's impressions are simply because space is so darned big!",
+                            "score": 1,
+                            "author": "Spanky2k"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes, or at least they assumed they were made of the same elements as earth. There was a period of time where the sun was thought to be rocky too, just with a very thick atmosphere!\n\nBasically, the theory was that all the bodies in the universe should have similar elemental compositions, and since earth was known to be made of silicon, nickel, iron it was thought that the sun &amp; planets should be also. It wasn\u2019t until the early 20th century when Cecilia Payne-Gaposchkin invented astronomical spectroscopy and was able to prove that the sun was mostly hydrogen and helium, and it took years for this to be believed because the mainstream view found it so ridiculous.\n\nOnce it was accepted her discovery was largely forgotten by history and credit was given to men who had initially opposed her work instead.\n\nhttps://en.m.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin\n\nEdit: personally I think this history should be mentioned in high school science classes, similar to how the history of the atomic models are covered at that level. Its an important part of science history that teaches important lessons about how seemingly reasonable assumptions can be wrong &amp; the nature of scientific discovery",
+            "score": 41,
+            "author": "Thunderplant",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wait, we had the Theory of General Relativity *10 years* before we knew the Sun wasn't made of metal!? I know we have the benefit of hindsight, but that seems so ridiculous.",
+                    "score": 9,
+                    "author": "Jack_Krauser",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Until nuclear fusion was discovered, it was assumed the sun had to be burning something somehow.",
+                            "score": 4,
+                            "author": "nwbrown"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "According to the Wikipedia article on gas giants, the term was coined in 1952 by the science fiction writer James Blish and was originally used to refer to all giant planets. However, it is somewhat misleading because most of the matter in these planets is not in gaseous form, but rather in a supercritical fluid state due to the high pressure and temperature. \r  \n\rThe gas giants in our solar system, Jupiter and Saturn, are composed mainly of hydrogen and helium, with a small fraction of heavier elements. They are thought to have a solid core surrounded by layers of metallic and molecular hydrogen, and an outer atmosphere with visible clouds of water and ammonia. \r  \n\rThe gas giants were not always known to be gaseous. In fact, before the invention of telescopes, they were considered to be stars because they were bright and moved across the sky. The first observations of Jupiter's moons by Galileo in 1610 proved that it was a planet and not a star. \r  \n\rThe first evidence that Jupiter and Saturn had thick atmospheres came from spectroscopic observations in the 19th and early 20th centuries, which revealed absorption lines of hydrogen, helium, methane, ammonia and other gases. \r  \n\rHowever, the exact structure and composition of the gas giants remained uncertain until the space probes Pioneer 10 and 11 flew by Jupiter and Saturn in the 1970s, followed by Voyager 1 and 2 in the late 1970s and early 1980s. These missions provided detailed images and measurements of the planets' atmospheres, magnetic fields, rings, moons and internal structure. \r  \n\rSo, to answer your question, the gas giants were originally thought to be terrestrial like Earth until the 17th century, when they were recognized as planets. They were known to be gaseous by the early 20th century, based on spectroscopic observations. Their internal structure and composition were revealed by space probes in the late 20th century.",
+            "score": 8,
+            "author": "amiturri"
+        },
+        {
+            "level": 0,
+            "comment": "No, the gas giants were not originally considered terrestrial like Earth. The French astronomer Pierre-Simon Laplace first proposed the idea that there were giant planets made primarily of gas in the late 18th century. Laplace suggested that these gas giants were formed from the gas and dust left over after the formation of the Sun and that their large size was because they had accreted a lot of this material.\r  \n\r  \nHowever, it was not until the development of telescopes and other astronomical observation techniques in the 20th century that scientists could study the gas giants in more detail and confirm that they were indeed made primarily of gas. The first detailed observations of the gas giants were made by the Voyager 1 and Voyager 2 spacecraft in the late 1970s and early 1980s, which provided detailed images and data about the planets' atmospheres, structures, and compositions.\r  \n\r  \nToday, scientists believe that the gas giants - Jupiter, Saturn, Uranus, and Neptune - are composed mostly of hydrogen and helium gas, with smaller amounts of other gases and rocky materials in their cores. Their atmospheres are characterized by colorful cloud bands, swirling storms, and other dynamic weather patterns.",
+            "score": 2,
+            "author": "Healthy_Mycologist37"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 19,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -1,
+            "author": "[deleted]"
+        }
+    ]
+}

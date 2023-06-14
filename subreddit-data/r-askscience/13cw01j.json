@@ -1,0 +1,795 @@
+{
+    "id": "13cw01j",
+    "score": 1665,
+    "title": "Why do satellites need to thrust to maintain orbit?",
+    "author": "benjamin051000",
+    "date": 1683646364.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13cw01j",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I was reading that Starlink satellites are apparently low enough that if they malfunction, they will naturally deorbit. As an avid KSP player, I am not familiar with this. Is it true that satellites must provide some thrust to maintain their orbits? Why? Thanks!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The main reason is because the Earth's atmosphere doesn't just \"end\" at any place, but instead gets thinner and thinner the higher up you get (it can be described by an exponential decay function quite accurately, actually). \n\nThus, all satellites orbiting the Earth will eventually need some station keeping, but the lower you are (like the ISS or Starlink) the more atmosphere there still is, and thus a little bit of drag slowing you down. \n\nAt the altitude of the ISS, the atmosphere is about 3E-10% (or 0.0000000003%) as thick as it is at the surface of the Earth which is enough for the [ISS to lose about 100 m a day of altitude due to atmospheric drag, and thus has to be re-boosted periodically](https://www.esa.int/Education/Space_In_Bytes/ATV_a_very_special_delivery_-_Lesson_notes).",
+            "score": 2304,
+            "author": "Weed_O_Whirler",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the main reason, but there are other factors that have a larger or smaller impact depending on the context. \n\nSatellites orbiting the moon have to make corrections to their orbit even though the moon has practically no atmosphere because the mass of the moon is not evenly distributed. There are also effects due to the gravity of other planets and solar radiation pressure that might perturb a satellites orbit.\n\nMost satellites are in Low Earth Orbit (LEO). The effects beside those from the atmosphere are basically negligible in that case.",
+                    "score": 927,
+                    "author": "SmithySmalls",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Solar activity heats Earth's atmosphere, making it expand higher above the planet.  This worsens the drag on Starlinks and such--one recent Starlink mission's sats all dropped out of orbit due to the increased drag.  We are nearing the high point of the present solar cycle.",
+                            "score": 434,
+                            "author": "darrellbear",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That was due to a solar flare, Is that accurate to describe that as heating the atmosphere?",
+                                    "score": 109,
+                                    "author": "Teleke",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "it's a bit of an oversimplification, but it's not \"wrong\". it is certainly true to say that solar activity (including flares) tends to increase drag, greatly, in the low-earth-orbit regime.\n\n(by factors of 2x-10x in the case of flares, so it's a very, very noticeable effect when it happens. but indeed even longer-term solar activity other than flares can also boost drag on the order of 1.1x-2x.)",
+                                            "score": 111,
+                                            "author": "Bunslow",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Factors of 2-10x are a bit high. This one in particular was 1.2-1.3 and it was a big one.\n\nBut I'm wondering how much it is also material from the flare itself, vs just \"heating up the atmosphere\".\n\nhttps://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022SW003330",
+                                                    "score": 21,
+                                                    "author": "Teleke"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Solar flares are part of solar activity (not sure if there are other components). They release radiation (and sometimes particles) which hits the atmosphere and thereby heat it.\n\nEdit: corrected",
+                                            "score": 46,
+                                            "author": "daBoetz",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Correction: Flares emit x-rays and extreme UV rays, which heat the outer atmosphere. And sometimes energetic particles, but not always",
+                                                    "score": 24,
+                                                    "author": "Falconhaxx"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Group 4-7, launched in February last year, 38 reentered the atmosphere while 11 managed to stay in orbit. SpaceX deploys them in an extremely low orbit (270 km in this case). That means they can launch more per rocket, and it also means satellites that show issues in space will deorbit very quickly on their own.\n\nhttps://planet4589.org/space/con/star/spl38/index.html",
+                                    "score": 14,
+                                    "author": "mfb-"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The root cause of the loss was actually not the increased drag and that didn't happen recently. That happened in February 2022. SpaceX lost track of them due to unpredictable drag and was not able to communicate with them. Since that time they implemented VHF (140 MHz) beacons that are easier to communicate with. The original beacons used frequencies around 12 GHz and required a 5 m directional antenna that had to be pointed directly at a satellite to receive signal.",
+                                    "score": 19,
+                                    "author": "ziptested"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I believe this affected a batch of newly-launched satellites (only a few days after launch) which weren't at that moment at the full operational height/orbit.",
+                                    "score": 8,
+                                    "author": "Prestigious_Carpet29",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Right,  my understanding is they purposely launch them low and they need to reach their intended orbit on their own.  This means any defective ones fall out of orbit much more quickly",
+                                            "score": 13,
+                                            "author": "wgc123",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, the mission had launched just a day or so beforehand.  They lost every sat from the mission, IIRC.",
+                                            "score": 4,
+                                            "author": "darrellbear"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "J2 effect and other also cause orbit deviations ober time, thrusters and fuel must be present for on board station keeping. \n\nIt might or might not orbit because of this, I just want to add it because this typically also is a driving requirement in spacecraft design.",
+                            "score": 9,
+                            "author": "Fpvmeister",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, this is an effect from the uneven distribution of Earth's mass. It's less attention grabbing than the moon example, but a similar idea. And yes, it does affect the orbit to the extent that satellites need to correct for it every now and then.\n\nSomething else I didn't mention is just errors in the final orbit of a satellite. A satellite may need to be in geostationary orbit so that it does not move relative to the ground and appears to be fixed in the sky. If the satellite has a slightly higher or lower orbit it will slowly drift in the sky over time until it appears to be in a totally different part of the sky. This can occur even if there are no other effects perturbing the orbit. So that's another reason a satellite would need thrusters for station keeping.",
+                                    "score": 4,
+                                    "author": "SmithySmalls"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Does curved spacetime play any role in fiddling with orbits, or is it negligible compared to trace atmosphere and unevenly distributed mass?",
+                            "score": 2,
+                            "author": "ThatLeviathan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Negligible, although incredibly precise [systems like GPS](https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System#Relativity) do have to account for it with regards to timing.",
+                                    "score": 12,
+                                    "author": "old_sellsword",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; the mass of the moon is not evenly distributed\n\nThe moon isn't round?",
+                            "score": 2,
+                            "author": "Hinote21",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It\u2019s actually [more round than Earth](https://en.wikipedia.org/wiki/Nodal_precession), but the mass of the Moon isn\u2019t evenly distributed internally. In terms of the gravitational pull, you can think of it as being really lumpy and that throws most low orbits off.",
+                                    "score": 23,
+                                    "author": "old_sellsword"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's pretty round overall but it doesn't have a perfectly spherical mass distribution.\n\nNeither does Earth, but it's not as bad as for the Moon.",
+                                    "score": 5,
+                                    "author": "mfb-"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "There are satelites orbiting the moon? Why?",
+                            "score": 1,
+                            "author": "kvaks",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "To observe the Moon, mainly. Sometimes missions orbit it in preparation for a landing. [Wikipedia has a list](https://en.wikipedia.org/wiki/List_of_missions_to_the_Moon).",
+                                    "score": 13,
+                                    "author": "mfb-"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Keep tabs on it\n\nBut seriously:\nMostly for mapping the surface, but we're also sending since for communication with the lunar missions",
+                                    "score": 7,
+                                    "author": "SlickMcFav0rit3"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This.  To add, in Kerbal Space Program, the atmosphere gets thinner with height and disappears completely at (if I remember right) 80 km altitude.  As mentioned above, the real world ain't like that.",
+                    "score": 225,
+                    "author": "agate_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yup. That makes sense",
+                            "score": 73,
+                            "author": "benjamin051000",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Here are some neat graphs of ISS altitude over time.  You can see it decays steadily between periods of boost activity.  At times it apparently even \"de-boosts\" to intentionally reduce altitude.\n\nhttps://space.stackexchange.com/questions/50033/what-are-iss-orbits-sudden-falls",
+                                    "score": 37,
+                                    "author": "Calvert4096",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I found this relevant infographic to be very interesting. https://www.flickr.com/photos/ulalaunch/51267101942\n\nIt lists the different general timelines for orbital decay by altitude.",
+                                            "score": 25,
+                                            "author": "FountainsOfFluids"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "That's a great graph. It's cool that we could essentially overload the shuttle and lower iss to compensate for the difference in potential altitude possible.",
+                                            "score": 3,
+                                            "author": "informative_mammal"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Sounds like you've understood this already but for anyone else, imagine putting a craft in a 65km orbit in ksp which is below the atmosphere limit of 70km. You will eventually slow down and return kerbin.",
+                                    "score": 20,
+                                    "author": "dboi88",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It is worth noting that this is likely a concession to both gameplay and computational requirements in the case of KSP. On the gameplay side you have the competing duo of people getting frustrated with slowly decaying orbits and the fact that for some orbits the time before it's noticeable to the eye is probably longer than most people playing KSP would ever see. \n\nOn the requirements side of things, it's frankly amazing it can do all of the calculations it already does at a playable pace and run with the system specs it came out with. I would hazard a guess that they would prioritize smoother simulation of gravity over a smoother atmosphere were they to consider adding it in.\n\nKSP is awesome and does a lot far better than most games but it has a lot of gaps.",
+                            "score": 23,
+                            "author": "Stlaind",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "70km! So my question is when does the ethereal \"your in space now\" music start playing in real life? Do they just gradually increase the volume or something?",
+                            "score": 49,
+                            "author": "GoBuffaloes",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; So my question is when does the ethereal \"your in space now\" music start playing in real life?\n\nLegally, it is defined as the von K\u00e1rm\u00e1n line, 100 km / 330k' above mean sea level.",
+                                    "score": 30,
+                                    "author": "Jusfiq",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\u201cLegally\u201d isn\u2019t really accurate, the [FAI](https://en.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_A%C3%A9ronautique_Internationale) defines the edge of space as 100 km but the U.S. Air Force has defined it as 50 miles (~80 km) since the X-15 program. There is no single agreed upon definition.\n\nThere has been [recent debate that 80 km is more appropriate.](https://arxiv.org/abs/1807.07894)",
+                                            "score": 11,
+                                            "author": "old_sellsword"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "that line is more about when aerodynamic flying becomes impossible, rather than when orbit becomes possible.",
+                                                    "score": 6,
+                                                    "author": "Anderopolis",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Since Kerbin's atmosphere is based on the US Standard Atmosphere with the height scale reduced by 20%, the equivalent altitude on Earth to 70 km on Kerbin would be 87.5 km ASL",
+                                    "score": 10,
+                                    "author": "zekromNLR",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "70km, but yeah in KSP it's a hard line between atmosphere and no atmosphere.",
+                            "score": 5,
+                            "author": "LetsGo_Smokes",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Worth noting that geosynchronous orbit is 35,786 km altitude, and so a lot of the kind of satellites that need boosting would also need boosting in Kerbal.  Most Kerbal players are just putting their stations and things way higher up than a lot of our current satellites are.",
+                            "score": 4,
+                            "author": "froggerslogger",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Geosynch orbits are at 36,000 **kilometers**. Space in Kerbin starts at 70,000 **meters**, or 70 kilometers. Low orbiting IRL satellites and stations like Starlink and the ISS typically orbit at altitudes of around 400 or 500km, far above the lower boundary of space in KSP.",
+                                    "score": 7,
+                                    "author": "TheFlawlessCassandra",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So what happens in KSP if you try to orbit below 80 km? Do they simulate drag?",
+                            "score": 1,
+                            "author": "florinandrei",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, the drag depends on altitude, and you can maybe make one or two full orbits in the upper atmosphere before you lose energy and re-enter.  But above a certain altitude, the atmosphere disappears completely, so there's no slow decay.  The game engine needs to ignore aerodynamics to be able to efficiently compute orbits over months and years.",
+                                    "score": 12,
+                                    "author": "agate_"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Drag increases with density which increases the closer you get to the surface, but instead of fading and never getting to zero as altitude increases, it cuts to zero above 70km. \n\nMeaning the orbit of any satellite with a periapsis below 70km will decay (will decay faster the lower the altitude), the orbit of a satellite with a periapsis above 70km will never decay.",
+                                    "score": 3,
+                                    "author": "ehque"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;Thus, all satellites orbiting the Earth will eventually need some station keeping\n\nAtmospheric drag is really only an issue for spacecraft in low Earth orbit (LEO: &lt;2,000 km altitude). Above ~1,000 km, drag will take at least centuries to millenia to deorbit a satellite. In much higher orbits such as geostationary (~36,000 km) and the medium Earth orbits (MEO) of GPS (~20,000 km), atmospheric drag is entirely negligible.\n\nThese higher orbiting satellites still require regular station keeping so they stay in their intended orbits, because of gravitational perturbations caused by the Moon and Sun, and the not-perfectly-spherical Earth (and to a much lesser degree, radiation pressure from solar wind and sunlight).",
+                    "score": 94,
+                    "author": "OlympusMons94",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Good point. I was pretty focused on the LEO orbits. One thing to point out for MEO and higher altitudes, most of their station keeping is to keep them in the exact orbits we want, not to keep them from de-orbiting altogether.",
+                            "score": 27,
+                            "author": "Weed_O_Whirler"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "One important reason that the ISS flies at 400 km. is that this altitude is \"self cleaning\" from space garbage. Any space garbage also looses altitude at the same rate as the ISS at 400 km. So a bolt or broken rocket booster, ie. some junk that is in a counter orbit at the ISS's elevation level could hit the ISS with a tremendous amount of energy due to the 28,000 kilometers per hour velocity of each object. At 400 km. the garbage does not stay at that level for long as it is being pulled to a lower orbit due to the slight drag from the molecules of air. Eventually the junk burns up in the atmosphere.",
+                    "score": 9,
+                    "author": "JimmyTheDog",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Any space garbage also looses altitude at the same rate as the ISS at 400 km. \n\nActually, I would think the ISS loses altitude faster than most any other satellite or piece of space junk simply because it's mostly empty space full of air.  Drag is proportional to cross sectional area, but the rate of deceleration (and thus altitude loss) depends on mass.  The ISS has a much lower mass per unit of cross sectional area than a solid object like a bolt, paint chip, or unmanned  satellite. \n\nThink about dropping a ping pong ball and a golf ball out of your car window while driving down the highway.  Both have about the same cross sectional area, but as the ping pong ball is so much lighter, it's going to slow down way, way faster.",
+                            "score": 8,
+                            "author": "stickmanDave",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I fully agree with you, prolly there is a full science about decaying obits of space junk based whole on mass and area.  \n\nA quote I found and source.\n\nSome work we did on the ISS orbital debris team indicated that increasing the ISS altitude by 10 km increased the orbital debris flux by 20%, a huge amount for such a small altitude change.\n\n\nhttps://space.stackexchange.com/questions/30301/does-the-iss-still-need-to-be-at-around-400-km#:~:text=first%20mentions%20that%20there%20are,Space%20Shuttle%20launches%20being%20expensive.",
+                                    "score": 7,
+                                    "author": "JimmyTheDog"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; enough for the ISS to lose about 100 m a day of altitude due to atmospheric drag\n\nWow, that is a lot more than I expected.  A kilometer lost every 10 days is substantial.  I wonder how much fuel they have to burn to maintain their orbit.",
+                    "score": 5,
+                    "author": "gerwen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The ESA info in that link talks about a 30-min boost burn to raise ISS 40-50km. I had no idea the orbit has that much oscillation in it. To tell the truth I'm having a hard time buying it and I will dig deeper. No one ever talks much about it to the public.",
+                            "score": 3,
+                            "author": "SeenSoManyThings",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[Historical altitude tracks](https://qph.cf2.quoracdn.net/main-qimg-27def5615e4115be12d3d89cf6e0d610) are public, and it does look like it moves around quite a lot",
+                                    "score": 10,
+                                    "author": "bluesam3",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Sure does! Thanks for the link. Media usually makes a big deal out of orbit adjstments to avoid debris, doesn't give much attention to orbital maintenance.",
+                                            "score": 1,
+                                            "author": "SeenSoManyThings"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Where are the thrusters on the ISS?",
+                    "score": 3,
+                    "author": "carmium",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "On the visiting cargo ships usually. They can give it a boost before they leave.",
+                            "score": 7,
+                            "author": "alltherobots",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That makes sense. Believe it or not, I built two models of the ISS (much-upgraded kits for commercial customers), and it occurred to me that I didn't recall any thrusters being part of the picture! Thanks for the answer.",
+                                    "score": 5,
+                                    "author": "carmium",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "There are thrusters on the back of Zvezda, but since they are only certified for a certain number of firing cycles, they're rarely used.",
+                                            "score": 3,
+                                            "author": "yellowstone10",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Which is nice since most of the space trash will eventually fall to earth",
+                    "score": 3,
+                    "author": "navywater"
+                },
+                {
+                    "level": 1,
+                    "comment": "Does this mean that the moon is gradually falling towards earth? Since it has no thrusters to keep it in orbit? If yes, can the exact time it will take for the collision be calculated?",
+                    "score": 9,
+                    "author": "ThatHelpfulNerd",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The Moon is not doing station keeping, so it's orbit is changing- but not all station keeping is to stop from de-orbiting! In fact, the Moon is slowly moving away from the Earth. This is actually due to a different reason, as the tidal bulge from the Earth gives a slight tug to the Moon, putting it into a slightly higher orbit, and slowing it down. ~~as the energy in the Moon's orbit is slowly being sapped away by tidal forces (the energy to make the tides on Earth come from the Moon's orbit)~~. The Moon is getting about 4 cm (or 1.5 inches) further away from the Earth a year.\n\n**Edit**: corrected due to someone below pointing out my error. Sorry\n\n[Source here](https://www.bbc.com/news/science-environment-12311119)",
+                            "score": 39,
+                            "author": "Weed_O_Whirler",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The energy of the *Earth's rotation* is slowly being sapped away by the moon via tidal forces. \n\nIf the moon was losing energy, it would get closer, not further away.",
+                                    "score": 47,
+                                    "author": "alukyane",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You are correct, I got my orbital parameters confused. The Moon is gaining energy from the tides, thus slowing down and moving up.",
+                                            "score": 13,
+                                            "author": "Weed_O_Whirler",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "So eventually the moon will leave the gravitational influence of the earth, right?",
+                                                    "score": 3,
+                                                    "author": "MFAFuckedMe",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "No, eventually the earth will become tidally locked to the moon and the orbit will stabilize, barring any external forces",
+                                                            "score": 15,
+                                                            "author": "stoplightrave",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Isn\u2019t the moon already tidally locked to the Earth?",
+                                                                    "score": 3,
+                                                                    "author": "rayschoon",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Yes but the Earth isn\u2019t tidally locked to the moon, yet. \n\nWhen that happens, part of the Earth will always face the moon, just like how currently the near side of the moon always faces the Earth.",
+                                                                            "score": 22,
+                                                                            "author": "alltherobots",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "When will that happen ? And when we get to that time, does that mean one side of earth will have higher sea level?",
+                                                                                    "score": 2,
+                                                                                    "author": "chocoolate",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "It is, but the earth isn't yet tidally locked to the moon. Eventually the moon's orbit will match the earth's rotation, so will always appear in the same place in the sky (except for a slight wobble, I believe).\n\nEdit: except this would happen so far in the future that both the earth and moon will most likely have been vaporised by the sun becoming a red giant.",
+                                                                            "score": 10,
+                                                                            "author": "King_Toco",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "The red-giant Sun will consume the Earth-Moon system before they enter a mutually locked state.",
+                                                                                    "score": 9,
+                                                                                    "author": "the_fungible_man"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Three answers to this question, depending on how you define the parameters of the question.\n\nIf you think about the earth and moon in isolation, then no, because earth's influence is infinite.\n\nIf you think about the solar system as it actually exists, then no, because the sun will swallow the earth and moon before that happens.\n\nIf you think about the solar system but ignore that the sun will turn into a giant, then yes, the moon would eventually move far enough away that its orbit would be perturbed by the sun and Jupiter, etc. and it would leave earth orbit.",
+                                                            "score": 3,
+                                                            "author": "I__Know__Stuff"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I did some napkin math:\n\nour Sun will die in aprox 5.000.000.000 years, times 4cm, gives you 200.000 km. Currently, the moon is 384.400 km away from us, so it will be a lot further away ( a lot! it will be visibly smaller in the sky compared to today). 584.400 km, Very cool! \n\nSome context for this number:\n\n1 AU is the distance from the Sun to Earth, which is 149.600.000 km.\nThe next planet over is about 40.000.000 km sunward, or about 80.000.000 km. \nJWST is about 1.500.000 km away from earth\n\nGiven that context, it's probably not enough to eventually escape Earth orbit before the sun E N G U L F S    E V E R Y T H I N G, hahaha\n\nPlus, this theorizes stable conditions, which might not be accurate or useful",
+                                                            "score": 2,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Why is it behaving the opposite of satellites? Is it because of it's comparatively huge mass?\n\n&gt;as the energy in the Moon's orbit is slowly being sapped away by tidal forces\n\nWouldn't this make it fall *towards* earth? I am confused now.",
+                                    "score": 7,
+                                    "author": "ThatHelpfulNerd",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Sorry, I corrected above. \n\nThe Moon is gaining energy from the tides. I got my orbital parameters screwed up when I didn't slow down to think. The Moon is gaining energy, putting it into a higher orbit, and slowing it down.",
+                                            "score": 9,
+                                            "author": "Weed_O_Whirler"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "The bake-your-noodle thing is that larger orbits are slower. That means they have less kinetic energy, but higher gravitational potential energy.\n\nWhat's actually happening is that the tides, effectively, move more mass closer to the moon as it passes overhead. This increases the gravitational force between the two. However, since the Earth rotates much faster than the moon orbits, the Earth basically pulls the moon slightly faster as it rotates. This causes the moon to slightly increase in orbital distance, trading velocity for height. Since this process is more or less constant, we don't change the ellipticalness of the orbit, we just end up adding to the height, at the expense of a little bit of rotational energy from the Earth.\n\nTL;DR - water bulges towards the moon, slightly increasing the gravitational attraction to the moon. Earth pulls the moon faster as it rotates, Earth slows down slightly. Due to orbital mechanics, moon slows down by gaining a slightly higher orbit.",
+                                            "score": 6,
+                                            "author": "Teleke",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I always think about orbital altitude and speed as a see-saw. When one goes up, the other must go down.",
+                                                    "score": 3,
+                                                    "author": "jlew715"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Mostly it's that it's a really long way away: for low-altitude satellites, atmospheric drag is the biggest factor throwing off their orbits, but that's irrelevant out where the orbit is.",
+                                            "score": 1,
+                                            "author": "bluesam3"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's actually other way around, moon is moving away. But if I remember correctly sun will fry us all at that point.",
+                            "score": 3,
+                            "author": "MutenCath"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So is it only a matter of time for all current space debris/junk to fall into the atmosphere and burn up?",
+                    "score": 2,
+                    "author": "ribkicker4",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It really depends on the altitude. Rough guideline: At 500 km it takes a few years, every 200 km beyond that it takes 10 times as long (few decades for 700 km, few centuries for 900 km). Beyond low Earth orbit (above 2000 km) atmospheric drag is completely negligible. Geostationary satellites will keep orbiting the Earth for millions of years or even longer, although they won't stay in their current well-controlled orbit.",
+                            "score": 5,
+                            "author": "mfb-",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Awesome, thanks!",
+                                    "score": 2,
+                                    "author": "ribkicker4"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No, James Webb is super, super, super far away. Even by the time you get to Geosynchronous Orbit drag is gone. The station keeping that they need is due to Earth not being a sphere, third body gravitational effects, and solar radiation pressure.",
+                            "score": 6,
+                            "author": "GWJYonder"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "With do many minor factors how does the moon and other planetary orbits remain so stable?",
+                    "score": 0,
+                    "author": "blackkettle",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The Moons orbit is not exactly stable. It moves around quite a bit. It's just that no one cares, because we don't use it to broadcast tv from or to image the Earth or anything. \n\nAlso because it's massive, the deviations are of course much (multiple orders of magnitude) slower. But it definitely does wobble and drift.",
+                            "score": 3,
+                            "author": "dabenu",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "For any altitude, there's one speed that leads to a circular orbit. This makes it seem like getting to orbit requires a very precise control of altitude and speed, or you'll either fall back to Earth or fly away infinitely far. But that's not how it works.\n\nIf you're going a little too slow, your path will deviate from a circle and approach Earth, speeding up as it does so, like any falling object. By the time you reach the opposite side of Earth, you will have dropped so low, and sped up so much, that you're now going faster than the \"circular orbit speed\" for that altitude. As a result, your path starts climbing away from Earth, and you slow down, just like a ball thrown upward. In the absence of atmospheric drag, you'll end up at the same altitude and speed where you started, and your orbit will form an ellipse whose low end (perigee) is lower than your starting altitude.\n\nSimilarly, if you're going too fast for a circular orbit, you'll travel in an ellipse whose high point (apogee) is higher than your starting altitude. Of course there are limits -- if your perigee is low enough you'll reenter, and if your speed is fast enough (double the circular orbit speed, IIRC) you will leave orbit and travel to deep space. But precise control isn't needed to get \"into orbit\" -- it's only needed if you care exactly where your orbit goes.",
+                            "score": 3,
+                            "author": "extra2002",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Much like a lightbulb, which experiences the most stress being turned on, does \"periodic thrust\" on the ISS mean turning the thrusters on (being a point of failure) every once in a while, or are they always turned on and running at a low power level?",
+                    "score": 1,
+                    "author": "Charrikayu",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "why exponential rather than inverse square?",
+                    "score": 1,
+                    "author": "MohKohn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm assuming you're guessing inverse square because of the inverse square law of gravity. But gravity actually only plays a small role in atmospheric density. In fact, the force of gravity is about 88% at the orbital altitude of the ISS as it is on the surface of the Earth. This is because the distance in the gravity equation is based on distance from the center of the Earth, not distance from surface. \n\nInstead, atmospheric pressure is mainly based on the weight of the atmosphere above you squishing you down. So, the further down you go, the more weight there is. [This easy to read paper explains exactly how you get the exponential](https://people.clas.ufl.edu/kees/files/AtmosphericPressure.pdf).",
+                            "score": 4,
+                            "author": "Weed_O_Whirler",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; This easy to read paper explains exactly how you get the exponential\n\nNote that this paper assumes constant gravitational acceleration with height. This is a simplifying assumption that makes the math easier. And as you indicated, at the height of the ISS gravity is still 88% of gravity at sea level. In fact, I would not pay much attention to the deviation from reality that is created by this simplifying assumption, because the assumption of constant temperature almost certainly creates a larger deviation.",
+                                    "score": 2,
+                                    "author": "nhammen"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Satellites above 1000 miles are effectively up there forever or such a long decay time it might as well be forever.",
+                    "score": 1,
+                    "author": "UnamedStreamNumber9"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As already mentioned, the primary cause of Satellites deorbiting is atmospheric drag. Absent any atmosphere (such as when orbiting the moon) you will still have to contend with gravitational anomalies pulling you off course. For example, whilst we usually model Planetoids like the Moon as perfect spheres, they will always have irregularities that make their gravitational field uneven. Something as simple as flying over a mountain can cause you to be knocked off course.\n\nEven smaller effects will be due to the gravity of distant planets like Jupiter, and also the solar wind - which is strong enough to make a sail out of if your satellite is particularly small.",
+            "score": 73,
+            "author": "Lashb1ade",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "And it doesn't really matter in our scales,  but empty space isn't completely empty so you have to think about space drag,  atleast when your going interstellar",
+                    "score": 16,
+                    "author": "AAA515"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 72,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "To add to what others are saying: the choice of low orbit and the need for thrusters can be an intentional design choice, so that old/bricked satellites can automatically deorbit rather than becoming space junk.",
+            "score": 109,
+            "author": "alukyane",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 8,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "indefinite. at some random day, two satellites will simply crash. due to the high speed, the amount of damage is extremely high. both satelites will burst into thousands of small, but very fast objects of unknown orbit. this increases the chance for crash of any of those objects with an intact satellite, which then keeps on doing so, until the sky is full of small objects, that make it impossible to get anything man made into space unharmed. like microplastic gets smaller and smaller because of friction in the ocean, those objects get smaller and smaller too. and since each part of any satellite has the chance, to sray up there indefinite, no satellite will go down completely, once the point of no return is reached.\n\nceterum censeo \"unit libertatem\" esse delendam.",
+                            "score": 2,
+                            "author": "mitom2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Depends. Within 1000-2000 kilometers of earth, various forms of drag exist -- the closer down, the more drag. A 2000 km orbit is stable on the order of a few thousand years or so.\n\nA 10,000km orbit, or a 30,000km orbit, should be stable for hundreds of thousands or millions of years respectively. Obviously the Moon will be a lot more stable than that. (Altho here, \"stable\" is relative, and I only meant as far as \"staying in orbit\". A commercial comms sat, in geostationary orbit at 36,000km, requires station-keeping fuel to stay at precisely the right spot, otherwise it slowly drifts from the perfect spot over months and years. But it will stay in orbit for millions of years.)\n\nOn other hand, some orbits aren't \"orbits\" at all in the Keplerian sense: orbits in the vicinity of a Lagrange point, for example, are in fact only pseudo orbits; near L1, L2, and L3 in particular, a body would drift away from the L point over the course of mere months. That's why JWST, among others, requires a substantial load of station-keeping fuel as well. But this has nothing to do with drag or with remaining in orbit around the primary body, only to do with staying  near the relative L point.",
+            "score": 19,
+            "author": "Bunslow"
+        },
+        {
+            "level": 0,
+            "comment": "Objects that orbit are still falling toward the Earth, they are just also moving sideways very fast. As they get closer to the surface, the surface curves away from them. You need to be travelling sideways very fast to do this. \n\nIf you collide with anything, even a little bit of air, you slow down your sideways speed. This in turn allows you to get closer to the surface. This then allows you to run into more air which, in turn slows you down, etc. \n\nTo prevent this, you need to add more speed keep moving sideways fast enough. This is accomplished by periodic, controlled bursts of thrust.",
+            "score": 12,
+            "author": "docmoc_pp",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "They are low enough within the earth gravitational field that the atmosphere produces enough drag over enough time that they will eventually fall out of orbit\n\nEven if it is incredibly thin compared to down here, the atmosphere goes far out. And the tiny amount of friction it produces with the satellites is enough that over time, the energy lost to friction (energy that used to be momentum) means they deorbit eventually",
+            "score": 6,
+            "author": "Stercore_"
+        },
+        {
+            "level": 0,
+            "comment": "A lot of posts are focusing on LEO satellites and the fact that satellites can naturally deorbit due to atmospheric drag when they're close to earth.\n\nHEO/MEO/GEO satellites also need to perform station keeping, and the reason is that there are many factors influencing their orbit that add up over time, including precession and nutation. But these satellites are still designed to do a specific job and as their orbit 'drifts' due to various factors, they need to do station keeping burns to keep them near the orbital regime they're designed for.\n\nMolniya orbits are a type of HEO (Highly Elliptical Orbit) where the perigee is likely in LEO altitudes while the apogee may be even further out than the GEO belt. HEO orbits are impacted by atmospheric drag just like LEO satellites, but on a more periodic basis. These kinds of orbits are often used for comms satellites and so not only are they station keeping to maintain orbital altitude to avoid crashing into earth, but they're also maintaining their relative resonance with other satellites in the same constellation.\n\nGPS satellites are a type of MEO satellite and they also do station keeping, as is [explained here](https://space.stackexchange.com/questions/30752/do-operating-gps-satellites-ever-make-orbital-maneuvers-for-station-keeping). The idea of a repeating ground track is important not only for GPS satellites but also many other types of satellites. If a mission can create a detailed plan for 'n' number of orbits, and every 'n' number of orbits will trace the exact same ground track as the previous 'n' orbits and the next 'n' orbits, then its easier to do mission planning. \n\nGeostationary satellites also do station keeping that's on the order of 50 m/s delta-V per year, and they do it so that they can maintain a relatively constant position relative to the surface of earth. Otherwise their orbital plane would precess relative to earth and the object you put above one part of the earth would eventually be above a different part. There's also a change in inclination that happens over time. So even though atmopsheric drag is absolutely negligible at GEO altitudes, they need to do station keeping burns to make sure that they stay in relatively the same place above earth.",
+            "score": 4,
+            "author": "rhazux"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 24,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 21,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 12,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 3,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 3,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As others have said, most satellites orbit at an altitude where they are essentially in space. However, the Earth\u2019s atmosphere doesn\u2019t just end a certain distance above the surface; instead it wavers thinner and thinner until it is indistinguishable from the space around it. At the altitude these satellites orbit at, There is still an extremely thin atmosphere. As such, the satellites collide with more particles and slowly decelerate, which causes the effect to snowball as the orbit gets smaller. In order to stop this, we must intermittently apply thrust to compensate for the loss in angular momentum around the planet so that the orbital distance can be maintained.",
+            "score": 7,
+            "author": "ddreftrgrg"
+        },
+        {
+            "level": 0,
+            "comment": "Short answer, thrust is required for prolonged orbit. \n\nHave you ever seen one of these [rolling coin donation bins](https://youtu.be/XTipCQxJ6Ak)?\n\nThe coins start off with a boost of energy as they fall down the tiny ramp, which allows them to orbit and avoid falling into the center of the funnel. Unfortunately, friction gradually reduces the tangential velocity of the coins, and they eventually fall, because they have no way to gain additional thrust.\n\nThe curved funnel can be a simplified analogy for gravity pulling a satellite towards ground, while the entry ramp represents the entry into orbit, and friction against the plastic is analogous to air resistance against the satellite.\n\nThe air resistance gradually slows the satellite, so to maintain orbit you need to periodically add thrust until eventually the fuel is exhausted and it can no longer escape Earth's gravitational pull.\n\nIn the coin analogy, there are a few things you'd need to do to allow a coin to spin longer without falling. You could accelerate the coin to make up for the energy lost to friction. You could eliminate friction so it doesn't slow down. And you could start the coin higher up and farther from the bottom, so that it feels less pull towards the center.\n\nFor a satellite, that's adding thrust periodically, orbiting at an altitude with thinner atmosphere, or orbiting farther away where gravity is weaker. But gravity is also what maintains your round orbit, so you can't escape Earth's gravity completely. So you pick an orbit with sufficient gravitational pull, balanced with low enough air resistance that you don't burn your fuel too quickly.",
+            "score": 11,
+            "author": "kagamiseki",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 2,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There's also a really cool effect that applies to satellites which need to point in a direction other than the centre of the earth. Consider a really long, tube-like satellite with a centre of mass (where gravity appears to act through) right in the middle. Consider that one end will be slightly closer to earth than the other, and hence will experience a slightly larger gravitational force. An object will always rotate about its centre of mass (more accurately its centre of inertia), and usually in a constant gravitational field, this automatically means the gravitational force either side of the centre of mass is equal. Here however, one half of its mass will appear to be dragged by earth with more force than the other, creating a rotation. To correct this, fuel is needed. Note that this is independent of shape/volume, but it's easier to think about with something that's long, as the effect is exaggerated.\n\nIf you fancy looking it up, key terms like 'gravitational torque' and 'gravitational gradient' may be useful.",
+            "score": 2,
+            "author": "El_Pez_Perro_Hombre"
+        },
+        {
+            "level": 0,
+            "comment": "A caveat to what others have said is that you don't always need thrust to maintain orbit (obviously since the earth doesn't need thrusters to stay in orbit around the sun).  Once you get high enough, the atmosphere is so thin that your orbit could be stable for millions of years.\n\n(Yes, I know that technically planetary orbits aren't stable and they can migrate around, but I was assuming we weren't talking about those kinds of time scales)",
+            "score": 3,
+            "author": "limacharley"
+        }
+    ]
+}

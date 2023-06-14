@@ -1,0 +1,67 @@
+{
+    "id": "13m7n4p",
+    "score": 14,
+    "title": "What is the difference between Critical, Supercritical, Prompt-Critical, and Prompt-Supercritical in nuclear physics?",
+    "author": "CTH2004",
+    "date": 1684530082.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13m7n4p",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "So, I saw recently something called \"prompt-critical\". Someone used it the same as critical. However, when I looked it up, I found that it was different, but I couldn't find what the difference was. It then mentioned Prompt-supercriticality.\n\nSo, what is the difference between Critical and Prompt-Critical\n\nAnd what is the difference between Supercritical and Prompt-Supercritical\n\nFinally, what is the difference between Prompt-Critical and Prompt-Supercritical?\n\n&amp;#x200B;\n\nThanks in advance!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Most of the neutrons emitted as a result of a fission reaction are emitted *promptly*, as a direct result of the fission reaction. However a small fraction of them (\u03b2) are emitted later, due to subsequent decays of the fission products. These are called *delayed* neutrons.\n\n\"Critical\" and \"supercritical\" just refer to whether the neutron population stays constant with time (critical), or grows exponentially (supercritical).\n\n\"Prompt critical\" is the point where the chain reaction can be sustained using the prompt neutrons alone (the delayed neutrons are \"extra\" at that point). That's important because the prompt neutrons are emitted on a much shorter timescale than the delayed neutrons, so the exponential growth of the neutron population can happen much faster.\n\nSee Figure 1.1 [here](https://core.ac.uk/download/pdf/29175006.pdf) for reference.",
+            "score": 16,
+            "author": "RobusEtCeleritas",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "neat! But, if prompt critical means that you have a self-sustaining reaction without needing the delayed neutrons, does that mean a prompt-critical reaction is almost always supercritical, or requiring a lot more neutron absorbers to stay critical?",
+                    "score": 3,
+                    "author": "CTH2004",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;does that mean a prompt-critical reaction is almost always supercritical, or requiring a lot more neutron absorbers to stay critical?\n\nPrompt critical is always supercritical.",
+                            "score": 4,
+                            "author": "RobusEtCeleritas",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "ah, neat!\n\nand, super critical (if I remember correctly) is leading to a nuclear explosion, right? Or are there ways of having super-critical *without* exploding? If not, would it basically mean that prompt-critical is just \"more\" super-critical? (Either way, guess it would...)",
+                                    "score": 1,
+                                    "author": "CTH2004",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;Or are there ways of having super-critical without exploding?\n\nIf the supercriticality is uncontrolled, it can result in an explosion. However if there's some kind of feedback in place, you can just have a temporary excursion into supercriticality, and then have the system become critical or subcritical again.",
+                                            "score": 1,
+                                            "author": "RobusEtCeleritas",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "true, but that is almost like oscillating between supercritical and subcritical, to \"average\" critical, right?",
+                                                    "score": 1,
+                                                    "author": "CTH2004",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Nuclear reactors always operate in a mode that is prompt-subcritical and delayed-(very close to critical).  \n\nNuclear reactors wouldn't be possible if it weren't for the fact that some (a very small fraction) of the delayed neutrons are generated at time scales of hours.  If the longest delay was seconds, the reactor couldn't be kept from oscillating as you describe.\n\nBut because there's some neutrons that are delayed by minutes/hours, it's possible to control the reactor passively by negative feedback features in the physical design.  For instance, in a pressurized water reactor,  as the power goes up, the temperature of the water goes up.   \nThat makes the way the hydrogen atoms in the water interact with the neutrons change.  In a good design, that change causes a bit more neutrons to leak out of the reactor.  Even without human intervention, the reactor will just settle to an equilibrium power without significant oscillation  (assuming nothing else changes).  \n\nThere's a kind of reactor called TRIGA that takes this to an extreme.  You can operate a TRIGA at a normal continuous output power in the kilowatts, and then launch one of the control rods *out*  of the reactor pneumatically, causing it to go prompt-supercritical.  In a fraction of a second, the reactor power leaps up by a factor of 1000x.  But TRIGA fuel is a special chemical composition where if the temperature goes up rapidly, neutrons are lost even more rapidly.  So it only stays at megawatt power for a fraction of a second and then completely shuts down (subcritical)\n\nBy the way, this is the source of the movie/tv trope of a \"bright blue flash\" from radiation.  TRIGAs are open-pool reactors and you can safely stand on a catwalk above the reactor when it's pulsed.  The entire pool of water flashes blindingly [blue](https://youtu.be/orNP1wMmPK4), lighting up the whole building.  The blue glow (Cerenkov radiation) can also be seen as a dim glow around spent fuel rods in water.",
+                                                            "score": 2,
+                                                            "author": "drhunny"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,597 @@
+{
+    "id": "12clbqn",
+    "score": 118,
+    "title": "Ask Anything Wednesday - Engineering, Mathematics, Computer Science",
+    "author": "AutoModerator",
+    "date": 1680703222.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12clbqn",
+    "media_urls": [],
+    "other_urls": [
+        "http://www.reddit.com/r/askscience/wiki/index",
+        "https://www.reddit.com/r/askscience/about/sticky).",
+        "http://www.reddit.com/r/askscience/search?q=flair%3A%27meta%27&amp;restrict_sr=on&amp;sort=new&amp;t=all)."
+    ],
+    "postText": "Welcome to our weekly feature, Ask Anything Wednesday - this week we are focusing on **Engineering, Mathematics, Computer Science**\n\nDo you have a question within these topics you weren't sure was worth submitting? Is something a bit too speculative for a typical /r/AskScience post? No question is too big or small for AAW. In this thread you can ask any science-related question! Things like: \"What would happen if...\", \"How will the future...\", \"If all the rules for 'X' were different...\", \"Why does my...\".\n\n**Asking Questions:**\n\nPlease post your question as a top-level response to this, and our team of panellists will be here to answer and discuss your questions. The other topic areas will appear in future Ask Anything Wednesdays, so if you have other questions not covered by this weeks theme please either hold on to it until those topics come around, or go and post over in our sister subreddit /r/AskScienceDiscussion , where every day is Ask Anything Wednesday! Off-theme questions in this post will be removed to try and keep the thread a manageable size for both our readers and panellists.\n\n**Answering Questions:**\n\nPlease only answer a posted question if you are an expert in the field. [The full guidelines for posting responses in AskScience can be found here](http://www.reddit.com/r/askscience/wiki/index#wiki_answering_askscience). In short, this is a moderated subreddit, and responses which do not meet our quality guidelines will be removed. Remember, peer reviewed sources are always appreciated, and anecdotes are absolutely not appropriate. In general if your answer begins with 'I think', or 'I've heard', then it's not suitable for /r/AskScience.\n\nIf you would like to become a member of the AskScience panel, [please refer to the information provided here](https://www.reddit.com/r/askscience/about/sticky).\n\nPast AskAnythingWednesday posts [can be found here](http://www.reddit.com/r/askscience/search?q=flair%3A%27meta%27&amp;restrict_sr=on&amp;sort=new&amp;t=all). Ask away!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Math question, sorry if this sounds dumb: How many 'types' of infinity are there? \n\nI only just learned there is apparently different types, I always thought of infinity as a constant, like pi.",
+            "score": 14,
+            "author": "IamtheBoomstick",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There are [an infinite number of infinities](https://en.wikipedia.org/wiki/Aleph_number), but the count of the number of infinities is the  \"smallest\" infinity (aleph-0). \n\nFor me the easiest way to think about the sized of infinity, is when you look at fractions and ask \"what value does this go to as x goes to infinity?\" So, as an example:\n\nf(x) = e^(x)/x^(2). If you look at the top and bottom of this fraction, as x goes to infinity, both the top and bottom go to infinity. But, since e^(x) gets larger so much faster than x^(2) does, you say f(x) -&gt; infinity. So here you can say e^(x) is a *larger* infinity than x^(2). \n\nBut if instead you switched it and did something like\n\nf(x) = log(x)/x^(3) here both log(x) and x^(3) go to infinity, but since x^(3) grows so much faster than log(x), in this case f(x) -&gt; 0. So here, log(x) is a *smaller* infinity than x^(3). \n\nAnd finally, if you said\n\nf(x) = 2x^(2)/x^(2), well now the limit as x-&gt; infinity is 2, since of course both the top and bottom go to infinity, but the top one is always exactly 2 times larger than the bottom. Since there is a limit, then 2x^(2) is the *same size* of infinity as x^(2).",
+                    "score": 7,
+                    "author": "Weed_O_Whirler",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Mentioning the Alephs is a false start, since they're of a totally different kind of infinity than the rest of the comment. Importantly, there's a proper class of Alephs - the number of Alephs is greater than any Aleph (i.e. there isn't really a 'number' of Alephs, there are necessarily *too many to count*). \n\nThe idea of infinities being equivalence classes of the relation (f ~ g) iff lim(f/g) exists is kind of interesting, I can't say I ever saw it before. In that sense, I would question its usefulness when discussing 'types of infinity' since it doesn't map neatly onto common notions (extended reals, ordinals, cardinals). Note also that for this notion of 'infinity' there are (at least) continuum many 'sizes', since when r &lt; r', then lim_{x -&gt; \u221e}(e^(rx)/e^(r'x)) = +\u221e. So you get a different size for every real number, and famously there are more real numbers than Aleph_0.",
+                            "score": 24,
+                            "author": "EzraSkorpion"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 2,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There are two types of infinite sets, namely countable and uncountable.  For an infinite set 'S' that is countable, there exists a bijection between the natural numbers (1, 2, 3, ...) and S.  Examples of other countably infinite sets include integers (..., -2, -1, 0, 1, 2, ...), and rational numbers (any number that can be expressed as a fraction with integers in the numerator and denominator).  Uncountably infinite sets are so zany we lose the axiom of choice when discussing them, meaning we lose the ability to differentiate one object in the set from others (though certain distinctions can still be made).  A classic example of an uncountably infinite set is the Cantor set (worth a quick check on Wikipedia), or the set of all real numbers (rational numbers plus everything in between, so including square roots, pi, e, and an uncountably infinite set of others).  \n\n\nSo, two.  Two different types of infinity.",
+                    "score": -1,
+                    "author": "Biggrim82",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There are infinitely many types of uncountable infinity, there is no one \u201cuncountable infinite\u201d it\u2019s simply a category for a bunch of different sizes of infinity.",
+                            "score": 2,
+                            "author": "Comprehensive-Two969"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can recycled plastic waste be turned into the stuff that 3-d printers use?",
+            "score": 7,
+            "author": "Sutec",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Conceivably yes.  The plastic used for 3d printing is usually thermoform (as opposed to thermoset which will only burn when reheated). The issue is cost. You can't generally combine plastic types for the process, so you'd have to sort out all the types when plastic is recycled. This works (manually) if the plastic is labeled as to what type it is, if it's scraps and unlabeled it's much more difficult. Then you'd have to sort by color and then you could recycle it. \n\nRealistically it's much more expensive to do it that way and you lose an element of quality control. Unless it's recycled in the factory it's made / used in.\n\nIt's much more useful to recycle plastic in a general sense for a product that can be an indeterminate type of plastic (a compressed block for a foundation for instance).\n\nIf / when oil gets very expensive you may see new technologies develop that make it easier to recycle. Or it may be made from something besides oil.",
+                    "score": 13,
+                    "author": "redditusername_17",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I honestly think we need to switch to bio-sourced and biodegradable plastics for at least household uses. I think we've effectively proven as a species, that we're hopeless at recycling.",
+                            "score": 2,
+                            "author": "joalheagney",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I think like most things it'll largely be driven by cost or social pressure. Like I think you'll see more of a drive to reduce single use packaging plastics (food and packaging). You'll probably see plant based plastics expand too.\n\nBut larger plastics that can't be replaced will still exist until the price goes so high that other materials are chosen or invented.",
+                                    "score": 2,
+                                    "author": "redditusername_17",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Here in Australia, the big supermarkets removed single use bags due to government mandate ... then started wrapping all the veggies in plastic wrappers. :/",
+                                            "score": 0,
+                                            "author": "joalheagney"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "There are definitely hobbyists that make their own filament from plastic bottles and such - but it's niche, and needs a pretty fiddly setup. So, economically you're spot-on.",
+                            "score": 1,
+                            "author": "ForOhForError"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's been around for billions of years, so I suspect the answer, but is the cosmic microwave background a permanent fixture?",
+            "score": 3,
+            "author": "belunos",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What do you call \"permanent fixture\"? It will keep getting redshifted as the universe keeps expanding, eventually it will be too redshifted to be detectable, but in principle it should be there forever.",
+                    "score": 7,
+                    "author": "mfb-",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ok, that makes a ton of sense.  Because of the expansion of the universe, the CMB is moving away from us.  It's been explained that after the big inflation, we were left with the CMB.  Us smooth brains don't 100% know what that means.  Is it imprinted?  Is it just a microwave signal?  It's funny, fundamentally I get quantum tunneling and entanglement, but I'm still left with questions regarding the CMB.",
+                            "score": 0,
+                            "author": "belunos",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The CMB was emitted everywhere and in all directions, so it's still everywhere and going in all directions. Initially it was infrared, now it's in the microwave range. It's from ~380,000 years after the Big Bang, by the way, while inflation was a tiny fraction of the first second.",
+                                    "score": 3,
+                                    "author": "mfb-"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Computer science. (Or computer science fiction?)  Old disks and hard disk drives use magnetic media to store data as 0 or 1.  Why coudn't they store as 0, 1, and -1 for the two magnetic poles and neutral. \n\nAnd if that architecture were feasible, would it mean anything for processor logic that seem to be a really complex string of true/false gates.  Same question for solid state storage.  If using electrical current is there a way to put three values per bit rather than 2?",
+            "score": 2,
+            "author": "NedRyerson_Insurance",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[This article](https://www.tomshardware.com/reviews/hard-drive-magnetic-storage-hdd,3005.html) has a good discussion about how hard disk data is encoded.",
+                    "score": 3,
+                    "author": "Triabolical_"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Why coudn't they store as 0, 1, and -1 for the two magnetic poles and neutral.\n\nThat doesn't make any sense. All magnetic elements are dipoles. If you are trying to say you would want non-magnetic material mixed with magnetic on the medium, so that you can encode a third bit, that has obvious disadvantages: it is not magnetic so it can not encode information, it is not rewritable, it is not trivial to decide how it would be distributed on the medium.",
+                    "score": 1,
+                    "author": "mfukar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Computer science/engineering question: a cpu has millions of transistors, how are those designed? Node by node ? Is there a cpu designer career?",
+            "score": 2,
+            "author": "veltcardio2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There's a decent overview [here](https://electronics.stackexchange.com/questions/28996/how-are-cpus-designed). \n\nComplex integrated circuit design is a career, and designing CPU or GPU chips is a subset of that.",
+                    "score": 8,
+                    "author": "Triabolical_"
+                },
+                {
+                    "level": 1,
+                    "comment": "Basically, that job is spread across a small variety of specializations in computer engineering.\n\nIf you're really interested, there is an excellent free online class that covers the area between silicon and software called nand2tetris.\n\nIt doesn't go to the raw silicon, but to nand gates. But most engineering around CPUs is not really thinking specifically about transistors either, but higher level structures. A nand gate is basically just a couple transistors, so at that point you're basically at the silicon anyway.\n\nSome engineers are of course working in the silicon fab on the actual packing on the silicon, like how to pack more things onto the wafer (disc of silicon that is the standard unit of silicon labs use), but still, mostly they're thinking either about packing the circuits on the wafer, or shrinking the circuit, not shrinking the transistor. The transistor size is fundamentally determined by the equipment they have access to.\n\nBut anyway, fundamentally, the CPU is comprised of a bunch of smaller but not completely trivial integrated circuits (ICs) that define the most basic things the computer can do. They are things that add numbers, or write a value to a block of memory, or shift some bits over. \n\nThose instructions are themselves made of simpler logic gates, and those logic gates are made of transistors. The course starts with nand, because you can build every other logic gate with nand.\n\nIf you have certain kinds of collections of those ICs, you can write a set of instructions that each use those ICs, and then you can expose an interface to the rest of the computer for using those instructions. A CPU is fundamentally an implementation of an instruction set that the rest of the computer can then integrate with.\n\nYou probably heard about the big fuss with the MacBook M1 CPU a couple years ago, because it benchmarked so well.\n\nThe key innovation there was not packing transistors differently, but that they used a different and much smaller instruction set than was normally used in a mass produced laptop, referred to as RISC, or reduced instruction set computing.",
+                    "score": 6,
+                    "author": "melodyze"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why is the mirror image of any 2 digit number 9x the answer of the difference of those 2 numbers?\n\n\nExample\n\n71-17 =54\n\n7-1=6\n\n6x9=54\n\n\n84-48=36\n\n8-4=4\n\n4x9=36\n\nEtc\n \nAdd a 100x for kor weirdness.",
+            "score": 2,
+            "author": "Probably_a_Shitpost",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Let's call your two digits a and b. Then you can write `ab - ba` like this:\n\n    (10 * a + b) - (10 * b + a)\n    = 10a + b - 10b - a\n    = 9a - 9b\n    = 9 * (a - b)",
+                    "score": 12,
+                    "author": "Lornedon"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Could a sound frequency be added to say curing concrete to create a cymatic pattern inside of it and increase its overall strength?",
+            "score": 3,
+            "author": "Phasethedestroyer"
+        },
+        {
+            "level": 0,
+            "comment": "Why cant we use magnets to generate perpetual motion and produce energy?",
+            "score": 1,
+            "author": "DriftersHideout",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "When two magnets are attracted from a distance, they can be said to have potential energy. As they pull together, that potential energy is converted to kinetic energy.\n\nIn order to separate them and return them to their original state (which would be required for perpetual motion), you have to put energy back into the system to overcome their (now much stronger) pull. Any physical means of doing this requires *at least* as much energy as the magnets have already lost.",
+                    "score": 4,
+                    "author": "Polaric_Spiral",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hi thank you, just saw this.\n\nBut could we not use the energy of them pulling towards each other to cause stuff to move?\n\nLike *theoretically* could you not set up a system where a magnet is always pulling or pushing another magnet and have that in something like a rotational track?\n\nI know I'm bad at explaining my thoughts so if this doesn't make sense, sorry.",
+                            "score": 2,
+                            "author": "DriftersHideout",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No worries, I'm pretty sure I understood you!\n\n&gt;But could we not use the energy of them pulling towards each other to cause stuff to move?\n\nYou certainly can. However, that means the magnets lose that much mechanical energy (the sum of their potential and kinetic energies). They will have less kinetic energy available to continue the cycle.\n\n&gt;Like theoretically could you not set up a system where a magnet is always pulling or pushing another magnet and have that in something like a rotational track?\n\nIn theory, you can technically do exactly this, but *only* this. That is to say, you can theoretically set up some arrangement of magnets that will continue in, yes, perpetual motion. However, it's impossible to extract any energy from the system without affecting its state. The First Law of Thermodynamics guarantees it.\n\nThe *Second* Law of Thermodynamics implies the energy of the system will be less useful over time; it will degrade into heat or noise, the magnets slowly demagnetize, etc.\n\nOf course, these aren't especially satisfying answers. They rarely are, but they hold true in all cases and are a good way to check whether what you're looking at is feasible.\n\nAs far as the nuts and bolts of *why*, the more detailed answer is that you've set up a theoretical four-step process.\n\n1. The magnets accelerate toward each other and convert potential energy to kinetic energy.\n\n2. The magnets are reoriented to repel each other.\n\n3. The magnets repulse, converting the potential of the opposing magnetic force into kinetic energy.\n\n4. The magnets are reoriented to attract once again.\n\nStep 2 is the crucial step, and the one where the exercise unfortunately breaks down.\n\nIf you bring two magnets close together, you'll notice not only do they attract (or repel), they exert a torque on each other. Each magnet will attempt to rotate to align with the other's field, and will strongly resist attempts to turn them any other way.\n\nIn step 2, the stage where the two magnets are closest (and the forces are at their strongest), your setup will need to rotate the magnets against this torque. This requires either inputting energy, or using their existing kinetic energy. I can guarantee that the kinetic energy created by steps 1 and 3 cannot exceed the amount you need to reinvest in step 2.",
+                                    "score": 3,
+                                    "author": "Polaric_Spiral",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thank you so much, I've had this question on my mind for a long time and could never get a solid answer that wasn't just \"because you can't\".",
+                                            "score": 1,
+                                            "author": "DriftersHideout"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Because energy is a conserved quantity in most theories of physics, including electromagnetism, making it impossible to create or destroy energy.  Also, the second law of thermodynamics ensures that some energy will be lost as heat in any system, so you'll always end up with less energy than you put in.",
+                    "score": 9,
+                    "author": "BlueRajasmyk2"
+                },
+                {
+                    "level": 1,
+                    "comment": "Lots of people try to develop perpetual motion machines with magnets, but they all kind of forget that every magnet has a north and south pole, and so their methods never work.",
+                    "score": 4,
+                    "author": "Weed_O_Whirler"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is it possible to take advantage of space time tradeoff and use an algorithm that might take 5 years to decompress but can reduce files by way more than conventional methods?\n\nI was thinking some sort of checksum and bruteforce method that takes advantage of the fact modern computers can do 2^32 integer guesses a second.",
+            "score": 1,
+            "author": "paroxsitic",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 4,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "One-way checksums and hash functions are not compression methods. That is because, given a checksum/hash, there are infinite inputs which can produce it. It is not only infeasible , but also impossible, to recover the input to the function that resulted to the known output.",
+                    "score": 2,
+                    "author": "mfukar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is \ud835\udf0b+e algebraic or transcendental?",
+            "score": 1,
+            "author": "Call_of_Tculhu",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No one actually knows for certain, I don't believe we have a proof of this yet.",
+                    "score": 1,
+                    "author": "zhouy3141"
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": -2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "We actually don't know that pi+e is transcendental; no one's been able to prove it. Sure it definitely feels transcendental, but that's not exsctly a proof.\n\nAt best we can say that at least one of pi+e and pi*e is transcendental, which we do by assuming that they're algebraic and considering the polynomial (x - pi)(x - e), and using the fact that if a number a is a root of a polynomial with algebraic coefficients, then a is algebraic to show that pi and e are algebraic, which is absurd.",
+                            "score": 3,
+                            "author": "zhouy3141"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 0,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Engineering/physics question\u2026\nWhere does the energy generated from tidal power come from?\nFor example, solar energy is from the sun.  Wind energy comes from the sun. Hydro dam power comes from the sun\u2026",
+            "score": 1,
+            "author": "Hrunthebarbarian",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The moon. The moon pulls the tides and creates this ovular shape to the water that the earth rotates through. As the earth rotates you get two high tides and two low tides in a day. These are the high and low spots on the ovular water distribution.\n\nhttps://youtu.be/NqDEaFjIXPw\n\nHere's a visual demonstration",
+                    "score": 10,
+                    "author": "joshuamunson",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The sun also contributes to the tides non-trivially: https://oceanservice.noaa.gov/education/tutorial_tides/tides06_variations.html#:~:text=When%20the%20sun%2C%20moon%2C%20and,both%20commonly%20called%20spring%20tides.",
+                            "score": 6,
+                            "author": "JonseyCSGO"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "As a side note, that power is not free. Tidal forces are actually slowing down the Earth\u2019s rotation, and speeding up the moon\u2019s orbit. Which will continue until the two are tidally locked.",
+                            "score": 8,
+                            "author": "houstoncouchguy"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Ultimately from the angular momentum of the Earth. If you dam up an estuary and let it out slowly to harness the tide, you are essentially causing one small part of the overall tide to lag behind the rest as it continues on around the world (it travels east to west, *very generally speaking*). This applies a small braking force on the Earth itself and will cause its rotation to slow by an imperceptible amount.",
+                    "score": 3,
+                    "author": "MundaneTaco"
+                },
+                {
+                    "level": 1,
+                    "comment": "The earth-moon system and the sun-moon system.  Tides are driven by gravitational pulls between these bodies and the earth.  Tidal energy captures a tiny fraction of this power by slowing down the movement of tidal bulges, which very slightly moves the system closer to tidal locking.",
+                    "score": 1,
+                    "author": "atomfullerene"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "RE: Earth's Magnetic Field.\n\nThere is evidence found on the ocean floor that suggests the earth's magnetic field \"reverses\" (switches polarity). It is assumed these reversals are due to changes in the behavior of the core.\n\nWhy would we assume that a dense molten core is what changes? Could the thin crust on the surface of the earth slide over the core in such a way that the polarization of the new magma on the ocean floor flips?",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The crust and the core are separated by 2900ish kilometres of solid rock. Even if the mantle were molten (which it isn\u2019t), it doesn\u2019t sound like you are describing a mechanism for polarization of any kind. You can\u2019t magnetically polarize a metrical by mechanically moving it in any particular way, it has to be acted on by an electric or magnetic field.",
+                    "score": 3,
+                    "author": "forams__galorams"
+                },
+                {
+                    "level": 1,
+                    "comment": "We can see the  traces of past magnetic fields in the earth's rocks.  If a pole flip was just the outer part of the earth spinning over, you'd expect the magnetic field to retain the same overall shape with the poles shifting position across the surface of the earth (or rather, the surface shifting position over the poles).  You'd still have  a north and south pole, but they would be in different places.\n\nBut that's not what happens.  Instead, the magnetic field gets weaker and goes multipolar...multiple north and south regions appear across the globe.  You can see a simulated image [here](https://climate.nasa.gov/internal_resources/2403).  Eventually the field reforms pointing in the opposite direction.  So there's not a single movement.  \n\nSecondly, the magnetic pole is currently moving slowly (it pretty much always is) and we can track that motion and tell that the surface of the planet is not equally moving.  We can watch the stars and tell that the north pole has not stopped pointing at the north star)\n\nThirdly, we can check climate during past reversals.  If the planet was tilted over, then while the reversal was happening and the planet was \"halfway\" over you'd get really crazy climate shifts, but we don't see this .",
+                    "score": 3,
+                    "author": "atomfullerene"
+                },
+                {
+                    "level": 1,
+                    "comment": "For the crust to shift in such a way to produce that signal would require it to essentially entirely flip over, north to south. There are...various ways we could tell if that had been happening regularly.",
+                    "score": 1,
+                    "author": "loki130",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That was the point. The entire surface of the planet had to move. It's on a 65,000 year cycle. How would we know?",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "1. Many hotspots are fed by plumes of hot rock from the mantle, as attested to by their apparent \"motion\" across the surface which is, in fact, due to the motion of the crust as these hotspots remain static. Given how distinct hotspot trails often are, you would think there'd be some trace of them effectively swapping over to their antipodes every ~65,000 years\n\n2. The crust flipping north-south would effectively swap the direction of earth's rotation relative to geographical features on the surface. Some presumably bored climatologists have [modelled earth's climate with rotation flipped](https://esd.copernicus.org/articles/9/1191/2018/) and the result is rather distinct from the current one. We have various geological and paleontological indicators for past climates and they don't indicate any such dramatic rearrangement of the global climate on a regular cycle like this.\n\n3. More fundamentally, I think you vastly overestimate how distinct the crust and mantle are. The mantle isn't just a sea of magma, it's mostly solid itself, just under enough heat and pressure to very gradually flow; you would expect immense friction if you tried to move the whole crust so rapidly, especially given how variable the crust-mantle boundary is; the ocean crust is often under 10 km deep, but the continents can get to 200 km deep, and we have detected some sections of subducting crust descending to over 600 km deep (given the rates at which crust subducts, the lowermost portions of these subducting \"slabs\" must have subducted something like 100 million years ago, so we can be pretty sure they haven't snapped off or something recently).",
+                                    "score": 2,
+                                    "author": "loki130",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "So the bowling ball flips completely and the little sheet of paper on top stays in place? um...ok.",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well for one thing, between the core and the crust is the mantle, accounting for roughly 2/3 of the planet's mass. But regardless, geologists do not suggest that field reversals are caused by the entire core simply flipping over; it's due to a more subtle and complex shift in the pattern of circulation cells in the liquid outer core.",
+                                                    "score": 1,
+                                                    "author": "loki130"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Engineering question: what technology is used to find trapped earthquake victims under all the rubble? Is it just dogs? Or just blind luck as they carefully excavate the rubble? Or something more high-tech? Where can I learn more?",
+            "score": 0,
+            "author": "Night_Runner"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Could you rephrase your question? I do not understand what you are trying to ask.",
+                    "score": 1,
+                    "author": "mfukar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What are irrational numbers, really? Are they just things mathematicians make up to solve unsolvable equations ??",
+            "score": 0,
+            "author": "ToughBuy1483",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not exactly, i can be formally obtained through completion of the rings of real polynomials by taking a \"quotient\" (you basically set x^2+1 = 0). Real numbers are formally derived by looking at series of rational numbers, rational numbers are formally derived by taking quotiens of integers. So you take the set of numbers, introduce a new concept and see what you get.\n\nSo in a purely mathematical sense complex numbers are no less \"natural\" than others. In fact, since complex numbers are algebraically complete you could look at them as the most \"natural\" set of numbers.\n\nAlso complex numbers have actual meanings in quantum mechanics, as the states of objects can be complex. So it is not something that had nothing to do with reality.",
+                    "score": 2,
+                    "author": "Gimmerunesplease"
+                },
+                {
+                    "level": 1,
+                    "comment": "... yes?\n\nBut that's true for all numbers other than positive non-zero integers. E.g. there's no true \"negative\" quantities in the real world. \n\nHowever, negative numbers are useful for problems that have direction or opposites. E.g. do I owe money, or do others owe money to me?\n\nThe entire history of mathematics can be described by the following basic pattern:\n\n1. Invent a new mathematical operator. \n2. Describe an inverse operator. \n3. \"Discover\" a new type of \"number\". \n4. Describe a new superclass of number that includes the old and new number types.\n5. Investigate and codify the behaviours of the new numbers.\n\nOperator | Inverse | New Number Type | Superclass\n:--:|:--:|:--:|:--:\n- | - | - | Counting Numbers \nAddition | Subtraction | Negatives | Integers \nMultiplication | Division | Fractions | Rationals \nPowers | Roots | Irrationals and Imaginary | Reals and Complex Numbers\n\n\nComplex numbers ( Reals + Imaginaries) are useful because the consistent rules we've defined for them are _great_ for problems involving 2D rotations, vibrations and trigonometry. \n\nE.g. to do AC electrical calculations, you can use like 8 different formulas ... or use Complex numbers in Ohms Law and the Kirchhoff Laws.",
+                    "score": 3,
+                    "author": "joalheagney"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "RE: Marine Ship Propeller,\nNeed a little help, how do I find the chord length and skew of a ship propeller given just the diameter is 0.4, the advance speed and the tip speed ratio",
+            "score": 1,
+            "author": "_jo5"
+        },
+        {
+            "level": 0,
+            "comment": "Assuming we manage fusion at Iter, getting actual REAL positive output (not just from the reaction, but all the energy used for the magnets etc. So, not just Q, but \"total Q\" or something), then what? How long would it take for fusion power to \"spread\"? Would it replace gas and coal plants, or just nuclear ones?",
+            "score": 1,
+            "author": "the_geth",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "ITER will not produce electricity, and even if it would you would have a hard time running the reactor with it. Its successor(s) DEMO are expected to do that. From a technical perspective you could scale up quickly, but early reactors will have all sorts of issues that should be improved before scaling up. We are looking at decades of learning and iterating, how much fusion we'll get in these decades (if any) will depend a lot on political will, cost, cost of alternatives, and other non-technical aspects.",
+                    "score": 2,
+                    "author": "mfb-"
+                },
+                {
+                    "level": 1,
+                    "comment": "Unfortunately I don't think you'll get a satisfying answer to this question. Engineering a proven small-scale concept up to large-scale is a very uncertain process. It's even more uncertain when the small-scale concept hasn't been proven yet. We don't know whether fusion can be stabilized into a continuous process, with the potential to replace gas, coal, and fission power. We don't know what it will take for fusion to produce enough power to actually replace gas/coal/fission.\n\nBut, for scale-up, there are usually a few things to consider. First, the cost of materials, construction, and a place to put the thing. Second, the cost of adapting the existing power transport infrastructure to handle a new input. Third, the cost of actually operating a fusion plant compared to a gas/coal/fission plant. Fourth, the legal and regulatory context surrounding the new technology and the old technology. Some examples of legal and regulatory issues could include public safety, environmental concerns, and national security. It's hard to predict how the issues with this hypothetical fusion process would compare against the issues with existing gas/coal/fission plants. I'm sure there are more things to consider that I haven't listed.\n\nIssues like those would slow down adoption. But, incentives could overcome some of those issues. For example, public policy aimed at installing fusion plants. In any case, it's hard to predict how quickly fusion would be adopted.",
+                    "score": 1,
+                    "author": "Charlemagne42"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is there any method, real or theoretically possible, that allows us to perform \"alchemy\" as most people understand it? More specifically, is there a way to turn one element into another, or transmute metals into other metals? I ask because i vaguely remember in school being taught that a main reason elements form into the elements they are is the amount of electrons, or rings of electrons(in hindsight probly shoulda checked). But even if thats not true and im completely wrong, is there a way? Cuz i'd get a degree just to do it in a real lab if its possible.",
+            "score": 1,
+            "author": "Snypez_Evo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What you're talking about is actually called nuclear transmutation and can happen naturally in stars. It can be achieved artificially by bombarding elements with neutrons until one eventually sticks raising the atomic number of the element.",
+                    "score": 6,
+                    "author": "Zakblank",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thats actually pretty cool. Are there any other transmutation methods or anything like that to achieve transmutation? Or any method to achieve any other alchemical result?",
+                            "score": 1,
+                            "author": "Snypez_Evo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You can actually make gold the way it was described above. The problems with this are that a) it is made from platinum b) it takes an enormous amount of energy  and c) that the compound is unstable.",
+                                    "score": 1,
+                                    "author": "Gimmerunesplease"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Nuclear reactors do that on a large scale, converting uranium to fission products, plutonium and a couple of other things.\n\nSome radioactive isotopes of elements are produced deliberately using accelerators and neutron sources, often with a different element as starting point.\n\nThere is a large range of possible reactions, but only a few of them are interesting for commercial applications.1",
+                    "score": 3,
+                    "author": "mfb-"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No, it's not possible to explain differential topology without at least complex numbers and/or linear algebra.",
+                    "score": 1,
+                    "author": "mfukar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What information do photons carry?",
+            "score": 1,
+            "author": "MrInfinitumEnd"
+        },
+        {
+            "level": 0,
+            "comment": "How does a person get funding for a project that they can't manage on their own without letting everyone else know what they are working on?",
+            "score": -1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I am not sure what you are trying to ask. Are you trying to get funding for something?",
+                    "score": 1,
+                    "author": "electric_ionland",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yep...many things actually....but I'm a bit paperwork challenged. I can't lie and tell investors \"oh ya 100% sure this will work and give you an excellent ROI\" - just not in my nature. I don't have enough of my own money to even get started.",
+                            "score": 0,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If you don't tell people what you want to do you are not going to get their money. Investors don't really want to hear that everything will work for sure, they want to see what the risks are and what you plan to do to mitigate them. Usually for technical projects you have 2 levels of presentation, one very general to get people interested and that you just share with anyone, and one that you only show under NDA.",
+                                    "score": 11,
+                                    "author": "electric_ionland"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 2,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 3,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -1,
+            "author": "[deleted]"
+        }
+    ]
+}

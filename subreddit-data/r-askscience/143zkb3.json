@@ -1,0 +1,43 @@
+{
+    "id": "143zkb3",
+    "score": 14,
+    "title": "How do virologists identify individual viruses in sewage?",
+    "author": "ispeakdatruf",
+    "date": 1686199619.0,
+    "url": "https://www.reddit.com/r/askscience/comments/143zkb3",
+    "media_urls": [],
+    "other_urls": [
+        "https://twitter.com/SolidEvidence/status/1665444603829407746)"
+    ],
+    "postText": "I was reading this [Twitter thread](https://twitter.com/SolidEvidence/status/1665444603829407746) and was fascinated by how this virologist is able to track the evolution of the virus that this unknown person is carrying. Given how small viruses are, how do these sleuths do this?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Do you want to identify them all? It is possible to mass sequence all of the DNA and use programs to extract each of the genomes from the data. These can then be compared with known sequences for identification.",
+            "score": 3,
+            "author": "DdraigGwyn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "One would imagine that sewage is full of pieces of DNA floating around, since it is mostly organic matter. How do these people find a piece of virus DNA in that haystack?",
+                    "score": 1,
+                    "author": "ispeakdatruf",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "By and large the bits and pieces are too small to be associated with an entire genome, and bacterial genomes are too large. Okay, so a bit of a simplification overall.\nOne obvious step would be to do an initial purification. A low speed spin will remove the bacteria and a high speed spin will pellet the viruses ( again a simplification). Now the only DNA in the sample will be viral.",
+                            "score": 1,
+                            "author": "DdraigGwyn"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "DNA can be extracted from organic matter with relative ease. I am not an expert on the extraction protocols themselves so I couldn't give you hyper-specific details, but there are ways to target the type of DNA you are extracting. For example, human cells, bacteria, and viruses are all very different in size and can be separated pretty easily as a result.\n\n\nStill, even if you only have viral DNA, there is much more than one type of virus floating around in our sewage. So how do you find the one you're interested in? There are a couple of ways they may be doing this, based on the foundational principle that every organism/virus has its own distinct genomic sequence. \n\n\nThere is a molecular method, which I'm guessing is what they used here. This would use a PCR reaction to specifically amplify sequences that match the genome of the virus of interest in their sewage sample. After a PCR, the majority of the DNA in the sample would be from your target virus, so you can just sequence that and get a pretty clean result.\n\n\nThere is another method called metagenomics that works on a similar principle, but rather than specifically amplifying the DNA from one kind of virus it looks at all the DNA equally. You have to use supercomputers to go through each individual piece of DNA, compare it to a bunch of different genomes, and find the best match (if there is any match at all). A lot of what comes back in these experiments is stuff from species that have never been sequenced/identified.",
+            "score": 1,
+            "author": "flabby_kat"
+        }
+    ]
+}

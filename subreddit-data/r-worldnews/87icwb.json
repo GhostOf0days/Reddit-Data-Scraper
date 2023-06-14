@@ -1,0 +1,1496 @@
+{
+    "id": "87icwb",
+    "score": 138673,
+    "title": "Mozilla launches 'Facebook Container' extension for its Firefox browser that isolates the Facebook identity of users from rest of their web activity",
+    "author": "yourSAS",
+    "date": 1522156832.0,
+    "url": "https://www.reddit.com/r/worldnews/comments/87icwb",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Highlights:\n\n&gt;This extension helps you control more of your web activity from Facebook by isolating your identity into a separate container. This makes it harder for Facebook to track your activity on other websites via third-party cookies.\n\n&gt;Mozilla does not collect data from your use of the Facebook Container extension. We only know the number of times the extension is installed or removed.\n\n&gt;If you use your Facebook credentials to create an account or log in using your Facebook credentials, it may not work properly and you may not be able to login. Also, because you\u2019re logged into Facebook in the container tab, embedded Facebook comments and Like buttons in tabs outside the Facebook container tab will not work. This prevents Facebook from associating information about your activity on websites outside of Facebook to your Facebook identity. So it may look different than what you are used to seeing.\n\n&gt;What does Facebook Container NOT protect against?^1\n\n&gt;It is important to know that this extension doesn\u2019t prevent Facebook from mishandling the data that it already has, or permitted others to obtain, about you. Facebook still will have access to everything that you do while you are on\u00a0facebook.com, including your Facebook comments, photo uploads, likes, any data you share with Facebook connected apps, etc.\u00a0\n\n\n[Download Facebook Container](https://addons.mozilla.org/en-US/firefox/addon/facebook-container/)(for Firefox users)^2\n\nEdits: 1,2",
+            "score": 14508,
+            "author": "yourSAS",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I hope other browsers will follow.",
+                    "score": 11608,
+                    "author": "sarah-xxx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Disclosure: I'm the author of the add-on mentioned in the story.\n\ne: I'm the primary coder of the add-on - many others contributed to it!\n\nIt's highly unlikely. The feature uses a unique architecture of Firefox called OriginAttributes.\n\nThere's an additional add-on called Multi-Account Containers that lets you expand this kind of containment &amp; protection to other sites.\n\nhttps://addons.mozilla.org/firefox/addon/multi-account-containers/",
+                            "score": 3623,
+                            "author": "groovecoder",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You're the real hero",
+                                    "score": 646,
+                                    "author": "nckv",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Hah ... it wasn't a huge amount of work, honestly.\n\nAll of the investment going into Firefox Quantum lately made this a surprisingly easy feature to implement. Tons of credit for all of Firefox engineering - esp. the security &amp; privacy engineering, and the add-ons engineering teams! If you know any staff or contributors in those areas, buy them something nice! :)",
+                                            "score": 928,
+                                            "author": "groovecoder",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Just for clarification... This can be also done by creating a container for Facebook using Firefox already existing containers feature, right? Is there any extra feature you provide?",
+                                                    "score": 85,
+                                                    "author": "iturnedintoanewt",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yes, you can do this with Firefox Containers. And if you use the Multi-Account Containers add-on you can similarly assign facebook.com to always open in a Facebook container.\n\nhttps://addons.mozilla.org/firefox/addon/multi-account-containers/",
+                                                            "score": 106,
+                                                            "author": "groovecoder",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "you evidently know more about browsers than I do. Do you have any general opinions on Firefox Quantum vs chrome, that makes it stand out more than the old Firefox?",
+                                                    "score": 15,
+                                                    "author": "Kenny_log_n_s",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "How about Firefox being an open source project made by a non-profit organisation.\n\nIn contrast, Chrome being made by Google who is making their money essentially the same way Facebook is.\n\nStill, I credit Chrome with essentially sparking a browser innovation war between Microsoft, Mozilla and Google. We got a better IE out of it, an even better Firefox and a third very good alternative browser: Chrome. ",
+                                                            "score": 54,
+                                                            "author": "cauliflowerthrowaway",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I mean, I work for Firefox, so of course I'm going to say Firefox is better.\n\nQuantum has a ton of performance improvements. Especially if you enable Tracking protection by default.",
+                                                            "score": 24,
+                                                            "author": "groovecoder"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Oh well Firefox is back on my default browser list ",
+                                    "score": 119,
+                                    "author": "Murderous_squirrel",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I wept when Quantum took away my Vim plugins. This architectural improvement more than makes up for it.\n\nYou claim that coding it was easy, and maybe it was, but having the knowledge of these new capabilities and the inspiration to use them in this way is no small accomplishment. From one nerd to another, my sincerest thanks.",
+                                    "score": 52,
+                                    "author": "archaeolinuxgeek",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Just wanted to say the direction mozilla took with servo and quantum in general has been awesome! It's a blast to talk with all you guys regularly in the Rust irc",
+                                    "score": 72,
+                                    "author": "_Qwfwq_",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019ve been running Multi Account Containers for a while now and can confirm, Facebook was the first site I created a container for. Congratulations to Firefox for making this possible (and thank you /u/groovecoder for a brilliant demo showing what can be done with these containers).\n\nFor those that haven\u2019t tried it, Firefox\u2019s Containers is like multiple site specific incognito modes. So you can have one container for your work Google account, one for your personal Gmail, one for Facebook, etc. It\u2019s brilliant and shows why we need a relatively independent browser like Firefox as a significant player in the market. ",
+                                    "score": 19,
+                                    "author": "NeptunianColdBrew",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Is there no way to make facebook always open in the container?\n\nI automatically delete cookies when I close Firefox. \nSo everytime I want to visit facebook and use the container, I have to make like three/four extra clicks..?",
+                                    "score": 13,
+                                    "author": "Seolia",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Hmm ... the add-on should make facebook always open in the container. Are you familiar with GitHub? Can you file an issue there? https://github.com/mozilla/contain-facebook/issues",
+                                            "score": 29,
+                                            "author": "groovecoder",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Honestly though FireFox is the best browser rn IMO.",
+                            "score": 2002,
+                            "author": "CaptainObvious_1",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Friendship with Chrome ended. Now FireFox is my best friend.",
+                                    "score": 446,
+                                    "author": "Doyble",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I was with Chrome for a while (8+ years), but damn it takes up so much ram. I switched to firefox about 3 years ago. It took some getting used to, but it is a much better browser for your second monitor while gaming.",
+                                            "score": 73,
+                                            "author": "PeacefullyInsane",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Chrome does not respect your privacy.   Give it a year or so and Google will be subjected to similar scrutiny FB is undergoing. Google are into some very shady shit as well and know even more about you if you have Android etc.",
+                                                    "score": 87,
+                                                    "author": "OopsIredditAgain",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Spot on.\nThe user isn't the customer for Facebook and Google. We are the resource they sell to their customers. Daring Fireball has been making this point for years.\nI'm now locked in using Linux and Mozilla products. \nI AM NOT A COMMODITY TO BE SOLD.",
+                                                            "score": 17,
+                                                            "author": "arkstfan",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Made the switch from chrome and the fact that it is as fast and uses less resources is pretty fucking great. ",
+                                    "score": 1144,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Is it really better than chrome now? I mograted to chrome from firefox like 5 years ago, so I have no problem going back.",
+                                            "score": 851,
+                                            "author": "Xannin",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Speed is roughly equal between the two.  The extra privacy features / extensions on Firefox break the tie.",
+                                                    "score": 966,
+                                                    "author": "MadRedHatter",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "What breaks the tie is you can have like 50 tabs open in Quantum without your low-end computer churning its fan like the end of days, unlike Chrome which hogs much more resources",
+                                                            "score": 600,
+                                                            "author": "godbottle",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I started using my ten year old laptop so I couldn't have more than two tabs open and get distracted, then Firefox Quantum came out, and now I'm on academic probation. Coincidence? I think not.",
+                                                                    "score": 453,
+                                                                    "author": "96fps",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I have a 30-ish years old laptop with 256KB RAM and a screen resolution of 600x300(not certain though). You could use it as your daily computer by beating yourself up with it when you don't go to classes. It's got a metal body and weighs as much as a new born baby. ",
+                                                                            "score": 128,
+                                                                            "author": "theluggagekerbin",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I have 4 sticks and a leaf with 48 tabs. Loving it",
+                                                                                    "score": 71,
+                                                                                    "author": "El_Capitano_",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "tbh, I'd consider speed faster on firefox because I can start gathering information from a page pretty much right away instead of staring at a blank screen for the majority of the loading, even if they finish at the same time.",
+                                                            "score": 164,
+                                                            "author": "WanderingPhantom",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "tbh anything that hogs resources less than chrome is already faster to me so your comment seals the deal. I still have FF but i think its time to change defaults and update!",
+                                                                    "score": 55,
+                                                                    "author": "Fleeetch",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I recently switched back and I love it. Ram usage seems to be similar, but for some reason CPU usage is much much lower on the new Firefox. Really helps with laptop battery life ",
+                                                    "score": 125,
+                                                    "author": "captaindigbob",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 161,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 55,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Hell yeah! Chrome tracks you as much as facebook. ",
+                                    "score": 68,
+                                    "author": "shorey66",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 4330,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Even then, blocking one source is better than blocking none at all.",
+                                    "score": 1891,
+                                    "author": "sarah-xxx",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Exactly it's better then nothing, I think I'll start using Mozilla as my default again ",
+                                            "score": 972,
+                                            "author": "PoppinKREAM",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's really better in every aspect than chrome since the Quantum release.\n\n*Edit: Every aspect that affects or has affected me in the past 15 years.*",
+                                                    "score": 736,
+                                                    "author": "theonyltrueMupf",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Does Firefox use a shit ton of CPU like Chrome does? Chrome uses like 40% to 50% CPU on my PC, it's crazy.",
+                                                            "score": 281,
+                                                            "author": "Whatdoyouknow012",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "1-5% right now on work. Depends on the CPU and what you're doing of course.",
+                                                                    "score": 375,
+                                                                    "author": "theonyltrueMupf",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Don't play coy, how much CPU will it use when heavily utilizing pornography, you know why we're here",
+                                                                            "score": 623,
+                                                                            "author": "randomlurker2123",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "8k VR porn plays well on my PC at work. I guess.",
+                                                                                    "score": 373,
+                                                                                    "author": "theonyltrueMupf",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "1-5 for me too.",
+                                                                            "score": 26,
+                                                                            "author": "subtle_allusion"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "In my experience, it absolutely used to. But after the Quantum update, it uses a fraction of the system resources per tab that chrome was using. I tested it for two days before I switched months ago, and haven't encountered a single issue outside of occasionally bugged HTML loading. But Chrome does that too sometimes so it's not really an issue.",
+                                                                    "score": 139,
+                                                                    "author": "ZayneJ",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The reason why I moved from Firefox to chrome like 10 years ago was because chrome was so much lighter on CPU usage. Trend seems to have reversed. I uninstalled chrome on my PC this week and am using Firefox. \n\nToo bad on Android all you can do is disable chrome and not fully uninstall. ",
+                                                                    "score": 162,
+                                                                    "author": "nicksline",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Quantum uses an average of 3% for me. It's just as snappy as Chrome. I switched to try it out and never went back to Chrome on my laptop.",
+                                                                    "score": 29,
+                                                                    "author": "crdavis"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "How many tabs do you have open?",
+                                                                    "score": 10,
+                                                                    "author": "JeffBoucher",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "1 to 2",
+                                                                            "score": 9,
+                                                                            "author": "Whatdoyouknow012",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "There's a special place in hell for people who bemoan any attempt to affect change because it doesn't 100% solve a particular issue. ",
+                                            "score": 263,
+                                            "author": "ButterGolem",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "\"When I want to get to a destination I leap there in a single bound because any single step is incomplete and not worth the effort\" \n",
+                                                    "score": 101,
+                                                    "author": "PlumberODeth",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Eric Schmidt is not one of Google's creator.  He was the CEO for a few years, but not a co-creator.  Thats Larry Page and Sergey Brin.",
+                                    "score": 34,
+                                    "author": "yomama84"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Google\u2019s creator Eric Schmidt\u2019s daughter worked at Cambridge Analytica,\n\nDo you have a source for this?",
+                                    "score": 33,
+                                    "author": "Sloan621",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": " &gt;Edit: Google\u2019s creator Eric Schmidt\u2019s daughter worked at Cambridge Analytica, so yeh. Make of that what you will.\n\nI cannot locate a source for this",
+                                    "score": 108,
+                                    "author": "codedaway",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "smells like bs, can't find anything about his claim either.  \n  \nedit, did end up finding [this](http://mindchanging.org/tag/cambridge-analytica/).  \nand even then, all that article says is  \n&gt;In some ways, Eric Schmidt\u2019s daughter showing up to make an introduction to Palantir is just another weird detail in the weirdest story I have ever researched.    \n  \nshe suggested that SCL's ceo at the time, alexander nix (later cambridge analytica's ceo) should get into data in 2013, and the article doesn't mention anything about her involvement with the firm or lack thereof afterwards. i think saying that she \"worked for\" cambridge analytica is very much a stretch.",
+                                            "score": 75,
+                                            "author": "unfeelingzeal",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Since when did Eric Schmidt create Google as well?",
+                                            "score": 18,
+                                            "author": "ComradeDoctor"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Anyone thinking isolating Facebook solves your web privacy is extremely naive. \n\nOh for heaven's sake.\n\n*If we can't solve everything in one go, there's no point doing anything*, right?\n\n\n**Edit: What is it with cowards deleting their comments? Here it is again:**\n\n&gt; Good luck isolating Google Chrome from Google.\n&gt;\n&gt;Anyone thinking isolating Facebook solves your web privacy is extremely naive.\n&gt;\n&gt;Edit: Google\u2019s creator Eric Schmidt\u2019s daughter worked at Cambridge Analytica, so yeh. Make of that what you will.\n\n   * /u/SouthSouthLondon",
+                                    "score": 16,
+                                    "author": "Wootery"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 52,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yeh fat chance google will follow suit. Mozilla always looks out for the little guy. Everyone should delete chrome and just use firefox.",
+                                    "score": 185,
+                                    "author": "PossibleAnything",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I found a source for Eric Schmidt's daughter introducing Cambridge Analytica to Palantir, but no sources for her working there. Also, Schmidt did not create Google, he was a hired executive. ",
+                                    "score": 19,
+                                    "author": "hashbits"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I'm a lot more worried about facebook than I am about google, whether that's rational or not. Part of it is a matter of necessity -- I can find other ways to keep in touch, but if I don't use google services there go my search, email, data backup, online payment methods...",
+                                    "score": 58,
+                                    "author": "on_my_lunch_break",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Shouldn't you be more worried about Google then?",
+                                            "score": 89,
+                                            "author": "LAUAR",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I use duck duck go instead of Google",
+                            "score": 58,
+                            "author": "Anewdaytomorrow",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There's also [startpage.com](https://www.startpage.com/) or !sp search_term via [Duckduckgo bangs](https://duckduckgo.com/bang). It is a metasearch engine as it uses other sources to generate results.",
+                                    "score": 24,
+                                    "author": "fyen",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "For anyone who hasn't already, when the latest revamp of Firefox came out I switched to it from Chrome just to see if I liked it better and it is now my main browser.  For one, it renders images much better than Chrome (sharper and more detail), but it's also more efficient.\n\nAnother cool feature is that if you also download Firefox for iOS and/or Android (and I recommend you do) you can send yourself a tab between devices as well as other sync and sharing functions that are wonderful to have.  I find myself doing this thing a lot where I'm browsing on my phone and I want to send myself something for when I get home (like a new Skyrim mod or whatever) so I just send myself the tab.  I usually forget about it by the time I get home, but when I open my browser at home to go on Reddit or whatever all of the sudden it opens the Skyrim Mod page I had looked at earlier.\n\nI honestly can't recite the rest of the technical reasons why without re-researching them, but it honestly feels like a generational leap in browsers over current Chrome and I highly encourage everyone to give it a fair try.",
+                    "score": 396,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Only difficult part is people who were on Firefox and use extensions that are not updated/supported on FF 57. I'm not sure about the status of those extensions now, but a few of the ones I use were not updated.",
+                            "score": 99,
+                            "author": "MightBeJerryWest",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\"Recent Tabs\" on chrome between devices is one reason why I couldn't bear to switch browsers even though it sucks up so much CPU and RAM (I have ton of reddit and shopping tabs open for days at a time) even while gaming. But you pretty much confirmed my decision to switch with that tab sending on Firefox.",
+                            "score": 25,
+                            "author": "oxkwirhf",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "After enabling Firefox Sync you also get History -&gt; Synced Tabs, displaying tabs open on other devices.",
+                                    "score": 18,
+                                    "author": "theephie"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Facebook screen one month from now: \"We have noticed that you are using a Facebook extension container. Please note that monitoring your web activity allows Facebook to provide you with a free and high-quality social media experience. It employs thousands in snooping analytics. Please disable the container to keep using Facebook.\"",
+                    "score": 16,
+                    "author": "junctionist"
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't understand why I have to ask this, but 1. Why was this not ALREADY a thing?\n\n\nAnd 2. Why not just create this for every single tab in the browser. There should be NO REASON for one tab to know or read what another tab (aka cookies) are doing from another domain.\n\n\nIf a web developer has designed a website that requires a crossdomain cookie, in the age of privacy that should simply be considered a security risk, and not acceptable.\n\n\nI don't care if you use APIs or librarys from 3rd parties. It's time to lock that shit down from being tracked, and spied on.",
+                    "score": 107,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Disclosure: I'm the author of the add-on mentioned in the story.\n\nWhat you describe is actually possible in Firefox. It's called \"First Party Isolation\": https://wiki.mozilla.org/Security/FirstPartyIsolation\n\nWhen we studied various privacy protections, FPI had a higher amount of website breakage reported by users: https://blog.mozilla.org/data/2018/01/26/improving-privacy-without-breaking-the-web/",
+                            "score": 184,
+                            "author": "groovecoder",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Will FPI become the default eventually?",
+                                    "score": 11,
+                                    "author": "theephie",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I can't make any promises. But I will say that FPI broke far *less* of the web than we feared. It would take some work, but it's possible.",
+                                            "score": 29,
+                                            "author": "groovecoder",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Isolating/blocking 3rd party cookies entirely has been a thing in Firefox for a long time. They've had generalized containers for a while now too.\n\nI'm pretty sure they just made this specifically because it's noob-friendly, easy to understand, and topical.",
+                            "score": 109,
+                            "author": "vishier",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's absolutely just a zing at Facebook, I love it",
+                                    "score": 38,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "While everyone is distracted by Facebook, Twitter is wearing a blue suit hoping he blends in so nobody pays attention to him.",
+                                            "score": 17,
+                                            "author": "ionslyonzion",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This all could have been avoided if George Michael's FakeBlock had taken off.",
+            "score": 3282,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You mean George Maharris? That kid's a genius!",
+                    "score": 785,
+                    "author": "Gauze321",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Worked his way up to Mr. Manager",
+                            "score": 320,
+                            "author": "Show-Me-Your-Moves",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Just manager. ",
+                                    "score": 144,
+                                    "author": "GreenWaffle",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Who\u2019s Ann?",
+                                            "score": 48,
+                                            "author": "De_Facto",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Her?",
+                                                    "score": 45,
+                                                    "author": "GreenWaffle",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Why don\u2019t you leave Egg in the car",
+                                                            "score": 39,
+                                                            "author": "EliSmurfy",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "what, is she funny or something?",
+                                                                    "score": 25,
+                                                                    "author": "hardgeeklife"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Its so weird that everyones up in arms about facebook and privacy now like its some massive revelation when AD was making jokes about it 5 years ago. (Also wtf season 4 came out 5 years ago!?)",
+                    "score": 332,
+                    "author": "BaboBilgins",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 256,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Its not like Trump was the first guy to think of a border wall though. Its been a meme in american politics for years\n\nGeorge W Bush tried it: https://en.m.wikipedia.org/wiki/Secure_Fence_Act_of_2006\n\nClinton tried it:\nhttps://www.globalsecurity.org/military/ops/gatekeeper.htm\n\n",
+                                    "score": 116,
+                                    "author": "BaboBilgins",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "and Trump had his own election campaign in 2000, so The Simpsons weren't prophetic as much as just imagining the whole thing.",
+                                            "score": 50,
+                                            "author": "lud1120",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[There's even a diagram](https://vignette.wikia.nocookie.net/arresteddevelopment/images/e/e3/4x02_Borderline_Personalities_%2887%29.png/revision/latest?cb=20130601062659) of George Senior's wall in the show that has bushes labeled \"Bush\" and the wall labeled \"W.\" Not to mention the whole show is kind of a parody of the Bush family. Their names... the Sadden Hussein jokes... ",
+                                            "score": 52,
+                                            "author": "TwerpOco"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Season 5 soon!",
+                            "score": 21,
+                            "author": "alien005",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You know things are bad when your browser has to make a plugin to fight your social media.",
+            "score": 5304,
+            "author": "FurryPornAccount",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Reddit is now digg 2.0. You don't deserve good users.\n\nBye.",
+                    "score": 1810,
+                    "author": "doorbellguy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is just an incredible marketing move from mozilla, i hope it pays of and Firefox becomes a real alternative to Chrome :)\n\nEdit: I just want to point out that Firefox IS a real alternative to Chrome and you really should try it out today.",
+                            "score": 322,
+                            "author": "ballaman200",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How is it not a \"real\" alternative? For the past couple years now it's been faster, used less RAM, and generally performed a lot better. All the features Chrome has are already (and have long been) baked into FF, save Chromecast stuff (and really, how often are people Chromecasting from their computer in the first place?).\n\nIf you haven't already I highly recommend downloading it and giving it a go. I was a die-hard Chrome user since the day it launched. I switched years ago and haven't once looked back",
+                                    "score": 341,
+                                    "author": "FractalParadigm",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You are absolutly right, i am using Firefox for years but the image of Firefox is often very bad and it takes some time to show people that Firefox is great.",
+                                            "score": 88,
+                                            "author": "ballaman200",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 109,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Firefox 57 was the update that made me switch. I was bouncing from chrome to Vivaldi (vivaldi is chromium based), but the 57 update sealed the deal. \n\nAnd it's not glue-eatingly stupid when it come to memory management anymore",
+                                                            "score": 21,
+                                                            "author": "kicksledkid",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Its just inertia. People don't like to change software. People will talk about oh, firefox is slow, or chrome is a ram hog, but the simple truth is to switch browsers you have to reach some point of \"fuck this\" to overcome the inertia of using the browser you're most comfortable with.\n\nFor some people the realisation of the lack of privacy in Google chrome will be the \"fuck this\" point. For others, it might have been Chrome's impact on their laptop's battery life, or the way it loves to eat ram, but chances are most people are just going to carry on using Chrome as long as it works. And Chrome works just fine for most people.",
+                                                    "score": 54,
+                                                    "author": "Crusader1089",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "For me the \"fuck this\" moment was, after building a new PC and only being able to afford 8GB of RAM, seeing that with maybe 3-5 tabs open and a few extensions, the master process for Google Chrome *ALONE* was using over 1GB of my precious RAM, meaning I would need to terminate the process every time I wanted to game and it was damn near impossible to have Chrome and an adobe program open at the same time, as both are quite memory hungry. Now with the same tabs and extensions open, I think the total memory use of every Firefox process combined uses about 600MB total, it's just a no-brainer.",
+                                                            "score": 12,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;becomes\n\nIt *is* a real alternative to Chrome, especially with the performance overhaul a few months ago.\n\nIt may not have nearly the same market share but it's superior in a lot of aspects and nearly every Chrome extension is available in some form for Firefox as well.",
+                                    "score": 52,
+                                    "author": "TenDesires",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'll have to give this a try since my work situation encompasses many accounts and I got tired of logging in/out. My current solution is to have one account logged in on Firefox, another on Chrome, and another on Edge....",
+                            "score": 16,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh you're going to love multi-account containers.",
+                                    "score": 13,
+                                    "author": "vinnl",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I've only learned about firefox containers just now when I read this facebook container article.\nI've already deleted facebook but am really excited about that container add on.\n\nIsolating google, amazon and ebay would greatly improve my privacy",
+                            "score": 14,
+                            "author": "Ramast",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Agreed, FurryPornAccount.",
+                    "score": 145,
+                    "author": "A_Witty_Name_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 70,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "OwO What's this...?",
+                                    "score": 31,
+                                    "author": "smallpoly",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Why do I see you everywhere.\n\nBack to topic, yeah shit has gotten out of control. But oh well at this point any good is appreciated in this smelly pile of shit.",
+                    "score": 41,
+                    "author": "Fatal_Taco",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Mozilla has always been concerned about their users' privacy. Them being in a full-scale war with Facebook doesn't come as a surprise at all. Their browser is actually pretty damn good as well, so hopefully more people will start using it, at least when they browse Facebook",
+            "score": 8503,
+            "author": "donfelicedon2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; Mozilla has always been concerned about their users' privacy.\n\nDefinitely, that's part of why I'm sticking to Firefox.\n\nIt was fun long ago when everyone and their mother was praising Firefox using arguments such as open source and respect of privacy. Then Google releases Chrome and almost no one uses Firefox anymore. ",
+                    "score": 3310,
+                    "author": "Milleuros",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Because when Chrome launched Firefox was bloated and leaking memory like crazy.",
+                            "score": 3611,
+                            "author": "TorontoDev",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yup, chrome launched, worked better and faster. Firefox also started a massive decline at the exact same time. Shit would crash nonstop, and sometimes not even pull up. I had no choice but to make the switch. Now the cycle is continuing. Chrome has been sucking major donkey balls lately, and Firefox is getting better.",
+                                    "score": 2191,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It's just the curse of being #1. What incentive does Google have to keep improving their browser now that they've achieved ~40% market share? Same thing with Firefox when they were on top. Unless a major player upsets the market, I think we can expect this kind of jousting between the two for a good 5 or (dare I say) 10 more years.",
+                                            "score": 685,
+                                            "author": "Tyg13",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The argument that a top company has no need to improve is extremely one faceted. A company needs to grow and improve to retain customers too. And I doubt a company has a certain threshold like \u201cok we have 40% of the market, time to stagnate\u201d",
+                                                    "score": 103,
+                                                    "author": "Dlrlcktd",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "All of the major players have done exactly that though Microsoft with IE then Firefox now Chrome and Safari. They get big, stagnate and those that are recouping after being knocked off the top start their climb back up",
+                                                            "score": 58,
+                                                            "author": "poppychee",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah this is really weird.  I still have my old Firefox install from the last version that I used before switching over to Chrome.  I was NOT happy to make the switch, but like you said, Firefox was basically giving me no choice.  Maybe it's time to switch back.\n\n",
+                                            "score": 46,
+                                            "author": "robodrew",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The entire backend of Firefox was overhauled with the release of FF 57.",
+                                                    "score": 95,
+                                                    "author": "sapperRichter",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The UI is pretty overhauled too. Looks much cleaner and even has a built in dark theme",
+                                                            "score": 47,
+                                                            "author": "weswes887",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I switched to Chrome circa ~~2005~~2008ish when it came out and Firefox was having those bloating problems. 2-3 months ago I switched back to Firefox because their latest build promised incredible speed. It totally delivers and I haven't used Chrome since.\n\n*Edit: Chrome launch date. I'm getting old! ^And ^so ^are ^you ^mwahah Sigh*",
+                                                    "score": 30,
+                                                    "author": "eriksrx",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Minor correction: Chrome was released in 2008, not 2005.",
+                                                            "score": 11,
+                                                            "author": "The_JSQuareD",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "True, and performance remained a problem for a long time. But in case anyone hasn't heard, four months ago Firefox came out with a major upgrade that's much faster. Give it another try.",
+                                    "score": 41,
+                                    "author": "Epistaxis",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "to be fair, firefox memory leaks were add on related.\n\nthey nuke their own addons which means memory leaks will probably never happen anymore",
+                                    "score": 24,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I switched to Firefox on mobile and desktop. I don't even have Chrome installed on my new machine. Quantum is super fast and stable, and Firefox Focus is perfect for 90% of browsing on mobile, which is either porn or looking up something on wikipedia.",
+                            "score": 51,
+                            "author": "Semi-Hemi-Demigod",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I love how the internet is treating facebook like it's asbestos now. ",
+            "score": 924,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Which is a little surprising considering Facebook's collection of data seemed to be the most common of knowledge until now.",
+                    "score": 48,
+                    "author": "JackBond1234",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 194,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Doubtful. It will probably take an image hit, and lose a few million users that it won't care about.\n\n\nIt's like youtube, it fucks every user any way it can, there's always controversies around it and its \"content producers\", advertisers pulling out. Youtube don't care.\n\n\nSame will be with Facebook.",
+                            "score": 256,
+                            "author": "reddixmadix",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "*Most people are probably aware that data they directly give to Facebook \u2014 such as \u201cliking\u201d a Page or updating their relationship status \u2014 may be used by Facebook to sell to advertisers. But less people may know that Facebook can also track their activities on other websites that have integrated with Facebook\u2019s tracking technology, such as the pervasive \u201cLike\u201d button.*\n\n*The add-on, which can be installed through the usual means in Firefox, essentially \u201cisolates\u201d your Facebook profile from the rest of your web browsing, meaning you can still use Facebook as usual but without the off-site tracking part.*\n\nIt's getting to the point where it may just be easier to delete Facebook.",
+            "score": 1255,
+            "author": "TooShiftyForYou",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Deleting Facebook doesn't get rid of the info they have on you though. They continue to build profiles of people who aren't signed up.",
+                    "score": 574,
+                    "author": "JohnnyOnslaught",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "We seriously need to consider a law that forces software companies to actually delete data a user wants to trash, especially if it is personal information.\n\nI \"deleted\" my facebook account over a year ago, and I'd say it's a safe bet that it's still sitting in some database table with a \"deleted\" boolean column somewhere set to true.\n\nI don't know if any countries enforce this, but it should be mandatory for operation in my opinion.",
+                            "score": 412,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In EU law you have a \"right to be forgotten\", so if you're an EU citizen, you can be completely removed from their services.\n\nEDIT: This is only fully implemented in about 60 days from now, through the GDPR. Individual nation states have however been able to implement GDPR beforehand, so it might already be fully implemented in some nations.",
+                                    "score": 240,
+                                    "author": "Silhout",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "AFAIK \"right to be forgotten\" has only ever been used to remove information from searches, not to have information removed at the source. It will be interesting to see how it plays out with Facebook (or if other privacy laws are used instead).",
+                                            "score": 86,
+                                            "author": "altmehere",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Just wait for GDPR to roll out in May.",
+                                                    "score": 79,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 33,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ugh, I've got so much goddamn overtime thanks to getting ready for this shit.  I mean I get it and support it, but trying to adjust these old legacy applications that were created when I was in grade school is annoying.",
+                                            "score": 15,
+                                            "author": "Sonics_BlueBalls",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 177,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The EU requires Facebook to delete all data about you when you delete your account. Facebook provides a special link for those in the EU to delete their accounts with. I'm willing to bet that they check to see if you're European before actually deleting anything though.",
+                            "score": 50,
+                            "author": "magistrate101",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 29,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Can non-europeans use VPN to do that? I deactivated my profile 2yrs ago but I'm pretty sure they have still kept my info",
+                                            "score": 23,
+                                            "author": "0aniket0",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "To be completely honest, I have no idea. ",
+                                                    "score": 11,
+                                                    "author": "henry_blackie"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I did last week. Honestly, I don't miss it, even though I was only using Messenger the last few years. Funny thing is, is that my phones battery life is significantly better and it's nice not having to see people you once knew, as being decent humans, devolving over clear propaganda, like that photo-shopped instance of that survivor ripping up a copy of the constitution. ",
+                    "score": 117,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; my phones battery life is significantly better\n\nYeah, this was known for a while. FB app is bloated on purpose, constantly tracking your shit in the background.",
+                            "score": 76,
+                            "author": "paradox_djell",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yep. It\u2019ll be fun when they get nailed with felonies in two party states. ",
+                                    "score": 36,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Wait, they were recording phone calls? I thought it was only meta data such as call logs.",
+                                            "score": 14,
+                                            "author": "paradox_djell",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That\u2019s the issue. We don\u2019t know how far they went. And the law is probably applicable to text messages and messenger messages as well, as users have reported seeing ads for things they discussed with other people. ",
+                                                    "score": 35,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I deleted facebook at some point, but got back into it once I went abroad. If you moved around quite a bit, facebook is just one of the simplest ways to keep in touch with people you know (or at least keep a connection you can use to get back in touch).\n\nSo then doing damage control and using the features I want to use, while suppressing others is a good option for me.",
+                    "score": 79,
+                    "author": "PG-Noob",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I would love to get rid of FB. But I really do like being able to casually stay informed about what friends and family are doing, especially those I don't speak with often.\n\nAlso, I work in digital media, and sell Facebook, so I need to be able to access it. Which is one of my major peeves: needing to have an account and be logged in just to look at shit.",
+                    "score": 87,
+                    "author": "chmilz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As someone who deleted their Facebook 8 years ago, you'll contact the people you want to contact and your life will still have meaning without peering into the lives of the others you don't want to talk to. Seeing what other people are doing is the main selling point for Facebook. People are curious by nature and Facebook allows you to be a vouyer from your phone at any time of day. It truly is a psychological master stroke of a business model. Facebook wastes time you could spend actually interacting with people instead of looking over their digital fence to see what they're up to. I say stick with it for work if you must, but ditch it for your personal life. You'll be a lot happier in the long run. ",
+                            "score": 81,
+                            "author": "tsilihin666",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Loving how Facebook is being treated like the malware virus it really is.",
+            "score": 98,
+            "author": "LittleGeppetto",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Its malware IRL",
+                    "score": 22,
+                    "author": "Deere-John"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; isolates your Facebook profile from the rest of your web browsing\n\nShouldn't this be the default for all websites? Why would we want Website A to know what I'm doing on Website B?",
+            "score": 426,
+            "author": "gannebraemorr",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "it\u2019s not that we want it. ad bastards are doing it. there\u2019s a firefox extension that displays this. different services are interconnected and you can see similar websites using the same services which ties your identity.",
+                    "score": 245,
+                    "author": "sovietskaya",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[Firefox Lightbeam](https://addons.mozilla.org/en-US/firefox/addon/lightbeam/) is the name of the extension for those wondering.",
+                            "score": 55,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Shouldn't this be the default for all websites? Why would we want Website A to know what I'm doing on Website B?\n\nWith [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/), you can isolate every website/tab from each other.\n\nFirefox containers are awesome.",
+                    "score": 86,
+                    "author": "theephie",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 35,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They can still track you even then, Facebook cookies are just the easiest way to get that info.  If you log in from a unique set of IPs and they also have an 'anonymous' user pinging all their tracking bugs on those same IPs, it's not difficult to correlate the data and guess who that anonymous user really is.\n\nThere's little you can do to stop Big Data unless you go to extreme lengths to stop that data from being created.  You can delete your Internet History, but you can't delete your history on the Internet.",
+            "score": 609,
+            "author": "JuvenileEloquent",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There's also [fingerprinting](https://arstechnica.com/information-technology/2017/02/now-sites-can-fingerprint-you-online-even-when-you-use-multiple-browsers/) . With that, you don't even need to maintain the same IP address or the same browser to be tracked under one identity. You can use [EFF's Privacy Badger](https://www.eff.org/privacybadger) to limit the efficacy of this, but it isn't perfect. ",
+                    "score": 294,
+                    "author": "durand101",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You can also use Canvas Defender that seems to inject noise to impeded finger printing.\n\nhttps://chrome.google.com/webstore/detail/canvas-defender/obdbgnebcljmgkoljcdddaopadkifnpm",
+                            "score": 94,
+                            "author": "pikkaachu",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Also, noscript. Turned on running panopticlick I get a good score on fingerprinting. Turned off, bad score. It just takes getting used to and what scripts to allow or not. If I visit a website that has a million scripts, I just don't visit it because fuck that. \n\nhttps://noscript.net/\n\nhttps://panopticlick.eff.org/",
+                            "score": 39,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 54,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The ISP you use may also give some back-channel data about users in exchange for money/intel -- I don't KNOW it to be true, I just know it's possible and it's something they can make a buck on so OF COURSE THEY ARE.\n\nI use a Open DNS instead of google for lookups -- as one more step, but, I'm not kidding myself.",
+                    "score": 43,
+                    "author": "Fake_William_Shatner",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "FYI openDNS is not open / foss at all and [actively collects and sells your data](https://www.cisco.com/c/en/us/about/legal/privacy-full.html).\n\nExtract:\n\n&gt; We may share your personal information with third parties for the purposes of operating our business, delivering, improving, and customizing our Solutions, sending marketing and other communications related to our business, and for other legitimate purposes permitted by applicable law or otherwise with your consent.\n\nBetter alternatives exist, see u/meetspin27\u2019s list above.",
+                            "score": 21,
+                            "author": "dalyscallister",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 324,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "FireFox Quantum (the current version of FireFox) is INSANELY fast and great.",
+                    "score": 265,
+                    "author": "wardial",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 40,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Plug for [privacytools.io](https://www.privacytools.io/#email), it's a great resource.",
+                                    "score": 31,
+                                    "author": "Quetzacoatl85",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "FF has made huge strides in fixing their memory issues in recent years",
+                    "score": 38,
+                    "author": "mothdna",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "uBlock Origin + uMatrix/ Privacy Badger will achieve the same result.",
+            "score": 493,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I just installed uMatrix and it made Reddit stop working basically",
+                    "score": 217,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's nice of you, now you can finally water the flowers, feed the cat, do you taxes or whatever it is people do outside of reddit!",
+                            "score": 673,
+                            "author": "theonyltrueMupf",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "But he'll never know.",
+                                    "score": 87,
+                                    "author": "gangofminotaurs",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I didn't train my cat to carry a watering can and do math so I could water the damn flowers and do taxes!",
+                                    "score": 44,
+                                    "author": "RamenJunkie"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is normal.\n\nUmatrix will make any web site that uses other domains stop working. You have to manually enable said domains (redditmedia.com, redditstatic.com for instance) to make them work.\n\nIf you have the knowledge and the time to do so, it is, imho, the best way to browse the web. Because, since you have spent the time to configure every website that you browse, you know exactly who gets informations from you and who does not.\n\nIf not, I recommand Privacy Badger.",
+                            "score": 159,
+                            "author": "maitrepaul",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It may be normal, but it makes uMatrix accessible only to power users. Nobody wants to click on 30 different sites randomly to see which ones are going to allow the content to come up. Further to that, accidentally clicking an ad serving or tracking site isn't something people fix once said content comes up.\n\nIt seems like some kind of social/reputation detection between sites should be just added automatically. \n\n\"We've noticed this site places cookies on multiple pages but never delivers any meaningfully interacted with content by the user. It has been throttled/banned automatically. It is shown in Yellow; click on it to enable or disable it as appropriate.\"\n\netc",
+                                    "score": 97,
+                                    "author": "i_build_minds",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Indeed, uMatrix is designed for power users. What you describe is Privacy Badger.\n\nIf you want to use preset lists, then ublock origin is for you.\n\nIf you want to let the tool learn on itself and block the trackers, then privacy badger is the one.\n\nAnd if you want absolute control on which domain is allowed for each website then you have to spend the time and use uMatrix.",
+                                            "score": 51,
+                                            "author": "maitrepaul"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "You basically just described privacy badger",
+                                            "score": 81,
+                                            "author": "Atom30"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "umatrix is not an out of the box ready experience, think noscript on firefox. It will disable and break everything and it's on you to set it up slowly re-enabling the scripts you need and want.\n\nYou could just install privacy badger and \u00b5block for an almost identical result while it being fairly out of the box ready.\n\nIf you want an additional layer of privacy, canvas defender and decentraleyes are pretty good as well and don't need any setup",
+                            "score": 11,
+                            "author": "Elvenstar32"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "+https everywhere",
+                    "score": 13,
+                    "author": "Dlrlcktd",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\u201cHi, Facebook here. We noticed you\u2019re using Mozilla to browse our site. Though we appreciate your use, please use another browser. Thanks!\u201d",
+            "score": 146,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\u201cSure, ill do that right after I disable my Adblocker to browse your website\u201d *closes tab",
+                    "score": 42,
+                    "author": "Strel0k"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wow, when one of the biggest browser developers makes a dedicated extension to combat your website, you're doing something wrong",
+            "score": 67,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Meanwhile, other sites / organizations / tools that do the same kind of thing are off in the corner whistling and hoping nobody notices them.  ",
+                    "score": 16,
+                    "author": "arvy_p"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Welcome back Mozilla to the Club of Good Decision Making.",
+            "score": 92,
+            "author": "Kaelaface",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Neat, alternatively, stop using Facebook, let it dry out and die.",
+            "score": 44,
+            "author": "LawlessCoffeh",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "And this is why I swear by Mozilla.",
+            "score": 105,
+            "author": "ordwk2b",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Mozilla is really kicking ass in the response to all this shit. I love Chrome, but I'm definitely moving to Firefox. They've earned it.",
+            "score": 56,
+            "author": "Alundra828",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 48,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You can user firefox [multi-account containers addon](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/) for firefox by mozilla. You can create many isolated containers there, not only for facebook. Really useful addon",
+                    "score": 86,
+                    "author": "buiwis",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 44,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "As someone who knows next to nothing about the internet and how to protect themselved, this all feels really overwhelming. (I feel so old right now lol)",
+                                    "score": 13,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's time to switch. The Firefox Quantum is awesome. \n\nRemember Google is no better than Facebook. Be wary of using their spyware browser.",
+            "score": 168,
+            "author": "-sendnudes-",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 160,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Been using addons like uBlock Origin and NoScript/uMatrix to completely block 3rd-party FB and Google scripts for the better part of a decade. _Never_ installed the Facebook app, but I've used Facebook plenty to keep in touch with friends. I'm really curious how much they \"know\" about me vs the average person who raw dogs the internet.\n\nPurely anecdotal, but I can't say I've experienced those way-too-personalized ads across my web experience like I've seen other redditors post about. (E.g., talking about needing a new hairbrush ad near their phone and then seeing ads for hairbrushes *everywhere*.)",
+                    "score": 19,
+                    "author": "Havitech",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 103,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I only use ublock origin and disconnect on firefox and I am wondering if that is enough to avoid tracking by social media. ",
+                    "score": 28,
+                    "author": "Soupias",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "PrivacyBadger is a great tool as well",
+                            "score": 52,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yes, uBlock Origin alone will work if EasyPrivacy and Fanboy\u2019s Annoyance List/Fanboy\u2019s Anti-Thirdparty Social Media List are turned on. EasyPrivacy is on by default and blocks scripts that do nothing but tracking. Fanboy's List blocks third-party \"like\" buttons and other social media stuff that gets embedded in web pages.",
+                            "score": 21,
+                            "author": "aiesa"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 11,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 37,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Now that I think about it, Ive been doing this for years by always accessing it via a different browser other than what my main one was at the time.",
+            "score": 26,
+            "author": "kuueon",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Why haven't browsers been doing this for all websites already",
+            "score": 11,
+            "author": "halfshadows",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 15,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        }
+    ]
+}

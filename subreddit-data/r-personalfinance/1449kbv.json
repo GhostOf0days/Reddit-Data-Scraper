@@ -1,0 +1,365 @@
+{
+    "id": "1449kbv",
+    "score": 21,
+    "title": "My bank account suddenly won't work with Plaid and it is becoming a big problem",
+    "author": "karmassacre",
+    "date": 1686231502.0,
+    "url": "https://www.reddit.com/r/personalfinance/comments/1449kbv",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I've searched far and wide for advice on this, but tech support and help for end-users with Plaid are hard to come by... so I come to you desperate.\n\nTwo weeks ago after some scheduled maintenance at Plaid, my bank account will no longer work with Plaid.  This is a much bigger issue than I first thought as it seems I use several very important 3rd party services and applications (financial software, exchange platforms, etc) that leverage Plaid.  All of those have come to a total halt for me and it is disrupting my ability to handle my finances properly.\n\nI've spoken to multiple tech support people at all of these 3rd parties and they all say that everything with my account looks fine on their end, but that Plaid is where the problem lies.  I submitted a ticket to Plaid days ago, but that has gone no where and it feels like I'm yelling into a black hole as Plaid only seems to want to deal with enterprise customers and not end-users.\n\nHas anyone else experienced this problem? I'm going crazy over here.  My last resort is to nuke my bank account and start over with another institution, but I really don't want to do that.\n\nThanks for reading.\n\nEdit: Update for you wonderful folks.  I called my bank (Navy Federal Credit Union) again and this time they were more forthcoming with information about the nature of the problem.  Apparently it's a security conflict between NFCU's standards and Plaid.  Basically NFCU has a security expectation that Plaid is not willing to work around, and so NFCU Plaid customers are up shit creek until Plaid decides to make the necessary changes (NFCU will not budge).  The suggested temporary workaround was to \"log in and out of my account via using multiple IPs and hardware/devices until I trigger the security challenge\" and after successfully passing that security challenge my service with Plaid would return to normal.  Sadly I just did that and it did not solve the problem.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If plaid is the problem and plaid won\u2019t acknowledge or fix it then there\u2019s nothing anyone here can do to resolve it for you.   Sounds like the choices are to either find another way of doing things that doesn\u2019t require plaid or change to a bank that plaid can actually work with.",
+            "score": 47,
+            "author": "Aleyla",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm throwing myself onto the mercy of the wider internet in the hopes that someone else out there has a similar story with a happy resolution.  The funny thing is my bank *does* work with Plaid, it's just *my account in particular* that won't function right now.  Frustrating.",
+                    "score": -12,
+                    "author": "karmassacre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; ... in the hopes that someone else out there has a similar story with a happy resolution.\n\nPlaid sucks, and very, very bad.\n\nThe only happy resolution is refactoring your life so that you have no dependencies on it. Otherwise you will continually be disappointed. Plaid is garbage, and the people who work there should be ashamed.",
+                            "score": 22,
+                            "author": "exiestjw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is the correct answer.  Just use other forms of verification for your LinkedIn accounts.  Mist services can use '\"deposit two small amounts\" and similar schemes.",
+                                    "score": 2,
+                                    "author": "arclight415"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Then call your bank.",
+                            "score": 4,
+                            "author": "CanWeTalkEth",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Already did, multiple times.  Verified the connection is being allowed by my bank to Plaid.  Problem lies within Plaid.",
+                                    "score": 1,
+                                    "author": "karmassacre"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Plaid really does suck. I avoid using it at all costs. IMO they cannot be trusted, and it reduces the safety of your money.",
+                            "score": 1,
+                            "author": "ancillarycheese",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I have no idea how to live my life without somehow relying on Plaid's service.  They are freaking *everywhere.*",
+                                    "score": -6,
+                                    "author": "karmassacre",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I\u2019ve never heard of plaid.. ever.\n\nWhat is it?",
+                                            "score": 1,
+                                            "author": "Kabc",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's a service that allows third party apps and websites to get data from financial institutions. Like your credit card charges, bank account balances etc.\n\nIt exists because most banks don't have any way for third party apps or websites to get any information, and certainly no universal method that would work for all banks. Plaid develops integrations for every bank, then offers it as a service to developers.\n\nMost banks don't care about giving data access to third parties, so Plaid has to work around all sorts of limitations. For example, you  usually have to give Plaid your bank account password and security codes so it can log in on your behalf. Which means you have to trust Plaid to not leak all your banking passwords.",
+                                                    "score": 1,
+                                                    "author": "SeriousBug",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That doesn\u2019t seem kosher to me. What is the advantage of something like that?",
+                                                            "score": 1,
+                                                            "author": "Kabc",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "It's basically your only option if you want data automatically imported into an app. Like having all your transactions imported into a budgeting app.",
+                                                                    "score": 2,
+                                                                    "author": "SeriousBug",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Ah, that makes sense I gues",
+                                                                            "score": 1,
+                                                                            "author": "Kabc"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Have you tried removing your account from each service and re-adding it from scratch?",
+            "score": 8,
+            "author": "nothlit",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes. No dice.",
+                    "score": 4,
+                    "author": "karmassacre"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I know the bank I work for has stopped most connects to plaid due to fraud. \n\nI would suspect that your bank has seen an increase with fraud due to the service and they are cutting their losses. They don't want to keep paying out refunds and it's easier to just say we don't support them.",
+            "score": 21,
+            "author": "Dismal-Initiative-95",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "After calling my bank I do not think this is the problem.",
+                    "score": -9,
+                    "author": "karmassacre"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did you turn on 2FA in your bank account by any chance? Plaid doesn\u2019t support 2FA",
+            "score": 5,
+            "author": "khaleesi_brasil",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Are you sure? Yodlee seems to (I use Tiller for budgeting), and I didn't see any mention of Plaid not supporting it, which would be a pretty big deal.\n\nIt may not support 2FA for _all_ services (I've seen reports of it not working for Fidelity 2FA), but I would be surprised if it doesn't support any method of 2FA.",
+                    "score": 3,
+                    "author": "whisky_in_your_water",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I wonder why they don\u2019t make it available for all their services?",
+                            "score": 1,
+                            "author": "khaleesi_brasil"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I didn't turn it on, my bank does 2FA by default, but yes I have accounted for that and it's not the problem.",
+                    "score": 2,
+                    "author": "karmassacre"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Plaid sucks. I setup a separate bank acct just for services that require Plaid, cause they don't support my main bank",
+            "score": 4,
+            "author": "_91919"
+        },
+        {
+            "level": 0,
+            "comment": "Have you logged into the Plaid Portal to see if anything may be amiss from their side (maybe like an OAuth connection that has expired and wasn\u2019t automatically refreshed for whatever reason)?",
+            "score": 2,
+            "author": "midwestest",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I've snooped all over their site and customer service and have seen nothing confirming any problems on their end.  My service *did* stop immediately following their planned maintenance on May 24th though.",
+                    "score": 1,
+                    "author": "karmassacre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think they're specifically referring to https://my.plaid.com -- have you tried that?",
+                            "score": 3,
+                            "author": "nothlit",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes. Didn't get me any closer to a solution sadly",
+                                    "score": 1,
+                                    "author": "karmassacre"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Plaid works with any bank. You don't have to give your login and password. You can search for ABCD Bank... And plaid will say \"Can't find your bank?\", \"Try manually instead\"... And then type your account number and routing number and plaid will send 2 deposits to verify your account and then you can verify your accounts and with plaid by entering the two authorization deposits that plaid made",
+            "score": 2,
+            "author": "OkSeaworthiness4079",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not all 3rd parties offer manual verification sadly.",
+                    "score": 1,
+                    "author": "karmassacre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Then you can probably just cut those services from your life.  Plaid is not a privacy or security focused company.",
+                            "score": 5,
+                            "author": "arclight415"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I believe it's an issue with plaid, not your bank. I have 2 accounts that link with my bank via plaid - about every 3 days I'll get a notice my account can't be reached and to sign in and verify. I do, and plaid will keep telling me I need to sign in to my online banking to acknowledge XYZ, or that there was \"an issue\" and just kick me out. I have accounts at 2 different banks, and plaid does the same routine with both - links fine for a few days then out of the blue drops for no known reason and won't re-link for days at a time.",
+            "score": 2,
+            "author": "Altruistic-Farm2712"
+        },
+        {
+            "level": 0,
+            "comment": "Have you tried posting this on Hacker News? People definitely get good results publicly shaming SaaS companies out of silicon valley there.\n\nhttps://news.ycombinator.com/",
+            "score": 2,
+            "author": "ColonelLloydVenture"
+        },
+        {
+            "level": 0,
+            "comment": "What does Plaid do? I've never heard of it.",
+            "score": 3,
+            "author": "MadDingersYo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They're a bank transaction information aggregator. Basically, they scrape bank and credit card company websites for your transaction information, and send it off to client websites like Mint and YNAB, who then present it to the user for the desired functionality.",
+                    "score": 9,
+                    "author": "wndrgrl555",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sadly it's way more than just aggregators like Mint and YNAB.  I can't even do deposits with things like Venmo and Coinbase anymore.  There's probably even more services that are now broken for me I haven't discovered yet.",
+                            "score": 3,
+                            "author": "karmassacre",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I know most things allow you to link your bank manually which is what I normally do, and then you don't rely on a third party tool. So that's an option for you at least for now.",
+                                    "score": 7,
+                                    "author": "truebenny",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This. Try manual add. I use venmo and coin base with bank that don\u2019t use plaid (HSBC). You\u2019ll have to provide your acct number and routing and do a micro deposit verification. The 3rd party support teams should know about those options",
+                                            "score": 3,
+                                            "author": "Nilfy",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Sadly this is only a workaround for a small amount of the service providers, as many of them *only* operate through Plaid.",
+                                                    "score": -8,
+                                                    "author": "karmassacre"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Plaid basically facilitates transactions between your bank and service providers.  Mint, Venmo, etc.  You may not realize it but you're probably using several services that rely on Plaid to connect to your bank right now.",
+                    "score": -1,
+                    "author": "karmassacre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Interesting. Thanks for the info.",
+                            "score": 3,
+                            "author": "MadDingersYo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I work for a company that utilizes plaid. If there's an issue with your bank integrating with plaid, you're going to need to raise the bug report to your bank. Your bank likely has a relationship manager who is the liaison between plaid and your bank, and your bank needs to engage them to resolve this bug.",
+            "score": 3,
+            "author": "Qbr12",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I did this already and my bank has \"done everything they can do on their end\".  I told them exactly what you said (as I expected this to be the case, as Plaid does not deal with little end users like me, only major enterprises) and got nowhere :(",
+                    "score": 1,
+                    "author": "karmassacre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My suggestion would be to feign ignorance. \"I'm trying to use &lt;feature that requires plaid&gt; but it's not working. Can you help me?\" And if that doesn't work, find a new bank because ultimately this is your bank refusing to help you.",
+                            "score": 0,
+                            "author": "Qbr12"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Interesting! I haven't been able to connect with Coinbase in over a week, sounds like the same issue? I just kept trying every few days and hoping, but sounds like I may have to use another bank entirely. Such a pain.",
+            "score": 1,
+            "author": "MuseDee"
+        },
+        {
+            "level": 0,
+            "comment": "Why don\u2019t you open up another bank account?",
+            "score": 1,
+            "author": "Upper-Ad-1444"
+        },
+        {
+            "level": 0,
+            "comment": "I've been dealing with this forever...no resolution. Different credit union.",
+            "score": 1,
+            "author": "greatestNothing",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Which one, if you don't mind me asking?",
+                    "score": 1,
+                    "author": "karmassacre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Dover FCU and Del-One FCU, neither work anymore. Haven't for awhile. I have a service I pay for with crypto that unless Bitcoin pumps quite a bit I'm going to be short in September.",
+                            "score": 1,
+                            "author": "greatestNothing"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This has been incredibly frustrating. Especially because NFCU and Plaid both refuse to make statements on the issue. Its been several weeks and this hasn\u2019t been resolved. I needed some emergency cash and couldn\u2019t verify my income on any of the cash advance apps because of this.",
+            "score": 1,
+            "author": "fuegox"
+        },
+        {
+            "level": 0,
+            "comment": "My credit union started requiring 2fa on every account poll, so I technically need to update my credentials every time I want new info. Seems like it\u2019s a credit union thing so far.",
+            "score": 1,
+            "author": "SocietyTomorrow"
+        }
+    ]
+}

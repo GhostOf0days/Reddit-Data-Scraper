@@ -1,0 +1,39 @@
+{
+    "id": "12ypjy0",
+    "score": 5,
+    "title": "Hi everyone, how do fusion reactors ionize gas and do the free electrons move in the opposite direction of the nuclei?",
+    "author": "AVgaast",
+    "date": 1682442646.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12ypjy0",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "As the title suggests, I am struggling to understand how fusion reactors work, so I was wondering if someone could explain it to me :) \n\nI have read countless articles, seen lots of video, but I still don't quite get it.\n\nSo far this is what I understand: Magnets and microwaves somehow ionize gas, makes it spin around the reactor and make plasma. That makes it hot enough to fuse atoms together to create energy.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "There are multiple concepts for fusion reactors, I guess you are asking about magnetic confinement methods - tokamaks and stellarators.\n\nMagnets keep the plasma in place: Charged particles fly in circles in magnetic fields, so they don't escape. Particles can also move along the magnetic field direction, then their path becomes a helix, and you need to make sure that helix stays within the plasma, that's why they have the overall ring-like pattern: The magnetic field lines go in a circle, too.\n\nFor heating there are a couple of options, [Wikipedia has a list](https://en.wikipedia.org/wiki/Tokamak#Plasma_heating). You get random collisions between nuclei in the plasma, if it's hot enough then each time they have a small chance to fuse and release energy in the process. You also get random collisions between other things (electrons and nuclei, and electrons and electrons), but these don't lead to fusion.",
+            "score": 3,
+            "author": "mfb-"
+        },
+        {
+            "level": 0,
+            "comment": "Different confinement concepts use different techniques to ionize the gas. A simple way to create a plasma is to use a Townsend effect. If you apply a strong enough voltage between the two plates this will create avalanche process that causes the fill gas to breakdown into a plasma. In a toroidal device, like a tokamak, you can do something similar but instead of applying a voltage across two plates, you apply an inductive voltage using Faraday's law. Here the tokamak acts like the secondary stage of a transformer. \n\nWhen we think about plasma, two quantities of interest are flow and electrical current. Flow is the average directed momentum of the bulk plasma. Current is the **difference** between the average motion of the positively ions and negatively charged electrons. A net current does not imply the that electrons and ions move in opposite directions, only that there is a difference in their average motion. Some concepts, such as tokamaks use currents to produce magnetic fields which help confine/stabilize the plasma.\n\nThere are multiple ways to heat a plasma. The simplest is Ohmic heating. Current flowing through a wire creates heat due to the resistance in a wire. The same thing happens in plasma. Plasmas tend to be good conductors, but we drive large amounts of current. Thus we can produce lots of heat through Ohmic heating. But this isn't enough for a fusion reactor so we have additional ways to heat a plasma. We can use microwaves and other frequencies of electromagnetic waves to heat a plasma. Here the plasma absorbs energy from the waves like food in a microwave. We can also shot high energy neutral beams into the plasma. These beams collide with particles in the plasma, heating them up. Energetic fusion products can heat the plasma via these collisions too. Finally, you can compress a plasma. Just like an gas, if you compress a plasma it will heat up.",
+            "score": 1,
+            "author": "UWwolfman"
+        },
+        {
+            "level": 0,
+            "comment": "As you have mentioned, fusion reactors utilize a process called ionization to create plasma, which is a state of matter consisting of free electrons and ions. The plasma is then heated to extremely high temperatures, which causes the atomic nuclei to collide and fuse together, releasing energy in the process.\n\nNow, to answer your question about how the free electrons move in the opposite direction of the nuclei, we must first understand the nature of charged particles. When an atom loses or gains electrons, it becomes positively or negatively charged, respectively. These charged particles are then affected by electric and magnetic fields, which can cause them to move in specific directions.\n\nIn a fusion reactor, the gas is ionized by applying an electric field or by bombarding it with high-energy particles. This process removes electrons from the atoms, creating positively charged ions and free electrons. The ions and electrons are then separated by magnetic fields, which cause them to move in opposite directions.\n\nThe magnetic fields are created by superconducting coils that surround the plasma. These coils generate a magnetic field that is strong enough to confine the plasma and prevent it from touching the walls of the reactor. The magnetic field also causes the ions and electrons to move in circular paths, with the ions moving in one direction and the electrons moving in the opposite direction.",
+            "score": 1,
+            "author": "Sh_gosha",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the help\ud83d\ude4f\ud83c\udffb\nSo just to clarify, if the electrons move clockwise  around the confinement, the nuclei will move counterclockwise?",
+                    "score": 1,
+                    "author": "AVgaast"
+                }
+            ]
+        }
+    ]
+}

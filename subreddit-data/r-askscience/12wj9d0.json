@@ -1,0 +1,151 @@
+{
+    "id": "12wj9d0",
+    "score": 99,
+    "title": "Is there some kind of overall, long term health risk index, to compare different chemicals? We have LD50 to compare how deadly things are that kill you outright, but is there a standard way to compare how dangerous long term exposure is to chemicals that aren't immediately toxic?",
+    "author": "ECatPlay",
+    "date": 1682271205.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12wj9d0",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Something like how much of a chemical (lead, PFAS, acetaminophen, malathion, etc) on a daily basis, will eventually raise your risk of the associated serious health issue (neurological damage, compromised immune system, liver damage, etc.) significantly above the background level, over the course of your lifetime.\n\nBruce Ames (father of the Ames test for mutagenicity) advocated for the idea of \"Carcinogenic Potency\" in weighting health risks of different chemicals.  This takes into account both the mutagenicity and the level of exposure:  alcohol is only slightly mutagenic, but taking into account the much higher amount typically consumed, it was the the most potent carcinogen outside of smoking in his analysis.  But that's just for cancer.  \n\nNow we are considering limiting PFAS in drinking water to 4 parts per trillion.  But the FDA already allows up to 8 ppm of the pesticide, Malathion, in some foods: 6 orders of magnitude more.  Does that really reflect the difference in risk?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "When I studied Environmental Chemistry there was the MAK, which is the Maximale Arbeits Konzentration (maximal work concentration). Ist the amount of substance, where long term exposure during an 8 h shift is supposed NOT to have any long term effects. Googled it, and  it's the Threshold limit value TLV in english. \n\nIs that what you're looking for?",
+            "score": 20,
+            "author": "SoupIndependent9409",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, this is another value that sort of gets at what I'd like to see, but isn't really it. TLV is just for airborne substances, and is a maximum for intermittent exposure in the workplace.  So it only indirectly gets at cumulative affects, and doesn't include substances you might consume, so there are only limited comparisons you could make.  But thanks.",
+                    "score": 7,
+                    "author": "ECatPlay"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "LD50 is quite simple because the outcome (death) is easy to standardize. Different kinds of chronically toxic substances may have different toxic effects (cancer, neurological toxicity, lung damage, teratogenicity, etc) and these may be difficult to directly compare. Is 1 ppb of TCDD more or less toxic than 1 ppb of aflatoxin or 1 ppm of mercury? It's hard to say, since the effects are different.\n\nWhat you *might* do is convert everything to [disability-adjusted life years](https://en.wikipedia.org/wiki/Disability-adjusted_life_year) and then say which substances cause you to lose the most DALYs. But I'm not if sure anyone has made a list of toxins by DALY loss per gram of exposure.\n\nAnyway, OSHA publishes \"Permissible Exposure Limits\" for long-term exposure of workers to toxic substances. https://www.osha.gov/annotated-pels\n\nThis may be similar to what you're looking for.",
+            "score": 19,
+            "author": "-Metacelsus-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; DALY loss per gram of exposure\n\nI think something **like** this is what I'd be interested in.  Permissible Exposure Limits are useful.  But like TLVs they are only for airborne contaminants.  Aflatoxin (in your example), for instance, doesn't appear in OSHA's comprehensive PEL table.  Nor does it include things like acetaminophen or PFAS, except for \"Polytetrafluoroethylene, decomposition products\" (for which it doesn't have a numerical value).\n\nNot that I expect there to be a number known for every chemical compound, but I was hoping to compare more than just airborne substances.",
+                    "score": 4,
+                    "author": "ECatPlay",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is highly misleading unfortunately as a concept.\n\nFor example, 0.5g/day or aceitominophen likely has an unmeasurably low impact whereas 10g/day absolutely does not have the same effect as 20*0.5g/day. (you die pretty soon of liver failure)\n\nThere is also the huge problem that common activities often Dwarf this.\n\nhttps://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(23)00027-5/fulltext for example - obestity related disability and lost years through death exceed by around a factor of three malnutrition based ones.\n\nThese are massive effects, and it is almost impossible often to measure drug or compound effects.\n\nFor example, to detect small effects (weeks of disability over the life) you might need a trial where you fed 10K people aceitomeniphen every day ffor their life. These studies are basically never done, and the assesments that try to do things like this by looking at people taking aceitomeniphen and working out the health changes is basically meaningless as they take it for a reason.",
+                            "score": 5,
+                            "author": "sithelephant",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; you might need a trial where you fed 10K people aceitomeniphen every day ffor their life. These studies are basically never done,\n\nUnfortunately, you gave a poor example even if the spirit was correct.  That exact study has been done multiple times in multiple countries.\n\n100 mg of acetaminophen daily has been proved to extend the overall lifespan of some people, and have zero effect on most people.\n\nHeart disease people take daily acetaminophen, from about age 40 or so.  Half a tablet is recommended dose, so about 100 mg.  Others take 2 tablets a day.  It's cheap, easily available, it works and stops them having heart attacks.\n\nWe don't do the study actively, we do the study passively by find people who do that unknown activity anyway.  Self-diagnosed fools, people taking meds for other things, factory workers exposed to higher levels, etc.",
+                                    "score": 1,
+                                    "author": "Indemnity4",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Can you please point me to such studies?\n\nI am aware of the use of aspirin in this role,",
+                                            "score": 2,
+                                            "author": "sithelephant"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Besides what other people have mentioned before, there are other metrics such as NOAEL or LOAEL. LOAEL is the lowest level that has an observable adverse effect. This is way more flexible than LD50 since the adverse effects could be anything.\n\nThere are also occupational exposure levels (OEL), which are more useful for people who work with a toxic substance. It stands to reason that lower OEL substances are more toxic in general.",
+            "score": 7,
+            "author": "Variaxocellus",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; LOAEL\n\nThis might be what I had in mind, if it were generally available, and includes cumulative effects.  Thanks!\n\nI don't see LOAEL's or NOAEL's on my Material Safety Data Sheets, or in Wikipedia or ChemSpider entries.  I am finding a few NOAEL values individually on the EPA's CompTox Chemicals dashboard, and by Googling.  Is there a table of LOAEL's or NOAEL's collected somewhere?  EPA?  NIH?",
+                    "score": 3,
+                    "author": "ECatPlay",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; my Material Safety Data Sheets, or in Wikipedia or ChemSpider entries\n\nThose are not occupational hygiene or medical databases.\n\nThe first is to inform truck drivers and storage operators of immediate dangers.  It is not required to be accurate, only information best available at the time of printing.  An author can easily write \"not available\" or, \"I was too lazy, unskilled or unwilling to pay to access a toxicological database\".\n\nWikiepeda, eh, obvious what those issues are.\n\nChemSpider is not a toxicological or occupational hygiene database either.  It is information for chemists to know physical properties of molecules but they don't need health information.\n\nThe product you want used to be called TOXNET by the NIH.  [NIH moved their toxicology information across multiple databases.](https://www.nlm.nih.gov/toxnet/index.html)",
+                            "score": 2,
+                            "author": "Indemnity4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The broadness of what you are requesting guarantees that it would be controversial, disputed, and discredited.   Its like trying to put every car in an ordered list from best to worst.  Some hazzards interact with one another, the environment, and your physiology.  If you have risk factors for lung cancer then cigarettes are very risky.  If you have risk factors for mental disorder then working the night shift is very risky.\n\nIt can't be reduced to a one dimensional \"approximate standard risk\".",
+            "score": 5,
+            "author": "stu54"
+        },
+        {
+            "level": 0,
+            "comment": "EPA has a huge list of exposure values obtained through a variety of methods with differing hazard indices. Rummage through the reference docs and you can probably find what you\u2019re looking for.\n\nhttps://www.epa.gov/risk/regional-removal-management-levels-rmls-chemical-contaminants",
+            "score": 3,
+            "author": "seaelbee"
+        },
+        {
+            "level": 0,
+            "comment": "Have a look at TD50 values.\n\nIn the same way that an LD50 shows how acutely toxic a compound is, the TD50 is essentially a measure of how carcinogenic a compound is. \n\na TD50 is the daily dose rate required to half the probability of an experimental animal remaining tumourless at the end of its natural life span\n\n[more info on how TD50 values are calculated](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6762014/)\n\n[A Selection of carcinogens with GHS/CLP classification, Hazard Statements, Workplace Exposure Limits and, where these have been assigned, a ranking of potency (TD50)](https://www.ase.org.uk/download/file/fid/18912)",
+            "score": 2,
+            "author": "Happy-Gold-3943"
+        },
+        {
+            "level": 0,
+            "comment": "Ooof I wish. That's a really good idea and I wish someone would execute it. Like a ' which of these drugs/ chemo treatments are least likely to kill me' sorta reference guide. I don't think it exists is what the others are saying...  I know there's a guy called Dr nutt (?) Who has a scale for some drugs, but not general chemicals no.",
+            "score": 1,
+            "author": "Ok-Skirt-19",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We already know from using these drugs. And here is something you may not like to hear, but with some chemo drugs the dosing is such that a certain small percentages of the patients will die from the chemo itself. Chemo are basically poisons. You need to get the dose high enough to treat the cancer but that level in some cases is very close to toxicity. It varies from drug to drug of course but chemo is some nasty stuff which sadly is necessary. Which drug you get is based on whether it is shown to work for a particular cancer. If it is the most toxic one that has best results that is what they will recommend unless the patient refuses. In such situations there can be other drugs but they may not be as effective. So it becomes a role of the dice, take the more toxic stuff with better outcomes, or take the less toxic stuff and hope you are in the small percentage that it works better than average. Tough choices.",
+                    "score": 2,
+                    "author": "sciguy52"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can always check the Safety Data Sheet (SDS) of any chemicals. Available online and simple to access. It lists basically anything related to the chemical of interest and it has a section on health impacts and safety precautions for any chemical.",
+            "score": 1,
+            "author": "GeistHunt"
+        },
+        {
+            "level": 0,
+            "comment": "Peoples risk perception is very distorted. Something that raises your risk of cancer 1000x might be much less than the risks of obesity, but people are less afraid of obesity than chemicals.",
+            "score": 1,
+            "author": "OvershootDieOff",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There is the eh40 list that gets published by the HSE UK which shows a time weighted average exposure limit for a great deal of chemicals\n\nFrom there I think you'd want to look at the BMGVs within it.",
+            "score": 1,
+            "author": "gen_dx"
+        },
+        {
+            "level": 0,
+            "comment": "Well, for drugs at least , you typically do carcinogenicity testing. Those studies take like 2 years and use truckloads of animals.  You can easily google and read up on ICH/FDA guidelines for what to consider during carcino testing for drugs.",
+            "score": 1,
+            "author": "NOAEL_MABEL"
+        }
+    ]
+}

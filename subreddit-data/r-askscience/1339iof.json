@@ -1,0 +1,363 @@
+{
+    "id": "1339iof",
+    "score": 133,
+    "title": "What limits the maximum RPM of an electric motor?",
+    "author": "IdioticPlatypus",
+    "date": 1682809745.0,
+    "url": "https://www.reddit.com/r/askscience/comments/1339iof",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "My dad says that in theory, if you keep increasing the current through any electric motor you will increase the speed of the rotor so speed limits for hybrid and electric cars are dependent on maximum current. I say that electric motors have something like a maximum operating speed that it somewhat dependent on the momentum of the rotor. Saturation of ferromagnetic cores comes to mind as well. Are either of us right/wrong?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Your dad is wrong on several fronts.  In rough terms, motor current = torque, not top speed (that\u2019s more a function of voltage to counter back EMF).  \n\nAlso, there are absolutely mechanical limits to maximum motor speed.  At some point, the centripetal acceleration on the rotor exceeds the ability of the rotor to keep itself in one piece and you get a high energy grenade.\n\nStator inertia doesn\u2019t really impact maximum speed other than it defines the energy in the grenade when you overspeed and explode a rotor.",
+            "score": 187,
+            "author": "hikeonpast",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I wrote stator instead of rotor by accident in the prompt. I thought the mass or moment arm of the rotor had something to do with its speed limit.",
+                    "score": 29,
+                    "author": "IdioticPlatypus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 48,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 6,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 16,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Re: the high energy grenade, for their \u201cPlaid\u201d model, Tesla wrapped their rotor in carbon fiber to combat this issue",
+                    "score": 11,
+                    "author": "soldiernerd",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That doesn\u2019t sound right. ~~I thought the wrapping was more to do with the friction.~~\n\nEdit: \n\n&gt;The main benefit of the new motor is that the carbon sleeve rotor creates a stronger electromagnetic field than a rotor that is held together by metal.",
+                            "score": 5,
+                            "author": "Ftpini",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "From two sentences later:\n\n\u201cAnother advantage is that the rotor can go to higher RPM, as the carbon sleeve prevents the copper rotor from expanding due to radical acceleration.\u201d",
+                                    "score": 3,
+                                    "author": "soldiernerd",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You don't have to die on this hill.\n\n1. The OP said \"you get a high energy grenade\" not \"grenading.\" He wasn't referencing some specific engineering term. Rather, he was using the term grenade as an informal euphemism, like when SpaceX refers to a crash as a \"rapid unscheduled dissassembly.\"\n2. Let's forget Tesla MS Plaid specifically and just think about motors, echoing the point made by u/Sortalama. Sure, copper expansion isn't grenading - until it is. Once that copper expands while rotating off balance at 20k+ RPM within a tight toleranced stator, it's going to catastrophically fail, and all of that energy has to go somewhere. So, for the purpose of this discussion, copper expansion *is* the same thing as grenading.\n\nNow imagine you wrap super high tension carbon around the copper, exerting a force on the copper resisting expansion. Surely that must help the rotor reach higher RPM intact, right?\n\n3) Now, talking about Tesla again, let's check out the video from Plaid Day:\n\n[https://www.youtube.com/live/kUmkbzQ-BS0?t=574](https://www.youtube.com/live/kUmkbzQ-BS0?t=574)\n\nElon: \"The RPM is so crazy that just the centrifugal force wants to expand the rotor, so the **carbon overwrap actually holds the rotor, basically holds the rotor together**. It's like ... madness.\"\n\nIt's the carbon overwrap holding the rotor together. If something is not held together, it falls apart, and if that happens at 20,000 RPM, what happens? Grenade.\n\nI think this has been beaten to death; it's obvious whether you listen to the inventor or you think through the implication of an expanding copper rotor that the carbon wrap, which opposes the rotor expansion, is preventing grenading.",
+                                            "score": 9,
+                                            "author": "soldiernerd",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I don't think the OP is looking for physical limits on motor speed \"rotor grenading\". I think he is looking for more fundamental electrical reasons for a maximum motor speed. AC motors are controlled by driving frequency, I would imagine at sufficiently high frequency, the inductance of the windings will prevent sufficient current from flowing to allow the motor to operate.  In DC motors, and for the same inductance reasons, at high speeds the armature may not have long enough to build up current and magnetic field to repel against the poles. Brushed DC motors would experience severe arcing at high overloads and would fairly quickly burn out.",
+                                                    "score": 1,
+                                                    "author": "Jamie1897",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yup. And it was mentioned *as an aside* that the rotor will blow up at high RPM. \n\nI specifically noted I was replying to that portion of the previous comment when I mentioned that Tesla had solved this specific issue using carbon fiber wrap.\n\nThis entire sidebar is specific to the original comment about rotors blowing up at high RPMs, not OP\u2019s greater question.",
+                                                            "score": 1,
+                                                            "author": "soldiernerd"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Copper expansion is not at all the same as \u201cgrenading\u201d and the carbon sleeve is not designed to prevent such a catastrophic failure at high rpm.",
+                                            "score": -3,
+                                            "author": "Ftpini",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What exactly do you think happens when the copper expands? On a rotor? Spinning at high speeds? With tight tolerances?",
+                                                    "score": 7,
+                                                    "author": "Sortalama",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I'm late to the party here, but I would expect something along the lines of \"acts like a hilariously expensive drum brake and stops\" before it actually breaks up.",
+                                                            "score": 1,
+                                                            "author": "raygundan",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The plaid motor has a max rpm around 23k, that is a lot of energy to slow down gradually and convert to heat. I would expect that to  disintegrate the bits that started touching pretty quick. Once there are loose bits in between the rotor and the stator (as the rotor is already starting to lose structural integrity) then things will no longer be smooth. That energy is going to go somewhere - and I don't think it will only be as heat.",
+                                                                    "score": 1,
+                                                                    "author": "Sortalama"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "DC motors: speed is mostly determined by voltage\n\nInductor and synchronous motors (including brushless DC): speed is determined by AC frequency/switching frequency, provided voltage and current are sufficient for the load. These motor types can be done without any permanent magnets - they use electromagnetism to create both the stator and rotor fields.\n\nAll motors: the higher the RPM, the more you are limited by mechanical problems than anything else. It's not hard to generate 10 kHz signals to drive a motor, but quite difficult to make anything mechanical that can handle 600 kRPM. \n\nAerodynamic drag on the rotor is one thing that limits speed, just it does all fast moving objects. A motor at 1 million RPM and 10 cm rotor radius (scale of a car motor) would have a tangential velocity of 1666 m/s, or 6000 km/h. That's a lot of drag to overcome.",
+            "score": 52,
+            "author": "Zomunieo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "AC Motors speeds are controlled not only by frequency, but also number of poles.",
+                    "score": 14,
+                    "author": "goentillsundown",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Saying \"speeds are controlled by number of poles\" is kind of odd wording. It's not like you could spontaneously increase the number of poles during operation to increase the speed, like you can with frequency.\n\nCall me nitpicking, but I would rather say: \"speed is also determined by the number of poles\".",
+                            "score": 4,
+                            "author": "huddrez99",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not only, but also is what I did state?\n\nEta you could design a motor to tap in and out windings, but it wouldn't be super efficient or needed in most applications, that isn't to say it is impossible though.",
+                                    "score": 3,
+                                    "author": "goentillsundown",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It's about he word \"controlled\". It doesn't fit with poles in this situation.",
+                                            "score": 3,
+                                            "author": "huddrez99"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "https://en.m.wikipedia.org/wiki/Dahlander_pole_changing_motor\n\nhttps://ieeexplore.ieee.org/document/6631751\n\nYou can electrically change the number of poles during operation. Also increasing poles increases the denominator which would decrease speed. Reducing number of poles increases speed.\n\nrpm = (120 x freq)/poles",
+                                    "score": 3,
+                                    "author": "Tzarmekk",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I guess there is always some special case one has not thought of. But I would reckon the vast majority of electric motors used don't have those pole switching capabilities. So I would question the practical relevance of \"controlling the number of poles\".\n\nDo you have any information on how much those motors are used in practice?",
+                                            "score": 1,
+                                            "author": "huddrez99",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Any time you would have a high speed and low speed requirement, these are perfect economical options as they are less complex than VFD. Hoists, and conveyor belts are 2 examples. It is more common than you are thinking but I don't have a count of how many. \n\nCommon Industries\n\n    Air Handling\n    Machine Tool\n    Crane and Hoist\n    Water &amp; Wastewater\n\nCommon Applications\n\n    Fans\n    Blowers\n    Machine Tools\n    Hoists\n    Conveyors\n    Pumps",
+                                                    "score": 3,
+                                                    "author": "Tzarmekk",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Basically any usage not relying on high torque curves. Some people might say cranes and hoists need high torque, but the reality is that they have such a massive gear reduction the actual work output of the motor isn't high.",
+                                                            "score": 1,
+                                                            "author": "goentillsundown"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Your answer and the guy you responded to have answered the question perfectly.  Frequency and poles combined are what determine maximum motor speed.",
+                            "score": 5,
+                            "author": "H2ON4CR"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That's why hydrogen is used in large generators as both a cooling medium and because it's so light compared to atmospheric air. It's expensive to spin all that air around.",
+                    "score": 3,
+                    "author": "80burritospersecond"
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 5,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 12,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 13,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 6,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 6,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Motor engineer here.\n\nHybrid and electric cars operate mainly on two types of motors which are IM (induction machines) and IPM (internal permanent magnet)\n\nWhat really limits the ability of a certain motor to reach high speed is the back-emf produced by the motor while it's rotating. Back-emf depends on the motor design and the rotating speed. Once the back-emf reaches approximately the supply voltage, you will not be able to push more current through the motor. We can fine-tune the motor (for example by changing the winding of the stator) to suit basically any speed desirable. There are mechanical limits given by the centrifugal force, but for extremely high speed designs they can be overcome by using specialty materials, typically by switching from laminated rotors to solid rotors and changing other stuff in the design to avoid the losses introduced by solid rotors.\n\nThe saturation limit you mentioned is also related to the B field in the motor but goes hand in hand with the number of turns I mentioned, and can be tuned as well for high speed by changing the cross section of the steel parts in the motor itself (teeth, back-iron and so on). There are also exotic materials which can be employed nowadays like iron-cobalt alloys which saturate much higher than conventional silicon-iron steel.\n\nA very high speed motor would have lower torque at low speeds compared to a low speed motor.\n\nIf you take an existing motor design then you are right on the saturation: you could increase the input voltage and that would increase the maximum speed to an extent, but iron saturation would increase the losses dramatically up to a point where the efficiency becomes really low and/or the motor would cook itself. On certain permanent magnet designs you could also demagnetize the magnets so the motor would be damaged.\n\nAlso you can't push arbitrarily as much current as you want, losses in the motor go roughly with current density squared (amps for each square millimeter of copper cross section) so again at some point the motor can bake itself crispy. Once the copper becomes too hot, your wire insulation fails and the windings will short circuit and it's damaged. Magnets also are very temperature sensitive as well.",
+            "score": 7,
+            "author": "nasone32"
+        },
+        {
+            "level": 0,
+            "comment": "1) its a rotor and stator for obvious reasons. Stator is stationary and rotor rotates. \n\n2) in SIMPLEST terms. Power in = power out. Pin = V x I = speed x torque = Pout. So you get a different speed/torque operating point. Not just increased speed. \n\n3) there are many types of electrical motors. For example, induction motors would still need to follow the power-torque curve for a given f1.",
+            "score": 11,
+            "author": "masoyama"
+        },
+        {
+            "level": 0,
+            "comment": "The motor speed is limited by the maximum voltage the power supply can produce.\n\nIf the power supply is a buck topology, it will be limited by the battery bank voltage. If it\u2019s a boost topology than the power supply\u2019s max voltage determines the limit.\n\nThis is for a no load case, the motor is free spinning, and the bearing resistance doesn\u2019t create significant torque.\n\nIf you are talking about the car speed, then you are hitting a current or power limit preventing you from going faster. This depends on the aerodynamics of the car and it\u2019s frontal area and the amount of current you can provide to the motors, assuming you are not voltage limited as explained above.",
+            "score": -6,
+            "author": "IMissGW",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Voltage only increases speed in simple DC motors. In an induction or synchronous motor, speed is mainly determined by the power supply's AC frequency.",
+                    "score": 8,
+                    "author": "Zomunieo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OP implies EV applications, which means we are talking AC motor design driven by a controlled variable frequency.\n\nAt increased RPM, the windings generate higher voltages due to the back-EMF effect. This effectively reduces the driven voltage and reduces power. To counteract this, you need to apply a higher driving voltage.\n\nCertainly, there are many more limits to the motor RPM, but operating voltage is absolutely one of them.",
+                            "score": 6,
+                            "author": "Ragnor_be"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Incorrect. It is proportional to the number of poles in the motor as well. The equation is\n\n(Hz * t * 2) / nPoles.\n\nSo you can either change the frequency or the number of poles to determine rpm.\n\nIn theory a universal motor (runs on AC or DC) can have an unlimited speed, but as already mentioned the centripetal force would eventually blow it up - also one reason why all motors have a fan attached to them - to provide a loading to stop overspin and other issues.",
+                            "score": 2,
+                            "author": "goentillsundown"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Non scientist here but some practical experience. Using both DC and 3 phase motors in model aircraft generally we increase the number of battery cells to increase rpm, but to help manage the current we also reduce the propeller diameter and/or pitch. If you go too high on voltage and don\u2019t manage the current the motor can fail due to overheating.",
+            "score": 1,
+            "author": "No-Actuator-6245"
+        },
+        {
+            "level": 0,
+            "comment": "The element not covered by other posters is that the electric drive can still go through a gearbox, all applications need to be able to differentiate wheel speed left to right for cornering so motors sit within an assembly carrying a differential. (2 motor units using one per wheel then vary voltage to allow wheel slip.) The input to this differential can be geared though in as complex a fashion as attached to a traditional ICE. Power is your speed limit. In todays EV\u2019s the battery cell characteristics and power electronics limit draw to go to the motor(s)",
+            "score": 1,
+            "author": "ViciousDuckling"
+        },
+        {
+            "level": 0,
+            "comment": "Every motor will have specific operating params and torque based on materials and physical layout. Generally the only limit is melting the wires or spinning so fast that the material properties can't hold the motor together anymore. You can always compensate for torque or speed by using a gearbox.",
+            "score": 1,
+            "author": "ponykins"
+        },
+        {
+            "level": 0,
+            "comment": "As an engineer, I would assume in a lab setting if you are willing to modify your electrical inputs that the actual limiting factor of an electric motor would either be your bearings or cooling.  \n\nIf I understand the context of the question correctly, I believe your dad is right that on an off the assembly line electric car that the maximum speed is practically set by current delivery and not a limitation on the motor itself.  If you were designing an electric racing car I assume you would be hard pressed to overcome current delivery as your limiting factor.  We are more advanced in electrical motors than we are in portable battery systems of this scale.",
+            "score": 1,
+            "author": "Smyley12345",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I know we're not so limited by portable battery systems to make current delivery the problem based on real-world examples in motorsport that I follow but you're on to something regarding cooling and friction since at least one existing car we discussed is heat limited, that being the new Ariel hypercar which is recharged in realtime by a jet turbine.",
+                    "score": 1,
+                    "author": "IdioticPlatypus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It was really unclear in your question if you were talking about theoretical constraints, practical limitations on electric cars designed to push practical limitations, or off the lot consumer electric cars.  In the \"off the lot\" case it is absolutely limited by current delivery.",
+                            "score": 1,
+                            "author": "Smyley12345",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I definitely could have been more specific but information about high performance electric motors is highly compartmentalized so I wanted a good spread of answers. I know in some off-the-lot cases, the maximum current is determined beforehand to reach a certain performance goal and some speed controller does the rest. No point supplying more power than a soccer mom can use. But there are examples that are heat limited like the Ariel hypercar and various Koenigsegg hypercars which never reach full power delivery. They overheat first. \n\nI have no regrets.",
+                                    "score": 1,
+                                    "author": "IdioticPlatypus"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "DC motors runs on current/voltage, thats what controls the rpm, AC motors are controled by frequency, both fail when stator stresses are to high due to centrifugal force\nBoth types gets their power and torque from current/voltage..\nOfc, their size also plays a role, bcs of the weight of the materials/metals used",
+            "score": 1,
+            "author": "SilverAgency5240"
+        },
+        {
+            "level": 0,
+            "comment": "It depends on the motor design, and intentionally high-RPM motors are designed differently from slower motors.\n\nAir-resistance, bearings, thermal limits (insulation failure or thermal expansion/seizing)...\n\nA significant issue can be eddy currents - when you have moving magnets, or metals moving past magnets, you induce eddy currents which oppose the motion (and dissipate energy as heat). This is why lots of common small DC toy motors, and mains motors have iron-silicon laminated rotors or stators - but at very high speeds, this is still insufficient.\n\nThere are some interesting youtubes on Tesla vehicle motors being a special design which is effectively a permanent-magnet synchronous motor at low-speed (for good low-speed torque), but becoming effectively a squirrel-cage induction motor at high speed - for high efficiency.\n\nElectric vehicle motors are an interesting case as mostly they are used with a fixed-ratio gearbox, so the motor speed is proportional to the vehicle speed (unlike an ICE where the engine is designed to operate only between around 1200-5000 rpm).",
+            "score": 1,
+            "author": "Prestigious_Carpet29"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, we know about synchronous motors. And we're talking about cars where the motors spin to 20,000 RPM at their limit like in Formula E. These are sometimes axial or radial motors which are brushless DC.\n\nAnd yeah. I said stator instead of rotor like a noob.",
+                    "score": 1,
+                    "author": "IdioticPlatypus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Yeah, we know about synchronous motors.\n\nAlso asynchronous, like those in air conditioners, washing machines and ceiling fans.\n\nElectric cars are typically use what you said, frequency modulating speed controllers. Amps drive torque.",
+                            "score": 1,
+                            "author": "fliguana"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

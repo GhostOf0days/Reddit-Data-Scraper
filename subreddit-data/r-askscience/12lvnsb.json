@@ -1,0 +1,139 @@
+{
+    "id": "12lvnsb",
+    "score": 55,
+    "title": "If a current source is applied across a resistor (and only that resistor) and the resistor is part of an open voltage circuit, does the voltage drop across that resistor (caused by that current source) also affect the potential of the open circuit?",
+    "author": "try_it_again_wont_u_",
+    "date": 1681475453.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12lvnsb",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "let's say i have an open circuit with a 5V voltage source, with the positive terminal connected to node A and the negative terminal connected to node B (which are not connected to anything, hence an open circuit).\n\nIf take B as a reference point, A should have a potential of 5V.\n\nlet's say I have a 2 ohm resistor connected between the positive terminal and A.\n\nThe circuit is open, there is no voltage drop across this resistor, hence A still has a potential of 5V.\n\nif I connect a current source across that resistor, say 5A, then ohm's law tells us that the resistor has a voltage drop of 10V.\n\nWhat i want to know is that does A now have a potential of 5V-10V = -5V? does the voltage drop across the resistor caused by the current cause the potential of the battery's positive terminal to drop across the resistor?\n\nI chose an open circuit as an example, to make the calculation easy, but if the circuit were closed, would this voltage drop in resistor caused by the current source ADD to the voltage drop in the resistor caused by the current flowing in the main, voltage source loop?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You can't have a constant-current source feeding an open circuit.  Since you're ramming charge into a place it can't escape, the voltage at point A will rise until either the source is unable to deliver constant current, or an electrical discharge completes the circuit.\n\nIt's like running a constant-flow pump into a sealed pipe: you're going to either break the pump or the pipe.",
+            "score": 54,
+            "author": "agate_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "He said the current source is across the resistor. I don't think the current source is feeding an open circuit.",
+                    "score": 4,
+                    "author": "moldboy"
+                },
+                {
+                    "level": 1,
+                    "comment": "i meant that resistor and only that resistor. the current/resistor forms a mesh of its own.\n\nthe current is across that resistor, almost like as if im probing that resistor with a multimeter, but instead of a multimeter, its a current source.",
+                    "score": 3,
+                    "author": "try_it_again_wont_u_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You can get -5 V out of it if you choose the right voltage and current directions. If you didn't already get an explanation I can quickly do it for you.",
+                            "score": 2,
+                            "author": "ImpressionEconomy407",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Actually I think the [falstad-sim](http://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWKsAcKBMAWAnANm5OgipgtgkgMyQhKaW0CmAtGGAFABOI6a4uNXihCUE6KD3YBLESRFjZmfjRoJ2Ad0XKefMAKgato8UPnjIhsNnF7Bu-RYBu4a2Zc2HEzKokroaylxhK3FjbTCIGgAhdkDhUzCiXDdIkABBdiA) is sufficient. If you want some math or explanation I can still do it though.",
+                                    "score": 2,
+                                    "author": "ImpressionEconomy407",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "yea, thanks i just wanted to confirm if my way of thinking was right.",
+                                            "score": 2,
+                                            "author": "try_it_again_wont_u_"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There is nothing particularly special about voltage or current sources. It still holds that the net current into a node must be zero, and that the voltages around a loop must add to zero.\n\nIf I understand yous setup correctly there is only one loop consisting of the current source and the resistor. So current through the resistor equals that of the current source, and voltage across the resistor reflects that.\n\nFor the closed circuit you would have two loops, so current through the resistor must balance the 5V, and the current through the voltage source would be a combination of that and the current from the current source.",
+            "score": 6,
+            "author": "saywherefore",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Loop balance is KVL, which you can't use if current sources are in parallel with voltage sources\n\nFor example what happens if the current source creates a voltage higher than V1? Then it's not just sourcing to the resistor it's shorting through the power supply as well.",
+                    "score": 1,
+                    "author": "chcampb"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So what you are saying is basically [this](https://i.imgur.com/LrvmW01.png)\n\nIf I1 is 0, then V1 creates a V1 voltage difference between A and B. Since there is no current flow. And A is the same as C. \n\nIf I1 is nonzero, then there is a voltage between B and C, given the direction of the arrow, such that v(A) - v(C) = I1*R1\n\nSince C-B = v1 and A-C = I1 * R1\n\nC = V1 + B, so A - V1 + B = I1 * R1\n\nA + B = I1 * R1 + V1\n\nSo mathematically you should see that the voltages add. If B = 0 since it's ground then A = I1 * R1 + V1. \n\nIf you close the circuit it's a little more complicated. You have to consider the two sources separately.\n\nFirst, the voltage source V1 looks into the circuit and sees R1 resistance. it will produce V1/R1 current into node C. At the same time, I1 puts I1 current into node C. Great now nodes are B = A, and V1 = C - B = V(R1)\n\nNow you have a situation where V1 is trying to drive the nodes B and C to be V1 volts. And I1 is trying to drive it to be I1 * R1 volts. If these are not equal, it breaks the math and nonideal factors start coming into play. \n\nIf V1 were a battery for example, and I1 * R &gt; V1, then I1 would drive R1 to V1 volts and then sink the rest of the current through the battery (this is the way a zener diode works to protect circuitry - batteries work very much like reverse biased breakdown diodes).  \n\n(edited) If I1*R1 &lt; V1, then I1 must source I1 current to the resistor. Since the resistor is now at V(R1) = I1 * R1, then the remaining current is (V1 - I1*R1) / R1 - basically, V1's load is reduced by whatever the I1 provides. \n\nAnyway that's assuming the diagram matches your expectation. If you want to know more look up intro electronics courses (electronics come after circuits typically and deals with semiconductors - transistors, diodes, op amps all use this sort of math).",
+            "score": 5,
+            "author": "chcampb",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yes thats the circuit im talking abt. ig i shoulda drawn it in the first place lol.",
+                    "score": 1,
+                    "author": "try_it_again_wont_u_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; ig i shoulda drawn it in the first place lol.\n\nAbsolutely. That was hammered into me in my college engineering classes: Whatever you do, you *start by drawing a picture* of the situation.  \n\nIt helps!",
+                            "score": 3,
+                            "author": "Glasnerven"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Voltage is relative, so don't get hung up on the exact potential of a node. You can put this into an online circuit simulator and see what happens.\n\nThe main thing that will determine the voltage is where you put the ground (if anywhere). The ground is your reference point for 0v, so if you put the ground on the bottom of the current source, then actually node A is 10v and node B is 5v.\n\nEdit: Here's a simulation link to what I believe you're describing: [Falstad Sim](http://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWKsAsCDMkAcBOSYB2AJi3wDYcQikkV0QEBTAWjDACgAnKrLcMyDz7oERKFXYBLEOiwoZomXP6DBCdgHcl8sAKEqom7QrElhiyOwDmxkWNnyH4y1rA4xuwWYOWAbuHcTAI89VRAUNWdkdXQyPm9PfTAScHEAQXZYvjd7RUS7VMEAIUy420UUXSCIQQBxADsAE3YgA)",
+            "score": 5,
+            "author": "blechablemin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This sorta seems like what they are asking, but it also could be that they think they can have a constant voltage and constant current source at the same time.",
+                    "score": 1,
+                    "author": "nill0c",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh I see, there's two questions. Well if you connect Node B to ground, then it becomes a fully closed circuit with a voltage source, current source, and a resistor in parallel. Using the  superposition method to solve, the voltage source would be setting the values of the circuit basically, because ideal current sources can take any voltage, and ideal current sources can take any current. \n\nThe resistor would have 5V and 2.5A, the current source would also have 5V, and the voltage source would take the rest of the 2.5A.",
+                            "score": 1,
+                            "author": "blechablemin"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You really need to draw your circuit. I'm seeing lots of different answers that seem to boil down to people interpreting your schematic differently.\n\nYou can do a source transformation which might help to answer the question for you.\n\nhttps://www.allaboutcircuits.com/technical-articles/source-transformation/",
+            "score": 2,
+            "author": "moldboy"
+        },
+        {
+            "level": 0,
+            "comment": "&gt; What i want to know is that does A now have a potential of 5V-10V = -5V?  \n\nPart of the confusion here is that a single point doesn't have a voltage or potential.  \n\nWe often speak *as though* a single point has some sort of absolute potential. In such cases, we usually find that there is some established \"zero volts\" reference which the speaker and the listener will know about. On a circuit board, there's often a layer of copper called the \"ground plane\" which is designated as an electrical ground and assigned as the zero volts reference point. Thus, when a point is said to be at 5V or -3V, it's understood that the point has that voltage *with respect to the ground plane*.  \n\nThe Earth itself is a common zero volts reference--the electrical term \"ground\" is named after the ground you stand on.  \n\nSo in the case of your circuit, when you ask about the potential of point A, what's your reference point? Where are you putting the black lead of your imaginary multimeter?  \n\nI will refer you to [Kirchoff's Voltage Law](https://en.wikipedia.org/wiki/Kirchhoff%27s_circuit_laws). In particular, Kirchoff's Voltage Law: the sum of voltages around any closed loop is zero.  \n\nKeep in mind that this requires you to respect polarity; you can have negative voltages. Draw a loop in your circuit diagram, coming back to your starting point. Go around the loop, and whenever you encounter a component with a voltage across it, add it to your list of voltages, *with the sign of the first terminal you hit*. That is, if your loop goes through a battery and you hit the negative terminal first (because you're going in conventional current flow direction, perhaps) then you write that down as \"-9V\". If you encounter a component from the positive terminal, you write it down as a positive voltage.  \n\nWhen you get back to your starting point, you'll have a list of all the voltages you encountered, and *that list will add up to zero.*  \n\nOne reason this is useful is that you can use it to find an unknown voltage: if you know that 5 + 7 - X = 0, you have all the information you need to find X.  \n\nSo to answer your question, draw your circuit out. You know the voltage across the battery, and you know the voltage across the resistor. Add your voltmeter to the circuit between Point A and whatever you're using as your zero volt reference (Point B, it would seem). Now draw a loop that goes through the battery, the resistor, and the voltmeter, back to the starting point. You'll get three voltages, one unknown. They will add up to zero.  \n\nYou know what to do from here.  \n\nAlso, I'll pass along another piece of advice that I picked up from my college classes: draw a picture.  \n\nWhenever you're trying to figure out something like this, for Ampere's sake, *draw a picture* that shows how everything goes together. You'll thank yourself--and anyone you're trying to explain the problem to will thank you even more. This question would be much easier to answer with a schematic.",
+            "score": 2,
+            "author": "Glasnerven"
+        },
+        {
+            "level": 0,
+            "comment": "You will not have any current flow at all in an open circuit.  And you will not have any voltage drop across a resistor with zero current flowing through it.\n\nI think you might be getting a little confused between amps and volts.  for instance, adding 5A through a resistor does not mean you added 5v across it (unless you have a very heavy duty 1 ohm resistor)\n\n**Voltage(E) = current (I) times resistance (R)**\n\nSo in a **closed** circuit with a resistor (R), the current(I) will be voltage (E) divided by the resistance (R)\n\nUsing a tad bit of algebra, that also means **I = E/R**.  and **R = E/I**.  Notice that E is always the numerator in all division.\n\nNow, if you add the second power source (E), it will depend on how you hook it up.  If the two power sources are in series - then their voltage will add up.  Thus you get (E^(1)\\+E^(2)), and then you can calculate current(I) = (E^(1)\\+E^(2))/R. (we don't have subscripts here, so we'll have to pretend superscripting is subscripting).  Again, this is in a closed circuit so current can flow through the resistor.\n\nIf you hook the two power supplies in parallel, then the voltage will not be added, and thus the circuit current will remain the same.  But the two power supplies will share the current burden.\n\nBut this assumes those two power supplies are of equal voltage.  If one is a higher voltage than the other, then there will be current flowing from the high voltage power supply to the lower voltage one.  And if there is no resistance between the two, then (theoretically) infinite current will flow from the one to the other.  In practical terms, that's how fuses get blown and power supplies get damaged.\n\nYou can do this with small batteries.  A fully charged battery at 1.5V in parallel with a partially charged battery - let's say 1.4V.  Current will flow from the charged to the depleted battery.  But not infinite current because batteries have an internal resistance that limits the maximum current flow to and from each battery.  They might still get warm due to this current flowing through their internal resistance, but they are unlikely to explode.  And that heat generated is wasted energy.  Which is why you should replace both batteries simultaneously instead of using one good and one dead battery.\n\nSo let's assume these two power supplies are of equal voltage, and lets assume it's a closed circuit.  Let's give this resistor a value of 1K ohms.  We still need 1 more bit of information to do any calculations.  Let's say we know that 10 milliamps is flowing.  We can now tell that 1000 ohms X 0.010 amps is 10 volts.  So we know that we are getting 10 volts from these two power supplies. So if they are connected in series with each other, then the combination voltage of the two equals 10 volts.  That could be two 5V batteries.  But it could just as well be a 7v and a 3v battery.  or an 8.5V and a 1.5V battery.  Whatever adds up to 10V.  And both batteries would experience the same 0.010 amp draw (10 milliamps)\n\nBut if the two batteries were connected in parallel to each other, then through the resistor, and finally back to their negative terminals to close the circuit.  Then we would know that both batteries are providing 10V.  But each would be providing half the current.  So 5 milliamps each (.005 amps).\n\nNow let's open the circuit and see what happens. Let's remove the wire that returns from the resistor to the negative terminal of the batteries.  Current drops to zero, across the resistor and through the entire circuit.  If you were to measure voltage across the resistor, you would get zero voltage.  This will hold true no matter how high the voltage is applied.  (arcing or a spark is just completing the circuit through the air - turning the air into a plasma.  And we're discussing an open circuit, so no arcing or sparking allowed).\n\nOnce again, we can see that 1000 ohms times zero amps is zero volts.  No voltage across the resistor, nor across the entire circuit because any resistance times zero current equals zero volts.\n\nIn practice, if you put a meter probes across the batteries, you will read a voltage because the meter itself completes its own circuit.  The meter itself has a very high internal resistance - just as batteries have a very low internal resistance.  In fact, you may learn that EVERYTHING has a resistance to it.  The air, batteries, power supplies, trees, power lines, you.\n\nBecause meters have a known internal resistance, they complete the circuit and a tiny amount of current flows through them.  That's how they can measure voltage.  But if the voltage difference between the two probes is zero, then zero current will flow through the meter, and the meter will register zero voltage.  So your Volt meter measures current through it's internal resistance to give you the voltage.  Your Ohmmeter applies a known voltage, and measures the resulting current to give you the resistance.  And of course, your ammeter measures current directly.  All three parts of your standard VOM meter measures current in three different ways to give you 3 different readings: voltage, resistance and current.\n\nThis is why we tend to think in terms of current instead of voltages.  Most everything ultimately relates to current.  At least until you get into Field Effect Transistors.  Then it's better to think in terms of both voltage  and current.\n\nSorry if I'm rambling.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "If the voltage and current sources are in parallel with the resistor, there are two possible scenarios:\n\n1. the  current source flowing through the resistor generates a voltage **less** than the voltage source: the voltage source will **deliver** additional current through the resistor to bring the voltage up to the required level.\n2. the  current source flowing through the resistor alone would generate a voltage **more** than the voltage source: the voltage source will **divert** sufficient current through itself that the current through the resistor will only generate the set voltage",
+            "score": 1,
+            "author": "DrJCPC"
+        }
+    ]
+}

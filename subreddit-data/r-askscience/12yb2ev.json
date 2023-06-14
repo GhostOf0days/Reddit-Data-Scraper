@@ -1,0 +1,299 @@
+{
+    "id": "12yb2ev",
+    "score": 51,
+    "title": "How do physicists determine the accuracy of a clock? As the second is a made up thing in the sense that its length is arbitrary, how do we know that our clocks are as close to a second as possible?",
+    "author": "demavertt",
+    "date": 1682405430.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12yb2ev",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I read about the precision of clocks and how some optical lattice clocks lose a single second only after billions of years, but I don't really understand how they know that, since they can't compare it to anything that actually is always measuring the correct amount of time.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The whole point of the SI system is that the base units are defined by physical constants that can be measured.\n\nYes the second was originally not accurately defined, but in modern times is defined by a fixed number of oscillations of a certain caesium atomic transition. This can be measured, so time drift in comparison can also be measured.",
+            "score": 112,
+            "author": "Anxious-Steak38",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "https://physics.nist.gov/cuu/Units/current.html#:~:text=The%20second%2C%20symbol%20s%2C%20is,is%20equal%20to%20s%2D1\n\nThe concept and process of traceability to international standards is where you want to look. Look into ISO.\n\nThe link above is to a list of standards. (I did this on my phone and I hope the link didn't get screwed up)",
+                    "score": 27,
+                    "author": "radarscoot",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It works, but this is better (\u201ccleaner\u201d):\nhttps://physics.nist.gov/cuu/Units/current.html",
+                            "score": 6,
+                            "author": "Trylks",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "the above is a link to a highlight though, yours is shorter but not the same :)",
+                                    "score": 4,
+                                    "author": "kamemoro",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 2,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 4,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are already some good answers here so I'll put in a comment from a slightly different angle. Any individual clock is noisy but one can try to average many clocks to build a reference standard. The standard we tend to use is [International Atomic Time](https://en.wikipedia.org/wiki/International_Atomic_Time), from which other timekeeping standards like UTC are derived. The wiki page says it well: \"Due to the signal averaging TAI is an order of magnitude more stable than its best constituent clock.\" One can compare the single clock to the reference standard with some quantity like the [Allan variance](https://en.wikipedia.org/wiki/Allan_variance).",
+            "score": 19,
+            "author": "themeaningofhaste"
+        },
+        {
+            "level": 0,
+            "comment": "In physics experiments, a \"clock\" is essentially a machine that outputs an oscillation whose frequency is very stable. The stability of that frequency is measured using something called the \"allen deviation\" [https://en.wikipedia.org/wiki/Allan\\_variance](https://en.wikipedia.org/wiki/Allan_variance). The measurement of your own clock's allen deviation is usually achieved by comparing it to another clock, or to someone else's clock, by having satellites send precisely timed signals to both clocks at once, and having each researcher tell each other what time they were measuring when they got that signal.\n\nThe second is defined as a certain number of oscillations of the frequency that excites a certain transition in the cesium atom. This is measured using a cesium fountain clock, which has an allen deviation near 10\\^-15 s/s (i.e. the clock's reported time will be inaccurate by at most 10\\^-15\\*the time that the clock runs) [https://www.nist.gov/news-events/news/1999/12/nist-f1-cesium-fountain-clock](https://www.nist.gov/news-events/news/1999/12/nist-f1-cesium-fountain-clock)Essentially the cesium fountain clock is always outputting some frequency, and to prevent that output frequency from drifting, its continuously checking that its output frequency is still the perfect frequency to excite that transition in cesium.\n\nSo if you want to measure how long some process takes really precisely, you make or buy a cesium fountain clock (\\~1 million usd/eur), and you measure how many times the cesium fountain's output frequency oscillates during your process. More likely, you use the cesium fountain clock to measure another frequency.\n\nOr you have your own cheaper clock, like a quartz oscillator or an active hydrogen maser [https://en.wikipedia.org/wiki/Hydrogen\\_maser](https://en.wikipedia.org/wiki/Hydrogen_maser) and you use satellite signals to check that clock against other peoples'  cesium fountain clocks\n\nToday, there are clocks operating on a similar principle as the cesium fountain clock that are more accurate (have lower Allen deviation). But we don't want to be constantly changing the definition of the second and making scientists around the world update their labs to accommodate this. So we stick with the cesium fountain clock, which was a well established technology at the time that the second was defined in SI units (1983). The current definitions of the second and other quantities is found here: [https://en.wikipedia.org/wiki/2019\\_redefinition\\_of\\_the\\_SI\\_base\\_units](https://en.wikipedia.org/wiki/2019_redefinition_of_the_SI_base_units)",
+            "score": 11,
+            "author": "mesouschrist"
+        },
+        {
+            "level": 0,
+            "comment": "Your premise that the length is arbitrary is incorrect. There is a standard second defined against a physical, measurable phenomenon:\n\n&gt; The second [...] is defined by taking the fixed numerical value of the caesium frequency, \u0394\u03bdCs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s^(\u22121).\n\nhttps://en.wikipedia.org/wiki/Second?wprov=sfti1",
+            "score": 29,
+            "author": "Funkybeatzzz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 6,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": -6,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 8,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 2,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 2,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": -2,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 1,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 0,
+                                                                            "author": "[deleted]"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 0,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": -6,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 8,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 3,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": -2,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 4,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 2,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": -1,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 0,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 0,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 2,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 2,
+                    "author": "[deleted]"
+                }
+            ]
+        }
+    ]
+}

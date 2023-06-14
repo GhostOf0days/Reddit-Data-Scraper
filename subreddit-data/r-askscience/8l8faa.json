@@ -1,0 +1,1171 @@
+{
+    "id": "8l8faa",
+    "score": 15856,
+    "title": "If dividing by zero is undefined and causes so much trouble, why not define the result as a constant and build the theory around it? (Like 'i' was defined to be the sqrt of -1 and the complex numbers)",
+    "author": "ImQuasar",
+    "date": 1526977573.0,
+    "url": "https://www.reddit.com/r/askscience/comments/8l8faa",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 9605,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 796,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 926,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 491,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 131,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 36,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 89,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 8,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 21,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 4,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 3,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 9,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 8,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 107,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 28,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 27,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are number systems which do just as you describe. Here are two (I don't know of others) such examples of this:\n\n* https://en.wikipedia.org/wiki/Projectively_extended_real_line\n\n* https://en.wikipedia.org/wiki/Riemann_sphere\n\nThe latter is the extension by defining z/0 in the complex plane.\n\nA lot of the math rules are the same as you're used to, but there are important differences. For example in the projectively extended reals statements such as\n\n* a &gt; b\n\n* a set of all numbers between -4 and 7 is [-4...-1...0...7]\n\nare no longer meaningful without extra context. I can always pass through infinity to just as easily write\n\n* a &lt; b\n\n* a set of all numbers between -4 and 7 is [-4...-10...infinity...7]\n\nWith some added assumptions of what \"a\" and \"b\" are and where infinity is on your interval if it's included, you can restore the idea of order and intervals.",
+            "score": 3665,
+            "author": "AsAChemicalEngineer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Another system that works out just fine is what comes out of [Graphical Linear Algebra](https://graphicallinearalgebra.net/). There, if you try to divide by zero, you end up with another object, which is labeled \u221e. But then as it turns out there are two other \u201cinfinities\u201d that show up if you play around with 0 and \u221e, which show a bunch of curious rules. Among other things it turns out that 0\\*\u221e \u2260 \u221e\\*0, which is kinda weird. Since that is true for all other numbers, you lose some important structure. There\u2019s also no natural way to order these new numbers, so 1&lt;\u221e isn\u2019t true or false but just senseless.",
+                    "score": 957,
+                    "author": "Adarain",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wow thats super interesting.",
+                            "score": 175,
+                            "author": "trenchgun",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If you want to know the details, I encourage you to read on the linked blog. The first few lessons are extremely accessible, then it gets a bit more complex as he goes on to prove all the claims he made actually hold, and then it gets more accessible again. The relevant lesson is [26. Keep Calm and Divide by Zero](https://graphicallinearalgebra.net/2015/12/14/26-keep-calm-and-divide-by-zero/), to understand it you\u2019ll definitely need to read the first bunch, maybe up to number 9, which are all pretty light and introduce the whole notation of GLA (after that the proofs start). You\u2019ll need to figure out some other things from the later lessons, too, but it should be pretty intuitive then, just don\u2019t let the fancy words scare you.",
+                                    "score": 161,
+                                    "author": "Adarain",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 23,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 41,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 18,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 3,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 22,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 6,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I believe people sometimes confuse infinity with a number so in their heads 0*\u221e is just a normal operation that should equal 0. However, it's a set of numbers and lends itself to some interesting set theory. I remember having an argument with someone who didn't believe me not all infinities are equal. It's possible to have one infinity be larger than another in the sense that there is no mapping between the two.",
+                            "score": 23,
+                            "author": "pfc9769",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; However, it's a set of numbers \n\nwell, in one branch of mathematics. Not in Graphical Linear Algebra. There it is actually a label for the relation x~y \u00ad\u21d4 x=0 (compare `0`, which is the label for the relation x~y \u21d4 y=0 or `3`, which labels x~y \u21d4 x=3y)",
+                                    "score": 20,
+                                    "author": "Adarain"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's...well, it's a lot of things, really. \n\nBut the important thing, for most people, is learning that it's not just a very, very big integer. ",
+                                    "score": 15,
+                                    "author": "mikelywhiplash",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; Among other things it turns out that 0\\*\u221e \u2260 \u221e\\*0, which is kinda weird.\n\nIs this a reference to a commutative issue, or is 0\\*\u221e \u2260 0\\*\u221e for \"various infinities\". I'm thinking convergent vs divergent series, and whether dividing divergent series A by a \"less divergent\" series B would sometimes yield an answer and other times would still be divergent; its evidence that not all divergences are equal.",
+                            "score": 8,
+                            "author": "quantasmm",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well, in the context I was talking about, series and limits are basically irrelevant. Graphical Linear Algebra builds up from a bunch of (rather curious) axioms and just sees what happens. And what happens is that, very clearly, 0 and \u221e don\u2019t commute under multiplication. Note that in this system, \u201c0\u201d and \u201c\u221e\u201d are merely labels for two certain objects (i.e. not abstract limits or anything like that, but concrete elements), and that they are not commutative is _very_ obvious in this system. \n\nSo basically, while an important observation, the two concepts don\u2019t have much to do with each other except similar labels.",
+                                    "score": 21,
+                                    "author": "Adarain",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; so 1&lt;\u221e isn\u2019t true or false but just senseless\n\nIn other words, undefined.  It's almost as if there's conservation of \"undefined\" going on. :)  ",
+                            "score": 3,
+                            "author": "greg_barton"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; 0\\*\u221e \u2260 \u221e\\*0, which is kinda weird\n\nThe world of computer programming has convinced me that the commutative property is just \"clever programming\" that perhaps should not be taught.  It's just a fancy way of saying that the function has the same result when you switch the arguments.  A mathematical system that breaks the commutative property of multiplication doesn't bother me.\n\nPart of the weirdness may stem from the fact that we're generally taught infix notation from a young age.   Commutation might get less attention if we were all accustomed to math in prefix notation similar to Lisp, where the order of operations is unambiguous in the notation.\n\nedit -- asterisk escape.\n\nedit -- \"should not be taught\" is always a dangerous thing to say, and I should have phrased that differently.",
+                            "score": 24,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The commutative property is hugely important to abstract algebra for a variety of reasons, not the least of which is in finding important substructure of groups, etc. ",
+                                    "score": 121,
+                                    "author": "Xocomil",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's outside my range; but I'm willing to learn.  Is there an example that isn't too hard to digest that demonstrates how finding these groups is impossible without invoking the commutative property?",
+                                            "score": 14,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 19,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well, the commutator is an important subgroup that requires this property, but will be hard to grasp without the fundamentals of abstract algebra. If you look into abelian groups, the type of group with the commutative property, you can see that they are immensely important to group theory in general. Group theory (and ring theory, etc) is sort of the \"engine\" that drives much of the mathematics you know and use. So the notion of commutativity is really foundational.",
+                                                    "score": 18,
+                                                    "author": "Xocomil"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "A group in this context can be thought of simply as a set of objects which perform some action on other objects. So for example you could have the set of all n x n matrices which rotate vectors.\n\nOne of the rules of groups is that if you perform the group operation with two elements of the group, the result is another element of the group. So sticking to the rotation matrix example, if you multiply two rotation matrices you get another rotation matrix.\n\nSuppose you know that a and b are both in your group, and neither is the identity element. If the group operation is commutative, ab=ba=c is also in your group. If the group operation is not commutative, ab=c and ba=d are in your group. So just from this very simple contrived example we figured out a little bit about the group's structure.",
+                                                    "score": 3,
+                                                    "author": "corpuscle634",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;  It's just a fancy way of saying that the function has the same result when you switch the arguments. A mathematical system that breaks the commutative property of multiplication doesn't bother me.\n\nIt's weird that programming has led you to this conclusion!\n\nConsider a function `f(x, y)` where `x` and `y`have different types. What is `f(y, x)`, and why should it be the same as `f(x, y)`? Consider you want to compose two functions `f` and `g`, and your composition is commutative. Suddenly, because of commutativity, you're able to order them as you see fit, and adjust your execution schedule to a more efficient one. Commutativity is not trivial. A lot of open fundamental CS problems revolve around it.",
+                                    "score": 18,
+                                    "author": "mfukar",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I read his statement as saying that things like `f(x, y)` and `f(y, x)` being different is why he's already accustomed to commutativity being a property that a system may or may not have, as opposed to something intrinsic on an intuitive level.\n\nIf you've only learned basic math, it feels like it should obviously be always true that `a+b`=`b+a` but if you're used to programming (especially if you've ever overloaded operators or used `+` for string concatenation) it just makes sense that the order of the variables matters.",
+                                            "score": 2,
+                                            "author": "Francis__Underwood",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 13,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 19,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 25,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "How would you feel about a system that was not associative? (Ex: (AB)C = A(BC)?",
+                                    "score": 6,
+                                    "author": "Kered13",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "A fun example of something that is commutative but not associative is a representation of rock\\-paper\\-scissors  \n\n\nSo:\n\n  \nR\\*P=P\\*R=P  \n\n\nR\\*S=S\\*R=R  \n\n\nP\\*S=S\\*P=S  \n\n\nWhich gives us something like:  \n\n\n\\(R\\*P\\)\\*S = P\\*S = S\n\n  \nbut R\\*\\(P\\*S\\) = R\\*S = R",
+                                            "score": 36,
+                                            "author": "YnotZornberg",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Commutative operations are certainly rarer in computing than in math, but when you find them they are extremely valuable because it means the  computation can run in any order and as such will compute the same result in a distributed or concurrent environment. This insight leads to CRDTs and operational transforms which are the foundation of systems like Google Docs.",
+                                    "score": 4,
+                                    "author": "OddInstitute",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It\u2019s an anomaly. Maybe it shouldn\u2019t bother you but it should make you curious. ",
+                                    "score": 2,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There's a structure called a wheel that I *very* briefly studied, which also defines 0/0 (but then you lose even more of the rules you're used to):\nhttps://en.wikipedia.org/wiki/Wheel_theory\n\nI remember talking about the wheel of fractions in particular, where things like this happen:\n\n* 0 * 1/0 = 0/0, so you can't always say 0x = 0 or x/x = 1\n* 1/0 - 1/0 = 0/0, so you can't always say x - x = 0",
+                    "score": 256,
+                    "author": "Remiscan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;0 \\* 1/0 = 0/0, so you can't always say 0x = 0 or x/x = 1  \n&gt;  \n&gt;1/0 \\- 1/0 = 0/0, so you can't always say x \\- x = 0\n\nThis is really interesting to me but, but I haven't had my coffee yet and I can't wrap my head around it.  Can you ELI5?",
+                            "score": 33,
+                            "author": "allstate_mayhem",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Basically, to parse the above, you need to treat `0/0` as a single symbol that is distinct in meaning from `0` or `1`. With that in mind:\n\n`1/0` is just another number that, as in the parent comment, connects the negative and positive numbers \u201cat the top\u201d as if the number line was a number circle with the zero \u201cat the bottom\u201d. Now, in everyday math, if you multiply any number by 0, you should get 0. That\u2019s a law (an axiom) that we impose on numbers\u00b9, but you\u2019ll get inconsistent results if you allow `0 * 1/0 = 0`, instead it must yield the new element `0/0`. But now we\u2019ve lost an important bit of structure (namely the expectation that 0*x = 0).\n\n---\n\n\u00b9 specifically it is an axiom of _Fields_, which are basically collections of numbers where arithmetic does exactly what you\u2019d expect it to. No division by 0 allowed in fields, however. _Wheels_, described above, are basically an extension of _Fields_ that allow for division by 0 but lose some other structure to compensate.",
+                                    "score": 39,
+                                    "author": "Adarain",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "0x = 0 isn't a field axiom, but a result of distributivity and the existence of a multiplicative unit:\n\n0\\*x + x = 0\\*x + 1\\*x = (0+1)\\*x = 1\\*x = x\n\nHence by subtracting x from both sides we get 0\\*x = 0.",
+                                            "score": 9,
+                                            "author": "EzraSkorpion",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Let's consider the wheel of fractions of integers. Every element x of this wheel is a couple of two integers, x = (x1, x2). Basically x is a fraction, its numerator is x1, its denominator is x2, and you'd want to write it as x = x1/x2, but let's not do that for now. \n\nIntegers are fractions with 1 as their denominator, so instead of writing the integer 2 as (2, 1), we'll just write 2. Just like we usually do with fractions.\n\nTake two elements x = (x1, x2) and y = (y1, y2) from this wheel. You can perform 3 operations on them:\n\n* **addition**: x + y = (x1, x2) + (y1, y2) = (x1\u00b7y2 + x2\u00b7y1, x2\u00b7y2), which is the usual way you'd add two fractions\n* **multiplication**: x\u00b7y = (x1, x2)\u00b7(y1, y2) = (x1\u00b7y1, x2\u00b7y2), which is the usual way to multiply two fractions.\n* \"**division**\": /x = /(x1, x2) = (x2, x1), basically the operation \"/\" reverses numerator and denominator as you'd expect\n\nThis division allows you to write en element from the wheel as a fraction: for example, take the element (1, 2). You want to write it 1/2.\n\n* 1/2 = 1\u00b7(/2) = (1, 1) \u00b7 /(2, 1) = (1, 1)\u00b7(1, 2) = (1, 2) per the multiplication rule.\n\nSo basically, writing 1/2 or (1, 2) is the same thing.\n\nNow just apply the addition rule to 1/0 and -1/0. You get:\n\n* 1/0 - 1/0 = (1, 0) + (-1, 0) = (1\u00b70 + 0\u00b7(-1), 0\u00b70) = (0, 0) = 0/0\n\nAnd apply the multiplication rule to 0 and 1/0:\n\n* 0\u00b71/0 = (0, 1)\u00b7(1, 0) = (0\u00b71, 1\u00b70) = (0, 0) = 0/0\n\nNow apply these rules to fractions that don't have 0 as their denominator, and you'll get the expected results.\n\n---\n\nTell me if I've been clear enough, but that's how operations work on the wheel of fractions :)\n\nYou'll get much more details, with much more complicated words, on how to build a wheel of fractions from a commutative ring in this paper: https://www2.math.su.se/reports/2001/11/2001-11.pdf",
+                                    "score": 15,
+                                    "author": "Remiscan",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "By the way, the projective *plane* (extended Euclidean plane) is a very important part of the Elliptic Curve group theory, which you're probably using at this moment while browsing reddit. HTTPS/SSL/TLS rely on cryptography to communicate securely with the server, and some of it may use Ephemeral Elliptic Curve Diffie-Hellman.",
+                    "score": 245,
+                    "author": "aris_ada",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 6,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 2,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 284,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 97,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 15,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 2,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Saying \"in the projective real line division by zero is possible\" is a slight inaccuracy. What you do is extending *geometrically* the real line R to the projective real line PR and then extend the arithmetic operations. But the operations are not \"total\", meaning they are not defined on PR x PR, but on a subset of it (for example, \u221ex0 can't be defined). This prevents PR from being a field, a ring, or any other familiar algebraic structure. A \"zero\" is an element in a ring with the property that it \"absorbs\" all the other elements in the ring (that is ax0= 0 for every a in the ring). So since PR is not a ring, we're not dividing by a true zero, but merely dividing by a point that we labelled \"zero\" because that was its name before the extension.\nThe true \"division by zero\" in a proper algebraic structure is only possible in a *Wheel*.",
+                    "score": 57,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "this is a great explanation thanks",
+                            "score": 2,
+                            "author": "IWanTPunCake"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "i thought the reason dividing by zero was a problem was not because we couldn't assign a value to it. but assigning ANY value to it was just as a valid as any other one. basically you can prove 1/0 = 2/0 = 3/0, which would mean that 1 = 2 = 3. ",
+                    "score": 68,
+                    "author": "eggn00dles",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes. The solutions/theories he is taking about are specific ways of assigning values and relationships with 1/0.",
+                            "score": 31,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Wow, the Riemann sphere, haven't seen that since my EE days.\n\nBrb, lifting some singularities from holomorphic spaces.",
+                    "score": 30,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "It's worth pointing out that the projective extension of the real line loses the field properties R normally has. That's pretty bad for most \"normal use\" of R.",
+                    "score": 7,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Why does dividing by 0 create a circular number system? Why can you \u201cpass through infinity\u201d if you go far enough in a direction? You mention deciding where infinity is- why is that intrinsic to dividing by zero?",
+                    "score": 8,
+                    "author": "dontFart_InSpaceSuit",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's not in fact intrinsic to dividing by zero, but it is one of the ways you can end up with a circle.\nIf you compute 1/0.00001 you end up with a very big positive number. If you compute 1/ (-0.0001) you end up with a very big negative number. If you define 1/0 to be a constant, then it follows that positive infinity = negative infinity. What's an appropriate name for this constant? Well, let's call it \"infinity\" without the positive/negative adjective. Imagine taking the (real) infinite line, bending it so that positive infinity equals negative infinity. What do you get? A circle. In fact, the projective real line is homeomorphic (read \"it has the same shape\") to the circle. So instead of a line of numbers, you now have a circle of numbers, and the point in which you have glued positive infinity and negative infinity together is the new point, that we called infinity.\nSo if you live on that circle and you start from zero, going either clockwise or counterclockwise you can pass through infinity, merely because it's a point (the north pole if you want) of the circle.\nNote that this construction is only topological (=it involves only the shape of things), it doesn't have an algebraic or metric meaning attached to it.\n\nAlgebraic meaning:  So instead of a line of numbers, you now have a circle of numbers, it doesn't look like a big deal, does it? Well the point is that before you had only one marked number (the zero) with special properties (infinity is not a real number), while now you have defined infinity=positive infinity =negative infinity to be a number, so a marked point on this circle. These two marked points don't mix well together arithmetically, in the sense that there's no possible result of the operation \u221ex0 that preserves the basic properties that numbers have. \n\nMetric meaning: bending the line into a (unit) circle doesn't preserve the standard metric you have on the real line. For example, going from 0 to 1000 is 1 km on the real line, but it's much less on the unit circle. So what does the standard metric on the real line correspond to on the circle? Well it's a metric such that the more you approach infinity, the more space you have to go through.\nSo, if you imagine living on this circle, starting from zero, infinity *is* an actual point on your world, but it takes you an infinite amount of time to get there. It's fair, isn't it?",
+                            "score": 48,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "For someone who stopped at Calc II years ago this is an incredibly clear explanation. Thanks.",
+                                    "score": 7,
+                                    "author": "Serpico__"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This is super clear and concise, thank you very much.",
+                                    "score": 2,
+                                    "author": "bitterhorn"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;I can always pass through infinity\n\nOnly did up to undergrad math, so:\n\nwut?",
+                    "score": 24,
+                    "author": "01-__-10",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Because now it's just a label for a point on the circle.\n\nIf you want more and have had at least Calc 2, see if you can find the book \"Visual Complex Analysis\" by Needham online. Or the book \"Geometry\" by Brannan. Both are the gentlest introductions to the Riemann sphere and projective geometry, respectively, that I know.",
+                            "score": 39,
+                            "author": "seanziewonzie",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Spoony stuff.\nThanks!",
+                                    "score": 7,
+                                    "author": "01-__-10",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "With regard to \"passing through infinity,\" this can happen if you change the geometry of the reals to be a circle instead of a line. 0 and infinity are on opposite sides of the circle and infinity is both adjacent to \"the largest\" (air quotes since that's laughably inaccurate, but intuitively descriptive) negative and positive numbers.",
+                                            "score": 3,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That's all I did up until, undergrad math. I really like math but when you got problems where even if you make the slightest mistake in the process, it'll mess up your solution and that gives me anxiety. ",
+                            "score": 5,
+                            "author": "ibeenherebefore",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It gets better when you're in situations where the solution isn't the important thing",
+                                    "score": 6,
+                                    "author": "mstksg"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Has the useful application of these number systems resulted in any interesting discoveries, solutions, or inventions?",
+                    "score": 11,
+                    "author": "EatsFiber2RedditMore",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Projective geometry is widely used in mathematics as a basis for many theorems and results.\nBasically, the geometry our eyes see is not euclidean, but projective. If you have two points in a straight line, you'll only be able to see the first one, the second one being covered by the first one. In fact, you see the whole line as a single point. \nIn projective geometry, lines are defined as points. The \"infinity\" corresponds to the horizon.\nThe fact that projective geometry is the appropriate geometry to describe how we perceive the world means it has a lot of real life applications. For example, turning the 3d image of a camera into a 2d photo is exactly a projective transformation.",
+                            "score": 23,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "When it comes to straightforward division by zero rather than other sorts of infinitesimal we more generally we have \"wheels\":\n\nhttps://en.m.wikipedia.org/wiki/Wheel_theory\n\nThe funny thing is it's not used as much as you'd think given how soon the question arises. And the fact that it gets clamped down on so quickly and is hard to find . Mathematicians are well aware it's a completely sensible thing. They're just not as interested in it as other infinitesimal notions. But this could be made clearer to laymen, imo, rather than just declaring it taboo (unless you go into it) because every few years someone \"discovers\" that it is sensible and thinks they've made a profound new discovery. \n\n",
+                    "score": 5,
+                    "author": "Harsimaja"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are many good answers already, but I think there's a simpler one that has to do with inverses.\n\nAn inverse is a sort of mathematical undo, it reverses the action of some function.\n\nInstead of thinking of division and subtraction as operations, think of them as inverse multiplication and addition.\n\nWhen you see `5 + x = 7` we can solve this using an inverse: `x = 5 + x + (-5) = 7 + (-5) = 2`. We can construct the integers from the naturals by *closing* the addition operation through the extension of negative numbers.\n\nWhen we try the same thing with multiplication, we get the rational numbers. Given `x * 3 = 6` we can use the multiplicative inverse of 3, one third, to solve the equation: `x * 3 * (1/3) = x = 6 * (1/3) = 2`.\n\nWe cannot actually close the rationals under multiplication, because of zero. The closest thing to do is take the set of rational numbers except for zero and treat this as a multiplicative group.\n\nSince zero times anything is zero, we have `0*x = 0`. Since `x = 5` is just as valid a solution as `x = -1`. Since no unique solution for `x` gets determined by the equation, there's no way to assign a consistent value to the multiplicative inverse of zero.\n\nTL;DR: zero times anything is zero, so it's impossible to undo that multiplication and figure out what you started with.",
+            "score": 1994,
+            "author": "MikaelaExMachina",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah this.  If you have division by 0 you can't have a field, so the things that do have division by 0 can't be algebraic, and end up being more geometric things where you aren't usually dividing and multiplying anyway.",
+                    "score": 303,
+                    "author": "pdabaker",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "This is a much better answer than the current top answer, which mentions the projectively extended reals and Riemann sphere. Implying that the OP's idea is in fact done in mathematics is  misleading to a layperson, and explaining why the projectively extended reals aren't REALLY doing what he suggests (or, at least they break almost everything else he understands about numbers) requires introducing the definition of a field and analyzing multiple algebraic structures.\n\nThis answer is very useful because it considers the context in which the question was asked. ",
+                    "score": 78,
+                    "author": "ferrous69"
+                },
+                {
+                    "level": 1,
+                    "comment": "This TL DR explained easily a year and a half of my college EE maths. WHERE WERE YOU WAY BACK THEN?!?! \n\n(Thank you)",
+                    "score": 34,
+                    "author": "skeetbuddy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You spent a year and a half dividing by zero?",
+                            "score": 42,
+                            "author": "ginsunuva",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Most people spend at least 3 semesters in Calculus (if they finish it) so that's not really surprising.",
+                                    "score": 14,
+                                    "author": "inemnitable"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not all operations are reversible... `x\u00b2 = 1` has two solutions but you can't conclude anything special other than `x = 1` or `x = -1` because you can't \"undo\" the initial equation.",
+                    "score": 61,
+                    "author": "shavounet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That isn't what is meant by inverse in this situation. The operations `plus(1,5)` and `plus(2,4)` both produce the result `6`. You also can't *undo* the number 6 to deduce definitively which input values were added to produce that result; that isn't what is being discussed here.\n\nThe quality of the inverse operation discussed here refers to the fact that applying the inverse function to an  output of the original function and the second operand of the original function produces one unique result \\- the first operand. Specifically, `minus(plus(a,b),b) = a` and `divide(multiply(a,b),b)=a` are both almost always valid statements, except for specific degenerative cases. For this discussion, `inverse(operation(a,b),b)=a` .",
+                            "score": 266,
+                            "author": "MjrK",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yea, this post only gets you halfways there. If you assume there exists a complex number `k`  such that `k= x /0`for some number `x` then it's a pretty easy exercise to prove that `0=1`. If you try something similar, letting `x` be some number s.t. `x^2 = 1`then you can't derive a contradiction. You will just derive that `x = 1` or `x=-1`",
+                            "score": 30,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not all are but division is basically described as the reverse of multiplication",
+                            "score": 3,
+                            "author": "Al2718x"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If you deal with x^2, you have to thing about it in the gaussian way where x=1 has two meanings:\n\n x=1*e^0 AND 1*e^(2PI*i). \n\nThus, when you reverse the action\n\n (sqrt(1)) = 1*e^(0i/2) = 1\n\nBut ALSO\n\nSqrt(1)= 1*e^(2PIi/2) = 1*e^(pi*I) = (-1)",
+                            "score": 9,
+                            "author": "Benoslav",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Isn't it e^ipi instead of e^2pi though?",
+                                    "score": 6,
+                                    "author": "MrEvilNES",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I believe it would initially be e^j2pi , thus the sqrt would be e^jpi = -1. ",
+                                            "score": 3,
+                                            "author": "VernKerrigan"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 13,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 34,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 6,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When you define i such as i\u00b2=-1, you can just use it the same way as any real constant, and keep doing math.\n\nIf you define a constant to be equal to 1/0 and try to keep doing math with it, you will find contradictions at every corner. First quick example to come in mind: if we call it b (why not), then 1/b is, obviously 0, but what is 1/(b+1)? If it is zero, then b+1=b so 1=0. If it is not, then you just found a finite value for b.",
+            "score": 785,
+            "author": "Yatopia",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "IIRC, someone once proposed to define a division by zero as \"nullity\". I thought it was a ridiculous idea for exactly the same reasons as you're describing here. You can call it whatever you want, that doesn't make it mathematically sound.",
+                    "score": 16,
+                    "author": "Redditor_Reddington",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 140,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don't think this is a very good mindset to have about math in general. \n\nBefore we made imaginary numbers we didn't have a use for them, but we found a use for them out of their creation. ",
+                            "score": 77,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah \u201cuseful\u201d there was misguided. If we could find a way to define it that was both *consistent* with existing theory and *free from contradiction* we would have done so.",
+                                    "score": 118,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That's not really true. We found their use and used them before we rigorously defined complex numbers. See the history of Cardano\n\nhttps://www.cut-the-knot.org/arithmetic/algebra/HistoricalRemarks.shtml\n\n",
+                                    "score": 25,
+                                    "author": "haukzi"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The use of a b that has to verify at least \"b+x=b\"and \"b*x=b\", for whatever x different from b, seems doubtful indeed.",
+                    "score": 3,
+                    "author": "MrLeville"
+                },
+                {
+                    "level": 1,
+                    "comment": "if b is something similar to infinity, b+1 can very well be equal to b without implying 1= 0. b doesn't have to be a real number, just like i isn't",
+                    "score": 14,
+                    "author": "Me_ADC_Me_SMASH",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Does saying \"b+1 = b\" feel like \"use it the same way as any real constant, and keep doing math\" to you ? ",
+                            "score": 120,
+                            "author": "Yatopia",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "But i+1=i is a contradiction.\n\n\nIf properties of equalities don\u2019t hold then b is not a number, real or imaginary.",
+                            "score": 35,
+                            "author": "KingAdamXVII",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You can't cancel infinities to do that. It's very similar to cancelling 0s during division.",
+                            "score": 7,
+                            "author": "El_Impresionante"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The problem is that x*0=0 for all x so if you invert multiplication then x=0/0 also for all x. This contains no information. If you allow this you can \"prove\" things like 1=2 (All those wrong proofs contain a hidden division by zero)",
+            "score": 166,
+            "author": "dsguzbvjrhbv",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To give an example of such a \"proof\":  \n    a = b  \n    a\u00b2 = ab  \n    a\u00b2-b\u00b2 = ab-b\u00b2  \n    (a+b)(a-b) = b(a-b)  \n    a+b = b  \n    2b = b  \n    2 = 1",
+                    "score": 93,
+                    "author": "Masked_Death",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Can we just do a long list of these? Here was the one I was told in Linear Algebra:\n\nSuppose x=1. Then x^2 = x. So, x^2 - 1 = x - 1. \n\nThe left hand side is a difference of squares. That is, (x + 1)(x - 1) = x - 1. \n\n**Dividing both sides by (x-1)** gives x + 1 = 1. Subtract 1 from both sides to get x = 0. \n\nHowever, we defined in the beginning that x = 1, thus 1 = 0.\n\nedit: Legibility",
+                            "score": 37,
+                            "author": "iHateTheStuffYouLike",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 7,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Couple issues:\n\nThis has to assume an integral domain for it to follow. If it does assume an integral domain, make it stated. You don't need to require an integral domain to argue the above proofs; and without it the real issue remains and was bolded (when I divided both sides by x - 1, yet I defined x = 1, I was dividing by x - 1 = 1 - 1 = 0). This is just one of the many reasons why you cannot divide by zero. (One that I don't think gets mentioned too much is that zero is the only true signless number. That is, -0 = 0, but this is not true for any other element of the integers. So are you doing 1/0 or 1/(-0)?)\n\nNot all quadratics are guaranteed two (real) solutions. Off the top of my head: x^2 - x + 1 has no real solutions, while x^2 - 2x + 1 has one. That said, it's not a big deal, and if you were to ask me more about \u2124[x], I wouldn't have much more to say. Algebra can't compare to Topology.",
+                                            "score": 4,
+                                            "author": "iHateTheStuffYouLike"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "May I ask where the error is? I see the obvious 2 != 1, but where does the logic go wrong? ",
+                            "score": 5,
+                            "author": "zgx",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In the step from the 4th to the 5th line, he divides through (a-b). But because a=b (that was what he assumed from the very beginning), he divided by 0 (because a-b=0 if a=b).\nYou can\u2018t divide by zero. ",
+                                    "score": 17,
+                                    "author": "Wiblu",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ah! Thank you so much!",
+                                            "score": 4,
+                                            "author": "zgx"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Try it.  Let's say any number divided by 0 is some constant, c:\n\n1 / 0 = c\n\nnow let's multiply both sides by some number, say 5...\n\n5 * (1/0) = 5 * c\n5 / 0 = 5 * c\n\nsince any number divided by zero = c, we have:\n\nc = 5 * c\n\nSo c must equal zero.\n\nBut if we regard dividing by zero as a valid operation, we end up with things like this:\n\n3 &lt; 5\n3/0 &lt; 5/0\n0 &lt; 0\n\nBasically it breaks all the other rules that we have declared and derived that form algebra as we know it, so we must specifically disallow it to make everything else work.",
+            "score": 16,
+            "author": "What_Dennis_Does",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "There are many good explanations here, my favorite most simple about why you can\u2019t divide by 0 is this: \n\nWhat is 20/4? 5. What you\u2019re really doing here is glorified subtraction.  20-4 is 16, then minus 4 again to get 12, and again for 8, and again to get 4, and one more time to get 0. You subtracted four 5 times until you get to 0. \n\nSo then how about 20/0? Well.. 20 minus 0 is 20, so you do it again, and again, and never get anywhere. You can\u2019t do it. ",
+            "score": 12,
+            "author": "Nrekow",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "There\u2019s one case where mathematicians did exactly as you describe, and that\u2019s inversion (geometry). \n\nConsider a space mapped in the unit circle (circle with radius r = 1) and then invert it by taking every point in the circle and placing it outside the circle at the same angle from the center, but at 1/r (since r &lt; 1 for every point inside the circle). \n\nThey defined the center of the circle\u2019s inversion (1/0) as being equal to infinity (infinitely far away from the circle once inverted) for the sake of continuity.\n\nDefining such an operation in general requires either a purpose or a logical justification for doing it, and as others have mentioned, there are math operations that you can use on the square root of -1 to get real-world practical results, unlike the dividing by zero case so far.",
+            "score": 34,
+            "author": "a_sneaky_hippo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What about specifically defining 0/0 =0  while leaving n/0 = infinity (n !=0)?",
+                    "score": 3,
+                    "author": "nocomment_95",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Traditionally expressions like 0/0 are referred to as \u201cindeterminate form.\u201d \n\nThe thing about these is that they can have actual non-zero values associated with them, like in the case of the limit as x approaches zero of sin(x)/x, which is actually 1 despite the output 0/0 if you try to directly plug it in.\n\nIn that case, you can apply something known as L\u2019Hopital\u2019s Rule to investigate further. I hope this is enough of an answer to give you an idea of why we wouldn\u2019t want to just define an expression like 0/0 to be equal to 0.",
+                            "score": 22,
+                            "author": "a_sneaky_hippo",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You probably want a space there so like `n != 0` as otherwise it looks like you are taking the factorial of `n`",
+                            "score": 6,
+                            "author": "NEVER_TELLING_LIES",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "But why would it be? Paraphrasing [James Grime](https://www.youtube.com/watch?v=BRRolKTlF6Q&amp;t=9m43s) here, x/x is always 1 (except for x=0). Then again, x/-x is always -1 (except for x=0). Indeed, 0/x is always 0 (except for, you guessed it, x=0). And x/0 (well, actually the limit of y approaching \u00b1 0 of x/y) is \u00b1\u221e.\n\nSo depending on the direction you take, the way you're approaching 0/0, gives you a different plausible value for 0/0.",
+                            "score": 4,
+                            "author": "-SQB-"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "One reason is that the inverse of that equation is 0/0=1/0. Now you have two different definitions of 0/0, one equal to 0 and the other to 1/0.\n\nAnother is that when 0/0 comes up, it very seldom ends up equaling 0.",
+                            "score": 4,
+                            "author": "TheSultan1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Firstly, I make the assumption that you want things to be consistent with Algebaric fields - that is, 1/0 obeys the rule of an albebaric field - e.g. rational, reals, complexes.\n\nhttps://en.m.wikipedia.org/wiki/Field_(mathematics)\n\n 0 is normally the additive identity of a field. We show that 0x = 0 by that the distributive property,\n\n0x = (0+0)x = 0x + 0x\n\nSubtract 0x from both sides and we get that 0x = 0. Now if there is a multiplicative inverse of 0 - let's denote this as \"Z\". (I.e. Z = 1/0).\n\nThis means that 0Z = 1. But we just shown that 0Z = 0 by the previous result above. Hence Z cannot be in our field and we have to break the closure rule of fields (adding and multiplying elements in a field returns a result in the same field).\n\nNote that this also applied to Algebaric rings as well. But, if we are going to sacrifice the field property we could extend the real or complex numbers to include infinity. \n\nhttps://en.m.wikipedia.org/wiki/Extended_real_number_line",
+            "score": 13,
+            "author": "misterjackz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for this reply, and well done! Very clearly explained. ",
+                    "score": 2,
+                    "author": "BEERT3K"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "TLDR:\n\n1.  \"i\" is a number like any other. You can add, subtract, multiply, divide it etc. and always gives a single internally consistent answer.\n\n2.  \"i\" represents real values in nature when you're doing certain physics calculations so it's necessary and important that we have it.\n\n3.  5/0 has no answer because nothing, not even Infinity, can be multiplied by 0 to get it to equal anything but 0.\n\n4.  We can rewrite math as we see fit, but there is nothing in nature to my knowledge that would require changing the rules to give 5 / 0 a proper answer.\n\n\nLong Version:\nThere is a subtle but meaningful difference here between \"i\" and diving by 0.\n\nOn The Nature of \"i\":\n\n\"i\" is just a number like any other. We use the moniker \"imaginary\" to describe it, but really \"i\" is not meaningfully different than 2 or 5 or 7.  This bakes our brains a little bit because we can't see \"i\" anywhere on the number line, nor can we hold up \"i\" numbers of fingers and toes.\n\nBut there are real actual things in nature that have a value of \"i\".  In physics, the equations / calculations in electricity and magnetism and / or signal processing often reveal physical quantities that contain \"i\".\n\nFurthermore, because \"i\" is a number like any other, you can perform any and all mathematical operations on it ( addition, subtraction, multiplication, etc.) and you will always get a single answer which is internally consistent with the rest of mathematics.\n\n\nDividing By Zero:\n\n5 / 0 is basically the mathematical equivalent of asking the question,\n\n\"What number must 0 be multiplied by in order to equal 5\"\n\nBut this question has no meaningful answer.  No number, not even the big boy himself, infinity, can budge Zero from its position even a little (infinity X 0 = 0).  So asking how many zeros it would take to equal the number 5 is just a nonsense question.  It would be like asking,\n\n\"How many Rocky Road ice cream cones does your uncle Charles have to eat in order to grow Santa Claus out of a moon rock.\"\n\nThere simply is no answer.  The equation (5/0) itself  contains the false premise that this particular denominator (0)  could ever be made to equal 5 through multiplication alone.  So I guess the super duper snarky answer to this equation might be, \n\n\"5 / 0 = You made a flawed question.  Try making a better question.\"\n\nCan't We Re-write Math?:\n\nYes actually we can. We just made up all the rules to math anyway.  We could technically write them to say anything we want (5 / 0 = Thanos is Tony Stark's son).\n\nThere is actually an entire field of mathematics called \"non-euclidean geometry\" that is basically based on one person's desire to create a new form of geometry from scratch where two parallel lines would eventually cross one another instead of staying the same distance apart forever.\n\nBut the reason why non-euclidean geometry has value / staying power is that it turns out that on a curved surface like a globe, two parallel lines do actually cross each other if you take them out far enough (If you and your buddy are both standing on the equator facing north and you start walking, your paths are 100% perfectly parallel to start with, but you will bump into each other at the North Pole).\n\nSimilarly, as we discussed previously, in certain equations like the ones in E&amp;M physics and signal processing there are actual real physical quantites whose calculation requires the existence of \"i\".\n\nAnd I'm a physicist not a mathematician, so I definitely can't speak on behalf of the math world.  But as far as I'm aware there are not any real calculations that by their nature would require there to be an answer to the question 5 / 0.\n\nSo I would think it unlikely that a brand new branch of mathematics would be created for the purpose of giving the question 5 / 0 an answer.",
+            "score": 45,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just a minor observation to statement number (3):\n\n0*infinity is not necessarily 0. It would certainly make life easier if this was always the case, but we need L\u2019Hopitals rule for a reason.",
+                    "score": 4,
+                    "author": "Hermeezey",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; But there are real actual things in nature that have a value of \"i\". In physics, the equations / calculations in electricity and magnetism and / or signal processing often reveal physical quantities that contain \"i\".\n\nWhat's one example of an electrical / magnetic effect in nature that's based on the square root of negative one?  (And not just using \"i\" as a kind of vector notations n) ",
+                    "score": 2,
+                    "author": "Senshado",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I can go into some of the specifics if you'd like. But basically if you look up the physics / engineering field of signal processing, you'll see that many of the calculations required to describe and model the real life properties of electromagnetic waves as they propagate require the use of imaginary or complex variables.  \n\nAnd this on its face value can seem disconcerting.  But it helps to remember that real life phenomena simply have the properties that they have.  And some properties, like quantity, can the easily described with rational whole numbers \"there are five apples on the table.  \n\nBut some physical properties, like certain kinds of wave equations, require imaginary numbers in order to be accurately described.  And an imaginary number is not imaginary in the sense that it is fake or not real.  You just can't count it out on your fingers.  But you can't really count Pi out on your fingers either. But that doesn't stop nature for putting circles everywhere.\n\nSo basically, nature just does what it does and we construct math with whatever rules it needs to best describe it.  And some of the numbers that might be needed to describe an electromagnetic wave equation might be numbers that you could never count on your fingers or see in a bushel of apples.  But that's just the way it is. ",
+                            "score": 6,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; I can go into some of the specifics if you'd like.\n\nCould you give the name of one electromagnetic property or interaction that can only be represented in terms of the square root of negative one?\n\n&gt; you'll see that many of the calculations required to describe and model the real life properties of electromagnetic waves as they propagate require the use of imaginary or complex variables.\n\nAll the calculations on force and energy fields that I've noticed using \"i\" are doing it as a notation for multidimensional, non-scalar quantities.  Just one of many possible notations for a vector.",
+                                    "score": 3,
+                                    "author": "Senshado",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The thing about this is that I'm not trying to argue with you about something in order to prove if it's true or not.  I'm just trying to explain to you a well-known non-controversial fact about about physics/engineering.  Signal Processing for example is an entire field of academic study and physics / engineering that's based at least in part on the principle that some of the properties of wave mechanics can only really be described / modeled using complex numbers.\n\nAnd I can do my best to try and explain to you why that's the case, and even give you examples.  But the physics / engineering that went into the design of the machines that we're having this discussion literally relied on complex numbers.  So this seems like an especially silly place to be having an argument over whether or not complex numbers are needed for real world calculations.\n",
+                                            "score": 3,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; effect in nature that's based on the square root of negative one? (And not just using \"i\" as a kind of vector notations n\n\nSee Electrical impedance and AC power. You have to take into acount the \"imaginary\" values when designing and not just as a \"kind of vector notation (which is very useful)\".\n\nWhen powering loads, you must supply reactive power (the imaginary part of the power) as well as the active power (the real part of the power) otherwise things won't work as intended.",
+                            "score": 2,
+                            "author": "ocasas"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 23,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The hyperreal system solves many of the problems you've documented here... Not specifically division by zero, but dealing with infinites and infinitesimals in a logically consistent fashion. I suppose you could say in the hyperreal system that if you wrote a/0, you really meant for 0 to be some infinitesimal. Though there still are problems with 0/0. You could correct that to be some infinitesimal divided by another infinitesimal, but that's impossible to evaluate without knowing something about the specific infinitesimals. But if you were going to write that, you should just use a notation for infinitesimals anyways.",
+                    "score": 7,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In math, anything can hold true if you assume it. So let's just assume that for two real numbers, a and b, there exists an equality a/0 = b. Using simple algebra, we can then see that a*b = 0 for any two real numbers, thus making all real numbers indistinguishable from each other. So you can divide by zero, in a system where every number equals every other number. Needless to say, this kind of mathematical system is not very useful and indeed not widely used in the mathematical community. ",
+            "score": 53,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the most complete answer in my opinion. You could potentially develop a different number system where division by zero works, but allowing that implies that every number is equal to each other.",
+                    "score": 7,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "But for that to hold true b would have to be zero, wouldn't it?\n\nThe only way a multiplication gives zero as a result would be to multiply by zero. A can't be zero because 0/0 is undefined, so b must be 0. In that case any number divided by zero would equal zero, which also makes no sense. \ud83d\ude35",
+                    "score": 2,
+                    "author": "Smitty-Werbenmanjens",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not really. As we defined the first equation, a/0 = b to hold true for any two real numbers, a*b = 0 must also hold true for any two real  numbers, making them all interchangeable with each other.\n\n&gt;In that case any number divided by zero would equal zero, which also makes no sense.\n\nThat's exactly my point. If you contradict a fundamental rule of algebra, most other rules will break down as well.",
+                            "score": 2,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Because doing so doesn't give you a particularly useful structure. When extending the real numbers to the complex numbers by adjoining an element i, most of the properties of real numbers continue to hold because the complex numbers are still a field. However, if you try to define 1/0 as you describe, you lose several useful properties, for example that 0*x = 0 for all x.\n\nThere is a structure that's basically what you describe called a [Wheel](https://en.wikipedia.org/wiki/Wheel_theory), but the length of the article should give you an idea of how little it's used.\n\nMathematicians don't just define structures because they're possible, they define structures in order to talk about what useful and interesting properties and connections to other structures they have, but in the case of wheels that's not very many.",
+            "score": 5,
+            "author": "jfb1337",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You can! But things break, and ultimately cause more trouble. In particular, let's look at what happens if we assume that we can add division by zero while still keeping our ability to add, subtract, and multiply.\n\nLet's say we define 1/0=\u00a3. What this should mean is that \u00a3 is the value that you can multiply by 0 to get 1.\n\nConsider 0\\*\u00a3=(0+0)\\*\u00a3=0\\*\u00a3+0\\*\u00a3; subtracting 0\\*\u00a3, we get 0\\*\u00a3=0.\n\nThus, 1=0\\*\u00a3=0. And so in a world where we can add, subtract, and multiply, and also divide by 0, all numbers are equal to 0. Which, sure! In that world, all operations have the result 0.\n\nOkay, so we ran into trouble because the normal rules of math would apply multiple values to 0\\*\u00a3; let's look at what rules we lose if we specifically choose the value of 0\\*\u00a3.\n\n0\\*\u00a3 has no value: this is a cop out! If the whole point was to stop having a thing (0) that we couldn't divide by, the solution shouldn't be having a thing (\u00a3) that we can't always multiply by. That said, this is the answer you get if you call 1/0 \"infinity.\" You don't get to multiply 0 times infinity, or subtract infinity from infinity, or divide infinity by infinity. Which means we went from a world where a/0 wasn't defined, but now we have both 0/0 and infinity/infinity undefined.\n\n0\\*\u00a3=1: this means that our little proof above of 0\\*\u00a3=0 can't work any longer. Now, it's entirely meaningless to have 0 such that 0+0 isn't zero, so that part of the proof is fine. And, if we're saying 0\\*\u00a3=1, we should be able to subtract 1 from an equation that basically says 1=1+1. So, what broke? Distributivity. We no longer have (a+b)\\*c=a\\*c+b\\*c. But it's even worse than that. 0=0\\*1=0\\*(0\\*\u00a3)=(0\\*0)\\*\u00a3=0\\*\u00a3=1, so we need to also ditch associativity of multiplication! At which point, without both associativity and distributivity, we no longer have an operation that really deserves to be called multiplication. Note that all of this also holds if we set 0\\*\u00a3 equal to any other already-existing nonzero number.\n\n0\\*\u00a3=0: this means we aren't using the typical understanding of what dividing by a number should give you. But consider 1=0+1=0\\*\u00a3+1=0/0+1/0=(0\\*1+1\\*0)/(0\\*1)=0/0=0\\*\u00a3=0. So again, we lose both distributivity and associativity.\n\n0\\*\u00a3=something new: at this point, if you're careful, you can define what I'm sure others have mentioned: a wheel. In a wheel, division is divorced from multiplication; we lose the fact that x/x=1. Further, subtraction is divorced from addition; x-x is no longer necessarily 0. So you get something, and it's not forced to have all elements equal to zero, and you still have associativity, but you do lose distributivity.",
+            "score": 12,
+            "author": "avocategory",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Math is a lot less about theories and crafting as opposed to discovery. Let's start with primes - they aren't considered primes because a mathematician decided they were - prime is an inherent trait of the number.\n\nIf you were herding 7 sheep and you wanted to split them into even groups you would only have 2 options - 1 group of 7 or 7 groups of 1.  The same holds true in all bases (binary - 111 groups of 1 or 1 group of 111). It also holds true for any alien-farmer who is discovering alien math on an alien planet - 7 is prime. \n\nThe imaginary number i is more abstract and less grounded in the real world (hence why it's called an imaginary number), but it solves a basic problem of maths - namely, how do we take the square root of a negative number? i works both ways sqrt (-25)=5i because i^2 = -1\n\nLet's try that with dividing by 0. Let's say 10/0=\u00a5. Also,  15/0=\u00a5, and 48/0=\u00a5.\n\nThat means the reverse is true as well. \u00a5\u00d70 = 10, and 15, and 48.  Suddenly we have \u00a5\u00d70= (every conceivable number ever). That doesn't really help us solve anything, and it breaks the rule that anything\u00d70=0 at the same time.",
+            "score": 4,
+            "author": "R3D1AL",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Let us think about what it means to divide a number. Let' say you have a,b,c defined as:\n\na/b=c\n\nWhat else is that formula saying? It also says:\n\na=b*c\n\nRight? So now replace b with 0 and n for a. Can you think of any number, besides 0, that can reached multiplying 0 times another number? That is to say, for any n besides 0, \n\nn=0*x\n\nHas no solutions. Now you may wonder why I exclude 0 from n. Well thats because 0 times *anything* is 0. So for any number besides 0, there are no solutions to the formula, and for 0 there are infinite solutions.\n\nThats why dividing by 0 makes no sense",
+            "score": 3,
+            "author": "reeper147"
+        },
+        {
+            "level": 0,
+            "comment": "You can, and you can do it without \"breaking any rules,\" it is just not interesting to do so.\n\nTo see what I mean, think about a number system where dividing by zero makes sense. Let x be any  number in this system, and set y = x/0. Then, by multiplication, x = 0*y, and since 0 times any number is 0, we see that x = 0. So, **the only number in our system is zero**, which is not a very interesting or useful system.\n\nPeople shouldn't say thing like \"dividing by zero is forbidden!\", but should say instead something like, \"since we want things to be interesting/useful, let's work on a system where zero has no inverse.\"",
+            "score": 4,
+            "author": "cowgod42",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You certainly can make this change, but it requires some other changes as well.\n\nSpecifically, you need to resolve some challenges concerning the multiplicative identity property of R (real numbers.)\n\nIf you define 1/0, then what should a times a^-1 be when a is 0? The inverse property of R suggests that should be 1 if 1/0 is defined. However, the multiplication property of zero suggests it should be 0. In concrete terms, does 0 times 1/0 = 1 as the inverse property suggests, or should it be 0 as the multiplication of zero property suggests?\n\nAs other posters have mentioned, it's totally possible to build a number system in which division by zero is defined, but it changes the properties of R substantially. If we allowed division by 0 in R, R would behave in counter intuitive ways (with regards to how we typically use R.)\n\nIn more technical terms, while addition can be closed under R, multiplication--and by extension division--cannot be closed under R without significant modifications to some of the basic properties of R (because zero.) With regards to defining sqrt(-1) to be i, we can do so without changing the basic properties of R, only extending them. Defining division by zero is fundamentally different, as we've seen that doing so would change the basic behavior of R (would lose field properties.)",
+            "score": 11,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 7,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Probably because dividing any number by 0 will not give the same \"Undefined\" for all real numbers. 0 \\* x/0 should be x. So you cannot define x/0 as one constant where x is all real numbers. What could in theory be done is defining 1/0 as some number\\(q\\), and so 0 \\* \\(q \\* x/0\\) =  x.",
+            "score": 3,
+            "author": "Bobjohndud"
+        },
+        {
+            "level": 0,
+            "comment": "The problem is that the limits as you approach dividing by zero are different depending on what limit you take. 1/x goes to plus infinity or minus infinity is x approaches 0 for the right or the left (and with complex numbers there are still other possibilities). So you can't just define it as one constant which plugs into another equations in certain ways, since +inf and -inf behave differently. \n\nAnd the square root of one actually has two values, notated as +i and -i, so it is also not actually uniquely defined.  ",
+            "score": 3,
+            "author": "Zanford"
+        },
+        {
+            "level": 0,
+            "comment": "That's like declaring 1+1=3.\n\nX/Y means \"How many times can I subtract Y from X before getting to zero?\n\nThus 2/0 is asking how many times you can subtract 0 from 2.  You can subtract 0 from 2 and infinite number of times and never reach zero.\n\nSo declaring that dividing by zero results in a constant would be pretending your cat is a dog because you would have preferred a dog.  You are just pretending while ignoring reality.",
+            "score": 3,
+            "author": "Warskull"
+        },
+        {
+            "level": 0,
+            "comment": "Division by zero is undefined for two reasons, neither of which can be addressed the way sqrt(-1) can.\n\nFirst, infinity is not a number. It is a limit. It just means \"arbitrarily large\".\n\nSecond, [the graph of C/x as x tends toward 0 diverges](https://s3-us-west-2.amazonaws.com/courses-images-archive-read-only/wp-content/uploads/sites/1227/2015/04/03010751/CNX_Precalc_Figure_03_07_0042.jpg). It's not a matter of a missing point.",
+            "score": 8,
+            "author": "raendrop",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Well you could. But from a math research perspective, the correct question to ask is usually not \"Why don't we define this?\" but rather \"Why should we define this?\". In math you are free to define as many new concepts as you want, but not all of them are equally interesting.  \n  \nTake as an example the complex numbers. We define i as the square root of -1, sure. But the reason the complex numbers are so well-known even to some people outside mathematics is not because people *really* wanted to solve the equation x^2 = -1 but because complex numbers allow us to do all kinds of nifty stuff like represent planar isometries as a combination of multiplication and addition by complex numbers.  \n  \nOf course, one can just answer the question \"Why should we define this?\" with \"Let's just do it and see what happens\". Well, as some other people pointed out in the comments if you do define \"1/0\" or \"infinity\" as an extension to the real numbers you don't get a system that is very interesting. Algebraically your extended system doesn't work out because as people liked to point out the normal rules of multiplication and division don't work anymore in a system with \"1/0\" added. Topologically if you add an infinity point to the real number line you get a circle (as another guy also mentioned), and we understand circles pretty well already from other areas of maths. So my answer to your question is \"Yes you can, but it doesn't lead to any new interesting theory\".",
+            "score": 4,
+            "author": "clarares",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Are you asking about something like a Dirac Delta function?\n\nhttps://en.wikipedia.org/wiki/Dirac_delta_function\n\nIt has enough information to capture the original division by zero - the direction of the function gives you the sign and the 'weight' gives you the numerator. ",
+            "score": 2,
+            "author": "jmlinden7"
+        },
+        {
+            "level": 0,
+            "comment": "Its not that dividing by zero is undefined and therefore all we need to do is \u201cdefine\u201d it. The problem is that the division operation does not allow division by zero. \n\nIf a/0 = b\nB * 0 = a\n\nThis is impossible because anything multiplied by 0 is 0. \n\nBesides the undefined nature of zero is quite useful. We already know that the limit as x approaches 0 of a/x is infinity.",
+            "score": 2,
+            "author": "Magicshallnotprevail"
+        },
+        {
+            "level": 0,
+            "comment": "Simply because that is not how math works. You can\u2019t make up a constant and expect it to have a real use. You have to have a proof that it will hold true\n\nFor example, any integer to the power of 0 = 1. No one just made that up and started using it in calculations. They had to make a proof to know that any integer to the power of 0 does in fact = 1. \n\nSame thing goes for square root of -1 = i.",
+            "score": 2,
+            "author": "KidWave192837465"
+        },
+        {
+            "level": 0,
+            "comment": "The problem is because division is a compressed way of subtracting a number from another number multiple times.  \n\n\nSo, when you take 100 divided by ten, the arithmetic function you are performing is to see how many times you can subtract 10 from 100. So, 100\\-10 = 90\\-10 = 80.... 10\\-10=0. Arithmetically speaking, you would have to subtract 10 from 100 10 times in order to get to zero.  \n\n\nNow, lets try and divide by zero using that mathematical sequence. 100 divided by zero. Now, you get 100\\-0 = 100\\-0=100\\-0=100..... At no point would you reach zero, so it is therefore undefined.  \n\n\nThe next question you might posit is why can't it be stated that anything divided by zero is infinity. At first, it might seem to make sense to identify it as such, but you face another problem if you do so; do you assign \"any number divided by zero\" as \"positive infinity\" or \"negative infinity\"? It would be non\\-sensible for it to be either one, so it cannot be anything but an undefined and non\\-arithmetic construct and therefore unable to remain in any arithmetic formula.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This is because 0 can fit into any greater number buy an uncountable infinity therefore it is placed with \u201cundefined\u201d as there is no answer but it is technically already a constant. I do agree there should be constant for that but it would be a lot of hassle and kind off useless ",
+            "score": 2,
+            "author": "ejo97"
+        },
+        {
+            "level": 0,
+            "comment": "It's a result of the axioms of the real numbers. The reals are a field, and the 0 element of this field is the one such that a + 0 = a for any a. The idea of \"division\" is simply the multiplicative inverse. Basically, it means that c is the multiplicative inverse of d if cd=1 (and we take this to mean c = 1/d). So, we can essentially combine these two results to find the multiplicative inverse of 0. If we call this element \"e\", then we have. 0e = 1. In the context of a field, there is no such e that will make that statement true. So, we cannot divide by 0.",
+            "score": 2,
+            "author": "CoulombGauge"
+        },
+        {
+            "level": 0,
+            "comment": "So, there are a lot of answers here covering the mathematics, but I thought I'd weigh in on the computer side since you mentioned dividing by zero being a\"problem,\" as it's often memed to be in software. And it kinda is.\n\nI say *kinda* because the error getting memed is actually when an *integer* is divided by zero. Remember that integers are counting numbers - 1, 2, 3, etc - and computers have a simplified means of storing and acting on them as binary numbers. This is good for speed and expressing exact (integer) values, but it doesn't allow for *special* values.\n\nI said it was *kind* of an issue because floating point types (decimal numbers like 1.333 or 2.25) do allow for special constant values like you're describing. In most programming languages..\n\n1 / 0 = Positive Infinity\n-1 / 0 = Negative Infinity\n0 / 0 = NaN (short for Not a Number)\n\n...but only for decimal numbers.\n\nHTH",
+            "score": 2,
+            "author": "kooshipuff"
+        },
+        {
+            "level": 0,
+            "comment": "I had a computational theory professor tell my class a joke about mathematicians being able to explain their way out of anything.\n\nWhen a mathematician was asked to capture a rhinoceros, the mathematician took a piece of chalk and drew a circle around his feet and said \u201ceverything outside this circle is a cage\u201d\n\nSo yeah, it\u2019s kinda strange there isn\u2019t some clever/weird explanation for dividing by zero...",
+            "score": 2,
+            "author": "xSlippyFistx",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "There is no value that you can assign to dividing by zero that is consistent. Suppose we say that dividing by zero equals X. Then any value, say like 3, generates an equation.\n\n3/0 = X \n\nThen multiply both sides by 0.\n\n3 = 0, if we assume X is finite. We really don\u2019t want 0 and 3 to have the same value, and this weirdness holds for say 4,5,6, pi, i... just replace the 3 with a different value and you get something that we don\u2019t want. So that is why we call it undefined.",
+            "score": 2,
+            "author": "Ovrzealous",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "the problem most people don't realize about dividing by zero is the grammar of math. you must understand that to say i divided by 0 is to say i took no actions. no math processes were performed when dividing a number or object a zero number of times. does this make sense? there is no theory to develop a math expression that means you did nothing and took no action",
+            "score": 5,
+            "author": "Capt_Schmidt",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wouldn't taking no action be more like adding/subtracting zero, or multiplying/dividing by 1?\n\nWith division by zero, it makes sense to me to look at what happens as the denominator approaches zero. When it's 0.5, you're multiplying numerator by 2. When denom is 0.1, you're multiplying num by 10. When denom is 0.001, you're multiplying by 1000. The closer to zero the denominator gets, the larger the whole number gets. And you can go as close to zero on the denominator as you want....which means the whole number will get as big as you want (infinity)",
+                    "score": 2,
+                    "author": "Flamesake"
+                },
+                {
+                    "level": 1,
+                    "comment": "Although I agree about the lack of utility in having divide\\-by\\-zero, your takedown isn't quite right. You could make the same argument that \"nothing happens\" for x\\+0, x\\*1, and x/1, and we can have these things with no problem.",
+                    "score": 2,
+                    "author": "RanzoRanzo",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's undefined because it's not possible. It's like a typo, it's just a mistake. Division has to do with splitting something into smaller groups. You can't split something into zero groups. Try it in the physical world. Try dividing your wardrobe into zero groups. It's not possible so just writing out 10/0 doesn't mean it's solvable. It's just something you wrote that can't be solved. It's the equivalent of trying to destroy matter.",
+            "score": 4,
+            "author": "ThomYorkeSucks"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 3,
+            "author": "[deleted]",
+            "replies": []
+        }
+    ]
+}

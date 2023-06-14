@@ -1,0 +1,183 @@
+{
+    "id": "134ia7z",
+    "score": 851,
+    "title": "How are we able to date EVERY fossil with radiometric dating?",
+    "author": "A-DustyOldQrow",
+    "date": 1682935609.0,
+    "url": "https://www.reddit.com/r/askscience/comments/134ia7z",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "EDIT: My question has been answered. The answer was provided by u/CrustalTrudger .\n\nAlso, to alleviate any confusion, my question was referring to fossils that are millions of years old and not those young enough to be dated by using carbon-14.\n\nHow does every fossil we find contain enough radioactive nuclei and their daughter isotopes to accurately date? I was under the impression that elements like uranium are in general rare on earth and only present in significant quantities when they're concentrated by geologic processes over done. How do ordinary sedimentary rocks containing fossils contain enough to actually date?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "In short, we are not and it's actually relatively rare that we date fossils directly in the sense of getting an absolute age on the fossil material itself, specifically because (A) fossils do not tend to be composed of material that lends itself well to radiometric dating or (B) the fossilization process does not \"reset\" isotope systematics such that a radiometric date would be meaningful. Exceptions would be dating things through [radiocarbon](https://en.wikipedia.org/wiki/Radiocarbon_dating), [amino acid racemization](https://en.wikipedia.org/wiki/Amino_acid_dating), or [U-series](https://en.wikipedia.org/wiki/Uranium%E2%80%93thorium_dating), but these are all relatively limited in terms of how far back we can date materials and/or when these dates are meaningful for the age of the fossil. Instead, establishing ages of fossils largely fall into one of three categories: \n\n1. Dating the rocks in which the fossil is hosted. Since most fossils are hosted in sedimentary rocks, this poses its own challenges as many sedimentary rocks are hard to radiometrically date. There are some methods that allow us to constrain the ages of these however. For example, for sandstones, it's common to estimate the maximum depositional age (MDA) via detrital zircon U-Pb dating. In short, you date a bunch of zircons within a sandstone sample via U-Pb and the youngest age population in that suite of ages is the maximum age permissible for the sediment to be deposited. With respect to your mentioning of things like uranium being relatively rare, this is generally true, but there are minerals (like zircon) where these \"trace elements\" tend to partition during igneous processes. So even while uranium is a pretty small component of your average zircon, there is enough for us to accurately and reliably date via U-Pb. An MDA can be pretty close to true depositional age if there was a source of young zircons at the time of deposition, but can also be a pretty rough constraint if the source was predominantly older rocks. If we expand our consideration to non-radiometric techniques, methods like [magnetostratigraphy](https://en.wikipedia.org/wiki/Magnetostratigraphy) are quite helpful for dating rocks hosting fossils.\n2. Dating rocks above and below the horizon hosting the fossil. If we can't constrain the age of the rock hosting the fossil (e.g., MDAs don't constrain it and/or doesn't contain zircon, the rock is too coarse for magstrat or during a very long normal/reverse period, etc.), we can potentially bracket the age via dating rocks above and below. The most direct example of this would be exploiting interbedded volcanic ash horizons (i.e., tephra) as these effectively represent instantaneous events. If our fossil is hosted in a sedimentary rock with interbedded ashes and we date the one below our fossil to X million years and the one above our fossil to Y million years, then we know the fossil is between X-Y million years old. This is just one straightforward example of this, but there are *lots* of variations on this theme.\n3. Correlation. Even if we can't date the rock hosting our fossil in the place we found that fossil, we can often correlate that deposit to a deposit in an area where we can better constrain the age of the deposit. Just like with radiometric dating, there are a whole host of methods for stratigraphic correlation, each with their own uncertainties and challenges, so as with radiometric dating, we try to use a suite of methods to correlate rocks to try to minimize those uncertainties.\n\nFinally, it's worth noting that generally once we have a well established set of age criteria for a given fossil (i.e., we've established its first occurrence and last occurrence in the fossil record through the methods above), it's not as though we are constantly attempting to re-date these fossils. In reality, we also flip it around and *use the fossils to date the rocks*, i.e., [biostratigraphy](https://en.wikipedia.org/wiki/Biostratigraphy).\n\nEDIT: It's worth adding that geochronologists are constantly expanding the range of what can be dated. For example, attempts at direct radiometric dating of carbonates with U-Pb was largely considered to produce garbage results for a long time, but gradually we're getting a better handle on how to apply it. Review papers like those from [Rasbury &amp; Cole, 2009](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2007RG000246) and [Roberts et al., 2020](https://gchron.copernicus.org/articles/2/33/2020/) highlight how far we've come in our ability to apply this methodology, including (given the right conditions and pretty careful analysis), direct dating of shell material (e.g., [Drost et al., 2018](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018GC007850)).",
+            "score": 576,
+            "author": "CrustalTrudger",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Damn, I wasn't expecting The Man\u2122\ufe0f himself to respond. I appreciate it. I guess I didn't realize how ignorant my question was, and that I was making a lot of assumptions.",
+                    "score": 13,
+                    "author": "A-DustyOldQrow"
+                },
+                {
+                    "level": 1,
+                    "comment": "FYI, a lot of times (in my experience) when discussions or questions about this come up, somewhere nearby is a religious YEC - young earth creationist.  A long time ago I had a lot of discussions with an (intelligent and educated believe it or not!) friend who was a YEC.  They fundamentally object to a lot of geochonological dating based on exactly what you've laid out above \"using the rocks to date the soil and the soil to date the rocks!\"\n\nThey assert that it is circular logic and when you try to explain how the geologic record is built up and verified, they object to the assumption that similarly-aged things are deposited and found together, often by pointing to examples in nature / history where that isn't true (generally geologic Anomalies and other odd erosion, fault, volcano, etc patterns).  Among many other objections, of course.\n\nThe best way to handle this if you can't / don't want to just ignore them is to explain Potassium-argon dating, which requires (almost) no assumptions and no calibration, only precise tools and measurements.\n\nExplanation for those who may not know: Potassium-40, a rare isotope of potassium decays radioactively on a specific, known halflife.  Potassium (and cooled magma) are solids at normal earth-surface temperatures, whereas argon is a gas.  As magma cools, any argon gas present bubbles up and out of the liquid rock, so the amount of argon gas when the magma finishes cooling is zero.  Thousands of years later many of the potassium-40 atoms present in the original rock will have decayed into argon-40 but can no longer bubble out.\n\nSo to date rocks in a way that no reasonable person can object to, we measure the AR-40 and the K-40 in a sample and triangulate how long ago the Ar-40 would have been at zero.  It doesn't even matter how much K-40 there is or K-41 / K-39, only the ratio between K-40 and Ar-40.\n\nThere are some situations and examples where this doesn't hold, but those objections can be avoided by picking good samples.  Anyway, it's almost impossible for a YEC to object to this.  Will that convince them?  No but they'll never bring up radiocarbon dating objections around you again.",
+                    "score": 134,
+                    "author": "JustSomeBadAdvice",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's like the puzzle from die hard 3 at the fountain.\n\nJust because the pieces given to you will not directly solve the puzzle alone, doesn't mean we can't use all the pieces together to solve it.",
+                            "score": 11,
+                            "author": "rawbleedingbait",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "that thing made me crazy.  I had to pause the movie and go find some similarly-sized buckets and figure it out myself.",
+                                    "score": 2,
+                                    "author": "AreThree"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; They assert that it is circular logic\n\nAnd, just to be clear: It's not. It would be if we used rock A to date fossil B and fossil B to date rock A, but of course that would be so obviously idiotic that only a creationist could think that any scientist would seriouly suggest that as a methodology.\n\nBut of course, rock A of known age is used to date fossil B that's \"nearby\", and then, say, another fossil C of the same species as fossil B is used to date rock C, and then that's used to calibrate some radiometric method using rocks of the type of rock C, and then that's used to date rock D, and then that's used to date fossil E, ...\n\nSo, there aren't any actual cycles in the derivation, the cycle is only in the very superficial classification of some objects as \"rocks\" and other objects as \"fossils\".",
+                            "score": 92,
+                            "author": "gSTrS8XRwqIV5AUh4hwI",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "And eventually, there's something we can date with just physics or history or something.",
+                                    "score": 8,
+                                    "author": "CanadaPlus101"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yep, fully agreed and understood.  Again, repeating the nonsense I encountered, basically they follow the same chain that you gave objecting to one or more things at each point (well rock C was dated to 25,000 years ago yet it was found next to an iron pickaxe that historians tell me is from the Civil War, so how about that, huh, huh?), and/or they object to the \"known age\" of rock A, so we have to go track that down, etc\n\nUltimately what these objections tend to do is bog down anyone, especially people like me who aren't geologists and don't really know / can't find the specifics to resolve their objection, and then declare victory because we can't disprove them.  One of his favorite sayings was \"The magic ingredient is time!  We just add more time, a few million years here, a few billion years there, and suddenly all the problems (of evolution, geological dating, fossil dating etc) magically go away!\"\n\nI love the K-Ar response because it cuts right to the heart of their \"hypothesis\", and skips all the steps I can't fill in - because if a rock is demonstrably older than their estimated age of the earth, suddenly they have to make many more increasingly ridiculous leaps of logic.",
+                                    "score": 29,
+                                    "author": "JustSomeBadAdvice",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No unfortunately.  I do wonder what might have happened if I had known all of this back when we had those discussions frequently.  By the time I figured out how to explain and articulate all of this well, I had moved away and we only briefly talked online.  I could tell he didn't have a ready response to it for once.\n\nI don't think anything would have actually convinced him.  Best chance would be to cause his kids to question whether what they were taught was actually The Ultimate Truth or not.  Oh well.",
+                                                    "score": 5,
+                                                    "author": "JustSomeBadAdvice",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "How interesting! What response did he finally come up with?",
+                                                            "score": 0,
+                                                            "author": "tblqwlqv"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You know this cleared it up for me (not a YEC). I figured i was missing something but it did appear circular to me at first glance. The only difference was I assumed I missed something (and I did).",
+                                    "score": 9,
+                                    "author": "arunnair87"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Based on this I wondered if some of these people get all bent out of shape with dendochronology as well. Seems [they do](https://core.ac.uk/download/pdf/301493787.pdf) \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f",
+                                    "score": 9,
+                                    "author": "SquiffSquiff",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Amazing the kinds of leaps of logic and special pleading these folks will entertain in order to find a narrative to fit their beliefs. When your entire premise is \"radiocarbon dating is inaccurate since *The Flood*\", you've already conceded your defeat.",
+                                            "score": 2,
+                                            "author": "Gastronomicus"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "whoah - seems I never thought that YECs could submit \"scientific studies\" and \"papers\" for review.  Like, get that crap out of the same system (DOI) I use to read up on dark matter, dark stars (!), and other much more wonderous topics.\n\n\nThese people are the furthest thing from actual scientists.  Calling your whacked up theories from an \"Academy\" of some artificial \"Science\" doesn't make any of it less odious - despite the efforts to cling to the appearance of legitimacy.\n\n*Edit:  You can't start with the result you want, then twist and corrupt the scientific method and logic until it fits.",
+                                            "score": 5,
+                                            "author": "AreThree"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Honestly, I'd say K-Ar is not a great example because it's actually got a lot of issues that make it *more* complicated than a variety of other geochronometers, e.g., if you're actually doing K-Ar and not Ar/Ar, then you're measuring K and Ar via different methods, usually in different aliquots and if you're doing Ar/Ar instead, you've got to deal with correcting for flux monitors etc. Add onto that there are lingering issues with the decay constant for 40K -&gt; 40Ar (in part because it's a branched decay, with a bunch of 40K decaying to 40Ca instead) meaning that we actually refine the decay constant based on other methods (U-Pb specifically). That's not to say that K-Ar or Ar/Ar are bad or inaccurate methods, but they're not the simplest to explain. U-Pb in something like zircon is *much* easier. Pb basically is really unhappy in the zircon lattice so won't incorporate during crystallization + you have both 238-206 and 235-207 to check that your assumptions are met. All and all, a much simpler/easier method to try to walk someone through than K-Ar or Ar/Ar, especially someone who is skeptical of radiometric dating.",
+                            "score": 12,
+                            "author": "CrustalTrudger"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "On the subject of how these methods are calibrated, that is a fascinating subject with how it combines physics and history. My favorite tidbit was that there are lots of well-dated artifacts from Egypt that were used for calibration. (Like pieces of ships we know the construction date for).",
+                            "score": 3,
+                            "author": "GWJYonder"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; There are some situations and examples where this doesn't hold, but those objections can be avoided by picking good samples.\n\nWait, what? Can you explain more about this?\n\nI thought that picking and choosing is worse for fact-finding than random sampling. \n\nAnd what is a \"good sample\"?",
+                            "score": 2,
+                            "author": "cowlinator",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 8,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Moore's law applying to fossils\n\n&gt;\nEDIT: It's worth adding that geochronologists are constantly expanding the range of what can be dated.",
+                    "score": 2,
+                    "author": "InformalPenguinz"
+                },
+                {
+                    "level": 1,
+                    "comment": "Outstanding write-up!  Thank you.",
+                    "score": 2,
+                    "author": "AreThree"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Simple answer is that we do not date fossils by directly measuring radiogenic isotope ratios. In fact, we can't usually date any sediments using radiogenic methods.  If we do, we get weird answers because we are measuring a mixture of many different source rocks of wide range in age.\n\nThe main point is that dating a mineral or a rock requires that there was a unique time of formation where all of its elements were captured into the solid and the only changes afterward came from decay.  The homogenization of the element pool pretty much requires recrystallization, the system must have been open to movement of all the elements so everything gets the same ratios of elements even if some get most of one element over another.\n\nWhen we use radiogenic measurements, we are dating the time of homgenization.  If there is no homogenization, you cannot date it.  You can get a number, sure, but the number is meaningless, and it will change every time you measure.  It is just noise.\n\nThe way we date sediments (and thus any fossils found in those sediments) is indirect.  We find rocks we can date (because they formed from magma or something similar, have a clear time of homogenization), and then use those rocks to place sedimentary sequences into windows of time (must be older than Rock A and must be younger than Rock B, so formed in the time period from Time A to Time B).\n\nThin ash deposits in sediments are good things to date because they are contemporaneous with the sedimentation.  If you were to find a fossil in the sediment lying above or below that ash layer by a few centimeters, you could put a pretty accurate date on the fossil (like on the order of within a million years or few, which in a certain sense is not exactly very precise), but usually, we can only plunk fossils into a window of time.\n\nA huge amount of work, geological study, has to be done to place sediments into time windows and to define fossil ages.  It is a huge jigsaw puzzle of sorts.",
+            "score": 27,
+            "author": "Busterwasmycat"
+        },
+        {
+            "level": 0,
+            "comment": "\"How does every fossil we find contain enough radioactive nuclei and their daughter isotopes to accurately date?\"\n\nYou generally don't date the fossil itself.  You date the strata it's embedded in.  A simple example, suppose you have a sedementary layer containing fossils.  Over that layer is  layer of igneous rock from a volcanic eruption.  Often that igneous rock can be dated from the time the molten material solidified.   And from geological analysis, you know that the strata wasn't been disrupted. . .now you know for a fact that the fossil is older than the igneous rock above it.\n\nIn practice, this can get really complicated (there can be discontinuities, strata can morph or be completely inverted, etc).  But essentially, you're looking for things that you can date that are associated with this geological record, and then piece together a timeline of the strata, and if you know where the fossil is within the strata, then you can date it pretty precisely.    \n\n\nAlso, you can use other fossils in the layer with the fossil you are trying to date to date that fossil.  So, if you find a bone or feather imprint or something, and you want to date it but there is no radiological material to date, you can look at what else is in that strata, and if you know when those fossils are found in the geologic record, then you can by inference date the fossil you're interested in.",
+            "score": 6,
+            "author": "OliveTBeagle"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I understand carbon dating, but to my knowledge it is only an effective technique up to around 50,000 years or so. My question was mostly about fossils older than that, although I should have specified. u/CrustalTrudger was spot on explaining it.",
+                    "score": 3,
+                    "author": "A-DustyOldQrow"
+                }
+            ]
+        }
+    ]
+}

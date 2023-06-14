@@ -1,0 +1,35 @@
+{
+    "id": "13oa2mi",
+    "score": 10,
+    "title": "How do you calculate the energy output of fission or fusion reaction for a given isotope?",
+    "author": "YummYummSolutions",
+    "date": 1684712329.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13oa2mi",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I'm asking this question because I'm a bit stumped. I was reading up on iron's role in star death which got me curious about the energy release of fusion &amp; fission reactions throughout the periodic table. It seems intuitive to me that a nuclear energy output equation would look something like this:  \n\\*energy output = (Mass of extra products converted to MeV) - (nuclear binding energy)\\*  \nSo for example, if a reaction produces an extra 2 neutrons, would your energy output be the mass of the 2 neutrons minus the binding energy required to get them to split?  \nIs the above correct or do I have a missing piece(s) somewhere?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The amount of energy released in a nuclear reaction or decay is called the Q-value. And the Q-value for an arbitrary reaction/decay is equal to\n\nQ = (\u03a3*_f_* m*_f_* - \u03a3*_i_* m*_i_*)c^(2)\n\nwhere m*_f_* are the masses of the particles in the final state, and m*_i_* are the masses of the particles in the initial state.\n\nOr in terms of binding energies,\n\nQ = \u03a3*_i_* B*_i_* - \u03a3*_f_* B*_f_*.\n\nThere's an online calculator [here](https://www.nndc.bnl.gov/qcalc/).",
+            "score": 11,
+            "author": "RobusEtCeleritas",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the help!!! \n\nIs there anyway to calculate the difference between a fission &amp; fusion reaction of the same element (say... Helium-4), or do equations assume that fission occurs with lighter elements and fission in heavier ones?",
+                    "score": 1,
+                    "author": "YummYummSolutions",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes, if you choose specific fission and fusion reactions, you just calculate the Q-values for both, and subtract them.",
+                            "score": 3,
+                            "author": "RobusEtCeleritas"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

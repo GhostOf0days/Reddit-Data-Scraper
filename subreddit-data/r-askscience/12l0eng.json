@@ -1,0 +1,39 @@
+{
+    "id": "12l0eng",
+    "score": 6,
+    "title": "Why don't fluorophores have quantized emission spectra?",
+    "author": "doelling",
+    "date": 1681413790.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12l0eng",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "As a biochemist, I use fluorophores daily but I've realized I don't entirely understand the underlying physics. If fluorescence is a result of excited electrons emitting photons, why are emission spectra shown as continuous? Shouldn't only certain emission wavelengths be allowed based on electron energy states?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Someone else will probably answer this more accurately, but until then: While it is true that the emitted photons' energy is from discrete energy levels, these energy levels depend not only on molecule architecture, but also on the direct interactions with the surrounding molecules/medium. That results in multiple rotational/vibrational states around the energy states, resulting in lots of different transitions.",
+            "score": 9,
+            "author": "Mo3hre",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is it. Neighboring atoms' electrical influence introduces distortions in the allowed wavelengths of emitted photons, and so you get a curve centered around what would be the sharp spectral line of a naked single molecule in isolation.\n\nThis is why diffuse gasses exhibit such (relatively) sharp spectral lines...the atoms or molecules in a gas are far apart, and the distortion exerted by neighboring atoms/molecules is therefore minimal. If you were to somehow turn your fluorophores into a gas and observe their spectral lines that way, I expect they would be quite a bit sharper.",
+                    "score": 8,
+                    "author": "djublonskopf"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Spectra are never exactly lines, but always have a certain width, depending on the internal physics of the systems involved. \n\nIf there are many different emission channels, and their central emission frequencies are separated by less than the widths of the emission lines, you end up with continuous spectra. \n\nThe more complicated the structure, the more emission lines there are, and thus large molecules often have complex continuous spectra.",
+            "score": 2,
+            "author": "LoveAllTheCulture"
+        },
+        {
+            "level": 0,
+            "comment": "Other commenters have given good answers on the mechanisms involved. I want to give an example of simply one factor that can cause us to see continuous spectra. \n\nRecall the doppler effect? A similar mechanism is at play. Photons captured moving \u2018away\u2019 from the observer and photons captured moving \u2018towards the observer\u2019. Because of their difference in velocity, even if you are collecting photons that are emitting at the same frequency, they will appear to be emitting as a continuous spectra.\n\nThis is true for all spectroscopic techniques. For example, astronomy can be used to determine the relative velocity of an object to us at that huge scale. At the smaller scale, that same effect produces emissions that seem non-discrete",
+            "score": 1,
+            "author": "Nebulouzz"
+        }
+    ]
+}

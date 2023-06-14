@@ -1,0 +1,59 @@
+{
+    "id": "1402nqx",
+    "score": 18,
+    "title": "Does Electricity get stuck in \"False Peaks\" while looking for the path of least resistance?",
+    "author": "Ilikebreadalot_doyou",
+    "date": 1685857361.0,
+    "url": "https://www.reddit.com/r/askscience/comments/1402nqx",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "First time posting on this sub, don't go to hard on me if I do something wrong please!  \n\n\nI was thinking about this while looking at a lightning strike that curved quite weirdly, and struck something that really didn't seem like the most optimal point. I had never really thought to look deeper into how it, and the whole \"path of least resistance\" thing worked and accepted that statement at face value. While thinking about how it would work, I tried to picture the below experiment in my head, but couldn't quite make sense of it. I don't have the means to actually do it myself, but I'm still burningly curious and google has not helped.  \n\n\nTwo long rods of different conductive materials are connected in the middle of their length by a strip of a third conductive material. One of the two rods is made of a material with \"medium\" conductivity, while the other is substantially more conductive. The strip in the middle is still conductive but is much poorer at it than either of the other two. Attached to the \"medium\" conductivity rod is a source of electricity. For instance a Car Battery.   \n\n\nHow would electricity flow in this situation? Would it follow the \"medium\" rod to it's end, ignoring the bridge over? Personally I am not sure if it would be able to realize that there is a potentially \"better\" path for it on the other side of this obstacle, obviously since there is no intelligence to it. But would it do so if the other side is \"worth it\" anyways? Or would it spread throughout the entire device like a liquid through a series of tubes, only being slowed down not stopped entirely by the resistive bridge?  \n\n\nIf it does flow only or primarily down the \"worse\" path because a seemingly terrible obstacle is all it can \"see\", the situation would remind me of the False Peak concept, which I primarily know from exposure to Ai Learning, or in the context of trying to find the highest point in a given map.  \n\n\nThank you in advance for your answers, I hope I was not just spouting easily explained nonsense.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The current would use all possible paths simultaneously, with the higher the resistances along the path, the lower the amount of current per path. If one path offers twice the resistance of the other path, one-third of the total current flows through that path and two-thirds (that is, twice as much) through the other path with less resistance.   \n\nSo where the current has only one path, 100% flows through that path. Where the current has two possible paths, the current splits into the two paths depending on the resistance of both paths.   \n\nIt's a bit simplified, but for direct current (DC) it essentially is.",
+            "score": 22,
+            "author": "m-hi",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;The current would use all possible paths simultaneously, with the higher the resistances along the path, the lower the amount of current per path.\n\nThis is assuming a static situation where Ohm's law applies everywhere and resistances do not change.\n\nIf electrical breakdown happens, a path is created that has lower resistance than the bulk of the material.",
+                    "score": 2,
+                    "author": "ChemicalRain5513"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It would spread throughout the entire device like a liquid through a series of tubes.\n\nLightning is a little bit special because once the current gets going it ionizes the air and reduces the resistance of it along the path. This makes the lightning strike single out the path that has lowest resistance (this would not happen in a metal rod).",
+            "score": 12,
+            "author": "ajell",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It would not happen in a metal rod, but it does happen in insulators like wood, plastic etc. \n\nhttps://en.wikipedia.org/wiki/Lichtenberg_figure",
+                    "score": 1,
+                    "author": "ChemicalRain5513"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's a common misconception that electricity would find \"the path of least resistance\". It will flow across all paths that conduct, those with lower resistance just get more current than others.\n\n&gt; Attached to the \"medium\" conductivity rod is a source of electricity.\n\nIf you only attach it to one place then you don't get any current. You'll need a closed path, e.g. the other side of the battery connected to the other rod.\n\n&gt; How would electricity flow in this situation? Would it follow the \"medium\" rod to it's end, ignoring the bridge over?\n\nWhere would it go to from that end?",
+            "score": 9,
+            "author": "mfb-"
+        },
+        {
+            "level": 0,
+            "comment": "Lightning traveling through the atmosphere behaves quite differently from a solid conductor, because it ionizes the molecules and creates plasma, which has much higher conductivity. The air currents move the plasma around, creating seemingly random paths. This doesn't occur in a solid resistive material.",
+            "score": 7,
+            "author": "nixiebunny"
+        },
+        {
+            "level": 0,
+            "comment": "This question can be explained well in physical terms by U=R*I and I1= I2+I3+I4 etc\n\nSo what does that mean? Well firstly the resistance affects current in a proportional way, not a pass/can't pass way. Secondly, the sum of its paths is equal to the initial current.\n\nUnlike water, if you do your experiment, current will flow through all paths including air (out of the tubes). BUT, since air has a very high R (resistance), its intensity will be so little you won't detect it. For the rest, il will just go through and divide.",
+            "score": 0,
+            "author": "El_Sephiroth"
+        }
+    ]
+}

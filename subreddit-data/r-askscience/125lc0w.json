@@ -1,0 +1,63 @@
+{
+    "id": "125lc0w",
+    "score": 5,
+    "title": "Does linear acceleration produce tidal effects?",
+    "author": "snakeskinrug",
+    "date": 1680089836.0,
+    "url": "https://www.reddit.com/r/askscience/comments/125lc0w",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "The classic thought experiment featuring Einstein's elevator says there is no difference between linear acceleration and a gravitational field. However, a gravitational field is a gradient, producing tidal effects. \n\nThe logical conclusion then is that linear acceleration is a gradient as well, but I can't really wrap my mind around how or why that would be.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Einstein's elevator is a local experiment: It assumes the experiment is so small that there are no tidal forces. Tidal forces depend on the source of the force and will often allow knowing whether you sitting are in a gravitational field or in a rocket.",
+            "score": 12,
+            "author": "mfb-"
+        },
+        {
+            "level": 0,
+            "comment": "The thought experiment assumes the observer is a point particle. The tidal force due to gravity can only act on objects with a volume. So a point particle experiences uniform linear acceleration exactly the same as it experiences gravity, but an object with volume will also experience a tidal force due to a gravitational potential but not due to uniform linear acceleration.",
+            "score": 4,
+            "author": "dukesdj",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ok, I see.\n\n\nDo you know if the limit tends towards a theoretical point, or towards a Planck volume?\n\n Does it have to have volume to experience tidal forces from gravity, or just area that is oriented non-perpendicular to the gravitational force?",
+                    "score": 3,
+                    "author": "snakeskinrug",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The best way to understand the tidal force is through its more rigorous derivation from potential theory. The tidal potential T is equal to the orbital centrifugal potential C plus the potential of the primary P (the object we are considering to be subject to the tidal force), T= C+P. Now, P has a constant term, a term proportional to x, a term proportional to x^2, and so on (infinite terms proportional to x^n), where x is some vector pointing from the centre of the object we care about to some arbitrary point within it. It turns out that the term proportional to x exactly cancellers with C. This leaves us with a constant term followed by terms proportional to x^n. However, we have stipulated that this object has zero volume and so x vanishes and T= constant. In order to obtain a force from a potential we simply take the gradient, but the gradient of a constant is zero and hence the tidal force for a point mass is zero. (Side note, technically T= constant is not the definition of the tidal potential since we know the constant term does not contribute to the tidal force, but this is just a technical detail that does not change the picture). So we see that mathematically as long as you have any finite non-zero volume you will have a tidal force. How this extends to the physics of the very small... I do not know and you might need to solve the quantum gravity problem to work it out!\n\n&amp;nbsp;\n\nI realise this does not answer the question of if something could have an area and experience or not a tidal force. Again from potential theory we can think of what are known as equipotential surfaces, that is surfaces in the potential that take the same value. If you constructed a surface object with zero thickness that had the exact shape of an equipotential surface then this would result in zero tidal force. However, this is not true for any arbitrary 2d object and any 2d surface that is not an equipotential surface of the gravitational potential of the secondary will result in a tidal force.",
+                            "score": 2,
+                            "author": "dukesdj",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ok, that all makes a fair amount of sense, thanks.",
+                                    "score": 1,
+                                    "author": "snakeskinrug"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If gravity is quantized, then there would be a distance where the difference in gravity between two points that distance apart would be zero. Whether this is the planck length, or some other length, would probably depend on the exact theory of quantum gravity, and since we don't have one of those, we don't know for sure.",
+                            "score": 1,
+                            "author": "Lalaithion42",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ok, thanks for the answer.",
+                                    "score": 1,
+                                    "author": "snakeskinrug"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

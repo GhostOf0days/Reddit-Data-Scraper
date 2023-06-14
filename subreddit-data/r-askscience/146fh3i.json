@@ -1,0 +1,59 @@
+{
+    "id": "146fh3i",
+    "score": 92,
+    "title": "Can we derive fluorescence lifetime measurement from emission spectra?",
+    "author": "my_username_x",
+    "date": 1686442584.0,
+    "url": "https://www.reddit.com/r/askscience/comments/146fh3i",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "It depends on how the emission is collected. For example, if you don't have access to a sensitive setup like TCSPC, a boxcar averaging approach might work, which is essentially piecing together multiple steady-state measurements.\n\nSee [here](https://medium.com/@mattchiriboga1/using-the-levenberg-marquardt-algorithm-to-fit-multi-component-fluorescence-lifetime-decay-data-2ce06152fbf6) for example. \n\nOther than that, I don't know of any way to derive lifetime insights directly from a steady-state emission spectrum.",
+            "score": 9,
+            "author": "botechga",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I understand, for the fluorescent lifetime from emission spectra, we first need to find the decay time and then the decay rate, then we can fit a formula and calculate the lifetime from the emission spectra.  But this theoretical method is very complicated, I did not understand anything.",
+                    "score": 1,
+                    "author": "my_username_x",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I believe a good approximation will be that the lifetime in seconds and the line width in hertz are the inverse of each other.",
+                            "score": 4,
+                            "author": "papparmane",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't quite understand, can you explain more clearly?",
+                                    "score": 0,
+                                    "author": "my_username_x",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "If the lifetime is infinite, the spectral line width is 0. If the lifetime is 1 ns, the line width will be 1 GHz, etc\u2026",
+                                            "score": 2,
+                                            "author": "papparmane",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I understand, I haven't reached the stage of interpretation yet.  I need to fit the equation first.",
+                                                    "score": 0,
+                                                    "author": "my_username_x"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

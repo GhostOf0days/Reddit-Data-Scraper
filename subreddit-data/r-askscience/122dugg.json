@@ -1,0 +1,284 @@
+{
+    "id": "122dugg",
+    "score": 3170,
+    "title": "Around 550 million years ago the earth's magnetic field almost collapsed, but then strengthened a few million years later. Scientists say this may have been due to the formation of the inner core. But why exactly would that cause the magnetic field to get stronger?",
+    "author": "somethingX",
+    "date": 1679813675.0,
+    "url": "https://www.reddit.com/r/askscience/comments/122dugg",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.rochester.edu/newscenter/how-did-earth-avoid-mars-like-fate-ancient-rocks-hold-clues-526972/",
+        "https://www.rochester.edu/newscenter/how-did-earth-avoid-mars-like-fate-ancient-rocks-hold-clues-526972/"
+    ],
+    "postText": "A few months ago I saw a few articles (I linked one below) that said around 550 million years ago the magnetic field weakened and almost \"collapsed\", but was strengthened later by the formation of the inner core. \n\nThe problem is that all the articles I've found don't go into *why* that formation caused the magnetic field to strengthen, only that it did. \n\nWhat actually is it about the presence of the inner core that makes the magnetic field stronger than it would be without it? And how do we know?\n\n&amp;#x200B;\n\n[https://www.rochester.edu/newscenter/how-did-earth-avoid-mars-like-fate-ancient-rocks-hold-clues-526972/#:\\~:text=550%20million%20years%20ago%3A%20the,restored%20the%20magnetic%20field's%20strength](https://www.rochester.edu/newscenter/how-did-earth-avoid-mars-like-fate-ancient-rocks-hold-clues-526972/#:~:text=550%20million%20years%20ago%3A%20the,restored%20the%20magnetic%20field's%20strength).",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The [actual article](https://www.nature.com/articles/s41467-022-31677-7) as opposed to the press release (what you linked) does briefly talk about it (in the first paragraph of their discussion), but mostly it's cited out to prior literature. Specifically, as discussed by papers like [Davies et al., 2021](https://academic.oup.com/gji/article/228/1/316/6355447), in their words, \"Cooling of the liquid core leads to freezing at Earth\u2019s centre and the growth of the solid inner core, which provides additional power to the dynamo through release of latent heat and gravitational energy\" and they in turn point to thermodynamic simulations that demonstrate this (e.g., [Gubbins et al., 2004](https://academic.oup.com/gji/article/157/3/1407/2110839)). Details of core geodynamics as it relates to the magnetic field is a bit out of my specialty, so I'll leave further discussion/explanation to folks with more domain experience, but it's not as though the articles presenting this data do not discuss the mechanism at all.",
+            "score": 628,
+            "author": "CrustalTrudger",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That quoted line summarises it quite nicely really. Convection is great for dynamo action as not only does it provide the kinds of turbulent motion that is great for inducing magnetic field, but it acts as an energy source. Prior to any freezing of species one would imagine the fluid to be well mixed and essentially only a single phase homogeneous fluid. For a single phase single composition fluid convective instability sets in under the Schwarzschild criterion which essentially says that the instability sets in when the temperature gradient is larger than the adiabatic gradient (the temperature gradient at fixed entropy, we fix the entropy as temperature is a function of density and pressure and so mathematically the gradient is a partial derivative). In physical terms the way I think of this is there is an amount of heat a static fluid can transport through conduction, but if the amount of heat the system is trying to push through the fluid is above this amount then instability sets in, the convection then transports the heat by physically moving it. \n\nIf the fluid also has compositional gradient then we fall under the Ledoux criterion for convective instability and it is easier for convection to set in. This is known as compositional convection or double-diffusive convection. Mathematically the compositional gradient is subtracted from the adiabatic thus lowering the actual temperature gradient required to onset the convective instability. The best way to physically understand this is through parcel arguments which really require figures so instead I will refer to [Pascal Garauds excellent lecture notes](http://arxiv.org/abs/2103.08072) which are more related to astro than geo. The result will be more efficient heat transport and more energy available for dynamo action. \n\nAnother process is two phase fluids which is the freezing out of material. This I know a lot less about as I am more concerned with starts than terrestrial planets but I am in the same boat as the rest of the fluids community in this regard as even the hydrodynamic (no magnetic field) problem has only recently begun to be properly worked on. \nIn simplistic terms it can be thought of in a similar way to compositional convection in the sense that it provides an extra source of energy that can power the dynamo.\n\nThe bottom line is, convection is a natural way of producing a dynamo and stronger convection will lead to a stronger dynamo. Thus any mechanism which can aid convection or act as a source of energy/entropy will be beneficial for dynamo.",
+                    "score": 160,
+                    "author": "dukesdj",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So, forgive me if I misunderstand, I'm still on my first cup of coffee... but all those years I spent learning about fluid dynamics (off-handedly learning about chaos theory) can actually be applied to the inner and outer core as well as the mantle? Not only that, but that we understand it as well as you seem to? I really should have gone to college for that stuff instead of just reading it on the crapper.",
+                            "score": 37,
+                            "author": "TerminationClause",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In the words of one of my colleagues \"99% of the universe is fluids, the remaining 1% is just details\". Fluid dynamics is everywhere, it is actually harder to think of things that do not involve fluid dynamics than otherwise. I extend this not just to geophysical and astrophysical fluid dynamics but all of physics, engineering, biology, medicine, chemistry, and probably more.",
+                                    "score": 82,
+                                    "author": "dukesdj",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;\"99% of the universe is fluids, the remaining 1% is just details\"\n\nI like that. I live somewhere with huge tides, whirlpools, microclimates, and the fluid dynamics here is stunning to witness.",
+                                            "score": 30,
+                                            "author": "acfox13",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I was recently contemplating how similar fast moving river water with its swirls and waves looks a lot like atmosphere of a gas giant, or the formation of galaxies.\nMade me wonder if magnetism and gravity were the only forms of \u201cdrag\u201d giving the swirling galaxies their shape since there are no shorelines or rock to provide it in space.",
+                                                    "score": 17,
+                                                    "author": "Chalkarts",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; Made me wonder if magnetism and gravity were the only forms of \u201cdrag\u201d\n\nYes and no (at least according to the current main theories of physics). In a way in that scale gravitation and electromagnetism are the only meaningful forces, but forces (or rather interactions) called strong interaction and weak interaction can have pretty drastic local effects (these forces only work on very short distances, i.e. atomic and subatomic level) that can then affect the things on larger scale.\n\nhttps://en.m.wikipedia.org/wiki/Standard_Model\n\nNote: my knowledge here is bit rusty (pre observed Higgs boson) and elementary level.",
+                                                            "score": 2,
+                                                            "author": "Rootriver"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Alright, got any good sources for getting more up to speed on these domains of knowledge?",
+                            "score": 5,
+                            "author": "Ganondorf_Is_God",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Depends on exactly what you want to know more about. \n\nFluid dynamics in general [An Introduction to Fluid Dynamics](https://doi.org/10.1017/CBO9780511800955) by Batchelor is good. [Hydrodynamic and hydromagnetic stability](https://www.amazon.co.uk/Hydrodynamic-Hydromagnetic-Stability-Dover-Physics/dp/048664071X) is a classic book on fluid instabilities by Chandrasekhar which includes convective instabilities. [Introduction to Modeling Convection in Planets and Stars: Magnetic Field, Density Stratification, Rotation](https://press.princeton.edu/books/hardcover/9780691141725/introduction-to-modeling-convection-in-planets-and-stars) by Glatzmaier is good for the more numerical modelling side but also includes theory. [Internally Heated Convection and Rayleigh-B\u00e9nard Convection](http://link.springer.com/10.1007/978-3-319-23941-5) by Goluskin is a good book on convection. [An Introduction to Magnetohydrodynamics](https://doi.org/10.1017/CBO9780511626333) by Davidson is great for some dynamo theory. [Self-Exciting Fluid Dynamos](https://www.cambridge.org/core/product/identifier/9781107588691/type/book) by Moffatt and Dormy is a tough read but focused on all kinds of dynamo theory. Chris Jones [lecture notes on Dynamo theory](http://www1.maths.leeds.ac.uk/~cajones/LesHouches/chapter.pdf) are also great.\n\nFor double diffusive convection Pascals notes in the previous post are an excellent place to start.",
+                                    "score": 18,
+                                    "author": "dukesdj"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Does the non-spherical shape of the core and mantle layers play into this? Like, does the field become stronger in areas where the friction between layers force mantle material to flow differently.",
+                    "score": 1,
+                    "author": "drfarren"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How can they even find out what happened 550 million years ago?",
+            "score": 81,
+            "author": "Suchnamebro",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Specifically for Earth's magnetic field, when rock with magnetic materials is formed it retains magnetism from its environment, giving us information about the strength and direction of the geomagnetic field at the time the rock formed. So if you find certain rocks of a certain age you can use them to get information about Earth's magnetic field at the time.\n\nFor volcanic rock, this is because molten rock is too hot to be magnetic. As it solidifies and cools below a certain critical temperature (its [Curie temperature](https://en.wikipedia.org/wiki/Curie_temperature)), any magnetic minerals will retain the magnetic field of their environment, and so these rocks preserve information about the strength and direction of the geomagnetic field when they formed. This is the same principle by which [bar magnets are created](https://youtu.be/qed4ynPYVIA).\n\nThere are also several ways that sedimentary rocks can end up with a \"fossil\" magnetic field. The study of these phenomena is called [paleomagnetism](https://en.wikipedia.org/wiki/Paleomagnetism).",
+                    "score": 221,
+                    "author": "wazoheat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Excellent, thanks",
+                            "score": 16,
+                            "author": "Mdizzlebizzle"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What impact would a near collapse of the magnetic field have on the planet? Does 550M years ago coincide with any known extinction periods?",
+                            "score": 10,
+                            "author": "mcnessa32",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "On the contrary, coincidentally it corresponds with the Cambrian Explosion, when all multicellular organisms and phyla arose. Before that, for billions of years, everything was mainly unicellular, such as cyanobacteria; afterwards, dinosaurs, trees, mammals, humans etc. \n\nhttps://en.m.wikipedia.org/wiki/Cambrian_explosion\n\nCould a severely weakened magnetic field have lead to a massive increase in mutagenesis globally, essentially jumpstarting a new evolutionary arms race? Maybe. We do use radiation and other mutagens to do just that in the laboratory.",
+                                    "score": 47,
+                                    "author": "ronflair",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "All life would have been aquatic then. Water can effectively shield radiation.",
+                                            "score": 14,
+                                            "author": "PolymerPolitics",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Depends on the depth. According to this site, a water layer 7cm thick reduces ionizing radiation dosage by about half. \n\nhttps://space.stackexchange.com/questions/1336/what-thickness-depth-of-water-would-be-required-to-provide-radiation-shielding-i\n\nIf correct, means that cyanobacterial mats inhabiting the top layers of oceans will still be receiving significantly more ionizing radiation than normal. We\u2019re not talking about enough radiation to sterilize the planet, just enough to significantly increase the rate of mutagenesis.",
+                                                    "score": 24,
+                                                    "author": "ronflair",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You are forgetting that the atmosphere is responsible for the bulk of Earth's radiation shielding and is equal to about 10 meters of water.",
+                                                            "score": 8,
+                                                            "author": "Octavus",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "You still would get a net increase in surface ionizing radiation, which would increase as a positive feedback loop the longer the magnetosphere was \u201coff\u201d. \n\nAccording to NASA, a prolonged loss of the magnetosphere could erode the protective layers of the atmosphere. More cosmic rays would reach the surface as well. \n\nhttps://science.nasa.gov/science-news/news-articles/earths-magnetosphere",
+                                                                    "score": 14,
+                                                                    "author": "ronflair"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Is that last bit an established theory, or your own speculation?",
+                                            "score": 4,
+                                            "author": "zanderkerbal",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "As a molecular biologist, It just seemed like an obvious connection to me given the time frame. I have not googled the hypothesis but if geologists have noted years ago that the magnetic field was severely weakened during that geologic era, I would be surprised if no evolutionary biologist noted the connection. That said, I don\u2019t see that mentioned as a hypothesis for the Cambrian explosion on wikipedia.",
+                                                    "score": 6,
+                                                    "author": "ronflair"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The magnetic field both causes and impacts the rate and most development as evidenced by [magnetosomes](https://link.springer.com/article/10.1007/s11084-021-09612-5) in the fossil record and organisms today. Some species exhibit greater function in hypomagnetic conditions, and may have evolutionary impact when combined with known mutagenic effects of radiation exposure. We don't have known mechanism of action identified yet for the HMF (hypomagnetic field) theory and observations. [Link](https://web.gps.caltech.edu/~jkirschvink/pdfs/Mitchell_TPW_CambrianExplosion_AJS_DEC_2015.pdf) to a review of speculations about causes and effects relating the magnetic field to the Cambrian explosion.",
+                                                    "score": 3,
+                                                    "author": "FlattopMaker"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I\u2019ve heard this theory before, but there\u2019s no real evidence to support it besides it being a coincidence. \n\nAs mentioned elsewhere, life was aquatic back then and water is a pretty good radiation shield. Even most planktonic algae are mixed throughout the surface layer, which can be hundreds of meters deep, they don\u2019t float at the surface for long",
+                                                    "score": 1,
+                                                    "author": "TrumpetOfDeath"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Thank you!",
+                                            "score": 2,
+                                            "author": "mcnessa32"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I remember reading about the same. Since lava's temperature is well above above the Curie temperature of magnetite(800^(o)C), and it cools down, the orientation of the magnetite particles are all aligned and proportional to the ambient magnetic field, which makes it ferromagnetic.",
+                            "score": 2,
+                            "author": "noirxgrace"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fascinating. I'd always assumed that the magnetic field was a combination of the chemistry of the particulates recombining, and the density of the mass accumulated. I had no idea that it fluctuated.\n\nI think what you are looking for is the theory of geodynamo, which is referred to in the article you shared:\n\n\"Earth\u2019s magnetic field is generated in its outer core, where swirling liquid iron causes electric currents, driving a phenomenon called the geodynamo that produces the magnetic field.  \n\"Because of the magnetic field\u2019s relationship to Earth\u2019s core, scientists have been trying for decades to determine how Earth\u2019s magnetic field and core have changed throughout our planet\u2019s history. They cannot directly measure the magnetic field due to the location and extreme temperatures of materials in the core. Fortunately, minerals that rise to Earth\u2019s surface contain tiny magnetic particles that lock in the direction and intensity of the magnetic field at the time the minerals cool from their molten state.\"\n\nhttps://websites.pmc.ucsc.edu/\\~glatz/geodynamo.html",
+            "score": 15,
+            "author": "DDWingert",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;They cannot directly measure the magnetic field due to the location and extreme temperatures of materials in the core\n\n... WHAT  \nWe can absolutely measure Earth Magnetic field (and many more, distant or not). I do not understand this sentence, what am I missing?",
+                    "score": 5,
+                    "author": "the_geth"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 0,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Long story short it created a more complex magnetic system that was kinda forced to be stable because of gravity forcing the inner core to be stable thus the more complex system allowed for more this stronger magnetic activity",
+            "score": 1,
+            "author": "LORD_HOKAGE_"
+        },
+        {
+            "level": 0,
+            "comment": "Everything i have seen regarding the earth is that we know absolutely nothing about the earth after a few miles toward the center. The sources i have seen say we think it acts like a plastic toward the bottom of the crust but we dont know a lot of the composition in most areas unless there is a volcano, but even that can be missleading because not all magma is the same composition either. And even when you hear people say 'The core is iron, thats why we have the field', well Iron has a curie point which means at 1420 F / 770 C it loses its magnetic properties. Its wild how little we know or care about the planet we live on.",
+            "score": 1,
+            "author": "dat_lpn_lifetho",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is not an easy subject to learn without foundation, and it looks like you may be confusing a few different subjects.  We know quite a bit about the composition of the mantle.  We can't drill to those depths, but it finds its way up (see: mantle xenoliths, ophiolites).  Determining parentage and provenance of a magma body through chemistry is one of many applications of igneous petrology. \n If you would like references on mantle dynamics/geochemistry, please DM, I am happy to share.",
+                    "score": 3,
+                    "author": "MindlessCollar842",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Its pretty cool you know so much! (Being serious). I have done most of my searching using youtube/google searchs/and wikipedia (I know it gets a lot of crap but its a decent non acedemic resource)). What I meant about its composition is that it isn't uniform, what the composition in one area may be completely different in another area. We havent even been able to get samples from the mantle yet (Apart from lava) even the Kola super deep borehole is 12,262 meters, the crust is 40 kilometers. On top of that, we know that the magnetic field and even gravity is different in different parts of the world, which would indicate that composition and density varies. Scishow on youtube just did a cool short about mantle blobs on a side note.",
+                            "score": 2,
+                            "author": "dat_lpn_lifetho"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -22,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I could explain to you how we find out things about the past, but I'm fairly certain you don't actually want to learn anything that doesn't fit your worldview. \n\nWhile it's not intentional, I would like to commend you on endorsing the scientific process. We do make a lot of assumptions based on limited evidence, and it's worth having a fool accuse us of foolishness from time to time, just to keep us on our toes.",
+                    "score": 8,
+                    "author": "whornography"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No it wouldn't make sense. Theia happened 4.5 billion years ago making the whole planet molten",
+                    "score": 12,
+                    "author": "Kantrh"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -2,
+            "author": "[deleted]"
+        }
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "id": "12l0ce5",
+    "score": 13,
+    "title": "Is high current actually high electron speed?",
+    "author": "Tricky-Volume1677",
+    "date": 1681413685.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12l0ce5",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "The reasoning behind my question is based on the idea that charge is compressible.\n\nWater is often used to describe electric current but it seems like gas is more fitting.\n\nSay you had two parcels of air with differing parts per million of some particulate but same volume.(let's say they are in balloons to prevent dissipation)\n\nboth could be traveling the same speed relative to the ground although the parts per second would be higher for the higher ppm parcel.\n\nHigher voltage is a higher ratio of joules per coulomb\n\nHigher current is more coulombs per second\n\nHigher Power is more joules per second\n\nAm I right in thinking more energy per charge and more charge per second is achieved through higher charge density rather than electrons moving faster though space?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "In a wire, the electron density is given by the material - there is one electron per proton to an extremely good approximation. You might have an electron extra or missing per quadrillion protons or so but that's not going to make a difference. A higher current means a faster average directed motion of the electrons, it doesn't change the density of electrons.\n\nIf you are looking at electron beams in vacuum then you could absolutely have a different electron density, it will depend on the setup.",
+            "score": 18,
+            "author": "mfb-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "But only 'free' electrons - in metals in the valence or conduction bands - contribute to the electrical current, don't they? So it doesn't really make sense considering all electrons in a material when looking at current. \n\nThat doesn't change your main point though. But are there no materials that have more free electrons if a higher voltage is applied to them? Some semiconductors?",
+                    "score": 7,
+                    "author": "Mo3hre",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A diode behaves that way, you need a certain voltage across it to get charges that can cross it.",
+                            "score": 3,
+                            "author": "mfb-"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I know that a conductor is electricly neutral  but  aren't there more electrons on one side of a resistor in a closed circuit?",
+                    "score": 2,
+                    "author": "Tricky-Volume1677",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That is possible, but it doesn't have to be, and it doesn't have to be matching the direction you would expect from the voltage direction, and it's tiny and irrelevant for circuits anyway.",
+                            "score": 3,
+                            "author": "mfb-"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not really -- if there were, then that's equivalent to saying there's an imbalance of charge, and the electrostatic force has a tendency to smooth those out. When you get such an imbalance, we call that capacitance. An ideal resistor has 0 capacitance, but real resistors have a little bit of (usually undesirable) stray capacitance.",
+                            "score": 2,
+                            "author": "Movpasd",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I  think thats my point.  As the resistor approaches an infinite value the wires act more and more like a capacitor.  If there wasn't an imbalance how would you be able to measure a voltage across a resistor?",
+                                    "score": 1,
+                                    "author": "Tricky-Volume1677"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We can consider two velocities of electrons in a conductor. The thermal velocity, of the random thermal movement of electrons, is on the order of km/s for an individual electron, but in the absence of any current the mean average is zero, the motion in different directions cancelling out. Resistive heating will increase the temperature and therefore the electron thermal velocity, but this is not a simple function of the current; even holding everything else constant, the time the current has flowed for will also affect the temperature.\n\nWhen a current flows the mean average velocity is no longer zero and we call this average the *drift velocity*. This is on the order of micrometres per second and is directly proportional to current, all else being constant.\n\nhttps://en.wikipedia.org/wiki/Drift_velocity",
+            "score": 10,
+            "author": "rootofallworlds",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just to add to this and addressing the question in the title. OP, You're right that current is the number of electrons passing through a given area per second. This can be increased either by making the electrons move faster, or by just having _more_ electrons pass through at the same speed.\n\nThe first factor we often describe as the carrier mobility and the second factor we describe as the carrier concentration.\n\nBoth of these affect the conductivity of a material.",
+                    "score": 4,
+                    "author": "CrambleSquash"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When you turn on a light switch, be it DC or AC circuits, the lightbulb turns on almost instantly, while in DC circuits, electron movement is in the order of micrometers per second, and in AC, the electrons are just moving back and forth in the wire at 50Hz or 60Hz typically.\n\nIn DC circuits the voltage potential leads to an electric field that travels down the wire at the speed of light once the circuit is completed.  The strength of the electric field provides the strength of the \"pressure\", or Voltage to push electrons down the wire, while resistance or lack thereof determines how's fast electrons move down the wire, which the faster electrons move the more current is delivered to the load per second.\n\nSo yeah, more or less yes to your question, more current is actually higher electron speed, although net electron speed through a conductor is extremely slow overall.  Think about it this way.  If you have a 12V DC source with a 10 Ohm resistor, that gives you 1.2 A of current.  If you put a 100 Ohm resistor in the same circuit, you now only get 0.12 A of current.  The wire is going to have about the same number of total free electrons, so the only thing that could have changed is increased resistance slows down the electrons, so less electrons per second flow through the load.\n\n\nAC gets a bit messier, but the same basic concept applies.  In AC, instead of electrons flowing down a wire, electrons oscillate back and fourth from an oscillating electric field.  The oscillating electric field and, well, electrons also will create a magnetic field now, too.  If you coil wire up in the same direction, you can increase the strength of this magnetic field for various purposes but I digress on that.\n\nLess resistance in an AC circuit means electrons would travel further down the wire back and fourth during those oscillations.  More current moving back and forth also means a stronger magnetic field than less current moving back and fourth.",
+            "score": 3,
+            "author": "LTEDan"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The simple answer is that it depends on what structure is being discussed.\n\nBut let us go ahead and break it down in more detail. Let us first consider the units of current which are (Q/m\\^2s) where Q is the charge (ne where e is 1.6\\*10\\^-19 C). This indicates that changes in current can be due to either a change in the rate of charge moving through a unit area of the amount of charge in that unit area (speed vs density as you asked). Which is being modified depends on the system being discussed.\n\nA pure Metal or a semiconductor (Si for example) has a limited amount of charges that can conduct. In a perfect insulator, there are 0 available states for conduction as all charges are in their lowest energy state. The outermost electrons in the structure are in the \"valence band\" and it is filled, not allowing for conduction. As we transition away from a perfect insulator some electrons are able to jump to the next highest energy state (\"the conduction band\") where empty states allow for conduction. These are then accelerated by any applied field to produce current. In this situation increases in current are entirely due to increases in carrier velocity, as applying a voltage does not generally excite more carriers into the conduction band (and if the potential is high enough to do so the crystal is likely to break down).\n\nHowever in more complex systems, for example, a junction (p-n junction or transistor) changes in voltage do affect the carrier density. This is due to the fact that these are minority carrier diffusion-based systems, where the voltage allows for a greater concentration of minority carriers to transfer between electrodes. This effect leads to a higher charge density vs a faster set of charges. (I can provide more details on this but it seems somewhat outside the scope of the question).\n\nSo it simply depends on the system being discussed, and its control is actually quite significant in many areas of device design and device physics.",
+            "score": 2,
+            "author": "Brief-Strawberry5665"
+        },
+        {
+            "level": 0,
+            "comment": "Lots of things affect electric current, just as lots of things affect the current of water in a river. Let's take a simple example of a copper wire. The resistance will be proportional to its length and inversely proportional to its cross-sectional area. The current will be proportional to the voltage and inversely proportional to the resistance, so it will be proportional to voltage and cross-sectional area and inversely proportional to length.\n\nIt's proportional to the cross-sectional area because that means there are more electrons to move. This part has nothing to do with speed. This is the same as how a wider and deeper river will have a higher flow rate, even with the same speed.\n\nThe remaining part, voltage divided by length, is the electric field strength. Electric field is directly proportional to electron acceleration. So, with a stronger electric field, electrons do experience stronger acceleration and do end up moving faster. This is like having a river with a steep slope and fast-moving water.\n\nBut you should not think of electrons flying through the wire like it's a highway. Electrons move a short distance, then collide with an atom and bounce off in a random direction. They lose some or all of their velocity in the direction along the wire, and their kinetic energy becomes random heat. Then, the field will start to accelerate them in the direction of the current again, but they're starting over from a velocity component of zero on average in that direction. The electron velocity component in the direction of the current is just the average velocity they can attain going from zero to the next atom collision a microscopic distance away.",
+            "score": 2,
+            "author": "pavilionaire2022"
+        },
+        {
+            "level": 0,
+            "comment": "I really appreciate all the answers but I think it's worth noting  my question has more to do with charge density difference on either side of a resistor when different voltages are applied.  I would assume a higher voltage would mean more of the free electronics are on one side of the resistor even though the conductor is electricaly neutral.",
+            "score": 2,
+            "author": "Tricky-Volume1677",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Charge isn't really compressible. Any compression of charge away from equilibrium will immediately cause intense forces which bring it back into this equilibrium. It's like water, not like a gas. I don't know the exact figures (nor terms to express them as a proper comparison), but graphically, I'm pretty sure it's a lot more stiff than water, even.\n\nTo illustrate just how strong those forces are, imagine a capacitor with a capacitance of 10 \u00b5F and a weight of 1 gram. Imagine we increase charge density by 1 ppm on one of its plates. That would result in a voltage of several MV applied to this capacitor, which would make it violently explode immediately, probably taking the a good part of the house containing it down as well.\n\nI'm picking a capacitor as an example because it makes it easy to reason about how much energy is involved, and energy figures make it easy to reason about if this is something that realistically happens (it's not in this case, it's about as much energy as your household uses in a year). But the strength of forces enforcing the equlibrium is the same in a resistor or piece of wire.\n\nI think it's correct that the effects we observe can be viewed from the perspective of being caused by the forces driving a disturbed density of charge back to its equilibrium. In absolute terms, though, this equilibrium remains perfectly intact to an incredible degree.",
+                    "score": 1,
+                    "author": "scummos"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You're confusing speed and velocity. The electrons leaving the cathode of a cell will have high kinetic energy i.e. speed. Continuity shows  for a constant cross sectional area the velocity of the electrons entering the anode of the cell will be the same as the electrons leaving the cathode of the cell. However they also have less kinetic energy i.e. speed.\n\nA suitable analogy is dogs at the beginning of a walk running in circles like crazy, playing fetch. They keep up with their owner on average. Near the end of the walk they might be walking at heel. The same velocity, but slower speed.",
+            "score": 1,
+            "author": "remarkablemayonaise"
+        },
+        {
+            "level": 0,
+            "comment": "No think of it this way. You have little ping pong balls called Coulombs and they have a variable amount of ZAP inside them, called joules. They're floating down a 3 inch wide canal in  a carnival arcade game.\n\n Voltage is ZAP per ping pong ball and current is ping pong balls per second.",
+            "score": 1,
+            "author": "Miss_Understands_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "But what causes the zap?",
+                    "score": 1,
+                    "author": "Tricky-Volume1677"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The current is the quantity of electrons moving, not their speed, they move at constant speed, which is very slow, a cm/second or something, in a straight line, through the wire, although I expect that their orbits and local speeds are close to speed of light?\n\nlike water compressed in a tube, even though the water can move at 1cm/second, the compression energy from one end to the other moves at thousands of km/s just like electricity in a wire.",
+            "score": 1,
+            "author": "MegavirusOfDoom"
+        }
+    ]
+}

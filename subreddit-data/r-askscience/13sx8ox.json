@@ -1,0 +1,39 @@
+{
+    "id": "13sx8ox",
+    "score": 26,
+    "title": "What limits the exhaust velocity of an ion thruster?",
+    "author": "Barilari",
+    "date": 1685159568.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13sx8ox",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I read that the exhaust velocity of an ion thruster is between 20 and 50 km/s. Am I correct in assuming that if the exhaust velocity were higher, more acceleration would be achieved with the same amount of propellant mass? If so, what is stopping us from outputting the propellant at a significant fraction of c? Is it only the quadratic energy requirement, or the way ion thrusters work?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "We could accelerate the propellant to higher speeds. For electrostatic thrusters you can more or less just increase the acceleration voltage and the propellant will got faster. Once you get into the tens of kilovolt it starts to get tricky with insulation and electronics design unless you make the thruster enormous and heavy.\n\nHowever you don't really want to do that usually. The faster the exhaust the more energy you need (it scales with the square of the speed). And the power on board a spacecraft is limited so you either have to increase the power generation (more solar panels typically) or decrease the quantity of propellant you eject, which decreases the thrust. Both of those options result in a slower acceleration and longer transit times and it just becomes impractical. You can calculate the optimal exhaust velocity for a given power to mass ratio and mission and for most spacecraft it's between 15 and 35 km/s. It would only make sense to go faster if you had an incredibly light power source (say a good nuclear reactor).",
+            "score": 28,
+            "author": "electric_ionland",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I will add that most power sources are going to have issues shedding heat. The reason that nuclear thermal engines, fusion engines, nuclear saltwater rockets, or nuclear pulse drives are popular concepts for futuristic spaceflight is that there is at least some ability to deal with the absurd heat output of these devices operating at high thrust and high exhaust velocity at the same time because, as with chemical rockets, the vast majority of heat gets dumped with the propellant. If even a fractional percent of the heat from an engine like that is absorbed, the craft could literally melt. The goal of all such designs is to ensure that it's not even that much. Way past 99% of the heat must leave the spacecraft with the propellant in high thrust high ISP designs.\n\nYou could put a 10 GW thermal output nuclear reactor onboard your spacecraft to power whatever electrical engine you want. The issue is that after getting 4 GW of power and putting 90% into propellant, that means you have to shed 6.4 GW of relatively low grade heat which means having a gigantic radiator somewhere on your spacecraft, probably square kilometers in size. Something immense with a coolant loop going through the whole thing.\n\nThermal design is almost surely going to be the limiting factor in many rockets. A nuclear thermal engine doesn't necessarily need a radiator because the exhaust is the radiator. A nuclear electric engine runs into very serious thermal concerns and would definitely need a vast radiator.",
+                    "score": 3,
+                    "author": "pds314"
+                },
+                {
+                    "level": 1,
+                    "comment": "Less quantity for faster ions leads to higher efficiency, but less momentary thrust.",
+                    "score": 2,
+                    "author": "TouristNo4039"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Exhaust velocity for a given propellant is contingent on the potential difference used to accelerate the ions themselves. You *could* increase that, but there are practical concerns that make going beyond certain voltages impossible in terms of mass and cost.\n\nPropellant is only part of the issue. Unlike with chemical engines, the energy used to accelerate your reaction mass needs to be provided by your spacecraft's electrical systems. The energy needed to accelerate your propellant to a given speed increases with the square of velocity, so it becomes impractical past a certain point.",
+            "score": 3,
+            "author": "coaxialgamer"
+        }
+    ]
+}

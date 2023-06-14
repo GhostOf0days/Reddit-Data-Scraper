@@ -1,0 +1,73 @@
+{
+    "id": "13w0gqp",
+    "score": 16,
+    "title": "How did the conventions for describing the electromagnetic spectrum originate?",
+    "author": "QuasarMaster",
+    "date": 1685476902.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13w0gqp",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "In my experience, the radio/microwave range is generally described with frequency (e.g. WiFi is said to be 2.4 GHz). Infrared/Visible/Ultraviolet is generally described with wavelength (e.g. sunlight peaks around 500 nm). X-Rays/Gamma Rays are commonly described with photon energy (e.g. the Compton telescope observes a range from 20 keV to 30 GeV).\n\nHow/when did these general conventions arise, and why don\u2019t we describe the whole spectrum using the same terminology?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Radio waves are defined with Mhz and Ghz, because electronics use Herz for clock speeds, and in the early days of radio frequency (before microwaves) these waves were predominantly made by electronics.\n\nHigh-energy waves like x-rays and gamma are similarly defined by the field they mostly serve. Gamma is almost exclusively used in particle physics, where energy and specifically electron-volt, is front and center of almost any discussion.\n\nVisible light or near visible light was mostly studied in optics at first, where wavelength is a major property (light bends differently at different wavelengths). Of course Herz could work here as well, but the term wavelength predates Herz, and optics predates... Anything almost",
+            "score": 20,
+            "author": "Hk-Neowizard",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To add to the bunch, frequency for radio/wifi is measurable with very little technology and energy while particle physics is mostly observed at very high energy. That is why we don't need to talk about eV for radio but we do for particles.",
+                    "score": 7,
+                    "author": "El_Sephiroth",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I remember doing a bit of a double take when I looked at an NMR textbook that described transition energies in \"meV\". \n\nIt took me a few beats to catch on that these meV were *milli*\\-electronvolts, as opposed to a typo for *mega*\\-electronvolts (MeV). \n\nBut hey, what's nine orders of magnitude among friends?",
+                            "score": 7,
+                            "author": "cryptotope"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It had to do with the tools used to measure or create radiation. Visible light wavelengths were first measured with interference effects or diffraction gratings. These give wavelength directly without needing to know the speed of light. ( Prisms were also used, but their dispersion had to be calibrated with known wavelengths.) \nRadio waves were created and received by circuits that have a resonant frequency determined by known capacitance, inductance and resistance.",
+            "score": 4,
+            "author": "aenorton"
+        },
+        {
+            "level": 0,
+            "comment": "Low energy e/m, frequency is often a useful characteristic. Like radio or other transmitter/receivers.\n\nFor visible/near visible, wavelengths are helpful for things like antenna design, diffraction, and optics.\n\nHigh energy waves interact with matter based on energy, so that is useful.",
+            "score": 2,
+            "author": "Honest-Mulberry-8046"
+        },
+        {
+            "level": 0,
+            "comment": "We use energy in the X-ray/gamma-ray range because frequencies get impractically high and wavelengths impractically short to actually measure. For the rest of the spectrum, wavelength and frequency are sometimes more interchangeable. For example, you hear about \"the terahertz gap\" in the far infrared, and many ham radio bands are denoted in terms of wavelength (for example, the \"2-meter band\", the \"80-meter band\", etc.). There's also the \"21cm line\", used to describe a certain astrophysical radio source with that wavelength, and \"millimeter-wave radar\" which has a wavelength around that scale.",
+            "score": 2,
+            "author": "d0meson",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Another reason for eV: Accelerators like vacuum tubes to generate x-rays use voltage to accelerate charge (electrons). So charge times voltages is given automatically.",
+                    "score": 3,
+                    "author": "LuigiLasagne"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "But radiowaves, especially below a few megahertz (and before digitally-tuned radios), were for a long time (in the 1950's-1970's) known by their wavelength.\n\nRadio 4 longwave (formerly \"Home Service\") was 200kHz / 1500 metres   (it's now 198kHz)\n\nMedium wave stations too, LBC on 1152kHz / 260 metres\n\nRadio 2 (formerly \"Light Programme\") on 909kHz / 330 metres also 693kHz / 433 metres\n\nRadio 3 (formerly \"Third Programme\") on 1215kHz / 247 metres\n\n&amp;#x200B;\n\nAmateur radio enthusiasts also refer to their bands by the wavelength (likely using nomenclature that became popular in the mid-20th century). e.g \"2m band\" (144-146MHz), \"40m band\" (7 MHz) etc.\n\nIn radio the wavelength is quite relevant for practical considerations such as optimal antenna size (typically \"quarter wavelength\" for a \"whip\"/monopole, or half-wavelength dipole etc).",
+            "score": 1,
+            "author": "Prestigious_Carpet29"
+        },
+        {
+            "level": 0,
+            "comment": "I think it's a fair starting point to suggest that the common description likely sticks from what was most directly measured when the radiation was first discovered or found popular application.\n\nLight wavelengths can be measured pretty straightforwardly with diffraction experiments or perhaps interferometers. We don't have equipment (certainly not at any affordable price) that can measure the frequency of light directly.\n\nThese days digitally-synthesised radio transmitters and receivers mean we can generate and receive signals up to several gigaHertz from (lower frequency) crystal frequency standards - so we measure the frequency pretty directly.\n\nFor conventional X-ray tubes, you need actual kV of power supply a little greater than the characteristic radiation in keV of the X-ray tube target.",
+            "score": 1,
+            "author": "Prestigious_Carpet29"
+        }
+    ]
+}

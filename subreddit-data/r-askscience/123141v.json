@@ -1,0 +1,43 @@
+{
+    "id": "123141v",
+    "score": 4,
+    "title": "Why not increase a capacitor\u2019s energy density by increasing the voltage?",
+    "author": "FreakinGeese",
+    "date": 1679867707.0,
+    "url": "https://www.reddit.com/r/askscience/comments/123141v",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Dielectric breakdown is an issue but there are materials (diamond, Teflon, ultra-high vacuum) that only break down at absurdly high voltages.\n\nIf you want the most bang for your buck (both volume and mass wise) why not step up the voltage a capacitor charges at super duper high? Then the energy of the capacitor is proportional to the volume * permittivity * dielectric strength ^2. Why not have a centimeter of diamond between two plates with a potential difference of a million or so volts? That\u2019s good energy density right there. According to my calculations, diamond capacitors should have somewhere around a hundredth the volumetric energy density of gasoline, which really isn\u2019t *that* bad for certain applications",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I've done r&amp;d with materials in a similar situation.  One problem is surface leakage paths.  You can't just think of the cap as a simple component anymore.  The case, mounting, humidity, vibration, etc can cause a sudden short circuit.  Literally breathing on the circuit could cause it to explode.  So now you have to can it in transformer oil or similar.  That's got its own set of headaches.",
+            "score": 11,
+            "author": "drhunny"
+        },
+        {
+            "level": 0,
+            "comment": "The conductors supplying the plates would also be at a million volts, so would also need insulating with something of huge dielectric strength.   You also need to consider the discharge characteristics of a capacitor - almost the inverse of a battery, so the energy would need to be exploited in a fundamentally different way.",
+            "score": 4,
+            "author": "SWithnell"
+        },
+        {
+            "level": 0,
+            "comment": "In addition to creep path, difficulties with HV electronics and other issues raised here you also need to be careful of the difference between thin film dielectric strength, which is really high, and actual bulk material dielectric over lifetime. In practice you often have a couple of orders of magnitude difference there.",
+            "score": 2,
+            "author": "electric_ionland"
+        },
+        {
+            "level": 0,
+            "comment": "We generally don't use capacitors to power devices because it discharges most of it's energy at the quickly unlike a battery which as a slower mostly constant output. It's useful if you want to dump a lot of energy at once like a camera flash or defibrillator, not so much when you want to power a motor.",
+            "score": 2,
+            "author": "Endercraft_O"
+        },
+        {
+            "level": 0,
+            "comment": "I guess your calculations comparing a dielectric capacitor to gasoline are wrong.  What are the dimensions of the capacitor?  You'll need an enormous capacitor to store significant energy.\n\nElectrolytic capacitors are used where substantial amounts of energy need to be stored.  They can tolerate only low voltages (\\~2.5 V).",
+            "score": 1,
+            "author": "PhiliFlyer"
+        }
+    ]
+}

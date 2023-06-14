@@ -1,0 +1,77 @@
+{
+    "id": "138ouwu",
+    "score": 13,
+    "title": "What advantages does the Hubble Space Telescope have over a ground based telescope with modern adaptive optics?",
+    "author": "GringoMenudo",
+    "date": 1683296643.0,
+    "url": "https://www.reddit.com/r/askscience/comments/138ouwu",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I know that when Hubble was being planned and built adaptive optics weren't really a thing in ground based astronomy, which gave it a unique advantage in not having to deal with atmospheric distortion. How much of that still holds true today? \n\nIt makes sense that not having an atmosphere will always be better than correcting for an atmosphere but ground based telescopes have so many other advantages (much larger diameters, no similar concerns about weight or power restrictions, far fewer thermal issues) that I'm curious what unique advantages Hubble still has. When HST finally shuts down does it make sense to plan a future orbital optical telescope or is it only \"worth it\" for telescopes that operate in wavelengths that are blocked by our atmosphere?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt; no similar concerns about weight \n\nI'll stop you right there- this certainly is not true.  Any idea how heavy a mirror is that's a piece of glass several meters wide, not to mention the mount to hold it and the instrument to mount on the back (which is not small)?!  Plus thermal issues are indeed still a problem- lots of cooling with liquid helium has to happen to minimize thermal noise on these instruments.\n\nIn fact, the stability of space telescopes is also unparalleled compared to ground telescopes that have to deal with: weather, atmosphere, rain, dusty mirrors, people with flashlights, cars, etc.  Trust me, my colleagues and I would gladly take HST's thermal background noise over Arizona's background weather any day!\n\nTo answer your question, there are a few things to consider here:  \n\n1) Even with adaptive optics, the water vapor in the atmosphere will still absorb quite a bit of information towards the UV and infrared parts of the spectrum, both of which HST covers a portion of (not as much as JWST in infrared, of course, but it's still great at this).  Also, some wavelengths are particularly high noise due to the atmosphere- we call this \"high background.\"  HST obviously doesn't have an issue with either of these.\n\n2) Adaptive optics limits you in field of view- it works great for one target at the center of your detector, but not really for wider fields of view- HST on the other hand has a few arcminute wide FOV, and you don't need to do any corrections.  So, for example, if you're interested in mapping a patch of sky to very deep precision, to look for Kuiper Belt Objects or a faint galaxy a radio signal might have originated from, HST is the way to go.\n\n3) Adaptive optics systems for the most part work in the infrared part of the spectrum these days, not optical. So they don't actually replace HST as much as you'd think!\n\n4) AO systems are rare, almost as rare as space telescopes- they are expensive- and not all are equally open to the astronomical community. (Keck on Mauna Kea, for example, is an amazing facility but is managed by the California Association for Research in Astronomy, so unless you're a California astronomer/ have a collaborator there you're not really gonna get time on it.) On the other hand, HST is an open skies facility, where anyone in the world can apply to use it.  The annual deadline is actually coming up later this month, and several times more hours will be requested than there are hours to give.\n\nUltimately though, you're right, we wouldn't build another HST exactly as it is now because our technology has gotten so much better. (It's a general rule that by the time anything goes into space, it's somewhat obsolete technology due to all the tech involved to make it.) But that certainly doesn't mean it isn't super useful, both because of the reasons listed above and because we've already paid to build it, and it's a fantastic instrument (and it's expensive to build new telescopes, on ground or in space).",
+            "score": 30,
+            "author": "Andromeda321",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "TY for the detailed answer. \n\nRe: weight, I understand it's still an issue for ground based telescopes. Surely it's a lesser issue though since you're not paying thousands of dollars per pound to lift it into orbit?\n\n&gt; So, for example, if you're interested in mapping a patch of sky to very deep precision, to look for Kuiper Belt Objects or a faint galaxy a radio signal might have originated from, HST is the way to go.\n\nAh, interesting. I knew that Hubble time was very important when the New Horizons team was searching for a KBO flyby target. I always wondered why that was since I assumed a large aperture ground based telescope would be better for that purpose. Now I know.",
+                    "score": 3,
+                    "author": "GringoMenudo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Surely it's a lesser issue though since you're not paying thousands of dollars per pound to lift it into orbit?\n\nNope- BY FAR the most expensive part of any telescope is the design and building the thing- a launch cost compared to that is a fairly small percentage of that.  But even then, I think we are talking about slightly different things in terms of weight- you're worried about launch costs, I'm saying because you can build bigger things on the ground, there are a lot of considerations when it comes to weight and moving around that much weight in terms of the actual *operations* once the thing is going.\n\n&gt; I knew that Hubble time was very important when the New Horizons team was searching for a KBO flyby target. I always wondered why that was since I assumed a large aperture ground based telescope would be better for that purpose.\n\nYes, it's also worth noting that most of the big AO telescopes have very small fields of view in general (because why make a big FOV when you aren't gonna use a lot of it).  So the next space telescope after JWST is actually gonna be amazing for this- the Nancy Grace Roman telescope will be like Hubble in terms of sensitivity, but many times wider in terms of FOV!\n\nOh yes, and I forgot one final reason HST is great- it's above all those pesky Starlink satellites.  Which will probably not be a negligible thing in coming years as more mega-constellations come online- sure you can filter them out, but lost time is lost time.",
+                            "score": 8,
+                            "author": "Andromeda321",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;  But even then, I think we are talking about slightly different things in terms of weight- you're worried about launch costs, I'm saying because you can build bigger things on the ground, there are a lot of considerations when it comes to weight and moving around that much weight in terms of the actual operations once the thing is going.\n\nRight, I think I was asking a somewhat different question. I did a quick search, it looks like Wide Field Camera 3 on Hubble weighs just under a thousand pounds. My assumption was that if you were building an instrument for ground based use with similar capabilities but say, 5x the weight budget it would be much cheaper since miniaturizing anything adds to cost. \n\nThanks again for your detailed responses.\n\nEdit:\n\n&gt; BY FAR the most expensive part of any telescope is the design and building the thing- a launch cost compared to that is a fairly small percentage of that.\n\nAre you sure about that? A quick google search tells me that the Keck telescopes cost $140 million to build and the Gemini Observatory was around $200 million. Calculating the exact cost of a space shuttle launch of close to impossible but the I've often seen estimates of around a billion dollars per launch when you divide total program costs over number of launches. I shudder to think how much the costs of the servicing missions added.\n\nI know the shuttle was extraordinarily expensive but an Ariane 5 is around $170 million and an Atlas V launch is about the same. That puts the costs of one launch as roughly equivalent to the cost of building a pair of large ground-based telescopes. Granted SpaceX may be changing that equation but it looks like NASA is paying $250 million to launch the Nancy Grace Roman telescope on a Falcon Heavy.",
+                                    "score": 1,
+                                    "author": "GringoMenudo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah, if you're just gonna launch a ground-based telescope as-is, the launch cost is a huge amount of dough compared to that.  However, this is a bit apples and oranges- a space telescope and instrument IN SPACE has to be far more rigorous in its design and feasibility because you need to be able to survive the launch, and can't just drive the instrument down to your lab and back up once you've finished tinkering with it.  Space is just a tough environment to operate in.\n\nIt will always be cheaper to build a telescope on the ground than a space one, but that has to do with reasons that don't actually have to do as much with the launch so much as having a telescope in space in the first place that doesn't crap out after a very short period of time.  I hope that makes sense.",
+                                            "score": 6,
+                                            "author": "Andromeda321"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;Oh yes, and I forgot one final reason HST is great- it's above all those pesky Starlink satellites. Which will probably not be a negligible thing in coming years as more mega-constellations come online- sure you can filter them out, but lost time is lost time.\n\nSatellite trails, especially by Starlink, are increasingly an issue for Hubble as well - it doesn't help that the Starlinks pass pretty close to Hubble.",
+                                    "score": 1,
+                                    "author": "ElReptil",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It does but nowhere near the same rate as what ground based observatories deal with.",
+                                            "score": 1,
+                                            "author": "Andromeda321"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Nope- BY FAR the most expensive part of any telescope is the design and building the thing- a launch cost compared to that is a fairly small percentage of that.\n\nWhile this is definitely true (eg. JWST costed 10bln so the &lt;200mln for a launch is pretty much nothing), however ground-based telescopes are significantly cheaper to build as well. E-ELT cost is around 1.2 bln for a 40m telescope.",
+                                    "score": 1,
+                                    "author": "Pharisaeus"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "1. AO is not perfect - even with multiple laser guide stars you will have some blurring. AO is also most effective close to the guide star, so if the field of view is large you need more and more lasers to cover it. AO is also pertty much \"state of the art\" and \"prototype\" technology at best. You can't just buy some off-the-shelve AO system and attach to any telescope. There are only a handful of telescopes with AO and Laser Guide Star Systems and those were built specifically for that telescope and even for some particular instrument. So in a way, building a large ground based telescope with AO is a huge undertaking as well.\n2. Geography limits what you can observe -&gt; eg. you need at least 2 telescopes, on each hemisphere, so view whole sky\n3. Ground based telescopes have operations issues - bad weather, vibrations, earthquakes, dust, thermal (deserts tend to be hot during the day and cold at night)\n4. As you mentioned, some wavelengths are blocked by atmosphere and water vapour, and some are simply lost due to noise (like infra-red).\n\nAs for HST, consider that 2.5m mirror of HST gives comparable results to 8.2m VLT Unit Telescope with AO (eg: https://www.eso.org/public/images/eso1824c/ ), which should tell you a bit about effectiveness of AO.",
+            "score": 2,
+            "author": "Pharisaeus"
+        }
+    ]
+}

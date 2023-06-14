@@ -1,0 +1,335 @@
+{
+    "id": "13t44me",
+    "score": 1102,
+    "title": "How do modern navigation aids account for irregularities in the shape of Earth?",
+    "author": "Equivalent-Bonus-885",
+    "date": 1685184216.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13t44me",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I gather that Earth is far from a regular sphere. But modern navigation like GPS uses very precise degrees, minutes and seconds. Don\u2019t these presuppose a perfect globe, and how do they deal with the major irregularities in the shape of Earth?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt; Don\u2019t these presuppose a perfect globe\n\nNo, they do not. For horizontal coordinates, modern coordinate systems approximate the shape of the Earth as an [oblate spheroid](https://en.wikipedia.org/wiki/Spheroid), which we refer to as a [reference ellipsoid](https://en.wikipedia.org/wiki/Earth_ellipsoid#Reference_ellipsoid). A given reference ellipsoid can be defined with a length of the semi-major axis (i.e., the equatorial radius), the semi-minor axis (i.e., the polar radius), and the flattening, though in practice you only need two of these quantities to define the ellipsoid shape and the most common to report are the semi-major axis and the flattening (or its inverse).\n\n&gt; how do they deal with the major irregularities in the shape of Earth?\n\nLet's consider a [geographic coordinate system](https://en.wikipedia.org/wiki/Geographic_coordinate_system) (as opposed to a [projected coordinate system](https://en.wikipedia.org/wiki/Projected_coordinate_system)), and specifically [WGS84](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS_84), which is the most recent version of the \"World Geodetic System\" and one of the more common sets of geographic coordinate systems you'd be likely to encounter. WGS84 is one version of a [geodetic datum](https://en.wikipedia.org/wiki/Geodetic_datum), basically the shape of the oblate spheroid that is used to approximate the shape of the Earth. Chances are if coordinates are reported in latitude and longitude, these are given in WGS84, though not always, for example if you're using a topographic map in the US, it might be in NAD83 (a different geodetic datum)  though these two should give relatively similar coordinates, but other geodetic datums can be quite different depending on the values they use for the properties of the ellipsoid, i.e., semi-major axis, flattening. The differences in these parameters can reflect more accurate measurements of the shape of the Earth (e.g., the differences between WGS84 and the earlier versions like WGS60, etc), or if we are considering a \"local datum\", it may use a semi-major axis and flattening that better approximates the shape of the Earth for the region for which the datum is defined, but is worse if you were to use it for the entire planet.\n\nThus, while we think of latitude and longitude as angular measurements on the surface of a sphere (e.g., [this diagram](https://en.wikipedia.org/wiki/Latitude#/media/File:Latitude_and_longitude_graticule_on_a_sphere.svg)), in reality (at least for modern uses of these), they are angular measurements on the surface of an ellipsoid / oblate spheroid. This is why the meridian distance (in km, but you could do it miles, etc) between degrees of latitude actually change as a function of latitude (e.g., the [table and/or formula for WGS84](https://en.wikipedia.org/wiki/Latitude#Meridian_distance_on_the_ellipsoid) here). If we approximated the Earth as sphere for these coordinates (as we did before we had accurate measurements of the \"figure of the Earth\"), the meridian distance for latitude would be constant (but it would still change for longitude, going from a maximum at the equator to zero at the poles). \n\nFinally, all of the above has been concerned with the horizontal datum (i.e., latitude and longitude), but to uniquely define a coordinate, we also need to consider the vertical position, and thus the vertical datum that is used. Here, most modern coordinate systems do not use the ellipsoid to reference the elevation of a point, but instead use the vertical position relative to the [geoid](https://en.wikipedia.org/wiki/Geoid), i.e., what the surface of a global ocean would be accounting for mass differences and rotation, but ignoring winds, currents, and tides, etc. In some very specific circumstances, an ellipsoidal vertical datum might be used (i.e., referencing elevations with respect to the surface of the ellipsoid that approximates the shape of the Earth), but generally, if you are given a latitude, longitude, and elevation for a point, the latitude and longitude will be with reference to a specific ellipsoid (i.e., the horizontal datum) and the elevation will be with reference to a specific geoid (i.e., the vertical datum).",
+            "score": 872,
+            "author": "CrustalTrudger",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Perfect. Thanks heaps.",
+                    "score": 99,
+                    "author": "Equivalent-Bonus-885",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In addition to the great answer above, and beyond the question you asked, there is continental drift to consider... Fun :-)\n\nContinents move and in order to keep Lat/Long somewhat constant, the reference model changes over time, But the lat/long of say the mailbox of your home still changes a bit over time, because every place on Earth moves at different speed in different directions.\n\n&amp;#x200B;\n\nAnd it gets more fun. There is more than one reference model (as the answer above hints at)\n\nWGS84 is trying to keep lat/long changes over time minimal on average across the world. That is awesome for G(lobal)PS\n\nHowever, you could imagine a reference frame that minimizes for example changes in the US to be useful for American purposes. If you live in America you would prefer something that moves with the American continent (as a whole) and minimizes Lat/Long changes in the US. You don't worry if the lat/long of the Eiffel tower changes a lot. NAD83 gives you that reference frame. Many countries have their own systems.\n\nSo if you get lat/long from a US map that is in NAD83, it can be a meter or more away from what GPS tells you. This is something you need to consider e.g. if you import recent NAD83 based data into a high definition map system for driving a car.\n\nSwitzerland (until 1995) declared the world a Bessel ellipsoid from 1841, use a Mercator projection, and centered their coordinates in the old observatory in the capital of Bern. Because the world is now (Mercator) flat, they don't need lat/long, but can use cartesian coordinates (x,y). They didn't want negative numbers, so the \"origin\" in Bern is at (600km/400km) with East/West before North/South, i.e. putting the origin in France :-) It also makes sure that the E/W coordinate is always bigger than the N/W, so they cannot really be confused. Brilliant, and sufficient for a small country. In 1995 they moved to something WGS84 based. To make sure there is no confusion between old and new, they added 2000km and 1000km to E/W and N/S respectively. Took some 20 years to switch over.\n\nSwitzerland is landlocked, so doesn't have \"sea\" access for their own \"sea level\" So for height, they use a [tide gauge in Marseille](https://www.boatsnews.com/story/34507/discovering-the-tide-gauge-of-marseille), France, instead of a globally optimized geoid like WGS84.\n\nBasically there are hundreds of reference frames and they all change over time and the technology that gave us GPS also gave us computers to compute back and forth between them all as needed. We just have to remember to do that.",
+                            "score": 102,
+                            "author": "perrochon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;Switzerland (until 1995) declared the world a Bessel ellipsoid from 1841, use a Mercator projection, and centered their coordinates in the old observatory in the capital of Bern. Because the world is now (Mercator) flat, they don't need lat/long, but can use cartesian coordinates (x,y). \n\nSomething else similar happens in other parts of the world.  For example, the US uses a state plane coordinate system to make local maps in the states.  They similarly use xy coordinates fitted to the specific locality, although some states use lambert conformal maps rather than mercator.  \n\nFor small areas, you can minimize distortion on your maps by fitting them specifically to your specific area.",
+                                    "score": 20,
+                                    "author": "atomfullerene"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Fun fact. Australia moves so much that their local coordinate system incorporates a continual drift rate. This allows the local Aus coordinates of for example your mailbox, to stay the same even though the global wgs84 coordinates of that mailbox may move a measureable amount every year.\n\nhttps://theconversation.com/australia-on-the-move-how-gps-keeps-up-with-a-continent-in-constant-motion-71883",
+                                    "score": 16,
+                                    "author": "XenonOfArcticus"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "\"Continents move and in order to keep Lat/Long somewhat constant, the reference model changes over time, But the lat/long of say the mailbox of your home still changes a bit over time, because every place on Earth moves at different speed in different directions.\"\n\nThe average continental drift is about 1.5cm per year. This translates to about 6 feet per century. I know there are some tectonic plates that move significantly faster, but the change over time is still minor. It would take several centuries for even 1 longitudinal second of change. This isn't to say these changes shouldn't be tracked. But it's not like your mailman won't find your mailbox if they use coordinates from 50 years ago.",
+                                    "score": 7,
+                                    "author": "movieguy95453",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "All of Australia had to adjust our GPS coordinates after moving 1.8 m in about 30 years due to continental drift: not going to affect your average person (as if the phone's ever accurate to more than 10 m anyway), but enough to throw off high-precision GPS for automated harvesters or cars.",
+                                            "score": 29,
+                                            "author": "purpleoctopuppy",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Your phone can easily be more accurate than 10 meters if you can see a good amount of satellites.",
+                                                    "score": 7,
+                                                    "author": "pseudopad",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "No they actually can not because it's an actual lockout feature. After all the terror attacks around the world, many countries passed laws restricting the accuracy of GPS devices to help curb the severity of the damage (if your goal is to bring down a building being off even a foot can lead to failure of that plan). Since many of these countries are some of highest consumer markets for technology the companies put in limiters in both the hardware and software of the devices to minimize accuracy. 10-15 meters off is actually the most accurate you will ever get. We, the consumer, just don't notice it because when using it for navigation being that far off is unnoticeable, but precision is the key then that variance leads to a catastrophic failure.",
+                                                            "score": 0,
+                                                            "author": "Quelix_",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Phones are dramatically better than 10m (you can double check pretty easily by walking around with google maps open). I'd probably put my phone's error in the roughly 1-2m range (it can get higher if you're around a lot of big buildings that bounce the signal around). Some of that is done via cell phone towers, but a lot is just GPS/Galileo (European GPS)",
+                                                                    "score": 4,
+                                                                    "author": "oscardssmith"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "That was selective availability and was turned off in May of 2000. Accuracy of substantially less than one meter is trivial today",
+                                                                    "score": 4,
+                                                                    "author": "niceandsane",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "May of 2000? Dude it was 9/11 that sparked the entire discussion.",
+                                                                            "score": -2,
+                                                                            "author": "Quelix_",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "It was [May 2, 2000 at midnight GMT by order of President Clinton.](https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System#Selective_availability)\n\nSelective Availability was easily worked around with differential GPS. By locating a receiver at a known well-surveyed point, the specific azimuth and distance of induced error could be determined and applied as a correction signal. If GPS showed the known landmark to be skewed 13.7 meters away at azimuth 203, one could simply add a correction factor to the unknown coordinates of 13.7 meters at azimuth 23. \n\nThis led to quite the boondoggle. During selective availability we had the US Government (DoD) spending money on deliberately making GPS unreliable by equipping satellites with equipment introducing error, and the US Government (FAA) spending money eliminating that error by installing differential GPS receivers at aircraft VOR sites to broadcast a correction signal for civilian aircraft navigation. Both were broadcast over the radio in a public format and the taxpayers were supporting both. \n\nThe very next day, [the first geocache was placed.](https://geocaching.fandom.com/wiki/First_Geocache) \n\nSA was unrelated to and prior to 9/11. One doesn't exactly need pinpoint GPS precision to spot either the World Trade Center or the Pentagon from the air.",
+                                                                                    "score": 6,
+                                                                                    "author": "niceandsane"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Back in the early \u201890s I was doing glacier studies in summer in SE Alaska and was heading up the survey team, measuring glacier movement rates out on the Juneau ice field.  We needed extremely accurate readings, so we had one GPS at the base camp set up and running continuously, broadcasting its signal to the united were were carrying. This provided a local datum, but every year the base station GPS position had to be calibrated due to continental drift, which is why it was left running continuously for a while before we did our survey work.",
+                                            "score": 12,
+                                            "author": "7LeagueBoots",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Out of curiosity, how much did it change from year to year?",
+                                                    "score": 4,
+                                                    "author": "movieguy95453",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I was only on site for 1 season, and it was nearly 30 years ago now, so I don't recall the exact amount.  It was a few cm though, if my memory serves.  We were measuring glacier movement down to the mm (a bit questionably considering that the markers we used would melt the holes in the ice wider over the week we left them in place on the ice) and the movement was enough that they wanted to be sure to correct for it.\n\nThe Yakutat microplate is moving at around 5.4cm annually, but we were on the North American plate, so not moving as much.",
+                                                            "score": 5,
+                                                            "author": "7LeagueBoots"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I recently went back to Juneau after about 10 years, and the effort it took to get nugget falls and the glacier in one shot was depressing.",
+                                                    "score": 2,
+                                                    "author": "AmericanGeezus",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Just took a look at the sat image of the area and that's a good bit of retreat.\n\nWhen I was last there we walked to the left and skirted a pretty small lake, the ice was right up against that long point of rock that now projects out into the water.  \n\n- https://www.researchgate.net/publication/222579300_Twentieth_century_thinning_of_Mendenhall_Glacier_Alaska_and_its_relationship_to_climate_lake_calving_and_glacier_run-off/figures?lo=1",
+                                                            "score": 3,
+                                                            "author": "7LeagueBoots"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Plate tectonics aren\u2019t the only cause of horizontal movement though. Glacial rebound, volcanism, earthquakes, human activities, and other natural phenomena can cause the ground to shift. \n\nAt the scale that humans typically experience in daily life these shifts may not seem significant, but for high-precision applications like pipeline construction, telecommunications infrastructure, civil engineering projects, and military targeting, it can be a big deal if objects and places on the ground aren\u2019t exactly where the map says they are.",
+                                            "score": 10,
+                                            "author": "irregardless"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "You wouldn't want the corners of your bridge to be off by a few centimeters.",
+                                            "score": 6,
+                                            "author": "flotsamisaword"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It was enough e.g that you could tell the difference on Google satellite imagery. It looks really weird if the road on the image and on the map is not at the same place. (This may of course happen for a lot of other reasons, but it's bad if everything is off to start with)\n\nBut for a normal day to day consumer use you are right. It makes little difference.",
+                                            "score": 3,
+                                            "author": "perrochon"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[Webmercator](https://en.wikipedia.org/wiki/Web_Mercator_projection), which is perhaps the most widely used model (Google maps, Bing maps, Openstreetmap, etc.), assumes a perfect sphere with radius equal to the equatorial radius of WGS84. Towards the poles it deviates from the ellipoidal model by upto 40km.",
+                    "score": 38,
+                    "author": "andysw63392",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In the context of OP question (navigation), it is highly likely Google Maps app uses vector data in WGS84 coordinate system in navigation mode.",
+                            "score": 17,
+                            "author": "ziptested"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In no small part that distance is defined in meters for EPSG:3857 but degrees for EPSG:4826",
+                            "score": 6,
+                            "author": "tigerhawkvok"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm a geographer and have worked in geoinformatics for many years and this is spot on. Great explanation.",
+                    "score": 5,
+                    "author": "iamGIS"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is an incredible reply. Thanks so much for putting so much effort into this; it was really interesting.",
+                    "score": 4,
+                    "author": "ArborDaze"
+                },
+                {
+                    "level": 1,
+                    "comment": "Interesting... I had a couple of questions -- what datum/geoid do they use to show that Chimborazo is the furthest point from the center of the earth? One thing I've been trying to find out is what two points on earth are furthest from each other... Possibly Chimborazo and whatever is antipodal to it... But is there an open data set that I can search to try to find the answer?",
+                    "score": 2,
+                    "author": "throwyawafire",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You could convert the coordinates of interest to geocentric which maps in X,Y,Z relative to the centre of the earth.  Then measure the distance in that 3d space.",
+                            "score": 3,
+                            "author": "7952"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "What difference would it make to precise degrees anyway though, which are polar coordinates and therefore the same regardless of how oblate the sphere is? It would change the *distances*, but not the precise degrees.",
+                    "score": 1,
+                    "author": "WazWaz"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It can in fact be very dangerous to use GPS to find coordinates if the location you\u2019re trying to find was surveyed under a different geodesic model than the map in your navigation device. This is one of the (many) reasons that RusAir 9605 crashed - the navigator had a WGS84 map in his GPS but didn\u2019t realize that the reason GPS wasn\u2019t approved for use in Petrozavodsk was that the airport runway hadn\u2019t been surveyed under WGS84 so the coordinates essentially pointed the airplane 130 meters east and 70 meters north of the actual runway location. \n\nhttps://admiralcloudberg.medium.com/under-the-influence-the-crash-of-rusair-flight-9605-dbe00a1d509d",
+            "score": 24,
+            "author": "ImplicitEmpiricism",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Back before GPSes had maps, I was out with a Red Cross mission and some people needed to be evacuated.  They were sent out from the main team with a locally known guide and a GPS and maps, in bad weather (low visibility).  The GPS and the maps used different reference systems, and led to lots of problems during the attempts at evacuation.  I remember vividly the radio calls with \"We don't know where we are. \n The maps don't match the GPS.  The situation is deteriorating minute by minute.\"  Fortunately, while we had to send a couple of people to hospital, there was no permanent damage.",
+                    "score": 2,
+                    "author": "eek04"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "First to understand how navigation tools it's good to know how the earth is modeled. We use many different approaches to model the earth from an ellipsoid to transform it a 2D plane. The model of the earth starts with an ellipsoid (some more oblong than others) and then gets translated to a 2D Cartesian plane. \n\nFor 2D projection, some models wrap a cone around (conical) the earth and project onto the cone before flattening, others wrap a cylinder (cylindrical), others do more fancier shapes. Each approach to transformation has places or areas of greater accuracy in terms of distances than others, with less relevant areas distorted. \n\nOne you get that, then you can understand how navigation tools pinpoint a location.\n\n- Navigational tools pinpoint where the user is with respect to at least four sattelites that orbit as a constellation (total 24). \n\n\n- GPS transceivers \"trilaterate\" the current users location based on simultaneous receipt of 4 or more satellite broadcasts. Signals travel at the speed of light, and the signal contains the unique identifier of the sattelite along with its internal atomic clock time.\n\n\n- The simultaneous signal recepit of the satellites during the time of signal broadcast accounts for time relativity involved, as a satellite is positioned father from the earth's surface and therefore is in a different space and time than the receiver on the ground. The time broadcasted by the sattelite is already tuned to account for the differences here.\n\n\n- Since each sattelites current location is known for any given broadcast time (typically in a earth centric coordinate system) the time differences between signals received simultaneously is then used to determine the current position with respect to a geodedic coordinate system, then transformed into a projected map location. \n\nThis is why sometimes GPS signals can be skewed in downtown areas. The signal broadcast coming from the satellites can be interrupted by tall buildings leading to fewer satelites available, or signals may bounce off adding time to the signal receipt and leading to inaccurate measurements.\n\n[Edit] as movieguy pointed out, there are precision irregularities that are negligible. The choice of ellipsoid does assume a oblong earth shape, not a perfect sphere. There are tradeoffs, but when mean sea level estimates are taken into account those variations be accounted for. The following article explains more about it. \n\nhttps://www.esri.com/news/arcuser/0703/geoid1of3.html",
+            "score": 10,
+            "author": "IsNullOrEmptyTrue"
+        },
+        {
+            "level": 0,
+            "comment": "You have some great answers, but I don't see anything quantifying the actual irregularities. And it turns out these are very small. \n\nThe flattening which causes earth to be called an oblate spheroid is very minor. The circumference difference between the equator and the poles is only 41 miles. One place I looked described it as 1 part in 300. \n\nWhile the Earth's surface may seem rough, the variation of the surface is so minor that the planet would be smoother than a cue ball if shrunk down to the same size. The difference between the deepest point in the ocean and the highest peak is only 12.5 miles. \n\nThere is some variation in sea level around the globe due to a variety of factors. But the variation from the median is a matter of inches.",
+            "score": 62,
+            "author": "movieguy95453",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah for a lot of purposes it\u2019s effectively a sphere but for land surveying and precise construction and seismic monitoring it has to be accounted for.",
+                    "score": 22,
+                    "author": "_CMDR_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And thus for transportation. An error of 200m isn't much for the entire Earth but it *really* matters when you're relying on software to tell you which exit to take in that spaghetti junction.",
+                            "score": 17,
+                            "author": "whistleridge",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Most road networks are linear referenced, if they're using nav software it's not even using the lat/lon to do much more than report back your speed and snap your car to the centerline of the road on the screen. It's using the road network to figure out where you need to go in the spaghetti junction, turn right on meatball lane!",
+                                    "score": 2,
+                                    "author": "AlbertanSundog"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is not true.\n\nThe tolerances for the radius of a cue/billards ball do would be met, but the roughness of the earth's surface at that scale would be about 320 grit sandpaper.\n\nhttps://ourplnt.com/earth-smooth-billiard-ball/",
+                    "score": 17,
+                    "author": "drsoftware",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for sharing that. Still, it's interesting perspective on how little variability there actually is on earth's surface. \n\nThe roundness is actually more illuminating because the squashing is usually show as being more highly exaggerated. You likely wouldn't be able to see the difference unless you were measuring with a precision device.",
+                            "score": 8,
+                            "author": "movieguy95453",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There is an xkcd.com \"what if?\" discussion that compares the earth to a bowling ball.\n\nMy suspicion is that the behaviour of rock under pressure, that is gravity basically, limit the height of mountains in addition to the erosive effects of wind and water. Mars with its thinner atmosphere and lower gravity has allowed the variation to range from -10km to +10km from the global mean radius of 3369km. Mars is gritty! \n\nhttps://mars.nasa.gov/mgs/sci/mola/dec10-99rel/global_paper.html",
+                                    "score": 3,
+                                    "author": "drsoftware"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 7,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Your ships navigation was probably giving GPS ellipsoid heights - not gravimetric (geoid) or sea level (it's own complicated datum). Usually works just fine in the open ocean..",
+                    "score": 2,
+                    "author": "Remote7777"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They pretty much didn't.  Until the modern era, navigation was something of a guess.   You headed off in the right general direction based on the compass and the captain and navigator's job was to finetune that guess as you went along using navigation aids such as the stars and known landmarks, as well as tools like the sextant and compass, to correct your aim on the move.\n\nThe captain might carry the course in his head but he'd also use his tools to ensure he was on course, and the mastery of those tools was half the reason for the captain's existence and was often a carefully guarded secret, especially for the early Portuguese and Dutch navigators who could sell their services for a small fortune in the early days of deep sea sailing.\n\nAnd that, of course, presupposes that you have such tools.  The Vikings didn't.  They basically threw themselves into the sea aiming for a particular landmass and praying to whichever of the gods rulled over navigation to wind up in the right general area, then crept up and down the coast until they found their specific destination -- if they ever did.  Greenland was discovered by a Viking aiming for Iceland and missing completely..\n\nThere were plenty of examples of poor navigators getting way off track.  When Marquis de Lafayette first came to the New World his ship, which was shooting for New York, wound up I believe off the coast of South Carolina.  Someone made a bad guess and didn't know the stars as well as they thought they did. These things just happened, pretty much right up until the invention of the wireless radio.\n\nThe discovery of the magnetic North Pole helped a lot too of course, but it wasn't really until the wireless stations allowed a ship to correct its trajectory based on the position of other ships and landmasses from hundreds of miles away that we began to really master navigation of the sea.\n\nWith wireless we could begin to triangulate the exact position of a ship and give it several other sets of eyes to make sure its captain is not asleep at the switch and keep it going along established sea lanes.  That allowed sea lanes to be way more predictable, and basically shaped modern deep sea navigation as it is today.\n\nBTW  it's the fact that the Titanic sinking happened in the dawn of this era that made it so poignant, because other people could warn Titanic about the berg, because of *Californian* so closeby but with no night watch on their radio, because of *Carpathian* steaming hopessly at its best possible speed towards the stricken ship despite no hope of getting there before it's too late but still being in time to save hundreds of passengers in the boats, and because people could talk to Titanic right up until the moment the power failed which they'd never really been able to do with a deep sea wreck before.",
+            "score": 4,
+            "author": "imgrandojjo"
+        },
+        {
+            "level": 0,
+            "comment": "Others gave good answers but I need to point out that GPS gives you a 3D position in the world (along with the current time). As such it doesn\u2019t care about the Earth\u2019s shape and this is why satellites and missiles all use GPS just fine. It\u2019s the GPS mapping software that maps 3D position to a map that needs to take the irregularities into account.",
+            "score": 3,
+            "author": "y-c-c",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think the question was asked a little obtusely as in the question he presupposes that the navigation systems presuppose a perfect sphere.\n\nThe thought process probably being that if you start with a perfect sphere and then stick a map on it your software might think you are flying at some points.\n\nThis is probably a much deeper topic than it seems at first glance... We all know any 3D program you can just plop down a sphere in seconds, what math does Google use to create their projection of the \"oblate spheroid\" and how was the topographical data even sampled and interpreted.",
+                    "score": 2,
+                    "author": "V4NT0M",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sure. I mean, I understand the question, but just wanted to note the difference between what GPS does, versus what GPS mapping software does. A lot of people don't actually know how GPS works (e.g. it doesn't use triangulation) and think it only works in 2D.",
+                            "score": 2,
+                            "author": "y-c-c"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The other comments answered this question extremely well, but one thing to add - degrees, minutes, and seconds isn\u2019t very precise, certainly less so than GPS timing, for example. Depending on what part of the world you\u2019re in, a second is only accurate to about 80-100 feet. For precision purposes, you will need to work with decimal degrees of a second. Something like 42 15 07.123, for example.",
+            "score": 2,
+            "author": "papermachelife"
+        }
+    ]
+}

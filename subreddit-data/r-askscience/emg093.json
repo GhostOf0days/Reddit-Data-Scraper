@@ -1,0 +1,1421 @@
+{
+    "id": "emg093",
+    "score": 17821,
+    "title": "Why haven\u2019t black boxes in airplanes been engineered to have real-time streaming to a remote location yet?",
+    "author": "systemctl_status_me",
+    "date": 1578604194.0,
+    "url": "https://www.reddit.com/r/askscience/comments/emg093",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Why are black boxes still confined to one location (the airplane)? Surely there had to have been hundreds of researchers thrown at this since 9/11, right?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 4855,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If you find it... What happened to Malaysia Airlines Flight 370? if there was a transmission pilots could not turn off sending out coordinates, altitude, the basic stuff, would it not help locating it? Just minimal bandwidth usage, doesn't need to update more than every 30 seconds or so. Black box would still be required for storing the bulk of the data though.",
+                    "score": 2285,
+                    "author": "revolving_ocelot",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 1789,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If all you need is low-rate position information, 9600 bps L-band Iridium could be a good choice, and the omni antenna is trivial to mount and might not require a STC.  There's excellent world-wide coverage, although the poles are always a problem.  I've worked on military drones that used this as a BLOS (beyond line-of-sight) communications channel to get aircraft location and send waypoints.\n\nIf you move to a higher frequency Ka/Ku satcom system, you'll end up with a much more complicated antenna, an inertial nav system to point the antenna, an antenna power supply / controller, and approval from the aircraft manufacturer and the FAA to fly the thing.  You'll get data rates pushing several hundred kbps (until the plane rolls or yaws faster than the antenna can cope with, or there's lots of precipitation in the air).  The poles are still a problem.  And you just lost a bunch of space in your avionics bays and added drag on the plane that will screw with your fuel economy.\n\nIf you only fly over land, and over land that has cell phone infrastructure, you could go with that.\n\nAnd if you're old school, most over-water flights already have HF ARINC data links, but that's subject to the usual joys of HF - limited bandwidth, intermittent propagation.\n\nEdit to add: This might be silly, but there is excellent satellite reception of maritime AIS data.  If all you want is a plane to reliably send its lat/long/altitude/course/speed, you might be able to get by with that.  It's a 160 MHz signal, and doesn't require much power to reach a satellite.",
+                                    "score": 24,
+                                    "author": "grumbleboy",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Why are the poles a problem?\n\nIridium satellites are on a polar orbit, you'd think the coverage at the poles would be *better* than anywhere else due to the increased density of satellites overhead at any given moment.",
+                                            "score": 4,
+                                            "author": "oatscoop",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Feasible, yes. But you are asking very expensive satellites to reserve a very significant portion of their overall bandwidth for this. It is technically feasible, it is not economically feasible.\n\nFwiw it's around $10,000 per pound just to get something into space, that's not even counting the cost of the system itself. And you need a LOT of those systems. There are over 300,000 cell towers in the US alone and the US only covers 7% of the land area (not even counting water)",
+                                    "score": 606,
+                                    "author": "Snoman0002",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;There are over 300,000 cell towers in the US alone and the US only covers 7% of the land area\n\nThere are 300k because of the number of users, not because of coverage. Many many many towers overlap and there are 4 major carriers overlapping as well. A constellation capable of handling low bandwidth real time telemetry data is already being launched at a cost of roughly 3000 dollars per pound. The airlines would just need to pay for access, which they likely won't because they are happy with the current black box system.",
+                                            "score": 243,
+                                            "author": "guff1988",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Airlines will get access to provide streaming wifi to customers and get customers to pay for the bandwidth and more, so it will be free essentially.",
+                                                    "score": 98,
+                                                    "author": "koalasonic",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "And assuming the satellites are using phased array antennas to direct signals efficiently you'll basically know where every plane is just from its WiFi signal, much how people are tracked through cities by their phones MAC address",
+                                                            "score": 52,
+                                                            "author": "Trif55",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "why does that matter? Planes already beacon out there location",
+                                                                    "score": 18,
+                                                                    "author": "Frothar",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "To satellites?",
+                                                                            "score": 7,
+                                                                            "author": "Trif55",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "The ones that have WiFi signal and streaming services essentially do. That's how they reconstructed part of the Malaysia Airlines Flight 370 after it's radar was shut down. They guys at 'Stuff You Should Know' Podcast have a great episode on it if you're interested.",
+                                                                                    "score": 35,
+                                                                                    "author": "GipsyKing79",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "No satellite are currently using phased array antennas, every communications satellite in orbit is using a reflector/feedhorns.",
+                                                                    "score": 3,
+                                                                    "author": "bigbaltic",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "This would be fine for some things, but the total volume of data in a black box would be too great to constantly stream (to say nothing of the fact it would somewhere to stream it to) unless the bandwidth available was far in excess of what would be expected for the remaining amount to be used commercially on board by customers.",
+                                                            "score": 17,
+                                                            "author": "CyclopsRock",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Maybe not all data. But why not GPS data. Then at least you can find the damn plane and the black box to recover everything else",
+                                                                    "score": 20,
+                                                                    "author": "[deleted]",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "So now you're back to needing something more similar to the 300k \"towers\" due to the number of users",
+                                                            "score": 3,
+                                                            "author": "MeshColour"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 318,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;SpaceX currently prices around $2500 per pound and it's decreasing all the time.     \n\n     \nCan anyone do it? Like... can I get Elon to send a pound of soft cheese up there? Something like a very good sized Camembert. I like the idea of a pound of soft cheese just thwacking into the side of the ISS.     \n     \nEdit: I reckon i could totally get $2,500 saved up.",
+                                                    "score": 32,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You'd be looking to do what's called a \"ride share\". There are companies that organize launches for multiple customers on a single rocket. You might need to call your cheese a \"cubesat\" for them to take you seriously, and it'll need to be delivered inside a container that can handle a few G's of acceleration.",
+                                                            "score": 21,
+                                                            "author": "maccam94",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Are you saying my cheese can't handle a few G's!? I'll have you know my cheese may be soft, but it can take it like the rest of them.",
+                                                                    "score": 4,
+                                                                    "author": "Khazahk"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "People send up cube sats all the time, like 5 inches cubed. Googling looks like the going rate is like 40k to launch though.",
+                                                            "score": 7,
+                                                            "author": "ca178858"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "There are a lot of rules around what you can send into space (and what can be safely included on a rocket).\n\nIf you can get your cheese to adhere to those rules (which presumably involve it not thwacking into the side of the ISS), then there are definitely options for private people to launch stuff into space.\n\nIt's probably a bit more expensive than what spaceX is asking, but there are a bunch of companies letting you launch cubesats into LEO.",
+                                                            "score": 6,
+                                                            "author": "Silver_Swift",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "i imagine you could but i also imagine there is already a large queue of other things to go up before your cheese",
+                                                            "score": 20,
+                                                            "author": "iStorm_exe",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Something like Starlink in s few years would be perfect for this.  Cheap satellite high bandwidth connectivity.",
+                                            "score": 33,
+                                            "author": "Roses_and_cognac",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 28,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That data is already transfered. ADS-B already does that. I pay $1.50 a month and my app shows me that for nearly all aircraft flying. That isn't what we are talking about, the flight data would be microsecond reports from hundreds or thousands of sensors across the aircraft (like the black box records)",
+                                                    "score": 28,
+                                                    "author": "Snoman0002",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "ADS-B doesn\u2019t work outside of VHF radio range, certainly not over oceans.  The flights your app shows in the middle of the ocean are estimates based on trajectory and flight plan.\n\nOtherwise every flight track app company like Flightradar24 could have told us exactly where MH370 is",
+                                                            "score": 33,
+                                                            "author": "2nd-Reddit-Account",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I didn't mean the full black box data. Only data that helps in recovering the black box. But you say it's already done, so that's fine (except for that malaysia plane).",
+                                                            "score": 6,
+                                                            "author": "wrecklord0",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Would microsecond reports be necessary? It seems like 1 Hz data would still give you close to the full picture. I can't see 1000 sensors measuring phenomena that are changing significantly within microseconds. And even for things like vibration, which do require high speed data acquisition, you can do the filtering and processing locally. So transmitting every data point isn't necessary.",
+                                                            "score": 10,
+                                                            "author": "jugglesme",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Unfortunately not on the 1hz data. I work with AC engines and even 20Hz data is difficult to work with when trying to find microfaults that are causing larger issues.",
+                                                                    "score": 8,
+                                                                    "author": "Dunbagin",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "We're just trying to find the entire plane, a la MH370. We can get the microsecond data to study engine faults with once we find the black box.",
+                                                                            "score": 4,
+                                                                            "author": "CitricBase",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 44,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Maybe. There are claims, but it's still seen whether they can pull it off.\n\nIf it comes, in a decade this will be a non-issue. Today though, the economics don't work.",
+                                                    "score": 61,
+                                                    "author": "FireITGuy",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 17,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 7,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Due to the physical nature of satellite connection, I'm pretty sure speeds couldn't realistically be that high. I was seeing optimal latency predictions around 30ms, which is around what current wire speeds are in the US.\n\nEdit: changed latency from between 35 and 75 to around 30ms, but this claim is still not backed up because it's based on a new protocol that no information is known of. I'm not hating on starlink, and I realize latency won't be an issue for people that aren't gaming on their connection, but that's one of the first things I think of when I consider an internet connection.",
+                                                    "score": 18,
+                                                    "author": "shonglekwup",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 38,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "do you have a link to the 'base stations' plan? i've never heard of that and no offense but you didn't explain it clearly enough for me to understand.",
+                                                                    "score": 5,
+                                                                    "author": "atomofconsumption",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Remember though, that bandwidth is expected to be used for a variety of services. Using it to transfer the very substantial amount of aircraft date removes that bandwidth for something else. Especially considering the statistically small number of cases where you actually need that info (because you can't get it otherwise).",
+                                                    "score": 6,
+                                                    "author": "Snoman0002",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Why are you comparing cell towers to satellites?  They are not even remotely comparable.",
+                                            "score": 3,
+                                            "author": "Gotitaila",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You should tweet it out to Elon. He would love to have a good reason to have starlink logged to every airliner on Earth. It would also give him some amazing publicity when he's able to recover something from a situation like the next mh370",
+                                    "score": 36,
+                                    "author": "OrgyMcBloodyFace",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "There\u2019s a network of satellites over the North Atlantic utilising ADS-B for separation and aircraft monitoring. Surely they could be utilised to receive telemetry?",
+                                    "score": 4,
+                                    "author": "le_samps"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Transmit line of sight to another aircraft when possible, perhaps? Some data is better than no data. Or broadcast as much as possible, like sending out a last ditch SOS?",
+                                    "score": 4,
+                                    "author": "TheRealBOFH"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That's basically what ADS-B is. It transmits location, heading, speed, altitude, etc. to allow aircraft and ATC to know where everyone is (and who everyone is) without requiring constant active interrogations from secondary surveillance radars on the ground, or TCAS on other aircraft.",
+                            "score": 73,
+                            "author": "oversized_hoodie",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Problem is that ADS-B has limited range, which you probably know, but OP might not.",
+                                    "score": 36,
+                                    "author": "dawnbandit",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Altitude, heading, airspeed are all transmitted at a minimum when in range of ground radar, and in some airborne anticollision stuff.... it doesn't help if nobody listens to it though.\n\nUnfortunately, none of that on its own is useful. In determining why a plane crashed, you want voice records at a minimum",
+                            "score": 59,
+                            "author": "Jcheung9941",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There are many more ADS-B receivers in the world than there are ground radars, and their land coverage is extraordinary large thanks to cheap [DYI kits](https://flightaware.com/adsb/piaware/build) (a Raspberry Pi and a $50 antenna). All of this data gets fed into sites such as FlightAware and FlightRadar24.\n\nThe problem is not that nobody listens -quite the contrary- but it\u2019s that ADS-B transmits far fewer parameters than get recorded on a Flight Data Recorder (FDR), the second of so-called black boxes. Which is what prompted the OP\u2019s question.",
+                                    "score": 36,
+                                    "author": "TheAviationDoctor",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Some other commenter said that position, speed and heading is always transmitted from the plane and this can't be turned off by the pilot. Why don't we know then where the crashed Malaysian plane is?",
+                                            "score": 8,
+                                            "author": "oldsecondhand",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Because, as I mentioned, ADS-B has excellent land coverage (a receiver typically has a ~150-mile line-of-sight coverage), but no oceanic coverage.\n\nMH370 was perfectly tracked (not that anybody cared until the next morning) until it left land and headed south into the planet\u2019s largest body of water.",
+                                                    "score": 44,
+                                                    "author": "TheAviationDoctor",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Funny how a little thing like the Pacific Ocean can really rain on your parade.",
+                                                            "score": 15,
+                                                            "author": "Zenith_Astralis",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Ugh, air traffic control lost the plane over the gulf of Thailand when the transponders were shut off (the same time the satcom died), it was *military* radar that picked the plane back up and saw it fly toward the Bay of Bengal, and we only know it crashed into the southern Indian Ocean because the satcom turned back on and recorded a ping time to the plane for the next six hours.\n\n\nCorrect me if I\u2019m wrong but I believe the gulf of Thailand and the entire Malaysian peninsula have ADS-B coverage",
+                                                            "score": 5,
+                                                            "author": "sgtshootsalot",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yes, that\u2019s exactly what happened, and again the plane was tracked (though by primary radar only after its turn) up until it was over the ocean. I was clarifying for the parent that the ADS-B flight data is not picked up over the ocean (notwithstanding the facts that primary radars won\u2019t work either at long range, nor will ADS-B in any case if the transponder is off).",
+                                                                    "score": 3,
+                                                                    "author": "TheAviationDoctor",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That\u2019s one of very few flights that crash and aren\u2019t found. I mean with satellites and tracking and everything it really is rare for a whole plane to just disappear.",
+                            "score": 36,
+                            "author": "StickInMyCraw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You don\u2019t get it, if we spend millions to put a satellite grid up and continuously monitor a subsection of parameters in a public way then armchair experts could get a 4 day lead on air crash investigators who would want to see the black box and wreckage anyway. Then every decade or so we could say \u201chuh, seems for some reason the captain pulled the fuse on the transponder as well as pointing the plane in the wrong direction\u201d. \n\nIsn\u2019t it obvious why we need this now? \n\nIn reality the carrier or national would want the recordings encrypted between plane and them because the data can be mined by someone elses spy agency, and we would be in exactly the same position - of the true experts saying \u201cI\u2019m sorry, until we have analysed the wreckage we won\u2019t be making a statement\u201d",
+                                    "score": 26,
+                                    "author": "created4this",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In the case of aircraft that disappear at sea, knowing the point of impact with the ocean isn't going to make it much easier to recover the black box, especially if the aircraft was traveling fast, or nose down.  It is likely that MH370 broke up on impact, and all of the debris was carried quite a distance from the point of impact, making it nearly impossible to locate.  Additionally, unlike shipwrecks, which tend to be large pieces of the ship, aircraft wreckage tends to spread out more, and blend into the ocean floor.  It took almost 3 years to locate the black boxes of AF447, which hit the ocean at a very low speed, and remained largely intact.  If MH370 hit the ocean at cruise speed like most experts speculate, there likely isn't anything large enough to be located by sonar, and the wreckage may have been passed over multiple times by search teams, or dispersed throughout the ocean.",
+                            "score": 28,
+                            "author": "Tornadic_Outlaw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That\u2019s not actually true. Knowing the point of impact allows you to calculate the possible resting place to a much higher degree of accuracy; with mh370 the search area of ocean floor was so huge because they had a massive potential impact area and then trying to figure out where currents might have pushed the plane made things really complex.",
+                                    "score": 7,
+                                    "author": "phatelectribe",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Aircraft already do this via protocols such as ADS-B, satcom, air traffic control, and ground-based radar. Regardless, shot still happens. Ie. Flight 370.",
+                            "score": 8,
+                            "author": "sanmyaku"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The story they pieced together from when the plane was actually pinging location is quite honestly haunting. \n\nFrom what I\u2019ve read, the pilot was intercepted at an air traffic control tower and radioed to with no response coming from the plane. It then immediately disappeared from radar, did a sharp turn southwest and the next time it was seen was just heading on a straight shot towards Antarctica. The pilot brought the plane up to an elevation above what was considered safe on the turn, arched the plane and killed every passenger aboard by destabilizing the cabin pressure.\n\nWhen he turned the automated/full systems back on to re-stabilize, the plane\u2019s location pinged enough times for them to chart a line graph course from it. The plane\u2019s last known location was far out in the southern sea before Antarctica and then shot straight down into the ocean, probably running out of fuel.\n\nIt\u2019s not known why this was done, and as far as we know that black box may never be recoverable as it\u2019s in unexplored, no traffic deep southern sea.",
+                            "score": 14,
+                            "author": "adammcchill",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; It\u2019s not known why this was done\n\nThey kept it under wraps for a long time but the answer is that the pilot had mental health issues.",
+                                    "score": 15,
+                                    "author": "Vet_Leeber",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "As I recall, the Malaysian government withheld information about the pilot's troubled personal life and suicidal ideation in order to avoid embarrassment.\n\nHonestly, not telling people just made them look worse.",
+                                            "score": 12,
+                                            "author": "BrainEnema",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;  the Malaysian government withheld information about the pilot's troubled personal life and suicidal ideation in order to avoid embarrassment.\n\nYeah that's correct, they vehemently denied it for a long time before it went public.",
+                                                    "score": 8,
+                                                    "author": "Vet_Leeber"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 15,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 17,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Theres a great book called crash detectives that posits a sudden decompression while the captain was in the bathroom and malfunctioning oxygen mask was the culprit. Hypoxia can cause exactly this kind of accident. See the helios airways crash. Im not really sure which theory I believe but having extensively studied this accident and many others I think both theories are possible and we may never know the truth.",
+                                    "score": 15,
+                                    "author": "I_had_the_Lasagna",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "How do you explain the FSX missions into the middle of the Indian ocean with anything other than pilot suicide?",
+                                            "score": 11,
+                                            "author": "Jodo42",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It doesnt. I recall reading that the flight simulator data was somewhat fragmented and summed up to just some sets of coordinates. I cannot provide a source for that however. The podcast linked is more recent than the book i mentioned so ill have to listen to that. Theres still probably not going to be any definites in this accident largely do to the malaisian air force not reacting apropriately or in a timely manner.",
+                                                    "score": 7,
+                                                    "author": "I_had_the_Lasagna",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "you're right about the pilot's flight sim he owned at home.\n\nIt was surmised that the pilot had actually ran the exact sim that the Malaysian flight would take but they were also able to see the pilot basically just loaded the very ending of the sim, rather than play through it. ~~apparently in the sim &amp; real life~~, ~~once a plane reaches a certain altitude~~ the plane wasn't destroyed because of altitude, the pilot flew the plane as far as he could until he ran out of fuel. the flight sim and the real flight mirrored each other. the detectives thought that the pilot was trying to leave a message with that.\n\nedit: I had some details wrong, I went back and read the article and this is more or less what happened near the end\n\n'Either way, somewhere along the seventh arc, after the engines failed from lack of fuel, the airplane entered a vicious spiral dive with descent rates that ultimately may have exceeded 15,000 feet a minute. We know from that descent rate, as well as from Blaine Gibson\u2019s shattered debris, that the airplane disintegrated into confetti when it hit the water.'\n\nhttps://amp.theatlantic.com/amp/article/590653/\n\nit's a long article, but it's a good one.",
+                                                            "score": 7,
+                                                            "author": "Mattlh91",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "They most likely all passed out and the plane flew until there was no fuel left. At cruising altitude you have about 12 seconds of useful consciousness after a decompressive blowout.",
+                                                            "score": 5,
+                                                            "author": "BlackFaceTrudeau"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The same way that I'm a pilot with a (much cheaper) FSX setup and I have countless flights taking off from the local area and flying in various directions with no overall goal or end in mind. I wanted to try out a new plane, or a new instrument panel, do a random departure or check out a new area, turned in a new direction, microwave went off, hit auto pilot, had some ramen, took a phone call, oh wait? It's still flying? A not insignificant portion of my flights begin in places I fly in real life and end in the middle of nowhere with no reason to be there. Pilot suicide is a single theory that works. Rapid D with one pilot out of the seat is another. To me a catastrophic fire is the most likely answer. Far more plausible and it explains everything that happened perfectly.",
+                                                    "score": 11,
+                                                    "author": "theyoyomaster",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "How would a fire explain the weird flight path deduced from satellite 'pings' after the transponder was turned (mostly) off?",
+                                                            "score": 5,
+                                                            "author": "Lampshader",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Pilot incapacitated and flying on autopilot with system failures. The only deliberate turn was the first one with pointed in the direction of a favorable airport. After that there was no communication and systems, like the transponder, were manually shut off which is consistent with a fire. Everything beyond that can be explained by damaged systems and pilot incapacitation. \n\nI'm also not saying that pilot suicide is impossible, it is just 100% not a proven fact and it's a real slimeball move to slander a dead man by calling it *the* answer based on circumstantial evidence when there are other completely valid theories.",
+                                                                    "score": 15,
+                                                                    "author": "theyoyomaster",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The issue with making it impossible to turn off is that if it breaks or catches fire pilots need a way to disable it. The majority of systems aren't anything pilots can just flip a switch and turn off, the vast majority require obscure circuit breakers to be pulled to do so. What happens if a wire rubs in the system and starts to smoke, is it \"well the entire plane now needs to burn because we can't disable it but at least we know where it crashed?\"",
+                            "score": 15,
+                            "author": "theyoyomaster",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 9,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I work in broadcast transmission for television. We have units that are able to record internally while transmitting at a delay. Would it not be feasible to have a black box unit that still records internally while at the same time transmitting what it\u2019s able to? Even if you haven\u2019t got the full story prior to finding the black box, you should have a useable portion of it. Would that work?",
+                    "score": 71,
+                    "author": "brackfriday_bunduru",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is essentially what happens at the moment. The aircraft broadcasts ADS-B continuously which contains a small amount of telemetry, but the rest is recorded to the black boxes.\n\nWhat people are talking about is transmitting more information more reliably. There's no real hope or need to transmit *all* the information though - a system which broadcasts to satellites to help the black box be located in the event of a crash would be the next easy gain probably.",
+                            "score": 25,
+                            "author": "F0sh",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What's more a lot of  planes have in flight wifi and internet connection. Why can't the airline compress and encrypt flight data and upload at intervals? Make it a requirement for allowing ISP to put the transceivers on the plane at all. This day and age no planes should just be able to \"disappear\" and we never find out what happened.",
+                            "score": 63,
+                            "author": "agent-V",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Hi! So my job 100% revolves around integrating internet capabilities into aircraft. Both civilian, military, and commercial. These systems are often very slow and massively unreliable, not the sort of thing you want life or death data to be reliant on. \n\nAnd the biggest reason these systems aren't used to live steam aircraft data is because.... they're expensive! The service plan alone for a single aircraft can be upwards of $30,000 PER MONTH based on how much satellite bandwidth they use. I doubt the airlines want to spend thousands of extra dollars a month sending data over their satcom internet that they may never even utilize.",
+                                    "score": 11,
+                                    "author": "Aero-Space",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; What's more a lot of planes have in flight wifi and internet connection. Why can't the airline compress and encrypt flight data and upload at intervals? \n\nIt's not very reliable and they can't guarantee coverage at this point. About 25% of the WiFi-equipped flights I've been on don't have working WiFi, and the others tend to cut out randomly.",
+                                    "score": 40,
+                                    "author": "dalgeek",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 52,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Going this way you'll have blackboxes in your car (yes it's coming but not mandatory) way before you have them in airplanes, cheaper, easier to service, way more chances to be useful.",
+                                    "score": 4,
+                                    "author": "m8r-1975wk",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It\u2019s also the case that airliners rarely crash, so the cost of live-streaming multiple lines of data from hundreds of daily flights is simply not worth the cost. \n\nFurther, the data recorders are usually found, with the data undamaged. It just occasionally takes some searching before they are found",
+                    "score": 14,
+                    "author": "Tempest-777",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Is there really not enough bandwidth to just ping a set of coordinates every few minutes?",
+                    "score": 23,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 43,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That already exists - transponders broadcast latitude, longitude, altitude, heading, speed, plus tail number and a few other bits of information at 1 Hz using ADS-B.\n\nOf course, just because it's broadcasting doesn't mean anyone's listening, since it's just line of sight radio transmissions. Other aircraft in the area with ADS-B in support (which I *think* should be all commercial airliners) will receive it, along with ATC stations, and anyone else who happens to have an ADS-B receiver, but that's not likely out in the middle of the ocean.",
+                            "score": 30,
+                            "author": "Mistercheif",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Once Starlink goes live will the bandwidth problem disappear or is there simply too much information to push downstream?",
+                    "score": 16,
+                    "author": "HoodooGreen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "# tl;dr\n\n***The short answer: Yes, starlink likely resolves the issue and there would be enough bandwidth for airplanes to stream their black box data. BUT the stream would not replace the blackbox, just act as a backup/secondary/alternative***\n\n# The long answer\n\nNow for the long-winded technical details for those interested. Sorry it's so long.\n\nFor context, the two major technologies used to transmit avionics data is [ARINC-429](https://en.wikipedia.org/wiki/ARINC_429) and [MIL STD-1553](https://en.wikipedia.org/wiki/MIL-STD-1553). For the tech savvy, 429 is similar to UDP: you send data out and don't care if the recipients get it (it's not a reliable protocol). 1553 is like TCP because it IS reliable because it's a command-and-response protocol. \n\n# Example Avionics:\nFor the examples below, I'll assume a nominal amount of avionics equipment. Typical avionics you see on an aircraft include:\n\n* AHRS (Attitude Heading Reference System)\n\n* ADC (Air Data Computer)\n\n* GPS (The kind you know and love)\n\n* INU (Inertial Reference Unit; kind of like a back up of AHRS and GPS)\n\n* Autopilot \n\n* Engine(s)\n\n* Control Surfaces (ailerons, elevators, rudder) - these aren't necessarily electronic. Sometimes they're hydraulic/pneumatic but there's still usually some device that's recording/reporting torques on servos and whatnot\n\n* TCAS (Traffic collision avoidance system)\n\n* ADS-B\n\n* Landing gear\n\n* Radio Altimeter (collects height above ground)\n\n* Doppler radar (collects speeds/accelerations relative to ground)\n\n* Weather radar\n\nThe most complex aircraft systems I've seen had about 40-50 avionics devices transmitting data that would be recorded by the black box (and that includes the redundancy of devices)\n\n\n# The important parts:\n\n429 and 1553 are simple enough that we can easily compute how much data they use, and I'll assume 50 devices as mentioned above.\n\n\n# ARINC-429\n429 transmits everything with 32 bit words, the first 8 of which is a 'label'. Each label describes a unique piece of data. For example, if the label is equal to the number 100 then perhaps it is \"True Airspeed\". Any time label 100 is seen on that same bus, it is going to be true airspeed.\n\nThe confounding factors for 429: Since labels need to be unique, and there's lots of data to transmit on an airplane (definitely more than just 256 pieces of information), you need multiple ARINC-429 buses to accommodate the data. As originally designed, in fact, you need an ARINC-429 bus for each piece of avionics equipment that transmits data.\n\nARINC-429 operates at a top frequency of 100 Hz. If there are 50 devices transmitting all 256 labels (which are each 32-bits) at 100 Hz, that comes out to 50 devices \\* 256 labels * 32 bits each * 100 = 26,214,400 bits per second. This comes out to ***4.883 Megabytes/second***. (1 Megabyte = 1024 * 1024 bytes)\n\nBus redundancy just multiplies it, and most airplanes are only dual redundant, so 9.766 MB/s is the upper bound of data on 429.\n\n# MIL STD-1553\n\n1553 allows a Bus Controller (BC) and 32 Remote Terminals (RT) on a bus (or is it 1 BC and 31 RTs....I forget). Let's just assume a BC isn't an RT and that we have 32 RTs. Also for simplicity, let's assume we only care about RT-to-BC communications. BC-to-RT is likely duplicate data, and RT-to-RT certainly is. A black box participates as a \"Bus Monitor\" and just listens/records everything on the bus.\n\nLuckily, up above we figured we had 32 devices and that's where one 1553 maxes out, so we'll just assume one 1553 bus. The BC requests data from RTs, and it instructs the RT where to send that data by indicating a Subaddress (SA). A single RT/SA message can contain up to 32 pieces of information that are each 16 bits. There are a total of 32 SAs.\n\nSo we have 50 devices * 32 RTs \\* 32 SAs * 32 Words per message * 16 bits per word = 26,214,400 bits to represent the *entire* bus at an instant in time. The maximum frequency on 1553 is 50 Hz, so this turns into ***156.25 MB/s***\n\n# Conclusion\n\n*I cannot stress enough how these are upper bounds - even large aircraft do not have saturated 429/1553 buses. Most devices don't send data on all labels or RT/SA pairs, and most messages are not at the max data rate. In reality, 1 MB/s is likely sufficient. The calculations are to offer rough orders of magnitude.*\n\nThe upside: In a realistic setting we're talking about data rates that are less than a 1080p stream, and there are more people streaming 1080p than there are planes in the sky. Starlink's ultimate goal is to offer a 'normal' internet experience to many people (as opposed to geostationary internet satellites which have low data rates and high latency, Starlink's goal is meeting the needs of average internet users in the US, including streaming movies at low latencies).\n\nThe downsides: \n\n1. If the blackbox stream-transmitter is the first thing to die, or it loses connection (like if the plane turns upside down or spins too fast to transmit data) then you'll never have all the information and would have to revert to the blackbox itself. So it can't replace a blackbox. But it can be a backup/secondary/alternative. \n\n2. The data also has to be stored, and thousands of planes could be petabytes or exabytes of data (really depends on how much it needs to persist). Not impossible, but certainly expensive. \n\n3. There's also timing considerations. Since we already know the stream isn't replacing a blackbox but just acting as a backup/secondary/alternative, we don't need to worry about real-time issues. As long as the transmitter time tags based on the aircraft's system/GPS time the data can be properly ordered on the receiving end.\n\n*Disclaimer: I changed the number of devices I used for estimates (to a higher number) part way through. I tried to edit everything but I might've missed something*\n\n# Addendum\n\nAfter reading other responses throughout the thread, I wanted to point out that this would give you the ability to 'see' what the aircraft equipment sees, not just position data (as others have stated can already be done via ADS-B and other technologies), which is an important aspect of a blackbox.",
+                            "score": 106,
+                            "author": "rhazux",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 15,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "In reality a lot of this data comes from sensors which will be quite noisy. Whether you can compress it significantly depends on whether you're willing to sacrifice accuracy in the data sent to satellite.",
+                                            "score": 16,
+                                            "author": "F0sh",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Wouldn't that buffering mean you'd lose 30\u201360 seconds of data right before a hypothetical impact? Wouldn't that potentially be the most important data?",
+                                            "score": 3,
+                                            "author": "konaya",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That might change once Starlink and other megaconstellations become operational. Especially over the ocean, where used bandwidth is probably minimal.",
+                    "score": 11,
+                    "author": "Samuel7899",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah I've worked with a jet engine manufacturer and the amount of telemetry they produce is staggering. Put up to 4 of them in a plane and you simply can't stream that much data from that high up.\n\nSo there's a lot of sampling and throttling, but I believe all the base data is retained on board. I imagine a black box stores TBs of data a flight.",
+                    "score": 3,
+                    "author": "Skeeter1020"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In some cases, data is already streamed live. For example, some aircraft engines stream data to the engine manufacturer during flight, so the manufacturer sometimes knows about potential problems before the flight crew do.",
+            "score": 531,
+            "author": "Beanbag_Ninja",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[Like ACARS?](https://en.wikipedia.org/wiki/ACARS?wprov=sfti1) I remember they had incoming system errors when Air France 447 crashed, basically a reading how the systems failed one after another.",
+                    "score": 110,
+                    "author": "HimikoHime",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No not exactly. ACARS is a system to send messages and request data such as takeoff performance numbers and communicate via text with your dispatcher for weather products and rerouting planning. \n\nYou could use it to type out something like \"hey we have this item of the plane that just failed\" but it's not an automatic system diagnostic reporting tool like you are likening. It doesn't talk to the airplanes systems that way. It can give you automatic weather for stations you pass over but really it's a glorified text messaging system.",
+                            "score": 42,
+                            "author": "HeroOfTime_99",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; but really it's a glorified text messaging system.\n\nI mean, the internet qualifies as a glorified text messaging system too. It's all bytes under the turtles.",
+                                    "score": 11,
+                                    "author": "f0urtyfive",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Acars is also used to downlink engine data and other system info. It can be configured to downlink a ton of stuff if enabled.",
+                                    "score": 9,
+                                    "author": "Washout22",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A black box is two data recorders, one that's recording real-time information about plane and one that's recording voice. \n\nThe information is useful after a crash, or after a near miss/emergency, but it's not particularly useful any other time. \n\nIt's hard to estimate how many planes fly a day, but based on FAA information on [faa.gov](https://faa.gov), just the US FAA handles: 16,100,000 flights a year (including international flights that enter FAA areas). That's 44,000+ daily flights. There are 5000 planes in the sky at any time at peak travel just in the US alone. \n\nIn 2019 there were 14 fatal crashes *globally.* \n\nThe amount of real-time data streaming you'd need to track even just the domestic commercial flights, plus cargo flights would be staggering. Streaming telemetry and voice from the entirety of a flight's transit would require massive amounts of data, storage and processing. And it's only needed those 14 times a year. \n\nThere are limited ways to transmit data from a plane, you've got terrestrial and satellite. Terrestrial wouldn't work, there are too many hops between towers. Satellite would be available, but someone would have to put the satellites up just to record flight data. If you've ever seen how crappy in-flight WiFi is, imagine how bad having to move the data from 16 million flights would be. \n\nYou couldn't rely on that transmission either, because it's another system to go down, satellites lose communication etc. \n\nThe flight data recorders and cockpit voice recoders are designed to survive 3400Gs and temperatures exceeding 1000\u00ba C (1830\u00ba F). \n\nThe NTSB has proposed cockpit image recorders as well, because control panels are now electronic\u2014when a plane crashed with an analog gauge it usually stayed on the last position at impact. LCD screens just break.   \n\n\n(A good overview is here [https://en.wikipedia.org/wiki/Flight\\_recorder](https://en.wikipedia.org/wiki/Flight_recorder))\n\nIn 2014 after the Malaysia flight vanished, there were pushes to make planes transmit their data or to eject from planes before crashes. \n\nHouse Rep David Price called for black boxes that would eject after Malaysia Flight 370 vanished. \n\n\"But he said the 9/11 Commission recommended after the terrorist hijackings in 2001 that planes carry ejectable \"black boxes\" to make them easier to find. Navy planes have carried them for years, and Transportation Security Administration was given $3.5 million in 2008 to study and test the proposal.\"\n\nWhich is good except, it's not moving along very well. The same article from that quote points out that F/A 18 Navy jets have black boxes that eject on impact detection, or when the ejection seat is triggered, and they float at well. \n\nIn many cases, you don't need a FDR and CVR to figure out what happened, though of course they're always helpful as they show you exactly how the crew and the plane reacted. In the 14 2019 incidents, one was an attempted hijacking . There was no crash, the hijacker was killed, so that's considered a flight-based fatality for some reason. Three were planes that overshot the runways. The reason for those crashes is almost always pilot error. \n\nThere was one bird strike (cause of crash, birds), one was a collision between two planes (cause of crash, collision), one plane hit the runway twice, banked, and hit a building. Passengers who evacuated via the wing-exits slipped on ice on the wing. (cause of crash, ice). One had a plane flying through thunderstorms.\n\nIn a few of them the cause of the crash was determined via FDR or CVR, and several were crew error. \n\nSo to answer your question, there haven't been a lot of researchers thrown at this because it's a problem that would cost an astronomical amount to implement and would only matter in those cases where the black boxes were not retrievable anyhow.",
+            "score": 426,
+            "author": "davidjschloss",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ejectable black boxes don't really make sense for  commercial aircraft without ejector seats to initiate. Pilots will always try and recover right up until impact so a pilot initiatied system won't work as no one \"gives up\" and an automated system will almost certainly won't work as many crashes occur with no untoward events prior to impact (CFIT etc)",
+                    "score": 46,
+                    "author": "AbsurdKangaroo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 9,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank your answer, its very detailed and why i m read all of them , i dont known.  Anyway i enjoy it.",
+                    "score": 20,
+                    "author": "kadirkayik"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are now satellites which receive ADS-B data over oceanic and other sparsely populated areas. Each aircraft transmits location and various flight parameters every few seconds. In the United States, the FAA made ADS-B transmitters a requirement for all aircraft in most U.S. airspace on January 1st, 2020. FlightAware has ADS-B satellite data, but currently charges a fee for access to it.",
+            "score": 1035,
+            "author": "KaptainKrispyKreme",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 355,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Saving this in case I'm ever flying a large passenger jet and it goes missing",
+                            "score": 120,
+                            "author": "davcox",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Lol the airplanes lining up to come into LAX is wild. You can tell there\u2019s a lot by eye, but I never realized how far out they queue them up.",
+                            "score": 14,
+                            "author": "themiddlestHaHa",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "First saw this same thing while driving out of Las Vegas at evening rush. It was an endless stream of jets spaced evenly apart just waiting for their turn to land. Makes you realize how saturated our airspace really is, especially at peak hours.",
+                                    "score": 3,
+                                    "author": "bulgee98",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So this is what the flight tracker app would use?",
+                            "score": 3,
+                            "author": "cutesymonsterman"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;ADS-B\n\nBut ADS-B isn't what a black box records. ADS-B transmits flight positional information, speed, heading, etc. and is used to show the nearby flights on CDTI.   \nThe black box records two things, flight data, and voice from the cockpit. It's often the voice that's the thing that helps piece together an accident, as you can hear pilot and co pilot communicating during an emergency. Flight data helps to figure out what control were being used, how the plane was reacting to those signals, etc.   \nCertainly knowing where a plane was going and when it disappeared from view is helpful, but it's not what a FDR records.",
+                    "score": 261,
+                    "author": "davidjschloss",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Unfortunately, the data link required to provide real-time cockpit audio to ground stations is probably unrealistic, nor would it be reliable in all regions.",
+                            "score": 54,
+                            "author": "oversized_hoodie",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It can also contain sensitive information which can be obtained by anybody, unless its encrypted",
+                                    "score": 21,
+                                    "author": "SAnthonyH",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I was thinking about this issue after hearing about another airplane crash and how beneficial the audio would be. Unfortunately the necessary bandwidth for audio is too much. But then I thought the aircraft could be fitted with some speech to text technology. That stuff is getting pretty good. Text files are a fraction of the file size.",
+                                    "score": 7,
+                                    "author": "Mac_and_Steeze",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "not necessarily real time needed.  highly compressed and encrypted bursts would suffice for a voice record capture.  potentially the current sat phone constellation would work, potentially might. need additional capacity.\nanother potentially available are the internet satellites, probably better than the sat phone.  several US carriers already have Internet.",
+                                    "score": 5,
+                                    "author": "traversecity",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is correct.  It should also be noted that \"flight data\" contains all variables that the Flight Management System (FMS) is using for calculations.  This is a staggering amount of data being captured on the millisecond level.  This not only includes their GPS and the position of the flight surfaces, but also data moving through thousands of sensors, such as pitot tubes, engine temps and pressures, and radar and other aircraft tracks.  The Black Box itself doesn't hold data for a long period of time but must overwrite it after a fixed period because it's so large.  For a central database to hold all this information for all aircraft real time would not be feasible at this time in our technological development.  It would take something like the entire Microsoft Cloud to achieve this, with a vast amount of bandwidth for transfer.  This is not only due to the vast amounts of data being collected, but the vast amounts of flights each day.\n\n[https://www.flightconnections.com/](https://www.flightconnections.com/)\n\n[https://flightaware.com/live/airport/KLAX](https://flightaware.com/live/airport/KLAX)\n\n[https://en.wikipedia.org/wiki/Flight\\_management\\_system](https://en.wikipedia.org/wiki/Flight_management_system)",
+                            "score": 7,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "While ADS-B transmits some data like aircraft position, it by no means transmits all the complex data that a flight data recorder does. The \"black box\" is there to capture many parameters with a higher rate so that small details can be observed. As others have pointed out an ACARS system is more akin to broadcasting actual aircraft system data, but it too does not have the bandwidth to transmit that much data that rapidly.",
+                    "score": 52,
+                    "author": "waterMyShrubs",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "ADS-B data doesn't come remotely close to the volume or value of information that flight data recorders and cockpit voice recorders contain.",
+                    "score": 19,
+                    "author": "787seattle"
+                },
+                {
+                    "level": 1,
+                    "comment": "I\u2019m gonna be real, ADS-B doesn\u2019t include flight specific information. You can get altitude and ground speed from it, but you can\u2019t get aircraft configuration data, flight control surface movements, radio communication, or anything else.",
+                    "score": 17,
+                    "author": "PM_ME_YOUR_PITOTTUBE"
+                },
+                {
+                    "level": 1,
+                    "comment": "How does a private company get access to publicly funded and acquired data like ADS-B, and then legally put it behind a paywall?",
+                    "score": 23,
+                    "author": "purgance",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Half of the internet and software in general is organizing and presenting data in a useful and intuitive way for a fee.",
+                            "score": 112,
+                            "author": "realnicehandz"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "There's nothing illegal about charging people something that they can otherwise get for free.  \n\nIn this case, it's not even just doing that.  It's storing the data, providing access to it, and providing an interface that presents it in something that would be far more usable to the average consumer than just real-time raw data literally yanked out of the air would be.\n\nIt would be like if a company downloaded and stored OTA Broadcast TV and streamed it whenever you wanted anywhere in the world (illegal for other reasons, but speaking hypothetically).   Technically what they are providing is something you *could* have received for free.  But they are providing value and incurring some costs to provide it in a different manner that some people might find worth paying something for.",
+                            "score": 60,
+                            "author": "SigmaHyperion",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The data is not publicly funded or acquired. Each plane pays for their transmitter. The private company has a bunch of receivers that receive the info in real time.\n\nThere's nothing stopping you from getting a receiver and getting the info on your own.",
+                            "score": 27,
+                            "author": "texag93"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "ADS-B is unencrypted broadcast data. Anyone can receive it. FlightAware charges you for the privilege of accessing some of the data they've received.",
+                            "score": 5,
+                            "author": "oversized_hoodie"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Bc their method of providing the data is proprietary. If you want it for free do it yourself.",
+                            "score": 4,
+                            "author": "colt61"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Its an FAA requirement, not public funded. There's not much point to put money into showing were every plane in the sky currently is. \n\nADS-B is generated by the aircraft on equipment that the airlines are required to purchase. Companies like FlightAware then collect the signals that the aircraft transmit and make them available for a price.",
+                            "score": 4,
+                            "author": "jacksalssome"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 368,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Is it feasible to put a transponder on a black box that can transmit an \"I'm here\" signal in the situation of a crash?\n\nEDIT: A thank you to all the responses. I don't know much about planes!",
+                    "score": 79,
+                    "author": "Lord0fHats",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They actually already have one that is triggered on contact with water for underwater location.  It is very very rare to need it in any other case.",
+                            "score": 133,
+                            "author": "Kell_Naranek",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I assume not all planes have this, considering how many have been lost at sea and not located?",
+                                    "score": 21,
+                                    "author": "pdgenoa",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "With MH370, I remember there were boats and planes going around for months looking for any signal at all.\n\nThere were a ton of false positives, but they couldnt find it.",
+                                            "score": 44,
+                                            "author": "localhost87",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The problem with MH370 is that it was 5000 miles from where the search took place. Intentionally lost aircraft are harder to find, as their pilot turned off the transponder on the aircraft itself hours before he crashed it Southwest of Australia. \n\nWe have plenty of tech, but in the case of pilots trying to disappear a plane, its hard to stop them.",
+                                                    "score": 35,
+                                                    "author": "Ubermensch1986",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "A better question: why is it even possible for a commercial flight to disable the transponder short of physically ripping it out?",
+                                                            "score": 22,
+                                                            "author": "Atheren",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The flight transponder or black box beacon?\n\nTransponders need to be turned off when flights are on the ground IIRC. Also in case of electrical fire.\n\nBlack box beacon can't be turned off, but if it's 5km below the sea surface it's not going to be easily detected.",
+                                                                    "score": 37,
+                                                                    "author": "matlockmegathot",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Because aircraft are not designed to withstand deliberate sabotage *by the pilot*.\n\nThe general theory is that if a pilot wants to crash his plane, there is really nothing anyone can do to stop them.\n\nThere have only ever been 2 airliners that were deliberately crashed by the pilot that I can think of. MH370, and then that other one that got run into some mountains.",
+                                                                    "score": 21,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "GermanWings? That one was terrifying to imagine.",
+                                                                            "score": 4,
+                                                                            "author": "speelchackersinc"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Lots of reasons. Pilot my need to power cycle an aircraft system such as a transponder, they might might need to turn off the corresponding power bus due to risk of fire, there\u2019s also associated electric breakers the pilot has access to.",
+                                                                    "score": 5,
+                                                                    "author": "EccentricFox"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Did they find the plane? I didn't think they found it.",
+                                                            "score": 7,
+                                                            "author": "localhost87",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Pretty sure they all do, or at least definitely all commercial aircraft.\n\nThe issue is when that transmission signal is below miles of water it becomes very difficult to detect.",
+                                            "score": 17,
+                                            "author": "jump-back-like-33",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Also the battery that sends that signal out is limited, so time becomes a factor as well.",
+                                                    "score": 12,
+                                                    "author": "apocalysque"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ah, that makes sense.  I wonder if there could be a way to include a second module that separates under water, floats to the surface and acts as a repeater.  I know it would move away from the right location, but there's practical design alterations that could slow that down I'd think.  At least it would give a window to detect it that it might otherwise not have.",
+                                                    "score": 2,
+                                                    "author": "pdgenoa",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That would be an interesting idea but that creates a mechanical vulnerability....\nSomething that needs to be separated upon impact... Creates additional requirement and there may just simply be no way to design something that can meet black box requirement",
+                                                            "score": 6,
+                                                            "author": "discmon",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Any number of technologies and solutions can be designed and implemented...but then ask the question: Why? And at what cost?\n\nEvery solution to a problem on an airframe presents other problems like weight, power, serviceability, practicality etc. \n\nAirliner crashes are not common, so that's why the equipment and technology are the way they are.",
+                                                            "score": 5,
+                                                            "author": "YetAnotherWTFMoment",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "How would you guarantee that it could float to the surface? It might get trapped in the wreckage of the airplane or if it is small eaten by a fish?",
+                                                            "score": 3,
+                                                            "author": "SegfaultRobot",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I don't know why they don't have a mechanism that activates on contact with water that inflates a flotation device to keep them above water.",
+                                                            "score": 2,
+                                                            "author": "Perm-suspended",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "It's in the plane.  The plane surrounds the device and sinks, taking the device with.  Any flotation system big enough to keep a plane from sinking is way too expensive.\n\nAny system that isn't secured to the frame of the plane would be at risk of being tampered with.\n\nThere's many technical reasons why this is a difficult to solve problem.",
+                                                                    "score": 12,
+                                                                    "author": "cmays90",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "That is something blatantly obvious that I didn't consider lol. Thanks mate!",
+                                                                            "score": 3,
+                                                                            "author": "Perm-suspended"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt;inflates a flotation device\n\nNot feasible. For one thing the box is very heavy to be able to sustain damage. Part of finding the box requires finding where the plane is first and having the box 'float' away is just going to add the difficulty of finding it later.\n\nIt's much better to have the box stay where the plane is (or near) and dig it up later.",
+                                                                    "score": 2,
+                                                                    "author": "JiN88reddit"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Just shows how big and deep the ocean is. The transponder just gives them a chance. It would be basically impossible to find a sunk plane in the middle of the ocean without one.",
+                                            "score": 8,
+                                            "author": "umbertounity82",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "All planes have an ELT, emergency locator transmitter. They're able to be activated through a switch in the cockpit or through a G-force switch, so in the event of a crash the ELT activates itself. They broadcast on 3 specific frequencies, 121.5, 243, and 406 MHz, and they're typically located on the tail section of a plane which is the most likely to survive intact during a crash. They have their own batteries.\n\nMy assumptions as to why so many planes aren't found is that one, the batteries only last so long; two, I'm not sure how well everything holds up to water damage in the event of an ocean crash; and three, there's no guarantee that the ELT will actually survive the crash in general.\n\nSource: I'm an aircraft mechanic.",
+                                            "score": 7,
+                                            "author": "octopustirade",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The ocean is so big and deep that even with that they still just don't know where to even go to look for the signal.\n\nLook up how far down under the water the titanic was. It took 73 years to find. It was 2 and half miles below the surface. Drive your car 60 miles an hour for 150 seconds. That's how far from the *surface* the titanic is. And MH370 is deeper than that, they think.\n\nhttps://apps.washingtonpost.com/g/page/world/the-depth-of-the-problem/931/?tid=sm_fb",
+                            "score": 12,
+                            "author": "jimjacksonsjamboree",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "They have that. They also have underwater locator beacons as well. They're battery powered though so eventually run out of battery.\n\nAlso, black boxes are a misnomer, they're bright orange and quite visible.",
+                            "score": 10,
+                            "author": "ergzay"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Black boxes do have that, but it runs out of power in a month or so, I believe. It also might not work underwater.",
+                            "score": 26,
+                            "author": "Cheesinator3000",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "it does indeed work underwater, but when you've got hundreds or maybe thousands of meters of water between the blackbox and the people looking for the signal, it's makes it much harder to detect.",
+                                    "score": 33,
+                                    "author": "Acidpants220",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It works under water. But it is very very quiet. So if the plane ends up in some particularly deep bit of the ocean, it may be incredibly difficult to locate it before the internal battery runs out. See: Air France flight 447.",
+                                    "score": 20,
+                                    "author": "Adrian_Shoey"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I don't think it would have enough power to transmit meaningful distances.",
+                            "score": 4,
+                            "author": "terminal112",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "MH370 had a satellite link with some of the parameters being streamed. This got turned off.\n\nAs for this latest 'incident', there is a big chance that if it was an explosion that the satellite link would have been cut at the same time. The shock itself would have most likelly dealigned the antenna, making it unable to transmit. Plus, the airplane exploded! It's not like the front fell off...\n\nSo, what would be the real purpose? When the airplane have issues and crash in a remote location, unaccessible... That happen what... Once per 15-20 years? It is not worth the billions of dollars.",
+                    "score": 21,
+                    "author": "thephantom1492",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "We already know that MH370 slammed into the Indian Ocean at high speed and disintegrated. We\u2019ve found flapperon pieces washed up on shore along with dozens of other pieces.",
+                    "score": 3,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "To say nothing of the fact that every non-airgapped piece of electronics gets hacked. Every...single...one.",
+                    "score": 2,
+                    "author": "tuebbetime"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is something I might be able to contribute to. I was previously a director in the aerospace communications industry and one of my roles was to manage a team that sold connectivity to airlines and aircraft operators. I did this all over the world, including Asia and I regularly wrote articles, gave presentations and spoke on panels as it relates to connectivity and aircraft tracking. \n\nThe short answer is that it\u2019s down to technology and cost. Forgive me if some of this is repetitive, as I've not read through all of the comments.\n\nThere\u2019s a technology called ACARS (Aircraft Communications Addressing and Reporting System) that's been around since the 1970s and it sends information via Very High Frequency (VHF) radio as a data transmission. Think of an old school text message for airplanes. Some messages are automated like engine reports and departure messages where the aircraft sends a signal that it has taken off and landed. There are also some manual messages that the pilots can send from the cockpit. VHF is limited by line-of-sight, and a typical VHF ground station can only cover a certain distance, much like a cell phone tower. This is generally around 200 nautical miles at 20,000 feet altitude. VHF stations aren't that big, about the size of a vending machine but they're expensive to deploy and it's a complicated process to obtain and maintain government permissions to legally operate in any country. So while there are VHF ground stations that transmit this data all over the world, it\u2019s still not worldwide because there\u2019s not always a business case for it. Africa is a perfect example where coverage is still sparse. Additionally, due to the range issue, flights over open water do not generally have VHF coverage once you're far enough away from a ground station. \n\nAnother supplementary technology exists called High Frequency (HF) radio. The major benefit of HF is that it's much longer range than VHF. While the stations are generally much larger than their VHF counterparts, there are far fewer of them given their capabilities. HF is usually a cheaper option that satellite and many aircraft use HF when they fly across the pond. \n\nBoth VHF and HF are used for voice and data transmissions every day in the commercial airlines and they are considered very standard means of direct and indirect communication with the ground. The issue is one firstly of cost. The major providers of VHF and HF connectivity for aircraft around the world generally charge based on volume. The more data sent and received, the more it costs. Although there are some specially crafted plans in place and the costs of data transmissions have gotten cheaper, much of the technology on-board aircraft was designed to minimize the amount of data that's sent or received from an aircraft. Secondly, they don't have anywhere near the bandwidth capability to support the high volume data transmissions that would be required for these types of transmissions. These mediums can and do, however, facilitate the transmission of simpler text based messages pertaining to engine conditions, position reports, and manually entered crew messages amongst many others. \n\nNow come satellite communications or SATCOM. SATCOM has been around for decades and is really nothing new. The largest users are the maritime and aviation industries. The major and likely obvious benefit of SATCOM is that satellites are orbiting the Earth and as such aren't limited by terrain. Thus, they can work well if an aircraft is operating far out to sea where terrestrial based ground stations cannot reach. Generally speaking, SATCOM has been wired into aircraft to act as the backup for your VHF and HF connections. Think of this like VHF and HF are your home based WiFi network, but once you leave the house, SATCOM takes over. The first few satellite systems launched were quite limited in their bandwidth and further, they were horrendously expensive to use. If I remember correctly, a call from an aircraft satellite phone (SAT phone) could reach as much as $20 per minute. It's far cheaper now, but still a significant cost over a fleet of aircraft. It costs a lot of money to build, launch and maintain a satellite network so naturally, it was going to be expensive. Airlines operate on thin margins and are notorious for keeping costs to a minimum, thus SATCOM much in the same way as VHF and HF are concerned, was to be used very sparingly and only for specific purposes, if the aircraft is equipped at all. The pilots and aircraft dispatchers that I worked with during my career are still very much in the habit of keeping messages and aircraft phone calls as short as possible due to the legacy of lengthy messages being more costly.\n\nSATCOM is also capable of sending both data and voice transmissions and relatively recently, high throughput transmissions to provide internet connectivity. Today, SATCOM on an aircraft is becoming far more common and much cheaper. Fly a commercial airline today and you're quite likely to have WiFi service available to you, some free of charge and some with a cost to the consumer, the passenger. As the demand grows for connectivity, more companies are looking to increase network capacity and increase available bandwidth and so more advanced satellites are being launched to take advantage of this growing market. Two important points to note here are the bandwidth and cost of this service. I would argue today that the bandwidth is capable of supporting a constant stream of data transmissions from the aircraft relevant to the FDR and CVR, but this is only very recently that this is so. Further, the systems were not all designed to constantly transmit data on an open connection which would be a requirement to provide the \"streaming\" that you're referring to.  \n\nThe last point here is the cost. Satellite services are still very expensive to all aircraft operators. Although the costs are lowering, it's still very expensive to firstly equip the aircraft with the appropriate avionics (computer and instrumentation for your aircraft) and to pay for that data connection. A large aircraft fleet such as Emirates, can afford lower pricing based on volume. A business jet operator that operates only one aircraft, however, is not so lucky and they can pay prices that are nearly $8 (USD) per Megabyte (MB) if volume based or between $6 - $25 per minute for a streaming service. It was not unusual for a customer to see invoices in the thousands of dollars for a single month for a single aircraft for satellite data services alone. Even Emirates will likely pay cents per MB which spread across their entire fleet is no small sum of money. In summation, it's still a very expensive service. \n\nSo, those are the general means of communication. I did see some comments related to ADS-B and while that's related and a super cool topic, particularly space-based ADS-B and the partnerships between Irdium, Aireon and FlightAware, ADS-B still does not generally provide the type and volume of data that that's stored within the Cockpit Voice Recorder (CVR) and the Flight Data Recorder (FDR). These two separate \"boxes\" record very specific parameters on-board the aircraft which aid in a determination of the causation of an accident. So while ADS-B information would certainly be helpful in determining the possible location of a lost aircraft and even assist in any possible accident investigation, the picture is not complete without the entire data set that's stored within these two instruments. \n\nWhy is this now a question that comes up all of the time and where do we go from here? Well, although aircraft have been disappearing since the beginning of air travel, the technology today is so advanced that of course we couldn't lose an aircraft, right? Air France Flight 447 and Malaysian Airlines Flight 370 are two very big catalysts for a shift in paradigm and these two incidents have drawn attention to the limitations to aircraft tracking and communications. In my role in the aviation industry, I saw this as likely to change. As more and more data is automatically pulled from the aircraft, bandwidth increases and the cost decreases, I think it will be likely to see raw flight parameter data being transmitted to the ground and further, I expect that civil aviation authorities will be more inclined to mandate the use of a Quick Access Recorder (QAR) and or other technologies which require the date to be routinely stored and transmitted. \n\nLet me know if you'd like further info or any any sources. \n\nTL:DR: Sending data from an aircraft is still quite complex and very expensive.",
+            "score": 38,
+            "author": "ChubbyAngmo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Former connectivity engineer for a major OEM. Probably worked with one of your systems at some point.",
+                    "score": 3,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Wow, thanks.  Great read.",
+                    "score": 3,
+                    "author": "GeeToo40",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "1. Airplanes crash extremely rarely and more so crash so badly that the aircraft is completely destroyed even more rare.\n\n2. The amount of data stored in flight data recorders is very high. There's hundreds of sensors all saving data at a pretty high rate. The fastest way to transport a hard drive full of data is still mailing the hard drive, rather than passing that over even high speed internet.\n\n3. Aircraft still have huge lengths of time where they're completely out of voice communications when over the ocean, let alone streaming high bandwidth data.\n\n4. There's thousands and thousands of aircraft in the air at any point in time. That's a lot of data to store if it's streamed.",
+            "score": 78,
+            "author": "ergzay",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "It costs money. \n\nAirline profit margins are typically lower than many other industries (where 9% to 12% can be considered amazing years). When the industry is dividing cabins in creative ways to eek out more profit, they\u2019re not interested in voluntarily (not being mandated by the FAA) spending money or adding weight. Especially for something that is a statistically rare occurrence.",
+            "score": 167,
+            "author": "Interstellar68",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To put into perspective for those who might not know otherwise, the profit margins in my retail sector of a fortune 500 company shoot for 25-30 percent.\n\n\nSome automotive repair shops are shooting for the 70s.",
+                    "score": 96,
+                    "author": "robm111",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 110,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "And grocery stores are like 5%. Such comparisons between industries are meaningless.",
+                            "score": 46,
+                            "author": "freddy_guy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sort of, but it does tell you about how sensitive an industry is overall. Especially when its an industry that takes a lot of loans and has volatile operating costs.\n\nCommercial jet aircraft are crazy expensive. [This](https://www.statista.com/statistics/273941/prices-of-boeing-aircraft-by-type/) was Boeing's price list for 2019. The cheapest plane they offered, the B-737-700 ran over 89 million. *One* 747-8 freighter cost nearly 420 million. Airlines don't have that kind of money, so they take lots of loans or lease the air craft. And then you have to spend even more to use it legally.\n\nAir transport is really titchy too. Every time there is a crash traffic drops, and you can bleed money really really fast. Maintenance costs, hanger rent, labor, and perhaps the worst *jetfuel*. It's stupidly volatile, hard to budget for, and when the price jumps it can eat profit margin overnight. Major weather fucks us too. Canceling a flight is expensive and plays merry hell with our flight schedules.\n\nEdit: grammar, volatility here refers to price",
+                                    "score": 68,
+                                    "author": "3297JackofBlades",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Spot on!\n\nCancelling a flight IS very expensive. At an old job (8ish years ago) we had rough estimates on the beginning cost of an on the spot cancellation. For instance, a flight utilizing a 777, the moment I typed in the code and hit enter to cancel a flight, it was $250k out the window. Obviously much lower for the smaller airframes, but never cheap!",
+                                            "score": 18,
+                                            "author": "Interstellar68"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It's interesting how people perceive airline profits.\n\nBecause an airline ticket to London is $1000 many people assume airlines are making money hand over fist - When, in fact, the cost to acquire and operate a 777 to Heathrow and back is mindblowing.",
+                                            "score": 4,
+                                            "author": "CohibaVancouver"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "They explain why some industries prioritize aggressive cost cutting while others do not.",
+                                    "score": 73,
+                                    "author": "terminal112",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I don\u2019t think it\u2019s meaningless. It\u2019s certainly an indicator as to how much discretionary income a company or industry may have available in order to innovate or spend capital on additional safety measures, etc.",
+                                    "score": 45,
+                                    "author": "Interstellar68",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[The average profit margin across all industries is 7%](https://www.aei.org/carpe-diem/the-public-thinks-the-average-company-makes-a-36-profit-margin-which-is-about-5x-too-high/) so airlines are doing pretty good at 9%.",
+                    "score": 16,
+                    "author": "Juswantedtono",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They\u2019ve only recently (last couple/few years) been making that margin after billions in losses since 9/11. It\u2019s why the major few haven\u2019t paid taxes in decades, it\u2019s been carried (forgetting the exact term at the moment).",
+                            "score": 13,
+                            "author": "Interstellar68",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "He didn't say that was the average, he said that was an amazing year. I don't know if he's right or not, but comparing one of the best airline years to an average everything else year doesn't prove your point.",
+                            "score": 24,
+                            "author": "panderingPenguin",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "9% is indeed the average profit margin for airlines, not an outstanding one: https://www.wsj.com/articles/how-much-of-your-355-ticket-is-profit-for-airlines-1518618600",
+                                    "score": 14,
+                                    "author": "Juswantedtono",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 7,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Well... the short answer is: that's not really their job.  Essentially, planes are always kind of doing that anyway.  They are, in various ways, in regular communication with the rest of the system.  They've already got ways of communicating everything that they should need to communicate with everyone that they should need to communicate it with as they need to do so.\n\nBut unexpected things happen. And when they do happen, after the fact, once the emergency bit has been taken care of, the question becomes 'what exactly happened'  so that we can figure out if something that should have stopped this from happening failed to do its job, or if there was something we didn't even know to worry about that we should pay more attention to in the future.  That's the job of the black box, to let us figure out what happened after the fact.\n\nIf we did hook up the black box so that it was constantly communicating everything it knew in real time, that wouldn't actually be terribly useful.  Most flights go as expected.  Massive amounts of information would have to be communicated over great distances and 999 times out of 1000, actually even more often than that, that information wouldn't ever need to be glanced at, because the parts of it that needed to be know are already known by the people who need to know, the pilots.\n\nSo, what about that one in a thousand, or more accurately, one in a million situation, could that information be used to save lives?  Probably not.  Because it isn't enough to have the information, we have to know what it means.  The people who analyze the black box information are trained to do that.  They're also doing it with access to other information, like what exactly happened, so they're comparing what they know from the wreckage and eye witness accounts, etc, to what the black box is telling them.\n\nIn order for there to be any point to having a black box in constant communication, we'd need someone to be able to analyze the information as it's coming in.\n\nThe day may come when we have AIs who can take in all of that information, analyze it in real time, and spot problems before they become disasters, and when that day comes, hopefully we'll be in a position to set up black boxes in the way you described, but for right now, the amount of data the black box records is mostly useful in looking back to figure out what happened.",
+            "score": 82,
+            "author": "LeodFitz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 18,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The point I'm making is not that there are no situations where having that information available would be useful, it's that those situations are actually incredibly rare.  We only use black boxes in one-in-a-million situations to start with.  In order to justify the time and money that would be involved in creating, installing, and running the kind of technology that you're talking about, it would need to be very useful, very valuable information.  There are situations where we go, 'damn, that would've been nice to have.'  But they are incredibly few, and incredibly far in between.  Eventually, we'll probably have that technology, but right now it's quite inconvenient to try to get and wouldn't give us enough to justify the effort.",
+                            "score": 21,
+                            "author": "LeodFitz",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Mh is pretty conclusively ruled a pilot suicide based on a variety of factors. Some great docs on it",
+                            "score": 4,
+                            "author": "Qwerty4812"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As I answered elsewhere, this technology exists and is being adopted:\n\nhttps://www.wsj.com/articles/new-black-boxes-offer-ability-to-send-real-time-data-from-plane-crashes-11549535520\n\nhttps://aerospace.honeywell.com/en/learn/about-us/press-release/2019/02/honeywell-and-curtiss-wright-to-reinvent-black-box-recorders",
+            "score": 8,
+            "author": "jtclimb"
+        },
+        {
+            "level": 0,
+            "comment": "Qantas have extensive real time monitoring data streams and have a huge amount of machine learning and other things running over the top of the data consistently looking for defects etc. they also download all the data after each flight and ingest it into a data lake which is enormous. \n\nSource : worked for qantas.",
+            "score": 7,
+            "author": "Nakorite"
+        },
+        {
+            "level": 0,
+            "comment": "In computer engineering, there is actually not physically possible to do anything in \"real-time\", as you call it. There will always be delays due to hardware limitations, the algorithms processing and handling the data and of course bandwidth (aka signal processing). In other words, several layers of technology are communicating and dependent on the layer \"below\". \nAlso, as someone here pointed out, there is a huge amount of data collected (telemetry and parameters, voice recordings etc.) , and it would be impossible to stream it all in \"real-time\". So instead, they prioritize important information the air traffic control needs in order to coordinate the air space. They send this data on low frequencies which results in a low bandwidth, but has a huge transmittion range. Otherwise we would need radar stations everywhere... And even this minimum information is delayed, so I believe the algorithms at the air traffic control are using interpolation and extrapolation to calculate and predict future data based on earlier data, and then corrects itself if needed when the real data comes in from the plane. But I haven't personally looked at these protocols, so I can't say for sure, but it's a fairly common concept in, for instance multiplayer games over the internet.\n\nSo yeah, that's why we can't just stream to a remote area. It would require a fairly complex system in order to work. And money is a huge factor when it comes to this. Some questions  have to be asked and answered. So one would have to do a cost-benefit analysis (CBA). First of all, is the investment worth it? What's the benefits of such a system? Does the current black box system work? And so on...\nObviously, we don't find it worth our time and money to improve it, because the current system works. As long as we find the box...",
+            "score": 5,
+            "author": "Khintara"
+        },
+        {
+            "level": 0,
+            "comment": "The biggest issue is the amount of data. One rolls Royce engine can generate terabytes if data. The F22 has a wire harness made out of optical fibers because copper simply didn\u2019t have enough bandwidth to carry the amount of data that plane generates. Even if there were a bunch of multi band antennas at x-band (7-11ghz) our max throughput on one channel is 1-2gbps depending on data protection which needs to be high. The plane frequently generates much more than this. The thing that\u2019ll get us there is laser data transmission. 900nm doesn\u2019t absorb super well in atmosphere so you could use it for long range data transmission at insane rates. (Frequency is about 300ghz) and that could do it but the infrastructure will be highly complex and the range would still be lower than VHF and KA band which is what most planes use today",
+            "score": 5,
+            "author": "rickyh7",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "It would cost a lost of money.\n\nWhy would airlines (an industry always struggling to keep profit margins up) spend money on something that is not government mandated, and has no potential to increase revenue.\n\n&amp;#x200B;\n\nSecondly to whom would you send the data?  I imagine you ask this question in relation to the Iranian government not giving up the black box data, but would this help?  Does the data go to the manufacturer?  The government of the manufacturer?  The airline, their government?  The country of origin, of destination?  Would require a good deal of international cooperation to get this fully fleshed out.",
+            "score": 12,
+            "author": "CavemanSlevy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I agree. When the probabilty of a crash is greater than 1 in a million, is getting \"all the data\" worth it, or is getting enough data after a little time good enough?",
+                    "score": 6,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "also\u2014the money spent on this could probably better be spent reducing the crashes in the first place",
+                            "score": 5,
+                            "author": "Teaklog",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Good point.\nPerhaps some day free wifi will be state of the art and it won't be a big deal.",
+                                    "score": 3,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There already is a worldwide agency for aviation; that\u2019s the ICAO. Can\u2019t they get all the data?",
+                    "score": 6,
+                    "author": "nyrangers30",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A lot do.  On our aircraft (fairly large advanced helicopters), all system and navigation information is transmitted every 2 minutes.  The information is protected, and not even management can access it, but certain individuals can access it under specific circumstances.",
+            "score": 6,
+            "author": "stephen1547",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Because of the cost. I'm currently working on a few digital products for one of the bigger aviation companies and I couldn't believe how much would they rather keep the money than improving the experience for the crew and passengers. The stories they've told me in user interviews were downright scary and makes you wonder how there aren't more accidents.",
+            "score": 4,
+            "author": "xg4m3CYT"
+        },
+        {
+            "level": 0,
+            "comment": "One of the possibilities when considering designing something like a real-time streaming solution would be that doing so would require additional hardware that would likely need to mounted externally (i.e.: antennae for transmitting or receiving signals).  As soon as you damage _that_ subsystem, your streaming solution stops working.\n\nAs such, you can't rely on a streaming solution to always work, in which case you'd still need a blackbox recorder as a backup anyway.",
+            "score": 13,
+            "author": "YaztromoX"
+        },
+        {
+            "level": 0,
+            "comment": "Something like this probably will happen eventually once these internet beaming constellations like Starlink are online and affordable. Right now, the bandwidth and equipment is much too expensive for the very few times it might have been useful. 100,000 flights happen every day globally and only a handful of accidents over the last few decades where this capability would have made a difference",
+            "score": 6,
+            "author": "HolyGig",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019ve work extremely close with the black box manufacturers, FAA, and air frame manufacturers.  And the best and most true answer is Money, It is extremely expensive to develop and maintain such a system. So the easiest solution, keep status quo until the laws force you too.",
+            "score": 3,
+            "author": "bobalong12"
+        },
+        {
+            "level": 0,
+            "comment": "I work in data science. \n\nReal Time is already a pain for companies as they need quite an infrastructure, internet connection and the software to actually handle it. \n\nI doubt planes could do such thing as they need to stream a lot of data, have some zones where they can't contact any tower and be detected by one. \n\nTrains on the other hand are much more likely to have a live stream system (see Trenitalia and SAP S/4 Hana).",
+            "score": 3,
+            "author": "Fantasticxbox"
+        },
+        {
+            "level": 0,
+            "comment": "The reason is economics, not science.\n\nCost v. benefit. There would be a high cost to implement such a system wide change. For very little benefit. The current system works very well for its purpose save a few outlying but highly publicized cases. Since the demand is so low, the price the market will dictate does not exceed the cost.",
+            "score": 3,
+            "author": "robertmdesmond"
+        },
+        {
+            "level": 0,
+            "comment": "Seems like a no-brainer, but that's a LOT of data... per plane... per second of flight.  It all has to go somewhere and be stored (for how long?).\n\nADS-B broadcasts are one thing, but a full stream of every black box would require a lot of back haul infrastructure.",
+            "score": 4,
+            "author": "Rackemup"
+        },
+        {
+            "level": 0,
+            "comment": "High cost, little to no benefit. You'll always have to have a blackbox anyway, because your hypothetical streaming infrastructure (or the link to the same) can go down. So it'll only really help in cases where the blackbox isn't recovered, and that's exceedingly rare.\n\nAnd don't underestimate the cost either, we are talking about a system that has 100% global coverage, high bandwidth (there are up to 20,000 planes in the air at any given moment). high reliability, high storage capacity etc.\n\nNot to mention administrative headaches, like who gets to control the databases etc.",
+            "score": 5,
+            "author": "bartmosstv",
+            "replies": []
+        }
+    ]
+}

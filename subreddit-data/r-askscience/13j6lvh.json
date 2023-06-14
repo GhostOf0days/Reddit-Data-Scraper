@@ -1,0 +1,81 @@
+{
+    "id": "13j6lvh",
+    "score": 107,
+    "title": "Question about T cell development and self antigen expression on thymus cells?",
+    "author": "[deleted]",
+    "date": 1684246867.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13j6lvh",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Are all self antigens presented in the thymus? And if not, how does the body eliminate T cells that express antibodies that bind the self antigens that aren't presented in the thymus?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Hmm I need to recheck my immunology course to tell you the details, but the T cells undergo a negative selection in the medulla and cortex of the thymus. \n\nBasically it eliminates thymocytes with high affinity receptors to self-MHC peptides complexes. This is necessary for self-tolerance and that the T cells don\u2019t cause auto immune diseases. \n\nThe elimination is based on apoptose of those cells. \nThe screening for those high affinity receptors is done with proteins like AIRE (auto immune regulatory protein). Not all self-antigens are presented in the thymus, but it does indeed present a diverse array of self-antigens to educate developing T cells.\n\n\nI hope this answers your question? I didn\u2019t understand it very well.",
+            "score": 4,
+            "author": "Ech_01",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I believe this is mostly correct. Although I think negative selection primarily occurs in the medulla. Positive selection occurs in the cortex.",
+                    "score": 3,
+                    "author": "bioentropy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ah yes you're correct. Thank you for correcting me.",
+                            "score": 2,
+                            "author": "Ech_01",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You\u2019re welcome, great answer regardless.",
+                                    "score": 2,
+                                    "author": "bioentropy"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Some T cells with high affinity are instructed to become regulatory T cells / Tregs.  Correct that not all antigens are expressed in the thymus.  Peripheral expression of antigens under the right circumstances can induce Tregs as well (iTregs)\nTregs are also able  regulate other self-antigen directed T cells.  Both directly (secretion of regulatory cytokines) and indirectly (consumption of IL-2).",
+                    "score": 1,
+                    "author": "Dopeamine76"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m not an immunologist but\u2026.\n\nTwo points: [autoimmune lymphoproliferative syndrome](https://en.wikipedia.org/wiki/Autoimmune_lymphoproliferative_syndrome?wprov=sfti1) (ALS) is a great condition to learn about how this works. Short answer is no, but studies that compare rates of autoimmune diseases in patients with and without ALS could clue us into the types of self-antigens that aren\u2019t presented in the thymus. \n\nSecond point: although similar the TCR and antibodies are not the same thing. Keeping that in mind may help you find better results in the literature.",
+            "score": 2,
+            "author": "bioentropy"
+        },
+        {
+            "level": 0,
+            "comment": "Many (not all) antigens are presented in the thymus. There are dedicated genes such as AIRE that cause thymic cells to express a wide variety of genes. Because of genes like AIRE, thymic cells express more antigens than they otherwise would. Deleting AIRE leads to more autoimmunity.\n\nBut not absolutely every possible antigen is expressed, and not every self reactive clones is eliminated in the thymus (central tolerance). Many escape to body. However, there are several more layers of autoimmune protection in the body (peripheral tolerance): regulatory cells, exhaustion, activation induced cell death, anergy.\n\nWhen both systems fail, you get autoimmunity.",
+            "score": 2,
+            "author": "bmoredoc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ah ok that explains it then. Ty.",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What blows my mind is as adults the thymus shrinks right down and seems less active but pre-T cells are still being pumped out of the bone marrow. Take the thymus out and people don't go into multiple rejection. Where is selection happening?",
+            "score": 1,
+            "author": "highnelwyn"
+        },
+        {
+            "level": 0,
+            "comment": "T cells, unlike B cells, do not produce antibodies. They produce T cell receptors (TCRs) that are specific for peptide antigens presented by Major Histocompatibility Complex (MHC) molecules. T cells undergo development and selection in the thymus, which includes both positive and negative selection. Positive selection ensures that T cells can interact with MHC molecules, while negative selection eliminates T cells that bind too strongly to self-peptides presented by MHC molecules, which helps to prevent autoimmunity.\n\nAs for your questions:\n\n1. Are all self antigens presented in the thymus?\n\nNot all self-antigens are presented in the thymus, but the thymus attempts to present a broad representation of self-antigens. This is facilitated by a type of cell in the thymus called medullary thymic epithelial cells (mTECs). These cells express a transcriptional regulator called Autoimmune Regulator (AIRE), which promotes the expression of a wide array of tissue-specific antigens (TSAs), thereby representing many different tissues in the body.\n\n2. How does the body eliminate T cells that express receptors that bind the self antigens that aren't presented in the thymus?\n\nThere are several mechanisms at play:\n\na. Peripheral Tolerance: T cells that escape negative selection in the thymus can still be regulated in the periphery (rest of the body outside the thymus) by several mechanisms including anergy (functional inactivation), deletion (apoptosis), and regulation (suppression by regulatory T cells).\n\nb. Tissue-specific antigens (TSAs) not presented in the thymus: Although the AIRE gene allows for the expression of many self-antigens in the thymus, some antigens might not be represented. These antigens can still induce tolerance through mechanisms in the periphery. For example, dendritic cells in peripheral tissues can capture self-antigens and migrate to the lymph nodes, where they can present the antigens to T cells and induce tolerance.\n\nc. Regulatory T cells (Tregs): These are a subset of T cells that modulate the immune system, maintain tolerance to self-antigens, and prevent autoimmune disease. They can suppress potentially autoreactive T cells that escape thymic negative selection.\n\nDespite these mechanisms, some self-reactive T cells can still escape and lead to autoimmunity.",
+            "score": 1,
+            "author": "BuDeep"
+        }
+    ]
+}

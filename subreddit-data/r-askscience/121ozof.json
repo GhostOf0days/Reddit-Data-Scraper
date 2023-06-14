@@ -1,0 +1,273 @@
+{
+    "id": "121ozof",
+    "score": 434,
+    "title": "The two retinas are tied/linked together in the brain. Are they tied 1:1, so that each retinal point corresponds to the same retinal point in the other eye? I.e., each retinal point from one eye shares the same binocular neuron with its counterpoint in the other eye?",
+    "author": "ch1214ch",
+    "date": 1679757257.0,
+    "url": "https://www.reddit.com/r/askscience/comments/121ozof",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Hm... There's not a detailed answer here yet, so I guess I'll jump in.\n\nFirst thing to realize: in reach retina, there's over 100 million photoreceptors, but only 1 million axons in the optic nerve. How's that work? The answer, is that it's completely accurate to say that the earliest part of visual processing is in the eye. There's 5 layers to the retina. The million ganglion cells sending the optic nerve to central command, a middle 'processing' layer with three main types of interneurons, and the actual photoreceptor cell layer (the other two layers are 'in between' layers made up of the cabling connecting these three cell body layers).\n\nThere's actually about 20 different kinds of ganglion cells, so you can look at it as there being 20 different image filters sent in to central. Some with blue/yellow contrast, others for pure luminance contrast, etc. Some of these 'views' have very tiny 'receptive fields' (the part of the retina their signal contains information for). So-called 'P' ganglions for example can have one single cone that causes them to depolarize and fire, though they all have surrounding parts/colors that inhibits firing. Each ganglion cell actually has a fairly complex 'optimal' pattern that makes them fire... Usually either 'light in the center, dark on the edges', the reverse of that, or a color version (blue light but no yellow light, for example). So even by the time the signal's leaving the eye, you're already getting various size views containing different kinds of contrast information. It should be said too, the closer to the fovea (center of the view) the smaller the receptive field gets, so the more detail you can perceive... So the 'resolution' of your view is actually not consistent even just across the eye.\n\nAnyway. So: the optic nerve. These million axons aren't sending pixel information, they're sending 20 pictures, each with larger or smaller receptive fields depending on type and distance from the fovea, and different activation patterns they're 'looking for' to fire. This tract splits off on the way to the central switchboard (the LGN in the thalamus). For the left hemisphere of the LGN (say), you get the right eye's ear half of the view, and the left eye's nose half of the view. Opposite that for the right hemisphere.\n\nSo, the left hemisphere switchboard gets input from the right half of the visual field. But these two views don't perfectly line up... Maybe 80% of that view does, but the most peripheral part of the view only gets a signal from the outside edge, not the nose-side edge, so your peripheral vision doesn't have a binocular signal to put together in the first place.\n\nInput from different eyes is totally separate still in this central switchboard. Each hemisphere's LGN has 6 main layers, 3 from each eye, with thin middle layers in between carrying the comparatively small amount of color information (koniocellular layers), also still separated by eye. \n\nAmong other places (pupil and eye muscle autonomic circuits in particular) this tract then gets sent to the primary visual cortex in V1, at the very back of your head. Here, it's still separated by eye. You've got these stripes running from the back to the front, with alternating left eye, right eye input. Perpendicular to that, you've got simple edge detectors going through different orientations, and mixed into all that, you've got these barrel shaped blobs of cells that respond to color information. You can see a picture of what I mean [here](http://what-when-how.com/wp-content/uploads/2012/04/tmp3661_thumb1.jpg). One 'cycle' of left eye/right eye, and 180 degrees of orientation preference for edges marks out a roughly 1mm x 1mm 'hypercolumn', that takes in input from a chunk of the retina. These hypercolumn are the basic processing unit here in V1, and they tile over the visual field. The receptive field here is larger than a single cone or rod certainly, but it's still fairly small. You can see that the same parts of the visual field are at least nearby now though, that's what those stripes are... Lined up regions from the same part of the visual field from different eyes.\n\nOnce it gets to V2, the next layer of processing, this is where you start to have 'binocular integration', neurons that selectively fire based on visual input from both eyes.\n\nAs you climb up in levels, you'll see larger and larger receptive fields. By the time you get deep into the ventral visual stream (very loosely speaking, ventral stream is identifying things you're seeing, dorsal stream is for helping to guide hands and stuff for grabbing things and so on) you're seeing cells that selectively fire given complex input from anywhere in the visual field. A 'Jennifer Aniston' neuron for example that might fire anytime you're seeing her face... Or her name written, or a drawing of her, or so on, from anywhere in the visual field.\n\nBut anyway. You get the gist. The full complex view of even the early visual system is hilariously intricate, and there's no really simple description that captures all the detail. But maybe a partway answer that's close enough... Peripheral vision has no binocular component, since only one eye captures that outside edge. For the bulk of your visual field though, yes... Things get tied together eventually, but it's not until V2... After many layers of processing in the retina, LGN, and V1. By then, you're talking about receptive fields with hundreds of input photoreceptors, and you're already talking about integrating signals for fairly high level information... Direction of movement, edge orientations, color information and so on, all in separate parallel feeds, to be integrated into even more high level, abstract tracts of information with even larger receptive fields as you continue climbing up towards the dorsal (hand eye coordination) and ventral (object recognition) tracts.\n\nNote too: every step here is more tightly interconnected than I'm describing. In particular, there's 10x connections coming BACKWARDS from downstream than there are coming in from upstream towards the retina, so you probably do have some binocular signal affecting neuron firing even before you get to the binocular integration part in V2. Those incredibly numerous backpropagating connections aren't well understood, but it does definitely complicate the question of where you can start pointing to neurons influenced by input from both eyes in the same part of the visual field. \n\nSo anyway... There you go, haha. This is largely cobbled together from Kandel's 'principles of Neuroscience, 6th edition', there's a half dozen chapters in the low 20's going through how the brain processes visual information in pretty heavy detail.",
+            "score": 223,
+            "author": "adventuringraw",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I've heard the retina described as an extension of the brain.  \n\nIt is amazing to think the foundations of those processing pathways can develop from genes.",
+                    "score": 26,
+                    "author": "_AlreadyTaken_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "afaik the first convolutional neural networks in AI were modelled to mimic the retina (cows in particular? idk)",
+                            "score": 9,
+                            "author": "Blakut",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No.  Convolutional networks are simply fully connected all-combinations of every pixel in the image (under a sliding window, usually).  They are not modeled after any brain, they are modeled after signal processing convolution filters (pre-neural network) for 2D signals.  The learning epochs of the convolution network teach the network which pixels to pay attention to at the meta level (features), and the further levels combine those features.",
+                                    "score": 7,
+                                    "author": "Fenrisvitnir",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; Convolutional networks are simply fully connected a  \n\n\nuhm no.  \n\n\n[https://en.wikipedia.org/wiki/Convolutional\\_neural\\_network](https://en.wikipedia.org/wiki/Convolutional_neural_network)\n\nConvolutional networks were inspired by biological processes\\[10\\]\\[11\\]\\[12\\]\\[13\\] in that the connectivity pattern between neurons resembles the organization of the animal visual cortex. Individual cortical neurons respond to stimuli only in a restricted region of the visual field known as the receptive field. The receptive fields of different neurons partially overlap such that they cover the entire visual field.",
+                                            "score": 0,
+                                            "author": "Blakut",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Um no.   References 10-13 don't establish the fact, if you look at them.  Convolution kernels long predate their use in neural networks as a convolution layer.\n\nThe sliding NxM convolution window is the \"receptive field\" but it isn't analogous to the field in the eye.  The kernel matrix existed long before it was used in NNs, and is the mapping mechanism to the fully connected convolution input layer.\n\n[https://en.wikipedia.org/wiki/Kernel\\_(image\\_processing)](https://en.wikipedia.org/wiki/Kernel_(image_processing))\n\nThanks for being interested, but there is a lot of fluffery in ML discussions.  The neurons of a NN are not remotely the same as biological neurons - the only thing they share in common is the activation function, and even then they are only symbolically similar.",
+                                                    "score": 12,
+                                                    "author": "Fenrisvitnir",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Um no (we have to keep the comment chain going). \n\nYou're actually being overly dismissive of what they're saying I think. The key word they used was 'inspired'. I tried to dig up the origin of convolutional image kernels, and while I couldn't find much in five minutes of digging, I'm sure you're right, that they predate deep learning certainly, and possibly even digital computing entirely given that their historical origin was probably in signal processing.\n\nTheir comment though wasn't whether or not CNNs directly imitate biology, or that the way they did it was entirely novel... They were just pointing out that biology was an inspiration for trying it this way, and that part's unambiguously true. To my knowledge, the first paper introducing the phrase 'convolutional neural network' was from Yann LeCun. [This one](https://github.com/Yorko/deep_learning_python_intro/blob/master/papers/LeCun%20backpropagation%20applied%20to%20handwritten%20zip%20code%20recognition.pdf) I believe, from 1989. If you look at the references, you'll note Hubel and Wiesel's 1962 paper introducing a crude model of biological vision processing is in the references. More importantly, Fukushima, 1980 is referenced (and mentioned in the text as a direct inspiration). This 'Neocognitron' is generally accepted to be the first proto-CNN. The architecture is a bit different than we're used to, but it's where things started... And as the author puts it in the abstract:\n\n&gt; A neural network model for a mechanism of \nvisual pattern recognition is proposed in this paper. \nThe network is self-organized by \"learning without a \nteacher\", and acquires an ability to recognize stimulus \npatterns based on the geometrical similarity (Gestalt) \nof their shapes without affected by their positions. This \nnetwork is given a nickname \"neocognitron\". After \ncompletion of self-organization, the network has a \nstructure similar to the hierarchy model of the visual \nnervous system proposed by Hubel and Wiesel. \n\nSo... Yes. CNNs weren't inspired by cow vision or something... Hubel and Wiesel's most famous work involved experiments on kittens. but CNN origins are unambiguously tied into Hubel and Wiesel's work in biological visual processing, so the person you're responding to is actually the one that was right. I just noticed even, some of the papers referenced from Wikipedia that you said didn't show biological inspiration are the same ones I mentioned even, so they were the correct papers to cite.\n\nIf I may be a bit rude for my own Sunday morning amusement: 'Thanks for being interested, but there is a lot of fluffery in ML discussions.'\n\nSeriously though, it's an interesting topic for sure, and historical image processing techniques are certainly equally important to the history of CNNs... They were the tool reached for given the biological inspiration, so in all seriousness you're not entirely wrong from another perspective, even if you're not justified in shooting down a biological inspiration.",
+                                                            "score": 7,
+                                                            "author": "adventuringraw"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Did anyone say that the matrix operation of convolution, or the idea of smearing it across an image, was invented via inspiration from experimental explication of image processing as performed by animals? I don't think they did, and I would be surprised if that were true. But those references do show that the \"neocognitron\" was explicitly inspired by actual physical neural networks used by animals for image processing, because among other things they [include the original neocognitron paper, which is very clear about its inspiration](https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf). This is relevant because [review papers of convolutional neural networks like this one from University College London almost universally identify the neocognitron as the direct precursor to modern convolutional neural networks.](https://arxiv.org/pdf/2001.07092)",
+                                                            "score": 2,
+                                                            "author": "Coomb",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[https://glassboxmedicine.com/2019/04/13/a-short-history-of-convolutional-neural-networks/](https://glassboxmedicine.com/2019/04/13/a-short-history-of-convolutional-neural-networks/)\n\n\"The popular press often talks about how neural network models are \u201cdirectly inspired by the human brain.\u201d In some sense, this is true, as both CNNs and the human visual system follow a \u201csimple-to-complex\u201d hierarchical structure. However, the actual implementation is totally different; brains are built using cells, and neural networks are built using mathematical operations.\"",
+                                                                    "score": 2,
+                                                                    "author": "Fenrisvitnir",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Is this supposed to be responsive to my point?",
+                                                                            "score": 2,
+                                                                            "author": "Coomb"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you for this explanation.\n\nIt's blown my mind a bit - I have a servered optic nerve on my right side and it's amazing to think that my brain processes the left and right side of what I see with my remaining eye and then stitches the images together seamlessly.\n\nObviously I have no binocular vision which causes issues with close up depth perception.",
+                    "score": 3,
+                    "author": "affordable_firepower",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That reminds me of one of the diagrams from the book I got this from, I took a screenshot and [posted it](imgur.com/a/Wxv0X8T) if you're curious.\n\nAnd yeah, if the severed nerve is between your right eye and the optic chiasm, then it seems that is what happens. Half your left eye's view gets sent to one hemisphere, the other gets sent to the other, and then they get stitched together again upstream. Though I suppose if it happened when you were young enough, it could be a fair bit different... injuries when you're still in the 'critical period' can rewire in really unusual ways.\n\nThat diagram shows what's lost from severed optic tract at different points through the pipeline, thought you might think it was interesting. For every one of those, there's probably a bunch of people living that life. Sounds like you're number '1'. I think I'd actually prefer that to '2' or '3'.\n\nAnyway, cheers... glad I could share something you found interesting. I've got ADHD, so I've got my own version of neuroscience adding to my understanding of myself, haha.",
+                            "score": 2,
+                            "author": "adventuringraw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh wow. Thanks for that. \n\nThe cut is definitely before the optic Chiasm. In fact, it's not far behind the eyeball so yeah, I'm a No.1\n\n The accident happened when I was around six months old, so definitely still in the developmental stage. Now I'm wondering how my optics are wired \ud83e\udd23",
+                                    "score": 1,
+                                    "author": "affordable_firepower",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Interesting, yeah. I bet that'd be an interesting thing to find out about even, maybe eventually brain scan technology will be cheap and powerful enough that you could look into it for a lark:).\n\nThat book mentioned that approximately 50% of the brain (or 50% of the cortex at least?) Is dedicated to vision, and there's evidence I guess for tissue that'd normally take on one function to end up doing something else if the normal input feed's down for some reason. With only half the visual input coming in when you were that young, seems like that's a lot of computational hardware that's freed up for something else. Maybe you've got some only vaguely noticed superpower you'd be surprised other people don't have, who knows?\n\nEdit: one last thing you might find interesting. Elsewhere in this thread actually, there was a discussion about biological inspiration behind convolutional neural networks from the field of machine learning and artificial intelligence. The inspiration was from Hubel and Wiesel, two really foundational Neuroscience researchers in the late 1950's and 1960's. They won the Nobel prize for their work, one critical experiment of which involved keeping one eye of a kitten closed and seeing how it changed their development. I don't know the details of their findings, but given the historical significance of that research, I bet your case actually has a lot of understanding behind it. Just wondering out loud more than sharing anything specific, but interesting that Hubel and Wiesel more or less came up in two comment threads here.",
+                                            "score": 1,
+                                            "author": "adventuringraw"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you for a much better answer than mine!!",
+                    "score": 1,
+                    "author": "awhildsketchappeared"
+                },
+                {
+                    "level": 1,
+                    "comment": "Wow!  Thank you for that.  I had no idea about almost any of this.",
+                    "score": 1,
+                    "author": "afcagroo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "yes, basically. there is a precise correspondence (the term for it is... \"retinal correspondence\") between positions in the two eyes.\n\ndeviations from this correspondence, within a limit (usually called *Panum's area*), allow for stereopsis, depth sensation from small differences in the retinal positions of features.\n\nif a feature falls precisely on corresponding positions in the two eyes, it will feel like it's at the distance at which the two eyes are converging (called the *horopter*). if the feature falls at slightly different positions, laterally displaced, this is \"horizontal disparity\", and then it feels like the feature is nearer than or further than the horopter (depending on the direction of the displacement).\n\nif the displacement is too large, it exceeds Panum's area and the feature cannot be fused between the two eyes, and you will see the feature twice, in two laterally displaced positions (\"double vision\").\n\nthis binocular correspondence begins as soon as the optic nerves enter the brain: the two optic nerves meet in the thalamus (or thalami), where corresponding positions are brought in physical register - from there, still separated, the two eyes' signals project to similar positions in the visual cortex, which is essentially a big map of visual field positions, where after a few synapses they are largely indistinguishable.",
+            "score": 13,
+            "author": "aggasalk",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Are they non-corresponding in the sense that they are the same retina (the twin retina for the other eye) just getting different input, or are they non-corresponding because they are not twin retinas? As per the basis for stereopsis\\^\n\nIn other words:\n\nDo twin retinas converge on the same binocular neuron that allows for stereopsis, they are just sending different signals? Or do those neurons get input from two slightly different positioned retinas and *that* is the reason they get a different signal?",
+                    "score": 1,
+                    "author": "ch1214ch",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "when you get to cortex, spatial tuning is rather precise, and binocular neurons are generally tuned for the same retinal position (this suggests another question of \"what is retinal position anyway?\" but I don't think that's actually too problematic). I'm sure if you looked at a large number of such neurons, you'd find that (like everything else) it's actually a random distribution, albeit very narrowly distributed.\n\nthe precision of this common input is the real basis of retinal correspondence (apart from the matter of the parenthetical question above). the more precise it is (the narrower that distribution), the more informative differences in input can be, and so the better for stereopsis.",
+                            "score": 1,
+                            "author": "aggasalk",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So would it be right to say that a binocular neuron--including one that allow for stereopsis--receives input from the same retinal position of each eye? (As opposed to it receiving input from different retinal positions)\nIs this right?\nBc I was wondering if input from different retinal positions to the same neuron allowed for depth perception, or if it was different input from the same position",
+                                    "score": 1,
+                                    "author": "ch1214ch",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It's ok to say it, but I think \"same\" might give the wrong sense, since it's not necessarily clear what \"same\" means here. \n\nCorrespondence is really the clearest concept - two retinal locations *correspond* in that they both respond to the *same point in physical space*, given certain optical &amp; mechanical conditions. Those conditions are that the the physical point is at the same distance as the vergence distance of the two eyes (in other words, where they are both 'pointing', taking the axis of an eye to be a line between the center of the pupil and the foveola of the retina).\n\nUnder those conditions, a point in physical space will be imaged on precisely corresponding positions in the two retinas, and then I suppose it's fine to think of those as \"the same positions\".\n\nYou get the finest depth information, about the smallest differences in depth, from slightly different inputs both from the \"same\" i.e. precisely corresponding positions. The coarser the spatial grain (i.e. the more spread out in space it is), the larger the depth it can signal. So coarser depth signals will be transmitted by neurons with larger receptive fields, and potentially also by neurons with looser or less precise binocular correspondence. but I think the general rule will be that binocular neurons are for corresponding positions, and lack of precision amounts to noise, not a special source of information in itself.",
+                                            "score": 1,
+                                            "author": "aggasalk",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Okay, lets say the left and right retinas are like two laptop screens with all the pixels numbered/labeled the same. Does a corresponding position fall on the same numbered/labeled pixel for each eye, or would the correspondence fall on different numbered pixels?\n\nDoes that make sense? Like if the retinas were like battleship would the corresponding position be the same (b4 and b4) or would they be different (like b4 for the left eye and c4 for the right eye)\n\nI want to know if they correspond in the sense that they are b4 b4. Or because they correspond to the same point in physical space but are in fact different \"pixels\", like b4 and e6",
+                                                    "score": 1,
+                                                    "author": "ch1214ch",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The same, I guess? When it comes down to it, binocular correspondence is as precise as the location of photoreceptors in the retina, at least this is true for central (foveal) vision, it might be less precise than that in the periphery.\n\nBut.. when it comes to binocular correspondence, the correspondence isn't *really* between receptors or pixels (\"points\") in the retina - starting with the optic nerve, visual neurons have \"receptive fields\" that cover a fuzzy region (but still clearly localized) of the retina. So correspondence isn't technically between *points* but between *areas*.\n\nBut those areas are at many scales, and I tell you it gets really complicated really fast when you look at it closely: pick a point in the binocular visual field (like, look at a single pixel on your screen). This point, if small enough, might fall on a single photoreceptor in each eye - photoreceptors at \"corresponding positions\". But the correspondence is being encoded, in the brain, by many many many neurons with receptive fields of different sizes, all of which overlap that point.\n\nI guess this can suggest to you how to think about binocular correspondence. There is a tiny point of light shining out in space, and you look at it. Certain monocular neurons (in each eye, and downstream from there all the way to primary visual cortex) are excited by this point of light. Starting in primary visual cortex (and especially after that) there will be *binocular* neurons that are excited by that point, and that would be excited by it *even if one eye were closed* (meaning, they \"want\" a specific point in space, regardless of which eye it came from). That is, those binocular neurons are encoding the same point in space, and this is the basis of binocular correspondence.\n\nIf you move the point of light over so that it excites a different set of receptors, then the downstream activity will also shift, and some different neurons will be excited. But there will be overlap: some binocular neurons will be excited by both positions (they have \"large receptive fields\") but some will be more selective, excited only by one position or another. So not only is there binocular correspondence encoded, but it is multiscale - there is correspondence between points of many sizes.",
+                                                            "score": 1,
+                                                            "author": "aggasalk"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Here's a nice color-coded diagram of the visual pathways.  By tracing the lines, you can see that the left visual field (blue in the diagram) for both ends goes to the right side of the brain, and the right visual field (green) goes to the left.  Keep in mind that the lens of the eye flips the image.  Top of visual field becomes bottom of retina, left becomes right, etc.  So the signals for a particular point in your visual field end up on different neurons.  The brain then synthesizes the image.  There is a considerable amount of brain volume devoted to visual processing.\n\nhttps://www.researchgate.net/figure/Schematic-drawing-of-the-visual-pathway-and-its-neuronal-composition-AU1\\_fig1\\_315918977",
+            "score": 64,
+            "author": "monkeyselbo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wait, what about people whose brain hemispheres that have been split reporting one \"side\" not being able to observe what the other side does? Or are those reports misreported/misinterpreted somehow?",
+                    "score": 3,
+                    "author": "Zondagsrijder",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not really and there\u2019s some fascinating experiments to present as such. The brain still makes sense of itself as a single entity but yeah you can do things like cover one eye and see the thing but not be able to find the word for it until you see it with the other eye, if recall my documentary correctly.",
+                            "score": 10,
+                            "author": "TwistedBrother"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "yes, but it's not the right or left eye, it's the left or right side of each eye. So if you cover the left side of both eyes or the right side of both eyes, you isolate one hemisphere or the other.",
+                            "score": 3,
+                            "author": "Blakut"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you for sharing this.",
+                    "score": 3,
+                    "author": "ckayfish"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not the scientific answer you seek but: I have a lazy eye that sits at about +6 I don't know if that is when it is focussed to the max or when relaxed. But I notice when I cover my good eye, objects are a lot smaller. So it can't have a one to one ratio with my good eye.",
+            "score": 11,
+            "author": "Aristocrafied",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To add on to this data point my color perception for right and left eyes are slight different, particularly around red hues. So there isn\u2019t 1:1 overlap between same retinal points",
+                    "score": 4,
+                    "author": "ktpr"
+                },
+                {
+                    "level": 1,
+                    "comment": "Also the eye has a different perspective and you nose it always visible,  you brain does a lot of filtering and selecting of what you see.\nThe fact that everyone has a dominant eye means that the brain picks and chooses what information it needs, and does  not rely on a 1 to 1",
+                    "score": 2,
+                    "author": "GforceDz"
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm around -10 but more near sighted in one eye and more astigmatic in the other, plus they don't focus at the same height. My glasses fix the problem, but without them (or when I need new ones) I have to close one eye to be able to see just one image",
+                    "score": 2,
+                    "author": "anamariapapagalla",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "How is it when you cover your dominant eye? When I just cover my lazy eye it feels like I am looking from my good eyes side alone. But when I cover my good eye it feels like the image is imposed onto that same side. I've been told by the doctor my brain has allocated more to my dominant eye on the cortex so I guess that makes sense as the bad eye sort of 'complements' the good one.",
+                            "score": 1,
+                            "author": "Aristocrafied",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Huh, never thought of that. Am reading without my glasses rn, with my left eye (and my phone 1 finger length away from my face lol). That just looks \"right\", when switching to the right eye it's like everything is slightly off and I want to move the phone but every direction is wrong! Weird.",
+                                    "score": 2,
+                                    "author": "anamariapapagalla"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They're not tied together. \n\nHalf of each retina goes to each side of the brain. So half your right eye goes to the right brain, other half goes to left. Same for your left eye. \n\nThe brain integrates the signal from both eyes to form a cohesive image. The neurons aren't directly tied to each other in any real way except being bundled together in the optic nerve and terminating in the same region of the brain.",
+            "score": 1,
+            "author": "thecaramelbandit"
+        },
+        {
+            "level": 0,
+            "comment": "the brain get used to position of the eye and process the image as it supposedly be. if you chance position of one of them, the brain will eventually adapt to it. so no, neither neurons nor cones/rods do not respond to single binocular neuron. all information that comes from eyes get processed whole single block of info.",
+            "score": 1,
+            "author": "mrfoseptik"
+        }
+    ]
+}

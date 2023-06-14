@@ -1,0 +1,27 @@
+{
+    "id": "12l1uo1",
+    "score": 2,
+    "title": "Has the success of transformers and LLM informed or advanced neuroscience in any meaningful way?",
+    "author": "PraetorArcher",
+    "date": 1681416176.0,
+    "url": "https://www.reddit.com/r/askscience/comments/12l1uo1",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "By this I mean, has the emergent behaviors and generalizability of the transformer from the \"All you need is attention\" paper and self-evident success of scaling and multi-modal input output schemas, like Chatgpt4 and Llama, resulted in any pioneering papers or discoveries about neurons and the brain? Does it lend any credence to one theory of consciousness over the other, say IIT vs Global Workspace?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "To my knowledge, no. The (very) recent success of Chatgpt4 and the Transformer by Google Brain haven't had any applications to neuroscience in a meaningful way.\n\nSince the early 80's, neuroscience has influenced the development of machine learning and AI far more than the other way around (1,2). We've understood the molecular basis for neuronal interactions for quite a while now. We also have a very robust understanding of *how* neurons interact with other neurons. This might seem surprising because we're used to looking at the brain through a lens of \"one can barely scratch the surface of this enigma, so we basically know nothing about the human mind\". Which isn't totally wrong, but it's misleading. We know quite a bit, but it's very difficult to causally associate the complexity of human behavior and thought with any part or parts of the brain.\n\nBut let's look at what \"transformers\" are in terms of AI and compare that to what our brain actually does. According to the [paper itself](https://arxiv.org/pdf/1706.03762.pdf), the Transformer developed by Google Brain can train itself faster than any recurrent model that we have right now. The recurrent neural network (RNN) is basically the standard, developed using the human brain as a model. The RNN cannot process all inputs at once; instead, it proccesses information in a sequence of steps. For long sequences, the ability to retain information from the first elements is lost when new elements were incorporated into the sequence. If the decoder only accesses the last hidden state of the decoder, it will lose relevant information about the first elements of the sequence (3). [This is in fact more similar to how our brains work. Our neurons are connected to one another in a sequential, though not necessarily linear, fashion](https://doi.org/10.1016/j.celrep.2022.110878). One neuron does not connect to all other neurons and share information them at once. I honestly cannot even comprehend how a person's brain could process information like that.\n\nBut Transformers DO process the entire input all at once. That's what makes them so revolutionary. It uses something called an Attention mechanism, which lets a model draw from the state at any preceding point along the sequence. Our brain cannot do this the way a Transformer can. In a sense, the recent and rapid developments in LLM have actually \"broken free\" of neuroscience, since the human brain is no longer a golden standard.\n\nStill, I haven't seen any evidence that human consciousness or the study of the human brain is being effected by LLM. I'm actually not able to find even one paper that suggests this. But I'd be really interested if anyone else can find a paper which talks about this topic.\n\n1. [https://www.science.org/doi/abs/10.1126/science.aau6595](https://www.science.org/doi/abs/10.1126/science.aau6595)\n2. [https://www.sciencedirect.com/science/article/pii/S0896627317305093](https://www.sciencedirect.com/science/article/pii/S0896627317305093)\n3. [https://towardsdatascience.com/attention-is-all-you-need-discovering-the-transformer-paper-73e5ff5e0634](https://towardsdatascience.com/attention-is-all-you-need-discovering-the-transformer-paper-73e5ff5e0634)\n\nEdit: I forgot to address your question about IIT vs Global Workspace. I personally never heard of either of these concepts before now. Seems like they are discussed/debated by a small group of neuroscientists. So I don't feel qualified enough to answer this, but anyone else should definitely chime in.",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the information and further reading!",
+                    "score": 1,
+                    "author": "PraetorArcher"
+                }
+            ]
+        }
+    ]
+}

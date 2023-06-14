@@ -1,0 +1,97 @@
+{
+    "id": "137p2qy",
+    "score": 23,
+    "title": "This is more of an engineering question, but what do power plants do with their extra energy?",
+    "author": "jrjocham",
+    "date": 1683212786.0,
+    "url": "https://www.reddit.com/r/askscience/comments/137p2qy",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Energy can not be created, nor destroyed,  only transformed. When a power plant generates electricity,  that energy gets used up instantly by some device on the other end. A power plant has to be able to predict energy usage and ramp up more generators to feed the need of their service area. They don't want to run out, so they would always be generating more power than the city uses in any given moment. That would leave a sizable excess of power in the system that wasn't used up by a device. The power plant is sending the next wave of power down the line, so that excess has to go somewhere. How does the power plant discharge the excess energy?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is what makes an AC system better than a DC system. The AC system automatically contains the information needed to know how much energy you need to produce in every given moment: simply hold the frequency.\n\nThe frequency is a function of the number of magnetic poles and RPM of the rotor in the generator.\nImagine a simple magnet with one N and S pole each. It needs to rotate at 3000 RPM to maintain 50 Hz (yes, I'm in Europe). Double the amount of poles and 1500 RPM is needed and so on.\n\nWhen the load increases it becomes \"harder\" for the generator to rotate, the RPM and the frequency decreases. Then you need to add another generator to the system.\nThe frequency might drop for a short while but this is then compensated by increasing it for a short while.\n\nTo be able to maintain a stable net, actual physical inertia is needed. This lies in the large generators at big power plants.\nWhen increasing the amount of unstable sources, such as small wind turbines or, even worse, electronically controlled inverters, usually used in small residential solar panel installments, the stability decreases.",
+            "score": 15,
+            "author": "Micke_xyz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; This is what makes an AC system better than a DC system. \n\nA DC system would change its voltage slightly in response. We chose AC instead of DC because it's easier to transform up and down which is vital for long-distance transmission. Today electronics have improved the DC transformation options so many new long transmission lines are now DC, but it's too late to think of a grid-wide change.",
+                    "score": 16,
+                    "author": "mfb-",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Would grid level storage and smarter meters also help replace high inertia generation? Basically smooth out out with capacitance like small power supplies do.",
+                            "score": 1,
+                            "author": "nill0c",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They can and do. Some areas (Puerto Rico comes to mind) require exactly that kind of system whenever you build intermittent generation.",
+                                    "score": 1,
+                                    "author": "TheFuzziestDumpling"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "One needs to make a distinction between how a singular generator is controlled and how a system of generators is controlled.  Also important to make a distinction between controlled generation sources and \"must take\" generation resources.\n\nMost of the responses are based on the classic fossil fuel generator. These synchronous generators are controlled. These are very typical very large machines with a lot of inertia in the rotating mass. The generator shaft is rotating at a very specific rpm as are all the generator shafts. As the system frequency changes up or down, every generator that has frequency response changes the amount of fuel that is consumed to supply energy  to make the shaft rotate. In the case of fossil fired generators, this is often governor response, is automatic, and is almost instantaneous (with in a few microseconds). The governor has a limited effective range however. In the case of a coal fired generator, equipment must be manually started or stopped to get the unit to a particular operating state with a range of output levels. Somewhere, there's is a computer control system that is used by human system operators to coordinate the output of all the generators on the system. Some of the generators on the system may not be controlled, such as a run-of-river hydro facility. Also, the overall load varies throughout the day so various sets of generation resources are used over the course of the day to minimize cost and emissions.\n\nThe impacts of renewable resources have major implications. Both photovoltaic solar (PV) and wind resources are mostly most take and don't have rotating mass like a synchronous fossil fueled generator. PV produce DC energy and that is fed to an inverter. The inverter has two major functions. The first is to convert the electricity from DC to AC. The second major function of the inverter is to provide the right \"load\" to the PV panels to maximize the energy output. By changing the load that the PV panel see, the AC power output can be controlled by the inverter. Since there is no governor and no way to modulate the fuel (in this case the sunlight hitting the PV panels), the inverter can change the efficiency at which the DC is converted to AC. With sophisticated inverters, PV can be responsive to frequency and voltage. Excess energy can be stored in batteries, by pumping water into a tank (or lake), by pumping air into salt caverns, or by lifting a large mass. When more energy is needed, some of the stored energy can be recovered and put back onto the electric system.\n\nSorry for the long response and this is way over simplified, but hopefully will shed some light on the question .",
+            "score": 4,
+            "author": "KTM150XCW"
+        },
+        {
+            "level": 0,
+            "comment": "This link may answer your question: https://electronics.stackexchange.com/questions/535623/what-happens-to-excess-electricity-generated-going-in-to-a-grid\n\nBasically the grid has either small loads or resistors to \"absorb\" these energy and they would become heat.",
+            "score": 12,
+            "author": "malphakiri",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They also just dump it directly to ground. \n\nThe resistors are probably there for EPA reasons.",
+                    "score": 2,
+                    "author": "corrado33"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Excess energy will result in an increase to the voltage or frequency that is being transmitted.  Not enough energy results in the voltage or frequency dropping (brown outs).  To prevent that, power companies are constantly adjusting the power output by power plants across the grid to compensate.  There are also large amounts of capacitance built into electric grids that can buffer power generation and consumption over short time periods.  It's almost entirely automatic these days.",
+            "score": 1,
+            "author": "SpeedyHAM79",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Short time periods in this case being?",
+                    "score": 1,
+                    "author": "Michkov",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Depending on the system it's anywhere from seconds to a few minutes that the power can be buffered, and the energy can be stored for hours.",
+                            "score": 2,
+                            "author": "SpeedyHAM79"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are various methods for load balancing the energy grid, which are used on both provider side and consumer side.\n\n1/ On provider side, you need a balance of flexible and non-flexible generators. Hydro, fossil fuel generators which can adjust output to match demand quickly are more flexible. Nuclear can adjust but not very quickly. Solar and wind are the least flexible. You can add batteries to non-flexible sources to improve efficiency, but this also adds cost. \n\n2/ On consumer side, you can offer specific contract to special consumers so they help stabilizing your grid. Some example:\n\n- Negative pricing. The grid pay the consumer to use electricity during certain time.\n\n- Demand response. The consumer turn off their equipments when the grid signal them to do so.",
+            "score": 1,
+            "author": "fgiveme"
+        },
+        {
+            "level": 0,
+            "comment": "Georgia Power built a large pumped storage reservoir on top of a mountain to store excess energy during the night by pumping water up and using it to generate electricity by releasing it during the day. This was in the early 1980s. I have read this is becoming popular.",
+            "score": 1,
+            "author": "1HappyIsland"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "id": "143353l",
+    "score": 10,
+    "title": "How does glass protect me from UV, but being underwater does nothing?",
+    "author": "leira27",
+    "date": 1686111793.0,
+    "url": "https://www.reddit.com/r/askscience/comments/143353l",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I recently got super burnt.  I assumed that swimming and keeping my body below the water would protect me.  In the novel \"Red Mars\" the astronauts hide from a solar storm using water tanks as shielding. Aren't nuclear fuel rods kept in big water tanks to block radiation? In XKCD book he says swimming at top of fuel rod pool would be reasonable dosage.  What am I missing?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Water and glass are both largely transparent in visible wavelengths, but outside of visible wavelengths they aren't the same. They are totally different in terms of chemistry and physical state, so they block or transmit different wavelengths. Each has a *transmission* spectrum (or, if you want to think of it the opposite way, an *absorption* spectrum), that describes how much light it lets through at each wavelength.\n\nUltraviolet light is only just beyond the visible spectrum, just a little bit shorter in wavelength than violet. Both glass and water have a \"window\" in the in spectrum around visible light (about 380-750 nanometres), but this window doesn't cut off exactly where the human eye stops being able to see the light. Because ultraviolet is right on the edge of the visible spectrum, a little bit of change in the \"size\" of this window makes a big difference.\n\n[Here](https://www.mdpi.com/fibers/fibers-07-00073/article_deploy/html/images/fibers-07-00073-g001.png) is a graph showing transmission for a few different types of glass. You can see the transmission dramatically drops from 400 nm down to 300 nm.\n\n[Here](https://en.wikipedia.org/wiki/Electromagnetic_absorption_by_water#/media/File:Absorption_spectrum_of_liquid_water.png) is a graph showing absorption for liquid water. You can see the absorption dramatically drops at 200 nm instead.\n\nSo around 350-200 nm, there's a bunch of ultraviolet light that can push through water, but would be absorbed by glass.\n\nAdditionally, a lot of dangerous radiation is not electromagnetic radiation - it's particles, like beta radiation (electrons), alpha radiation (helium nuclei - two protons plus two neutrons), or even just protons (the solar wind has a lot of protons in it). These will collide with almost any atoms, so it's just a matter of having a lot of atoms around you. Water is useful here just because it's dense - 800 times denser than air - and cheap and convenient. If you put a reactor in a swimming pool 20 metres deep, that's a very practical way to get tonnes and tonnes of material between you and the radiation source. Concrete would work too, just in terms of blocking radiation, but you can't pump that in and out for cleaning etc.\n\nOn top of that, the most dangerous electromagnetic radiation from nuclear reactions is gamma rays, not ultraviolet. Gamma rays have an extremely short wavelength, and again it's mostly a matter of having lots of *stuff* between you and the radiation source to make sure you block it, and that's where water is useful.",
+            "score": 82,
+            "author": "Astrokiwi",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Do glass manufacturers add some kind of UV blocking coating to glass sometimes too?",
+                    "score": 5,
+                    "author": "Foxs-In-A-Trenchcoat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, you can even buy UV blocking coating for your windows, they seem to have a peak of absorption from 300-400 nm or so. But in general there's a lot of different things we call \"glass\", designed to block or transmit all kinds of things, and some will block more UV than others.",
+                            "score": 17,
+                            "author": "Astrokiwi"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yes.  I wear spectacles with the \"transitions\" colour shifting lenses (they darken with UV exposure - it's a silver halide compound iirc) but they DON'T darken through automotive glass because the automotive glass blocks a lot of the UV frequencies that would trigger the change.",
+                            "score": 3,
+                            "author": "No_Nobody_32",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The person who sold me on transition lenses didn\u2019t tell me they don\u2019t change in automobiles. Had I known that, I wouldn\u2019t have paid the extra because 95% of the time I am wanting \u201csunglasses\u201d is while driving.",
+                                    "score": 2,
+                                    "author": "AKcrab",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "When I got my first set (late 80s), it wasn't an issue (I didn't drive).   \nWhen I got a motorcycle, I  had a polarising visor.  \nDriving my car, I just put some fit-over polarising sunglasses on.",
+                                            "score": 1,
+                                            "author": "No_Nobody_32"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just to add a wee bit to this. Radiation is quite a general term, it can mean a bunch of different things, not just electromagnetic radiation - visible, UV, X-ray and gamma-ray light, but also particles like electrons (beta radiation) or helium nuclei (alpha radiation).\n\nAll these different types of radiation get absorbed differently by different materials.\n\nIn a nuclear reactor most of the radiation is either alpha, beta or gamma radiation, which all have quite different absorption behaviour to UV light.",
+                    "score": 7,
+                    "author": "CrambleSquash"
+                },
+                {
+                    "level": 1,
+                    "comment": "Damn I was a chemistry major in college and I learned a lot. Thanks for the thoughtful response",
+                    "score": 3,
+                    "author": "carrythekindness"
+                },
+                {
+                    "level": 1,
+                    "comment": "Additionally, water is not just a convenient blocker of electromagnetic/particle radiation, but also a very effective means of heat transfer from the primary fission chamber of a reactor to secondary/steam generating components. It\u2019s also worth noting that draining the water from the primary of most modern reactors would actually stop all fission activity since fast neutrons that are the immediate product of the fission of Uranium almost never facilitate fission chain reactions. I may have the number wrong off the top of my head, but if recall correctly, a fast neutron must collide with the hydrogen nuclei of water molecules an average of 11 times to sufficiently impart its initial energy to a level suitable for fission (something less than 1 electron-volt).",
+                    "score": 3,
+                    "author": "jramz_dc"
+                },
+                {
+                    "level": 1,
+                    "comment": "The most dangerous radiation depends on the circumstances. Alpha and beta particles have much more ionizing ability than ganma rays, but are easily blocked by clothing or the dead skin of the epidermis--alpha even by a few centimeters of air. But if you ingest or inhale a alpha or beta emitter, it can do a lot more damage. Generally speaking, though, [neutron radiation](https://en.wikipedia.org/wiki/Neutron_radiation) is probably the most dangerous. The particles are relatively massive and carry a lot of energy, but are also highly penetrating. When they do collide with a nucleus, they can induce radioactivity, compunding their effects.\n\nIn space travel, the interation of cosmic rays and solar particle radiation with the metal used for shielding and the hull of the spacecraft generates secondary radiation, including neutron radiation. On planets without a thick atmosphere and/or a strong magnetic field, cosmic rays and solar particles are absorbed by the rocks and dirt on the surface, producing secondary neutron radiation. Unlike other forms of radiation, a dense metallic material like lead is not a great shield for neutron radiation. Lighter nuclei like hydrogen and boron are much better at absorbing neutrons.\n\nFurthermore, when absorbing this and the other forms of radiation, the same lighter-nuclei materials tend not to emit a lot of secondary radiation, so they are useful as general radiation shields. Hydrogen-rich materials like water and hydrocarbon polymers are therefore proposed or used for radiation shielding in space applications. Polyethylene (a solid under normal conditions, so easier to use and work with than water) in particular is widely used for shielding of crewed spacecraft internal to the metal hull, including on ISS modules. The addition of boron to polyethylene or glass can also improve the radiation shielding ability.\n\nu/leira27",
+                    "score": 2,
+                    "author": "OlympusMons94"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As a follow up to the u/Astrokiwi answer: how far underwater were you?  Unless using scuba gear (and I'd bet more than a dollar that you weren't), you were:\n\n* entering and leaving the water, and\n* partially submerged, partially exposed.\n\nAlso size (specifically, thickness) matters:\n\n[https://uihc.org/health-topics/protect-your-skin-sun-damage](https://uihc.org/health-topics/protect-your-skin-sun-damage)\n\n&gt;UV rays also reach below the surface of water\u2014three feet of water blocks only 20 percent of UV rays.\n\nEven worse: light, including UV, reflects off the water, so you get hit in places that would normally be shaded.",
+            "score": 15,
+            "author": "RonJohnJr"
+        },
+        {
+            "level": 0,
+            "comment": "An additional comment: normal window glass doesn\u2019t block all of the range we call UV. You usually won\u2019t burn (EDIT: get sunburnt) through glass as the shorter wavelengths are blocked (what are often called UVB and UVC), but you can still tan a little and get skin damage and cancer from\nUVA (315nm-400nm). If you\u2019re sitting in direct sunlight it\u2019s worth using sunscreen even behind glass.",
+            "score": 5,
+            "author": "Aescorvo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Case in point: [truck driver with skin damage ](https://www.thesun.co.uk/news/5445161/sun-damage-truck-driver-face/) on one side of his face. The window didn't protect his skin.",
+                    "score": 6,
+                    "author": "Wishing4Signal"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Surface swimming, your body is only under a few cm of water. Just enough to keep you cool and not feel the burning. Even if it did partially block the UV, would you lie in the blazing sun for even half the time you swam?",
+            "score": 0,
+            "author": "Both_Aioli_5460"
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+{
+    "id": "13g4c9f",
+    "score": 598,
+    "title": "Can the back action propagation in a neuron spread from the dendride to the axon of another neuron through the synapse?",
+    "author": "Silly_Commercial_514",
+    "date": 1683943974.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13g4c9f",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I haven't heard of a case where depolarization wave can jump from a dendrite to an axon however some neurotransmitter systems can act in retrograde, that is from postsynaptic neuron to presynaptic one. These systems include endocannabinoid system, and nitric oxide and nerve growth factor molecules. This transmission doesn't cause depolarization, it remains a chemical cascade inside the neuron.",
+            "score": 114,
+            "author": "Tom1024MB",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the right answer\n\nA post synaptic neuron can send signals back to the pre synaptic neuron and strengthen their connection\n\nBut I have never heard of an action potential forming at an axon terminus due to neurotransmitters releasing from a dendrite\n\nThe synapse is designed in a way that the neurotransmitters are only released from the pre synaptic cell and only find the right gated channels on the post synaptic cell. It wouldn't work in reverse because if a pre synaptic neuron released a neurotransmitter, let's say it's acetylcholine, but also had receptors for acetylcholine, every time that neuron released neurotransmitters it would activate itself\n\nEdit: changed would to \"wouldn't\"",
+                    "score": 17,
+                    "author": "Thepolander",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "We should add an exception to the last part: some neurons have autoreceptors at their axon. Those particular receptors can detect neurotransmitters that their own cell released, and often function as part of a self-regulating negative feedback loop in the presynaptic neuron.",
+                            "score": 5,
+                            "author": "hey_look_its_shiny"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Is this a reasonable layman\u2019s-terms translation of your comment? \n\nI've never heard of a situation where the electric signal can jump from a tree-like part of a nerve cell to the long wire-like part. But there are some communication systems in the brain that work backwards, like the cannabis-related one, or ones involving gases and growth. This can go from the receiving part of the cell to the sending part. But this process doesn't make the nerve cells all electric and buzzy. Instead, it's just a bunch of chemical reactions happening inside the nerve cell.",
+                    "score": 3,
+                    "author": "DEATH-BY-CIRCLEJERK"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Likelihood of something like that happening is near zero:\n\nBack propagation of APs is constrained to very specific circumstances. There are mechanisms involving channel kinetics of the sodium VG channel which largely prevent back propagation \"echos\" forming from anterograde APs. Further, someone else here mentioned absence of schwann/oligodendrocyte contact at the soma and dendrites. Their presence helps reduce decay of the AP through time and over the length of the axon, so without these cells, even a backpropagating AP might decay immediately. You've also got the issue of lack of the structural components at the dendrite necessary for retrograde synaptic transport - it's too involved to get into on Reddit, but it's likely the vesicular recycling system at the dendrite and spine is too slow or simple to allow for instantaneous release of transmitter-laden vesicles (and which NT is even synthesized/loaded at the spine for this to happen?). Even if it wasn't, the abundance of VG calcium channels in the spine may not be sufficient to allow for quick and full fusion to occur - especially because the standard presynaptic fusion machinery is missing at the dendritic spine. We know this because it is possible to biochemically separate and examine pre- and post-synaptic compartments. Finally, post-synaptic ionotropic NT receptors would have to be present on the synaptic terminal of the pre-synaptic cell in a great enough number to respond to the (likely feeble) release of NTs from the spine. \n\nMost likely, the back propagation of APs is a method by which the neuron can modulate plastic response due to repeated firing. I think dendro-dendritic transmission is another way by which backpropagating NTs could elicit an AP in another neuron, but I would have to check my notes all the way back from grad school for that.\n\nSource: Me (I'm a PhD level neuroscientist in the US) Hope this helped.",
+            "score": 17,
+            "author": "operationarclightII",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Great answer!",
+                    "score": 3,
+                    "author": "bioentropy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "thanks. I try!",
+                            "score": 3,
+                            "author": "operationarclightII"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "No, I don\u2019t believe so. Typically, neurons don\u2019t produce neurotransmitter-filled vesicles in the dendrites. I think electron microscopy studies validate this claim, but perhaps there\u2019s a rare exception?",
+            "score": 41,
+            "author": "bioentropy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "As another commenter noted, there is retrograde signaling from postsynaptic to presynaptic neurons. This has been known for several decades.\n\nEditing for clarity to specify that this includes synaptic vesicle mediated signaling via conventional neurotransmitters. Citation in conversation below.",
+                    "score": 14,
+                    "author": "FarginSneakyBastage",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This. In addition, there's extrasynaptic receptors, which vary in occurrence between neurotransmitters, so the answer depends on which neurotransmitter is involved.",
+                            "score": 9,
+                            "author": "Eeate"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Which commenter? Retrograde signaling and backward propagation is not synonymous with APs jumping from post-to-pre synaptic neurons.",
+                            "score": 4,
+                            "author": "bioentropy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I only meant to point out that retrograde signaling, including via conventional neurotransmitter release, does occur. See review by Regehr, Carey, and Best, 2009, for examples.",
+                                    "score": 4,
+                                    "author": "FarginSneakyBastage"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is true, but is not what the commenter you're responding to referencing",
+                            "score": 2,
+                            "author": "Tootinglion24",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The commenter I was responding to asked if there were exceptions to the general rule that conventional neurotransmitter release only occurs presynaptically, and there are. I clarified my response in a follow up with a citation.\n\nI also thought it was a relevant point to OP's question generally.",
+                                    "score": 2,
+                                    "author": "FarginSneakyBastage"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Dendrodendritic synapses between mitral cells and granule cells in the olfactory bulb are reciprocal.",
+                    "score": 2,
+                    "author": "charavaka",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That\u2019s a very cool point. Could you provide a citation, please?",
+                            "score": 2,
+                            "author": "bioentropy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This one has all the relevant references,  though it is not the first paper to show the dendrodendritic synapses:\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC4390432/\n\n\nThe olfactory bulb chapter in synaptic organization of the brain edited by gordon shepherd has the details.\n\nhttps://scholar.google.com/scholar_lookup?title=The+Synaptic+Organization+of+the+Brain,+5th+Edn&amp;author=G.+M.+Shepherd&amp;author=W.+R.+Chen&amp;author=C.+A.+Greer&amp;publication_year=2004&amp;\n\nBut I'm sure kandel's principles of Neuroscience has enough information, too.",
+                                    "score": 3,
+                                    "author": "charavaka",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thank you very much!",
+                                            "score": 2,
+                                            "author": "bioentropy"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "To change up the answers a little bit, something like that could theoretically be possible if the presynaptic cell was electrically coupled to the postsynaptic cell in addition to the chemical synapse. I've only ever heard evidence of this in the inner retina.",
+            "score": 6,
+            "author": "zfddr"
+        },
+        {
+            "level": 0,
+            "comment": "For most of the synapses, the answer is no. However, in the rare reciprocal synapses, this is what happens. For example,  the mitral cells and the granule cells form dendrodendritic synapses - dendrites forming synapses with dendrites of other cells, as against the typical axodendritic synapses. These dendrodendritic synapses are reciprocal - both cells are presynaptic as well as postsynaptic to each other. Mitral cell action potentials get synaptically transmitted to excite granule cells, while granule cell action potentials get synaptic transmitted to inhibit mitral cells. Given the reciprocal nature of the synapses, in fact,  means that when mitral cell sends excitatory signal to the granule cell, the reciprocal synapse gets activated, inhibiting the mitral cell, without the need for a backpropagating action potentials in the granule cell. Those become relevant to inhibit other mitral cells the same granule cell forms reciprocal synapses with.\n\nOther cells with \"normal\" synapses can't transmit in the other direction, but the postsynaptic terminals have other trucks up their sleeves: neuromodulators, for example.",
+            "score": 4,
+            "author": "charavaka"
+        },
+        {
+            "level": 0,
+            "comment": "I'm kinda surprised by the answers here. I think they are assuming you mean some sort of unintended back propagation, like a misfire from an unusually strong depolarization. This is not the case, but there are absolutely examples of the post-synaptic neuron signaling the pre-synaptic one that it has fired, which seems to be what you are asking. In fact, this is the primary function of endocannabinoids.\n\nIf this is not what you meant, there is *still* a somewhat rarer type of synapse where electrical back propagation is possible, and that is through gap junctions.",
+            "score": 4,
+            "author": "Foxhound199",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Is it kind of like how you can't send an electric current both directions through a wire at the same time?",
+                    "score": 3,
+                    "author": "AndroidDoctorr",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There's definitely a clear mechanism that keeps signals traveling down but not up an axon, but arguably the strongest control against signals \"accidentally\" going backwards is that the chemical messengers that cause a neuron to fire are released by the pre-synaptic neuron and have receptors on the post-synaptic neuron. There simply isn't the equipment for the same signal to go backwards.",
+                            "score": 3,
+                            "author": "Foxhound199",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh ok, so if both sides are sending and receiving the same neurotransmitters then the whole synapse is just a confused mess and there's no way to tell which way the signal is going, correct?",
+                                    "score": 1,
+                                    "author": "AndroidDoctorr"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You can send a signal in both directions of an axon. You just stick a microelectrode half-way down and send a current down to depolarise.\n\nThe mechanism that keeps propagation unidirectional in the axon is the refractory period of the sodium channels - they don't reopen for a millisecond or two after closing.",
+                            "score": 3,
+                            "author": "chazwomaq"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

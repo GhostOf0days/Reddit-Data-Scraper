@@ -1,0 +1,113 @@
+{
+    "id": "13ob02g",
+    "score": 83,
+    "title": "Why can bosons occupy the same space and state but fermions cannot?",
+    "author": "Independent_Pear_429",
+    "date": 1684714716.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13ob02g",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "It makes intuitive sense that you can't have the same particles of the same state in the same space. But why are bosons not limited but this restriction?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If you have N identical particles described by a wavefunction and exchange two particles in it, what happens? The physics has to stay the same - they are identical, after all. And if you swap them again then you need to get the original wavefunction back. That leads to two options:\n\n* The wavefunction stays the same. We have bosons.\n* The wavefunction is multiplied by -1. We have fermions.\n\nIn the first case there is no problem with multiple particles in the same state. Swapping them doesn't change the wavefunction so you have the same system as before. But what happens if you swap two particles in identical states in the second case? You conclude that the wavefunction is identical to its inverse, which only works if it's zero overall: The state cannot exist. Extending that to thermodynamics we get the Bose-Einstein statistics for bosons and the Fermi-Dirac statistics for fermions.\n\nThe [spin-statistics theorem](https://en.wikipedia.org/wiki/Spin%E2%80%93statistics_theorem) tells us that bosons have an integer spin while fermions have a half-integer spin in our world but that's not as fundamental as the statistics we get.",
+            "score": 63,
+            "author": "mfb-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I know just enough about this subject to get myself in trouble, so I'll ask a follow-up.\n\nThe Pauli exclusion principle is the result of the non-exchangeability of fermions in the quantum wavefunction. This rules out exactly identical states between pairs of particles. Yet there also is a pressure (quantum degeneracy pressure) that emerges as density of matter increases, and this pressure counteracts the compression due to gravity found in objects like neutron stars. Does this mean that similar, but non-identical, states between pairs of fermions are also not allowed (or are \"discouraged\")? Do we know *how* the exclusion principle becomes this pressure? \n\nAlso, once the density exceeds a certain level, the Pauli exclusion principle cannot compete against gravity and an object collapses to become a black hole. This, to me, seems like a violation of the non-exchangeability of fermions in the quantum wavefunction that you describe. Is this one of those \"black holes break what we know about physics\" moments? Do we have an idea how it is possible that this happens?",
+                    "score": 7,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "States in a finite volume are discrete, this is true for both fermions and bosons. A common example is an atom where you have two states for n=1, 8 for n=2 and so on. There is no state in between these energies for electrons. The gaps between energy levels tend to be larger if your system is smaller: Squeezing the matter means increasing the energy of all the electrons in the states that now get a higher energy.\n\nIf a neutron star has sufficient mass then gravity provides enough energy to squeeze it down further against this neutron degeneracy pressure - it collapses.\n\nOnce you have a black hole, electron or neutron energy levels don't matter at all because trying to escape (or trying to stay stationary) inside a black hole is like trying to reach last Friday. There isn't even a direction you could be pushed to in order to achieve that.",
+                            "score": 6,
+                            "author": "mfb-",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\\&gt;Once you have a black hole, electron or neutron energy levels don't   \nmatter at all because trying to escape (or trying to stay stationary)   \ninside a black hole is like trying to reach last Friday. There isn't   \neven a direction you could be pushed to in order to achieve that.\n\nThis sounds like the collision of two logical impossibilities. On the one hand, there's no way for fermions to have the same state. On the other hand, there's no way backward in time. Why does the black hole logical impossibility have precedence over the Pauli-principle logical impossibility?",
+                                    "score": 3,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You cannot have stationary states inside a black hole. You could define \"infalling states\". As the name suggests, they fall towards the singularity. As long as you ride a chunk of matter that falls in physics isn't that different for you. Locally it still looks the same as before, but everything you can interact with inevitably falls deeper in.",
+                                            "score": 4,
+                                            "author": "mfb-",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "To repeat what you said to make sure I understand it, it sounds like if you're in the reference frame of the fermion, there is no overcoming of the Pauli exclusion principle. But from the reference frame of someone outside the black hole, we just see the event horizon and lose track of the fermion, or the fermion freezes in time as it approaches the event horizon?\n\nIf this is the case, in what sense can we even say that there is quantum degeneracy? It seems like every time there would be enough gravity to overcome the Pauli exclusion principle (between neutrons, specifically), a black hole would form and hide the result from you.",
+                                                    "score": 2,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; It seems like every time there would be enough gravity to overcome the Pauli exclusion principle (between neutrons, specifically), a black hole would form and hide the result from you.\n\nYou don't really overcome anything. The object just shrinks until it forms a black hole.\n\nYou never see anything that happens behind an event horizon from the outside (by definition), but we can still consider what happens inside without issues.",
+                                                            "score": 5,
+                                                            "author": "mfb-"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So, if I'm remembering my quantum right (been\n.. a while), essentially what's happening is that in a high density environment, orbitals still exist, but they get \"squeezed\" into smaller and smaller dimensions and higher and higher energies, until they get *so* high energy that it becomes favorable for a proton to capture the electron and become a neuron, giving of a bunch of energy in the process (resulting in a supernova and a neuron star).\n\nWith enough mass that process basically repeats with the strong nuclear force and you (probably) briefly get a quark/gluon plasma before it disappears behind an event horizon.",
+                            "score": 7,
+                            "author": "fragilemachinery"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Pauli exclusion pressure is a purely \u201cgeometric\u201d property of fermions which becomes relevant only at thermodynamic scales. If you shoot two fermions at each other, in the absence of other forces, they will not repel and will pass right through each other.* But put enough fermions together at a high enough density that they compete for space, then you get pressure.\n\n*: Well, it\u2019s a bit more complicated because of their wave nature, but if two non-interacting fermions come in at some angle, then two fermions will come back out st the exact same angle, unscattered.",
+                            "score": 1,
+                            "author": "Movpasd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The fundamental difference comes down to the type of statistics the particles obey: Fermi-Dirac statistics for fermions and Bose-Einstein statistics for bosons.\r  \n\\- Fermions possess half-integer spins and obey the Pauli Exclusion Principle, which states that no two fermions can occupy the same quantum state simultaneously. This arises from the antisymmetry of the wave function representing fermions.  \n\\- Bosons have integer spins. They  do not adhere to the Pauli Exclusion Principle. The wave function that describes a system of identical bosons is symmetric, allowing them to occupy the same state in the same place.  This symmetry means that if you swapped two bosons in the system, the wave function would remain unchanged. This symmetry allows multiple bosons to occupy the same quantum state, even within the same space, leading to phenomena like Bose-Einstein condensates",
+            "score": 3,
+            "author": "Qubit99",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I know this is Pedantic, but particles do not \"obey\" Fermi-Dirac statistics nor Bose-Einstein statistics. Those are statistics we use to *describe* their behavior. Though accurate as far as reality is concerned in their description, these descriptions don't have any influence on how particles behave.",
+                    "score": 2,
+                    "author": "Froggmann5",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It isn\u2019t pedantic imo, this is the point of the original question.  We know, mathematically and experimentally that this behavior appears to be accurate.  The question remains, why?",
+                            "score": 3,
+                            "author": "Sfwupvoter"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Science enthusiast and fan of PBS Spacetime here.  I'm trying to wrap my head around these concepts, but I don't have any formal background in particle physics outside of some lower-mid level college courses fifteen years ago.\n\nSo... bosons with their integer spins are symmetrical, and can thus be interchangeable and occupy the same space.  Then fermions having half spin means they are anti-symmetrical?\n\nCan you expand on this?  It sorta sounds like, for example, two fermions with the same spin (two with an up spin?  Two with a positive spin?) should be able to occupy the same space.",
+                    "score": 1,
+                    "author": "Krail"
+                }
+            ]
+        }
+    ]
+}

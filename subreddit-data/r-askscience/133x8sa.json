@@ -1,0 +1,57 @@
+{
+    "id": "133x8sa",
+    "score": 8,
+    "title": "Is there a possibility of \u201csimulating\u201d biological systems similar to physical systems?",
+    "author": "dhanush_ram",
+    "date": 1682874305.0,
+    "url": "https://www.reddit.com/r/askscience/comments/133x8sa",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "In Physics, we can simulate even the Big Bang. But I am not sure I have heard of simulations of biological systems. It would be great let\u2019s say we have a computer model of how human body works and we can simulate how drugs like paracetamol affects the body. What is the difficulty in creating such a model?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Yes, biology has a ton of system dynamics modeling. My background is pretty focused but viral/bacteria reproduction in the body, how drugs are processed, how diseases spread in a population, etc....",
+            "score": 13,
+            "author": "PHealthy"
+        },
+        {
+            "level": 0,
+            "comment": "At the moment, only certain parts or processes can be computationally modelled.  Its not unreasonable to think that in the future we'd have a whole body model and drug discovery and non human trials could be done using Model Based means.",
+            "score": 5,
+            "author": "doginjoggers"
+        },
+        {
+            "level": 0,
+            "comment": "[Computational biology](https://en.wikipedia.org/wiki/Computational_biology) is a whole field onto itself. There is quite a bit of modeling and computation that goes on in most biological fields and the reliance on these systems is increasing just like in every aspect of science as we get better understanding of underlying physics/chemistry and better computational tools. \n\nJust as in physics or chemistry, mathematical models are approximations and huge amounts of abstraction and assumption has to go into a model in order for it to be manageable. Thus for any model to be meaningful, it is constrained in time and space scale (a model that describes how a specific protein folds is useless for understanding whole cell transcription regulation and vice versa). There are models for molecular, cellular, organ, body, population, evolution dynamics and everything in between. \n\nFor your specific question, there are models for how a drug will behave in a human body. PKPD (pharmacokinetics and pharmacodynamics) are a field of study that uses models (typically akin to bioreactor process models) to predict the distribution and decay of pharmaco-active compounds. Those models rely heavily on experimental data because we do not know enough about whole body biochemistry to be very accurate. For the same reason, predicting what a drug will do in the body is still largely a matter of empirical observation though of course many computation tools are employed in speeding this up.\n\nFundamentally, it is difficult to create these kinds of predictions because the variable space in something like the human body is too large. Interactions in the body are biochemical in nature for the most part which means we need to be looking at the molecular scale to get very accurate predictions. Abstractions can work to some extent but the huge variability in state between cells and tissues means that at the very least you need to be on the tissue level for something like drug interactions. And even if we had the computational power to do these kinds of models, we simply are nowhere near understanding how every molecule interacts with all others, much alone how a drug might disrupt that. This is further complicated by the fact that biology is very very messy compared to an engineered system. Evolution finds anything that works and goes with it until it doesn't work. Variance, duplication, complicated feedback systems, etc. are all very common making abstraction very difficult.",
+            "score": 3,
+            "author": "sometimesgoodadvice",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the detailed and insightful answer!",
+                    "score": 2,
+                    "author": "dhanush_ram"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It sounds like you are talking about computational chemistry or molecular modeling.  Yes that's already a thing.  I don't know of any whole human body models, but we have [AlphaFold](https://www.nature.com/articles/s41586-021-03819-2) an AI to predict protein folding.  And there are other general chemistry models that can predict the [local bulk partition coefficient](https://scholar.google.com/scholar?hl=en&amp;as_sdt=0%2C50&amp;q=local+bulk+partition+coefficient+&amp;btnG=#d=gs_qabs&amp;t=1682947278083&amp;u=%23p%3DuFl7fRKB6r4J), and [Kirkwood Buff integrals](https://en.m.wikipedia.org/wiki/Kirkwood%E2%80%93Buff_solution_theory).",
+            "score": 2,
+            "author": "Foxs-In-A-Trenchcoat"
+        },
+        {
+            "level": 0,
+            "comment": "I think it was Gould who popularized the idea that physics is simple and biology is complex. Sure, simulations are common in biology. Just as there is no complete simulation of universe or anything even close (all scales included) there is no complete simulation of complex biological entities interacting in an ecosystem while also including cellular level processes.",
+            "score": 1,
+            "author": "perta1234"
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m about to learn a software called SLiM4 which simulates evolution down to the actual gene sequences in individuals generation to generation. It lets us compare the outcome of the simulation with our hypothesis about how a real population evolved. \nBesides keeping a complete family tree, it lets you add selection on specific genes, new mutations, migration, different levels of connectedness of sun populations, genetic recombination rates which vary at different parts of the genome (like during reproduction when crossing over happens), changing population sizes and loads of other things. \n\nThe manual is almost 800 pages and I\u2019m terrified of it!",
+            "score": 1,
+            "author": "HauntedBiFlies"
+        }
+    ]
+}

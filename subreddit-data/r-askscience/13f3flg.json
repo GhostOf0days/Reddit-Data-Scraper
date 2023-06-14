@@ -1,0 +1,113 @@
+{
+    "id": "13f3flg",
+    "score": 20,
+    "title": "Why a rocket nozzle needs both a converging and diverging section?",
+    "author": "PM_ME_UR_Definitions",
+    "date": 1683846832.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13f3flg",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I've been watching the BPS Space youtube videos on making a solid rocket motor, and the intuitive reasons for having a converging and diverging section don't really make sense. It seems like if there's a conservation of energy, then sending all the mass out the back of the engine would yield the same thrust, as long as the exhaust can all be directed backwards.\n\nSo the diverging section makes sense, it allows the exhaust to expand and bounce off the walls of the nozzle, ending it directly backwards. And in an ideal situation the pressure at the exit of the nozzle is exactly ambient and all the exhaust is going directly backwards.\n\nBut wouldn't that happen anyways without the converging part?\n\nI keep seeing people say that the converging part gets the velocity up to mach 1, and that chokes the nozzle. Does that mean that because the nozzle is choked the pressure inside the combustion chamber can get higher since the exhaust can't get out of the nozzle any faster, no matter how high the pressure is? And then because there's a higher pressure, more energy can be extracted from the pressure differential? If that's the case I don't understand how the higher pressure affects the downstream exhaust? How does it make the exhaust move faster in the diverging part?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For a subsonic flow, reducing the area accelerates the flow. For a supersonic flow, increasing the area accelerates the flow. Hence the converging-diverging nozzle accelerates the exhaust up to Mach 1 in the converging section and beyond Mach 1 in the diverging section. Increasing exhaust velocity means increasing thrust with the same rate of propellant flow.\n\nIf you didn't have the converging section, the exhaust wouldn't reach Mach 1 and the diverging section would not have the desired effect.\n\nhttps://en.wikipedia.org/wiki/De_Laval_nozzle",
+            "score": 22,
+            "author": "rootofallworlds",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That seems weird, that both making the nozzle smaller and bigger increases the speed of the exhaust. I get that it has something to do with the flow being choked at mach 1, but I guess I don't understand where the energy to make the exhaust supersonic in the diverging section comes from?",
+                    "score": 2,
+                    "author": "PM_ME_UR_Definitions",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "\n&gt;where the energy to make the exhaust \nsupersonic comes from\n\nYou don\u2019t have to add any \u2014 and indeed this is an example of isentropic flow. If you continue to shove exhaust into the converging section at a constant rate, the velocity must needs increase as the cross-sectional area decreases in order to keep the amount of matter flowing through constant. The flux changes, but you don\u2019t need to add energy for that, if you can just change the area.\n\nFrom the Wikipedia article you were provided:\n\n&gt; As the gas enters a nozzle, it is moving at subsonic velocities. As the cross-sectional area contracts the gas is forced to accelerate until the axial velocity becomes sonic at the nozzle throat, where the cross-sectional area is the smallest.\n\nThis fast, high-pressure gas can then expand in the diverging section, imparting thrust forward as the exhaust expands backwards:\n\n&gt;From the throat the cross-sectional area then increases, allowing the gas to expand and the axial velocity to become progressively more supersonic.\n\nNot only is it now flowing, but it is being allowed to expand. The temperature drops and velocity increases. No pressure wave from the diverging section can push into the choke point because the exhaust there is flowing too fast, so that expansion is all directed backwards.\n\nThe De Laval nozzle does not add or subtract energy \u2014 it\u2019s a way to take the random thermal energy of exhaust and convert it into kinetic energy in one direction.",
+                            "score": 8,
+                            "author": "Uncynical_Diogenes",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is oversimplified because you don't explain why it is that a constriction increases velocity for subsonic flow and then an expansion also increases velocity for supersonic flow. This is definitely an unintuitive result. In fact, I've never heard anyone give an intuitive explanation for this phenomenon and related phenomena with compressible flow in general and supersonic flow in particular.",
+                                    "score": 1,
+                                    "author": "Coomb",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Think about what Mach number actually means. The lay explanation is that it's the ratio of the flow speed to the speed of sound but a deeper understanding comes from realizing that it's actually the ratio of inertial forces to elastic forces in the medium. Because a sound wave is adiabatic it has a Mach ratio of 1 and, therefore, travels in a non-moving medium at the \"speed of sound\" relative to the medium. In other words, rather than saying \"Mach 1 is the speed of sound\" it's more accurate to say \"the speed of sound is Mach 1\" or, better yet, \"sound travels at a condition of Mach 1.\"\n\nSo, (well) below Mach 1 a gas is effectively incompressible meaning that, if the cross sectional area is reduced along the flow path, then the flow has to accelerate (for a constant mass rate of flow). It's the only way for the same number of molecules to pass through the section in a given amount of time if the molecules stay the same distance apart.\n\nAbove Mach 1, density enters the equation since compressibility of the gas is now a significant factor. The gas will accelerate and become less dense on its own, without any energy being added. The trick to nozzle design is to get the geometry right to optimize the rate of expansion. You could just cut the nozzle off just after the throat and the gas would expand, but it would expand through a shock wave (i.e., a non-adiabatic wave) and, so, most of the energy would go into heat and noise and not so much into thrust.",
+                                            "score": 1,
+                                            "author": "Rhueh",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Why is gas effectively incompressible below Mach 1? Do you mean simply that it\u2019s leaving the combustion chamber at high pressure and is converging, or is there something else going on?",
+                                                    "score": 1,
+                                                    "author": "disgruntled-pigeon",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "To be honest, I studied the theory so long ago that, if I ever knew the proper answer to that question, I've forgotten it. But here's what I can tell you.  At low speed the forces required for the gas to follow a  curve, such as an airplane wing or a nozzle, are so low that, for all practical purposes, the gas doesn't compress or expand at all. So, it behaves like a liquid and the same formulas that predict liquid flow will also predict gas flow. The Bernoulli formula, for example. But, as the speed approaches Mach 1, the forces start to get high enough to compress the gas and the flow isn't like liquid flow anymore. Above Mach 1 the flow is completely unlike a liquid flow and our intuitions about what might happen (which we get from watching water flow, for example) become inadequate. In particular, the Bernoulli effect is essentially reversed, with expansion leading to acceleration instead of deceleration and contraction leading to deceleration or choking.\n\nInterestingly, there is something we can use as an intuitive reference for understanding supersonic gas flow. Highway traffic flow is a lot like supersonic gas flow. Where there's a constriction the cars slow down and get closer together and then, where the constriction expands, they spread out and accelerate. Just like air molecules going through a supersonic nozzle. In fact, the math in traffic models is a lot like the math for supersonic gas flow.",
+                                                            "score": 2,
+                                                            "author": "Rhueh"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Very interesting question.  Im having the same trouble understanding.  But from what I have read this is a big problem even nowadays.  Many rockets begin breaking down when they reach the last layers of atmosphere.",
+                                                            "score": 1,
+                                                            "author": "AChowfornow"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;I guess I don't understand where the energy to make the exhaust supersonic in the diverging section comes from?\n\nIt comes from the compression of the gas. The gas is compressed ahead of the constriction, but then the energy stored in the gas is released as it expands in the diverging part of the nozzle.\n\nThere's a really good video explanation of this concept of subsonic and supersonic flow in a rocket nozzle in this video:\n\n# Real Engineering | [How NASA Reinvented the Rocket Engine](https://www.youtube.com/watch?v=RVxgyz_avQM)\n\n**EDIT:** sorry, not that video. I just re-watched it. Let me see if I can find which video explained this.\n\n**EDIT:** u/PM_ME_UR_Definitions I found a video explaining the design of hypersonic wind tunnels that has all of the same explanations as for a rocket nozzle, since these wind tunnels have to produce hypersonic flow, and the way to do that is to use the converging/diverging nozzle shape. This is where I saw the explanation:\n\n# Scott Manley | [How Hypersonic Wind Tunnels Recreate Mach 20](https://www.youtube.com/watch?v=v0Z_4VyuzcA)\n\nThe explanation begins at roughly timestamp 3:15.",
+                            "score": 3,
+                            "author": "Berkamin"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah, the physics associated with supersonic flow often does seem pretty whacky. It's been a while since I learned this, but if I recall correctly, the pressure change across the nozzle is related to the change in cross sectional area by a factor proportional to 1/(1-M\\^2), where M is the Mach number. So for the pressure to be dropping across the nozzle, the area needs to be decreasing for M&lt;1, and increasing for M&gt;1. \n\nAgain, it's been a while, so take it with a grain of salt, but as to where the energy comes from: as the flow is accelerating past Mach 1, I believe the density starts to decrease faster than the velocity increases, so by the continuity equation, the cross sectional area of the nozzle has to increase to compensate.",
+                            "score": 2,
+                            "author": "iwonderwhathatdoes"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "if flow is steady, mass flow rate, pAv, must be conserved. Generally, subsonic flow is incompressible. So if you decrease area, A, and density, p, can\u2019t change, that means velocity, v, must increase. However, to conserve energy, if velocity is increasing, there must be a pressure drop at the throat.\n\nHowever, if you decrease the area enough, the velocity reaches Mach 1. At this point, the flow is now more or less compressible. Now, in the diverging section you have increasing area but the density can now change because it\u2019s compressible. However, the density here drops faster than the area increases, so to conserve mass flow rate again, velocity must be increasing.\n\nSo from the combustion chamber to the nozzle outlet, velocity is increasing and pressure is dropping.\n\nAlso you won\u2019t get any more increase in velocity if you make the throat any smaller than at Mach 1 speed. In fact velocity will drop and pressure will climb and you won\u2019t get supersonic flow out.",
+                            "score": 2,
+                            "author": "ExcitementThen2147",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ok, thanks, that does make a lot of sense. So even though after the throat pressure is dropping, the speed is still above mach 1, so the exhaust is still compressible? And a larger nozzle will continue to accelerate the exhaust?\n\nAlthough, eventually the speed would have to drop right? Like, in space the exhaust won't continue to accelerate as density drops.",
+                                    "score": 1,
+                                    "author": "PM_ME_UR_Definitions"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fluid dynamics aside, solid rocket propellant do [require the higher pressure and temperature](https://apps.dtic.mil/sti/pdfs/ADA575639.pdf) in the \"choked\" combustion chamber to attain higher specific impulse and combustion rate useful as rocket propulsion.\n\nDepending on exact composition, burning rocket propellant at 1 atmosphere only gets you combustion rate somewhere between smoldering coal and wood fire. Most common solid rocket flight termination system or thrust control (more like total impulse control) simply blows open a hole in the combustion chamber to reduce the pressure and effectively extinguish the combustion.",
+            "score": 5,
+            "author": "Ard-War",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Choked flow cannot have its mass flow rate increased by decreasing the pressure downstream, but as you say it can be increased by increasing the pressure upstream.",
+                    "score": 1,
+                    "author": "Coomb"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "id": "13vmwqf",
+    "score": 7,
+    "title": "During stimulated emission, why does the emission even occur? Why not excitation?",
+    "author": "IronMan9998",
+    "date": 1685443756.0,
+    "url": "https://www.reddit.com/r/askscience/comments/13vmwqf",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "If there IS a higher energy level, and the energy gap from level 1 (say) to level 2 (say) is EXACTLY equal to the energy contained by an incident photon, then will the atom still undergo stimulated emission back to ground state (level 0)? Or will it undergo excitation to level 2?  \n\n\nThanks in advance!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "In that case, both excitation and stimulated emission are possible. For example, a quantum harmonic oscillator, where the levels are equally spaced.",
+            "score": 9,
+            "author": "RobusEtCeleritas"
+        },
+        {
+            "level": 0,
+            "comment": "Edit: I just realised there is a much easier way to say this. Look below for a more detailed explanation. In short: it depends on whether the electron/atom is excited. \n\nExcited --&gt; emission;\nnot excited --&gt; absorption\n\nExcitation and stimulation both occur with exactly the same interaction likelyhood if the upper and lower states are equally populated. So, if you want only stimulation or only excitation - say to get a laser - then you need to make sure that only one level is populated.\n\nTo be more precise: when you calculate the probability of interaction between a photon and electron the type of interaction - excitation or de-excitation - doesn't come into it. **It only depends on whether the electron involved is in its excited state or not.**\n\nFor a basic example of a laser you pump (only excitation) electrons from the low level to the high level. For that you need the great majority of electrons to be in the lower level. That way most incoming pump photons will only meet low level electrons and excite them. Only very few photons will chance on an excited electron (and deplete it).\n\nIn order to get stimulated emission, you need the upper level to be full of electrons, i.e. nearly all electrons should be excited. Then most photons will meet an excited electron and cause stimulated emission of the next photon. A few photons always meet depleted electrons and stimulate them instead. For a laser, you want that to happen as little as possible.\n\nTo wrap it up: Most of laser design deals with making sure that the pump levels are full/empty (low/high level) and the lasing levels are empty/full, to avoid the wrong type of interaction.",
+            "score": 1,
+            "author": "AMRossGX"
+        }
+    ]
+}

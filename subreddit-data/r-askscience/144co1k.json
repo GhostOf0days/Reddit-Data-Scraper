@@ -1,0 +1,147 @@
+{
+    "id": "144co1k",
+    "score": 35,
+    "title": "What causes DNA to break down and create genetic mutations spontaneously?",
+    "author": "Scarfaceswap",
+    "date": 1686238971.0,
+    "url": "https://www.reddit.com/r/askscience/comments/144co1k",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Mutations in DNA occur when DNA isn't copied quite right or is exposed to external influences, such as radiation. These mutations are then tested in the real world in what we call \"survival of the fittest.\" A mutation is more likely to be passed on to future generations if said mutation proves to be more beneficial than not. \n\nAll of this I understand, but I'm having difficulty wrapping my head around \"spontaneous\" mutations. To me, it almost seems like these mutations are \"intentional\" rather than spontaneous. Is there anything inherent about DNA that ensures mutations occur so that evolution can occur as well? Did DNA itself evolve (for lack of a better word) in a way so that it produced mutations because that was somehow beneficial to its own survival? Or is it all truly spontaneous?\n\nI've been doing some of my own research on this, but I guess I'm just confused as to how exactly mutations occur, and would really appreciate any clarification. Thanks!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "\nEssentially all chemical processes are subject to a certain amount of error and the more complex they are, the more likely that errors will occur.\nIn the case of DNA errors occur internally due to replication errors and other spontaneous changes, and external causes such as various physical and chemical events.\nSo, DNA will always be changing, but so would any other molecule that might be used for information storage. In fact any molecule that could eliminate any change would not be  a success as no evolution could take place.",
+            "score": 17,
+            "author": "DdraigGwyn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; In fact any molecule that could eliminate any change would not be a success as no evolution could take place.\n\nIt would put a halt to mutation and development of new genes, sure.  But there's still sexual recombination, horizontal genetic transfer, and selection pressure on the resulting organisms, so evolution would still happen.",
+                    "score": 7,
+                    "author": "Dyolf_Knip",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But sexual reproduction is of no use in creating new combinations if there have never been any new alleles. With no change in the DNA every organism would be a clone, so horizontal transfer cannot add new information.",
+                            "score": 3,
+                            "author": "DdraigGwyn",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The question was about mutations, not allele frequency shifts in general.  The available alleles would be pretty much set in stone, but if we assert that viral insertion into genomes doesn't 'count' as a transcription or replication error, then there'd still be some mechanism for editing existing genetic code.\n\nIf we disallowed any further creation of new words or even changes in pronunciation, new literature could still be written.",
+                                    "score": 3,
+                                    "author": "Dyolf_Knip",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yea but imagine that over time you lose 1% of the remaining words each year (genetic drift causes a loss in allele variation over time). It won't be long until you lose something extremely important and without new variation as a result of mutation to make up for this defecit, the species will become completely homozygous.",
+                                            "score": 1,
+                                            "author": "SSBGhost"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Well, how would you get all of those processes if there was no variation to select from? The LUCA or any proto-cell one might care to imagine is asexually reproducing. Some mistakes are critical for introducing variety for selection to act on, which is the only process by which more complex machinery for the other processes you mention would be created.\n\nBeyond that, the person you are responding to is making a larger comment about the 2nd law of thermodynamics. Any system that can change (which is needed for 'writting' and 'copying' information) and has order needs to increase entropy to sustain itself. There is no perfect machine or perfect process--all order will succumb to decay.",
+                            "score": 1,
+                            "author": "Helios4242",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "True, I was imagining you take the existing biosphere and magically make DNA replication a lossless process.  If It starts out that way, then yeah, gonna be a pretty lackluster gene pool.",
+                                    "score": 2,
+                                    "author": "Dyolf_Knip"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "On the molecular level, the mutations are chemical substitutions in the DNA structure. There are various mechanisms by which those substitutions occur, but for the mutations to be passed down, the mutations have to be propagated to offspring which means that they have to be persistent when DNA is copied during the process of cell division.\n\nTo \"copy\" DNA, the double-strand comes apart and each strand gets a new complementary strand added to replace the one that was unwound. This is a chemical process in which the presence of the complementary base is energetically favorable to not having a complementary base. However, this process would occur very very slowly naturally, and similarly the bases fusing on the phosphates would also occur very slowly. Life has long ago evolved proteins called DNA polymerases that speed up this reaction and are necessary for DNA replication. These are so important that any living thing that has DNA (which is all of them if we don't think about viruses for now) has DNA polymerases.\n\nLike all chemical reactions, this process is driven by random walk. It's not enough for the reaction to be energetically favorable, for it to occur, the molecules have to randomly bump into each other in the right orientation, and with the right energy to make the reaction work. The polymerase helps stabilize this orientation and keeps the bases close to each other so that the reaction occurs much faster than it normally would. Still, there is room for \"error\" where a base that is not typically complimentary is stable enough for a long enough time to still be incorporated. This will happen randomly (although there is still some dependence on sequence) and is happening all the time. Basic polymerases have errors on the order of 1 in 100k bases, which is pretty high. If such a polymerase copied the human genome of 4Gb, it would introduce \\~40,000 mutations every time a cell divided! So polymerases have evolved accessory domains to help correct these types of errors. The real mutation rate is much smaller and varies somewhat by species.\n\nPolymerases are proteins and they are encoded in the DNA of the organism, so they themselves are subject to evolution. Since DNA replication is such a fundamental property of living things, there is strong selection pressure for an appropriate mutation rate. Too much mutation would lead to organisms and populations that are genetically unstable and could likely non-viable. Too little would lead to populations that have little genetic variance and are thus less likely to adapt to varying conditions. Thus we can intuit that the mutation rate is somewhat optimized across the relative rate of environmental changes for living things (and by environment, I mean the totality of the interactions between the species and it's surroundings including climate, chemical composition, concentration of predators, nutrient availability, etc.)\n\nIt's important to see that mutations are truly random (discounting some interesting higher order genomic architecture and things like immune receptors which have to mutate a lot). Each organism in a population has a lot of \"mutations\". For example, on average each person has \\~4-5 million mutations (0.1% of the genome) compared to a \"reference\" genome! Most of those don't do anything. Many have minuscule effects. Very very few have any affect on the fitness of a given organism. But, when you apply selection pressure on a large population with a lot of variance over a long period of time, some mutations will tend to dominate the population over others. Combined with things like genetic drift, over many many many many generations, you start seeing the profound phenotypic changes that have occurred across all species.\n\nThere is no intention in evolution (outside of human driven genetic modification). It is very seldom that any one mutation offers significant fitness advantage. It is also the case that mutations are typically present much earlier than their fitness advantage is realized (e.g. plants that have different colored flowers thousands of years before a pollinator that prefers red over yellow even shows up in the region).\n\nAll of this is at a basic level. For almost all statements I have made, there are some exceptions that are important, but on the whole, I think this is the best way to conceptualize evolution.",
+            "score": 6,
+            "author": "sometimesgoodadvice",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for your explanation! I\u2019m beginning to realize that I should look into polymerase proteins a bit more. The fact that they evolved in order to assist with the DNA replication process is interesting. The fact that they are subject to evolution as well is also very interesting due to how influential they are in the DNA replication process itself.",
+                    "score": 1,
+                    "author": "Scarfaceswap",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, there are countless itterations of replication cycles behind life, so lots and lots of space to explore slight changes to replication that add up over time.\n\nTaken even further back, RNA can [catalyze](https://www.google.com/url?q=https://www.nature.com/articles/nrm.2017.105&amp;sa=U&amp;ved=2ahUKEwi00cCq1rX_AhWdmokEHdYIAusQFnoECAwQAg&amp;usg=AOvVaw0u8ZnJ9nRJWMRRVufHQL5W) reactions, such as being it's own [self-replicating ribozyme](https://www.nature.com/articles/339519a0).\n\nEssentially, even rare events can happen once in a while over billions of years. And once one event that speeds up other events (catalysis) occurs, especially  if it makes something that's able to propagate its own rare event, it speeds everything up immensely. Suddenly there are a lot more chances at rare events and the ones that stick start to survive. \n\nI don't know if it's been studied in derail, but a self-replicationg RNA without any backup proteins would certainly have a high rate of mutation--in addition to being unstable. So it's fortunate that in whatever time one (or many) of them had, they eventually got tied to amino acid linking and DNA transcription (those interesting little polymerases) &amp; expression.",
+                            "score": 1,
+                            "author": "Helios4242"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "hey, are you a student? or like a professor or someone in the industry? just looking to see what skills it takes to be capable of answering profoundly like that.",
+                    "score": 1,
+                    "author": "hot_girl_in_ur_area"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\"These mutations are then tested in the real world in what we call \"survival of the fittest.\" A mutation is more likely to be passed on to future generations if said mutation proves to be more beneficial than not.\" \n\nNOT ENTIRELY ACCURATE\n\nFirst the problem with this way of thinking is that it gives the idea that there is sentience where there is none. Nothing gets tested and some things that you think would be beneficial aren't and some things you don't think are beneficial are extremely beneficial. \n\nDNA mutations are random, anything that directly interacts with the DNA can cause a mutation including your own DNA tool kit. DNA is inherently a very fragile molecule, any sort of stress can break it. It's like antique fine china. \n\nThere are however readily identifiable sections of DNA that are readily broken by everyday things. They're called CFSs or COMMON FRAGILE SITES. There are also sections of DNA that aren't so easily broken and they are called RARE FRAGILE SITES. Fragile sites are large spans of the chromosomal DNA that destabilize when certain conditions are met.  CFSs often break because of replication stress, stress induced on DNA during replication. \n\nIt's easy to anthropomorphize biological processes because you can't imagine complex organisms and intelligence coming into being if things are just random but that's only because you're not taking into account the literal MILLIONS of years our species has been evolving. \n\nIt's completely understandable. I mean take the Viper Caterpillar, a caterpillar that has a butt that looks EXACTLY like a snake head complete with eyes. It's extremely difficult to imagine how something like that could just evolve through spontaneous mutations in it's genome to fit its environment perfectly without it being intentional. \n\nBUT instead of thinking about it like that, think about it in terms of ecological succession. \n\nAnimal evolves in one environment and its phenotypical adaptations might not provide ANY benefit what so ever, however through predation or habitat loss, species begin to move into different environments, environments they hadn't evolved into but non the less their unique adaptations provide a HUGE benefit too them and so they continue to flourish and with them so does their adaptations. \n\nand over long spans of time the trend continues\n\nnature doesn't do anything because it's a smart thing to do, it does these things by random and chance and as its creations move about the world and thrive they all just kind of find their place.",
+            "score": 3,
+            "author": "MammothJust4541"
+        },
+        {
+            "level": 0,
+            "comment": "I got you on this one. Source: PHD in Molecular Biology, plus my PI's wife specifically studied DNA damage/repair and taught that portion of our graduate classes.\n\n\"Mutation\" can mean many different specific things in the context of DNA. There are single nucleotide polymorphisms (affectionately called \"snips\" or SNPs), insertions (add some number of nucleotides), deletions (remove some number of nucleotides), and even translocations (entire stretches of DNA swapping places).\n\nSo, first, you have to understand that mutations in DNA arise from many different processes. You've listed a couple: radiation and base pair mismatch, but there are other types of damage and repair mechanisms that could introduce mutations as well.  We need to look more at the fundamental question: why do mistakes occur under these circumstances?\n\nFundamentally, mistakes occur when the \"wrong\" nucleotide is incorporated into the new strand of DNA during replication or some other DNA processing or repair step. This can happen for a few reasons, but ultimately this is simply a chemical process: because it is mediated by base pair chemistry (A goes with T, C goes with G), most of the time the DNA replication machinery \"forces\" the correct base pair to form. However, this doesn't happen 100% of the time. Sometimes, the wrong nucleotide is added to the chain and then, BAM, you've got your SNP.\n\nSometimes, the DNA machinery will hiccup, skipping a nucleotide (deletion), sometimes it will allow multiple nucleotides into the active site and two or more will be added to the chain at once (insertion), sometimes there are recombination issues between the leading and lagging strands. So much can go wrong. You could literally spend years studying this (and many do), and there are still unanswered questions about how these processes actually work at the molecular level.\n\nNow, we can get to the spirit of your question. There is a concept of the \"fidelity\" of a specific DNA replication machinery. No machinery is perfect, so we usually quantity this as the average number of correct bases per single mistake. So, for example, 1 mistake per 100,000bp. \n\nThe replication machinery contains **MANY** different enzymes doing specific molecular tasks (some grab onto the DNA strand, some physically split the two strands, some grab onto the single strands and prepare for the formation of the new strand, etc, etc.) One function that many people don't realize is that many DNA polymerase proteins actually possess the ability to **PROOFREAD**. That's right: they can go back and check for these mistakes that we've mentioned, and fix them. But not all polymerases and replication machineries are created equal. Some have higher fidelity (fewer mistakes = a more stable genome), some have lower. \n\nSo, I'd answer your question in the affirmative: DNA mutation, damage, and repair are most certainly processes under evolutionary pressure themselves, as there could be specific benefits for ending up at different places along this fidelity spectrum.\n\nSince I was trained as a virologist, I'll pull my examples from there. Can you think of a reason a virus might want to \"allow\" for more mutations to occur, and thereby make use of a replication machinery with lower fidelity? Well, it might be beneficial to be able to quickly mutate spike proteins or other surface proteins to avoid the host cell immune response, right?\n\nWell, wouldn't you know: RNA viruses almost exclusively rely on RNA-dependent RNA polymerases (RNA as template, RNA as output). These have much lower fidelity than our DNA polymerases. Hence the propensity of these viruses (colds, flu, our old buddy SARS-CoV2) to continuously mutate into new variants that avoid our adaptive immune system.\n\nAnd Reverse transcriptase, the polymerase used by HIV and other retroviruses? One of the lowest fidelity systems out there. This was one of the major reasons the early researchers struggled to develop HIV antivirals: the virus was so bad at replicating its genome that it would \"evolve\" quickly away from any attempts to attack it.\n\nFinal thought: you express a clear desire to learn more about these questions. I'd encourage you to focus on the basic molecular biology around DNA replication, DNA damage and repair, and other nuclear processes. I can't recommend anything specifically, but tracking down the older editions of the key textbooks in cellular/molecular biology and/or biochemistry would be a fine start. \n\nI'd also like to say that I tried to focus on the relevant ideas to help answer the spirit of your question. I've glossed over **a lot** of detail, related ideas, and specific cases in service of the general concept of mutation. But don't let that distract you from the fact that in 1998,  The Undertaker threw Mankind off Hell in a Cell, who plummeted 16 feet through an announcer's table.",
+            "score": 5,
+            "author": "TrenchantPergola",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I really appreciate the work you put into your response! I\u2019m definitely going to read more about polymerase proteins because it seems like the proofreading they do may help explain what it is that I\u2019m confused about. The example you used about viruses is similar to what I was thinking when I first posted the question. It almost seems like mutations within DNA sequencing (whether it\u2019s viruses or humans) are almost intentional. Thanks again!",
+                    "score": 3,
+                    "author": "Scarfaceswap",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;intentional\n\nWell, keep in mind evolution doesn't happen with the intention of anything.\n\nHowever, some rate of mutations is BENEFICIAL because it adds more variety, and more variety means more chances to do new things that increase successful passing on of heritage traits. Because having some mutations is beneficial, it is never completely eliminated.",
+                            "score": 1,
+                            "author": "Helios4242"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A good analogy to get Your head around it is copying books before Gutenberg came around. DNA is a language of proteins and it has a machinery that copies it. However, the template can become harder to decipher over time - for instance, IIRC can cause the dimerization of thymine - which causes wrong nucleotide order. Or the person copying could be wrong, too - if there's anything inserted but the complement pair, that's a mutation too. \n\nNothing is perfect in the world, biology isn't an exception.",
+            "score": 2,
+            "author": "Bax_Cadarn"
+        },
+        {
+            "level": 0,
+            "comment": "I think the volume of information to be copied pretty much ensures those copying errors.\n\nA few notes though; sometimes mutations are genuinely beneficial, but more often they are benign or have no meaningful impact. For a mutation to persist it doesn't necessarily have to make an organism more reproductively fit; it just has to not make it less fit. Often any benefit of a mutation is only realized generations after it has arisen when environmental conditions suddenly change. Like those soot coloured moths in the UK.\n\nIts an interesting thought experiment though; because let's suppose we had multiple methods of genetic encoding back in the dawn of time, not just rna and DNA. Then, the same evolutionary processes would have selected for the right genes today would have selected for the *method* of gene transmission ; one that carried just the right rate of mutation. Not too much or most of the offspring would be nonviable, but also not too little or else there would never be a cross section of offspring that could survive when environmental conditions changed. If that did happen, back in the LUCA days, then DNA itself *would* have been selected for, which is why that rate of mutation seems \"intentional\". It seems intentional because out of all the ways an organism could transmit its genes, DNA is the system that is most compatible with the rate of environmental change on earth.",
+            "score": 1,
+            "author": "Tsubodai86"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;A major source cause of mutations is background radiation from the big bang 5 billion years ago. \n\nThe background radiation from the big bang is microwaves, which do not cause DNA damage (unless you're outright cooking stuff, and even then DNA is pretty thermally stable). Also the big bang was more like 13.7 billion years ago.\n\n&gt;When it hits one of the DNA strands, it causes the bond between nucleotides to break, resulting in a \"nick\" in the DNA. This nicked DNA is inherently unstable and will rebond either correctly or incorrectly with a nucleotide somewhere else. \n\nA nick in DNA rarely leads to any issues, as the DNA will largely remain annealed at physiological temperatures, and the damage can be very simply repaired by a ligase. Nicked DNA also won't just \"rebond with a nucleotide\". Not even sure what you mean by that.",
+                    "score": 2,
+                    "author": "CrateDane"
+                }
+            ]
+        }
+    ]
+}

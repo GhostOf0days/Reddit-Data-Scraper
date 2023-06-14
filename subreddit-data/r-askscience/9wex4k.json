@@ -1,0 +1,1268 @@
+{
+    "id": "9wex4k",
+    "score": 17134,
+    "title": "Didn't the person who wrote world's first compiler have to, well, compile it somehow?Did he compile it at all, and if he did, how did he do that?",
+    "author": "[deleted]",
+    "date": 1542036387.0,
+    "url": "https://www.reddit.com/r/askscience/comments/9wex4k",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 1232,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 305,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 71,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 112,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 30,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 12,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 69,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 32,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 56,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 18,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 34,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[removed]",
+                                                    "score": 9,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 21,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 15,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 17,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 9,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This confusion comes from a misunderstanding about what compiling is.\n\nThese days we commonly say we don't work in bits or machine code. That isn't exactly true. People who work in hardware do work in bits when they're developing a new kind of circuit.\n\nWhen microprocessors were first created everybody worked with bits. Flip this to on and then that causes this and you can flip these to represent a number and flip this switch to move it into a special register and picked up by the clock.\n\nAt first that worked fine. Kind of the way you don't need labels for the 20 or so light switches in your house. But after a while they wanted a) more complicated systems and b) people with less experience to be able to contribute.\n\nSo that's when early forms of what we would call assembly language came on. It abstracted all the little switches away into a smaller set of instructions like move data, add data, subtract data etc.\n\nPretty soon after that things got too complicated again so some people who found themselves writing the same combinations and order of these instructions sought to abstract these hundreds of lines of simple instructions into a single line instruction. So they wrote a program that would take a program of five lines in this new langauge and convert it into the hundreds of lines of assembly language.\n\nThis has happened multiple times over and each time the compiler/interpreter etc is written by people who *can* write in the lower level language the compiler produces but would rather save themselves the keystrokes.\n\nEDIT: My source is 22 years of programming, 18 years of software engineering. These days I leverage some of the lessons and motivations for developing compilers into developing custom tooling for other software engineers in mid to large scale organizations.",
+            "score": 7011,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is correct. And I think it's useful to understand that most compilers are compiled iteratively, called bootstrapping: https://en.wikipedia.org/wiki/Bootstrapping_(compilers)\n\nAs an example: Rust is written in Rust and compiled with the Rust compiler. They did this by first writing a bare-bones Rust compiler in OCaml, used that compiler to compile a Rust compiler written in Rust, and then began compiling each new version of Rust with the previous version's compiler. OCaml does the same thing: it's written in OCaml that was bootstrapped with a compiler written in C. C itself is written in C, and was bootstrapped with an assembler. The assembler itself translates assembly language to machine code which is what actually runs on the processor.\n\nSo once we got the first steps down (e.g. C to assembly to machine code) everything was built up from there.",
+                    "score": 1577,
+                    "author": "shinglee",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "*Rust is written in Rust and compiled with the Rust compiler. They did this by first writing a bare-bones Rust compiler in OCaml, used that compiler to compile a Rust compiler written in Rust, and then began compiling each new version of Rust with the previous version's compiler.*\n\nI love that sentence so much.\n\n\"To understand recursion, you must first understand recursion.\"\n\nAlso, perhaps irrelevantly..\n\n*\"If you wish to make an apple pie from scratch, you must first invent the universe.\"* -Carl Sagan\n\n(edit: just checked the video, and corrected the Sagan quote... for reference, de-bugging is also important.)",
+                            "score": 1270,
+                            "author": "rchase",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's how I found out that the maximum line number for errors in a C program is 65536. (Years ago). You get a warning that the C compiler cannot show the line number if there is a error. \n\n\nIt was a compiler that generated C code.",
+                                    "score": 133,
+                                    "author": "freerider",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; That's how I found out that the maximum line number for errors in a C program is 65536. \n\nYou're describing an idiosyncracy of a particular compiler; the language definition doesn't specify a limit",
+                                            "score": 156,
+                                            "author": "OldWolf2",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You're right. It was the the compiler in Visual Studio 2010.",
+                                                    "score": 13,
+                                                    "author": "freerider",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;That's how I found out that the maximum line number for errors in a C program is 65536. \n\nHow the assignment coming Larry?\n\nI'm all done, just need to compile it and I'm outta here.\n",
+                                            "score": 57,
+                                            "author": "Trish1998",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[*janitor passing by 14 hours later*]       \n\"Hey shouldn't there be a semicolon there\"",
+                                                    "score": 32,
+                                                    "author": "midnightketoker",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I have a love/ hate relationship with recursion. It\u2019s rather cool, but occasionally mind bending to work with. ",
+                                    "score": 6,
+                                    "author": "morderkaine",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "For modern languages like Rust, is this multi-iteration-bootstrapping done for any reasons that aren't esoteric? How bare-bones was the OCaml compiler for Rust really? How many iterations until the language spec was first completely implemented?",
+                            "score": 61,
+                            "author": "Coloneljesus",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The Rust spec wasn't really done in any sense by the time that the OCaml compiler was first created. Usually compiler projects are eager to get themselves self-hosting in part because it creates a large project in the language itself that's going to need a lot of libraries and such to be created within it, thus serving as the genesis for an ecosystem. But it also has the benefit of lessening external dependencies and allowing those who later want to contribute to Rust to do so with their knowledge of Rust specifically, not needing to know OCaml. \n\nIf I remember correctly for a while rustc wasn't really written in completely natural rust, it was written in a subset that the bootstrapping compiler could understand. Even after the bootstrapping compiler was eliminated, previous versions of rustc had to be able to compile newer versions so of course there was and is some tolerance for compatibility there.\n\nBut yeah, it's not esoteric at all, I think it's an effort that can make a language much more sustainable on its own.",
+                                    "score": 118,
+                                    "author": "wishthane",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The OCaml compiler for Rust isn't barebones, it's the Rust compiler that came out of it that is.\n\n",
+                                    "score": 19,
+                                    "author": "perspectiveiskey",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I think you misunderstand. Bootstrapping is very practical, but it's applied as a whole. If you want to build the rust compiler from source you either need an OCaml or rust compiler binary.\n\nYou'd only need all iterations (C, assembly, machine code) if you refused to use any existing binaries (an appropriate stance on new hardware that lacks existing binaries).\n\nNew languages are likely to follow the same bootstrapping pattern.\n\nIt's esoteric in that it only applies to compiler authors and porters, but of course it is.\n\n&gt; How bare-bones was the OCaml compiler for Rust really?\n\nHow bare bones do you think it would need to be? What do you think would be necessary before you could start compiling rust code and writing the compiler in that?\n\nIf you're interested in seeing this in action, check out Jonathan Blow's Jai compiler streams. He has a YouTube playlist. He's writing the first version of the compiler entirely in C++ until the syntax is stabilized.",
+                                    "score": 18,
+                                    "author": "dddbbb",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\\&gt; If you're interested in seeing this in action, check out Jonathan Blow's Jai compiler streams. He has a YouTube playlist. He's writing the first version of the compiler entirely in C++ until the syntax is stabilized.\n\nDidn't know the Braid guy was making a new language. I found this [unofficial GitHub repo for Jai](https://github.com/BSVino/JaiPrimer/blob/master/JaiPrimer.md), based on the streams. Sounds like something I could get into.",
+                                            "score": 5,
+                                            "author": "sturmhauke"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Rust isn't really a good example here - the original compiler was written in OCaml back when it was one guy's pet project, and it got rewritten into Rust even before the 1.0 release of the language. These days, there is no official way of bootstrapping Rust without an existing Rust compiler, but there is a community effort called mrustc that's a Rust to C transpiler, and it is able to build the official Rust compiler that can then be used to bootstrap a proper build of itself. ",
+                                    "score": 35,
+                                    "author": "K900_",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 95,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 8,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 12,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 8,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 7,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; So that's when early forms of what we would call assembly language came on. It abstracted all the little switches away into a smaller set of instructions like move data, add data, subtract data etc.\n\nFirst assembly language was written for the Automatic Relay Computer which had fewer valves than its predecessors. ",
+                    "score": 85,
+                    "author": "geniice",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Pretty much. However I can add that it's not that rare to find people who can do that job, or at least have worked with machine language at least once. Most engineering students in the field and specially Computer Science students are taught to work with assembly and machine language.\n\nFor example, I had a subject which had a huge part that was only about translating high level code to assembly, and assembly to machine code.",
+                    "score": 33,
+                    "author": "piloto19hh",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah I glossed over a lot with this explanation. The main point I wanted to get across is that what the compiler produces isn't some kind of magic language nobody can write in. The compiler exists because enough people are writing code in contexts where the lower level language provides too fine grain control.",
+                            "score": 24,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Does knowing what goes on at the lower levels help much when dealing with only the higher levels? Are there mistakes that people make all the time if they only know high level language that people with experience of working with machine language/assembly avoid much more easily, or do the high level languages do such a good job of abstracting away the details that it doesn't really help to learn lower level languages if you don't need to use them?",
+                                    "score": 5,
+                                    "author": "Rebelius",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It really just depends on what you want to focus on. If you're a mathematician trying to come up with some fancy new algorithm you don't need to know what's happening under the hood of the functional language you're writing in. Then again, maybe indirectly that knowledge can lead to some kind of epiphany because the usefulness of your algorithm is determined by it's performance which is dictated by the hardware. Who knows.\n\nMy recommendation to people is just not to ignore concepts they keep running into. If you find a couple examples where your lack of knowledge caused you to take longer to understand a problem than it would have if you spent a week digging into it then bite the bullet and take the time to learn the concepts even if they bore you.\n\nIn the end I think all of the knowledge people gather in this space eventually loops back around. Even if they don't realize it.",
+                                            "score": 6,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is an amazing explanation, thank you.",
+                    "score": 5,
+                    "author": "HenryKushinger"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Early on in the history of computing, programs would be written as a sequence of operations in assembly language, which basically means they would be written in terms of actual physical operations for the computer architecture to perform, e.g. copy this numeric value to that memory location.\n\nThat's obviously very time consuming and difficult, and it means that programs have to be rewritten for each new type of processor that you run them on. So to make it easier, higher level languages that are more human readable were created, with commands that basically work as shortcuts for all the repetitive number-juggling required in assembly language. So you have to write a compiler in assembly language, which doesn't require compiling. \n\nIt's interesting that you ask \"did **he** compile it at all\", since the first person to write a compiler was actually a woman, Grace Hopper :)",
+            "score": 9407,
+            "author": "hypnogoge",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "One of my favorite fun facts about one of my favorite video games of all time:\n\nDespite the existence of these higher level languages, Roller Coaster Tycoon creator Chris Sawyer wrote 99% of the game in assembly. ",
+                    "score": 97,
+                    "author": "wes00mertes",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That\u2019s also one of the reasons that it can run at 1,000,000 fps even on a potato. ",
+                            "score": 62,
+                            "author": "spigotface",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well, most home computers were potatoes back when that game came out. A lot of people were still rocking OG Pentiums and Pentium 2's",
+                                    "score": 21,
+                                    "author": "The_F_B_I",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Back in the Vic 20/Commodore 64 days a lot of people didn't even have proper assemblers, which will do thing like resolve memory addresses. They would hand-assemble code directly into hex opcodes. Quite a few of the cartridge games from that era (Gridrunner for example) have longish runs of hex code 'EA' in a memory dump, the significance of which is that EA is the opcode for the NOP (no operation) CPU instruction. The NOPs served as padding so that if a subroutine had to be lengthened a bit, the programmer wouldn't have to re-hand-assemble all of the code that followed (memory references in particular were a pain). As a kid I learned assembly by looking through a lot of code with a monitor, and these long strings of NOPs were a dead giveaway that the programmer was doing things by hand.",
+                            "score": 23,
+                            "author": "marsten",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;first person to write a compiler was actually a woman, Grace Hopper\n\nGrace Hopper coined the term \"compiler\" but she only wrote a \"linker\" (albeit an important component of a full compiler). The first compiler was written by Corrado B\u00f6hm, in 1951, for his PhD thesis.",
+                    "score": 4563,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; The first compiler was written by Corrado B\u00f6hm, in 1951, for his PhD thesis.\n\n[English translation](http://www.itu.dk/people/sestoft/boehmthesis/boehm.pdf). Chapter 7 contains the compiler. It targets a hypothetical computer with positive integers of 14 decimal digits.\nThe source language consists of expressions using:\n\nOperations:\n\n* `+` (Addition)\n* `\u2238` (Difference if positive, else 0)\n* `\u00b7`  (Product)\n* `:` (Integer division)\n* `\u00f7` (Absolute difference)\n* `mod` (Remainder)\n* `\u222a` (Maximum)\n* `\u2229` (Minimum)\n* `\u2192` (Assignment)\n\n(The target computer has three-address code instructions for these operations.)\n\nVariables:\n\n* `a`-`z`, `A`-`Z` (Single letter variables only)\n* `\u2193a`-`\u2193z`, `\u2193A`-`\u2193Z` (Indirect address access, treated as single symbols)\n* `\u03c0` (Program counter)\n* `\u03c0'` (Program counter at start of subroutine)\n* `\u2126` (Address that always contains the number 0. 0 is the HALT instruction.)\n* `?` (Input or output)\n\nParentheses:\n\n* `(` and `)`",
+                            "score": 77,
+                            "author": "1wd",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How would you handle branching (if/then) with this?",
+                                    "score": 15,
+                                    "author": "SupremeDictatorPaul",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Apparently by using what amounts to a conditional move into the \u03c0 variable. Block-structured languages only appeared a bit later. Heinz Rutishauser, who made another compiler roughly at the same time as B\u00f6hm, was involved in them. I don't recall having seen *his* original language, however, so I can't say more about that at the moment.",
+                                            "score": 29,
+                                            "author": "ObnoxiousFactczecher",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Exactly - \"add the following to the program counter\" \nBut the language as described lacks a conditional move. \nWhat the language needs for completeness is a DO IF ZERO command. \n\n",
+                                                    "score": 3,
+                                                    "author": "nightwing2000",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You can increment the program counter with the maximum of your value and 1. Then it only executes the next line if your value is 0.",
+                                                            "score": 4,
+                                                            "author": "MightyButtonMasher",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Highjacking for easy visibility. Here is a series on EXACTLY how an 8 bit computer works. All of it's parts, all of it's chips, all of it's programming by hand, and all built from scratch.\n\nBuilding an 8-bit breadboard computer!: https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU",
+                            "score": 288,
+                            "author": "coolkid1717",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Its a fantastic series, I'm still in the process of building one following his instructions, don't really have to be an electrical engineer to do that he explains it really well for anyone.\n\nThe best part of it all is that it doesn't require any soldering, which was always the number one hurdle for me.\n\nI'm a software engineer but only really using high level languages so I never fully got to understand how it works on the bare metal, this is a great way to learn it.\n\nHe published the parts list here: [https://eater.net/8bit/parts](https://eater.net/8bit/parts) (I can recommend [https://www.mouser.com](https://www.mouser.com) to order, they are great and had almost all of the parts in stock)",
+                                    "score": 53,
+                                    "author": "bpooqd",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 17,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "A number of earlier computers were built using wire wrapping and TTL parts just like on that list.   \n\nI recommend getting a copy of the TTL Cookbook if you really want to know what is going on. ",
+                                            "score": 4,
+                                            "author": "topcat5"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Very cool. Thanks",
+                                    "score": 16,
+                                    "author": "TimmTuesday",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I just watched 1 or 2 videos of it a day. It kept me very entertained for a while. You can actually follow along and build one yourself. He has all of the parts listed somewhere.",
+                                            "score": 10,
+                                            "author": "coolkid1717",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "And she also coined the phrase \"computer bug.\"",
+                            "score": 1072,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Kind of. A \"bug\" was already well-known in technical circles by that time, an early reference found was [by Thomas Edison](https://www.computerworld.com/article/2515435/app-development/moth-in-the-machine--debugging-the-origins-of--bug-.html)\n\nGrace Hopper [recorded a funny instance](https://www.computerhistory.org/tdih/september/9/) of finding an actual bug that caused a computer \"bug\". She didn't find the moth that caused it, she was simply the one who wrote it in the logbook.",
+                                    "score": 1209,
+                                    "author": "thisischemistry",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Vaguely related but I always thought it was funny she's so well known for the \"bug\" story when even her name sounds like \"Grasshopper.\"",
+                                            "score": 480,
+                                            "author": "amalgam_reynolds",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I've just had a brilliant idea for a kid's picture book starring \"Grace Hopper\", a grasshopper who codes. ",
+                                                    "score": 439,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 165,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 70,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 64,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "[removed]",
+                                                                                    "score": 27,
+                                                                                    "author": "[deleted]",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Now I'm wondering if this is where [the programming tutorial app Grasshopper](https://grasshopper.codes/) got its name from",
+                                                            "score": 81,
+                                                            "author": "soundknowledge",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Actually yes! You can see that in the FAQ section, they say the name pays honor to Grace Hopper",
+                                                                    "score": 65,
+                                                                    "author": "Psyjotic"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I'll never find myself trying to remember her name again. Thanks!",
+                                                    "score": 16,
+                                                    "author": "PetPizza"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "If Edison is credited with it, it's basically guaranteed that it wasn't his idea.",
+                                            "score": 4,
+                                            "author": "madsnorlax"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "So she was the first person to log a bug?",
+                                            "score": 9,
+                                            "author": "Boognish84",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; but she only wrote a \"linker\"\n\nI know you didn't mean to minimize the importance of this, but just for the sake of anyone reading...\n\nTo be able to write even \"only\" a linker that actually worked given the tools she had available to her was best-of-the-best, Steph Curry / Michael Jordan level of ability.",
+                            "score": 240,
+                            "author": "RiPont",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah this doesn\u2019t seem like \u201cmaking spaghetti\u201d levels of complexity like the one above you implied ",
+                                    "score": 33,
+                                    "author": "Enigmatic_Iain"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Slightly off topic but may be mildly interesting: people still code in assembly even to this day for small low-power processors such as DSPs where every clock cycle counts. It\u2019s getting less and less common as C compilers are more efficiently targeted to these custom devices, but it still happens in a lot of places. \n\nOf course, it\u2019s not exactly the same process as the early days. Instead of memorising / looking up the sequence of 1s and 0s for \u201cstore number 1 in register r2\u201d you write a statement such as \u201cstr 1, r2\u201d and the toolchain translates that to the appropriate binary. It\u2019s like an intermediate layer between the machine code and the higher level code. And you get a pretty-ish IDE running on your desktop rather than using punchcards. But overall you still have to have an in-depth knowledge of the underlying processor hardware and its capabilities, and the patience of a saint :) for what it\u2019s worth, some people really enjoy it. ",
+                    "score": 262,
+                    "author": "DivineBeastVahHelsin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Interesting side-note though: Some early card-punching machines didn't actually require you to memorize the 0's and 1's. They were more like a typewriter where you could press something that had a meaning, and that would punch the instruction/value into the card. I guess you could call that a very low-level type of assembly compilation... albeit physically implemented.",
+                            "score": 173,
+                            "author": "OfFiveNine",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've programmed in Fortran using keypunch cards (college, mid-70's).  Each card was a line of Fortran code.  Or assembly code, or whatever.  The punch card was simply a means to get the data into the computer's memory (whatever that data might be).  \n\nKeypunch machines really were quite simple.  Typewriter like keyboard like you said and if you typed \"A\" it would punch the pattern for an \"A\" on the card in some ASCII-like code.  Each card would hold 80 (I think?) characters (think bytes).  The cards themselves could probably be thought of as a primitive form of storage.  \n\nThe keypunch machines weren't connected to the computer.  Instead, after you typed your program into a \"deck of cards,\" you'd submit the cards to a computer operator.  The operator would run them through a card reader which was the actual input device on the computer.  If you made an error in a line of code, you'd retype that one card and replace it in the deck and resubmit it for another run.  All output was on 11x17 \"bluebar\" tractor-fed paper which came off a high-speed line printer that used actual ink ribbons.  \n\nComputer of course was a mainframe like you'd see in a 1940's horror flick.\n\nFun stuff - haven't thought of this in awhile.",
+                                    "score": 103,
+                                    "author": "tatanka01",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I was doing the same as an engineering student in the late 70's. Only a few years later we had interactive CRTs with keyboards.",
+                                            "score": 35,
+                                            "author": "unicoitn",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yup.  I actually used some real early Tektronix CRT terminals -- wrote a schematic drawing program using one in 1977 or so (in Fortran).  Even then, the school would delete all long-term student storage between semesters, so even though we had the luxury of using a green-screen, you had to have the computer punch you a deck of cards to get you through the semester break.  Reload your program from cards at the beginning of the next semester.\n\nPeople laugh when I tell them we used to have to flatten out the zeros to make a one.\n",
+                                                    "score": 28,
+                                                    "author": "tatanka01",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I had a copy of a VT-52 Tektronix terminal, but has access to an early version of the internet in the mid 80.  And I used to program in fortran IV/77, basic, and C.  And we all had to take a course in machine language and assembler, on PDP-10 machines.  Those were the days.",
+                                                            "score": 6,
+                                                            "author": "unicoitn"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; The cards themselves could probably be thought of as a primitive form of storage.\n\nYep!  Former machinist here. Some early programs for CNC machines were stored on paper tape, which itself was stored in plastic cylinders similar to 35mm film canisters. I'd load the paper tape into a light reader, which would pull the tape across a light, causing the patterns punched on the tape to be interpreted as G-code, which is a macro language that describes movement in 3 or more dimensions. This is what controlled the machine tool. The control unit had a very small CRT screen and a keypad and few dials. The machinist could modify certain parameters of the program on the fly to compensate for tool wear, different cutting speeds, etc.\n\nPaper tape was non-volatile memory as long as you didn't get it wet.",
+                                            "score": 40,
+                                            "author": "NotTooDeep",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Cool stuff.  This all has its history back in the old Jacquard looms of the 1800's where they would punch holes in pieces of wood and string the wood together to make patterns to run the big textile machines.  \n\nI worked in textiles, and they were still using paper tape probably up until the 1990's anyway.  One of my early jobs was to write a program that would convert paper tape to TRS-80 files.",
+                                                    "score": 29,
+                                                    "author": "tatanka01",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I worked as a CNC Installer. the G in the code stands for Go (to a position).\n\n&amp;#x200B;\n\nI also worked as a cook at Sizzler. We used a  Jacquard  Meat tenderiser (which punched holes in the meat).\n\n&amp;#x200B;\n\nit's all coming together now...Finally ",
+                                                            "score": 21,
+                                                            "author": "fryanimal12"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt; which is a macro language that describes movement in 3 or more dimensions.\n\nI know you mean rotational axes, but for a second I was picturing a paper tape controlled time machine and now I really want to see that as a short film.",
+                                                    "score": 13,
+                                                    "author": "matthoback",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "And this brings us back to the Jacquard loom, where \"chain cards\" controlled the patterns produced on fabric by a loom.",
+                                                    "score": 10,
+                                                    "author": "BurkeyAcademy"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I had the same experience in college. I got rid of my college punch cards maybe 5 years ago, Held sentimental value.",
+                                            "score": 8,
+                                            "author": "ctmurray",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That just made what a compiler does click for me, thank you for that.",
+                                    "score": 33,
+                                    "author": "ExWRX",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "An assembly compiler; compilers for more abstracted programming languages like C are much more complicated. ",
+                                            "score": 15,
+                                            "author": "happysmash27",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not that much, if it's not an optimizing compiler it's still basically a lookup table; C just has recursive structures so it builds the code from the middle out instead of sequentially.",
+                                                    "score": 8,
+                                                    "author": "fnordit",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Technically, the 1's and 0's level is machine language.  Assembly language is the step above that -- mov ax, bx, etc. An Assembler converts the pseudo code into the 1's and 0's.  \n\nIt's very common (if not ubiquitous) for compilers to generate assembly language as an intermediate step.  You write something in C++, the compiler converts that into assembly and runs it through an assembler to generate the actual executable code.  Most compilers will have a switch to generate the intermediate assembly source code to a print file so you can see all that.",
+                            "score": 76,
+                            "author": "tatanka01",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes absolutely right, thanks for the correction :)",
+                                    "score": 14,
+                                    "author": "DivineBeastVahHelsin"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "\"Who are you calling pseudo?\"\n-- Assembly code\n",
+                                    "score": 9,
+                                    "author": "miraculum_one",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "A couple of other examples I have encountered are the routines to read and write flash, and to receive/transmit data on a radio.\n\n&amp;#x200B;\n\nAlso, if you enjoy assembly at all, check out Human Resource Machine.  It's a game in which you're actually writing small assembly programs with a GUI.  There is a sequel, 7 Billion Humans, in which you control multiple people using a slightly higher level language. I played these on PC but they were designed to be mobile/tablet games.",
+                            "score": 33,
+                            "author": "jasonthomson",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Dude, look up Zachtronics. He is the maker of multiple great games with low-level programming mechanics. ",
+                                    "score": 21,
+                                    "author": "hugopeeters",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Shoutout to Chris Sawyer, the badass who wrote 99% of the original RollerCoaster Tycoon in Assembly, nearly singlehandedly as well. ",
+                                            "score": 29,
+                                            "author": "Nononogrammstoday",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I graduated with a Bachelors in Electrical and Computer engineering last year. It's still taught as part of our core curriculum. We take one class focused toward programming micro controllers in assembly language, the followup class uses C to program those same controllers.  It's also essential to know a lot of these ideas for our national exam, the Fundamentals of Engineering exam (FE). Examples being knowing the difference between immediate addressing and direct memory addressing etc.",
+                            "score": 23,
+                            "author": "Sereey",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You will also see some assembly deep in the bowels of operating systems, in critical points like context switching or trap handling and the like where every operation matters, or extreme control over every register is needed.  See for instance, https://svnweb.freebsd.org/base/stable/11/sys/amd64/amd64/exception.S?view=markup",
+                            "score": 13,
+                            "author": "byllz"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; people still code in assembly even to this day for small low-power processors\n\nPeople still code in assembler for high powered processors as well. The IBM Z/OS comes with an assembler and it runs on processors that are measured in MIPS (millions of instructions per second).\n\nThere are still a lot of us old guys out there that write modules that do things within the OS, the DB engine, the security engine and CICS that can't be done with those so-called \"high-level languages\".\n\n*edit: I should read before I post.",
+                            "score": 14,
+                            "author": "stmiba",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "To be fair, even a processor like the Z80 (1976) could hit a million instructions per second, so that doesn't say much.",
+                                    "score": 13,
+                                    "author": "Voltasalt",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; It's interesting that you ask \"did he compile it at all\", since the first person to write a compiler was actually a woman, Grace Hopper :)\n\nAlick Glennie developed Autocode first, which is probably the first compiler even though he didn't call it that.\n\nGrace Hopper led the team that developed A-0 and they were the first to use the word compiler.",
+                    "score": 585,
+                    "author": "WhipTheLlama",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Grace Hopper led the team that developed A-0 and they were the first to use the word compiler.\n\nThe word yes, but what they called \"compiler\" back then, we call a \"linker\" now, so it's misleading to ignore the change of meaning when talking about the history of compilers.",
+                            "score": 370,
+                            "author": "stefantalpalaru",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "http://www.catb.org/jargon/html/story-of-mel.html\n\nAssembly language only looks \"early\" from a modern perspective, quite a lot happened before that. ",
+                    "score": 17,
+                    "author": "jthill",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Fun Fact: I served on USS Hopper (DDG 70) for a bit, and there is an 11.8\" golden rod encased in a glass setting piece in the Officer Wardroom as an homage to her famous \"Grace Hopper Nanosecond.\"  I first learned about RMDL Hopper when I reported to the ship; she invented the COBOL language as well.  Apparently, nearly nobody believed her when she invented her early-version of a compiler, they didn't think computers could do anything other than straight math via direct programming (assembly-style).",
+                    "score": 42,
+                    "author": "Silidistani",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;\tSo you have to write a compiler in assembly language, which doesn't require compiling.\n\nMost modern compilers are written in their host language, not assembly. (eg, gcc is written in C, GHC is written in Haskell, Swift's compiler is written in Swift/C, etc.)\n\nBut back when Hopper was writing the first compilers, they certainly would have been written in assembly first. Nothing to bootstrap it with otherwise.\n\n(Maybe this is what you meant, but I thought your phrasing was maybe a little ambiguous.)",
+                    "score": 25,
+                    "author": "DonaldPShimoda",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I was thinking specifically about the first person writing a compiler, but you are correct. The thing about self-hosting compilers is that the first compiler for a language has to be written in assembly, or at least in another language. So the first C compiler was written in assembly, and then subsequent versions were written in C.",
+                            "score": 15,
+                            "author": "hypnogoge",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Right, absolutely, and often now I think C is most often used for writing the first version of a compiler instead of assembly, but eventually they end up self-hosting.\n\nJust wanted to provide the clarity for OP in case they didn't know, but I figured it'd be stuff you knew already. Cheers!",
+                                    "score": 10,
+                                    "author": "DonaldPShimoda",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The first Lisp compiler was actually written in Lisp. It was run in a Lisp interpreter, which was not written in Lisp however.",
+                                    "score": 7,
+                                    "author": "Cuco1981",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "~~I'm a bit rusty, but I'm pretty sure~~ you still need to compile Assembly language into machine code.  Assembly is still very low level though.\n\n*edit* yeah I just checked to make sure I'm not crazy - Assembly languages compile into machine code which is how the processor communicates.",
+                    "score": 52,
+                    "author": "Serendiplodocus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Technically correct, but it's pretty much a 1 to 1 from assembly to machine. Meaning one line of assembly is equal to one line of machine and assembly commands have a direct binary encoding.",
+                            "score": 55,
+                            "author": "I_am_Bob",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not quite. Most assembly languages will let you jump to a label, so you can write something like \"JUMP LOOPSTART\" and it'll figure out where LOOPSTART is and convert that into a machine code instruction that looks more like \"JUMP -8 INSTRUCTIONS\".\n\nAlso not unusual to see support for simple macros and things like that. ",
+                                    "score": 20,
+                                    "author": "grahamsz",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They will also often do thingd like automatically figure out which jump instruction to use (shorter jumps can on some CPUs be done using shorter instructions since fewer bits are required to say how far to jump).\n\nNot to mention almost all assemblers since almost forever have had macro support, so you could write helper macros making things look a bit more high level.",
+                                            "score": 5,
+                                            "author": "livrem"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Olde dude here. The tool that translates assembly language into machine language (binary) is usually called an \u201cassembler\u201d (duh!). It\u2019s output then typically runs through a linker to bundle in libraries and other code modules, then a loader to put it into RAM ready to run. An assembler is vastly simpler than a compiler.",
+                                    "score": 16,
+                                    "author": "mykepagan"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you! I was thinking \"a brick is a brick, no matter what you call it.\"",
+                                    "score": 12,
+                                    "author": "mckulty"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 23,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You're right, but normally we call this process \"assembling\" instead of \"compiling,\" and it's performed by the \"assembler.\"\n\nIn modern development the assembler is almost always invoked for you automatically once the compiler is done doing its thing.",
+                            "score": 14,
+                            "author": "dsf900"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Assembly is a symbolic machine code. It is converted into machine code rather than compiled. The difference between an assembler and a compiler is mostly technical, so it's not outrageously wrong to call it a sort of compiler. It's definitely in the same family of tools.\n\nThe simplest explanation of the difference between an assembler and a compiler is that a compiler, by definition, compiles a high-level language into machine code and since assembly is a low-level language it cannot be compiled. Assemblers have a lot less work to do and less freedom for things like optimizations, as they just directly convert one thing to another.",
+                            "score": 21,
+                            "author": "WhipTheLlama",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If I remember correctly, there is another fundamental difference: assembly is architecture specific, so you need to write your code for the processor you are using. A compiler, instead, will take your architecture-independent code and compile it into architecture-dependent code.",
+                                    "score": 12,
+                                    "author": "RoastedRhino",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Very good point!\n\n...and we have been chasing architecture-neutral compilers ever since :-) Java was supposed to fix the problems with C++ and allow \u201cwrite once, run anywhere.\u201d It didn\u2019t.",
+                                            "score": 7,
+                                            "author": "mykepagan",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You can pretty easily convert from assembly to machine code by hand and just enter numbers. Of course that begs the question, \"how do you enter the numbers\". The answer is you need to design the hardware to allow it. I've done that in the past with a bread board computer built as a lab exercise from \"The Art of Electronics\". I also did it with more sophisticated computers as a kid when I didn't have an assembler but did have a way to store data to be executed. The original computers probably required the values to be entered as binary or whatever they were using to represent values in memory. When I've done it, it has always been in hexadecimal.",
+                            "score": 6,
+                            "author": "ejgottl",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;[ Grace Hopper ](https://en.wikipedia.org/wiki/Grace_Hopper)\n\nWhen Hopper recommended the development of a new programming language that would use entirely English words, she \"was told very quickly that [she] couldn't do this because computers didn't understand English.\" Her idea was not accepted for 3 years, and she published her first paper on the subject, compilers, in 1952. In the early 1950s, the company was taken over by the Remington Rand corporation, and it was while she was working for them that her original compiler work was done. The program was known as the A compiler and its first version was A-0\n\n",
+                    "score": 48,
+                    "author": "redemption2021"
+                },
+                {
+                    "level": 1,
+                    "comment": "Even further, assembly language isn't the lowest level, that has to get translated to machine language, i.e., raw 1's and 0's. Someone had to write that, and they had to write it in machine language.",
+                    "score": 11,
+                    "author": "frothface",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks, nice to know!\n(No sexism intended\ud83d\ude42)",
+                    "score": 212,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Now that the question has been answered, here's a weird side-story: the first LISP compiler was written in LISP. The language was originally a thought experiment that wasn't supposed to be possible to actually implement, but one of the creator's PhD students implemented one function (eval) by hand in machine code, then used that one function to write a compiler for the rest of the language. ",
+                            "score": 20,
+                            "author": "bluesam3",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 68,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "dont just leave them hanging. heres the info: https://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding",
+                                    "score": 6,
+                                    "author": "penny_eater"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You weren't sexist, but I smiled when I read your question because I knew the person was a woman.",
+                            "score": 139,
+                            "author": "notasqlstar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 56,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I don't know if programming was. But computing was a women's job. They used to do the calculations before computers existed. This led into them being the ones to run the computers, and hence programming. \n\nI imagine programming wasn't seen in the same way back then as it is now. \n\nSo .. kinda, yes. ",
+                                            "score": 29,
+                                            "author": "asoap"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Way back when, the term \"computer\" referred to a line of (usually) female mathematics each performing an iteration in a problem and then passing their result on to the next \"computer\" in the chain. The reason we call the device a computer is because they were explicitly replacing humans with that title.",
+                                            "score": 22,
+                                            "author": "Wheezy04"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Kind of.\n\nProgramming originally was very labor intensive.  You had to input hand-written code into a machine, one instruction at a time, and this meant a lot of copywork.  That's the kind of job women were traditionally given, just like a typing pool.  Being a \"programmer\" could mean anything from feeding punch cards one at a time to being an actual software architect.\n\nWomen occupied the entire range of this work, from the most basic labor to the highest difficulty of engineering.\n\nThe more programming transitioned from being seen as akin to typing and closer to science, the more men were preferred.\n\nThere might be other network effects there.  I've seen a pretty good argument the current male dominance can be entirely traced to the NES being marketed as a \"toy\" to avoid the failure of the Atari, which meant that it had to be marketed with gender labels, meaning an entire generation of kids in the 80s came to associate electronics with dudes.  I don't know how much weight to give that argument.  I don't know enough about the real forces of history to say what the drivers were.",
+                                            "score": 47,
+                                            "author": "wayoverpaid",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[Computing](https://en.wikipedia.org/wiki/Human_computer) was primarily \"women's work\" for the first half of the 20th century.  Once we switched to electromechanical and fully electronic mainframe computers, women were frequently employed in the operation and maintenance of the finicky machines.",
+                                            "score": 78,
+                                            "author": "candre23",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "So was mine!  But she has told me that \"programming\" was nothing like what we think it means....and that she basically sorted punch cards and kept track of certain aspects of certain stacks so they could be mixed and matched.  She explained it as more of being like being a clerical job where she was in charge of a bunch of file cabinets and knowing where stuff was more than it was programming anything.\n\nThe people that were very good at their job could help speed up projects IMMENSELY and were very important, but the term \"programmer\" hasn't really translated well through the years.",
+                                            "score": 15,
+                                            "author": "Scudstock"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "The movie [Hidden Figures](https://en.wikipedia.org/wiki/Hidden_Figures) showed 3 women who worked as human computers for NASA. They end up teaching themselves to program the new hardware computers. It's a pretty cool movie.",
+                                            "score": 43,
+                                            "author": "Nephyst",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes. There was quite an interesting piece recently arguing that Britain lost its lead in computing because of sexist recruitment policy when computers started to matter (essentially wiping out the part of the workforce that actually knew what it was doing). [How To Kill Your Tech Industry](https://logicmag.io/05-how-to-kill-your-tech-industry/).",
+                                            "score": 30,
+                                            "author": "D-Juice",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So the first person who wrote a compiler essentially *was* the compiler?",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not quite.  Lets say you wanted to write a C compiler from scratch right now.    You would write the very first version of that compiler in machine code.   Then you would write that same compiler in C.   Once your Machine Code written compiler was good enough to compile your compiler written in C, you would compile it.\n\n&amp;#x200B;\n\nNow you have a compiler that can compile itself and most importantly future versions of itself.  Think of it like a chicken and egg problem where the first chicken was a meticulously hand-crafted freak, put together molecule by molecule.   But it could lay eggs so you never had to do that crap job again.",
+                            "score": 16,
+                            "author": "bgog",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There's alsp the idea of [bootstrapping](https://en.m.wikipedia.org/wiki/Bootstrapping_(compilers)) a compiler, which reduces the amount of assembly one needs to write and allows the compiler to be written in the same language it compiles.",
+                    "score": 4,
+                    "author": "Xanzent"
+                },
+                {
+                    "level": 1,
+                    "comment": "What did Ada Lovelace do? ",
+                    "score": 7,
+                    "author": "must_improve",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "She lived in the first half of the 19th century, well before proper computers were invented. But she worked with Charles Babbage, who had the notion to build first a mechanical calculator and then a full mechanical computer. The \"analytical engine\" as he called it never got fully completed but Lovelace, a math whiz of her time, got interested in the idea and helped to study the properties and uses of such a machine. She saw beyond its uses for number crunching and realized that it could do things like map notes to numbers and be used to do things like musical composition. She wrote what we would now call a program for the machine, the first program ever written, all before it even existed. ",
+                            "score": 24,
+                            "author": "chaos750",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 379,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 125,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 96,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 72,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 41,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 6,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 5,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Please bear with the first bit of this as I establish a framework understanding.\n\nMachines execute machine code. Compilers do *not* compile directly to machine code. They compile the code into to *assembly* which is then *assembled* into machine code.\n\nMachine code has two parts, ~~zero and one~~ operands (what to do and where (registers) to do it\\*) and data. Depending on the number of 'bits' the machine is, these can all have varying lengths of bits.\n\nNow that we understand what machine code is and how it's structured, let's look at what assembly code is.\n\nAssembly code is *human readable machine code*.\n\nWe (humans) give the operands *mnemonics* (names) and logically divide this into three parts to make things easier to remember for us. No matter what, the same operand mnemonic will *always* turn into the same sequence of binary. \n\nSo assembly let's us turn a 'line' of binary from\n\n    010011110101000001010010 010100100100010101000111 01000100010000010101010001000001\n\nInto\n\n    OPR REG, DATA\n\nSo now we know what assembly is, and how it's written. How does a machine turn assembly into machine code?\n\nWhy with an assembler of course! Usually assemblers are 'programmed' on paper, by hand writing the assembly you would normally type to later be run through an assembler. The next step is. . . Translating the assembly of your assembler to binary yourself! Hooray how exciting!\n\nEven still we keep it a bit more human readable than direct binary we use a system called hexadecimal to represent binary. A symbol of hex is four bits, and is as follows.\n\n    0 0000\n    1 0001\n    2 0010\n    3 0011\n     ...\n    F 1111\n\n\nOnce you have your program translated from assembly to hex, you queue the program in a hex editor. A hex editor is a peripheral attached to the machine which stores the binary of your program which you enter using hex, and sends it to be executed once you are finished.\n\nSo, now we understand how we get machines to do anything. Let's see how we can reach the ability to compile a compiler.\n\n1) Hand write an assembler in assembly/hex.\n\n2) Enter your assembler into a machine with a hex editor\n\n3) Write your compiler in assembly and assemble it.\n\n4) Write your compiler in the language your compiler compiles.\n\n5) Assemble the compiler.\n\n6) GOTO 4\n\nThat's how you get a basic compiler. \n\nFun fact: A compiler written in the language it compiles is called a *self-hosting compiler*.\n\n\n***\n\nThings you may want to dig into for further reading.\n\nLinkers (part of modern compilers, much the same way an assembler is one part of a modern compiler)\n\nAssemblers\n\nIntel Syntax vs AT&amp;T Syntax\n\nMachine Organization (You can't write working assembly unless you know what is where and how it works)\n\nEndianess (relevant to the structure of machine code)\n\nBitwise Operations (extremely low level data manipulation functions)\n\nCISC and RISC (machine architecture paradigms)\n\nForth (A super early language that blurs the line high and low level software)\n\ngcc (GNU Compiler Suite)\n\nSource: Hobbyist embedded developer.\n\nI hope this adequately answers the question OP!",
+            "score": 119,
+            "author": "Yes_I_Fuck_Foxes",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Why couldn't a compiler output machine code? It could be an unnecessary step in certain circumstances, especially if you are writing compiler in an environment as primitive as when the first compiler is written. In fact Java compiler doesn't output assembly anyway and that is a modern language example.",
+                    "score": 5,
+                    "author": "zurnout",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It can. It may not be desirable as it might make the compiler too large, too arch-specific, and is too restrictive in terms of performance. Splitting the toolchain into compiler/linker/assembler/etc allows for more flexibility during development.",
+                            "score": 7,
+                            "author": "mfukar",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; In fact Java compiler doesn't output assembly anyway and that is a modern language example.\n\nJava is a bit weird because it spits out interpreted code for its own virtual machine. The interpreted code looks like machine code, but the machine is the JVM.\n\nOf course, once loaded, Java may decide to compile the interpreted code into machine instructions, the so-called JIT compiler for speed of execution.",
+                            "score": 6,
+                            "author": "hughk"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Because even just among the x86 instruction set of opcodes there can be a variety of different ways to do the same thing with various levels of efficiency.  Different architectures will likely do things in slightly different ways or perhaps just have to wait an extra clock cycle here or there for an ALU to finish an operation. The point of higher level languages is to completely shove all that shit into a magical black box a programmer cam ignore.",
+                            "score": 8,
+                            "author": "redpandaeater"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 68,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 34,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 21,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 41,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 11,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 94,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 32,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 70,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 73,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 10,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 15,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 8,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 15,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 5,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 5,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 119,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 124,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I worked as a SysAdmin for a Burroughs (B5500 and) B6700 (mainframe) computer. Our Algol compiler was written in Algol (as were most of the others). (I agree with the answer on how that first happened, way back before my time.)\n\nWhen we re-complied the Algol compiler, we had to do so three times, in sequence. (The compiler was distributed as source on tape along with running object.) \n\nThe first time was to assure that our local changes (called patches) didn't create any syntax errors in the compilation.\n\nThe second time (using the output from the first time) was to assure that what we created was able to read a program as complex as the compiler and produce an object output.\n\nThe third time was to show that what we produced was indeed a competent compiler.\n\nIn between the stages, we had to anoint each output as a compiler with the MC (make compiler) command from the operator console, otherwise the output would not be executable.",
+            "score": 7,
+            "author": "parl",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 5,
+            "author": "[deleted]",
+            "replies": []
+        }
+    ]
+}

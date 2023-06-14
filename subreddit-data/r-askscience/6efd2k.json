@@ -1,0 +1,1413 @@
+{
+    "id": "6efd2k",
+    "score": 15158,
+    "title": "Why can't we just inject a ton of power into a phone at once to instantly charge it? Is that just too dangerous, or just not possible?",
+    "author": "willgetzen",
+    "date": 1496241511.0,
+    "url": "https://www.reddit.com/r/askscience/comments/6efd2k",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Edit: Thank you to everyone who has responded! I would have never guessed that this post would blow up like this! ",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "To understand why not, you have to understand how a battery works. It's not a tank of electrons, exactly. A battery is a chemical reaction between an anode (-), cathode (+), and an electrolyte (or some form of conduit) which facilitates the exchange of electrons.\n\nWhen you discharge (use) a battery, a chemical reaction is occurring, moving electrons between the two chemicals (anode and cathode). So, don't think of a battery as a vessel which just holds a pile of electricity. It's a specific transfer of energy between two chemicals.\n\nNow, in a rechargeable battery, this reaction can be reversed by applying electricity using a charger. But, again, it's not adding anything, really. It's reversing the chemical reaction which is putting the chemicals back to their original state.\n\nWhen charging, it takes time for the reaction to reverse and at the same time, heat is created because the electrons are moving back across the conduit they travelled across originally. Electrons moving over a conductor meet resistance which creates heat, no matter which direction. Much like the battery heating up when you use the phone, the battery will heat up while charging for the same reason. If you were to throw a bunch of current at the battery, it could easily cause a thermal issue. Nickel-cadmium (NiCd: pronounced Nye-Cad) batteries had a problem called thermal runaway where the battery, if charged too quickly, the heat generated could induce a self-feeding loop where the battery could heat to a point of ignition or explosion. But that's not an issue with Lead-Acid batteries (like sealed lead acid batteries like in your car, which use a liquid electrolyte, also known as a wet cell [thanks to u/gilescoreywasframed for the correction below]). Also prone are Lithium Ion (LiOn, like in your cell phone) or Lithium-Polymer (Li-PO) batteries (credit to u/incrediboy729 for the correction here), but these usually incorporate circuitry to prevent this situation.\n\ntl;dr - it is dangerous, and modern cell phone chargers and batteries have circuitry to prevent too fast/overcharging which could lead to heat damage or fire.",
+            "score": 14520,
+            "author": "KaHOnas",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the solid answer",
+                    "score": 3461,
+                    "author": "willgetzen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This brings to mind the recent phone/tablet explosions, I wonder if they failed due to the limitations explained above?",
+                            "score": 575,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've read that it was a design flaw with the batteries and their internal structure which led to short circuits. It wasn't a failure of the chargers, but rather the batteries themselves and either a quality control problem with the supplier or just a flat out flaw in the design.\n\nEdit: I found [this](https://www.cnet.com/news/samsung-galaxy-note-7-return-exchange-faq/) which not only explains why the batteries were failing but also has a pretty nice diagram of the internal structure of a LiOn battery.\n\n",
+                                    "score": 850,
+                                    "author": "KaHOnas",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This was the same reason why the note 7 explosions happened. I was actually pretty bummed when I had to give mine back. But essentially, there is a barrier between the cathode and anode. In order to cram more juice into the battery the manufacturer reduces the barrier between them. If the barrier is damaged, the electrons can flow freely between the cathode and anode causing a short circuit. This in turn creates an insane amount of heat destroying the barrier, and causing a more intense short circuit. The energy released by this takes on the form of an explosion. ",
+                                            "score": 213,
+                                            "author": "Pray2harambe",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It wasn't just that, but Samsung engineered out the space around the battery that it needed to use to expand as all batteries do a bit. That force on the battery caused the two electrodes to contact and short-circuited the batteries.",
+                                                    "score": 143,
+                                                    "author": "skintwo",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "This. Batteries swell while they charge. When they don't have enough room to expand while they charge, something's going to give. In this case it was the separators in the battery that failed.",
+                                                            "score": 95,
+                                                            "author": "nodoubleg",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Is it just the heat generated that causes the battery to swell or is it another chemical reaction?",
+                                                                    "score": 23,
+                                                                    "author": "Yeeewch",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 23,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Lithium hydroxide is solid at any temperature that won't set the phone on fire. It boils(and decomposes thermally) at ~920C",
+                                                                                    "score": 15,
+                                                                                    "author": "Klaus_Goldfish",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "When batteries are charged and discharged they can form what's called dendrites. These are little metallic structures the branch out from the walls of the battery. While these are dangerous, they are well understood and generally are accounted for when designing batteries. The problem with the Note 7 battery issue was two-fold: \n\n- One, the battery was too small, meaning the dendrites could form and touch, causing a short circuit. \n\n- Two: any thermal expansion that occurred was poorly handled as there was almost no clearance in the battery chamber to compensate for it. The combined pressure of the battery against the inside of the phone and the rapid formation of dendrites (and their eventual contact with each-other) lead to a really big short-circuit, causing rapid heating and ultimately an explosion.\n\nAdditionally, the pressure within the battery caused the metallic plates within the battery to fold inwards towards each-other at the corners, also causing an explosion.\n\nTechradar has a [reasonably competent article](http://www.techradar.com/news/samsung-galaxy-note-7-battery-fires-heres-why-they-exploded) explaining it, but doesn't cover the dendrites.\n\nIf you would like to learn more about dendrites, specifically pertaining to rechargeable batteries, here is an [informative article](http://newscenter.lbl.gov/2013/12/17/roots-of-the-lithium-battery/).\n\n**EDIT: Fixed some grammar and spelling issues. Reformatted to improve readability. Added sources.**",
+                                            "score": 47,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "And the good news is that the inventor of the LiOn battery has invented a new type he's calling Lithium-Glass, where a solid sheet of crystal acts as the electrolyte, and also prevents dendrites from forming.\n\nhttps://en.wikipedia.org/wiki/Glass_battery",
+                                                    "score": 10,
+                                                    "author": "EdricStorm",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Interesting. While I am skeptical of this technology, I'd like to see a demonstration of the technology on a practical level. It should be relatively easy at this point to fabricate a battery capable of powering some form of modern electronics.\n\nHowever, even if it does work, I don't think there will be a significant adoption for a long time. Even if the per-battery cost is lower than lithium-ion, I doubt it will be enough to out-weight the cost of switching the manufacturing facilities over to technology that could fabricate these glass batteries.\n\nThis is all conjecture, but I think that given current-day device-makers' reputation with modernizing their hardware and software in a lot of ways it's not too far-fetched an outcome.",
+                                                            "score": 4,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "May I ask, why are you skeptical of the technology? It's from a proven inventor in the field, and a crystalline structure seems to have some features that would be useful in a battery (Ease of electron flow, unless I'm wrong about crystalline structure traits, which could easily be the case.)",
+                                                                    "score": 2,
+                                                                    "author": "water125",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Iirc it's about the concrete realization. What I read is that during the charging process, one of the electrodes of this battery gets coated with a thin layer of the other electrode's material. Batteries usually need two different materials to for the two electrodes, but this new glass battery apparently also works with both electrodes having the same material on the outside. The inventor's explanation is that the layer on the other electrode is thin enough to not change the surface's fermi energy so that it still works, but other experts are still somewhat critical. The project is only receiving the amount of recognition it does because Goodenough is involved. \n\nIt's still very promising, but with how other attempts at new battery technologies flopped, a certain degree of skepticism whether or not it will be a breakthrough is probably still appropriate. ",
+                                                                            "score": 6,
+                                                                            "author": "alstegma"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Cheapest bidder batteries. The technology put into them (same with the hoverboards) was likely from a poorly spec'd Li-ION cell. This is also why Lithium is regulated for shipment.\nUnfortunately, Samsung has gone to making their cases sealed, otherwise they could have saved a fortune in providing a higher quality replacement battery instead of an outright recall. It's also why I still have my Note4. I've replaced 2 batteries with it, and its still going strong. ",
+                                            "score": 44,
+                                            "author": "Seabee1893",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I love being able to have a spare charged battery on me (in a case) rather than hunting for a plug socket or having a mobile charging device.",
+                                                    "score": 33,
+                                                    "author": "Mammal-k",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The #1 feature, practically the only feature that selects my phones (currently LG V20).",
+                                                            "score": 24,
+                                                            "author": "wyvernwy",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I'd rather have enough battery life that that's not necessary in the first place for day to day use. And for extended trips, portable usb batteries are more versatile and flexible.",
+                                                                    "score": 16,
+                                                                    "author": "noratat",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I had one of those LG windows phones (710?) And the damn thing would overheat and mildly burn my leg (like a really hot potato). Then about a few months later it bricked itself. I literally had days where it'd overheat and I'd put it in a trash bin in case the thing blew up. (Chinese battery's were doing that everywhere back then)",
+                                                                            "score": 9,
+                                                                            "author": "helperwolf"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Same here, this and the expandable memory slot is always a winner. I'll take a slightly less specced out camera, slightly slower processor (because at flagship level they're all great anyway) if the phone comes with removable battery &amp; memory expansion slot.",
+                                                                    "score": 7,
+                                                                    "author": "IsThatDWade"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The swappable battery is my only reason for ditching samsung. LG v20 just needs a hardware back and home button and it would be perfect",
+                                                                    "score": 2,
+                                                                    "author": "Triodan"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "The problem is that space is at premium, so there is pressure on the manufactures to store as much energy as possible; with as little 'filler' (the plastic insulation) as possible.  So it doesn't take much to have a failure. ",
+                                            "score": 6,
+                                            "author": "K3wp",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Which is really just an unfortunate biproduct of market demand. For some stupid reason, marketing departments started pushing \"thinner is better\" so hard that it's now somewhat engrained in public perception. If this wasn't the case, manufacturers would be free to produce more resilient designs at the expense of a bit of thickness.\n\nI, personally, couldn't care less about a phone being thinner than, say, a centimeter, if it meant more battery capacity, fewer design issues causing recalls/issues, more RAM, etc. But I realize I'm in the minority :(",
+                                                    "score": 27,
+                                                    "author": "b1ackcat",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The Note 7 fiasco was caused by manufacturing defects within the battery itself. It wasn't the charging of the battery that was the culprit. The defects made it very easy to short circuit the battery and cause thermal runaway.\n\nYou can read more [here](https://news.samsung.com/us/Samsung-Electronics-Announces-Cause-of-Galaxy-Note7-Incidents-in-Press-Conference).",
+                                    "score": 48,
+                                    "author": "JaspahX",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That was such a shame. I bought this note 5 I'm writing on right after that. ",
+                                            "score": 3,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Actually it was a design flaw that caused shorts and spurred the recall. \n\nThe replacement battery they rushed out had some manufacturing defects. ",
+                                            "score": 3,
+                                            "author": "kr0kodil",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Similarly, when you see a post or video of the sort: \"e-cig explodes in guys pocket!\" 99.99% of the time it's a spare battery loose in someones pocket along with keys/coins causing a short circuit and a thermal runaway situation.\n\n",
+                                    "score": 32,
+                                    "author": "Uranus_Hz",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "A favourite trick of mine was to put a short length of solder across an AAA NiCd battery.\n\nThey have such low internal resistance that the solder gets a huge current through it and instantly vaporises. But it goes so quick that you can be holding it onto the battery terminals and not feel it, or see it.",
+                                            "score": 20,
+                                            "author": "anomalous_cowherd",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Aparently it's pretty common in my workplace for 9v batteries to heat up in people's pockets. Probably because keys. ",
+                                            "score": 5,
+                                            "author": "TheDarkOnee",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Need to starts a fire? 9v battery + steel wool will do it. ",
+                                                    "score": 7,
+                                                    "author": "Uranus_Hz",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "To help get the fire going, simply add a filled 4000 gallon gasoline tanker to the battery and steel wool. ",
+                                                            "score": 12,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The recent problems with the Samsung phones were not due to overheating during recharging, but something much simpler:  a short circuit.  This still causes heat, but not because you've dumped a ton of energy into the battery -- rather, unlimited motion of electrons (which generate heat when they travel through wires) caused the overheating right *next* to the battery.",
+                                    "score": 36,
+                                    "author": "andural",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "No, it was the battery that overheated. Both charging and discharging causes heat. In this case the short circuit caused rapid discharging that resulted in the thermal runaway condition.",
+                                            "score": 17,
+                                            "author": "DoomBot5",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Also there are thermal limits on hardware of phones themselves and some of the fastest charging ones like oneplus3 have a lot of power electronics in the charger so they can output the heat in other places and worry only about the internal capacity of the battery.This is similar to how Tesla Supercharging works with direct DC current to the battery bypassing the AC-DC converter on the car and using a stationary one in the charging station.",
+                                    "score": 7,
+                                    "author": "Goldberg31415",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This is more like what happens when a vape battery explodes than an issue with battery limitations.  The internals of the battery shorted so there is now an almost zero resistance circuit inside the battery which means a very high current is running through the inside of the battery, so high, in fact that it damages the battery structure itself which can make the problem worse.\n\nIt also doesn't help that the heat generated by the original short can also fuel the continuation of the adverse reaction causing the battery to eventually vent hot matter and or combust, this is called thermal runaway.",
+                                    "score": 5,
+                                    "author": "Deltaechoe"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Ultracapacitors, whenever they are going to be perfected, are going to be able to take a near-instant charge, because they are essentially just capacitors and hence do not rely on chemistry.\n\nEven then, there might be practical limits to what \"instant charge\" really means. Let's say you're aiming for 2000 mAh capacity, which is rather common these days for smartphones. That means your battery or capacitor can deliver, on average, about 2000 mA (or 2 A) of current for 1 hour (or 3600 seconds) before expiring.\n\nAssuming a lot of simplifying hypotheses, that's equivalent to 20 A for 360 seconds. Or 200 A for 36 seconds.\n\nBut charging is the opposite of discharging. So, to charge that thing, you'd need to provide it with 200 A of charge current for 36 seconds.\n\n200 A is *a heck of a lot* of current. It's what my TIG welder does. Have you seen the cables coming out of a welder? That's what you need to safely run 200 A to your phone. Multiply that by, say, 5 V, and it's 1 kW of power. Your \"phone charger\" now looks about as bulky as a TIG welder.\n\nAnd then, of course, there's the issue of having cables inside the phone that can withstand 200 A, which is going to be extremely tricky at least. Maybe just expose the capacitor's plates directly on the outside shell.\n\nFor all these reasons, even when ultracapacitors will finally become a reality, you should probably not expect instant charge, or at least not any time soon. It's a pretty difficult thing to do, because, frankly, it's a big chunk of energy.",
+                            "score": 60,
+                            "author": "florinandrei",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\"hey man can you unplug your stove, I need to charge my iPhone?\"",
+                                    "score": 22,
+                                    "author": "extracanadian",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Super-capacitors have no where near the energy density we need in chemical batteries. ",
+                                    "score": 8,
+                                    "author": "lolzfeminism",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It will take a conceptual change, or some innovative way to use the much higher power density.\n\nFor instance, does it matter so much about your charge only lasting a couple of hours if you can fully recharge it by plugging your phone directly into any wall socket *for three seconds*?",
+                                            "score": 17,
+                                            "author": "anomalous_cowherd",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;For instance, does it matter so much about your charge only lasting a couple of hours if you can fully recharge it by plugging your phone directly into any wall socket *for three seconds*?\n\nYes. I am regularly in situations where I do not have access to a power source for longer than a couple hours. I could see carrying an external battery in my bag with which I would recharge my phone every couple hours. However, I would still need high energy density in that external battery.",
+                                                    "score": 9,
+                                                    "author": "what-are-birds",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "So why not have a charging station which holds a supercapacitor, and your phone which holds a supercapacitor, touch the two together to have one discharge into the other? The charging station can then recharge its internal supercapacitor more slowly, until the next 'instant charge' is needed. ",
+                                    "score": 5,
+                                    "author": "roundwindow",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That would definitely solve the problem of the welder-sized charger, yes. The station could be much smaller, and just charge its own capacitor slowly.\n\nStill have to be careful with the massive cables (or metal pads) used to connect the phone to the charger.",
+                                            "score": 3,
+                                            "author": "florinandrei"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Amp hours are used when talking discharge because various reasons but watt hours are what you want to talk about for capacitors, especially for charging. By jacking the charge voltage up you can drop the amperage (or not) and decrease the time it takes to charge. This is how Samsung's fast charge works right now. Instead of the normal 5V, it pushing 8 or 9 (I forget the exact voltage). ",
+                                    "score": 7,
+                                    "author": "Cablancer2",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Just ignore all the mentions of capacitors in here. There are several distinct differences between batteries and capacitors. A super capacitor will still not be very useful in a phone. \n\nWhat you really want is something like a carbon - carbon battery. Because the charging and discharging reactions of this chemistry do not produce heat, they can be charged much much faster. Unfortunately that technology has not left the lab yet.",
+                            "score": 15,
+                            "author": "DoomBot5",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I always looked at it as being a bit like ammunition in a gun's magazine - You can reload the bullets one at a time, or you can replace the magazine, but you can't just reload all the bullets in the magazine at once.\n\nI mean, you could try, but you may not survive.\n\nI'm assuming that nobody has invented a magazine that can be reloaded like a pez dispenser. That would ruin the analogy a bit.",
+                            "score": 7,
+                            "author": "hatesthespace",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You can load a magazine all at once in many cases by simply using a clip. Most break action weapons, like revolvers and double barrels are able to be filled all at once, while the use of stripper clips lets box-magazine weapons be loaded in one go. Many weapons with fixed magazines are able to be loaded from both the bottom, pushing up and into the weapon, or from above by pushing down through an open bolt. And, of course, there are belt fed weapons that ignore the issue entirely.\n\nIt's still a decent analogy though!",
+                                    "score": 19,
+                                    "author": "amaROenuZ",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I read the above post and instantly realized 'not a gun guy',  looked down...and there I found him. Way to go. Glad we got some gun guys mixing with tech.",
+                                            "score": 3,
+                                            "author": "zeusofyork",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Think of the heat generated as water in a hose. Too much water means too much pressure which eventually leads to the hose rupturing.",
+                            "score": 2,
+                            "author": "Atello"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "To add to the question . How exactly do the \"fast chargers\" work? Like the Samsung adaptive charge \n\nhttp://www.samsung.com/us/mobile/mobile-accessories/phones/adaptive-fast-charging-wall-charger-detachable-microusb-usb-cable-white-ep-ta20jweusta/",
+                    "score": 59,
+                    "author": "m1a2c2kali",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Fast chargers use the same electronics as mentioned before to prevent heat build up and overcharging. They are capable of delivering higher doses of amperage but are still limited if the battery says it's getting too hot.\n\nBasically, fast chargers have the *capability* to charge faster, but are still limited by the battery. ",
+                            "score": 115,
+                            "author": "KaHOnas",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So does that mean when I plug my turbo charger it starts sending a lot of energy into by phone battery until it says it's getting to hot? And the this process repeats till it's fully charged?",
+                                    "score": 26,
+                                    "author": "JmanGonnaSweep",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "No- they do have safeties like that, but that's not a major feedback for charging.  The charger instead uses things like the voltage and impedance of the battery to tell how much power to put in.\n\nBatteries charge in two phases, a high power current-limited one and a finishing voltage-limited one.  During that initial phase, if your voltage is too high it will suddenly result in a huge amount of current being dumped in at once, damaging the battery.  Slow chargers are \"dumb\", and use the voltage-limited phase to charge the whole battery.  Smart/fast chargers measure the current they are outputting as well as the voltage, so they know they can be safe during the first phase.",
+                                            "score": 83,
+                                            "author": "hwillis",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Actually the bulk of the charging circuitry is in the phone itself, and always uses the two-stage process (it's a single IC these days).\n\nWhat people call \"phone chargers\" are really just power adapters, and don't directly charge the battery. \"Fast chargers\" are just higher voltage power adapters - which allows the charging IC in the phone to transform that down to the voltage it needs at a higher current.\n\nThe reason they don't use higher current power adapters is most use standard USB cables which have a pretty strict current limit - you physically can't get more through the cable!",
+                                                    "score": 55,
+                                                    "author": "TheThiefMaster",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt;you *physically* can't get more through the cable!\n\n(emphasis mine)\n\nYes you physically can.\n\nIt would just violate the USB standard and likely be unsafe (say, maybe have a chance to melt the insulation on poor quality cheap USB cables that barely comply with the standard).",
+                                                            "score": 32,
+                                                            "author": "rayvector",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "And actually with newer USB standards on power delivery, USB can deliver up to 100w of power. It's not often implemented, but the standard is there.",
+                                                                    "score": 3,
+                                                                    "author": "Emerald_Flame"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The charging circuitry is usually one IC, but the entire charge management system is more than a single IC for devices like phones and tablets. Battery monitoring and fuel gauges are separate IC's from the battery chargers.\n\nThat said, there are chargers which have IC protection circuitry built in, making the battery monitoring ICs optional based on application. However, usually frequently charged or highly popular personal electronics devices don't rely only on that alone and will use a dedicated battery monitor to ensure reliability. Redundancy is important. Also for higher voltage/current situations, like say, power tools, you will want at least at least a two stage protection circuit as well. Having a single point of failure when sucking a lot of amperage isn't wise.",
+                                                            "score": 3,
+                                                            "author": "YusukeMazoku"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Friend of mine says his phone gets super hot when \"quick charging\" and has stopped using it for this reason. Is it still considered a safe way of charging a phone you reckon?",
+                                    "score": 10,
+                                    "author": "Mocorn",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah it's definitely safe. Over time it does reduce the life of your battery if you are constantly quick charging it compared to normal charging, but it doesn't really make that much of a difference in longevity. ",
+                                            "score": 30,
+                                            "author": "alonelygrapefruit",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I put my Android phone phone on top of my no longer used iPad while fast charging to keep it cool (both stays cool for the entire charge). From what you're saying, it doesn't make much difference to the battery's longevity eh? ",
+                                                    "score": 2,
+                                                    "author": "Coppeh",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "if the backplate stays cool it's not absorbing heat though. Thus, it's no use putting it on the ipad.",
+                                                            "score": 2,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Edited for clarification.\n\n\n\nSometimes I use that backplate as a cooler when my phone heats up to \"hot\" from videos. The heat transfers well enough that it gets cooled down to idle temperature or below within 8 seconds (checked with CPU-Z).\n\n\n\nPS. I usually flip my phone to cool the other side after 4 seconds so that the temp difference in the phone won't get too high, just in case. ",
+                                                                    "score": 3,
+                                                                    "author": "Coppeh"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "yes, the phones' charge controllers limit this within reason. just don't keep it under a pillow or something where the heat is trapped",
+                                            "score": 6,
+                                            "author": "nekolai",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "What is 'super hot'?\n\n35\u00b0C is *probably* not a problem. 60\u00b0C externally may be of concern, or may simply reduce lifespan significantly (depends on the internal temperature of the battery and electronics\u2014which the outside temperature doesn't necessarily predict). The heat is also not necessarily just produced within the battery, but also by the regulation electronics that control the electrical energy coming in from the charger and going into the battery.\n\nHigher temperature (if it's not dangerously high), for electronics and batteries, translates to a shorter lifespan. Faster charging is necessarily a tradeoff between temperature/lifespan and convenience. However, fast charging is not in itself dangerous if the battery and regulation electronics support the current, and a properly designed fast charger detects when the fast charge rate is possible (communicates with the device to see if it supports fast charging, has safeties to detect conditions that seem wrong).",
+                                            "score": 2,
+                                            "author": "Laogeodritt",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "So does that mean it's okay to use the fast charger that came with my new phone on my old tablet? I've been restricting the fast charger to only the phone it came with. ",
+                                    "score": 2,
+                                    "author": "raendrop",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That depends what standard of \"fast charger\" you're working with. If compatible, then the current implementations I'm aware of (Qualcomm's proprietary solution, as well as USB-C PD) will utilize the highest available standard.\n\nSamsung's \"Fast Charge\" protocol is actually Qualcomm's \"Quick Charge\" solution, with a list of supported devices made available by [Qualcomm](https://www.qualcomm.com/documents/quick-charge-device-list). If your device is on that list, then chargers distributed with the respective listed devices are interoperable at a \"fast charge\" pace.\n\nOther devices, like the Google Pixel line of devices, use USB-C PD, which is a separate standard, but also allows for faster charging. USB-C PD chargers will charge Quick Charge devices at normal rate, and vis versa, but USB-C PD will charge USB-C PD devices at fast rate, and Quick Charge chargers will charge Quick Charge devices at fast rate.",
+                                            "score": 8,
+                                            "author": "rallias",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "In general it is ok to use a fast charging cable with a device that doesn't support fast charging. By default a fast charging cable will output 5V like any other charger. If the connected device supports fast charging it will request a higher voltage from the cable. ",
+                                            "score": 4,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The battery is only one limiting factor, and with modern phones and batteries the real limitation is the USB specification. USB provides 5 volts of power at up to 500mA normally; multiplying these together, you get a charge rate of 2.5W max. Now, plenty of chargers and phones bend the rules, and can get up to about 2.1A, for around 10W, but that's about the limit - higher than that and the resistance of the USB cable's wires becomes a real issue.\n\nTo work around this, some fast chargers support negotiating with the phone to provide a higher _voltage_ - often 9, 12, or 15 volts. This causes a corresponding increase in power delivered, as you can still run the same 2.1A but you're multiplying by a higher voltage; however it requires more expensive and complex circuits on both the phone and charger to handle the higher (and variable) voltage.\n\nNote that in all cases the phone is in charge of how much power it's actually consuming - the adapter merely sets the upper limit. If your battery is heating up, the phone will reduce charge rate, and likewise will reduce charge rate, often quite dramatically, when the battery is either nearly empty or nearly full to reduce stress on the battery.",
+                            "score": 11,
+                            "author": "bdunderscore",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So what about a capacitor? I don't know much about them, but from what I understand, they actually do hold electricity rather than using a chemical reaction. \n\nSo is it right to say that a capacitor could be (or is) charged almost instantly? \n\nAlso, how big of a charge could a capacitor potentially hold on paper? Are they limited to short bursts of energy or could they be built up to hold the capacity of a battery?",
+                    "score": 10,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Capacitors can't hold much charge like a battery can. You would need a capacitor the size of your microwave to hold the charge in your phone. \n\nCapacitors also drop in voltage linearly to the current. Li-ion batteries go from 3.7 to 3.5 through their entire discharge cycle. \n\nThat being said, what capacitors are good at is charging and discharging very quickly. They just don't hold much energy when they do so.",
+                            "score": 13,
+                            "author": "DoomBot5",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Problems with capacitors is they are quick charge, but also quick release. We have not come up with a safe way to make a Battacitor or a Quick Charge Slow Release Long Life thing.",
+                            "score": 3,
+                            "author": "Alis451",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah they did, it's called a resistor. The problem with capacitors is that they do not hold much charge at all, and their voltage drops linearly to the charge.",
+                                    "score": 13,
+                                    "author": "DoomBot5"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Also even \"ultracapacitors\" have poor energy density compared to batteries.",
+                                    "score": 3,
+                                    "author": "bdunderscore"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thermal runaway in NiCd batteries during charging is largely due to melting of the separator, causing direct internal shorting between the anode and cathode. This shorting would then cause the affected cell(s) to heat even more, resulting in more separator melting, more internal shorts... overall it's a bad scene.\n\nAlso, car batteries are **sealed** lead acid batteries, not **solid** lead acid batteries.",
+                    "score": 18,
+                    "author": "gilescoreywasframed",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Most car batteries aren't sealed either. Also the parent post sort of implies you can charge lead acid batteries really fast - that's not true. They get hot and start boiling the water, electrolysis starts happening creating hydrogen gas, etc...\n\nYou can discharge lead acid batteries really fast though. ",
+                            "score": 6,
+                            "author": "bb999"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you for the correction. We use SLABs in the aircraft I fly. I was mistaken.\n\nI'll correct it.",
+                            "score": 2,
+                            "author": "KaHOnas",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "More complex answer: First off, a rechargeable lithium battery comprises these parts:\n\nLithium compound (Anode) || Separator || SEI || Graphite (cathode)\n\nThe lithium compound can be a number of things, and has the biggest difference between types of lithium batteries.  Lets not worry about the specifics right now, just know that when you charge the battery, lithium ions move from here to the cathode.\n\nThe separator is a thin plastic film that the ions can move through, but electricity can't.  IIRC its usually polypropylene, but its the least special part of the battery.\n\nThe graphite cathode is a pulverized mix of small graphite particles, less than 150 microns across.  Usually a mix of synthetic and natural.  Lithium ions \"intercalate\" into the graphite somewhat like water into a sugar cube.  Incidentally, this causes the graphite to expand, so batteries need to be built very sturdily to resist this movement as much as possible.  It was once thought this action led to batteries degrading, but we don't think that any more.\n\nThe SEI is the solid electrolyte interface and is the most trade-secret-y part of the battery.  It's an extremely complex mishmash of junk that serves the same purpose as the separator but is even better at it.  It builds up over time and causes capacity loss.\n\nThe SEI is a mix of lithium and broken-down electrolyte, forming a compressed granular goop.  Heat and high voltage cause it to build up by breaking down the electrolyte faster.  Even at low voltages in the cold, the presence of lithium ions alone breaks down the electrolyte, because lithium is so reactive.\n\nFast-charging batteries use a thinner, wider spread of these layers.  That reduces the distance the lithium ions have to move, and the voltage they need to charge.  That's just a stop-gap.  In order to charge faster you need a higher voltage and current, and those cause the SEI to build up faster, reducing the lifetime of the battery.  At ~.7 volts higher than the battery, the most important components of the electrolyte start breaking down, and lifetime is reduced by over 20x.\n\nAll of that is even before heat production in the battery.  You can make the electrodes larger so they have lower resistance, but the chemical reaction itself will still produce an increasing amount of heat- those ions moving around make heat just like electrons moving around.",
+                    "score": 30,
+                    "author": "hwillis",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; that the ions can move through, but electricity can't\n\nWait, what?  Ions are *electrically charged* by their nature!  That's what an ion IS!",
+                            "score": 4,
+                            "author": "johokie",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is the correct answer. The top comment discusses electrons, but the resistance due to electronic movement in a battery is far far smaller than that caused by ionic movement. The heating of a battery during fast charging is mostly due to ionic overpotentials.\n\nTo go back to OP's question, a simple hydraulic analogy might work. Imagine having a bottle (your discharged battery) and a bucket full of water (where water is electrical energy). Now, if you slowly tilt the bucket and let the water trickle in the bottle you'll have a full bottle with very little spillage (I.e. Waste), but it will take a long time. If, on the other hand, you just turn the bucket over the bottle you'll end up with a very fast charge, but a lot of spillage.",
+                            "score": 9,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Very interesting.  How does the electromagnetism of a wireless charger do this?",
+                    "score": 8,
+                    "author": "SummonWurm",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A wireless charger uses induction rather than direct electricity transfer. Induction is neat in that the presence of electrical movement will induce the electrical movement in a nearby wire without actually touching it. This is due to the presence of electrical fields. It's pretty cool stuff. You should look up induction and induction ranges (like your stove top; it heats an iron skillet without actually heating a coil like most stoves - there's no direct heat transfer). \n\nI'm sure there's a diagram that can explain much better than I can here. Pictures always help.",
+                            "score": 16,
+                            "author": "KaHOnas",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It is literally an electrical transformer, like any ordinary one you have on older wall warts (the heavier ones), many stereo amplifiers (the heavy ones), and on electrical power poles outside. \n\nAs described in another comment, AC current makes AC magnetic fields, which can induce AC voltages and thus current in a physically close but not electrically connected circuit.   \n\nThis is the most important electromagnetic phenomenon, discovered by Michael Faraday in the early 1800's. \n",
+                                    "score": 8,
+                                    "author": "DrXaos"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "To be more precise, changing electric fields and accelerating charges induce magnetic fields which produce electric fields. Those electric fields accelerate charges on their part which is used to charge the battery.",
+                                    "score": 15,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Does such induction only work on metal? Like, can you lay your hand against an induction surface and not feel anything?",
+                                    "score": 3,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Induction (from my understanding of it) works on anything that can conduct electricity, but usually metals are best. Different metals react better to induction. It generally won't do much of anything to your hand. That's not to say that an inductive surface won't get hot since it's in direct contact with a heated material, but that's not the induction heating it up; that's conduction.\n\nFerrous materials (ferrous = containing iron) generally work best. Cast iron works better than stainless. Stainless works significantly better than aluminum. There is cookware that uses a ferrous base which will transfer its heat by CONduction into the rest of the material, which kind of gets the best of both worlds, if you will.\n\n[This](https://en.wikipedia.org/wiki/Induction_cooking) Wikipedia article explains it quite well.\n\nAluminum has been popular with pots and pans because it's an easier material to manufacture and it heats up much quicker than iron and stainless, but because of this, it also doesn't hold heat as readily. Copper is similar (soft and heats up fast), but it is an expensive material. Plus, it oxidizes and can be difficult to clean.",
+                                            "score": 7,
+                                            "author": "KaHOnas",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The phenomenon of electromagnetic induction is universal, but the efficiency in practice does depend on the material in question.\n\nStarting from the source:  AC current will make AC magnetic fields.  AC magnetic fields will induce an electromotive force, i.e. something pushing on charges (electrons are the ones that matter).  But your hand is not a good conductor so not much current is generated---current is what makes heat.\n\nNow aluminium is a better electrical conductor (lower electrical resistance) than cast iron, so you'd think that it would work better than cast iron pans in an induction stove but there is another effect going on that's really important. \n\nCast iron, unlike aluminum, is a 'soft ferromagnet'.  This means that because of some complicated peculiarities of quantum mechanics in these atoms, some of their electrons like to line up their magnetic fields in the same direction and peer-pressure each other to do the same.  Think of a North Korean parade taking marching orders from the Magnetic Leader.  (Electrons always make their own little magnetic fields, but most of the time they are in random directions so doesn't add up to very much on the human scale, unless you have a ferromagnetic material).\n\nThe implication is that the AC magnetic field from the induction coil is greatly amplified within the cast iron pan (hundreds or thousands of times), and therefore the efficiency and capacity of the transfer of power through the magnetic field is much greater, so you can heat it up the pan substantially.\n\nThis is the same reason that purpose-built electrical transformers are heavy---they have iron/ferromagnetic loops to amplify and contain the magnetic field for maximum power transfer efficiency and capacity.  It isn't an exaggeration to say that modern electrically powered civilization depends on an accident of quantum mechanics. ",
+                                                    "score": 3,
+                                                    "author": "DrXaos"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The term you're looking for is magnetic permeability.\n\nIron is the best. Air is about 1000 times less permeable, which makes contribute to loss in the transformer. \n\nThe fact that Air is semi permeable means wireless charging is possible via magnetic induction. (using Air as the medium which magnetic fields flow, instead of a traditional iron core). \n\nContrast this electric permittivity, which Air doesnt allow electric fields to flow (very low permittivity) easily. Copper has the best permittivity.",
+                                                    "score": 2,
+                                                    "author": "xPURE_AcIDx",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You were already given replies relating to using 2 coils and using induction. \n\nElectromagnetism links electric fields with magnetic fields. So it's also possible to make a wireless charger using capacitance. \n\nYou use 2 plates with as much surface area as possible. Capacitors maximize this surface area to get as much capacitance as possible. The amount of actual capacitance you get from 2 plates is very small (not good). The distance between the plates also lowers the capacitance.\n\nThe formula for the impedance of a capacitor in series is 1/(j*2*pi*f*C). We want to make this value as small as possible. Best case is 0j (short circuit). In order to approach 0 you need high frequency and high capacitance. \n\nSince we have low capacitance we need high frequency. (like realllllly high).\n\n",
+                            "score": 2,
+                            "author": "xPURE_AcIDx"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm not sure I was prepared for ending my life-long streak of 'not understanding how batteries work' but here we go. Really nicely written \ud83d\udc4d",
+                    "score": 5,
+                    "author": "TheFlyingSatan",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "This is somewhat incorrect.  Li-Ion (and even more so, Li-PO) cells are far more prone to thermal runaway than NiCD. ",
+                    "score": 5,
+                    "author": "incrediboy729",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 3,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Unfortunately no.  The heat isn't just a byproduct, its necessary for the charging itself.  The faster you charge, the faster the chemical reactions inside the battery happen, and the faster the chemicals move around.  You can keep that heat from moving into other parts of the battery, but if the chemicals themselves are moving too fast they will decompose.\n\nThat said it's possible to make batteries that charge and discharge *extremely* fast.  Some lithium ion batteries can get to a [30 C rate](http://web.mit.edu/evt/summary_battery_specifications.pdf).  That means the majority of the battery can be charged in under two minutes.  You pay for it in capacity though.",
+                            "score": 3,
+                            "author": "hwillis"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; A battery is a chemical reaction\n\nActually, not in OP's example of a phone, which uses a Li-ion cell. Unlike all other batteries, Li-ion cells do not use a chemical reaction: there is no chemical conversion or materials involved in the storage of charge, only the displacement of Li+ from one side to the other (that's an electrochemical process, not a chemical reaction).\n\n&gt; moving electrons between the two chemicals \n\nActually, no. It's moving _ions_ between the two _electrodes_",
+                    "score": 4,
+                    "author": "1Davide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very good point. I realize the chemistry above is significantly simplified, but I was trying to make it as readable and generic as possible. Battery chemistry has always intrigued me and there are a ton of different ways to create an electrical current. In simplifying, I know I glazed over a bunch of things. I'm actually learning quite a lot here, too, and I appreciate all of you commenting and correcting my reply.\n\nI love this community.",
+                            "score": 5,
+                            "author": "KaHOnas"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Note that lead acid batteries still present a fire hazard - even sealed (i.e. VRLA) - because they can vent hydrogen when over charged, which is a flammable vapor. \n\nThere are also unsealed lead acid (AGM, flooded cell)",
+                    "score": 5,
+                    "author": "nukem2k5",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Absolutely. There are many different designs for a lead-acid battery. The creation of hydrogen gas is a by-product of the chemical reaction between the sulfuric acid and the lead (be it in the form of lead plates or lead-impregnated (fiber?)glass.\n\nHydrogen gas can definitely be a hazard if allowed to build up. Oh, the humanity...",
+                            "score": 3,
+                            "author": "KaHOnas"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Recently physicists have been experimenting with Supercapacitors to do this.  It's still being tested, but the results are astonishing. \n\nhttps://m.phys.org/news/2016-11-seconds-scientists-closer-reality.html",
+                    "score": 3,
+                    "author": "GamerFan2012"
+                },
+                {
+                    "level": 1,
+                    "comment": "The other problem is that to force the battery to take charge, you need to increase the voltage above the current state of charge plus some more. For example, a 12V lead acid battery require a minimum of 13.5V to ensure a full charge (which take 12-16 hours at that voltage). A 14.4V is used (which give 5 hours). At 15V the acid start to boil, and at 16 your would cause the plates to corrode due to the overcharge.\n\nWith lithium, it is simmilar, the 3.7V need 4.2V and at 4.4-4.5 you damage the cells, which can cause a runaway reaction and fire.\n\nFrom what I understand from quickcharge is that they charge it with too much voltage and current, but carefully monitor the charge state and stop before the damage occur. But it still reduce the life of the battery, plus it don,t always work safelly.",
+                    "score": 3,
+                    "author": "thephantom1492"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 3,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I remember when Lithium Ion was brand-spanking new. It was the next step in battery technology; no charging memory, and a hell of a lot more stable than Nickle-cadmium, while holding much more power.\n\nSo, There wasn't much for over-voltage protection or thermal control and the companies where trying very hard to make a battery that can charge really fast. This lead to a lot of people with holes in their legs as the batteries would essentially become a ball of fire in your pocket.",
+                    "score": 3,
+                    "author": "Aeikon"
+                },
+                {
+                    "level": 1,
+                    "comment": "But...but...what about [this?]\n(http://www.extremetech.com/electronics/156361-teenage-girl-creates-tiny-device-that-could-charge-a-smartphone-in-20-seconds)",
+                    "score": 3,
+                    "author": "macabre_irony",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "To add to this. The limit on most batteries is the charger. A lot of batteries can handle 2 amps. Not many chargers do more than 1A. Your USB port on your computer is likely capped at 500ma.",
+                    "score": 2,
+                    "author": "Mobely",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Typical battery charging rates are measured in C's, which is a rough conversion from the capacity to the charge current. For a 1C battery, you can charge it in (roughly, omitting losses) 1 hour by putting in 1A for every Ah of capacity. So a 2000mAh battery would charge at 2A, and a 4Ah battery would charge at 4A - both are 1C of charging.\n\nIf you had a 20C battery you could charge it at 20x that rate - so in 3 minutes, you could put 80A into a 4Ah battery and have it \"full\" - again, disregarding losses. You could also use this battery at 30C perhaps - giving you the entire capacity of power in 2 minutes, which is pretty good if you're making a drone or quadcopter.\n\nInversely, you could take a larger battery and, with the same discharge rate (in A) get a larger lifetime, and a smaller discharge measured in C. This is both good for being able to use the device for longer, and having a longer battery lifetime. Downside is obviously cost, weight and size.",
+                            "score": 3,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Could you maybe draw a parallel in how a cassette tape is rebounded? (just as a visual)\n\nMeaning, you can maybe make it rewind faster, but you can't just make it rewind without putting in the time to rewind it. (...as opposed to a CD/DVD).. Just wondering, either way, thanks for what seems like a solid answer.",
+                    "score": 2,
+                    "author": "salicepiangente",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Your answer just charged my brain. Thank you!\n",
+                    "score": 2,
+                    "author": "backsing",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Now, in a rechargeable battery, this reaction can be reversed by applying electricity using a charger. But, again, it's not adding anything, really. It's reversing the chemical reaction which is putting the chemicals back to their original state.\n\nWhy can't a normal battery perform the reversing of this chemical reaction?",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Additionally, iirc, many modern batteries might have crystal growth issues within the cells charging at rates like these.",
+                    "score": 2,
+                    "author": "JForth"
+                },
+                {
+                    "level": 1,
+                    "comment": "One part of the issue is the rate of diffusion.  For the chemical reaction to take place, you have to have the proper reactants near the anode and cathode.  The only way to get those chemicals there (typically) is by diffusion from the bulk which takes time.  It can't just instantaneously happen.  \n\nYou also have some cases with solid formation during the reaction which also can be problematic.  \n\nAnd at high charge rates, you can force side reactions that consume some of your chemicals, making your battery have less capacity.\n\nWhat the world needs are super-duper capacitors.  I guess they call those ultra capacitors these days...",
+                    "score": 2,
+                    "author": "GeorgePBurdell95"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;could heat to a point of ignition or explosion\n\nIs that what happened in the Galaxy *Note* 7 (thanks for the info u/KaHOnas)?",
+                    "score": 2,
+                    "author": "Joshsed11",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "In the specific case of lithium ion batteries, pushing the charge rate up apparently causes the growth of spiky dentrites up from the anode side of the battery, into the electrolyte space. If these grow far enough, then especially in thin phone battery cells, the dendrites touch the other side, and then the battery\u200b is short-circuited and fire ensues.",
+                    "score": 2,
+                    "author": "NerdyWeightLifter"
+                },
+                {
+                    "level": 1,
+                    "comment": "Very informative. Thanks for the answer. Often pondered how it works myself.",
+                    "score": 2,
+                    "author": "meansmore"
+                },
+                {
+                    "level": 1,
+                    "comment": "If it's not too much of a bother, as a follow-up question, how does this tie in to the idea that batteries should be used completely and recharged completely to maintain battery life? How do poor charging habits cause this chemical process to weaken?",
+                    "score": 2,
+                    "author": "Chiorydax",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think you're referring to battery memory. NiCad batteries were particularly vulnerable. Every rechargeable (AKA secondary cell batteries - primary cell batteries are one time use batteries like your standard Duracell and Energizers) battery will eventually experience a decrease in power potential due to factors specific to each type of battery.\n\nLead-acid batteries can develop lead sulfate (a process called sulfation) on the lead plates which decreases the surface area exposed to the electrolyte. Lithium batteries can develop crystals on the metal's surface, leading to the same effect. Each battery has its limitations, but generally speaking, a charged battery is a happy battery.",
+                            "score": 2,
+                            "author": "KaHOnas",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's really interesting! Thanks!",
+                                    "score": 2,
+                                    "author": "Chiorydax"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "What is one plus mobiles doing in their dash charge?\n\nHow safe is it?",
+                    "score": 2,
+                    "author": "bhuddimaan",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There's actually a term for that. It's really a thing. You are not alone.",
+                            "score": 2,
+                            "author": "KaHOnas",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Great Answer! Now I am even more amazed of this thing I use while sitting in a toilet! Amazing!",
+                    "score": 2,
+                    "author": "Macmula",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I think to simplify, think of it as a ball rolling down the hill generating electricity as it goes. \n\nNot a tank of water that depletes. \n\nIn a tank of liquid, you can pump in more liquid. \n\nTo charge the ball, you have to push the ball up the hill again. Some balls break when it gets to the bottom of the hill and you cannot re use them. Some ball are built differently and dont break when it hits the bottom of the hill, so all you have to do is push it up the hill again.\n\nNow if you dislike pushing by hand, you can hire a helicopter to fly it to the top of the hill but it still can't be done as quickly as forcing a tank full of liquids. \n\nCertain balls, while do not break when they roll to the bottom, are still too fragile to be transported by air so those balls have to be pushed up the hill slowly and cannot be flown to the top by helicopter. ",
+                    "score": 2,
+                    "author": "Evning",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "You are also missing the key problem.  The reactions aren't simple a +b -&gt; c+d.  You actually get stuff like 2 a -&gt; e and a + f -&gt; g and an uncountable number of unstable reactions as you increase voltage (because you would increase voltage to increase current).  \n\nHow do you make lithium metal for example?  Just apply higher voltage (on the order of volts, not tens of volts.  ",
+                    "score": 2,
+                    "author": "corran__horn"
+                },
+                {
+                    "level": 1,
+                    "comment": "SLAB's were my savior when in the military working on aircraft batteries. Low maintenance. I heard stories about working on a battery locker with Ni-Cad's. Constant opening to test electrolytes. \n\nNo thanks. ",
+                    "score": 2,
+                    "author": "eliul",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Car batteries can still get damaged from quick charging. It's why you don't want to charge a dead battery by running the alternator through it. \n\nUsually nothing serious, but what tends to happen is the lead plates can get warped or break due to the rapid heat transfer. Also, excess hydrogen gas from the chemical reactions can build up (also not a real threat unless you start getting an ignition source near the battery)",
+                    "score": 2,
+                    "author": "Skabonious",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And the warping/breakage usually leads to dead cells and internal shorts. A wet cell with a dead cell or a short is often confused with a sulfated battery. Not the same, but the ultimate result is an unusable battery.",
+                            "score": 2,
+                            "author": "KaHOnas"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Anode +ve.\nCathode -ve.\n\nNot that it entirely matters, but a correction all the same.\n",
+                    "score": 2,
+                    "author": "iAceWyatt",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "That was too much. Its simple \" after you put enough tings into a container, THERE ARE TOO MUCH THINGS TO BE CONTAINED ",
+                    "score": 1,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "'Amperage' hnnnng\n\nThe word you're looking for is 'current'.",
+                    "score": 2,
+                    "author": "sensors",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "A little off topic, but I really like how you referenced the users who submitted the information, is that basically how you would reference when writing a paper?",
+                    "score": 2,
+                    "author": "Blipnoodle",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is what we're hoping to be able to do with [graphene batteries](https://www.google.ca/amp/s/phys.org/news/2016-07-fast-charging-everlasting-battery-power-graphene.amp) \n\nThey are an example of a supercapacitor, a battery able to physically hold onto electrons. You'd be able to plug it in, fill it up and go on with your life in a matter of seconds.\n\nThis is very different from our current technologies, all of which use an electrical current to reverse a chemical reaction. As everyone is saying this process necessarily takes a while and is fairly inefficient, hence battery chargers getting hot, heat production=wasted energy. This is essentially the same difference between lightbulb types. Incandescents are very inefficient, so they get very hot, CFLs are fairly efficient so they only get warm and LEDs are very efficient so they barely produce heat at all.",
+            "score": 378,
+            "author": "bjackilly",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Why is graphene so hard to get/produce?",
+                    "score": 45,
+                    "author": "Gizm00",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's not so much that graphene is hard to get, just like diamonds aren't particularly rare. You can get a sample of graphene by taking a piece of tape to some graphite. However just like diamonds, *large*, *pure* samples that are needed to work chemically are difficult to make, and the methods we have aren't currently economical. ",
+                            "score": 133,
+                            "author": "Esmyra",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I found an article where they say a Chinese company already unveiled [an electric car with graphene-based battery](https://www.graphene-info.com/all-electric-car-graphene-based-battery-be-unveiled-2017-geneva-auto-show). I hope the trend spreads and we get better batteries.",
+                                    "score": 6,
+                                    "author": "Houston_NeverMind"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Calling supercapacitors \"batteries\" is a bit of a misnomer. For one, batteries are collections of individual cells where capacitors tend to be single structures, but also they store energy in fundamentally different ways. Batteries store energy in the form of chemical potential whereas capacitors store energy as electrical potential.",
+                    "score": 39,
+                    "author": "DishwasherTwig",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "To add to this, this distinction is extremely important, as chemical potentials are  more stable than electrical potentials. This allows for a lot more electrons to be stored. ",
+                            "score": 4,
+                            "author": "Nullrasa",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Another important distinction is that batteries supply a relatively constant voltage, but super capacitors supply a voltage that increases as the total stored charge increases",
+                                    "score": 9,
+                                    "author": "SilverSign",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Similarly, they are also working on glass batteries. I can't find a very good explanation of how they work, but it sounds like they act more like capacitors that can regulate how fast they discharge.\n\nhttp://www.pbs.org/wgbh/nova/next/tech/super-safe-glass-battery-charges-in-minutes-not-hours/",
+                    "score": 2,
+                    "author": "TheTriscut"
+                },
+                {
+                    "level": 1,
+                    "comment": "I really am looking forward to plugging my phone in and hearing \"thweeeEEEEEEEEE\" as it charges to full in about 6 seconds. Not only will my phone be charged after basically 0 time, I'll get the iconic capacitor charging sound too!",
+                    "score": 2,
+                    "author": "xSTSxZerglingOne",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In short - heat.  Cells (because the world is a collection of bodges) have chemistry that creates internal resistances, and that means heat is generated in charging much as passing current through any wire.\n\nFast chargers (usually rebadges of Qualcomm QuickCharge) negotiate upto 12v charging adjusting the current to reduce heat build up getting out of control.\n\nWhat you want CAN however be done with supercapacitors - they're basically chemistry-free, and are constantly evolving.  Soon we'll likely be seeing them in cellphones, but they're not ready quite yet.  You can charge them to capacity very quickly.",
+            "score": 117,
+            "author": "goldfishpaws",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was once told that a problem with batteries that can charge quickly is that they can also *dis*charge quickly. Not good for a phone in your pocket! Is that a problem that supercapacitors avoid?",
+                    "score": 17,
+                    "author": "Artfunkel",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A supercapacitor can charge and discharge really fast, but it can do so without damage whereas the cells can overheat and in some chemistries they can rupture and go critical.",
+                            "score": 31,
+                            "author": "goldfishpaws",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The battery itself might be OK, but what of the phone into which all of that energy is pouring?\n\nOr would it only discharge quickly if a lot of power was being drawn in the first place?",
+                                    "score": 10,
+                                    "author": "Artfunkel",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The relationship between voltage and current is important here.  Current is the rate the electricity flows, and depends on how hard the voltage is pushing it.  \n\nWe control the voltage using some cool tricks so it's constant, so the amount of current that flows through the phone varies against the amount of resistance the electrical circuits in the phone put up against it.  That's a pretty fixed figure, so with a constant voltage and resistance, the current will be constant - and not all flow into the phone at once (unless the phone was faulty).\n\nThe point is that if the phone was faulty and had reduced resistance, a LOT of current could flow VERY quickly - but this is the same for any device, a light bulb, food mixer, whatever, and is uncommon (and is always a big problem if it happens, which is why we have fuses!)",
+                                            "score": 13,
+                                            "author": "goldfishpaws",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Sort of... Capacitors can be charged and discharged quickly, but they also don't have a very high capacity. If someone told you 'batteries' when they were talking about capacitors then yes, that's true. Supercapacitors are a special type of capacitor that has a very high capacity, so they offer the best of both worlds, but the capacity is still not high enough to be used in something like a mobile phone, which would make your statement true. It's not a problem that they can discharge rapidly, as much as a problem that they don't have much total capacity.",
+                            "score": 7,
+                            "author": "frothface"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "As far as I can tell from my limited experience playing with some Super Caps, shorting them doesn't cause them to go into thermal runaway like lithium cells, they are designed to be discharged extremely quickly.  \nHowever; the sheer amount of current means you end up heating the conductor up, resulting in a fire hazard. ",
+                            "score": 3,
+                            "author": "Joshposh70",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 4,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not unless you mean a 2/98 setup, with equal volume for each and an associated 49% drop in battery capacity. But yes, the 2% could charge nearly instantly.\n\nSupercaps provide 5-10 Watt-hours per liter. Lithium ion batteries provide 250-500 Wh/l. They're less dense than batteries, so far a few percent better in Wh/kg, but not much. ",
+                            "score": 3,
+                            "author": "LeifCarrotson"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That could be interesting, you'd probably need to manage the flow so the battery would effectively charge from the cap, but with better energy density.  That's still the limitation with the capacitors by the way, the energy density isn't high enough yet to be convenient.  \n\nCertainly no insurmountable conceptual difficulties with your idea though :)",
+                            "score": 2,
+                            "author": "goldfishpaws"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Does that mean that if I refrigerate my phone, it will charge faster?",
+                    "score": 2,
+                    "author": "IAMA_Printer_AMA",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No- batteries charge and discharge faster when they are warm, up to ~40 Celcius.  They *need* to be warm so the chemical reaction can proceed.\n\nCold batteries experience slower self-discharge as a result of slower reactions, and are more efficient.  However they can't be charged or discharged quickly.",
+                            "score": 6,
+                            "author": "hwillis",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's important to note, though, that they can't be allowed to get a lot hotter than 40C. A phone has a maximum charge rate which depends on at what power level the battery internals exceed the maximum temperature and on what temperature people tolerate in their palms and pockets.\n\nIdeally, you would heat the batteries up to 40C when you start charging (or let them self-heat). But after that, you would need to actively cool the batteries. Some electric cars use active cooling for this: http://insideevs.com/tesla-or-gm-who-has-the-best-battery-thermal-management-bower/. It's one thing to talk about a 36 watt quick charger heating up your phone, and another for a 150 kW powering an EV!\n\nNow that high-power USB C is a thing and crazy charge times are apparently important to people, I think we will see phone manufacturers building aluminum docks with fans and heat sinks that provide a good thermal interface with the phone to enable still faster charging. Or running heat pipes from the battery to the CPU fan in laptops.",
+                                    "score": 3,
+                                    "author": "LeifCarrotson",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This is actually where Formula E is pushing battery technology forward. Currently they allow up to 170W of draw (200W during qualifying), and 150W of regenerative braking, all while racing in Malaysia or Morocco. Heat is a big problem and they're being forced to develop better heat management systems for the batteries. ",
+                                            "score": 2,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In simple terms without getting into battery chemistry:\n\nPower (wattage) in a conductor is resistance times current squared.  So when current is flowing in or out of a battery, it is going to create waste heat based on it's internal resistance and the current flowing in or out of it squared.  This means the battery itself gets warmer when it's in use or charging.  And since it's current squared doubling the current quadruples the heat.  If you either charge or discharge too fast, it will overheat.  The result of overheating will depend on the type of battery.  Could make the pack fail quietly, or could make it burst into flames...",
+            "score": 17,
+            "author": "phunkydroid"
+        },
+        {
+            "level": 0,
+            "comment": "A battery is made of metal and rust. One of the metals wants to give away the glue that holds it together, so it can turn to rust. The rust wants to get some glue so it can become metal again. Instead of letting them make their trade normally, by putting both in a bath of basically saltwater, we put something in their way. Now, they have to push it through a pipe to exchange it. the power they spend pushing is used by your phone to play youtube and stuff. How hard they push is called voltage, or how badly they want to trade electrons. Your battery wants to be at 0.00V. If it goes below 2.90V, we won't be able to recharge it, because one metal will be a pile of rust and another will be overgrown from all the electrons the rust gave it. \n\nAt too high a voltage, the metals say \"lol, screw this\" and start doing stuff we don't want, like making hydrogen gas (explosive) or getting too hot. And we also can't recharge them after this. \n\nIf you try to charge too quickly, you make too much heat. The types of metals in batteries really like heat because it helps them rust quickly. All this heat lights your phone on fire.",
+            "score": 42,
+            "author": "Hot_Hatch",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thats an excellent explanation of how the battery functions. I really appreciate when people are able to explain science/engineering simply and succinctly.  I'm in the middle of a bit of a financial rough patch, otherwise I would definitely give you some gold. This expression of appreciation will have to suffice for now.",
+                    "score": 9,
+                    "author": "0rangeJEWlious"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "For an example of something like what you're describing, look at the Tesla Model S.  \n\nRapidly dumping power into a battery makes it heat up, which is bad for the chemistry.  So when supercharging, the Model S runs extra cooling to the batteries to optimize the charging rate without damage.\n\nThat takes a LOT of ventilation, that no one wants in a phone.  And it's still not instant.  (30 minutes is pretty quick.)",
+            "score": 26,
+            "author": "Neebat",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "So if I had some sort of heat exchanger to slot my phone battery in while charging in order to cool it, would it be possible to dramatically reduce the charging time?",
+                    "score": 7,
+                    "author": "wildcard1992",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It would probably take a special battery to allow efficient heat exchange.\n",
+                            "score": 9,
+                            "author": "Neebat",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Or a phone with a removable battery and an external charger.  Slap that battery in a charger made of heatsinks.  You would probably want a metal-coated battery for more efficient heat transfer.",
+                                    "score": 6,
+                                    "author": "skylarmt"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Came for this answer! Thank you!",
+                    "score": 2,
+                    "author": "selflesslyselfish",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "KaHOnas's answer is pretty good at describing the challenges.  I just thought someone needed to point out the work-around.\n\nAnother work-around would be super-capacitors, which *can* charge very fast.  They don't hold it as long as a battery, but if you had both, you could recharge the batteries from the super-capacitors after disconnecting from the charger.",
+                            "score": 2,
+                            "author": "Neebat"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't think I read this anywhere but the electrochemical explanation behind your question is that, charging a battery faster past its rated amperage becomes a mass transfer limited reaction which will result in lithium plating, on the electrode, uneven surface charging , dendritic growth and ultimately shorting of the battery. \n\nSource: UCR, research lab.",
+            "score": 17,
+            "author": "AeonianReaper",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Accurate, with the caveat that the electrolyte and it's additives break down before plating, and dendrites only form in lithium metal batteries, not lithium-ion.",
+                    "score": 2,
+                    "author": "hwillis"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Two solid reasons:\n\nOne, all conductors have a resistance, and it generates heat when you put current through- but it goes up with the SQUARE of current, e.g. 2x current =4x more heating.  8x more current=64x more heat.\n\nSecond, in a lithium battery, lithium ions- the actual atom- must physically leave the cathode into the liquid electrolyte and move across a very fine-passage porous separator to the cathode and merge with the material in the anode.  Not just the surface, it needs to penetrate fairly deep although they do try to keep the anode/cathode thin.\n\nYou're not just moving electrons, like a capacitor.  You're pumping whole atoms from one side, through liquid, to the other.  There's no physical pump, of course.  The electric field coerces them to leave and diffuse on and infuse into the anode.  That's a slow process, relatively speaking. ",
+            "score": 7,
+            "author": "Oznog99"
+        },
+        {
+            "level": 0,
+            "comment": "I see a lot of good responses here, but didn't see one word in particular. Charging a lithium battery too quickly will result in the formation of *dendrites*, physical deformities inside the battery that look like little tentacles. These occur naturally during \"normal\" use and are part of the reason why no lithium-based battery is good forever, but their growth is exacerbated by very fast charging, among other things. These little tendrils inside the battery reduce how much charge it can store, reduce its ability to perform well even when charged, reduce how much longer it is good for (i.e. remaining charge cycles before the battery is useless), and are believed to increase the risk of a catastrophic failure of the battery.\n\nOne way \"around\" this (sort of) is the software-defined battery. A device can have multiple batteries of different chemistries that are exposed to its operating system as a single battery. The charging circuit intelligently controls charging and discharging in a way that takes advantage of these chemistries. For example, you can have a normal lithium-ion battery and a second one that is more tolerant to fast charging. The charging circuit would provide lots of power to the more tolerant battery initially to give you a usable starting charge quickly, then would slowly charge the second (presumably higher-capacity and longer-life) battery.\n\nIn short, with the types of batteries used in phones, it's bad for the battery and potentially dangerous to charge the battery quickly. We have ways of getting around it - to a point - but at some point we're probably going to need a change in battery chemistry to get the best of both worlds out of a single battery.\n\nEdit: italicized the word \"dendrites\" since that was the whole reason I made this post.",
+            "score": 16,
+            "author": "ArchitectOfFate",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Dendrites are only a problem in lithium metal batteries, which currently are very rarely used for that reason.  You do not get dendrites in current batteries.  \n\nWhen consumer batteries are highly overvolted you can get lithium plating onto the electrodes, which stops the battery from working but is not hazardous.  This also doesn't normally happen (although it can), because the battery stops working first due to breakdown of the electrolyte.",
+                    "score": 5,
+                    "author": "hwillis",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Does this effect come into play with Qualcomm's quick charge?",
+                    "score": 2,
+                    "author": "TitaniuIVI",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Does that example mean it should take  10hrs to charge?",
+                    "score": 2,
+                    "author": "DutchDoctor",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Unfortunately, most of the responses in this thread are wrong.  It's not an issue of heat, or cabling, or wall chargers, it's an issue of our current state of the art in battery technology and charging-induced damage.\n\nEvery time you charge a battery, you damage it, permanently, irreparably.  The amount of damage you do depends almost entirely on the speed at which you're charging it, faster charging = more damage.  Different battery architectures/chemistries have different limits on the rate at which you can charge/discharge it with minimal damage, but unfortunately the chemistries which allow faster charging almost universally have a lower energy density.\n\nYou can ABSOLUTELY grab a lithium-based battery that can charge at 10C (dead to full charge in ~6 minutes) with minimal damage (eg: LiFePO4), but it has an energy density roughly half of what's in your cell phone, which means it would need to be twice the physical size/weight for the same capacity.\n\nThe high density batteries used in phones/laptops to make them smaller/lighter can really only be charged at a maximum rate of around 0.5C without causing TOO much damage, which means flat to full charge in ~2 hours minimum.  If you try to charge it any faster than that, you'll cut significantly into the battery's lifetime.  Instead of it lasting a year and a half before becoming mostly unusable, it might only last 6 months.\n\nThis works the other way as well, if you throw your \"ultra fast super charger\" in the closet and use an old 0.5A or even 1A charger instead, you can extend the lifetime of your battery significantly.  Reserve your fast chargers for when you actually need them, use a slower charger overnight and your battery will thank you.",
+            "score": 39,
+            "author": "suicidaleggroll",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! I was astonished not to see anyone mention dendrites or pits here (you didn't use those words, but I take it from your description that those are what you're referring to). Sure, eventually you're going to run the risk of tripping a breaker or burning down your house if you use some insane charger, but in the end it comes down to the limits of the particular chemistry that's used today. ",
+                    "score": 9,
+                    "author": "ArchitectOfFate"
+                },
+                {
+                    "level": 1,
+                    "comment": "Great post, very informative and not difficult to understand. I actually mix mine up where I charge it as little as possible during the work day, charge it when I get home till 80% and the top it up at night and unplug it before I fall asleep. It's probably one of the best practices for battery life (correct me if I am wrong please.) because lithium batteries are damaged most when they are near empty or dead and when they are near full capacity. (I also charge mine on an old blue ant charger so it puts out 550mA and works like a charm.) I'm never away from a charger for more than a few hours so there is no point in charging my phone 4x longer than required. ",
+                    "score": 2,
+                    "author": "ElectronHick"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Even aside from the chemical process that is the basis of slow battery charging, there is a more fundamental limitation at work. It's worth having a concept of Ohm's law as to why this is the case. Ohm's law relates voltage (volts), current (amperage), and resistance (ohms). This is [a decent picture to describe the relationship](http://imgur.com/SWwg7hP).\n\nEssentially, resistance limits the amount of current you can put into something (a circuit or even just a wire). Higher voltage will push more current through the same resistance (this is part of how the rapid chargers work, they use 9 volts instead of 5 volts).\n\nSo, getting a lot of energy into something really quickly means (by definition) very high power (power is voltage multiplied by amperage). Unless you have a superconductor (no resistance) you need very high voltage to push sufficient current through. High voltage and consumer electronics do not play well together.\n\nIn addition to that, some power will always be dissipated in a resistive circuit (non-superconductor). The amount of power is proportional to the current squared multiplied by the resistance. The more current you try to push through, the worse it gets squared. Dissipated power shows up as heat and heat gets things hot. Lot's of heat and consumer electronics do not play well together. ",
+            "score": 7,
+            "author": "billbucket"
+        },
+        {
+            "level": 0,
+            "comment": "With great power comes great heat exchange.  Ever~~y~~ realize your laptop gets hot after charging for a few hours?  Imagine all of that heat exchange in a millisecond.  Your phone would be a puddle of plastic and fried circuit components.",
+            "score": 6,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "ELI3:\n\nYou can probably lift 10lbs 100times. Might even be able to lift 100lbs 10times. But you probably cant lift 1000lbs even once.\n\nNot a perfect analogy but the point is just because you can do something over time doesn't mean you can do it all at once.",
+            "score": 16,
+            "author": "Habib_Marwuana"
+        },
+        {
+            "level": 0,
+            "comment": "It's too dangerous and not possible, both for the same reason: the resistance of the batteries.  This resistance limits the amount of current you can shove into the battery by increasing the voltage across the battery when current is going into it (V=IR), and it also dissipates more and more power in the form of heat the more current you shove into the battery (P=I^2 R)",
+            "score": 5,
+            "author": "IndustriousMadman"
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Why can't we just inject a ton of power into a phone at once to instantly charge it?\n\nWe can. Very easily. Just swap the battery. That puts a ton of energy into the phone at once and instantly gives it a full charge. It's not even dangerous.\n\nOh, *why* can't we swap batteries on phones anymore? Well, that's another story altogether...",
+            "score": 18,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Heat. Every electronic component has a max temperature before it fails. Every electronic component also has at least some kind of resistance (though it may be small). When you run a current through anything with a resistance it generates heat. When you talk about injecting a ton of power into a phone, you are really talking about a ton of current, and as a byproduct a ton of heat. If it didn't outright kill the components on the electrical path of the current, they could be walking wounded and die at anytime, or at the very least have their long term reliability greatly decreased.",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Think of the opposite scenario. What if you short circuit a battery so it discharges quickly? The chemical reaction is so fast that the battery gets very hot and is damaged. In the same way, you cannot pump in a huge amount of electricity at once as the chemical reaction would be too fast, the battery would become extra hot and may even explode. ",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "The same reason why you can't eat one huge meal that lasts you for three days: there's a limited acceptance rate for charge. That said, you could carry a week's worth of food in a backpack, which is similar to an external battery that will charge your phone in a few hours.",
+            "score": 3,
+            "author": "tling"
+        },
+        {
+            "level": 0,
+            "comment": "You've just described a supercapacitor, something that doesn't exist yet but we're actively trying to invent.\n\nA capacitor is excellent at absorbing a charge, but it leaks like crazy, so unless it's plugged into a constant source of electricity, it will empty out to zero very quickly.  If you stare at a motherboard or any electronics, you'd see tiny cylindrical barrel-looking things, those are capacitors.\n\nA battery is excellent at holding a charge, but it's chemical and takes forever for the various molecules to find their twin.  Slow charge and slow discharge, but it doesn't leak much and can hold onto that charge for weeks unlike a capacitor that holds a charge for seconds.\n\nA supercapacitor is a capacitor that doesn't leak as much.  In theory, it should be able to hold a charge for hours if not days or weeks.  A capacitor is amazingly fast at charging and discharging.  Short of a lightning bolt, most large sources of electricity can dump into a capacitor as fast as you can supply it electricity.  This is a holy-grail idea like cold fusion.  It would revolutionize handheld devices, or even Tesla cars.  Tesla, by the way, is majorly funding research into supercapacitors.",
+            "score": 4,
+            "author": "geezorious"
+        },
+        {
+            "level": 0,
+            "comment": "Kahonas already gave a good answer regarding the chemistry of batteries.  \nHowever at the moment batteries aren't the limiting factor for charging. There are batteries for RC models which can be charged in 15 minutes.  \nThe limiting factor for phones is most often the charger:  Nearly all chargers are based on USB 2.0 which is limited to a voltage of 5V and was designed for a current of 500mA.  \nMany chargers will use 5V/2A which results in 10W of power. And this isn't really much.  \nA part of the 10W gets converted into heat (power losses of the cables, connectors and charging circuit).  \nThere are newer charging technologies, that allow the voltage to increase (Type C chargin and Quickcharge). This leads to overall more power and less power losses, resulting in a faster charge.  \nSome devices can get 50W of power over USB type c",
+            "score": 12,
+            "author": "Thomas9002",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Similar to having 20 gallons of gas in your tank that will ignite over the span of 6 hours to propel you 400 miles down the road. You can't torch it all at once without a serious heat-induced destruction of the vehicle",
+            "score": 6,
+            "author": "varskavalov"
+        },
+        {
+            "level": 0,
+            "comment": "If only we could change batteries easily. Like everyone would have two batteries, one on the charger, one in your phone and when the phone battery discharges just swap them. Fully charged battery in the phone and depleted on the charger.\n\nAnd if the phone would have a tiny, secondary built in battery to keep the phone turned on just for a minute, we could replace the batteries without having to turn it off and on.\n\n",
+            "score": 5,
+            "author": "bathrobehero",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "All phones should have separate batteries! That's why I've just bought another Samsung Mini SIII, few of the new ones have this feature (and I get to keep the wall-chargers I'm already using).",
+                    "score": 3,
+                    "author": "AndyBea"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The long and the short of it is that batteries have a fairly substantial internal resistance that means cranking the amperage while charging generates far too much heat to deal with. That's the advantage of supercapacitors, they have a negligible internal resistance so they are able to charge and discharge extremely quickly. Unfortunately, they have a lower charge density than batteries meaning they are much larger for the same capacity, and they are much more expensive.",
+            "score": 3,
+            "author": "DishwasherTwig",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "A rechargeable battery converts electrical energy into chemical energy when it is charging, in the same way that a light bulb converts electrical energy into light.\n\nIn both cases, some of the electrical energy is also converted into heat, which is dissipated into the battery or bulb's surroundings.\n\nA proportionally large amount of a \"tonne of [energy]\" injected into a light bulb would be converted into heat. The bulb may not be able to dissipate this heat fast enough, and would get very hot and 'blow'. Similarly, a battery would get hot and 'fail'.\n\nBatteries often contain nasty materials, so the consequences of this failure can be dangerous.",
+            "score": 3,
+            "author": "ospragg"
+        },
+        {
+            "level": 0,
+            "comment": "For the same reasons that you can't discharge all at once. Most batteries have a safe operating current, and an immediate charge or discharge would produce a current way above this limit. Higher current produces high heat, which could cause a chain reaction and ruin the battery.\n\nWhen you hear about exploding E-cigarettes, it's almost always due to someone keeping a battery in their pocket with loose change. This causes a short, which can make the battery discharge a ton of stored charge and overheat. ",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Since the answers here are pretty thorough, I'll just go off on a tangent: \n\nWhat you want (if you want to inject a ton of power) are capacitors. The only problem is that they just don't hold a sustainable amount of juice. Their discharge curve is measure in micro or milliseconds.",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "You actually can charge batteries faster by applying more energy.  Too much and they explode.  Batteries are taking electricity and converting it into chemical energy, which is way better for storage.  Then converting that back when you want electricity.  Being a chemical reaction you can have some energy converted into heat.  Too much of that heat and it can react with the chemicals and start a chain reaction that converts all the energy into heat.  Then your phone is on fire, like a Galaxy note 7.  Shorts or other things that apply too much energy at once can trigger this.\n\nIn addition applying too much energy might not destroy the battery, but might slowly damage it resulting in lost capacity over time.\n\nSo most batteries have their chargers designed to charge them at a rate that doesn't risk them catching on fire or wearing out the battery to fast... unless you still have a Note 7.",
+            "score": 3,
+            "author": "Warskull"
+        },
+        {
+            "level": 0,
+            "comment": "The energy per second (watts) would be enormous. Watts = voltage * current. You could choose really high voltage and get plasma arcs that melt the battery or current so high that the battery explodes, like a fuse. Or both ",
+            "score": 3,
+            "author": "corwicklow"
+        },
+        {
+            "level": 0,
+            "comment": "Batteries are chemical in nature and will need time to charge/discharge. They don't have an infinite capacity for current and will blow up if you try this. \n\nWhat you're describing is only possible with capacitors which are purely electrical devices that hold power, but they have their own problems. Graphene capacitors look promising though.",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "For the record, if this question was born out of desire for convenience and not curiosity, OP can always buy a second phone battery &amp; external charger/broken-screen phone to use for charging and swap batteries instead of plugging OP's phone in every night.",
+            "score": 2,
+            "author": "unsignedlonglong"
+        },
+        {
+            "level": 0,
+            "comment": "Batteries have electrical resistance, they're not perfect. Lets take a typical phone battery of 3.7v/1 amp hour with 0.5 ohms of internal resistance and apply ohms law.\n\nIf we applied 4.2 volts to this to charge and the battery was already at 3.7 volts then the battery will consume 1 amp. (0.5 volt difference  / 0.5 ohms = 1 amp)\n\nIf the battery was completely dead at 3.0 volts then it would take up to 2.4 amps at the beginning. \n\nThe only way to speed this up is to increase the voltage which is dangerous for lithium or to decrease the resistance of the battery. Newer 'fast charging' batteries have a lower resistance and can charge/discharge quicker.",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "No process is perfectly efficient, and batteries are quite bad about this. What this means in power technologies is that it creates unwanted heat with whatever waste energy it produces.\n\nWith something like a phone, the battery is designed to be small yet hold a lot of power. To charge it extremely fast would cause it to heat up very fast, faster than the phone can shed the heat. The heat then would damage heat sensitive components, or even cause solder to melt. It would destroy the phone.\n\nThe fact is, we have batteries that can hold a bunch of charge and charge/discharge very fast. But they invariably get very hot in the process, and with the kind of batteries used in phones, this can denature or even ignite materials inside the battery itself.\n\nLong story short, we COULD potentially charge a phone in a few seconds, if we could figure out how to make a battery extremely efficiently, or a phone (and battery, and hand) that could stand the extreme heat. Neither of these is likely so we're going to have slow charging phones from now till doomsday.",
+            "score": 2,
+            "author": "Jarhyn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What if you had a phone with a removable battery. I have the Note 4, which does have one that removes. Could there be a dock of sorts that just super charges the battery with some sort of water cooler on it? ",
+                    "score": 2,
+                    "author": "MyroIII",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Heat dissipation is a portion of the problem, as the components that make up the battery (LiOn, NiCad, etc) can ignite under enough internal heat. You're dumping (electrical) energy directly into a fuel source under constraint (vastly simplified). I'm not going to cover dendrites or pits in the chemical makeup, as I'm not fully familiar with the topic.\n\nThe thing that makes current battery tech so static in evolution is that alternate solutions hold less charge, hold charge less well over time, or are more volatile (even more so than memetic Galaxy Note phone fires or firey vape rigs). Some awesome battery tech we've had in works for years like [glass batteries](https://news.utexas.edu/2017/02/28/goodenough-introduces-new-battery-technology) and [Li-S batteries](http://search.proquest.com/openview/584d3216ae339f6ce85edaa302164268/1?pq-origsite=gscholar&amp;cbl=27576), but until they reach a comparable manufacturing process, prices will not be comparable (even if it's cheaper to source components).",
+                            "score": 2,
+                            "author": "kiyoske"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "There is a practical limit beyond the important problem of battery heating. Where are you going to get the power from? To charge in one second, a 2 Amp-Hour cell would need a DC power supply capable of over 7200 Amps. That current would need huge cables and connectors. The phone would weigh 20 pounds. ",
+            "score": 2,
+            "author": "whitcwa"
+        },
+        {
+            "level": 0,
+            "comment": "This is the sole reason I miss my LG G4. I ran 2 batteries so when one was at ~10% I'd just switch it out for a fully charged one and 30secs later I'd have full charge. I'd have to do this most days as I'm a heavy user but it worked well for me except the android part. ",
+            "score": 3,
+            "author": "vaginal__hubris",
+            "replies": []
+        }
+    ]
+}

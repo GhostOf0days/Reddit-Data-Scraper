@@ -193,7 +193,6 @@ def main():
     
     if results:  # Check if the results list is not empty
         total = delayed(sum)(results)  # aggregate with a sum function
-        total.compute()  # execute
 
 if __name__ == '__main__':
     main()

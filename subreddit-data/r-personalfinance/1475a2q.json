@@ -1,0 +1,85 @@
+{
+    "id": "1475a2q",
+    "score": 2,
+    "title": "I'm looking for an expense tracker app/site that hopefully suits my very specific needs.",
+    "author": "angeliKITTYx",
+    "date": 1686517365.0,
+    "url": "https://www.reddit.com/r/personalfinance/comments/1475a2q",
+    "media_urls": [],
+    "other_urls": [
+        "https://imgur.com/UKHSF55)"
+    ],
+    "postText": "I'll include a screenshot of how I currently budget for myself and my husband, but here's the situation. [(here's the expense tracker)](https://imgur.com/UKHSF55)\n\nMy husband and I don't have joint money, but instead, I handle paying all of the bills and he sends me his half of the share twice a month. So my spreadsheet is all of our joint bills and my personal ones. \n\nThe spreadsheet considers every bill and subscription, whether it be monthly, quarterly, or annually, and breaks it down to what we need to add to this \"bill-pay account\" every paycheck. I get paid every Thursday, and he gets paid on the 1st and 15th, and then transfers money over to this account. His personal bills (car payment, credit cards, etc) are his own business and he deals with them on his own. \n\nWe keep enough money in there that we're always 2 weeks ahead just in case his transfer comes in late (money coming in on the 1st actually pays for the second half of the month), but here is my issue: I can't really tell how much \\*extra\\* money we have in the account. As you can see, right now I have to add $536 per paycheck to the account, but I have a set $550 go in every week from direct deposit. My husband rounds up his contributions too. And I can't just take the difference of sums and compare it to the account balance, because some of that money is a fractional amount towards quarterly or annual payments.\n\nAre there any apps that can help me with this? Or can anyone think of a way I can modify my spreadsheet to help with this conundrum? Thanks!\n\n(for clarity, the purple numbers are utilities that change every cycle, and the blue numbers are expenses that happen quarterly/annually. Black numbers are standard monthly expenses)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Have you ever looked into You need a budget? Granted it\u2019s I believe $100 a year, but sounds like it might help out your situation. There is a slight learning curve, but basically you fund your accounts. When you set up the account, you put in how much money you need by a certain date (there are also a few other options as well) and then you budget the money you already have and budget all income you get. It sounds like this way you can keep track of how much extra money is being funded into each bill. It also has a sinking fund option which would be perfect for your quarterly and annual bills. You fund those accounts and it tracks it all for you.",
+            "score": 3,
+            "author": "Ok-Breadfruit6905"
+        },
+        {
+            "level": 0,
+            "comment": "&gt; And I can't just take the difference of sums and compare it to the account balance, because some of that money is a fractional amount towards quarterly or annual payments.  \n  \nAdd a new column and fill with 1 for monthly, 1/4 for quarterly, and 1/12 for annually for which  that expense is. Then do =sumproduct(cost/occurrence).",
+            "score": 1,
+            "author": "homeboi808",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I might not be understanding what you're recommending, but I think I already do that. \n\nLike the first blue number, $11.58, is actually an annual cost of $139, but I divided that by 12, so we contribute $11.58 to the account every month, so after 12 months, the $139 is sitting there ready to be spent. \n\nIt comes out in May, so in April, I might look at my balance and think \"oh I have $120 extra in here!\" but in reality that's money towards a bill that isn't really \"extra\" money",
+                    "score": 1,
+                    "author": "angeliKITTYx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well\u2026you simply make a formula to add up the actual excess. Do a SumIF or sum+filter based on the additional column (so only sum if the expense is monthly). You check that and not your bank.  \n  \nOr, just make new savings accounts (that have no minimums and no fees) and have those expenses transferred there monthly from the main savings.",
+                            "score": 1,
+                            "author": "homeboi808",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "oh yeah I like that idea - keep the non-monthly money in a savings account until I need it! That's smart too.",
+                                    "score": 2,
+                                    "author": "angeliKITTYx"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can do this by projecting out your transactions, instead of having one month that you reuse, create one row per transaction and project things out a few months with a running total.  You'll be able to see what the future minimum balance is and if that's higher or lower than your target",
+            "score": 1,
+            "author": "polkawombat",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "something like this? [https://imgur.com/rNgRjX6](https://imgur.com/rNgRjX6)\n\nI can definitely see this working!",
+                    "score": 1,
+                    "author": "angeliKITTYx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I just do a simple transaction ledger (date, description, amount in/out, and running balance.  I don't make a column per month, I just keep adding rows for each transaction and copy/paste when I need to predict another month.  You can organize it however works best for you though.",
+                            "score": 1,
+                            "author": "polkawombat"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I do something similar to you in terms of a spreadsheet.  My wife and I get paid on the 15th and last day of each month.  I treat the payment from the last day of the month as if it came on the 1st of the next month (i.e. the May 31 check is counted as June 1).  We do have the money in a joint account.  Each paycheck is a different tab on the sheet.  Here's what ours looks like:\n\n[https://imgur.com/g7Fb7jI](https://imgur.com/g7Fb7jI) \\- 1st of the month\n\n[https://imgur.com/diCPhZj](https://imgur.com/diCPhZj) \\- 15th of the month\n\nAs you can see, I color code things (the colors were just random for contrast - no particular meaning):\n\nPink - Income  \nGreen - Spending Money  \nOrange - Money to Savings  \nBlue - Monthly Recurring Bills\n\nFor our quarterly/yearly bills (auto insurance/maintenance, garbage), I send it to savings, along with a small fund for household repairs, lawn care (as I keep putting money back during the winter to pay for landscaping services), a Christmas fund, a fund for our son, general savings, and a vacation fund.  I keep all of those separated in a separate tab with a ledger for each category.  I do that to track what comes in and out to keep everything accounted for.\n\nWhen an irregular bill comes up, I just transfer the money from savings to checking to cover the expense.\n\nI've tried different budgeting apps in the past (YNAB, Mint) and never got it to work quite the way that I want.\n\nI don't know if this will help any, but color-coding and doing it this way seems to work for us.  I hope it'll give you something you can use!",
+            "score": 1,
+            "author": "johnathancline"
+        },
+        {
+            "level": 0,
+            "comment": "I was going to say either You need a Budget (YNAB) or EveryDollar. EveryDollar is a bit cheaper. (It's through Dave Ramsey, fyi, but it doesn't push his methodology. It's just a fancy spreadsheet with extras.) Both give you lots of control over line items, and both should let you guestimate the money beforehand and then edit later on. \n\nI use EveryDollar, so I will say this, it allows you to set up funds based on projected spending for the future (the quarterly/annual thing you mentioned) and then draw out of them when you need. Also, it shows what you promised to budget, what you actually did budget and what you have spent. While EveryDollar is a Zero-Based Budget system that does NOT mean you have two work down to zero every month. That's not what's happening. It' just a line item called Buffer that you roll over to the next cycle.  \n\nMy understanding is YNAB is similar. It's about $10 more a year, so not killer if you like the setup more.",
+            "score": 1,
+            "author": "TokidokiAi"
+        }
+    ]
+}
