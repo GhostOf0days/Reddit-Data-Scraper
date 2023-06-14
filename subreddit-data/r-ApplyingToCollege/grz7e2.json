@@ -1,0 +1,443 @@
+{
+    "id": "grz7e2",
+    "score": 4130,
+    "title": "Collegeboard bad",
+    "author": "codingstudent7",
+    "date": 1590639124.0,
+    "url": "https://www.reddit.com/r/ApplyingToCollege/comments/grz7e2",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "It would be really interesting to see a technical report on the issues, especially as this is a new system (at least at this scale), honesty and transparency would go a long way. I wonder if browser extensions had any play in some of these issues, ones that inject their own scripts, potentially preventing Collegeboard's submit button script and other functions from operating properly. Rip to all of you test-takers that went through this, I guess you got a free authentic trial run.",
+            "score": 267,
+            "author": "rosco1502",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "CollegeBoard uses Node.js, Which literally used Google Chromes V8 engine to run. I don\u2019t think browser extensions where the issue, at least not chrome. They also recommend people to use google chrome for the exact reason I stated above (ultra-compatible with the language they used), yet I - and others- still had issues. I agree, however, that a release of technical statistics is in need but we all know that won\u2019t happen.",
+                    "score": 91,
+                    "author": "BL4CK_AXE",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And there must've also been significant testing with popular extensions that could directly cause issues, like various adblockers, and since we didn't see a large majority of users failing, I'd assume that they did their due diligence on that part, which makes the technical report even more interesting if they were to release one.",
+                            "score": 33,
+                            "author": "rosco1502"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Hold on, Chrome's V8 engine doesn't make a difference on what browser students should use. At the end of the day, each browser is sending a HTTP request with the payload of a students response to the server.\n\nWhat JavaScript runtime the browser used doesn't influence anything. I would think that CB asked students to use Chrome because it's stable, widely used, and familiar to the students, but 100% certainly not for its JavaScript runtime.",
+                            "score": 17,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Let\u2019s say I use a computer that runs either Windows or MacOSX. This computers default browser is either Internet Explorer or Google Chrome respectively. The original comment was regarding if browser extensions could have been the issue. My point was that if browser extensions were the issue, Google chrome couldn\u2019t possibly have been one because it uses the same engine that is used to run CollegeBoard\u2019s backend/server code.  \nI have very intermediate experience in coding but wouldn\u2019t it make sense that a browser and runtime developed by the same company would work efficiently and eliminate the idea that the error could have stemmed from here?",
+                                    "score": 4,
+                                    "author": "BL4CK_AXE",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They don't work more efficiently with each other. When you click the submit button, the page sends out a HTTP request using browser JavaScript including the submission and other diagnostic data.\n\nThe CB server uses nodejs and simply parses the HTTP request. The JavaScript runtimes do not \"talk\" directly to each other, it's only the HTTP request containing the submission that's sent. \n\nA HTTP request is the same, whether it's produced by Mozilla's spidermonkey, Chrome's V8, or Edge's Chakra, so nodejs doesn't act differently if the request was formulated by a different runtime. **when it arrives at CB's servers, it's exactly the same no matter what runtime the browser uses** because http requests are pretty universal. Hope that makes sense lol\n\nEdit: don't think of them as connected systems, think of it like two people trying to talk over a phone.",
+                                            "score": 11,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's possible that things like Ad-blockers disable certain javascript entities from being triggered - in that case the button's action, especially if it was a custom controlled button (i.e. not in a form according to  WCAG standards) could have been prevented from firing.",
+                                                    "score": 3,
+                                                    "author": "d-a-v-i-d-",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yes, I agree! I was just responding that different JavaScript runtimes wouldn't have mattered, but extensions could definitely have made a difference.\n\nSpeaking of which, I did take the test with uBlock Origin on, I probably should have disabled that lol :))",
+                                                            "score": 5,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I took with uBlock and various other extensions as well and had no issues in my case.",
+                                                                    "score": 1,
+                                                                    "author": "rosco1502"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "What I was hinting at! JavaScript runtimes are irrelevant in this hypothesis. Extensions can manipulate webpages into behaving improperly because of unexpected and untested additional code.",
+                                                            "score": 2,
+                                                            "author": "rosco1502"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "That doesn't really make sense at all. The run times are only there to facilitate certain Javascript functionality as prescribed by the appropriate web standards.\n\nBrowser extensions can modify certain elements on a web page, or prevent certain events from firing in the DOM, and they could certainly inject their own javascript that might trigger Collegeboard's anticheat (if they even have it)\n\nHow their site works is that on the client side (the web page), there is certain information that you enter, i.e. the file, or the text you pasted in. This has nothing to do with Chrome or the V8 engine, it'll work on just about any given runtime. Since the site used React, what was most likely the case was that your uploaded data was saved as a blob or file object in state, then that state was controlled by the submit button.\n\nGenerally, clicking the button would prompt a POST or PUT request to a certain college board endpoint. Or, it could've triggered some sort of validation before sending off your answer to their servers.\n\nTheir servers could be running in Node, Ruby, hell they could even be running on COBOL. It doesn't matter since you're just sending data back and forth using a standardized data format (JSON, XML, etc).\n\nWhat most likely happened was that the submit button's action either got blocked by ad block, which is known to happen since some adblock will attempt to prevent certain actions that they deem to be spam/dangerous pop ups.\n\nAnother possibility is that the CB has some sort of server-side validation they run your response through before submitting, and upon clicking the button, they ran the validation and it didn't return a positive result.\n\nAnd, just speculating here since we don't know much about their submission endpoints, it is also possible that they were running on a single EC2 instance or something and couldn't scale properly.\n\nIn this case, let's say that you click submit with like 1 minute left. It sends a request to the server, which is put on hold since the server is busy. When the server finally gets to your request, 1 minute may have already passed, and since the server probably checks current time when it processes your submission, it would get rejected even though you submitted it 1 minute before the deadline. Again, all speculation, but this is what I think are some of the main issues - caused partially by user error (i.e. adblock), and also by poor technology choices by the CB.",
+                                            "score": 3,
+                                            "author": "d-a-v-i-d-",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I\u2019m familiar with HTTP request, POST methods and sending data to the server. I was just suggesting that browser extensions were not the largest issue. I was thinking CollegeBoard didn\u2019t invest in enough servers to accommodate the high number of test takers",
+                                                    "score": 1,
+                                                    "author": "BL4CK_AXE",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I suspect they didn't take advantage of serverless architecture to scale.",
+                                                            "score": 1,
+                                                            "author": "d-a-v-i-d-"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Node.JS isn't what they use on the client side. It's React, which uses several Javascript engines as it's cross platform on mobile and desktop. If you take a look at any browser feature parity chart, it becomes evident that most Javascript and even CSS features are completely rolled out in the latest releases of any modern browser.   \n\n\nEven if they weren't, polyfills do exist, and they take about 2 seconds to add into any given site.   \n\n\nLet's not spread misinformation regarding the technical aspect of this. I highly doubt the majority of cases was caused by the website itself, it's more likely some sort of server-side validation CB uses to handle input control.",
+                            "score": 5,
+                            "author": "d-a-v-i-d-",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Doesn\u2019t react use Node.js? Im taking a class on it right now",
+                                    "score": 4,
+                                    "author": "BL4CK_AXE",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Oh I see how you could be confused by that. On the web when it's actually in production, webpack just bundles it into normal JavaScript with no dependency on Node.",
+                                            "score": 4,
+                                            "author": "d-a-v-i-d-",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That actually makes sense",
+                                                    "score": 1,
+                                                    "author": "BL4CK_AXE"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "my teachers told me specifically to turn off any browser extensions and i didnt have a problem so maybe it was the problem",
+                    "score": 3,
+                    "author": "pterodactylwings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "did you guys get your confirmation for makeup exams yet? i took mine on the 22nd and i haven\u2019t got mine yet...",
+            "score": 33,
+            "author": "callmesarahs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I didn\u2019t get it yet either",
+                    "score": 10,
+                    "author": "brat982"
+                },
+                {
+                    "level": 1,
+                    "comment": "I haven\u2019t gotten it from college board but today, my school\u2019s assistant principal sent an email saying I was approved to take a makeup.",
+                    "score": 6,
+                    "author": "BamboozleBird"
+                },
+                {
+                    "level": 1,
+                    "comment": "Just got them 6 minutes ago",
+                    "score": 2,
+                    "author": "Giratinalawyer"
+                },
+                {
+                    "level": 1,
+                    "comment": "Got it like an hour or two ago",
+                    "score": 1,
+                    "author": "Lenoc"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I JUST realized that the meme version of Mike Wazowski has Sulley\u2019s face. I knew the face was different obviously but I didn\u2019t realize it was Sulley\u2019s",
+            "score": 14,
+            "author": "vengefulgrapes"
+        },
+        {
+            "level": 0,
+            "comment": "why is Linus there twice though",
+            "score": 64,
+            "author": "spoonVEVO",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "twice the tech tips to dish out",
+                    "score": 56,
+                    "author": "Kinnayan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "sex tips\\*",
+                            "score": 3,
+                            "author": "StormFalcon32"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "~~Rob~~ Doug ford! Cutting education by day (RIP OSAP \ud83d\ude1e), memeing by night",
+            "score": 16,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's his brother Doug! He's our premier now and doing an OK job. Though I do imagine he regrets increasing class sizes now lol",
+                    "score": 6,
+                    "author": "Officer-Gobbler",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh shoot how did I fall into the common American trap as an Ontarian, I\u2019ve been here too long \ud83d\ude1e\n\nReallyyyy all my friends are cheesed because they made them change into online classes. Also I remember a year ago (?) we wanted to change the beloved Ontario trillium symbol.\n\nEdit: I forgot! I just remembered there was a huge school walkout to protest the large classes and the online school thing as well. I just assumed he wasn\u2019t well like by Ontarian\u2019s  lolll",
+                            "score": 4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah and there's the whole license plate thing. But he's doing an ok job now. But yeah he's got a pretty punchable face lol",
+                                    "score": 3,
+                                    "author": "Officer-Gobbler",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ahh gotchu, he pretty wilddd. I haven\u2019t been keeping up with him recently, what\u2019s he up to now?\n\nI saw a video on 6ixbuzz a few days that he might be considering to run for prime minister down the future \ud83d\ude33",
+                                            "score": 2,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Um I'm at my dad's house and we don't have cable so I haven't been that up to date but so far he's handling this situation pretty well. Hes really been focusing on this covid thing and I don't think he's doing anything sneaky while the press is distracted but maybe. He's giving money to students so that's nice. But I have a feeling we'll be paying of this debt for a very long time",
+                                                    "score": 2,
+                                                    "author": "Officer-Gobbler",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Ahhh nice, that\u2019s something good! I heard he\u2019s doing a decent job on testing  too\n\nI hope people stay inside and social distance so these efforts don\u2019t go to waste. Toronto opened up and thousands gathered at trinity bellwoods on Saturday ahhh. I\u2019d be so fed up at that point",
+                                                            "score": 2,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yeah it's not good here. I live near a school and it it warmed up the other day and the entire field was packed with people. It's not good. But I hope it doesn't get worse because I just want to go back to school and start working out again lol. These people are putting it at risk for a picnic lol",
+                                                                    "score": 2,
+                                                                    "author": "Officer-Gobbler",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Oh wow, people are crazyyyy\n\nAhhh I really hope the fall semester opens up but it doesn\u2019t appear to be so where I love :(",
+                                                                            "score": 2,
+                                                                            "author": "[deleted]"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did anyone else submit it normally but is now scared that they uploaded the wrong images? I checked and double checked for all my exams but one and now that one exam I'm so scared I submitted the same document for both questions.",
+            "score": 8,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Only %1? That\u2019s some bull. The majority of people I know how problems with at least 1 test. I didn\u2019t, but it seems like I was a lucky exception.",
+            "score": 18,
+            "author": "QulioCoolio",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don't think the collegeboard is lying about the number, but the percentages of failed submissions are probably much higher with image submission. This means that the percentage is probably much higher than 1% if you look at exams that are majority photo submissions such as the AP Calcs, AP music theory and the AP sciences",
+                    "score": 2,
+                    "author": "Unicornpotatosftw"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Given the fact that there\u2019s a global pandemic and this testing platform was relatively last minute I\u2019m very surprised it\u2019s only 1% and think they did a good job",
+            "score": 14,
+            "author": "lamsamsam",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I agree that 1% isn't that bad, I'm more angry about the fact that they didn't have a failsafe or backup in case the submission process went wrong. They have one implemented now, so they obviously have the resources to implement one, but they either failed to foresee submission errors, which makes them idiots, or they wanted to save money by not taking the time to implement the backup, which is kinda sus considering they're a \"non-profit\". Most people, including myself, think it's probably the second one and they're being greedy with their money.",
+                    "score": 2,
+                    "author": "Unicornpotatosftw",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "welp there\u2019s a 500 million class action lawsuit against the cb about the AP exams going on rn",
+                            "score": 2,
+                            "author": "InhibitiveDitch"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Now that I think about it, the 1% number may also have some issues with it. I'm not saying that collegeboard is lying, I don't think they'd stoop that low. The 1% means 1% of all tests. However, I think that if you look specifically at tests that were more likely to have photo submissions, that number goes up. Photos are more easily corrupted, so there would be more issues there. Photos are also larger files, so servers are more likely to be overwhelmed if the majority submissions are photos. This means that science exams, math exams, the music theory exam, and other exams that need photos will have a much higher percentage of failed submissions.",
+                    "score": 1,
+                    "author": "Unicornpotatosftw"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "lmao doug ford",
+            "score": 3,
+            "author": "dd1254"
+        },
+        {
+            "level": 0,
+            "comment": "[1%](https://youtu.be/hrGdEwV-efs)",
+            "score": 4,
+            "author": "AP_MASTER"
+        },
+        {
+            "level": 0,
+            "comment": "One of my friends has a theory that college board purposely made the online system full of issues so that way next year no one will call for online exams and use this year as reasoning for condensing and lowering costs of exams. This way, they can continue to charge the $100 per test because clearly the online exams are not as good as the paper ones.",
+            "score": 2,
+            "author": "ScreamingC0lors"
+        },
+        {
+            "level": 0,
+            "comment": "Never thought I'd see Ontario Premier Doug Ford on an A2C meme, but there he is!",
+            "score": 2,
+            "author": "firecomet234",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Controversial Canadian politicians checkkkk",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "People shit on college board so much for the technical issues like there's no way to avoid them completely and it's a first time thing for them too. Like you're probably shitting on some random employee making middle classed income rather than the rich ass CEO",
+            "score": 5,
+            "author": "yerawiardharry",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I agree",
+                    "score": 3,
+                    "author": "DuckyDucko"
+                },
+                {
+                    "level": 1,
+                    "comment": "Everyone expected technical issues, I think most people, myself included, are mad that there was no failsafe/safety net implemented until after complaints started piling up. They have one now so they obviously have the resources to implement one, so why didn't they do it earlier? I don't see any potential harms to having a safety net, so why they didn't decide to implement the safety net until like week 2 perplexes me.",
+                    "score": 3,
+                    "author": "Unicornpotatosftw"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I have no idea what happened, anyone willing to share what's happened with the tests ?",
+            "score": 1,
+            "author": "uslashsaker"
+        },
+        {
+            "level": 0,
+            "comment": "Did anyone get the email yet?",
+            "score": 1,
+            "author": "Usernamea221",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "My highschool coordinator sent an email saying we get a ticket 24hours before the exam day.",
+                    "score": 1,
+                    "author": "BL4CK_AXE"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just so you know for the future, you can download Google docs as word files.",
+                    "score": 2,
+                    "author": "itsrainingbees"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Two people in my Calc class of eight, including myself, had technical difficulties. I call bs on only %1.",
+            "score": 1,
+            "author": "YippityGay",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Same. I have 5 friends including myself who took the Calc AB exam. I got an email saying my images were corrupted and one of my friends had the server crash on them before they got to submit.",
+                    "score": 2,
+                    "author": "Unicornpotatosftw"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Its like a filter, if you found it hard to submit the test then clearly you stupid",
+            "score": 1,
+            "author": "Th3r3alfuzzball"
+        },
+        {
+            "level": 0,
+            "comment": "Bro why is rob ford on here, he was the crackhead mayor of Toronto",
+            "score": -9,
+            "author": "CLTPeshwa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That\u2019s doug ford - his brother who is the incumbent premier of Ontario.",
+                    "score": 6,
+                    "author": "joh4nnn"
+                }
+            ]
+        }
+    ]
+}

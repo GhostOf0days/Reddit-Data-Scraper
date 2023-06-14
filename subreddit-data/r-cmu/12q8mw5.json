@@ -1,0 +1,113 @@
+{
+    "id": "12q8mw5",
+    "score": 17,
+    "title": "do i have stockholm syndrome or is 122 kinda cool sometimes",
+    "author": "Congress1818",
+    "date": 1681788322.0,
+    "url": "https://www.reddit.com/r/cmu/comments/12q8mw5",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "idk figuring out c0vm using ideas from clac makes me feel cool and nerdy.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "CS classes at cmu generally have rly fun and interesting assignments, but you can really only enjoy them if you have ample time to work on em. \n\nTaking 213 during the summer was awesome cuz I started rly early and dug deep into each HW.",
+            "score": 21,
+            "author": "n44m3",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "im also super happy bc i like, failed out of 122 hard (36%, dropped before midterm 1) in freshman fall, and now I sorta have an A going into c0vm and the final. I feel weird about a class that genuinely made me wanna drop out now being something i enjoy",
+                    "score": 23,
+                    "author": "Congress1818",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thats growth right there :)",
+                            "score": 11,
+                            "author": "n44m3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "for sure, I alternated between \u201cwow this is so awesome I can\u2019t believe what I just made\u201d and \u201cwow I would like to stick my head into a freezer expeditiously\u201d the whole time I took the class",
+            "score": 7,
+            "author": "solidFruits",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "some assignments make me go 'no' and then some assignments make me go 'yes'.\n\n&amp;#x200B;\n\nI cannot tell you how much I despised lightsout and doslingos, but loved strbuf and tbuf",
+                    "score": 1,
+                    "author": "Congress1818"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you enjoy c0vm and took 112 / know a bit of Python, I strongly encourage you to play around with `dis` [0]! You can see the \"c0vm\" instructions for all Python functions pretty easily. :) For example,\n\n    &gt; import dis  \n    &gt; def fib(n):  \n          if n &lt;= 1:\n              return n\n          return fib(n-1) + fib(n-2)\n    \n    &gt; dis.dis(fib)\n      2           0 LOAD_FAST                0 (n)\n                  2 LOAD_CONST               1 (1)\n                  4 COMPARE_OP               1 (&lt;=)\n                  6 POP_JUMP_IF_FALSE        6 (to 12)\n    \n      3           8 LOAD_FAST                0 (n)\n                 10 RETURN_VALUE\n    \n      4     &gt;&gt;   12 LOAD_GLOBAL              0 (fib)\n                 14 LOAD_FAST                0 (n)\n                 16 LOAD_CONST               1 (1)\n                 18 BINARY_SUBTRACT\n                 20 CALL_FUNCTION            1\n                 22 LOAD_GLOBAL              0 (fib)\n                 24 LOAD_FAST                0 (n)\n                 26 LOAD_CONST               2 (2)\n                 28 BINARY_SUBTRACT\n                 30 CALL_FUNCTION            1\n                 32 BINARY_ADD\n                 34 RETURN_VALUE\n\n\nIt's pretty cool imo to actually understand how this actually works (and to have written something similar). You can go further; understanding c0vm gives you all the techniques you need to get started with writing and/or understanding emulators for old systems (e.g., chip-8 is probably the easiest and you could do that in a month, you can try SNES or look up GBATEK (gameboy / nintendo DS) as a challenging summer project).\n\n[0] https://docs.python.org/3/library/dis.html",
+            "score": 5,
+            "author": "moraceae",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I would recommend against the SNES as a first emulator, it\u2019s got a lot of weird features that need to be implemented just to run most games. I\u2019d suggest staying with the original NES. It has a number of hardware bugs that some games rely on, but nowhere near the complexity of the SNES.",
+                    "score": 1,
+                    "author": "Vectrexian"
+                },
+                {
+                    "level": 1,
+                    "comment": "omg this is so cool! you're awesome tysm for this :))))\n\n&amp;#x200B;\n\nI'm not good at cs but this is gonna be my new hyperfixation(or maybe secondary hyperfixation, im tryna learn how to make a programming language rn)",
+                    "score": 1,
+                    "author": "Congress1818",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If you're interested in learning about programming languages you should take 15-312! The class is about programming language theory and you'll learn all about implementing different languages with features and type systems of increasing complexity. You'll need at least 15-150 first though I believe. I came into CMU without knowing CS and programming languages ended up being my absolute favorite subject.",
+                            "score": 1,
+                            "author": "MattCubed",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm taking 15-150 next semester, so I'm hoping to take 15-312 after that!",
+                                    "score": 2,
+                                    "author": "Congress1818"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Okay hi, so I started messing around with this, and it is genuinely a lot of fun. I'm trying to see if I can write a few modifications to c0vm and have it compile python bytecode. Thank you so much, again!",
+                    "score": 1,
+                    "author": "Congress1818",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You're welcome! If you enjoy writing your own programming language, \"Crafting Interpreters\" [0] has been highly regarded in tech circles (disclaimer: I have not read it myself and I don't have a good grasp of its difficulty level). It has the benefit of being free (!) and is explicitly catered towards someone who wants to build their own programming language, with fancy features like closures (being able to define functions inside functions) and garbage collection (not having to call `free()` manually). As an additional bonus, you'll probably develop more Java and C experience than most students at CMU.\n\n[0] https://craftinginterpreters.com/",
+                            "score": 1,
+                            "author": "moraceae",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "ooo nice. This is gonna go on the backburner though",
+                                    "score": 1,
+                                    "author": "Congress1818"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Cool = Nerdy\nThat should be the CMU motto.",
+            "score": 3,
+            "author": "Rememberthisisreddit"
+        }
+    ]
+}

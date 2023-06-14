@@ -1,0 +1,59 @@
+{
+    "id": "1446awt",
+    "score": 1,
+    "title": "Link Tracking (please help!)",
+    "author": "caslooper",
+    "date": 1686222625.0,
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/1446awt",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Just a question regarding tracking.\n\nI would like to be able to know how many people land on a page after clicking the link from Facebook rather than one of our emails. \n\nI was thinking of using a shortlink or pretty link to get that information, but it was brought up that using a shortlink could \"break\" the tracking and we would not actually get an accurate count.\n\nI have not used it myself so I am not sure the best way to move forward. \n\nSo if we were to have an email pointing to www.demo.com, and ALSO have that link in a FB post, we would not be able to tell if the traffic came from FB or from the email. \n\nInstead we were thinking one link could be www.demo.com and the other could be a shortlink to the SAME page, such as www.dmo.com. \n\nThe thinking being that we could track how many people clicked dmo.com vs demo.com\n\nDoes anyone know a better way to track how many people landed on our page after clicking a link in a FB post? We just want to be able to see how many people reach our pages through facebook specifically.\n\nAlso I have thought about using UTMs but I don't want those big links our audience seeing it and again If we shorten it, The tracking will inaccurate and might break?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I understand your concern about the aesthetics of the long UTM links. However, you can still use a URL shortener like Bitly after you've added the UTM parameters to your URL. This way, you can maintain the clean look of your links while still tracking the source accurately. You wont lose info by shortening them. \n\n\r  \nWhen someone clicks on the Bitly link, they are redirected to your long URL with the UTM parameters. The UTM information is then sent to your Google Analytics.\r  \n\r  \nIn your Google Analytics, you can see exactly how many people came to your site from the Facebook link.\r  \n\r  \nRemember, the key is to add the UTM parameters before you shorten the URL. If you do it the other way around, you're right that the tracking will break.",
+            "score": 2,
+            "author": "I_need_healing",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey thanks for the reply!\n\nAlso thanks for the awesome response but here's the thing in someone from our organisation said \"The link shortner breaks the tracking\"\n\nI'm not so sure how correct this is but any idea If it's true or Is it really a problem?\n\nThanks!",
+                    "score": 1,
+                    "author": "caslooper",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It would break the referrer information, which would need to be setup in Bitly to be passed on or you use a separate link per location you are pasting it.\n\nYou might just have to pick which problem is worse.",
+                            "score": 1,
+                            "author": "Cyberdogs7",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm not so sure what exactly you mean by this? Could you able to eloborate please?",
+                                    "score": 1,
+                                    "author": "caslooper",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I am making a guess at what 'breaks the tracking' means. Given that, I was trying to provide a solution that might keep the tracking in place. If that is not viable, you might just have to live with the long URLs.",
+                                            "score": 1,
+                                            "author": "Cyberdogs7",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh okay! Thank you so much.",
+                                                    "score": 1,
+                                                    "author": "caslooper"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

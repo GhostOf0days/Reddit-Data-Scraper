@@ -1,0 +1,41 @@
+{
+    "id": "12t6ta0",
+    "score": 3,
+    "title": "questions about OCaml n stuff",
+    "author": "Congress1818",
+    "date": 1682007818.0,
+    "url": "https://www.reddit.com/r/cmu/comments/12t6ta0",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "okay so I'm reading the things for 15-411, and I noticed that they support OCaml, SML, and Haskell. I thought these were all functional languages, how are they used for compiliers? I had always thought compilers were the be all end all imperative programming assignment, but now im super curious.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "(warning: some oversimplification here)\n\nYou _could_ think of a compiler as a pure function that maps strings (source code) to assembly, which is then mapped to processor opcodes, `compile : string -&gt; (various intermediate representations) -&gt; opcode list`. For example, see this Godbolt snippet [0]. The simple function on the left adds one to your input number. Your compiler should translate things like `num + 1` into `add eax, 0x1` (\"add one to eax\", note that `num` is stored in register `eax`), which on Intel's x86 corresponds to the `83 c0 01` shown above it (being the opcodes for \"add\", \"eax\", and \"one\" respectively, you can look these up on [1] or in the official Intel manuals). You'll learn more about reading assembly in 15-213.\n\nIn general, the pure functions that functional programming encourages are nice when you have well-defined problems of the \"turn this into that\" flavor. Because then given the inputs, you can reason about the outputs. You don't really have similar guarantees in an imperative programming language / the dependencies tend to be hidden away a lot more -- maybe before calling `compile()`, you were supposed to call `setup()` to initialize some internal variables, and you mostly did this but forgot in one place and now you sometimes have compiler bugs. If you program in a functional style, the output of `compile()` depends only on the input to `compile()`. This is a nice way to build correct programs out of smaller correct programs. 15-150 introduces this style of thinking.\n\n[0] https://godbolt.org/z/efcY8zEh9  \n[1] http://ref.x86asm.net/coder32.html",
+            "score": 5,
+            "author": "moraceae",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "oh okay tysm :)",
+                    "score": 3,
+                    "author": "Congress1818"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "On the contrary, I feel like compilers are one of the \"killer apps\" for functional programming. For example, while not strictly exclusive to functional languages, an expressive type system with algebraic data types and pattern matching makes writing a compiler substantially nicer.",
+            "score": 3,
+            "author": "air-wreck",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "oh okay, that's dope, tysm!",
+                    "score": 3,
+                    "author": "Congress1818"
+                }
+            ]
+        }
+    ]
+}

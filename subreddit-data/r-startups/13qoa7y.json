@@ -1,0 +1,321 @@
+{
+    "id": "13qoa7y",
+    "score": 62,
+    "title": "Tips for new CTOs",
+    "author": "triggeredByYou",
+    "date": 1684940838.0,
+    "url": "https://www.reddit.com/r/startups/comments/13qoa7y",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I have some opportunities to join a startup as a CTO. Not gonna lie, I am pretty scared and feel like I am not ready but I want the challenge.\n\nI\u2019ve been a dev for about six years and worked mostly in full stack roles with modern tech. I have some experience running small teams as a tech lead of juniors and mentoring them. I have previously built products before from 0 to 1, building out backend, front end and infrastructure.\n\nI guess there is no way to really prepare to be a CTO without really diving in head first, or is there? What are some advice you can give to feel more secure as a leader?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Martin Fowler.\n\nThen these tried axioms:\n- build systems as simple as possibly plausible, while still being able to reflect the complexity of the business problem. Fancy shiny patterns should have no bearing unless absolutely necessary.\n- you are only as good as what you measure. I.e. automated tests, logging, and monitoring.\n- strive to have one source of truth for each piece of data you maintain. Everything else is a disposable cache.\n - delegate and remove blockers to multiply forces, this is how you can achieve more.",
+            "score": 42,
+            "author": "mohamed_am83"
+        },
+        {
+            "level": 0,
+            "comment": "Books. Specifically on engineering management. An Elegant Puzzle &amp; The Phoenix Project off the top of my mind. Of course there is a bottomless well of options. \n\nBeing CTO with no direct reports at a nobody startup is very different from being a CTO at seed stage, which is different from series A, etc.. Sounds like your experience may be relevant up to Series A. Completely different game after that, focused on process &amp; people management, recruiting, financials, etc..",
+            "score": 60,
+            "author": "_Aggron",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks, I\u2019ve read phoenix project but not the latter.\n\nI would be the first technical hire and would need to build a team. pre-seed company. Some of my insecurities are around hiring the first few engineers and leading starship.",
+                    "score": 8,
+                    "author": "triggeredByYou",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Get a mentor. Read a lot. Keep an open mind. Realize being a good techie doesn't make you a good leader - but you can learn how to be one.",
+                            "score": 12,
+                            "author": "be0wulfe",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Where to find mentors?",
+                                    "score": 1,
+                                    "author": "GermainToussaint",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "There are many places to find mentors. I volunteer as a mentor through [Torch](https://torch.io/) and [Plato](https://www.platohq.com/), or just DM me - I'm currently coaching several startup founders. I also recommend the [Rands Leadership Slack](https://randsinrepose.com/welcome-to-rands-leadership-slack/) community.\n\nA related book is [Managing Humans](https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157?_encoding=UTF8&amp;pd_rd_w=46BZ2&amp;pf_rd_p=29505bbf-38bd-47ef-8224-a5dd0cda2bae&amp;pf_rd_r=BZ6VZVM49997M1WSSGXC&amp;pd_rd_r=2671d9c5-e371-431f-8ebb-0bec27579ee5&amp;pd_rd_wg=60tR9&amp;linkCode=sl1&amp;tag=beigee-20&amp;linkId=887f8f4d3c853d3af5165f64751e7db9&amp;language=en_US&amp;ref_=as_li_ss_tl). Another good book is [Manager's Path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth-ebook/dp/B06XP3GJ7F/ref=sr_1_1?crid=30GOYGYAQPE52&amp;keywords=manager%27s+path&amp;qid=1684956231&amp;s=books&amp;sprefix=manager%27s+path%2Cstripbooks%2C523&amp;sr=1-1).\n\nFinally, I'll plug the [Look &amp; Sound of Leadership](https://essentialcomm.com/podcast)  podcast.",
+                                            "score": 13,
+                                            "author": "Halmonster",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thanks, DM\u2019d you and will check these out!",
+                                                    "score": 1,
+                                                    "author": "triggeredByYou"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In that case, you're in a good spot. Don't let the title distract you from your job. You're an IC engineering hire with an inside track for promotion based on company performance. When it's time to hire, focus on that. Nothing you're doing now, except for maybe schmoozing, and maybe some new choices about tech stack, is going to be that different from what you've done before.\n\nYour investment in professional development should be guided by the challenges you see the business facing 6 months ahead. There's basically nothing you would need to know that you can't learn in that period of time, so don't get caught up about what you could need to know 2 years from now.",
+                            "score": 3,
+                            "author": "_Aggron"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "First technical hire at a pre-seed company is often a red flag. Unless they are already cash-flow positive and growing, if you\u2019re the only technical person at a pre-seed company and you\u2019re not going to be a cofounder with equal equity then you should really really make sure you\u2019re not getting taken advantage of. Quick check - how are you going to build a team if they haven\u2019t raised?",
+                            "score": 2,
+                            "author": "drunk_puppies"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "since you will be seeding the technical team you don't really need to worry much right now. Few things i would suggest to keep your sanity since everything will be moving fast in startup.\n\n1. Have basic development tools and process in place before hiring developers it will save you from lot of hair pulling later. At a minimum version control, bug system, ci/cd, code review system, release management.\n2. Try to document whatever you can and instill this culture in your team documenting later is never going to work.\n3. Make sure that any meeting has published agenda and instill this culture in your team.\n4. Make sure there is accountability as team without blaming individuals this will make sure that people won't hide their mistakes or try to put blame on others instead they will try to fix problem and move on.\n5. Have some kind of learning and improving from your mistakes in place generally root cause analysis for major incidents and learning and improving from them.\n6. Reporting to your board/CEO etc. is as important as managing your team don't ignore this and make sure that you report progress to management frequently.\n7. Alert problems that would require intervention from ceo/board as soon as possible. Be diplomatic about it.\n\nThat's it you will run into your own specific sets of problem where no one else would be able to help its rite of passage.",
+            "score": 13,
+            "author": "pdycnbl"
+        },
+        {
+            "level": 0,
+            "comment": "CTO doesn't mean the same thing depending on the size and stage of the company : \n\n-Pre market fit : you'll likely be the first dev, will have to hire one or two other but with severe budget constraints.\n\nRisks : Maybe they came to you because they didn't want to pay a lot for the soft. Make sure you don't get shafted with your shares. You'll be walking a thin line between shipping fast and not get killed by tech debt.\n\n-Market fit pre traction / serie A : you're a team-level lead that's responsible for architecture and speed of delivery. If you're in a B2B startup, you'll start to get heavily implicated in the deals.\n\nRisks : don't let your ego prevent you to hire people that are better than you. Make sure you're extremely vocal and convincing towards the other C-Level about code quality and sustainability, or you'll loose your job over the slowing of the delivery. If you're a pure technical, this is where you'll stop enjoy your life.\n\n-Traction / Serie A : that's it, you've got money and you have to hire tons of people to keep the pace. \n\nRisks : you're not a dev anymore. Don't make the mistake of keeping any technical power of decision over your staff. You'll have your hands full keeping the culture, the code quality and the organizational efficiency from degrading. Usually \"first-dev\" types crash and burn here. Depending on their number of shares, they'll either get laid off or \"promoted\" into a make believe role.\n\n-Serie B and onwards : you're finally a real C-Level, managing loads of people.\n\nRisks : this is an executive role. This is not something you can accomplish without the experience of working a departement-level lead role in a large size company.\n\nThe lesson here is : be mindful of your limitations and keep in mind that you're not likely to be able to get from first dev to corpo-cto, unless you're some kind of genius. If you're good at being a 0 to 1 cto, then leave when you're at 1 or 2 to go back to what you know, or learn to grow with the company.",
+            "score": 8,
+            "author": "Eligriv"
+        },
+        {
+            "level": 0,
+            "comment": "Don\u2019t be a dick, search for reasonable compromise, make decisions even if you know they are imperfect. Too much going on to get it right 100% of the time. Try to focus on the things that keep you up at night about your startup - follow your gut a bit but not too much. Learn to trust others\u2019 assessments.\n\nBeen doing this a long time. That\u2019s the best I got.",
+            "score": 7,
+            "author": "deepneuralnetwork"
+        },
+        {
+            "level": 0,
+            "comment": "As a CTO, your first team is the management team of the company, NOT the engineering team. This won\u2019t matter that much while you are only three people, but it will matter a lot once you hire the first dev. Yes, you want to be a great boss, but this also means to put the business requirements first, not the technological ones.\n\n* Understand who at the company will do product management. If there is no other person with enough technical understanding, then this will be you. This might be your biggest skill gap in the beginning, and you might not even notice because the other founders also might not realize that one of you needs to do it.\n* Use boring technology that a lot of people know so that it is easier to hire later on.\n* Understand the business requirements and implement against them. \"This won\u2019t scale for more than 10,000 users\" usually is perfectly fine.\n* Code can be crappy, but make sure it is modular. Anything a dev can rewrite in a week is not really technical debt, but if too many of these are coupled together, then it will take years to clear it up.\n* Whenever a feature turns out not to be helpful, delete it. If the value of it is almost zero, then the cost will surpass it really quickly. 99% of the stuff you write will not add value, so prune relentlessly.\n- Don't do custom stuff. No Kubernetes. Just use Vercel or something similar in the beginning. You don\u2019t need the sample individuallisable stuff as bigger companies.",
+            "score": 4,
+            "author": "The_Startup_CTO"
+        },
+        {
+            "level": 0,
+            "comment": "I took my first CTO job at 21, we raised $10M about a month later.  Age isn't that important, confidence is.  There are many different CTOs out there - A lot of early stage the CTO is just the only developer, others hire and lead large teams.. if you're not hiring a team for awhile you can get a head start on leadership reading, if you're only going to be developing you probably already know plenty.  If you're immediately hiring people but no management experience, hire a leadership coach.",
+            "score": 4,
+            "author": "drteq",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow, that\u2019s amazing! Can you share more of your story and challenges of your journey?\n\nGood point, will look into leadership coaching.",
+                    "score": 2,
+                    "author": "triggeredByYou",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not without a biopic. ;)\n\nBut a great summary is - you can be smarter than a lot of people in this world at 20 if you specialize in things they will never understand.  Age is just a number it's not a metric on experience.  I've just found that most people aren't as great as you want to believe.  So just work on yourself with the right intentions and you'll be fine - deal with things as they come to you, the knowledge you need will reveal itself as the company grows - When something new comes along and you don't understand it, go all in on figuring it out even if it's not in your wheelhouse..it will pay off.   CTO is an executive, that means you can influence many big decisions in an early stage company.. As best a possible in the situation, you should not try to 'stay in your lane'.. own your lane, but expand into the other lanes in knowledge.  As someone in tech, you'll tend to be more analytical and observational than the other execs, your insights are valuable but you may not be able to argue your point if you don't fully understand the situation.  (Essentially, you'll likely witness bad decisions being made that don't feel right - but you may feel you don't have the knowledge to argue it)  Nothing worse than being the CTO who can't influence the other executives from making bad decisions, I've found it hard to stay motivated in those situations.",
+                            "score": 3,
+                            "author": "drteq",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for sharing!",
+                                    "score": 1,
+                                    "author": "triggeredByYou"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Don't feel like you need to know everything alone. Build up people who can take over responsibility. Connect your eco system with other people who have usefull skills.",
+            "score": 3,
+            "author": "Kyaterix"
+        },
+        {
+            "level": 0,
+            "comment": "It's really important to have passion for the product you build. Without passion, it is really easy to burn out and give up. You as CTO should also have business knowledge (allocate time to reading books, and understanding your competitors and customers), but give context in terms of not only the overall feasibility of a project but also individual features. Good luck",
+            "score": 3,
+            "author": "frunjyan"
+        },
+        {
+            "level": 0,
+            "comment": "You have the perfect background for a start up CTO. If you have not done a ton of hiring/networking in the past I would expect some growing pains. But a full stack dev who can work with a CEO and manage a small team can go a long way in early stage startups.",
+            "score": 2,
+            "author": "radioshackhead"
+        },
+        {
+            "level": 0,
+            "comment": "You may also want to check /r/ExperiencedDevs for advice.",
+            "score": 2,
+            "author": "obviousoctopus"
+        },
+        {
+            "level": 0,
+            "comment": "I advise professionally, so I am obviously biased, but what I wish I had done when I started CTO'ing was to bring on a paid advisor/consultant. A board member CAN provide this, but you really want someone with both experience and modern knowledge/skills. One issue with that, though, is that sometimes CTOs aren't willing to be vulnerable or admit a lack of knowledge/experience or failings with board members. A group of CTO peers can also play this role, but they are usually busy people.",
+            "score": 2,
+            "author": "jeffus"
+        },
+        {
+            "level": 0,
+            "comment": "You said in your other comment that it's still a small team. That's super exciting. I really like building software with teams of this size.\n\nFirst and foremost, you'll want to ensure you know what your role is on the team. Typically, CTO will oversee Product, Engineering, and Design. CEO will oversee sales, finance, marketing, etc. Depending on the team, you're either a peer of the CEO or will report into him. I'm going to assume that Product will fall to you.\n\nAt an early stage startup, finding product market fit trumps anything else. I literally don't care what anyone tells you about good engineering or technical skills or anything else that you've been evaluated on in the past. That all goes out the window. Most of the technical advice in this thread is pretty much useless. You'll likely throw away more code than you keep. Don't get stuck on it.\n\nIf you can't sell your product, everything good that you gets thrown away. If you don't have someone else on your team living and breathing this, you either need to do it yourself or hire someone. All of the technical stuff can be fixed. In fact, you have a lot of good problems if you hit the point where you need to rewrite your codebase. I will always take a tax on a successful company over free on a dead company.\n\nI'd recommend the following product books. They're almost all focused on understanding your customer then iterating on a product that suits them.\n\n* [Inspired](https://www.amazon.com/INSPIRED-Create-Tech-Products-Customers/dp/1119387507)\n\n* [Empowered](https://www.amazon.com/EMPOWERED-Ordinary-Extraordinary-Products-Silicon/dp/111969129X)\n\n* [Build]( https://www.amazon.com/Build-Unorthodox-Guide-Making-Things/dp/0063046067)\n\n* [The Lean Startup](https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898) - this is a classic\n\n\nOn the technical side of things:\n\n* Don't get too hung up on \"doing things right\" unless it means \"doing things fast\". \n\n* Work with whatever tools you're most familiar with. \n\n* Look for tools that support rapid development velocity over computational performance. Computers are cheap. Press that scale button until it's cheaper to hire someone to optimize the system.\n\n* I will say, getting security right from the start is the one place you should insist on getting it right. These are just about the only technical problems you can't overcome in the future.\n\n* You might be surprised at how little performance matters. I seen startups where they load _everything_ into memory at the start. Sounds terrible, but but works great until you're absolutely forced use a better architecture.",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Could you expand upon what you mean by \u201cdon\u2019t get hung up on doing things right unless it means doing things fast\u201d?",
+                    "score": 1,
+                    "author": "Snoo_42276",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Until you have product market fit, you'll likely spend a lot of time \"wandering\" around your product space until you find the thing(s) that really stick. You'll build something, see how it lands, and try something else. Likely, between 2 and 10 times. That means you should expect between 50% and 90% of your features won't be used or valuable in 1 to 2 years. \n\nTherefore, anything you build in that 50% to 90% is *only* useful for learning about and understanding your market. In fact, I'd go so far as to say anything in that 50% to 90% can become a liability to the features that eventually land. Anything you build will need to be maintained until you can deprecate it.\n\nFurther, consider a product where you take 5 tries to find the right approach (getting it right on the 5th try). Which of these situations would have prefer to have?\n\n* 5 products that you built \"right\", likely with complex logic and architecture. 4 of those are now a liability to your 5th product. Every time you develop for the 5th product, you *must* consider how it works with the other 4 products and their product-specific architectures.\n\n* 5 \"fast, but hacky\" products. Everything you've written is \"throw away code\". However, the 5th product is really starting to stick. While you may need to rework significant parts of product 5, it exists almost independently of the first 4 products. You can move extremely quickly; building your architecture specifically for product 5 with high confidence it's going to be valuable in 1 to 2+ years.",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Okay that makes sense thanks for the clarification.",
+                                    "score": 2,
+                                    "author": "Snoo_42276"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019d recommend not trying to follow books too much. There will be some things you encounter that you\u2019ll need to think through pragmatically. What do the company and your teams need? The role will evolve. Have you considered a coach or advisor? Dm me if interested",
+            "score": 2,
+            "author": "cryanasauruschex"
+        },
+        {
+            "level": 0,
+            "comment": "Here are some tips I can give for you. \n\nKeep learning - Stay up-to-date with the latest trends and innovations in your industry. Attend conferences, read industry publications, and network with other leaders to expand your knowledge.\n\nClearly and frequently communicate with your team, stakeholders, and customers. Encourage open and honest communication and actively listen to feedback.\n\nAnd embrace failure, don't be afraid to fail. Learn from failures and mistakes and use them as an opportunity to grow and improve.",
+            "score": 2,
+            "author": "stylish_assembly"
+        },
+        {
+            "level": 0,
+            "comment": "Mods can we get something like this stickied please. Really good post and something id love to see other CTOs get access to.",
+            "score": 2,
+            "author": "Fabulous_Advice_3516"
+        },
+        {
+            "level": 0,
+            "comment": "Build systems around people. And not people around systems.",
+            "score": 2,
+            "author": "Startupdoc"
+        },
+        {
+            "level": 0,
+            "comment": "I worked at a company where the CTO drank vodka + orange juice all day. He was one of the founders. He was drunk on day one. He was drunk on IPO day. And, he was drunk when the company was acquired.\n\nI also knew an engineer with 4 years of experience who took 6 years off from tech to surf. Not bad, but not a particularly great engineer. He got hired at a startup as CTO with a tech stack he knew nothing about. He transitioned into the role just fine.\n\nIf these two found success, you can too.",
+            "score": 2,
+            "author": "user_dan"
+        },
+        {
+            "level": 0,
+            "comment": "I may not be qualified to speak about being a CTO, however, I can suggest a great book called ***Trust and Inspire by Stephen Covey***. It is fantastic on leadership in general. \n\nAs for as the CTO role itself there is ***Blueprint Seven Six: The Technologist's Guide to Transforming Early-Stage Companies and Building Enterprise Value with Product-Quality Software by Leo Reiter*** came highly recommended online. \n\nAll the best in the decision and the new role!",
+            "score": 2,
+            "author": "bizme_up_Scotty"
+        },
+        {
+            "level": 0,
+            "comment": "Titles, especially C-suite, mean next to nothing at early stage startups. Mostly it means you do less programming and more talking. And the talking won't help the company nearly as much as programming would, but your partners are non-technical and won't be able to do anything until the product is ready, so they will want to talk a lot. Meanwhile, you should use the time to learn about business. That's much easier at a startup where you have access to the entire business. Learning the business side will help your prioritize your technical tasks and make you better at the more senior aspects of being a developer.",
+            "score": 2,
+            "author": "danjlwex",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If your partners on the commercial side aren't doing anything whilst waiting for a product then you should run.",
+                    "score": 6,
+                    "author": "ivereddithaveyou"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What size are the start-ups you are looking at? How many devs?",
+            "score": 1,
+            "author": "pigeon888",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "3 people thus far. I would need to hire dev team.",
+                    "score": 1,
+                    "author": "triggeredByYou",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ok so at this stage you really don't need to worry about the title. Your job is to build the product and define a technical strategy. \n\nIf things go well then your focus will still be on defining the tech strategy and also building a team and a culture. \n\nIn the final growth phase you'll be maintaining the culture, managing change and removing roadblocks.",
+                            "score": 1,
+                            "author": "pigeon888",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "do you have any suggestions for defining tech strategy? books or articles you recommend or general tips?",
+                                    "score": 1,
+                                    "author": "triggeredByYou",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "- First and foremost: do not follow the current tech fad. Use a stack that makes sense for what your company will be (ex: use Postgres if you are doing relational, not MongoDB..), and just as important, use a stack that __you__ are comfortable with and could do everything by yourself. I've seen many startups joining on the bandwagon of NoSQL, Go, \"that new JS framework that 3 people know and it will be discontinued in 6 months\" etc, and they all had to rewrite it (or went bankrupt). Well known stacks are also easier in finding new hires.\n\n- Use a good code standard like SOLID and be the most anal about it. Do not merge anything that doesn't follow it, or you'll have some spaghetti code that no one can understand, and would be hard to start for new hires \n\n- Kanban, Scrum, etc: seriously, project managers have massive boners about this stuff. I found out that some of them are actually detrimental to the development flow. Keep it simple: have a good ticketing system (github, gitlab, etc), put some sane labels, and maybe use Kanban to track the status. No more than that or it'll just become bourocratic and/or against continuous integration",
+                                            "score": 5,
+                                            "author": "Lucacri"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "In the early stages it will mainly come down to picking your stack and having a plan around how your product will scale. \n\nAs the company grows, integration will become more of a concern and when you hit big enterprise scale then you can start reading Gartner research reports.",
+                                            "score": 2,
+                                            "author": "pigeon888"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "\"Define\" is too strong of a word.\n\nYou don't actually need to write down some crazy approach. You just want to make sure everyone is aligned on the same approach. In fact, you don't even need to come up with the approach. Just need to get all of the ships rowing in the same direction.",
+                                            "score": 2,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "What stack are you building in? I have a little less exp than you in coding but I\u2019ve got some experience with the sales, team building from some freelance work I\u2019ve done. I know it\u2019s a lot different than what a startup entails but I\u2019d be happy to maybe being your first hire, and able to wear many hats.",
+                                            "score": -1,
+                                            "author": "Impossible_Map_2355"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I\u2019ll be your first hire depending on the stack. I\u2019ll shoot you a dm",
+                            "score": -2,
+                            "author": "Impossible_Map_2355"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You\u2019re not a CTO. You\u2019re a lead. Are you scared of being a lead? No! So why be scared now? The title doesn\u2019t change anything. Go do it and before you know it, you\u2019ll be a \u201cCTO\u201d.",
+            "score": 1,
+            "author": "Vowucowe"
+        },
+        {
+            "level": 0,
+            "comment": "My biggest mistake in the CTO position was to write code by myself and tell people what to do and how.   \nCTO is a manager first, and only after a person who understands technology.  \nYou should know how to hire people, how to manage a team, and how to hundle risks.  \nNobody care do you know how to write in Python, GoLang, or Lua.  \nI know many CTO, who wrote code 5-6 years ago, and cant even do code review.",
+            "score": 1,
+            "author": "remotecamp_founder"
+        },
+        {
+            "level": 0,
+            "comment": "Dude you either got it or you don\u2019t. You know the answer already.",
+            "score": 0,
+            "author": "assfgkigfdhjo"
+        }
+    ]
+}

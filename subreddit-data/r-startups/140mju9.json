@@ -1,0 +1,115 @@
+{
+    "id": "140mju9",
+    "score": 0,
+    "title": "Where do I start on my app development journey?",
+    "author": "ajmbs511",
+    "date": 1685904981.0,
+    "url": "https://www.reddit.com/r/startups/comments/140mju9",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hi guys. I was hoping for a bit of advice in regard to my journey as a hopeful mobile app developer. I\u2019ve currently got a couple ideas on my mobile apps I\u2019d like to create but I\u2019m wondering where to get started on my programming journey so I have a few questions. My app, simply put, will be a social media for people travelling around the globe and tracking their journeys.  For a bit of context, in my current role I work for a PMO service so i understand how apps should look and work in a logistical sense, but have next to no experience in coding\u2026\n\n\nWhen creating a mobile app is it better to use flutter to create a cross platform app or use Swift and Java/Kotlin and have my app written separately for the different platforms?\n\nWhat are the best resources to learn app development and programming? Happy to pay for Udemy/coursera courses or if there are good YouTube guides let me know!\n\nIs outsourcing certain bits of the development a viable and smart option? If so where should I look to find these people?\n\nI\u2019m currently drawing up wireframes, I find that simple pen and paper, despite my awful presentation and handwriting is better than anything I\u2019ve got online. Any recommendations for somewhere I can draw up wireframes online? I\u2019ve tried a few and not been too big a fan. \n\nThanks",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt;When creating a mobile app is it better to use flutter to create a cross platform app or use Swift and Java/Kotlin and have my app written separately for the different platforms?\n\nBoth are solid choices. If web and/or desktop is important, then flutter will be the better choice. Swift/kotlin native will be the better choice if you need high performance. For example dart (flutter) is terrible for image editing (specifically image compression), and with flutter you'll need to write some native code to use the better hardware performance of a user's device. \n\nIf you do learn native. (imo) Pick only one, build a mvp, and don't learn the other platform until you've had testers and been through a round of revisions. You'll save a ton of money and time launching only one platform and getting feedback. (Unless you have the money to burn on making large rewrites twice)\n\n&gt;What are the best resources to learn app development and programming? Happy to pay for Udemy/coursera courses or if there are good YouTube guides let me know!\n\nThe options are honestly endless. Can't pick wrong. However do yourself a favour, and pick a tutorial that is no older than two years. Solving deprecated code can be a handy skill, but it'll make learning frustrating.\n\n&gt;Is outsourcing certain bits of the development a viable and smart option?\n\nIt can be. Depends on your budget. I prefer to hire when I hit a hurdle that isn't worth my time to solve. Few months ago I had a task that would've taken me three days, and it was something I would never do again. It was easier to hire and have them complete it in four hours. The bill was $200, but that's nothing compared to my time saved.\n\n&gt;I was hoping for a bit of advice in regard to my journey as a hopeful mobile app developer.\n\nMost importantly, learn to be good at Google. \"Those who can't Google, can't do anything - quote by me\". Seriously. All of your questions in this post have been asked 10k+ times by other people. There isn't any answer for programming you can't find online. Asking \"which should I learn\" is probably the most over asked question of mobile development. If you decide to go native, and you aren't sure between Java or kotlin, Google it. What does this error mean, how to cast a string to an int, how to use git, Google it!",
+            "score": 3,
+            "author": "towcar",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for your comment. Lots to unpack here! Makes sense to launch on one platform first allowing me to focus solely on that. Do wonder though, you mention money, what would you expect my costs to be on, provided I don\u2019t go to a third party for any work. Will look to find a YouTube or cheap Udemy course, think I\u2019ll be browsing through this subreddit a lot as well haha",
+                    "score": 1,
+                    "author": "ajmbs511",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;what would you expect my costs to be on,\n\nSorry, regarding the total cost to build the app solo?",
+                            "score": 1,
+                            "author": "towcar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No, should\u2019ve been more clear sorry! More like what would the different expenses be on? Software, programming tools, programmes, data storage etc.",
+                                    "score": 1,
+                                    "author": "ajmbs511",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Google it! ha ha\n\nHonestly though, it varies massively on the app you are building and the choices you make to build it. You can technically fully build both apps and launch for a few hundred bucks (minus your time). However the cheapest route is not always the best route, and can incidentally end up leading you down the most expensive route.\n\nI would complete one full tutorial before worrying about every cost as you'll learn it along the way. That or pay an expert to give you the detailed information you need.",
+                                            "score": 1,
+                                            "author": "towcar"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I use Balsamiq for wireframes: it\u2019s simple and only $5/month. Mobile app development is hard: it\u2019s not something you want to just dive into. You might consider starting with a no-code like [Bubble](https://bubble.is) where you can create a Proof of Concept and see what it would look like before you build the whole fancy version.",
+            "score": 1,
+            "author": "Aim_Fire_Ready",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah I\u2019ve entertained the idea of no code first will have a look. Thank you!",
+                    "score": 2,
+                    "author": "ajmbs511",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I hope that helps. Let me know if you have any other questions.",
+                            "score": 1,
+                            "author": "Aim_Fire_Ready"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Check out FlutterFlow in addition to Bubble for developing the app. Figma is an awesome tool for wireframes, and it\u2019s very easy to build pitch decks there as well.",
+            "score": 1,
+            "author": "drunk_banker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Will have a look cheers. I like the idea of initially using an app builder.",
+                    "score": 1,
+                    "author": "ajmbs511"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "One effective approach to bringing your ideas to life is by starting with pen and paper. This allows you to sketch out your concepts and visualize the features and functionality you want in your app. Once you have a clear idea, you can then consider the programming language for development.  \nIn terms of resources, it's recommended to begin with basic programming courses available on platforms like YouTube. You can choose any language that interests you, such as C, Java, Swift, or others. Once you gain a solid understanding of a language, you can start working on your project. During development, you can seek assistance from resources like Stack Overflow, explore existing projects on GitHub, and even utilize Chat-GPT for specific concepts or code blocks you need help with.  \nAs you progress and gain a better understanding of app development, you can start making decisions on whether to outsource certain aspects of your project and where to find suitable resources for outsourcing.",
+            "score": 1,
+            "author": "Feeling_Emergency118",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you",
+                    "score": 1,
+                    "author": "ajmbs511"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do CS50. I think you\u2019re overestimating how much you actually know about how apps work.",
+            "score": 1,
+            "author": "Educational-Round555",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just had a browse and looks like something I am happy to do. Don\u2019t get me wrong, my initial post didn\u2019t do it justice, I know next to nothing. It\u2019s a long road",
+                    "score": 1,
+                    "author": "ajmbs511"
+                }
+            ]
+        }
+    ]
+}

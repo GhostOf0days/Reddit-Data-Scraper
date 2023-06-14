@@ -1,0 +1,55 @@
+{
+    "id": "12obu0p",
+    "score": 2,
+    "title": "Courses required for 15-410",
+    "author": "Congress1818",
+    "date": 1681657013.0,
+    "url": "https://www.reddit.com/r/cmu/comments/12obu0p",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Okay, so I know only 213 is a prereq, but it says on the website that further experience is highly recommended. Any other courses I could take? I get 15-411 Compilers, but beyond that I'm unsure.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I think Compiler is actually not that relevant to OS, there is no race condition to be considered in compiler and the course itself is like the least \"system\" courses in the category (I did not take compiler so take this with a grain of salt)\n\nFundamentally, I think there are three important parts of 410, be comfortable with designing and implementing when given a spec, be comfortable with complex concurrency reasoning, be comfortable with assembly code and stack discipline. There are three relevant courses that will help you with each part.\n\n1. 15-440 (distributed systems), is a great introduction to the teaching philosophy of \"our spec, your design, your implementation\". All projects in 440 revolve around implementing high level ideas introduced during lecture. They require significant design and implementation on your part and will give you the skill needed in system design. This is especially important because all you get in 410 projects is the spec. \n\n2. 15-445 (database systems), is a great class for learning complex concurrency reasoning. 213 barely scratched the surface of concurrency but 445 will give you the necessary exposure to complex fine grained locking and synchronization mechanisms that are needed in 15-410. \n\n3. 15-330 (computer securities). One third of the class is heavily revolved around stack exploitation (attack lab style) and will give you significant exposure to assembly code and stack discipline, which I think is an important part of OS. Since OS is extremely close to hardware, you will need to be comfortable mingling C code and assembly. You will also need to be comfortable reading and writing some assembly code and 330 will help you with that. Overall super fun class so I would recommend it to people whether they want to prepare for OS or not.",
+            "score": 4,
+            "author": "EveningMapOfOrison"
+        },
+        {
+            "level": 0,
+            "comment": "Check out the \u201cwarm up\u201d section of https://www.cs.cmu.edu/~410/, and in particular the [self assessment exercise](https://www.cs.cmu.edu/~410/self.pdf) to see if you\u2019re ready for it.",
+            "score": 2,
+            "author": "femNms"
+        },
+        {
+            "level": 0,
+            "comment": "They generally recommend to take a systems course before OS since os is like the final boss in a way. An example could be networking, distributed, or parallel computing. Any exposure is good to see if you\u2019re ready for the challenge",
+            "score": 2,
+            "author": "OToast",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Personally, I now also recommend that you take a different systems course first because OS has been suffering from a TA shortage. In recent semesters, it seems like you might expect feedback to be a few weeks or few months delayed. So if you're not ready, you're not going to get much out of the course -- a common complaint I've heard from students is \"by the time we get feedback, it's too late to change anything\".",
+                    "score": 1,
+                    "author": "moraceae",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Heh, \"recent semesters\"... I was an OS TA in like 2006, we've always been bad at this. :-(",
+                            "score": 1,
+                            "author": "gwillen",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've seen remote alumni TAs, if you want to help fix this today! :)",
+                                    "score": 1,
+                                    "author": "moraceae"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

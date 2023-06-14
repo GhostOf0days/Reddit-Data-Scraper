@@ -22,3 +22,5 @@ The script will automatically scrape data from all the subreddits specified in t
 6. Create a pull request (PR) with your changes, mentioning the subreddits you have scraped and any additional modifications you made.
 
 7. Your PR will be reviewed, and if everything is in order, it will be merged into the main repository.
+
+Note: Don't worry about errors that appear, such as Compute Failed. However, Error 403 means that specific subreddit is private. Also, it may say compute failed. Don't worry the scraper still worked and correctly added files.

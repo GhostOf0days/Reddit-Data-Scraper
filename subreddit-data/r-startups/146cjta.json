@@ -1,0 +1,44 @@
+{
+    "id": "146cjta",
+    "score": 2,
+    "title": "ISO pre-built \"customer portal\" to deliver monthly files",
+    "author": "TheBlaze2006",
+    "date": 1686434738.0,
+    "url": "https://www.reddit.com/r/startups/comments/146cjta",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.sync.com/client-file-portal/](https://www.sync.com/client-file-portal/)",
+        "https://www.sharefile.com/client-portal](https://www.sharefile.com/client-portal)",
+        "https://www.docsend.com/secure-client-portals/](https://www.docsend.com/secure-client-portals/)",
+        "https://www.onehub.com/](https://www.onehub.com/)"
+    ],
+    "postText": "Hey guys, love this community and hoping you all can help me identify the BEST solution here...\n\nI've just begun building a SaaS MVP in insurance.  However, from day one, I'm taking on clients and servicing them in a more manual and consultative fashion.  Eventually we'll switch them over to the endgame SaaS product.\n\nThe consultative servicing involves me compiling a set of reports each month and providing to each client.  Of course, I can email/file-share each month, but I'd much prefer to stand up a \"customer portal\" for each client, with a folder for each month that contains the reports.  Better security, file history, user management, etc.\n\nA perfect solution would look like...\n\n* Custom branded file \"portal\" for each client\n* **Unlimited** sharing with external users (fine with me if it requires users to setup a login)\n* An established company - these files contain PII and SSNs, I need to go with something proven and solid\n* Unidirectional - I can upload docs, but users are unable to upload their own docs in my direction\n\nHere's what I've found so far, but none seem to be perfect:\n\n* [https://www.sync.com/client-file-portal/](https://www.sync.com/client-file-portal/)\n* [https://www.sharefile.com/client-portal](https://www.sharefile.com/client-portal)\n* [https://www.docsend.com/secure-client-portals/](https://www.docsend.com/secure-client-portals/)\n* [https://www.onehub.com/](https://www.onehub.com/) \\- this one is SO CLOSE, but it just lacks polish\n\nI'm hoping that someone has accomplished something similar and can share their thoughts, thanks all!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "It's obviously branded, but I personally love partners who use Google Drive because my company uses Google Drive (and the whole suite) so it makes integration super easy. If I want a file in my system I just transfer it over, I set permissions within my own ecosystem that's already set up.\n\nIf you really wanted it to be unbranded you could fairly quickly build a front-end that wraps around the Google Drive system using API calls.\n\nEdit: This isn't what you are looking for because I think it's a video piracy tool but the concept is very similar to what I was suggesting https://github.com/tks18/gindex-v4\n\nHowever, I will reiterate that I think most clients would be fine having a link to their own dedicated Google Drive. Especially if this is more of the beta/alpha of your startup and you plan to move this functionality into your own site eventually.",
+            "score": 1,
+            "author": "teamcoltra"
+        },
+        {
+            "level": 0,
+            "comment": "How much would you pay for it?",
+            "score": 1,
+            "author": "Tzunamitom",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "With few clients today, probably a max of $300/mo. Thanks!",
+                    "score": 1,
+                    "author": "TheBlaze2006"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I knew it had to be an insuretech from the title alone. ShareFile is quite popular in the insurance sector and has APIs available along with some cheap SaaS integrations and some SSO support.",
+            "score": 1,
+            "author": "blbd"
+        }
+    ]
+}

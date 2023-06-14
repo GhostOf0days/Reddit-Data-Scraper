@@ -1,0 +1,67 @@
+{
+    "id": "13yqh9n",
+    "score": 1,
+    "title": "Legality of end to end encryption",
+    "author": "Dontreallywanttogo",
+    "date": 1685742443.0,
+    "url": "https://www.reddit.com/r/startups/comments/13yqh9n",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Lawyers and law knowledgeable folks welcome! \n\nI am thinking of a chat mobile (distributed through the app and play stores)app- true end to end encrypted- using peer to peer streams (no servers? TBD) . Using an encryption protocol ( like @sign) I wouldn\u2019t even have access to the messages of people using it of course . \n\nBut I can\u2019t control what people text each other, send each other. I can ask during sign up \u2018please don\u2019t send anything ilegal\u2019 but things are out of my control at that point. \n\nmy question is , does anysbody know about legal implications / protections to developers/ startups/ companies using true end to end encryption?  Liability of how the platform is used? \n\n\nSadly, I don\u2019t remember his name and I can\u2019t find him online.  there is this young guy who got life in prison because he created an eBay type website and people started selling drugs and guns on it. He couldn\u2019t stop in in time and got sentenced to life in prison. Not the same use case but it was scary to hear about this. \n\n\nI am just trying to learn about the legal ecosystem of true end to end encryption. Any lawyers or law knowledgeable folks welcome ( I am not either of these atm)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt; Sadly, I don\u2019t remember his name and I can\u2019t find him online. there is this young guy who got life in prison because he created an eBay type website and people started selling drugs and guns on it.\n\nYou are almost certainly thinking of [Ross Ulbricht](https://en.wikipedia.org/wiki/Ross_Ulbricht) and his story is a lot more sordid and criminal than your recollection.  I wouldn't generalize his experiences at all towards what you're describing.\n\nThere are already plenty of projects and companies who are doing a true end to end encrypted chat app and those companies have not had any legal difficulty that I'm aware of as a result of their privacy and encryption policies.\n\nI'd look at [Keybase](https://keybase.io/) and [Signal](https://signal.org/) for two very similar projects to what you describe.  You can figure out for yourself how much overlap your idea has with what they've done and hopefully gain some perspective and context for what you're hoping to do.\n\nIn the US, it would be worth reviewing [ITAR](https://news.atakama.com/understanding-the-itar-end-to-end-encryption-rule), but honestly that hasn't had sharp teeth since the late '90s.  What you're describing almost certainly falls within the \"mass market\" exceptions to ITAR restrictions.  But I'm not a lawyer and I'm definitely not *your* lawyer.",
+            "score": 4,
+            "author": "rezifon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for elucidating me about his story . I didn\u2019t know about it at all. A friend just told me this in passing and I got kinda freaked out. I still don\u2019t know enough about that case, but the resources to even look it up helps me learn about what happened.",
+                    "score": 1,
+                    "author": "Dontreallywanttogo"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks so much for the other Resources too \ud83d\udc4d\ud83c\udffc, I\u2019m familiar with signal but not keybase \ud83d\udc4d\ud83c\udffc",
+                    "score": 1,
+                    "author": "Dontreallywanttogo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Generally speaking (very generally)\n\nYou are responsible for moderation of all user generating content that is sent and shared on the platform. \n\nI\u2019m incredibly confident in saying that E2E encrypted chat applications get around that legal responsibility by offering backdoors to law enforcement. That of course is only a concern when you reach a certain level of users.\n\nWhatsApp, Signal et al have all been purported to have backdoors for Western intelligence agencies at a minimum.",
+            "score": 2,
+            "author": "SteakNStuff",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Interesting! I wonder if that means that server less is illegal? No back doors?",
+                    "score": 1,
+                    "author": "Dontreallywanttogo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I can think of a few challenges, the last being the most important, it all comes down to jurisdiction. You are definitely going to have to seek actual paid advice, but maybe worry about this when like 10k+ users. But if you're seeking investment, you might need to have the mitigations in place now. \n\nI can think of a few constraints;  \n\n\nYour user-generated content concern: As the developer of the chat app, you are generally not held liable for the content exchanged between users, as long as you are not actively involved in generating or moderating that content. This is typically governed by the principle of \"safe harbor\" or \"hosting immunity\" in many jurisdictions. However, it is crucial to have clear terms of service and acceptable use policies that prohibit illegal activities and outline the consequences for users who engage in such activities.\r  \n\r  \nLegal obligations: While you may not have access to the encrypted messages sent through your app, you might still have legal obligations depending on the jurisdiction. For example, you may need to comply with data protection and privacy laws, provide a mechanism for users to report illegal content, or cooperate with law enforcement agencies within the bounds of the law.\r  \n\r  \nLaw enforcement requests: In some cases, law enforcement agencies may request access to user data or attempt to compel you to weaken the encryption to facilitate investigations. The laws and regulations around this vary by country, and some jurisdictions have specific legal frameworks, such as lawful interception or data retention requirements, that may apply. It is important to understand the laws in your jurisdiction and consider the impact on your users' privacy and security.\r  \n\r  \nJurisdictional challenges: If your chat app is accessible globally, you may face challenges regarding jurisdictional differences in laws and regulations. Different countries have varying approaches to encryption, data privacy, and lawful interception. Understanding and complying with the relevant laws in different jurisdictions can be complex and require legal expertise. This is without doubt the most important, you will probably have to like geographically look into each market you enter with a lawyer (consider as soon as possible hiring a legal team) and enter each market respectively. \n\n&amp;#x200B;\n\nTL;DR: Seek paid legal advice as soon (but also as late) as possible. Enter a restricted amount of markets first.",
+            "score": 1,
+            "author": "Mesredi"
+        },
+        {
+            "level": 0,
+            "comment": "I think you may already know this, but there\u2019s a _huge_ difference between E2EE, which is usually accomplished with a server in the middle (preventing the server that is helping you deliver or store the message from also reading the message is often the main point of E2EE) and serverless, which is both technically challenging and makes many convenient features like directory lookup difficult or impossible. \n\nI recommend you make your MVP first and figure out exactly what you want and how to implement it, because those details are going to matter when you start talking nuts and bolts with the lawyer.",
+            "score": 1,
+            "author": "GrandOpener",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh yeah of course, I meant a p2p streams. Thanks \ud83d\ude4f\ud83c\udffc",
+                    "score": 1,
+                    "author": "Dontreallywanttogo"
+                }
+            ]
+        }
+    ]
+}

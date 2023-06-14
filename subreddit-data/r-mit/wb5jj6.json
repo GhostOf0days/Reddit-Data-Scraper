@@ -1,0 +1,79 @@
+{
+    "id": "wb5jj6",
+    "score": 17,
+    "title": "Anyone successfully set up MIT email to send AND receive through Gmail interface?",
+    "author": "danieltkessler",
+    "date": 1659103121.0,
+    "url": "https://www.reddit.com/r/mit/comments/wb5jj6",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I'm finally able to SEND emails using my MIT account through the Gmail interface, but I can't RECEIVE my MIT emails there. There's an option for a POP outgoing server, but I can't find any references to an outgoing POP server for MIT (only IMAP / Exchange, which isn't supported). **Anyone successfully done this before?**",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I don't think its supported.  However, you can forward mit email to gmail using https://mailto.mit.edu/ which works seamlessly most of the time.  Occasionally it trips up (MS teams invites seem to cause problems) but usually the bounce message from gmail to MIT will itself end up forwarding to gmail, ha.",
+            "score": 6,
+            "author": "tystuke",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for confirming. If I may ask, do you use another client for your MIT emails, or do you use Outlook?",
+                    "score": 1,
+                    "author": "danieltkessler"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes, I've been forwarding my MIT email to Gmail for over a decade. Look up the Athena command \"chpobox\" which forwards mit email to whatever. You'll have to run it either on an Athena computer or the remote dialup website but it's a one time command that sets you up forever. That gets your inbound emails. The outbound can be done through gmail if you go into settings, you can do a \"send as\".\n\nOnly caveat, as someone else mentioned is that sometimes this method has issues with calendar invites. Occasionally an invite just won't make it to Gmail. I did a bit of debugging (ist doesn't support this so they won't help). It seems to be related to Google cal invites being sent to the MIT email - chpobox faithfully forwards the cal invite but then Google flags a security issue related to a Google cal invite coming from a non Google server and discards it. It's clunky but my solution is to configure chpobox to split the forwarding so emails go to both Gmail and MIT owa, then periodically check owa for calendar invites that didn't make it. There's probably a better long term solution",
+            "score": 4,
+            "author": "Walmart_Internet",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Same",
+                    "score": 2,
+                    "author": "ThunderSparkles"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you! This is super helpful. As soon as I get my ID and campus access, I'll look into this further. I may also try out a third-party email client. Mainly, I need something that will auto-organize my emails by type - because I have a (foolish) habit of signing up for a lot of subject-specific newsletters and events lists. Thanks again!",
+                    "score": 0,
+                    "author": "danieltkessler"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Try contacting IST?",
+            "score": 2,
+            "author": "nightrider1708",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks. I've been in touch with them - it's been sort of a back-and-forth and they aren't sure yet what the answer is. I thought if there were someone here who *had* done this before, it would help me navigate this a bit more clearly.",
+                    "score": 1,
+                    "author": "danieltkessler"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I was also never able to set up my alumni email to send from Gmail. I get Forwarded emails but can't reply. Has anyone figure out how to do it? I tried following the instructions to authorize it but get an error message.",
+            "score": 2,
+            "author": "piwi87"
+        },
+        {
+            "level": 0,
+            "comment": "It's pretty simple to setup. It only took me 10 minutes to do so and it works fine. \n\nUsing mit.edu address to send emails: http://kb.mit.edu/confluence/display/mitcontrib/Send+Email+from+mit.edu+address+in+gmail\n\nReceive mit.edu emails in Gmail:\nHere's the instructions for forwarding your MIT emails to Gmail: http://kb.mit.edu/confluence/pages/viewpage.action?pageId=3907262\n\nI use the \"Splitting your email\" option so I get a copy of my emails both in Outlook (I use OWA) and Gmail.",
+            "score": 2,
+            "author": "twicemida"
+        },
+        {
+            "level": 0,
+            "comment": "It is supported check blogs",
+            "score": -1,
+            "author": "Holiday_Tradition527"
+        }
+    ]
+}

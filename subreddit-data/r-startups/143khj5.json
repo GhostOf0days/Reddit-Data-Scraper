@@ -1,0 +1,121 @@
+{
+    "id": "143khj5",
+    "score": 9,
+    "title": "For CTOs / tech leads of SAAS: When did you become SOC2 compliant?",
+    "author": "codingiswhyicry",
+    "date": 1686161489.0,
+    "url": "https://www.reddit.com/r/startups/comments/143khj5",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "In my first CTO position, and it's looking like we're going to need to become SOC2 compliant at some point. We're a SAAS with an API that insurance companies use. We're also early stage, and trying to figure out the timing. \n\nAll of the info on it through google is obviously blog posts by companies who will make money from you being compliant, so they're pushing for it ASAP, so I'm looking to prove / disprove that. When did you feel like you needed the audit done? e.g: Customer requests, # of paying customers, etc.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "When you need it will be really specific to your target customer and the service you provide. You\u2019ll need to talk to your customers and understand their vendor management policies to know for sure.\n\nGenerally speaking enterprise customers and SOC2 or ISO complaint companies will require SOC2 compliant vendors for any service they use that is providing a mission critical service or dealing with sensitive data. If that\u2019s your target customer demographic then you\u2019ll want to get started on your SOC2 journey fairly early as it opens up your addressable market. There\u2019s some wiggle room, you might not need it to close the deal, but you\u2019ll probably need it to renew the contract.\n\nAlso, if you have never done SOC2 before. I will add don\u2019t underestimate how big a journey this is.\n\nSOC2 compliance is about 20% your technical implementation. Which, for the most part is just following best practices about data security and assuming you\u2019re not a complete noob your probably most of the way there already for that part.\n\nBut the other 80% about the company\u2019s policies and procedures which mostly do not fall under the CTOs department,  but of course, in a start up, you might be wearing 20 hats.\n\nSOC2 and similar frameworks recognize that human error is the main reason data breaches occur. You need to have business processes like mandatory reoccurring staff security training, and policies about data classification, how data is allowed to be handled, procedures for vendor management, HR processes for vetting employees before giving them access to data, and removing that access again if the leave the company, regular audits of accounts to ensure that nobody has access to things they shouldn\u2019t and the processes for doing all of that needs to be documented to get SOC2 Type I attestation.\n\nBut all of that is only halfway there\u2026. To get SOC2 Type II, you will need to also supply evidence, proving that you have followed all of these policies and procedures that you\u2019ve created for a period of time and that the leadership team meets regularly to review the policies and their effectiveness.\n\nKeep in mind, it takes most companies 3-6 months to put all the compliant processes and documentation in place and pass the first audit.\n\nThen you need to follow those processes for typically at least a year, and prove that you have been following them. In order to get the full SOC2 Type II attestation.  So if it\u2019s something you know you\u2019re going to need in a year from now you probably want to be starting now.\n\nSOC2 isn\u2019t just a you get it and you\u2019re done thing, it\u2019s an ongoing overhead maintaining the policies and documentation that can easily add the equivalent of a FTE of work for the entire company.\n\nWho ever you select as an auditor will take you through the whole process, many of them can supply templates for a lot of these policies and procedures documents. but of course, it is still up to you guys to actually implement those procedures in your business.\n\nI do fractional CTO consulting as a business. I\u2019m not going to pitch you my services to help you become SOC2 compliant, there\u2019s enough companies out there that do that and they always leave you feeling like you need to shower after talking to them. \n\nBut if you\u2019re looking for a experience opinion on how ready your company is so you have a better idea of what your committing to, DM me and we can talk more.",
+            "score": 4,
+            "author": "nectivio"
+        },
+        {
+            "level": 0,
+            "comment": "Some domains have requirements, some customers do. Fulfill at least what's mandatory. Concentrate on creating the formal documents and most important requirements first. Improve as you go.",
+            "score": 3,
+            "author": "Kyaterix"
+        },
+        {
+            "level": 0,
+            "comment": "Once you start having big, big deals blocked by lack of SOC2.",
+            "score": 2,
+            "author": "ForeverYonge"
+        },
+        {
+            "level": 0,
+            "comment": "When the cost of explaining around it during sales calls (\"we run in a SOC2 compliant environment\") and due diligence outweighed the cost of becoming and staying compliant.",
+            "score": 2,
+            "author": "tarwn"
+        },
+        {
+            "level": 0,
+            "comment": "You will need it out of the gate selling &amp; integrating with big enterprise customers. Lay the groundwork early: setup your policies, use Vanta (or whatever) on your systems, and have everyone in the company do best practices. Then do your Type 1 (single point in time audit) so you can do SOC2 Type2 (recurring annual audit) next year.",
+            "score": 5,
+            "author": "beambot",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "All of my customers are SP500 listed companies (20 or so of them) and all enterprise deals, and not SOC2. We do go through security checklists, but not SOC2 BS.",
+                    "score": 7,
+                    "author": "julysanta",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Different strokes, I guess. Many of ours require SoC2, ISO-27001 or various NIST certs. Maybe we deal with more sensitive data?\n\nAt the very least, these certs help make cyber review more of a rubber stamp than a deep-dive",
+                            "score": 1,
+                            "author": "beambot",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Do you work for Vanta?",
+                                    "score": 1,
+                                    "author": "julysanta",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "No, but they are a vendor of ours...",
+                                            "score": 1,
+                                            "author": "beambot"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When you're ready to sacrifice agility for big fish.\n\nAs others have said, it will be a requirement for Enterprise customers but it works both ways. You will need to make sure all of your vendors are also compliant which is restrictive and time consuming.\n\nCouple this with internal audit and additional compliance overhead .. you're compromising quite heavily on agility and potentially runway too. \n\nBut depending on where you are with your product, that might be a trade off worth taking if it gives you better access to your target market.",
+            "score": 2,
+            "author": "Varrock-Lobster",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Internal overhead doesn\u2019t need to be that high, just make sure that whoever runs the process is incentivized to keep overhead low, not only to implement audits.",
+                    "score": 0,
+                    "author": "The_Startup_CTO",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well done, you have identified the issue.",
+                            "score": 0,
+                            "author": "Varrock-Lobster"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not to nitpick but SOC2 \u201ccompliant\u201d doesn\u2019t really exist. The auditor just provides their opinion, there isn\u2019t an pass vs fail. Having said that, we went through the SOC2 attestation when there was a business requirement. It sped up the sales cycle for us. Customers in our industry use cookie cutter contracts that require a SOC2 audit within 12 months. If you follow solid engineering practices, you would already cover 75% of SOC2. \n\nCheck out https://github.com/bmarsh9/gapps if you are interested in preparing for the assessment (disclaimer: I\u2019m the author)",
+            "score": 1,
+            "author": "skywalker_1391"
+        },
+        {
+            "level": 0,
+            "comment": "There is no one answer. You get compliant when you need to be",
+            "score": 1,
+            "author": "noodlez"
+        },
+        {
+            "level": 0,
+            "comment": "Use trustcloud",
+            "score": 1,
+            "author": "BarnesGROAT"
+        },
+        {
+            "level": 0,
+            "comment": "We're around 7 years in as a company and just starting the process for SOC2 now. HIPAA was a priority for us earlier but SOC2 is starting to come up on security reviews.\n\nIn general my view has been to be aware of the needs and rules around potential compliance things we'll need to go with and to keep those in mind through development but wait to actually go through the process until there's a customer demand for it.",
+            "score": 1,
+            "author": "StartupThrowawayABC"
+        }
+    ]
+}

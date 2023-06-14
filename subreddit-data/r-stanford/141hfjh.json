@@ -1,0 +1,25 @@
+{
+    "id": "141hfjh",
+    "score": 5,
+    "title": "Is there some kind of issue of using remote desktop connection on my desktop pc if I am using eduroam as my network?",
+    "author": "TeachCrazy",
+    "date": 1685977434.0,
+    "url": "https://www.reddit.com/r/stanford/comments/141hfjh",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I am going to be travelling tuesday-wednesday and am trying to configure remote desktop connection. It keeps giving me this error when I paste in my ipv4 address:\n\n\\-----------------------------------------------------------------------------------------------------------------------------------------------------\n\nRemote Desktop can't connect to the remote computer for one of these reasons: \n\n1) Remote access to the server is not enable\n\n2) The remote computer is turned off\n\n3) The remote computer is not available on the network\n\nMake sure the remote computer is turned on and connected to the network, and that remote access is enabled.\n\n\\-----------------------------------------------------------------------------------------------------------------------------------------------------\n\nThis is a computer in escondido village graduate residences. It is connected to eduroam wi-fi. I tried to use cisco vpn on my laptop and connect to stanford, but it gives the exact same error.  Has anyone else been having the same error? Does anyone know if there is some quirk I need to work out to get this to work on my laptop using remote access?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You may need a public IP to do that. For example if you are not on eduroam but trying to use the IP address of a computer connected to eduroam, it won\u2019t work. 99% of the time eduroam is giving you a dynamic internal IP. If you connect the computer to an Ethernet port and request a public IP through iprequest.stanford.edu, it might start working. But be aware a public IP also opens up possible attacks.\n\nThat said, even if in the same network, eduroam and even Stanford\u2019s own network might block the Remote Desktop protocol port. Very unlikely though.",
+            "score": 2,
+            "author": "robertying"
+        },
+        {
+            "level": 0,
+            "comment": "try Tailscale VPN",
+            "score": 1,
+            "author": "TheRealRockdude"
+        }
+    ]
+}

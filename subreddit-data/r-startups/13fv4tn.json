@@ -1,0 +1,381 @@
+{
+    "id": "13fv4tn",
+    "score": 33,
+    "title": "Hi team: I need some advice...",
+    "author": "rhodesleadnowhere",
+    "date": 1683921008.0,
+    "url": "https://www.reddit.com/r/startups/comments/13fv4tn",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "We built our MVP using WordPress, have onboarded a handful of users, and we're generating revenue.   \n\nHere's my concern... To scale this thing, we'll need to rebuild from scratch. As you know, that's time and labor-intensive. \n\nWe're bootstrapping, so building a team is not an option.   \n\nOur platform has been patched with various APIs and plugins that are only as good as the next update.   \n\nHere are our options for creating a stable, scalable platform:  \n\n1) Rebuild from scratch.   \n\n2) Replace the core of our product with an off-the-shelf solution from one of our vendors. Stable but limited in functionality. This allows us to scale, raise, and rebuild later.   \n\n3) Modify the functionality of our main plugin, allowing us to API into various vendors.   \n\nHoping you can offer a different perspective. Thanks.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "One thought - too often I have seen founders get caught up in \u201cwe need to build it so it\u2019s ours\u201d when in fact what the customer is buying is the Outcome, not the  Ingredients of the solution. If you can buy it vs. build it - and maintain your Unique Differentiator, don\u2019t burn your cash up just to be able to say you built it.",
+            "score": 27,
+            "author": "xplorpacificnw",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is very important for the community to understand.",
+                    "score": 7,
+                    "author": "GaryARefuge"
+                },
+                {
+                    "level": 1,
+                    "comment": "Especially during bootstrapping, this puts a lot of pressure on the developer(s)",
+                    "score": 2,
+                    "author": "Majache"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks for the feedback. That had not crossed my mind. :)",
+                    "score": 1,
+                    "author": "rhodesleadnowhere"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You are generating income and the MVP  did/doing it\u2019s job with apparent success. If you have proven business viability then you need to look at the rest of the development as part of your scaling investment. Try to be as independent as possible but do not invent the wheel. Try and maximize the income generation from the MVP and transition slowly into a new build",
+            "score": 41,
+            "author": "Big_Organization_776",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Generating revenue and product market fit are two different things. They may have enough to show early signs of success, but not enough to go further. Let\u2019s say they\u2019re generating $5k MRR. Not enough for two people to quit their job. \n\nBut you\u2019re right, there\u2019s not enough info to make any recommendations or to understand how they are tech limited at the moment. \n\nOP, if you just think you\u2019re tech limited, but haven\u2019t hit a wall. Wait, focus on revenue. You\u2019ll know when you HAVE to do it. It will be painful, and you\u2019ll get it done because the pressure will be real. \n\nAsking Reddit leads me to believe you\u2019re not there yet. Focus on selling and building what you need to sell. Embrace the duct tape.",
+                    "score": 10,
+                    "author": "splittestguy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for the feedback. More info below: \n\nI quickly fired off this post and should have included more information about our product. We're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization.\n\nWe started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales.\n\nMy concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it.\n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                            "score": 1,
+                            "author": "rhodesleadnowhere"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt;We built our MVP using WordPress, have onboarded a handful of users, and we're generating revenue.\n\nGreat! Are they complaining about the lack of features? site is slow? what are the complaining about? what feedback have they given you so far? \n\n&amp;#x200B;\n\n&gt;To scale this thing, we'll need to rebuild from scratch.\n\nWhat do you mean by scale? You have 10 users, are you trying to build it so you can support 100k users? How many users are you going to have 30 days, 60 days, 90 days, 120 days from now?\n\n&amp;#x200B;\n\n&gt;Our platform has been patched with various APIs and plugins that are only as good as the next update.\n\nWhats wrong with this strategy?  You could keep doing down this route, keep getting more customers, keep doing customer discovery and meeting investors to build rapport with them. they arent going to write you that check the first day you met, but you just want to set the ground work for future ask.",
+            "score": 29,
+            "author": "killerasp",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was part of a SaaS startup that grew to $100m+. The backend nickname was called \u201calpha\u201d. I eventually learned that this was because we never moved it to beta.",
+                    "score": 5,
+                    "author": "cmullins70"
+                },
+                {
+                    "level": 1,
+                    "comment": "Great advice right here.",
+                    "score": 2,
+                    "author": "rdcnj"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As someone technical, I'm not sure why you can't scale wordpress? It's used by major corporations and without knowing any details can't say why you need to rebuild something that already works fine for the rest of the world?\n\nIf you really need to rebuild.. maybe try to identify interfaces inside your product. Or if there's isn't one, build one in the outmost layer. Then you can refactor/rebuild/whatever without affecting anyone.",
+            "score": 6,
+            "author": "FatefulDonkey"
+        },
+        {
+            "level": 0,
+            "comment": "I know companies that can scale Wordpress to millions of users. You need to give move info as to the challenges. \n\nWordpress is a CMS but can also be considered a framework like laravel etc.  \n\nIf this is a \u201cPHP is bad\u201d thought then you need to really evaluate your throughly processes.",
+            "score": 15,
+            "author": "chrisonhismac"
+        },
+        {
+            "level": 0,
+            "comment": "I'm having trouble giving advice without having more information. What is your product?",
+            "score": 3,
+            "author": "ashe3"
+        },
+        {
+            "level": 0,
+            "comment": "I mean how could anyone give you any decent answer with that lack of info. It really depends of what you already built and what you need to build. Without link that\u2019s going to be pointless.",
+            "score": 3,
+            "author": "WholeTraditional6778",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the feedback. More info below: \n\nI quickly fired off this post and should have included more information about our product. We're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization.\n\nWe started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales.\n\nMy concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it.\n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                    "score": 1,
+                    "author": "rhodesleadnowhere"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019ve been there before, and with Wordpress.\nWe\u2019ve managed to take one of our clients WP-based products and make it run like a charm, handle thousands of concurrent users with no hiccups, AND made it into a multi-tenant SaaS eventually. We did have to spend a lot of money on it, probably more then the cost of building the solution from scratch, but it gave us the opportunity to slowly develop the product as we learned what our users needed and allowed for pivoting much faster than a custom-built product would have allowed us to do.\n\nJust be mindful about the reasons why you would need to build tour product from scratch: \nIs it performance? It can be optimized. \nIs it that your team hates WP? not a good reason for us PMs.\nIs it that you are a bit ashamed of saying it\u2019s built on WP? Turn it into something to be proud of. Thanks to WP you exist and your customers can ease their pain NOW.\n\nUnless it is an extremely technical product, you should be able to scale up with it! At least until you get enough revenue to pay for the new development.",
+            "score": 3,
+            "author": "cicatricure60g",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Why do people feel ashamed of Wordpress? I happen to know global enterprises that use Wordpress internally and externally. Sure there are other frameworks but from the looks of it Wordpress seems worthy even for mission critical or sensitive projects. Is there something I am missing about Wordpress?",
+                    "score": 1,
+                    "author": "DiligentPoetry_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I know. I agree with you. But I\u2019ve met many engineers who think that building stuff (besides blogs or e-commerce sites) is like building houses with Legos, or somehow beneath them. BS.",
+                            "score": 1,
+                            "author": "cicatricure60g"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Without knowing what it is that you're building, any concrete advice is irresponsible",
+            "score": 3,
+            "author": "StoneCypher",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the feedback. More info below:\n\nI quickly fired off this post and should have included more information about our product. We're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization.\n\nWe started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales.\n\nMy concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it.\n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                    "score": 1,
+                    "author": "rhodesleadnowhere"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Just do that you\u2019re doing and scale until you can afford to rebuild yourself - or render enough users/revenue to raise.",
+            "score": 2,
+            "author": "DivisionalMedia"
+        },
+        {
+            "level": 0,
+            "comment": "Grow to where you can survive on the mvp and then you have \u201cinfinite\u201d time to build what you love \ud83d\udcaa",
+            "score": 2,
+            "author": "HauntingShape3785",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "agreed with you bud . that's what I am doing too for the past few months",
+                    "score": 1,
+                    "author": "irritating_sam9"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "if you have proven that there is a market for your product and you want to grow more quickly than you can by bootstrapping then you should consider looking for outside funding.",
+            "score": 2,
+            "author": "nirad",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This! Part of scaling does most times require funding and building a team.",
+                    "score": 2,
+                    "author": "tallyuptallydown"
+                },
+                {
+                    "level": 1,
+                    "comment": "Absolutely, and I've developed close relationships with a few VCs some of whom use our product to power their web stores.",
+                    "score": 2,
+                    "author": "rhodesleadnowhere",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Then you know who to hit up first.",
+                            "score": 2,
+                            "author": "nirad",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes! I speak with them almost daily. We're in a good position.",
+                                    "score": 2,
+                                    "author": "rhodesleadnowhere"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There's no need to reinvent the wheel. Scale slowly into the new build and keep the revenue coming in.",
+            "score": 2,
+            "author": "DonJambron",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That was my thought. Rebuild the parts that are holding us back and continue to grow.",
+                    "score": 1,
+                    "author": "rhodesleadnowhere"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You are beyond the point of general answers I would say. You have some level of proof of product, but now what are the real cost/benefits? \n\nNow you have to decide if you should or should not build a company.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Generating revenue and proving MVP through the website built using WordPress is really commendable.\n\nAnalyze till how much scale you can manage and remain there. As the other path building everything from the scratch is challenging and requires a lot of money. Also a lot of unknown bugs you may see in the transitions like SEO(might not be as effective. Can be made effective but will come with efforts and resources).\n\nEarn enough money and get a bearable scale before you can build it from the scratch.  Till then keep analysing the data and improve your product.",
+            "score": 2,
+            "author": "AiPert"
+        },
+        {
+            "level": 0,
+            "comment": "You might be worrying about this too early.\n\nI don\u2019t know what your product does, but you seem convinced that WordPress is your bottleneck, it would be good to know why you think this, and why you\u2019re thinking about it now.\n\nWordPress will probably scale more than you think\u2026\n\nGiven you have a handful of users today, I believe that your options are premature optimisations and would distract from the important thing you need to focus on: growing your user base/active users",
+            "score": 2,
+            "author": "Choice_Intention7720",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey! Thanks for the feedback. \n\nI quickly fired off this post and should have included more information about our product. We're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization\n\n.We started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales.\n\nMy concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it.\n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                    "score": 2,
+                    "author": "rhodesleadnowhere",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ah okay!\n\nFor the product designer, it sounds like you\u2019re having the problem today rather than in a hypothetical future, so, the off-the-shelf solution might be more palatable here, assuming that it will truly solve the \u201csub-par\u201d problem. It should be the fastest to implement - which Is a critical advantage to keep - and it will keep your development cycle the same (as opposed to going from using OFS to all bespoke by building from scratch).\n\nThe scalability and extensibility concern sounds like an unknown. Unknown about what the relevant limitations are and unknown about when it would become a problem. It would be worth trying to get answers to those unknowns. If you could get specific about the actual concerns within this category of scalability and extensibility (e.g. how many users can it handle, or how many products) then figure out a way to get answers to those questions and measure the impact (e.g. add a significantly large number of users and test out site speed). The plug-in\u2019s support team should be good help for this.\n\nKnowing when scalability and extensibility would be a problem can help you during your fundraise, it could be that you may not need to worry about it at all during this round, or perhaps the problem is much more urgent than just thought and the main spend would be to get past the problem, or maybe you will have pivoted before it\u2019s a problem and the plug-in is no longer relevant to the product and has been removed.",
+                            "score": 2,
+                            "author": "Choice_Intention7720"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi there! Very cool you're making revenue.\n\nThere is no obvious answer to this although it's tempting to buy into dogma one way or another.\n\nTechnology choices require weighing up different options with an eye to detail. If there's someone with some relevant experience you know who might look at your requirements and give you some advice, you might consider asking them for a hand.",
+            "score": 2,
+            "author": "Icy_Mongoose_3933"
+        },
+        {
+            "level": 0,
+            "comment": "are you really facing any scaling issue? if your application is horizontally scalalble i.e. each customer only interacts with their own data than you can simply scale with more instances. If this is not the case for e.g. its marketplace or twitter like app than you can look for vertical scalability on any of the cloud providers. You can have upto 512GB RAM. So you can scale without building a team until you have enough revenue to hire people. My suggestion is to concentrate on getting more revenue until you can afford to hire and postpone the rebuilding decision till than.",
+            "score": 2,
+            "author": "pdycnbl"
+        },
+        {
+            "level": 0,
+            "comment": "99.999% of the cases, requiring a rebuild from scratch is not true.\n\nWhat options have your explored regarding scaling? This is where money can buy time.\n\n* Scale out?\n* Scale up?\n\n\nStart enhancing components with performance in mind:\n\n* Introduce caching between logic and data\n* Introduce pub/sub system that you sprinkle across key functionality areas to invalidate or hydrate caches.\n* Turn synchronous processes into async processes with a different means of delivering the result to the user.\n* Replace WordPress pieces with custom built pieces that are either injected at the client level or back-end level.",
+            "score": 2,
+            "author": "cravecode",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the feedback and things to consider.   \n\n\nI quickly fired off this post and should have included more information about our product. \n\nWe're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization. \n\nWe started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales. \n\nMy concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it.\n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                    "score": 1,
+                    "author": "rhodesleadnowhere",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This helps. It does sound like there are major pieces needed to be rebuilt to achieve not scale, but competitive/road-mapped features. Keep your main site in your CMS, build new/replacement sections with client-side frameworks (e.g.: React) that have their own backend (DB &amp; REST API), then get injected into pages of your CMS. A standardized authentication mechanism (e.g.: OAuth) is a critical part to this kind of architecture. but this allows you to focus on modular development",
+                            "score": 1,
+                            "author": "cravecode"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Rebuild from scratch, take your time and do it right and in the meantime your current website will still be up. Scaling will only be more difficult later if you don't do it now.",
+            "score": 2,
+            "author": "thenuttyhazlenut",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the feedback. This was my thought. More info below:\n\nI quickly fired off this post and should have included more information about our product. We're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization.  \n\n\nWe started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales.   \n\n\nMy concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it.\n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.  \n\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).  \n\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                    "score": 1,
+                    "author": "rhodesleadnowhere"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As someone who can code pretty much anything from scratch, but has no idea how to use Wordpress, may I ask how you did that? Did you use a wordpress theme?\n\nI'm looking at wordpress as an alternative but I always hated it, as does the web dev community, but it's a wrong way to look at it business-wise.",
+            "score": 1,
+            "author": "MallPsychological463",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Why does the web dev community hate Wordpress? Asking genuinely",
+                    "score": 1,
+                    "author": "DiligentPoetry_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "because it steals developer jobs and commodifies the profession",
+                            "score": 1,
+                            "author": "MallPsychological463",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You\u2019re not alone, AI is going to commoditize quite a lot of professions too. I\u2019ve heard of MIT graduates being sent emails saying \u201cThanks for the loyalty but your functions are no longer needed by the company.\u201d All because of AI, something that\u2019s literally just getting started.",
+                                    "score": 1,
+                                    "author": "DiligentPoetry_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, I don't look at it negatively but it's a fact that the market right now is terrible for getting a professional job. I'm struggling 10-20 times more than I did when I had literally no experience. Most companies are looking for senior developers. I literally cannot find one job for mid-level developers.",
+                                            "score": 1,
+                                            "author": "MallPsychological463"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm a software engineer and I look at WordPress as my go-to solution for building websites and SaaS MVPs. If I can cobble together a bunch of WordPress plugins and get 90% of the way there (I don't to worry about membership/accounts, SEO, reinventing faceted search UI, integrating a payment system, building a marketplace, etc.) and then just focus on custom code for the one or two special ideas my SaaS helps solve, I consider that a win. Even a competitive advantage because I didn't spend a buttload of time building an MVP that may never get used. If it ends up being successful then cool. I'll slide my credit card for a bigger VM to help it \"scale\" while I determine the next best coarse of action. That might mean custom building it out from scratch or it could mean staying the course if feature-wise I don't see a lot of complexity coming up on the roadmap that WordPress would make it more painful to handle. But just upgrading your server to be more beefy is waaaay cheaper than paying a development teams tens of thousands of dollars a month just to rebuild it.",
+                    "score": 1,
+                    "author": "chaos_battery",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for the info. Do you recommend any themes or resources to get started? I heard of woocommerce but that's more of a plugin IIRC.\n\nI have one theme from ThemeNectar since 2016 which I used for a blog back then and a personal portfolio, but never thought it could be used for SaaS stuff.",
+                            "score": 1,
+                            "author": "MallPsychological463"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Too early to scale...if plugins is as good as the next update, you are already ahead of curve... keeping fixing the current version (even if it looks broken) until it is hampering your customers (and not just engineering). If it hampers, raise some money, get a person or 2 to patch it further.",
+            "score": 1,
+            "author": "gottamove_d"
+        },
+        {
+            "level": 0,
+            "comment": "The real hard question you need to answer is - what happens if you don't scale? Like, never? What's going to happen _exactly_? What part of the product breaks? And say it breaks, then what? What stops working? Will some customers leave? List names. Write down what each would say to you. When is it going to happen? How many more can you add before that happens? Write down. And then, is it going to be the only reason for them leaving? Or perhaps they have other things they aren't happy about today, before all that future scaling bottleneck that you think you'll have?\n\nThere's _zero_ reason to scale anything until you actually are losing customers because of that, AND that's the only reason. Until then, just focus on customers needs. Let the scaling need hit you in the face first. That's a good problem to have.",
+            "score": 1,
+            "author": "izalutski",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the feedback. I quickly fired off this post and should have included more information about our product. We're building tools and solutions for creators and musicians to streamline creation, optimize promotion, and maximize monetization.\n\nWe started with basic web stores and customizable POD products before expanding to include self-ship, digital products, and music sales. My concern is our product designer; it's severely limited and produces subpar results. I either need to rebuild it or integrate an off-the-shelf solution as described in the op. We can't compete with the Teespring's here; people have mentioned it. \n\nMy second concern is stability and expandability. We used the Dokan plugin to enable storefronts, so customization is limited on the user side. The goal is to provide fully customizable sites with a drag-and-drop customizer, shops, custom pages, memberships, and streaming. None of which are pressing and will come later.\n\nSo unless I rebuild from scratch to get ahead of future development, the best option is to replace our product designer, continue adding users (we're close to 500), and raise (if possible).\n\nA few VCs have demoed our platform and used it to power their merch stores. We're in a good position.",
+                    "score": 2,
+                    "author": "rhodesleadnowhere",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sounds like you have multiple problems being solved by your product. It is tempting to have it do x AND y AND z, and indeed many customers would choose your solution only for that reason. But unfortunately as a startup, even if you had unlimited VC funding, that's a dead end route. As a small player you have capacity to do 1 thing well; that's hard enough, most startups don't make it because they have 0 things to offer they are truly great at.\n\nIn your case, you have \"tools and solutions for creators\". Choose one specific problem of one specific group of creators (the smaller the better) and solve it well. Maybe it's \"streamline creation\", or maybe it's \"optimise promotion\", or maybe it's monetisation, or maybe it's storefront. Gotta be one thing; it cannot be AND - it has to be OR. Just one thing done well; for everything else you need to fit whatever you want to offer into the existing ways of doing things.\n\nMaybe indeed you compete with Teespring - but then product designer it's gotta be literally the only thing you do (or more likely pick a small part of what Teespring does and do just that better). Sites with customizer sounds like an entirely different problem to be solved by a different product. You have too choose, otherwise you'll end up doing many things OK but nothing best in class; and when you have one thing best in class then it pays to stop doing anything else. Its not important what it is; but it's critical that it's one small specific thing, not several.\n\nAll other things equal, replace every feature but one with existing solutions, even if they are worse than what you built, is the way. Don't try to build a \"platform\" people want simple solutions to small problems that are overlooked; not big shiny things. The latter feel much better to build though, and that's the danger.",
+                            "score": 1,
+                            "author": "izalutski"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "id": "10mnedu",
+    "score": 0,
+    "title": "Systems profiling course",
+    "author": "kuriousaboutanything",
+    "date": 1674832872.0,
+    "url": "https://www.reddit.com/r/stanford/comments/10mnedu",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I am looking to take either CS107 or CS107E, my background is in embedded systems but more into x86. I am interested in systems profiling, as in measuring efficiency or memory consumption by different processes in the system. I find CS107 would be better suited for this, but is there any other course that I probably am not aware of that focuses more into systems level programming and profiling. Thanks (CS107E sounds interesting too with bare metal programming with the Pi, I assume CS107 doesn't require any hardware other than a normal Linux running on x86)? Thanks",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "My friend, CS107 teaches C with a presumption of zero prior exposure to systems, K&amp;R, or even the concept of a bit. If you have a background in embedded systems maybe you won't learn much...\n\nIt does not require special software or hardware. There is no hard requirement for a Linux OS. You will be encouraged to just use the Stanford myth machines for hws.",
+            "score": 2,
+            "author": "Traditional-Horse-78",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Aah ok, i guess from 1\\* numbering, all these 1\\* courses sound like pretty basic then. Is there any systems level or compiler-related course with 2\\* or 3\\* numbers? :)",
+                    "score": 0,
+                    "author": "kuriousaboutanything",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Aah ok, i guess from 1\\* numbering, all these 1\\* courses sound like pretty basic then. Is there any systems level or compiler-related course with 2\\* or 3\\* numbers? :)\n\nBased on this, I'm guessing you're not a Stanford student? If so, I imagine the courses available to you might only be through SCPD (Stanford Center for Professional Development), so you may want to check those out.\n\nFWIW, I took 107e and really enjoyed it, although it was quite a lot of work each week; same with 111 (Operating Systems). \n\nIf I'm wrong and you are a full- or part-time Stanford students and you want to find classes that perhaps line more with your interest in systems and lower-level programming, I would recommend downloading the PDF sheet associated with MS students who are concentrating in Systems: [https://cs.stanford.edu/academics/masters/masters-program-sheets](https://cs.stanford.edu/academics/masters/masters-program-sheets)\n\nThese sheets list course requirements for that concentration, and you will likely find some courses listed there that you can then look up on Stanford's CS course catalog ([https://explorecourses.stanford.edu/](https://explorecourses.stanford.edu/)) that align more with your background or interests.",
+                            "score": 3,
+                            "author": "racl",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "thanks.",
+                                    "score": 1,
+                                    "author": "kuriousaboutanything"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't know if there's a course that focuses solely on systems profiling, but many classes teach you how to manage synchronization and shared memory across different processes, and you'll naturally do some systems profiling to find bottlenecks.\n\nOn the software side you can try CS 149, which is parallel computing. They teach how to profile performance and interpret the data to identify bottlenecks. The assignments are programming assignments on both CPU and GPUs, and you'll end up doing a lot of profiling to pass those last performance tests.\n\nOn the hardware side you can try EE 282. Pretty similar to CS 149 but focuses on hardware and data centers. The assignments have you measure performance, memory, and energy consumption and tune hardware parameters (core frequency, multi-level caches, DRAM ranks, etc.). No coding on the assignments though.\n\nAnd general systems programming which will have you manage synchronization and shared memory: CS 143, CS 140, CS 243.\n\nCS 107E seems too introductory for you if your background is in embedded systems. Try CS 140E, which is also bare metal programming but you build an OS instead.",
+            "score": 2,
+            "author": "itoen9"
+        },
+        {
+            "level": 0,
+            "comment": "just took 107 and know nothing about systems profiling! think you should look somewhere else for that lol",
+            "score": 1,
+            "author": "Chezbananas",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thanks, i looked at the lectures and labs and it seems both of these are pretty basic. I am looking more compiler related courses with focus on memory/CPU optimization. Although if I get some time, 107E sounds interesting just for the labs with the Raspberry Pi just for a refresher :)",
+                    "score": 0,
+                    "author": "kuriousaboutanything"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "14156m8",
+    "score": 0,
+    "title": "I developed my MVP without database migration; how can I iterate it?",
+    "author": "Timely-Look-8158",
+    "date": 1685947644.0,
+    "url": "https://www.reddit.com/r/startups/comments/14156m8",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Here is the story: Two months ago, I launched my startup after almost 8 months of development, and I was totally disappointed that no one was willing to pay; they just signed up and never came back, so I pivoted it in the same industry with another idea and on my subdomain. On the third pivot, I saw better growth; I had retention, and more importantly, I got sales on the platform. In order to validate the idea, however, I did it quickly without database migration and a lot more things. Now I am confused about where to go; do I need to buy a new domain and start building? How can I iterate on it with customer feedback?\u00a0",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Database has nothing to do with domain names. Focus on growth until you can afford to hire someone technical to sort out the technical side.",
+            "score": 9,
+            "author": "The_Startup_CTO",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! Do you suggest I go with a subdomain? But most of our traffic comes from direct when we promote; is it not friction to type subdomains for my customer?",
+                    "score": -1,
+                    "author": "Timely-Look-8158"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Firstly, well done for pivoting and getting traction with your business, no small feat.\n\nNext, database migration and building on a new domain are two seperate topics, although they can be linked if you're developing a tightly coupled architecture.\n\nDecide on your domain strategy first. If you're letting go of the legacy and want a better user experience and a url that makes sense then go ahead and bite the bullet on the domain migration now. It will only get harder to do later on.\n\nThen you should plan a seperate database strategy, ideally one that is decoupled from the domain. It may also be more time efficient to deliver this in chunks, allowing you to wean off of the prior database gradually.",
+            "score": 3,
+            "author": "pigeon888"
+        },
+        {
+            "level": 0,
+            "comment": "What do you mean \u201cwithout database migration\u201d?  That\u2019s something you can do manually if needed, it\u2019s not bound to a specific tool, though to keep things sane a tool is often used. Most support a kind of \u201cset the current state is version X\u201d function, and then you iterate from there.\n\nAlternately, SQL databases support DML statements which directly modify the schema. You\u2019ll need to write the migration steps manually, but it\u2019s perfectly workable for someone with knowledge of the underlying database.",
+            "score": 1,
+            "author": "SplinteredOutlier",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I use sequelize ORM , and I think the options I have to create a new table are force sync or alter, but both are not suggested in the documentation for use in production.",
+                    "score": 1,
+                    "author": "Timely-Look-8158",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Where is your database? Is this a single DB or a bunch of local DBs your customers are using?  If the former, I\u2019d build a new version with migration enabled, use separate table names or a different schema/db name and use \u201cinsert from select\u201d type statements to move data from a backup of your old DB to the new one. Work out the kinks of the sql you need to perform the migration from backups and then plan out when to do the migration in production.\n\nIf it\u2019s a bunch of distributed databases, you\u2019ll need to build a migration process into your app, but that\u2019s a pretty normal thing also. This is a pretty tame and normal type of growing pain. Think about it the same way as if you were switching from sequelize to a different tool. Fundamentally you\u2019re doing the same thing, it\u2019s just two instances of sequelize instead of two different tools.",
+                            "score": 1,
+                            "author": "SplinteredOutlier"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wait until you are outside your customer's main business hours. Stop everything. Backup everything. Try to create a copy of the service from the backup. If it works, then you are free to do anything.\n\nIf whatever you are trying to do works, then you are done. If it doesn't work, then restore from backup.\n\nYou would need to find a technical person in the not too distant future.",
+                            "score": 1,
+                            "author": "LogicRaven_"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

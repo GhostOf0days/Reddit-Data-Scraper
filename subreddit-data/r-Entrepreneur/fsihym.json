@@ -1,0 +1,1316 @@
+{
+    "id": "fsihym",
+    "score": 2509,
+    "title": "Inspired by deep depression, I taught myself to code, built a manual mood tracker used by 285k people which earned ~$100k then raised $1m in angel/VC funding to launch a fully automatic mood tracker. Ask me anything!",
+    "author": "decide",
+    "date": 1585679931.0,
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/fsihym",
+    "media_urls": [],
+    "other_urls": [
+        "http://www.misu.app/))",
+        "https://www.fastcompany.com/90483768/if-covid-19-news-has-you-down-this-mood-tracking-app-can-help)",
+        "http://www.misu.app/get-misu-app)",
+        "https://dan898734.typeform.com/to/MJJrk7)."
+    ],
+    "postText": "10 years ago I was given  a serious mental health diagnosis, my world was flipped upside down. I was in my second year of college and I was hospitalized for a month. Upon coming out my mom (a psychiatrist), my therapists, and doctor all recommended I track my mood. I didn\u2019t agree with it, but it came at a cost.\n\nI struggled  with my mental health for 2 years and slowly learned the wisdom of mood tracking and seeing how what I do impacts my mental health.\n\nNot wanting to use the flimsy paper given by my psychiatrist and unhappy with the mood tracking apps at the time, taught myself to code and built myself a mood tracker that was used by 1/4 million people, featured by Apple on the front page of the App Store, and generated around $100k from a freemium subscription.\n\nI\u2019ve now built an automatic mood tracker called Mis\u00fc because the top reason folks stop tracking is that manually tracking anything makes it a hard habit to keep up.\n\nWhat is Mis\u00fc?\n\nMis\u00fc ([www.misu.app](http://www.misu.app/)) automatically tracks your mood through facial micro-expressions while you use your computer. Mis\u00fc helps you learn about your mood trends, as well as how various apps and sites impact your mental health. Would love your feedback on the app.\n\nTurns out that 10% of the U.S. has tracked their mood in the past, and using Mis\u00fc, people track their mood for 10x longer than they would for manual tracking.\n\nFast Company covered wrote an [article](https://www.fastcompany.com/90483768/if-covid-19-news-has-you-down-this-mood-tracking-app-can-help) on Mis\u00fc today. \n\nIf you want to try Mis\u00fc and avoid our email capture (available for Mac): [www.misu.app/get-misu-app](http://www.misu.app/get-misu-app)\n\nIf you want to be notified when Android, iPhone, Windows and Linux versions, sign up [here](https://dan898734.typeform.com/to/MJJrk7).\n\nFeel free to ask me anything about:\n\n* Where I see the future of mental health tech / industry\n* Raising VC/angel funding as a solo founder (been rejected +100 times and have raised nearly $1m)\n* Learning to code without any prior background\n* Why I choose to use webcams when privacy concerns are at an all time high\n* The experience of having cofounder relationships not work out\n* Surprising things we\u2019ve learned about the product so far\n* A funny fundraising story where my tech read my anxiety during a meeting and the investor called me out.\n* Working through the inevitable doubt that comes when runway is low and momentum is lower\n* Learnings from making pivots (x3) to the business strategy.\n\nUPDATE. Going to take some time for my mental health. Thank you so much for the questions and discussion. Upvote the unanswered questions you want answers to and I\u2019ll answer more tomorrow. Feel free to ask more",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Can you talk about the webcam decision? What do you do to protect your users\u2019 data?",
+            "score": 27,
+            "author": "cumulus_humilis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for your patience in me answering this.\n\n&gt;What do we do to protect users data?\n\nWe run our emotion detection AI on the device, which enables us to delete any photo data immediately (quicker than a blink of an eye)  and it never touches any server.\n\nWe are transparent about the data we collect (happiness+anxiety scores (0-100), app/URL data (time entered and left) (the latter is optional, and used to help people learn how apps and sites impact their mental health.  There is more like email and name, and that's all in out privacy [blog](https://www.misu.app/privacy).\n\n&amp;#x200B;\n\n&gt;Can you talk about the webcam decision?\n\nChoose the camera because, similar to dogs tails, our faces seem like the most expressive organ of our body. This is the first step, there are other, less intrusive ways to detect mood, which we're working on, like a mobile app that tracks mood without any face data, rather from pedometer, GPS, accelerometer, and phone usage (with the ability to not send any of that data to a server).",
+                    "score": 27,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey thanks for your post. \n\nIm curious about learning to code for a while now. What would be your recommendation for a start: just pick a language like java and go for it? I guess it really depends on what you are trying to build, right?",
+            "score": 106,
+            "author": "Schwarzer_Rabe",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I've personally found, and heard from others that it helps to have a project in mind of what you want to build and work from there (i.e. pick a language and proceed). Pick the project first, then pick one of the language that can solve that project. After learning 1-2 languages, it becomes a lot easier to pick up others.",
+                    "score": 142,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What languages did you start with? And how did you proceed? \n\nHow long did it take you from starting to learn to code to first iteration of the app? \n\nWhat resources did you use?",
+                            "score": 27,
+                            "author": "go-bleep-yourself",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Objective C to start an iOS app\n\nThen javascript to build a backend\n\nThen swift, as our engineer started using  \n\n\n&lt;3 months from learning to releasing MVP",
+                                    "score": 56,
+                                    "author": "decide",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What\u2019s your academic background?",
+                                            "score": 14,
+                                            "author": "MarvelousWololo"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "3 months from knowing no programming at all to building a fully functional app, all by yourself??",
+                                            "score": 29,
+                                            "author": "I_Am_Vladimir_Putin",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No way it was production quality code. My bet is he hacked together a janky MVP and then hired someone who started over from scratch.",
+                                                    "score": 22,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You say that like it's a bad thing. But it's absolutely what an entrepreneur *should* do!",
+                                                            "score": 44,
+                                                            "author": "mohishunder",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Eh i dont think it was meant in that way. Just explained the situation as it probably is.",
+                                                                    "score": 2,
+                                                                    "author": "Fruloops"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "What\u2019s MVP? I don\u2019t code myself.",
+                                                            "score": 3,
+                                                            "author": "I_Am_Vladimir_Putin",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Minimum Viable Product",
+                                                                    "score": 23,
+                                                                    "author": "Dirty_Cartoons"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Most Valuable Primate",
+                                                                    "score": 52,
+                                                                    "author": "CentristFacism",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "minimum viable product",
+                                                                    "score": 3,
+                                                                    "author": "Beepsweepscreeps"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Minimum viable product",
+                                                                    "score": 2,
+                                                                    "author": "uga2atl"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 5,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Damn, good job!",
+                                            "score": 1,
+                                            "author": "Chert_Blubberton"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 24,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Hey - thank you for bringing this up.\n\nI agree - the way I described deep depression and my recovery did not adequately describe the true journey. I'll take a stab at it here:\n\nI was actually diagnosed with bipolar disorder, hospitalized for 30 days, later became so depressed I was sleep 12 hours a day, sitting on my computer for the other 12, switching between Reddit, Facebook, Netflix, and League. I was in this cycle for weeks, living with my parents.\n\nI remember one  Sunday afternoon, while on my computer and eating a big bag of chips, my mom was  12 feet away from me at the dining room table, and I heard her start crying. The story I told myself was that she was losing hope her son would ever recover and function normally / independently.  My mom, the psychiatrists whose job it is to fix people like me, was losing hope.\n\nAfter being persistently nagged by my dad to go to the gym with him daily, I finally went once. Two weeks later I went again. Eventually I was going even other day on my own. And finally started feeling glimpses of happiness again as spring came around.\n\nAs I started feeling happy again, I stopped taking meds. I became manic and landed back in the psych ward for another 30 days.\n\nAfter that visit it took me 6 months to get back on meds. I toyed with them, until realizing that they actually really help my anxious, depressed, and manic states. So I take more when I notice those are being elevated, and take a baseline amount in more normal states. An example, after my cofounder and I decided to stop working together, I knew that'd be hard on me, so I proactively increased my dosage.\n\nTracking my mood daily on this journey for the last 3 years has helped me learn more about how certain things impact my mood positively/negatively and this empowers me to make better decisions for my mental health.\n\n&amp;#x200B;\n\nI hope you feel better about this information being shared in this post. I know I do. Thank you for bringing it up. And curious if you have other questions, curiosities, or trepidations.",
+                                    "score": 67,
+                                    "author": "decide",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I want to thank you and the person you were responding to for your post and for the qualifications made about \"Deep Depression\". I admire you for being open about your Bi-Polar and discussing in real terms how it impacted your business life. Surely like many others who get frustrated with casual use of the term \"oh they are acting Bi-Polar\" today just as others who have serious ADHD and Obsessive Compulsive may find it dismissive when someone uses those terms casually (as either a compliment or a pejorative) the use of exact terms can be frustrating.\n\nI myself have worked very closely with people who are diagnosed with various items that are listed in the DSM (Diagnostic and Statistical Manual). I would say it is a difficult to describe what a person is dealing with in a manner that balances Clinical terms with personal views with Medical necessity that is also terse as well as not unduly impeding on the Client/Consumer/Patients rights to privacy and to express their truth of how they subjectively feel living in their condition.\n\nMy Mother was a Psychiatric nurse on a Children's unit in the 80s and Early 90s that would accept in-patent treatment plans for children who had emotional disorders that may present like depression but would end up in the Borderline or Autism spectrum or need to have other investigation all together to determine if the issue was instability at home. As you may know, some of these issues cannot be dealt with drug intervention and this may actually lead to worse outcomes.\n\nI also am aware that like many items in the DSM there are many types and sub-diagnosis of the disorder (For Unipolar as well as Bi-Polar depression) that help to statistically describe both on severity and how it reacts to external factors like seasons and perhaps medical treatments. Mood tracking is a key to finding out correct interventions that work best with minimum negative impact. \n\nFor many, the long term use of harsh medications can be burdensome, especially if they do not take the time to realize how the side effects of certain treatments are actually affecting their moods and health in ways that are in a feedback with their other lifestyle choices. And while in-patient methods of intervening in the lives of those who are experiencing distress is often viewed as more distressing than medications, that may not be the view of all. Thank you for sharing your experiences.\n\nI would end with a quote from a cousin of mine who works with children with Autism and who also have deafness and other neurological co-morbidity. \"If you've met one Autistic Child, you've met... One Autistic Child\". More ability to recognize the unique treatment needs and history of those who suffer from Emotional and Mental distress is an admirable endeavor.\n\n(EDIT - typos fixed at keyboard as first draft was on Phone)",
+                                            "score": 4,
+                                            "author": "AMEnterprises"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Before OP responded, I was going to say that his condition sounds EXACTLY like bipolar. About 6 years ago I found out I was bipolar. It's an interesting disease because I've done crazy things during a manic episode like score a horror film in almost no time that eventually was nominated for best original score. Then right afterwards I wanted to kill myself.\n\nWhen manic, any task or learning session becomes very easy and nothing stops you and self doubts disappear. Anything you've ever wanted to learn instantly appears possible and you uncontrollably have an attitude of, \"oh I'll just learn that and do that, no big deal.\"\n\nThe problem is that it doesn't last and you swing to the other side which lands you in bed for months not wanting to eat.\n\nAt least in my experience.",
+                                    "score": 7,
+                                    "author": "starkformachines",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Quick question. I have zero knowledge or experience coding. I have a video editing background (I\u2019m Mac savvy at least), and I have a grand idea for a video editing app as well as smaller ideas to help editors with workflow. \n\nWhere do you suggest I begin? Let\u2019s assume I have free time and can commit.",
+                                    "score": 2,
+                                    "author": "venicerocco",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "For me personally, I'd first figure out why you feel the app is needed (What's missing from the current ones available? Why can yours potentially be better? Who is your target market?) In general, I'm an enormous fan of B2B -- it's just so much less treacherous, more predictable, generally less competitive, and I'd rather charge 2000 people $300 a month than 200,000 $3 a month. (Businesses will pay way, way more for things, but there's a smaller market) It's not as sexy as general consumer stuff, but the upside is you actually get paid.   \n\n\nThat said, from the coding end of things, figure out the platform you want to deliver this on (desktop, mobile, web, etc.) and let that drive the framework and languages you use--then just get to work. Honestly, every resource you need is available at your fingertips. I joke that I built a company off of stackoverflow and google. Start watching youtube videos, take free classes, google everything, and start coding and then keep coding. You will be terrible at first, it's frustrating, and there's a lot of long, long nights, but it gets easier with time. It's more motivating when you're building something that is meaningful to you as opposed to a hello world app.   \n\n\nInitially, 90% of my time was spent reading and researching because I didn't know anything. Once I felt like I had sufficient background, I'd build a rough concept and see how it performed--did it feel good? Was it intuitive? If it didn't, I'd take take a new approach. Sometimes I'd fail completely and have to come back to that feature months later. I've never built a video editor, but I suspect it's fairly complicated and information out there is less readily available, so that may very well be a tough project.",
+                                            "score": 9,
+                                            "author": "UnexpectedTokenNULL",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You\u2019re right about b2b being the way to go. It\u2019s a lot easier to sell something to someone if they think they\u2019re going to make money off of it. I found this gem in an ancient (and excellent) book about selling via mail order: \u201cFirst you need to decide whether to sell to business or consumers. Ok - now that you\u2019ve decided to sell to business you need to choose a product.\u201d",
+                                                    "score": 2,
+                                                    "author": "substandardpoodle"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; video editing app\n\nLook, I don't want to shit in your Cheerios here, but you have a very long and very steep learning curve ahead of you. I'm a software engineer and that's not something I would ever approach. I also don't have any entrepreneurial spirit.\n\nYou might look at creating a premium plugin/extension/add-on/whatever to an existing video editing application. There's even a chance you might able to release for multiple applications. But I'm not an editor so I can't say for sure.\n\nJust something to consider. See if you can accomplish your goals by leveraging an already existing application instead of creating your own.",
+                                            "score": 3,
+                                            "author": "ThisIsMyCouchAccount",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "For sure. I realize it\u2019s in pipe dream territory but I thought I\u2019d get a sense of the general process before embarking on my midlife crisis project.",
+                                                    "score": 1,
+                                                    "author": "venicerocco"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'm in the situation where I already have the project in mind (a fintech app) and read that python is the way to go. Thus, I started learning it but I'm in the point where how do I put all this code knowledge and build the app. Did you take any code scripts references from other apps and adapted to yours or did you build it from scratch? Also, how did you connect the whole code script into a GUI? I'm still not sure. Thanks for the inspiration!",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The language isn't important, the framework is. If you want to make an app, look into android studio (java), react native (js), or xcode (swift).\n\nLook into what libraries or tools you will use and choose the language that best fits what you want.",
+                                    "score": 9,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "A fintech app is gonna be really tricky to build an MVP. Basically the security has to be on point and the stability is super solid. I don't know if that's something you can in a short time.",
+                                    "score": 3,
+                                    "author": "numice"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Go one problem at a time. So I have some code knowledge, ok, how do I start an app? Google that. Ok, so I got a very basic framework, now what? Lets create a super simple UI. How do I add a button? How do I make to display a message when I click it? How do I add a text field or a graph? How do I make them show stuff? How do I make the graph go pink when I click the button? Etc etc.\n\nTackle the issues one at a time and you will have your app before you know it.",
+                                    "score": 3,
+                                    "author": "CervixAssassin"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you for your reply. Really appreciate it.",
+                            "score": 2,
+                            "author": "Schwarzer_Rabe"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What if I wanted to develop a video game? Is that too large a project?",
+                            "score": 1,
+                            "author": "GamingNomad"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes it really depends on the project, but the advice I give as a professional software engineer is that these days, most projects are on the web, and Javascript would be the language to pick for this. Of course, if you want to do something like OP where it uses facial detection and more advanced algorithms, you may not necessarily want to do it in JS (Javascript), but JS is what I'd recommend to most beginners. Go to /r/learnprogramming and search for \"full stack\" for tutorials. Full stack development means you create both what the site looks like and functions (frontend), and how it stores and handles data (backend), hence the full \"stack\" of what a site can do. JS is particularly interesting because it can be used for both, unlike most languages.\n\nIf you are interested in the more machine learning side, you can choose Python as that's mainly used in machine learning and data science. If you're interested in mobile apps as well, you can learn Swift for iOS and Kotlin for Android.\n\nIf you want to program robots or more lower level stuff, you can learn C, or Rust these days.\n\nI gotta give a shout out to Flutter which lets you create mobile, web, and desktop apps from one codebase but I'm not sure if it's the best choice for those just starting out.\n\nThe /r/learnprograming wiki has a lot more in-depth information (/r/learnprogramming/wiki/faq).",
+                    "score": 13,
+                    "author": "satvikpendem",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you for the provided subreddits and thoughts on the topic. Really looking forward to start learning now!",
+                            "score": 3,
+                            "author": "Schwarzer_Rabe"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I've been learning python for a year or so now and want to start building some kind of app, so I just started learning flutter.\n\n Do you think it's better to learn java script and try at web apps and desktop apps (I often hear people mention python and javascript like their complementary). would learning flutter put learning python to waste or would I use both in making a mobile app? \n\nMainly not sure how to proceed to be more well rounded, without not touching my first language for a while and forgetting it.",
+                            "score": 2,
+                            "author": "spicymangoslice",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How Flutter and Javascript usually works is that they only handle the frontend (the visual part that you can click on and interact with). You can create the backend in Python and connect it to the frontend that you made with Flutter or JS. Therefore you'll need both a frontend language and a backend language. I recommend Django for Python, if you want to make websites only in Python, and also Django Rest Framework which creates the APIs that you can then connect to the frontend.",
+                                    "score": 2,
+                                    "author": "satvikpendem",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes, pick any of the big languages and go for it. Personally would recommend a very high level language, namely python or javascript. I personally would suggest JavaScript, because you get quick results, can easily run your scripts within a browser and there are loads of tutorials and guides.\nHappy coding!",
+                    "score": 7,
+                    "author": "AttiiMasteR",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Gonna hijack the top comment as I have been coding a while. I 100% agree with picking a project. If you aren't figuring out how to solve something, you aren't learning to program. \nProgramming is the way you approach something and break it down into smaller tasks. \"Do these 4 things over and over until something happens, then do this\". Doesn't matter the language you learn in because the goal isn't to learn the language. You aren't learning Spanish or French, you are learning how languages work. Once you can say \"ok in order to communicate this, I need to used the past tense, and I need to conjugate the verb to match\"(programming) then you can say \"ok, how do you do that in Spanish, or French\" (language)\n\nIve got a perfect video that I will edit in here shortly\n\nEdit:\nhttps://www.reddit.com/r/funny/comments/fin7bf/children_write_instructions_on_how_to_make_a_pb/",
+                    "score": 5,
+                    "author": "Bissquitt"
+                },
+                {
+                    "level": 1,
+                    "comment": "Pick a language not like java.",
+                    "score": 4,
+                    "author": "shorty_shortpants"
+                },
+                {
+                    "level": 1,
+                    "comment": "Software engineer here:\n\nJust pick a language and go. My advice:\n\nC# or Java.\n\nPython is nice... but it lacks so much stuff that is useful to understand. It's a difficult language when you get to the complex stuff. *cough* polymorphism *cough*\n\nJavascript is just a bad language fundamentally, but very useful, so I normally advise people to learn it second because, while useful, it's just so damn inconsistant it frustrates new people.\n\nC++ was my first language but I would never advise people to go down that route, very complex, huge barrior to entry.\n\nObjective C... Just no... please don't do that to yourself.\n\nC, yeah that's a nice middle ground but it lacks a lot of object oriented stuff which is good to learn.\n\nJava and C#, they're a nice middle ground. Intellij and Visual studio are amazing IDEs and when there is so much documentation around the two languages it's very rare to not find a solution to a common problem.\n\nAlso java has baeldung... and it's amazing.",
+                    "score": 6,
+                    "author": "Oggie90"
+                },
+                {
+                    "level": 1,
+                    "comment": "Same here :)",
+                    "score": 3,
+                    "author": "spy1983"
+                },
+                {
+                    "level": 1,
+                    "comment": "Coding is so much more about the state/ability of your mind than knowing a certain language/framework. It is all about breaking big complex problems that are immovable into tiny bits that could be solved with ease. Once you can do that language becomes just a dull tool, you can pick any, learn the syntax in a day and off you go.",
+                    "score": 3,
+                    "author": "CervixAssassin"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes, depends on what you want to build. If you're interested in starting a company and want a \"safe bet\", I'd start with JavaScript. Reasons:\n\n- Huge, active community\n- Tons of free resources online to learn\n- You can build a modern full stack web app with just JavaScript\n- You can also build good (but sometimes not great) mobile apps",
+                    "score": 2,
+                    "author": "howMuchCheeseIs2Much"
+                },
+                {
+                    "level": 1,
+                    "comment": "Following- similar question!",
+                    "score": 2,
+                    "author": "Charmingly_Conniving",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "same here!",
+                            "score": 3,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yup me too",
+                                    "score": 3,
+                                    "author": "jarniansah"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How difficult is it to raise VC funding as a solo founder ? Do you think it would have been significantly easier if you were 2 or 3 ?",
+            "score": 13,
+            "author": "Blrzzz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is hard, but in the end traction sells.\n\nMy VC funding came from a VC who was a user, loved the product, and messaged us saying 'they want to help out in any way possible'. A couple weeks later we met for coffee (after they bailed 2 times on prior meetings), we had a great 3 hour chat, and shook hands on a $250k deal. They wired the money 6mo later...\n\nI've gone our fundraising in the past with multiple founders, I've found it has made little difference.\n\nAlthough, it depends on who these founders were. If they were someone who has built and sold a startup before for $XXm -- $Xb then it'd be a different story.",
+                    "score": 20,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "How much equity did you have to part with out of interest?\n\nGreat story by the way.",
+                            "score": 13,
+                            "author": "HeroJournal",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "For that $250k, roughly 7%.",
+                                    "score": 10,
+                                    "author": "decide",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Wow they valued your business at 3.5mil.  How many months had you been making it for at that point and how many months had it been out in the app store?",
+                                            "score": 3,
+                                            "author": "HeroJournal"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 25,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah of course this would get funding, it\u2019s more eyes on people and in this case, EXTREMELY personal and including mood. Think how great this data would be to an advertiser!",
+                    "score": 26,
+                    "author": "Tom_Bradys_Nutsack",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 24,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Unfortunately advertisers already use tech similar to [this](https://www.affectiva.com/product/affdex-for-market-research/).\n\nI think it is important that we have tools, if we want to use them, to help protect our moods from platforms who are harming our mental health.\n\nI'd like to use anonymized and aggregated data to publish clinically robust studies highlighting the harm platforms like Facebook are causing us. 60% of the time we spend on Facebok (as per a study they shared) lowering our affective well-being after we use it. I want to hold them accountable to the harm - so that they are incentivized to reduce it or pay large (billion dollar) fines for the economic harm caused by hurting our mental health, similar to how they paid billions of dollars for violating our privacy.",
+                                    "score": 4,
+                                    "author": "decide",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 3,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt; the answer is LESS TECHNOLOGY not MORE\n\nI disagree. Well, I guess it's a kind of a \"scorched earth\" type of solution.\n\nIt's really about who or what you do with a particular tool.\n\nFor example, I use Instagram. I post a couple times a week. I follow a short list of actual friends. I also follow `#catsofinstagram`. My Instagram feed is mostly cats. I like cats.\n\nTechnology is a tool. As such, you control it. If you don't have the ability to self-regulate then by all means - delete it all. But if you can, it can a be useful tool.\n\n&gt; banned from my household just like Alexa is\n\nJust out of curiosity - do you use Google or Amazon?",
+                                                    "score": 4,
+                                                    "author": "ThisIsMyCouchAccount"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Actually what this probably will turn into is making it super accurate and be able to tell if someone is lying based off thier microexpressions. Imagine a machine being able to tell if your emotion doesnt match what your words say. Creepy as hell lie detector. That's our future apparently.",
+                            "score": 4,
+                            "author": "phoenixflying34"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you for the feedback! Mis\u00fc only checks-in on your mood intermittently throughout the day (a couple dozen times). Curious more about your thoughts on it creeping you out? What would help build more trust?",
+                    "score": 9,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A very solid privacy policy and encryption similar to health data.",
+                            "score": 18,
+                            "author": "tor921",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Is that industry not notorious for having an extreme disrespect for privacy? It is where I live at least",
+                                    "score": 10,
+                                    "author": "Celerfot",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, especially if you\u2019re referring to tech and apps in general.",
+                                            "score": 2,
+                                            "author": "tor921"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 15,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "More like actually telling the truth about what they do with your data and not storing any important info",
+                                    "score": 15,
+                                    "author": "mynameismarco",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 8,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well the whole point would be that they dont store data or it could be stored on your own device instead of their servers etc.",
+                                                    "score": 3,
+                                                    "author": "mynameismarco",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 3,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "What are you trying to say? I\u2019m not ignorant I know that almost all companies monitor and gather private info and data. That\u2019s why I don\u2019t have most of them. No Facebook, Alexa etc. but if he is asking us what we would like. Why wouldn\u2019t you say it?",
+                                                                    "score": 2,
+                                                                    "author": "mynameismarco",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[deleted]",
+                                                                            "score": 1,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Like what would you like these companies to do?",
+                                                                    "score": 1,
+                                                                    "author": "mynameismarco"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Truth about the data:\n\nIt is for you, to become more aware about your mood + how apps/site impact it\n\nIt is aggregated and anonymized so we can hold platforms (i.e. Facebook)  accountable for the harm to our mental health. I think we can create a large impact in shifting the impact of addictive products on our mental health.\n\nData we don't store: any photos. Photos are never stored, never sent to our server, the emotion detection happens on your device, and the photo is deleted quicker than a blink of an eye.\n\nWe store emotion predictions (happiness and anxiety scored 0-100), and the apps (names) and sites (URLs, no private browsing), you can learn how they impact your mental health.\n\nCurious about your thoughts/feelings before/after reading this",
+                                            "score": 8,
+                                            "author": "decide",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I was mostly replying to be a devils advocate, i havent looked into your product but in general those are the things that are important to me. After reading this it seems like you are on the right track",
+                                                    "score": 5,
+                                                    "author": "mynameismarco"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'd probably never use it, but being entirely local to the machine you're using and never sending your data to the web except encrypted and only unlockable by the user would make it a maybe.",
+                            "score": 2,
+                            "author": "Slapbox"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Decentralize the data",
+                            "score": 1,
+                            "author": "jzekyll5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Interesting idea. Not sure I totally follow how it works but figured I'd also let you know I spotted several typos and such in one of your homepage images. \n\nhttps://i.imgur.com/BvgDjh6.jpg\n\nBuisness  \nDesgin\n\nI also see: 'hexagon ramps bitters activated charcoal vice' - not sure if that's some new lorem ipsum I'm not familiar with.",
+            "score": 17,
+            "author": "doot_doot",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ohhh - curious what you do understand so far? What questions / thoughts do you have?\n\n&amp;#x200B;\n\nThanks for those spelling mistake comments - I'm embarrassed and will fix them up",
+                    "score": 2,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Genuine question about the 3 cofounders; no judgement. Did you ever think it might be you?\nWhy do you think they didn\u2019t work out?",
+            "score": 8,
+            "author": "PreSuccessful",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Of course some of it was my fault.\n\nIn two of the cases the cofounders needed money / security and the company couldn't provide it to them in the short-term time scale.\n\nThe other case, the cofounder was working on a number of side projects and didn't seem that into the project as I expect my cofounder to be.\n\nHaving done this three times now, I have a better sense of what to look for and what I need in a cofounder. Part of the problem for a few years is that we haven't had a good design oriented product manger or product designer on the team (where I was trying to play that role instead of finding outside help to fill for our skill gaps). We recently started working with one and it seems like this is going to save us months in time.\n\nI do think my anxiety at times showed up in unpleasant ways to work with historically. And that's an area of growth for me - in times of stress, how can I not externalize it?",
+                    "score": 7,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for answering.",
+                            "score": 3,
+                            "author": "PreSuccessful"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Where did you find your designer?",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Through my cofounder!",
+                                    "score": 2,
+                                    "author": "decide"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Can you expand on the cofounder bit? I\u2019m thinking about starting a company soon and am looking for cofounders. After putting up some posts I actually have a pool of 7-10 people that are interested. I\u2019m on board for the company to have many cofounders but I\u2019m not sure how to gauge their level of interest and how dedicated they might be. Where do I start?",
+                            "score": 1,
+                            "author": "l3ad4ss",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "From your side: What does your company need right now to succeed? What skill sets are needed to get there? \n\n\nFrom their side: what are they looking for?",
+                                    "score": 2,
+                                    "author": "decide"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for your post, I have some ques if you dont mind\n\n1. What languages did you use to code it?\n2. How did you release your app? Mobile app stores?\n3. How did you get users to use it? (marketing...)\n\nLooking forward to your help and owe ya  much!",
+            "score": 5,
+            "author": "codeboss911",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Would love to know what language(s)/framework(s) were used as well!..",
+                    "score": 3,
+                    "author": "OliverTwistoff"
+                },
+                {
+                    "level": 1,
+                    "comment": "1. The automatic tracker: javascript for the app, and python to build the emotion detection model. \n2. Released the manual tracker on the Apple App Store\n3. Reddit (a post like this), Product Hunt, then we kept ranking high on the App Store for the term mood tracker as we improved ours, eventually they featured us, sending 80k users in a week and crashing our servers.",
+                    "score": 3,
+                    "author": "decide",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I like your username! And great story.\n\nWhat are some of the surprising findings you've found out about how social media effects mood. I think we all know it can trigger loneliness, anxiety etc. Anything truly surprising to you?",
+            "score": 10,
+            "author": "LePunkMunkEh",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Across all of our beta testers, most apps overall have a near neutral impact on mood. Where it gets interesting is looks at the group of sessions with negative impacts. I.e. 20% of Facebook sessions that lasted &gt;5 min, people came off the platform 60% more anxious.\n\n&amp;#x200B;\n\nThere's a lot more to learn here, and excited to share what we find. Planning to partner with researchers so this data can be used to hold companies accountable for the harm they cause us.",
+                    "score": 16,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hope Facebook doesn\u2019t buy you out and trash your program to keep this kind of knowledge hidden",
+                            "score": 7,
+                            "author": "goatcheeto",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "We do it through their facial micro-expressions. \nWe trained the emotion detection AI from a manual mood tracker we built used by \u00bc million people. We asked some of them if we could take photos in the background when they logged their self-reported levels of happiness and anxiety. Thousands of people opted-in (thank you all!) and did this 500k times, giving us sufficient data to train our emotion detection model.",
+                                    "score": 5,
+                                    "author": "decide"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "cool story.\n\nHonestly, how did you even have the audacity to decide to go for a face scanning app?\n\nI got stuck on \"how to add a player run market\" in my app.\n\nI mean I understand that not every path is meant for every person, I just find it respectable that you looked at it like \"ok I guess I need to learn facial recognition now\" rather than \"I don't think I can make that because facial recognition seems too hard\"\n\nReally that type of situation is the one thing that holds me back, but I'm learning that you have to just kind of remove the excuses, so I guess I just answered my own question lol.",
+            "score": 5,
+            "author": "Bloop5000",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm willing to bet he didn't do the Machine Learning bit. He may have had help. Plus there's lots of libraries out there that are freely accessible to help you get started with ML.\n\nDon't let anything hold you back. You can always get help whether that means learning more stuff online, or partnering with someone.  And don't they say it's kind of a good thing if your dreams scare you :)",
+                    "score": 3,
+                    "author": "thekindagreatgatsby",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Motivation to learn coding?\n\nMy question is that one.\n\nWhenever I try something like that I end up playing video games instead. :I\n\n&amp;#x200B;\n\nMy motivation requires direct targets, clear vision. How can i overcome that? (now i built a website and doing afilliate marketing and I can see that I'm making money so it makes me go on with it..)",
+            "score": 10,
+            "author": "alpello",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "My motivation wasn't to code, rather there was something that I wanted to build. \n\nAlso - follow your energy, coding isn't for everyone, I get really happy doing it (my data shows :)), but some people get more anxious / sadder when coding (our data shows that). \n\nSo I'd find a solid 'why' first.",
+                    "score": 14,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think I get really happy deciding how things will work. Idk it's odd i know. Like for the analytics or website i like to see the ads working, or tracking things on my own etc.\nI don't like content writing, but I like to find the topic and let someone else do the writing.\nI might be happy just being lazy as well :I I'm really mixed on this",
+                            "score": 2,
+                            "author": "alpello"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You have to find something that you are interested in, for example I love learning about blockchain and iOS development, but I hate writing websites and I lost motivation while coding them. You just have to push through and realize you only have one life to seize what you want",
+                    "score": 1,
+                    "author": "Red3nzo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What\u2019s that previous app? And how do you learn to code by yourself? I am doing CS50 from harvard(MOOC in edX\u2014definitely recommend it to anyone) but I can\u2019t bring myself together to work hard on it. What\u2019s your suggestion or your experience?? And I hope you are doing very well now \u270c\ufe0f",
+            "score": 3,
+            "author": "Orion_will_work",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was most productive when I was taking best care of my mental health. That's still how I operate today.",
+                    "score": 3,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "1.What was the time frame from the 100K in freemium to raising a venture round?   Is the misu app completely seperate from the manual mood tracker?  \n\n\n2. How do you eliviate HIPPA type privacy concerns of mental health and mood data along with local face recording tracking are you storing that data on your servers or is the calculation performed locally?",
+            "score": 3,
+            "author": "metarinka",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "1. We've done a couple attempts at fundraising, some successful, some not. So it happened on a rolling basis. \n2. This data doesn't fall under HIPPA's PHI standards (similar to how Fitbit or sleep trackers don't), although we are working towards being HIPPA compliant, because myself (as a user) and anyone else who uses the product deserves the highest standard of security for this information.  Additionally, no photo's are ever sent to a server or saved, deleted as quick as a blink of an eye, this is possible through doing the calculation locally.",
+                    "score": 2,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It took only 3 weeks to come up with an MVP given no background except 2 online courses? That's impressive",
+            "score": 3,
+            "author": "numice",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's what you call a lie.",
+                    "score": 5,
+                    "author": "michaeljbarton",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This probably wasn't the kind of questions you were looking for, but:\n\nHow long did it take for you to see results from tracking your mood?\n\nI'm currently in California, sheltering in place. My fiance left me in February, leaving me stuck with the financial burden of our bills and apartment. We were struggling for months before and I sold everything that meant anything to me (MacBook, drone, pet snake). Shortly after, I was let go from my under-the-table restaurant job due to Covod19, which means I'm not eligible for unemployment since it wasn't on the books. My only income is from my military disability from the VA (70% PTSD rating). I'm two months behind on rent as of tomorrow and my apartment complex is pursuing action. I eat around once every two days at this point. Oh, and I'm bipolar which is just the icing on the cake of my life. \n\nMy mood chart is a fucking flatline. I've been doing it for a few weeks now and it's just depressing. How do I keep going? This is so taxing. I don't know what I was expecting to gain from tracking, but it seems to just reinforce my complete lack of motivation to continue.",
+            "score": 3,
+            "author": "Junk_Life",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This is great, well done!\nHow long had you studied coding before you started this product? \nWhat is your background degree in?\nAlso how long from the Inception of the idea to the finished app? Thank you",
+            "score": 4,
+            "author": "fuchsiagreen",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I studied economics. I took 2 online courses (Stanford 106a and a course by Bitfountain). Then gave myself 3 weeks to build an MVP.",
+                    "score": 6,
+                    "author": "decide",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Proud of you!",
+            "score": 2,
+            "author": "Loolo007"
+        },
+        {
+            "level": 0,
+            "comment": "thank you for sharing this !\ni'm really curious about how to keep yourself disciplined when learning on your own , especially with depression ?",
+            "score": 2,
+            "author": "itsenny",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\\#1 I take care of my mental health first. \n\nGetting out of the house is key. Exercise (ideally daily). Meditation. Medication. Nourishing socializing. Hosting events. Co-working with others ([www.focusmates.com](https://www.focusmates.com) is amazing)\n\n\\#2 Slowly building up of habits\n\nI recently wanted to pick up meditating again (as of last night), and determined that I'll do it twice this week (despite wanting to do it daily), today I've meditated twice (2-4 min each), and yesterday I did the same. These little wins of achieving my small goals helps me gain momentum to set larger goals. Like next week I'll meditate at least three times.\n\nThe same goes for any habit, like hours into working/coding. Set a small reasonable goal from where I am today, make it an easy win and build up from there.\n\n\\~\\~\\~\n\nThere's a lot more here. Ritalin helps too, I am on-and-off of it through cycles as sometimes I get more anxious taking it.",
+                    "score": 2,
+                    "author": "decide",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is incredibly interesting and I imagine very valuable for many people. I had a Google Poll and spreadsheets setup to record some of these metrics daily into charts to quantify the impact certain lifestyle changes were having and found that to be extremely beneficial. A few questions:\n\n- My biggest concern about running this all the time actually isn't privacy, but computer processing power. I saw you mentioned it turns on and off throughout the day. How much processing power do you think this would consume? \n\n- A few people have mentioned privacy which I understand. There is obviously a big incentive for companies like yours to sell this data to advertisers, and I'm sure many VCs would be interested for that reason. Do you have any intention to sell any of this consumer data? What will your privacy policy look like? \n\n- How will you measure sleep, exercise, etc? Will this be a manual input, or will there be integration with popular biotech (Oura, FitBit, Apple Watch) to pull this information from?",
+            "score": 2,
+            "author": "ArbitraryEntreprenr",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is low and works well on most MacBooks 2017 and up. Takes 4% battery. This was something we worked hard to optimize. \n\nOur business model is freemium \u2014 aligning our interests with your improved mental health. \n\nPrivacy policy: www.misu.app/privacy\n\nWe\u2019re building a mobile app that will pull this data (if you want) from Apple health",
+                    "score": 1,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Came here to ask the same questions. Been contemplating learning to code for a while but it seems like a daunting task. Also, how long after learning to code did you move onto creating your app? Very inspiring indeed, thank you for your time!",
+                    "score": 3,
+                    "author": "rivreddit",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It seems daunting because many people aren't willing to put in the work to learn and become good at it. They just want to know enough to make something work, but not know enough of it to know how to fix things that break.",
+                            "score": 2,
+                            "author": "tycooperaow"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;I took 2 online courses (Stanford 106a and a course by Bitfountain). I was studying 10 hours a day for a month or two. Then gave myself 3 weeks to build an MVP.",
+                    "score": 5,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How did you learn to code? Where did you start? Always wanted to learn but never really wanted to pay for the online courses.",
+            "score": 2,
+            "author": "imbalancer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;I took 2 online courses (Stanford 106a (free on YT) and a course by Bitfountain). I was studying 10 hours a day for a month or two. Then gave myself 3 weeks to build an MVP. I took Stanford's 193p course too (free YT)",
+                    "score": 5,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Waouhh that\u2019d some serious dedication",
+                            "score": 1,
+                            "author": "Lilipuss25",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, Learning how to code isn't as glamorous as people make it sound. You have to put in some serious work to become good in it. I know too many people who become software devs but don't make it long because they made some half-assed app and expect to make millions from lol. There aren't many **GOOD** developers out there",
+                                    "score": 3,
+                                    "author": "tycooperaow",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Inspiring story! Great that you have been persistent in achieving this milestone.",
+            "score": 1,
+            "author": "ismoilovajon"
+        },
+        {
+            "level": 0,
+            "comment": "What is the story behind have 3 cofounders, 1 at a time?",
+            "score": 1,
+            "author": "BurnoBrambles"
+        },
+        {
+            "level": 0,
+            "comment": "I would buy this for Android. Are you working on mobile apps?",
+            "score": 1,
+            "author": "Wisgood",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "mobile is coming! What would you pay on a monthly basis? What would you want part of that?",
+                    "score": 3,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don't really do subscriptions :( I would gladly pay $10 on impulse though. I need a mood and productivity tracker, currently using UP! and it's lacking in the number of things it can track (sleep exercise mood - not enough for productivity vs mood, no space for meditation time etc). I'm very ADHD and I fall into these cycles of hyperfocus and burnout/depression. I want to track them enough to predict my pattern and prevent burnout. I've tried every tracker on Android and most of them are pretty lame or can't export data or something like that. I really like how sleep as Android automatically tracks my sleep because I go weeks without remembering to check in quite often. It sounds like your microexpression mood tracker could really compliment that auto tracking too.",
+                            "score": 2,
+                            "author": "Wisgood"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I know nothing about mood tracking, but I assume its something along the lines of making a note of your mood every hour (or some timeframe).\n\nIf so, I'm curious if using your face-tracking app would be comparable to using a conventional app/paper. For example, if someone is at work all day and only uses their laptop for a little while in the evening, is that still effective or does a person need to be using it consistently throughout the day?",
+            "score": 1,
+            "author": "chillintheforest",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It'd definitely be more effective using it throughout the day, but it the laptop usage follows a consistent pattern, they might be good for picking up baselines. I'm curious if you try this how it ends up working for you. \n\n&amp;#x200B;\n\nMis\u00fc captures mood at the start and end of using an app or website - giving interesting stats on how those apps/sites impacted you",
+                    "score": 2,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "! RemindME 1 day",
+            "score": 1,
+            "author": "vZAPP",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "me too",
+                    "score": 1,
+                    "author": "BISHoO000"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Currently in the middle of a few years long mental health crisis...still struggling to get out of it but it destroyed my business as my anxiety spiked to unmanageable levels for many months after getting off a med. Mainly looking for encouragement but I\u2019m looking to hear 1. How you\u2019re doing now, 2. Just how you cultivated the motivation to do something like this in a deteriorated state? I find motivation to be the hardest thing with each of these waves of dysfunction.",
+            "score": 1,
+            "author": "Sweatygun"
+        },
+        {
+            "level": 0,
+            "comment": "It is an amazing feat to be a solopreneur building up everything without coding experience. When did you start forming up more team members and where did the $ come from to pay them? Especially for the tech side.",
+            "score": 1,
+            "author": "ImSolly"
+        },
+        {
+            "level": 0,
+            "comment": "Id like to know more on the cofounders not working out. \nWhat really happened?",
+            "score": 1,
+            "author": "utsavshah08",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "somewhat commented here: [https://www.reddit.com/r/Entrepreneur/comments/fsihym/inspired\\_by\\_deep\\_depression\\_i\\_taught\\_myself\\_to/fm1wzlp?utm\\_source=share&amp;utm\\_medium=web2x](https://www.reddit.com/r/Entrepreneur/comments/fsihym/inspired_by_deep_depression_i_taught_myself_to/fm1wzlp?utm_source=share&amp;utm_medium=web2x)",
+                    "score": 1,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What helped you most personally? Tracking your mood / building something which helps other people or the fact that you constantly evolved in this period and your mind was busy and focused?",
+            "score": 1,
+            "author": "jinxmcg"
+        },
+        {
+            "level": 0,
+            "comment": "Did you build and train the mood classifier yourself or did you use an existing one ?",
+            "score": 1,
+            "author": "Rasko__",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Used an off the self one, adjusted it and trained off our dataset",
+                    "score": 1,
+                    "author": "decide",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is an amazing idea. I always knew that facial micro-expressions had a key to the inner feelings of a person. Do you know of any research connecting facial micro-expressions with mental illness? Also, does your app make use of machine learning models?",
+            "score": 1,
+            "author": "8rnlsunshine"
+        },
+        {
+            "level": 0,
+            "comment": "I'm happy to hear that you made something like that into your stepping stone.\n\nI wanna ask two things. Yes why did you use webcam although privacy concerns are at an all time high and what do you think the future holds for privacy concerns?\n\nAnother thing making 100k from your app. That's great to hear. How many months did it take and at what time did you see a spark in users and revenue? Also after Apple's 30% fee and taxes how many did you get in your bank account after all the deductions?\n\nHope I'm not too invasive.",
+            "score": 1,
+            "author": "JeaTaxy",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "RemindMe! 2 days",
+            "score": 1,
+            "author": "ninjoFr",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There is a 32.0 minute delay fetching comments.\n\nI will be messaging you in 2 days on [**2020-04-02 19:44:38 UTC**](http://www.wolframalpha.com/input/?i=2020-04-02%2019:44:38%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://np.reddit.com/r/Entrepreneur/comments/fsihym/inspired_by_deep_depression_i_taught_myself_to/fm1rugt/?context=3)\n\n[**CLICK THIS LINK**](https://np.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2FEntrepreneur%2Fcomments%2Ffsihym%2Finspired_by_deep_depression_i_taught_myself_to%2Ffm1rugt%2F%5D%0A%0ARemindMe%21%202020-04-02%2019%3A44%3A38%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://np.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Delete%20Comment&amp;message=Delete%21%20fsihym)\n\n*****\n\n|[^(Info)](https://np.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://np.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://np.reddit.com/message/compose/?to=RemindMeBot&amp;subject=List%20Of%20Reminders&amp;message=MyReminders%21)|[^(Feedback)](https://np.reddit.com/message/compose/?to=Watchful1&amp;subject=RemindMeBot%20Feedback)|\n|-|-|-|-|",
+                    "score": 1,
+                    "author": "RemindMeBot"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Congratulations on all your success! Would love to hear about your fundraising experience. What was your strategy? And how did you stay motivated despite the rejections?",
+            "score": 1,
+            "author": "brunchlord",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Motivated: I had really dark depressions throughout this journey - even while fundraising. I remember have horrible thoughts in an Uber on the way to meet with one of the top 5 venture funds, then getting out and having to put on my fundraising presence... \n\nI recall a few things:  \n\\- I still believe that automated mood trackers will exist as a new kind of product category, and that 10% of people have tracked or do track their mood - so I convinced myself (for the better or worse) there is demand\n\n\\- I'd sometimes give myself deadlines: 'I'll give it X more months and reevaluate then'\n\n\\- I'd focus on caring for my mental health, even if it means I was completely unproductive for some time. Learning to take 'guilt free time off', eventually learning how to take 'radical self-care' time which gets me back on my feet a lot faster. \n\n\\- [www.focusmate.com](https://www.focusmate.com) is a new thing I love for 1-hr peer accountability on-demand",
+                    "score": 2,
+                    "author": "decide",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you hiring?",
+            "score": 1,
+            "author": "i-am-extra-t",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah! A product manager with technical or design chops who thrives when wearing multiple hats / learning new things. And they are into tracking their mood.",
+                    "score": 1,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well, that\u2019s not me but I wish it was. Good luck finding someone! And if you\u2019d be interested in marketing/community/content help, I\u2019d love to discuss it.",
+                            "score": 1,
+                            "author": "i-am-extra-t",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Remind me! 2 days",
+            "score": 1,
+            "author": "MagnumBurrito",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "*Reddit has a 38 minute delay to fetch comments, or you an manually create a reminder on Reminddit.*\n\n**MagnumBurrito**, your reminder arrives in **2 days** on [**2020-04-02 20:00:58Z**](https://www.reminddit.com/time?dt=2020-04-02 20:00:58Z&amp;reminder_id=0f930b992ee64cfcbffbb80ed94faa57&amp;subreddit=Entrepreneur). Next time, remember to use my default callsign **kminder**.\n\n&gt; [**r/Entrepreneur: Inspired_by_deep_depression_i_taught_myself_to**](/r/Entrepreneur/comments/fsihym/inspired_by_deep_depression_i_taught_myself_to/fm1tr6l/?context=3)\n\n&gt; kminder 2 days\n\n[**CLICK THIS LINK**](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Reminder%20from%20Link&amp;message=your_message%0Akminder%202020-04-02T20%3A00%3A58%0A%0A%0A%0A---Server%20settings%20below.%20Do%20not%20change---%0A%0Apermalink%21%20%2Fr%2FEntrepreneur%2Fcomments%2Ffsihym%2Finspired_by_deep_depression_i_taught_myself_to%2Ffm1tr6l%2F) to also be reminded. Thread has 1 reminder.\n\n^(OP can )[^(**Delete Comment**)](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Delete%20Reminder%20Comment&amp;message=deleteReminderComment%21%200f930b992ee64cfcbffbb80ed94faa57) ^(\u00b7) [^(**Delete Reminder**)](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Delete%20Reminder%20%28and%20comment%20if%20exists%29&amp;message=deleteReminder%21%200f930b992ee64cfcbffbb80ed94faa57) ^(\u00b7) [^(Get Details)](https://reminddit.com/reminders/id/0f930b992ee64cfcbffbb80ed94faa57) ^(\u00b7) [^(Update Time)](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Update%20Reminder%20Time&amp;message=updateReminderTime%21%200f930b992ee64cfcbffbb80ed94faa57%0A2%20days%0A%0A%2AReplace%20reminder%20time%20above%20with%20new%20time%20or%20time%20from%20created%20date%2A) ^(\u00b7) [^(Update Message)](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Update%20Reminder%20Message&amp;message=updateReminderMessage%21%200f930b992ee64cfcbffbb80ed94faa57%20%0Akminder%202%20days%0A%0A%2AMessage%20is%20on%20second%20line.%20Message%20should%20be%20one%20line%2A) ^(\u00b7) [^(**Add Timezone**)](https://www.reminddit.com/user/setTimezone?source=reddit&amp;username=MagnumBurrito) ^(\u00b7) [^(**Add Email**)](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Add%20Email&amp;message=addEmail%21%200f930b992ee64cfcbffbb80ed94faa57%20%0Areplaceme%40example.com%0A%0A%2AEnter%20email%20on%20second%20line%2A)\n\n**Protip!** We have a community at r/reminddit!\n\n\n\n*****\n\n[**Reminddit**](https://www.reminddit.com) \u00b7 [Create Reminder](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Reminder&amp;message=your_message%0A%0Akminder%20time_or_time_from_now) \u00b7 [Your Reminders](https://reddit.com/message/compose/?to=remindditbot&amp;subject=List%20Of%20Reminders&amp;message=listReminders%21) \u00b7 [Questions](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Feedback%21%20Reminder%20from%20MagnumBurrito)",
+                    "score": 1,
+                    "author": "remindditbot"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Incredible. This is what I need to hear. \n\nCurrently in the middle of a drastic career change, to put it easy, and decided it's time I learn the basics of coding (html, css) to make value of this change. This feels like a sign that that's what I need to do. Maybe I should start by getting off of reddit..",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Advice for business strategy and start ups? What did you learn from making pivots?",
+            "score": 1,
+            "author": "mizore742"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks so much for taking the time to share. Can you elaborate on how the situation with the cofounders was handled? What was it that made your realize that it wasn\u2019t working and did you try resolve the issues (if any) before going your separate ways?",
+            "score": 1,
+            "author": "pcbenadeza"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for doing this! Did your 100k in revenue come from ads? Or did you charge users?",
+            "score": 1,
+            "author": "eagerbeaverz"
+        },
+        {
+            "level": 0,
+            "comment": "How did you get your first 10,100,1000 users?",
+            "score": 1,
+            "author": "IAmRules",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Friends. Then 100-1000 was producthunt and reddit.",
+                    "score": 1,
+                    "author": "decide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Did you do any marketing prior to having a finished product ?",
+                            "score": 1,
+                            "author": "IAmRules"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How long did these users stick around. I've worked on projects where our advertising brought in 100s of users, but ultimately they all left within 30days. What's your retention?",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Retention now for users is north of 60% for 30 days and 60 days",
+                                    "score": 2,
+                                    "author": "decide"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm just walking your steps - trying to learn to code and build something interesting (that by the occasion is also something that I personally need). How did you come up with the name and brand style? And what would be a good way to meet cofounders? Thanks!",
+            "score": 1,
+            "author": "nieistniejacy"
+        },
+        {
+            "level": 0,
+            "comment": " How much time did it take you to go from learning to code to publishing your app? I'm also in college and spending my free time coding an Android app right now(native script). I've high hopes with this new app of mine.",
+            "score": 1,
+            "author": "controversialcomrade"
+        },
+        {
+            "level": 0,
+            "comment": "Hello, could you describe the exact alchemy of how you  turned deep depression into inspiration?\n\n/s",
+            "score": 1,
+            "author": "stellarinterstitium"
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019d love to hear your thoughts on the future of your industry!",
+            "score": 1,
+            "author": "Askee123"
+        },
+        {
+            "level": 0,
+            "comment": "How did you get most of your users on your previous app?  Did you have to spend much on advertising?  Is there anything you learned from advertising/marketing from your last app that you will do differently with this app?\n\nAny other things you have learnt which you'll do differently as a result of mistakes with the first app?  How much longer do you intend to test the app before proper release?\n\nAlso, what was the previous app out of interest?",
+            "score": 1,
+            "author": "HeroJournal"
+        },
+        {
+            "level": 0,
+            "comment": "Hey, you\u2019re an inspiration!",
+            "score": 1,
+            "author": "jfg322"
+        },
+        {
+            "level": 0,
+            "comment": "wow i would love to know what caused such a deep depression in the first place. good luck with the product.",
+            "score": 1,
+            "author": "tuckermalc"
+        },
+        {
+            "level": 0,
+            "comment": "Just stopping in to say that I'm really happy for you!",
+            "score": 1,
+            "author": "mikefromtheblock"
+        },
+        {
+            "level": 0,
+            "comment": "&gt;Where I see the future of mental health tech / industry \n\nI am interested in this. I will be starting a computer science degree next year and I will be specializing in computational neuroscience or cognitive psychology. My goal is to make technology that can help people just like you have. Your insight would be invaluable to me and if you are willing to answer some of my questions that would be amazing.\n\n\\- I'm wondering what it is like to raise capital in this space, are people hesitant to invest in mental health technology? \n\n\\- Do you find that there is a lot of competition in the space?\n\n\\- After the $1M raise have you seen a significant increase in revenue for your business? \n\n\\- I would love to know within what time frame you were able to make the 100k using the freemium model and if you had to put most of that back into the business.\n\n\\- Did you have a job/school to go to while the app was generating revenue or were you working on the business full time?",
+            "score": 1,
+            "author": "lifelifebalance"
+        },
+        {
+            "level": 0,
+            "comment": "Im glad to know your doing so well now. What method is best to get early adopters or testers for your product?",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Gracias! \n\nStill trying to figure that out. Any suggestions?",
+                    "score": 1,
+                    "author": "decide"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can you explain when you said taught myself to code, what do you mean? I'd like to start the same journey but not sure where to start with coding. Thanks",
+            "score": 1,
+            "author": "meyou5ick"
+        },
+        {
+            "level": 0,
+            "comment": "Although I find the app interesting and useful, I'm concerned about the privacy issues that arise from having a 24/7 website/content/software user response monitor.   \nIt's basically a standalone Lenovo Superfish app.",
+            "score": 1,
+            "author": "QuartzPuffyStar"
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s fucking crazy. Good shit bro",
+            "score": 1,
+            "author": "Fuzuza"
+        },
+        {
+            "level": 0,
+            "comment": "Great! How are you able to track moods? Did you develop the AI/Machine Learning?",
+            "score": 1,
+            "author": "twistrg"
+        },
+        {
+            "level": 0,
+            "comment": "Hi! This seems like a really great idea! \n\nHow did you design the AI to determine a person's mood? Was it difficult? Did you do it alone?",
+            "score": 1,
+            "author": "rrickgauer"
+        },
+        {
+            "level": 0,
+            "comment": "Really inspiring! I want to build a app that sells food for athletes and have customised settings for athletes for their nutrition. What language should I use?",
+            "score": 1,
+            "author": "patricklreynolds"
+        },
+        {
+            "level": 0,
+            "comment": "Where did you start to get funding? And how did you keep up the motivation after being rejected so many times?",
+            "score": 1,
+            "author": "MorbidKetchup98"
+        },
+        {
+            "level": 0,
+            "comment": "How did you find the ongoing strength to do this while battling depression? Some days I feel so down that I can\u2019t get myself to do anything with my business. And if I do, my actions are lacking the passion and thoughtfulness that I know it needs to succeed. I stare my prospects lists and client tasks in the face with pure despair that none of this is going to mean anything or get me anywhere. It just feels hopeless, you know?",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "How did raising all that money affect your mood? Can money buy happiness after all?",
+            "score": 1,
+            "author": "zipadyduda"
+        },
+        {
+            "level": 0,
+            "comment": "Does it work on people with high functioning autism?",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I know of one person it worked well with for! Would love to hear how it works out for you or whoever you were thinking of trying it out",
+                    "score": 1,
+                    "author": "decide",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "RemindMe! one month",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I'd be interested to hear about the Raising VC/angel funding as a solo founder part. Learning to code is easy. Getting your project/product out there is the tricky stuff.",
+            "score": 1,
+            "author": "kittykittykitty85"
+        },
+        {
+            "level": 0,
+            "comment": "God, I wish I had the inspiring kind of depression.",
+            "score": 1,
+            "author": "smoothlicks"
+        },
+        {
+            "level": 0,
+            "comment": "You're so inspirational dude!",
+            "score": 1,
+            "author": "Tungdt1"
+        },
+        {
+            "level": 0,
+            "comment": "How long did it take until the business profited? And did you support the whole product launch alone?",
+            "score": 1,
+            "author": "91424"
+        },
+        {
+            "level": 0,
+            "comment": "add the / to the product hunt link. just takes you directly to product hunt.",
+            "score": 1,
+            "author": "grey0909"
+        },
+        {
+            "level": 0,
+            "comment": "If this isn\u2019t already in function at Facebook, I could see them throwing a whopping amount of money at you to help them further log and predict peoples interests and personalities based on micro facial reactions to ads and videos.",
+            "score": 1,
+            "author": "ImSpewingNonsense"
+        },
+        {
+            "level": 0,
+            "comment": "Is it manual data insertion based tracking ? Bcoz I am doing research on eeg based content recommendation engine along with my neurologist",
+            "score": 1,
+            "author": "XXXOO8"
+        }
+    ]
+}

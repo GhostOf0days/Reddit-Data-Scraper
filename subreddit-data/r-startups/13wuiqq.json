@@ -1,0 +1,87 @@
+{
+    "id": "13wuiqq",
+    "score": 1,
+    "title": "how to package on-prem solution?",
+    "author": "archhelp1",
+    "date": 1685558968.0,
+    "url": "https://www.reddit.com/r/startups/comments/13wuiqq",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "\r  \nI have a SaaS (AWS stack) and want to package it for on-prem offering. \r  \nI don't have experience with \"enterprise software\" but from what I've seen most projects charge an annual license + annual support built in. \r  \n\r  \nIf I go and replicate the AWS stack on their environment (using client user/pass and then they change it), I'm thinking that: \r  \na. I'm giving away all the source code. \r  \nb. How do I ensure that they don't resell the solution? This would probably need a contract but I don't know what kind and I worry it will complicate things.\r  \nc. If I give away all the infrastructure and code, how can I get paid for the second year? \r  \nd. I could also charge based on their users, but how can I monitor this?\r  \nI would appreciate if anyone is aware of a structure/packaging that makes sense for this, or any thoughts on this matter.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Why? Every enterprise I've work at for the last decade wants to move away from on-prem to SaaS.",
+            "score": 2,
+            "author": "FewEstablishment2696",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Some companies don't want to share their data and need an on-prem solution. We'll offer both SaaS and on-prem. Btw by on-prem I mean hosted in their own AWS infra, not physical servers.",
+                    "score": 2,
+                    "author": "archhelp1"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We charge a base platform fee for on-premises plus the subscription cost on top of that with a total contract minimum (including both parts). \n\nWhy are you giving away the source code? Why not deliver it in a container or Helm chart or something?",
+            "score": 1,
+            "author": "NoFix9867",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How do you keep track of their users (how many subscriptions) if it runs on their infra?\n\nAlso, I hadn't thought to use a container, do you mean something like AWS ECS?",
+                    "score": 1,
+                    "author": "archhelp1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Re: tracking. Couple options:\n\n1. Put it in the contract to run a script quarterly to pull the number of active users and have them send you that. \n2. When they submit support tickets, require running a diagnostic sprint that includes the user counting script. \n\nWhat is the current architecture of the app right now?",
+                            "score": 1,
+                            "author": "NoFix9867",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Hm yes I was wondering if there's a SaaS or service that I can plug in the code somewhere and do the tracking or send a report every now and then.\n\nWhat do you mean by architecture? Basically S3 + web app.",
+                                    "score": 1,
+                                    "author": "archhelp1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Many enterprise customers monitor outbound network activity and will flag your app as phoning home. You can do it with any of the product analytics tools (e.g. Heap, Amplitude etc.), but may get asked to rip it out. \n\nAssuming they are asking you to deploy into their AWS environment (where they already provide access to S3), then is there a way to deploy the web app either to ECS or EKS (if deploying with a container) or just package a plain vanilla AMI that can be deployed onto EC2?",
+                                            "score": 1,
+                                            "author": "NoFix9867",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I think it's possible to deploy to ECS or EKS but what about the tracking part? It's either phoning home or they run a report script? What about having a license that \"locks\" the app after a certain time and requires a new token to be entered, which works offline?",
+                                                    "score": 1,
+                                                    "author": "archhelp1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I would strongly consider whether you wanna do that. It requires separate processes for upgrades, and separate support as well. Unless it\u2019s major money I wouldn\u2019t do it.\n\nAbout your questions; I think a lot depends on your circumstances, but even so,\n\nA wouldn\u2019t worry about it. Companies don\u2019t do that and even then it would be too much work to make sense of it\n\nB also wouldn\u2019t worry about it. It can be in your TOS but more importantly it is not their business to do what you do\n\nC and D well just send the invoice? If they sign a quote it\u2019s legally binding. You could consider building some kind of license check that connects to your server. Or hand out license files that expire after some time. Would not be my choice though. You don\u2019t want to annoy customers with invalid licenses\n\nIf it\u2019s anything like on premise contracts I\u2019ve seen I think you can rely on the contract and the relation itself much more that you seem to do now",
+            "score": 1,
+            "author": "garma87",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, I will only do it if clients are willing to pay major money.\n\nAny suggestions of licensing technology that would be appropriate for C and D?",
+                    "score": 1,
+                    "author": "archhelp1"
+                }
+            ]
+        }
+    ]
+}

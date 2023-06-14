@@ -1,0 +1,387 @@
+{
+    "id": "6rhsri",
+    "score": 305,
+    "title": "corporate espionage in \"Silicon Valley\"",
+    "author": "pheirce",
+    "date": 1501816467.0,
+    "url": "https://www.reddit.com/r/startups/comments/6rhsri",
+    "media_urls": [],
+    "other_urls": [
+        "http://dogfoodconnoisseur.blogspot.com/2017/07/corporate-espionage-in-silicon-valley.html)***"
+    ],
+    "postText": "**tl;dr** when asked by potential partners or acquiring agents the technical details about how you built your tech, the best answer is \"we employed a significant amount of engineering effort to pull this magic off.\" read further to hear a real life example of why.\n\n\nsometimes the HBO show *Silicon Valley* can be painful to watch because it could easily be a documentary instead of a parody.\n\n\nfor example, there is a scene where the protagonist company gave a detailed presentation of their technology to what they thought was a VC, but instead turned out to be a competing compression company. this scene sparked remembrance of an experience i had as the technical co-founder of a startup in the early oughts.\n\n\ncirca. 2001 we had developed a technology that enhanced a product from Novell Inc. it took us about a year of coding to make it happen, but we completed it and showcased it at Novell's big tech conference called Brainshare.\n\n\nour booth presentation made a notable splash. we had customers dragging Novell folks over to show what we had done because it was what these people wanted and, apparently, Novell had been telling them that it was not possible. at the time we didn't realize the politically volatile situation that this put us in. we just hoped that building something that the \"pros\" say couldn't be done made us look clever and capable. that might have been true with customers, but we got a different reaction from Novell.\n\n\nafter the conference, we got a call from a Novell VP asking if we could meet. we were excited as we assumed the meeting was to discuss either a partnership or buyout.\n\n\nthe meeting consisted of the VP and several other folks in the room. as the meeting progressed, their questions about how we did what we did got more specific and detailed. being a naive idiot, i kept going deeper and deeper into the technical details. (for the technical archeologists who are reading this, part of the solution involved developing our own Component Object Model (COM) server which was the main bulk of the total development time. the joke back in the day was that COM was short for COMplex.)\n\n\nthe meeting ended abruptly without next steps and we thought we'd wait a few days to call them to move forward with our relationship.\n\n\ntwo days later, we got a call from a Novell product manager. he called us to let us know that the VP had decided to develop the tech in-house and was going to give it away to their customers. when we expressed our willingness to talk buyout and/or partnership, he said \"i'm so sorry. i'm only calling you because noone else was going to and i don't feel it's right what we are doing. the VP really hates working with small partners and he's not going to work with you.\"\n\n\napparently, the VP never had plans to partner, he just called for a meeting to figure out how we did it.\n\n\nin retrospect, i came to realize that without meaning to, we were the guys who made \"liars\" and or \"fools\" out of the Novell folks. they were telling customers that what we had done wasn't possible and our product proved them wrong. no one likes the person who makes a liar out of them no matter how many customers it helps.\n\n\nand that was that. Novell told their customers that they were going to build and include the product for free which completely dried up our sales channel. we made one $15,000 sale of the product and then had to shelve it to \"pivot\" to something else (pivot is in quotes because that's not the term we used back then. we just called it \"doing whatever we needed to survive\")\n\n\nas a result of our bad faith experience with Novell, we switched focus from being a Novell partner shop to developing tech on other platforms. (our next big play was to build an anti-spam appliance based on opensource tech)\n\n\nso what's the lesson learned? when talking with potential partners and/or buyouts, the proper answer to \"how did you do this?\" is simply \"we spent a significant amount of engineering effort to make this magic happen.\"\n\n\nepilogue: four years later we received a couple of phone calls from Novell customers asking about the discontinued product. apparently, Novell still hadn't figured out how to build it and their customers were getting tired of waiting.\n\n\nunfortunately, it was a tad too late to save our business and we had to tell the customers that we couldn't help them while i went and found a real job.\n\n\n***^cross ^posted ^from [^dogfood ^connoisseur](http://dogfoodconnoisseur.blogspot.com/2017/07/corporate-espionage-in-silicon-valley.html)***",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Holy crap, you built a compatible COM server in a year? That's crazy! Nice work! ",
+            "score": 63,
+            "author": "denverdave23",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yah. at the time i didn't think it was anything special as it was the first time i developed a COM server. in fact, i felt a bit inadequate cause it as taking so long. after i learned more about the challenges others had with COM, i didn't feel so bad.\n\ni remember one COM expert telling me that you had to implement COM for 6 months before you really understood it.",
+                    "score": 27,
+                    "author": "pheirce",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "ELI5 please? ",
+                            "score": 3,
+                            "author": "V-Sec",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "COM is Microsoft's Component Object Model which is kind of a precursor to the binary format for dotNET.\n\nwhile it was a binary standard and, therefore, might have been possible to create for other operating systems, in practice it was isolated to just windows machines. (i have faint memory of someone who wrote an implementation for another OS, but the license to it was prohibitively expensive). the COM standards defined both how clients were to be written to access services on a server as well as how servers were to expose functionality for clients to access.\n\nthis description doesn't sound like it should be all that difficult, but that was the rub. it was over engineered and overly complex for opaque reasons. writing clients for COM was pretty straight forward and easy, but writing a COM server was littered with unintuitive, useless, and required code implementation.\n\noh, and it's not client/server in the same way as we think of client/server today as it described interaction and communication for interprocess communication on the same machine. there was an extension to COM for **d**istributed processes (called DCOM) that was more like the concept of client/server that most people think of today.",
+                                    "score": 3,
+                                    "author": "pheirce"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 44,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yeah, this was many years ago and i'm over it now. lessons learned and all.\n\ni guess the minor way that we punished them is we just stopped being a good development partner for Novell. not only did their customers not get the benefit of our immediate product, but any future integration and/or product that we may have built for their customer base also was lost and their customers suffered.\n\nand i'm certain that if they treated us this way, they also did the same thing to others which resulted in the same micro negatives for their customer base. all those micros eventually add up to macro impact on their customers and their business suffered.\n\nthey used to be top dog in corporate IT infrastructure, but now they are no more, so i like to think that the market did, eventually, punish them.",
+                    "score": 39,
+                    "author": "pheirce"
+                },
+                {
+                    "level": 1,
+                    "comment": "They justify it by telling themselves \"that's business\". Many successful people became so by stepping on the heads of others.",
+                    "score": 29,
+                    "author": "modernbenoni",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "People justify all kinds of behavior that won't pass a public ethics test.   It is just business to them.   Even worse, the large companies can (will) threaten you and leverage their resources to get what they want while your startup is at its most vulnerable.   To some \"business\" is an \"ethical get out of jail free card.\"",
+                            "score": 9,
+                            "author": "fuzzyBlueMonkey"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The best way would have been to finish it, patent it, and THEN go public with it.  Then Novell would have pretty much had to license it.\n\nOh well... it's Novell; they weren't long for this world anyway and they were already in a decline by the time OP presented to them.  Karma served.  \n\nOn the plus side, OP and his folks got out of the Novell marketplace just in time.  Moving on to spam was probably much more lucrative, was a growth market at the time, and helped them diversify their skill set beyond COM and Windows C++; which was no doubt a big help as well.",
+                    "score": 3,
+                    "author": "vplatt"
+                },
+                {
+                    "level": 1,
+                    "comment": "Darkweb, asassins.",
+                    "score": 0,
+                    "author": "EarthsFinePrint"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "These types of 'war stories' from business are extremely valuable. I'd like to see more of this kind of stuff on this sub, because it helps the community know what to watch out for, especially when you step into arenas with other, more experienced competitors.",
+            "score": 23,
+            "author": "silverbax",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If anyone has any good books or blogs with the same types of themes I'd love to know ",
+                    "score": 1,
+                    "author": "-SoItGoes",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Maybe not exactly what you are looking for, but...\n\nIt's a bit older but *Where the Suckers Moon* is a true retelling of an ad pitch for the Subaru account in the late 80s early 90s. It breaks down how Subaru was built basically by a scam artist importing cars into a multimillion dollar car company, then it goes through a major ad pitch from multiple real companies vying for Subaru's ad sales budget.\n\n*Never Split the Difference* by Chris Voss - Voss was a hostage negotiator for the US Government who came over to work in the private sector helping companies negotiate. His experience came from negotiating with actual terrorists and guerrilla fighters over kidnappings and bank heists. It's hands down one of the best books I've ever read regarding the subject.\n\n*Pitch Anything* by Oren Klaff - Oren refers to Chris Voss's book as well and Oren is another guy who pitches and sells major deals against high level competition. ",
+                            "score": 5,
+                            "author": "silverbax",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 1,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thanks, I couldn't remember accurately. I think these books are far superior to what people normally recommend. *Deep Work* was actually really good, despite being a recent 'popular' book. *Man's Search For Meaning* is a book I would highly recommend despite it not being about business at all. ",
+                                            "score": 2,
+                                            "author": "silverbax"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This has been my experience too. In my case, the people were from eBay, Oracle, and a startup. It happens more often than not.\n",
+            "score": 19,
+            "author": "reddit1070",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You hear oracle you run.",
+                    "score": 20,
+                    "author": "bleepboop1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The programs and databases or the actual company?",
+                            "score": 0,
+                            "author": "darnitskippy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Haha. I suppose you should run from them all, eh?",
+                                    "score": 2,
+                                    "author": "reddit1070"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sorry man.  I agree some business practices leave a terrible taste in the mouth.   I hope your doing better now.  ",
+            "score": 6,
+            "author": "photoengineer"
+        },
+        {
+            "level": 0,
+            "comment": "Yeah, I'm happy to give away knowledge and tutor people through the basics of the product I specialize in -- this is all info that's in the manuals anyway.\n\nBut when it comes to the software I write, and people ask how it works, I tell them it's magic, and that a magician never reveals his tricks.  I either get a laugh or an awkward stare, then we get back to whatever we were talking about.\n\nThere are secrets you need to hold close (usually learned through experience, mistakes, etc.), and there are things people THINK are secrets, but they're really publicly available knowledge if you could be bothered to look for them.  I give away the latter and try to sell the former.  ",
+            "score": 8,
+            "author": "TemporaryBoyfriend",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How do you decide what info is sensitive vs what the basics are?",
+                    "score": 1,
+                    "author": "-SoItGoes",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Anything that you spent a lot of time figuring out or perfecting is sensitive.   Anything risky that might not have worked out is sensitive. Any knowledge / experience you came by with great effort and many hours is sensitive. ",
+                            "score": 2,
+                            "author": "TemporaryBoyfriend"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I have sortof the same story. We developer a P2P payment app in The Netherlands one year back, with significant better user experience than any other app that was out there, and we raised funding to launch and test the product. ABN Amro (one of the largest Dutch banks) took notice and offered us to pitch to them as well. We had 2 meetings with them, and the guy whom we met with launched a competing product 4 months later with the distribution power of the bank, right at the time where we are raising funding to grow. \n\n9 months later, havent been able to secure funding due to ABN entering the space and have been living off my college savings from my parents waiting until the 'acquihire' to another p2p payment company in Europe is finished. We have 10k users (all organic) and Tikkie has 500k.\n\nIf we hadnt pitched to them, they wouldn't have taken notice up until the launch and it would have given me enough time to find funding for our company to grow as quickly as their product. Lesson learned.",
+            "score": 7,
+            "author": "Throwaway_12_13",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Did you divulge any technical details that would've given them an easier time replicating it? ",
+                    "score": 1,
+                    "author": "erelim",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's not so much the tech, but rather the go to market strategy and ux research that we'd done. And yes that was part of our investor pitch.",
+                            "score": 6,
+                            "author": "Throwaway_12_13"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Novell told their customers that they were going to build and include the product for free which completely dried up our sales channel.\n\n&gt;epilogue: four years later [..] Novell still hadn't figured out how to build it\n\nI'm not a lawyer but that sounds like it ought to be illegal.  Promise you're going to give someone's product away for free to kill them off and then never deliver?  What's stopping someone bigger from doing that to Novell?\n\nAnd from personal experience, it's fairly easy to be socially engineered into giving up all the juicy $$$-making details if you're especially proud of your work, so don't feel too bad about it.",
+            "score": 13,
+            "author": "JuvenileEloquent",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "i'm not a lawyer either, but i didn't think at the time that what they did was illegal. just really crappy for us *and* their own customers.\n\nand yeah, i was a bit too proud of what i was able to pull off in that year and that's partly why i was eager to explain it to them in detail. lesson learned.",
+                    "score": 9,
+                    "author": "pheirce"
+                },
+                {
+                    "level": 1,
+                    "comment": "Run of the mill tactic.   Announcing products that will never exist to keep competitors out of the market, offering partnerships but dragging on negotiations while developing competitive products in parallel, undercutting your prices just long enough to drive you out of business, patent trolling and predacious licensing.    \n\nKeep your secrets to yourself and imply it took 10x longer to build than it did.   While you\u2019re at it, claim you used magic dust acquired in an ancient ritual on a hidden island to create the core algorithm.   Next watch them try to hire your staff.   \n\nAhh, good times.",
+                    "score": 8,
+                    "author": "fuzzyBlueMonkey"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You knew how long it would take to build. I can't imagine customers being willing to wait multiple years for a feature if it was something they really wanted. What did the customers say when you told them that novell was only just gonna start? ",
+            "score": 5,
+            "author": "braunshaver",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "the majority of potential customer contacts we made were done by our one sales guy, so i don't remember exactly what the customers were saying. iirc, there was also another issue in 2001 with a lot of businesses claiming budget issues since they overspent their budgets the previous year on \"fixing\" Y2K issues.\n\nthis meant that people were very careful in spending and would rather wait a bit for future free instead of spend now. it was a tough year to have a tech business.",
+                    "score": 1,
+                    "author": "pheirce"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If I was you, I'd call out the company and the people involved by name, and try to get media exposure for it.  That opens the door for litigation, but checking with a lawyer first might mitigate some of that risk.",
+            "score": 3,
+            "author": "likwid07",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "this was all ~15 years ago. i did mention the name of the company, Novell, which is no longer an entity. i honestly don't remember the name of the VP, but i *do* remember the name of the PM who called us to let us know what they were going to do.\n\ni'm not interested in calling out this guy tho because he's the only one who showed integrity on Novell's side. interestingly enough, he also has a bit of internet fame now since he's created a successful web comic. i spoke with him many years after this incident and it seemed to me that his integrity wouldn't allow him to stay employed there which i think is a large part of the reason that he put so much energy into his web comic to make it successful.",
+                    "score": 11,
+                    "author": "pheirce"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sorry this happened. \n\n&gt;sometimes the HBO show Silicon Valley can be painful to watch because it could easily be a documentary instead of a parody.\n\nI guess the show feels that way because the storylines within the show are based on actual stories from Silicon Valley. Even I have moments where it hits way too close to home, where that line between comedy and real life seems too blurred. \n\nBut I'm sorry that's happened. ",
+            "score": 2,
+            "author": "Merkypie"
+        },
+        {
+            "level": 0,
+            "comment": "Unfortunately, I can't help but think of the way Microsoft and Apple both did this to Xerox back in the day with bitmapped displays. Alas, a scummy move, but that's the world for business for ya. Arguably the rest of the world is better off. ",
+            "score": 2,
+            "author": "Metroidude47",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "true, but i think the main difference is that Xerox PARC was so research focused that it was never clear that they were going to actually bring to market the awesome stuff they invented. so the world's better off that it even got out.\n\nin our case, it was very clear that we were marketing the solution and they knew full well that their actions were going to dry up our sales channel.\n\nand Novell didn't even have the integrity to actually bring it to market...",
+                    "score": 2,
+                    "author": "pheirce"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yeah, i'm torn about your sentiment.\n\npart of me says you are right, of course. clearly i trusted too much and got taken advantage of.\n\nbut another part of me says that it was a good thing i found out so early what kind of untrustworthy partner they were. it is telling to me that while my business didn't succeed, ultimately neither did theirs and i have to think that part of that was because of how they treated partners.\n\nin retrospect, i'd rather have the psychopaths that i might do business with reveal who they are early on so i can sever ties faster.\n\na book i've read recently on this subject is stephen m. r. covey's *[The Speed of Trust](http://www.speedoftrust.com/How-The-Speed-of-Trust-works/book)*. in it, he cites research and gives real world examples of what trust can do for the performance of a business. he says it's the greatest force multiplier for business success if you can create an environment that is trustworthy and trusting.\n\nint he book, he gives [this example](http://www.speedoftrust.com/how-the-speed-of-trust-works/business_case) of warren buffet and trust:\n\n&gt; Consider the example of Berkshire Hathaway CEO Warren Buffett in acquiring McLane Distribution \u2013 a $23 billion company \u2013 from Wal-Mart.  A deal of this size involving public companies would typically take several months to complete and cost several million dollars in due diligence.  But because both parities operated with high trust, this deal was made with one two-hour meeting and a handshake.  In less than a month, it was completed.  Buffett wrote in his annual report: \u201cWe did no \u2018due diligence.\u2019  We knew everything would be exactly as Wal-Mart said it would be \u2013 and it was.\u201d  Imagine \u2013 less than one month and no due diligence costs.  High trust, high speed, low cost.\n\nso i think there is a delicate balance to strike. at least that's thelesson that i learned.",
+                    "score": 12,
+                    "author": "pheirce",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My man you are to beautiful for this world.\n\nFirst of all: \n\n&gt; it was a good thing i found out so early\n\nThis is the sort of thing a chick says after she finally breaks up with her asshole boyfriend after 2 years of abuse. It's not them honey, it's you. There's nothing elegant about being the last one seeing the light.\n\n&gt;i'd rather have the psychopaths that i might do business with reveal who they are early on so i can sever ties faster.\n\nNo, because again, it's not them, it's you. There will always be a next one. And the richer and more succesfull you are the fewer actually decent people you will find.\n\n&gt;he cites research and gives real world examples of what trust can do for the performance of a business.\n\nAnd I can write a book with real world examples of succesfull charismatic politicians fucking hookers - does that prove fucking hookers gives you charisma? Or does that prove the reverse, being a charismatic politician you will more than likely fuck some hookers.\n\nDude, stop filling your head with sociological fantasy. Those are extrapolated situations...have you ever wondered why all great men are succefull? I mean, just consider the odds you would think there are some poor men of character - but you will not read about them.\n\n&gt;CEO Warren Buffett in acquiring McLane Distribution \u2013 a $23 billion company \u2013 from Wal-Mart.\n\nSo both parties had no a invested interest in the transaction and they did their do diligence beforehand. Sounds like profesionalism there not idealism.\n\n&gt;But because both parities operated with high trust, this deal was made with one two-hour meeting and a handshake.\n\nNo, it's old school business. You have one voice, one goal on each side, no need for details or bullshit - that attitude is ironically that of a shark, they both come from an enviroment where you get a pat down when you get in a room - no networking, no pagentry and no bullshit. Good luck finding that in the startup culture.\n\n&gt;at least that's thelesson that i learned.\n\nAnd that's why you and sillicon valley entrepreneurs are insufferable. You lack any capacity to learn from mistakes and fail to take responsibility.\n\nI get that you want to be a nice guy. But ask yourself this... if your mother was being raped in front of you - would you do the right thing or the comfortable thing, the safe thing?\n\nNiceness kills my dude. This is what turns people into monsters.",
+                            "score": -5,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 10,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Dolphins also have sex with eels",
+                            "score": 8,
+                            "author": "ghettospagetti",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The Fleshlight of the sea.  ",
+                                    "score": 2,
+                                    "author": "turtlecopter"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Dolphins are badass motherfuckers and some of them kill and eat sharks\n\nOrcas are not dolphins",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 2,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Damn, that;s technically true, orcas are a subfamily of the dolphin family.\n\nTIL orcas are closer related to dolphins than purpoises...wierd family.\n\n",
+                                            "score": 1,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Dolphins rape people.",
+                    "score": 2,
+                    "author": "1dundundun",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I know, it's always the kind and gentle ones.",
+                            "score": 0,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't know why you got a downvote, you actually speak true. Any business meeting should either have a lawyer present or represeted by someone with business awareness.\n\nAnyway, here's an upvote for you.",
+                    "score": 3,
+                    "author": "naeads",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Because people like lies that make them feel good.\n\nI usually just grab a pound of flesh, a suicide pact if you will. And always get the key to the matrimonial sweet.\n\nI dislike lawyers for 2 reasons. It instantly sinks the little guy. \n\n At the table it's just 2 people talking, 2 people with a wide variety of interests and goals, and until you align those goals, only character matters - that is a parity that no lawyer can provide.\n\nAnd it closes off opportunities to do the backstabbing yourself if the gentleman's agreement falls apart. Before the moral idealists on a spectrum scrieek this is just once the blade is out of it's sheat. Some of the best edges in my career was by engaging with untrustworthy people from a position of vulnerability. \n\nIn today's economy, nobody has time to train you or give you a inch for free...except untrustworthy people that don't give you a second though. It's the classic bait and switch, get them to set you up, fight for something inconsequencial like pay, get the investment and the VIP treatment, they will train you, even fund you and then when they pull the strings leave them with a sour taste in their mouth that the strings weren't attached to anything...and you left with a portfolio, experience and/or a badass reputation.",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sorry to hear this happened to you. May your life see onto a better path ",
+            "score": 1,
+            "author": "nomad80",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thanks. it was a long time ago and i've gotten over it. in fact, i'd say at this point i have no regrets as the lessons learned are worth it.\n\ni do think i'm much better prepared for my next venture which i'm embarking on within the year. it feel so much different and better now.",
+                    "score": 3,
+                    "author": "pheirce",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Awesome. Much blessings for the next venture ",
+                            "score": 1,
+                            "author": "nomad80"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

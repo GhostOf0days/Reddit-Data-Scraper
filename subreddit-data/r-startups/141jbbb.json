@@ -1,0 +1,207 @@
+{
+    "id": "141jbbb",
+    "score": 41,
+    "title": "Tech Founders - Do you ever find yourself reiterating over the same parts of your app when trying to launch an MVP",
+    "author": "MyVermontAccount121",
+    "date": 1685981162.0,
+    "url": "https://www.reddit.com/r/startups/comments/141jbbb",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "So I\u2019ve been making a dating app on and off since about March. My initial deadline I think was end of June but I feel I\u2019m only 50% of the way done. I\u2019m making a dating app that is kinda a spiritual successor to OkCupid so it asks you several important questions to get started, and I am now on my 4th iteration of this questions stuff.\n\nEssentially it goes like this: I grind away on a thing, finish it, and then immediately go \u201cThis is gonna bite me in the ass later if I don\u2019t fix this now\u201d. So I fix it now. While that is probably good practice, it\u2019s holding things up.\n\nSo where do you guys draw the line? When your building an MVP, and you *know* what you just did is sloppy and won\u2019t scale, what do you do? Do you leave it knowing it will be a headache later when integrating everything or fix it now and take longer on your MVP. (Also how many of you add unit tests cause I know I *should* be making Jest tests but I just haven\u2019t yet lol)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt; While that is probably good practice\n\nIt is not a good practice in and of itself.\n\n&gt; When your building an MVP, and you know what you just did is sloppy and won\u2019t scale, what do you do? \n\nI ship it.  Scale doesn't matter when you have 0 customers, and its hubris to assume that you will ever have enough customers where scale matters.  \n\nIts way, way more important to put something out there in the world and get user feedback on it. Your users might tell you this functionality sucks and you need to scrap it. Without hearing from users, you could be spending time trying to \"solve\" a problem that might not exist for you before you ever reach scale.\n\nEdited with a quick afterthought to help illuminate the situation better:\n\nIf you have a scalable product built perfectly that no one wants to buy/use/etc, your business is dead.  You've failed.  If you have a non-scalable product that everyone loves and wants to pay you money for, congrats you've found success.  You take that money and throw it at the problem to temp scale while you fix your code",
+            "score": 55,
+            "author": "noodlez",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Awesome advice! It's damn hard to follow though when you're in the coding zone and your instincts have been to keep it DRY, orthogonal, easy to change, etc.\n\nI know I have to implement features fast and rough, but it always \"let me just improve/fix this one thing.\"\n\nJust updated my .git/hooks/post-commit to set a reminder every 5 commits:\n\n `!/bin/bash`  \n`# get commit count`  \n`commit_count=$(git rev-list --all --count)`  \n`if [ $((commit_count % 5)) -eq 0 ]; then`  \n`echo \"Remember to SHIP FAST and scale later. Poor scalability doesn't matter with 0 customers.\"`  \n`fi`",
+                    "score": 6,
+                    "author": "shipaware-app",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "IMO, this should be something written on a post-it note attached to your monitor.",
+                            "score": 7,
+                            "author": "redditmudder"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I love this! Thanks for the idea.",
+                            "score": 3,
+                            "author": "NiagaraThistle"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Exactly. Don\u2019t spend an extra 10 days perfecting a feature nobody wants. Ship &amp; figure out what they do want and then make it better. It\u2019s called MVP for a reason",
+                    "score": 5,
+                    "author": "baker2795"
+                },
+                {
+                    "level": 1,
+                    "comment": "I disagree so much with this sentiment. It is nice and kind feedback, but it is just elements and the entire truth... MVP's and building are maybe 20 % of the work, while research, TG customers, big and small data, strategy synthesis, user-behavior, brand risk assumptions, beach-head assumptions, etc. should be done with vigor.\n\n**I love that everyone is building and moving forward - I love the input and praise towards Founders - however, I am confused and intrigued by this supremely over-simplified approach that fills the contemporary times.**\n\n#OneLovePeaceOut",
+                    "score": -4,
+                    "author": "Popular_Comedian_685",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Strange response.  Because I didn't provide a full description of how to run a startup, my comment is disagreeable?  Why *would* I mention user research, analytics, or anything else like this in a thread about shipping features that OP is wasting time iterating on?  Why are you assuming OP hasn't done any of these things themselves since they don't mention it at all either way?",
+                            "score": 3,
+                            "author": "noodlez",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I might have been too aggressive in my phrasing, I apologies.\nI have my way of seeing this, and many have, from my point from, a too simplistic approach to these matters.\nWish you the best in your endeavours.\n\nI apologize for my blatant response.\nGreetings from Denmark. \ud83d\udc4d\ud83d\ude42",
+                                    "score": 1,
+                                    "author": "Popular_Comedian_685"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm in a very similar situation where i'm making a dating app that i'm looking due for release this month and i've been doing something very similar where I keep going back to things to refine them because i'm not 100% happy with how they are. I've also had to go through moments where I decide to cut things out just in the interest of actually releasing so that I can see more about what people \\*actually\\* want rather than what I assume people might want. \n\nI don't actually have any advice but happy to talk through DMs and stuff and talk about ideas if you'd like. My personal opinion though is that a first release shoudn't be sloppy, otherwise people will be turned off - but at the same time it's unrealistic to expect something as polished as a mainstream and already established app out of the gate.\n\nIt's an unpopular opinion but unit tests are mostly important for ensuring that ongoing releases and deployment don't affect users on your production app. With this in mind, i'd say that as long as you thoroughly manually test on your first release you should be fine but if the app gains traction and becomes a going concern with updates and a lifecycle you should look at implementing good tests to ensure that your user base isn't affected.",
+            "score": 5,
+            "author": "Space-Tsundere"
+        },
+        {
+            "level": 0,
+            "comment": "I personally have a huge internal war (conflict isn't a strong enough word) between perfection for even an MVP, and just shipping any shit that works.\n\nI can 100% say that almost every successful business in history just shipped shit that worked and then cleaned up after.\n\nFor example, there are those seemingly critical features which probably should be there like \"forgot my password\" whereas there are those features which you can neglect for just about forever like using an older version of your logo. I hate to say it, but I think you can even ship without the \"forgot my password\" feature.",
+            "score": 4,
+            "author": "FartyFingers"
+        },
+        {
+            "level": 0,
+            "comment": "&gt; (Also how many of you add unit tests cause I know I should be making Jest tests but I just haven\u2019t yet lol)\n\nIf you're worried about unit tests prior to launch you're about 10 steps to in the weeds. \n\nI'm focusing on that note, but it's an observation of your over post. You're building a a fun toy project, not a startup.\n\n* Toy project - a coding based project that you enjoy working on\n\n* A startup - a high-risk business that is attempting to create new value. Likely, that value is novel and unproven. Coding is a distant objective to derisking your value prop.",
+            "score": 3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Very true. I guess my aspiration is to make it a product one day. The product is being geared towards the kink community which is smaller than the general demographic. So I\u2019m not seeking the next unicorn but it would be nice for it to be a full business one day. I guess I should keep in mind that that would be a long time away if at all",
+                    "score": 1,
+                    "author": "MyVermontAccount121",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Aren\u2019t there already other sites for this? The challenge with dating sites is always user acquisition",
+                            "score": 1,
+                            "author": "LawrenceChernin2",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In my opinion, not great ones. Feeld is mostly it and it\u2019s rapidly become sanitized as it gets more popular. I have seen multiple people I know in real life that I know aren\u2019t into kink or alt lifestyle things that are on it cause they \u201cheard good things\u201d. Okcupid used to be the spot for kinky people but it got bought by match and it got converted essentially into a tinder clone.\n\nPretty much the way I designed my app has bits and piece from ones that exist but to my knowledge no app exists that has these features all in one. Likely cause every app is just trying to be Tinder with a twist instead of something new.",
+                                    "score": 1,
+                                    "author": "MyVermontAccount121"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You need to talk to your customers. Rather than guessing what will work, they will tell you what your need if you listen hard enough. MVPs are not intended to scale, so that part of your question can just be ignored for now, since you'll never have that headache if you can't figure out how to be successful.",
+            "score": 6,
+            "author": "danjlwex",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That\u2019s actually a really good point. Grad school drilled clean code practices into my head so it pains me to break those principles but yeah I guess MVPs are ok if they are a bit of spaghetti code cause I may not use features I\u2019m trying to be meticulous with",
+                    "score": 2,
+                    "author": "MyVermontAccount121",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There's no need to write bad code, that's just inexperience giving you technical debt. Personally, I'd also write tests during MVP development, but many disagree. One trick is to plan more, and write code slower, but that takes decades to learn. Spend more time talking to customers, before, during and after development, and less time writing bad code.",
+                            "score": 4,
+                            "author": "danjlwex"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\u201cThis is gonna bite me in the ass later if I don\u2019t fix this now\u201d.\n\nWhat\u2019s going to \u201cbite you in the ass\u201d is spending time on features that you have no clue if customers value. \n\nOnce you pick up on what they value, then you build more of what they value. \n\nOnce things break, then you rebuild the feature to make it more stable. \n\nIf things aren\u2019t breaking, you\u2019re not growing fast enough or spending too much time over-engineering features and processes.",
+            "score": 2,
+            "author": "barbsbaloney"
+        },
+        {
+            "level": 0,
+            "comment": "Almost always",
+            "score": 2,
+            "author": "networknijo"
+        },
+        {
+            "level": 0,
+            "comment": "It sounds like you don\u2019t have enough pressure. My startup took funding, has employees and we run out of money if we don\u2019t build extremely fast and to a high standard. Get pressurised and you\u2019ll be forced to do it properly or ignore it until later",
+            "score": 1,
+            "author": "New_York_Rhymes"
+        },
+        {
+            "level": 0,
+            "comment": "Every time, when I think this to myself or I hear it from one of my co-founders my trained reaction now is \"what a privilege it would be to solve that problem later\"\n\nEven if you build it \"correctly\" then how are you sure you even built the right thing in the first place?   Rebuilding something correctly is a much easier problem to solve when you already found users for your hacky nonsense.",
+            "score": 1,
+            "author": "kmbarboza"
+        },
+        {
+            "level": 0,
+            "comment": "How are you measuring between iterations? \n\nWhat\u2019s your measure of \u201cgood\u201d",
+            "score": 1,
+            "author": "Lopsided_Reading_362"
+        },
+        {
+            "level": 0,
+            "comment": "I have a running list. If I know something will break/deteriorate with certain cases I jot it in, but don't handle it right away. I only allow myself to work on it if enough users notice or complain. As an example, our saas product still has no \"forgot password\" function. We're still small enough that if a user runs into that issue (which is rarely) they just send us an email and we handle it. \n\nIt's hard but it's the only way to let yourself ship quick. And as a plus, the users feel that you're super responsive when you fix something they point out!",
+            "score": 1,
+            "author": "jadeasm"
+        },
+        {
+            "level": 0,
+            "comment": "your MVP should feel embarrassing. If it is not then you have waited to long to ship it.\n\nI tell people that it should feel like inviting people into your messy home. You say 'don't mind the mess' and people know to turn a blind eye and only give feedback on the relevant parts.\n\nWhat you need are feedback and conversations",
+            "score": 1,
+            "author": "Intra78"
+        },
+        {
+            "level": 0,
+            "comment": "The hardest part in creating a dating app is numbers. Unless you can target a hyper local audience, you need millions, mostly in the same country almost from the get go just to have enough potential coverage.\n\nI'm not kidding when I say marketing budgets for start up dating apps can  sometimes be in the millions from the get go.\n\nGet users, don't worry about perfection. You'll never get anywhere with a perfect app",
+            "score": 1,
+            "author": "HoratioWobble",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I\u2019m already planning on the hyper local strategy. My ultimate goal would be to be able to move to NYC and host singles nights as bars all over the city which would help me plug the app and build a community of fans. Since the app is geared towards kink people who are often in open relationships, I don\u2019t have the major problem of most dating apps of the people the have the most success with it delete your product. Not to the same degree atleast.\n\nMy hope is that keeping this *super* lean will let me go as long as possible to build word of mouth",
+                    "score": 1,
+                    "author": "MyVermontAccount121"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I would focus on one problem at a time. To successfully launch, I would concentrate on the minimum requirements to avoid disappointing the initial users. Everything else can wait.",
+            "score": 1,
+            "author": "micupa"
+        },
+        {
+            "level": 0,
+            "comment": "Everyday, all day, for months.\n\nIt's USUALLY a form of procrastination and/or fear. \n\nIf this is an MVP, do not worry about \"scale\" or if it is \"sloppy\". That is literally the point of an MVP: it is not supposed to Scale...yet. It's just a proof of concept. Why bother trying to scale something that has ZERO users? Who are you scaling that for? User #1? Worry about scale when you have 1000s of users and your server keeps bombing out.\n\nWho cares if an MVPs code (or even layout) is 'sloppy'? If it solves your users' problem they sure won't care.\n\nDoes it make sense to CONSIDER scale and cleaner code as you build? Yeah. Does it make sense to focus on either for an MVP? No. Get the piece of crap out there (polish the turd up a bit so it is useful and doesn't break on every feature of course) so users can use it and tell you if they even need it.\n\nTHEN circle back and make it so it scales and is less sloppy - when you have the time and hopefully money to do so.\n\nA project with ZERO users that is not sloppy and scales great is not a worthwhile effort for you - trust me I've been iterating over the same POS for months....while watching others around me launch barely functioning tools that are making a shit ton of $$.\n\nLaunch early, fail fast, iterate or pivot, repeat.",
+            "score": 1,
+            "author": "NiagaraThistle"
+        },
+        {
+            "level": 0,
+            "comment": "I believe in building quality products. I\u2019ve been spending months delaying my app release for the same reason. I want to get the MVP right.\n\nI think people misinterpret the spirit of MVP, falsely believing that it means you\u2019re going to make more money by throwing junk out fast.\n\nI tried that and it was a waste of time. MVP mentality is get-rich-quick thinking. Real value comes from determination, perseverance, craftsmanship, and building something you can really be proud of.\n\nBe smart, don\u2019t waste time perfecting the color of every button\u2026but take your time and get it right!",
+            "score": 1,
+            "author": "Cartworthy"
+        }
+    ]
+}

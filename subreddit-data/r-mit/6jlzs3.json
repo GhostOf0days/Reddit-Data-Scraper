@@ -1,0 +1,93 @@
+{
+    "id": "6jlzs3",
+    "score": 81,
+    "title": "MIT is installing NAT, which stifles innovation",
+    "author": "y0Io",
+    "date": 1498492938.0,
+    "url": "https://www.reddit.com/r/mit/comments/6jlzs3",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is really important.  It's hard to convey how destructive these actions are.",
+            "score": 22,
+            "author": "ikdc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Please try. As a student, and current employee, I only use my static IP for remote access to my machine. I can still request a static IP and hostname. The process hasn't changed in the 14 years that I've been here. I'm not seeing the destruction.\n\nIt's worth pointing out that not everyone runs a private server or needs a device to be publicly accessible from the Internet. I'm quickly learning that many people seem to assume that their issues affect everyone around them, when the opposite is true. If the (I assume) relatively few people who need static IPs have a bit more friction, that is unfortunate, but it's hardly a call to arms.",
+                    "score": 12,
+                    "author": "ccb621",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is a great question.\n\nThe biggest issue as I see it is the way these changes are happening.  Every time IS&amp;T rolls out a change, like selling half the address space, or implementing NAT, without any warning or support, they break a bunch of services.  This is unlikely to be the last thing they break, and everything that they do is making it that much harder for people to learn how to do things and get started.  I think that's extremely unfortunate for a university, where having the freedom to experiment and learn how things work is really important for every generation of engineers.\n\nIt's easy as someone who has experience dealing with this sort of stuff to say \"Well that's fine, I can work around that easily\".  But don't forget that you have the advantage of several years of experience.  What I'm most worried about is, how many freshmen playing around with their first server are going to hit one of the walls and give up?",
+                            "score": 7,
+                            "author": "ikdc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I agree that communication of the changes should be improved. I don't see how these changes make it \"harder for people to learn how to do things and get started\". Today the process of requesting a static IP address and/or hostname is exactly the same as it was 10 years ago. Let's say it takes IS&amp;T two days to process my request instead of one day. Yeah, the process is a bit longer but nothing is demonstrably harder. In the grand scheme of things the time it takes to setup the project/server is greater than that to make it publicly-accessible.\n\nI am also not concerned about the hypothetical freshman who gives up so easily. If he/she gives up at such a small hurdle, I have to question the commitment to the project in the first place. Between the knowledge base online and talking to people, I was able to get a server online. As above, not much is changing. Additionally, exposing students to NAT could be a good thing. MIT is unique in that everything is publicly accessible; however, pretty much every other organization uses some form of NAT. Knowing how to work with and/or around it could be beneficial.",
+                                    "score": 4,
+                                    "author": "ccb621",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I think it does make it harder in several ways.  The ability to run nc off your laptop and immediately have a service accessible to the world is really cool, and I'm sad that we're losing that.\n\nI also want to address this issue of \"commitment\".  Honestly, I think that \"questioning the commitment to the project\" is the wrong way to look at it.  MIT should be a place where people are free to play around and learn new things, without committing to anything.  If my friend in course ~~5~~ _undecided but probably 5_ decides on a whim that they want to play around with making a web service over the weekend, they should be able to learn to do that easily.  Of course they aren't committed to anything; they're playing around and deciding what they like.  I think that's one of the most important parts of MIT.  And yes, it's possible that each individual barrier can be overcome with effort.  But it's getting harder over time, and that's an issue.\n\nFinally, I think you're downplaying the impact of NAT a little.  There are lots of other things besides services that break or get harder under NAT, such as Tor and other decentralized systems.  It's going to be hard or impossible to use and build these sorts of tools now.  Is that a necessary part of learning to live with NAT?  I don't think it needs to be.  I think MIT should encourage creativity over realism in this regard.  Barriers to entry are bad for us in the long run.",
+                                            "score": 6,
+                                            "author": "ikdc"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Also, MIT already has a firewall and DDoS protection.  NAT isn't really adding anything in the way of security to that.",
+                    "score": 13,
+                    "author": "ikdc",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Until recently there was no firewall and all machines were exposed to the outside world.",
+                            "score": 2,
+                            "author": "GlamGlamGlam",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "True; but there is a firewall now, and it's separate from the NAT.",
+                                    "score": 2,
+                                    "author": "ikdc"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This affects my workflow, so I asked IS&amp;T for clarification. They claim that public IP addresses will still be assignable - and that, by the fall, this process will be self-service.",
+            "score": 6,
+            "author": "atomicinf"
+        },
+        {
+            "level": 0,
+            "comment": "The deployment of those features by IS&amp;T has been very frustrating. \n\nI manage the workstations from my research group and twice in the past few months they've made changes to their network configuration (typically the firewall) on Friday afternoons that broke services that are paramount for my research group. We need to connect all of our workstations to a license server located in a different building than the research group. We rely on static ip and hostname to whitelist the license retrieval. Same with remote desktop connections on a shared machine that suddenly only allowed the first user registered to connect. \n\nTwice they did that on a Friday afternoon, without concertations or even warnings. Then we spend hours figuring out what went wrong after users email us that services are suddenly not working anymore. Eventually we piece things together that's it's a network issue... It eventually takes days to weeks to fix things with ist... \n\n\nIs this me or this is very amateurish and this kind of process would not fly if it were happening in a large company?",
+            "score": 3,
+            "author": "GlamGlamGlam"
+        }
+    ]
+}

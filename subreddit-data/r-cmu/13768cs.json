@@ -1,0 +1,57 @@
+{
+    "id": "13768cs",
+    "score": 3,
+    "title": "Is Embedded (18-349) still worth taking without RTOS?",
+    "author": "Standard_Telephone32",
+    "date": 1683164643.0,
+    "url": "https://www.reddit.com/r/cmu/comments/13768cs",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "As the title says. Heard they took the os part (RTOS) out of the class and people said that was the best/most informative part of Embedded. Is it still worth taking without RTOS??",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Can consider taking the INI version.",
+            "score": 1,
+            "author": "Typical-Ad-7962"
+        },
+        {
+            "level": 0,
+            "comment": "you do learn rtos, you just don\u2019t make it yourself (they teach freertos). i think it\u2019s pretty worth taking if you want to go into the embedded field, plus most embedded systems in industry use freertos anyways and companies won\u2019t develop their own rtos",
+            "score": 1,
+            "author": "habanooki",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Did previous iterations of the course build rtos from scratch?",
+                    "score": 1,
+                    "author": "aurreco",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "idt they built the whole rtos from scratch but they had to write some kernel stuff, but i can\u2019t say for sure because i took the new version of the class",
+                            "score": 1,
+                            "author": "habanooki",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "man im so curious now",
+                                    "score": 1,
+                                    "author": "aurreco",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I took an older version of the class (2019) and was a TA in 2020. It depends what you mean by \u201cbuilt the whole rtos\u201d the rtos lab was essentially building out a thread library and dealing with scheduling, thread creation/killing and context swapping, while also dealing with everything you\u2019d expect a thread library to have. Specifically that\u2019d be independent regions of memory, and kernel side mutexes.\n\nI can\u2019t speak much about the class now but this lab is what made it worth it imo. It was difficult and relied heavily on understanding concepts and designing everything carefully and that made it super rewarding. \n\nI think the point wasn\u2019t to learn a piece of software that\u2019s used in industry but to teach you skills that will make you a better systems programmer which is what I liked about the class.",
+                                            "score": 1,
+                                            "author": "Immediate_Setting512"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

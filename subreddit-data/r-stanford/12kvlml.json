@@ -1,0 +1,66 @@
+{
+    "id": "12kvlml",
+    "score": 5,
+    "title": "Inquiry for anyone who has taken CS106 or is knowledgeable about Python",
+    "author": "MartianMemories",
+    "date": 1681405015.0,
+    "url": "https://www.reddit.com/r/stanford/comments/12kvlml",
+    "media_urls": [],
+    "other_urls": [
+        "https://imgur.com/a/BiIn04C](https://imgur.com/a/BiIn04C)",
+        "https://www.reddit.com/user/redion2000/)"
+    ],
+    "postText": "I am very new to learning Python and a friend suggested since I know some basics, to try using Stanford Karel to continue learning.\n\nFor fun, I \"taught\" Karel how to spell the letters of the alphabet but right now, it's in chronological order (Karel writes A, then B, then C, and so forth).\n\nI would like to make it so that I use rand to have Karel \"write\" 30 letters in random order on my 29x29 world.\n\n[https://imgur.com/a/BiIn04C](https://imgur.com/a/BiIn04C)\n\nAs you can see in the image, right now it's in chronological order but theoretically, I would love it if my random number is 22 for example, that it writes V and then another random number is populated to spawn the 2nd letter and so forth.\n\nI tried googling how to use the rand function for functions and came up with this (please see below), but with this code, Karel still writes the alphabet chronologically. I am SURE I am doing something wrong, I just don't know what - my theory is I don't understand how to use the random package well enough to apply it.\n\nAny help is appreciated - I have been googling for 2 hours now on how to use random. Thank you!\n\n    def main():\n        all_replies =[letterA(),letterB(),letterC(),letterD(),letterE(),letterF(),letterG(),letterH(),letterI(),letterJ(),letterK(),letterL(),letterM(),letterN(),letterO(),letterP(),letterQ(),letterR(),letterS(),letterT(),letterU(),letterV(),letterW(),letterX(),letterY(),letterZ()]\n    x = random.randint(1, 26)\n    print(all_replies[x])\n\n **EDIT**: it works now. Thank you  [**redion2000**](https://www.reddit.com/user/redion2000/)  for your help!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Your code is creating a list of \"None\" because you're not putting the functions in the list but their return values. In other words, your functions are being called when you're creating the array rather than when you're calling print.\n\nRemove the parentheses from the line where you create the array and add a single pair after [x]. \n\nThen look at the random.shuffle function.",
+            "score": 6,
+            "author": "redion2000",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks!! I will try that right now and let you know what I get.",
+                    "score": 2,
+                    "author": "MartianMemories"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, you're correct.",
+                    "score": 1,
+                    "author": "MartianMemories"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you interested to learn python online? Drop me a message",
+            "score": 2,
+            "author": "Firm_Employment_8946",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey! I'm interested. Could you PM me coz I am unable to?",
+                    "score": 1,
+                    "author": "Defiant_While_6933",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Okay check DM",
+                            "score": 1,
+                            "author": "Firm_Employment_8946"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "id": "12ghxwf",
+    "score": 10,
+    "title": "Can you setup smart speakers like Google home or Amazon echo using MIT network?",
+    "author": "staysharp87",
+    "date": 1681042981.0,
+    "url": "https://www.reddit.com/r/mit/comments/12ghxwf",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I've been lazy to reconfigure my smart speakers since the MIT Wi-Fi overhaul (I know it's been a minute) and I'm trying to do that today. But I don't know if I can have them hooked up to MIT SECURE, MIT GUEST, or MIT (what's this btw? I have used secure and guest on my phone before but i don't know what this \"MIT\" is. Does anybody know the password?). Has anyone done this? Can you help me with this?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Yes you can. The \"MIT\" SSID used to be open but now requires an individualized password, which you can obtain from https://wifi.mit.edu/.\n\nThis SSID has specifically been kept around for devices that do not handle enterprise auth (as on MIT SECURE or eduroam) or captive portals (as on MIT GUEST)",
+            "score": 12,
+            "author": "ttech32",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sweet! Thanks for the info, I'll try that",
+                    "score": 1,
+                    "author": "staysharp87",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You're welcome. Just a note: while this will give your smart speaker internet connectivity, a lot of consumer devices that rely on broadcast communications to discover and talk to each other (mDNS, zeroconf, avahi, etc) will not work correctly on MITnet.",
+                            "score": 2,
+                            "author": "ttech32",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This worked! Thank you so much!",
+                                    "score": 1,
+                                    "author": "staysharp87"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In my experience, yes for Echo since you can enter the individual password to it directly, but no for Home since it attempts to connect to the Wifi your phone is connected to without giving you a chance to enter a password. Might\u2019ve just been the model for the Home I tried though, let me know if you figure yours out!",
+            "score": 1,
+            "author": "nants00",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It worked for both echo and home for me. I followed u/ttech32 's instruction in this thread.",
+                    "score": 2,
+                    "author": "staysharp87"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "No, iirc\n\n\nalso, MIT was the legacy network before MIT Guest existed, and was left up because there were things on campus that couldn't be switched over to the new network without breaking things, I think",
+            "score": -1,
+            "author": "AlexeiMarie",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ah OK. At least that saves me from my futile attempt at trying to get them to work. Thank you! I guess I'll just use them as Bluetooth speakers now lol",
+                    "score": 1,
+                    "author": "staysharp87"
+                }
+            ]
+        }
+    ]
+}

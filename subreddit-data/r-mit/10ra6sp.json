@@ -1,0 +1,17 @@
+{
+    "id": "10ra6sp",
+    "score": 21,
+    "title": "Check out this tool for finding/visualizing courses at MIT!",
+    "author": "monkeymalek",
+    "date": 1675295014.0,
+    "url": "https://www.reddit.com/r/mit/comments/10ra6sp",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.youtube.com/watch?v=_XExZbIsL4A&amp;t=520s),",
+        "https://github.com/ifueko/course_selection)",
+        "https://preview.redd.it/5ftwkz1zynfa1.png?width=2844&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=dd102b9c207437e2052d243f368c5764d485aa84",
+        "https://drive.google.com/file/d/1g6tAJ__rmwPbmdgAOkARjtjC3YAvxcox/view?usp=sharing)."
+    ],
+    "postText": "With the spring semester coming up, I thought this might be a good tool to share. Recently I came across this video from [ifueko](https://www.youtube.com/watch?v=_XExZbIsL4A&amp;t=520s), a PhD student in EECS who also makes AI/tech-related content on YouTube.\n\nShe basically applied OpenAI's language models which are currently free to make the task of finding MIT courses from keywords easy. Currently, you can access the application through a Google Colab notebook which you can use by first cloning the Github repo [here](https://github.com/ifueko/course_selection) and then opening up \\`visualize\\_courses.ipynb\\` in Google Colab and running the cells.\n\nHere is an example of what the 2D search space looks like for \"robotics\" as a search query:\n\nhttps://preview.redd.it/5ftwkz1zynfa1.png?width=2844&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=dd102b9c207437e2052d243f368c5764d485aa84\n\nThe app works by finding embedding similarity between your search query (e.g. \"robotics\") and the descriptions of all the courses at MIT and it plots everything in a 2D space to allow for efficient visualization and exploration of courses.\n\nAs a result, you will also need to load the embedding data from a CSV, which you can download [here](https://drive.google.com/file/d/1g6tAJ__rmwPbmdgAOkARjtjC3YAvxcox/view?usp=sharing).\n\nOther than that, assuming you have an OpenAI account, just create a free API key and paste it in, and you should be good to go!\n\n(FYI: you don't have to use Google Colab of course, but it is easier and the web app is intended to work based on a Google Drive folder)",
+    "comments": []
+}

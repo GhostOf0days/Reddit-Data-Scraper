@@ -1,0 +1,243 @@
+{
+    "id": "13dy722",
+    "score": 24,
+    "title": "MVP launch questions | Advice needed ASAP",
+    "author": "justdoit_leo",
+    "date": 1683741360.0,
+    "url": "https://www.reddit.com/r/startups/comments/13dy722",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hello fellows, some serious advice is needed. Please, only people who actually have practical experience, not a theory.\n\nWe are in the early stage of building. Already conducted market research and responses are positive however it is challenging to understand if people will actually pay for the product. \n\nWe are building MVP at the moment but if we want to include all the payment system, registration, billing and etc. that would require at least one additional month. We want to launch quickly and see customer feedback. \n\nCan someone recommend, what are the ways to test if users are going to pay without making a full system?\n\nOr can someone recommend the fastest way to set up payments, registration and etc? \n\nP.S. I am not a software developer so something that requires minimal coding, please. \n\nThank you a lot!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "DO NOT share any company/product names. Rule 2\n\nDO share methodology and process. Rule 3",
+            "score": 1,
+            "author": "GaryARefuge"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 22,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 5,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It sounds like you don't actually care about the money, you are more interested in the data? \n\nIf that's the case just put a checkout button or a subscription button and assign a value in whatever you are using for analytics and just track how often people click the checkout button (or subscribe button or whatever you have). When they do have a page that says \"Thank you for your support! Our payment processor isn't fully ready yet but give us your email and we will contact you when we are ready\".\n\nBoom, you have data AND you can reach out to the people who were interested once you are ready to accept payments.\n\nI would /not/ have some weird cashapp link or something, personally.",
+            "score": 18,
+            "author": "teamcoltra",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeeah, that's exactly what we were thinking about! Thank you, I am glad to hear that such a plan might work actually. \n\nBut what do you think, won't those people feel like it is a joke or something like that and will be frustrated to get back later and actually pay?",
+                    "score": 6,
+                    "author": "justdoit_leo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's a valid concern, but your early adopters will/should understand. \n\nIdeally you run with this faux checkout for a few weeks just to gather data and buy yourself some time to build out the next step - if the experiment and data show you're on the trail. \n\nYou could also legitimately collect emails in the faux checkout. So once you're ready for the next step, you can reach out to those who couldn't complete the purchase.",
+                            "score": 5,
+                            "author": "just_here_to_rant"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Tell users (after they click on the purchase button so you know that they're willing to pay) you're giving them a trial period discount and that you will start charging in one month.",
+                            "score": 1,
+                            "author": "preethamrn"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "A lot of startups do this. You can label it as a private beta. Collect email addresses and tell people they're on the waiting list to enter. Once the payment system is ready, send out emails.\n\nYou could also get away with a no-to-low code option like [Stripe Billing](https://stripe.com/docs/no-code). Without knowing the details, though, it's hard to assess how feasible this might be.",
+                            "score": 1,
+                            "author": "cmdnormandy"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You can even use google forms to save on development time, or some other forms software (mods I hope it\u2019s ok to mention it cuz it\u2019s google )",
+                            "score": 1,
+                            "author": "cs_legend_93"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You could offer a pre-order plan where people pre-pay at a 50% discount, with a full refund any time.\n\nBut otherwise, think about a scenario where you would give a new, unknown company money for a product that doesn\u2019t exist yet.",
+            "score": 8,
+            "author": "everdev",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, I agree that it might sound like a scam.. So you would advice to do sales only once the product is ready?",
+                    "score": 1,
+                    "author": "justdoit_leo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You could still do a pre-order sale, but if no one buys, I wouldn\u2019t say that anything is wrong.",
+                            "score": 3,
+                            "author": "everdev"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is this a digital product, SASS, physical product, or service? \n\nEasiest way is to run a few ads, each one geared towards a population, with some vagueness. Let's say your selling...widgetals. Those will...aggregate someone's life into a control panel. You could run a series of ads, spend a couple bucks on each while shaping the messaging ($25 to start until you have the messaging down), and each ad leads to a newsletter signup along with which messaging was effective. \"Need to get a handle on all your messages before you finish your first cup of coffee? We're launching soon, sign up for early bird specials: \\_\\_\\_\\_\\_\\_\\_\\_ \" Now when you launch you also have a list of prospective customers. \n\nAnother option, sign up for Shopify. You can get a site and payment system set up in an hour. When you're ready to move off of it, just switch the link to your new payment page. May even find that \"outsourcing\" payment collection through them is worth it to not build it yourself - payments are notoriously tricky things to get right, and errors thrown on a payment page will permanently lose customers. Entrust it to companies whose sole purpose is to get that right for a variety of payment options.",
+            "score": 5,
+            "author": "Biking_dude",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is a web app. Linked to e-comm. The idea sounds good and doable but since we only validating the MVP we would like to minimize our payments as we already living on a budget, bruh.",
+                    "score": 2,
+                    "author": "justdoit_leo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "@ minimize payments - is that for Shopify, or running ads?\n\nAds don't have to be expensive - $5-20 will start to find some data, and there are plenty of free ad buy coupons floating around. Don't try to sink $1k into marketing without knowing your $5 ads are successful or not.\n\nAs for Shopify, it's ultimately going to be cheaper while you're starting off. Your payment development is going to take time away from your MVP. Make the best possible product, get it out there, let the pros take care of what they're great with (payment processing), then move over when your revenue can support the development and technical debt involved.",
+                            "score": 1,
+                            "author": "Biking_dude"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Get the book Testing Business Ideas by David J Bland, and devour it ASAP. It\u2019s got 44 experiments mapped out and measured by cost, time, and confidence level of results. The chapters which introduce the experimentation process and mindset are fantastic.",
+            "score": 3,
+            "author": "theredhype"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, that's an idea. But maybe people won't trust enough to do that or simply will be lazy",
+                    "score": 4,
+                    "author": "justdoit_leo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Maybe? That's still more data for you. I think you're right to want to have paying customers as the profile is very different from free customers. The only challenge you have ahead of you is how to approximate the data you would get from proper paying customers without spending a month of effort.  \n\n\nIf your goal is to actually generate cashflow at this stage then just spend the month. If your goal is to learn I think you'll learn enough with just this.",
+                            "score": 1,
+                            "author": "stefanmai",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, the goal is mainly to learn first. Thank a lot for the advice!",
+                                    "score": 2,
+                                    "author": "justdoit_leo"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "my 2cents. \n\nI'd setup a landing page that clearly communicates the problem you are solving and for who, along with clear message on how your solving (product demo video etc). Then ask for something in return (information, email, in your case : money ). This will help determine if the perceived value of your solution exceeds the value what you are asking for by comparing Cost vs Expected return. This is essentially what crowdfunding does. I'd offer some 'benefit of pledging' and/or 'full refund if not fully satisfied at launch'.",
+            "score": 2,
+            "author": "Capital-Ice6446"
+        },
+        {
+            "level": 0,
+            "comment": "My opinion is that MVP is not the \"most incomplete product\" that you can launch and people will use. The 'V' is viable, and a product is not viable if it doesn't generate revenue. So yes, it's worth the time to see if people will pay for it.",
+            "score": 2,
+            "author": "Californie_cramoisie"
+        },
+        {
+            "level": 0,
+            "comment": "You dont actually need to take payments or generate invoices or build any sort of capability to prove this hypothesis out. Just add a pricing page and a subscription confirmation flow into the sign up or onboarding journey i.e. offer a 14 free trial but a modal to get the user to pick a plan during the sign up/in flow then see how it goes. It doesnt prove they will pay but it proves they would be interested in paying that amount if the product delivers on the promise.  You can then configure a welcome email that lets them know its MVP and free for the time being and you'll give them plenty of notice if thats going to change. Worry about actual billing once you have people to bill. Even then you could theoretically just manually create and send a bunch of invoices from any one of the accounting platforms.",
+            "score": 2,
+            "author": "Commercial_Carob_977"
+        },
+        {
+            "level": 0,
+            "comment": "Two suggestions...\n\n1. No matter what paid tier they click on give them 30 days for free! They can then register and Then you have a month to build it.\n\n2. Have them click on a checkout screen. Have screen 1 be all their contact info. Step two can be payment, but instead of actual payment page you greet them with a message that is something like, \"we want you to be 100% satisfied before you pay, so your first month is on us!\"\n\nNote, this will create some work a month from now in order to check if they have paid and then to nill them.",
+            "score": 1,
+            "author": "julysanta"
+        },
+        {
+            "level": 0,
+            "comment": "Did your market research actually involve speaking to individual (potential) customers?\n\nAre you building an audience through social channels?\n\nDo you have a pool of people who would be an end customer you can reach out to?\n\nI would say if the answer is yes to any of these, then setup a basic landing page with a demonstration of what is coming (e.g. video if possible or if not, then screenshots), embed a Typeform pre-order form with a lifetime discount and link to Stripe to take payments. Setting all this up should take less than a day and doesn't require code. Send it to your potential customers and see what their response is.\n\nI've done this before for a digital product we were creating manually and it worked well, but the founding team was embedded in the community of people who were interested in the product.\n\nCan you do manually what the product will do through the platform eventually? If so, even if it costs you more in manpower, you could start taking payments and doing things that way.",
+            "score": 1,
+            "author": "josephskewes"
+        },
+        {
+            "level": 0,
+            "comment": "Technically to satisfy the \"Viable Product\" portion of an MVP you would need to ensure you can register users and collect payments. There are out-of-the-box solutions for registration and payments you can leverage, there will be some coding to connect it all together but a competent dev should be able to have the basics up and running in a couple of weeks tops. You could kick the can on the payment system for X-days with a mock payment page that also offers an X-day free trial, but you would still need some sort of registration system to track users/collect emails to make the experiment much more valuable and see actually convert the users to real paying customers after the trial expires. Just ensure you can have the payments set-up by the time the first trial users come up for expiration. Typically you'll see must companies collect CC info at the start of the trial, but in this case, you would kick the can on that at first as well.",
+            "score": 1,
+            "author": "Dyagz"
+        },
+        {
+            "level": 0,
+            "comment": "Stripe has no code way to set up payment processing \n\nStart with just testing 1 feature- did that with our last app and it went so much better than I could\u2019ve even expected and 12x the user growth of our previously launched product that was full of bells and whistles- simple works for you and your users",
+            "score": 1,
+            "author": "MotivateUTech"
+        },
+        {
+            "level": 0,
+            "comment": "Unpopular opinion: Call potential customers, ask if they want it, if so give it to them and send them an invoice. If they hate your product offer a refund and try to keep them aboard to conduct further research.",
+            "score": 1,
+            "author": "Enough_Cauliflower69"
+        },
+        {
+            "level": 0,
+            "comment": "Id say just do a checkout button and then an apologies we are currently out of stock or on back order/undergoing maintenance we will email/text when we have availability. Make sure you collect their info prior to the message.",
+            "score": 1,
+            "author": "prototypingdude"
+        },
+        {
+            "level": 0,
+            "comment": "It takes 5 minutes to set up a stripe checkout link.",
+            "score": 1,
+            "author": "c1utch10",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow, interesting. Can you share a bit more details about it, please? Thank you",
+                    "score": 1,
+                    "author": "justdoit_leo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sure, here it is: https://stripe.com/payments/checkout",
+                            "score": 1,
+                            "author": "c1utch10"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I have some great solutions, but only theory unfortunately\u2026 so I won\u2019t bother.",
+            "score": 0,
+            "author": "JimHalpertsUncle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Haha, I got your point! Just curious, why it is a great solution if it is not validated yet?",
+                    "score": 1,
+                    "author": "justdoit_leo"
+                }
+            ]
+        }
+    ]
+}

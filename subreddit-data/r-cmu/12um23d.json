@@ -1,0 +1,103 @@
+{
+    "id": "12um23d",
+    "score": 12,
+    "title": "Okay, so clac and c0vm make me wanna explore Turing Machines",
+    "author": "Congress1818",
+    "date": 1682118487.0,
+    "url": "https://www.reddit.com/r/cmu/comments/12um23d",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I don't know what a Turing machine is, but someonein my study group for the final keeps throwing it around referring to c0vm, and she's smart, so now I wanna learn more. Anyone have a good book, or a set of books, that can help me actually understand the math behind it?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If you look up \"Introduction to the Theory of Computation Sipser\", you will probably find a pdf for the second or third edition. This book covers some material from 15-251 and 15-455 but is accessible with strong high school math and/or concepts background. It's also a pretty good book, probably one of the most readable theory books out there. Turing machines are chapter 3 (about 150 pages in), but if you just want a quick overview, you can skim chapter 0.1 on \"Automata, Computability, and Complexity\" (couple of pages), chapter 1.1 on \"Finite Automata\" (20ish pages) and then skip directly to chapter 3.1 \"Turing Machines\" (another 20ish pages). Alternatively, you can follow 251's slides [0] up until week 3's lectures inclusive. If you prefer video over slides, you can watch a more recent version of 251 on YouTube [1].\n\nGiven your recent posts, I would be wary about spreading yourself too thin. It may be easier to focus on one thing at a time; set small goals, achieve them, repeat.\n\n[0] https://www.anilada.com/courses/15251s17/www/policy.html  \n[1] https://www.cs251.com/",
+            "score": 4,
+            "author": "moraceae",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\\&gt;Given your recent posts, I would be wary about spreading yourself too thin. \n\n*sigh* you're right, I'm just hyperactive right now :) thanks!",
+                    "score": 1,
+                    "author": "Congress1818",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I've definitely learned a lot and finished various personal projects in manic binges of \"let's go down this rabbit hole\" before -- just not usually a good idea to go on those when finals week is soon. :) Good luck for finals!",
+                            "score": 2,
+                            "author": "moraceae",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "thank you :)",
+                                    "score": 1,
+                                    "author": "Congress1818"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Even if you don\u2019t take the class, you can read the textbook here [https://www.cs251.com](https://www.cs251.com). I would recommend taking the class though, I would say theory is what separates CS from software engineering and 251 does a great job motivating this part of theory.",
+            "score": 5,
+            "author": "klausklass"
+        },
+        {
+            "level": 0,
+            "comment": "Take 251",
+            "score": 14,
+            "author": "Present-Cress5783",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Easy satan",
+                    "score": 9,
+                    "author": "maxn07"
+                },
+                {
+                    "level": 1,
+                    "comment": "next semester :) assuming the waitlist moves",
+                    "score": 1,
+                    "author": "Congress1818"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "my condolences and good luck. theoretical computer science is pretty interesting tho. \n\nclac is based on the Forth programming language so if you'd like to learn more about creating minimalist languages or just making your own languages in general, you should definitely take a look at rolling your own implementation of Forth.\n\nIn terms of Turing machines... much more theoretical than I'd personally like to go. \n\nA quick explanation of a Turing Machine is that it's (one of) the simplest descriptions of a computer. \n\nImagine a really long sheet of paper divided into cells (like a one line spreadsheet) and a robot with a marker. The robot can only read one cell on the paper at a time. Based on what it reads on the paper it can make a decision, move up or down the paper to different cells, or to change the values in the cells.\n\nThat's it. That's a Turing Machine. It seems very unhelpful, and that's because it is... unless you're trying to prove something about computers. \n\nThis simple definition allows us to use proof techniques like induction, counting, and graph theory to show that certain problems are or aren't  solvable in certain bounds of time by a computer.\n\nWhy on earth would you want to do this? Of course it's cool just to think about, but that's really just poor motivation in my opinion.\n\nOne critical example is proving encryption methods to be unsolvable in a given time complexity. This is surprisingly still a field of study, considering the amount of encryption you rely on for your everyday privacy. I'm not sure about the details but I went to one (1) lecture by John Mackey where he talked about encryption methods like RSA (topics in modular arithmetic) and about proving that these were actually  NP-Hard. That's computer science mumbo jumbo for \"you can try, but the universe will end before you crack it\". \n\nThe only method that currently meets this standard is (I think) is lattice reduction. I have no idea how to explain lattice reduction, so you'll have to go learn that on your own.\n\nAll of these definitions about complexity and whatnot probably depend on your basic Turing Machine definition. \n\nHelpful for proofs, not so much for other things, though CS nerds will try to convince you otherwise. \n\nMy guess is whether or not you like Turing Machines, you'll be interested in the process of how Turing Machine speak. In other words, programming language theory. Also maybe try taking compilers (15-411?) eventually. (it's sponsored by Jane street btw)",
+            "score": 3,
+            "author": "l33tIsSuperpower",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You may appreciate this page [0] by Manuel Blum:\n\n&gt; You are all computer scientists.  \n&gt; You know what FINITE AUTOMATA can do.  \n&gt; You know what TURING MACHINES can do.  \n&gt; For example, Finite Automata can add but not multiply.  \n&gt; Turing Machines can compute any computable function.  \n&gt; Turing machines are incredibly more powerful than Finite Automata.  \n&gt; Yet the only difference between a FA and a TM is that  \n&gt; the TM, unlike the FA, has paper and pencil.  \n&gt; Think about it.  \n&gt; It tells you something about the power of writing.  \n&gt; Without writing, you are reduced to a finite automaton.  \n&gt; With writing you have the extraordinary power of a Turing machine.  \n\n[0] https://www.cs.cmu.edu/~mblum/research/pdf/grad.html",
+                    "score": 2,
+                    "author": "moraceae"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Interesting how our experiences differ. Clac and c0vm make me wanna kms",
+            "score": 2,
+            "author": "honestly_tho_00",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "lmao that was me for lightsout and doslingos. Hated those two, but this stuff makes marginally more sense.",
+                    "score": 1,
+                    "author": "Congress1818"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "if you want to learn turing machines, read \u201cthe annotated turing\u201d. explores turing\u2019s original paper. great book!",
+            "score": 2,
+            "author": "haponto"
+        }
+    ]
+}

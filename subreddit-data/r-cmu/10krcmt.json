@@ -1,0 +1,41 @@
+{
+    "id": "10krcmt",
+    "score": 1,
+    "title": "Is it possible to configure wake on lan?",
+    "author": "disposableaccounts7",
+    "date": 1674625380.0,
+    "url": "https://www.reddit.com/r/cmu/comments/10krcmt",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I an going to bring my computer to college and I was wondering whether I could set up wake on lan in my dorm?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Isn't that system dependent? Why do you need wake on lan? Are you setting up a remote ssh server?",
+            "score": 1,
+            "author": "Pandoks_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I want to be able to run Remote Desktop from my laptop to my pc because I have a Mac that probably won\u2019t be able to run all the windows exclusive apps. Ideally I don\u2019t want my pc running all the time as I\u2019ll only be needing it a few hours per day.",
+                    "score": 2,
+                    "author": "disposableaccounts7",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You can definitely do wake on lan on windows but imo from personal experience depending on how beefed up your mac is, it's better to just use a vm. `brew install utm` or `qemu`.   \nOr you could read this: [https://superuser.com/questions/696894/rdp-wake-on-lan-in-lan-environment](https://superuser.com/questions/696894/rdp-wake-on-lan-in-lan-environment)",
+                            "score": 1,
+                            "author": "Pandoks_"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It should be, although it's possible your dorm might be on a different VLAN or network altogether. RDP should work fine on campus, CMU does have a Virtual Andrew Windows environment though if you need access to a particle piece of course software from a PC (a bit better than the VM approach IMO now that Apple's transition to Apple Silicon is almost complete. Virtualizing Windows is still possible albeit the ARM64 version)",
+            "score": 1,
+            "author": "Candid_Indication341"
+        }
+    ]
+}

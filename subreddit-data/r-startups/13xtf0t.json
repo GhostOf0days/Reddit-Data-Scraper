@@ -1,0 +1,229 @@
+{
+    "id": "13xtf0t",
+    "score": 8,
+    "title": "Is it a bad idea to build a marketplace app using .Net core?",
+    "author": "ezeeeeee2020",
+    "date": 1685653699.0,
+    "url": "https://www.reddit.com/r/startups/comments/13xtf0t",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I\u2019m hiring a couple of developers to build out a marketplace app for my start up. We are going to build the front end in react. I had thought we would build the back end in node.js, but have found a strong developer that is most proficient in .net core. Is it a bad idea to build the back end of our platform using .net core?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "My experience working in a Silicon Valley VC-backed startup that used .NET Core to build the backend.  (I'm a 22 year .NET dev that spent a ton of time in enterprise and then transitioned to startup land in the last 2 years).\n\n**PROS**\n\n- Entity Framework is really unmatched; nothing comes close as far as relational DB ORMs go. We used EF on the write side.\n- Dapper on the read side - fantastic; easy, fast.\n- Modern C# isn't that big of a lift from TypeScript.  If you can write TypeScript, you can write C#.  Much easier transition than say Go or Rust.  See also: https://github.com/CharlieDigital/js-ts-csharp\n- Deployment into AWS, Google, and Azure is super easy as containerized workloads.  On AWS, we used a combination of Elastic Beanstalk and Copilot (ECS Fargate) and it was solid.\n- A lot of things that are third party in the Node ecosystem are \"batteries included\" in the .NET ecosystem; no need to fiddle with 3rd party libs\n- .NET 3rd party open source libs tend to be fewer in number, but more battle tested.  Example: Serilog.\n- Most integrations to external systems like Stripe, Sentry, etc. have .NET SDKs\n- .NET Web API has great tooling for generating OpenAPI on build.  Once you have this, you can easily generate TypeScript bindings for your front-end.  See also: https://github.com/CharlieDigital/dotnet6-openapi\n\n**CONS**\n\n- Because .NET runtime is multi-threaded, there is an inherent difference when thinking about the runtime model that a Node primary dev doesn't think about (e.g. DI and lifecycle management) and it *can* get complex in some cases like why you need to instantiate a new `DbContext` instance in a different thread.\n- .NET hot-reload and workflow isn't as good as some really integrated stacks like `tRPC`\n- .NET cold starts are still a thing; depending on how your backend is intended to run, a containerized workload with cold start could take 5-7 seconds on Google Cloud Run.  ECS Fargate is a bit better since it never truly scales to 0.  The solution is to keep a warm instance.  Quite frankly, I even ended up keeping a warm instance of my Node Google Cloud Functions because even there I was seeing an unacceptable cold start.\n- .NET is not a great choice for serverless Functions because of this; cold start is not as good as Node or Go since the runtime is JIT (just-in-time) compiled by default whereas Go compiles to binaries and Node is interpreted and optimized.\n- .NET lacks the variety and richness of libraries in the Node ecosystem; for example, the Shopify API in .NET is community made and not first party.  The .NET PayPal SDK is woefully out of date.  Really depends on what you do.\n- Some configurations in .NET Web API can be very \"clumsy\" and requires a lot of DI and knowledge of \"convention\" compared to Node where -- aside from frameworks like Nest.js -- there's less convention based implementations.\n- VS Code is perfectly suitable -- I use it as my primary editor, but to get the most out of .NET, you'll want to use a paid IDE like Rider or Visual Studio.  Rider is 100% worth the cost.\n\n----\n\nI don't think that .NET is necessarily harder to hire for; it's rather that the folks that work in .NET tend to be in enterprise so you're competing against enterprise employers who can offer better benefits, more stability, etc. \n\nI recently started my own startup (https://turas.app) and ended building most of it in TypeScript and Google Cloud Functions on the backend (also TypeScript) primarily because the emulator suite for Firebase is sooooo good.\n\nBut have already started considering re-writing some parts or moving some future parts into Google Cloud Run with .NET to get better performance and access to better ORM than Prisma and TypeORM for some upcoming data heavy workloads.\n\n----\n\nFor anyone interested, I have a full stack here:\n\nhttps://github.com/CharlieDigital/dn6-mongo-react-valtio\n\n- .NET 6 backend\n- React + Valtio front-end\n- MongoDB\n\nThere are a few branches which include AWS Cognito integration and Azure SignalR integration:\n\nhttps://github.com/CharlieDigital/dn6-mongo-react-valtio/branches",
+            "score": 21,
+            "author": "c-digs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;.NET is not a great choice for serverless Functions because of this; cold start is not as good as Node or Go\n\nYou can avoid cold starts on .NET Azure Functions with slot swaps.",
+                    "score": 2,
+                    "author": "MeltdownInteractive",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think he is talking about cold starts on a consumption plan when the function is scaled down to zero - not during a deployment ?",
+                            "score": 2,
+                            "author": "globalistelite",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yup.\n\nI tried AOT as soon as it released only to find out that (in 7), it didn't support Web API libraries.\n\nBummer.  Not sure if they addressed that in 8.",
+                                    "score": 1,
+                                    "author": "c-digs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There are a few things than make me question the commenter's level of expertise.\n\n* You can native compile to avoid the JIT penalty on startup.\n* I know of the EF + Dapper crowd but it's generally unnecessary and creates more dependencies and opportunities for mistakes. If you simply disable entity tracking (which is more comparable feature-wise to Dapper), EF Core gets much faster, and you don't have to worry about compatibility issues.\n* Visual Studio has a free community edition. Also, C# in VS Code isn't any worse than something like C++, it's just that full fledged Visual Studio is amazingly good.\n\nHonestly, the big issue with C# is that it's not a systems language, which normally isn't an issue but, if you're tuning every byte and instruction, that's not it's strong suit. The other piece is that, while there are some great .NET developers, on average, they tend towards the \"mothership\" sort who think every library Microsoft produces is infallible and will sooner produce a Rube Goldberg machine of 3rd party libraries rather than implement difficult algorithms from scratch.\n\nAlso, for all the talk of being open, it's still Microsoft centric. You won't see it so much in the interfaces - those are all reasonably generic, but they favor their own products (e.g. for EF Core, they'll natively provide a SQL Server driver but even an open source offering like Postgres has to provide their own).",
+                    "score": 3,
+                    "author": "ImNotHere2023",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; There are a few things than make me question the commenter's level of expertise\n\n[I have my GitHub out there and you can see for yourself](https://github.com/CharlieDigital).  Aside from that, I was a guest speaker at the Azure Serverless conference; here's my session: https://learn.microsoft.com/en-us/events/azure-serverless-azure-serverless-conf/surfacing-fda-covid-data-using-serverless-functions-and-cosmosdb-with-charles-chen \ud83e\udd23\n\nYou don't have to guess at my level of expertise; you can judge for yourself by my work.\n\n----\n\n&gt; You can native compile to avoid the JIT penalty on startup.\n\nGo ahead and try it :) It does not work with all libraries.  Notably, the .NET Web API libraries -- the ones that you need to serve HTTP REST requests without falling to low level hand rolled implementations -- can't be AOT (Ahead of Time compiled).\n\n    In .NET 7, only a limited number of libraries are fully compatible with native AOT.\n\nhttps://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/?tabs=net7\n\nI tried on the very first day and my Google Cloud Build pipeline kept failing \ud83e\udd23\n\nI know about the cold start problem because I have multiple .NET Google Cloud Run containers running and some workloads in Azure Functions.  The GCR Startup Boost feature is really nice and cuts down on some of the cold start issues, but catch https://covidcureid.com (Azure Functions) on a cold start and it takes more than 5 seconds to load the dataset.  \n\nAOT is great if whatever you're writing isn't dependent on external libs or only on compatible libs.\n\n----\n\n&gt; If you simply disable entity tracking (which is more comparable feature-wise to Dapper), EF Core gets much faster, and you don't have to worry about compatibility issues.\n\nThe problem with EF isn't performance, *it's the size and shape of the response objects*.  The reason to use Dapper on the read side is that you can extract arbitrary and anonymous view models rather than extracting full objects.  Which is why you see EF on write, Dapper on read as a pattern.\n\n----\n\n&gt; Visual Studio has a free community edition. Also, C# in VS Code isn't any worse than something like C++\n\nIt's not, but folks need to understand the tooling ecosystem. VS Code is reliant on the OmniSharp language server which has its quirks.  If you watch my Azure Serverless Conf session, I used VS Code exclusively.  I use it enough to know the limitations and issues; folks should be aware of what they are getting into.\n\n----\n\n&gt; Also, for all the talk of being open, it's still Microsoft centric. You won't see it so much in the interfaces - those are all reasonably generic, but they favor their own products (e.g. for EF Core, they'll natively provide a SQL Server driver but even an open source offering like Postgres has to provide their own).\n\nAwfully ironic that you're chiding Microsoft for being Microsoft centric while complaining that EF Core has an open source Postgres driver made by the community.  To me, that's a good thing that Microsoft *features* multiple community drivers for EF Core: https://learn.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli.  I love the fact that Microsoft made EF Core as a true framework able to support any provider rather than a closed platform.\n\nOh and by the way, here's the EF Core source code: https://github.com/dotnet/efcore",
+                            "score": 1,
+                            "author": "c-digs",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Haters gonna hate. That guys just trying to rile you up.",
+                                    "score": 1,
+                                    "author": "ezeeeeee2020"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This only reemphasizes that the issue with .NET is more the mothership development community then the language itself.\n\n* Don't care about the conference session. They will generally take more or less anyone.\n\n* Yes, there are limitations on AOT similar to statically linked languages. That doesn't make C# any worse, it means trade-offs exist. In other languages, this would be where an open source micro-framework would emerge to fill the gap, after all, serving API endpoints is hardly rocket science. Maybe one has somewhere in the .NET ecosystem, but almost no one will use it until it's \"blessed\" by Microsoft.\n\n* You're literally describing [projection](https://learn.microsoft.com/en-us/ef/core/performance/efficient-querying), which EF Core supports natively.\n\n* Why do folks need to worry about the experience developing in VS Code when there's a free version of Visual Studio and most shops will buy a license for pro? If you're thinking of going to a startup that can't spend a few hundred bucks to get developers tools, regardless of the language, that's a real concern.\n\n* No, I think you misunderstand the concept of irony. Many other platforms are both themselves open source and provide first party support for common open source databases. Nothing about that makes them any less open and, if anything, it means the platform builder is actively ensuring their offering works well with a variety of providers. Microsoft would naturally prefer you use SQL Server so they provide 1st party support for that and make it the open source community's problem to make sure EF Core plays nicely with others. They do similar things with Azure vs. other cloud providers. I don't particularly blame them given that's where the money to develop. NET comes from, but it is something you need to be aware of relative to other languages that aren't beholden to a single corporation.",
+                                    "score": 1,
+                                    "author": "ImNotHere2023"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As far as enterprise-ready goes, .net is better than node.js.  And this is coming from a php developer. \n\nYou're essentially dealing with C# vs JS.",
+            "score": 8,
+            "author": "hotsaucejake",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It depends what you are building though.  .Net is doing cool things, but its also somewhat heavier wait as far as tooling and you pretty much have to buy into the microsoft ecosystem.  \n\nBlazor is cool though.",
+                    "score": 1,
+                    "author": "rossedwardsus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": ".net core does have linux support for the major distros these days.",
+                            "score": 2,
+                            "author": "feudalle",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I was referring to the need to use sqlserver.  .Net is open source but much like with swift, very little is happening with it.  It just means you can run it on other platforms and theoretically use mongo and postgresql.  But i doubt anybody does.",
+                                    "score": 0,
+                                    "author": "rossedwardsus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I run into it with a MySQL backend here and there.",
+                                            "score": 3,
+                                            "author": "feudalle"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "100% it\u2019s fine, I\u2019d take .NET as a backend ANYDAY over NodeJS, absolutely. It\u2019s a fantastic ecosystem, especially for building REST APIs. Runs on any OS. Base libraries included are incredible - you don\u2019t have to install 10,000,000,000,000 npm packages.",
+            "score": 5,
+            "author": "SirLagsABot"
+        },
+        {
+            "level": 0,
+            "comment": "Nope. I'm a .Net developer and it's excellent to build with. Combination of both open source contribution and strict management of LTS versions. Plus C# is very mature as a language now. Raft of talent out there (like me haha) \n\nMS aren't going anywhere either",
+            "score": 3,
+            "author": "phughes1980"
+        },
+        {
+            "level": 0,
+            "comment": "Yes and No. Nothing is wrong with .Net on it's own. Perfectly respectable language. The problem is less people down the road are going to be familiar with it. It will be harder to staff and more expensive. I'll give you an example. Last year my firm \"upgraded\" a paradox system using a foxpro back end to web. It's now using MySQL and php in this case. They looked for a while to find someone that knew both of those systems and they paid a premium for it. This is an extreme example but something to think about. Good luck.",
+            "score": 2,
+            "author": "feudalle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": ".Net is a framework.  C# is the language.",
+                    "score": 2,
+                    "author": "rossedwardsus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm aware. There are just 20 node.js devs for every c# programmer floating around. A lot of people don't bother to learn C anymore. It's a shame but that is the world we are in.",
+                            "score": 1,
+                            "author": "feudalle",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well c#.  Blazor is really interesting.  But as you say, the open source community completely ignores .net now.  Which is a shame.\n\nThe people who use c# are better, however there are also less of them.",
+                                    "score": -1,
+                                    "author": "rossedwardsus"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I am a freelance developer and I work with react and node if you want to chat.  As far as .net, the problem is finding others that also know .net.  .Net is really only used in certain industries so its a much more difficult sell when you are trying to sell your company or trying to hiring more developers over time.\n\n.Net is pretty nice actually and has higher quality developers, but unless you are building a product within product categories that use it you will have a difficult time finding more developers.  Also most products don't need the sophistication of .net.  So its really overkill.  And if you do need that you can use golang or kotlin instead.",
+            "score": 1,
+            "author": "rossedwardsus"
+        },
+        {
+            "level": 0,
+            "comment": "Yes it\u2019s a terrible idea, please send that strong developer that is most proficient in .net core my way so I can explain the errors of their ways.",
+            "score": 1,
+            "author": "Greatestpoopevar"
+        },
+        {
+            "level": 0,
+            "comment": "Are you looking to build ecom inside your app?",
+            "score": 1,
+            "author": "pokerbuddy5",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Eventually we will want to process payments within the app. Not immediately though.",
+                    "score": 1,
+                    "author": "ezeeeeee2020"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Think it's just a case of whatever you find best.",
+            "score": 1,
+            "author": "shmoeke2"
+        },
+        {
+            "level": 0,
+            "comment": "Look at what you want holistically and then pick the technology. What do you want now that\u2019ll get you to the next stage?\n\nIf it\u2019s an MVP then pick a stack that\u2019ll help you iterate fast. You\u2019ll have to rewrite whatever you build today in a year or 2 if you\u2019re successful anyway. Predicting your long term tech stack upfront is what leads to over engineering rather than delivering product.\n\nYou mentioned React is what you want to use, I\u2019d pick a stack that\u2019s thoughtfully crafted with React in mind and aimed at simplicity so that product iteration is the focus and not backend design patterns. Such as a NextJS or t3 stack. If there\u2019s an alternative that follows the same principle and is .net core then go with that. The fundamental backend does not matter, picking a holistic stack for your goals is what matters.",
+            "score": 1,
+            "author": "davidghooper"
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s fine.  The choice of a backend has little to do with success.  Success is about solving customers problems.  In this case, the technology will make no difference in the success or failure of a startup.",
+            "score": 1,
+            "author": "Longjumping-Ad8775"
+        },
+        {
+            "level": 0,
+            "comment": "In my opinion it doesn\u2019t matter) especially in such a well defined in a technical way service such as marketplace)\n\nEspecially if you are bootstrapping your startup, just use the tool you know and can develop MVP as fast as possible)",
+            "score": 1,
+            "author": "Cool_life_explorer"
+        },
+        {
+            "level": 0,
+            "comment": "Context: wrote C# professionally for a little over 4 years, then switched languages at my next company. I actually love C# as a language myself, but point blank to answer your question: in the short term it's probably fine, but if you need to hire more people it could be an issue. Mostly because a) the most important thing when building a startup is speed/execution and b) the type of people that want to work with C# and .NET Core are **typically** not the type of people that would thrive in a fast paced startup environment. For whatever reason, the .NET crowd tends to skew enterprise-y and lethargic/slow and your competition for hiring people will probably be companies like Microsoft, big financial companies, and other such large employers that can offer better benefits than you can. Again, in the short term, you'll probably be fine if the 2 engineers know C# really well and are good at their jobs, but if you ever need to scale the company and hire more people, you might be shooting yourself in the foot.\n\nOther notes: C# is a very powerful language (almost too powerful), and many of the common frameworks used with it (Entity Framework, [ASP.NET](https://ASP.NET) Core, etc.) have their warts/are bloated/you need a certain amount of tribal knowledge to work past certain issues. Additionally, having to learn about how dependency injection works in .NET Core and a bunch of other concepts can be an issue for junior developers if you happen to onboard newer team members at some point.\n\nI would ideally just pick one of the top 5 general purpose programming languages that developers love and are also good for building web applications: [https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted](https://survey.stackoverflow.co/2022/#technology-most-loved-dreaded-and-wanted)\n\nFrom that list, My top 3 choices in no particular order would be:\n\n1. Python (downside: the GIL, relatively poor scalability especially for cpu heavy workloads which you may or may not have, lacks type safety)\n2. TypeScript (Node.js) (downside: the event loop and how easy it is to block it if you're not careful; there were times where I accidentally blocked the event loop just serializing objects to be able to return a response)\n3. \\* Go (downside: pointer management) - one of the things I really love about Go is that a lot of the database drivers and core libraries in general are threadsafe, and you don't have to worry about dependency lifecycle as a result (singletons are fine)\n\nThese are all languages that make it easy to be productive and have a relatively simple featureset compared to languages like C#, Kotlin, etc. Each have different pros that you can research and I've listed some of the cons above\n\n\\* I know I said no particular order, but my personal favorite is Go for its simplicity in syntax and very low resource consumption relative to Java/C# which translates to lower AWS bills, plus the dependency lifecycle benefit I mentioned above, but pick your poison.",
+            "score": 1,
+            "author": "Ok-Ratio-7872"
+        },
+        {
+            "level": 0,
+            "comment": "FYI, if a non technical cofounder mandates a technology decision, I\u2019m out and not coming back.  I do not accept that my technology decisions to be overruled by a non technical.  So, if you make say that we would build in xyz, I\u2019m out and not interested in you.",
+            "score": 0,
+            "author": "Longjumping-Ad8775",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I\u2019m not bringing on a cofounder. I\u2019m hiring engineers.",
+                    "score": 0,
+                    "author": "ezeeeeee2020",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You are in a startup forum, so cofounder discussions are common.",
+                            "score": 1,
+                            "author": "Longjumping-Ad8775"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

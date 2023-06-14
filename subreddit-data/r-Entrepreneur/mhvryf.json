@@ -1,0 +1,1419 @@
+{
+    "id": "mhvryf",
+    "score": 1512,
+    "title": "Turning a Small App Into a $20,000/mo Business",
+    "author": "bartoszhernas",
+    "date": 1617285185.0,
+    "url": "https://www.reddit.com/r/Entrepreneur/comments/mhvryf",
+    "media_urls": [],
+    "other_urls": [
+        "https://freeyourmusic.com/).",
+        "https://www.producthunt.com/tech/s-t-a-m-p).",
+        "https://freeyourmusic.com/smart-links)",
+        "http://paulgraham.com/articles.html)"
+    ],
+    "postText": "Hi all, I\u2019m a full-stack web developer from Poland and together with my twin brother, we built [FreeYourMusic](https://freeyourmusic.com/). FreeYourMusic allows you transfer your playlists across music streaming services, e.g. Spotify, Apple Music, Amazon Music, etc. Most of our customers are simply people who want to switch to a different provider and take their playlists with them.\n\nI wanted to share with you how a small script I wrote for myself turned into a profitable business (the company is approaching 6 years).\n\n# How I came up with the idea\n\nImmediately after the release of Apple Music (in 2015), I really wanted to switch from Spotify so I could try it out. Usually someone develops a tool like FreeYourMusic, but after waiting 2 weeks I noticed that there still wasn\u2019t anything there.\n\nMoving 3000 songs manually would\u2019ve taken me hours, so I tried to figure out how to automate the process. After a few hours of playing with Apple Script, I created an app that literally just used the mouse to click things in iTunes: search for a song -&gt; click more -&gt; click to add music -&gt; repeat.\n\n# How the app works\n\nIt\u2019s really simple. First you log in with your account to one streaming service (for example Apple Music), and then you log into another (let\u2019s say Spotify). FreeYourMusic will then fetch all your playlists with song titles, author names, and albums from Apple Music. Then it will perform a search in Spotify with a little bit of magic to properly match songs, e.g. some services use \u201c\\[feat\\]\u201d and others \u201c(feat)\u201d. Once FYM has properly identified all the songs, it will create a playlist in Spotify.\n\nAdding multiple sources and destinations is always a bit tricky, as they are so different from each other!\n\n# Let\u2019s turn it into a business\n\nI figured what I built could be useful for others, so I made a small website and [posted it on ProductHunt](https://www.producthunt.com/tech/s-t-a-m-p). At the beginning it was free, but people could donate money via a \u201cbuy me a beer\u201d button ;-) The first day I got reviewed in multiple newspapers and online magazines, got 20k unique visitors to the website, and made 97\u20ac in donations. I thought, \u201cAll of this because I made a small script after work? Nice.\u201d\n\nThen my brother said, \u201cHey, let\u2019s make it better and start selling it!\u201d So my brother Mike, our friend Chris and I, got together and spent all night creating a proper app. I think it was 5 A.M. when we released it. We got our first payment within 5 minutes and then went to sleep for a few hours.\n\nThings got crazy after that. I went back to work and saw people buying licenses all day long. We had so much stuff to do that I had to take a week off work. For the first few months we had to work 16 hours/day: half for our full-time jobs and the other half for FreeYourMusic.\n\n# How the revenue changed over time\n\nThe first month we made over 15,000\u20ac in revenue because of ProductHunt, but the next few months were much smaller (around 6,000\u20ac). Now, after over five years, our average monthly revenue is around 20,000\u20ac levels.\n\nWe\u2019ve experimented with different pricing models: it was 5\u20ac at beginning, then 12\u20ac, and after some tests we saw that a 9\u20ac price mark for FreeYourMusic works the best. In the meantime, we\u2019ve also added support for iOS, Android, and many new music services.\n\nThanks to FreeYourMusic, my brother and I were able to quit our day jobs and focus on building our own companies.\n\n# How we grew\n\nFrom the beginning we focused on having the correct SEO tags and all the basics. If you Google \u201cSEO website checker\u201d you will get ton of resources telling you what you are missing: meta tags, descriptions, fast loading, h1 tags, compressing etc. It all affects your Google ranking.\n\nAfter that it all grew organically. We were just constantly improving our apps and adding new services and platforms. We were also the first to support Apple Music playlist transfer via an iOS app, which was made possible with the iOS 9.3 update.\n\nThe real growth started when we realized that FreeYourMusic was a real business, not just a cash machine that would last for few months. After that, we started paying ourselves fixed salaries, but not too much. We kept lots of money in the company\u2019s bank account, and that allowed us to invest in the business. We\u2019ve hired more people to help us with the development, marketing and customer support.\n\nWe\u2019re constantly thinking about how we can improve FreeYourMusic so that users are happier. Right now we are launching a new service for music curators. It will help artists and brands to grow their audience with universal, [cross-platform playlists.](https://freeyourmusic.com/smart-links)\n\n# How we handled legal stuff\n\nFreeYourMusic was an overnight success, and we started making money on day 1, which forced us to open a company as soon as possible.\n\nFortunately, my parents had been self-employed, so I was accustomed to business. In Poland you can open your own company in less than a day, so I took few days off work and by the next day had opened the company. Then we incorporated Civil Law Partnership, which was basically a joint venture of all the founder\u2019s self-owned companies.\n\nWe had one problem with it, though. It was not a separate legal entity, and all liability would fall on us in case of any problems. People also trusted us less when they saw the weird \u201cpartnership\u201d in the company name. They are used to LTD\u2019s and Delaware companies. So in the following months we established FreeYourMusic LTD in the UK and moved everything there.\n\nAs for legal problems, we were always careful to not step on anyone\u2019s toes. The music business is really strict about their rights, so we made sure not to break any licenses.\n\n# Things we would do differently\n\n1. For sure we would have immediately started by using Electron to build a Windows/MacOS version based on one codebase. At the beginning we\u2019d been building separate native Windows app and native MacOS app. Then at some point we realized that it takes us too much time to copy features over to Windows (we had been focusing on MacOS). I\u2019m glad we had balls to say, \u201cLet\u2019s rewrite what we have in Electron so we will have one shared codebase (except in a few cases like iTunes proxy).\u201d\n2. We would have incorporated as an LTD at the beginning.\n3. We would have paid for proper logo and website design much earlier.\n4. We would have used Stripe instead of Braintree, because Braintree\u2019s bank closed our account as a result of them not understanding Spotify\u2019s SDK license.\n\nOf course we know all of this now, but when FreeYourMusic was starting, we had no idea how long it would last, so we were cautious to spend money.\n\nWe didn\u2019t quit our jobs *immediately*, just in case FYM failed, and I think it was a good call: You should not jump into deep water. You should first try it out slowly and run your business as side project. At the same time, you should see where it\u2019s going and make a decision quickly: my current job or my business. In hindsight, we should\u2019ve quit earlier.\n\n# Some advice on how to turn your side-project into a profitable business\n\nTo be independent, you have to make money to support yourself. If you have a project you\u2019re working on after work, but months have passed without it having any paying customers, that usually tells you that there\u2019s no market for it, or that you haven\u2019t focused on it enough.\n\nBefore FreeYourMusic, I created numerous projects that failed, and this is what I learned: All businesses have to make money, and you need to quickly kill the ones that do not. Treat your side project as any other business. If it doesn\u2019t make money after a few months, either change something in your product or kill it and start something new.\n\nAlso, outsource things that take a lot of your time but could be done by anyone. We wasted a lot of time replying to customer emails instead of improving the app.\n\nRead [everything from](http://paulgraham.com/articles.html) Paul Graham. His writings contain so much knowledge and good advice that you\u2019ll be amazed.\n\nGo through stories of how other companies started. It\u2019s true when they say that almost every company has similar problems. For sure there is some company from the same vertical or with problems similar to yours which you can learn from.\n\nTalk to others. There are numerous Slack groups, Facebook groups, Quora questions, etc. You will be amazed how much others want to help you.\n\nDiversify. If we had kept focus limited to Spotify and Apple Music and only on MacOS, we would be much smaller or dead. Look around for market opportunities you are still not taking but that are easy to grasp with your product. For example, look at what Uber has done with delivering food. You can do the same even when you are quite a bit smaller than Uber ;)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Thanks for sharing.  This is a really cool story.  Il have to check out your app because I\u2019ve actually tried a few apps that claimed to do that and none could transfer my Spotify to Apple Music.",
+            "score": 116,
+            "author": "TBJumbo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you. We try our best but it\u2019s not magic and sometime it just doesn\u2019t work even if for majority it works just fine. Give it a try, you can check first 100 matches for free.",
+                    "score": 57,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I dig your honesty and will try your app. Great job.",
+                            "score": 34,
+                            "author": "undogmatic",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Good job. One question. Why are your reviews so bad? Many people claiming it doesn't work properly. Having 2.9 review score on Google Play is not good.",
+            "score": 35,
+            "author": "kovachxx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, the problem with Google Play store is that we get a lot of 1 stars because you have to pay to unlock full functionality. Android users expect things for free much more than Apple users. \n\nAlso, for 95% of users the app works and there is no review. \n\nThen for 5% it won\u2019t fully work or at all (bunch of different issues, sometimes Spotify is down and blame fall on us) and then we get 1 star. \n\nAll in all if it\u2019s great you tend to not leave a review. If it stops working you tend to immediately give 1 star. We always give a refund if we can, user just need to simply ask but it doesn\u2019t stop bad reviews coming in.",
+                    "score": 75,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Edit: also cool story. You are a great inspiration :)\n\nEven I don\u2019t leave reviews. But I have done for some apps. You know why?  They ask me right after I used the product successfully. For example, if I\u2019m booking a flight ticket, it asks me first if my experience was good. I say yes. It then asks to leave a review. \n\nIf my experience was bad and I say no. The app tells me to give feedback on what went wrong so we can fix it and give compensation (to me). This immediately blocks off a bad review on the AppStore as the user will give a piece of their mind in the feedback section of your app directly. \n\nI hope you\u2019re doing the same.",
+                            "score": 15,
+                            "author": "leucyne",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[removed]",
+                                    "score": 5,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I understand that, but still, encourage your users to leave a review. People who are happy with it would most likely leave a review.",
+                            "score": 34,
+                            "author": "kovachxx",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "We already do :). But even I don\u2019t leave reviews too often even after knowing how it looks from the inside. Just human behavior \ud83e\udd37\u200d\u2642\ufe0f",
+                                    "score": 36,
+                                    "author": "bartoszhernas",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "How have you persuade people to leave a review? \n\nRandom idea: Increase your price by $1 or something and offer those who successfully go through the process a partial rebate of that $1. I know I\u2019d pay a couple bucks more for something I had confidence in. \n\nI gotta believe that a bad App Store/google play store rating is really limiting the number of people that try it out. I\u2019ve recently worked with a big company that\u2019s making a very reputable app, and they\u2019ve placed a big emphasis on App Store ratings.",
+                                            "score": 3,
+                                            "author": "InfoAmbitious",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It's easy to dismiss it on human behavior, and you are right that most won't review unless displeased or end up misplacing blame, but every other app / business faces these same issues and can still achieve good ratings.\n\nAnyway thanks for sharing the story. Very inspiring",
+                                            "score": 16,
+                                            "author": "bluuit",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I also have built apps and agree with you. If the conversion doesn't always get every song, warn the user beforehand it might happen to align their expectations. User activity needs to be monitored and check for unusual activity (ex: why has this guy tried to convert the same playlist more than once?). Make a graph of the last actions of users who have been inactive for some period to see if they stopped using the app because of an error. Make sure they are getting past the login, etc.\n\nUser experience is very important to keep your rating up and needs to be carefully tended to.",
+                                                    "score": 14,
+                                                    "author": "MentallyUnchallenged",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Try to offer a free solution that allows to transfer a limited number of songs.",
+                                    "score": 2,
+                                    "author": "Wald_JD",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "He already does that. 100 songs for free.",
+                                            "score": 7,
+                                            "author": "illusionst"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Incredible story, well done. Always good to see inspiring stories of people taking a simple necessity and making a living from it, \"living the dream\", good stuff!\n\nOne thing I have read many times about free/paid apps. The general advice is be upfront from the beginning if your app is \"crippled\" in any way or needs paying for. People will pay for apps but they need to know up front that payment will be expected at some point, you can't spring it on them after they've tried it a few times else people will get huffy and just walk away, often leaving bad reviews out of anger at the surprise for payment. \n\nJust an observation I've seen many times from many app developers.",
+                            "score": 2,
+                            "author": "SyxAxis"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I think, apps build with multi platform frameworks  are worst for the user experience. They are not realible as native apps. The android platform which is very tough environment even for native devlopers, is really messed up, so many vendors and devices to choose from, a lot of twik and customization by android phone manufacturers , makes devlopers codes depreciated. In top of that using hybrid framework is even more worse.",
+                            "score": 1,
+                            "author": "dream_will_came_true",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Worst than no app? Not really. If you are small and have 3 developers, it's better to use React Native and release something than not being able to have any (although  fully native) app due to lack of funds/time.",
+                                    "score": 4,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks a lot for sharing. It is really useful to hear stories of side projects turning into decent businesses. \n\nWe have enough stories in the media about silicon valley VC funded businesses with shaky revenue models. But we need stories from the other side too. People need to know that entrepreneurship can also be different than VC funded ones.\n\nYour story helps to motivate me and others like me!",
+            "score": 33,
+            "author": "summer_glau08",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, that was my thinking as well. My favorite story is MailChimp, they are my heroes. We try to grow just out of profits and dabble also in another projects (eg. We\u2019ve recently launched a Family Feud simulator but that\u2019s another story).",
+                    "score": 13,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great writeup. I second Paul Graham!",
+            "score": 11,
+            "author": "doryphorus99",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\ud83e\udd70\n\nMy top book is Antifragile by Nassim Taleb though \ud83d\ude48\ud83d\ude05",
+                    "score": 11,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Google knows...",
+                                    "score": 6,
+                                    "author": "assadyourdaddy18"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What do you think of the Barbell Strategy (easy job + side hustle/ business)?",
+                            "score": 1,
+                            "author": "Dudeguybrochingo"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not only is this awesome from a business background perspective but I actually need this as well.\n\n(Going from Amazon to Spotify currently).",
+            "score": 7,
+            "author": "five-acorn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Happy to help!",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How did you avoid double taxation in Poland and UK (assuming you still live in Poland)?",
+            "score": 7,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi. No, I do not live in Poland anymore, it\u2019s becoming too much \u201cnorthkoreanic\u201d with propaganda public TV etc \ud83d\ude22. \n\nBack then there was no issue with double taxation especially for company with more than one shareholder/director.",
+                    "score": 15,
+                    "author": "bartoszhernas"
+                },
+                {
+                    "level": 1,
+                    "comment": "Normally speaking, if you are established as a company (say Limited Company in UK) and you as a person live elsewhere you do not have double taxation.\n\nThe UK company pays UK corporate income taxes on its earnings. The shareholder pays personal income tax for any dividends they receive from the company (also for the salary if they are also directors or otherwise employed by the company) in the taxable judistriction they are subject to (say Poland).\n\nThis can of course get a bit messy if you are not registered as a company with separate legal entity.\n\nDisclaimer: I am not a tax consultant :)",
+                    "score": 5,
+                    "author": "summer_glau08",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah exactly. Also in UK directors salary is taxed at source, meaning that even if you live in Poland it is taxed there. Too bad in 2021 they changed law and Poland wants now a difference on the taxation to be paid in Poland. This blows since UK has normal \u201ctax free allowance\u201d and Poland has basically no tax free allowance (it\u2019s like around 80GBP a month, which is a joke)  // also not a tax advisor",
+                            "score": 6,
+                            "author": "bartoszhernas"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That makes sense. Thanks for the info :)",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Incredible story with a hidden lesson. If you want to create a great business, start by solving your own problems",
+            "score": 7,
+            "author": "wookeydookey"
+        },
+        {
+            "level": 0,
+            "comment": "This is amazing! \n\nYou guys have turned a simple idea into a business. Congratulations!",
+            "score": 6,
+            "author": "CRYTEK_T-REX",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! \ud83d\ude4f",
+                    "score": 4,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Incredible work! Website looks great. SEO is on point and UI/UX is super smooth. Keep marching forward man!",
+            "score": 4,
+            "author": "Intrinsically-Human",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you, glad to hear ! \\^\\^",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great story - thank you for sharing. I often hear from people \"there is no money to be  made\" and \"all the ideas are gone\" -- well, you've proven there is ALWAYS money to be made and ideas are not gone. You just need to look at the world around you, look for problems and find unique ways to resolve them.\n\nAnd if competitors start to come up, hopefully at a certain point you've also realized you need to do something else and you do diversify your business.\n\nCongratulations on your success!\n\nLove your website by the way, nicely done and also like how you switch from light to dark mode - cool! And also the not-so-subtle on-page SEO. :)",
+            "score": 5,
+            "author": "meontheweb",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! Ben Thompson from Stratechery always talks nicely about it, there is always a niche of some kind to be found ;) \n\nhaha, thanks, this SEO on page was a good push for our traffic some years ago, but it's always just a temp push as competition instantly copies it ;p",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Free advice.  Looking at the comments on the Android version - your responses are very canned and honestly very cold. \n\nYou need to put empathy into your responses and I don't see that. \n\nTell people you are sorry. Tell people that you apologize for the inconvenience that they've had using your app - OWN the problems but then come back and tell them what you will do.\n\nIt still might be a canned messaged but you're showing empathy to their issue, you're recognizing the inconvenience and you're telling them what you will do to make it better.\n\nFor example here is a response that someone left to a one star review:\n\nHi there, if you are experience an issue with transferring your music, please reach out to us at support@freeyourmusic.com. Our Support Team will help you with resolving the issue and will find proper solution to your case. \n\nI would have said something like:\n\nHi - Thank you for your feedback, and we're very sorry that our application did not work for you as intended. We'd really like to understand what happened so we can make it even better!  Please reach out to us at [support@freeyourmusic.com](mailto:support@freeyourmusic.com) \\- we'd like to turn your one star review into a five star review!\n\nYou're asking your users to \"test\" the application for you by giving you this feedback, offer them something in return. Maybe 50% off the basic purchase? Inclusion into a beta program.\n\nUsually your loudest critics are the ones that will offer the best feedback.\n\nI've spent the last 20 years in customer operations and have spent a lot of time writing and re-writing emails to clients that are unhappy with the product that our company sells. Taking the humble approach, combined with empathy and what we will do has helped us tremendously. We've gained more business from the clients that were not happy with us, and retained existing business because of this strategy. It works.\n\nOf course you will also have users that will still give you 1 star and a very negative review and you'll just have to live with those. We have those also - but at the end of the day when we go through a retrospective we know that we did whatever we could to save that client and use that information to further fine-tune our processes.",
+                            "score": 12,
+                            "author": "meontheweb",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you, great advice, much appreciated",
+                                    "score": 3,
+                                    "author": "bartoszhernas"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "very good point!",
+                                    "score": 2,
+                                    "author": "gorylekto"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is amazing. I'm working with my twin on a startup right now too - Keep up the good work!",
+            "score": 3,
+            "author": "peterstellyio",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Twin power! Double the outcome, reduced risk, best communication ever :P Good luck!",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "that\u2019s a great story. but i\u2019m wondering how many people would really pay 9 euro to swap their playlist",
+            "score": 10,
+            "author": "Rellkedge",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "When people go looking for solutions, sometimes $9 is worth more to them than their 2 hrs+ research into how to, then learning they can't easily do what they want, and finally working to do it themselves; suddenly the well thought out SEO and product placement of this service makes it easy, a no brainer, and cheaper than most hourly wages.\n\nThe older I get, the more the value of time starts to outweigh the value of knowledge, depending on my level of passion in the project. If I'm all about music, playlists, I'm swapping over to another service (that wants to make it hard for me to swap, I'm assuming), then this solution is what I'm buying.",
+                    "score": 46,
+                    "author": "Spedunkler"
+                },
+                {
+                    "level": 1,
+                    "comment": "A little over 2,000 people every month would really pay 9 euro to swap their playlists, based on the post. Enough to make 20k euros per month.",
+                    "score": 8,
+                    "author": "refreshx2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Point ;)",
+                            "score": 2,
+                            "author": "bartoszhernas"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "We were thinking the same, that\u2019s why it took us 3 months to buy first logo domain and design. Turns out, it\u2019s quite a few ^^",
+                    "score": 16,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Its all in the marketing. I recently launched an app that saves merchants 5 hours a day 7x week for $40/mo. Most agree its worth the price while a few are scratching their heads trying to justify it.",
+                            "score": 7,
+                            "author": "Winter-Hold6138",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What did you build that saves people almost a full-time employee's work hours?",
+                                    "score": 3,
+                                    "author": "gizmo777",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Full inventory and order automation",
+                                            "score": 4,
+                                            "author": "Winter-Hold6138"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Oh, totally. As an example, Spotify is \u00a312.99 for the plan I'm on. Amazon was doing a \"buy an Echo for \u00a340 and get 6 months free Amazon music\". So it was certainly worth switching. But I felt locked in because I wasn't going to recreate my playlists and I listen to them every day. That's worth \u20ac9, right?\n\nI paid back then!",
+                    "score": 3,
+                    "author": "simonjp",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks, even if you haven't used us but competitor (no idea really :P), still thank you for supporting other businesses \\^\\^.\n\nTbh, one of the nice perks of running FreeYourMusic is that I have a good excuse to own all the streaming services premium accounts, so I don't have to see YouTube ads and it's a business expense!",
+                            "score": 3,
+                            "author": "bartoszhernas",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I thought I had used a competitor, but you were called STAMP, right? Then yes I must've seen you back then. Also are you actually in Hatfield? Nice to be supporting local businesses!",
+                                    "score": 1,
+                                    "author": "simonjp",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, that's us! I was making a subdomain for \"spotify to apple music\" and when typing \"stam.hern.as\" I figured, another P would sound much better so we called it S.t.A.M.P and had stamp.hern.as as URL.\n\nIn the end we changed to something more descriptive and imaginative\n\nHatfield is just company registration, we are fully remote, spread across Europe :)",
+                                            "score": 3,
+                                            "author": "bartoszhernas"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So cool, congrats!",
+            "score": 2,
+            "author": "Arctic_Gold_Digger"
+        },
+        {
+            "level": 0,
+            "comment": "Great story, will check it out. Your pricing page btw, shows a different price for 2 seconds before it gets updated, is this on purpose?\n\nFor example, the middle tier starts at: $1.57 but quickly changes to $1.66\n\nLastly, can you share with us your development background, did you always have the background for writing code?",
+            "score": 2,
+            "author": "Givemeallyourtacos",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I have to look into that. This shouldnt be happening, thanks!",
+                    "score": 1,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh - lifetime pricing, you don't need to have a \"cancel anytime\" unless you will be returning the $99.00 ... or I'm missing something?",
+                            "score": 2,
+                            "author": "meontheweb"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Sorry I updated my question a bit, and I looked through as I was getting ready for work this morning, but can you share with us your background in App Development writing code?\n\nAs an entrepreneur myself, I've done may various ventures some more successful than others, however, I find my limitations in not being able to develop apps puts me behind in terms of growth. I have good ideas, but they remain ideas because I can't write them and build them. There are tools online, that focus on certain parts of development via drag and drop but they're not the same or complete to be able to fully publish from them.\n\nhow did you go about getting into app development? Btw your other projects look amazing too! Ahoy.",
+                            "score": 1,
+                            "author": "Givemeallyourtacos",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Me and my brother are self-taught coders. We started making websites when we were about 12 (in some click to make website builders like Onet Webmajster) and started coding few years later in PHP. Right know we can cover whole stack starting from mobile apps, websites and deployment/server ops so it\u2019s definitely easier to start any project for us. I heard good things about Bubble app maker but never tried it. We just code, eg. website is basically Bootstrap based theme build in NextJS with TypeScript. App is Electron React shared code base with React Native (so one business logic for all our apps, I so love 2021 tech!). Ahoy is Django/Python powered with front end React and native iOS apps (I would built it with React Native now and we even started project to rebuild it in RN but it\u2019s on Lise rig he now). \n\nMy recommendation for how to get into it would be: try building stuff while learning. I think JavaScript is the best way to go today. Easy to learn and you can build anything with it. There are bunch of courses online.",
+                                    "score": 3,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Inspiring. Thanks for posting.",
+            "score": 2,
+            "author": "catarannum"
+        },
+        {
+            "level": 0,
+            "comment": "Great story and congratulations on the success. I had an idea for you guys potentially useful for your business. Will pm you if ok",
+            "score": 2,
+            "author": "Medical_Training_422",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Please do! Thanks :)",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great story. Love hearing about app related businesses.",
+            "score": 2,
+            "author": "Shak3TheDis3se"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing! It's not often we hear success with apps now a days.",
+            "score": 2,
+            "author": "ifelseworks"
+        },
+        {
+            "level": 0,
+            "comment": "Your website is bad ass.",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you, so nice to hear that ! :)",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wonderful information! Thanks for sharing!!",
+            "score": 2,
+            "author": "shto"
+        },
+        {
+            "level": 0,
+            "comment": "Congrats! I dream of doing something like this one day and I love it when I read stories like this. Thank you for sharing, not only your story, but your advice and lessons as well.",
+            "score": 2,
+            "author": "Shoot4daStars",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Great username to go with building your own company! Thank you \ud83d\ude4f",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fantastic write up.",
+            "score": 2,
+            "author": "leapbitch",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This is where I wish my ability was in coding.  I'm running an eBay store now and I hate having to order inventory and ship it, I wish it was all virtual.\n\nInspiring story though! Well done and I hope your success continues.",
+            "score": 2,
+            "author": "frankOFWGKTA",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you and good luck with your business!",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks!\n\nI tried not virtual business, and just burned though a lot of cash trying to build snail farm in Poland... we were almost there and then COVID destroyed whole market for snails and we recently had to close it down. \n\nIt's just hard, good luck on your journey!",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thats the killer. The possibility of just burning through cash.",
+                            "score": 1,
+                            "author": "frankOFWGKTA",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I stay positive, for us it was another side business, so we only lost cash and time. Some people running snail farms lost their main income source :(",
+                                    "score": 2,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Awesome!",
+            "score": 2,
+            "author": "LovelyLiyfe"
+        },
+        {
+            "level": 0,
+            "comment": "this is one of those things you never would think it's a viable business until it is ,kudos for doing it (and having some luck )",
+            "score": 2,
+            "author": "ivanoski-007",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's a lot of luck for sure! \n\nAlthough the more things I try and I am open to, the more luck I get. I like to think it's all luck, but if you are not positioned to use the opportunities coming your way, you will just miss out on luck. You can still fail trying your best because of luck of luck though :( \n\n\"Fort Minor \u2013 Remember the Name\"\nThis is ten percent luck, twenty percent skill\nFifteen percent concentrated power of will\nFive percent pleasure, fifty percent pain\nAnd a hundred percent reason to remember the name (Mike!)",
+                    "score": 3,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think the key takeaway is the \"try \"part ,many are to afraid to even do that . but business modeks like yours are those types that are hard to estimate demand in the beginning ,without trying .",
+                            "score": 2,
+                            "author": "ivanoski-007"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Bro, way to go! I used to use Spotify, but couldn\u2019t pay with payment options from my country. Eventually my relatives foreign bank account got closed, and I couldn\u2019t figure out how to keep my Spotify going. \n\nI switched to Apple Music, as that worked in my country. Fast forward a year and a half, and Spotify released in my country. \n\nI wanted to make the switch back, but didn\u2019t want to have to manually copy my more up to date Apple Music library. \n\nAfter not finding anything that did such a thing, I actually thought about making it myself, as I have been experimenting and learning full stack web dev. I never did it, and essentially just lost my Apple Music library as I wasn\u2019t gonna continue to pay just to have time to copy my library over. \n\nSo I definitely understand the need. And I thought about the idea. Best of luck to you on the endeavor!",
+            "score": 2,
+            "author": "a9footmidget",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you, sucks to loose your playlists though :). next time we are here to help :P",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thank you very much for sharing the lessons learned. These are valuable.",
+            "score": 2,
+            "author": "SyedMBaqarShah"
+        },
+        {
+            "level": 0,
+            "comment": "What a great app- you did something I didn't think was possible haha",
+            "score": 2,
+            "author": "omarmo93",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "For real, can this post be the standard for all future /r/Entrepreneur ones? Such an inspiration without the unnecessary bragging stuff.",
+            "score": 2,
+            "author": "Eastbaymag",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow, thank you for such kind words!",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Good job man!\n\nReally cool advices. A post like this helps improves motivation to work hard on own side project.",
+            "score": 2,
+            "author": "elpuffru",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Can you PLEASE add a way to transfer Sonos playlists to Spotify!!?",
+            "score": 2,
+            "author": "northendninja",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Congratulations on all of your success! You're right about Paul Graham, his essays are fantastic. Not sure I completely agree with your thoughts about side projects, some may need more time to blossom than others, though if you're going to be dependent on it a shorter timeframe does make sense.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This is insane, because I created something similar but for myself. This was before apps starting allowing offline mode.  I had a long layover in an airport and I wanted to listen to music before the next flight but didn't want to sit there and download the music one by one. So I wrote a quick program to create a local playlist on my laptop based on my sound cloud and youtube playlist.\n\n&amp;#x200B;\n\nBut your app is on another level! As a coder I can only imagine the type of fixes you have to do for thousand of devices and accounts!",
+            "score": 2,
+            "author": "nicolaskn"
+        },
+        {
+            "level": 0,
+            "comment": "Congratulations on your success , great writing and advices . Hope for more growing of the business for you guys .",
+            "score": 2,
+            "author": "sawalm",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you !",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is the currency symbol you used.",
+            "score": 0,
+            "author": "abhi5025",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Euros",
+                    "score": 3,
+                    "author": "bartoszhernas"
+                },
+                {
+                    "level": 1,
+                    "comment": "found the american",
+                    "score": 2,
+                    "author": "ivanoski-007",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; you will get ton of resources telling you what you are missing: meta tags, descriptions, fast loading, h1 tags, compressing etc. It all affects your Google ranking \n\nDebatable. Google have actually confirmed heading tags do not affect anything. moz also recommends in some cases to not add a meta description as google can then choose one and highlight keywords better in bold.",
+            "score": 1,
+            "author": "krisolch",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "True that, it\u2019s more art than actual list of rules. You just need to experiment what works and you will never know for sure. Speed definitely makes a difference so our website was always \u201clike static page cached\u201d, so even when it was made in Django it was nginx cached and behaved like static html page.",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That's a great piece! I love the idea of spotting something and turning it into a business. I share the pain of banks and account closures, although mine went with the Wirecard fiasco and getting a new card acceptance and acquiring solution, and also the website building... (Still at that stage)\n\nWe had been running very successfully until the Pandemic hit - now we hope to be able to restart next year...\n\n&amp;#x200B;\n\nAppreciate the tip about Paul Graham. Will look into that",
+            "score": 1,
+            "author": "lovegolftravel",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "My other company AHOY.io got hit hard by pandemic as well so I know the pain. Good luck with your business !",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That is a great story. I loved reading all of it except when you said you must quickly kill any business who doesn\u2019t make money. As a marketing consultant, I help businesses who often have great ideas but lack the marketing abilities to attract customers. That is where I intervene and show a proper target audience their product / services. I turned businesses that were initially making little to no money, into profitable ones.",
+            "score": 1,
+            "author": "MasterCeddy2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You are right. For me little to almost no money is already proven traction and you should try to kick it off the ground and then try more. My point was for project that couldn\u2019t even get a single customer for 3 months and in hindsight was just a bad idea where we tried looking for a problem for solution we came up with. It all depends on context of course but one of my project which was \u201cSnapchat bot\u201d to archive snaps or post them on Twitter just totally missed the idea of what Snapchat is about lol. I wish I killed it faster \ud83d\ude48 but then I learned a lot as well.",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for the write up. Why do you wish you had gone straight to LTD? Is it just for the credibility of it or is there another reason?",
+            "score": 1,
+            "author": "reasonisaremedy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Much easier to set up a lot of things but it\u2019s mostly because the \u201csingle person for profit entity\u201d (not sure how to translate Jednoosobowa Dzialalnosc Gospodarcza and its equivalent for joint partnership which is Spolka Cywilna) are not straightforward to describe in English to other partners. UK is much friendlier legal wise, tax wise and access to services wise (like Stripe or Paddle). It also protects founders from personal bankruptcy etc. There are bunch of reasons to set it up and no good reason not to have proper legal entity once you start making money.",
+                    "score": 3,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Awesome that you were able to turn this into a profitable business. One minor suggestion on your site, when I pull up the pricing, it automatically changes the dollar amount from $8.99 to $9.89, I can see this happen as the page is loading. If I stumbled upon this service, I would likely not purchase because of that. I suggest just charging $8.99 USD or $8.99 Euros, don't change based on location, at least between the EU and USA. Your likely missing out on a lot of customers by not sticking with the $8.99 price point in the USA. Hope this helps.",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the tip. I will look into that. The price shouldn\u2019t blink like that and also should be nicely rounded. We use localized prices as it converts better.",
+                    "score": 1,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cool, just giving a heads up. Here is a bad quality gif showing what happens, [Price Change](https://gfycat.com/massivewindinggrosbeak)",
+                            "score": 2,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What Slack groups/FB groups, etc, do you recommend?",
+            "score": 1,
+            "author": "lfortunata",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I had a hackathon friends group of people I\u2019ve met on hackathons so it was invite only. There is polish group \u201cRozmowy o startupach\u201d on polish fb. Now I mostly follow this subreddit \ud83d\ude48",
+                    "score": 3,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great journey and case study. I hope you continued success.",
+            "score": 1,
+            "author": "profezor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you !",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Good job brother!",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks bro! \ud83d\ude0e",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You're welcome!",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Congratulations on your success , great writing and advices . Hope for more growing of the business for you guys .",
+            "score": 1,
+            "author": "sawalm"
+        },
+        {
+            "level": 0,
+            "comment": "Nice!  \n\n\nHow did you go from , \"we released it at 5AM\" to \"We got the first sale in 5 minutes\". Where did you advertise it upon actual release? How did you get that first customer?",
+            "score": 1,
+            "author": "phillythompson",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sorry if it was not clear. We launched for free on ProductHunt as first solution like this two weeks after  Apple Music launched. It\u2019s definitely not repeatable strategy \ud83d\ude48. Back then there was just Spotify and some smaller services so Apple getting into the space made a lot of people wanting to migrate. \n\n5 am we have released first paid version and the traffic was already there and the paying customers were just matter of time. For us though it was first time selling something online so we were surprised and happy af ;)",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing this! Really inspiring. As an engineer, I would love to hear about the technical details. Where are you hosted, what technologies you\u2019re using etc..",
+            "score": 1,
+            "author": "hxzzay",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "So nice for you to ask, as an engineer I like to share details like this \ud83d\ude48\ud83d\ude80. \n\nWebsite: NextJS built in TypeScript, Bootstrap and SASS. \n\nBackend: TypeScript, ExpressJS, Postgres for DB, redis for caching, websockets (socket.io) for notifying client apps. \n\nDeployed on Kubernetes. We recently switched from Google Cloud to ScaleWay (love it). We never host our own persistence, so Postgres is managed by ScaleWay, Redis is ephemeral, files are on S3 compatible ScaleWay. I can recreate whole production in few minutes (thanks to Terragorm and Kubernetes). \n\nDesktop and Mobile apps are monorepo. \nDesktop app is Electron packaged \u201ccreate react app\u201d  and mobile is ReactNative. We basically write everything like any hooks or logic once and when we need to show UX we have separate components which differs only by one using &lt;div&gt; on desktop and &lt;View&gt; on Native. This saved us so much work, so we reuse this tech stack for other projects like Quizado. \n\nThis is new stack, we had literally rewritten everything last year April from scratch. I usually wouldn\u2019t recommend it but our tech was based on being script based mouse clicker to something more complicated. It was easier for us to rewrite everything to prepare for next years of development.",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Awesome. Recently took it upon myself to learn Kubernetes. Amazing how something so \u201ccomplex\u201d can make things so simple right? ;) Love how you do code sharing as well. Great stuff!",
+                            "score": 1,
+                            "author": "hxzzay",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I so love Kubernetes. Everything feels magical with it. Need SSL for new domain? Check (as long as you already use Ingress and Cert-Manager). Canary deployments? Built in. You are so on point with the \u201ccomplex\u201d comment! \n\nI started coding when getting 5MB server with PHP was almost impossible to get for free \ud83d\ude48\ud83e\udd76. It\u2019s so easier to start today and built \u201cGoogle quality\u201d services by yourself. \n\nGood luck with Kubernetes journey!",
+                                    "score": 1,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What tech stack did you use in the beginning and why ?",
+            "score": 1,
+            "author": "tavycrypto88",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Apple Script that turned into macOS native app alongside Windows native app.\n\nBackend for licenses: Django/Python.\n\nWhy? These were the technologies we knew and were proficient in :)",
+                    "score": 1,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Was just curious. So you picked what you knew rather than what was hot at that time.",
+                            "score": 1,
+                            "author": "tavycrypto88",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes exactly. Getting useful stuff to production and into hands of users beats any \"I used hot tech\" hundred times over. No user cares you used SPA React based app with blockchain. They care you solved they problems. That's why we were able to sell 300 lines of AppleScript packaged as an app for 5$. Was is great tech? Not really... Did it solve real user issue and saved them time? YES! Were users happy? Yes. Did they care it was shitty tech? No :D \n\nIn the end we have awesome tech, but to save our development time, but getting to production is always no.1 goal.",
+                                    "score": 3,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s always great to hear how people became successful. For me it\u2019s always inspiring.\n\nGreat job man, not that you need me to say that to you, but great job. Thank you for sharing with us.",
+            "score": 1,
+            "author": "Gatenyo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you, appreciate that a lot ! Always nice to hear an \u201catta boy\u201d \ud83e\udd70\ud83e\udd17",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing! I was wondering how you can guarantee 100% transfer of songs and playlists if perhaps you aren\u2019t able to find a song (e.g. Spotify \u2014&gt; Apple Music). How did you deal with instances where the names of a song were different between two music providers?",
+            "score": 1,
+            "author": "howyoudodis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You cannot guarantee it, you just try the hardest to find the best match and accept that you will fail sometimes. If we cannot find it we just won\u2019t migrate it and will tell you which songs we failed to migrate. We match based on bunch of data (name artists album name, combined in different ways, cleaned up from eg. (feat) text) and we use Levenshtein algorithm to gauge how correct match is. Mostly it depends on how good the search function of destination service is and how to go around it\u2019s limitations.",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Awesome, thanks for sharing!",
+                            "score": 1,
+                            "author": "howyoudodis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Interesting.\n\nJust wondering, how much of your revenue is recurring?",
+            "score": 1,
+            "author": "abol3z",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sadly not a lot, most people just migrate once. We've added recurring plans only a year ago, most sales are single payment, and most non churned plans are yearly, so we will see in next few months how it goes.\n\nWe just launched SmartLinks feature that we try to sell (https://freeyourmusic.com/smart-links) and we hope this will become our recurring revenue source.",
+                    "score": 1,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "SmartLinks has just been released, so we are still straightening some things around it : )",
+                            "score": 1,
+                            "author": "bartoszhernas"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I actually have a question:\n\nWhy create a windows or Mac app for this? Wouldn\u2019t a website be enough? - so, couldn\u2019t you use the Spotify / Apple Music etc APIs to move the data?",
+            "score": 1,
+            "author": "shto",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Great question!\n\nSo a lot of services don't have official API, or are even actively try to stop you from integrating with them. Having mobile/desktop apps allows for much greater control of what is possible: eg. if the music service doesn't have API for login, we just display it's login page and get the cookies from there (so we don't ever touch user passwords, good example right now is Tidal), then we use their web app or mobile app APIs. \n\nSome services that we support wouldn't work on the web app.\n\nOn top of that, the mentioned services could try to block our requests based on Referral headers or other HTTP headers we couldn't spoof on the client side (as it's not possible to change everything on client side in browser due to security). \n\nYou could say \"why don't you run the request from your backend servers, then you can spoof any headers you like\". That's correct solution but then we are prone to be IP blocked by the services that don't want to allow our app to exists.\n\nHaving everything on Desktop app (or Mobile), where whole transfer happens on user device is less error prone: for Spotify it looks like the user is doing this manually from their mobile app (creating playlists etc), if the API is region based, then it works for the user as it should (eg. if our server would be in France, but user is in USA, and Spotify would base their API on location this would introduce problems). On top of it, we can get 1000x more users tomorrow and we won't have to scale servers at all as everything happens on user devices. It also feels just better privacy wise. I like to think to this solution as \"backend on the client\", or distributed backend, and while it has it's drawbacks, it has a lot of upside for us :)",
+                    "score": 4,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;for Spotify it looks like the user is doing this manually from their mobile app (creating playlists etc)\n\nInteresting \u2013\u00a0are you doing this with app URLs / deeplinks? `spotify://&lt;some action here&gt;`?",
+                            "score": 1,
+                            "author": "shto",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "We try to stick with just showing WebView and capturing required cookies/tokens from there, it has the best reliability.\n\nDeeplinks won't trigger user to get back to our app so they are not ideal.\n\nSome services are much smoother, because there is official SDK, eg. Apple Music (suprise suprise, Spotify is one of the shitty players https://freeyourmusic.com/en/blog/spotify-tries-to-hold-your-playlists-hostage )",
+                                    "score": 1,
+                                    "author": "bartoszhernas",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Sorry, I guess my question is \u2013 how does it look to Spotify like the user is manually creating playlists or moving songs without using their API?",
+                                            "score": 1,
+                                            "author": "shto"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Oh ok I think I get it \u2013\u00a0correct me if I'm wrong here, this is an awesome technical solution you guys have found!\n\nSo, given that most of these music services have web interfaces, you can inspect a login call in e.g. Chrome and capture the token it gives back.\n\nAlso in the Chrome inspector you can see what other API calls Spotify is performing when e.g. creating a playlist or adding a song to a playlist.\n\nSo now you have the API endpoints for creating and adding songs to playlists, and you have the token \u2013\u00a0so you call the same API endpoints with the Spotify token and you maybe add like `app-platform: \"Web Player\"` in the header, and **then Spotify thinks it's the webplayer that is actually creating those playlists** and adding songs, not your app.\n\nHave I got it right so far?",
+                                            "score": 1,
+                                            "author": "shto",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Very smart and clever work around.  I did a side project similar to this a couple of years ago using mostly the public apis available (Spotify &amp; Apple Music).  I hit the same road block realizing most apis were private and the streaming services didn't really want software like this out there.  Great work!",
+                            "score": 1,
+                            "author": "IonBlaster",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks! We (as me and my cofounders) come from Hackathons with the Hacker mentality. It's IT, it's available for users, can be used by use for the users for sure, just need to find our way in ;P",
+                                    "score": 2,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "does... does it work for mp3 libraries? that's what has kept me from spotify all this time. I just have too big of an mp3 library built up to bother with streaming services",
+            "score": 1,
+            "author": "jamalcalypse",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Why don't you just drag over MP3 to Spotify and then they will auto-match your files with what they have, and the ones they cannot match they will just use the MP3 version? Afaik it's possible and implemented there since years.\n\nWe tried to build something that would work with MP3 files but it's already solved by streaming services :P",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "admittedly I haven't explored spotify much, but the idea of dragging over a 200gb folder is about as appealing as having to drag each folder individually which would take me the whole day probably heh. I'm not in any rush to join a streaming service but it's good to know spotify has a feature like that",
+                            "score": 1,
+                            "author": "jamalcalypse",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They don\u2019t do anything with files afaik, they just scan them but don\u2019t quote me on that \ud83d\ude05 as I am not sure.",
+                                    "score": 2,
+                                    "author": "bartoszhernas"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Inspirational founder story and great write-up. Thanks for sharing! What else did you do for  growth besides Product Hunt and Google SEO?",
+            "score": 1,
+            "author": "ant-speeko",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just improve the app constantly, add more services, more platforms and write content for the blog. We just got lucky a lot with ProductHunt so the road was much easier for us than a lot of other projects had.",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great story and in general, the tool you develop is helpful. Nice! \n\nNow do a similar one for every other streaming medium we have ;)",
+            "score": 1,
+            "author": "ssmihailovitch",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks.\n\nNot sure what other streaming mediums have similar user-problems? If I move from Netflix to HBO is mostly because of what content is available and I do not care about my watching history :P Do I miss something? I am open to ideas :D !",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great job man! you worked hard, you absolutely deserve it! All the best",
+            "score": 1,
+            "author": "dgamer27",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you \ud83d\ude4f",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Man I've thought about that idea sometimes, it just seems like a unwholly mess to implement.\n\nCongrats!",
+            "score": 1,
+            "author": "ian-codes-stuff",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you. It's a big mess \ud83d\ude48",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "An absolutely incredible and helpful post. Your comments are just as good too. Thank you very much OP! Your success is not an accident.",
+            "score": 1,
+            "author": "sweetmarco",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just trying to be helpful, thank you :)",
+                    "score": 1,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Aw man I could have used this a few weeks ago,  Youtube Red decided to delete all my songs fsr so i got Spotify. Nice find though!",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ahh, too bad man, feels crap to lose your curated songs. I hope you've made even better mix already :)",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It depends on destination service. If Spotify returns no results for eg. \"Louis CK special\" then we say it was a no match. But if they return us some results, we get the best possible out of what we got with the idea being that it's better to match something than nothing. This usually works great, because there can be some variation in the metadata, but the song matches, but for some obscure songs it can be total miss. \n\nIf song doesn't exists on Spotify, and they don't return any result, we mark it as a no match, and you can see list of this songs in the app and you can try to add them manually. Usually it just doesn't exists, so no luck there even for manual work. \n\nWe are in the process of adding nicer UI to show the \"confidence level\" of our matching, so you can try to fix the matches manually from inside the app and then use this data to fix matching for other users as well, basically crowdfunding better matching data for all the users. This is complicated though (what if 4chan messes with us and matches everything to \"never gonna give you up\"?) so we are still experimenting :)",
+                    "score": 3,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "For the trolling, if you only present users options that already meet a minimum fuzzy match threshold then they can't make it too terrible. Maybe they could do \"Never Gonna Dance Again\", but not just random songs. You could have a report button that lets you do a manual review if a bunch of users indicate the match is bad, but that might be overkill.",
+                            "score": 2,
+                            "author": "mattsl"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Where can I find full stack developer on a tight budget? No to Free$lance... Charges ridiculous prices.",
+            "score": 1,
+            "author": "MartianMarshmellows",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Depends how tight, try at https://unitedideas.co/ We worked with them and were happy with results. But it's impossible to find good and cheap, and the cheap gets more expensive long term :P",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What's the price point I should be looking at?\n\nI think for a place like Free$ance they take the bulk of the money so really you can't get anything for $30/hr and these developers are in middle eastern Europe. Where's the free trade globalization for me? :D",
+                            "score": 1,
+                            "author": "MartianMarshmellows",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I first used your app years ago. Wasn\u2019t it called something else originally? Stamp or something. Worked great!",
+            "score": 1,
+            "author": "TheMercDeadpool",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I found your iOS app 2 days ago and instantly downloaded it because the UI looked really modern compared to the other app I'd used. I'm not sure it's possible but is there any way to transfer your liked songs playlist from Spotify to AM? Overall great app, very happy with how it works!",
+            "score": 1,
+            "author": "JoinetBasteed",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This is an awesome write up. I'm actually doing some work with Spotify's API right now for adding their metadata to my local music collection. I'm not trying to monetize it, but it's cool to see someone make real money from a 3rd party Spotify service.",
+            "score": 1,
+            "author": "mattsl",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Amazing",
+            "score": 1,
+            "author": "Shazan_Atomic_Hulk"
+        },
+        {
+            "level": 0,
+            "comment": "I use my partner\u2019s Spotify and I would like to transfer all the playlists I created in her account to my own new account. I have been reluctant to create my own purely because I\u2019ll lose my playlists so if you can\u2019t already transfer from one Spotify account to another, maybe that\u2019s something to think about. \nGreat job by the way.",
+            "score": 1,
+            "author": "Xcellerant",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Oh shit. I absolutely need this for all my music bingo games! Thank you.",
+            "score": 1,
+            "author": "buckerooni",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Hey super cool idea  \nSmall comment -- on your website you say; \n\n*Save even up to 10 hours and spend your time on things you actually enjoy.*  \n\nTo try and improve your english a little bit, you could instead say;\n\n*Save yourself from hours of mindless work and instead spend your time on the things you actually enjoy!*",
+            "score": 1,
+            "author": "_nk",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Really great write up. Thanks so much for sharing",
+            "score": 1,
+            "author": "SiftEase",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Can it resurrect my dead Grooveshark account from when it suddenly shut down almost a decade ago?\n\nI still mourn the loss of those glorious playlists and the songs I'll probably never find again in my life.",
+            "score": 1,
+            "author": "tmilazzo",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing, can you share some of the vendors/folks you outsourced to?  like who you outsourced customer support or website design?  As i am looking for something similar.",
+            "score": 1,
+            "author": "infinitone",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing. This inside is very helpful for lots of people that do want and engage in side projects.",
+            "score": 1,
+            "author": "velocityghost",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you :)",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you guys support YouTube Music?",
+            "score": 1,
+            "author": "jard18",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi, yes, we do :)",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great startup glow up! And some sage advise too",
+            "score": 1,
+            "author": "spicytaco77",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "As a UX designer I have to give kudos to the site design. This is one of the few websites that have left me thinking, they didn't make the designer compromise much of the design intent. Very clever dark / light mode switch, too!",
+            "score": 1,
+            "author": "produxtui",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019ve used this app before when I was actively curating playlists. Thank you for building such a useful app. Saved me a lot of time!",
+            "score": 1,
+            "author": "ianebaldwin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This gets me going, I am so happy we were able to help! Thank you for being our customer!",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very impressive. Congratulations. I run a business that does $10,000+/month.\nI did exactly what you did. Solve a problem that I personally faced.  \n1. How do people find you? Is it all SEO? Do you do any paid marketing?  \n2. What's your tech stack? I'm sure all of us would love to hear more on how you built this?",
+            "score": 1,
+            "author": "illusionst",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "1. 99% is SEO (shout out to our marketing technoqueen Ewelina!). Paid marketing is not possible mostly because the avg LTV from one user is less than 9EUR.\n2. I already replied in details about it somewhere in the comment here. Now it's 100% TypeScript + React + ReactNative and TS ExpressJS for the backend.",
+                    "score": 2,
+                    "author": "bartoszhernas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Here you go: [https://www.reddit.com/r/Entrepreneur/comments/mhvryf/turning\\_a\\_small\\_app\\_into\\_a\\_20000mo\\_business/gt1nyww/?utm\\_source=reddit&amp;utm\\_medium=web2x&amp;context=3](https://www.reddit.com/r/Entrepreneur/comments/mhvryf/turning_a_small_app_into_a_20000mo_business/gt1nyww/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3)",
+                            "score": 2,
+                            "author": "bartoszhernas"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "wow, my first time reading a long post and I am intrigued while reading it too. I'm planning to start learning coding/programming during this summer, after my winter term. Is it possible for me to learn coding for free? Currently have no plans of what I'll do specifically with coding knowledge but it will come after I gained some knowledge",
+            "score": 1,
+            "author": "bryanlu9",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Coding is like magic, you literally tell a rock that people tricked into thinking and doing calculation to do you own bidding :P. In IT everything is possible &lt;3   \n\n\nStart with JavaScript, there are plenty of resources online to learn.",
+                    "score": 2,
+                    "author": "bartoszhernas"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Love this!",
+            "score": 1,
+            "author": "myromunya",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Great job! Thanks for putting me on to Paul Graham, that\u2019s someone I haven\u2019t seen or read before.",
+            "score": 1,
+            "author": "SWER8",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "What is the model of lifetime subscribers? Do you expect to make money out of them forever and how you gonna do it?",
+            "score": 1,
+            "author": "CatolicQuotes",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "How did you built the app?",
+            "score": 1,
+            "author": "xKoroski",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Check out Flutter for your next project or if you want to refactor. Not quite 100% production ready across all platforms, but you can write across all platforms including linux with 90%+ of one code base. It may not work for your use case, but could cut development time down significantly when pushing updates across all platforms.",
+            "score": 1,
+            "author": "joeyda3rd",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "&gt;We\u2019ve experimented with different pricing models: it was 5\u20ac at beginning, then 12\u20ac, and after some tests we saw that a 9\u20ac price mark for FreeYourMusic works the best. In the meantime, we\u2019ve also added support for iOS, Android, and many new music services.\n\nCan I get more insight as to why you're not trying different prices anymore?\n\nReason why I'm asking: [I'm building PriceUnlock](https://bychgroup.com/price-unlock/).\n\nPriceUnlock would help you find the perfect pricing for your tool, allowing you to stop leaving money on the table. So you'd be able to set different prices per country (especially relevant for a product like yours, which is for consumers), and schedule different pricing tests so as to find out which pricing suits you best.\n\nI'm always curious to know how entrepreneurs price their things or adapt them \u2014 or more importantly, draw conclusions. So how did you end up on your prices?",
+            "score": 1,
+            "author": "chddaniel",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Nicely done. going to check out your app!",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Could you go a little bit deeper on the tech stack that you used? As a software engineer myself i really dig your project. Congratulations on your achivement",
+            "score": 1,
+            "author": "mrendi29",
+            "replies": []
+        }
+    ]
+}

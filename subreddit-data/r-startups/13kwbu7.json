@@ -1,0 +1,314 @@
+{
+    "id": "13kwbu7",
+    "score": 102,
+    "title": "A sudden 100x increase in traffic, and what we learned",
+    "author": "HolidayOptimal5526",
+    "date": 1684409396.0,
+    "url": "https://www.reddit.com/r/startups/comments/13kwbu7",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Edit)  We're still a small service, and suddenly we got a lot of people, so we were just looking at what was going on, and noticed something particularly strange. We were concerned of course, but we were careful to let the client know and they were open to a conversation. We don't monitor every site or every user all the time, and this was a unique case. We're just trying to make sure that our users have a stable site and that they can shape it the way they want. I just wanted to share our lesson learned, and I hope there's no misunderstanding.\n\n\\-----\n\nHi! We're a team building a lightweight webpage builder.\n\n&amp;#x200B;\n\nWe recently had a sudden spike in sign-ups and visitors, and the effect was so impressive that I thought I'd write about it.\n\n&amp;#x200B;\n\nAbout a month ago, we were working on features and fixing bugs as usual, when suddenly one of our sites started getting a lot of visitors. Over the course of a few days, it grew and grew and grew until it was up to 100x the usual number of visitors to our other sites! When we tracked it down, we realized that a large entertainment company was using our service as an event page. We were surprised and puzzled because we hadn't contacted them first, or done anything noticeable yet (we hadn't even launched yet).\n\n&amp;#x200B;\n\nAs we were celebrating the increased traffic, we noticed that some of the event participants were behaving strangely: some people were signing up with dozens of similar usernames to increase their chances of winning. We had found abusing!\ud83d\udc7e They had identified and exploited a weakness in our service, but the client (an entertainment company) didn't know about it, and we were worried. We thought it was something we could see happening again in the future, and we decided to let the customer know, but we also gave them as much raw data as possible so they could make their own judgment, not ours (of course, we're very privacy conscious!).\n\n&amp;#x200B;\n\nAs it turned out, they were able to interpret the data well enough to weed out the abusers based on their criteria, and the winner of the event was determined fairly. We were relieved to see it go well. While we haven't yet seen the client hold another event, or convert all those visitors into new customers for our service, this serendipitous event gave us a chance to learn from it.\n\n* Improvements to the signup process\n* Ideas about what our service could be used for\n* tons of incoming data\n* An idea of what we could do to improve retention.\n* And other small bugs that came with a lot of visitors!\n\n&amp;#x200B;\n\nI'm so glad we got to experience this kind of traffic before we officially announced our service to the world, and I wrote this post because I think every \bsmall service should experience it, whether it's accidental or artificial. What do you guys think? Let me know if you have any experience :)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "FYI:  An expensive but effective tool to counter this is Sift.com. Alternatively you can write your own, typically using fingerprintjs, but also potentially using ipqualityscore.com and similar cheaper services.\n\nThat said, sounds like a success, congrats!",
+            "score": 39,
+            "author": "nevesis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "+1 to ipqualityscore, they offer 5,000 checks for free, which came in clutch when we first started. It's insane how many bots signed up for our services when we started out.",
+                    "score": 10,
+                    "author": "94FordRanger"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks for the recommendation! We took care of it ourselves this time with our developers, but we'll give that tool a try next time we run into a more problematic situation :)",
+                    "score": 1,
+                    "author": "HolidayOptimal5526"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m guessing people were using a plus sign in the email address so they could submit multiple entries with the \u201csame\u201d email address? Seems like no one blocks against that.",
+            "score": 13,
+            "author": "iblooknrnd",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What?",
+                    "score": 3,
+                    "author": "progressgang",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You can use a plus sign after your username in an email to create accounts but still receive the email at your username. For example, username@gmail.com, you can do username+whatever@gmail.com and you will still receive the emails to that address at your username@gmail.com account. This allows you to create multiple unique accounts with a service but still be able to confirm the email account with your main account.",
+                            "score": 12,
+                            "author": "iblooknrnd",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for the proper reply. I literally never knew that.",
+                                    "score": 6,
+                                    "author": "progressgang",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Does not work for all email. Just google i think",
+                                            "score": 5,
+                                            "author": "tipjarman",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "`+`works with all providers.\n\nThere is a gmail specific quirk, .(dot) in a gmail handle doesn't really matter. i.j@gmail.com and ij@gmail.com will be sent to the same inbox",
+                                                    "score": 0,
+                                                    "author": "ishanjain28",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "No, the \"+\" sign for use as an alias is not a universal standard. Gmail supports it, and probably started it. I think Hotmail/Outlook also supports it. Maybe a few others, but you have to test or check with your email provider. \n\nhttps://en.wikipedia.org/wiki/Email_address#Subaddressing\n\nSome online forms may also not accept certain characters such as \"+\" sign.",
+                                                            "score": 2,
+                                                            "author": "bobgusford"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Wow. Learned something. Was told it only was a gmail thing. So even corp email where the manage themselves?",
+                                                            "score": 1,
+                                                            "author": "tipjarman"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Most people don't.",
+                                            "score": 3,
+                                            "author": "OnlyTwoThingsCertain"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Right, we realized that the abuser had created a bunch of accounts using '+' or '.' .\n\nWe made sure that mails with those \bcharacters were treated as a single mail.",
+                    "score": 2,
+                    "author": "HolidayOptimal5526"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing",
+            "score": 3,
+            "author": "encoredme",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I hope this helps!",
+                    "score": 1,
+                    "author": "HolidayOptimal5526"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019ve had this happen.  You would be shocked just how many every day users try to exploit bugs \ud83d\udc1c",
+            "score": 3,
+            "author": "Lopsided_Reading_362",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Or just find new and interesting ways to b0rk a website unintentionally. \ud83e\udd37\u200d\u2640\ufe0f \n\nAs a recovering software tester I've done it deliberately in a past life. \ud83d\ude08",
+                    "score": 1,
+                    "author": "Geekonomicon"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes, we sometimes get attacks on our servers, and while they are quickly contained. I'm realizing that sudden bugs and attacks are not uncommon.\ud83d\udc7f",
+                    "score": 1,
+                    "author": "HolidayOptimal5526"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "On one occasion I got 2000 new unique visitors to my website with spectacular retention, when I analyzed everything I realized that they were all Filipinos and had mistakenly landed on my website because of a twitter host that had placed my link by mistake. the same domain but with a different extension.\r  \n This increase in visitors pleased Google at that time and from there the organic visits began to rise exponentially.\r  \nI was fascinated by this technique because it was very economical. A few months later, the Google algorithm changed and doing this had a negative impact on my website, but the organic visits continued to rise.",
+            "score": 2,
+            "author": "NicoAuditor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow, that's an interesting experience! It's unusual, but I'm glad it led to something good.",
+                    "score": 2,
+                    "author": "HolidayOptimal5526",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "To tell the truth, I discovered a new world from that experience, I began to take much more into account the traffic that could arise from social networks and the qualification of it, which can be very good.",
+                            "score": 2,
+                            "author": "NicoAuditor"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wow, it's interesting to see how a surprise surge in traffic helped you learn and improve your service. I'm glad you guys were able to address the abusing issue and work together with the client. It's like a high-stress test run before official launch! Good luck with your project!",
+            "score": 2,
+            "author": "Embarrassed-Town-635",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the kind words! When starting a new service, I find that unexpected trial and error really helps the service evolve.",
+                    "score": 1,
+                    "author": "HolidayOptimal5526"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I hate to tell you, but every SaaS platform on the planet employs people whose purpose is to review what people are doing on and with their platform. It's a common and accepted practice and done for a range of legal and liability reasons.",
+                    "score": 5,
+                    "author": "jchance",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": -4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I think I know where your confusion lies- You mentioned \"privacy nightmare\" in your original post.  if you're referring to Privacy Policies on websites that only covers how they will *share* your data with 3rd parties (for example, selling your customer email list), it has absolutely no bearing on internal access and review of your data for legal, Terms of Service, or Acceptable Use Policy compliance.",
+                                    "score": 2,
+                                    "author": "jchance"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m from Earth.  It\u2019s the 3rd one from the Sun.  \n\nI\u2019m sorry, but you should read the terms of service for whatever SaaS you think doesn\u2019t look at your data.   Even if your service provider doesn\u2019t say so, their upstream provider is almost guaranteed to have verbiage in their terms of service- for example, AWS, which half the internet runs on at this point in some way, shape, or form (s3, elb, ec2, route53, rds, ses, etc.), simply states it in their terms:  \u201cAWS has the right but not the obligation to monitor and edit or remove any activity or content.\u201d  \n\nAny is the operative word there, not \u201cinfringing\u201d or \u201cillegal\u201d or anything else.  Any means they can look at whatever they want whenever they want.",
+                                    "score": 1,
+                                    "author": "jchance",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 2,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It\u2019s also legal under the GDPR and the exact same thing can happen with European companies.",
+                                                    "score": 1,
+                                                    "author": "xfdp",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 1,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "It is allowed and does happen with data centers in Europe",
+                                                                    "score": 1,
+                                                                    "author": "xfdp",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[deleted]",
+                                                                            "score": 1,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I do and it is",
+                                                                                    "score": 2,
+                                                                                    "author": "xfdp",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I'm not sure why this feels so aggressive, but you seem to think that some law exists somewhere on earth that prevents me from looking at data that a customer has uploaded to or collected on my servers (be they physical boxes in a data center or cloud based solutions like AWS, etc.).  \n\nI've owned a SaaS that has hosted uploaded file data, personally identifiable information, financial and payment data, meta data, location data, and everything else you can think of with businesses on every continent, including the EU and UK, for the past 10 years.  \n\nI am not a lawyer, but I pay a couple way too much to make sure our person responsible for data compliance is up to date on every privacy law- GDPR, CRPA, and the 30 other ones all the way down to the Nigerian Data Privacy Law. With fines of up to 20M EUR for violations, it makes sense to spend $10K+ on lawyers to make sure your entire livelihood doesn't get fined out of existence and so we have.  No offense intended, but that kinda makes me more than a layman on the topic, and I have real policy experts I pay to answer my phone call if there is a question.\n\nI'm not sure why you think it's illegal for EU companies to use US services- we have literally had thousands of EU companies and sole traders who have either use or are currently using our US based service.   There *is* a requirement that we are GDPR compliant, have a DPA, etc. We are.\n\nGDPR and all the other privacy laws are 100% focused on the *identification and disclosure* of what information we store, how we share it with 3rd parties, what types of information we are allowed to share with 3rd parties, how we process and/or secure your data internally, your right to access the information we store on you, and your right to request we delete the data we store from our servers.  There is not a single provision in any of these laws that prevent internal review of data stored on our service while you have an active service subscription (service contract) with us.\n\nIn our Terms and Conditions we simply state:\n\n&gt;&lt;Service&gt; has the right but not the obligation to monitor and edit all Content provided by users.\n\nOur AUP defines what kinds of content/data we don't allow on our servers. Some of this is for legal reasons and some of it is for moral reasons.  It specifically says:\n\n&gt;&lt;Service&gt; has the right, but not the obligation, to monitor or investigate any Materials and your use of the Services at any time for compliance with this AUP and the Terms and Conditions, or any other agreement between you and &lt;Service&gt; governing your use of the Services (collectively, the \u201cTerms\u201d).\n\nJust like you're agreeing to the fine print in an EULA when you install software, these collective \"Terms\" are a business contract you are entering when you sign up for our service and your consent for the data you store on our servers to be monitored.  This is 100% GDPR and EU contract law complaint. \n\nWe're not sharing your information with anyone here- we're technically internally processing your data to ensure legal compliance.  *There will never be a law that prevents us from following the law because thats... well, thats just dumb.*\n\nJust think about what you're saying for a second- it would be insane for me to give you a \"dark web directory\" on my web server where you could upload \"any data\" free from supervision or oversight.  \n\nYou could upload anything- nuclear secrets, child porn, pirated software from a multi-billion dollar company that can sue me out of existence with just the court costs, a database of stolen credit card numbers, your ex-girlfriends sex tape, etc, all of which has a real possibility of sending me to prison for helping you distribute.  Me going to court and saying \"Look bro, we just give them a folder to put \"any data\" in and we don't look at it, I dunno.\" is not a valid legal defense- by creating a system that facilitates your illegal activity my company is just as liable as if I knowingly helped you upload it myself.   \n\nThe only thing that protects me as a service provider is that I have reasonable controls to prevent that and a big part of those controls are reviewing account data *internally* either programmatically or with human eyeballs to make sure you're not using my company (and by extension me) to commit US state, federal, and international crimes.  \n\nHell, I don't even have to review it internally if I wanted to outsource it to a data mining company- *I just have to disclose that I do it in the GDPR compliant Data Processing Addendum.*  We don't do that for a range of reasons, from financial to philosophical problems with sharing that much customer data with someone else, but we could if we wanted to and it would be legal.\n\nALL THAT SAID, we really don't give a shit about an individual's data.   I remember when we started the service years ago and we got 1 or 2 signups a day.  I would get excited, pull their user up on the intranet, and see what kinds of things they were selling.  I'll tell my business partner \"Cool, this guy is selling rock climbing videos!\"  Even this cursory look for personal gratification was 100% legal- same as if I checked a new user and they had \"Cracked-Windows-XP-Pro_x86.exe\" as their product file and I had to take an account action (deletion of stolen software, account suspension, whatever). We're not getting a bunch of cracked Windows ISOs anymore, but this was 10 years ago.\n\nFast forward 10 years and I don't have the time, bandwidth, or interest to manually review accounts that don't raise a red flag through automated means. We have automated review scripts that run every night and check for specific things.  We have automated anti-virus scans that check for infected files.  We have algorithms that monitor log files for suspicious patterns of activity or network traffic.  I'm not going to disclose how any of these work, but they're effective and if I get subpoenaed to testify in court I can say with a clear conscience that we have made our best attempt to prevent illegal activity on our servers.\n\nI don't know why I'm even wasting my time writing this post arguing with a guy on reddit other than I think you have a fundamentally wrong idea about data privacy in general and I genuinely want to help you (and other startups in here that have the wrong idea) understand how data privacy laws really work.\n\n**TL;DR:**  *You have no expectation of data privacy from the people you are paying to store your data and it doesn't matter who you are or where you live and for good reason- its crazy.*",
+                                                    "score": 1,
+                                                    "author": "jchance",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 1,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Ok sport, it\u2019s obvious you just want to argue.\n\nFor shits and giggles why don\u2019t you find your favorite EU web host\u2019s terms of service doc in the footer of their website.  \n\nI did a 10 second google for EU web hosting and found EuroHost.com. Slide on down to the [terms of service link](https://eurohost.com/tos.html) in the footer.  You might enjoy sections 9 and 13.1.  I don\u2019t see their AUP link on mobile, but it was [easy enough](https://eurohost.com/aup.html) to find based on the tos URL.  \n\nYou\u2019re wrong and you\u2019re doubling down.  You do you bud, I knew I shouldn\u2019t have wasted my time trying to help in this sub anyway.  \n\nI own a SaaS.  I can already tell I don\u2019t want you as a customer, thanks though.",
+                                                                    "score": 1,
+                                                                    "author": "jchance"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Iama data scientist with over 10 years of experience and I wouldn't be able to do my job without access to the data.  It's impossible otherwise.\n\nEvery company I've worked for obfuscates the personal user details, so I see a user ID tied to their data, not their legal name tied to their data.  But other than that pretty much everything is available.  imo the creepiest data I've gotten isn't web logs (I worked for a company that writes the software for ISPs, so we had the world's http traffic.) but GPS data.  I can look up someone in the DB that is down the street from me, go outside, and look for them.  I need GPS data to do most of the work I've done over the years and have never abused it, but I wouldn't mind a law that required I could only see GPS data far away and historical, or they have to agree to giving up full information to their GPS data.",
+                                    "score": 1,
+                                    "author": "proverbialbunny"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "If a company I haven\u2019t had contact before came to me and said they were looking at my data and noticed something wrong **with my event** I would be very concerned",
+                    "score": 2,
+                    "author": "Raioc2436",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "\u201cAll your data are belong to us\u201d",
+                            "score": 3,
+                            "author": "bdudisnsnsbdhdj"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Since our service manages sign-ups in a unified way, like a platform, it was a natural place to find abusers. Even when notifying the client, it was important that we masked the information so that individuals could not be identified due to privacy issues. We understand that privacy is always a sensitive issue.",
+                            "score": 1,
+                            "author": "HolidayOptimal5526"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm not sure if this is the proper answer, but to be precise, there is only one sign-up way for our service. Because we manage our users as a platform, people have to sign-up for our service to comment on a client's website. We don't offer clients the ability to \"let people sign up separately on their site\", like Notion does.\n\n  \nSo those abusers were eventually our users, and it was important for us to make sure that when we communicated that information to the client, we masked it so that they couldn't identify the individual. We just focused on pointing out that dozens of emails were generated with the same pattern (like abcde\\*\\*\\*@gmail.com &amp; a.bcde\\*\\*\\*@gmail.com &amp; ab.cde\\*\\*\\*@gmail.com &amp; ...).\n\n  \nI understand your concern, and I apologize if I wrote that in a misleading way. We definitely care about privacy issues, and we'll continue to work on improving them.",
+                    "score": 1,
+                    "author": "HolidayOptimal5526"
+                }
+            ]
+        }
+    ]
+}

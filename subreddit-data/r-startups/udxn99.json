@@ -1,0 +1,715 @@
+{
+    "id": "udxn99",
+    "score": 534,
+    "title": "We got hacked\u2026and so could you. Lessons learned from our experience",
+    "author": "throwaway_got_hacked",
+    "date": 1651159728.0,
+    "url": "https://www.reddit.com/r/startups/comments/udxn99",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Using a throwaway account since I\u2019d like to protect myself and my company\u2019s identity. A couple weeks ago we dealt with a small scale security breach. Every tech company in the $5 million+ range has likely dealt with some sort of breach or instability, but it\u2019s rarely talked about. Because of that, I figured it would be useful to share our experience and how we were able to avoid much larger issues. I\u2019m hoping you take the time to read this just because there aren\u2019t many stories like this which are openly shared. At the very least, you might find the story entertaining!\n\n**BACKGROUND**\n\nI\u2019m the co-founder and oversee product of a relatively established tech startup (few thousand clients, multiple millions of revenue, VC backed). Without going into too much detail, one of the core functions of our software is to send transactional emails to our clients when their customers update information or their customers are reaching out to our clients with inquiries. We\u2019ve processed millions of emails to our customers and have a bounce rate under 1% and a complaint/spam rate of 0.001%. In the email sending world, with this sort of scale, we are a very safe sender and have only had deliverability issues once with few customers (more info on that to come!). On top of that, we\u2019ve never had a customer mention our emails going to spam. To process emails, we use Amazon\u2019s SES (simple email service) product since we use AWS for other services. For context, we\u2019ve used SES for almost 7 years so it was not on my radar as a potential tech risk\u2026\n\n**SO WHAT HAPPENED?**\n\nThe morning of our breach was relatively normal. Our leadership team had a few team meetings to make sure everyone was aligned on new strategies and we were breaking out to work on our tasks for the day. When I went to check my email, I noticed a ticket had been opened by Amazon letting us know our account was under review since our bounce rate had exceeded 10%. It was alarming for sure, but there were no changes made to our account and we had 30 days to improve the issue for another analysis to take place. After reviewing the email, I also noticed the main sending domain we use had 50 or so auto reply messages in a 15 minute span\u2026anything ranging from \u201cout of office\u201d to \u201cyour support ticket has been received\u201d...At this point, I knew something was up and had our engineering team and dev ops team start digging into what could have caused this.\n\nAgain, I thought we had 30 days to correct the issue so I felt like the issue had been passed on to the right team members and we could figure out a solution. Unfortunately, we were too late to reverse what had already happened. 15 minutes after the original email of Amazon alerting us of a 10% bounce rate, I received another email letting us know our account was temporarily suspended because our bounce rate had reached 26%...for this to have happened, hundreds of thousands (if not more than a million) emails had to have sent out and the majority of them didn\u2019t even reach the inbox. With such a critical component of our software going down, we immediately alert customers to enable SMS alerts due to a temporary sending issue with email alerts. As expected, some customers had questions, some were annoyed, but there was relatively little backlash since they were aware the issue was being investigated.\n\n**WHAT CAUSED THIS AND HOW DID WE AVOID BIGGER ISSUES**\n\nWith SES and other email APIs, you receive an access key in order to use the API. Our access key appears to have been compromised which allowed someone to send mass emails via the API who was outside of our organization\u2026we\u2019re now putting in safeguards to ensure even more security around then. When our account was paused, we switched all access keys and changed all passwords as a precaution. With all of this being done, we still had to wait for Amazon to go through their review process and reinstate our account which can take WEEKS\u2026Here\u2019s the good news and the takeaway...\n\nRemember at the beginning of this post, when I mentioned that we had a few users mention deliverability issues in the past? The root of those issues were actually on Microsoft Outlook, but at the time, we thought it was our issue. Because of this, we built in a backup transactional email platform to manually move the users having issues from Amazon SES to our alternative sending provider. Since we did this in the past, we were able to manually move a large chunk of our high volume customers over to the alternative within the hour to avoid any interruption for them.\n\nOver the next 10 hours, our engineering team was able to move all email sending scenarios away from AWS SES to our alternative provider. Every customer was now receiving email again and virtually no one was majorly affected. If we hadn\u2019t built in an alternative sending provider, we would have likely spent a few days configuring everything for a new provider or hoped and prayed that Amazon got back to us to reinstate our account\u2026Amazon ended up taking 5 days so that wouldn\u2019t have been an option.\n\n**LESSONS**\n\nThe key lesson here for any technical founder is to look at their software and see where you might have vulnerabilities. There are always risks with tech products, but there are certainly ways to mitigate your impact if a system does have an issue. A few examples could be your server infrastructure not built to scale, using multiple servers for platform based products, third party softwares/APIs having their own issues (like in our case), different APIs that are having version updates which could affect components of your software, keeping SSL certificates up to date, etc.\n\nI hope these lessons are helpful and you can learn something from the experience we had. At the very least, hopefully you got some level of entertainment from our very stressful situation :).",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Thank you for taking the time to write this up and share",
+            "score": 96,
+            "author": "tejchilli",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah that was a valuable read",
+                    "score": 12,
+                    "author": "choeli9"
+                },
+                {
+                    "level": 1,
+                    "comment": "Agreed, super useful. Thanks for sharing! That's how our community should always be. \ud83d\udd25",
+                    "score": 2,
+                    "author": "grimorg80"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I didn't even have to start reading in order to guess it was AWS access keys. Literally the same story over and over and over and over and over and over and over and over again for the past 12+ years. Back in 2011 one startup got completely shut down overnight because someone got a hold of their access keys and deleted everything they had in AWS, data and all.\n\nAll I can think of is the \"how many times do I need to teach you this lesson old man\" meme.\n\n* Use a password manager (both offline and managed)\n* Don't check in your keys into code\n* Rotate your motherfucking credentials.",
+            "score": 88,
+            "author": "psychorameses",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yep...not fun to learn the hard way and this is good advice for anyone.",
+                    "score": 19,
+                    "author": "throwaway_got_hacked"
+                },
+                {
+                    "level": 1,
+                    "comment": "You should also turn on VPC security settings within AWS for the services to only be accessible by the IP address of your application.",
+                    "score": 8,
+                    "author": "divulgingwords",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Can you elaborate more in how to do this? AFAIK there\u2019s no private endpoint for SES so you wouldn\u2019t be able to do this with security groups?",
+                            "score": 2,
+                            "author": "booi",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "https://docs.aws.amazon.com/ses/latest/dg/send-email-set-up-vpc-endpoints.html\n\nYou don't have to use EC2 like these instructions say, but its the same thing.",
+                                    "score": 0,
+                                    "author": "divulgingwords",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm not sure this solves the problem. This VPC endpoint is only useful for EC2 et. al. instances that live in a private subnet or subnets with no internet access. A compromised access key that has access to SES would still be able to send mail via the public SES endpoint.\n\nI think really the only way to secure access is to give SES access to the instance role and only use it from there. That's probably what should have been done here.",
+                                            "score": 1,
+                                            "author": "booi",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Nah, I use VPC for RDS (with app is on a digital ocean vps) all the time. Only the given IP address in VPC can access the db.",
+                                                    "score": 0,
+                                                    "author": "divulgingwords"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Regarding checking keys into code, it's a good idea to use software like TruffleHog to scan your code periodically to make sure no one accidentally checked keys into the codebase. We have a truffle hog job that runs every time a code update is pushed to the repo. It will search the code for keys and fail the build if it finds any.",
+                    "score": 5,
+                    "author": "apennypacker"
+                },
+                {
+                    "level": 1,
+                    "comment": "And use a secrets manager",
+                    "score": 11,
+                    "author": "mermicide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yep, that's the 'managed' part.",
+                            "score": 7,
+                            "author": "psychorameses",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ah didn\u2019t understand the reference, thanks for explaining :)",
+                                    "score": 3,
+                                    "author": "mermicide"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Reccos?",
+                            "score": 1,
+                            "author": "ctrl-brk"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Uhhh, I store all my passwords in pastebin so I think I know what I\u2019m doing thank you very much",
+                    "score": 3,
+                    "author": "booi"
+                },
+                {
+                    "level": 1,
+                    "comment": "Shouldn't you use AWS roles instead? Access keys have been discouraged for years in favor of roles. You basically just create a role which states this EC2 instance / container is authorized to speak to SES and SES authenticates based on the role.",
+                    "score": 3,
+                    "author": "pentesticals"
+                },
+                {
+                    "level": 1,
+                    "comment": "Screw checking keys into code, store them in a database with encryption.",
+                    "score": 0,
+                    "author": "am0x",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ugh no use a product designed for it, absolutely not a database. There is zero reason to not use a commercially available secret manager, do not try to reinvent this software.",
+                            "score": 7,
+                            "author": "danekan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Does this software store keys locally? What are the limitations of the software? Is it HIPAA compliant? Are they stored in some \"cloud\"?",
+                                    "score": 1,
+                                    "author": "am0x",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Locally, could, or could be a cloud service \n there are popular options for both\n\nLimitations? such as? You make it do what you need. There are far fewer limitations and things you'd have to build out than any home brew database solution. There are half a dozen common options for this category and some have better use cases for some needs than others, or you can even use multiple and have them integrated. \n\nHIPAAA compliant yes all day long\n\nStored in cloud? Yes you could, see question 1 answer",
+                                            "score": 1,
+                                            "author": "danekan"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I hope this is sarcasm. You should use a secrets manager.",
+                            "score": 1,
+                            "author": "pentesticals",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Most of them are not HIPAA compliant and we never use AWS.\n\nAlso, some of our applications are offline. We manually have to update the keys every few days.",
+                                    "score": 1,
+                                    "author": "am0x"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Would be great if you could share more on the \u201chow to\u201d. we deploy on Kubernetes and have been considering Vault to manage secrets, but still don\u2019t have a rotation routine. Also have been commits secrets using Git Crypt. Couldn\u2019t find a way to automate this yet",
+                    "score": 1,
+                    "author": "lowercase00"
+                },
+                {
+                    "level": 1,
+                    "comment": "For real, it\u2019s so sad that this isn\u2019t just automatic. Bad guys will bad guy unfortunately.",
+                    "score": 1,
+                    "author": "citrus_sugar",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "IAM profile is the way to go. No keys at all.",
+                            "score": 3,
+                            "author": "DireAccess"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "And make sure you don\u2019t have debugging or error logging turned on in your prod environment. I see if all too often.",
+                    "score": 1,
+                    "author": "derekjadams"
+                },
+                {
+                    "level": 1,
+                    "comment": "Do you recommend any email service to handle company emails?",
+                    "score": 1,
+                    "author": "nyguy823"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you would like some advice (worth what you paid for it): Amazon has account managers.  You should reach out and establish a relationship with them.  They're able to expedite many things.\n\nOh, and pentests.  At least annually, but probably every 6 months.  You'll regularly be fucking horrified at what they find.\n\nGlad you guys are ok.",
+            "score": 21,
+            "author": "xasdfxx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Had one a year ago, but starting the process of doing another.",
+                    "score": 7,
+                    "author": "throwaway_got_hacked"
+                },
+                {
+                    "level": 1,
+                    "comment": "What is a pentest? Who usually does that?",
+                    "score": 8,
+                    "author": "hakand06",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "VAPT is the common term and stands for Vulnerability Assessment and Penetration Testing...it's essentially ethical hackers from a third-party company accessing elements of your software to expose vulnerabilities and see where you have weaknesses. Once a report is made, you make the fixes and run an additional test to see if the security patches were useful.\n\nThere is more to it, but that's the simple explanation. When we run a VAPT, we set up an alternative server with loads of test data so the simulated \"attacks\" are done in a safe environment.",
+                            "score": 15,
+                            "author": "throwaway_got_hacked",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks lad! Have to ask the dumb questions sometimes!\n\nAny thoughts on wether or not a startup that just moved past MVP should do that - how big of an investment is it usually?",
+                                    "score": 4,
+                                    "author": "hakand06"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How in the hell did they get the API token unless it wasn't encrypted or if they had access?\n\nAlso, I used to work for a fortune 100 company where we would call out that we needed additional hours for security. Well they didn't want to increase the budget by 10% for security, so they denied it.\n\nWell we had a breach, then spent over $4m in fines, another $3m upfront to hire a security contractor to audit, then we pay another $2m a year to that contractor, then we had to purchase a bunch of licensed tools for code inspection.\n\nAll could have been avoided. Hacks are only going to be more and more common...I personally see a great potential in the industry.",
+            "score": 16,
+            "author": "am0x",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 5,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "WordPress plugins: Going on a decade of security nightmares",
+                            "score": 10,
+                            "author": "sixwax",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "When we do WP sites, we use as minimal amount of plugins as possible. Most of the time we can reduce an existing site of 60+ plugins to 12 in 1-2 weeks of development.\n\nProblem is? Sticker shock.\n\n\"Hey we can build you a great site in 3 months for $60k\"\n\n\"Well this other vendor said they can do it in 4 weeks for $12k.\"\n\n\"Ok. Let us know when it breaks.\"\n\n3 months later\n\n\"This other vendor had no idea what they are doing, all of our shit is breaking, we can't update anything, etc.\"\n\n\"Sure. You want a quote on a new site or to fix issues?\"\n\n\"Just fix the issues\"\n\n\"Ok it will be $60k to work in this hellhole of a mess\"",
+                                    "score": 5,
+                                    "author": "am0x",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I never saw a wp site with 60+ plugins...men, what a nightmare that would be lol I would charge them even more for a fix (it usually takes longer to fix...at least for me)",
+                                            "score": 1,
+                                            "author": "ferfactory6",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This past year we got 4 sites transferred to us with over 60 plugins. It is insane. All them used Elementor, Cornerstone, or WP Bakery as well. So it basically tells me a designer made it. Non issues there, but when a client wants particular things such as connecting to their CRM and using cookies to pull in data...those tools don't work so well. You need a developer at that point.",
+                                                    "score": 1,
+                                                    "author": "am0x"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Please tell me you're not running WordPress yourself. Hire out the marketing site to a place that specializes in WordPress hosting and keep it completely segregated. WordPress is a security nightmare and you can't keep ahead of it yourself.",
+                                    "score": 1,
+                                    "author": "danekan",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Today I learned. \nReally? \nI thought I was being a clever solopreneur by doing my website myself in WP?\n\nHow do I sort the good from the bad when looking to hire someone to build my website? What should I ask or look for? How much should I pay for an SEO optimised site?",
+                                            "score": 2,
+                                            "author": "Smiler_Sal",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Wpengine.com is probably the most popular. Check out https://wpforms.com/best-managed-wordpress-hosting/\n\nLiterally GoDaddy does better than most could because they're big and popular. But that's a name I wouldn't toss around. \n\nAmazon has it in their marketplace and it's probably kept up through there pretty well too\n\n\nWe also pay a service wpscan.com to do constant scans for vulns, it's $180/mo (actually it's billed in euros) and well worth it for us",
+                                                    "score": 2,
+                                                    "author": "danekan"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;I personally see a great potential in the industry.\n\nDo you see any possibility for a startup to leverage this huge problem about cybersecurity? Do you have any ideas?",
+                    "score": 1,
+                    "author": "Saliagato",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Consulting really at the moment. Or automated security tools. Problem is that most hacks come in the most obvious ways: employees. People are easier to trick to get the information than an actual cyberattack. Once they get the initial access to the system, they can install a backdoor so they can easily get in whenever they want. Monitoring post backdoor has to be done by blue team looking for suspicious activities through logs on the server. But they can\u2019t just be watching the logs all day and night.\n\nBut the cyber security firms are killing it and it\u2019s only going to get bigger. We manage over 20 sites currently and each one has an automated attack on it at least 10k times a day which I security catches.",
+                            "score": 2,
+                            "author": "am0x"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you have any idea how your access key/secret were exposed?",
+            "score": 15,
+            "author": "4_teh_lulz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We do have some ideas, but it's hard to say at the end of the day. We'll be changing the key monthly now just in case and there are some other things being implemented from a security standpoint.",
+                    "score": 7,
+                    "author": "throwaway_got_hacked",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not sure I totally understand, but your platform had an API and if someone were able to use that API they could trigger it to send out emails (spam) to whoever they wanted and that\u2019s what they did? To compromise the API they needed a key which should only be in the hands of a legitimate API user but they got hold of one and once you have that key they were able to send whatever they liked?\n\nWhat\u2019s the extra security? Limits on volume? Locking down where access to API can be from, mapped to users?",
+                            "score": 5,
+                            "author": "tabac-en-paris"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Why not use IAM profiles and move away from AWS keys completely? How are you running your software? ECS/EKS/Lambdas/EC2?",
+                            "score": 2,
+                            "author": "DireAccess"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Doesn\u2019t the change process introduce more risk to keys being compromised? I don\u2019t understand how that would reduce risk but I\u2019m also not that smrt \ud83e\udd2a",
+                            "score": 5,
+                            "author": "cotimbo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No - rolling new keys means that the old key is revoked, as in unusable. At my shop we roll new keys for our most critical systems every 30 seconds, and they're one time use only. \n\n\nGoing with a once a month keyrolling is actually an eternity in some eyes.",
+                                    "score": 12,
+                                    "author": "BadUsername_Numbers",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Rolling key every 30 sec sounds like overkill.",
+                                            "score": 14,
+                                            "author": "Coz131",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's really quite standard. An RSA token is on a 30 second timer.",
+                                                    "score": 2,
+                                                    "author": "yopladas",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That is for 2fa though which is a different reason?",
+                                                            "score": 2,
+                                                            "author": "Coz131",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yeah that\u2019s actually the SAME key just at different times. It can be exploited in the exact same way if the seed is leaked.",
+                                                                    "score": 1,
+                                                                    "author": "booi"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Far less. In the process of rotating their keys, old keys will be retired, so they\u2019ll no longer have access to the underlying resources. So, if there was an exposure 6 months ago that was discovered (e.g a key was found in a public repo or bucket), the attacker won\u2019t be able to access the existing resource.",
+                                    "score": 4,
+                                    "author": "sparkedkafka"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You are changing the refresh key or the access key? Access keys should be swapped _at least_ monthly. Refresh keys, not so much...but there isn't a whole lot someone can do with just a refresh key.",
+                            "score": 1,
+                            "author": "am0x"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Have you considered hiring an outside Infosec auditor ? Or having an internal Infosec team af some point is essential\n\nI could name dozens that are commonly wrong ... At end of day one of the best goals is for no human within your company to ever be able to actually see the access keys, ever, and it shouldn't be allowed by any permissions. This is a hard goal to achieve but it is something that should happen\n \n\nAlso accounts themselves should be split up by use in some fashion, so if one account has something happen they're not all toast",
+                            "score": 1,
+                            "author": "danekan"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Do you guys use Heroku or TravisCI? They both got attacked a week ago and a bunch of Github access keys were stolen. If you had committed your AWS access key to git, this could have been the issue.",
+                            "score": 1,
+                            "author": "AnUninterestingEvent"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Changing the keys every month *does nothing* if you continue to use the same door to lock your house.\n\nCheck the overall solution architecture of your project. Have AWS managed keys, don\u2019t store your API tokens in plain-text files, Secret Manager or SSM Parameter Store your API credentials, use VPC Endpoints policies for private APIs in API Gateway. Do not presume that simply rotating the keys will make the problem go away \u2014 the attacker can always come back once again using the same method.",
+                            "score": 1,
+                            "author": "thethinkingbrain"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Glad it didn't become a complete disaster! \n\n\nI'd check the code repos - we all push passwords or keys every now and then.",
+            "score": 3,
+            "author": "BadUsername_Numbers",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For something like this, a key should be encrypted in the database.",
+                    "score": 2,
+                    "author": "am0x",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I\u2019ve seen that a few times in this thread, can you explain how/why keys should be key in your DB? Ive always just put my keys in environment variable wherever my applications hosted and replaced when I roll new ones. Is there a benefit to keeping in DB instead?",
+                            "score": 2,
+                            "author": "DasBeasto",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Agreed, what we do is inject secrets at runtime pulling them out of Secrets Manager or param store in AWS. I feel like DB becomes tedious and then someone breaches your DB and gets all your keys.",
+                                    "score": 2,
+                                    "author": "bigbird0525"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Encryption is number 1. Number 2 is that only certain people should have access to the database, which reduces the number of accounts that can be hacked. Number 3 means there is a VERY low chance someone will accidentally (or ignorantly) commit the key.",
+                                    "score": 1,
+                                    "author": "am0x"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "While this isn\u2019t great, it\u2019s not _that_ bad in terms of hacks. \n\nMake sure you\u2019re using cloudflare or akamai in front of your site \u2014 you\u2019ll be shocked how many attacks come through on a daily basis. Just standard probing kind of stuff. Set up good access rules (like throttling how many requests to login forms someone can make per minute).",
+            "score": 2,
+            "author": "fredandlunchbox"
+        },
+        {
+            "level": 0,
+            "comment": "&amp;#x200B;\n\n![gif](giphy|KL7xA3fLx7bna)",
+            "score": 2,
+            "author": "Starlyns",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Way underrated!\n\nHug Ops!",
+                    "score": 1,
+                    "author": "serverhorror"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't understand, all you got was your mail suspended? LUCKY, they could have deleted your databases instead. In the end it feels like this is an ad to not use SES. And I'm on board with that, but it might as well had in big letters at the end of the post USE THIS EMAIL PROVIDER INSTEAD.",
+            "score": 1,
+            "author": "wparad",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If it was an ad, don't you think I would have just said the alternative provider was who we are using? \ud83d\ude01\n\nI'm still pro Amazon SES...this was just my experience.",
+                    "score": 3,
+                    "author": "throwaway_got_hacked"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Really appreciate this post\u2026",
+            "score": 1,
+            "author": "HotCheetos7777"
+        },
+        {
+            "level": 0,
+            "comment": "At least you're able to resolve it as quickly as you could. Just curious if this affects your cyber security insurance premium? We're shopping a policy for our upcoming SaaS and had a hard time even finding companies to give a quote.",
+            "score": 1,
+            "author": "HouseOfYards",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No affect since no claim will need to be filed.",
+                    "score": 1,
+                    "author": "throwaway_got_hacked",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Great, if you don't mind, could you please us your insurance broker info? We're looking for E&amp;O and cyber security policies. Thanks!",
+                            "score": 1,
+                            "author": "HouseOfYards",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "We have coverage through Farmers.",
+                                    "score": 1,
+                                    "author": "throwaway_got_hacked",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thank you! Because we process payments on behalf of customers to charge their clients. Similar model like Uber charges passengers on behalf of drivers. Then deposit the payment to the drivers. Some insurance companies don't want to deal with that for some reason.",
+                                            "score": 1,
+                                            "author": "HouseOfYards"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "U can buy insurance coverage for cyber attacks if u want. $5m in coverage would be a few grand a year.",
+            "score": 1,
+            "author": "okoiok"
+        },
+        {
+            "level": 0,
+            "comment": "Did you find out how was your access key compromised?\ni had read about a similar case where , some employee forgot to remove their GCP Key in a public github repo and someone found it and exploited it.",
+            "score": 1,
+            "author": "SupaSaiyan9000"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for taking the time to share your story with us, hope you have a great day ! And Happy businessing",
+            "score": 1,
+            "author": "HumbleTiger_278"
+        },
+        {
+            "level": 0,
+            "comment": "Good job on having the fail over infrastructure in place. It sounds like you maintain it for the handful of customers who need it, but had a good system that could handle the increased load, and a team that could migrate quickly. \n\nI see companies too often who have a COOP, but fail to validate it. It's good for an audit check box, but useless if it doesn't stand up in a real world situation.",
+            "score": 1,
+            "author": "BlakBeret"
+        },
+        {
+            "level": 0,
+            "comment": "Good job on having the fail over infrastructure in place. It sounds like you maintain it for the handful of customers who need it, but had a good system that could handle the increased load, and a team that could migrate quickly. \n\nI see companies too often who have a COOP, but fail to validate it. It's good for an audit check box, but useless if it doesn't stand up in a real world situation.",
+            "score": 1,
+            "author": "BlakBeret"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for sharing your story! This is sooo insightful.",
+            "score": 1,
+            "author": "New_Improvement4603"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for posting this.\n\nAs a person who works in infosec and an. Ex server administrator who had to deal with issues like this, I would like to chime in on this issue here.\n\nFirst and foremost, its great that you changed the passwords and keys. Also you are not alone. This is quite common. It's awesome that you had a fallback mechanism to avoid service disruption. Emails domains being marked as spam and getting its scores back on track afterwards is an absolute nightmare. There isn't a proper system to do it at scale. Sometimes the score just sinks and the service provider of the rating does not do their part in verifying it.",
+            "score": 1,
+            "author": "palakkarantechie"
+        },
+        {
+            "level": 0,
+            "comment": "Keys have to be rotated periodically.",
+            "score": 1,
+            "author": "designium"
+        },
+        {
+            "level": 0,
+            "comment": "Yup risk assessments , vulnerability assessment and penetration testing is very important and should be considered by every tech startup. \n\nDm if you guys need any help regarding vulnerability assessment and penetration testing.",
+            "score": 1,
+            "author": "Free-Professional21"
+        },
+        {
+            "level": 0,
+            "comment": "Very valuable read. I\u2019m actually in the process of looking for an email platform. Any recommendations on providers given your recent research in this area?",
+            "score": 1,
+            "author": "Smiler_Sal"
+        },
+        {
+            "level": 0,
+            "comment": "Time to switch to AWS roles ...",
+            "score": 1,
+            "author": "pentesticals"
+        },
+        {
+            "level": 0,
+            "comment": "Great write up thanks for this",
+            "score": 1,
+            "author": "HugsNotDrugs_"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for the tale, very helpful and well written.\n\nI would always have a backup provider for services like this that depends on a third party",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Great post, appreciate you sharing!",
+            "score": 1,
+            "author": "SteakNStuff"
+        },
+        {
+            "level": 0,
+            "comment": "Always a good idea to have a chat with your business insurance broker about cyber insurance also, can really help cover costs of any hacks or attacks you may encounter.",
+            "score": 1,
+            "author": "Adelleda2244"
+        },
+        {
+            "level": 0,
+            "comment": "Nice writeup, thanks for sharing",
+            "score": 1,
+            "author": "caelanhuntress"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for sharing!",
+            "score": 1,
+            "author": "Sylber23"
+        },
+        {
+            "level": 0,
+            "comment": "It's worth adding that your risk of phishing vulnerability increases with the age of your staff. We had a bad phishing event that led to ransomware around 2015. Having been through that, I strongly recommend phishing prevention training.",
+            "score": 1,
+            "author": "No_While_1501"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing this\u2026 would you not recommend using Amazon SES to handle your company emails?\nWe were also looking at BlueHost (background: healthcare tech startup)\u2026 any suggestions/recommendations are appreciated.",
+            "score": 1,
+            "author": "nyguy823"
+        },
+        {
+            "level": 0,
+            "comment": "Curious if you carry AWS business support plan and use security hub to review your vulnerability?\n\nAlso given your revenue rate, have you considered getting PCI or SOC 2T2 type certification?\n\nNot a sales person for either of these but having used similar approaches have avoided many potential traps!",
+            "score": 1,
+            "author": "Noobchand"
+        },
+        {
+            "level": 0,
+            "comment": "I appreciate you sharing this as it is definitely becoming an issue as of late. Moral of the story seems to be to invest in good cybersecurity (ie arctic wolf) to protect your servers from attacks like these. Ransom ware is becoming possible and can cost millions to get your data back if you don\u2019t have cybersecurity.",
+            "score": 1,
+            "author": "Chillywilly870"
+        },
+        {
+            "level": 0,
+            "comment": "On a side note, do you have a CISO or VP Info Sec? I get you\u2019re the technical co-founder, but you need to focus on building and shipping out products. Maybe now is the time to bring on a CISO, who can routinely cover your back from a security standpoint. They will help you with IAM, credential management, policies, etc. \n\nAside from that, consider AWS Managed Security Services. While it as an additional cost, they will at least lock down your infrastructure. Just don\u2019t fall or listen to the sales pitches. Only complaint with AWS, they try to force/sell 3rd product on companies, which offers a new attack vector down stream within your supply chain. \n\nBut thank you for sharing this. I work in the infosec community, and Startup Founders need to understand that the proliferation of data exfiltration and sophisticated compromises is only going to accelerate in the coming months/years. \n\nCloud environments can either be more secure or more vulnerable, it all comes down to protecting your management plane, architecture, and access control. \n\nBest of luck, and again, thank you for sharing this!",
+            "score": 1,
+            "author": "DumbSecurity"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for sharing",
+            "score": 1,
+            "author": "lespauler"
+        },
+        {
+            "level": 0,
+            "comment": "This is very technical detail.  Yet i understood the context.  \n\nI've a question.\n\nIs it possible for non tech person to attain. Level/owner postion of an tech company?",
+            "score": 1,
+            "author": "legend_ry"
+        },
+        {
+            "level": 0,
+            "comment": "I stopped after \u201cyou receive an access key\u2026\u201d. \n\nIt\u2019s simply not accurate.",
+            "score": -1,
+            "author": "serverhorror",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Good job, you made it 60% through the post",
+                    "score": 2,
+                    "author": "throwaway_got_hacked",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "SES doesn\u2019t need static access keys and, like others have said, what happened to you is a very typical situation.",
+                            "score": 1,
+                            "author": "serverhorror"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Don't know if I'd call this being hacked but you should always use role-based authentication instead of API keys for this very reason.  This means that only an EC2 box or event within your AWS account is capable of interacting with your production SES.  You do not allow developers to use your production keys.. it has to go through CICD and only your DevOps team can touch prod.\n\nBut good / no great on you guys for having a quick fallback to SMS.  That was a pro move.",
+            "score": 0,
+            "author": "newyearusername"
+        }
+    ]
+}

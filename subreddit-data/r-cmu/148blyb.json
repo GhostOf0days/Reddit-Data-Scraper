@@ -1,0 +1,34 @@
+{
+    "id": "148blyb",
+    "score": 4,
+    "title": "15213 - Can anyone help me look at this two's-complement truncation problem?",
+    "author": "kleinblue2015",
+    "date": 1686650085.0,
+    "url": "https://www.reddit.com/r/cmu/comments/148blyb",
+    "media_urls": [],
+    "other_urls": [
+        "https://preview.redd.it/cnnv76hnbr5b1.png?width=620&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=2f7ecc72d08caca643cd09828f6fa2f76ae9a14f",
+        "https://preview.redd.it/tujhx0mqbr5b1.png?width=158&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=2ed9f46004c72b0d60779ce60ae4f164e05bb22b"
+    ],
+    "postText": "Hi!\n\nI am struggling with the following two's-complement truncation problem, which is practice problem 2.24 in the textbook.\n\n&amp;#x200B;\n\nhttps://preview.redd.it/cnnv76hnbr5b1.png?width=620&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=2f7ecc72d08caca643cd09828f6fa2f76ae9a14f\n\nHere is the answer to the problem:\n\n&amp;#x200B;\n\nhttps://preview.redd.it/tujhx0mqbr5b1.png?width=158&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=2ed9f46004c72b0d60779ce60ae4f164e05bb22b\n\nHow does -2 lead to 6 after it is truncated based on equation 2.10 above?\n\nMy understanding is that -2 is 1110, and k = 3.\n\nApplying the equation 2.10, we have U2T(B2U(1110) % 2\\^3)  = U2T(14 % 8) = U2T(6) = -2.\n\nU2T(6) = -2 because when k = 3, Tmax is 3, so we have to subtract 8 from 6, which leads to -2. But the answer here is 6.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "\nWelcome to /r/cmu! **Please use [the megathread](https://www.reddit.com/r/cmu/comments/nenrn2/megathread_9_post_your_questions_about_admissions/?sort=new)** instead of making a new post for questions about admissions, transfers, and general CMU info like majors and dorms.\n\nWe get these kinds of questions a lot, and having the answers in one place is more helpful for everyone. Yours might already be answered!\n\nPlease consider posting to subs like /r/pittsburgh for general life in Pittsburgh questions, dedicated subs like /r/chanceme, /r/ApplyingToCollege, and /r/collegeresults for odds of getting accepted, and using the search in the sidebar.\n\n^(If I've misidentified your post, please ignore this message and instead take it as a reminder to contribute your own answers to the megathread.)\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/cmu) if you have any questions or concerns.*",
+            "score": 1,
+            "author": "AutoModerator"
+        },
+        {
+            "level": 0,
+            "comment": "The answer table doesn't have all the columns. The question asks for the unsigned and two's complement interpretations of the numbers. For some reason, the answer table labels the unsigned interpretations of the numbers as the two's complement interpretation. You cannot represent 6 with three bits in two's complement. \n\n&amp;#x200B;\n\n|Original (2C)|Bits|Truncated Bits|Unsigned|2C|\n|:-|:-|:-|:-|:-|\n|1|0001|001|1|1|\n|3|0011|011|3|3|\n|5|0101|101|5|\\-3|\n|\\-4|1100|100|4|\\-4|\n|\\-2|1110|110|6|\\-2|",
+            "score": 1,
+            "author": "NewYinzer"
+        },
+        {
+            "level": 0,
+            "comment": "Yeah looks like they are somehow treating the truncated bits as unsigned",
+            "score": 1,
+            "author": "EquallyObese"
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "id": "11ykrcq",
+    "score": 6,
+    "title": "Should I buy a windows laptop??",
+    "author": "Maleficent-Scheme449",
+    "date": 1679495326.0,
+    "url": "https://www.reddit.com/r/cmu/comments/11ykrcq",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hey everyone!  \nI got an admit from the MRSD Fall '23 program. I am facing with a conundrum regarding which laptop should I use for my coursework and research work. Right now I have a mac with the following specifications - \n\nMackBook Air M1, Memory - 8GB, Storage - 512 GB.\n\nShould I buy a windows laptop? \n\nPS: CMU even provides Virtual Andrew services to access powerful PCs from the labs to run softwares. But I have no clue how this service is and is it always available.\n\nThank you for your help!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You\u2019re fine, that computer is more than acceptable. I run one with half those specs that is as old at the average undergrad, never any issues. Use a device you feel personally comfortable with, CMU provides remote ssh options to run specific software for courses, which circumvent the potential incompatibilities of not having a Linux rig or a windows rig when needed",
+            "score": 7,
+            "author": "Yoshbyte",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "that's great to know thanks! i was hesitant to spend more money",
+                    "score": 2,
+                    "author": "Maleficent-Scheme449"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "cool will check",
+                    "score": 1,
+                    "author": "Maleficent-Scheme449"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I can't really speak to the OS choice from a modern coursework perspective, but [Virtual Andrew](https://www.cmu.edu/computing/services/endpoint/software/virtual-andrew.html) is pretty handy for running Windows apps in a pinch - below are a few things to keep in mind (speaking unofficially):\n\n* Now that students have returned to campus, Virtual Andrew hosts are GPU-enabled virtual machines in the data center rather than a method of remote access to the physical computer lab machines.\n\n* While the service is essentially available 24x7x365, there *are* a limited number of virtual seats available so if they are all in use (which does happen on rare occasions) you are out of luck.\n\n* Those 2 things having been said, the physical computer lab machines themselves are a very good primary or fallback option when they are not reserved for classes. Computer lab reservations can be viewed [here](https://tef.andrew.cmu.edu/PublicReservationsCalendar)\n\n* You will not have administrative rights on either the Computer Lab or Virtual Andrew machines, so only pre-installed or 'portable' applications will work.\n\n* You should be able to fairly easily stand up a Windows OS virtual machine on [even an M1 Mac laptop](https://machow2.com/windows-on-m1-mac/) by using [VMWare Fusion](https://www.vmware.com/content/vmware/vmware-published-sites/us/products/fusion.html.html), [Parallels](https://www.parallels.com/), or [Virtual Box](https://www.virtualbox.org/wiki/Downloads). (Possibly best of both worlds, depending on your level of comfort with this kind of setup)",
+            "score": 2,
+            "author": "coringo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Is it still the case, though, that:\n\nA. You can\u2019t download software to Virtual Andrew unless you go through the faculty software request process, which can take weeks and has no guarantee of being approved.\n\nB. Personal storage in Virtual Andrew relies primarily on only 2 GB of storage through MyFiles, which can be inconvenient for users who use the service heavily for Autodesk, for example.",
+                    "score": 2,
+                    "author": "maskedmuskmelon",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "WRT asking for applications to be added to vAndrew/Computer Lab machines:\n\n* There is **a formal process open to requests from Faculty** (see [here](https://www.cmu.edu/computing/services/endpoint/software/how-to/lab-software-request.html))\n\n* Software licensing for large pools of machines can be costly and everything (even most free/open-source apps) need to be run through the license or contract review process.\n\n* There is a timeline for when and how quickly applications that have passed licensing review/availability can be rolled out to labs (see link above)\n\nWRT storage options **both Virtual Andrew and the physical Windows computer labs have the same configuration** (see [here](https://www.cmu.edu/computing/services/comm-collab/collaboration/saving-files.html)):\n\n* For persistent storage, things like your Desktop and Documents are mapped to folders in your 2GB MyFiles network storage space.\n\n* Cloud storage like Box or Google Drive provides a bit of flexibility for smaller files.\n\n* For temporary file editing/swap space, **each Virtual Andrew or computer lab machine has a 'Sandbox' space that gets wiped on logoff** so at least your 'scratch' disk isn't limited to 2GB.\n\n* If you frequently interact with a large amount of data or need to work with large individual files it might make more sense to have a desktop on campus that you can access over the network or an external hard drive to bring with you to physical labs. (I used my desktop as a NAS when I was a student years ago and it was super handy, though you become additionally responsible for ensuring your own data backups \u00af\\\\\\_(\u30c4)_/\u00af )",
+                            "score": 2,
+                            "author": "coringo"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "ohh, noted!",
+                            "score": 1,
+                            "author": "Maleficent-Scheme449"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you for this information! :)",
+                    "score": 1,
+                    "author": "Maleficent-Scheme449"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can always try something called bootcamp which I remember some mac users did to make a windows partition in their macbooks.\n\nBased on the experiences of my peers, I do recommend getting a Windows laptop because most software is made for it first and then \"translated\" for mac, which can cause some issues, especially in the graphic, design, and 3d modeling side of things.\n\nI wasn't a fan of using macs at CMU. I found everything was better on the Windows system and this coming from someone who taught CCM in the mac cluster in Cyhert. If you can get a Window laptop, do try to. I'd say at least 16gb ram and maybe a 1tb harddrive, the later depending on how big your files will be over the next few years in the program. And always have a back up drive. Murphy's law likes to strike at the worst times. \n\n(In architorture department, we routinely had files measured in gb, some more than 10gb.)",
+            "score": 1,
+            "author": "playingwithechoes",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Unfortunately Bootcamp won't currently work on an M1 MacBook like OP's. Natively running Windows from a different drive partition requires one of the earlier generations of MacBooks with an Intel processor so here virtualization would likely be the only option.",
+                    "score": 2,
+                    "author": "coringo"
+                }
+            ]
+        }
+    ]
+}

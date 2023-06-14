@@ -1,0 +1,41 @@
+{
+    "id": "148et6z",
+    "score": 5,
+    "title": "Advice on App Pricing Strategy",
+    "author": "BigHesta",
+    "date": 1686660913.0,
+    "url": "https://www.reddit.com/r/startups/comments/148et6z",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hey everyone,\r  \n\r  \nMy app that I've been developing for the past six months is getting ready to be to the point where I'm ready for publishing on the apple/android store and a true launch. One thing I am struggling with is the best way to price the application. My app depends on an external API, that while relatively inexpensive, is still a fixed cost every single time someone uses the application. Right now, I'm giving users 8 free API calls a day, and this counter resets each night. My current pricing strategy is to offer a subscription to unlock unlimited API access for a relatively low cost per month. (5 dollars) \r  \n\r  \nI would love to get some feedback on this model. My fear is that by offering the free API calls that users might just use that and at scale that could get extremely expensive for me given that I am self-funded. Right now I have a hard limit of 250 free calls before users get a message prompting them to go to premium and they no longer receive any free API calls. \r  \n\r  \nI also think that I may be over complicating this and need to just launch the app and see how the market reacts? Any advice is greatly appreciated",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "is it B2B?\n\nyou can have different volume-based tiers, including a Free one\n\nor you can have Usage-based pricing, which is a model currently on the rise\n\n[https://openviewpartners.com/usage-based-pricing/](https://openviewpartners.com/usage-based-pricing/)\n\nOR, you can have a combination of both - Tiers + you can buy additional \"credits\" to use, which works well for cases when you have a volume deviation in one month, but don't need/want to upgrade your plan overall.\n\nI would personally try to have a paid model right from the start, if it's not too hard technically. The data you get from free clients is very different than from paying customers. There is a type of user who is probably the worst - \"very demanding, not willing to pay ever\", so you'll get a lot of those if your app is Free only and it might steer your roadmap in the wrong way.",
+            "score": 1,
+            "author": "chakalaka13",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The app is B2C. Does that change things? I could offer a usage based model. That would require some additional development however. Not a crazy amount. The app right was developed with a sub model in mind so things are set up for that right now",
+                    "score": 1,
+                    "author": "BigHesta",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "in B2C I think is less likely to get volume abuse, but idk what your product and market is, so that's just an assumption \n\nA daily limit seems annoying to me and also makes me suspicious that your product is just a shell on top of another product as for ex. are all these AI startups built on top of GPT that make it sound like they have proprietary technology.\n\nIf you have a sub model ready, then launch with that and observe the data. No advice will beat real behavioral data. Only concern for me here is having just one tier that is unlimited. Is there a risk that one user can cost you way more than 5$? If yes, then maybe it's worth having 3 tiers - Free / 5$ for X volume / 15-25$ or more for unlimited.\n\nThe usage based model you can try for A/B testing as an alternative to sub later on OR as an alternative to get a monthly subscription when they reach the limit, in case they only need it for one time case.\n\nThese are just some ideas, that might or might not be useful, as I don't know the product. You can only get the best feedback from the users/clients.",
+                            "score": 1,
+                            "author": "chakalaka13"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why did you choose 5$ for unlimited?",
+            "score": 1,
+            "author": "DonnieBlueberry"
+        }
+    ]
+}

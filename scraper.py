@@ -143,7 +143,7 @@ def write_about(subreddit, data):
         os.makedirs(subreddit_dir)
 
     about_file = os.path.join(subreddit_dir, 'about.md')
-    with open(about_file, 'w') as f:
+    with open(about_file, 'w', encoding='utf-8') as f:
         f.write(f'# About r/{data["name"]}\n\n')
         f.write(f'Subscribers: {data["subscribers"]}\n\n')
         f.write(f'Created UTC: {data["created_utc"]}\n\n')
@@ -154,7 +154,7 @@ def write_to_json(subreddit, post_id, data):
     if not os.path.exists(subreddit_dir):
         os.makedirs(subreddit_dir)
 
-    with open(os.path.join(subreddit_dir, f'{post_id}.json'), 'w') as f:
+    with open(os.path.join(subreddit_dir, f'{post_id}.json'), 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4)
 
 # This is a wrapper function for everything a single subreddit has to do
