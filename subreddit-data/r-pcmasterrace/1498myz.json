@@ -1,0 +1,55 @@
+{
+    "id": "1498myz",
+    "score": 2,
+    "title": "Another problem",
+    "author": "redpanda9542",
+    "date": 1686751192.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/1498myz",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "At first CPU was hot af and now CPU fan speed error acured, can someone help pls",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "How about following the instructions on the screen?",
+            "score": 4,
+            "author": "FRL-Myke"
+        },
+        {
+            "level": 0,
+            "comment": "Connect cooler FAN header to the CPU\\_FAN slot of the motherboard.",
+            "score": 1,
+            "author": "cordon78",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This. From what we can see in the UEFI it seems like your Fan is connected to the AIO PUMP header.",
+                    "score": 1,
+                    "author": "luminer03",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Here's another pic\n\nhttps://preview.redd.it/1v0n7akwvz5b1.jpeg?width=3264&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=0df6339a51251ee5258ed60c5f4603f97a9098b4",
+                            "score": 1,
+                            "author": "redpanda9542"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did you ensure that the CPU fan is properly installed on the CPU\\_FAN header or did you adjust/disable the Fan Speed Low Limit option in the UEFI BIOS?\n\nYou can press F1 to Run SETUP\n\n&amp;#x200B;\n\n/s",
+            "score": 1,
+            "author": "_nadari",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[https://www.bhphotovideo.com/lit\\_files/403638.pdf](https://www.bhphotovideo.com/lit_files/403638.pdf) you can check your manual chapter 2.1.2 on page to 2-4. Install your AIO Pump on the AIO-PUMP header and your fans on CPU\\_FAN. The CPU\\_FAN controlls the fan speed based on the cpu temp. You cant use any other fan header, since they are not controlled the same way.",
+                    "score": 1,
+                    "author": "_nadari"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,659 @@
+{
+    "id": "148nk51",
+    "score": 1941,
+    "title": "Dear PCMR, what is the purpose of this on the back of my GPU? I am a noob, please help me out.",
+    "author": "Bearded_Bone_Head",
+    "date": 1686684743.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/148nk51",
+    "media_urls": [
+        "https://i.redd.it/c763s4kf7u5b1.png"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "That's a spring, creating mounting pressure for the cooler on the other side against the actual GPU chip. If those screws are loosened, those four arms will stand up from the tension in the metal\n\nInside it are lots of small capacitors etc. used by the GPU, that needs to be within a very short distance, so directly behind is practical",
+            "score": 1540,
+            "author": "rifr9543",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "So my previous hypothesis of it possibly being a spot for an AIO mount was silly of me?",
+                    "score": 412,
+                    "author": "Bearded_Bone_Head",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes and no. You obviously cant connect an aio to it (unless heavy modding, some ppl r crazy), but u were kind of right with spotting a cooler mount",
+                            "score": 526,
+                            "author": "SultanZ_CS",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That answers everything I wanted to know, thank you",
+                                    "score": 220,
+                                    "author": "Bearded_Bone_Head",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "And note: people have successfully mounted AIOs to GPUs before, but if you look at their modding process, you'll realize it takes *a lot* of work to make the mounting work.\n\nReason being, that AIOs are mainly designed for CPUs, which has a large integrated heatspreader (IHS), that covers the bare silicon die. That IHS distributes not just the heat, but also acts as a protective cover for the fragile silicon chip, by spreading the high mounting pressure of the CPU cooler over a large surface area, preventing cracking of the die.\n\nBare silicon dies, such as the ones on laptops and GPU PCBs, requires different mounting systems, and they have very low tolerances for any sort of uneven mounting pressures. Too much torque on the screws, uneven mounting pressure, or anything of the sort, and say goodbye to your hardware as the chip cracks in two and never works again.\n\nIn other words, be very careful and learn how to work with the GPU's mounting system first, if you want to mod your GPU.  The mounting pressures of an AIO is simply far too high for direct die cooling, so you need to not only adapt the mounting system (due to differences in both where the screw holes are, and the difference in z-height), but also make sure you can fine tune the mounting pressure so as to not crack your GPU die.",
+                                            "score": 52,
+                                            "author": "MoistExamination_89",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "To add to this, with an AIO you also don't get a solution for cooling through VRMs. They can't really be cooled with an AIO block, so you  need to come up with some other method, which typically still involves a fan and heatsink",
+                                                    "score": 19,
+                                                    "author": "CptTinman",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yup, you use sticky thermal pads to stick some of those tiny alu or copper heatsink fins onto each major heat generating component, like VRMs and VRAM, and then you attach a 120mm fan on top.\n\nBut that's why watercooling for GPUs typically will just be one large coldplate that can cover every component, and you just add different thickness thermal pads for each component for good thermal transfer.",
+                                                            "score": 14,
+                                                            "author": "MoistExamination_89"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I've done this before on two different cards and it wasn't too hard. The trick is to pick the right card to do it to. Blower cards are much easier to mod than the standard multi fan design, and you just reuse the stock fan running at minimum rpm to cool all the RAM and VRMs",
+                                                    "score": 3,
+                                                    "author": "StaysAwakeAllWeek"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Its much easier to get a gpu with the aio already built in.",
+                                                    "score": 1,
+                                                    "author": "DontKnoWhatMyNameIs"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "There are some botique online shops that offer custom watercooling solutions for all the parts of specific GPUs. It's an involved process, but basically there would be a waterblock and a plate built into it that offers a good connection to all the hot components.\n\nHere's an example of what goes into it: https://www.youtube.com/watch?v=xUo8EBZ78rk You would have to find a group or individual willing to engineer that block for that card. They do exist.\n\nBut it wont be an AIO, although there are simplified solutions for a custom loop",
+                                            "score": 1,
+                                            "author": "Dhammapaderp"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Also this is the outside, a cooler wouldn\u2019t go on the side you see here.",
+                                            "score": 1,
+                                            "author": "prodygee"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "People like you are why this sub is so awesome",
+                                    "score": 52,
+                                    "author": "Ghost-Syynx",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\ud83d\ude33\n\n sorry 4 emoji usage",
+                                            "score": 1,
+                                            "author": "SultanZ_CS"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Plus 1",
+                                            "score": 0,
+                                            "author": "Interesting_Gap2653"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Hi, sorry about the random question - why Z790 Hero with 12th gen and 3000 series?",
+                                    "score": 7,
+                                    "author": "Sasqath",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It was a monetary thing. Ive upgraded the CPU, MB, RAM, Cooling and also had to change the case for it, so i thought ill go w/ 12th for now until i see a reason to upgrade even further.",
+                                            "score": 1,
+                                            "author": "SultanZ_CS",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Fair, thx for the answer. Best of luck with your rig.",
+                                                    "score": 1,
+                                                    "author": "Sasqath"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "NZXT used to make a kit that would let you mount an asetek cooler to a GPU. It was \"universal\" or at least fairly widely compatible and included a fan to cool memory/VRMs etc.",
+                                    "score": 5,
+                                    "author": "senorbolsa"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The water block would go on the opposite side using those screw holes.\n\nWhat you\u2019re seeing is the underside of the GPU socket.",
+                            "score": 12,
+                            "author": "cadmium61"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Sorry to jump in here but what is AIO ?",
+                            "score": 1,
+                            "author": "ProbablyMissClicked",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "AIO is All In One cooler",
+                                    "score": 2,
+                                    "author": "FireHawke32"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Nice answer have a like",
+                    "score": 2,
+                    "author": "Regisnox"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Now that correct answers have been posted I'll post the incorrect one, it's the water reservoir. Unscrew the plate and pour 50 ml of distilled water into the GPU if it starts running hot.",
+            "score": 280,
+            "author": "Strange_Principle_26",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "dont do that! water is bad for it, use acetone for more safe cooling\n\n(for legal reasons this is a joke, unless you need a place to barbecue)",
+                    "score": 85,
+                    "author": "unsurechaoticneutral",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "instruictions unclear, drank radioactive green colored liquid coolant, pissing neon green right now",
+                            "score": 29,
+                            "author": "stonehearthed",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "thats dangerous man, deadly even, not sharing that green goodness leads to 110% increase in shankings\u2026\n\nnow lemme git sum sip!",
+                                    "score": 4,
+                                    "author": "unsurechaoticneutral",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;not sharing that green goodness leads to 110% increase in shankings\n\nThe Shrek groupies are some serious fuckers",
+                                            "score": 1,
+                                            "author": "Calm-Zombie2678",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "they are quite verbose in their zeal and will commit to their motto \u201cshrek is love, shrek is life\u201d to an extreme level",
+                                                    "score": 1,
+                                                    "author": "unsurechaoticneutral"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "More like instructions nuclear",
+                                    "score": 1,
+                                    "author": "Crux_Haloine"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That's actually the correct answer if you have a reference RX 7900 XT or XTX card affected by hotspot issue. They didn't put enough water in the vapour chamber at the factory, so the user needs to fill it like old automotive batteries.",
+                    "score": 2,
+                    "author": "ksio89"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I came here for the dumbass answers. They're the best",
+            "score": 19,
+            "author": "Shadow_84"
+        },
+        {
+            "level": 0,
+            "comment": "thats the back of your gpu chip",
+            "score": 245,
+            "author": "sopcannon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Damn you are smart.",
+                    "score": 56,
+                    "author": "Dowsha18",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "\ud83d\udc80\ud83d\udc80",
+                            "score": -10,
+                            "author": "Love-n-Thunder"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Why is that small section uncovered? Just cheaper for the manufacturer? Because if it was covered a couple of drops of water wouldnt instantly kill the gpu, which I think would be a usefull feature and they are 90% there.",
+                    "score": 0,
+                    "author": "kasetti",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "to help get rid of heat on those components, same as your motherboard.  The back get warm but not enough that it requires a cooling solution.",
+                            "score": 2,
+                            "author": "sopcannon"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "the back plate is commonly used to prevent the pcb from flexing under the pressure of the heatsink plate.",
+            "score": 68,
+            "author": "robbydf"
+        },
+        {
+            "level": 0,
+            "comment": "GPU trampoline",
+            "score": 8,
+            "author": "N7LP400"
+        },
+        {
+            "level": 0,
+            "comment": "That is where baby graphic cards come from!",
+            "score": 63,
+            "author": "XeonD",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "GPUs asexually reproduce?",
+                    "score": 10,
+                    "author": "ZhangtheGreat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In the gamer universe, asexual is the only available form of reproduction.",
+                            "score": 29,
+                            "author": "ShelZuuz",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Hey 2005 called and Jamie Kennedy wants his material back",
+                                    "score": -6,
+                                    "author": "Calm-Zombie2678"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "50% of PC gamers are women, sounds like you just have no game",
+                                    "score": -18,
+                                    "author": "AmbitiousEdi",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "We all know women aren't real",
+                                            "score": 17,
+                                            "author": "horneymilfinyourarea",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Relevant username",
+                                                    "score": 5,
+                                                    "author": "Gawd4"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Keep telling yourself that as you wrangle the one eyed weasel",
+                                                    "score": -17,
+                                                    "author": "AmbitiousEdi",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yessir",
+                                                            "score": 11,
+                                                            "author": "horneymilfinyourarea"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Means the card is compatible with Xbox games",
+            "score": 6,
+            "author": "CoreyLee04",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Day 1 with Xbox Game Pass",
+                    "score": 2,
+                    "author": "Freduccini"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Keeps mounting pressure even. Silicon is fragile.",
+            "score": 4,
+            "author": "No_Interaction_4925"
+        },
+        {
+            "level": 0,
+            "comment": "Similar to how your cpu has a backplate to provide tension for the cooler, your gpu also has one. I think the ones for gpus are a bit more complicated and have actual electrical components inside them but idk I usually just buy a gpu and slap it in my pc as is, I never do any tinkering with the hardware I\u2019m putting into my pc.",
+            "score": 10,
+            "author": "moms-spaghettio"
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s a spring that keeps the heatsink pressed against the GPU die",
+            "score": 8,
+            "author": "Wicked_Wolf17"
+        },
+        {
+            "level": 0,
+            "comment": "Monitor mount",
+            "score": 7,
+            "author": "Smart_Sale_9697"
+        },
+        {
+            "level": 0,
+            "comment": "That's the POP figurine stand location.",
+            "score": 8,
+            "author": "SpecOpsBoricua"
+        },
+        {
+            "level": 0,
+            "comment": "There should have been a little glass dome with four mounting holes that came with your card and some glass tubing.\n\nWhen you get 3/4 of the way through a 4k 60fps render and realize there's an untextured asset you screw the glass dome over that, lining up the mounting holes then you insert a dab of fine wax into the dome onto those fancy looking units there, remove your dipstick, put in the glass tube and inhale deeply.",
+            "score": 20,
+            "author": "GhostsinGlass",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For those outta the loop it's:\n\nA) rendering images, like in Blender for example\nB) A Marijuana joke\nC) Joking a out the heat the GPU chip makes\nD) Whoosh",
+                    "score": 14,
+                    "author": "JustBrowsingWithMyBF"
+                },
+                {
+                    "level": 1,
+                    "comment": "Live Resin for extra FPS",
+                    "score": 1,
+                    "author": "SeanOTG"
+                },
+                {
+                    "level": 1,
+                    "comment": "Haha \ud83d\ude02",
+                    "score": 0,
+                    "author": "JustBrowsingWithMyBF"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Touch it during hours of heavy load, to see if the temps are good",
+            "score": 7,
+            "author": "WaterCrust"
+        },
+        {
+            "level": 0,
+            "comment": "Oh you totally don't need it. Just pull it off. Serves no purpose whatsoever. /s",
+            "score": 4,
+            "author": "insanemal"
+        },
+        {
+            "level": 0,
+            "comment": "Good question lmao",
+            "score": 2,
+            "author": "TheAwesomeTree"
+        },
+        {
+            "level": 0,
+            "comment": "When I first saw this I thought you could mount a cooler on the back like a cpu fan lol",
+            "score": 2,
+            "author": "16x98"
+        },
+        {
+            "level": 0,
+            "comment": "Don\u2019t lick it",
+            "score": 5,
+            "author": "Celestial-Squid",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "But why would there be 4 \"legs\" spread apart if I'm not meant to lick it",
+                    "score": 12,
+                    "author": "Bearded_Bone_Head"
+                },
+                {
+                    "level": 1,
+                    "comment": "lick it?",
+                    "score": 0,
+                    "author": "ZeXaLGames"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Second hottest part of gpu",
+            "score": 4,
+            "author": "Motor_Garbage9705",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The hottest part being what just burned a hole in your wallet, right?",
+                    "score": 12,
+                    "author": "walkinganachronism_4",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "i bought a 4090 and my mother said i should be locked up in a fucking mental asylum \ud83d\ude2d",
+                            "score": 1,
+                            "author": "-F0v3r-"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Cooler mounting bracket.",
+            "score": 3,
+            "author": "mkraven"
+        },
+        {
+            "level": 0,
+            "comment": "It's purpose is to be left the flying fuck alone",
+            "score": 3,
+            "author": "Demonking_of_Tierney"
+        },
+        {
+            "level": 0,
+            "comment": "Heatsink retention bracket, it provides the tension for a firm fit on the GPU components to keep them cool.",
+            "score": 2,
+            "author": "outamyhead"
+        },
+        {
+            "level": 0,
+            "comment": "To ensure even mounting pressure on the gpu die or square where the heart or core of the gpu is the cooler is a very flat slab of metal those screws and tension bracket ensures even thermal paste spread and mounting pressure aiding in neat dissipation.\n\nI like gpus &lt;3",
+            "score": 2,
+            "author": "GreyCoatCourier"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -4,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not *wrong*...",
+                    "score": 1,
+                    "author": "Calm-Zombie2678"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not sure about all the resistors and such but the bracket is just there to securely hold the actual GPU to the PCB. Kinda like the one on the back of a motherboard with a CPU installed.",
+            "score": -6,
+            "author": "llMithrandirll",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; but the bracket is just there to securely hold the actual GPU to the PCB\n\nIt's there to hold the cooling solution against the gpu chip, not hold the gpu that is already soldered to the pcb.",
+                    "score": 7,
+                    "author": "_Bro_Jogies"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's the back plate. it's how your gpu itself is mounted to the cooler. similar to how cpu and cpu coolers work",
+            "score": 1,
+            "author": "Sent1nelTheLord"
+        },
+        {
+            "level": 0,
+            "comment": "That's a mini quadcopter repair drone that detaches and flies around the inside of your case making repairs and doing maintenance.",
+            "score": 1,
+            "author": "Full-Run4124"
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s the RFID anti-theft sticker lol",
+            "score": 1,
+            "author": "scottb37"
+        },
+        {
+            "level": 0,
+            "comment": "spider",
+            "score": -1,
+            "author": "likeonions"
+        },
+        {
+            "level": 0,
+            "comment": "It's a flat spring. It keeps your cooler pressed against the graphics chip with even pressure.",
+            "score": 1,
+            "author": "the_Athereon"
+        },
+        {
+            "level": 0,
+            "comment": "add equel pressure to move heat from gpu chip",
+            "score": 1,
+            "author": "Appropriate-Topic-45"
+        },
+        {
+            "level": 0,
+            "comment": "watercooling",
+            "score": 1,
+            "author": "Care_Confident"
+        },
+        {
+            "level": 0,
+            "comment": "That's where you put your coffee cup",
+            "score": 1,
+            "author": "Krakenow"
+        },
+        {
+            "level": 0,
+            "comment": "A spot to stick your old used gum",
+            "score": 1,
+            "author": "Pretty_Enthusiasm761"
+        },
+        {
+            "level": 0,
+            "comment": "The text on the backplate looks like it says TROLL.",
+            "score": 1,
+            "author": "Aveenex"
+        },
+        {
+            "level": 0,
+            "comment": "Huh interesting",
+            "score": 1,
+            "author": "motoxim"
+        },
+        {
+            "level": 0,
+            "comment": "GPU chip the thing that does the calculations",
+            "score": 1,
+            "author": "BG_Trainspotter"
+        },
+        {
+            "level": 0,
+            "comment": "RETENTION PLATE",
+            "score": 1,
+            "author": "TheLipovoy"
+        },
+        {
+            "level": 0,
+            "comment": "Cupholder",
+            "score": 1,
+            "author": "TheTrashman120"
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s a mine! Look out!",
+            "score": 1,
+            "author": "Waluigiwaluigi_"
+        },
+        {
+            "level": 0,
+            "comment": "It tightens the cooler onto the gpu",
+            "score": 1,
+            "author": "hukkelis"
+        },
+        {
+            "level": 0,
+            "comment": "If you are a noob why do you care? Games play good? Kek",
+            "score": -26,
+            "author": "SellingMySoulInHell"
+        },
+        {
+            "level": 0,
+            "comment": "It keeps the magic inside",
+            "score": -4,
+            "author": "Devrij68"
+        },
+        {
+            "level": 0,
+            "comment": "It's where the actual doohickey is",
+            "score": -9,
+            "author": "miraculous-"
+        },
+        {
+            "level": 0,
+            "comment": "They're place holders in shipping, you can scrape them off. I'd suggest using a flat head screwdriver.",
+            "score": -2,
+            "author": "PiovosoOrg"
+        },
+        {
+            "level": 0,
+            "comment": "That's were tha real GPU are. The chip. And the X with a square in the middle it's the support for cooling be very tight in the GPU to keep low temperatures",
+            "score": -1,
+            "author": "rage_manin_sbk"
+        }
+    ]
+}

@@ -1,0 +1,743 @@
+{
+    "id": "885jw4",
+    "score": 10980,
+    "title": "My flight simulator people need me!",
+    "author": "[deleted]",
+    "date": 1522362590.0,
+    "url": "https://www.reddit.com/r/MyPeopleNeedMe/comments/885jw4",
+    "media_urls": [
+        "https://gfycat.com/gifs/detail/poiseddecentheron"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Stairway to heaven. ",
+            "score": 723,
+            "author": "xkishimoto",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": -110,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Overrated comment",
+                            "score": 92,
+                            "author": "AmoebaMan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Rated comment",
+                                    "score": 44,
+                                    "author": "XygenSS",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Comment ",
+                                            "score": 28,
+                                            "author": "GameKnyte",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 10,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "ment",
+                                                            "score": 10,
+                                                            "author": "SillyIceCreamBoy",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Ment what",
+                                                                    "score": 1,
+                                                                    "author": "_Mephostopheles_"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Lol, well it was underrated at the time. Now I just look like a twat",
+                                    "score": 18,
+                                    "author": "baxter300",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Underrated comment.",
+                                            "score": 2,
+                                            "author": "fenix_L"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "What did it say?",
+                                    "score": 1,
+                                    "author": "BigChefDog",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\u201cUnderrated comment\u201d\n\nIt was around -60 when I saw it.",
+                                            "score": 1,
+                                            "author": "AmoebaMan",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ah, alright",
+                                                    "score": 1,
+                                                    "author": "BigChefDog"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No u",
+                            "score": 9,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Why is everyone being so mean",
+                            "score": 2,
+                            "author": "epistellarjovian",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Because it\u2019s not actually an underrated comment, the guy was just lazy and couldn\u2019t figure out anything clever to say.",
+                                    "score": 0,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 0,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "True, the video was up for a couple hours. But that comment was brand new.",
+                                                    "score": 1,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "can a programmer explain what might cause this?\nI'm thinking the code is something like \"move stairs up until arrived at door\" but it never meets the door ",
+            "score": 267,
+            "author": "Kontekst",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Probably something like that.\n\nIt probably expects a bigger plane, and stops when it hits the bigger plane. It just never hits the bigger plane.",
+                    "score": 247,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Exactly this. The hit box on a plane in the game is likely larger than the body of the plane by a bunch. So as the truck arrives, its hit box gets too far forward before the \u201cextend\u201d animation is triggered. \n\nAlternatively, the plane arrives at a designated parking space that is marked by the port (left) side of the plane. A large plane, with a much larger wingspan, will be much further starboard (right). When the air stairs arrive, they assume its a larger plane, and move to where its expecting the larger plane. ",
+                            "score": 87,
+                            "author": "DeusOtiosus"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "someone broke the config file and caused an int underflow.",
+                            "score": 7,
+                            "author": "TheAwesomeMutant"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The bigger plane never arrived :'c",
+                            "score": 2,
+                            "author": "Metalman9999"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Now I\u2019m imagining the stairs flying through the sky until it smashes into a plane very gently",
+                    "score": 10,
+                    "author": "NovaxScotia"
+                },
+                {
+                    "level": 1,
+                    "comment": "Generally speaking, you won't often see things coded as \"move stairs up until arrived **at door**\". Figuring out where the door or any other object is can lead to the other kind of bug you often see on here where character models get stretched to crazy dimensions and shapes while holding onto something.\n\nUsually it would be more like\n\n    1. move to location x\n    2. move stairs up\n    3. are stairs extended to where they need to be? (note that you can come up with thousands of different criteria on how to tell where they need to be - raw distance, until it hits something, etc.) If not, repeat from 2.\n    4. done.\n\nWhat happens is that the check at 3 screws up for some reason (hit detection bug if it's looking for something to run into, sloppy arithmetic in move x distance in y direction command, etc. and continues moving the stairs forever.",
+                    "score": 6,
+                    "author": "MarxnEngles"
+                },
+                {
+                    "level": 1,
+                    "comment": "Arrays start at one",
+                    "score": 6,
+                    "author": "fwzmhmd",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And end at minus one",
+                            "score": 1,
+                            "author": "eppur-si-muove-"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It appears to position itself properly so that the stairs could slide DOWN to the doorway.  The stairs then accelerate upwards until they\u2019re half way to the destination (which never happens).",
+                    "score": 2,
+                    "author": "inio"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Well, I guess he won't get as many hop-ons.",
+            "score": 81,
+            "author": "kurogawa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I came here for this comment",
+                    "score": 13,
+                    "author": "2PartridgesinaPetri",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I was scrolling until I found an Arrested Development comment so I could rest assured that I wouldn't have to be the one to make it. ",
+                            "score": 5,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "'You will get stares.'  'I'm used to stairs.'",
+                                    "score": 3,
+                                    "author": "elmwoodblues"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Let's take the stairs ",
+                    "score": 2,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "You're gonna get some hop-ons.",
+                    "score": 2,
+                    "author": "justanotheraddiction"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can someone make this a video with some stupid comic superhero sound",
+            "score": 455,
+            "author": "BenderDeLorean",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nah, a slidewhistle. Classic and elegant. ",
+                    "score": 239,
+                    "author": "asentientgrape",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Duck Tales Moon Theme",
+                            "score": 57,
+                            "author": "Fritterbob",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[There you go](https://youtu.be/CuCwgRaTuvw)\n\nEdit: Formating",
+                                    "score": 63,
+                                    "author": "frod0r",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What song did you use? It sounds so familiar but I can\u2019t place it. ",
+                                            "score": 6,
+                                            "author": "TheDivineRhombus",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "If he did as the comment he replied to suggested, Duck Tales moon theme.",
+                                                    "score": 15,
+                                                    "author": "CommanderCorncob",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Oh oops. I guess I didn\u2019t read the first comment lol",
+                                                            "score": 6,
+                                                            "author": "TheDivineRhombus"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[The DuckTales Moon theme :D](https://youtu.be/KF32DRg9opA)",
+                                                    "score": 4,
+                                                    "author": "frod0r"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Not gonna lie, scared the shit out of me.",
+                                            "score": 4,
+                                            "author": "kingswaggy"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Perfect.",
+                                            "score": 3,
+                                            "author": "Fritterbob"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019ve just decided I will upvote anything Duck Tales related from this point on.\n\n(Note: /b/ content not included)",
+                                    "score": 13,
+                                    "author": "WHSK3",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Same here: keep 'em comming",
+                                            "score": 5,
+                                            "author": "werker"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "And a laugh track",
+                            "score": 2,
+                            "author": "DTLAgirl"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "or some guy just making whooshing noises",
+                    "score": 2,
+                    "author": "masteryimain34"
+                },
+                {
+                    "level": 1,
+                    "comment": "https://ifunny.co/fun/FMeCXiAe5?s=cl",
+                    "score": 0,
+                    "author": "ProfessorFatSak1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The video was funny, but fuck iFunny for tricking me into almost downloading their shitty app. WARNING: CLICK THE 'X' TO CONTINUE, NOT THE BUTTON.",
+                            "score": 21,
+                            "author": "emptyzombiekilla",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I didn\u2019t know where else to put it sorry",
+                                    "score": 1,
+                                    "author": "ProfessorFatSak1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/unexpected",
+            "score": 85,
+            "author": "Ser_Drake1918"
+        },
+        {
+            "level": 0,
+            "comment": "You sure this is a simulation? Looks pretty real to me",
+            "score": 36,
+            "author": "talminator101",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, it's real. Top secret video of a prototype of a new mode of flying transport.\n\nO_O",
+                    "score": 13,
+                    "author": "XG_SiNGH",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The president flies on the stairs instead of plane to fool the enemy.",
+                            "score": 11,
+                            "author": "_FooL_",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Stair Force One\n\nHahaha\n\nO_O",
+                                    "score": 4,
+                                    "author": "XG_SiNGH"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": " You don't even credit the original poster of this GIF OP. Like honestly it doesn't take much effort. This GIF was posted by a user on the r/flightsim subreddit. ",
+            "score": 19,
+            "author": "Stormyflyer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh hello, I'd like to welcome you on your second day on reddit.\n\nUnfortunately, it seems you haven't seen a gallowboob post yet.",
+                    "score": -10,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OP here. I'm cool with it. You could stand to be a bit nicer though. ",
+                            "score": 23,
+                            "author": "DeltaMikeKilo"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Why are you being such a bitch for getting called out?",
+                            "score": 14,
+                            "author": "Gollowbood",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Because I'm getting called out for doing what everyone else on this fucking website does.",
+                                    "score": -3,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "God, what a bitch. ",
+                                            "score": 8,
+                                            "author": "Gollowbood",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh, I'm sorry.\n\nAm I any different than anyone else who reposts?\n\nWhy should you make such a big deal of me in particular?",
+                                                    "score": 1,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Because you\u2019re being a bitch. ",
+                                                            "score": 6,
+                                                            "author": "Gollowbood",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Keep saying that all you want.",
+                                                                    "score": 3,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Ok bitch. ",
+                                                                            "score": 4,
+                                                                            "author": "Gollowbood"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s not a bug, it\u2019s a feature!",
+            "score": 17,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Rodger Dodger Sauce Boss",
+            "score": 13,
+            "author": "BestFriendVenom",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Holy foxtrot uniform charlie kilo",
+                    "score": 7,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Hi kilo",
+                    "score": 3,
+                    "author": "mreichart07"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fly united!",
+            "score": 17,
+            "author": "_Ultimatum_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Instructions unclear, now all bloody and being dragged.",
+                    "score": 14,
+                    "author": "Downvotes_All_Dogs",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Instructions unclear, dog dead and guitar broken.",
+                            "score": 8,
+                            "author": "SkyWest1218"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What flight sim is this",
+            "score": 6,
+            "author": "mreichart07",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "FSX or Prepar3D (pronounced prepared)",
+                    "score": 5,
+                    "author": "MajorProcrastinator"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I can\u2019t stop coughing that caught me off guard ",
+            "score": 5,
+            "author": "Nickelnick24"
+        },
+        {
+            "level": 0,
+            "comment": "Welcome to microsoft flight simulator X: steam edition\n\nSomeone please check out airforceproud95 on youtube",
+            "score": 7,
+            "author": "UsualSnark",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "roger dodger sauce boss",
+                    "score": 7,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "...butter....",
+                    "score": 3,
+                    "author": "jmodebra"
+                },
+                {
+                    "level": 1,
+                    "comment": "https://youtu.be/lPNN8w2XlwY\n\nAn incredible video",
+                    "score": 2,
+                    "author": "P0werC0rd0fJustice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "https://youtu.be/5FjWe31S_0g",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "That pause was 9 months pregnant",
+            "score": 3,
+            "author": "avocadonumber"
+        },
+        {
+            "level": 0,
+            "comment": "r/hitboxgore",
+            "score": 3,
+            "author": "Trithis2077"
+        },
+        {
+            "level": 0,
+            "comment": "I hope there weren't any hop ons.",
+            "score": 3,
+            "author": "Frigidevil"
+        },
+        {
+            "level": 0,
+            "comment": "this is my fav one so far",
+            "score": 3,
+            "author": "durraiz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "New face filters on Instagram today...",
+                    "score": 3,
+                    "author": "tiduyedzaaa"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Like a glove!",
+            "score": 3,
+            "author": "BigAlsGal78"
+        },
+        {
+            "level": 0,
+            "comment": "Lookout for hop-ons.",
+            "score": 3,
+            "author": "gwwaddle"
+        },
+        {
+            "level": 0,
+            "comment": "Aegean? Sounds legit with those malakes",
+            "score": 3,
+            "author": "stilatos"
+        },
+        {
+            "level": 0,
+            "comment": "The simulator must have misread the plane as being thousands of foot tall. The stairs wasn't even the right size to begin with.",
+            "score": 5,
+            "author": "Bugisman3",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Weren't",
+                    "score": 0,
+                    "author": "captain_craptain"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Stairway to heaven?",
+            "score": 2,
+            "author": "Wumponator"
+        },
+        {
+            "level": 0,
+            "comment": "No hop ons there..",
+            "score": 2,
+            "author": "wtf_is_taken"
+        },
+        {
+            "level": 0,
+            "comment": "The slight clipping through at the beginning killed me ",
+            "score": 2,
+            "author": "GoldLeader18"
+        },
+        {
+            "level": 0,
+            "comment": "repost",
+            "score": 2,
+            "author": "jamoosesHat"
+        },
+        {
+            "level": 0,
+            "comment": "A classic repost.",
+            "score": 2,
+            "author": "Kazemeka"
+        },
+        {
+            "level": 0,
+            "comment": "Seriously thought this was real til the stairs went through the plane...enough early morning reddit lol",
+            "score": 2,
+            "author": "Kostaeero"
+        },
+        {
+            "level": 0,
+            "comment": "Made me fart my soul when it extended",
+            "score": 2,
+            "author": "Jwn5k"
+        },
+        {
+            "level": 0,
+            "comment": "Consider yourself unloaded!",
+            "score": 1,
+            "author": "jakes_tornado"
+        },
+        {
+            "level": 0,
+            "comment": "Ive been on a few Aegean flights in Greece. Can confirm that this is pretty much how the airports work there",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Oh shit I didn't realize I missed the latest spacex launch",
+            "score": 1,
+            "author": "Cocomojoe16"
+        },
+        {
+            "level": 0,
+            "comment": "NARRATOR: They didn't.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Test launch of airports new ground to air missiles. ",
+            "score": 1,
+            "author": "TomHadden"
+        },
+        {
+            "level": 0,
+            "comment": "You\u2019ll get a lot of hop-ons ",
+            "score": 1,
+            "author": "Will_The_Thrill03"
+        },
+        {
+            "level": 0,
+            "comment": "I thought it happened irl",
+            "score": 1,
+            "author": "HarshSingh2004"
+        },
+        {
+            "level": 0,
+            "comment": "LMFAOOOOOOOOOOOOOO",
+            "score": -5,
+            "author": "[deleted]"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": "149aokw",
+    "score": 0,
+    "title": "Can I install a game across multiple drives?",
+    "author": "No-Control-1640",
+    "date": 1686756221.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/149aokw",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "So I'm downloading a fairly large game (160 GB) onto an HDD because each of my 2 individual drives have got around 146 Gb of free space. I was wondering if I could split said game into two parts after downloading onto the HDD and then split it across each of my SSDs so I don't have to compromise performance\n\nAny help would be appreciated. Thanks.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You would need to RAID those driver or create a symlink for some of the game files and have them on another drive - this does require the whole game to be downloaded first though.",
+            "score": 1,
+            "author": "Level-Yellow-316"
+        },
+        {
+            "level": 0,
+            "comment": "you'd need to use the \"mklink\" command somewhere.. although it would be really hard to use this while the game is installing",
+            "score": 1,
+            "author": "dbarrc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What if I initially install it into a 1TB external drive and then create a symlink on my SSD? Then I transfer some files onto the D drive and the others onto C drive? Would that work?",
+                    "score": 1,
+                    "author": "No-Control-1640",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "well the problem there is that the game will be looking at the external drive letter, where you installed it \n\nMAYBE, if you find someone else who has the game, ask them to use Wiztree to determine the largest folder(s) of the game, pre-emptively make the game install folder, and inside of there create the mklink folderof the \"largest\" folder.. as long as the folders are empty, MAYBE the game install would try to use the existing folder/link folder combo",
+                            "score": 1,
+                            "author": "dbarrc"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "OR...\n\nDisconnect your D drive inside the PC. Connect the external, ensure it is given the D designation. Install to the external, change the drive letter back to E. Power off and reconnect your D drive\n\nNow copy things to the 'original' d drive, and use mklink to send some stuff to C drive.. that might work",
+                            "score": 1,
+                            "author": "dbarrc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "no",
+            "score": 0,
+            "author": "St4inless"
+        }
+    ]
+}

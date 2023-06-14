@@ -1,0 +1,531 @@
+{
+    "id": "yugqjx",
+    "score": 3768,
+    "title": "Sum the angles between the lines from a point to each vertex of a triangle. If the sum is 360\u00b0 (2*PI radians) the point lies within the triangle.",
+    "author": "lavaboosted",
+    "date": 1668378601.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/yugqjx",
+    "media_urls": [
+        "https://i.imgur.com/R4Dz9DE.gifv"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Is this how collision detection is done in game engines for convex objects?",
+            "score": 216,
+            "author": "gendulf",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes!  This visual is part of a [video series](https://www.youtube.com/watch?v=w-rmBgVjW5o&amp;feature=youtu.be) on 3D collision that I'm working on.  Since a 3D object is made up of a bunch of triangular faces you can use the following method to [detect 3D collision](https://www.youtube.com/watch?v=0VLlwmglBvQ):\n\n* For each triangle of the object project the position of the point onto the plane defined by the three points of that triangle. \n* Check if that projected point is within the triangle (that's where this gif comes in)\n* If the projected point is within the triangle, check the distance from the point to the projected point.  If it is below a certain threshold value then you're colliding.",
+                    "score": 152,
+                    "author": "lavaboosted",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Barycentric coordinates! I recorded a [rap video](https://youtu.be/k6KLdfs6pQA) that instructs how to build a rigid body physics engine. Recorded in a single take.",
+                            "score": 33,
+                            "author": "flamingspew",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Haha, that's great, belongs on /r/nottimanderic",
+                                    "score": 4,
+                                    "author": "kidovate"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Shared with my favorite game dev friends. Nice content",
+                                    "score": 2,
+                                    "author": "DJGreenHill"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That's amazing to do in one take...lol.\n\n\u0394 fucking T! \ud83e\udd23",
+                                    "score": 1,
+                                    "author": "oppressed_IT_worker"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I was just wondering where this could be used. Or is it just a geometry puzzle. Thanks for this.",
+                            "score": 7,
+                            "author": "chinTheCyclewala"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So that\u2019s also why if you move fast enough you can pass through objects. Because collision is only at surfaces and not within the object right?",
+                            "score": 3,
+                            "author": "snowe2010",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Using this method, yes.  I'd bet some games use a method to detect if a point is inside an object's bounding volume but idk for sure.  But anything is possible if you backwards long jump fast enough and believe in yourself.",
+                                    "score": 3,
+                                    "author": "lavaboosted"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Even if you test within the object you can still pass through things if you move fast enough, because you'll test at frame 1 and be to the left, and on frame 2 you'll be to the right, and you won't notice that you were inside the object in between frames.\n\nThe way to test this, then, is to determine if the line between the points passes through the object you're colliding with, but that takes extra effort.",
+                                    "score": 2,
+                                    "author": "WaitForItTheMongols",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah good point, I meant more for things like out of bounds, wall clips, etc.",
+                                            "score": 1,
+                                            "author": "snowe2010"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I remember studying this in (I think) graphics class!",
+                            "score": 2,
+                            "author": "Occulense"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "cool. now make it talk...",
+                            "score": 2,
+                            "author": "dribrats"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not exactly. Games use the triangle area instead of angles as it is easier to optimize. Notice how the point within the triangle forms 3 triangles? If those triangles add up to the triangle area, then it is within the triangle. If it's greater, then it's outside.\n\nEach one is the sum of 3 multiplications (The divide by 2 can be cancelled since it is common in every term).  So to check, there's only 9 multiplications total, since the area of the total triangle is constant. And because the triangles are tiled, you can reuse some of the calculation to check adjacent triangles.",
+                    "score": 10,
+                    "author": "BluudLust",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Do you have a source for this to read more about? Edit: I found this video by on of my favourite game design channels: https://www.youtube.com/watch?v=HYAgJN3x4GA",
+                            "score": 3,
+                            "author": "jacksodus",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[http://www.jeffreythompson.org/collision-detection/tri-point.php](http://www.jeffreythompson.org/collision-detection/tri-point.php)",
+                                    "score": 2,
+                                    "author": "SergTTL",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thanks. I found that one too but it is more limited than what I am after.",
+                                            "score": 1,
+                                            "author": "jacksodus",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What is the limitation with that method, just curious, seemed like a really cool approach.",
+                                                    "score": 1,
+                                                    "author": "lavaboosted",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "From what I have gathered, calculating all the angles is relatively expensive for a computer to do. There is another trick which uses the triangle's areas instead, which is much faster. It uses something called baryocentric coordinates.",
+                                                            "score": 1,
+                                                            "author": "jacksodus"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Nothing that's not source code itself. There's not much to read if you're not a programmer.",
+                                    "score": 1,
+                                    "author": "BluudLust",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I am :)",
+                                            "score": 1,
+                                            "author": "jacksodus",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "In that case: https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/\n\n\nFor the really optimized code, game engines.  They are light-years ahead of anything I can understand and write. Mesh collision is a whole different beast with similar math.",
+                                                    "score": 3,
+                                                    "author": "BluudLust"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Ohhh nice, that makes sense, thanks!",
+                            "score": 1,
+                            "author": "lavaboosted"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Oh yeah that is a much easier method, thanks!",
+                            "score": 1,
+                            "author": "lavaboosted"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's for times like this I wish that proof by \"just look at it\" was acceptable.",
+            "score": 88,
+            "author": "cytiven",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The bigger thing is if you're trying to write software that will detect if a point is inside a triangle. You can't tell a computer to \"just look at it\".",
+                    "score": 6,
+                    "author": "WaitForItTheMongols",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is where you use the dot product of the vectors made by the point to find the cosine of the angle and go from there. Super quick super easy",
+                            "score": 1,
+                            "author": "PapaLuigi69_"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Right? It's... a circle.",
+                    "score": 6,
+                    "author": "farawyn86"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Problem: when you move your point outside the triangle it reverses the angle measured on one of the sides. For example the red angle sweeps the rays from PB to PA, but at 16s the red angle sweeps the rays from PA to PB. If the angle being measured was kept consistent, then the sum would always be 2pi and one angle would become a reflex angle when P was moved outside the triangle. When P is on the edge P one of the angles becomes a straight angle.",
+            "score": 22,
+            "author": "RachaelWeiss",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I see what you mean, in this case I'm taking the angle between the vectors PA and PB using the dot product.  Using this method it will always return the smallest angle.\n\n`angleBetween(a, b) = acos( dotProd(a, b) / ( vecMag(a) * vecMag(b) ) )`",
+                    "score": 24,
+                    "author": "lavaboosted"
+                },
+                {
+                    "level": 1,
+                    "comment": "Looks from the gif like you might just always take the smaller of the 2 options",
+                    "score": 2,
+                    "author": "IsNotAnOstrich"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 35,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You can probably reproduce that in geogebra.",
+                    "score": 27,
+                    "author": "Koala_eiO",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is cool, I've never seen this before.  It's like a 3D Desmos",
+                            "score": 18,
+                            "author": "lavaboosted"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you! p5js",
+                    "score": 11,
+                    "author": "lavaboosted"
+                },
+                {
+                    "level": 1,
+                    "comment": "Came to ask the same question",
+                    "score": 2,
+                    "author": "NickTheBarista13",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "p5js!",
+                            "score": 7,
+                            "author": "lavaboosted"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Where were you when I was taking trig in high school?!?!",
+            "score": 8,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "The quicker way (programmatically) is to calculate the areas of triangles formed by two vertices and the point in question. If they add up to the full triangle area, it resides within the triangle. Same concept as this, but no angles required.",
+            "score": 4,
+            "author": "BluudLust"
+        },
+        {
+            "level": 0,
+            "comment": "For cases when the point is outside of the triangle, I wonder if the difference of `2*PI radians - &lt;actual sum&gt;` has any significance?",
+            "score": 4,
+            "author": "IWillAlwaysReplyBack",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The most obvious one that comes to mind would be that the larger that value is the further outside the triangle you are.  Probably more obvious to me since I've played around with it quite a bit.  Here's a better view of that [https://i.imgur.com/sZp9DTb.gifv](https://i.imgur.com/sZp9DTb.gifv)",
+                    "score": 4,
+                    "author": "lavaboosted"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't understand this at all, though I'd like to. The gif is neat, but the words you're using aren't ones I'm at all familiar with. I think I heard them decades ago, back in high school, and never once since then until this moment.",
+            "score": 9,
+            "author": "A_Dapper_Goblin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Worry not. Mitochondria is the powerhouse of the cell!",
+                    "score": 5,
+                    "author": "ministarfallen"
+                },
+                {
+                    "level": 1,
+                    "comment": "[https://youtu.be/-dDl7O48Or8?t=138](https://youtu.be/-dDl7O48Or8?t=138)",
+                    "score": 3,
+                    "author": "lavaboosted"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi, I was wondering what computer application do you use to show this!?  I am a mathematics teacher and I would love to be able to create similar animations like this!",
+            "score": 3,
+            "author": "eelgnasij",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm using p5js!",
+                    "score": 2,
+                    "author": "lavaboosted"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Damn I wish I had this when I took calc 3, makes it\nVery easy to see the different angels",
+            "score": 3,
+            "author": "Puzzleheaded_Past_92"
+        },
+        {
+            "level": 0,
+            "comment": "I love this educational gif. Nice job OP",
+            "score": 3,
+            "author": "mossberg91",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks!",
+                    "score": 2,
+                    "author": "lavaboosted"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is this potential also true with squares? Or no?",
+            "score": 2,
+            "author": "ICameHereForClash",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think this is true for any convex polygon, but don't quote me on that.",
+                    "score": 3,
+                    "author": "lavaboosted"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "it's because the angle flips from cw to ccw/vice versa once one of them goes beyond 180 degrees, so the real measure here is whether one of the angles goes beyond 180.\n\ncool though.",
+            "score": 2,
+            "author": "-Redstoneboi-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's because I'm using the dot product to calculate the angle between the vectors. \n\n`angleBetween(a, b) = acos( dotProd(a, b) / ( vecMag(a) * vecMag(b) ) )`",
+                    "score": 3,
+                    "author": "lavaboosted",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "ah, that i haven't learned yet. i haven't touched proper trigonometry since sohcahtoa :P",
+                            "score": 3,
+                            "author": "-Redstoneboi-"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Supercool! What programme was used to make this?",
+            "score": 2,
+            "author": "Rik8367",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks!  I used p5js",
+                    "score": 1,
+                    "author": "lavaboosted"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I like to use the sum of the area of the three triangles should be very close to the area of the bigger triangle. Until you get floating point problems and everything is bad :P.",
+            "score": 2,
+            "author": "khiggsy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah someone else suggested that method as well.  I like that a lot, it's so simple. It [doesn't make for as interesting of an educational inforgraphic](https://www.youtube.com/watch?v=k7XY2tQXWfU) I don't think, but I'll use this in my collision detection code.",
+                    "score": 1,
+                    "author": "lavaboosted",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very good point! That is very cool. Also I think the calculation of areas are way less computationally intensive than doing sin, cos etc. I wonder if there is some accuracy advantage to using your method?",
+                            "score": 1,
+                            "author": "khiggsy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks, I think the area method is probably more efficient I just wasn't aware of it before someone on this post suggested it.",
+                                    "score": 1,
+                                    "author": "lavaboosted"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is this devil language that you speak I understand none of it.",
+            "score": 3,
+            "author": "Additional_Painting9"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;Wondering what leads to the sum of the angles equaling interesting fractions of 2pi\n\nI think you might be missing a bit of context.\n\n2\u03c0 radians is 360\u00b0. \u03c0 radians is 180\u00b0. The reason it's expressed in terms of \u03c0 is all to do with how radians work and nothing to do with triangles in particular.\n\nThere's plenty of good educational gifs that demonstrate how radians work if you want more info which are much more intuitive than any written explanation, such as this: https://i.redd.it/y8jxccan2ct41.gif",
+                    "score": 6,
+                    "author": "gyroda",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": -4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It really just depends on where the point is, and it\u2019s probably different for every triangle",
+                                    "score": 5,
+                                    "author": "jflb96"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "No shit",
+            "score": 0,
+            "author": "pizzarolesalmighty",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yea seriously the point basically just says circles are circles",
+                    "score": 3,
+                    "author": "Metroidman"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No. If the polygon has a zigzag pattern then connecting a line between a specific point inside the polygon and each vertice of the polygon will not make 360 degrees. It is only when the polygon is convex shape (like triangles, rectangles, rhombus, pentagon, hexagon, etc.).",
+                    "score": 7,
+                    "author": "heartsongaming",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;If the polygon has a zigzag pattern \n\nI think you're describing a concave polygon.  I think you're right though that this would work for any convex polygon - a closed shape, where none of the vertices are pointed inward.",
+                            "score": 3,
+                            "author": "lavaboosted"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "do you mean when the polygon is [convex](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2U8baH6638M_pmr0gFbRCIf0ZuVzZ8M2Nn23hLRQbUg&amp;s)?",
+                            "score": 2,
+                            "author": "-Redstoneboi-"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "this is only true when the points of the triangle are all on the same plane. If from your perspective they form a triangle but one has more/less depth two of the lines will actually be arcs so this doesn't apply anymore.",
+            "score": 1,
+            "author": "MASTER-FOOO1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well since you can define a plane from three points the point of any triangle are always coplanar to the plane defined by the triangle vertices. The real question would be is the point in question also co-planar with the 3 points of the triangle.  So basically all four points must be coplanar for this to work.",
+                    "score": 2,
+                    "author": "lavaboosted"
+                }
+            ]
+        }
+    ]
+}

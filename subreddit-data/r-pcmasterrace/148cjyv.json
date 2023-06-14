@@ -1,0 +1,1208 @@
+{
+    "id": "148cjyv",
+    "score": 917,
+    "title": "Just installed plank for linux and this keeps happening how do i fix it",
+    "author": "pixelatedhulo",
+    "date": 1686653546.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/148cjyv",
+    "media_urls": [
+        "https://v.redd.it/8lbopxtxmr5b1"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "what desktop environment are you on?",
+            "score": 166,
+            "author": "Probablyaretweetbot",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "linux mint cinnamon",
+                    "score": 94,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "you could downgrade your current package version 'plank' like [here](https://askubuntu.com/questions/138284/how-to-downgrade-a-package-via-apt-get) or can also try if this happens on xfce or gnome or else can try [these dock alternatives](https://www.digitalocean.com/community/tutorials/top-best-linux-docks-2020)",
+                            "score": 99,
+                            "author": "Probablyaretweetbot"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Nvidia GPU?",
+                            "score": 23,
+                            "author": "akaChromez",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "nah intel igpu",
+                                    "score": 18,
+                                    "author": "pixelatedhulo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "hmm, strange. I had a similar issue with my dock causing the lower quarter of the screen to blur in some cases \n\nDo you know if you're running X or Wayland?",
+                                            "score": 13,
+                                            "author": "akaChromez",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "how do i check that tho",
+                                                    "score": 7,
+                                                    "author": "pixelatedhulo",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You should be able to do `echo $XDG_SESSION_TYPE` in a terminal\n\nIt'll print `wayland` if you're using it",
+                                                            "score": 7,
+                                                            "author": "akaChromez",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt;echo $XDG\\_SESSION\\_TYPE\n\nI am on x11 thank u",
+                                                                    "score": 11,
+                                                                    "author": "pixelatedhulo",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Cheers, it doesn't look like plank supports wayland anyways.\n\nDoes this only happen when opening Steam? \n\nIt looks like there's something going wrong with the transparency it's applying not getting hidden properly when it hides.\n\nIf you're not too bothered about using plank specifically, I'd recommend `latte-dock`, it's been great for me so far!",
+                                                                            "score": 8,
+                                                                            "author": "akaChromez",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Yes I do think its only on steam, i will give latte dock a try",
+                                                                                    "score": 6,
+                                                                                    "author": "pixelatedhulo",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Cinnamon does not even have wayland support yet.",
+                                                                    "score": 2,
+                                                                    "author": "Unknown-Key"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "im sorry man, chimeraos only works with amd cards oofie",
+                                            "score": 1,
+                                            "author": "Haunting-Ad-9169"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I see you are using themes? Maybe the theme is causing problems? Wild guess i know.",
+                            "score": 1,
+                            "author": "He-is-never-online"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "try latte with plasma. now that latte has contributors again it's been working real well",
+                            "score": 1,
+                            "author": "SamuraisEpic"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm amazed that almost all posts get a downvote, but none of the down voters (probably Linux fans) offer a solution. \ud83d\ude36",
+            "score": 249,
+            "author": "Allerweltsname",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How is this a surprise to you? Linux elitiests are people who only use linux to feel special, they don't want more people using the OS.\n\nThey will flame you for using an easy to use OS and tell you to use their OS, but when you actually try and need support they will tell you that you're an idiot and you should know things because reason.",
+                    "score": 178,
+                    "author": "ValorantDanishblunt",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I remember a post where a guy was having trouble with his GPU and got dog pilled, mocked and laughed at that he didn't do his research since nvidia drivers are weaker on linux.",
+                            "score": 46,
+                            "author": "LdLrq4TS",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I remember a post where someone asks for assistance on Linux, and a bunch of people who don't even use Linux come in and start trashing on Linux users. Oh wait, that's here.",
+                                    "score": -70,
+                                    "author": "DesertFroggo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Found the crazy linux user here to defend the honor of all linux users",
+                                            "score": 55,
+                                            "author": "DrMalware",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I'm a Linux user, I don't associate myself with these sorta people.",
+                                                    "score": 18,
+                                                    "author": "ColtC7"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What about what I said was crazy?",
+                                                    "score": -41,
+                                                    "author": "DesertFroggo",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You're being down voted 'cos Linux.",
+                                                            "score": -1,
+                                                            "author": "malloc_free_"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "the linux community is toxic, more so than apple's fanbase. i tend to just mind my own business and stay away from interacting too much with other linux users.",
+                            "score": 51,
+                            "author": "IGFXH2077",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No worries, I know there are people like us who mind their own business and don't actually try to glorify the OS. Linux has its pros and certainly also its cons, however this elitism is destroying linux as a whole, even linus torvalds is begging the community to stop fighting each other and trying to streamline the entire linux desktop community, sadly people don't want to listen and instead we got extremely outdated distros in terms of basic practices, I mean not having proper sandboxing in 2023 is just sad.",
+                                    "score": 26,
+                                    "author": "ValorantDanishblunt",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "i don't reply \"install linux\" when people post about windows issues. i despise windows with all my being (especially windows 11) but i realize people need it even if they fucking hate windows as well. Everyone i know hates using windows and they only use it because the professional software they use have no equivalent on linux.\n\nNobody likes how microsoft pushes garbage down people's throat but enduring is easier than switching to linux and giving up many things you have taken for granted.\n\nAs my flair indicates i use OpenSUSE, so i'm one of the few lucky people that can live without windows.",
+                                            "score": 5,
+                                            "author": "IGFXH2077",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well I did take the middleground and opted for a customization of my windows installation. No annoying services, no telebs, no forced ads or updates down my throat, on idle with just a couple of services running such as steam, audio drivers and a couple of other software running I see a CPU utilization between 0-3% while my ram usage is only around 500mb, this is imo the optimal experience. \n\nI also dual boot into Linux Ubuntu for stuff like compiling kernel and other linux related tools such as penetration testing I like to use kali, altho that is a rather recent distro I am using.\n\nFor me the reason why I don't daily drive linux is mainly 3 things:\n\n\\- Not very flexible with upgrades or new hardware/games, I do not appreciate the long waiting times to be able to play new titles or upgrade my hardware.\n\n\\- Instability when swapping hardware or updates. I don't know why but I'm pretty much have the same luck as linus from linus tech tips, I always manage to break Linux in one way or another by simply updating something and have to repair it again later on wasting my time fixing it. \n\nand most importantly:\n\n\\- Linux has way to many security problems. I can forgive exploits being found here and there, hell even somewhate late patches, but what I cannot forgive is that all Linux desktop distros put 0 effort into security. The fact linux lacks something as basic as sandboxing is just terrifying. Not to mention the extremely piss poor state of the linux kernel, it's full of exploits and bad designs. One of the best examples I can come up with is eBPF, the amount of exploits that keep getting abused and found combined with the intense severety of these exploits really doesn't make me feel comfortable using linux as a daily driver, the worst part is how these exploits get \"fixed\", it's seriously just a hotfix slapped in only for a very similair exploit to appear again. \n\n  \nSadly more and more devs are jumping off the linux kernel and jump instead on android, since even the linux dev community is extremely toxic and ironicly it is thanks to linus himself\n\n[https://www.zdnet.com/article/linux-developer-who-took-on-linus-torvalds-over-abuse-quits-toxic-kernel-community/](https://www.zdnet.com/article/linux-developer-who-took-on-linus-torvalds-over-abuse-quits-toxic-kernel-community/)\n\nHowever we see over the years that linus has calmed down more and is more mellow, now he's just sad about how the linux dev community is which ironicly has a lot to do with him leading this behavior to a standard over the years. \n\nOur hope is realistlcy valve to actually get linux modernized, which Linus himself also mentioned, Valve has done a tremedous job in terms of porting a translation layer to support tons of games and working on features for their linux version. I don't think the open source community will ever get their sht together, I lost hope on that one, however I still hope that valve may finally modernize linux to 2023 standards, adding all security features needed for a proper 2023 OS and make it a viable option for people who care for security. I really miss the days of good ol windows XP.",
+                                                    "score": 1,
+                                                    "author": "ValorantDanishblunt"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "You don\u2019t need to go on an apology tour on behalf of the Linux community. There\u2019s a lot more whining about Linux elitism than actual elitism.",
+                                            "score": -19,
+                                            "author": "DesertFroggo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Don't know why you are being downvoted. I've been using linux for about 2 years now, and i've come across maybe a handfull of users being elitist, all the others were obviously joking around and i have found the community to be very friendly. If anything i see more people complain on this subreddit about toxic linux users than there being actual toxic linux users.",
+                                                    "score": 2,
+                                                    "author": "juipeltje",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yeah, a handful of Linux users are elitist, like in any community but, for some reason, the elitism of the Linux community has to constantly be trod out as if it were this unavoidable plague, and as if there is no such thing as user error.\n\n[https://www.youtube.com/watch?v=AKN1Q5SjbeI](https://www.youtube.com/watch?v=AKN1Q5SjbeI)",
+                                                            "score": 5,
+                                                            "author": "DesertFroggo",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yeah, every community has people like that, i mean, the name of this subreddit lmao.",
+                                                                    "score": 3,
+                                                                    "author": "juipeltje",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "i respect your gravity rush pfp",
+                                                                            "score": 1,
+                                                                            "author": "IGFXH2077",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Ah, a man of culture i see.",
+                                                                                    "score": 0,
+                                                                                    "author": "juipeltje"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's a vocal minority, like how \\*those vegans\\* do goofy shit but the average vegan is nothing like that",
+                                    "score": 2,
+                                    "author": "obj_Obj"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I really don't get it. You complain about Linux elitists being unhelpful, but here you are being exactly that, elitist and unhelpful. Judging people based on the OS they use sounds like something Linux elitists would do.",
+                            "score": 12,
+                            "author": "DesertFroggo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ah yes,you have difficulties processing information i see, let me elaborate then.\n\n1.) I complain about the fact that linux elitiests don't give a fk about what OS people use, in reality they just want their own little niche thing to flame others and feel superior. You could even use linux and they will then flame you based on your distro choice instead, they don't really give a fk if you use macos, linux or windows.\n\n2.) Explain to me how my response up there is being an elitiest. I sincerely am awaiting your comedic response.\n\n3.) Sure, now good luck pointing out where I judge anyone based on his OS.\n\nI know you clueless eliteists are very easily offendable so I am expecting a complete trainwreck of a response.",
+                                    "score": 14,
+                                    "author": "ValorantDanishblunt",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;I complain about the fact that linux elitiests don't give a fk about what OS people use, in reality they just want their own little niche thing to flame others and feel superior. You could even use linux and they will then flame you based on your distro choice instead, they don't really give a fk if you use macos, linux or windows.\n\nProve that this even exists beyond scenarios you've imagined in your head. Looking through any discussion thread where Linux is involved, I guarantee you there will be more people like you whining about some elitism that isn't there, more than you will find any actual elitism.\n\n&gt;Explain to me how my response up there is being an elitiest. I sincerely am awaiting your comedic response.\n\nMaking accusatory and inflammatory remarks based what operating system someone uses--who does that sound like?\n\n&gt;Sure, now good luck pointing out where I judge anyone based on his OS.\n\n*\"How is this a surprise to you? Linux elitiests are people who only use linux to feel special, they don't want more people using the OS.\"*\n\n*\"They will flame you for using an easy to use OS and tell you to use their OS, but when you actually try and need support they will tell you that you're an idiot and you should know things because reason.\"*",
+                                            "score": 0,
+                                            "author": "DesertFroggo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&amp;#x200B;\n\n&gt;Making accusatory and inflammatory remarks based what operating system someone uses--who does that sound like?\n\nExcept I didnt, no cookie points for trying.\n\nAlso quoting a text that doesnt anywhere judge anyone based on what OS someone uses doesn't help your case.\n\nI know you're slow on the uptake, so I'll give you another attempt.\n\n&amp;#x200B;\n\nEDIT as for you asking proof, which is quite rich, I'll humor your request:\n\n[https://youtu.be/TtsglXhbxno?t=1495](https://youtu.be/TtsglXhbxno?t=1495)\n\n24:55\n\nNow I want you to prove this:\n\n&gt; Prove that this even exists beyond scenarios you've imagined in your  head. Looking through any discussion thread where Linux is involved, **I  guarantee you there will be more people like you whining about some  elitism that isn't there,** more than you will find any actual elitism. \n\nAged like milk.",
+                                                    "score": 5,
+                                                    "author": "ValorantDanishblunt",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; as for you asking proof, which is quite rich, I'll humor your request\n&gt; https://youtu.be/TtsglXhbxno?t=1495\n\nSo your proof of widespread Linux elitism is that Dolphin made some questionable decisions? How is that proof of anything?\n\n&gt; Now I want you to prove this: \"I guarantee you there will be more people like you whining about some elitism that isn't there\"\n\nNext time you're in a discussion thread involving Linux, count the comments involving Linux elitism and count the comments complaining about Linux elitism. You'll count a lot more of the latter. Just look at the rest of the comment threads under this post. The top voted comment for awhile was someone complaining about Linux users not providing a solution, despite that fact that they didn't provide any solution or attempt to help, and despite the fact that Linux users can, in fact, be found in the thread trying to help. If you cannot read what is in front of you, then you're beyond help.",
+                                                            "score": 3,
+                                                            "author": "DesertFroggo"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Just like all 14th century rats didn't have the plague.",
+                                                    "score": 1,
+                                                    "author": "misanthropicsuccubus"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Are you being helpful?",
+                            "score": -1,
+                            "author": "DesertFroggo"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What gets me is that they don\u2019t understand is that almost everyone who switches or is interested in learning will have no concept of the command line or super user commands or basically all of the language they use to get shot done. It\u2019s straight up baffling that they don\u2019t acknowledge that or teach people the concept behind it. It makes THEM look stupid for not acknowledging that but they don\u2019t even realize it. I say this as someone who has done a lot of learning in preparing to switch but ultimately haven\u2019t for this reason among many others",
+                            "score": -3,
+                            "author": "Will_Poke_Brains",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's not acknowledged because you don't need to be a command line wizard to use Linux. I don't understand how this myth keeps getting bounced around even today, when we have the Steam Deck, a consumer product that ships with Linux. Never opened a terminal once on mine, and I don't remember the last time terminal use was a necessity on my desktop either.",
+                                    "score": 6,
+                                    "author": "DesertFroggo"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How do you get the data for that?",
+                    "score": 3,
+                    "author": "Erebea01",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Experience.",
+                            "score": -9,
+                            "author": "Allerweltsname"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "And then the Windows fans upvoted this more than actual solutions, equally helpful.",
+                    "score": 19,
+                    "author": "jplayzgamezevrnonsub",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So far I've seen \"try downgrading\" or \"try an entirely different desktop environment\" \n\nhow in the world do Linux users put up with the time tax?",
+                            "score": 2,
+                            "author": "CosmicCyrolator"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So where is your solution or did you just come here to farm karma points by making a jab at Linux users?",
+                    "score": 12,
+                    "author": "DesertFroggo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;come here to farm karma points by making a jab at Linux users?\n\nThen I would have given myself a dig?  I use Win and Linux. \ud83d\ude36\n\n[**LINK**](https://www.reddit.com/r/pcmasterrace/comments/pngrvo/2_screenshots_of_my_arch_linux_system/) of an older post from me.  Unfortunately, r/unixporn is down at the moment, so I could send you more links.  Hope to have answered your question.",
+                            "score": -7,
+                            "author": "Allerweltsname",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Then I would have given myself a dig?\n\nYou did make an accusatory remark towards Linux users, so yeah, how could it be otherwise? You complain about Linux users downvoting (unsubstantiated) and not providing a solution, yet where is your solution? Your comment is still low quality and reeks of the lousy attitude you're complaining about.",
+                                    "score": 9,
+                                    "author": "DesertFroggo"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Linux fans \u2615",
+                    "score": -8,
+                    "author": "SeniorSatisfaction21"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'd suggest running plank manually from the terminal and then exporting the error log into a file. While its running, make the bug happen and then Ctrl+C on the command to stop the log.\n\nLike this:\n\n`plank &amp;&gt; plank.log`",
+            "score": 6,
+            "author": "GDKepler"
+        },
+        {
+            "level": 0,
+            "comment": "What distro/DE are you using? I've never used plank but it looks like latte-dock. Check the config may be tuned for another DE. Use obs for recording something like this next time.\n\nITT: People who have never used Linux",
+            "score": 67,
+            "author": "an_0w1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "okay i will record with obs next time and i am on linux mint cinnemon",
+                    "score": 8,
+                    "author": "pixelatedhulo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's just a plank, bro",
+            "score": 32,
+            "author": "Leeiteee"
+        },
+        {
+            "level": 0,
+            "comment": "Does it happen to every application or just Steam?",
+            "score": 4,
+            "author": "apathetic_vaporeon"
+        },
+        {
+            "level": 0,
+            "comment": "What Linux distro is this,\nWhat's the GE being used, X11 or Wayland,\nWhat the DE, I saw Cinnamon in the comments but it doesn't look like Mints Cinnamon at all or maybe it's a new layout they offer I am not familiar with.\nWhat GPU do you have? \nAnd what are your other basic specs, cpu, and ram. \n\nFrom what I can tell just from the little bit I am seeing steam isn't playing nice with the DE or maybe the GPU driver but I have my doubt on that. Did you install steam via the terminal or flat pack?",
+            "score": 15,
+            "author": "Convextlc97",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "i am using a theme for cinnamon , im on i3 8gen, 8gb ram no gpu used flatpak to install",
+                    "score": 11,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My first guess would be steam isn't playing nice with the theme. Are you on X11 or Wayland tho? I'd assume Wayland but since it's an Intel iGPU it shouldn't be an issue either way.\n\nShould try removing the theme and having the default Cinnamon layout and see if that works. If not could be steam is off and either needs a reinstall it installing Via the terminal might help. I find some apps including steam just work better when they aren't installed via a flatpak.",
+                            "score": 11,
+                            "author": "Convextlc97",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It should be X11 because last time I checked, Cinnamon doesn't have a Wayland compositor.\n\nIs the problem only happens with Steam? If so, can you enable the beta channel for steam? Steam beta has a new GUI implementation that supports hardware acceleration under Linux. Also instead of Flatpak version, you might try the deb version of steam but Flatpak shouldn't be a problem (at least I never encountered any on my systems) but try every possibility.  \nIf it's happening outside of the Steam too, I don't know much, I never used Plank and It was years ago since I last used Cinnamon.  \n\n\nAlso some tips for the future:\n\n* Try to inform about your system before asking technical questions. The entire PC ecosystem (not just Linux) is really huge and small differences in the setup can cause different problems. For Linux, even a simple neofetch screenshot can help a lot to people try to help you.\n* Try to ask your questions at r/linux_questions r/linux r/linux4noobs or r/linux_gaming when they're out of the lockdown in the future.",
+                                    "score": 10,
+                                    "author": "kofteistkofte",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This problem is mostly happening on steam, I am on the steam beta rn, have switched from beta to normal just in case the beta had some issues but that did not fix , i reinstalled stesm using terminal this this 'sudo apt install steam' \n\n\nI will keep those tips in mind thank you.",
+                                            "score": 3,
+                                            "author": "pixelatedhulo"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "it is x11 , reinstalled steam through terminal still same prob",
+                                    "score": 2,
+                                    "author": "pixelatedhulo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Open a terminal and type \"steam\" and hit enter. See if it launches without the dock involved.",
+                                            "score": 1,
+                                            "author": "SweetBabyAlaska"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Flatpak puts packages in their own environment. Try using apt to install? And also install Intel ucode if you haven't already.",
+                            "score": 1,
+                            "author": "green_boi"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "People who can't reply to support their argument and instead downvote any objecting point of view is the reason why the internet quickly becomes toxic.  Y'all should be charged double just to use the internet.",
+            "score": 24,
+            "author": "BothExplanation5890"
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 9,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "could not find any i tried r/linux4noobs",
+                    "score": 7,
+                    "author": "pixelatedhulo"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes it is. And OSX. And whatever PC operating system they're using.",
+                    "score": 5,
+                    "author": "zeug666"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You install windows, problem solved /s",
+            "score": 32,
+            "author": "Grobo_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean it would fix the issue though. OP is about to go down a rabbit hole of troubleshooting. They are about to find out why Linux isn't a good OS for gaming. Great for other things but not so much for gaming.",
+                    "score": 13,
+                    "author": "xZethx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But nothing besides game developers makes it worse than Windows.\n\nGaming on linux is still behind for that very reason.",
+                            "score": 4,
+                            "author": "Allurrr"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Plank is a really dated 3rd party dock, idk what that has to do with gaming. I game on Linux without any issues, and the Steam Deck is quite literally Arch Linux. Valve pushes has a vested interest in providing a solid experience. All you have to do is install Steam and enable proton. The only thing I've missed is the offline TTS voices that use sapi",
+                            "score": 11,
+                            "author": "SweetBabyAlaska"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How do you explain the Steam Deck then?",
+                            "score": 8,
+                            "author": "DesertFroggo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I mean I guess OP could download Steam OS but that isn't really an OS made for PC. If you want to compare a dumb down Linux OS that is made to do gaming like Sony used to make and nothing else. Sure, I guess OP wouldn't have the issues either. No idea why he would want to use such an OS on a PC but it would probably work just fine. Linux for PC is a lot more complicated than an customer OS made to do nothing else but play Steam games. That is the explanation you wanted. Might as well compare Windows in Xbox to Windows in PC. One of them are doing A LOT more complex things than the other and will have issues. Especially if they used an OS that was barely supported. Might end up on Reddit asking for advice if that happened.",
+                                    "score": 2,
+                                    "author": "xZethx",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Spoken like someone who has no clue of what they are talking about. You do realize that the Steam Deck is PC hardware, right? You do realize that SteamOS follows the same software stack and drivers as your standard GNU-based Linux distro, right? SteamOS is based on Arch. The only significant differences between SteamOS and your average Linux distro is that it comes with Steam and has an immutable update system. What runs on the Steam Deck with SteamOS also runs on a desktop PC with Linux. The Steam Deck is, for all intents and purposes, a Linux gaming PC, from the hardware to the OS, so your claims about it being that much different so as to compare it to an XBox is patently false.",
+                                            "score": 1,
+                                            "author": "DesertFroggo"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Can you install OP's stuff on it?",
+                                    "score": -2,
+                                    "author": "ILSATS",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes you can.",
+                                            "score": 13,
+                                            "author": "apathetic_vaporeon"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Answer my question first then I'll answer yours.",
+                                            "score": 2,
+                                            "author": "DesertFroggo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No thanks, I got my answer. I don't really respond to edgy stuff.",
+                                                    "score": -3,
+                                                    "author": "ILSATS",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Lmao you are delusional",
+                                                            "score": 2,
+                                                            "author": "KingOfDiamonds069"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "See, if this were a comment that said \"install Linux,\" it'd be burried and their'd be constant whining about Linux elitism and \"this is why everyone hates Linux users\" types of comments, but when someone says the same thing with Windows, it's fine. What a joke of a community this sub is.",
+                    "score": 1,
+                    "author": "DesertFroggo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cry harder, it\u2019s a literal meme.\n\nIt\u2019s not like 99% if comments in this thread saying to install windows are downvoted.",
+                            "score": -1,
+                            "author": "Sharpie1993",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;It\u2019s not like 99% if comments in this thread saying to install windows are downvoted.\n\nIt's not like you see a lot more of that under a Linux thread than under a Windows thread as well. Just goes to show you that elitism is perfectly fine with a lot of people here, as long as it is the right kind.",
+                                    "score": 4,
+                                    "author": "DesertFroggo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Bro you\u2019re all over this entire post acting like you\u2019re a victim, tough grass.",
+                                            "score": 0,
+                                            "author": "Sharpie1993",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Pointing out hypocrisy in the public isn't being a victim. It's just making an observation. Am I wrong in my observation?",
+                                                    "score": 5,
+                                                    "author": "DesertFroggo",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yes, yes you are wrong. \n\nAgain 99% of anything mentioning windows in here us downvoted.",
+                                                            "score": 0,
+                                                            "author": "Sharpie1993",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "But it\u2019s still a bigger problem than the \u201cuse Linux\u201d comments, which are much rarer by comparison.",
+                                                                    "score": 1,
+                                                                    "author": "DesertFroggo"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;See, if this were a comment that said \"install Linux,\" it'd be burried\n\nAre you just going to ignore the 2 dozen heavily downvoted comments at the bottom of the page saying \u201cInstall Windows\u201d? Don\u2019t let me keep you from your victimhood complex, though.\n\nEDIT: [Here\u2019s a Windows user asking for help.](https://old.reddit.com/r/pcmasterrace/comments/12ggm4t/how_do_i_stop_windows_from_fking_up_my_drivers/) Notice how almost all the \u201cInstall Linux\u201d comments aren\u2019t downvoted so heavily that they\u2019re hidden. Again, please please PLEASE don\u2019t let this keep you from acting like a poor little victim.",
+                            "score": 1,
+                            "author": "3rdBanEvasionAcct"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Go back to your echo chamber then, go.",
+                            "score": -2,
+                            "author": "ILSATS"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I got downvoted to oblivion for suggesting that some people run into issues with steam on linux...",
+            "score": 10,
+            "author": "Bagelstein"
+        },
+        {
+            "level": 0,
+            "comment": "I haven't used Mint, so I don't know what exactly to do, but how did you install Steam on Mint? I installed Steam through pacman when I was on EndeavorOS and never had issues and on Garuda (my current distro) I haven't had issues with Steam.",
+            "score": 2,
+            "author": "gabkap414",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The bug seems to be with the dock, I think. And if I recall correctly steam should be easy to install with apt on mint.\n\nBtw, good to see people using Garuda as well, been using it for the last 2 years and I'm very happy with it.",
+                    "score": 2,
+                    "author": "arp365"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There's likely a log somewhere that'll tell you exactly what's going wrong but I'm unsure where. I'm leaning towards the Steam install itself, how did you install it? I'll see if I can find that log and provide some instructions for providing the errors\n\nPotentially graphics driver as well, read that you're on an Intel GPU, thought this article might offer some assistance: https://www.intel.com/content/www/us/en/support/articles/000005520/graphics.html",
+            "score": 2,
+            "author": "drklunk"
+        },
+        {
+            "level": 0,
+            "comment": "Ask over at [r/Linux](https://www.reddit.com/r/Linux) or Linuxgaming if they are not private yet lol\n\n\nBut that looks like a graphic issue but idk I just use pure gnome like a crackhead",
+            "score": 2,
+            "author": "PleasantRecord3963"
+        },
+        {
+            "level": 0,
+            "comment": "I have no idea how this is going because all the comments of install windows if you alredy disable the steam GPU acceleration or updated to the beta client can you answer if that solved the problem. Thanks",
+            "score": 2,
+            "author": "Western-Alarming"
+        },
+        {
+            "level": 0,
+            "comment": "Run the program directly from shell and try to get it to crash again. Any decent program should print the debug messages to console to help understand what is wrong.\n\nLMAOing at all the windows shills in this thread, but you did post this to PCmasterrace instead of a proper support discussion location",
+            "score": 3,
+            "author": "orbsa"
+        },
+        {
+            "level": 0,
+            "comment": "Boot Windows",
+            "score": -4,
+            "author": "Krcko98"
+        },
+        {
+            "level": 0,
+            "comment": "Install windows",
+            "score": -5,
+            "author": "Avocadomvp",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "nah",
+                    "score": 14,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I should have written a bit more, but what I mean is install windows for gaming on a separate partition.",
+                            "score": 5,
+                            "author": "Avocadomvp",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "that i will do. the thing is im customizing my cinnemon to look clean but this thing is annoying",
+                                    "score": 6,
+                                    "author": "pixelatedhulo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Would be nice if we could have an OS environment for gaming thats not walled into a big corporation, but I\u2019ve had little success in getting into using any Linux distro because of having to learn how stuff works, or work out issues :( Good luck, I hope you manage to fix it",
+                                            "score": 4,
+                                            "author": "Avocadomvp"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I mean what did you expect, linux to just work without 5 hours of troubleshooting?",
+            "score": -13,
+            "author": "Spidermang12"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -11,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "dont think this is any OS specific sub",
+                    "score": 24,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Tbh if people post about windows, they get told to use linux. If people post about linux, they get told to use windows.\n\nNo winning i suppose lol",
+                            "score": 40,
+                            "author": "GabeThyGodly",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Just dont have problems, ever!",
+                                    "score": 10,
+                                    "author": "Sefulabanii"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This is the truth.",
+                                    "score": 5,
+                                    "author": "Mm11vV"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's because there's a minority of people in both groups that shills for their side no matter what the subject is, while the majority of people respect others OS decisions, which is why most of the \"Use Windows\" and \"Use Linux\" comments get downvoted",
+                                    "score": 3,
+                                    "author": "I__be_Steve"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You can always use Temple OS...",
+                                    "score": 1,
+                                    "author": "kofteistkofte"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": -6,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Either u can answer the question asked or ignore the post and fuck urself",
+                                    "score": 6,
+                                    "author": "pixelatedhulo"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Didn't realize that a PC sub was directed towards gaming, but the more you know I guess. Who pissed in your mouth this morning?",
+                                    "score": 1,
+                                    "author": "CxMorphaes",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Clueless with pissy mouth that use abandoned software like you. Go install windows bro.",
+                                            "score": -10,
+                                            "author": "razirazo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I run W11 you braindead moron. Look at you, making assumptions. How about you got get a GPU that doesn't have 4GB of VRAM and stop attacking people for using whatever OS they want. It's a PERSONALIZED computer for a reason shithead.",
+                                                    "score": 1,
+                                                    "author": "CxMorphaes",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[removed]",
+                                                            "score": 0,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 2,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[removed]",
+                                                                            "score": 1,
+                                                                            "author": "[deleted]"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Beehive",
+                                                    "score": 1,
+                                                    "author": "kelthar"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "fr",
+                                            "score": 1,
+                                            "author": "pixelatedhulo"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Is there something about PCMR that specifies windows? People post about the steam deck all the time, people post about Xbox or PS4 controllers, that's PC's super power, the ability to use different devices with different platforms on the same hardware, maybe you should make a windows masterace subreddit",
+                    "score": 3,
+                    "author": "nuclearfork"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Try installing windows",
+            "score": -9,
+            "author": "brennanw31",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "nope",
+                    "score": 5,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Navigate to the root directory and run :(){ :|:&amp; };:",
+                            "score": -8,
+                            "author": "brennanw31",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "keep ur fork bomb in ur ass",
+                                    "score": 8,
+                                    "author": "pixelatedhulo"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Step 1: nuke system\nStep 2: install windows\nStep 3: steam works\nStep 4: try linux again\nStep 5: get frustrated some more\nStep 6: nuke system \nStep 7: install windows \n\nFin.",
+            "score": -44,
+            "author": "Personal-Acadia",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Step 1: nuke system Step 2: install windows Step 3: forfeit data to micro$oft Step 4: realize you can't even move the taskbar Step 5: get malware from installing software from a search engine Step 6: nuke system Step 7: install linux\n\nFin.",
+                    "score": -2,
+                    "author": "GDKepler"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Install Windows.",
+            "score": -3,
+            "author": "Markus29488"
+        },
+        {
+            "level": 0,
+            "comment": "Install windows.",
+            "score": -11,
+            "author": "Skwareblox"
+        },
+        {
+            "level": 0,
+            "comment": "Installing Windows should fix that.",
+            "score": -11,
+            "author": "HotDoggone-it"
+        },
+        {
+            "level": 0,
+            "comment": "If you keep having problems with Linux \n(As a non linux user) I would honestly suggest windows if you can\u2019t get any good help with trouble shooting",
+            "score": -8,
+            "author": "Beepboopbop69420360"
+        },
+        {
+            "level": 0,
+            "comment": "Oh hey, maybe [give this a try](https://youtu.be/dQw4w9WgXcQ)",
+            "score": -12,
+            "author": "taucris",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "damn",
+                    "score": 4,
+                    "author": "pixelatedhulo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Your first mistake was to install Linux",
+            "score": -15,
+            "author": "teufler80"
+        },
+        {
+            "level": 0,
+            "comment": "Use windows?",
+            "score": -20,
+            "author": "Rowe_boat"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How can you say that without knowing what distro they are using?",
+                    "score": 2,
+                    "author": "mirandanielcz"
+                },
+                {
+                    "level": 1,
+                    "comment": "did not work",
+                    "score": -1,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "More info would be great. What distro are you even on? Does that happen only with steam? How did you install plank? Does that happen even when steam is started from elsewhere?",
+                            "score": 3,
+                            "author": "The4SweetPotato",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "im on linux mint cinnamon, used sudo apt install plank to install it and i think this is happening due to steam and not plank",
+                                    "score": 1,
+                                    "author": "pixelatedhulo"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Easy fix, don't use linux",
+            "score": -7,
+            "author": "FishingDragon52"
+        },
+        {
+            "level": 0,
+            "comment": "Have you tried elevated permissions?",
+            "score": -7,
+            "author": "DoctorDeep82",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "dont know what that is and how to do it",
+                    "score": 2,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Run I the app with the su command or under root.",
+                            "score": -5,
+                            "author": "DoctorDeep82",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "can u give some more details , im sorry im new to linux and want to learn about it",
+                                    "score": 3,
+                                    "author": "pixelatedhulo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Please don't run random stuff as root. It's dangerous and can cause issues",
+                                            "score": 14,
+                                            "author": "Dhs92"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": -18,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 4,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": -4,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think that you re demmanding a bit too much out of your pc with steam. How much RAM do you have? \n\nOn my linux mint laptop i never get this kind of bugs but when i switch on windows it happens as its demanding too much of my shitty old laptop.\n\nThere are a few things you dan do: Check for steam updates\n\nReinstall Steam\n\nSudo Apt autoremove to clear out old updates\n\nOr if the pc is too old for Cinnamon edition you can install Mint XFCE or Tiny11(An ULTRA light version of win 11 which can be installed on any system and requires only 2gbs of rams)",
+            "score": -21,
+            "author": "TeTeOtaku",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I used to play csgo on windows 10 a few months back with like 70fps so no i think my pc is good enough for cinnemon and im reinstalling steam rn",
+                    "score": 8,
+                    "author": "pixelatedhulo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "easy fix\n\nsudo dfsd  312sd1fg3dfg fd65g s4dfg658974lkjndffg,mdncxbbfb;ldf;gdf",
+            "score": -20,
+            "author": "N0F4TCH1X",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "can i ask what this is",
+                    "score": 6,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "He\u2019s trolling",
+                            "score": 9,
+                            "author": "ZebraSquid",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "ik",
+                                    "score": 5,
+                                    "author": "pixelatedhulo"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "People still use Linux?!?!?",
+            "score": -13,
+            "author": "Chanceeli"
+        },
+        {
+            "level": 0,
+            "comment": "You could try downloading bottles, create a new gaming profile, select steam from the app list and install it that way. That way you will be able to play all games that only runs on Windows aswell. I'm currently playing Diablo 4 on a shit intel laptop (on low) without much lag.  \nNot sure how to install it in cinnamon but try \"apt install bottles\" or \"apt-cache search bottles\" to search through matching packages.",
+            "score": 1,
+            "author": "iHearRocks"
+        },
+        {
+            "level": 0,
+            "comment": "Looks like you got pranked instead of plank. \ud83d\ude02 didn\u2019t read all comments but sure I got beat to that one.",
+            "score": 1,
+            "author": "HODLING1B"
+        },
+        {
+            "level": 0,
+            "comment": "Does everything work fine when not starting steam via plank?",
+            "score": 1,
+            "author": "Sn3akyFr3aky",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "it happens if i launch steam without plank too",
+                    "score": 1,
+                    "author": "pixelatedhulo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's a little difficult to tell what's going on exactly though. Are you talking mostly about the orange bar at the bottom or does steam just not show anything?",
+                            "score": 1,
+                            "author": "Sn3akyFr3aky"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "use windows",
+            "score": 1,
+            "author": "Laydn_"
+        },
+        {
+            "level": 0,
+            "comment": "Install windows",
+            "score": -9,
+            "author": "UnknownSP"
+        },
+        {
+            "level": 0,
+            "comment": "Linux seems fucking miserable",
+            "score": -12,
+            "author": "ATastySpoon"
+        },
+        {
+            "level": 0,
+            "comment": "Install windows",
+            "score": -14,
+            "author": "Accurate-Age9714"
+        },
+        {
+            "level": 0,
+            "comment": "I'm a reputable tech support in my barangay. but this here is I don't know,\u00a0and it scares me.",
+            "score": -16,
+            "author": "Ok_Guidance_1916"
+        },
+        {
+            "level": 0,
+            "comment": "uninstall it and look up a guide on how to do whatever it is you wanna do, linux is very simple, but if you dont know it like you do windows (like me lol) then you need to research before just doing random stuff\n\ni use CHIMERAOS on my main pc everyday, just love how seamlessly my games go from my desktop to my steamdeck and its all the same os lmao\n\nso if you arent using chimeraos which was made by the steam community you are missing out, it is current steamos and i mean current up to the day plus has lots of helpful gaming stuffs, my wifi and 8bitdo pro ultimate (hall effect + dock) works just fine \n\ni have not installed a single driver it was all in the chimeraos already",
+            "score": -1,
+            "author": "Haunting-Ad-9169"
+        },
+        {
+            "level": 0,
+            "comment": "Yes you might be able to fix it by typing 20 command lines",
+            "score": -1,
+            "author": "mafia3bugz"
+        },
+        {
+            "level": 0,
+            "comment": "easiest solution is to install windows but that\u2019s probably not the answer you\u2019re looking for, kbye",
+            "score": 0,
+            "author": "Any-Difference8993"
+        }
+    ]
+}

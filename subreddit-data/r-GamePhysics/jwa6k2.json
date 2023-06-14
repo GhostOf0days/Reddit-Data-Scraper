@@ -1,0 +1,1210 @@
+{
+    "id": "jwa6k2",
+    "score": 17363,
+    "title": "[Spider-Man: Miles Morales] Spider-man prop hunt",
+    "author": "hscgarfd",
+    "date": 1605678094.0,
+    "url": "https://www.reddit.com/r/GamePhysics/comments/jwa6k2",
+    "media_urls": [
+        "https://v.redd.it/wvb2saxprxz51"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Imagine getting your shit rocked by a fence.",
+            "score": 1449,
+            "author": "DR34Dx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It\u2019s happened to me before. Make sure you are looking forward when riding a bike quite fast",
+                    "score": 437,
+                    "author": "dragon2777",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yup, it's your best defence",
+                            "score": 52,
+                            "author": "MyNameSpaghette",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Damn you, take your upvote and leave!",
+                                    "score": 12,
+                                    "author": "RockandRollChainsaw"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Tried to open a gate by bumping my bike into it, ended up front flipping over my handlebars onto my ass. Fences make imposing enemies",
+                            "score": 16,
+                            "author": "frostymugson",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "My friends and I were racing on our bikes once and a pickup truck came barreling down the road with no intention of stopping, so I had to swerve out of the way. In doing so I tried to go up those ramp things on a sidewalk and my wheel caught the lip of it and I flew over the handel bars. Mind you that I was going very fast and landed on my forearm. I ended up getting very bad road rash.",
+                                    "score": 3,
+                                    "author": "DR34Dx"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The best offense is a good fence",
+                    "score": 14,
+                    "author": "elr0y7"
+                },
+                {
+                    "level": 1,
+                    "comment": "No need to.\n\nr/IdiotsFightingThings",
+                    "score": 52,
+                    "author": "monkeyhitman"
+                },
+                {
+                    "level": 1,
+                    "comment": "Someone was a space heater once. Had fighting clip. Someone commented heater Parker lol",
+                    "score": 8,
+                    "author": "xpercipio"
+                },
+                {
+                    "level": 1,
+                    "comment": "I find it pretty o-fence-ive actually.",
+                    "score": 27,
+                    "author": "LynxSys"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I really want to hear an explanation for this bug.",
+            "score": 624,
+            "author": "bilateralrope",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Probably memory that stores identifier for spiderman model gets overwritten with random values because of some buggy code writing to incorrect memory addresses. It's very common type bug in languages like c++ but results are rarely this hilarious.\nTypically it occurs when you have an array of some objects and you for example try to access element number 10, when there are only 8. If you write to element 10 you will write over some other memory.",
+                    "score": 654,
+                    "author": "noobgiraffe",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And the program doesnt stop itself from writing to the 10th spot even tho theres only 8?",
+                            "score": 105,
+                            "author": "JonVeD",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "When you write the code you can decide between. .at(element) which crashes if the element is out of range but is slow and [element] which does not crash but can produce this errors and is faster. So it's a tradeoff between speed and security.",
+                                    "score": 23,
+                                    "author": "darknicolasW21"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "No, that kind of hand-holding gets in the way of programming",
+                                    "score": 216,
+                                    "author": "Dreoh",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Many languages with higher levels of abstraction compared to C++ will gladly catch that for you. As usual, it's all about tradeoffs, performance vs. convenience.",
+                                            "score": 101,
+                                            "author": "folkrav"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "On the other side, welcome to the gentle embrace of Java.",
+                                            "score": 88,
+                                            "author": "la_virgen_del_pilar",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I see it more like a moist hug from a creepy uncle.",
+                                                    "score": 96,
+                                                    "author": "gheeboy"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It is less of a gentle embrace and more of a sucker punch to the face while Java spits on your lifeless body",
+                                                    "score": 15,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Lol java is weird sometimes but extremely easy to learn. The only C-like language that's even easier would probably be C#.\n\nA sucker punch to the face would be stuff like COBOL, haskell or assembly",
+                                                            "score": 16,
+                                                            "author": "KantenKant",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "as someone who plays rollercoaster tycoon a lot assembly code errors are the literal bane of my existence",
+                                                                    "score": 3,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You've touched on an interesting debate in programming language design!\n\nThe short answer is that, in C++ (the language used for almost all video game engines), no, the programmer has to explicitly check that they're not reading or writing past the end of an array.\n\nThe reason for this is two-fold: first, because an array is far more abstract than the primitives provided by the hardware or operating system, the only way to check is to, y'know, *check*, and making that check is slow (relatively speaking). Since it's often possible for the programmer to know that they're not violating array bounds *without* checking, making the check optional allows for maximum performance\u2014something which game engines prioritize over almost everything else.\n\n(Of course, as in this hypothetical bug, programmers *very very frequently* fail to check when an out-of-bounds access *is* possible, so *most* languages now just do the bounds check automatically and eat the performance hit. C and C++ are the major exceptions I'm aware of.)\n\nSecond, in C and C++, the language *doesn't actually keep track of the length of an array* for you. If you're not going to just know, you need to store it elsewhere. Again, this is because the programmer may be able to just know the length of the array, and the language can save a few bytes in that case (somewhat relevant in the '70s when C was created\u2014somewhat less relevant now). And, as with the bounds check, this causes enough issues that almost all other languages track array length automatically.",
+                                    "score": 61,
+                                    "author": "grelphy",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Or you just use rust which can catch issues like this at compile time with no performance penalty.\n\nThough memory safety is hot button issue among low level programmers. For some reason.",
+                                            "score": 8,
+                                            "author": "Reverent",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Rust isn't magical, it can't catch dynamic sizes in compile time.",
+                                                    "score": 15,
+                                                    "author": "archjman",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Rust is in the category of languages that automatically check bounds. If you write an indexing-style loop over an array, you'll pay the bounds check performance penalty:\n\n    for i in 0..vec.len() {\n        doSomething(vec[i] /*dereference checks bounds*/)\n    }\n\nRust provides (and makes idiomatic and widely used) the iterator API, which can be used to avoid the redundant bounds check *when iterating sequentially* over a structure (written `for element in vec`), but if you're accessing the container randomly, you can't avoid the extra checks.\n\nNow, don't get me wrong, I think Rust is a *fantastic* language, and I'm a huge fan (and I'd argue vigorously that they made the correct call in this case), but it's not *magic*, and it's not well-served by misrepresentation.",
+                                                    "score": 13,
+                                                    "author": "grelphy",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I guarantee you any modern compiler will optimize away the bounds check inside a simple loop like that.",
+                                                            "score": 3,
+                                                            "author": "hexane360",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "According to Wikipedia Rust first appeared in 2010. I don't think you can have a Rust compiler that doesn't fit the term modern.",
+                                                                    "score": 3,
+                                                                    "author": "Moib",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Yes, but my statement applies to a similar c/c++ loop with a bounds check as well. Entire compiler passes are dedicated to optimizing away provable branch instructions.\n\nEdit:\n\nHere's a simple Rust example: https://godbolt.org/z/d9hehc\n\nWith opt-level 2, the call to Index gets inlined, and at that point the compiler can easily optimize away the bounds check.\n\nAnd here's the C++ equivalent: https://godbolt.org/z/dcfz9G\n\nWith GCC and -O2, the call to at() again gets inlined and the bounds check is optimized away.",
+                                                                            "score": 6,
+                                                                            "author": "hexane360"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It depends. If the memory address is within any other memory allocation the game/application uses it will just write to that memory. If it's not you will get what is called segmentation fault which typically means hard crash to OS.",
+                                    "score": 7,
+                                    "author": "noobgiraffe"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "In general, most programming languages will catch that sort of bug for you, but some (as mentioned elsewhere, C and C++ for example) will not, which can potentially cause bugs like this\n\nBut damn I'm impressed that the game doesn't just crash, but keeps playing. That's impressive",
+                                    "score": 3,
+                                    "author": "TheJack38"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "C and C++ assumes you made that error on purpose. Also error checking slows down the code.",
+                                    "score": 3,
+                                    "author": "YeshilPasha"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Nope. \n\nBecause technically it doesn't know the max length and didn't check it when you're writing a program for speed. It assumes the developer will be careful. \n\nSacrifices safety for speed.",
+                                    "score": 1,
+                                    "author": "1337GameDev"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "They need to make a \"prop hunt\" mode where every 120 seconds you turn into a random prop",
+                            "score": 15,
+                            "author": "MendicantBias42"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If anyone remembers the Missingno big from the early pokemon games, this is exactly the same thing",
+                            "score": 5,
+                            "author": "RhodesArk"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "People have figured out how to exploit this on Halo and play as enemies on coop campaign. It requires some effort but playing as a hunter looks cool as hell.",
+                            "score": 1,
+                            "author": "GammaRaged"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm guessing it's a similar bug to the bob-omb glitch in Super Mario 64 where you pick up a bob-omb the moment it explodes. The game unloads the bob-omb actor because it exploded, but it still remembers that mario is supposed to hold something. And now if you walk around a little, new entities will load into the same memory spot as the bob-omb used to be, so now mario will be holding a sign or a box or something, depending on what entity populated that memory adress.\n\nIn this case, the game probably unloaded Spiderman for a cutscene or something, but never loaded the Spiderman entity again once the cutscene was over. Then the game started populating the memory adress with items and scenery found in the game, because hey there's a free memory spot here. \n\nI could be completely wrong though, it's just my theory.",
+                    "score": 70,
+                    "author": "puq123",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wow! That's exactly what it looks like! But it's worse than M64, because it affects the whole player character. The fact that they are mixing in the player character mesh with the world meshes is a bit unsettling. Most games use separate, fixed memory areas for the player meshes. They don't need the same load/unload treatment as the world meshes.",
+                            "score": 21,
+                            "author": "baggyzed",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'd wager it isn't a memory problem, but a bug in the object loading system, where its called for the wrong asset mesh for the model. This bug shows that the \"game\" part of the character is separate from the animated model, which is standard and good approach.",
+                                    "score": 9,
+                                    "author": "ciknay",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, it looks like a loading bug, but I was thinking that there's no reason to unload the player character model, just to load it again later. World objects need to be loaded based on their distance/LOD to the camera, but the player mesh is always visible. There's no need to unload it just because you're playing a cinematic or anything that requires taking away control from the player.\n\nEDIT:\n\n&gt; but a bug in the object loading system, where its called for the wrong asset mesh for the model\n\nThis sort of bugs usually happen when the \"slot\" used by the object is re-used for another object, which was unloaded and then re-used for some reaon. So technically, it is a memory management bug. It doesn't matter if it happens at mesh load time, or at object-sort time or any other time. The cause is always the same: the wrong mesh is used. However, the main cause is simply a synchronization bug. Important meshes like the player mesh should be managed in sync with player input and cinematic system. The simple way around having to synchronize all the different systems is to just not unload the mesh when it doesn't need to be unloaded.",
+                                            "score": 3,
+                                            "author": "baggyzed"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Same here, It's the 3rd or 4th video on reddit I've seen of this bug, and it feels like a really shitty bug to have on a new game on a new console. I mean it's funny, but also kinda crappy.",
+                    "score": 142,
+                    "author": "o0st0ned0o",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "i think most games on next gen are dealing with some really weird bugs, i know nothing about game development but i\u2019d assume it\u2019s just because we haven\u2019t seen these games and consoles tested at this level at home, next years fall releases will hopefully be better about launch glitches.\n\nalso it\u2019s probably not helping the case for games like NBA21 and BOCW that are dealing with bug issues already",
+                            "score": 62,
+                            "author": "acidfalconarrow",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 53,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "so next years fall releases will hopefully be better about launch glitches?",
+                                            "score": 27,
+                                            "author": "acidfalconarrow",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Happy cake day!",
+                                                    "score": 5,
+                                                    "author": "o0st0ned0o"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 7,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Fickle is einhorn.",
+                                                            "score": 6,
+                                                            "author": "GeneralBS",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Laces out",
+                                                                    "score": 2,
+                                                                    "author": "InfiniteRelief"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is a funny bug. I'm playing Miles Morales on PS5 currently and cannot pick up any of one particular type of collectible (time capsules). *That* is a crappy bug since I need to collect them all for in game upgrades and Trophies.",
+                            "score": 13,
+                            "author": "Axle-f",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah op posted a lower level bug but what you describe is an A-level, game breaking bug which is usually squashed before going gold.",
+                                    "score": 5,
+                                    "author": "RandomGuyinACorner"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's kind of amazing that it doesn't crash when they give a human character the 3d model of a pile of snow. Maybe they messed up their data structure that holds currently loaded models.",
+                    "score": 27,
+                    "author": "u-36"
+                },
+                {
+                    "level": 1,
+                    "comment": "They will most likely post about it once its fix'd due to its hilarity, but if I had to hazard a guess its a memory issue where the part of memory telling game 'player model = this mesh' gets corrupted and starts giving random values which coincide with other mesh objects.",
+                    "score": 12,
+                    "author": "wattur"
+                },
+                {
+                    "level": 1,
+                    "comment": "Wait, I thought it's just prop hunt, lol. Thought everything works as intented.",
+                    "score": 7,
+                    "author": "genasugelan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, it seems too elaborate to be a bug. Looks like someone's modded prop hunt in.",
+                            "score": 4,
+                            "author": "VitruvianGenesis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Isn't this the guy who laughed at his friend, when his friend asked why all the clocks have the same time in the game P.T ?",
+            "score": 125,
+            "author": "frezer748",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah! The Visage clip where all clocks were on 3:33. Fucking hilarious",
+                    "score": 50,
+                    "author": "LuKazu",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Do you have a link?",
+                            "score": 23,
+                            "author": "Licensed2Chill",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[https://www.youtube.com/watch?v=M9T-worr4AM](https://www.youtube.com/watch?v=M9T-worr4AM) The clip in question\n\n&amp;#x200B;\n\n[https://www.youtube.com/watch?v=JD8e3yYOOPE](https://www.youtube.com/watch?v=JD8e3yYOOPE) Official upload. Timestamp is 26:09.",
+                                    "score": 72,
+                                    "author": "LuKazu",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Lol that's some contagious laughter.",
+                                            "score": 14,
+                                            "author": "elr0y7"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "His name is froste, and he\u2019s part a group called the Mov. Check out their Twitter. They are the literal definition of hilariously stupid",
+                    "score": 10,
+                    "author": "Hamburglar28"
+                },
+                {
+                    "level": 1,
+                    "comment": "froste and avalanche lol",
+                    "score": 3,
+                    "author": "xKratosIII"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "My man\u2019s laugh became full seagull by the end. I love it",
+            "score": 1937,
+            "author": "Luemas42",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don't blame him. This is one of the funniest bugs I've ever seen",
+                    "score": 514,
+                    "author": "-iwl-",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's one of the most egregious bugs that it may as well be a feature. :)\n\nI'd play the fuck out of Fence Dude and T-Shirt Guy.",
+                            "score": 217,
+                            "author": "karadan100",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 89,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Rack of T-shirts-Man\n\nRack of T-shirts-Man\n\nDoes whatever a rack of t-shirts can",
+                                            "score": 24,
+                                            "author": "azip13"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I'm hoping that will be an easter egg in the next game. Like someone is wearing a t-shirt with a fence on it.",
+                                    "score": 18,
+                                    "author": "Jay_R_Kay"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Wait until speedrunners figure out how to make it happen on demand and use it for shortcuts.",
+                                    "score": 10,
+                                    "author": "gariant"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wait this isn\u2019t a mod?!",
+                            "score": 10,
+                            "author": "Fireheart318s_Reddit",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Reminds me of the carrier &amp; interceptor mod for StarCraft that turned them into a pair of pants that shot socks.\n\nI think of it fondly, and often.",
+                                    "score": 7,
+                                    "author": "Tiger-Gautreaux"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I'd be really impressed if it turned out to be one, the game hasn't been out long at all",
+                                    "score": 3,
+                                    "author": "dojindori"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That dude is having the time of his life, genuinely makes me feel happy cos that laughter is real and he's loving it.",
+                    "score": 43,
+                    "author": "Reddit_SuckLeperCock"
+                },
+                {
+                    "level": 1,
+                    "comment": "/r/contagiouslaughter",
+                    "score": 73,
+                    "author": "canyoutriforce",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I thought that said contagious slaughter...\n\nGuess I still haven\u2019t found the subreddit for me",
+                            "score": 42,
+                            "author": "Random-Waifu_Lover"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Brrrrr oh oh oh!",
+                    "score": 4,
+                    "author": "Troy_doney"
+                },
+                {
+                    "level": 1,
+                    "comment": "r/contagiouslaughter",
+                    "score": 4,
+                    "author": "MileHighChubs",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Ricky Gervais mode!",
+                    "score": 2,
+                    "author": "Rasalom"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'M T-SHIRTS",
+            "score": 745,
+            "author": "Cloud-head",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This game really makes you *feel* like T-Shirts",
+                    "score": 201,
+                    "author": "Imitation_Gruel",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What about pants?  You are nitpicking and biased, I win, bye bye.",
+                            "score": 26,
+                            "author": "brianredspy"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How it *feels* to play T-shirts",
+                            "score": 8,
+                            "author": "deathbycomputer"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I want to know if you go up to a reflective surface with ray tracing on, do you see t-shirts reflected?...",
+                            "score": 4,
+                            "author": "livevil999"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Those are clearly polo shirts.\n\nsmh",
+                    "score": 54,
+                    "author": "Myrandall"
+                },
+                {
+                    "level": 1,
+                    "comment": "*Batman voice*",
+                    "score": 8,
+                    "author": "VitruvianGenesis"
+                },
+                {
+                    "level": 1,
+                    "comment": "Guys, you can be a goombas!",
+                    "score": 30,
+                    "author": "Roar_Im_A_Nice_Bear"
+                },
+                {
+                    "level": 1,
+                    "comment": "I\u2019M A (wheeze) I\u2019M A (wheeze) BROCCOLI! (wheeeeeeze) I\u2019M A BROCCOLI!!",
+                    "score": 3,
+                    "author": "misterpobbsey"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "At this point they *have* to make this a feature",
+            "score": 289,
+            "author": "spiderknight616",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "IIRC In REsident Evil you could actually play the game as a block of tofu. They should leave some of these intact for lulz. Or make it a \"random\" mode like this.",
+                    "score": 114,
+                    "author": "Anthraxious",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Random mode would be best.",
+                            "score": 30,
+                            "author": "spiderknight616"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You are correct. It was a completion reward of some kind, I forget the exact details.",
+                            "score": 8,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "A new version of \"What If\" mode from the PS1 games",
+                            "score": 3,
+                            "author": "DinkleDonkerAAA"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Heat-seeking briefcase: *first time?*",
+                    "score": 37,
+                    "author": "Kryllllllyx"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fence car finisher actually looked kinda nice",
+            "score": 38,
+            "author": "xrebl"
+        },
+        {
+            "level": 0,
+            "comment": "Those T-Shirts had some *exaggerated swagger*",
+            "score": 140,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The exaggerated swaggzr of a Polo t-shirt",
+                    "score": 11,
+                    "author": "EOmar4TW"
+                },
+                {
+                    "level": 1,
+                    "comment": "*The exaggerated swagger of black Ts*",
+                    "score": 39,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "When I watched that video I never imagined I'd see the reference grow like this hahaha first time I've witnessed the birthing of a meme",
+                    "score": 6,
+                    "author": "Raulzi"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I dont know if OP is playing on a ps4. But I've been noticing some people are having issues with [the game](https://youtu.be/WOqhSHMp5XY) being buggy.",
+            "score": 60,
+            "author": "ComicMAN93",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Woww that's bad",
+                    "score": 15,
+                    "author": "byParallax"
+                },
+                {
+                    "level": 1,
+                    "comment": "I played it on PS4 and didn't encounter anything game breaking.\n\nI had a few glitches like voicelines not playing, or a player model not loading in for a couple seconds.",
+                    "score": 9,
+                    "author": "PenguinWithAKeyboard",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That still shoulda been fixed",
+                            "score": 4,
+                            "author": "Sir-CrumpFuffle",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I knew this was Adums video before I even clicked. He breaks every game within minutes somehow",
+                    "score": 6,
+                    "author": "grandfunkpoobah",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Its a blessing amd a curse.",
+                            "score": 7,
+                            "author": "ComicMAN93"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Damn, he's loud.",
+                    "score": 7,
+                    "author": "wokolis"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Knowing insomniac they will patch it and make an Easter egg of it",
+            "score": 14,
+            "author": "ApeInTheShell",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I hope they make it a toggle",
+                    "score": 7,
+                    "author": "viperfan7"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I guess they addressed the feedback about there not being enough puddles",
+            "score": 23,
+            "author": "Keatosis"
+        },
+        {
+            "level": 0,
+            "comment": "The exaggerated swagger of a white snow",
+            "score": 12,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Lol",
+                    "score": 1,
+                    "author": "Mountain_Sir2307"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Lost my shit at \"I'm T-shirts\" \ud83e\udd23",
+            "score": 16,
+            "author": "weirdest_of_weird",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Same and something about he saying \"whole\" house got ne too lol",
+                    "score": 6,
+                    "author": "Frogkingo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Lol that was great too",
+                            "score": 2,
+                            "author": "weirdest_of_weird"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/ContagiousLaughter",
+            "score": 74,
+            "author": "robotmafia666",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Bruh im dying at his laugh tho\n\nMy mans sounding like the Joker if he seen batman caught in a rat trap",
+            "score": 51,
+            "author": "Oxygenius_"
+        },
+        {
+            "level": 0,
+            "comment": "Well it is a game about a guy in costumes",
+            "score": 6,
+            "author": "ineedtoknowmorenow"
+        },
+        {
+            "level": 0,
+            "comment": "The developers should just enable this bug as a sort of cheat code",
+            "score": 6,
+            "author": "Gingerbread_Matt"
+        },
+        {
+            "level": 0,
+            "comment": "I was like \"This cant get any better\" after the t-shirt but the house ...",
+            "score": 4,
+            "author": "Khanjeet"
+        },
+        {
+            "level": 0,
+            "comment": "Spider-anything-but-man",
+            "score": 16,
+            "author": "poclee"
+        },
+        {
+            "level": 0,
+            "comment": "God I hope they add this as a feature and let you pick random objects. While the game certainly has bugs, these are fun bugs that everyone is enjoying.",
+            "score": 4,
+            "author": "mightylordredbeard"
+        },
+        {
+            "level": 0,
+            "comment": "I want this to be an actual game mode now.",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "[https://www.twitch.tv/froste/clip/RelentlessExuberantSeahorseSoBayed](https://www.twitch.tv/froste/clip/RelentlessExuberantSeahorseSoBayed)",
+            "score": 26,
+            "author": "hscgarfd"
+        },
+        {
+            "level": 0,
+            "comment": "Miles morales can shape shift now",
+            "score": 3,
+            "author": "the_mello_man",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "But not on command, and can\u2019t choose what he shape shifts to",
+                    "score": 2,
+                    "author": "lasvegasvegas6990"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is a Skyrim level enjoyable glitch. It should be an actual feature.",
+            "score": 3,
+            "author": "SimpleManc88"
+        },
+        {
+            "level": 0,
+            "comment": "So they didn't change a single thing from the first game animations?\nEven with the bug i can see that it's exactly th\u00e9 same.",
+            "score": 7,
+            "author": "DrSlurp-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Every time I see this game it looks indistinguishable from the first game. To me it doesn\u2019t seem worth getting even if I had a PS5 because I have the first one already.",
+                    "score": 11,
+                    "author": "HaworthiaK"
+                },
+                {
+                    "level": 1,
+                    "comment": "Isn't this the same game with DLC on top of it?",
+                    "score": 3,
+                    "author": "greenw40"
+                },
+                {
+                    "level": 1,
+                    "comment": "They reused a lot of the car chase animations, but they added in at least one new car chase animation. Afaict the swinging and fighting animations are all brand new",
+                    "score": 2,
+                    "author": "crass-sandwich",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "i really hope that when this is patched out, they add a version of it back in at som point. It is actually pretty rad to ride on top of a car as a patch of snow, or a cube",
+            "score": 9,
+            "author": "Grerutin"
+        },
+        {
+            "level": 0,
+            "comment": "This game is buggy as hell but in the best way. Does Insomniac know about this?",
+            "score": 5,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This might be the most hilarious thing I've ever seen in this sub \ud83d\ude02",
+            "score": 3,
+            "author": "PM_ME_YOUR_FOOTJOBS"
+        },
+        {
+            "level": 0,
+            "comment": "Annoying ass laugh",
+            "score": 9,
+            "author": "raveschwert"
+        },
+        {
+            "level": 0,
+            "comment": "Is this a separate disc game or dlc for the Spider-Man ps4 game?",
+            "score": 2,
+            "author": "Lw1997",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Separate disk.",
+                    "score": 2,
+                    "author": "jadedwolfie",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I\u2019d not looked into this since I don\u2019t plan on getting a ps5 but given the animation and assets I\u2019d have thought this was the previous game without the context from the title.",
+                            "score": 2,
+                            "author": "Lw1997",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah a lot of the game play is the same, especially in this context of stopping a getaway car. The game really differs in Miles' gameplay and his attacks that the original spidey didn't have.  But the game is also available on ps4. When you buy it on ps5, it comes with a remaster of the original.",
+                                    "score": 2,
+                                    "author": "jadedwolfie",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That\u2019s cool I suppose, is there a whole new full length story to play through or is it a short story?\n\nSorry for the 20 questions I\u2019ve really not read about the game at all apart from the original announcement there would be more from miles.",
+                                            "score": 1,
+                                            "author": "Lw1997"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Now thats camoflage",
+            "score": 2,
+            "author": "Fortunefly"
+        },
+        {
+            "level": 0,
+            "comment": "Is this game just riddled with bugs? I\u2019ve heard nothing but good things but I\u2019ve seen soooo many bugs on my front page",
+            "score": 2,
+            "author": "commando_cookie0"
+        },
+        {
+            "level": 0,
+            "comment": "it\u2019s not a bug it\u2019s a feature",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This is the best glitch ever lmao! The dumpsters and brooms I\u2019m seeing out there kicking ass has been a pleasure to watch.",
+            "score": 2,
+            "author": "sicdedworm"
+        },
+        {
+            "level": 0,
+            "comment": "imagine live music to this.   \nSpider man....spider man....wait..  \n\n\nSpider snow...spider snow....does whatever...damnit.   \n\n\nSpider Fence...spider fence...does whatever a spider....DAMNIT!  \n\n\nSpider Shirts....spider shirts...does whatever a spider shirts.....FUUUUUUUUUUUU  \n\n\nSpider House...Spider.....Ahhh I give up.",
+            "score": 2,
+            "author": "gmarconcini"
+        },
+        {
+            "level": 0,
+            "comment": "r/ContagiousLaughter",
+            "score": 2,
+            "author": "NarwhalsFromSpace"
+        },
+        {
+            "level": 0,
+            "comment": "\"next gen\"",
+            "score": 2,
+            "author": "angrysodacanz"
+        },
+        {
+            "level": 0,
+            "comment": "u/savevideo",
+            "score": 3,
+            "author": "Spoof_Code_17",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Buy the PS5, they said. The exclusives make it better, they said.",
+            "score": 4,
+            "author": "Due-Variety8015",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I recognize that laugh! Is this the same guy that plays a horror game where his friend wonders why all the clocks in-game shows the same time?",
+            "score": 2,
+            "author": "tecIis"
+        },
+        {
+            "level": 0,
+            "comment": "From what I\u2019ve seen so far, this game is far from finished.",
+            "score": 2,
+            "author": "DayoftheBaphomets"
+        },
+        {
+            "level": 0,
+            "comment": "Game seems like it may have been rushed...",
+            "score": 1,
+            "author": "Gravon"
+        },
+        {
+            "level": 0,
+            "comment": "He is not a fence, he is THE ONLYFANS",
+            "score": 1,
+            "author": "KNULLAPLHA01"
+        },
+        {
+            "level": 0,
+            "comment": "Man was dying over this.",
+            "score": 1,
+            "author": "SpinyCoin26"
+        },
+        {
+            "level": 0,
+            "comment": "They *have* to make this an official feature its just too good.",
+            "score": 1,
+            "author": "AgentShibe_"
+        },
+        {
+            "level": 0,
+            "comment": "Chicken Little was right there's a piece of sky",
+            "score": 1,
+            "author": "BrazenTwo"
+        },
+        {
+            "level": 0,
+            "comment": "I've seen more gameplay of this game where Miles is some random object than when he's actually Spider-Man",
+            "score": 1,
+            "author": "sleeplessaddict"
+        },
+        {
+            "level": 0,
+            "comment": "u/savevideo",
+            "score": 1,
+            "author": "Yabiko",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, video. It's ready \n###[Download via redditsave.com](https://redditsave.com/info?url=/r/GamePhysics/comments/jwa6k2/spiderman_miles_morales_spiderman_prop_hunt/)\n\n\n --- \n [**Info**](https://np.reddit.com/user/SaveVideo/comments/jv323v/info/)&amp;#32;|&amp;#32; [**Feedback**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Feedback for savevideo) &amp;#32;|&amp;#32; [**DMCA**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Content removal request for savevideo)",
+                    "score": 1,
+                    "author": "SaveVideo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The game literally transforms into anything. Lmfao.",
+                    "score": 1,
+                    "author": "Mountain_Sir2307"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does anyone know how to do this glitch?",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "u/savevideo",
+            "score": 1,
+            "author": "mikeyxgee",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey! Video is ready \n###[Download via redditsave.com](https://redditsave.com/info?url=/r/GamePhysics/comments/jwa6k2/spiderman_miles_morales_spiderman_prop_hunt/)\n\n\n --- \n [**Info**](https://np.reddit.com/user/SaveVideo/comments/jv323v/info/)&amp;#32;|&amp;#32; [**Feedback**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Feedback for savevideo) &amp;#32;|&amp;#32; [**DMCA**](https://np.reddit.com/message/compose/?to=Kryptonh&amp;subject=Content removal request for savevideo)",
+                    "score": 1,
+                    "author": "SaveVideo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks, I really needed the laughs",
+            "score": 1,
+            "author": "IM-THE-USER"
+        },
+        {
+            "level": 0,
+            "comment": "I completed the whole game by Sunday and I\u2019m already in a NG+ play through and I\u2019ve yet to experience this bug. I\u2019m actually kind of bummed because it\u2019s hilarious!  I\u2019ve had plenty of other bugs pop up but this one is amazing.",
+            "score": 1,
+            "author": "BoneSpurApprentice",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I\u2019ve also been playing since PS5 launch and have not experienced this. I would love to know if it\u2019s able to be reproduced or if it\u2019s completely random.",
+                    "score": 1,
+                    "author": "Kazrasuya"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/contagiouslaughter",
+            "score": 1,
+            "author": "Kissicka"
+        },
+        {
+            "level": 0,
+            "comment": "Is this the power of Exaggerated Swagger?",
+            "score": 1,
+            "author": "BioSpark47"
+        },
+        {
+            "level": 0,
+            "comment": "Havent played this game but have played the previous one. Ignoring the facts that hes playing as a slab of concrete the gameplay looks very similar to the previous game. Is this correct? And is it worth playing?",
+            "score": 1,
+            "author": "wellalrightthen123"
+        },
+        {
+            "level": 0,
+            "comment": "Nice platform, awesome game",
+            "score": 1,
+            "author": "ENDrain93"
+        },
+        {
+            "level": 0,
+            "comment": "u/savethisvideo",
+            "score": 1,
+            "author": "gman6942_0"
+        },
+        {
+            "level": 0,
+            "comment": "I've just completed this game and my god the amount of bugs. \n\nI had so many different kinds as well.",
+            "score": 1,
+            "author": "MikeyJay2402"
+        },
+        {
+            "level": 0,
+            "comment": "Is this a glitch or a mod? serious question haha",
+            "score": 1,
+            "author": "Andruboine"
+        },
+        {
+            "level": 0,
+            "comment": "So much happy in this video",
+            "score": 1,
+            "author": "JacobLemongrass"
+        },
+        {
+            "level": 0,
+            "comment": "\u201cI\u2019m teeeeee shiiiiiiirts\u201d",
+            "score": 1,
+            "author": "elkandmoth"
+        },
+        {
+            "level": 0,
+            "comment": "The t shirts got me good.",
+            "score": 1,
+            "author": "teedgejnz"
+        },
+        {
+            "level": 0,
+            "comment": "u/savethisvideo",
+            "score": 1,
+            "author": "ragrag7",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "He\u2019s got the energy of a black teen",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Annoying fucking laugh",
+            "score": 1,
+            "author": "LukeCarriker"
+        },
+        {
+            "level": 0,
+            "comment": "This guys is fucking great",
+            "score": 1,
+            "author": "smitty704"
+        },
+        {
+            "level": 0,
+            "comment": "Spiderman: which one am I",
+            "score": 1,
+            "author": "Elusinner64"
+        }
+    ]
+}

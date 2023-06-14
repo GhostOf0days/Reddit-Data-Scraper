@@ -1,0 +1,490 @@
+{
+    "id": "13l2du1",
+    "score": 75,
+    "title": "I\u2019m Garrett Johnson, an Assistant Professor at Boston University researching digital marketing. Ask me anything about online display advertising, browser cookies, online privacy, Europe's GDPR, and the post-cookie future of the web.",
+    "author": "BUExperts",
+    "date": 1684424292.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/13l2du1",
+    "media_urls": [
+        "https://www.reddit.com/r/IAmA/comments/13l2du1/im_garrett_johnson_an_assistant_professor_at/"
+    ],
+    "other_urls": [
+        "https://www.garjoh.com.",
+        "https://imgur.com/a/o07cIUe)!"
+    ],
+    "postText": "Thank you everyone for writing in \u2013 this has been a great discussion! I hope to be able to revisit the conversation later this week. If you are interested in learning more about my work please follow me on Twitter @garjoh_canuck, on LinkedIn, or visit my website for links to my research https://www.garjoh.com. \n\n*********************************\n\nI\u2019m Garrett Johnson, an Assistant Professor of Marketing at Boston University's Questrom School of Business. My research on Internet marketing examines online display advertising: the medium\u2019s effectiveness and privacy issues. My ad effectiveness research uses large-scale experiments to measure how and how much ads work. My privacy research quantifies the value of online behavioral targeting to industry and considers the impact of policy &amp;amp; self-regulatory approaches. I work with Internet companies\u2014including Google and Yahoo!\u2014to answer these questions with Internet-scale data.\n\nAsk me anything about:\n- Why and how exactly do ads track you online? \n- What are browser cookies? How are they used?\n- How effective are online display ads?\n- Why and how should you run experiments to measure the effects of online ads? \n- What is the economic impact of the EU's General Data Protection Regulation (GDPR)? \n- What is the future of online advertising without browser cookies? \n- What was the impact of the 2020 YouTube settlement (i.e., the \"COPPAcalypse\") on made-for-\nkids content?\n\nProof: [Here's my proof](https://imgur.com/a/o07cIUe)!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For more AMAs on this topic, subscribe to r/IAmA_Academic, and check out our other topic-specific AMA subreddits [here](https://reddit.com/r/IAmA/wiki/index#wiki_affiliate_topic-specific_subreddits).",
+            "score": 1,
+            "author": "IAmAModBot"
+        },
+        {
+            "level": 0,
+            "comment": "Hi Prof. Johnson, thanks so much for hopping on Reddit to answer our questions. \u2014 This may be a simple question, but what exactly am I giving a website access to when I click \"Accept all cookies\" when visiting a site for the first time? On the other hand, am I losing anything if I hit \"Reject all cookies\"?",
+            "score": 8,
+            "author": "DCMcDonald",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi u/DCMcDonald, great question! \n\nWhen you click \"Accept All\", you give permission for the site to use cookie for the site to remember who you are and for the vendors a site employs to sync their cookie identifiers as well. See my response to u/kg_from_ct as well. \n\nThis allows the website to do simple things like personalize the site to you and to gather analytics data (e.g., Google Analytics) about how you and other users use the site in order to improve the site in the future. These identifiers critically allow the online ad tech industry to personalize ads to you--potentially based on your interests inferred from your past browsing--and to measure the effects of those ads by recognizing who sees ads and eventually buy stuff. \n\nSome people are especially concerned that this information violates their privacy and laws (namely Europe's GDPR) now require user consent, which is why you see these pop-ups on sites. \n\nSo, when you click \"Reject All\", you are improving your privacy. The challenge however, is that websites, make less money from ads when you do so. Our research estimated that ads make 52% less money in this case: [http://ssrn.com/abstract=3020503](http://ssrn.com/abstract=3020503). This is in line what most others have found, but estimates vary as I summarize here: [https://docs.google.com/presentation/d/1juu6UBguR7ru1Rhfyor9knFBFsyLNP6FmIiXcJKyJZM/edit?usp=sharing](https://docs.google.com/presentation/d/1juu6UBguR7ru1Rhfyor9knFBFsyLNP6FmIiXcJKyJZM/edit?usp=sharing). \n\nFor each individual that opts out, these are only pennies lost, but these pennies add up for publishers who are often providing content for free. This is one reason why we see more paywalls as we browse the internet: publishers are looking to subscriptions to make up for less ad revenue.",
+                    "score": 17,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you for this great explanation!",
+                            "score": 4,
+                            "author": "DCMcDonald"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is known in the industry as \"attribution.\" Brands (or even the entire value chain) want to know all of the little interactions with a customer from initial contact to final transaction. Every ad that is displayed sends a ping (or more generally a request to an ad server) to mark the ad impression, who and what was shown. These impressions (and other signals) are analyzed, e.g. to calculate ad fulfillment in the publisher-marketer transaction, or even higher level analysis that tracks a user across multiple sites and devices. This sequence of contacts for a particular product constitutes its attribution path.",
+                            "score": 3,
+                            "author": "boink_that"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi Prof. Johnson - thanks so much for hosting this AMA! I've always heard the term \"browser cookies\" but I'm not exactly sure what they are. Can you define/share how are they used?",
+            "score": 6,
+            "author": "kg_from_ct",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Browser cookies are small text files that websites install on your computer in order to remember who you are, typically with pseudonymous identifers like \"ABC123\". \n\nWithout (first-party) cookies, a website would not be able to remember who you are. So, when you add a product to your shopping cart, you wouldn't be able to see that product when you click on the cart. \n\nThird-party cookies are more controversial from a privacy perspective because they allow another website (not the one you are on) install a cookie on your browser. That other website can then track you across websites (that allow that site's third party cookie). This helps advertisers for instance know that which users have seen an ad and then later go on to buy something from their website. This information is super useful to advertisers. \n\nClearcode reliably puts out great explainers about how ad tech works. Here's their explainer about cookies: [https://clearcode.cc/blog/difference-between-first-party-third-party-cookies/](https://clearcode.cc/blog/difference-between-first-party-third-party-cookies/) \n\nThanks u/kg_from_ct!",
+                    "score": 8,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi Professor Johnson! Since ad blockers are super common nowadays, are advertisements on websites as effective as they were before we had ad blocking software?",
+            "score": 6,
+            "author": "OkayAlfalfa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/OkayAlfalfa, thanks for your question. \n\nYes, lots of users employ ad blockers, though these rates have levelled off in recent year. I always ask my students whether they use ad blockers and the vast majority of hands go up. I then remind them that they are taking \"Digital Marketing\" and may want to see what other marketers are up to ;) \n\nThe funny thing about ad blockers is that economists and marketers think that they probably increase ad effectiveness! Most ad blockers prevent ads from being sold, so that advertisers are typically not charged for these ad impressions---this also means publishers aren't paid. However, we think that the remaining Internet users are more open to ads (because they could instead block ads if they chose). Simon Anderson and Joshua S. Gans have related research: see e.g., [https://www.aeaweb.org/articles?id=10.1257/mic.3.4.1](https://www.aeaweb.org/articles?id=10.1257/mic.3.4.1). \n\nOne of my favorite papers on ad blocking describes the vicious circle that it creates whereby sites get less money, so produce less content, then attract fewer users, and thereby get less money: \"The effect of ad blocking on website traffic and quality\" by Benjamin Shiller and Joel Waldfogel and Johnny Ryan in The RAND Journal of Economics.",
+                    "score": 10,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In recent years when you google a question you have it's not uncommon for a lot of the sites coming back to be poorly written junk rather than properly authoritative sources. Presumably a lot of this is to do with search engine optimization techniques being used so people get clicks on their rubbish sites stacked with ads. Are the clicks they are getting from doing this actually going to be all that profitable for them?",
+            "score": 5,
+            "author": "Corka",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hmmm... Yes, these junk sites are a weird phenomenon. Obviously, they are doing this because they are generating enough ad revenue to make this work. \n\nI teach search engine optimization (SEO) in my digital marketing class. This is the study of how sites can rank higher in site rankings. The trick to doing this is a combination of delivering value to users with great content for humans while at the same time being mindful of the bots that are visiting your site and scoring it with their algorithms. The trend now for over a decade in SEO is that search engine algorithms have gotten better and better at evaluating content like a human would. In this sense, it's a little surprising that you are encountering a lot of spammy sites. \n\nUnfortunately, I worry that advances in generative AI are going to make this worse as these technologies have dramatically reduced the cost of creating good (not always great) content. \n\nOn the advertiser side, this is one excellent reason to use a \"green light list\" of approved sites that you want to advertise on. This ensures that your ads are seen on quality publishers' sites and that you ad dollars aren't funding these spam factories!",
+                    "score": 4,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Tell em about the arbitrage biz ;)",
+                            "score": 2,
+                            "author": "boink_that"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So the example searches I was going to use were health related ones like \"are artificial sweeteners bad for you?\" and don't you know all of my attempts had it bumping up good sources like John Hopkins. It didn't seem like all that long ago when similar searches would land you on pseudo scientific nonsense \"health blogs\" when obviously there were better sources out there.\n\nClosest thing I got that sort of reflects what I was saying after a few minutes of trying were searches like \"what software do lawyers use?\" where even outside the sponsored links what you got was a bunch of sites that were self promoting, where the incentive to bump the search rankings with SEO is incredibly obvious.",
+                            "score": 1,
+                            "author": "Corka"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Which is the most effective ad blocker for Edge and/or Firefox on Windows (assuming we define effectiveness as amount of bandwidth saved for user over amount of computer resources used) ? Which is most effective ad blocker for Android?",
+            "score": 5,
+            "author": "DigiMagic",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/DigiMagic, sorry I can't help you with that as I don't use ad blockers. An occupational hazard for me is that I actually want to see online ads as part of my research. I am always curious why I am seeing a particular ad!",
+                    "score": 5,
+                    "author": "BUExperts"
+                },
+                {
+                    "level": 1,
+                    "comment": "I can't speak for other developers but I generally see up to 80% of all DNS requests are blocked with my application Scopes up! [DNScope.io](https://DNScope.io)  it's a simple DNS firewall and cache for windows. It's not specifically an ad blocker as it's a firewall and cache in one. It also has the added advantage of being able to block system telemetry and applications from phoning home. It's pre loaded with \\~3 million domains in it's block list. Its cache resolution times are \\~1/2 to 1ms. An external DNS look up is at best 11 ms so its like 10 times faster than DNS service firewalls and it doesn't phone home. \n\nIt's currently in Beta and is Free for personal use.",
+                    "score": 2,
+                    "author": "GreedyBaby6763",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sounds like exactly what I need, I will definitely try it out.",
+                            "score": 1,
+                            "author": "DigiMagic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It does need some configuration, send me a dm if you have any issues, I'm currently working on an update and user feed back is very useful.",
+                                    "score": 2,
+                                    "author": "GreedyBaby6763"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "U block origin, brave browser for android",
+                    "score": 1,
+                    "author": "AsicsPuppy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How are you thinking about being able to successfully run experiments post cookie deprecation? And specifically for smaller advertisers who have benefited from having more granular data?  \nHave there been any analyses on the impact of GDPR on both publishers and the user experience? Has it been successful? What has the economic impact been?",
+            "score": 5,
+            "author": "LBM9",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/LMB9, some great questions here! \n\nCookie deprecation can be a headache for experiments, though the news isn't all bad. I talk about this issue in section 8 of my \"Inferno\" paper: [http://ssrn.com/abstract=3581396](http://ssrn.com/abstract=3581396). I also share some more general thoughts on the implications of privacy-centric replacement to cookies for advertisers here: [https://papers.ssrn.com/abstract\\_id=3947290](https://papers.ssrn.com/abstract_id=3947290) . \n\nI have a couple papers examining the GDPR's impact on website and will point you to some others as well: \n\n\\- We show evidence of small reductions in EU site traffic and e-commerce revenue post-GDPR. In particular, we find greater reductions in traffic from personalized ad sources (email and display ads) that we think are indicative of a real harm to websites. Paper and explanatory twitter thread here: [https://www.ssrn.com/abstract=3421731](https://www.ssrn.com/abstract=3421731), [https://twitter.com/garjoh\\_canuck/status/1397629091315134468?s=20](https://twitter.com/garjoh_canuck/status/1397629091315134468?s=20). \n\n\\- We show that sites cut back on their use of web vendors (e.g. ad tech) post-GDPR. This reduction is short-lived, but seems relatively hit smaller vendors the most, which we worry is bad for competition. Paper and explanatory twitter thread here: [https://ssrn.com/abstract=3477686](https://ssrn.com/abstract=3477686), [https://twitter.com/garjoh\\_canuck/status/1349799939535237121](https://twitter.com/garjoh_canuck/status/1349799939535237121) . \n\n\\- Other research by Lefrere and coauthors did not find an impact of the GDPR on websites content provision, probably because compliance was pretty weak: [https://papers.ssrn.com/sol3/papers.cfm?abstract\\_id=4239013](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4239013) \n\n\\- One paper looked at a panel of users over time and found that users appeared to engage in more search activity online after the GDPR, potentially because they were getting less personalized information via advertising. See Zhao, Yildirim &amp; Chuntagunta's \"Privacy Regulations and Online Search Friction: Evidence from GDPR\"\n\nI have a review paper summarizing the economic impact of the GDPR: [http://ssrn.com/abstract=4290849](http://ssrn.com/abstract=4290849), [https://twitter.com/garjoh\\_canuck/status/1623512102580154368](https://twitter.com/garjoh_canuck/status/1623512102580154368) . This documents harms to firms including profitability, competition, investment. Note that these harms may be offset by the benefits of the regulation, but we hope the research deepens our understanding.",
+                    "score": 6,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is going to happen with Google's new APIs for advertising?\n\nI guess as part of this rollout, I recently got this message in Chrome:\n\n&gt;Enhanced ad privacy in Chrome  \n&gt;  \n&gt;We're launching new privacy features that give you more choice over the ads you see.  \n&gt;  \n&gt;Ad topics help sites show you relevant ads while protecting your browsing history and identity. Chrome can note topics of interest based on your recent browsing history. Later, a site you visit can ask Chrome for relevant topics to personalize the ads you see.You can see ad topics in settings and block the ones you don't want shared with sites. Chrome also auto-deletes ad topics that are older than 4 weeks.\n\nIs this making advertising more privacy sensitive? Does it give Google the upper hand? Will I see more irrelevant ads?",
+            "score": 5,
+            "author": "deaneckles",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi u/deaneckles! This is a big important question.  \nIn essence, Google has proposed a large list of replacement technologies for the third-party cookies under the banner of Chrome's \"Privacy Sanbbox.\" Cookies are basically a magic-bullet solution right now that helps advertisers to target, measure, and optimize their ad campaigns. Without cookies, Google has proposed separate technologies for each of these use cases: targeting (Topics API, Protected Audience API), measurement (Attribution Reporting API), and anti-fraud (Private State Tokens API).   \nThese technologies are really ambitious because they propose to rearchitect how digital advertising works in order to better protect user privacy. I created short explainers below:   \n\\- Topics API: [https://twitter.com/garjoh\\_canuck/status/1486438310335721474](https://twitter.com/garjoh_canuck/status/1486438310335721474)    \n\\- Protected Audience API (formerly known as FLEDGE): [https://twitter.com/garjoh\\_canuck/status/1415064817799417858](https://twitter.com/garjoh_canuck/status/1415064817799417858)   \nYou can learn more about Privacy Sandbox and its timeline here: [https://privacysandbox.com/](https://privacysandbox.com/) . Google is moving from testing this on a small fraction of Chrome users to making this generally available now, which is why you recently got that message in Chrome.   \nYou ask very important questions about the implications of all of this. Some thoughts:   \n\\- Privacy Sandbox intends to make it very difficult for information to be shared across websites in ways that are typical today using third-party cookies. So, the point is to improve privacy by curbing user tracking.   \n\\- The British competition authority is closely monitoring and evaluating the Privacy Sandbox, in part so that this does not unduly hurt competition. They have engaged me as their outside expert for this task, so I can\u2019t say much about this, just that we will be learning a lot about how Privacy Sandbox works over the coming 1-2 years.   \n\\- Privacy Sandbox maintains personalized ads, because personalized ads delivers significantly greater ad revenue that funds the open web. It will be interesting to see how relevant or irrelevant ads become under these new technologies as a function of how they work.",
+                    "score": 7,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is the best future proof certification for marketers in digital marketing?\n\nAlso, can you list your top.3 certifications for Digital Marketers?",
+            "score": 4,
+            "author": "EthicalAssassin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi u/EthicalAssassin. Good question. \n\nI always have my students do the Google Analytics Individual Qualifications certification. Website analytics is such an important ingredient to understanding data flows in modern digital advertising. This year I transitioned to the GA4 training now that Google is sunsetting universal analytics. GA4 adapts to the more privacy-centric reality of modern marketing, so is \"future proof\" in that sense. \n\nIn the past, I've had my students do Hootsuite Academy, which provides a great introduction to social media management using popular (and Canadian like me!) software. \n\nI haven't done other certifications myself, but students have told me that Google Ads training and Hubspot trainings are useful as well. \n\nThis would be a great opportunity for others in the space to weigh in on recommendations below :)",
+                    "score": 3,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you.\n\nTo follow up. With AI making inroads, how do you see its impact on Digital marketing and how can digital marketers protect themselves in an AI driven environment?",
+                            "score": 1,
+                            "author": "EthicalAssassin",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Certainly this question is top of mind for a lot of digital marketers right now! \n\nI would recommend that you check out Eric Seufert's writing on this subject on his site Mobile Dev Memo. Here is a nice twitter thread highlighting some of this recent pieces on this: [https://twitter.com/eric\\_seufert/status/1658829077925560321](https://twitter.com/eric_seufert/status/1658829077925560321) \n\nYou also may wish to check out an interview that I did recently with the Marketplace Tech podcast in which we discussed the impact of AI-based chat on sponsored search advertising: [https://www.marketplace.org/shows/marketplace-tech/how-ai-chat-search-could-disrupt-online-advertising/](https://www.marketplace.org/shows/marketplace-tech/how-ai-chat-search-could-disrupt-online-advertising/) \n\nI think generative AI has great potential as a tool to help brainstorm ideas, generate content, improve marketing automation, and generally make the marketing experience more conversational!",
+                                    "score": 4,
+                                    "author": "BUExperts"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Hi there, I also wanted to chime in and say that the free Hubspot inbound marketing certifications are also great! Those combined with the Google skillshop certs can be a good start.",
+                    "score": 4,
+                    "author": "Wheatability"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It can sometimes be really quite maddening to see the lengths some vendors will go to, with dark patterns et al, to ensure that you cannot avoid being tracked and bombarded with ads and cookies simply by visiting a website where 9 times out of 10 you might only want to read an article.\n\nWhere can we direct people to let them know websites 100% don't need ads, cookies, or tracking to be completely functional?",
+            "score": 4,
+            "author": "_brym",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/_brym, I understand your frustration. Certainly, tools are available for users to block ads, block tracking (e.g., Firefox &amp; Safari), and even block cookie consent pop-ups. \n\nI am a little more sympathetic to the predicament that websites face. If you reject all cookies, then our research predicts that websites will earn 52% less money from advertising to you: [http://ssrn.com/abstract=3020503](http://ssrn.com/abstract=3020503), [https://twitter.com/garjoh\\_canuck/status/1117874397191163904](https://twitter.com/garjoh_canuck/status/1117874397191163904). So, I can understand why websites may want users to click a couple of times to opt-out of tracking. However, some extreme website practices can be outright deceptive and many website practices fall short of the GDPR's high bar for consent. \n\nWebsites may be able to function without ads or tracking, but these help to pay the staff (e.g., journalists) that create the content that websites often provide free of charge. Our own recent research on the YouTube COPPA settlement provides evidence that the privacy-for-content tradeoff is real: [https://ssrn.com/abstract=4430334](https://ssrn.com/abstract=4430334), [https://twitter.com/garjoh\\_canuck/status/1651592400643702784](https://twitter.com/garjoh_canuck/status/1651592400643702784) . Shiller, Waldfogel, &amp; Ryan (2018) show that ad blocking hurts websites: i.e., the ads-for-content tradeoff is real. \n\nNevertheless, I understand that not everyone is comfortable with trading off their individual privacy and attention (to ads) to help pay for free content.",
+                    "score": 2,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm not naive enough to believe that when something's free on the web, I'm not the product. I've developed for it front and back end for more than 20 years. So I really do know that these practices are very deliberate, and more than avoidable without sacrificing earnings. But there's no additional profit in that.",
+                            "score": 2,
+                            "author": "_brym"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hello, and thanks for the AMA!\n\nIs there a discrepancy between how effective online ads are in reality vs. how effective the industry claims they are?\n\nHow concentrated is the industry?  I\u2019ve heard that Facebook and Google dominate, but is that the case?",
+            "score": 3,
+            "author": "SpaceElevatorMusic",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi u/SpaceElevatorMusic, \n\nFor your first question, I think a general rule about business is that everyone wants to claim credit for creating value for the company in order to get more money from the business. Advertising is no exception! \n\nI am a strong advocate for running experiments to measure the effectiveness of advertising by comparing a random group that is exposed to the focal advertiser's campaign and comparing them to randomized control group that is held out from the campaign. The latter group then allows the advertiser to know how much sales they generate without the ad campaign, so that the advertiser can know the \\*incremental\\* sales generated by the ad exposed group. \n\nI think a really fun and entertaining reading discussing the issue you bring up is the following piece in The Correspondent: [https://thecorrespondent.com/100/the-new-dot-com-bubble-is-here-its-called-online-advertising/109970897300-fd465983](https://thecorrespondent.com/100/the-new-dot-com-bubble-is-here-its-called-online-advertising/109970897300-fd465983). Hope you enjoy it! \n\nFor your second question, you are correct that the \"Big 2\" dominate the industry. After peaking 2017 at 54.7% of the online advertising revenue in the US, the Big 2 fell below 50% of ad spend in 2022 (48.4%). See this recent article: [https://www.mediapost.com/publications/article/381152/duopolys-ad-dominance-continues-to-erode-us-sh.html](https://www.mediapost.com/publications/article/381152/duopolys-ad-dominance-continues-to-erode-us-sh.html)",
+                    "score": 7,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi, thanks for the IAma.   \n\n\nIn the future, how will online marketing evolve on web3? What different   \napproaches will be used, and how should digital advertisers adapt to   \nthese changes?",
+            "score": 3,
+            "author": "rnddude4828",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey u/rnddude4828, this question is outside of my wheelhouse to be honest. \n\nI know that some people like Terry Kawaga (big M&amp;A person in adtech) are very bearish on web3: [https://twitter.com/tkawaja/status/1608815215709224960](https://twitter.com/tkawaja/status/1608815215709224960) . Others are more bullish like Antonio Garc\u00eda Mart\u00ednez who has a startup in this space: [https://www.thepullrequest.com/p/advertising-and-web3](https://www.thepullrequest.com/p/advertising-and-web3) .",
+                    "score": 4,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I understand companies have to get their name out there, but I hate ads, so much. I always use ad blocks. Now we have drone swarms showing ads for crappy mobile games over major cities. Are you for or against nuisance advertising?",
+            "score": 2,
+            "author": "thepeopleshero",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/thepeopleshero, nuisance advertising is an interesting topic. I think that the name makes clear that most everyone finds these sort of ads particularly annoying ;)    \nGoldfarb &amp; Tucker highlight an interesting trade-off in their 2011 paper \"Online display advertising: Targeting and obtrusiveness.\u201d They basically say that ads work well (for advertisers) either when they are well targeted or obtrusive (i.e., nuisance ads like pop-ups), but not both at the same time.   \nOne implication of this is that changes in online advertising that reduce the scope for targeting\u2014in order to improve user privacy\u2014could lead websites and apps to compensate by employing more obtrusive forms of advertising. This would be annoying, but it\u2019s always good to think two steps ahead when making changes to the economy.   \nIn any case, I\u2019d also encourage you to check out my response to u/crimiusXIII who feels similarly to you about ads!",
+                    "score": 2,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is it a law that when someone selects to customize their cookies choices on a website that they all have to be deselected (opted out) by default before they choose their preferences at all?",
+            "score": 2,
+            "author": "PeanutSalsa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "In the EU, the General Data Protection Regulation (GDPR) says basically this, u/PeanutSalsa. \n\nI write in my review paper on the GDPR ( [http://ssrn.com/abstract=4290849](http://ssrn.com/abstract=4290849)): \"The GDPR sets a high standard for consent (Article 7). Consent should be an unambiguous, affirmative act like ticking a box on a website: pre-ticked boxes or inactivity do not indicate valid consent (Recital 32).\" \n\nIn practice, I think the French regulator CNIL has most aggressively pushed websites on this point and advocates a standard whereby websites should present an equal \"Agree\" or \"Disagree\" choice to users. Sites that have experimented with a literal unchecked box find that only about 10% of people consent in this case:  \n\n\\- &lt;10% for UK ICO for site analytics permission only [https://videoadnews.com/2019/11/19/the-icos-cookie-consent-rate-dropped-90-percent-after-implementing-its-own-best-practices/](https://videoadnews.com/2019/11/19/the-icos-cookie-consent-rate-dropped-90-percent-after-implementing-its-own-best-practices/) \n\n\\- 10% for personalized advertising on Dutch public broadcaster network of sites ([https://www.ster.nl/media/h5ehvtx3/ster\\_a-future-without-advertising-cookies.pdf](https://www.ster.nl/media/h5ehvtx3/ster_a-future-without-advertising-cookies.pdf) , p. 6)",
+                    "score": 3,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you partial to any tools for tracking digital ad metrics/analytics?",
+            "score": 2,
+            "author": "msfrizzzzzle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I am partial to Adobe Analytics because they agreed to partner with us on our GDPR research: [https://www.ssrn.com/abstract=3421731](https://www.ssrn.com/abstract=3421731), [https://twitter.com/garjoh\\_canuck/status/1397629091315134468](https://twitter.com/garjoh_canuck/status/1397629091315134468) ;) \n\nIn seriousness, my website generates little traffic and I don't use these tools myself. Sorry!",
+                    "score": 2,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How will Google manage its business in a cookie-less web of the future, considering that they are an advertising company and tracking web traffic, analytics, etc. are core to their financial gains? \n\nAs they are also committing to user security and privacy lest the company loses trust, how are they balancing this?",
+            "score": 2,
+            "author": "Das-P"
+        },
+        {
+            "level": 0,
+            "comment": "How effective is targeting on Facebook Vs Google Vs twitter Vs tiktok? I heard about a study looking at FB advertising that said targeting by gender was only 50% effective!?",
+            "score": 2,
+            "author": "nugelz"
+        },
+        {
+            "level": 0,
+            "comment": "How can we make sure that AI based algorithm system provide us some easy and helpful data for digital marketing (I mean is AI based consumer data that much reliable?)",
+            "score": 2,
+            "author": "Ok-Feedback5604",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sorry, but I am not sure that I understand your question. Could you please elaborate and include some examples?",
+                    "score": 3,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Credibility of AI based consumer data in online business..how accurate they are in field of online marketing?and how big businesses create or reduce demands by manipulating online algorithm based data?",
+                            "score": 1,
+                            "author": "Ok-Feedback5604"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When can we outlaw digital advertising?  Ads actively dissuade me from purchasing or associating with the sponsor.  They routinely steal credentials and financial information from people.  They are obtrusive, and obnoxious, by design. They are hazardous not only to simpletons, but the world at large through data collection practices.  They may provide benefit to the sponsor, but always at the expense of the world, inherently, even when there are no benefits.  \n\nAgain, when can we outlaw digital advertising?  It is a blight.",
+            "score": 2,
+            "author": "crimiusXIII",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/crimiusXIII, many people like yourselves really dislike advertising, so much so, that available tools like ad blocking (see my response to u/_brym) may make everyone better off. \n\nI would not be so negative as to say that advertising provides no benefits. As I outline in my recent comment to the FTC, digital advertising provides many benefits including benefits to Internet users (e.g., subsidizing content, and providing useful information): [https://www.regulations.gov/comment/FTC-2022-0053-0680](https://www.regulations.gov/comment/FTC-2022-0053-0680). But, the privacy and nuisance costs of advertising may outweigh those benefits, particularly for users like yourself. \n\nTo me one of the funny ironies of online advertising is how socialist it is! The richest users and the richest countries disproportionally fund content creation for everyone through their attention: [https://twitter.com/garjoh\\_canuck/status/1374731888120696833](https://twitter.com/garjoh_canuck/status/1374731888120696833) .",
+                    "score": 5,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Also, thank you for the response and links!  I know I likely came off adversarial, but you responded with poise and I really want to let you know I appreciate it!",
+                            "score": 2,
+                            "author": "crimiusXIII",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "And thank you for your gracious response as well!",
+                                    "score": 2,
+                                    "author": "BUExperts"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Reading your comment to the FTC now.\n\nThat's fair, and certainly there's debate to had about the costs and benefits.  Putting aside every personal opinion I have on them.  The costs come to the tune of an individual's life savings, a company's data being destroyed irrevocably, or their private data stolen and leaked to the world. The day I pushed out mandatory ad blocking to my contract clients is the day they stopped calling with fake login pages.  The cost for the cleanup and damage control that comes with it when someone does get phished by them alone is worth blocking.  I will never admin a network without an adblocker on every endpoint.  The risk to the companies I manage is an order of magnitude larger than the benefit of seeing advertisements.  It is not worth it in a corporate environment.\n\nI understand the indirect benefits in that ads support the sites and services I use, but they must be served in a way that isn't affecting the content they're providing.  If sites didn't serve my browser code that they haven't vetted because it comes from their ad partner who hasn't vetted them, I'd be mildly annoyed by ads instead actively against them.\n\nThe 3 letter agencies block ads.  https://www.techdirt.com/2021/09/30/cia-nsa-block-ads-network-wide-to-protect-agencies-ron-wyden-says-rest-govt-should-do-same/ In the name of security, not privacy, why shouldn't I?",
+                            "score": 1,
+                            "author": "crimiusXIII",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Agencies like the CIA &amp; NSA blocking ads seems like a sensible security precaution in for high-risk cyber-security situations. \n\nYou probably understand better than I do that cyber-security can never be perfect so firms must evaluate what steps they are willing to take as a function of their cost, risks and benefits. \n\nAt the societal level, I think the solution is to crack down on abusive or criminal activity within advertising rather that eliminate advertising or personalized advertising altogether. Unfortunately, all the benefits of improved ad targeting, measurement, and automation are enjoyed by the \"bad guys\" too, so it's not surprising that advertising has its share of horror stories. \n\nThanks for the conversation, u/crimiusXIII!",
+                                    "score": 1,
+                                    "author": "BUExperts"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you for this AMA! Really interesting. \n\nI don't completely agree with the statement about online advertising being socialist (rather then capitalistic). Very interesting point though. It does make sense that richer people spend more money after seeing ads, thus participating more to a website's revenue, which leads to people with less money being able to enjoy 'free' content as well. \n\nMy problem with targeted advertising, however, is that for example people with less money and a lower level of education are more likely to see gambling ads, day trading nonsense, etc. Targeted advertising is capitalistic in the sense that it strives towards maximizing profit. Whatever the consequences may be. That is what makes targeted advertisment (or any targeted algorithm) so capitalistic, in my view. For clothes, that's probably not an issue. But for gambling, money making schemes and politics, that can be a real issue. \n\nWhat do you think about this issue? Would love to hear. Thanks again!",
+                            "score": 1,
+                            "author": "Tinelebaka",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "u/Tinelebaka, sure, ads are plenty capitalist. I was being evocative about their upside of funding online content and services. \n\nAs in all human endeavours, there is a seedy underside to online advertising. I think it is best to try to tackle problems like misleading or exploitative advertising directly.",
+                                    "score": 1,
+                                    "author": "BUExperts"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "are cookies dangerous? Whenever a website asks me to accept cookies I hesitate. Should I be concerned about my private data? Thanks for your time.",
+            "score": 1,
+            "author": "Expensive-Time-3052",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is a deep question u/Expensive-Time-3052, thanks. \n\nMost privacy advocates, academics, and journalists worry about the privacy harms of third-party cookies. They point to the volume of vendors that put cookies on your computer, attempt to track your browsing across websites, and share this information between adtech vendors. \n\nI may be in the minority here, but I would say that the risk is quite low. The uses of this information are largely innocuous: personalizing content, personalizing ads, capping repeat ad impressions, measuring ad effectiveness, website analytics. In principle, data that tracks your cross-site browsing is risky, but companies could face a backlash if they snooped around this data or used it to abuse people. Despite large-scale cross-site tracking, I think its hard to point to widespread data abuses beyond the harms of some targeted advertising. For instance, cross-site targeting of vulnerable segments like gamblers or certain health issues could be harmful to the extent that advertisers do this. In my view, the solution would be to crack down on such abuses rather than eliminate personalized ads altogether. \n\nNevertheless, I am sympathetic to the notion that the stakes are high in privacy, because revealing secrets is irreversible. So, recent industry attempts to improve privacy in this industry are laudable (see u/deaneckles's question). \n\nI am more concerned about potential harmful uses of location data like in this story: [https://www.washingtonpost.com/dc-md-va/2023/03/09/catholics-gay-priests-grindr-data-bishops/](https://www.washingtonpost.com/dc-md-va/2023/03/09/catholics-gay-priests-grindr-data-bishops/). I think this story highlights the potential for severe harm when faced with a highly motivated opponent.",
+                    "score": 1,
+                    "author": "BUExperts"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Late to the party, but I'd like an opinion on GDRP and IP address.  \n\n\nPixel tracking on an advertisement. SOmeone sees the ad, my pixel fires, I write down their ip address.  \nApparently, this is in breach of GDPR as IP address is personally identifiable information.\n\nIs it?\n\nLet's pretend it is. So, instead of writing down their ip address, I write down a one way hash of their ip address.\n\n&amp;#x200B;\n\nIs this still in breach?",
+            "score": 1,
+            "author": "Laurielounge",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/Laurielounge, I'm not a lawyer, but I'll give you my take. \n\nThe GDPR takes an expansive definition of personal data to include all data relating to a person (or household). This includes cookies IDs and IP addresses. Thus, the GDPR doesn't just cover personally identifiable information. \n\nSo, pseudonymizing IP addresses using a one way hash would still constitute personal data and be subject to the GDPR. \n\nThe GDPR is about data protection and it places a number of responsibilities on firms. These includes data pseudonymisation, which is also referred to as data protection by design. Pseudonymisation limits the potential harm in the event of a data breach as the pseudonymized personal data wouldn't be recognizable to hackers.",
+                    "score": 2,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "u/BUExperts, I don't like your answer at all, but it's exactly what I suspected.\n\nI have two different projects I'm working on. One requires ip level in order to create a match between someone watching an ad and someone visiting a website. I can't see any way to do this without being in breach.\n\n&amp;#x200B;\n\nThe other one requires Google Analytics data down to Region and City level. ANd I suspect this is similarly in breach.\n\n&amp;#x200B;\n\nAnd yet, my webserver, which serves the pixel, in its logs, writes the ip address, date, time etc. Just about all of the info I need is in the webserver logs. But I suspect I'm not allowed to used that info either, despite the fact that I don't believe logging activity on your site is in breach.\n\n&amp;#x200B;\n\nI believe Germany and France recently took umbrage against Google for GDRP breach. Any idea where this will end up? Any ideas on what i can legally do?",
+                            "score": 1,
+                            "author": "Laurielounge",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well, EU regulators have indicated that you need user consent to process this sort of EU resident data under the GDPR. \n\nSeveral countries have complained about Google Analytics under the GDPR. The issue there is that data is transferred to the US, which is not deemed adequate by the European Commission. So, GA here is just a casualty of the ongoing privacy dispute between the US and the EU. \n\nThis all is admittedly frustrating for digital marketers. Some great resources are: \n\n\\- Danish DPA's Q&amp;A on Google Analytics: [https://www.datatilsynet.dk/english/google-analytics](https://www.datatilsynet.dk/english/google-analytics) \n\n\\- Rick Dronker's \"Life after GDPR\" podcast which features marketers like you who are trying to best work through these challenges: [https://lifeaftergdpr.eu/](https://lifeaftergdpr.eu/)",
+                                    "score": 1,
+                                    "author": "BUExperts",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Many thanks for the resources and the kind answers. I appreciate your time.",
+                                            "score": 1,
+                                            "author": "Laurielounge"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi Garrett, I would have liked to ask you a question which has been bugging me for a while.\n\nI have over 20 years experience in online advertising in the UK and have always taken an ethical stance, respecting both user privacy and respecting Google et al. (White hat marketing.)\n\nRecently Google's and Facebook's desire to collect customer data at checkout has been bugging me.\n\nGoogle and Facebook now openly demand that more and more personal data is passed back to them when purchases complete. This is a recent development. This data can be used to optimise ad targeting to improve performance of a campaign, so there is considerable pressure on businesses to provide it.\n\nRather than (somewhat) anonymous cookie tracking with a simple notion that a user has converted to a sale, as advertiser's, we are now being asked to pass back not only customer names, addresses and emails but also very specific details about what exactly has been purchased and for how much. All of this under the umbrella of 'First Party' data. Ie that the client website gets inexplicit permission (via website T&amp;C's) from users to share this data with Google and Facebook.\n\nI can't help but feel this goes way beyond what GDPR was designed to limit and yet here we are. I have yet to implement any of these changes with my clients websites as I feel it goes against the spirit of privacy legislation and I don't want to \"drop my clients in it\". But, it puts them at a commercial disadvantage compared to those businesses that do share this data.\n\nMoreover, this methodology also passes very commercially sensitive information back to these platforms ultimately allowing them to collect data about how much profit each business makes. (They ask for margins too!) Margins are being squeezed so much that many clients find advertising loss making and stop doing it.\n\nWhat's your view on this new approach these platforms are taking with respect to user privacy? I feel it's a scandal in the making as I don't think many people are aware that their buying habits are being tracked and recorded so directly and they are not currently given the opportunity to opt out of this data collection as it has nothing to do with cookies and client side tracking.\n\nAm I missing something here or am I right to be concerned? Many thanks.",
+            "score": 1,
+            "author": "HelloObjective",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "u/HelloObjective, this is a deep question that I agree that not a lot of people know about. \n\nI discuss this issue (server-side conversion tracking) in this twitter thread: [https://twitter.com/garjoh\\_canuck/status/1328852745596641281](https://twitter.com/garjoh_canuck/status/1328852745596641281) \n\nThis is absolutely a privacy issue and a GDPR compliance risk. I'm not a lawyer, but my strong sense is that EU regulators would take a dim view of this practice unless you have obtained user consent. \n\nThis is a powerful example of the trend in digital marketing to outsource this function to walled gardens like Google and Facebook. Though the individual steps that led us here may have been sensible, I agree it is bizarre to step back and see so many marketers funnelling their customer's data and detailed transaction data to big tech firms.  \n\nAt the same time, I am sympathetic to marketers who opt to share data. This powerful study ([https://ssrn.com/abstract=4176208](https://ssrn.com/abstract=4176208)) highlights that Facebook can decrease the cost of acquiring an incremental customer by 37% on median. The value generated by cross-site/app identity is so great for online advertising, it is not surprising that marketers use work-arounds when some browsers unilaterally crack down on cross-site identity. As I indicate in my twitter thread, \"Life finds a way.\" \n\nSo, eliminating these sort of privacy-invasive practices (if that is the goal) would either require require developing suitable, privacy-centric digital ad alternative technologies  or a regulatory crack-down. However, the latter would harm online sellers and content creators as well as the consumers that depend on them. In the former case, recent developments like Privacy Sandbox (see my response to u/deaneckles), data clean rooms, and the application of secure multi-party computation show some promise. \n\nWe live in interesting times, u/HelloObjective ...",
+                    "score": 1,
+                    "author": "BUExperts",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you for this Garrett! I take some comfort that others notice and wish to discuss \"The elephant in the room\".\n\nLet me be perfectly clear on one thing: I am a fan of relevant advertising and digital ad technologies. I'd go as far to say that it's crucial to competition and innovation as it (in particular) allows small businesses to reach their niche audiences cost effectively.\n\nMy worst fear is that if things are over regulated users will only ever see gambling ads, insurance and financial services ads and large corporations ads because only those businesses will be able to afford to advertise. (Spray and pray style advertising.) It's like going back to 1950s TV advertising but with a distopian spin akin to Back to the Future 2!\n\nSo methods do need to be found to allow users to get relevant ads without compromising their privacy concerns. I will dig into sandbox tech.\n\nSadly what I am observing is relevancy being discarded in favour of profits and costs rising dramatically (in part due to privacy restrictions), especially for small businesses. Changes at Google and Facebook are making it much harder for small businesses to compete with higher spending competition who have broader offerings. They are being priced out of the market and margins are squeezed to nothing.\n\nWhich brings me to the bigger problem. As advertising platforms get more data about businesses transaction value and profitably they can squeeze as much value as is possible from their clients. This makes perfect business sense for them but will see declining choice for consumers as many businesses will fail to stay in business or stay in business with zero profit. The ability for governments to generate income from corporation tax on profits will be likely be reduced so we should be concerned about this in the UK as much of the tax take comes from small businesses.",
+                            "score": 1,
+                            "author": "HelloObjective"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "These bastards are stealing my time, using my devices without permission,  and using cyber-war techniques to manipulate me. Is there any way to make them stop or pay?",
+            "score": 1,
+            "author": "CypripediumCalceolus"
+        },
+        {
+            "level": 0,
+            "comment": "https://www.youtube.com/watch?v=oyIzMuUaJdc",
+            "score": 1,
+            "author": "BCS_Consulting"
+        }
+    ]
+}

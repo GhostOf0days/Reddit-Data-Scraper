@@ -1,0 +1,153 @@
+{
+    "id": "xf6mxr",
+    "score": 335,
+    "title": "Visualizing a Linear Regression Using Sum of Squares",
+    "author": "RacerRex9727",
+    "date": 1663272724.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/xf6mxr",
+    "media_urls": [
+        "https://i.redd.it/hk00xm44y2o91.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For further context, this is how a line is fit through some data points (known as a linear regression). You square the differences between the line and the points, square them, and sum them. You want to minimize that sum. \n\nI explain it on my \"3-Minute Data Science\" video: https://youtu.be/3dhcmeOTZ\\_Q",
+            "score": 15,
+            "author": "RacerRex9727"
+        },
+        {
+            "level": 0,
+            "comment": "I put off my ML homework to scroll reddit, OP says not today.",
+            "score": 6,
+            "author": "BelterLivesMatter"
+        },
+        {
+            "level": 0,
+            "comment": "This is cool! But why use the second power? Why not the 4th?",
+            "score": 5,
+            "author": "KerPop42",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[Gauss Markov explains](https://en.m.wikipedia.org/wiki/Gauss%E2%80%93Markov_theorem)",
+                    "score": 3,
+                    "author": "bobsyourunkl",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "*Violet Incredible voice:* wait a minute\n\nIsn't that circular reasoning?\n\n&gt; As we're restricting to unbiased estimators, minimum mean squared error implies minimum variance.\n\nVariance is defined as the mean squared error. Of course minimizing the mean squared error will be the best way to minimize the mean squared error",
+                            "score": 3,
+                            "author": "KerPop42"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Curious, why would you use the 4th?  When the graphic is SQUARING it (i.e. ^2 )",
+                    "score": 0,
+                    "author": "squeevey",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It\u2019s cool, I think Kerpop is wondering what the purpose is. It\u2019s to eliminate negatives because adding positives and negatives together cancel each other out. But squaring a negative value makes it positive. You see this trick done in a lot of statistical models.",
+                            "score": 7,
+                            "author": "RacerRex9727",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I mean, it's a bit more of an advanced question, I meant to ask why you make it positive by squaring it instead of taking the absolute value.\n\nIt does end up affecting how much outliers pull your trend line. Larger errors dominate the minimization function more the higher your exponent is.",
+                                    "score": 5,
+                                    "author": "KerPop42",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This is true and is a good question, and some optimization techniques will allow you to use absolute values. But generally absolute values are a pain point in calculus, because they result in jagged (not smooth) curves which derivatives don\u2019t get along with. And a lot of state of the art techniques rely on calculus based approaches to fit that line by minimizing the sum of squares : )",
+                                            "score": 3,
+                                            "author": "RacerRex9727"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "One issue to keep in mind when dealing with this formulation of least squares is it's interpreted as accounting for uncertainty in the 'y' (ordinate) axis, but assumes no such uncertainty in the 'x' (abscissa) axis values, (hence the distances to the line being verticals with no x component).  If you're attempting to account for uncertainty in both one approach is to utilize \"total least squares\" or [Deming regression](https://en.wikipedia.org/wiki/Deming_regression)",
+            "score": 13,
+            "author": "GoldryBluszco",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "W Edwards Deming*. Businesses ignore his teachings to everyones detriment.\n\nEdit: thanks for correction :-)",
+                    "score": 4,
+                    "author": "BigfootSF68"
+                },
+                {
+                    "level": 1,
+                    "comment": "cool you know Deming ;)",
+                    "score": 2,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Idk kinda Ordinary.",
+            "score": 2,
+            "author": "bobsyourunkl",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I see what you did there...",
+                    "score": 1,
+                    "author": "RacerRex9727"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Ok. I got the square thing by why was the line moving?  To show how an improperly fitted line would create a larger R Sq?",
+            "score": 2,
+            "author": "CodeVirus",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Basically, yes. When the line is being fit it has to go through an iterative process to keep improving the R-square sum. Some techniques do provide a shortcut though but same idea.",
+                    "score": 2,
+                    "author": "RacerRex9727"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This taught me nothing tbh. \n\nHonest question, does something qualify as \"educational\", if you need relevant education to even understand it? I'm sure it's helpful if you're googling SSE, or watching OP's video, or studying this topic already, but... Does simply demonstrating something qualify it as \"educational\"? \n\nKudos to OP for making it, but I find  it's pretty common for \"educational\" content (esp comp sci related) to be tone-deaf about the general populace's knowledge, and content to be less about \"educating\", and more about circlejerking with the educated. I guess that's why being a teacher requires its own education.",
+            "score": 2,
+            "author": "Stock_Rush2555"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sum of squared error. I explain it here: https://youtu.be/3dhcmeOTZ\\_Q",
+                    "score": 1,
+                    "author": "RacerRex9727"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "you're just stealing bits of 3b1b videos and repackaging it as a gif of your own.\n\nyou're also pretending it's content you made with fake broken YT links to \"your videos\"\n\nplease ban this user.",
+            "score": 0,
+            "author": "Organic-Ability-1302"
+        }
+    ]
+}

@@ -1,0 +1,675 @@
+{
+    "id": "11swjhn",
+    "score": 3253,
+    "title": "Monte Carlo simulations of marble drop test to estimate pi",
+    "author": "ScoutAndLout",
+    "date": 1678978813.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/11swjhn",
+    "media_urls": [
+        "https://i.redd.it/xf4b2km884oa1.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You can determine pi from a marble drop test.  Randomly drop marbles in a box but count the ones that land inside the inscribed circle.\n\n\r  \nr=1                   % Radius of circle in a square\r  \nAc=pi\\*r\\*r        % Area of the circle inside a square\r  \nAs=(2\\*r)\\*(2\\*r) % Area of the square\n\nCancel the r values by division:\n\nAc / As = (pi\\*r\\*r) / (4\\*r\\*r) = pi/4\r  \n\n\npi = 4\\*(Ac/As) = 4 \\* fraction of marbles in the circle out of total dropped in square",
+            "score": 324,
+            "author": "ScoutAndLout",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's great. Serious question though, how do you randomly drop marbles in a box?",
+                    "score": 151,
+                    "author": "Hoo_Har",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It assumes a uniform distribution so any point in the box has an equal probability with any other point.  xy=rand(N,2) in MATLAB to make N 2D points in a 1x1 box.\n\nPhysically, say you approximate with BBs or equal-sized sand particles.  Make the box and circle walls as thin as possible and as perfect as possible.  Then use a diffuser system to equally distribute the particles (basically a bunch of vertical straws or tubes).  There will be some Brownian diffusion of particles as they fall, so drop over a large area so the diffusion effects only significantly influence the edge, so have the square well inside the drop zone so it sees a uniform drop pattern.",
+                            "score": 123,
+                            "author": "ScoutAndLout",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It seems a good illustration would be drawing a circle in a bitmap image and comparing the number of pixels.",
+                                    "score": 15,
+                                    "author": "PomegranateOld7836",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "People used to actually weigh paper to \"integrate\" values. \n\nYou get an analog flow rate signal that writes to paper as a function of time.  Cut out the \"peak\" and weigh it to find how much area under the curve.  \n\nA lot of old instrumentation in chemistry labs ran that way.",
+                                            "score": 17,
+                                            "author": "ScoutAndLout"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 2,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Right, but we're talking about a computer simulation.",
+                                                    "score": 1,
+                                                    "author": "PomegranateOld7836"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Another commenter posted about that earlier.  There are links somewhere else in this thread with simulations about the needle test.",
+                                                    "score": 1,
+                                                    "author": "ScoutAndLout"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Isn\u2019t this just a fancy way of calculating areas using smaller and smaller grid squares inside and outside the circle? Because the area of the squares will effectively be an analogue for the marble distribution?",
+                                    "score": 3,
+                                    "author": "samf9999",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, in this case. Approximating pi is just an entry into Monte Carlo though, to show how it works in a situation where you have nice existing analogues. Once you've got the hang of it, you can use Monte Carlo simulations for all sorts of really complex problems that can't be otherwise solved, or which would far more complex to do any other way. In college we used this process to determine radiation dose rates in complex layouts, for example. We have equations and if you wanted to drive yourself mad you *might* find a way to apply them that's fairly accurate, but it's easier to throw 100,000 statistically random rays out from a source and let the computer do it's thing.",
+                                            "score": 2,
+                                            "author": "dr_stre",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yep. I get  importance of the MC sim\u2026 lots of stuff simply can\u2019t be handled (at least efficiently, if at all) by equations, especially in fields like complex fluid dynamics, or even financial and derivative modeling. Just be sure to set your initial parameter distributions correctly! GIGO.",
+                                                    "score": 1,
+                                                    "author": "samf9999"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Oh I was thinking shotgun rounds from far away",
+                                    "score": 1,
+                                    "author": "NEWTYAG667000000000",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The density of shotgun projectile shot is not uniform.  I bet it is something more normally distributed so hit density depends on radial distance.  \n\n\nThis guy did some analysis and he found shotgun patterns to be normal (Gaussian).  [https://shotgunreport.com/2016/12/28/gaussian-or-normal-shot-patterns/](https://shotgunreport.com/2016/12/28/gaussian-or-normal-shot-patterns/)\n\n&amp;#x200B;\n\nMaybe an overlapping grid of shotguns could approximate it pretty well so you would get uniform particle density at every location...",
+                                            "score": 1,
+                                            "author": "ScoutAndLout",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I was thinking shotgun from far away, like a few hundred metres, and multiple shots",
+                                                    "score": 1,
+                                                    "author": "NEWTYAG667000000000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "So this is just a theoretical completely useless theorem?",
+                                    "score": -9,
+                                    "author": "pm_cheesecakes",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "With large numbers a circle is a circle. Amazing.",
+                                            "score": 1,
+                                            "author": "VikingBorealis"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "No, it's just an *extremely* basic application of this approach to modeling. Something new users can get their heads wrapped around easily. It's far more useful in other more complex applications, where there aren't tidy equations available or easier analogous evaluation methods. We used it in college to model radiation dose rates in complex physical environments. That's really hard to do any other way, but a PC could throw 100,000 random rays out from a source in a couple minutes and get us an answer.",
+                                            "score": 1,
+                                            "author": "dr_stre"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I\u2019m assuming it\u2019s one of those theoretical things.",
+                            "score": 32,
+                            "author": "entoaggie",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "First, assume a spherical cow of consistent density...",
+                                    "score": 35,
+                                    "author": "themeatbridge",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Obtain a very precise marble-dropping goblin and situate it with its hand outstretched over the box. Next, take arbitrary digits generated from atmospheric noise and use those as coordinates. Instruct the marble goblin to drop the marble at those precise coordinates within the box. Rinse and repeat. Easy.",
+                                            "score": 8,
+                                            "author": "cowboy_dude_6"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Oh it's easy! You just get a bunch of marbles, all with perfectly uniform surfaces and densities, zero imperfections, then you get a box made from the exact same material, again perfectly uniform surface and density, then draw a perfect circle in the bottom of the box, then set the box ***perfectly*** level, then drop the marbles one by one into the box all from the exact same location above the box, to the micrometer, with zero friction bias,\n\nin a vacuum",
+                            "score": 11,
+                            "author": "regnad__kcin"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's not random in the sense you're thinking. It's *statistically* random, meaning it adheres to a statistically random distribution. The coordinates themselves are repeatable, you could calculate what the next location is going to be. But they're spread out in a way that over a large enough number of \"drops\" there's no bias in terms of where they'll fall. It's actually a good thing to have a statistically random but also repeatable set of data, it allows someone to verify what you've done independently. \n\nSo to answer your question more explicitly, you drop marbles randomly by calculating their next position using an algorithm known to produce statistically random data and then very carefully dropping the marble in that exact spot, repeating the process thousands of times.",
+                            "score": 3,
+                            "author": "dr_stre"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Also would the height of the drop and size of the marbel affect this?",
+                            "score": 5,
+                            "author": "Williamsarethebest"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'd say, just like the gif, stack the boxes\n\nThen, have a container with all the N marbles above the stack. This container should have an opening larger than the largest (square) box.\n\nDrop all N marbles all at once. Where they fall should be considered sufficiently random\n\nFinally, count all the marbles, excluding the ones that fell outside both boxes and perform necessary calculations",
+                            "score": 1,
+                            "author": "BigOlHomo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 3,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Well, educationally as a means of showing a way of approximating the value of \u03c0 empirically for instance or just for fun lol",
+                                            "score": 7,
+                                            "author": "BigOlHomo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 4,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "If you know pi you can predict how many marbles will be in the circle.\n\nIf you don't know pi, you can estimate it based on the ratio of marbles in the circle.\n\nIf you don't get Monte Carlo, you can see how the estimate converges and how re-running the simulation also converges at a similar rate.",
+                                                            "score": 12,
+                                                            "author": "ScoutAndLout",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[deleted]",
+                                                                    "score": 4,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I'm actually a tau guy.  Here is a whole rabbit hole to jump in if you are not familiar...\n\n[https://tauday.com/](https://tauday.com/)",
+                                                                            "score": 3,
+                                                                            "author": "ScoutAndLout",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I've dove headfirst, not knowing how deep it went. I think I've been converted.",
+                                                                                    "score": 2,
+                                                                                    "author": "FightingNymph"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How do you define where the circle is within the square? Isn\u2019t the value or pi required to define the area of the circle?",
+                    "score": 35,
+                    "author": "Lieutenant_Damn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The circle touches the edges of the square.  You could physically set this up with a fixed radius or diameter.  You don't need the area value.\n\nYou don't need to calculate the area, just determine the ratio which can be done in the physical world a variety of ways.\n\nIf you know pi, you can calculate the ratio of circle area to square area.\n\nIf you don't know pi, you can use the measured ratio to determine an estimate for pi.",
+                            "score": 35,
+                            "author": "ScoutAndLout",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ah, that makes sense. Thinking about using a compass to inscribe a circle made it click for me. \n\nCool demonstration!",
+                                    "score": 13,
+                                    "author": "Lieutenant_Damn"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Nah, a circle is defined by all the points that are `radius` away from the center. You can use the Pythagorean theorem to calculate the distance from any XY coordinate to the center of the coordinate system.\n\nThe computer program from OP looks something like this \n\n    marbels_total = 2000\n    repeat marbels_total times:\n        x, y = random(-1, 1)\n        distance = sqrt(x*x + y*y)\n        if distance&lt;1:\n            marbels_in_circle += 1\n    print(\"pi is approximately\" + 4 * marbels_in_circle / marbels_total)",
+                            "score": 7,
+                            "author": "turunambartanen"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is less cool to calculate pi, and more cool to show that given enough random events, you can approximate *something*. \n\nPresuming you have a circle with a diameter of X and a square that's XxX (dirty), then 3.14/4 of that area will be inside the circle and 0.86/4 will be outside (with some rounding, round elsewhere for more precision). \n\nNow, if you say \"AHA! To show that you'd need to know pi!\", you're right, but the idea of dropping marbles is way more complicated than, say, drawing a small grid and counting how many fall inside vs. outside, because you'd have to prove that the marbles were random and evenly distributed.",
+                    "score": 2,
+                    "author": "VoilaVoilaWashington",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Agreed.  It is better for showing Monte Carlo to determine something most folks \"know\" using simple math and algebra.\n\nI would argue the thought of dropping marbles is easy to follow.  Some folks understand \"physical\" analogies.  Counting squares works too, but I wonder about the efficiency...\n\nSo here is a comparison.  N marbles vs. N grid point tests.  The grid mode method is a bit closer (4x) if you just look at one quadrant rather than the full circle (but you could do the same with the marble test).    \n\n[https://i.postimg.cc/BnfQrLxM/pest2.jpg](https://i.postimg.cc/BnfQrLxM/pest2.jpg)\n\nThe grid mode it not optimized at all, there are obvious improvements that could be made.  A 2x improvement would be not to search the whole quadrant but only the triangular portion containing the arc as the inner triangle grid points are guaranteed to be inside the circle...",
+                            "score": 1,
+                            "author": "ScoutAndLout"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What\u2019s a marble drop test? (Please excuse my ignorance)",
+            "score": 34,
+            "author": "thepixelpaint",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Drop a bunch of marbles in a square.  Have a perfect circle inscribed inside the square (touching the edges).  Count the number of marbles that land inside the circle.  A numerical value for pi can be estimated from the fraction of marbles inside the circle.\n\nAs a commenter pointed out, you can get similar estimates by taking a square piece of paper or wood and cutting a circle out of it and comparing the weights (which are proportional to the area of circle/square).  \n\nThe marble drop test is just fun because it is a random simulation and it shows how Monte Carlo simulations can be used to converge to a numerical result if you throw enough computer power at it.",
+                    "score": 35,
+                    "author": "ScoutAndLout",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That\u2019s so interesting. Thanks.",
+                            "score": 4,
+                            "author": "thepixelpaint"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "isn't this just the same as measuring the ratio of the areas? probability doesn't really add anything here",
+            "score": 62,
+            "author": "Lilscribby",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If you don't know what the numerical value of pi is this shows a way to estimate it that sorta relates to the physical world.\n\nIt is one way to determine the value of pi that does not require advanced math at all, just counting and fractions and very minimal geometry.",
+                    "score": 68,
+                    "author": "ScoutAndLout",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I suppose so. \n\n\"if you cut out this circle and this square and weigh the paper, the fraction that the weights make is pi!\"",
+                            "score": 14,
+                            "author": "Lilscribby",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Monte Carlo is great for undergrad physics students in combining coding and statistics, it gives a pretty unique approach to understanding statistics and has tangible results",
+                                    "score": 13,
+                                    "author": "KevReynolds314",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "There are a lot of things in statistics you can sort out exactly if you work a lot at the math.\n\nOr you write a crappy for loop for a Monte Carlo simulation and get a rough approximation in a minute or two.",
+                                            "score": 3,
+                                            "author": "ScoutAndLout"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah.  So maybe it is more valuable from a Monte Carlo demonstration than pi calc demo.  But it is a simulation simple enough that most folks can follow the math and see the convergence as you do more simulation and repeat the simulation.",
+                                    "score": 24,
+                                    "author": "ScoutAndLout"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah I feel like if you have to start by drawing a circle, it\u2019s kinda cheating. We could do what you said, or even just measure the diameter and circumference.",
+                    "score": 4,
+                    "author": "SilentKiller96",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The circle here is just for visual demonstration, you can calculate the distance from every point to the center and then check if it's larger than the radius to see if it's inside the circle.",
+                            "score": 19,
+                            "author": "Darth_Vader_Force"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You can draw a circle accurately with a compass.  With a compass and a straight edge / ruler you should be able to inscribe a circle inside a square.  This used to be part of basic geometry education I thought.\n\nHere is a nice example:  [https://www.mathsisfun.com/geometry/construct-squareincirc.html](https://www.mathsisfun.com/geometry/construct-squareincirc.html)",
+                            "score": 9,
+                            "author": "ScoutAndLout",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes but once you\u2019ve done that why bother dropping marbles on it when you can just measure it with a string and ruler. This is basic geometry I thought.",
+                                    "score": -1,
+                                    "author": "SilentKiller96",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I guess the question would then be, to what accuracy can you measure the circumference with a string and ruler.\n\nI'd place my bets on Monte Carlo method being easier to improve in accuracy than the string method.",
+                                            "score": 3,
+                                            "author": "a_bunch_of_neurons",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I assume you\u2019d be using the same ruler for measuring where the marbles land.",
+                                                    "score": -1,
+                                                    "author": "SilentKiller96",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Monte Carlo is a computer based algorithm.",
+                                                            "score": 2,
+                                                            "author": "a_bunch_of_neurons",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Op justified this as not cheating saying you can use a protractor to draw the circle and not use pi. Protractor is a physical tool\u2026 and Monte Carlo is definitely something you can also do in the real world manually\u2026",
+                                                                    "score": 1,
+                                                                    "author": "SilentKiller96",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "&gt; Justified this is not cheating saying you can use a protractor to draw the circle.\n\nHmm... In general, you use a compass to draw the circle.\n\nI am not sure how drawing a circle with a compass is the only justification for it to not be cheating.\n\nYou can draw a circle even on the computer without using 'pi'\n\n&gt;..... real world manually\n\nTo get any decent accuracy with Monte Carlo you'll need a lot of trails. Hence, computer simulation.\n\n\nNotice how I originally said, 'it is easier to improve accuracy' and not 'Monte Carlo is more accurate'",
+                                                                            "score": 2,
+                                                                            "author": "a_bunch_of_neurons"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I remember reading something similar to this a long time ago about estimating pi by dropping a needle on a line and the number of times the needle crossed the line could be used to calculate pi.  dont remember the details though.",
+            "score": 5,
+            "author": "cardboardunderwear",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yep, I remember that one too.  Here is one take with a simulator:  \n\n[https://www.sciencefriday.com/articles/estimate-pi-by-dropping-sticks/](https://www.sciencefriday.com/articles/estimate-pi-by-dropping-sticks/)\n\nAnd another: [https://mste.illinois.edu/activity/buffon/](https://mste.illinois.edu/activity/buffon/)\n\nProblem is I think the proof requires some integral calculus to deal with geometric statistics, since the position and angle of the needle are assumed to vary randomly.  Plus some trig.\n\nThe marble drop math is pretty basic to follow IMHO.  Just formulas for area of square and circle plus basic algebra.",
+                    "score": 3,
+                    "author": "ScoutAndLout"
+                },
+                {
+                    "level": 1,
+                    "comment": "https://youtu.be/sJVivjuMfWA",
+                    "score": 2,
+                    "author": "TheDrunkenOwl",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thats awesome.  Love that channel.  Thanks.",
+                            "score": 2,
+                            "author": "cardboardunderwear"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don\u2019t understand\u2026 and don\u2019t you dare explain it to me.",
+            "score": 5,
+            "author": "gravitywind1012",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "math / magic ?\n\nGo back to your Tic Tocs.  :-)",
+                    "score": -5,
+                    "author": "ScoutAndLout",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What a rude fucking thing to say. Yikes.",
+                            "score": 2,
+                            "author": "theFrisbeeFreak",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "op obviously jokingly replied to a joking comment",
+                                    "score": 6,
+                                    "author": "falkorfalkor",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not obvious. It\u2019s text. Nuance is difficult.",
+                                            "score": 1,
+                                            "author": "theFrisbeeFreak",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The comment said \"don't you dare explain it to me\" and the reply misspelled Tik Tok, added a plural and ended with a smiley face. It wasn't a subtle joke",
+                                                    "score": 4,
+                                                    "author": "falkorfalkor",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Found their alternate.",
+                                                            "score": 0,
+                                                            "author": "theFrisbeeFreak"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Nuance is difficult.  For some.",
+                                                    "score": 1,
+                                                    "author": "ScoutAndLout",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Ok grandpa",
+                                                            "score": 0,
+                                                            "author": "theFrisbeeFreak"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "i\u2019d rather go with the tossing sausage approximation that at 100 trials already gives a considerably more precise value for pi. big plus is sausages",
+            "score": 3,
+            "author": "Questionsaboutsanity"
+        },
+        {
+            "level": 0,
+            "comment": "[You can also do estimate pi with frozen hotdogs!](https://www.wikihow.com/Calculate-Pi-by-Throwing-Frozen-Hot-Dogs)",
+            "score": 3,
+            "author": "mjolnir76"
+        },
+        {
+            "level": 0,
+            "comment": "How far did you let it run? Did you get the 13th digit?",
+            "score": 5,
+            "author": "241baka",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is not a great way / efficient way to estimate pi, honestly.  I did not run it out very far but it does show repeated simulations and how they sorta all get close-ish with 10,000 marbles.  It is probably more useful to explain Monte Carlo simulations.  \n\n\nWith 100,000 (10 of the 10,000 marble runs) the estimate is still usually only good to 3.14   :-)",
+                    "score": 7,
+                    "author": "ScoutAndLout",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You need like 100 million to get the third digit, 3.141  \n\n N=1e8\r  \n xy=\\[rand(N,2)\\*(2\\*r)-r\\];\r  \n cv=sum(sqrt(xy(:,1).\\^2+xy(:,2).\\^2)&lt;=1);\r  \n piest=4\\*cv/N",
+                            "score": 6,
+                            "author": "ScoutAndLout",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "A billion takes a while but you get ok close consistently, error on order of 1e-5\n\n[https://i.postimg.cc/L4Vgkqdx/pest.jpg](https://i.postimg.cc/L4Vgkqdx/pest.jpg)",
+                                    "score": 1,
+                                    "author": "ScoutAndLout"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can run the MATLAB code on free Octave here:   \n\n[https://octave-online.net/bucket\\~BgHABrqCiLuFGuiUajmDuv](https://octave-online.net/bucket~BgHABrqCiLuFGuiUajmDuv)\n\nThe MATLAB code to create the animated gif (which Octave maybe doesn't support?) is in the  /r/MATLAB  post thread here:\n\n[https://www.reddit.com/r/matlab/comments/11rar4v/pi\\_estimation\\_using\\_monte\\_carlo\\_simulation/](https://www.reddit.com/r/matlab/comments/11rar4v/pi_estimation_using_monte_carlo_simulation/)",
+            "score": 2,
+            "author": "ScoutAndLout"
+        },
+        {
+            "level": 0,
+            "comment": "I've always preferred the illustration of rolling 2 six sided die.\n\nIf you set a code to run a million iterations, you can get 3 to 5 significant figures correct.",
+            "score": 2,
+            "author": "minimomfloors",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yep.  I usually use a Risk type game for Monte Carlo testing: 6d6 vs 6d6 with ties going to the defender, find the win % for the attacker.",
+                    "score": 1,
+                    "author": "ScoutAndLout"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I thought Monte Carlo was a car",
+            "score": 2,
+            "author": "eddywerd760"
+        },
+        {
+            "level": 0,
+            "comment": "Question - can this be done without knowledge of the value of pi?",
+            "score": 2,
+            "author": "Jollyhrothgar",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You can physically make this system and test it.  You are bound by accuracy of your instruments.\n\nThe calculation in the computer does not need pi or even trig.  Just the basic area formula for the square and circle.  \n\nIn the computer, the test uses Pythagorean theorem to find the distance of any marble position from the origin, so no trig or pi used there.",
+                    "score": 1,
+                    "author": "ScoutAndLout",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Isn't the area of the circle pi * r^2? It's a cool idea - I like the idea of a physical model, it's neat to see your simulation.",
+                            "score": 1,
+                            "author": "Jollyhrothgar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You use the symbol pi but you just need the area formula and some algebra, no actual value for what pi is.  From my other comment:\n\n`r=1 % Radius of circle in a square`\r  \n`Ac=pi*r*r % Area of the circle inside a square`\r  \n`As=(2*r)*(2*r) % Area of the square`\r  \n`% Cancel the r values by division:`\r  \n`Ac / As = (pi*r*r) / (4*r*r) = pi/4`\n\npi = 4\\*(Ac/As) = 4 \\* fraction of marbles in the circle out of total dropped in square\r  \n\r  \nGoing the other way, if you know pi you can estimate how many marbles will be inside the circle for N throws.",
+                                    "score": 1,
+                                    "author": "ScoutAndLout"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can forego the randomness and do it in a square grid too\n\nWe further optimized it to walk along only 1/8 of the circle's circumference and doing the rest of the calculations for [this rough diagram](https://media.discordapp.net/attachments/437055638376284161/1084566948261662771/image.png)\n\nWe start from the top of the circle, then walk right along the X axis until we go out of bounds, and record how far we walked. Then we step 1 down and walk right again until x matches y and we form a square. Red has the same area as blue.\n\nDo a little math with the areas of red and pink and you get a quarter circle. Multiply by 4.",
+            "score": 2,
+            "author": "-Redstoneboi-"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Maybe not an infinite amount.  A billion does pretty well.\n\n[https://postimg.cc/c6rJ0LL3](https://postimg.cc/c6rJ0LL3)",
+                    "score": 1,
+                    "author": "ScoutAndLout"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Another way is to divide up a circle into N isosceles triangles.  For fixed radius r on two of the sides and an angle theta near the center you can find the length of the outer edge.  In the limit, this approaches pi as N goes bigger.  But you need to use trig to find that value.\n\n Like this: [https://postimg.cc/ZByVg4KW](https://postimg.cc/ZByVg4KW)",
+            "score": 1,
+            "author": "ScoutAndLout"
+        },
+        {
+            "level": 0,
+            "comment": "How do you draw the circle in the first place without prior knowledge of the value of pi?",
+            "score": 1,
+            "author": "bio-nerd",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Real world?  Compass or nail+string+pen.  Or some sort of lathe system.\n\nComputer?  Maybe calculate distance to the origin and plot any points that are very close to your desired radius within some tolerance?  No pi there.    Plenty of other ways I bet.",
+                    "score": 2,
+                    "author": "ScoutAndLout"
+                },
+                {
+                    "level": 1,
+                    "comment": "This wasn't the first time pi was calculated\n\nBut the equation is x^2 + y^2 = r^2\n\nDraw 1/8 of the circle outline using that equation repeatedly shifting x and y and copy paste it 8 times by flipping and rotating",
+                    "score": 1,
+                    "author": "-Redstoneboi-"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What no pussy does to a mf",
+            "score": -9,
+            "author": "ASpicySauce"
+        },
+        {
+            "level": 0,
+            "comment": "I'm More of a jacknife guy",
+            "score": 0,
+            "author": "Carburetors_are_evil"
+        }
+    ]
+}

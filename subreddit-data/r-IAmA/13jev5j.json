@@ -1,0 +1,162 @@
+{
+    "id": "13jev5j",
+    "score": 163,
+    "title": "We\u2019re Washington Post reporters who analyzed Google\u2019s C4 data set to see which websites AI uses to make itself sound smarter. Ask us Anything!",
+    "author": "washingtonpost",
+    "date": 1684265690.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/13jev5j",
+    "media_urls": [
+        "https://i.redd.it/tv09wk99e20b1.jpg",
+        "https://i.redd.it/dk2w4b0ce20b1.jpg",
+        "https://www.reddit.com/r/IAmA/comments/13jev5j/were_washington_post_reporters_who_analyzed/"
+    ],
+    "other_urls": [
+        "https://www.washingtonpost.com/technology/innovations/?itid=nb_technology_artificial-intelligence?utm_campaign=wp_main&amp;utm_medium=social&amp;utm_source=reddit.com",
+        "https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/"
+    ],
+    "postText": "EDIT: That is all the time we have for today! Thank you everyone for the thoughtful questions. We'll hop back on tomorrow if there are any big, lingering questions still out there, and feel free to keep following our coverage of AI here: https://www.washingtonpost.com/technology/innovations/?itid=nb_technology_artificial-intelligence?utm_campaign=wp_main&amp;utm_medium=social&amp;utm_source=reddit.com \n\nThe Washington Post set out to analyze one of these data sets to fully reveal the types of proprietary, personal, and often offensive websites that go into an AI\u2019s training data.\n\nTo look inside this black box, we analyzed Google\u2019s C4 data set, a massive snapshot of the contents of 15 million websites that have been used to instruct some high-profile English-language AIs, called large language models, including Google\u2019s T5 and Facebook\u2019s LLaMA. (OpenAI does not disclose what datasets it uses to train the models backing its popular chatbot, ChatGPT).\n\nThe Post worked with researchers at the Allen Institute for AI on this investigation and categorized the websites using data from Similarweb, a web analytics company. \n\nRead more of our analysis here, and skip the paywall with email registration:  \nhttps://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/ \n\nproof: \n\n - https://i.redd.it/tv09wk99e20b1.jpg\n - https://i.redd.it/dk2w4b0ce20b1.jpg",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For more AMAs on this topic, subscribe to r/IAmA_Tech, and check out our other topic-specific AMA subreddits [here](https://reddit.com/r/IAmA/wiki/index#wiki_affiliate_topic-specific_subreddits).",
+            "score": 1,
+            "author": "IAmAModBot"
+        },
+        {
+            "level": 0,
+            "comment": "Do you think it\u2019s feasible to expect legislation limiting AI, or at least requiring more transparency, to be discussed at a high level in the near future? As we\u2019ve seen with Crypto and meme-stocks, it feels like any sort of control or legislation over novel tech is always incredibly lagging behind.",
+            "score": 5,
+            "author": "Taivas_Varjele",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "**From Nitasha Tiku:**  \nAnother great q! I think looking at generative AI to crypto and meme-stocks is not a bad comparison. When it comes to fast-moving and fast-changing novel technology, legislators have been slow to act because they\u2019re afraid of being accused of inhibiting innovation and aren\u2019t always sure they know the best way to intervene. In some instances, inaction on the federal level has prompted state regulators to step up.   \nToday\u2019s [Congressional hearing on AI oversight](https://www.washingtonpost.com/technology/2023/05/16/ai-congressional-hearing-chatgpt-sam-altman/?utm_campaign=wp_main&amp;utm_medium=social&amp;utm_source=reddit.com) is probably a good harbinger of what\u2019s to come. It seems like there was a lot of trust between the senators and OpenAI CEO Sam Altman to steward this technology. And historically if industry has a say in writing the laws, the public gets transparency in name only.",
+                    "score": 12,
+                    "author": "washingtonpost"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How does ChatGPT know if the data it's using to give you an answer is correct or not?",
+            "score": 8,
+            "author": "PeanutSalsa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "**From Nitasha Tiku:**\n\nExcellent question! The large language models that power chatbots like ChatGPT are given a simple objective to predict the next word in a sentence or piece of text so factual accuracy is not part of their goal. However, with models like ChatGPT that have been fine-tuned to better meet a user\u2019s expectations, companies like OpenAI have done work to improve accuracy during the final stages of the training process where human evaluators offer feedback on the model\u2019s responses. OpenAI offers some background in their blog post about ChatGPT, noting some of the [limitations](https://openai.com/blog/chatgpt).",
+                    "score": 18,
+                    "author": "washingtonpost",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "**(More from Nitasha)**  \n\n\nEfforts to get large language models to produce factually correct responses are an industry-wide challenge and companies can test their models on \u201ctruthfulness\u201d benchmarks to see how their product measures up. If you\u2019re interested in learning more about how OpenAI went about this effort, the company offers more detail in its [paper on InstructGPT](https://arxiv.org/pdf/2203.02155.pdf), its precursor to ChatGPT. For InstructGPT, OpenAI also put out a [\u201cmodel card,\u201d](https://github.com/openai/following-instructions-human-feedback/blob/main/model-card.md) a sort of nutrition label for AI models that was brought up a potential transparency and accountability measure in today\u2019s congressional hearing on AI oversight.",
+                            "score": 5,
+                            "author": "washingtonpost"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does ChatGPT give all sources equal weight or does it give more importance to more credible sources?",
+            "score": 6,
+            "author": "cegallego",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "**From Nitasha Tiku, Szu Yu Chen and Kevin Schaul:**\n\nThe dataset we explored was curated by a nonprofit called CommonCrawl. We examined just one snapshot taken by the organization from 2019. OpenAI has declined to share any information about the training data for ChatGPT, which was developed using the base models GPT-3.5 and GPT-4. However, we know that for GPT-3, OpenAI\u2019s training data began with at least 41 such snapshots from CommonCrawl. That organization told us that they do try to give more credible websites a higher prevalence when it scrapes the web.\n\nBut it\u2019s important to note that companies are really cagey about this entire training process, which can be really complex. (For instance, GPT-3\u2019s training dataset also includes something called Web2Text, articles with three or more Karma points from Reddit!!) So there is also a filtering process done to the training data, which could theoretically be used to give more weight to credible sources. It would be great if there was additional transparency around this process as well.",
+                    "score": 16,
+                    "author": "washingtonpost"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you know which LLMs (e.g., ChatGPT, Bard, Llama) use C4 as their training data?\n\nDo you have any insights into whether how some of these AI teams might be filtering out some of the more problematic C4 data prior to training?\n\nHave you been able to confirm the degree to which problematic C4 data is actually represented in the models (e.g., prompting the models to summarize that data)?",
+            "score": 2,
+            "author": "bugoid",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "**From Nitasha Tiku:**\n\nWe know that C4 was used to train Google\u2019s influential T5 model, Facebook\u2019s LLaMA, as well as the open source model [Red Pajama](https://github.com/togethercomputer/RedPajama-Data). C4 is a very cleaned-up version of a scrape of the internet from the non-profit CommonCrawl taken in 2019. OpenAI\u2019s model GPT-3 used a training dataset that began with 41 scrapes of the web from CommonCrawl from 2016 to 2019 so I think it\u2019s safe to say that something akin to C4 was part of GPT-3. (The researchers who [originally looked into C4](https://arxiv.org/pdf/2104.08758.pdf) argue that these issues are common to all web-scraped datasets.)  \n\n\nWhen we reached out to OpenAI and Google for comment, both companies emphasized that they undergo extensive efforts to weed out potentially problematic data from their training sets. But within the industry, C4 is known as being a heavily filtered dataset and has been [criticized](https://www.wired.com/story/ai-list-dirty-naughty-obscene-bad-words/), in fact, for eliminating content related to LGBTQ+ identities because of its reliance on a heavy-handed blocklist. ([https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words) )  \n\n\nWe are working on some reporting to try to address your last and very crucial question, but it\u2019s an open area of research and one that even AI developers are struggling to answer.",
+                    "score": 4,
+                    "author": "washingtonpost",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "With your correct understanding of LLMs and their goal, \"the simple objective to predict the next word in a sentence or piece of text\", do you think it's necessarily *desirable* to weed out problematic training data?    \n\n\nWe've seen a lot of shock-stories that users can get the AI to say bad or offensive things, as if that's some indictment of the technology and not LLMs producing exactly what the user wanted. What do you think about these stories?",
+                            "score": 2,
+                            "author": "Centrist_gun_nut"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you! I can't wait to see your next report!",
+                            "score": 1,
+                            "author": "bugoid"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How long did it take you to analyze such a large dataset? What did you use to analyze it?",
+            "score": 3,
+            "author": "ktprry",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "**From Nitasha Tiku, Szu Yu Chen and Kevin Schaul:**\n\nThe data analysis for this story took a few weeks \u2014 mostly for cleaning and categorization. Allen Institute researchers gave us all 15.7M domains in Google\u2019s C4 dataset. We joined that with categorization data from analytics firm [Similarweb](https://www.similarweb.com/).  \n\n\nWe used [R Markdown](https://rmarkdown.rstudio.com/) for cleaning and analysis, creating updateable web pages we could share with everyone involved. Similarweb\u2019s categories were useful, but too niche for us. So we spent a lot of time recategorizing and redefining the groupings. We used the token count for each website \u2014 how many words or phrases \u2014 to measure it\u2019s importance in the overall training data.  \n\n\nIt turns out the internet has a lot of very bad content on it! Editors at The Post did not want us to publish all of the domain names uncensored. So we spent days combing through offensive domain names, including racial slurs, obscenities and pornographic content. We did our best to mask specific words from readers in [our searchable database](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/#lookup-table?utm_campaign=wp_main&amp;utm_medium=social&amp;utm_source=reddit.com), but those sites are still used to train chat bots.  \n\n\nHere\u2019s a little more background on the process: [https://twitter.com/PostGraphics/status/1648784141813440513](https://twitter.com/PostGraphics/status/1648784141813440513)",
+                    "score": 8,
+                    "author": "washingtonpost"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I asked ChatGPT to come up with novel treatments for a disease based on unpublished research and it did so. It essentially linked knowledge about one area (glutamate hyperexcitability in benzodiazepine withdrawal) to another (the existence of antiglutamatergic drugs) and theorized that antiglutamatergic drugs could be useful in treating this condition. This is not a mainstream theory, and at least according to ChatGPT it was not drawing information on previously existent knowledge.\n\nIt seemed to be drawing information from two different knowledge areas and forming a logical conclusion. It seemed like more than just predicting what the next logical word would be.\n\nWhat do you think is going on there? To me it seems more intelligent than just word prediction by synthesizing unrelated areas to come up with new ideas.\n\nWhy not train it on a smaller selection of known, credible data like Wikipedia to be able to draw previously unseen connections in the same way?\n\nPerhaps the theories it would come up with would be obvious to experts, but it would possibly not democratize not just knowledge but intelligence.",
+            "score": 2,
+            "author": "lorazepamproblems",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I see the ama is over and this isn't awnsered. I'm not OP and I'm not an expert but maybe I can add something. \n\nThe model **is** working by next word prediction, but people tend to oversimplify what that means. It's a neural network not just a probability search of a database. When you set a network a seemingly simple task like predict the next word you force it to build very complex relationships in the background to perform this task. You can't accurately predict a word without grammar, so it's forced to have part of the network that achieves that.  You can't predict the next word in a logical inference without having a model for logic.\n\nIn a neural network all these models/relationships will be encoded in the neural link weights in a very obscure way, but the ideas are I there by necessity.\n\nA neural network trained to play chess technically just predicts the next move but still has long term strategy emerge. A neural network trained to predict the next word will have things that appear as logic and reasoning emerge because word prediction (based on data that contains logic and reasoning) can not be done well without modeling these aspects.\n\n(Technically it works on tokens not words, tokens are normally individual syllables)",
+                    "score": 5,
+                    "author": "GraharG"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does it use the Flesch-Kincaid model to scale based on the diction of user input?",
+            "score": 1,
+            "author": "Ipride362"
+        },
+        {
+            "level": 0,
+            "comment": "So what result you've got?At what level AI has reached(to intercept our personal Infos/data on google)",
+            "score": 1,
+            "author": "Ok-Feedback5604"
+        },
+        {
+            "level": 0,
+            "comment": "The internet is such an expensive place when every site wants you to pay for it separately.  We pay for the access, why cant big telecom pay for the content? Now you pay for access to get access to pay for access to get access to pay some more. All while everyone along the way makes money with ad revenue. Everyone's money-grab is harshing my buzz.",
+            "score": 1,
+            "author": "Relldavis"
+        },
+        {
+            "level": 0,
+            "comment": "So wapo obviously concluded the talking computer wasn\u2019t leaning left enough for their liking?",
+            "score": -5,
+            "author": "Kikoalanso"
+        },
+        {
+            "level": 0,
+            "comment": "Users, please be wary of proof. You are welcome to ask for more proof if you find it insufficient. \n\nOP, if you need any help, please message the mods [here](http://www.reddit.com/message/compose?to=%2Fr%2Fiama&amp;subject=&amp;message=).\n\nThank you!\n\n---\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/IAmA) if you have any questions or concerns.*",
+            "score": -1,
+            "author": "AutoModerator"
+        }
+    ]
+}

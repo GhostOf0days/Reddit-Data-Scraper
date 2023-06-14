@@ -1,0 +1,1440 @@
+{
+    "id": "148ln83",
+    "score": 1683,
+    "title": "Patch 13.12 Notes",
+    "author": "lolvvv_com",
+    "date": 1686679622.0,
+    "url": "https://www.reddit.com/r/leagueoflegends/comments/148ln83",
+    "media_urls": [
+        "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-12-notes/"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "why is no one talking about the biggest change here?\n\n&gt; We've added a slider to repeatedly purchasable items (e.g., Key Fragments, Blue Essence) in the Event Token Shop.\n\nI fully expect the client to implode next patch\n\n\nstill need sliders for other things like mass disenchanting",
+            "score": 2240,
+            "author": "ElisePlayer222",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This was actually secretly added last patch. Was so happy to see it.",
+                    "score": 393,
+                    "author": "Oracle_1080",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You know what would make me happy?  It would be the client defaulting to my custom item sets.  Why, for the love of Teemo would I create an item set and NOT want to use it?!  FFS Riot.",
+                            "score": 83,
+                            "author": "chiproller",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I believe it defaults to the first itemset in alphabetical order of the filename. The Blitz app, for example, adds exclamation points to it's file name, making it appear first. The ones you create one in the UI uses RIOT_Itemset_## as a filename, making them appear later in the list if you have multiple.",
+                                    "score": 28,
+                                    "author": "NetNGames",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm almost certain that they mean when you first load into a match, the shop displays the recommended tab by default instead of opening up to the tab containing custom builds. And I agree that if custom builds are present, it should switch priority to the custom builds tab (or have the option somewhere in the UI to switch priority).\n\n&amp;#x200B;\n\nIt just adds unnecessary clicking is all, when it could otherwise be one and done.",
+                                            "score": 6,
+                                            "author": "Define-Reality"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It does for me.",
+                                    "score": 14,
+                                    "author": "Oracle_1080",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Glad you enjoyed. We plan to continue adding improvements like this in the future.  \n\n\nMass disenchanting is currently in pre-production, which means the design is complete and we are figuring out what it would take to build it :)",
+                    "score": 136,
+                    "author": "BarackProbama",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Out of curiousity, why is it hard to do? I'm a pretty novice programmer and I'm not sure why it wouldn't be as simple as adding a listener for holding shift to select multiple shards with an if statement that deselects everything else if shift isn't held.\n\nI'm sure I'm missing something here, but it genuinely seems like it would be a couple hour job, at least on the back end. Why is it not?",
+                            "score": 28,
+                            "author": "Scrambled1432",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Hell there is a short GitHub out there to do it for you. I imagine it's just corporate behemoth slowness. Schedule meeting. Identify stakeholders. Schedule meetings. Follow up meetings because we ran out of time. Identify goals. Meeting to assign tasks. Follow up meeting on status. Disagree. Compromise. Agree on methodology. Write the code. Put the software into pre-production. Bug testing. Send demo to stakeholders. Wait 2 weeks for reviews. Extend review time because people are busy. Update. Retest. Bug test. Send proposal to upper management. Wait one month for review time. Extend review time, and extend again because upper management is busy. Makes small changes to address upper management quirks. Test. Roll out final product into testing server. Wait. Put into production patch queue.",
+                                    "score": 42,
+                                    "author": "ParrotMafia",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "also getting something like mass disenchanting approved might take awhile since you have to convince upper management to allocate a programmer and UI designer to it instead of something that could make money and make them look better in the company.",
+                                            "score": 11,
+                                            "author": "fabton12"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "This sound so real and so painful",
+                                            "score": 4,
+                                            "author": "legolee"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Your comment triggered me 2 lines in",
+                                            "score": 3,
+                                            "author": "bondsmatthew"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "where tf did you get my schedule from",
+                                            "score": 3,
+                                            "author": "brooooooooooooke"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Maybe on a new clean codebase but adding UI elements into something as old and crufty as the league client must be hell. I\u2019ve lost the article but it took years for windows to add the new task manager because of how weird and shitty the code was and you can\u2019t just chuck it out and start again either.",
+                                    "score": 4,
+                                    "author": "xFallow"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; I'm sure I'm missing something here, but it genuinely seems like it would be a couple hour job, at least on the back end. Why is it not?\n\nNot a rioter, but if I had to guess, it'd be because the original code did not account for mass disenchanting, making the code for every different type of \"disenchantable\" different. Ideally, you'd write this:\n\n    foreach Disenchantable d in Loot:\n        d.Disenchant()\n\nBut if some loot items disenchant to blue essence, some disenchant to orange essence, some to a new emote, or some actually need multiple to create a new item instead of a resource (skin rerolling) I can imagine that the method isn't standardised.\n\nIs this good practice? No, but as someone who codes, I can absolutely relate to not knowing where your system will end up and unwittingly making bad decisions in the process.\n\nIt's a bit like converting a car from manual to automatic, when automatic transmissions haven't been invented yet. Sure, you might learn to understand the difference between a manual gearbox and an automatic gearbox, but that doesn't change the fact that the car wasn't designed to have a replacable one; in turn meaning that you might have to dismantle the entire engine just to do so.\n\nAnd again, I'm not a Rioter and as such I'm not privy to their actual code and what caused this issue, but literally almost every single project I've ever coded I've hated afterwards, and wanted to rewrite from the ground up. Therein lies the problem: if your automatic gearbox doesn't mesh well with the rest of your car, you can just release a new car, and the old one still works. Software, especially a game the size of LoL, doesn't have this luxury. The new League client _has_ to comply with the previous one on a fundamental level, or else you have to completely rebuild _everything_ and have every player download League 2.0, or maintain two different versions and playerbases.\n\nWhile for one last time making the disclaimer that I'm not a Rioter and there's essentially a 0% chance that this comment is 100% accurate, I'm reasonably confident that the _tech debt_ problem I've described here is at least part of the reason why this problem is so hard to fix.\n\n**TL;DR** the astounding interconnectivity (and shortcut usage) that computer code almost always has means that things that are intuitively very similar might not be that way in the actual code implementation.",
+                                    "score": 13,
+                                    "author": "lightsfromleft",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This guy codes (in a professional setting) \ud83d\udc4d",
+                                            "score": 6,
+                                            "author": "JustYourAvgBro"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Not a rioter, or a coder, but my first guess is that the coding is not the hard part, but adding it to the client UI (a consistently buggy mess) and making it not screw anything else up are the hard parts",
+                                    "score": 19,
+                                    "author": "stuffslols",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It was already added on the current patch actually, I tried it out and tried to break it but didn't manage to do it beyond after 300 items it changes the error message.",
+                    "score": 56,
+                    "author": "CrystalizedSeraphine",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Vex Aram adjustment typo u/RiotMaxw3ll",
+            "score": 316,
+            "author": "dirtydoughnut",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I got this one!  \n\n\nShould be Vex: Damage Dealt 100% &gt;&gt;&gt; 95%",
+                    "score": 294,
+                    "author": "Riot_Riru",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hey Riru! Sorry if you're unable to really answer this question, but do you happen to know the expected winrate fall off of champions in aram when they receive 5% less damage dealt or 5% less damage taken, just curious as to the winrate drop expectancy? Tyvm!",
+                            "score": 52,
+                            "author": "VantaBlack2_Dev",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Doubt they'll answer that, but as someone who constantly looks at stats it seems to vary a lot.\n\nChampions that rely a lot on having just enough burst quickly enough gain a lot from damage buffs. Rengar got like an 8% damage nerf and went from broken to kind of balanced. Champs that are tanky due to lifegain effects get really broken with ARAM buffs.\n\nOn the other hand supports get 20% nerfs and don't care that much.\n\nBut what's really fucking amazing is how Vlad continues to dodge nerfs despite being able to at least 1v3 every game.",
+                                    "score": 53,
+                                    "author": "SofaKingI",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Vlad got a 5% dmg nerf recently",
+                                            "score": 17,
+                                            "author": "havingahardtimepicka",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I think it just comes down to if they are good at vlad or not. Watching me play vlad you certainly wouldn\u2019t think he needs nerfs, but I\u2019ve seen some people who obviously knew what they were doing just stomping games.",
+                                                    "score": 4,
+                                                    "author": "UWtrenchcoat",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "vex probs gets affected a ton by it since her whole deal is nuke someone and get ult resets todo it again so anything that could prevent her reset spam will affect her massively.",
+                                            "score": 3,
+                                            "author": "fabton12",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "There's also one in the description of Gragas passive nerf.",
+                            "score": 12,
+                            "author": "Clenzor"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "R - COMMAND: SHOCKWAVE\n\nMagic Damage: 250/350/450 (+90% AP) \u21d2 250/400/550 (+95% AP)\n\nOkay cya in 13.22 when they buff it too 250/425/600 (+100% AP)",
+            "score": 504,
+            "author": "DanielDKXD",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "R-command: schockwave if you get hit your house gets nuked.",
+                    "score": 213,
+                    "author": "Lorik_Bot"
+                },
+                {
+                    "level": 1,
+                    "comment": "I buy 100% of my AP why do I not get to use it",
+                    "score": 1078,
+                    "author": "GalaxySmash",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This but fr",
+                            "score": 148,
+                            "author": "Cosmic-Warper"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "based",
+                            "score": 39,
+                            "author": "SSBM_DangGan"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "lets not get crazy, maybe 10 less base damage and 97.5% ap scaling?",
+                    "score": 22,
+                    "author": "Justsomeone666"
+                },
+                {
+                    "level": 1,
+                    "comment": "I'd really rather see her get a new passive one day. The days of auto-attack bully Orianna are much rarer.",
+                    "score": 114,
+                    "author": "HolypenguinHere",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Someone call PowerOfEvil, he's crying",
+                            "score": 50,
+                            "author": "BRedd10815"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I just want my 25 Q range back :(",
+                            "score": 25,
+                            "author": "SergeantAskir"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Dopa suggested adding mini stun to the return E damage",
+                            "score": 7,
+                            "author": "winwill"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Or buff her aa range",
+                            "score": 28,
+                            "author": "Monsieur_Perdu",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm pretty sure no one wants to lane vs ori with more range, I still remember when she was meta and it was barely possible to go even vs her.",
+                                    "score": 31,
+                                    "author": "dun198"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I really think they should take a look at her ball speed for Q and E, or make those abilities stronger than putting more power into R",
+                    "score": 5,
+                    "author": "MrNeilio",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "New skin soon",
+                    "score": 18,
+                    "author": "assblaster_2000"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Duskblade adjustments on the image but not in the notes? So there's no change, most likely?",
+            "score": 239,
+            "author": "OldConny",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The Katarina and Samira Duskblade adjustments were pushed to 13.13",
+                    "score": 133,
+                    "author": "namegeneratorsystem",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Lets go 2 more weeks of abusing samira",
+                            "score": 93,
+                            "author": "KansloosKippenhok",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It was even funnier with old duskblade, just that nobody built it because of immortal\n\nImagine she is doing the same thing but it's invisibility melting you and it resets",
+                                    "score": 46,
+                                    "author": "HeatSuspicious5508",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Did the invisibility even matter when you can clearly tell where she is due to her ult?",
+                                            "score": 25,
+                                            "author": "shoyooo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "well it did in some cases take your flare for example where the second half of eve q wouldnt hit her or you couldnt use w or e on her while invis.",
+                                                    "score": 4,
+                                                    "author": "fabton12"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Lmao i did not even think of that",
+                                            "score": 13,
+                                            "author": "KansloosKippenhok",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "-_- kill me now",
+                            "score": 10,
+                            "author": "Pachinginator"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The comment on Overheal about how the typical player doesn\u2019t swap rune pages is hilarious because I bet more often than not they are using Riot\u2019s built-in recommendation xD",
+            "score": 582,
+            "author": "pajamasx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Riot's built-in recommendation system (which functions about the same as the porofessor/u.gg most players use) is based heavily on popularity. If overheal isn't being recommended, that's because it isn't being played.",
+                    "score": 93,
+                    "author": "Guest_1300",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But that creates a positive feedback loop. If most people use recommended runes then that won't change",
+                            "score": 30,
+                            "author": "Quazz",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Pretty damn easy to exlude recommendet setups from the statistic and it is a non issue.",
+                                    "score": 7,
+                                    "author": "Theonetrue"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I have 2 rune pages for my main, he has 5 different options of main runes, I switch between them in those 2 as I know them by heart.",
+                    "score": 25,
+                    "author": "NAT_Forunto"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Mid lane gets its gold back. Huge.",
+            "score": 340,
+            "author": "Indercarnive",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Its only about 140 gold right? Assuming you get perfect CS",
+                    "score": 96,
+                    "author": "NovelAries",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thats a lot. Like u can get ur mythic one non-cannon wave earlier. Can be deciding for some early teamfights.",
+                            "score": 76,
+                            "author": "truecskorv1n",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "And remember they further opened the xp gap between solos and botlane. And botlane item nerfs. And tons of mage item improvements lately.\n\nAnivia OTPs are soon gonna be 2 whole leagues above their real level.",
+                    "score": 152,
+                    "author": "Jandromon",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hey, I'll take it this season, I want myself that victorious skin and am currently bronze.....",
+                            "score": 58,
+                            "author": "Eragonnogare",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Doesn\u2019t everyone get a skin with the new system as long as they\u2019re playing the game",
+                                    "score": 15,
+                                    "author": "ParadoxIrony",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You need 200 ranked games with a 50% winrate to get it below gold, so it's doable but not everyone has time for that.",
+                                            "score": 19,
+                                            "author": "TinyBreeder",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why do they mention the adaptive rune shard in the paragraph for Kaisa? Does Riot not know that runes don\u2019t contribute to Kaisa\u2019s evolves?",
+            "score": 418,
+            "author": "Kiloudes",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That confused me too.",
+                    "score": 105,
+                    "author": "NommySed"
+                },
+                {
+                    "level": 1,
+                    "comment": "TIL and Today Riot Learned.",
+                    "score": 70,
+                    "author": "GKoala"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 32,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This one was a misunderstanding on my end when writing the context, the dev that worked on the change knew that though - we just missed it during review",
+                            "score": 192,
+                            "author": "Riot_Riru",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So what would be the proper context as the reason for the change?",
+                                    "score": 10,
+                                    "author": "CanWeCleanIt"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "So an additional longsword still needs to be purchased same as before for an evolve?",
+                                    "score": 24,
+                                    "author": "PLACE_BOT_9999999999",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Riot forgor\ud83d\udc80",
+                    "score": 3,
+                    "author": "nhansieu1"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is kind of bullshit. We went from having a option on buying long sword into kraken with pickaxe to forced dorans start",
+                    "score": 23,
+                    "author": "Straight_Rule_535",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I was expecting a huge celebration for the execution of zeri yuumi\u2026 barely anyone is mentioning it",
+            "score": 34,
+            "author": "-ElBandito-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If it was being announced that hitler was being executed for the 14th time (ignore actual history), people would probably stop getting excited too.",
+                    "score": 48,
+                    "author": "WoonStruck",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You just know that when their WR's drop, next patch they gonna omega buff Zeri W and Yuumi Q making them have tactical nukes",
+                            "score": 16,
+                            "author": "randomposter15",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Yuumi Q making them have tactical nukes\n\nHey, I've seen this one",
+                                    "score": 7,
+                                    "author": "magical_swoosh"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's the Yoda meme at this point.\n\nRiot: we're nerfing zeri's OP build  \nYoda: no, there is another",
+                    "score": 21,
+                    "author": "cfranek",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's the Simpsons meme with Moe kicking Barney out of the bar and then he's back inside instantly",
+                            "score": 9,
+                            "author": "13yearsand4monthss"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They still haven\u2019t fixed kraken and guinsoo bug?",
+            "score": 78,
+            "author": "ShotoGun",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Kraken Guinsoo no longer interact as of 13.11. You just get one stack per auto and it fires every third auto, the same as 13.9\n\nIt went unmentioned in 13.11. I set the ticket to fixed with an explanation for 13.12. I guess it didn't get picked up in the patch notes.",
+                    "score": 70,
+                    "author": "PhreakRiot",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Is this going to stay that way? That would be a bummer for an item that's supposed to be an On-Hit Item",
+                            "score": 30,
+                            "author": "TalionGT",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "from the sounding of it for now yes, i rememeber reading other comments where the bug is really tricky to solve, its a bummer bug sometimes things just dont work together well and would take more effort to fix then wanted.",
+                                    "score": 9,
+                                    "author": "fabton12"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Kraken is an \"on attack\" technically different.",
+                                    "score": 4,
+                                    "author": "FluffyCelery4769"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Will we see kraken guinsoo interact in the future?",
+                            "score": 10,
+                            "author": "Kiloudes"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Really appreciate the detail going into the description of each change in these patch notes. Felt very clear and transparent on the balance teams thought process",
+            "score": 207,
+            "author": "VentusDG",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks, I'm glad you liked them!",
+                    "score": 153,
+                    "author": "Riot_Riru",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Other than stuff like Gragas where they flat out misspeak \"Lowering the cooldown of his passive should help make Graggy more manageable to deal with\"\n\nHis passive is increasing in CD, not being lowered.",
+                    "score": 10,
+                    "author": "Kengy",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Duskblade in the patch highlights but I guess it killed someone just before it got applied so it dodged any changes?",
+            "score": 59,
+            "author": "hellweapon",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "&gt;Fixed a bug where Urf Kench / Master Chef Tahm Kench skins were not using special animation when approaching enemies with three stacks of An Acquired Taste (P) applied.\n\nThe fork and the knife are back!! Rejoice!!",
+            "score": 54,
+            "author": "Rushaldin"
+        },
+        {
+            "level": 0,
+            "comment": "When will the patch hit live servers?",
+            "score": 68,
+            "author": "EgyptianMemer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "should be in the early AM on 6/14 for most regions",
+                    "score": 120,
+                    "author": "Riot_Riru",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Any info on the current Wit\u2019s End price still being 3200g? Was the price staying the same a bug or was the bug fix saying it\u2019ll go back to its original price just never implemented?",
+            "score": 43,
+            "author": "Proxnite",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "/u/galaxysmash would probably know.",
+                    "score": 16,
+                    "author": "CrystalizedSeraphine",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "He still owes me smart targeting on Noct\u2019s E he promised like 9 patches ago and I even had his manager yell at him from across the office about it\u2026\u2026.so I think I\u2019m gonna have to resort to the nuclear option, writing a strongly worded email to his parents Mr. and Mrs. Riot.",
+                            "score": 43,
+                            "author": "Proxnite",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "One day on that Noc thing... But Wit's being 3200 is intended. Was a bug when it shipped but we decided to keep it that way. Looking to comm it in a more clear way somewhere",
+                                    "score": 51,
+                                    "author": "GalaxySmash",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thanks for the clarifications, I\u2019ll holster that email\u2026\u2026\u2026for now.",
+                                            "score": 17,
+                                            "author": "Proxnite",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "this isn't an open carry inbox, son.",
+                                                    "score": 5,
+                                                    "author": "Lather"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It was an oversight (mistake) when shipping 13.10. We were aware of it pretty much immediately.\n\nI ultimately got to make the call, \"Yeah, we're keeping it this way.\"",
+                    "score": 21,
+                    "author": "PhreakRiot",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "*Task failed\u2026\u2026.successfully*",
+                            "score": 12,
+                            "author": "Proxnite"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Gragas gets compensation buffed??\n\nI get that he is more frustrating than overpowered, but like come on, just make him not show up as often.",
+            "score": 500,
+            "author": "CrystalizedSeraphine",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Maybe if his abilities didn't have a 100% uptime there would be some counterplay, but his cooldowns are effectively 0 with a decent amount of AH. Q cooldown starts when the barrel is thrown, not detonated, so he can throw another one immediately after popping a slightly cooked barrel. He can hold a choke with Q indefinitely, the moment the barrel times out he can throw a new one in. Also his E scales infinitely better with AH than most abilities, coming down to a near 0 cooldown as well, and his W damage reduction can be almost 100% uptime if he autos quickly after drinking.",
+                    "score": 284,
+                    "author": "KogMawOfMortimidas",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "It\u2019s a pretty hefty passive nerf though.\n\nBut idk why Riot didn\u2019t just make his passive cd go down with level, don\u2019t think anyone cared about his passive later on in the game.",
+                    "score": 96,
+                    "author": "DoubleGio",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "overall very odd place to nerf gragas in, tank gragas was already kinda crap but the nerf completely kills it, i feel like lowering gragas's Q early base damage (with the same base damage as now at max rank) and slightly reducing the AP scaling would have far better result but oh well",
+                            "score": 49,
+                            "author": "Justsomeone666",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes. That was the goal. They WANT to reduce tank gragas presence.",
+                                    "score": 38,
+                                    "author": "spooganooga",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Huh i assume thats a pro play specific nerf then as i havent seen a tank gragas in like 3 seasons but ive sure seen atleast 50 ap gragas's",
+                                            "score": 51,
+                                            "author": "Justsomeone666",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "only 2 major regions playing rn are LCK + LPL. Tank Gragas is at least as common as AP in both of those.",
+                                                    "score": 9,
+                                                    "author": "aPatheticBeing"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "its not like he has mana bar after first recall anyway",
+                    "score": 52,
+                    "author": "daebakminnie",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "He does if he goes tank. Not sure if it\u2019s a common thing or not but iirc there have been a few pro games (specifically into Sion) where he maxed W and E completely ignoring even a single point in Q.",
+                            "score": 25,
+                            "author": "Alex_Wizard",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The whole point of the nerf is to hurt his laning phase, make him take earlier recalls due to not healing as often from passive, 50% timer increase on it, the mana buffs on his Q help keep his mana bar up, you spam Q in lane and oh boy you run out quick with 80 mana, since you max it first its 60 mana pretty soon into the game, they want Gragas to recall on lower health sooner, but not have to recall as soon due to mana issues.  \n\n\nSo he'll be a little more poke heavy and less sustain in lane, which most people are gonna feel as a better change, I think its better to have an extra 4-5 barrels throw your way then to see gragas's hp bar just keep rising over and over under turret",
+                    "score": 17,
+                    "author": "VantaBlack2_Dev"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Typo the Gragas nerfs. \n\n\"Lowering the cooldown of his passive...\" They increased the cooldown not lowered.",
+            "score": 74,
+            "author": "Bigblue12",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They probably meant to say \"lowering the uptime on his passive\" or \"raising the cool down on his passive\" and then mixed the 2 statements together.",
+                    "score": 35,
+                    "author": "TimeLordDoctor105"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Patch looks good. Rumble changes seem like it might be an overall nerf but we will see. Ryze will probably be 60% pick/ban in pro meta but roughly 50% winrate in soloq.",
+            "score": 80,
+            "author": "Zodiwacts123",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "if ryze hits 50% solo q wr he is 100% banned on redside in proplay usually",
+                    "score": 167,
+                    "author": "Choubine_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Kinda depends on the meta. His soloq winrate is quite good atm but he simply isn't a good team fighter against high range ADCs and CC comps.\n\nMaybe we will see him but in these metas he never had great success because of how useless he becomes later on.",
+                            "score": 19,
+                            "author": "Xey2510",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "ryze is one of those champs, where if he's decent, he defines the meta.",
+                                    "score": 9,
+                                    "author": "RodasAPC"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Those Ashe buffs are huge, I hope they don't push her to be meta. I don't want to have to hope she doesn't get banned, fight with the enemy team, then fight with my auto filled support to play her TT",
+            "score": 172,
+            "author": "SnowyyRaven",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nope, this will just convince my mentally stunted ranked teammates to play more ashe support and get permadove over and over and over and over",
+                    "score": 99,
+                    "author": "NoHaxJustJ4C0B",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Gonna go ahead and apologize ahead of time for my norms teammates who will have to deal with my ultimate hunter Axiom arc AP ashe support. Sacrifices must be made in the pursuit of greatness.",
+                            "score": 31,
+                            "author": "jfsoaig345",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "i dont want ashe support to be viable at all :))))))",
+                    "score": 82,
+                    "author": "sxcbabyangel69",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah I'm not big on it either, but it's kinda up to Riot and what the community wants to play",
+                            "score": 12,
+                            "author": "SnowyyRaven"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "My (probably not a) conspiracy theory is that support Ashe has spiked the playerbase and led to people purchasing her 23904723904 skins, so now Riot has to balance support Ashe to be at least playable so as to not lose that sweet sweet revenue.",
+                            "score": 36,
+                            "author": "pocahauntass",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I have no idea how many skins people buy. I do like when champions that people like playing are viable, though. No one from PIE (aka skins team) has ever mentioned champion buffs to me.\n\nIf Volibear support suddenly took up 30% of his play rate I'd also look into whether a) we're comfortable with the playstyle and b) if it needs buffs or nerfs.",
+                                    "score": 81,
+                                    "author": "PhreakRiot",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "No nerfs on ARAM either. Can't wait to get Perma slowed and chunked all over again",
+                    "score": 40,
+                    "author": "DPlusShoeMaker",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But imperial mandate was nerfed this patch?",
+                            "score": 23,
+                            "author": "BossOfGuns",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "But it can be combined with Liandrys now. \n\nBetween Liandrys, mandate, and Muramana, her damage is phenomenal.",
+                                    "score": 18,
+                                    "author": "chaser676",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ashe\u2019s aram winrate dropped significantly since item changes (mandate in 13.9 was 54% while liandries is 51.5% in 13.11) and the nerf to mandate is much bigger than the buff ashe got to her w and r",
+                                            "score": 31,
+                                            "author": "BossOfGuns",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "She alrdy does 80% dmg ... wtf you want ?",
+                            "score": 8,
+                            "author": "BlakenedHeart",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "i have serious doubts that rumble can live to be played the way the balance team thinks in current league of legends\n\nperhaps i m underrating the new scrap shield + a new tankier build \n\nthat said yuumi was 100% gutted",
+            "score": 45,
+            "author": "garbagecan1992",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "i dont think they took into account rumbles wave clear with these changes, its gonna be a lot worse",
+                    "score": 18,
+                    "author": "DocFreezer",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "He can\u2019t, max Q% doesn\u2019t matter mid / late when he blows up instantly.",
+                    "score": 12,
+                    "author": "Angular2Plus",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Said this in another comment chain but. It completely nerfs his current strengths which are early and mid game and might not be giving him enough power later to make up for it. It doesn't look like he'll be very much stronger late game and they hamstrung his early game kill pressure. They also nerfed his W and he still doesn't have viable sustain top lane and will still get destroyed by most bruisers but now he won't even be able to have kill pressure early. I think this is mostly a buff to jungle he has just fallen behind the curve as far as how much top laners have in their kits.\n\nI think most pointless change though is the dumbing down of his heat mechanic and it probably won't have a huge impact for good players. His best trade damage involves overheating so players are just going to hover 100 now instead of 50 and he's still going to be too squishy to take advantage of using two rotations in a fight anyways. Especially because his role is basically just lay down ult and overheat and try to kill someone as fast as possible in a fight.   \n  \nIt's almost as if the person making these changes has never played rumble in the late game. AP itemization is terrible for tanky stats in the late game and you'll always be squishy or do no damage. A better change would be to give champs that don't need mana liandries back then these dumb Q changes. Why are we completely changing a champ when his itemization was fucked with the item rework anyways.",
+                    "score": 10,
+                    "author": "curllyq",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So why does Sivir get a compensation nerf?",
+            "score": 9,
+            "author": "Omnilatent",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Its very odd. It's a 5.1 ad nerf at level 18. So its not a very meaningful nerf at all, but its just looks bad and confusing to include when they said they are trying to give her power.",
+                    "score": 6,
+                    "author": "Swooped117"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They didn't fucking touch neeko.\n\nInsane high presence on pro and huge soloq wr what the fuck do they need",
+            "score": 136,
+            "author": "Ashankura",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Me when this degenerate lizard gets lane prio and positive hp trade effortlessly.\n\nThankfully, ivern is as equally idiotic in lane so that evens out the idiocy",
+                    "score": 25,
+                    "author": "Dopp3lg4ng3r",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I don\u2019t mind. I\u2019m loving watching her in pro play.",
+                    "score": 4,
+                    "author": "123bababooey123"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Nasus has been on a tight leash in solo queue recently. We're buffing up his passive to help in matchups where he's able to stay on the minion wave and life steal without affecting counter matchups where he can't attack and Q as often. We're also reducing the cooldown on his ultimate in later stages of the game, where he especially relies on it due to the durability and range it gives in teamfights. \n\nWhy would they want to buff Nasus for match ups he already wins without doing much for match ups he loses? That just doesn't sound fun for anyone",
+            "score": 25,
+            "author": "DM_ME_YOUR_HUSBANDO",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah I thought about that too ahahah",
+                    "score": 6,
+                    "author": "John_Mata"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Anyone know when the no promos change that was announced is coming? Or is it already live?",
+            "score": 8,
+            "author": "vickz84259",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "People are saying next split, but I\u2019d like to add next split is in about a month.",
+                    "score": 13,
+                    "author": "PikaPachi"
+                },
+                {
+                    "level": 1,
+                    "comment": "Next split.",
+                    "score": 7,
+                    "author": "Proxnite"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Surely Ivern won't be 60% winrate with moonstone buffs + his current state Clueless",
+            "score": 47,
+            "author": "Zmayiflex",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, at least he's \"only\" the highest winrate champ top, mid, and jungle on 13.11.",
+                    "score": 26,
+                    "author": "TuxSH"
+                },
+                {
+                    "level": 1,
+                    "comment": "helia is already printing good, moonstone just gives more printing options.\n\nShurelya and Cosmic rush vern also exist, but doesn't print as hard as these 2",
+                    "score": 7,
+                    "author": "Dopp3lg4ng3r"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "LOL they REALLY like to say that they want Yuumi to be a noob champ every single time they change her. Saying this over and over won't make it happen.",
+            "score": 59,
+            "author": "THESuperStuntMan",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Halved red buff slow for ranged is a huge nerf for Kindred and Graves",
+            "score": 144,
+            "author": "Patient_Blueberry_44",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Red buff slow has always been 50% as effective on range champions.",
+                    "score": 60,
+                    "author": "HeyItsPreston",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "As a Kindred main, red slow is at least kinda toxic. Every variation of their build has some kind of speedbuff and that paired with their Q and E...",
+                    "score": 18,
+                    "author": "Haoszen",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "It was always like that. They just reduced the percentage.",
+                    "score": 76,
+                    "author": "satellizerLB"
+                },
+                {
+                    "level": 1,
+                    "comment": "Good.",
+                    "score": 106,
+                    "author": "Proxnite"
+                },
+                {
+                    "level": 1,
+                    "comment": "And one that makes sense. Kindred doesn\u2019t need slows on her autos to stay on top of people.",
+                    "score": 19,
+                    "author": "Karma_Whoring_Slut"
+                },
+                {
+                    "level": 1,
+                    "comment": "It's crazy that Kindred didn't also get nerfed this patch.",
+                    "score": 10,
+                    "author": "FLABREZU",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "55% winrate on NA plat +.  Only losing matchups are Ivern and Kha.",
+                            "score": 5,
+                            "author": "Lysandren",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\"For example, this should grant her Q evolution at level 9 with Stormrazor, Pickaxe, Doran's Blade, and 1 Adaptive instead of having to wait until level 11.\"  \n\nRiot not knowing how their champions work ist hilarious to me. Adaptive Runes do not count towards her evolutions man",
+            "score": 27,
+            "author": "TalionGT",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Not sure how those moronic passives that hardbound Lucian and Zeri to Enchanters made it into the game or why it took so long to address. At least they're doing *something* about it, though Lucian+Enchanter will still probably be optimal.",
+            "score": 44,
+            "author": "o___Okami",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "So the only counterplay to nasus is killing nexus pre 6?",
+            "score": 88,
+            "author": "Rivayn19",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "All they do is buff this cancer champ",
+                    "score": 61,
+                    "author": "Alarmed-Lead2836",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "How many times have they buffed his passive in his lifetime? Christ as a jungler it\u2019s just give up all my farm to turbo gank that champ.",
+                            "score": 6,
+                            "author": "red--dead",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Every time nasus gets buffed people get scared that hes gonna be broken and then he stays shit, doubt it will be different this time.",
+                    "score": 39,
+                    "author": "BoyKisser39",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "When he gets buffed, regardless of if he's good, I just don't get to have fun in teamfights if he starts seeing play.  Wither just completely turns adcs off, and unlike WW, Malz, or Skarner, I can't just qss and not deal with it, that just buys me a few seconds.",
+                            "score": 4,
+                            "author": "rotvyrn"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The only reason people don't complain about nasus after buffs is because nobody plays him still.\n\nHe ends up banned in GM+ lobbies when he's decent because people still hate playing against the one or two nasus one tricks that exist above bronze.",
+                            "score": 26,
+                            "author": "WoonStruck",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "yee hes pretty much a bottem elo champ and top elo champ anything in the middle with gold/plat/dia/masters you dont see him much but as soon as your in a silver/bronze game or in a game GM+ where theres a few fingers worth of nasus one tricks.\n\nhonestly hate facing him myself mainly because you can cripple him in lane and break his knee caps but after a certain point he gets enough AH that he just brute forces stacks and the moment you can't baby sit him because of a dragon fight he just get back in the game.",
+                                    "score": 9,
+                                    "author": "fabton12"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah this doesn't fix his core issue top lane and he'll still be a terrible pick there. He's a much better (albeit selfish) pick mid and this might make him op there.",
+                            "score": 3,
+                            "author": "NotThereDad"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Regarding Ashe:\n\n&gt; We're also incentivizing her to opt into crit builds by making some changes to her passive.\n\nIf they want to incentivize crit builds, they are buffing the wrong part of her passive.",
+            "score": 70,
+            "author": "ProfDrWest",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What should it be then? Honest question.",
+                    "score": 8,
+                    "author": "Healthy_Wasabi_8623",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If they want to incentiveze crit builds they could have buffed the part of her passive damage that scales with crit chance. Or for something more unique they could buff the slow amount (ashe's crits slow for double her normal auto amount).",
+                            "score": 20,
+                            "author": "Objective_Plane5573",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I get that they could buff the crit scaling but buffing the passive at all is a change that's very much focused towards ADC Ashe. Basically, any change that incentivizes her to auto more is a shift towards ADC.",
+                    "score": 7,
+                    "author": "EgonThyPickle",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It really comes down to whether the intent is to move ADC ashe from on-hit to crit, or move ashe from support to ADC. I read it as on-hit =&gt; crit but I could be wrong.\n\nThis will still be a buff to hail of blades support ashe's laning phase though as well.",
+                            "score": 4,
+                            "author": "Objective_Plane5573",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "They're buffing her passive to do more damage with her crit chance, how would you buff it?",
+                    "score": 26,
+                    "author": "nickelhornsby",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They're buffing the base damage of her frost shot/already slowed autos, they're not increasing the strength of the crit scaling which is where I believe OP is taking umbrage because this buffs both variants of ADC Ashe and isn't a buff to her crit modifier and doesn't incentivize crit Ashe more than it incentivizes Guinsoo Ashe (crit chance just adds damage so it's not even as if the 5% buff will favor crit Ashe specifically)",
+                            "score": 40,
+                            "author": "YunoTheGasai",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for explaining, this is exactly my thought.\n\nThis changes just buffs AD+AS Ashe in general, without particularly emphasizing either Crit or On-Hit.",
+                                    "score": 6,
+                                    "author": "ProfDrWest",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "They buffed the base, which doesn't scale with crit chance at all. It was 110% at first, then became 115%, and now is 120%. It is still a small buff for *that* build, which does auto (even uses HoB sometimes).",
+                            "score": 8,
+                            "author": "alyssa264"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;Bonus Damage: 115% (+(75%+35%) of critical strike chance) \u21d2 120% (+(75%+35%) of critical strike chance)\n\nThey are buffing the base bonus damage she does after slowing them. Crit scaling didnt change.",
+                            "score": 5,
+                            "author": "noob_drummer"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I thought Statikk Shiv was already pretty strong, this might push it to OP. \n\nAlso, time to unveil my overheal lifesteal Nasus.",
+            "score": 39,
+            "author": "devdevdev51",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "gotrdrinker cho'gath",
+                    "score": 19,
+                    "author": "kepz3"
+                },
+                {
+                    "level": 1,
+                    "comment": "The only champions I've seen buy it since it came back were yas/yone trolling with it... and veigar.",
+                    "score": 17,
+                    "author": "UngodlyPain",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "is it just me, or are patch notes written like... extremely sloppy lately?\n\nTypo of the gragas nerf,\n\nmentioning runes in Kai'sa's update (runes do not contribute to evolutions)\n\nVex aram typo\n\nand it's not even one time thing, it happens regularily",
+            "score": 89,
+            "author": "nuuudy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not just lately. They have had multiple typos/errors in every patch notes for years.",
+                    "score": 24,
+                    "author": "THESuperStuntMan"
+                },
+                {
+                    "level": 1,
+                    "comment": "I mean nobody cares really you look at it once",
+                    "score": 17,
+                    "author": "komraa"
+                },
+                {
+                    "level": 1,
+                    "comment": "The funniest part of this comment to me is the one above it in the thread is saying the exact opposite.",
+                    "score": 9,
+                    "author": "GibsonJunkie"
+                },
+                {
+                    "level": 1,
+                    "comment": "Summer interns",
+                    "score": 57,
+                    "author": "wjc0BD"
+                },
+                {
+                    "level": 1,
+                    "comment": "tbh i dont think is a big deal, some already got fixed",
+                    "score": 5,
+                    "author": "Wolgran"
+                },
+                {
+                    "level": 1,
+                    "comment": "I'll take words out of place instead of balance changes, any day of the week.",
+                    "score": 3,
+                    "author": "OneBardMan"
+                },
+                {
+                    "level": 1,
+                    "comment": "Designers write their individual descriptions I believe. So I'm sure some typos happen here or there as they rush to get them into the person that compiles them all. The Kai sa one is different though, that's just a mistake.",
+                    "score": 3,
+                    "author": "Zeddit_B"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How can Anivia be sitting at 52%+ winrate for like 10 patches in a row and still not be touched??",
+            "score": 54,
+            "author": "V9Jack",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "10 patches? Try 2 years.",
+                    "score": 73,
+                    "author": "TannerStalker",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "13 years with short disruptions",
+                            "score": 23,
+                            "author": "ADeadMansName"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "She has the same problem Zilean has. They are both OP as hell but no one plays them. I see a zilean and Anivia in about every 30 games.",
+                    "score": 21,
+                    "author": "PassiveProc",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Sleeper champ I despise playing against. Her burst damage is absolutely bonkers for her being a \"DPS\" type champ and having a free GA. I don't think the meta suits her incredibly well but she just does so much damage so easily she is always high WR.",
+                    "score": 8,
+                    "author": "Rezhyn"
+                },
+                {
+                    "level": 1,
+                    "comment": "She\u2019s so hilariously strong. I love being chunked to half hp with just a Q. How the hell am I supposed to dodge that thing",
+                    "score": 29,
+                    "author": "rayschoon",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "These zeri nerfs are amazing. I was so tired of being punished for being a tank with a shield.",
+            "score": 31,
+            "author": "SweatySpectre"
+        },
+        {
+            "level": 0,
+            "comment": "Overheal Swain?? 11% more max health??",
+            "score": 20,
+            "author": "katsuatis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "picking it over presence of mind? unlikely.",
+                    "score": 49,
+                    "author": "ejpon3453",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "If he didn't take Overheal in the past, he won't take it now.",
+                    "score": 18,
+                    "author": "NommySed",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt;We'd like to tune Orianna as a fragile, low mobility carry with strong and satisfying spells (more 3k ELO shockwaves), rather than making her more consistent with less high moments\n\nDoesn't bode well for their mid-lane mage work when they fundamentally don't understand why these mages feel so awful. Mages are already so inconsistent and the only ones that see play have point and click and/or super low CD stun spells like Annie or Ahri and if not they are Everfrost bots.\n\nMages need more consistency not less and all Orianna mains have been asking for is for buffs to the other spells not R.\n\nThat R already does great dmg to squishies and this doesn't change that. This doesn't solve any of her issues and she won't see meaningful proplay.\n\nCant wait for them to buff Xerath R instead of just at least fixing the fact that he stuns himself longer casting E than the enemy that got hit by it or trying to land a Vel Koz E against bruisers and assassins with less than 500 ping and general clunkiness and outdated projectile speeds and cast times of most old mages.",
+            "score": 34,
+            "author": "cryokillua",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Rumor atm is that Xerath is going from 3/4/5 shots in ult to 3/5/7.\n\nA few other changes as well, but all about his R rather than the rest of the kit.",
+                    "score": 6,
+                    "author": "Hemholtz-at-Work",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah, Orianna has incredible opportunity in her outdated passive to improve her for modern League. I do like big damage, but she's never had much trouble against squishy Champions to begin with. It's giga mobile turbo-divers and beefy-boys that are troublesome.",
+                    "score": 8,
+                    "author": "HolypenguinHere",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Bloodthirster nerfs are kinda strange, especially considering they got rid of the shield.",
+            "score": 15,
+            "author": "rayschoon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Bloodthirster gave way too much AD when above 70% HP it was too gold efficient.",
+                    "score": 16,
+                    "author": "Arcille",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ok yeah you\u2019re right, 95 ad is absurd",
+                            "score": 5,
+                            "author": "rayschoon"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "i knew i saw one too many posts about rell jungle being fun, it must be destroyed",
+            "score": 15,
+            "author": "stephyforepphy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don't think it's destroyed. Definitely toned down but she was able to secure drake at like 3k health with certain builds. Early clear will still be solid.",
+                    "score": 12,
+                    "author": "Gorudu"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Was Malz really that strong in ARAM that he needed a nerf?",
+            "score": 6,
+            "author": "Plenty_Pangolin_9710",
+            "replies": []
+        }
+    ]
+}

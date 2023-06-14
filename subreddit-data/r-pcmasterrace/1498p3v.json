@@ -1,0 +1,43 @@
+{
+    "id": "1498p3v",
+    "score": 1,
+    "title": "Can't install Windows on new build.",
+    "author": "kartik042",
+    "date": 1686751318.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/1498p3v",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Built my new PC last weekend and I can't install Windows 10 or 11. After exiting BIOS, I get a blue screen saying, 'Your PC/Device needs to be repaired' and it doesn't give me any options other than going back to BIOS. Every time I retry doing this, I see a different error code under this message and hence I'm not able to pinpoint on the problem. Created the installation media USB from Microsoft website on a 128GB USB 3.1 stick (not sure if this is too big for it). At first, I tried installing Windows 11 but thought it's not liking it for some reason and so I moved on to creating an installation media with Windows 10 and that did the same. \n\nI tried changing the boot priority to the USB stick. My 1TB NVME SSD is being detected as I can see that in the BIOS. This SSD is new and empty. Tried changing the BIOS mode to CSM instead of UEFI. Tried disabling secure boot and fast boot. Tried changing the boot mode to Legacy+UEFI. TPM is enabled. Nothing worked. Can someone please help me? \n\nP.S. : All parts are brand new.\n\nSpecs: \n\nCPU: Intel Core i7-13700K 3.4 GHz \n\nCPU Cooler: Corsair iCUE H100i ELITE LCD 58.1 CFM Liquid CPU Cooler  \nMotherboard: MSI PRO Z790-A WIFI ATX LGA1700 Motherboard  \nMemory: Corsair Vengeance RGB 32 GB (2 x 16 GB) DDR5-5600 CL36 Memory  \nStorage: Crucial P3 Plus 1 TB M.2-2280 \n\nVideo Card: NVIDIA Founders Edition GeForce RTX 4070 12 GB  \nPower Supply: Corsair RM850x Shift 850 W 80+ Gold Certified Fully Modular ATX Power Supply",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Get some 16gb / or just a different usb pen drive.\n\nMake sure you disable CSM, enable secure boot and TPM along with resizable bar/above 4G encoding.\n\nI'd recommend downloading the iso and burning out to the stick using rufus. You get options to skip the network check and having to connect with ms account.",
+            "score": 1,
+            "author": "Cpt_Koksnuss",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the suggestions. I'll try this out today. \nWhere would I find the 'resizable bar/above 4G encoding' part in the BIOS?",
+                    "score": 2,
+                    "author": "kartik042",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Phew.. Good question.. Consult your mobo's manual if in doubt because every body is a little different in layout.. If you don't have it at hand you can download it from your mobo's manufacturer's website.",
+                            "score": 1,
+                            "author": "Cpt_Koksnuss",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No worries, I'll try to find it.",
+                                    "score": 1,
+                                    "author": "kartik042"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

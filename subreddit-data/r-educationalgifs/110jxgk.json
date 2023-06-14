@@ -1,0 +1,235 @@
+{
+    "id": "110jxgk",
+    "score": 3120,
+    "title": "3D Flow vs. 2D Flow and much more: Video series on fluid simulation - all self-coded - link in the comments",
+    "author": "braintruffle",
+    "date": 1676219919.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/110jxgk",
+    "media_urls": [
+        "https://i.redd.it/bmn1t22vcsha1.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is really cool, t he visual communicates the concept so clearly! Why does this happen from a theoretical perspective?",
+            "score": 133,
+            "author": "Drvaon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Looks to me as though the turbulent eddy currents stay in plane in a 2D simulation, but go in and out of plane in 3D, hence it looks much more mixed.",
+                    "score": 52,
+                    "author": "geogle",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah in the 2d version all movement is constrained to one plane. Obviously that\u2019s not the case with 3D modeling, so things will be different.",
+                            "score": 1,
+                            "author": "dr_stre"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "My instinct says the answer to that is worth a PhD.",
+                    "score": 72,
+                    "author": "Blackshell",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Resolving the Navier\u2013Stokes problem will get you the million dollar millennium prize and probably a Nobel too!\n\nEdit: particularly,\n\n&gt; Prove or give a counter-example of the following statement:\n\n&gt;In three space dimensions and time, given an initial velocity field, there exists a vector velocity and a scalar pressure field, which are both smooth and globally defined, that solve the Navier\u2013Stokes equations.",
+                            "score": 62,
+                            "author": "tildenpark",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 14,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Does it have applications to cryptography, or just because of national security?",
+                                            "score": 13,
+                                            "author": "mangonada123",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 25,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Oh, that's right! I just saw NSA, and just thought of cryptography lol. Thanks!",
+                                                            "score": 10,
+                                                            "author": "mangonada123"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Not true, the problem is the amount of computing power needed. You cannot solve analytically but numerically.\n\nEdit: Ok, that was dangerous superficial knowledge from my side. You both are right. Wasn't thinking about the mathematical problem here. From the engineering perspective computing the solution seems sufficient.",
+                                    "score": 0,
+                                    "author": "Monchichi_b",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's just brute forcing a solution. That's not what's meant by \"solving\" here.",
+                                            "score": 4,
+                                            "author": "deelowe"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No this is nothing new, evolution problems in 2d have a lot of restrictions on the equilibrium states that they can reach, which are completely classified by the Poincar\u00e9-Bendixson theorem. \n\nThe same arguments as in the proof of the theorem explain most of what's happening in the right picture",
+                            "score": 2,
+                            "author": "3lioss"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There a few factors here.\n\nThe 2d simplification pretty much acts as if your slice is infinite both into and out of the screen. 3d doesn't, so boundary effects of the surfaces parallel to the screen screw up flow.\n\nOn top of that, there's a good chance this simulation's mesh is made of tetrahedrons, which means there's some minuscule numerical tendency for the flow to deviate diagonally, but that adds up eventually.",
+                    "score": 19,
+                    "author": "ZackyZack",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Does that mean the 3d is only different because the particles hit a box that is bounded into and out of the screen?\n\nOr is it that the particles in 2d act as if they have infinite depth?",
+                            "score": 4,
+                            "author": "Willingo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That \"only\" there is doing a lot of heavy-lifting lol, but yes. That also doesn't look like a particle simulation, but I could be wrong.\n\nAnd yeah, 2d and infinite depth would, on paper, look identical (remember there's also the mesh's numerical instability)",
+                                    "score": 4,
+                                    "author": "ZackyZack",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I don't have the physics math skills anymore to understand this sadly, but would this difference still occur even with no component of velocity into/out of the page?\n\nI also don't know what mesh numerical instability means, though I understand in general a small variation in starting conditions can create drastically different results",
+                                            "score": 1,
+                                            "author": "Willingo",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "If you fix no movement in/out of page (assuming you don't break math), you are simulating 2d.\n\nSo, assuming the simulation is being done with Finite Elements or Finite Volumes, they need a mesh to represent the available volume your fluid will exist in. Most common are regular meshes made out of tetrahedrons aligned in such a way to make a regular rectangular grid. If you draw it out, you'll see there are lots of diagonals. Since computers aren't infinitely precise, this leads to small differences of influence along differently-sized edges (simplifying a bit, but overall true).\n\nAnd yes, in Navier-Stokes simulations, simulations are crazy sensitive to starting condition.",
+                                                    "score": 3,
+                                                    "author": "ZackyZack",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "OK thank you",
+                                                            "score": 3,
+                                                            "author": "Willingo"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Poincarr\u00e9-Bendixson theorem: solutions of dirrential equations in 2d behave in extremely restrictive ways  because the conservation matter imposes a lot of restrictions on the movement due to the topology properties of the plane\n\nWell, not exactly as this theorem only dictates what happens at equilibrium, but at the end of the video the system does not seem to evolve a hole lot anymore + the principles of the proof should hold as long as the flow follows strong enough conservation laws",
+                    "score": 3,
+                    "author": "3lioss"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 34,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Let's say you wanted to launch a ball in 3 dimensions. You could write and solve equations in 3 dimensions no problem. Then, when displaying on your monitor, the information would be compressed to 2D in order to watch the ball's path from a certain angle. In this case, you could've also written 2D equations that would model the same flight path and get the same visual effect at the end.\n\nTo contrast this, flow equations behave very differently. The flow you see in 3D compressed into 2D is actually very different than the flow you see just simulating in 2D. This is part of what makes these equations so unique to study and hard to find shortcuts for.",
+                    "score": 64,
+                    "author": "Wahzuhbee"
+                },
+                {
+                    "level": 1,
+                    "comment": "I, too, am aroused",
+                    "score": 3,
+                    "author": "SHAMEanBLAME"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey there,\n\nThe next part of my video series on fluid simulation is available.\n\n[https://www.youtube.com/watch?v=aWIdWYxz\\_AI](https://www.youtube.com/watch?v=aWIdWYxz_AI)\n\nTopics covered: 3D Flow vs. 2D Flow vs. flat 3D Flow, Local Similarity, Local Linearity, Expansion of the Local Domain via Ensemble Averages of Macroscopical Flow, Spatial Discretization, Resolution &amp; Convergence, Local Basis Shapes, Non-Local Similarity, Global Basis Shapes, Link back to Quantum Mechanics Simulations.\n\nI hope you like it!\n\nHave fun!",
+            "score": 38,
+            "author": "braintruffle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What is the difference in stimulation times between the 2D and 3D?  Obviously looks like a better solution, but I imagine it takes absurdly longer (used to do molecular dynamics, difference between implicit and explicit solvation was ~6 hrs vs 30 days).",
+                    "score": 3,
+                    "author": "yojimborobert",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I only know the flow simulations tangentially and there are some optimizations that can get a realistic looking (but not 100% accurate) results in real time, meaning about 30 times per second over a grid of 1024x1024",
+                            "score": 2,
+                            "author": "Hexorg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why does it suddenly create vortexes in the middle (sorry if I'm not using the correct terms)?",
+            "score": 3,
+            "author": "Veerdavid",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Vortices are the correct term. Essentially, it comes from the fluid slowing down and going from laminar flow (which is fast and smooth) to turbulent flow, which is slower and more chaotic. \n\nAs a fluid slows down, it will tend to create these vortices mainly because of the bumping of molecules with other molecules. It\u2019s kind of like how a ball thrown at a can pyramid can knock it down but a slow ball might bounce off.",
+                    "score": 7,
+                    "author": "Lambaline"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What I would assume is happening here, but I could be mistaken, is related to the energy cascade of the system. A normal 3d fluid usually form eddies that would break into smaller ones until dispassion takes over. On the other hand, 2D fluid systems behave differently, as they, contrary to the 3D case, have a reverse cascade of energy, I.e. smaller eddies will aglutinate into bigger eddies up until a certain scale. On a side note, It can, however, happen in some very specific 3d cases provided that this case behaves as a 2d case, i.e. no vertical change in density and velocity, and small surface pressure (shallow water scale system). I even have heard that hurricanes for example can display this reverse energy cascade on their base and that it helps to input energy on the overall hurricane system. Regardless, that is just my guess on what's happening in the video.",
+            "score": 2,
+            "author": "farolap"
+        },
+        {
+            "level": 0,
+            "comment": "Now do the solution for the Navier\u2013Stokes equations",
+            "score": 0,
+            "author": "imaginary_num6er"
+        },
+        {
+            "level": 0,
+            "comment": "2d sim looks quite different",
+            "score": 1,
+            "author": "C0sm1cB3ar"
+        },
+        {
+            "level": 0,
+            "comment": "I can't wait for 4D to drop.",
+            "score": 1,
+            "author": "lod254"
+        }
+    ]
+}

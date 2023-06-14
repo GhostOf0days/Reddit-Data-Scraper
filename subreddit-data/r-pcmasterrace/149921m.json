@@ -1,0 +1,89 @@
+{
+    "id": "149921m",
+    "score": 0,
+    "title": "4070TI power supply question",
+    "author": "Njct",
+    "date": 1686752233.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/149921m",
+    "media_urls": [],
+    "other_urls": [
+        "https://preview.redd.it/sacde3nrtz5b1.png?width=960&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=6b6346c7955b80b338a2b58820cd0ad6a33e0ab1"
+    ],
+    "postText": "I have just finished my PC build and was reading online about GPU to PSU connections. My TUF 4070ti has one slot on the card and comes with a connector that splits the connection into 2 8-pin connectors. Currently I have one cable coming from my power supply into these two 8-pin connectors, is this okay? I saw a diagram somewhere showing that it is recommended to have two separate power supply cables running into each GPU 8-pin connector.\n\nI am attaching the diagram I'm referencing, the main reason why I am confused as the picture at the bottom shows a GPU with two cable slots but mine only has one (that gets split into two by the connector).\n\n&amp;#x200B;\n\n&amp;#x200B;\n\nhttps://preview.redd.it/sacde3nrtz5b1.png?width=960&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=6b6346c7955b80b338a2b58820cd0ad6a33e0ab1",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Should still use two seperate cables going into the GPU (Adpater) (Except for when your PSU has a 12VHPWR Cable, in that case use this one, obviously)",
+            "score": 1,
+            "author": "luminer03"
+        },
+        {
+            "level": 0,
+            "comment": "What is your source for that image?\n\nI'm pretty sure some person made that to illustrate a question they had on some forum years ago and shouldn't be used as a reference for anything.\n\n---\n\nSo you're wondering if you can use the pigtail?\n\nhttps://knowledge.seasonic.com/article/8-installation-remark-for-high-power-consumption-graphics-cards\n\nThe **recommended** way to power a GPU over 225W is with an individual power cable per connector, but it should be okay to use the pigtail if the card isn't under heavy load.\n\nFor 30-series Founders Edition cards with the 12-pin adapter you will need a separate cable per 8-pin connection, this is listed as a requirement, not a recommendation. This doesn't change for the 40-series.\n\n* Make sure that 12VHPWR connector is fully plugged into the GPU. Really. It's also supposed to be easier to connect the adapter before installing the card.\n\nThe reasoning has a few facets: using fewer cables means the cables carry more load making them run hotter, which increases resistance, which makes the cable hotter and the PSU work a little more. A sustained loading could expose any flaws in construction.\n\nNot all PSU cables are made equal, those with thinner wires won't handle heavy loads as well as those made with heavier gauge wire.\n\nI don't know if anyone has done more the GamersNexus on transient spikes yet, but it seemed that some of the recommendations from PSU and GPU makers to use more cables is to mitigate some of the issues related to transient spikes causing the PSU protections tripping.\n\nMSI has something similar: https://www.msi.com/blog/we-suggest-80-plus-gold-1000w-and-above-psus-for-nvidia-geforce-rtx-3090-Ti\n\nBut being focused on a 3090 Ti kind of puts a dent in the appeal.\n\n[ThermalTake](https://i.imgur.com/lelbjsX.png) has a version that's hidden in a PDF, which is similar to the earlier version of what Seasonic had.\n\n[Silverstone](https://www.silverstonetek.com/en/tech-talk/wh_pcie-connection) seems to say they won't cover warranty if an issue arises from using a pigtail on a power hungry card. They include [their power cable suggestion graphic](https://www.silverstonetek.com/upload/images/tech/WB21-GRA/PCIe%20connections.jpg).",
+            "score": 1,
+            "author": "zeug666",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "When putting my build in a PC parts picker list it gave me some blue warning about ensuring the GPU wasn\u2019t daisy chained and had separate cable connections.\n\nhttps://preview.redd.it/anz7rlkgyz5b1.jpeg?width=3024&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=86637bc649ec05ebccaf778134a65935fcca74e6\n\nSorry for the glare due to the glass, so my card has one slot with a connector that splits it into two connections. Since I only have one cable running from my PSU to GPU, you recommend adding an additional PSU cable and having the connections split up to reduce heat?",
+                    "score": 1,
+                    "author": "Njct",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "40-series cards use 12VHPWR, typically via the included adapter, which it seems like you're doing here.\n\n&gt; For 30-series Founders Edition cards with the 12-pin adapter you will need a separate cable per 8-pin connection, this is listed as a requirement, not a recommendation. This doesn't change for the 40-series.",
+                            "score": 2,
+                            "author": "zeug666",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you for the incredibly detailed write up, I also wanted to ask about CPU mhz speeds. I run DRR5 ram so I enabled EXPO II in BIOS and set my power settings to the AMD high performance as recommended by peers. Using the ROG Armoury tool I noticed my CPU speeds were running constantly between 4100-4800 mhz on average with some occasional spikes at 5000-5200 mhz max. I\u2019m sitting around 30-40 degrees Celsius while idling and anywhere between 50-70 degrees while playing Diablo 4 on high.\n\nAre these speeds and temps normal or is it indicative of any issues that I should try and address? My CPU is a Ryzen 9 7900X. I apologize if you are unsure, I may need to make a separate post for this question.",
+                                    "score": 1,
+                                    "author": "Njct",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Sorry, that would be a question for others.",
+                                            "score": 1,
+                                            "author": "zeug666"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That diagram is for 6/8pin PCIE power connetors.  \n\nYour new graphics card has a single 12/16pin 12vhpwr connector.  \n\nTry not to use that connector adapter that game with your GPU, try to get a dedicated native 12vhpwr cable from your PSU vendor.  \n\nWhat PSU?",
+            "score": 1,
+            "author": "Curun",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "My PSU is a Corsair RM850",
+                    "score": 2,
+                    "author": "Njct",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Highly recommend you buy this: \nhttps://www.corsair.com/us/en/p/pc-components-accessories/cp-8920284/600w-pcie-5-0-12vhpwr-type-4-psu-power-cable-cp-8920284\n\nhttps://www.amazon.com/Corsair-Premium-600W-12VHPWR-Cable/dp/B0BLY1B362\n\nDirect cabling. No rigid adapter. Less strain on gpu.  Clean direct less complicated wiring.",
+                            "score": 1,
+                            "author": "Curun",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Wow thank you so much!\n\nMy current cable management is a mess with the two separate PCIe cables running from my PSU to that adapter. That would perfectly solve my issue.",
+                                    "score": 2,
+                                    "author": "Njct"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": "14989ja",
+    "score": 1,
+    "title": "I have a question about ARGB fans.",
+    "author": "aley2794",
+    "date": 1686750241.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/14989ja",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "My case Lian Li 205m mesh came with two 140 mm 1200 RPM ARGB PWM fan and I have a  Asrock A520M-HDV motherboard that doesn't come with an ARGB header base on what I look in the manual and on the internet, so I wanted to know if there was a way to use the ARGB?\n\nI don't know to much about rgb stuff and I have read that there are controllers but have to be connected to the PSU, but do I need a special cable from the PSU to connect it? my PSU came with a cable named peripheral but I don't see where should I connect that to the motherboard, and for what a read is just for legacy stuff, so I wanted some clarification about this subject.\n\nSorry if this is something basic but I was trying to understand by my self but everything I find is like half an answer so I though maybe here someone could help me.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt;  there are controllers but have to be connected to the PSU\n\nCorrect.\n\n&gt; do I need a special cable from the PSU to connect it?\n\nNothing special, typically Molex or SATA, so the usual 'other' connectors from the PSU.\n\n&gt; my PSU came with a cable named peripheral but I don't see where should I connect that to the motherboard\n\nIt doesn't connect to the motherboard, it would connect directly to the peripheral (aRGB controller, fan hub, hard drive, etc).\n\n&gt; Lian Li 205m mesh\n\nhttps://lian-li.com/product/lancool-205/\n\nThey don't say which particular fans they include, but I'm guessing some version of their BORA. Common aRGB fan style (in terms of connectors).\n\nThis case includes an aRGB controller. https://lian-li.com/wp-content/uploads/2020/11/205Mesh_IO.jpg - see the 'C' and 'M' buttons here.\n\nCase Manual. Controller on the lower right: https://i.imgur.com/9MGmJKG.png\n\nThis means you can plug in the included fans, and 3 other things, to this controller for manual control.\n\n&gt; Asrock A520M-HDV that doesn't come with an ARGB header\n\nDoesn't seem to have a lighting header.\n\nYou have (at least) two options here:\n\nFirst: Plug stuff into the case aRGB controller and use the buttons to go through the preset options.\n\nSecond: To use software-based lighting control, the controller needs to be plugged into an aRGB header, which your motherboard doesn't have, and set to software mode.\n\nhttps://i.imgur.com/UYm2TBv.png - this one\n\nFor software control you will need a USB-based lighting controller. There's like 3 (which I'm aware of) and they accept several items, so the case controller may not be necessary.\n\nThese options are from Razer, Zalman, and one of the Cooler Master controllers; they have a power connection to the PSU, a USB connection to a motherboard USB header for software control, and some number of aRGB connections for the lights. Control would be via the respective controller's own software.\n\nBack a step, you can connect the several lights to the case controller which then gets plugged into the USB controller so you can have many, many lighted things, or you can just plug directly into the USB controller. The difference here is that all the stuff connected to the case controller will act the same (this controller becomes a hub), but stuff connected to the USB controller can be controlled via controller port (if you connect a hub or splitter to a port on the USB controller, all the things on that particular port will act the same).\n\nCheck out the [PCMR RGB Primer](https://new.reddit.com/r/pcmasterrace/comments/kd4vju/pcmr_rgb_primer_v2/) for some more information.",
+            "score": 3,
+            "author": "zeug666",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "OP, just do this, use your case , rather than mainboard. Easy.",
+                    "score": 1,
+                    "author": "Curun"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "These controllers use Molex, SATA Power, or sometimes USB. Maybe Molex is what you're refering to",
+            "score": 1,
+            "author": "luminer03"
+        },
+        {
+            "level": 0,
+            "comment": "Yes, you can get an ARGB hub to drive the LEDs.  \nThe hub is usually powered by a SATA connector.",
+            "score": 1,
+            "author": "Curun",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hubs do no offer control, they require input from a controller.",
+                    "score": 1,
+                    "author": "zeug666"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you at some argb hubs they will clearly show/say sata powered. So if you have a non nvme ssd you\u2019ll already have that cable coming out of your psu (assuming your sata cable has multiple connections per cable)",
+            "score": 1,
+            "author": "isopres"
+        }
+    ]
+}

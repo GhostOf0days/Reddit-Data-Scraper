@@ -1,0 +1,557 @@
+{
+    "id": "ym1s5v",
+    "score": 1901,
+    "title": "The superposition of waves travelling in opposite directions creates stationary waves",
+    "author": "PhilosopherFar3847",
+    "date": 1667575253.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/ym1s5v",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "As an audio engineer, this phenomenon is the source of hours of woe sometimes",
+            "score": 179,
+            "author": "HiiiTriiibe",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How does cosine, sine &amp; tangent apply in this context?",
+                    "score": 14,
+                    "author": "throwawaygreenpaq",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think he\u2019s talking about phase\n\nhttps://emastered.com/blog/audio-phase",
+                            "score": 17,
+                            "author": "ModernFaust",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes! Tho arguably calculus does play a factor in how fx plugins work, especially in modern daws where you have formula controllers that utilize calculus or algebraic equations to do complex automations on different fx to create experimental and interesting outcomes for sound design, but you find that being utilized a lot more in genres like edm and even then, only by more mathematically inclined artists, you can create masterpieces without ever thinking of the math behind it, I love the idea that folks utlize mathematical relationships to create sound in a unique way",
+                                    "score": 5,
+                                    "author": "HiiiTriiibe",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I don\u2019t know much about any of the math or science but [this same phenomenon](https://www.studysmarter.us/explanations/physics/waves-physics/resonance-in-sound-waves/) is apparently responsible for a singer being able to break glass with their voice. And the same idea is used i[n the slits on the side of a shotgun mic](https://www.soundonsound.com/sound-advice/q-how-do-shotgun-mics-work) to reduce interfering sound by creating phase in the frequencies that pass through holes.",
+                                            "score": 2,
+                                            "author": "ModernFaust"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Tangent doesn\u2019t apply, sound waves are essentially a sum of a set of waves, which can be expressed as in summation notation. You have to do a forward Fourier transform to figure it out though. \n\n\nSine and cosine are the same waveform 90 degrees phase shifted. And sound can be expressed as a sum of sine and cosine waves at different frequencies",
+                            "score": 2,
+                            "author": "TheNewYellowZealot"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Is this what\u2019s known as a standing wave?\n\nThere have been studies suggesting that standing infrasound waves can trigger haunting or ghost like experiences in people when the conditions are right.",
+                    "score": 42,
+                    "author": "StuartGotz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That was my understanding, and if the brown noise I synthesized to use to sleep is any indication, standing waves can do some bizarre shit in a room, you can hear patterns in the noise that are entirely dependent on where ur head is positioned in the room and if you turn ur head slightly they stop, it\u2019s really trippy. I imagine low end frequencies that can be felt but not heard would have a strange effect on a person. Standing waves also make things called bass pockets in studios that aren\u2019t treated well enough",
+                            "score": 61,
+                            "author": "HiiiTriiibe",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Musical ear syndrome \u2013 it\u2019s a bitch. Can\u2019t listen to brown noise cuz the whispering orchestra comes for me",
+                                    "score": 21,
+                                    "author": "StrawberryBlondeHaze",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "for me i found brown noise better because it reminds me of the ocean waves. White noise just sounds like old school tv static",
+                                            "score": 8,
+                                            "author": "Deppfan16",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Try pink noise. White noise is equal energy on all frequencies, so it sounds sharper. Pink noise is equal energy on all octaves, and since low frequency octaves are larger in band it sounds better.",
+                                                    "score": 3,
+                                                    "author": "TheNewYellowZealot",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "ooh thanks. gives me thunderstorm vibes",
+                                                            "score": 3,
+                                                            "author": "Deppfan16",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "No problem",
+                                                                    "score": 2,
+                                                                    "author": "TheNewYellowZealot"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Great now I'm gonna meditate to brown noise and see what weird shit comes up",
+                                            "score": 6,
+                                            "author": "Big_Ole_Smoke"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you. Here\u2019s an article on the infrasound and haunting:\n\nhttps://www.theguardian.com/science/2003/oct/16/science.farout",
+                                    "score": 1,
+                                    "author": "StuartGotz"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yes - imagine a 1 dimensional domain (like a string) being plucked from a point around the middle. You can derive an analytical solution using d'Alembert's travelling wave solution that follows the superposition principle demonstrated in the 3rd gif.\n\nIn a room with 3 dimensions the same kind of principle applies, except it's a full volume described by the 3D wave equation and boundary conditions. As it's a partial differential equation, you can use some kind of numerical approximation technique to solve for the evolving pressure field (like FDTD). Standing waves become more clearly visible in visualisations after 2nd/3rd order reflections.",
+                            "score": 12,
+                            "author": "itskobold"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "What woe means??",
+                    "score": 9,
+                    "author": "Loloehbom",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "\u201cWoe is me\u201d aka source of pain and stress",
+                            "score": 13,
+                            "author": "Tarchianolix"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Like 'The Blade of Woe' from Morrowind.",
+                            "score": 15,
+                            "author": "SwordsAndWords",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Relevant user name .\n\nWasn\u2019t it the sword of white woe though?",
+                                    "score": 8,
+                                    "author": "Stay_Curious85",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Epic! You are quite correct. I mixed up Morrowind and Oblivion. Thanks for the catch!",
+                                            "score": 5,
+                                            "author": "SwordsAndWords",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I spent many an hour starting over and over in morrowind lol. Always ran to pick it up early",
+                                                    "score": 3,
+                                                    "author": "Stay_Curious85",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Because not crouching on that bookcase is just not the thing to do. I am on your page.",
+                                                            "score": 2,
+                                                            "author": "SwordsAndWords"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You sound like you own a fork of horripilation.",
+                                                    "score": 2,
+                                                    "author": "Spongy_and_Bruised"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Don\u2019t you just love when you get waver because you\u2019ve got two tonalities that are too close in frequency?",
+                    "score": 1,
+                    "author": "TheNewYellowZealot"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How does stationary waves sound like?",
+            "score": 64,
+            "author": "Ho6org",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Usually it's called the resonant frequency \n\nHave you ever been singing or talking in the bathroom and noticed that a certain word/syllable/frequency sounds weirdly loud? That is basically a standing sound wave from what I understand.",
+                    "score": 128,
+                    "author": "Tetraides1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very loud, or very quiet, depending on whether you're in the null or the crest of the standing wave.",
+                            "score": 64,
+                            "author": "HurbleBurble",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've noticed that sometimes while playing my electric guitar",
+                                    "score": 9,
+                                    "author": "HotChilliWithButter",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "If you get a real clean channel, have an acoustic nearby, and both guitars relatively in tune, the open strings will start buzzing on the acoustic if you play open on your electric. It s very trippy lol.",
+                                            "score": 21,
+                                            "author": "Stay_Curious85",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This lute does that to the extreme \n\nhttps://youtu.be/4YmELV5p6ZY",
+                                                    "score": 12,
+                                                    "author": "Kryptosis",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That\u2019s really cool. You can even hear the resonances \u201cthrobbing\u201d as they stack on each other like the gif shown!",
+                                                            "score": 5,
+                                                            "author": "Stay_Curious85"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Some instruments actually have strings built in to do just this, they're called sympathetic strings. The baryton, don't know if I spelled that right, but it's a very rare cello like instrument was well known for that. The viola d'Amore also has them. The most popular instrument with sympathetic strings is probably the sitar.",
+                                                    "score": 10,
+                                                    "author": "HurbleBurble"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Are there sounds in the audible spectrum that have a wavelength long enough for you to be able to control whether you are standing in the null or crest?",
+                                    "score": 1,
+                                    "author": "beatbeatingit",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, they're longer than most people think. I believe around 50 hertz, a wavelength is 11 ft long, but don't quote me, that's stuff I haven't touched on in many years.",
+                                            "score": 2,
+                                            "author": "HurbleBurble",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Why am i even asking, its not that hard to figure out\n\nWave speed = frequency * wavelength\n\n343m/s = 50Hz * wavelength\n\nwavelength = 6,9 meters\n\nSo yeah pretty long actually",
+                                                    "score": 1,
+                                                    "author": "beatbeatingit",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I guess a hundred Hertz was around 11 ft. I just remember that number from somewhere.",
+                                                            "score": 2,
+                                                            "author": "HurbleBurble",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yes 100 hertz would be 11ft if you convert from meters",
+                                                                    "score": 1,
+                                                                    "author": "beatbeatingit"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Ahhhhoooooo hhhhoooooo hhhooooo\n\n\nThat one?",
+                            "score": 4,
+                            "author": "mrstipez",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That feels more like feedback to me.",
+                                    "score": 1,
+                                    "author": "shadow7412",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Feedback is \n\n^^eeeeeee eeeeeee EEEEEEE \n#EEEEEEEEEEEEEE",
+                                            "score": 1,
+                                            "author": "mrstipez",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[This is always the first thing that comes to mind for me when I think of feedback](https://youtu.be/9GnQMrF7mx4)",
+                                                    "score": 1,
+                                                    "author": "Nixavee"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How an audible frequency stationary wave sounds will depend on where you're standing. If you are in a null where the waves are canceling, you will hear nothing.  When you move off that null toward a peak, the volume (amplitude) will increase to a point where it is the sum of the interacting waves that caused the standing wave.",
+                    "score": 21,
+                    "author": "Milkshake2244",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Like sonic boom?",
+                            "score": 2,
+                            "author": "Ho6org",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not that loud. \n\nIf you were in between two speakers pointed at each other playing the same note at the same volume,  standing at a null you would hear nothing, standing at a peak you would hear that note at double the volume the speakers were playing",
+                                    "score": 18,
+                                    "author": "Milkshake2244",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "We have a concrete circular structure in our downtown area which you can stand in the center of and hear yourself really loudly when you speak. Anywhere else in the circle, you can\u2019t hear yourself nearly as well. Seems like it must be what just you\u2019re saying, waves reflecting and reaching a peak in the center",
+                                            "score": 2,
+                                            "author": "PM_ME_YOUR_PORTRAIT"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The same as moving waves. All we hear is the pressure of the air oscillating at different frequencies. So our ears can\u2019t tell the difference. \n\nBut most noises and musical notes are from resonance which produce standing waves, so we hear them all the time.",
+                    "score": 2,
+                    "author": "Geeoff359"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There is a standing wave on the string, but the longitudinal pressure wave you hear is not a standing wave.",
+                            "score": 2,
+                            "author": "shostakofiev"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don\u2019t get it",
+            "score": 11,
+            "author": "MOS8026",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Me neither. Post title says they are travelling in opposite directions but clearly they are all going to the right. Also, which wave is the superposition? They all seem independent. And where's the standing wave?",
+                    "score": 7,
+                    "author": "tias",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Theres more than one image. Try scrolling right if you\u2019re on mobile",
+                            "score": 14,
+                            "author": "Boelrecci",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I see. That's... unnecessary.",
+                                    "score": 4,
+                                    "author": "tias"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As somebody who works in the energy industry, this is basically the principle for [three phase power](https://en.wikipedia.org/wiki/Three-phase_electric_power) generation. In order to maintain 60Hz (or 50 Hz depending on where you live) generators use three phases 120 degrees apart as to not damage anything plugged in on the other end (ie your TV, sound equipment, etc).",
+            "score": 34,
+            "author": "Marlopupperfield",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm a bit confused by the wording of your comment. Are you saying that three phase makes it easy to keep consistent 60Hz at the generator? And subsequently the consistent 60Hz prevents the load from being damaged?",
+                    "score": 6,
+                    "author": "ltjpunk387"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How did you make Matlab update the graphs like that?",
+            "score": 5,
+            "author": "DaBozz88",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You can see how to create moving gif files in matlab in this link:\n\nhttps://www.reddit.com/r/electroagenda/comments/xkhlxz/create_animated_gifs_in_octave_and_matlab/?utm_source=share&amp;utm_medium=android_app&amp;utm_name=androidcss&amp;utm_term=1&amp;utm_content=share_button\n\n(Note the format of the code on the website used to look nice. But now it looks ugly, almost as plain text, and I do not know why. I am trying to fix it)",
+                    "score": 11,
+                    "author": "PhilosopherFar3847",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks. \n\nI knew the frame stuff, idk why I thought there was a slider involved that had it more interactive. Or something with live updates. \n\nI guess I just don't like the idea of making a new frame every time and was hoping for some better animation techniques. \n\nI'll eventually dig into it more. \n\nThanks again.",
+                            "score": 3,
+                            "author": "DaBozz88",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes. I think in Matlab2022 there is a more interactive way. If you look for that in the matlab community, I shared this method, and some people comented other possibilities.",
+                                    "score": 2,
+                                    "author": "PhilosopherFar3847"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This the link where other possibilities are provided:\n\nhttps://www.reddit.com/r/matlab/comments/xxvpgk/interesting_code_to_create_animated_plots_in_gif/?utm_source=share&amp;utm_medium=android_app&amp;utm_name=androidcss&amp;utm_term=1&amp;utm_content=share_button",
+                                    "score": 2,
+                                    "author": "PhilosopherFar3847"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why is the sum of two functions called superposition, is there some explanation for such naming convention? (I'm not suggesting it's wrong, just curious)",
+            "score": 9,
+            "author": "szwos",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\"Super\" is latin for \"over\". The function that derives from adding two others is the \"overlay\" of them, hence superposition.",
+                    "score": 12,
+                    "author": "herrmajo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They all look like they're moving to me \ud83e\udd37\u200d\u2642\ufe0f",
+            "score": 10,
+            "author": "He11scythe"
+        },
+        {
+            "level": 0,
+            "comment": "What\u2019s the meaning of stationary in this context?",
+            "score": 2,
+            "author": "mrosa__",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That it looks like the resulting wave is not travelling, in contrast with the components that generate the standing waves.",
+                    "score": 1,
+                    "author": "PhilosopherFar3847"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Anyone knows which software they're using to make these waves?",
+            "score": 2,
+            "author": "gagzd",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They're probably using Matlab.",
+                    "score": 3,
+                    "author": "bilarion"
+                },
+                {
+                    "level": 1,
+                    "comment": "It is Octave, a free SW with a very similar syntax to Matlab. If you read some of the comments above, you will see the links to the website where the code strategy is explained.",
+                    "score": 2,
+                    "author": "PhilosopherFar3847",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cool, thanks.",
+                            "score": 2,
+                            "author": "gagzd"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you generate several different frequencies and record the standing wave ratio and phase at each frequency you can actually create a map of the impedance of the transmission line. You can use an IFFT to convert these responses from the frequency domain to the time domain. In simple terms if you add the reflected sine waves of several different frequencies together you end up with a map showing you the changes of impedance throughout the transmission line. Very useful for finding faults and defects.",
+            "score": 2,
+            "author": "ChickenMcNuggNugg"
+        },
+        {
+            "level": 0,
+            "comment": "Introduction to Quantum Mechanics",
+            "score": 2,
+            "author": "PiotrekDG"
+        },
+        {
+            "level": 0,
+            "comment": "equations with faces (- \u03c9 -)",
+            "score": 1,
+            "author": "FeeATo"
+        },
+        {
+            "level": 0,
+            "comment": "This feels somehow related to light",
+            "score": 1,
+            "author": "Sad_Flower_7846"
+        },
+        {
+            "level": 0,
+            "comment": "yo is this like how Rick waves cancel out Morty waves",
+            "score": 1,
+            "author": "imbeingcyberstalked"
+        },
+        {
+            "level": 0,
+            "comment": "what are the first 2 pictures showing?",
+            "score": 1,
+            "author": "seviliyorsun",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Waves travelling at different phase velocities.",
+                    "score": 1,
+                    "author": "PhilosopherFar3847"
+                }
+            ]
+        }
+    ]
+}

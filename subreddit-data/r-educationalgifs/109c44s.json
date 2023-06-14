@@ -1,0 +1,253 @@
+{
+    "id": "109c44s",
+    "score": 2211,
+    "title": "How to format the OpenAI prompt to have it generate SQL queries from natural language sentences",
+    "author": "many_hats_on_head",
+    "date": 1673462109.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/109c44s",
+    "media_urls": [
+        "https://i.redd.it/g5m6a57pigba1.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "It's all fun and games with predictive text bots until it generates an SQL injection attack from your prompt",
+            "score": 176,
+            "author": "cakebyte",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Everyone thinks they want prepared statements until they get that raw SQL query. Never go back",
+                    "score": 20,
+                    "author": "finitelife_87"
+                },
+                {
+                    "level": 1,
+                    "comment": "drop table",
+                    "score": 8,
+                    "author": "pixelpp"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Getting a computer to tell you how to tell a computer what to do.  I like it",
+            "score": 24,
+            "author": "Apptubrutae",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Peak System Admin",
+                    "score": 9,
+                    "author": "suprchrgd"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can this be done for regex too?",
+            "score": 22,
+            "author": "wieuwzak",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That is [supported](https://aihelperbot.com/snippets/clcsb0sle0000pj2060hiol0u) as well.",
+                    "score": 14,
+                    "author": "many_hats_on_head"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Long time lurker in this sub. I get asked quite often how to you format the prompt (the actual text input that you send to OpenAI) to get it to return the desired result. It is actually quite, you just specify what you want it to return. The example from the video is: \n\nThe user input `find all users located within 5 km from Times Square in New York via lat/long`.\n\nBefore it is send to OpenAI API's it is formatted into: `Interpret: \"find all users located within 5 km from Times Square in New York via lat/long\" as SQL statement`. The `SQL` could then also be `PostgreSQL` or `MSSQL` or a third.\n\nThis logic can then applied to other fields and technologies depending on the desired outcome. \n\nThought it might interest. If you want to [explore using AI to build SQL you can check it out here](https://aihelperbot.com/). Feel free to ask my anything.\n\n(Disclaimer: It is my small project.)\n\nEdit: Formatting.",
+            "score": 66,
+            "author": "many_hats_on_head",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Learning how to interact with the bot is the same as learning how to interact with the sql engine. Anything more complex than a select will be a mess in natural language. I\u2019d love to see a sub select with an outer join, having clause, and a reference in the group clause to a date alias. Basically all you\u2019ve done is add an abstraction layer to an already abstracted language, except with less precise terms. You have to know how to write sql for this to be useful. I see no value in this.",
+                    "score": 40,
+                    "author": "ThePoultryWhisperer",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think we are at the beginning of AI and this could definitely be improved.. but at the same time I think this will create a bigger knowledge gap for people that are new to SQL because it decreases your involvement in figuring out the solution. Reminds me of instances when I send queries to other people at work who dont know how to change any fields without breaking it and then come ask me how to change the date range pulled..",
+                            "score": 13,
+                            "author": "kadoor99",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So? I drive a car but don't know how to fix it beyond basic maintenance stuff.",
+                                    "score": 4,
+                                    "author": "chickenstalker"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It\u2019s useful for showing off to your boss, I guess! But in reality, SQL is only a useful tool if you understand your DB structure and all its little idiosyncrasies (actually, you have to join to PartNumber_fixed because PartNumber can only join to denormalized tables) and understand the actual application of your data. \n\nIt\u2019s easier to teach SQL to someone who knows the business than it is to teach the business to someone who knows SQL. Unless the person who knows the business is over 50 and has 0 experience with any languages.",
+                            "score": 5,
+                            "author": "albinoblackman"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Dude this is AWESOME. Once I subscribe can I tell interviewers and update my resume to state I\u2019m a SQL expert?",
+            "score": 74,
+            "author": "Cheetowala",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Master of the Prompt \u26a1\ufe0f",
+                    "score": 24,
+                    "author": "many_hats_on_head",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "\"Doling out the charm\"",
+                            "score": 4,
+                            "author": "JamesTheJerk",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ready with a pre login handshake",
+                                    "score": 1,
+                                    "author": "uselessartist",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "...and an ^open aaarm",
+                                            "score": 2,
+                                            "author": "JamesTheJerk"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Would this work well with Salesforce related queries?",
+            "score": 7,
+            "author": "Izzyf89",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Salesforce SOQL/SOSL queries are supported.",
+                    "score": 8,
+                    "author": "many_hats_on_head"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Even more impressive given that the plain language query you supplied it was syntactically incorrect",
+            "score": 6,
+            "author": "ktappe"
+        },
+        {
+            "level": 0,
+            "comment": "Lol SQL is basically NL",
+            "score": 3,
+            "author": "Ravi5ingh"
+        },
+        {
+            "level": 0,
+            "comment": "Does this support nosql systems like MongoDB?",
+            "score": 2,
+            "author": "k_o_g_i",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, MongoDB and DynamoDB (as well as GraphQL).",
+                    "score": 2,
+                    "author": "many_hats_on_head"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey alexa get me a job by lying about my skills",
+            "score": 2,
+            "author": "svanegmond"
+        },
+        {
+            "level": 0,
+            "comment": "What language is a comet in?",
+            "score": 1,
+            "author": "ScheduleFlat6723"
+        },
+        {
+            "level": 0,
+            "comment": "I have no idea what I just saw but I\u2019m pretty sure it\u2019s awesome",
+            "score": 1,
+            "author": "Bum-bee"
+        },
+        {
+            "level": 0,
+            "comment": "Hey, asshole! I need a *job* ya know!",
+            "score": 1,
+            "author": "CapRavOr"
+        },
+        {
+            "level": 0,
+            "comment": "Schweet",
+            "score": 1,
+            "author": "itsneedtokno"
+        },
+        {
+            "level": 0,
+            "comment": "Lmao. I think one year ago this shit company tried to interview me on writing SQLs. Such a trash company",
+            "score": 1,
+            "author": "zombo29"
+        },
+        {
+            "level": 0,
+            "comment": "But can it set up dynamic pivots?",
+            "score": 1,
+            "author": "wizwizwiz916",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What do you mean? I have some ideas on how to make it customisable for users but not exactly sure yet. You are welcome to reach out on the chat if you have some specific wishes :).",
+                    "score": 1,
+                    "author": "many_hats_on_head"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does this make learning any SQL useless per say?",
+            "score": 1,
+            "author": "nolife24_7",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "In my experience it helps you learn SQL by example and have renewed my interest in SQL. But if you aren't working professionally with SQL, perhaps in a business role, you can skip learning SQL and rely on AI.",
+                    "score": 2,
+                    "author": "many_hats_on_head"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[u/SaveVideo](https://www.reddit.com/u/SaveVideo/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=ioscss&amp;utm_content=1&amp;utm_term=1)",
+            "score": 1,
+            "author": "DenofBlerds"
+        },
+        {
+            "level": 0,
+            "comment": "Next in \"how to not do things for myself\"...",
+            "score": -5,
+            "author": "finitelife_87"
+        }
+    ]
+}

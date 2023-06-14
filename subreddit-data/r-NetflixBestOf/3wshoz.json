@@ -1,0 +1,481 @@
+{
+    "id": "3wshoz",
+    "score": 4748,
+    "title": "[Discussion] Could we please make it a rule that when posting a link to a movie, it's to the description page, rather than directly to the Netflix movie player itself?",
+    "author": "[deleted]",
+    "date": 1450104925.0,
+    "url": "https://www.reddit.com/r/NetflixBestOf/comments/3wshoz",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Most of us don't necessarily want to watch the movie that someone links right that minute, and I assume the majority of us would like to be able to read the netflix description, and see details like who's starring in the movie, who directed it etc., before watching it. Can we please stop linking directly to the movie player?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If the mods want to actually do something about this, they should add this text to /r/NetflixBestOf/w/config/automoderator\n\n\n    ---\n    # Remove direct links to player.\n    type: submission\n    url (includes, regex): [\"/watch/\"]\n    action: remove\n    comment:| \n      Hi! It looks like you've posted a link directly to the video player, instead of to the description page of that video. As such, we've removed this link. Please do re-submit it, but make sure you link to the description of the video instead.\n\n      I am a bot, so if you have any questions please [message the mods](https://www.reddit.com/message/compose?to=%2Fr%2FNetflixBestOf).\n    ---\n\n\n```",
+            "score": 371,
+            "author": "1point618",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This has been added to the Automoderator, thanks for posting it.\n",
+                    "score": 272,
+                    "author": "barkbarkbark",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cool glad to help! I've gotten a bunch of great recommendations from this sub so anything to make it better.\n\nYou might want to mark the rule as `action: filter` instead of `remove` for a while, that will remove it but put it in the modqueue. That way you can test to make sure it works correctly and doesn't mistakenly remove any posts. Once you're confident, change it back to `remove`. ",
+                            "score": 69,
+                            "author": "1point618",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I just did a test post:\n\nhttps://www.reddit.com/r/NetflixBestOf/comments/3wt80d/its_always_sunny_automod_test_post/\n\nAutomod removed it, so it's working. It took 6 minutes, probably because reddit's servers are going bonkers right now. Takes me 2-4 times reloading a page before I see it. \n\nAlso, if you want, you can tell people to \"swap out the word \"watch\" in your URL for the word \"title\" to link to the description page\" since it's so hard to get to with Netflix's new UI.",
+                                    "score": 48,
+                                    "author": "1point618"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Petition to mod. ",
+                                    "score": 2,
+                                    "author": "RockOutToThis",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Nah I have enough subreddits on my plate already.\n\nIf the mods here ever need help with automod though, they can always PM me. ",
+                                            "score": 8,
+                                            "author": "1point618"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Could you add some instructions to the automod message? E.g. how the URL should look like.",
+                            "score": 1,
+                            "author": "karmabaiter"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Wow is this what coding looks like? That's amazing. How did u do that",
+                    "score": 184,
+                    "author": "tell_me_im_funny",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Automod takes a standard markup language called \"YAML\". You define certain things about the posts you want it to look for, and how you want it to respond to those posts, and it does the rest. This isn't really coding except for in the most generic sense of the word, in that I'm writing structured text to tell a machine what to do.\n\nAnd I use automod a lot so I've just gotten good at this over time. You can check out the documentation to learn about how to use this yourself: https://www.reddit.com/wiki/automoderator/full-documentation\n\n---\n\nEdit: Come on people. Downvoting someone for asking a question is ridiculous. Asking is the only way people learn things. Are we really so anti-intellectual that we give people negative feedback for asking questions?",
+                            "score": 151,
+                            "author": "1point618",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Dat edit. You. You, I like. ",
+                                    "score": 5,
+                                    "author": "Harriklees"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Are we really so anti-intellectual that we give people negative feedback for asking questions?\n\n8 years, and you have to ask?",
+                                    "score": 0,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Oh yeah with a user name like that you're really doing your part to make this site better.",
+                                            "score": 2,
+                                            "author": "1point618",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I have no responsibility to \"make this site better\".  Are *you* getting paid or something?",
+                                                    "score": -1,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Lol. That went from 0 to shill faster than any conversation I've ever seen on reddit. Good job, you!",
+                                                            "score": 1,
+                                                            "author": "1point618"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not sure why you got downvoted, since you just seem genuinely curious.  This is sort of coding in the sense that you are typing structured text which a computer is interpreting and acting upon.  But this 'auto moderator language' is pretty simplistic compared to a 'real' programming language and isn't flexible enough to solve problems other than defining auto moderator rules.",
+                            "score": 21,
+                            "author": "neclark2"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Coding is just telling a computer what to do. There are many different \"languages\", like C++, Ruby, Python, Javascript, HTML, Assembly, and even raw 1's and 0's.\n\n[Ruby](http://tryruby.org/levels/1/challenges/0) and [Python](http://www.learnpython.org/) code examples. It's really not hard to get started programming, and you knowing english already is a very good thing since most languages out there are based on english keywords. If you want to try it out, consider /r/learnprogramming and check the sidebar.",
+                            "score": 2,
+                            "author": "hak8or"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Needs more *bleep, bloop*.",
+                    "score": 5,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "When the type of action is a submission, please remove any links that include /watch/ in its html address because it is the link to watch the show on netflix. Then I share a message with the user telling them what I did and why.",
+                            "score": 2,
+                            "author": "confuseddillpickle"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 392,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nope, not a rule according to the sidebar.  It is, however, common sense and [I suggested this months ago](https://redd.it/2ywlrq) but they weren't able to figure out the correct Automoderator code.\n\n",
+                    "score": 139,
+                    "author": "3noir",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I just posted the automod code below before seeing this comment. \n\n    ---\n    # Remove direct links to player.\n    type: submission\n    url (includes, regex): [\"/watch/\"]\n    action: remove\n    comment:| \n      Hi! It looks like you've posted a link directly to the video player, instead of to the description page of that video. As such, we've removed this link. Please do re-submit it, but make sure you link to the description of the video instead.\n\n      I am a bot, so if you have any questions please [message the mods](https://www.reddit.com/message/compose?to=%2Fr%2FNetflixBestOf).\n    ---",
+                            "score": 188,
+                            "author": "1point618"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I thought it was common sense but....\"common\" sense is hardly common",
+                    "score": 4,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "http://i.imgur.com/mHRxLnZ.jpg",
+                            "score": 10,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Common sense is frequently neither common nor sensible.",
+                            "score": 2,
+                            "author": "matts2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This has come up so many times, if this isn't a rule already then maybe we should just go to self posts only and be done with it",
+            "score": 73,
+            "author": "bluedays",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm okay with that alternative. ",
+                    "score": 22,
+                    "author": "ZeldaZealot"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is probably the most reasonable way to do this. ",
+                    "score": 6,
+                    "author": "joegekko"
+                },
+                {
+                    "level": 1,
+                    "comment": "It would be easy to set up automod to remove links to anything but the description. There's no reason to go self post only. I mean, even if you did, people would provide a link in the text that would have just as much chance of being directly to the watch page. ",
+                    "score": 11,
+                    "author": "bamgrinus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If it is self posts only, people will usually provide their own more detailed description along with the link.",
+                            "score": 1,
+                            "author": "EpicCyclops"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The mods can make a simple bot that can police the submission links and remove any that has the netflix movie player in the link.",
+                    "score": 2,
+                    "author": "SabashChandraBose"
+                },
+                {
+                    "level": 1,
+                    "comment": "[It is done](https://www.reddit.com/r/NetflixBestOf/comments/3wshoz/discussion_could_we_please_make_it_a_rule_that/cxyu8r6?context=1)",
+                    "score": 1,
+                    "author": "eaglebtc"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "100% agree. This should already be a rule ",
+            "score": 25,
+            "author": "lemonman92",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Too many times have I been interesting in the movie on mobile only to get to an unreadable Netflix link. ",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "PREACH ",
+                            "score": 1,
+                            "author": "lemonman92"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This comment has been overwritten by an open source script to protect this user&amp;apos;s privacy.  It was created to help protect users from doxing, stalking, harassment, and profiling for the purposes of censorship. \n\n   If you would also like to protect yourself, add the Chrome extension [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), or the Firefox extension [GreaseMonkey](https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/) and add [this open source script](https://greasyfork.org/en/scripts/10380-reddit-overwrite).   \n\n Then simply click on your username on Reddit, go to the comments tab, scroll down as far as possible (hint:use [RES](http://www.redditenhancementsuite.com/)), and hit the new OVERWRITE button at the top.",
+            "score": 10,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I was really hoping when i clicked this thread it took me directly to a movie.\n \n\nam disappoint.\n \n",
+            "score": 3,
+            "author": "flargenhargen"
+        },
+        {
+            "level": 0,
+            "comment": "How can I up its this a million times?",
+            "score": 11,
+            "author": "jayboosh",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "With throwaway accounts...",
+                    "score": 7,
+                    "author": "sample_material",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nice try, Unidan.",
+                            "score": 26,
+                            "author": "brdavi"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Calling /u/unidan",
+                            "score": 0,
+                            "author": "jayboosh",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "/u/unidanx is the not-banned one",
+                                    "score": 1,
+                                    "author": "myriadic",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "And on the third day he rose again... under a conspicuously similarly named alt account.",
+                                            "score": 2,
+                                            "author": "ColdPorridge"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "\"Dats da joke\" ",
+                                            "score": -1,
+                                            "author": "jayboosh"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't know I'd this is happening with anyone else but might explain it. When I click on the more info button and it takes me to where it used top just be the description, Netflix now automatically starts playing the movie without me clicking play. It's really annoying. Is this happening to anyone else or is this a setting I'm missing?",
+            "score": 2,
+            "author": "pgirl30",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I just was talking to a Netflix rep about this today. This feature was apparently requested by customers too lazy to press a button to start their movie. However, many other customers hate it &amp; now \nNetflix is exploring ways to make this annoying autoplay an optional feature. \n\n Side note- They've also gone &amp; screwed up marking a movie as \"not interested\" where it takes 5 clicks instead of just one.",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Okay, so here's a dumb question: how do we do that? When I open up Netflix, netflix.com just leads me to the browser and I can't seem to get out of that.\n\n[Would this be okay to submit?](http://www.netflix.com/title/7880857)",
+            "score": 2,
+            "author": "DBones90",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes. You linked to the description page. What I'm talking about is people clicking play on the video and then submitting that page as a link, which when you click the link from reddit will then go straight to playing the video automatically. Yours is correct.",
+                    "score": 3,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That would involve the mods here doing something.",
+            "score": 4,
+            "author": "Opie59"
+        },
+        {
+            "level": 0,
+            "comment": "Yes. Please.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "No need to discuss.  I couldn't agree more.",
+            "score": 1,
+            "author": "HaveaManhattan"
+        },
+        {
+            "level": 0,
+            "comment": "I've never been to or heard of this subreddit but this sounds like a good idea",
+            "score": 1,
+            "author": "Jackthejew"
+        },
+        {
+            "level": 0,
+            "comment": "yes, i might want to ADD the movie to My List but i most likely do not want to watch that minute.",
+            "score": 1,
+            "author": "wwwhistler"
+        },
+        {
+            "level": 0,
+            "comment": "Yes",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I Agree!! ",
+            "score": 1,
+            "author": "iLikeGreenTea"
+        },
+        {
+            "level": 0,
+            "comment": "I asked for this in a meta discussion thread one time and got downvoted into oblivion. People thought it would lead to recommendations that weren't available on Netflix. ",
+            "score": 1,
+            "author": "athennna",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The rules in the sidebar say that only Netflix instant titles are allowed on here anyway.",
+                    "score": 3,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Everything leads to recommendations that aren't available on NF.",
+                    "score": 2,
+                    "author": "melatonia"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Agreed! ",
+            "score": 1,
+            "author": "forzato"
+        },
+        {
+            "level": 0,
+            "comment": "Agree.  Right?  Common sense, but evidently some folks don't have it, and need to be spoon-fed it. ",
+            "score": 1,
+            "author": "Ciik"
+        },
+        {
+            "level": 0,
+            "comment": "I'm surprised we ever even linked to the movie itself. That's pretty stupid and not forward-thinking at all.",
+            "score": 1,
+            "author": "grummthepillgrumm"
+        },
+        {
+            "level": 0,
+            "comment": "I think there are use cases for both. There are movies out there that take severe turns partway through, and often the landing page will ruin the surprise with a crappy movie poster or spoilery description. In those cases, it's much better to link directly to the player. ",
+            "score": 1,
+            "author": "SoldierOf4Chan"
+        },
+        {
+            "level": 0,
+            "comment": "no ",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Why don't you just google it?",
+            "score": -3,
+            "author": "NIU_1087"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If you link to the description page, it's literally one more click to play the movie.",
+                    "score": 20,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "great idea! I always want to read a little about a movie before watching it (without opening a new tab to google it). And sometimes I'm just looking to make a queue list for later. when it actually comes time to netflix and chill i go on netflix, not r/netflixbestof.",
+                            "score": 1,
+                            "author": "alwayzhongry",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, I never watch netflix on my pc. I watch on my tv at home. So if I see a movie on here that sounds interesting, I want to add it to my queue, not watch it on my laptop.",
+                                    "score": 1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes! Yes! Yes!  LOL",
+            "score": -3,
+            "author": "mxcnvida"
+        }
+    ]
+}

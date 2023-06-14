@@ -1,0 +1,933 @@
+{
+    "id": "141fwpk",
+    "score": 3992,
+    "title": "We're the Researchers who looked into the privacy of some of the most downloaded mental health tracking apps and well, there\u2019s a lot of bad to report. AMA!",
+    "author": "Mozilla-Foundation",
+    "date": 1685974426.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/141fwpk",
+    "media_urls": [
+        "https://www.reddit.com/r/IAmA/comments/141fwpk/were_the_researchers_who_looked_into_the_privacy/"
+    ],
+    "other_urls": [
+        "https://foundation.mozilla.org/en/privacynotincluded/](https://foundation.mozilla.org/en/privacynotincluded/))",
+        "https://foundation.mozilla.org/en/privacynotincluded/categories/mental-health-apps/](https://foundation.mozilla.org/en/privacynotincluded/categories/mental-health-apps/)",
+        "https://twitter.com/mozilla/status/1665726359459471362](https://twitter.com/mozilla/status/1662131488991723523))",
+        "https://foundation.mozilla.org/en/privacynotincluded/),",
+        "https://www.mozilla.org/en-CA/newsletter/)"
+    ],
+    "postText": "Hi, We\u2019re Jen Caltrider and Misha Rykov - lead Researchers of the Privacy Not Included buyers guide ([https://foundation.mozilla.org/en/privacynotincluded/](https://foundation.mozilla.org/en/privacynotincluded/)) , from Mozilla!\n\nWe\u2019re also joined by the team from mental health app Wysa (one of the apps doing it right!), and we\u2019re all here to answer your burning questions.\n\nWe've reviewed the privacy &amp; security of some of the most used mental health apps.\n\nWith so many people putting incredibly sensitive information in the hands of big tech we wanted to get a better look at their privacy policies to understand how users\u2019 information is stored, and sometimes, sold.Here is a summary of what we found:20 of the 32 apps we reviewed earned our Privacy Not Included warning label.\n\nThis includes popular apps like BetterHelp and Sanvello, with millions of downloads, which happen to be some of  the worst in the bunch.\n\nPrivacy is not default, and consent is like the Wild West.Two apps made our Best Of category, including Wysa, who\u2019s joining us today!\n\nLearn more about our findings here [https://foundation.mozilla.org/en/privacynotincluded/categories/mental-health-apps/](https://foundation.mozilla.org/en/privacynotincluded/categories/mental-health-apps/)  AMA about our research, our guide, or anything else!\n\nProof: Here's our proof! [https://twitter.com/mozilla/status/1665726359459471362](https://twitter.com/mozilla/status/1662131488991723523))\n\n&amp;#x200B;\n\nThank you all for participating! If you'd like to dig into more details about the apps that we have reviewed please visit [\\*Privacy Not Included](https://foundation.mozilla.org/en/privacynotincluded/), and if you're curious about other Mozilla Foundation projects  you can sign up for our newsletter [here!](https://www.mozilla.org/en-CA/newsletter/)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For more AMAs on this topic, subscribe to r/IAmA_Tech, and check out our other topic-specific AMA subreddits [here](https://reddit.com/r/IAmA/wiki/index#wiki_affiliate_topic-specific_subreddits).",
+            "score": 1,
+            "author": "IAmAModBot"
+        },
+        {
+            "level": 0,
+            "comment": "Were there any common \"red flags\" in the shadier apps you found that someone could be on the lookout for to indicate an application may not be handling user data ethically?",
+            "score": 402,
+            "author": "FierySharknado",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Some of the most common red flags from our experience are:\n\nAn app confronts you with lots of questions about your mental health and other sensitive data straight after download, before actually informing you about its privacy practices and how this data might be used.\n\nAn app asks for an excessive access, such as to your camera, photos/videos, voice recordings, precise location, etc\n\nAn app allows you to connect Facebook/other numerous third-party extensions into its UX\n\nIn a privacy policy, it is not clear if you can easily get your data deleted\n\nBased on the app\u2019s privacy policy (usually a CCPA section), some of the app\u2019s practices may be considered a \u201csale\u201d of personal information under the Californian law.\n\nYou are able to log in with a super weak passwort, such as \u2018111111\u2019 or \u2018qwerty\u2019\n\nAn app forces/manipulates you into giving a \u2018consent\u2019 for sharing data for advertisement\n\nAfter signing up for an app, your email is being overflowed with the app's marketing communication, and you do not recall permitting sending you any marketing emails whatsoever\n\nApp\u2019s age ranking differs with a perceived age ranking. For example, some apps that are visibly targeting kids (one wrote 5+ on AppStore), write that no one over the age of 13 or 16 is allowed to use an app. - Misha, Privacy Not Included",
+                    "score": 878,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Honestly these are great red flags to look out for literally any website, application or service someone might use.",
+                            "score": 362,
+                            "author": "lakeurchin",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Time to make the concept of green flags: flags that eat red flags by giving people unprecedented power over the aspects that most matter. \n\nWhat might that look like?",
+                                    "score": 55,
+                                    "author": "fanchoicer",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Kind of touching on with the red flag post, is this idea around transparency and incremental permissions. Don't request everything immediately, over the course of minutes/days, introduce new features and give a privacy summary before requesting data/permissions. Discussion around what benefits you get for sharing this data. Letting you opt out of sharing particular information.\n\nI can't think of any good examples off the top of my head, and unfortunately isn't an \"immediate\" flag, but this sort of progressive privacy flows are becoming more popular, with support from the security and privacy communities.",
+                                            "score": 29,
+                                            "author": "doctorsound",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Those are good. \n\nI tend to take an ecosystem approach because with so many apps, it feels like we're all in an endless game of wack-a-mole by trying to stay on top of every app's policy, every update to the policy, whether the app has been sold sold to new owners, the reliability of the platform or app store to ensure security, etc. \n\nWe really would love something so much better that goes above and beyond to guarantee the privacy policy is rock solid while also granting us extraordinary power to ensure the policy remains that way. \n\nWhy hasn't any of us done so (start such an app)? Likely because the typical investor would flee from anything with real transformative potential, as by nature it's too risky. \n\nBut technology including AI is moving way faster than most of us realize so we must do better, like yesterday. \n\nAnd we've been able to bypasses the typical investor for some years now, by crowdfunding and going directly to the people who want a better outcome. Yet we're still stuck in a few areas. I'm gonna gather people to test out a more local and open business model that could address those areas, with the potential to be way better.",
+                                                    "score": 3,
+                                                    "author": "fanchoicer",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Imagine a universal privacy policy.\n\nOntario, for example, wrote a standard lease. All Ontario leases now look like this. There are optional clauses (that are still standardised) depending on the needs of the renter or tenant.  \n\nA universal privacy policy could have optional clauses based on the industry.  The base policy should be, generally, the most restrictive, for example with health.  \n\nThen a gaming industry privacy policy would have optional additional information that could be gathered.  A banking policy might have different needs.  Genuine industry needs would be added as exceptions here, but clearly worded.  \n\n\nBecause a new privacy policy for every single app and every single company is simply too hard for an individual to review.  Then something happens, you hire a lawyer to review it then find out you're screwed because you didn't read the fine print of the contract.",
+                                                            "score": 2,
+                                                            "author": "Mjolnirsbear",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "That has benefits and is reassuring to people, absolutely you're right there's too many apps to track and an umbrella policy is preferable (a good one), but I'm personally still leary of abuse happening in violation of said policy without our knowing immediately. \n\nIt's that immediately knowing part I'd like for us to achieve. Betting that if any company were to offer that level of reassurance, going above and beyond to do so in clear respect for people who use the app, it'd likely be game changing and people then would expect the same from more companies and apps. \n\nThat's the hope, at least. Testing will tell.",
+                                                                    "score": 2,
+                                                                    "author": "fanchoicer"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "They cost a shitton of money, because if you are not the product you are the customer and actually have to pay for the service.\n\nAnd then, basically the opposite of the red flags.",
+                                            "score": 34,
+                                            "author": "redballooon",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt; They cost a shitton of money, because if you are not the product\n\nMost of us want better, so theoretically a number of us would wanna do things a lot better. I bet if enough of us were to put our heads together we could do a way better business model that would delight us personally if we were to find any businesses operating with such principles.",
+                                                    "score": 3,
+                                                    "author": "fanchoicer"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "But they are also things that basically every app available does.",
+                                    "score": 6,
+                                    "author": "XXLpeanuts",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You're gonna wanna reconsider what apps you're using, then.\n\nIf I get these flags, unless I really really want whatever entertainment or info is on that app, I don't download.\n\nThere's enough apps out there you can probably find one that doesn't have these flags.",
+                                            "score": 45,
+                                            "author": "smokyggrowls"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "You see how that's also bad though right",
+                                            "score": 20,
+                                            "author": "SimplyQuid",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Of course yes.",
+                                                    "score": 1,
+                                                    "author": "XXLpeanuts"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": -16,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Basic technical literacy is something the general population isn't expected to have, and it'd going to have increasingly serious repercussions with time. Most people don't even understand how badly their privacy is violated on a day to day basis and it's become normalized.",
+                                            "score": 30,
+                                            "author": "iDontSayFunnyThings",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I would argue most people have no idea what privacy is anymore, it has been so watered down there isn\u2019t even a hint of it in the air anymore. I no longer have conversations about digital privacy because I get ignored or straight up ridiculed for not wanting whatever scary company is on the other end of the router having all my personal data. I had a conversation about using loctite with a friend yesterday, blasted with ads on Facebook and YouTube today for their \u201crevolutionary new superglue\u201d, I\u2019ve never had an ad for loctite before. My fianc\u00e9s ads are directly timed with her period, tampons and pads the day the period starts until the millisecond it ends, then pregnancy support and baby ads until she logs another period. She gets very uncomfortable with me if I point this out, but won\u2019t change her behaviour online at all. Neither will any of my friends or family. It\u2019s so fucking obvious these companies know every single little detail of your lives down to your sexual preferences, medications, fears, deepest insecurities, worst nightmare, passions, dreams. Anything on your phone is free lunch for them even though they \u201cpromise\u201d not to look at it. \n\n\nPersonal privacy is DEAD, it doesn\u2019t exist anymore. People just don\u2019t realize it yet.",
+                                                    "score": 22,
+                                                    "author": "Fs_ginganinja",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I'd agree. Managing to keep a degree of personal privacy is difficult, but they also link your online identity to those around you. I've taken what many would consider extreme measures to anonymize the data leaving my devices, but I'm constantly amazed the information the advertisers manage to pick up about me.\n\nIt's complicated by how apathetic most people are about sharing their data / phone permissions / etc. Information about us gets unknowingly shared and processed. It takes real work to anonymize myself though, and the default software on our mobile devices and computers don't make it easy.\n\nWe're ending up in a weird corporate technocracy where demographic details are mass harvested for advertising (commercial and political).",
+                                                            "score": 7,
+                                                            "author": "iDontSayFunnyThings"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "All of your examples sound useful rather than outrageous though. Where\u2019s the problem with robots providing me with information that is actually interesting to me?",
+                                                            "score": -1,
+                                                            "author": "redballooon",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Here's a very obvious example.\n\nYour phone knows when your period is. You phone knows that you missed one and it knows you searched for abortion providers. Next month it logs another period. You live in an area where abortions are illegal, someone reports you, the police subpoena your apps records and you go to jail.\n\nThis is the problem. 99% of the time, personalized ads, recommendations, etc, is harmless. So much so that there are people like you that think \"who cares\". But I'd gladly get rid of a slight benefit for 99% of people to prevent ruining the lives of the other 1%.",
+                                                                    "score": 4,
+                                                                    "author": "Yodiddlyyo",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "You described a scenario from an arbitrary justice state. That this is a problem can be seen quite easily.\n\nNevertheless, even after Roe vs Wade, searching for abortion clinics and traveling there is not prohibited, so no, this is only a problem if you live in a place where you have bigger problems anyway.",
+                                                                            "score": 0,
+                                                                            "author": "redballooon",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "This is a bad take. Do you think a prosecutor who cares about prosecuting people for abortions is going to get this data, see that trail, and say \"welp, there's no definitive proof she got an abortion, nothing must've happened\"? No way. As much as people don't like to acknowledge it, circumstantial evidence is enough to get a conviction, and the fact pattern laid out above is enough to prove an abortion happened in a court of law. \n\nSource: am criminal defense attorney, though I admittedly, and thankfully, don't have to deal with cases like this where I live. Which means I'm not speaking on how abortions get prosecuted in general, just saying that's enough evidence to bring a case, at the very least. Which means you'd have to deal with the courts, as a defendant, for the next year of your life or so, even if you end up getting acquitted. It's not fun.",
+                                                                                    "score": 3,
+                                                                                    "author": "jadage"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "sadly, most don't care anyway",
+                                                    "score": 2,
+                                                    "author": "theallen247"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "https://xkcd.com/2501/\n\nYou, probably.",
+                                            "score": 2,
+                                            "author": "kataskopo"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Ah yes, the tech bro equivalent of \"they were asking to be raped\" excuse.\n\nA classic.\n\nProbably writes bad JS and drives a Tesla that hasn't caught on fire yet.",
+                                            "score": 2,
+                                            "author": "windup-toy"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Using Facebook / Google / Microsoft / 3rd party openid providers for login is pretty accepted practice for handling login security.\n\nFrom a security standpoint, it's very easy to foresee a point where regulation will eventually increase the liability for apps / websites managing user credentials on their own to a point that it's no longer a viable option.\n\nWe've seen exactly that happen with higher standards for PCI compliance -- fewer and fewer sites are handling credit card information on their own and more just rely on handoffs to 3rd party providers like Amazon for handling payments.",
+                            "score": 22,
+                            "author": "timtucker_com",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Third party Single Sign On like Google/Facebook/Microsoft is definitely better for security in a lot of situations, but worse for privacy.",
+                                    "score": 27,
+                                    "author": "Wassamonkey",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Why is it bad for privacy? Those tech companies can\u2019t get access to your info other than knowing you logged in to this app using your account (which admittedly is one piece of info, albeit small).",
+                                            "score": 2,
+                                            "author": "y-c-c",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The app you are logging into has to get access into your SSO account.\n\nThe SSO account gets knowledge of what apps you use and can use/sell that for advertising properties. You also don't have any idea what access the SSO account has into the app you are using or what data that app is transmitting back to the SSO account.\n\nSecurity is increased because users have fewer passwords to remember and can make 1 strong password and put it behind MFA.\n\nPrivacy is decreased because your information is gathered by more systems and is less under your control.",
+                                                    "score": 11,
+                                                    "author": "Wassamonkey",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; The app you are logging into has to get access into your SSO account.\n\nThat's true, but most of the time (and Google etc will tell you exactly what the app is requesting) the app only gets access to your email from the SSO.\n\n&gt; The SSO account gets knowledge of what apps you use and can use/sell that for advertising properties. You also don't have any idea what access the SSO account has into the app you are using or what data that app is transmitting back to the SSO account. \n\nYeah I mean that's true. They do have that one piece of info which is that you are using the app. I personally don't see why the app will send any other information back to the SSO like Google though. It's not like they couldn't just tell Google about you if they really wanted to (if they detect your Gmail email address).\n\nBut sure, generally just for safety and other reasons I use a separate account anyway.",
+                                                            "score": 2,
+                                                            "author": "y-c-c",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "The SAML assertion or OAuth Token used to handle SSO can have a whole lot of data in it. I use both at work to pass just about every property of a user's account into different applications. \n\nA misconfigured or maliciously configured SSO could leak any information.",
+                                                                    "score": 9,
+                                                                    "author": "Wassamonkey"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That's why I like how Apple forces app developers  to reveal what they are collecting.    The AppStore summarizes it but if people really got the full list of what is collected, I am sure the likes of instagrams, WhatsApp will be deleted",
+                            "score": 2,
+                            "author": "Ottawa_man"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;Were there any common \"red flags\" in the shadier apps you found that someone could be on the lookout for to indicate an application may not be handling user data ethically\n\n The app being on a mobile app store is a big red flag. Pretty much their findings was that only were stand out, and these apps deal with health data, which is one of the only data types that isegally protected in the US.\n\n It isn't gonna help you find a good app, but the dad state of privacy today is that you don't get any.",
+                    "score": -16,
+                    "author": "golden_n00b_1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "what",
+                            "score": 14,
+                            "author": "AreYouABadfishToo_"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This reminds me of when you guys reviewed mental health apps last year too. For companies that want a passing grade in your Privacy Not Included, what's the cheat sheet? What things do companies need to start doing bare minimum to get a thumbs up from Mozilla?",
+            "score": 137,
+            "author": "Ecks_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes! We did this same research last year and our findings were DEPRESSING (no pun intended). Too many mental health apps were absolutely awful at privacy. We did this research again this year to see if any of them had improved. And a few did, which was nice to see. Most of them because we worked directly with them to help improve things like the language in their privacy policy that grants everyone, regardless of where they live, the same rights to access and delete data.\u00a0\n\nSo, what things do companies need to do to get at the very least a thumbs sideways from us at Privacy Not Included? Well, don\u2019t share personal information with third parties for targeted advertising purposes. That\u2019s a big one. Grant everyone, regardless of what privacy laws they live under, the same rights to access and delete data. Don\u2019t have a terrible track record of protecting and respecting your users\u2019 privacy (looking at you BetterHelp). And meet our Minimum Security Standards. These are some of the big things we ding companies for. I also really appreciate it when companies have clear, easy to read privacy policies without lots of vague language. And we also love it when companies respond to the questions we send them at the contact they list in their privacy policy for privacy related questions. It\u2019s amazing how many companies don\u2019t seem to actually monitor that link.\n\nf anyone would like to read our methodology for reviewing companies, you can find it \\[here\\](https://foundation.mozilla.org/en/privacynotincluded/about/methodology/)\n\nAs for what a company has to do to get a thumbs up from us. Well, that is much harder. Companies that make our Best Of list go above and beyond with privacy. They have lean data practices, meaning they collect as little personal information as possible, sometimes none at all. They write excellent privacy policies (like Wysa\u2019s, theirs is one of the best we\u2019ve read). They have an excellent track record. There aren\u2019t many of those companies which is why it\u2019s pretty cool Wysa agreed to join us here today to talk about why they do what they do putting privacy first.\u00a0- Jen C, Privacy Not Included",
+                    "score": 171,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; We did this research again this year to see if any of them had improved. And a few did, which was nice to see. Most of them because we worked directly with them to help improve things like the language in their privacy policy that grants everyone, regardless of where they live, the same rights to access and delete data. \n\nGotta say, it is a little heartening to hear that the app developers were actually willing to work with you to improve their app's privacy issues.",
+                            "score": 23,
+                            "author": "PyroDesu"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This comment was overwritten and the account deleted due to Reddit's unfair API policy changes, the behavior of Spez (the CEO), and the forced departure of 3rd party apps. \n\nRemember, the content on Reddit is generated by THE USERS. It is OUR DATA they are profiting off of and claiming it as theirs. This is the next phase of Reddit vs. the people that made Reddit what it is today. \n\nr/Save3rdPartyApps r/modCoord",
+                            "score": 2,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What about ChatGPT, since many people say that they're actually getting some satisfying mental-health help with it (as in, \"somebody\" to \"listen\" and provide feedback/conversation)?",
+                            "score": -3,
+                            "author": "RoguePlanet1",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is bait, but presumably the answer is that the best way to measure the efficacy of mental health interventions isn't self-reported customer satisfaction surveys. ChatGPT is a statistical tool that shows you how things are talked about. It is not a sentient being capable of contextualizing a specific human's experience and working with them to develop healthier ways to think and act in the actual circumstances in which they exist.",
+                                    "score": 12,
+                                    "author": "wellboys",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thanks, I didn't post this as \"bait,\" though, if that's what you mean. I'm truly curious about ChatGPT's security. Do we need to worry about what we type in there being read elsewhere?\n\nI'm not personally using it for therapy, but it seems to be helping many people. Hell, I would consider using it in the future if I needed some basic talk therapy.",
+                                            "score": 2,
+                                            "author": "RoguePlanet1",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's a productivity tool. An LLM is going to spit something out that has an increasing degree of verisimilitude over time, but it will never overcome the hurdle of consistent user error.",
+                                                    "score": 7,
+                                                    "author": "wellboys",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Consistent user error, yeah so true......!",
+                                                            "score": 1,
+                                                            "author": "RoguePlanet1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "As for security, it is possible to download large language models (LLM) like GPT and run them on your own if you wanted to. So theoretically, you could do this very securely. But they're gigantic. I couldn't find good answers, but maybe hundreds of gigabytes(?), which would mean that while it's possible, that's not yet a size that's convenient or that you could install on your phone. \n\nWorth noting that you can also train LLMs on your own corpus if you want. For example, if you're James Patterson and want to pump out books faster, you could feed your hundreds of books into the LLM, and it would learn how to write like you do. Since he already has all those books he's published, this might be pretty easy.\n\nSo in theory we could build an LLM that replies even more like therapists. But we'd need a good corpus of therapy conversations, and for obvious privacy reasons, the best examples of this are hard to find (as they should be).\n\nOf course just the reminder that using it in this way unsupervised could be very dangerous. An LLM is essentially a predictive text chatbot, so it can't evaluate if what it's saying is helpful or even true. If a patient is seeking advice to make a decision, they may not have the ability to evaluate the output whereas the therapist would. That said, I think GPT-4 wants to be used as a therapist in this way, and LLMs are improving rapidly.\n\nMy thought though is that even if they aren't used standalone, they probably already are at the stage where they could help human therapists respond much faster. For example your human therapist could run it on their machine, and they could use it during your therapy session or after to quickly generate text for you. If you're doing text therapy, this would speed it up (it's faster for them to read pregenerated responses to send than to type their own), or for any therapy it could help them cut time off the interstitial paperwork part of their job. Of course maybe they'd already have a library of documents they access similar to this.",
+                                                    "score": 4,
+                                                    "author": "halberdierbowman",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Fascinating, and great points! So true about evaluating the effectiveness of the therapy. \n\nI've had one therapist ask me, as I came in and sat down for the session, \"what's the matter?\" I didn't even think I was in a bad mood, but suddenly started sobbing, and he said he could tell from my body language that something was wrong. Definitely not something AI could do, at least not anytime soon!",
+                                                            "score": 3,
+                                                            "author": "RoguePlanet1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you Jen. It was so cool to get your Best Of status from Mozilla, and to date its the one status we are most proud of. \n\nBare minimum is definitely not the culture around privacy for us. Rather it is bare minimum around data sharing. We ask what is the bare minimum data we need to deliver a good outcome, and then work creatively from there to find the safest, most private ways of getting and storing them. - Jo from Wysa",
+                    "score": 43,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We hear a lot about all the ways our privacy is being violated, but very little about solutions. Is there anything people can do to protect their privacy now, and are there any viable policies which could help protect people's privacy in America on a broader scale?",
+            "score": 51,
+            "author": "forward_only",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Misha from Privacy Not Included: Some of the tips we share with users are:\n\n\\-Choose your apps wisely. Do not sign up for a service that has a history of data leak and/or gets a \\*PrivacyNotIncluded ding.\n\nDo NOT connect the app to your Facebook, Google, or other social media accounts or third-party tools, and do not share medical data when connected to those account.\n\nDo not sign up with third-party accounts. Better just log in with an email and strong password.\n\nChoose a strong password! You may use a password control tool like 1Password, KeePass etc\n\nUse your device privacy controls to limit access to your personal information via app (do not give access to your camera, microphone, images, location unless necessary)\n\nKeep your app and phone regularly updated \n\nLimit ad tracking via your device (eg on iPhone go to Privacy -&gt; Advertising -&gt; Limit ad tracking) and biggest ad networks (for Google, go to Google account and turn off ad personalization)\n\nRequest your data be deleted once you stop using the app. Simply deleting an app from your device usually does not erase your personal data\n\nWhen starting a sign-up, do not agree to tracking of your data if possible",
+                    "score": 53,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 13,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Unfortunately all Google simply needs to do is associate the IP addresses and it'll be obvious as shit that both emails are yours. Better to use another email provider for burner emails. A lot of sites will let you enter an email that doesn't even exist, with a password, and it'll work. But not always",
+                                    "score": 6,
+                                    "author": "ThatFeel_IKnowIt"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Just adding to this: on Android phones you can simply disable the Google app. This will disable google lens (stupid piece of crap feature that sends all your pics to google so it can create ads based on what you take pics of - obvious privacy risk), it disabled google voice/okgoogle (obvious privacy risk), and a few other things. Disabling the Google app is one of the first things I do on ANY new Android app.\n\nEdit: only downside is I think disabling google lens disables the feature that lets you scan QR codes with the camera. In my opinion this extremely minor inconvenience is worth it. Restaurants that force you to use a QR code to view the menu can go fuck themselves. They're just fucking lazy and can't even be bothered to print menus.",
+                            "score": 1,
+                            "author": "ThatFeel_IKnowIt"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Can you explain specifically what privacy is sacrificed when signing up via third party services?\n\nI prefer using my own account (email / password) as well, but I\u2019m not quite seeing how letting using Google to sign in lets Google know anything other than you signed in to this specific app. Sure, that\u2019s some information but it\u2019s pretty minor. I just don\u2019t like to use them because I don\u2019t like to be overly dependent on a service (e.g. if Google bans you now suddenly you can\u2019t log in).\n\nIn fact, if you sign in via Apple it has a feature to obfuscate your email address saving you the need to make a new email address yourself.",
+                            "score": 1,
+                            "author": "y-c-c"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Prachi from Wysa: Great suggestions, Misha!\n\nAnd yes, a lot is in your hand to protect your own data... begin with what's literally in your hand, you device!\n\nAsk yourself... did you just \"OK\" all permissions without reading into which all apps have access to your camera, location, folders and contacts list. Consent is a BIG deal in the privacy world, so begin there. \n\nAsk yourself... did you just \"OK\" all permissions without reading into which all apps have access to your camera, location, folders and contacts list. Consent is a BIG deal in the privacy world, so begin there.\n\nAs for Wysa, privacy is built in by default &amp; by design. We believe we don't need your personal information like credentials to alleviate you from your worries. Only a nickname is sufficient to help us personalize our conversation with you. You can also opt-out at any time using the \u201creset my data\u201d feature available in the App settings.\n\nWe lay out many of the validated Best Practices[in our privacy policy too](https://legal.wysa.uk/privacy-policy#bestpractices), that'll help you keep your device secure.",
+                    "score": 8,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How could a user possibly keep track of an app changing from being good with data to bad? For example what if I used Wysa for two years and for the first year they're great but the second someone else is in control and they sell data to cash in. How would I ever know? \n\nI know they'll have to send out a notification but I got one from Virgin Australia earlier about their membership and I don't have the time to read it all. Or the inclination to be honest. I just want companies to do the right thing. I'm sick of finding a good thing then learning they're no longer good.",
+            "score": 82,
+            "author": "Britoz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Shubhankar from Wysa: That is a great question. The main thing is that you shouldn\u2019t have to read the privacy policy to see whether or not the company is good. Just ask yourself if you are clear why your data is being asked and used. Look for an option clearly marked in settings that allows you to delete your data and look for how easy a company\u2019s privacy policy makes it to get what data they use and why, in the first 20 seconds of reading it. Another great way to keep track of how the company is using your data is to ensure they clearly and crisply highlight and maintain what has changed with every notification around policy updates. Lastly, Mozilla will do some of the work for you - they didn\u2019t just review us last year, they did it again this year and if we changed our policy they would definitely call it out!",
+                    "score": 32,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thankyou",
+                            "score": 1,
+                            "author": "Britoz"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Jen from Privacy Not Included: Great question! And unfortunately, the answer is, it\u2019s really hard. Companies often count on users not reading privacy policies or keeping up with changes to them. And then there is the fact that just about every privacy policy I\u2019ve ever read has a line that says your personal information can be shared if the company is ever sold or merged with another.\n\nWe saw this recently with Amazon buying iRobot who makes Roomba robot vacuums. iRobot\u2019s privacy practices have actually been one of the very good ones over the years we\u2019ve reviewed them. They earn our Best Of. Now they are being bought by Amazon and Amazon is certainly not one of the good ones when it comes to privacy. It sucks to be someone who bought a Roomba because they were better at privacy only to have all that data transferred to Amazon.\u00a0\n\nThere are a couple things you can do. Delete your data frequently! Most companies have a way to delete your data from them. And we note on Privacy Not Included which companies are good and guarantee people the same rights no matter what privacy laws you live under. So, delete, delete, delete. Just put a note in your calendar every couple months to delete your data from any device you\u2019re worried about. It\u2019s dumb consumers have to do this, but this is the world we live in. \n\nAnd yes, you can also regularly check in our privacy policies. But let\u2019s be honest, that\u2019s time consuming and hard and nerdy and most people aren\u2019t going to do that. We just want companies to do the right thing too. Which is why we love to highlight the good companies and call out the bad ones. Don\u2019t support the bad ones if you can avoid it! And do support the good ones when you can. Until then, we\u2019ll keep working to hold companies accountable and we\u2019ll go out anad read those privacy policies for you. Well, as many as our little three person team can.",
+                    "score": 80,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Amazing answer thanks so much!\n\nI imagine it must be a great feeling to do a job you know is inherently helping people.",
+                            "score": 5,
+                            "author": "Britoz",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You could use chat gpt to scan a privacy policy section for kry words",
+                                    "score": 0,
+                                    "author": "chaawuu1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; I just want companies to do the right thing. I'm sick of finding a good thing then learning they're no longer good.\n\nCurious what might satisfy you. Genuinely asking, for real reasons. Would it alleviate your concerns if: \n\nThe company's livestreaming its entire operations and privacy safeguards so deeply that you'd know everything, and, you can chime in? \n\nYou can explore and delete any / all of your data, plus, you can choose that it's instead stored on your phone? \n\nThe company happily grants you real power to halt any of the its actions that you feel would violate its clearly stated ethos? (those also include clearly illustrated examples of each) \n\nPretty much going above and beyond for your reassurance the company has the ethos you seek and the company cannot ever betray its ethos. It's fully committed to that, founded by people who share your expectations.",
+                    "score": -3,
+                    "author": "fanchoicer",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What would satisfy me is an overhaul of legislation governing tech companies to protect properties inherent value and privacy and governing bodies empowered to enforce the laws.",
+                            "score": 7,
+                            "author": "Britoz"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Ability to delete all data and transparency. \n\nConsumer ownership of their own data by law and laws making certain privacy waivers unenforceable, whether consumers consented or not.",
+                            "score": 5,
+                            "author": "buried_lede"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I use the Calm app for literally one thing. I really like the train sound effect in the background while I work. From a privacy standpoint, I take it I should just find a similar MP3 of a train and listen to that instead?",
+            "score": 25,
+            "author": "yarash",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Here you go, friend! https://mynoise.net/NoiseMachines/railroadNoiseGenerator.php",
+                    "score": 49,
+                    "author": "7una",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This site is fantastic now that I've had time to explore it, thank you.",
+                            "score": 4,
+                            "author": "yarash",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "My pleasure! \n\nIt's a work of art. The creator records the stuff himself mostly, except for some collabs. It's very impressive",
+                                    "score": 2,
+                                    "author": "7una"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Misha from Privacy not Included:\n\nFrom a privacy perspective, finding an original sound to listen to would indeed be better. Since it would not compromise any of your personal data. It could also save you some fees. Finding a CD and listening to it in an analogue way would be even greater. The larger point is, people do not have to share so much data to get those simple things that they like.\u00a0\n\n&amp;#x200B;\n\nZoe from Privacy not Included:\n\nI think with these apps it\u2019s always going to be a question of \u201cis the data I\u2019m trading worth what I\u2019m getting in return?\u201d\n\nCalm is OK, but they do collect third party information about you. If you\u2019re really only in it for train sounds, you might consider a music-streaming app that has less privacy risk. And even though those music apps probably aren\u2019t perfect either, it\u2019s better to have fewer apps collecting your data.",
+                    "score": 38,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you both I appreciate your responses and time!",
+                            "score": 8,
+                            "author": "yarash"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's great that you take the time and are willing to spend resources keeping track of this issue.\n\nAre there any effective ways to tell the industry that these practices will not be tolerated?",
+            "score": 20,
+            "author": "Peior-Crustulum",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Jen C from Privacy Not Included: Absolutely! Vote with your dollars. Don\u2019t spend money at the companies with bad privacy policies and practices. Do spend money with companies with good privacy policies and practices. That\u2019s an (somewhat) easy one.\u00a0\n\nAlso, paying attention is good. I know there is SO much going on in the world to pay attention to and privacy is a hard one to keep up with. But make a little effort. Read a privacy policy before you download an app or buy a device. Search for words like \u201csell\u201d or \u201ccombine\u201d or vague words like \u201ccan\u201d \u201cmay\u201d \u201ccould\u201d. Those raise flags. Move on if they privacy policy makes you uncomfortable.\u00a0\n\nSomething else that\u2019s happening now in the US, is the FTC is actually really stepping up recently and cracking down on back companies doing misleading and dishonest things with your personal information. GoodRX, BetterHelp, PreMom, and Amazon have all received recent judgements from the FTC for privacy violations. You can sign up on the FTC for their consumer announcements. Yes, it\u2019s nerdy, but hey, it\u2019s an easy way to stay informed. Oh, and you can always check us out at \\*Privacy Not Included too. =D",
+                    "score": 12,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Vote with your dollars\n\nthis has extremely limited effectiveness. the dollars come from advertisers/data brokers who pay for the data",
+                            "score": 6,
+                            "author": "raylu"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What were some of the more surprising discoveries (both good and bad) that you came across?  Any particularly good/creative ideas you can call out?",
+            "score": 10,
+            "author": "Mennix",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Misha: There were more bad than good discoveries in my case.\n\nSome of bad discoveries are:\n\nThe way many companies manipulate people into giving their \u2018consent\u2019, using tricky UX practices or outright denial of service if no consent is given\n\nMany apps confront users with detailed questionnaires on gender, physical diseases, mental states, children, relationships, etc. BEFORE showing a user the Privacy Policy or asking for consent\n\nMost apps are packed with third-party trackers incl. advertisement trackers\n\nThe good discoveries were that over the last year, many apps improved the password standards. Also, we were happy to see that FTC went after BetterHelp \u2013 at last.",
+                    "score": 21,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Has there yet been any legal restrictions proposed at the USA federal level regarding things like this?\n\nAlso, thanks for your work AND MOZILLA RULES.",
+            "score": 11,
+            "author": "marklein",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you for supporting us here at Mozilla! That makes our day.\n\nAs for things happening at the federal level, we\u2019ve noticed a couple things happening at the federal level in the US since we first released our mental health app research last year. The one that probably made me the happiest was when the FTC issued a $7.8 million judgment against BetterHelp for misleading their users about never sharing their personal information. That was great to see as BetterHelp did seem to us to be rather questionable (to put it nicely) in their privacy practices. You can read about that [here.](https://www.ftc.gov/news-events/news/press-releases/2023/03/ftc-ban-betterhelp-revealing-consumers-data-including-sensitive-mental-health-information-facebook)\n\n[And there have been some US Senators stepping up to ask questions and propose potential federal legislation to protect health data.](https://www.warren.senate.gov/newsroom/press-releases/warren-wyden-murray-whitehouse-sanders-introduce-legislation-to-ban-data-brokers-from-selling-americans-location-and-health-data)\n\nAnd some states, especially California, have some proposed legislation to tighten restrictions on federal health data. [We actually wrote more about that here.](https://www.sfchronicle.com/opinion/openforum/article/reproductive-rights-california-tech-17925695.php)\n\nI\u2019m not a policy person, so I know there are other federal and state level privacy laws bring proposed. These are things I\u2019m most familiar with though",
+                    "score": 15,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you have a newsletter or something that can give people regular updates on your research? Love what you're doing, so thanks to your team for putting the time into this very neglected topic.",
+            "score": 10,
+            "author": "MudraMama",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Zoe from Privacy Not Included: For sure! You can sign up [here](https://www.mozilla.org/newsletter/)\n\nAnd thanks so much, we love to get feedback that our work is appreciated. I also agree that privacy doesn\u2019t get enough air time generally.\n\nPrivacy Not Included is just one slice of the work that the Mozilla Foundation is doing to help shape the future of the web for good. You can learn more about us [here!](https://foundation.mozilla.org/who-we-are/)",
+                    "score": 10,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "1. Do you have a report/white paper/journal style article of your findings? (link provided is not the most friendly for finding that)\n\n2. Some of these apps aim to make services more accessible or more affordable out of an insurance setting: is there an indication that data collection is subsidizing how (thinking of Better Health) these apps become affordable?",
+            "score": 7,
+            "author": "Onepopcornman",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Jo from Wysa: There is definitely an incentive for founders and startups to use data collection as a part of their fundraising story, especially when they are pre-revenue. However especially in healthcare, there are significant regulatory and ethical barriers, and we have not seen any company become successful in the long run either from a sustainability / impact perspective or even in their ability to monetize private data. Where we have seen success in the sector is in monetizing aggregate data, and analytics around it, and that is something that can co-exist with good privacy policies. Good privacy is good for business too.",
+                    "score": 6,
+                    "author": "Mozilla-Foundation"
+                },
+                {
+                    "level": 1,
+                    "comment": "1.[This article summarizes](https://foundation.mozilla.org/privacynotincluded/articles/are-mental-health-apps-better-or-worse-at-privacy-in-2023/) our findings on all the mental health apps we reviewed this year",
+                    "score": 3,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ouf, where to begin. Short answer: yes! Your data is a business asset to these companies. They profit from collecting, sharing, and (sometimes) selling it.\n\nSo many of the apps and services we use mine our data for profit. It\u2019s all bad but it feels especially wrong for apps that collect such intimate and sensitive information about our mental health.\n\nThat it makes apps more accessible is in some ways good, but at what cost? People shouldn\u2019t have to pay for mental healthcare with their privacy",
+                            "score": 6,
+                            "author": "Mozilla-Foundation"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey, thanks for doing this!\n\nI hear all the time about my private info being leaked. Bank accounts, passwords, personal information, shopping habits, the list goes on.\n\nWould you be able to point out some of the dangers of lax security in cases like this? What will the companies do with my information? What are some of the potential hazards of strangers knowing my mental (or other) health data?\n\nThanks!",
+            "score": 5,
+            "author": "Dontdothatfucker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Andres from Wysa:\u00a0 Based on what you've shared, if your personal information such as bank accounts, passwords, or shopping habits are leaked or breached, it becomes publicly available for malicious actors to potentially access your accounts on other services like Facebook or Instagram. This is especially risky if you use the same password across different services or if they use your personal information to impersonate you and potentially spam or phishing others. If they have access to your bank account information, they may even try to impersonate you online or by phone to change your password and potentially withdraw your funding. Companies collecting this information should have clear reasons for doing so, such as for billing purposes, and implement strong security practices to protect sensitive information. At Wysa, we don't ask for this information as it's not necessary for our free chatbot app. It's also important to note that if a malicious actor gains access to your mental health status, they can potentially use social engineering techniques to take advantage of you when you are vulnerable. To reduce this risk, Wysa anonymizes your data and what you share with us.",
+                    "score": 5,
+                    "author": "Mozilla-Foundation"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;What are some of the potential hazards of strangers knowing my mental (or other) health data?\n\n If your mental health data is leaked and also tied to you in some way, such as email, then this info can be used in all sorts of ways against you.\n\n The easy one is you end up running for public office cause you got tired of a no-privacy society, and your opponents release your mental health info to the public to discredit you.\n\n The more malicious one is the criminals that may try to use your mental health in a scam. There are stories where family members traveling internationally post trip updates online, and scanners call and claim the person was arrested and they will be let out after a fine is wired/paid.\n\n In the same note, mental health info is likely full of things you would never post publically. They could add this info to \"prove your identity\", or otherwise strengthen their credibility.",
+                    "score": 2,
+                    "author": "golden_n00b_1"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is such an interesting subject. What led you to conduct this research it in the first place?",
+            "score": 4,
+            "author": "vandom",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, to be honest, did any of us come out of the pandemic not feeling the strain on mental health? That really was it. We were feeling it and then we were seeing the explosion in mental health apps. Nerdy curious privacy researchers + mental health app explosion + anxiety about the world was kind of the perfect storm that led us to do this research. And we\u2019re really glad we did because what we found was bonkers in a bad way and the good thing about working as a privacy researcher for Mozilla is, when you find something badly bonkers, you can help raise awareness to do something about it. That\u2019s pretty cool.\n\nNow we\u2019re seeing regulators in the US and Europe pay more attention to these apps. We\u2019re seeing the FTC in the US fine these companies issue judgement against their bad privacy practices. And we\u2019re slowly seeing companies make some positive changes. It\u2019s a start. There is still so much farther to go, but hey, it\u2019s a start.\u00a0",
+                    "score": 10,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey all, thank you for doing this AMA, where does headspace fall on this list?",
+            "score": 5,
+            "author": "Comfortable_Occasion",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Jen from Privacy not Included: Headspace isn\u2019t the worst mental health app we reviewed. But it\u2019s far from the best either. In fact, this year they moved a bit down on our list and earn our \\*Privacy Not Included warning label for how they use your personal information for things like targeted advertising and also for not clearly granting all users the same rights to delete data regardless of what privacy laws they live under. You can read our review of Headspace [here](https://foundation.mozilla.org/en/privacynotincluded/headspace/)\n\nTo be fair to Headspace, they have been in communication with us about our concerns. And they have stated to us that they will review their privacy policy and look into updating their language in there to clearly state all users have the same rights to delete data, no matter where they live. If/when they let us know they have made that update to their privacy policy, we will update our review",
+                    "score": 8,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you find these privacy violations go against HPPA regulations?",
+            "score": 18,
+            "author": "benv138",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": " Jen C: HIPAA is tough when it comes to mental health apps. This US health care privacy law covers communications between medical professionals and you. So, a conversation with your doctor is covered by HIPAA. \n\nA conversation with an AI chatbot or an \u201cemotional support coach\u201d is not always going to be covered by HIPAA because those aren\u2019t considered \u201cmedical professionals''. And then there is all the other data outside of HIPAA -- things like your answer to an onboarding questionaiire, your usage data of the app, if you login with your Facebook login -- those things aren\u2019t covered by HIPAA and are fair game. So, consumers have to be very careful if they expect any of their mental health coversations to be covered by HIPAA and do a little extra homework by reading privacy notices (uhg, I know!) and ask questions of the app to determine that. \n\nI\u2019m sure Wysa has their own unique experience with this too.",
+                    "score": 45,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you for the thoughtful response!",
+                            "score": 8,
+                            "author": "benv138"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Jo from Wysa - If a person is talking to Wysa after a clinician referral in a healthcare pathway (not in b2c), certain parts of their interaction with the app become a part of their medical record. This is a very specific kind of implementation that is not anonymous from the healthcare provider perspective, though Wysa still doesn\u2019t store any personal identifiers alongside their conversation. These parts of the healthcare record are covered by HIPAA, and providers do need to be very careful with data security here in any case. However, even in this case, with Wysa the conversation about what is bothering you and what thoughts you are having are never shared. These are private even when discussed in-person healthcare settings, and they remain so here. Most of Wysa is used at a population health level though, where it is completely anonymous, and not linked to health records and as such HIPAA does not apply.",
+                    "score": 14,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you see a future where the privacy and security of health apps in general improve? \n\nThis seems like a category with so much potential to improve quality of life of it's users, and it's a shame to see it bogged down by skeevy commercial practices",
+            "score": 4,
+            "author": "ndmy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Shubhankar from Wysa - [Google play](https://support.google.com/googleplay/answer/11416267) has lately introduced a data safety form which all developers have to complete and will help users better understand the app\u2019s privacy and security practices. \n\nSimilar initiatives can be seen on the [App store](https://developer.apple.com/app-store/app-privacy-details/) to see what data an app will collect and why before installing the app\n\nSuch measures at an ecosystem level can push towards responsible disclosures of data collection and processing but are very limited in scope and enforcement as they stand today. There are also watchdogs and initiatives like the ones led by the FTC to put some form security and governance guardrails in focus for products which look promising in terms of enforcement where others fail",
+                    "score": 4,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Jen from Privacy Not Included: Oh man Shubhankar! \n\nYou hit a hot button issue for me. Those Google Play Store Data Safety labels. Whoo! We release some research we did into the accuracy of those Google Play Store Data Safety labels early this year that showed that nearly 80% of the apps we reviewed had false or misleading information in there. In part because that information is self-reported from the apps and Google doesn\u2019t police that self-reporting very closely. And also because Google\u2019s own rules for what companies must report on that page are rather crappy. [You can read our research here if you are interested.](https://foundation.mozilla.org/en/privacynotincluded/articles/mozilla-study-data-privacy-labels-for-most-top-apps-in-google-play-store-are-false-or-misleading/) \n\nWhen Twitter and TikTok both claim on their data safety pages that they don\u2019t share data with third pirates, you know something is up. The bottom line is, I tell people not to trust that information and rather look directly at privacy policies. \n\nAll that being said, Wysa is correct that there is a push/pull here. And everyone holding companies accountable to do better -- consumers, regulators, the employees at the companies -- is needed to make this space better and safer. Because, yes, mental health apps are needed and helpful to many today and I don\u2019t want to take away from that with privacy concerns. I just want companies to not try and make money off of monetizing people\u2019s personal information when they are at their most vulnerable.",
+                            "score": 8,
+                            "author": "Mozilla-Foundation"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Ramakant from Wysa - There seems to be a push and pull here. There will always be apps that try to wing it, or push the envelope on what they can get away with. In general though, we feel that the direction is positive - lots of stuff has happened recently that will nudge everyone (sometimes with a carrot, sometimes with a stick) towards more responsible stewardship of user data. Apps will understand that bad data privacy is, in the long term, bad for business too.",
+                    "score": 2,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did any of the \"good\" apps fund any part of your organization or study?",
+            "score": 4,
+            "author": "drinkNfight",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Absolutely not! We don\u2019t take money or incentives from companies to fund our work. \n\nThat is hugely important to me as a privacy researcher and consumer advocate leading Mozilla\u2019s \\*Privacy Not Included work. We don\u2019t do affiliate links, we don\u2019t accept \u201ctest products\u201d, we don\u2019t take money from these companies. We do our research and accountability work with the resources we have from Mozilla. (Note: Mozilla Foundation is a non-profit. That means those resources are in large part funded by small dollar donations from people like you all. So if anyone has a few bucks to donate to support our work, well I will never say no to that! You can donate [here](https://foundation.mozilla.org/en/privacynotincluded/?form=donate) )\n\nPS. Someday I will have to share my rant about how affiliate links have absolutely ruined the land of consumer product reviews. I loathe affiliate links. But that is a rant for another time",
+                    "score": 9,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In your opinion, does the Apple App Store do a sufficient job in describing privacy policies in simple enough language and are they accurate? Wysa shows (on the App Store) shows this:\n\n\nhttps://i.imgur.com/DjUTvAP.jpg\n\nIs this misleading on any level or does it simplify the main points of the privacy policy by Wysa? I read Wysa\u2019s and there is definitely more detail, but  not everyone will read it all. \n\nThis isn\u2019t specific to only Wysa, rather, does Apple provide accurate and simple information a consumer could safely follow for a MH app?",
+            "score": 5,
+            "author": "CaptainReynoldshere"
+        },
+        {
+            "level": 0,
+            "comment": "Have you done or plan to do Ukrainian-made Numo ADHD app?\n\nAlso say hi to Misha! We studied together in high school. Pretty proud of you Misha \ud83c\uddfa\ud83c\udde6",
+            "score": 3,
+            "author": "sdwvit"
+        },
+        {
+            "level": 0,
+            "comment": "One of the key measures seems to be to allowing for data deletion requests. While certainly better than nothing, I\u2019m wondering how thorough these things are. \n\nHow do I know that they\u2019ve deleted my data? And does that mean they then have a record of me deleting my data (therefore still a record that I was a past user)? \n\nHow sure is it that all data is deleted \u2014 considering how IT systems and data sprawls, I can imagine that many companies don\u2019t even know where their data has gone to. Are there audits/research into this? \n\nHow about data collected by third parties E.g. data already collected by adtech. Or if they\u2019ve already sold it off to another company. I imagine they\u2019re not covered by the deletion request then?\n\nThis turned into many questions, thanks for the AMA!",
+            "score": 3,
+            "author": "ryuuheii"
+        },
+        {
+            "level": 0,
+            "comment": "I have a family member who is currently using Betterhelp. He has been for about 3 weeks. What kind of things should he be aware of/ look out for?",
+            "score": 2,
+            "author": "pop_skittles",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Jen C: The biggest issue I have with BetterHelp is trusting them to not use personal information in ways they claim they aren\u2019t using it. They just got busted by the FTC for breaking the promises they made to their users not to share private health information. You can read more about that [here.](https://www.ftc.gov/business-guidance/blog/2023/03/ftc-says-online-counseling-service-betterhelp-pushed-people-handing-over-health-information-broke)\n\nThe FTC did make them promise to do better. But that\u2019s one of those \u201cI\u2019ll believe it when I see it\u201d things for me. If you\u2019d like to share our review of BetterHelp with your family member, you can find it [here](https://foundation.mozilla.org/en/privacynotincluded/betterhelp/)\n\nBasically, they earn all three of our privacy dings, which means they earn our \\*Privacy Not Included warning label. That means I would recommend your family member be very cautious about sharing any personal information with BetterHelp, to frequently ask for their data to be deleted, and to delete the app from their device when you aren\u2019t using it.",
+                    "score": 5,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Doesn't Mozilla have their own bespoke password manager? I'm pretty sure everything syncs no sweat between my install of desktop waterfox and mobile Firefox.",
+                    "score": 1,
+                    "author": "king5327"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Aren\u2019t there HIPAA issues? \n\nGoodRX just got in huge trouble for that. Why are these apps not in huge trouble? Are they flying under the radar?",
+            "score": 2,
+            "author": "buried_lede",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Vastly simplified: HIPAA is for healthcare providers. Specifically the licensed kind.\n\nApps/chatbots/\"mental health coaches\" aren't healthcare providers, unless they're prescribed - and even then there is wiggle room, like initial onboarding surveys, and data provided outside of the strictly confidential space. Even if the app facilitates access to a therapist, there may be quizzes, surveys and other functionality that can sort of wiggle around the whole HIPAA issue.",
+                    "score": 2,
+                    "author": "Vcent",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes, in the meantime I looked it up. HHS has guides on their web page for developers to assess whether their app will be subject to HIPAA or not. But also there are other laws for privacy and fair business practices they also have to navigate and HHS provides links to those guides as well. \n\nGoodRX might not seem at first glance to be subject to some of these laws but they were. \n\nWhat they did was a really vicious violation of patients and consumers. If you downloaded a coupon from their site and used it at a pharmacy, they demanded documentation from the pharmacy as part of the transaction that it was you, and they were harvesting more private health information than consumers knew. \n\nThey also had whatever they got directly from you, too, and then they made it all for sale so now Facebook and others have all of it. What medications people take, for example. \n\nGoodrx was fined and forced to make public announcements.",
+                            "score": 2,
+                            "author": "buried_lede"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How does Mozilla get revenue from privacy-oriented browsers like Firefox focus?",
+            "score": 2,
+            "author": "FYoCouchEddie"
+        },
+        {
+            "level": 0,
+            "comment": "Why is better help still allowed to operate?",
+            "score": 2,
+            "author": "UsernamePractice2020"
+        },
+        {
+            "level": 0,
+            "comment": "Hey folks (and particularly Jen C) \u2014 do you have any way to look at the effectiveness of these apps, and are you seeing any correlations, positive or negative, between ethical privacy approaches and effectiveness?",
+            "score": 1,
+            "author": "jofish22",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That is a good question. Unfortunately, that goes beyond the scope of our work, to look to see if there are any correlations between good or bad privacy practices and effectiveness of the apps. If there is a research group out there with some good funding, this would be a very interesting research project to take on. I\u2019m not exactly sure what the methodology would look like, but I would certainly read the results. Thank you for asking this question.",
+                    "score": 2,
+                    "author": "Mozilla-Foundation"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did you find differences specific to Android vs IOS app versions?",
+            "score": 1,
+            "author": "TheLastMaker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For our research, we look mostly at publicly available information like privacy policies, company responses to our questions, white papers, news articles, and app store pages. This tells us a lot about the privacy and security practices of the companies who build the apps. Digging deep into the technical specifics of the app isn\u2019t something we do a ton of. Although my research partner Misha does download all the apps and go through the set-up process and look to see how many trackers and such an app might be using.\u00a0\n\nI think mostly both apps, for Android and iOS, collect the data and then the company runs with it. Apple does make it a little easier to opt out of tracking at set-up for an app, which is nice. But I don\u2019t know that there are huge differences between privacy whether you use the Android or iOS apps. Perhaps Misha can also weigh in here and offer his more technical insights on this",
+                    "score": 3,
+                    "author": "Mozilla-Foundation",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Misha from Privacy not Included: Usually, iOS gives users wider privacy controls, like opt-in to tracking and reminders about apps\u2019 accesses, that a user might have forgotten a long time ago. After all, Apple is not in the business of targeted advertisement, unlike Google.\n\nHowever, privacy-wise, the difference is marginal. On both platforms, apps are packed with trackers, and apps try to get the maximum access possible (often incl. to your camera, photos/videos, audio, precise location, etc). So we suggest that on either iOS or Android, you manually adjust the access you provide to every app, limiting it to absolutely necessary.\n\nSecurity-wise, iOS is closed-source and a bit less vulnerable to cyberattacks. However, that is the reason why Android apps are a bit easier for us to research - there are numerous open-source investigative tools that allows us to track data flows from Android apps, and to call them out",
+                            "score": 1,
+                            "author": "Mozilla-Foundation"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If the app can be used without logging in, how privacy-bad can it be? Specific example from the list is Insight Timer.",
+            "score": 1,
+            "author": "puddingclaw"
+        },
+        {
+            "level": 0,
+            "comment": "What might the concept look like of green flags? (of solid privacy stuff to look forward to) \n\nAnd what hypothetical best ever flags would you qualify as deep green?",
+            "score": 1,
+            "author": "fanchoicer"
+        },
+        {
+            "level": 0,
+            "comment": "Are there cases where employers might be able to get ahold of mental health information about current or prospective employees that you know of?",
+            "score": 1,
+            "author": "DickDownAssUp"
+        },
+        {
+            "level": 0,
+            "comment": "Have them reviewed Instahelp? Any concern to report to their concerned users?",
+            "score": 1,
+            "author": "mfomatratzen"
+        },
+        {
+            "level": 0,
+            "comment": "I suspect you are done checking now, but do you have any examples of real harm that has come from privacy violations?\n\nA common refrain seems to be that the data is already out there or what is the worst that can happen?",
+            "score": 1,
+            "author": "ResilientBiscuit"
+        },
+        {
+            "level": 0,
+            "comment": "Is eurozone plan to tackle private data leak better or we need some more effective plan?(eurozone hitted Google with penalty that they force their consumers to download some essential apps and consumers couldn't  remove it)",
+            "score": 1,
+            "author": "Ok-Feedback5604"
+        },
+        {
+            "level": 0,
+            "comment": "There\u2019s a guy who frequently promotes his app called \u201cbearable\u201d. Was that one reviewed by you all?",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes! [Bearable is review](https://foundation.mozilla.org/en/privacynotincluded/bearable/)ed on Mozilla's \\*Privacy Not Included mental health apps guide.",
+                    "score": 2,
+                    "author": "caltrider"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As a clinician I must ask How much of bad mental health for men is caused by low testosterone. And does TRT help with it?",
+            "score": 1,
+            "author": "WeatherParticular766"
+        },
+        {
+            "level": 0,
+            "comment": "Am I the only person who doesn't give a shit about privacy?",
+            "score": -5,
+            "author": "wakka55",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not at all. But generally it's because you haven't thought hard enough how it might impact you. \n\nWould you mind giving me your social security number, your address and the amount in your savings account please?  Oh, and include a picture of you on the toilet (I'm looking at you, roomba) and your pin number as well. Oh, and the results of a current iq test please. \n\nNo? Don't want everyone on the internet to have access to that? Guess you care about privacy as well. \n\nOr how about your insurer looking to see how often you drink beer (untapped) and increasing your premium based on that. Or a potential employer who knows you're on a dating app and thinks that'll distract you so you don't get hired. \n\nOr facebook not offering you a job because you don't like curly fries (which is/was a proxy for intelligence). Or your neighbors finding out the results of your prostate exam. Or maybe you don't want the government to know how many guns you have. \n\nEverybody cares about privacy, but not everyone realizes it.",
+                    "score": 3,
+                    "author": "MissMormie",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Would you mind giving me your social security number, your address and the amount in your savings account please?  Oh, and include a picture of you on the toilet (I'm looking at you, roomba) and your pin number as well. Oh, and the results of a current iq test please.\n\nDM'd the toilet pic.",
+                            "score": 0,
+                            "author": "wakka55"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "that's all good and all, but what's the solution?",
+            "score": 0,
+            "author": "theallen247"
+        }
+    ]
+}

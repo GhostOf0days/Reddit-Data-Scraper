@@ -1,0 +1,1489 @@
+{
+    "id": "cqrf7a",
+    "score": 45517,
+    "title": "Paperless voting machines are just waiting to be hacked in 2020. We are a POLITICO cybersecurity reporter and a voting security expert \u2013 ask us anything.",
+    "author": "politico",
+    "date": 1565883171.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/cqrf7a",
+    "media_urls": [
+        "https://www.reddit.com/r/IAmA/comments/cqrf7a/paperless_voting_machines_are_just_waiting_to_be/"
+    ],
+    "other_urls": [
+        "https://www.politico.com/interactives/2019/election-security-americas-voting-machines/),",
+        "https://www.politico.com/interactives/2019/election-security-americas-voting-machines/).",
+        "https://www.politico.com/story/2019/08/05/election-security-cybersecurity-1445539).",
+        "https://twitter.com/politico/status/1161300134933618688))",
+        "https://www.politico.com/newsletters/morning-cybersecurity)"
+    ],
+    "postText": "Intelligence officials have repeatedly warned that Russian hackers will return to plague the 2020 presidential election, but the decentralized and underfunded U.S. election system has proven difficult to secure. While disinformation and breaches of political campaigns have deservedly received widespread attention, another important aspect is the security of voting machines themselves.\n\n[Hundreds of counties still use paperless voting machines](https://www.politico.com/interactives/2019/election-security-americas-voting-machines/), which cybersecurity experts say are extremely dangerous because they offer no reliable way to audit their results. Experts have urged these jurisdictions to upgrade to paper-based systems, and lawmakers in Washington and many state capitals are considering requiring the use of paper. But in many states, the responsibility for replacing insecure machines rests with county election officials, most of whom have lots of competing responsibilities, little money, and even less cyber expertise.\n\nTo understand how this voting machine upgrade process is playing out nationwide, Politico surveyed the roughly 600 jurisdictions \u2014 including state and county governments \u2014 that still use paperless machines, asking them whether they planned to upgrade and what steps they had taken. The findings are stark: [More than 150 counties have already said that they plan to keep their existing paperless machines or buy new ones](https://www.politico.com/interactives/2019/election-security-americas-voting-machines/). For various reasons \u2014 from a lack of sufficient funding to a preference for a convenient experience \u2014 [America\u2019s voting machines won\u2019t be completely secure any time soon](https://www.politico.com/story/2019/08/05/election-security-cybersecurity-1445539).\n\n**Ask us anything**.  ([Proof](https://twitter.com/politico/status/1161300134933618688))\n\nA bit more about us:\n\n**Eric Geller** is the POLITICO cybersecurity reporter behind this project. His beat includes cyber policymaking at the Office of Management and Budget and the National Security Council; American cyber diplomacy efforts at the State Department; cybercrime prosecutions at the Justice Department; and digital security research at the Commerce Department. He has also covered global malware outbreaks and states\u2019 efforts to secure their election systems. His first day at POLITICO was June 14, 2016, when news broke of a suspected Russian government hack of the Democratic National Committee. In the months that followed, Eric contributed to POLITICO\u2019s reporting on perhaps the most significant cybersecurity story in American history, a story that continues to evolve and resonate to this day.\n\nBefore joining POLITICO, he covered technology policy, including the debate over the FCC\u2019s net neutrality rules and the passage of hotly contested bills like the USA Freedom Act and the Cybersecurity Information Sharing Act. He covered the Obama administration\u2019s IT security policies in the wake of the Office of Personnel Management hack, the landmark 2015 U.S.\u2013China agreement on commercial hacking and the high-profile encryption battle between Apple and the FBI after the San Bernardino, Calif. terrorist attack. At the height of the controversy, he interviewed then-FBI Director James Comey about his perspective on encryption.\n\n**J. Alex Halderman** is Professor of Computer Science and Engineering at the University of Michigan and Director of Michigan\u2019s Center for Computer Security and Society. He has performed numerous security evaluations of real-world voting systems, both in the U.S. and around the world. He helped conduct California\u2019s \u201ctop-to-bottom\u201d electronic voting systems review, the first comprehensive election cybersecurity analysis commissioned by a U.S. state. He led the first independent review of election technology in India, and he organized the first independent security audit of Estonia\u2019s national online voting system. In 2017, he testified to the U.S. Senate Select Committee on Intelligence regarding Russian Interference in the 2016 U.S. Elections. Prof. Halderman regularly teaches computer security at the graduate and undergraduate levels. He is the creator of Security Digital Democracy, a massive, open, online course that explores the security risks\u2014and future potential\u2014of electronic voting and Internet voting technologies.\n\n***Update:*** Thanks for all the questions, everyone. We're signing off for now but will check back throughout the day to answer some more, so keep them coming. We'll also recap some of the best Q&amp;As from here in our [cybersecurity newsletter](https://www.politico.com/newsletters/morning-cybersecurity) tomorrow.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "What do you find are the most convincing arguments against Internet voting, for a non-technical audience?",
+            "score": 1398,
+            "author": "rakerman",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "One of the things that experts tell me all the time is that we don't know how to do anything over the internet with the level of security that we expect from our elections.\n\nSupporters of internet voting often point out that we trust the internet for other sensitive applications, like banking. But you can dispute a transaction and get your money back. There's really nothing happening online that's comparable to elections, in terms of the stakes. So the inherent vulnerabilities in the internet raise more serious questions for voting than for any other application.\n\n\u2014Eric",
+                    "score": 2181,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Internet voting systems tend to be fragile.  A few years ago, Washington, D.C. built an online voting system and invited anyone to try to hack in during a mock election.  It took me and my students only about 48 hours to gain full control and change all the votes, and the election officials didn't notice anything was wrong until somebody noticed a musical \"calling card\" we left for them to find.  More here:\n\n[https://freedom-to-tinker.com/2010/10/05/hacking-dc-internet-voting-pilot/](https://freedom-to-tinker.com/2010/10/05/hacking-dc-internet-voting-pilot/)\n\nMore recently, a colleague and I found exploitable vulnerabilities in an Australian online voting pilot during a live election:\n\n[https://freedom-to-tinker.com/2015/03/22/ivote-vulnerability/](https://freedom-to-tinker.com/2015/03/22/ivote-vulnerability/)\n\n \u2014Alex",
+                            "score": 1705,
+                            "author": "politico",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;To show that we had control of the server, we left a \u201ccalling card\u201d on the system\u2019s confirmation screen, which voters see after voting. After 15 seconds, the page plays the University of Michigan fight song.\n\nEpic.",
+                                    "score": 746,
+                                    "author": "I_am_trying_to_work",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's simultaneously hilarious and terrifying.",
+                                            "score": 254,
+                                            "author": "God_Damnit_Nappa",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It\u2019s a waste of a good Rick roll, is what it is.",
+                                                    "score": 271,
+                                                    "author": "bradorsomething",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[removed]",
+                                            "score": 57,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I mean, not to discredit his earlier claim, that there isn't anything on the internet that requires the level of security we expect from am election. However, I expect any equipment at a nuclear facility to be at least as secure as an election (I don't know exactly what they were doing, but I would consider nuclear fallout to be worse than a blotches election in most cases).\n\nHowever, the fact that the nuclear facility was hacked is even more proof that we don't want an online election.",
+                                                    "score": 19,
+                                                    "author": "-PM_Me_Reddit_Gold-",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Things don't even have to be online. I heard a story about an unconnected nuclear facility being hacked through USB sticks that were distributed in the surrounding area. Not totally sure if it really happened, but it's certainly feasible.",
+                                                            "score": 10,
+                                                            "author": "ryusage",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "100% that this has happened and it is one of the most interesting stories out there, and the storie is far from over as the code itself is available online.\n\nhttps://www.mcafee.com/enterprise/en-us/security-awareness/ransomware/what-is-stuxnet.html",
+                                                                    "score": 9,
+                                                                    "author": "Fuzzl"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "That\u2019s known as the \u201cpayload\u201d in the malware world. Some of the best payloads came from all the old school DOS based viruses back in the day. One even had a playable pac-man game as the payload. I can\u2019t remember which virus it was but I\u2019m sure someone on here will. Hello fellow old person and former DOS user!",
+                                            "score": 63,
+                                            "author": "JaredsFatPants",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well, the payload is also changing all the votes.",
+                                                    "score": 36,
+                                                    "author": "Serinus"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "**YOU\u2019LL NEVER SEE ME COMING**",
+                                            "score": 5,
+                                            "author": "CarlSWAYGAN",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "What is preventing us from continuing the project and continually fixing the vulnerabilities that people find until we have a system that is either foolproof or one that would take so long to break into that the intrusion would be irrelevant?",
+                                    "score": 112,
+                                    "author": "EpicusMaximus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Because many of the people involved are not interested in revealing the vulnerabilities until the damage is done.\n\nHow many elections are you willing to sacrifice until the system is hard enough to hack?",
+                                            "score": 150,
+                                            "author": "sacredfool",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Because that's very rarely how cybersecurity works. It's a constant cat and mouse game of finding new patches for new vulnerabilities.\n\nEdit: typo",
+                                            "score": 376,
+                                            "author": "kite_height",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not to mention intentional sabotage. Chuck Hagel ran for the Senate seat in Nebraska right after being the CEO of the company that contructed the electronic voting machines used in his election. **He was the first Republican to win a Senate seat in Nebraska for 24 years.** Six years layer he won again in an unprecedented \"landslide\".\n\nSource: https://en.m.wikipedia.org/wiki/Chuck_Hagel (Check the end of Business Career and the beginning of U.S. Senate)\n\nI've been pissed about that one for a couple of years now, it's frigging outrageous!",
+                                                    "score": 451,
+                                                    "author": "hamsterkris",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "\\&gt;&gt; Hagel overwhelmingly won re-election with over 83% of the vote, the largest margin of victory in any statewide race in Nebraska history \n\nsigh...\n\n&amp;#x200B;\n\n\\&gt;&gt; served as a Chairman and was CEO of American Information Systems Inc. (AIS), later known as [Election Systems &amp; Software](https://en.m.wikipedia.org/wiki/Election_Systems_%26_Software), a computerized [voting machine](https://en.m.wikipedia.org/wiki/Voting_machine) manufacturer jointly owned by McCarthy Group, LLC and the [Omaha World-Herald](https://en.m.wikipedia.org/wiki/Omaha_World-Herald) company. \n\n&amp;#x200B;\n\nE.S.S. is still a big time company with it's hands in many systems and the Omaha Weird Herald has not exactly been uh known for it's unbiased-ness.",
+                                                            "score": 205,
+                                                            "author": "FineappleExpress",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "That wasn't investigated for irregularities???? That is an absurdly lopsided result. Just how bad was the Democrat runner?",
+                                                                    "score": 89,
+                                                                    "author": "deliciousnightmares",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Clearly about as bad as Putin's opponents.",
+                                                                            "score": 45,
+                                                                            "author": "wantpienow"
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Hagel ran against a construction worker in 1992.",
+                                                                            "score": 2,
+                                                                            "author": "fundudeonacracker"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "HUGE conflict of interest. This is why we have laws!!",
+                                                            "score": 87,
+                                                            "author": "DepletedMitochondria",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Agreed, I was shaken to my core after finding out about this. This is the sort of thing you don't think actually happens in a democracy. I've been opposed to electronic voting ever since.",
+                                                                    "score": 87,
+                                                                    "author": "hamsterkris",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I'm fine with electronic machines, but they must print out a paper copy that the voter can verify, and keep both copies for auditing/re-counts/etc.\n\nI live in a PA county that was in a pilot group for new voting systems  this year. You fill out a scantron-type page with your selections, take it to a machine that reads it, notifies you of any errors (e.g. only selected 3 options on a question that allows 5, etc.), gives you a chance to correct or accept as is, and spits the paper back out to be stored separately from the machine. \n\nIt was a very welcome change from the awful push-button machines we've had as long as I've lived here.",
+                                                                            "score": 38,
+                                                                            "author": "im_at_work_now",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "&gt;but they must print out a paper copy that the voter can verify\n\nYes, I concur. This was however deliberately avoided in Hagel's election. After his second win his opponent demanded a recount, but was unsuccessful:\n\n&gt;Meanwhile, back in Nebraska, Charlie Matulka had requested a hand count of the vote in the election he lost to Hagel. **He just learned his request was denied because, he said, Nebraska has a just-passed law that prohibits government-employee election workers from looking at the ballots, even in a recount. The only machines permitted to count votes in Nebraska, he said, are those made and programmed by the corporation formerly run by Hagel.** \nMatulka shared his news with me, then sighed loud and long on the phone, as if he were watching his children's future evaporate. \n**\"If you want to win the election,\" he finally said, \"just control the machines.\"** \n\nhttps://www.thomhartmann.com/articles/2003/01/if-you-want-win-election-just-control-voting-machines",
+                                                                                    "score": 62,
+                                                                                    "author": "hamsterkris",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I live in a state that is 100% computerized. You don't fill out a scantron-like ballot. Everything is on a touch screen computer-like screen. There is no print out verifying anything. I haven't lived here for 6 years and just moved back, so I'm really hoping things have changed and there is some sort of verification in place, but I'm in Texas so I'm not holding my breath.",
+                                                                                    "score": 5,
+                                                                                    "author": "Cathousechicken",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Laws? Have you met our oligarchy? They ignore laws.",
+                                                                    "score": 15,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "This needs to be much higher up!",
+                                                            "score": 25,
+                                                            "author": "zkareface",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The patching never stops. The list of potential vulnerabilities is endless.",
+                                                    "score": 50,
+                                                    "author": "ChristianKS94",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It's not just your software that needs patching. Doesn't matter if its Windows, Linux or something else based. Every layer between this and the hardware (and even the hardware from different vendors) is potentially hackable",
+                                                            "score": 34,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 27,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Wrong. You just disconnect the computer from any networks and bury it on Antarctica.",
+                                                                            "score": 4,
+                                                                            "author": "nalSig",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I don't see why a voting machine would need an OS at all.  \nIt literally has ONE JOB, the purpose of an OS is to make it easier for machines to do many different jobs.  \nYou want to make a machine hard to hack? Make it as dumb as possible.\n\nHonestly, the voting machine companies are all total jokes and as far as I can tell, they subsist fully on personal connections with people who fund them.\n\nInternet voting is an entirely different matter though.",
+                                                                    "score": 38,
+                                                                    "author": "squngy",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "You would think that that's obvious (It really should be) but the supermarket of ours uses windows 7 for a single application that could as well run on an arduino with a matrix display.",
+                                                                            "score": 22,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Right, but it is probably cheaper to do it that way for whatever reason (custom single purpose machines tend to have higher upfront costs) and if someone bothers to hack it there is little potential harm.\n\nFor something like voting machines, penny pinching is not a valid excuse.",
+                                                                                    "score": 18,
+                                                                                    "author": "squngy",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Relevant xkcd\n\nhttps://xkcd.com/2030/\n\nAs a SW engineer working in IT Security, I can vouch for this.",
+                                            "score": 168,
+                                            "author": "cryptoengineer",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "https://www.xkcd.com/463/",
+                                                    "score": 73,
+                                                    "author": "swahl",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Ah hadn't seen this gem before, lovely",
+                                                            "score": 12,
+                                                            "author": "sirclesam"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Relevant Tom Scott\n\nhttps://www.youtube.com/watch?v=w3_0x6oaDmI",
+                                                    "score": 44,
+                                                    "author": "ZiggyPenner",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "And to stave off the people who are going to (predictably) come at this with \"... but Tom Scott says we shouldn't trust him\" --\n\n*True*, he did say that. *True*, this video was made in the part of his career where he wasn't providing citations to recognised experts and authorities in the fields he was reporting on.\n\nHowever -- the things he says in that video are *also* the things that the recognised experts and authorities in *this* field have been saying for a long, long time.\n\nNone of it is remotely controversial; No scientists disagree.",
+                                                            "score": 49,
+                                                            "author": "Bardfinn",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Also, anyone with the ethical fortitude to tell you when not to trust him is someone you should trust *a lot*.",
+                                                                    "score": 6,
+                                                                    "author": "TerminallyCapriSun",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Loving the scream at the mention of Blockchain.\n\nEvery time the topic comes up someone mentions Blockchain.",
+                                                    "score": 15,
+                                                    "author": "gyroda"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "We've had over a thousand years to create a perfect lock. The closest we've gotten was one stint in Britain for about 20 years. Modern abloy are pretty good, and very sophisticated locks exist which are easier to circumvent than directly defeat, even mechanical ones like sleeve cylinders, but it's an evolutionary race. Software is the same way.",
+                                            "score": 45,
+                                            "author": "MrButtermancer",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Except software locks can be attacked remotely, by individuals and governments across the world. Physical locks at least require a physical presence of the attacker at the lock.",
+                                                    "score": 44,
+                                                    "author": "jm0112358",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yes, the metaphor is great though because a lock is so simple. \n\nComplicated things tend to break more easily because more things can go wrong. If we can't as a species win the battle for an unpickable lock, the size and scale of something like a piece of software, a website, or dear god the internet is indicative that we will probably be fighting the battle for security for the foreseeable future.",
+                                                            "score": 9,
+                                                            "author": "MrButtermancer"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "If you knew the system was going to be implemented if you fail to find a vulnerability on it, you might prefer to not disclose and sell/exploits it.",
+                                            "score": 14,
+                                            "author": "sn0wr4in",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "See:  Brian Kemp, \"Governor\" of Georgia",
+                                                    "score": 16,
+                                                    "author": "bennzedd"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Do you know the phenomenon of antibiotics creating superbugs? I see a similarity here. Our 'security patches' would be informing the evolution of the parasites. At that point, it is a race of adaptability, and we probably lose that battle.",
+                                            "score": 13,
+                                            "author": "Golden_Tie",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Worse, you certainly lose that battle because the defender has to be perfect forever whereas the attacker only has to get in once.",
+                                                    "score": 29,
+                                                    "author": "Splintert",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Bitcoin has very similar risks and potential damage, yet there\u2019s many billions of dollars invested using it. Why can\u2019t a voting system leverage a similar form of that tech?",
+                            "score": 9,
+                            "author": "Pyrepenol",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Because it is for a different purpose, ie a distributed transaction record. The distributed part isn't really that important for elections since one entity controls the outcome at the end of the day.\n\nOne big problem with online voting is to ensure everyone can vote one time only and vote is anonymous but also auditable. Ie you cant just store sums, you still have to store individual votes. The hard part is securing those individual vote records so that tampering can be detected but anonymity isn't broken.",
+                                    "score": 14,
+                                    "author": "sarhoshamiral",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 60,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's worse than that.\n\nIn banking you can and in fact must have a complete audit trail of which human being put the money into the system, and then which human being handled it at each step of the way complete with date stamps and so on.\n\nWe have decided to go with secret voting which means we need to disconnect the name of the voter from the vote at some point fairly early in the process.\n\nThat means that the voter is not able to prove how they voted later!  If they could then Guido could break their legs if they voted \"wrong\", or much more likely they could be fired by their boss for voting for a pro-union candidate for example.\n\nOr vote selling becomes a huge issue.\n\nThese problems make it fundamentally more difficult to do electronic voting than electronic banking.",
+                                    "score": 169,
+                                    "author": "JimMarch",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Athan Gibbs invented an auditable voting machine years ago. He won some contracts and then suddenly died *in an accident.* His family stated that they'd be carrying on with it, but then all mention of his invention just stopped.",
+                                            "score": 54,
+                                            "author": "AAAAaaaagggghhhh",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You make a vote keeper write to a log, and sign a receipt for the voter.  At the end you publish the log, and each voter can check their receipt vs the results to verify their vote was counted correctly.  \n\nNow to make sure they are real people you would a secondary registration system that is not in collusion with the first.  Use crytographic signatures to prevent falsification of records.\n\n\n\nThe issue is that if you can prove you voted for a guy, it suddenly becomes real easy to buy votes.  Offer a free beer to anyone who brings in a receipt for your candidate and you could swing a local election.\n\nAs far as I know, its not possible to make a way to prove your vote was counted correctly without being able to prove to someone else that you voted the way you were paid to.",
+                                                    "score": 32,
+                                                    "author": "stewsters",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "And that isn't an issue that can be solved with technology, since to tell the voter how their vote was counted, that data has to get out through the analog hole, which means that any schemes you might implement to prevent it being copied and sent to others are completely useless to prevent it getting out.",
+                                                            "score": 7,
+                                                            "author": "zekromNLR",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I want to know more about this.",
+                                                    "score": 11,
+                                                    "author": "sremark",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Me, too. Hoping that they'll know some things and respond. Fingers crossed.",
+                                                            "score": 4,
+                                                            "author": "AAAAaaaagggghhhh",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The \u201cattack surface\u201d of paper ballots is a lot smaller, and easier to audit, than any form of electronic system.",
+                                    "score": 45,
+                                    "author": "Sands43",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Also, the sheer inefficiency of paper voting is the biggest asset.\n\nIf you compromise one voting machine we may never know and a layperson can never tell. That can be hundreds or thousands of votes you can change from that one machine, and if the exploit works on one it'll work on the other voting machines.\n\nIt's much harder to compromise human vote counters in secret, and there's a simple way  to make that harder (double counting). Additionally each ballot box is trivial to understand from a glance; there's a box, it's sealed and should remain so until the appropriate time.",
+                                            "score": 41,
+                                            "author": "gyroda",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Tulsi Gabbard actually proposed paper ballots a while ago\n \nhttps://www.congress.gov/bill/115th-congress/house-bill/5147/text?format=txt\n \n&gt;H. R. 5147 - To amend the Help America Vote Act of 2002 to require voting systems used in elections for Federal office to produce a voter-verified paper ballot of each vote cast on the system, and for other purposes.\n \nSeems like a good way to go",
+                                            "score": 21,
+                                            "author": "branchbranchley",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I'd just get rid of the voting machines completely. You get a ballot, go behind a screen, there's a pen, and you make your cross or check or fill out the circle or in some other way clearly indicate who you vote for, then fold it up and shove it in the ballot box.\n\nIt seems to work just fine here in Germany at least.",
+                                                    "score": 17,
+                                                    "author": "zekromNLR",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is what I used when I voted in Illinois in November. I selected my candidates and what-not with a touch screen, at the end it printed out a paper ballot that I verified had the correct votes before putting it in a sealed ballot box.",
+                                                    "score": 2,
+                                                    "author": "lesgeddon"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That's generally how it happens because it's the easiest way, that being said he is saying even IF my bank was hacked I can get my money back with proof that it was hacked because the money is insured.",
+                                    "score": 9,
+                                    "author": "Ixolus",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;unless you can phish someone's voter ID. \n\nAnd there it is, right?",
+                                    "score": 8,
+                                    "author": "mac_question",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 14,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's possible, and it could solve the problem of ensuring your vote is tallied correctly.\n\nHowever Blockchain has little advantage over normal crypto signatures, and if you can verify that your vote is counted correctly you can show that verification to others which breaks the secret ballot.",
+                                    "score": 24,
+                                    "author": "gyroda",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's a reasonable direction to go, but as of now, not really.\n\nIt's not hard for 1000 blockchain keys with one Votecoin each to vote. Trivially easy, actually. The problem is distribution. You need the keys (accounts) to not be traceable to any individual. What that means is that I give you your key with one Votecoin attached. But if you lose it, it's gone. There's no way for me to cancel your old key, because I don't know which one it is.\n\nIt's like if we just mailed out ballots to every registered voter 6 weeks in advance. Lost in the mail? Break in? Too bad. No ballot, no vote. Two ballots, two votes.\n\nThen there's the issue of actually voting. The blockchain itself is secure as hell. Software interfacing with it, not so much. At some point, unless you want to do the math by hand, you're going to have to enter your secret key into some computer somewhere. That software is a point of exposure.\n\nA more secure crypto voting system, in my mind:\n\nI go to a terminal and enter my vote. I also type in a secret phrase, like \"ILIKEFISHSTICKS\" or \"spsjcjns95;\". That terminal submits my vote. It prints a slip for me that says\n\n1. How I voted\n\n2. How I voted, encrypted by the polling station's private key (garbled text, but can be decoded by anyone)\n\n3. What my secret phrase was\n\n4. What my public key is (QR code)\n\n5. What my private key is (QR code)\n\nThen everyone gets to see the list of votes. In the list is:\n\na) How the person voted\n\nb) What their public key is\n\nc) Their secret phrase, encrypted by their public key\n\nThat means:\n\n* I, and only I, can figure out which vote in the list is mine, because only I know my public key (this is a bit weird but not unheard of)\n\n* I know no one else has the same vote in the list, because I can check the secret phrase. Only I know my private key, so only I can check it.\n\n* If my vote is wrong, I can prove it, since the only way I can get (2) is if it comes from the polling station.\n\nIt's vulnerable to fake votes, but that's true of ballot boxes as well. And it has the ability for me to look and see if my vote was counted while remaining anonymous.",
+                                    "score": 19,
+                                    "author": "mister_ghost",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The problem with this (and many other proposals) is that a fundamental constraint of voting is that you should not be able to prove what your vote was. This is to prevent coercion or buying of votes.",
+                                            "score": 7,
+                                            "author": "Shaedal",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Relevant [XKCD](https://xkcd.com/2030/?utm_source=share&amp;utm_medium=ios_app)",
+                                    "score": 11,
+                                    "author": "just-another-scrub",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Is it really that it's impossible, or that the people running these things dont have the knowledge/resources to develop a system with that level of security? There are already known methods of encryption that are perfectly secret, CPA secure, CPC secure, etc, as well as message integrity methods that are secure beyond any reasonable amount of computational power available for hundreds of years, let alone one election cycle. I'm not gonna pretend to know exactly what type of security risks we're worried about here or what type of scheme would be required to defend against that, but is it really impossible? I feel like if we gave the NSA or some equivalent entity unlimited resources to secure paperless voting machines, that it could be done. Am I wrong about this? Obviously it may not be feasible to do so, I'm just kinda wondering from a theoretical standpoint. My cryptography background is limited to one undergrad course so of course I may be vastly misunderstanding what goes into this.",
+                            "score": 7,
+                            "author": "Steel0range",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The problem isn't with any particular piece of the software, it's in the system that's built around it to form an election. \n\nIf I can handle the input before it ever gets to your encryption, then I've won the election.\n\nIf I can infect your counting mechanism, I've won the election.\n\nIf I can intercept/fake/lose/delete/ddos your information on the way to the counting machine, I've won the election.\n\nIf I can handle the output after it comes out from your encrypted system but before the counter sees it, I've won the election. \n\nIf I can affect the counting mechanism or the display for the counting mechanism, I've won the election.\n\nIf I can compromise the machine in the four years till the next election, I've won the next election.\n\nIf I can blackmail the engineer with root access to any part of the above system, or even some access, I can probably find a way to win the election or tilt it in my favor.\n\n\nThere's just so much that can go wrong here that we should instead just stick to tried and tested methods that have been improved for centuries and limit damage just by how slow and inefficient it is to affect it at scale.",
+                                    "score": 23,
+                                    "author": "paranoidsp",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "There are tons of academics that have looked at the problem and concluded it's not possible. So it's not just government's failing to find them.\n\nMy basic understanding is that the properties of an election (verifiable and anonymous) are fundamentally at odds with how encryption works.",
+                                    "score": 23,
+                                    "author": "RedSpikeyThing",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There's a bunch of different attacks possible.  I've done a decade of election monitoring in the field and in a whole number incidence I found county election staff who were corrupt.  I spent nearly an hour recounting such stories here:\n\nhttps://youtu.be/rA0y6OroQGw\n\nBackdoors in home routers engineered by China would be one concern.  Another is spyware at the PC or smartphone level.  But the biggest issue is, can the data be tampered with once it gets to the final computer that tallies all the votes county-wide?  That's an attack surface that only needs one corrupt tech staff to exploit.\n\nRight now some counties in the US are doing \"internet voting\" of sorts - they pass precinct-level data to the county over VPNs and cellular modems.  So what happens if one county election staffer gives the VPN password to their good buddy at the Russian embassy?  That county is pwned.\n\nSaying \"one county\" makes it sounds harmless but think about how many states are dominated by the politics is just one county?  Cook County in Illinois, Maricopa County in Arizona, King County in Washington state and the list goes on and on and on.  Take Baltimore and you own Maryland.  Take Boston and you own Massachusetts.",
+                    "score": 123,
+                    "author": "JimMarch",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not to mention it completely removes the ability for you as a voter to verify your vote was cast.\n\n\nWith (well run) paper ballots, you can cast your vote, then pull up a chair and sit there and watch the box all day if you want. You can count along with the votes, you can make sure nobody is ballot stuffing or removing them without counting any.\n\n\nBut when it comes to complex cryptography, even if it were somehow magically made perfectly unbreakable, there are only a handful of people in the entire country that are capable of auditing a system like that.\n\n\nIt's a LOT of power to put on a few people, while making it basically impossible for the layperson to ensure their votes are counted.",
+                            "score": 73,
+                            "author": "Klathmon",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Voting has the unique problem where your vote is anonymous, but your identity has to be proven.  It works in physical voting because the ballots are controlled.  You don't get a ballot unless you prove your identity.  Once proven, you don't get a second ballot unless you return the one you've already received.\n\nThe physical number of ballots is also controlled so security revolves around the physical security of the ballots and the screening of voters.  The ballots themselves can be audited, but not attributed to any 1 voter which preserves the anonymity of the process while retaining the credibility.  The only routes for attack are physical manipulation of the ballots or breach in voter records/identity.\n\nWith electronic voting, there are no physical ballots to secure.  Instead, it's electronic and all that does is increase the number of attack vectors on the electronic ballots while reducing the credibility of the process.  Going online adds vectors for compromising voter identity.",
+                    "score": 76,
+                    "author": "BizzyM",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Well, there\u2019s man in the middle attacks where someone gains access somewhere between you and the voting server and flip votes. \n\nAlso, you could very easily have people impersonating other people like officials redirected them to compromised sites or giving inaccurate info. \n\n\nMuch like this comment. I bet you thought I was one of the team for Politico. I\u2019m not. I\u2019m just some dude on the internet. How would you\u2019ve known if I didn\u2019t say anything. Would you have checked? How many voters do you think will check and verify their vote was counted correctly? How do you put a system in place where people can check their votes while maintaining confidentiality. \n\n\n[This is a very good video for what you are asking by the way.](https://youtu.be/w3_0x6oaDmI)",
+                    "score": 19,
+                    "author": "herefromyoutube",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is the reason for the push for these machines when pen and paper seem so much more obviously secure and transparent...is it just that tallying votes is faster?  Or is there something I'm missing?",
+            "score": 152,
+            "author": "DrColossusOfRhodes",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's important to note that there are two separate elements of voting where we can choose manual or electronic methods.\n\nThe first is the voting machine. You can use your hands as that \"machine\" and mark a paper ballot by hand, or you can have an electronic device where you make your choices and it spits out a paper record (or only records your vote digitally, which is the big problem in many counties right now).\n\nThe second is the tabulation machine. You can have poll workers manually counting votes based on the paper ballots, or you can have an optical scanner that digitally tallies votes based on those same ballots.\n\nTallying votes isn't as much of an issue \u2014\u00a0because optical scanners are pretty fast \u2014\u00a0as managing the devices that are used to actually *record* the votes. And many election officials find it more of a hassle to manage stacks of paper ballots than a handful of electronic machines. (Of course, electronic machines break down, so there are management problems there, too.)\n\n\u2014Eric",
+                    "score": 112,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's a good distinction but I don't think it answers the question.",
+                            "score": 49,
+                            "author": "RedSpikeyThing",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They already had the paperless machines from rhe early 2000's when we thought they were better and didn't really understand the risks of not leaving a paper trail. So, money to buy new machines and train staff on use with a healthy dose of don't tell me what to do (which is an understandable view) results is insecure voting machines.",
+                                    "score": 5,
+                                    "author": "PuddleCrank"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What do you think about the brazilian voting machines and what happened when the Superior Electoral Court of Brazil denied your participation on an election auditing process?",
+            "score": 160,
+            "author": "break0ut1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Brazil's paperless electronic voting machines have major security problems.  I haven't had an opportunity to examine them myself, but fortunately Professor Diego Aranha (formerly of the University of Campinas) has.  His research details many flaws, including ways that an attacker could potentially figure out how everyone voted!  See: [https://sites.google.com/site/dfaranha/projects](https://sites.google.com/site/dfaranha/projects) \n\n \u2014Alex",
+                    "score": 229,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Do you know if an attacker could also change the result in brazilian\u2019s paperless machines?",
+                            "score": 18,
+                            "author": "montecristocount",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm not OP, but we can't know for sure because of limited access to audit the machines (see professor Aranha's report on his experience auditing it).\nBecause of this I'd be skeptical of the actual security (instead of just obscurity) and I'd say that it's plausible that an attacker could change votes on a machine.",
+                                    "score": 11,
+                                    "author": "ThrashingBlues",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It is unfortunate there's not much time available to inspect the system as a whole. It is huge, made of many subsystems.\n\nI'm not an expert yet I find you exaggerated when you said the system have major problems. The attack you mentioned was fixed, and it needs to be said that such attack would be quite hard to be made. Also, the voting system is not connected to networks. At the end of the vote the score of all candidates on that ballot box is printed out and can be compared to the tallied results made available later. There was an app by professor Aranha made for the purpose of public auditing, but I think it's discontinued.\n\nAnother team found a way to connect a device and write something onto the voting screen. So far, nothing terribly useful for hackers.\n\nI believe a coordinated attack perpetrated by the parties preparing the machine would have more chance of success. Components are signed but I'm not sure if strong enough security is used. The higher the stakes (executive) the higher the viability/cost of coordination.",
+                            "score": 4,
+                            "author": "awerlang",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What do you think about voter ID?",
+            "score": 459,
+            "author": "Yankee_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "As an European, it seems strange to me that voter ID thing is so vehemently opposed to in the USA. (But then again, having a photo ID is mandatory in most of the EU)\n\n--\n\n^^Edit: ^^oh ^^god, ^^dont ^^think ^^I'd ^^want ^^to ^^live ^^in ^^the ^^US. ^^Also ^^factual ^^fixes: ^^most ^^of ^^EU, ^^not ^^entire ^^EU",
+                    "score": 786,
+                    "author": "xternal7",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Also in Mexico. I've worked with people that have no running water or electricity but have voter ID.",
+                            "score": 198,
+                            "author": "MarsNirgal",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's strange to us too. I mean in my experience almost everyone has some form of ID. But I've heard that most of the opposition is because of the poor. State ID does cost money, but usually around $20. And I would think they would already have ID because they need to to get social services.\n\nStrange.",
+                            "score": 384,
+                            "author": "longboardingcop",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "My State gives away free ids for voting purposes.  If my State can do that, and does it, every State can.  Failure to do so just pushes an agenda.  \n\nhttps://www.in.gov/sos/elections/2625.htm",
+                                    "score": 191,
+                                    "author": "Gritch",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "My state did too, but made you go to the DMV during working hours and wait hours in line for one. People with jobs couldn't make it.",
+                                            "score": 63,
+                                            "author": "mt_xing",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 171,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "For example: University student IDs are not valid for voting most of the time, despite being issued by a government institution that verifies your identity. But a hunting license is permitted.\n\nIt's selectively targeted.",
+                                    "score": 45,
+                                    "author": "smeggysmeg",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Um?\n\n&amp;#x200B;\n\nNot all universities are public...",
+                                            "score": 10,
+                                            "author": "BayesianProtoss",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In North Carolina the Republican Party collected data on which forms of ID were carried by people of which races, and [then excluded from their voter ID law the forms of ID that black people were likely to have.](https://www.snopes.com/fact-check/north-carolina-voter-id/)\n\nThen they cut DMV funding and staffing in predominantly black neighborhoods so that waiting times for the newly required IDs were over 5 hours in person plus a 10-14 day mailing period.\n\nThen they cut/moved polling places in predominantly black neighborhoods so that voting lines were up to 8 hours long (compared to no lines in nearby white neighborhoods).\n\nDonald Trump won North Carolina by about 3%. In predominantly black counties he lost by over 70%, but unsurprisingly turnout in these counties was low.",
+                            "score": 108,
+                            "author": "MEANINGLESS_NUMBERS",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "As far as I know one major argument is that it is essentially against the Constitution.\n\nID's typically cost money to acquire and there is an amendment specifically against requiring any sort of poll tax to vote.\n\nhttps://constitutioncenter.org/interactive-constitution/amendments/amendment-xxiv",
+                            "score": 33,
+                            "author": "KevinStoley",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 16,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "ur not getting a reply for sure",
+                    "score": 57,
+                    "author": "cokefriend",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Why are they ignoring this question?",
+                    "score": 17,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can you show me proof that the current way of voting is not hacked",
+            "score": 1013,
+            "author": "necroste",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Here in the UK, we have a paper ballot and we mark our preferred candidate with a pen.\n\nThe ballot paper is then posted into a ballot box, which you can see and follow; all the way up until your vote is counted.\n\nNot only does this ensure that you are able to audit exactly where your vote went and make sure it is counted correctly; but also that even if someone where to gain access to these ballots. They would be unable to make sweeping changes or even know the ballots that they are changing the votes of.\n\nEssentially, paper ballots are almost impossible to compromise in any meaningful way.\n\nElectronic voting is almost the complete opposite.",
+                    "score": 1154,
+                    "author": "LimitlessLTD",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Colorado probably has the best voting system in the US. Mail in paper ballots where you tear off a tab with a unique number on it. You can check of your vote was counted via the ID number on a website, the same website you self register to get the mail ballot. Polling locations also have drop off spots two weeks before election day and the day of election if you vote in person they literally just print you out a paper ballot with that same tear off tab. They have a digital way to fill out the ballots if you prefer but the counting is not done by those machines it's simply for printing a filled out ballot. It's so much easier than New York where I used to live and voting participation in Colorado is some of the highest in the country.",
+                            "score": 785,
+                            "author": "NewtAgain",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Colorado deserves huge credit for being the first state to implement risk limiting audits (RLAs) state-wide.\n\n [https://en.wikipedia.org/wiki/Risk-limiting\\_audit](https://en.wikipedia.org/wiki/Risk-limiting_audit) \n\nThese audits are the gold-standard for checking that the paper and electronic records agree about the election winner.  Basically, you have people inspect a random sample of the paper ballots, and you use math to make sure the sample is large enough so that the chance that the audit would miss outcome-changing fraud is less than a pre-specified probability (the \"risk limit\").\n\nHow big a sample you need to audit depends on how close the election result appears to be.  Intuitively, if the computers say the race was a landslide, you only need to inspect a very small number of paper ballots to confirm it really was a landslide (maybe just a few hundred across the whole state), but if the outcome was a tie, you need to inspect every ballot to make sure.  An RLA adapts the sample size to ensure that you already get to a high level of confidence, regardless of how close the outcome was.\n\nOther states have recently passed RLA legislation, including Rhode Island and Virginia, and many counties across the country are piloting RLAs, but it's going to take a lot of work to get every state to run them.\n\n \u2014Alex",
+                                    "score": 515,
+                                    "author": "politico",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "California basically has the same system.",
+                                    "score": 124,
+                                    "author": "TuckerMcG",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Same with Oregon",
+                                            "score": 72,
+                                            "author": "Tru_Fakt",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Same with my county in WA.",
+                                                    "score": 51,
+                                                    "author": "BlueCatpaw",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Notice something all these states have in common? \ud83e\udd14",
+                                                            "score": 129,
+                                                            "author": "lunatickid",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Weed.",
+                                                                    "score": 106,
+                                                                    "author": "ShamWowGuy",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Expand your mind, brother!",
+                                                                            "score": 17,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "They all subsidize red states?",
+                                                                    "score": 182,
+                                                                    "author": "bunkscudda",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Everyone who grew up there hates transplants?",
+                                                                    "score": 21,
+                                                                    "author": "Tru_Fakt",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "What\u2019s wrong with life saving medical procedures?",
+                                                                            "score": 10,
+                                                                            "author": "Gwaer",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "No no, we\u2019re talking gender fluid flora. Trans plants.",
+                                                                                    "score": 39,
+                                                                                    "author": "Tru_Fakt",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "who guarantees that all votes are tallied up correctly? Yes, they prove that they received your ballot and have acknowledged your intention, but was it really counted?",
+                                    "score": 24,
+                                    "author": "Michael_Aut",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "At the counting centers they have representatives from the major parties there to monitor it. And with paper ballots you can always go back and perform an accurate, verifiable recount so even if there's trouble with people getting removed from the registration list (due to a hack or some other nefarious reason), the ballot is kept and can be counted after everything is straightened out.",
+                                            "score": 33,
+                                            "author": "joggle1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The two issues with this is that there's no guarantee that the id is anonymous, so its possible other people can track your vote. it also doesn't protect against ballot stuffing. But I agree it's still better than the others.",
+                                    "score": 11,
+                                    "author": "Scyntrus",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "We Malaysians would like to thank you for this system as you gave it to us during colonisation. It recently helped us track bogus ballot boxes, boxes being carried away to other places, and aided in the removal of a corrupt govt and leader that had been stealing billions from our people.",
+                            "score": 190,
+                            "author": "Junx221",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Nothing like some wholesome colonization!",
+                                    "score": 93,
+                                    "author": "themariokarters",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The UK needs to recolonize the US so they can oppress us with some free and fair elections",
+                                            "score": 57,
+                                            "author": "andrew5500",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Seriously UK pls recolonize us.\n\nSincerely, HK.",
+                                            "score": 20,
+                                            "author": "muricabrb"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "We did something good!",
+                                            "score": 7,
+                                            "author": "andygates2323"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The same system is used in Canada.\n\nIt works well. It is easy to understand by even the least educated people, it's very resistant to large scale manipulation, and there *is* a reliable paper trail available for auditing in the future.",
+                            "score": 63,
+                            "author": "kent_eh",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I worked as a Deputy Returning Officer for a polling place. I was even sent home with a record of what was counted at my poll (witnessed by volunteers) and told to hold onto it for a year - just in case something happened like a fire destroying the original records.",
+                                    "score": 9,
+                                    "author": "greenviolet"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Really? Here in India, before electronic voting, we had widespread \"booth rigging,\" where the armed henchmen of a local politician would \"capture\" all the booths, and strong arm the booth officials into giving them all the ballot paper. They would then cast all the votes themselves, for their candidate.",
+                            "score": 49,
+                            "author": "a1b1no",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "A well run paper voting system allows anyone and everyone to watch the ballot box all day, and doesn't allow anyone (literally nobody) to open the box before it's time to count the ballots.\n\n\nIf someone were to try that in somewhere like the UK, the news would be all over it. And if they were also strong armed into keeping quiet at every single voting location that they did this, then it's basically a military takeover of the country and the votes won't matter anyway.",
+                                    "score": 106,
+                                    "author": "Klathmon",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It still can be subject to fraud , but it certainly can make it harder. \n\nExamples of how to do fraud with that system, straight from Mexican Politics:\n\n- First person goes in, takes a ballot, but doesn't put it in the box. \n- They take the ballot to a secluded location not too far away from the voting place. \n- They pre-cross the party they want to commit fraud towards in that ballot. \n- Meantime, they intercept someone on their way to vote and offer them a sum of money to participate in the rigging.\n- They give them the pre-crossed ballot and tell them to deposit that in the box and bring back their blank ballot (which is how the person will get paid) \n- They now have a new blank ballot they can use for the same exact purpose. \n\nSome companies/unions/etc can do this large scale by getting access to blank ballots prior to the voting, pre-crossing them and forcing their affiliates to put them in the box, requiring them to bring back their blank ballot as a proof. \n\nSince you can only get one blank ballot, they make sure at the very least that the affiliates can't vote for any party other than the one they have in the pre-crossed ballot. They could cross another party and nullify their vote, they could not put a ballot, but what they cannot do is give a valid vote for any other party.",
+                                            "score": 39,
+                                            "author": "MarsNirgal",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You can't take ballots out of the voting area in Canada. We count everything and it all has to reconcile. You show ID, get crossed off the list, and receive one ballot. You walk behind the screen and cast the ballot. Done.",
+                                                    "score": 15,
+                                                    "author": "Sonja_Blu",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "So in your scenario, you need tens of thousands of people to just take your vote and cast it?\n\nThen you need zero of those people to talk, zero of those people to expose you, zero of those people to make a mistake.\n\n\nAnd of course you need this to be geographically diverse. 10,000 votes for your choice of president in one county won't do a damn thing. You'd need to do this process at thousands of precincts across the US, across multiple states. And it ALL has to happen on election day, flawlessly.\n\n\n\nGoing by 2016, there were a total of around 130,000,000 votes cast. 1% of that is 1,300,000. Let's assume you need to pay each person say $1000 (probably more, I know I sure as hell wouldn't do it for $1000, but it's a good starting number)? That's now 1.3 billion dollars you'd need to give to people across multiple states, multiple counties in each state, and tens or hundreds of precincts per county? For 1% of the vote...\n\n\nThat's one hell of a high bar to reach...",
+                                                    "score": 54,
+                                                    "author": "Klathmon",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In Mexico the presidential election is not counted by electoral college or counties. The candidate with the most votes across the entire country wins. \n\nAnd people talk, but it's simply ignored or have no one to talk to. \n\nIf your job depends on not exposing this, you can perfectly choose to stay quiet because it's safer. \n\nIf you live in an area with high poverty and you were part of it, even if you talk it with your neighbors you have no one to go to make a big noise out of it. And people here are poorer. Some might do it for 500MXN (That's 25 dollars for you) because that's what they earn in two weeks.",
+                                                            "score": 16,
+                                                            "author": "MarsNirgal",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That is correct. A vulnerability of paper voting that probably will never be truly fixed. \n\n#but doing it is fucking obvious!\n\nYou have bystanders and maybe even cameras to show evidence. With paperless voting the worst case is that the system simply transmits purposefully edited data about the vote. No traces left. And be honest: do you trust a private company to build a product that can't be hacked by the NSA and it's foreign equivalents? \n\nWe have a system in Germany to transmit a quick count to the voting center. The software is old and laughable insecure. Thank god the official results are transported later and mich more secure.",
+                                    "score": 34,
+                                    "author": "turunambartanen"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "At this point, this isn't an issue with a voting system, but with general security surrounding the voting stations. A group of people with guns can compromise almost any voting system at least a little if they tried.",
+                                    "score": 9,
+                                    "author": "Blackdiamond2"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I guess we have more localised/stronger civil law enforcement. Parts of India are very remote; the UK not so much.",
+                                    "score": 4,
+                                    "author": "LimitlessLTD"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "No. That's part of the problem with relying on paperless technology. You can't audit it, so you can't prove that negative.\n\nThis is not the same as saying that these machines *have* been hacked. But \"I can't *prove* that there *was* a problem\" is not the level of confidence you want in elections.\n\n\u2014Eric",
+                    "score": 441,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In other words, there's far too much uncertainty surrounding literally the most important thing about the way our government runs. The entire basis of our democracy, the thing we're so proud of, we can't even be bothered to make sure its safe.\n\nFor the people to exercise their right to vote, the most significant power each of us has, which has a direct effect on every single one of our lives, and on the countries of the world, we are using a system that can easily be hacked and has no paper trail, while foreign governments are actively engaging in the some of the most brazen cyber attacks ever.\n\nIt's like the Death Star not only having the exhaust port wide open, but advertising to the entire galaxy \"THIS GOES TO THE MOST IMPORTANT PART OF THE SHIP DO NOT ATTACK PLEASE OR WE WILL BE SUPER MAD\" instead of actually fixing the issue.",
+                            "score": 135,
+                            "author": "fullforce098",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "***No***, and that is the fundamental problem with our current election system: it's based on faith, rather than evidence.\n\nOur election system should be designed to produce evidence sufficient to convince a rational skeptic that the outcome is correct.  One way to do that is to have transparent, observable processes, including statistically rigorous risk-limiting audits.\n\nInstead, all too often, voters simply have to take election officials' word that everything is fine.  Most election officials are great people and diligent public servants, but it seems fundamentally wrong that voters should be *forced* to trust them.\n\n \u2014Alex",
+                    "score": 158,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You know what the problem with this is? The winners of elections, who are in position to make these changes, are exactly the people least motivated to do them. Because what if a problem is found and the results thrown out?",
+                            "score": 16,
+                            "author": "galendiettinger",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That\u2019s what happened in Canada with Trudeau. He promised electoral reform and I know a bunch of people that voted Liberal solely for that reason. He won and then just decided to break his promise and really didn\u2019t explain his decision.",
+                                    "score": 6,
+                                    "author": "eloncuck"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is the safest voting machine out there right now?",
+            "score": 59,
+            "author": "DerUber",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "From a security perspective, the safest technology right now is hand-marked paper ballots (HMPB) coupled with precinct-count optical scanners (PCOS) and risk-limiting audits (RLAs).\n\nIn this kind of system, voters mark ballots manually and put them into a scanner right in the polling place. The scanner creates an electronic record of the marks, and the physical ballots are stored in a ballot box.  This means there are redundant records\u2014physical ballots and electronic records.\n\nOfficials can use an RLA to efficiently check that both sets of records agree about the winner.  Tampering with both kinds of records (in a way that agreed) would require both a high-tech attack *and* a large conspiracy of people on the ground changing the paper.\n\n\u2014Alex",
+                    "score": 201,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Would it be safer for Americans to just request a absentee ballot? (I already have!) Until such time they fix any potential threats that is...if they ever do.",
+                            "score": 14,
+                            "author": "krrush1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's not the paperless voting machines being hacked I'm worried about, it's people suddenly and magically finding boxes upon boxes of uncounted votes in the most random and interesting of places. Do you guys have a plan to tackle that as well? Or is your focus primarily on the security of paperless voting machines?",
+            "score": 45,
+            "author": "HighDegree",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don't know how most states handle things, but in mine, the first thing the board of elections for every county does when tabulating the vote post election is account for every ballot sent out to each precinct on election day. Until those numbers are verified and any discrepancies sorted out, the vote can't be certified.",
+                    "score": 25,
+                    "author": "ballgame77",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What\u2019s the best way to overcome the \u201changing chad\u201d issue with paper ballots that we saw during the presidential election in 2000?",
+            "score": 135,
+            "author": "OperationMapleSyrup",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Manufacturers of paper ballots have significantly improved the design of these ballots since 2000. No voting method is perfect, but [research](https://www.sciencedaily.com/releases/2012/02/120202151713.htm) from 2012 suggests that the error rate is between 1% and 2%. The vast majority of the voting problems I heard about on Election Day 2018 related to electronic voting machines, rather than paper ballots or their scanners. We've come a long way since 2000.\n\n\u2014Eric",
+                    "score": 157,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "1-2% is grossly unacceptable by at least an order of magnitude.\n\nThats getting 2 cards wrong out of every 100. A 5 year old could do better than that.",
+                            "score": 42,
+                            "author": "Megouski",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I believe the 1-2% error is not in the tallying of votes, but rather the voter making an error in the selection.",
+                                    "score": 30,
+                                    "author": "i_remember_myspace",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "1-2% error rate is 3-7 million people, thats would change most elections",
+                            "score": 53,
+                            "author": "ManBoyChildBear",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Actually closer to 1-2.5M. You\u2019re assuming the entire population votes. There were just shy of 129M votes in the 2016 presidential election. Still an issue though.",
+                                    "score": 34,
+                                    "author": "Nickrophiliac",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That would change most elections if the error were to stack completely to one side.\n\nIn reality, the +/- that the errors induce should follow a bell curve with a mean of 0.",
+                                    "score": 105,
+                                    "author": "i_remember_myspace",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "In North Carolina (and, I assume, other places) they have digital voting machines that also produce a paper record, which allows hardcopy verification and record keeping.\n\nYou have to rely on voters to verify the paper record a that could be accomplished by a relatively small percent of motivated voters.",
+                    "score": 52,
+                    "author": "antiheaderalist",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No that still doesn't solve anything.\n\nHow do you know that what the digital system voted for and what it printed are the same?\n\nHow do you know it's not showing \"You voted for X\", printing out \"you voted for X\", but internally recording a vote for \"Y\"?\n\n\nAnd in the case of a descrepancy, which one do you go with? The electronic tally says \"X\" won by 500 votes, but the paper copies say \"Y\" won by 500 votes. Which is correct? Which do you choose?\n\n\nIf you choose the electronic, then there's no point in having the paper ballots. If you choose the paper, then there's no need for the electronic tally. if you decide \"neither, lets hold another election\", now it's easy for anyone to nullify an election by breaking EITHER the electronic or the paper systems (in other words, it's twice as easy to nullify an election).",
+                            "score": 31,
+                            "author": "Klathmon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is a fair point, these systems don't solve all issues but they allow some method to validate digital results.\n\nIt allows you to have the speed and savings of digital, with some verifiable paper trail to validate/challenge those results after.  I could be mistaken, but I think some states or counties actually mandate that digital results need to be validated by the paper records, but that validation can take days or weeks after election day.",
+                                    "score": 9,
+                                    "author": "antiheaderalist",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, but there is nothing you can do after election day to \"fix\" a botched election.\n\n\nEven in the best case scenario, a dual tallying system (electronic and paper) doesn't allow you to prevent fraud, just detect it after the fact. You still have the problem of \"choosing\" which one to go with.\n\n\nAnd in reality all dual systems like that do is make everything massively more complex, more expensive, and more time consuming. Not to mention the machines break which causes long voting lines and disenfranchised voters, it makes it hard for the disabled and elderly to vote in many cases, and it removes the ability for an individual person to verify and tally their own vote.\n\n\nIt's adding complexity and removing protections and layers of security, and I genuinely can't figure out why. There's no benefit to electronic voting. It's not easier, it's not cheaper, it's not faster (when you verify against the paper trail), it introduces more weaknesses (you press \"I vote for Flarg McNewton\", and it prints out \"I voted for Dude McManperson\", and now what do you do? Do the polling place runners know how to \"undo\" a vote? Would they be able to undo anyones vote?). It is just worse in every single way, and I really don't understand why so many people want it.",
+                                            "score": 11,
+                                            "author": "Klathmon",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Unfortunately, I'm a voter and a candidate in a county that isn't upgrading their machines to have a paper backup, which I find absurd.\n\nThey had to write a special bill to allow our machines to continue being used because they were statutorily supposed to have been changed by now.\n\nI don't know if any race I've ever voted in had the correct outcome (I've lived here my entire adult life), and I won't know if the race I'm running in (NC State House) ends up with the correct outcome.\n\nThere's money in the budget to get it done, so I just can't figure out why they won't fix them all, instead of just allowing the 6 or 7 counties not to get new paper-backed machines.",
+                            "score": 35,
+                            "author": "VoteDawkins2020",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I would like to think that politicians would want to have the safest and most accurate voting system that minimizes any room for error or voting manipulation. It\u2019s too bad that such measures are often blocked. \n\nMuch luck to you in your upcoming race!",
+                                    "score": 9,
+                                    "author": "OperationMapleSyrup",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'd like to know for sure that I won, if I did, or lost, if I did.\n\nI want it to be fair to every voter and every candidate.",
+                                            "score": 7,
+                                            "author": "VoteDawkins2020"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not OPs, but I would say just to not use the kind of paper ballots you have to punch a hole through. Minnesota (and I believe many other states) uses paper ballots that you fill out with a pen, which is then read by a scanner. The machine counts the ballots but if it needs to be recounted or audited you just take the ballots out and count them by hand.",
+                    "score": 18,
+                    "author": "NDaveT",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yep, California does this too. It\u2019s like a little blotter pen and you just go through and stamp all the candidates you want to vote for. The first time I voted here, I was shocked at how simple and clear it was.",
+                            "score": 9,
+                            "author": "BigCityBiddy",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It seems to me like the scanner ballots (like what we used to take tests in high school) could be compromised if the scanner \u201cmisreads\u201d the ballot. I remember the bubble sheets specifying use with blue or black ink or a #2 pencil only. Even still, some of our test scores were miscalculated because of issues with the actual test scanners. I like the idea of a stamp/blotter pen. That seems almost fool-proof. Thanks for sharing!",
+                                    "score": 6,
+                                    "author": "OperationMapleSyrup",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; if the scanner \u201cmisreads\u201d the ballot. \n\nRight. But the scanner is only speeding up the counting; it can easily (if slowly) be verified by hand-counting the same paper ballots. Apparently there are methods for auditing the results by hand counting to provide a level of confidence in the machine count.",
+                                            "score": 7,
+                                            "author": "ND3I"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "They provide you with the pen. You can't use a wrong ink unless you deliberately tried to.",
+                                            "score": 5,
+                                            "author": "dragonsroc",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Maryland does it as well",
+                                    "score": 3,
+                                    "author": "GeronimoHero",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you saying that foreign government agencies can and have tampered with actual voting machines and alter votes?  From what iv'e read from the Mueller Report was that most efforts were focused on online social media, not actual government infrastructure.\n\nIf a voting district has been tampered with, what are the steps for a backup with paper ballots and whats the likelihood of people changing their votes/becoming uninterested in redoing the process?\n\nWhat is the power of blockchain in voting and can it be effective? I only recall one presidential candidate(Andrew Yang) weighing pros and cons of it, but im largely unfamiliar with this method",
+            "score": 113,
+            "author": "Dreadnought7410",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is no evidence that foreign governments have tampered with voting machines to alter votes.  The problem is, there's a real threat that such an attack could happen in the future.  Across much of the U.S., we vote on computer voting machines that have known vulnerabilities.  And even in states that have a paper trail that can't be changed in a cyberattack, the paper usually isn't checked unless there's a recount.\n\nTake a look at this federal court ruling about Georgia's voting system (released just this morning!).  It shows in detail just how open to attack some of the electronic voting systems used today are.\n\n [https://pacer-documents.s3.amazonaws.com/47/240678/055111879247.pdf](https://pacer-documents.s3.amazonaws.com/47/240678/055111879247.pdf) \n\n\u2014Alex",
+                    "score": 147,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Take a look at this federal court ruling about Georgia's voting system \n\nThere's a cool quote in their conclusion (p151): \n\n&gt;The Plaintiffs\u2019 voting claims go to the heart of a functioning democracy. As the Court commented in its Order last year, \u201c*[a] wound or reasonably threatened wound to the integrity of a state\u2019s election system carries grave consequences beyond the results in any specific election, as it pierces citizens\u2019 confidence in the electoral system and the value of voting.*\u201d",
+                            "score": 69,
+                            "author": "birkir"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; This is no evidence that foreign governments have tampered with voting machines to alter votes. The problem is, there's a real threat that such an attack could happen in the future.\n\nThere is, however, a wealth of evidence showing that voting machines have been hacked/altered/tampered with by local elections officials. So why lead with this? \n\n&gt;Intelligence officials have repeatedly warned that Russian hackers will return to plague the 2020 presidential election, but the decentralized and underfunded U.S. election system has proven difficult to secure.",
+                            "score": 22,
+                            "author": "CubanB",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Precisely. The angle on this is always \"foreign interference\" but the clear and present danger is domestic hacking of the vote. Both the primary and final elections between Tim Canova and Debbie Wasserman Schultz show massive problems, including things like untracked boxes of votes being swapped on the side of an interstate.... there's even video. In the case of the primaries there, when Canova's team produced enough evidence to require a court-ordered recount, the paper ballots were illegally destroyed by the elections commissioner. I think any effort to get paper ballots in play is good, regardless of the motivating factors, but your question about \"why lead with foreign gov't interference\" is a good one.",
+                                    "score": 14,
+                                    "author": "jasron_sarlat",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; Both the primary and final elections between Tim Canova and Debbie Wasserman Schultz show massive problems, including things like untracked boxes of votes being swapped on the side of an interstate.... there's even video. \n\nMoreover, wouldn't covering this sort of very tangible election interference lead to more public support of increased election security?",
+                                            "score": 9,
+                                            "author": "CubanB",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "India uses EVMs that haven't had any problems. They arent connected to any systems whatsoever so can't be hacked unless you hit each individual machine. Why can't the US?",
+            "score": 46,
+            "author": "Peevesie",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's true that India has the largest deployment of electronic voting machines in the world, based on a home-grown machine that is dramatically simpler than the touch screen computers common in the US, but they still have lots of problems.\n\nI worked with researchers in India several years ago to do a detailed security analysis of the Indian machines.  You can read our research paper and see a video of our findings here: [https://indiaevm.org](https://indiaevm.org/)\n\nWith just a few minutes of physical access, an attacker can tamper with the machines to change the votes stored in them, or to make the machines count future elections dishonestly.  We built low-cost hardware devices to carry out both attacks.\n\nAs a result of our research, India has recently rolled out a voter-verifiable paper audit trail (VVPAT), which could help detect such attackers.  Unfortunately, I understand that there are some major unresolved problems with the implementation.  First among them, the audits aren't risk-limiting, so in a close election, they might not be thorough enough to detect outcome-changing fraud.\n\n\u2014Alex",
+                    "score": 102,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sorry but that video has a whole host of issues, and tells me that you possibly have no idea of the system followed here. \n\n1) the EVM machines themselves are randomised per constituency and there is no way any party can know which machine is going where\n\n2) the order in which parties are inserted is also randomised so with step 1 it is impossible to pre program it years in advance\n\n3) you claim that the Indian govt hasn't given access to anyone (to the machines that is). Verifiably false. [the EC organised a hack challenge](https://www.google.com/amp/s/www.indiatoday.in/amp/mail-today/story/evm-challenge-election-commission-political-parties-aap-bjp-congress-1028834-2017-08-10) for all political parties, gave them access to the machines and asked any political party to prove that the machines could be hacked\n\n4) all machines are stored in a central place in that constituency under protection of the police AND all political parties can have a rep there on site if they choose to and the media can also stand guard and many do, in key constituencies\n\n5) every booth has reps of key political parties incl the opposition in it and is under video surveillance as well. \n\nFinally with VVPAT that gives a paper trail, I fail to see how it's any different from a paper ballot",
+                            "score": 28,
+                            "author": "RajaRajaC",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Aren't India's machines also very closely guarded, so that physically gaining access to them would be nearly impossible?",
+                            "score": 20,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Would open source code be a viable solution?",
+            "score": 13,
+            "author": "PurpleSmurkle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If our local voting area has refused to get paper backups what can we do to pressure them?",
+            "score": 31,
+            "author": "CitizenMillennial",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Point them to the bi-partisan Senate Intelligence Committee's recommendations:\n\n[http](https://www.intelligence.senate.gov/sites/default/files/documents/Report_Volume1.pdf)[s://www.intelligence.senate.gov/sites/default/files/documents/Report\\_Volume1.pdf](https://www.intelligence.senate.gov/sites/default/files/documents/Report_Volume1.pdf)\n\n&gt;Given Russian interventions to undermine the credibility of the election process, states should take urgent steps to replace outdated and vulnerable voting systems... at a minimum, any machine purchased going forward should have a voter-verifiable paper trail.\n\nOr the findings of the National Academies of Science, Engineering, and Medicine:\n\n[http://sites.nationalacademies.org/pga/stl/voting/index.htm](http://sites.nationalacademies.org/pga/stl/voting/index.htm)\n\n&gt;\\[a\\]ll local, state, and federal elections should be conducted using human-readable paper ballots by the 2020 presidential election.\n\nOr if they really want to get down into the details, to my Coursera course, *Securing Digital Democracy*:\n\n[https://www.coursera.org/learn/digital-democracy](https://www.coursera.org/learn/digital-democracy)\n\nEdit to add: Groups like [Verified Voting](https://www.verifiedvoting.org) have great resources about election security that could be a big help for your local efforts.\n\n\u2014 Alex",
+                    "score": 37,
+                    "author": "politico",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "While I understand it can be hacked Is there any evidence that any of the previous machines used in previous elections  (at any level) have been hacked? \n\nWhile Russia is often cited as wanting to mess with western elections is that any evidence out there of a credible threat/intent to commit wild scale voter hacking at any election? beyond the teenager in his parents basement\n\n&amp;#x200B;\n\nkind regards, look forward to hearing from you",
+            "score": 90,
+            "author": "LoZz27",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There is no evidence that a voting machine has been hacked while it was used in an election. And Russia has found it much easier to mess with our minds (through disinformation campaigns) than with our voting machines, so this is not likely to ever be their top attack vector.\n\nThe concern we see about voting security is about closing as many gaps as possible. There are certainly other gaps that are more likely to be exploited. But maintaining confidence is an important part of conducting elections, and people lose confidence when they know that they're voting on machines with vulnerabilities.\n\n\u2014Eric",
+                    "score": 76,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;  And Russia has found it much easier to mess with our minds\n\nSo would it not be in the best interest to spread more accurate information about candidates through more debates? Like more than a few networks, with time constraints, and no adds between segments? Assuming that the words the candidates use are more truthful than attack adds from their opponents, or companies that fund attack adds.",
+                            "score": 31,
+                            "author": "iownadakota",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi Alex - I work on election security in my state, assessing different county setups. Every county votes on paper, but you showed me last year that even the tabulators are susceptible. I was lucky enough to be in the audience during your talk at DEF CON. \n\nES&amp;S seems to have at least a decent system in place for delivering and handling election definition USB sticks. What's the real risk of tabulators being hacked? Is there an easy way to check what vulnerabilities exist by firmware version? Do you have any recommendations on securing paper ballot states?",
+            "score": 9,
+            "author": "skidlz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks!\n\nYes, even tabulators (optical scanners) are susceptible to hacking, because under the hood, they're pretty powerful computers, with complex, reprogrammable software and sometimes even wireless Internet access (for transmitting results on election night).\n\nIn past studies, we've found that election definition files (which officials copy to ever machines before the election to program in the ballot design and the counting rules, etc.) can carry malware or exploit things like buffer overflows to infect the machines.  ES&amp;S is a good illustration of the risk: they create the ballot programming for 2000 jurisdictions across 34 states from their corporate headquarters, which is a much more centralized point of attack that most people are aware exists.\n\nOne important defense is to make sure you have the latest firmware.  But voting machine firmware tends to be years out of date, because there's a lengthy certification process.  For instance, the latest certified ES&amp;S software still relies on Windows 7, which will soon be unsupported by Microsoft.\n\nIncredibly, most states do not even require that jurisdictions use the newest available firmware.  For example, Georgia currently uses paperless DREs across the state with firmware that hasn't been updated since 2005.\n\nThe strongest and most important defense is to rigorously audit the paper trail, through manual risk-limiting audits.  Even if the machines are somehow hacked, such audits ensure that there's only a small statistical chance that any outcome-altering fraud will go undetected.  That creates a powerful deterrent, and if an attack happens anyway, you can correct it by recounting the paper.\n\n \u2014Alex",
+                    "score": 11,
+                    "author": "politico"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why bother with voting machines at all?\n\nThere is no way to verify the integrity of the electronic count, neither for an individual voter nor at the national level. Hence, you'll need a manual count to be able to trust the result, which reduces the machine to an incredibly expensive pen.",
+            "score": 29,
+            "author": "marcelgs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Even after hacking many different voting machines myself, I don't agree that we should get rid of computer counting technology completely.  There is a long, rich history of fraud in paper voting (see  [https://en.wikipedia.org/wiki/Electoral\\_fraud#Tampering\\_with\\_electronic\\_voting\\_machines](https://en.wikipedia.org/wiki/Electoral_fraud#Tampering_with_electronic_voting_machines)) that we'd be foolish to ignore.\n\nWe can do a lot better by using computer systems that are \"software independent\".  That means that any error or hack affecting the outcome can be detected.  One way to do this is to use paper ballots with optical scanners and manual risk-limiting audits, so you get two independent records of every vote that would need to be separately hacked to change the results without detection.\n\nThat's way stronger than either hand-counted voting or unaudited computer voting alone.\n\n\u2014Alex",
+                    "score": 50,
+                    "author": "politico"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why can't voting machines give you a receipt of your votes? If each receipt had a unique code, you could go to a website later and see whether your vote was counted. Maybe even see all the votes cast (anonymously of course). If your vote(s) don't show-up you would have a reasonable right to complain. As it is, the whole thing is a black box where no one has any idea of what happens after you leave the machine.",
+            "score": 20,
+            "author": "damnedspot",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There's an active research area about this, called end-to-end verifiable voting system.\n\n [https://en.wikipedia.org/wiki/End-to-end\\_auditable\\_voting\\_systems](https://en.wikipedia.org/wiki/End-to-end_auditable_voting_systems) \n\nThe challenge is, can we make a kind of cryptographic receipt that proves to you, the voter, that your vote has been correctly included in the count, but that doesn't let you prove to anyone else how you voted.  (Because if you could, you could use the receipt to sell your vote, or you could be coerced into voting a certain way...)\n\nHopefully some day soon we'll have paper-based voting systems that also gives you this kind of proof.\n\n\u2014Alex",
+                    "score": 11,
+                    "author": "politico",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Secret ballot (where you can't show proof of who you voted for) is extremely important.\n\nWithout it, you could sell your vote (give me $5000 and I'll vote for whoever you want and prove it), you could get forced under threat of violence to vote for someone (vote for X and bring me the receipt or I'll break your legs).\n\nIt was a very real problem at one time, and the solution is to make sure that you can't \"prove\" you voted one way or another.",
+                    "score": 37,
+                    "author": "Klathmon",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why do the same people who say Russia is hacking our elections and that we need secure elections not want Voter ID which the rest of the industrialized world has?",
+            "score": 249,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hand em out for free to all citizens automatically at 18, and provide assistance at the polls for those that do not have their physical ID on them, and I'd consider it.\n\nThe issue with voter ID isn't the idea, it's the way it's implemented and the way it is allowed to inconvenience the most marginalized.",
+                    "score": 202,
+                    "author": "fullforce098",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Voter fraud *by people in real life* is not an issue.  Voter fraud by compromising the software that can alter the votes before they're submitted with no ability to cross-reference validity *is a serious problem*.\n\nYou can go and present your ID all you want, but if you press a button to vote Republican and it automatically changes it to Democrat (or vice versa) after you hit save (it doesn't even have to show you it changed), that's a serious problem.\n\nYou were perfectly legal to vote, but your vote was altered by someone potentially a thousand or more miles away.",
+                    "score": 72,
+                    "author": "RandomStrategy",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Don\u2019t the paper ballots go through a machine anyways?",
+            "score": 5,
+            "author": "MapleA",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Technically inclined people were warning about this way back in the early 2000s. Do you have any insight on why those warnings went unheeded for so long and people are just now starting to catch on to these problems?",
+            "score": 17,
+            "author": "NDaveT",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For virtually any big but hard-to-visualize problem, it often takes a galvanizing event to grab people's attention.\n\nThat's what Russia's 2016 interference did. It brought these issues from academic conferences to cable news. Even though there were no confirmed cases of hacked voting machines, the issue of voting machine security became (reasonably) wrapped up in broader discussions about ways to improve the system.\n\n\u2014Eric",
+                    "score": 16,
+                    "author": "politico"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you think Blockchain technology will enable paperless voting to be more secure eventually?",
+            "score": 11,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "What can everyday citizens do to help?",
+            "score": 4,
+            "author": "Kingmc1",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "My ideal system would be:\n\nVote at some machine of some sort. Get shown your vote, then press a button to input it. You then get a printout of the votes you made (and can dispute any error immediately on-site if there's a discrepancy).\n\nYou can then take that printout home, and the day after the election, look up on the county registrar website that your vote was counted, and counted correctly. Single errors could be fixed, massive discrepancies could be investigated by the media. \n\nAdministrators should also be able to verify that all the votes that were counted were legitimate votes, and not input later to tip the scales.\n\nBut, it would still remain anonymous. No one would be able to trace back that vote to your identity, or, pull up a list of who voted for who.\n\nIs this just impossible?",
+            "score": 3,
+            "author": "chevdecker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;You can then take that printout home\n\nThis would violate the fundamental principle of ballot secrecy. If you could prove how you voted (with this printout), it would be possible to bribe, blackmail, or threaten you into voting a certain way.\n\nThis is one of the biggest challenges to designing a trustworthy voting system \u2014\u00a0the fact that election officials can't let you take home any proof of how you voted. This is one of the biggest differences between designing voting machines and designing every other form of technology: it needs to be auditable without providing any links between users and inputs.\n\n\u2014Eric",
+                    "score": 12,
+                    "author": "politico",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In theory, vote by mail county voters could copy or photograph their ballots before they mail/drop them off... Is that a strike against vote by mail?",
+                            "score": 4,
+                            "author": "PrecambrianNouveau",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

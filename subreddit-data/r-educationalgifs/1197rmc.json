@@ -1,0 +1,359 @@
+{
+    "id": "1197rmc",
+    "score": 1940,
+    "title": "Bernoulli Lemniscate and the Squircle || A remarkable Geometric fun fact!!",
+    "author": "actoflearning",
+    "date": 1677091864.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/1197rmc",
+    "media_urls": [
+        "https://i.redd.it/rowlws8idsja1.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 719,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was looking for how it makes sense, the dots don\u2019t intersect or line up timing wise so I\u2019m gonna have to deep dive this \ud83e\udd26\ud83c\udffb\u200d\u2642\ufe0f",
+                    "score": 132,
+                    "author": "HalcyonEnder",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Or not. Just move on. No need to go deeper",
+                            "score": 58,
+                            "author": "hawaiikawika",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "These aren't the gifs you're [looking for](https://media.tenor.com/DHoJrGDlH_MAAAAM/the-goon-star-wars.gif)",
+                                    "score": 9,
+                                    "author": "agatgfnb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I don\u2019t get it but it is pretty to watch.",
+                    "score": 14,
+                    "author": "Here_for_tea_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don\u2019t understand what I\u2019m watching. I\u2019m having fun watching the dots not being trapped by the pink thing tho.",
+            "score": 229,
+            "author": "Arteyp",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is definitely aimed at math-types - I'll try and explain this as simply as I can.\n\n* there are two curvy shapes here - the middle \u221e one is called the [lemniscate](https://en.wikipedia.org/wiki/Lemniscate), the outer one is called the [squircle](https://en.wikipedia.org/wiki/Lam%C3%A9%27s_special_quartic) (b/c it's kind of halfway between a square and a circle). These are famous math-shapes. In coordinate terms both of these shapes are between x=-1 and x=1.\n* point A is the centre of the two shapes, coordinate (0,0)\n* main bit to look at is the labelled top right quarter of the figure. we let the point C slide around the \u221e and take 3 other points at its mirror images in the horizontal and vertical axis (not labelled)\n* in bold red on both sides are curved line segments on the \u221e which joins two pairs of these points - the total \"arc\" length of these line segments is the first quantity of interest - call it RED\\_LENGTH\n* point B is calculated from C at each step, by being the point close to C on the \u221e where the square of the distance from A to B (written AB) is equal to the distance from A to C (written AC), and we again take the mirror images of B in the horizontal / vertical axes (not labelled)\n* we take lines out through A and B (and its reflections) out to the edge of the squircle. We take pairs of these lines and measure the area between them as well as the edge of the squircle (the left and right purple triangly shaded bits) - they also throw in the areas at 90 degree angles to these (the top and bottom triangly shaded bits), they all have the same area  - the total purple area is the second quantity of interest, call it PURPLE\\_AREA\n\nfinally - the big reveal is that - RED\\_LENGTH = \u221a2 \\* PURPLE\\_AREA at every point in the gif!\n\nThis is pretty random to me, it's unusual to see a length equated to an area like this. My guess is someone noticed that the total length of the lemniscate was equal to  \u221a2 \\* the area of the squircle (shown at the point where A,B,C are all at the centre) and tried to find a more general pattern. This seems hard to derive even if you know the answer, let alone without!",
+                    "score": 111,
+                    "author": "sobe86",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Great job explaining such a complex gif so clearly. Thank you!",
+                            "score": 14,
+                            "author": "apiacoa"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank goodness, this Squircle business was threatening to head straight to /r/VXJunkies territory.",
+                            "score": 8,
+                            "author": "RealPropRandy"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If AC=AB^2 why is AB longer than AC?",
+                            "score": 11,
+                            "author": "Tietonz",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Because the left and right sides of the \u221e are at distance 1 from the centre, and all the other distances are less than 1 - when you square them they get smaller, e.g. 0.5 \\* 0.5 = 0.25",
+                                    "score": 35,
+                                    "author": "sobe86",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I think the colors here need work for this to truly make sense from just watching it. And it needs a key.",
+                                            "score": 6,
+                                            "author": "Ghawr"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "People come up with all kinds of interesting math formulae when trying to circle the square",
+                            "score": 3,
+                            "author": "erevos33"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "r/theydidthegeometry",
+                            "score": 5,
+                            "author": "KudosOfTheFroond"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How is AB^2 = AC? B and C converge at the right edge...?",
+                            "score": 1,
+                            "author": "human-potato_hybrid",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "in coordinate terms the right edge is the point (x=1, y=0) - so AB = AB\\^{2} = AC = 1",
+                                    "score": 2,
+                                    "author": "sobe86",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ahhh gotcha",
+                                            "score": 1,
+                                            "author": "human-potato_hybrid"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Are AB and AC direct distances, or lengths along the lemniscate?\n\nEdit: Nevermind. Has to be direct distance, since they meet up at 1.",
+                            "score": 1,
+                            "author": "Equoniz"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Is this method part of defining the squircle? If not, how is it defined?",
+                            "score": 1,
+                            "author": "ltjpunk387",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No, it has a much simpler definition, the unit circle is defined by x^2 + y^2 = 1, the unit squircle is defined by raising the power - x^4 + y^4 = 1",
+                                    "score": 1,
+                                    "author": "sobe86"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I was with you right up until you said \u201caimed at math-types\u201d and didn\u2019t really pick it up again until you said \u201clet alone without\u201d",
+                            "score": 1,
+                            "author": "markjlast83"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "what the fuck did you just call me?",
+            "score": 82,
+            "author": "Greyhaven7",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;I choose you, Squircle \u2013 Lemniscate attack!",
+                    "score": 28,
+                    "author": "Mr-Doodlezz"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I wish I\u2019d understand this GIF and how the squircle actually is constructed.\n\nSome more facts: A squircle is not to be confused with a rounded rectangle \u2013 it is different in that not only the corners are rounded, but also the sides appear slightly convex, as the corners are slightly proportionally scaled towards the centre. At least that's how I understood it, but when I look at this equation, that's definitely **not** the right way to set it up. Squircles are preferably used as a *base* for app icons in the Apple universe.\n\nUnfortunately the GIF didn\u2019t help me to better comprehend the way it\u2019s constructed properly. :,)",
+            "score": 30,
+            "author": "Mr-Doodlezz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Here\u2019s the [Wikipedia entry for squircle](https://en.m.wikipedia.org/wiki/Squircle) with some better descriptions than mine, some images and \u2026 well, you know, stuff. ;)",
+                    "score": 14,
+                    "author": "Mr-Doodlezz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's funny that we just kind of agreed that the super-ellipse with n=4 looks square-y enough to be called a squircle.",
+                            "score": 8,
+                            "author": "sonicstreak"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[Stand Up Maths video on Squircles](https://www.youtube.com/watch?v=gjtTcyWL0NA)",
+                    "score": 5,
+                    "author": "mustang255"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I feel overwhelmed with the amount of education this gif has handed me.",
+            "score": 20,
+            "author": "Mabl_ProteGe",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Or lack there of",
+                    "score": 3,
+                    "author": "Astonedwalrus13"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I dont get it but it looks nice",
+            "score": 11,
+            "author": "CalistoNTG"
+        },
+        {
+            "level": 0,
+            "comment": "Is there any reason why the square is rounded? Why not the same lines for the y axis? What is c?",
+            "score": 8,
+            "author": "strictly_anonymous2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's not a square it's a squircle",
+                    "score": 10,
+                    "author": "MeatyMagnus"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wat.",
+            "score": 6,
+            "author": "ff0094ismyfavourite"
+        },
+        {
+            "level": 0,
+            "comment": "How are we comparing a length measurement with an area measurement?\n\nAlso what is meant by \"AC\" and \"AB\" as variables? The length of a line connecting the points? The distance along the lemniscate between the points?\n\nIf either of those two options, it implies that AB has an upper limit of 1 since AC is always smaller. Does the \"property\" showed still hold for larger squircles? Or only for \"unit\" squircles?\n\nI guess my point is that as someone who does actually understand every word of whats in the gif and sort of what its getting at, its still really confusing and doesnt actually educate or explain anything.",
+            "score": 4,
+            "author": "The_Slad"
+        },
+        {
+            "level": 0,
+            "comment": "Squircle is almost as fun to say as squoval (a shape for fingernail manicures)!",
+            "score": 4,
+            "author": "CashCow4u"
+        },
+        {
+            "level": 0,
+            "comment": "I think it's only educational to the already educated",
+            "score": 4,
+            "author": "Less_Ants"
+        },
+        {
+            "level": 0,
+            "comment": "All Cops = Are Bastards^2",
+            "score": 11,
+            "author": "Mando_calrissian423"
+        },
+        {
+            "level": 0,
+            "comment": "Ok, now where is the educational gif that explains this?",
+            "score": 3,
+            "author": "Farfignugen42",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think we will need three educational gifs to explain this.",
+                    "score": 3,
+                    "author": "StnMtn_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "ELI5?",
+            "score": 5,
+            "author": "Chauxtime"
+        },
+        {
+            "level": 0,
+            "comment": "nobody knows what any of this means. it's completely inscrutable.  the upvotes are jerking off over a game of chmess",
+            "score": 2,
+            "author": "Aerik"
+        },
+        {
+            "level": 0,
+            "comment": "Silly, length cannot equal a scalar times an area, that's not how units work.",
+            "score": 2,
+            "author": "addmadscientist"
+        },
+        {
+            "level": 0,
+            "comment": "Boobs",
+            "score": 2,
+            "author": "CoffeePot23"
+        },
+        {
+            "level": 0,
+            "comment": "OP, maybe provide some eli5 for the less intellectually gifted of us here because I don\u2019t understand shit",
+            "score": 3,
+            "author": "ExpectTheLegion"
+        },
+        {
+            "level": 0,
+            "comment": "Now do it with a Squirtle!",
+            "score": 1,
+            "author": "sonicstreak"
+        },
+        {
+            "level": 0,
+            "comment": "Arc length is equal to sqrt(2)*area? \n\nUnits don't even match.",
+            "score": 1,
+            "author": "HolyAty"
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s the squircle of life!",
+            "score": 1,
+            "author": "OMPCritical"
+        },
+        {
+            "level": 0,
+            "comment": "I have suffered enough in college, please leave me alone Bernoulli. I beg you.",
+            "score": 1,
+            "author": "potato_control"
+        },
+        {
+            "level": 0,
+            "comment": "For the life of me, I cannot pronounce the word Squircle.. I just keep saying squirrel instead!",
+            "score": 1,
+            "author": "Moraith88"
+        },
+        {
+            "level": 0,
+            "comment": "That's right! It goes in the squircle hole",
+            "score": 1,
+            "author": "imaginary_num6er"
+        },
+        {
+            "level": 0,
+            "comment": "Cool and pretty math things but boy do I realize why I became a geologist and not a mathematician. Thanks to the people explaining what I am seeing and making sure that it is really math for maths sake and not something \"practical\" for everyday use.",
+            "score": 1,
+            "author": "DankMemeRipper1337"
+        },
+        {
+            "level": 0,
+            "comment": "u/savevideo",
+            "score": 1,
+            "author": "RMattiae"
+        }
+    ]
+}

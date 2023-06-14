@@ -1,0 +1,418 @@
+{
+    "id": "12rvede",
+    "score": 37,
+    "title": "I'm Stephen Gou, Manager of ML / Founding Engineer at Cohere. Our team specializes in developing large language models. Previously at Uber ATG on perception models for self-driving cars. AMA!",
+    "author": "Step7enn",
+    "date": 1681915100.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/12rvede",
+    "media_urls": [
+        "https://www.reddit.com/r/IAmA/comments/12rvede/im_stephen_gou_manager_of_ml_founding_engineer_at/"
+    ],
+    "other_urls": [
+        "https://imgur.com/kCYTUQ6](https://imgur.com/kCYTUQ6)",
+        "https://info.cohere.ai/amawithstephen](https://info.cohere.ai/amawithstephen)"
+    ],
+    "postText": "Hi all! My team has worked on large language models such as GPT for 3.5 years and I specialize in transformer models, inference optimization and distributed training. My team operates at the boundary of research and engineering, delivering cutting-edge research from academia into models in production. Previously, I did applied research on perception and prediction models in self-driving cars at Uber ATG. I also had several years of experience in rendering engines and physics simulation at companies like Crystal Dynamics and Blizzard Entertainment before pivoting to machine learning.\n\nI hold a master\u2019s degree in Computer Science from University of Toronto, a master\u2019s degree in Computer Graphics from University of Pennsylvania and a bachelor degree in Mathematics from Duke University.\n\nPROOF i'm real: [https://imgur.com/kCYTUQ6](https://imgur.com/kCYTUQ6)\n\n**I will be answering your questions** **throughout the week!**\n\nAfter today you can also meet me in a live AMA session via zoom **Next Thursday, Apr 27 at 12pm EST.** Sign up here: [https://info.cohere.ai/amawithstephen](https://info.cohere.ai/amawithstephen)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For more AMAs on this topic, subscribe to r/IAmA_Tech, and check out our other topic-specific AMA subreddits [here](https://reddit.com/r/IAmA/wiki/index#wiki_affiliate_topic-specific_subreddits).",
+            "score": 1,
+            "author": "IAmAModBot"
+        },
+        {
+            "level": 0,
+            "comment": "What's the path to having explainability for LMMs? How important is this?",
+            "score": 7,
+            "author": "ChangeMyDespair",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "A simple way to start understand LLMs is to look at model's attention matrix, it shows what information the model relies on the most from the prompt for the output. Going forward I think the way we analyze LLM's thought process will be more similar to brain simply because the sheer size of parameters in LLM, we'll divide a model's parameters into regions where each one is responsible for different ability, e.g some for language, other for math, or reading. This is a super important aspect that's currently under studied, if we want to effectively control and steer LLM's behaviors and outputs to be safe.",
+                    "score": 5,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What are common frameworks to compare the learnings and effectiveness of different LLMs?",
+            "score": 5,
+            "author": "FlattopMaker"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for taking the time! I have a couple of questions I hope you can answer.\n\n1. Where does gathering feedback from users in the RLHF loop stand in getting models to production? That's not really research (unless it's a new method) so I'm wondering if that falls under your umbrella and how you handle versioning from each cycle of RLHF in practice? I'm imagining you need to verify the model has gotten significantly better before updating what users are seeing live - so how much better does a model need to be?\n\n2. Related to your background in physics simulations and rendering, what do you think about slapping a diffusion model on a transformer to render realistic sequences in video games? I'm imagining you can get more realistiic sequences that way but somehow need to connect the randomness of diffusion to the next-sequence probability of a transformer.",
+            "score": 2,
+            "author": "based_goats",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "1. it's a research, but a proven method that works so it is more on the engineering and product team to effectively carry it out. We have multiple indicators for determining whether a model's performance is improved. judging LLMs are hard, it's a combination of evaluation datasets and human evaluation.\n2. perhaps you could use a transformer to initialize noise for temporally connected frames for better consistency. just a hunch",
+                    "score": 3,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Any specific course or books you Will recommend to be able to build those kind of models ?",
+            "score": 2,
+            "author": "Juannieve05",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[https://www.amazon.ca/GPT-3-Building-Innovative-Products-Language/dp/1098113624](https://www.amazon.ca/GPT-3-Building-Innovative-Products-Language/dp/1098113624)  \nthis is a great book by my colleague to get started on using LLM.\n\nIf you want to build LLM, I suggest to start with the original transformer paper [https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)  \nThen the GPT1,2,3 papers for scaling up models.\n\nfinally learn about distributed training &amp; framework to actually train them, like https://github.com/microsoft/DeepSpeed",
+                    "score": 2,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;[https://www.amazon.ca/GPT-3-Building-Innovative-Products-Language/dp/1098113624](https://www.amazon.ca/GPT-3-Building-Innovative-Products-Language/dp/1098113624)  \n&gt;  \n&gt;this is a great book by my colleague to get started on using LLM.\n\nSadly unavailable in the U.S.:\n\nhttps://www.amazon.com/GPT-3-Building-Innovative-Products-Language/dp/1098113624",
+                            "score": 1,
+                            "author": "ChangeMyDespair"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey Stephen!  \nWhat are some of the major challenges in the inference of LLMs? Is it worth exploring hosting your own models?",
+            "score": 2,
+            "author": "Ok_Name4828",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It depends on the size of LLM that you want to host. Typically if your model can fit in one GPU you can consider hosting it yourself. Otherwise, you'll get into the land of distributed inference, model parallelism, which to get it working or working efficiently is a tremendous task and using a hosted model thru APIs could be a better choice",
+                    "score": 2,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Typically if your model can fit in one GPU you can consider hosting it yourself.\n\nHow can you tell if a model can fit into a single GPU? Or generally how much computing power you need for a model (or vice versa)?",
+                            "score": 1,
+                            "author": "ChangeMyDespair",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "as an example if you have a A100 40GB gpu, it can fit a 13B GPT model.",
+                                    "score": 2,
+                                    "author": "Step7enn"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What kind of learning paths and skills would you recommend for graduate students who wish to conduct AI research in 2023\u2019s AI landspace? what are some interesting problems that we can tackle with university resources? What can we learn to better understand the design process going into LLMs with auxiliary functionalities built around the transformers? Better, how can we get to design our own?",
+            "score": 2,
+            "author": "No-Distribution-4222",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "reality is that it is much harder to conduct research with much less compute, because many problems or solutions don't exist or won't work as you scale up the models. a 355M model or even a 6B behaves drastically different than 100B model and responds very different to model architecture changes. so my suggestions would be 1) data processing/cleaning/augmentation related research that applies to all sizes of models 2) smaller task specific model, solving problems for a vertical",
+                    "score": 3,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What kinds of legal or proprietary claims do you see on the horizon that will make your job much more difficult? For example, say a revolutionary technique is discovered that only runs on extremely expensive hardware, or a legal case renders most of the best available corpuses (corpi?) off-limits?",
+            "score": 2,
+            "author": "travelquery",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm not too worries about new revolutionary techniques &amp; expensive hardware. it's a very small, open and flowing community, nearly impossible to keep proprietary technique, as for hardware that's just the requirement to be a player in this domain, and usually abundant",
+                    "score": 2,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If training data becomes expensive (legally), do you see pirate/independent researchers becoming more likely to produce advances?",
+                            "score": 1,
+                            "author": "travelquery",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "still no, as companies will be able to access these data for research purpose and or for their not-for-profit lab.",
+                                    "score": 2,
+                                    "author": "Step7enn"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When do you think we will achieve AGI?",
+            "score": 2,
+            "author": "rvolkov",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "imo there're two ways we can define AGI. 1) AGI in the sense that a model/agent able to complete majority of tasks that average human can do across a wide range of capabilities that requires perceiving the world(text, audio, video, image) and perform for example typical office job tasks. This will happen I think 2 - 3 years, the models capability is almost there and the eruption of new tools built around them will take us there.  2) AGI in the sense that we can create a conscious agent with desire, thoughts and self-awareness. Right now we don't have any theory or path to achieve this, current paradigm based on deep learning is not it. So I'd say 50+ years or maybe never.",
+                    "score": 3,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "that's a very good point, and it is true, ML system is nowhere near human's speed  of learning and generalization. However, I now start to think about it as Duck typing. It doesn't matter the learning process, if the system can complete complex tasks (whether understood or just appear to be), I'd call it AGI in definition 1. : ))",
+                                    "score": 2,
+                                    "author": "Step7enn"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I think it's best to keep an open mind, a lot of arguments come down to linguistics. These models don't have desires but they definitely have \"desires\" which are trained into them due to the underlying bias which allows them to even operate in the first place.\n\nThe whole industry seems to have turned on a dime due to the breakthroughs only recently - in the grand scheme of things, there wasn't that much of a barrier and it makes me wonder if someone were crafty with the maths 4 years earlier we might be in a completely different place.\n\nI agree with your first point regarding AGI as a model/agent capable of completing a majority of tasks that an average human can do. The rapid advancements in AI technologies and tools indeed suggest that we might be moving closer to this goal within the next few years.  \nHowever, I'd like to debate the second point about AGI as a conscious agent with desires, thoughts, and self-awareness. While I acknowledge that we currently lack a clear path to achieve this level of AGI within the deep learning paradigm, there are reasons to remain open to the possibility:\n\n1. Unpredictable advancements: The pace of AI research and development is accelerating, and new breakthroughs in the field often emerge unexpectedly, opening up unforeseen possibilities.  \n2. Interdisciplinary collaboration: As we continue to explore the mysteries of human consciousness through the collaboration of multiple disciplines, such as neuroscience, cognitive science, and psychology, our understanding of conscious agents might provide new insights on how to imbue AGI with similar capabilities.  \n3. New theoretical frameworks: As our knowledge evolves, so too might our theoretical frameworks for understanding AGI. It's possible that novel paradigms may surface in the future that challenge our current assumptions about what's achievable with AI.  \nIt's essential to remain curious and open-minded while acknowledging the limitations of our current understanding when discussing AGI's potential. \n\nEngaging in thought-provoking conversations, such as this one, enables us to explore different viewpoints and fuels the pursuit of new ideas.\n\nAside: I don't believe you've given enough proof to warrant your authenticity - it's definitely a convincing fake ;)",
+                            "score": 1,
+                            "author": "razodactyl"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Users, please be wary of proof. You are welcome to ask for more proof if you find it insufficient. \n\nOP, if you need any help, please message the mods [here](http://www.reddit.com/message/compose?to=%2Fr%2Fiama&amp;subject=&amp;message=).\n\nThank you!\n\n---\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/IAmA) if you have any questions or concerns.*",
+            "score": 2,
+            "author": "AutoModerator"
+        },
+        {
+            "level": 0,
+            "comment": "Do your marketing people actually think a Reddit AMA will be effective? Follow up question: Did you fire your marketing people?",
+            "score": 1,
+            "author": "jayheidecker"
+        },
+        {
+            "level": 0,
+            "comment": "Hi Stephen. What made you switch to ML from graphics? What are the main challenges your team is facing? What are the skills most needed in ML industry?",
+            "score": 1,
+            "author": "ResistSpirited1265",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was in graphics about 5-6 years ago, I saw graphics have reached a plateau in terms of fidelity (look at the games, movie VFX, they look stunning, what else to do?) so I thought the next stage will be about reducing cost and accelerate process of creating these graphics. and ML was a natural choice. If I have to pick one skill it will be data processing.",
+                    "score": 3,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "1. Could future models potentially enhance text-only performance by incorporating grounding acquired from multimodal training?\n\n2. What are the biggest current problems of LLM, and how do you plan to address them?",
+            "score": 1,
+            "author": "photino65",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "1. absolutely, at the end of the day text is only a media to represent our world and knowledge. other modalities like videos, images and audios have vast amount of knowledge about our world so it will undoubtedly improve \"text-only\" performance.\n2. Hallucination &amp; not up to date with latest world. these can be improved through the use of retrieval augmented system that will base facts and news on sources  from database or search engine.",
+                    "score": 3,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Related to 2., is there a measure of uncertainty that can be used to decide when a LLM should update its knowledge of the world with a web search?",
+                            "score": 1,
+                            "author": "based_goats",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "there is way for the model to decide whether to resort to external tool, but it's more based on understanding the context and entities within a prompt and less of measure of uncertainty.",
+                                    "score": 2,
+                                    "author": "Step7enn"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "i'm not sure but it's probably more about the quality than the quantity",
+                    "score": 1,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi Stephen, thanks for doing this and amazing work at Cohere. What advice would you give to someone interested in getting into AI/ML? Should someone get through all the schooling first or it is not as important as people think?",
+            "score": 1,
+            "author": "wemjii",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If you want to do research or research engineering I highly recommend going through school, not just to build your theoretical foundation but also to differentiate you from a surge of people going into ML nowadays. For other engineering, ops related to ML, I find it useful to build apps for your portfolio to show you know how to use models and you're passionate about them.",
+                    "score": 2,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As someone, who is not from a very good uni(for undergrad) from a 3rd world country, how can he climb his way towards the big giants in ML like OpenAI, Brain, FAIR, DeepMind, COhere, Anthropic?   \nCan you focus on both learning perspectives (How should 1 learn ML to achieve this goal) and other advices( Grad School, and stuff).   \nThanks",
+            "score": 1,
+            "author": "ItisAhmad",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's been more competitive than ever, especially in the research world. If spending 5 years for a PhD &amp; getting top conference publications not thing that you enjoy I highly recommend focussing on the engineering aspect of ML. there're more opportunities &amp; demand, and you can let yourself stand out by building great apps with ML models or contribute to open-source projects.",
+                    "score": 3,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I am an ML Engineer as of now at a services based firm. Do you think it is a good time to switch ML Reserach(I am willing to spend 5 years to publish at good conference) but I am not sure about research direction very much.",
+                            "score": 2,
+                            "author": "ItisAhmad",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm not sure, again the counter arguments are: over saturated supply (everyone wants to do ML research), don't just do it for sake of glory (research seems to have higher perceived prestigiousness), other than 1% of the researchers, engineers will absolutely have more impact on AI's progress (just my very biased personal opinion :ppp)",
+                                    "score": 2,
+                                    "author": "Step7enn"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What are the best resources to get started building apps with ML models that you can publish on the App Store and contribute to open-source projects?\n\nThank you",
+                            "score": 1,
+                            "author": "ManthaneinMan"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you fluent in multiple languages? If so, where do you see ML needing fundamental improvement or change with regards to machine translation from a personal perspective?",
+            "score": 1,
+            "author": "travelquery",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yes I'm native mandarin speaker. The hardest part about any language is not the grammar, syntax or vocabulary (those are easy for ppl &amp; models to learn), it's always about traditions, history, people and everything about a culture that the model need to be sufficiently knowledgeable about to make authentic translations. that's what's most challenging and lots of room for improvement specially for less spoken languages.",
+                    "score": 1,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What do you think (corpus-wise, approach-wise) is responsible for the biggest improvement you've seen for Mandarin/English translating?\n\nWhat kind of slang English or Mandarin usage do you think will be nearly impossible to train on right now due to lack of easily processed data?",
+                            "score": 1,
+                            "author": "travelquery",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "not sure what's a good corpus, but to me the biggest issue with mandarin is the lack of good source of scraping data from the web. just happens that China doesn't have a great search engine : ))",
+                                    "score": 3,
+                                    "author": "Step7enn",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;Mandarin\n\nDoes this mean that open training sets might be skewed towards Mandarin as it is used in Taiwan or Singapore, or that China might internally develop better translation with their own closed data sets? What do you think is the best way for ML translation to handle regional or dialect or slang differences?",
+                                            "score": 1,
+                                            "author": "travelquery"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey, Stephen. Thanks for making this AMA event! I have 7 year of experience in software engineering, with last 3 years in machine learning and management. I'm in crossroads between starting my own business ideas and pursuing career growth in engineering management. What skills would I need to become an engineering manager (or similar level position) at cohere? What experience is required for it?\n\nThanks in advance",
+            "score": 1,
+            "author": "Desticheq",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "First of all, there's the essentials for any eng managers: people's skill, project management, recruiting, planning, technical expertise in domain. To be effective in ML, you also need a strong passion and ability to follow academia, research, intuitions about what translate in production and what won't. Planning and making decisions about technical path is the biggest challenge from my experience.",
+                    "score": 1,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In regards to the Sparks of AGI paper [https://arxiv.org/abs/2303.12712](https://arxiv.org/abs/2303.12712)\n\nCompanies are not open about the architecture and training data that are fundamental the models they are producing, yet they are publishing papers such as this. Many have expressed concerns about the reproducibility of these results.\n\nDo you have any such concerns or opinions on the matter?",
+            "score": 1,
+            "author": "bypie255",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's not quite true, up until GPT4, open AI has published detailed papers on how they trained GPT 1,2,3. I'm not worries personally as the model architecture is not a secret, we might not know the exact recipes but certainly all the key ingredients. The real moat is money, infrastructure and access to data. As for reproducibility,  let's say OAI tells you their recipe to make the 1T (guess) parameter gpt4 it's too prohibitive for any 3rd party to verify the results.",
+                    "score": 1,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is it common for ML engineers to switch from vision models/products to language models/products?",
+            "score": 1,
+            "author": "mrloube",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "definitely, lot of the skills are transferable.",
+                    "score": 1,
+                    "author": "Step7enn"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How can I get my DJI Air 2 to active track my dog? I bought it specifically for active track and it says it doesn't recognize my dog.",
+            "score": 1,
+            "author": "ddyourpleasure",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "use meta's SAM lol : ))",
+                    "score": 2,
+                    "author": "Step7enn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks",
+                            "score": 1,
+                            "author": "ddyourpleasure"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "1. What does Cohere look for when hiring a Product Manager? How much expertise do they need in ML to be a good fit?\n\n2. How many applications do you receive for various open roles?",
+            "score": 1,
+            "author": "code_n00b"
+        }
+    ]
+}

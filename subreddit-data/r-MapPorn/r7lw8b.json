@@ -1,0 +1,1459 @@
+{
+    "id": "r7lw8b",
+    "score": 65964,
+    "title": "Map of all the nsfw subs.",
+    "author": "SnixPlaysAlot",
+    "date": 1638492190.0,
+    "url": "https://www.reddit.com/r/MapPorn/comments/r7lw8b",
+    "media_urls": [
+        "https://i.redd.it/x2f7y7cz48381.png"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Zooming in, it\u2019s like discovering new planets",
+            "score": 11059,
+            "author": "Nevdude1271",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Excuse me while I'm off discovering. To infinity and beyond!",
+                    "score": 1687,
+                    "author": "muck2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Blast off",
+                            "score": 429,
+                            "author": "kayjay204",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "We\u2019re cumming in for a landing.",
+                                    "score": 257,
+                                    "author": "glutenfreethenipple",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Since you're never coming back can I help myself to some of your stuff?",
+                            "score": 41,
+                            "author": "chmilz"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I recommend r/NSFW411, it's the guide to the NSFW world of reddit",
+                    "score": 242,
+                    "author": "IntelHDGraphics",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Seems to be full of despos looking for hookups.",
+                            "score": 54,
+                            "author": "ezone2kil",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You\u2019re just describing Reddit",
+                                    "score": 109,
+                                    "author": "FilouBlanco"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I've been on Reddit for almost a year and this is the first post I've ever saved",
+                    "score": 196,
+                    "author": "DystopianAdvocate",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "r/dragonsfuckingcars really did it for me. Also, the car revenge, r/carsfuckingdragons looks intriguing.",
+                            "score": 83,
+                            "author": "WagTheKat",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I woke up at 3 am and get on reddit to see this...back to sleep",
+                                    "score": 12,
+                                    "author": "zbipy14z",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "But better.",
+                    "score": 1741,
+                    "author": "SnixPlaysAlot",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hijacking OP's top comment to give credit to u/flashman who created this map almost 6 years ago\n\nhttps://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/",
+                            "score": 1076,
+                            "author": "KappaccinoNation",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "hello everyone this is very weird to suddenly be getting so many mentions\n\nhere's an interactive version: http://electronsoup.net/nsfw_subreddits/\n\nno i probably won't be updating it any time soon\n\nalso the data was collected by /u/uglyasablasphemy so they deserve credit too",
+                                    "score": 561,
+                                    "author": "flashman",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Would you update the site if I gave you fresh data? What would you need?",
+                                            "score": 59,
+                                            "author": "Watchful1",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "you really want a porn map that much hey\n\nBasically you need a list of porn subreddits, and then a means of identifying their connections with each other. In network terminology, the subreddits are nodes, and their links are edges.\n\nThe edges are where most of the work is. This graph is based on which subreddits are in each subreddit's \"Related Subreddits\" sidebar, so it reflects moderators' choices rather than community activity. This may not be the best method!\n\nAnother potential metric is subreddits sharing links with each other: list how many times two subreddits featured a post with the same URL. This is a content-based approach which tries to reveal which subreddits have the most similar material. Or you can do the same thing but with *users* who post in multiple subreddits, creating a map of which subreddits have the most similar *audiences*.\n\nYou also need to do some edge pruning: there will be an impractical number of subreddit connections, so you have to remove the unimportant or insignificant ones. One approach is to limit yourself to the top number or percent of edges, but this has issues because huge subreddits will have a lot more shared links than you expect, and thus strong but spurious edges. \n\nThe alternative is to extract the 'network backbone', which is a subset of the set of *statistically significant* edges (i.e. an edge of weight X is more likely to be significant between two tiny subreddits than two massive subreddits). /u/rhiever has [a really good Python script](https://github.com/rhiever/network-analysis-scripts/blob/master/subset_backbone_network.py) for performing this analysis. I also know /u/minimaxir has previously done some work on which subreddits share links, it's not something I've looked at in probably 4-5 years.\n\nUm, where was I? Oh yeah: basically if you're able to provide me with the required material to update this chart, you're probably capable of creating it yourself! It *could* utilise praw but in the past I've used BigQuery dumps that I'm not sure are still updated.",
+                                                    "score": 235,
+                                                    "author": "flashman",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I have no interest in doing this but I still enjoyed reading about what goes into this type of data analysis, very cool!",
+                                                            "score": 93,
+                                                            "author": "ARoyaleWithCheese"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I think they lost interest",
+                                                            "score": 13,
+                                                            "author": "MadAzza"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "6 years? Jesus, this isn't relevant anymore. \n\nOp is a bundle of sticks.",
+                                    "score": 481,
+                                    "author": "GreenHairyMartian",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Looking for a more accurate map and zoomable.",
+                                            "score": 77,
+                                            "author": "Onlyanidea1",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "zoomable but still no more recent http://electronsoup.net/nsfw_subreddits/",
+                                                    "score": 56,
+                                                    "author": "flashman"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yea I was wondering why I saw a bunch of banned subs. Edit: I missed the gay section, it\u2019s red",
+                                            "score": 29,
+                                            "author": "bamv9"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I was gonna say ... Pretty sure some of those are no longer valid.\n\nI only know because I once asked for a list of all nsfw sounds so I could know which ones to avoid.",
+                                    "score": 16,
+                                    "author": "partanimal",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah, I haven't seen /r/imgoingtohellforthis in a very long time.\n\nYep. That was quarantined.",
+                                            "score": 20,
+                                            "author": "Sugarlips_Habasi"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I noticed /r/ButtSharpies didn't make an appearance. Care to chime in on this? \n\nThat's literally my favorite sub.",
+                            "score": 612,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Look closer, it's there.",
+                                    "score": 310,
+                                    "author": "Trolldad_IRL",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "North East of the \"d\" in gonewild\n\nYou're right. I hadn't searched hard enough. I can sleep soundly tonight.",
+                                            "score": 351,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Well that'll make one of us.. I'll be up all night researching as this has left a permanent mark on me",
+                                                    "score": 43,
+                                                    "author": "DooDad-DontMother",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Nor'east of that D there.",
+                                                    "score": 78,
+                                                    "author": "painted-wagon",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Just like the simulations",
+                                                            "score": 27,
+                                                            "author": "Chispy"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "What the fuck did I just click on",
+                                    "score": 87,
+                                    "author": "HirosProtagonist",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Your new fetish.",
+                                            "score": 46,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That such a specific thing exists shouldn\u2019t be a surprise but it is. I wonder if there are competing subs with fierce rivalry - maybe one for Coptic marker and another for bic pens",
+                                    "score": 42,
+                                    "author": "lingua_ignota",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 29,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You are correct. \u201cSharpie in pooper\u201d",
+                                                    "score": 25,
+                                                    "author": "TheRedGerund",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Shooper",
+                                                            "score": 12,
+                                                            "author": "richbeezy",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I\u2019ll have to save this for the data",
+                            "score": 142,
+                            "author": "Lucky_Number_3",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Right.......the data......",
+                                    "score": 49,
+                                    "author": "Someoneoverthere42",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "For research purposes obviously",
+                                            "score": 38,
+                                            "author": "Not_Gay_Jaredd",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "*\"researches furiously\"*",
+                                                    "score": 14,
+                                                    "author": "Simplewafflea"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Butt better.",
+                            "score": 42,
+                            "author": "penelopiecruise",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Butt butter",
+                                    "score": 21,
+                                    "author": "Planningsiswinnings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Butt batter",
+                                            "score": 19,
+                                            "author": "cnmnsmkerosegold",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That\u2019s gotta be in there somewhere",
+                                                    "score": 11,
+                                                    "author": "JamesEtc"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I need No Man's Sky but every planet is themed with a reddit nsfw sub",
+                    "score": 34,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Literal mapporn.",
+            "score": 3605,
+            "author": "Megidolaon10",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Porn map map porn, if you will",
+                    "score": 753,
+                    "author": "emcee_gee",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "r/MapPornGoneWild incoming",
+                            "score": 319,
+                            "author": "Deep_Grady",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "r/birthofasub",
+                                    "score": 98,
+                                    "author": "ComfortableTraffic31",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I read that in the hosts of Map Men\u2019s jingles.",
+                            "score": 31,
+                            "author": "hopeinson",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What do the colors mean? Is there a key somewhere?",
+            "score": 823,
+            "author": "man0fs0und",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Apparently an algorithm identified groups with strong connections and assigned the colors itself. So they don't mean any specific thing. You can see groups with allied mods though.",
+                    "score": 771,
+                    "author": "Inevitable_Citron",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Maybe part of the Reddit algorithm also records what subs a user might jump to next, which is how it recommends subs in general.",
+                            "score": 94,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It would be cool to see a key showing how the algorithm connected each color",
+                            "score": 15,
+                            "author": "Nortdkdjsns"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I\u2019m glad someone else is asking these questions. It looks like colors divide loose sub-genres? I\u2019m mostly curious what the lines connecting them represent. \n\nI also want to know if the location of each sub has any relevant meaning. Nothing jumps out at me but surely there is a reason for the random bubble that\u2019s surrounded by bubbles of a different color.",
+                    "score": 83,
+                    "author": "Donny-Moscow",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 50,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This good chap posted the original that OP's been reposting for quite a bit: https://www.reddit.com/r/MapPorn/comments/r7lw8b/map_of_all_the_nsfw_subs/hn0y1m7     \n        \nThe original has more details.    \n     \nThis person in the original thread broke down the colors: https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/cyjepqg",
+                    "score": 9,
+                    "author": "gizamo"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I love this. What do the colors mean?\n\nAlso objects? I now have to check that out.\nEdit: I think I'm sorry I did.",
+            "score": 1199,
+            "author": "Em42",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "blue is fetish    \nred is lgbt    \ngreen is hentai and comics\norange is specific people     \ndarker orange is fucked up shit     \nteal is asian girls    \npurple is just generic/vanilla categories i guess    \nno idea what the category is with the purple and orange isolated groups",
+                    "score": 919,
+                    "author": "Ensec",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The super-isolated groups are probably subs run by the same mod(s).",
+                            "score": 326,
+                            "author": "FirstRyder",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m thinking the connections are the made via the suggested subs put in the sidebar. The subs would then have all those subs linking to one another forming a little porn island with the porn power mod as dicktator.",
+                                    "score": 190,
+                                    "author": "snarky_answer",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This almost certainly comes from crawling user data either comments or subs since all Reddit activity is public data.  Make adjacency matrix, for each user add one at each intersection of a common sub, turn into a graph laplacian, find eigen vectors, plot first two against one another, set size equal to total number of subs, draw lines between subs with intersections greater than a threshold.\n\nEasy",
+                                            "score": 72,
+                                            "author": "Rodot",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What did I just read",
+                                                    "score": 29,
+                                                    "author": "9210b",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Computer science research math",
+                                                            "score": 13,
+                                                            "author": "chilispicedmango",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "***This almost certainly comes from crawling user data either comments or subs since all Reddit activity is public data. Make adjacency matrix, for each user add one at each intersection of a common sub, turn into a graph laplacian, find eigen vectors, plot first two against one another, set size equal to total number of subs, draw lines between subs with intersections greater than a threshold.***\n\n***Easy***",
+                                                            "score": 7,
+                                                            "author": "mpete98"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I bet the colors are auto-generated based on how many connections things have to each other, not necessarily what category they are in. That's why there are weird outliers, like why is /r/perky fetish but lactophilia is not?",
+                            "score": 7,
+                            "author": "leftsharkfuckedurmum"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; darker orange is fucked up shit\n\nLike /r/ladybonersgw, /r/gonewildaudio, and /r/eroticliterature\n\nSeems to me like orange might be \"niche\" stuff.\n\nIf there's any meaning, it's probably auto-generated, so it won't match human categories exactly.",
+                            "score": 72,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Those subs are the red lgbt section they were referring to. It does have a lot of subs for lgbt and people attracted to men but actually a lot of random stuff that doesn\u2019t seem to fit that categorization.\n\nDarker orange \u201cfucked up shit\u201d  is the left side with /r/morbidreality and /r/imgoingtohellforthis",
+                                    "score": 28,
+                                    "author": "stevula",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "hi, i made this map in Gephi from data collected by /u/uglyasablasphemy \n\nthe colours are non-subjective mathematically-derived clusters produced by Gephi, they just mean \"these nodes are closer to each other than to other nodes\" (sort of, very roughly). this often hints at some underlying correlation between subject matter but not always.",
+                    "score": 31,
+                    "author": "flashman"
+                },
+                {
+                    "level": 1,
+                    "comment": "At first I thought it was nudity, slur memes, gore but there isn\u2019t really any rhyme or reason",
+                    "score": 58,
+                    "author": "bigfudge_drshokkka",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's probably less disturbing if you don't own a vagina. I had to nope out pretty quickly and I'm not exactly easily scared off.",
+                            "score": 63,
+                            "author": "Em42",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 537,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cool, I like it.",
+                            "score": 67,
+                            "author": "Em42"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What do the lines connecting them represent?\n\nDoes their location on the map have any meaning?",
+                            "score": 87,
+                            "author": "Donny-Moscow",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "OP doesn't know wtf they are talking about because they stole the image and comment https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/cyje4yh/",
+                                    "score": 708,
+                                    "author": "point_nemo_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "As high as can go with ye.",
+                                            "score": 37,
+                                            "author": "joemaniaci",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 13,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "just copy/pasted, lol..",
+                                            "score": 12,
+                                            "author": "MidLaneCrisis"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Hm that means his map is 6 years outta date!",
+                                            "score": 11,
+                                            "author": "MishterJ",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Wow fuck this guy post this as a top level comment",
+                                            "score": 28,
+                                            "author": "imbillypardy"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Probably \u201cfriend\u201d subreddits. Most subreddits have a list of \u201cfriends\u201d in the sidebar.",
+                                    "score": 46,
+                                    "author": "dadudemon",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 6,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What variables did the algorithm consider when determining connectedness?",
+                            "score": 54,
+                            "author": "emcee_gee",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Whether its penis was in the other",
+                                    "score": 23,
+                                    "author": "ilovepolthavemybabie"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How is thickthighs alone when there's thighshots on the other side of the map? Is it just unknown low subscribers? Like if I made a random NSFW sub and didn't advertise it it'd just be a lone dot?\n\nAlso I assume this is a 2d display of something multidimensional?",
+                            "score": 25,
+                            "author": "eaglessoar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thickthighs. Noted.",
+                                    "score": 15,
+                                    "author": "thatranger974",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not OC btw, this has been around for years - https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/\n\nAlso, OP has been reposting a comment verbatim from the original post: https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/cyje4yh/  \n\nEdit: OP has removed his reposts of the above comment and credited the original author of the content (/u/flashman), which is laudable.  However, he is also claiming that he credited the author before pasting the explanation, which is not true (I checked his comment history before I commented).  It _is_ true that OP never explicitly took credit for the map as far as I know.  \nIn any event, I suggest we reserve our pitchforks for a bigger fish.",
+            "score": 2460,
+            "author": "the__storm",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I knew it. Some of the subs that are small dots are huge now. I knew it had to be 3+ years old.",
+                    "score": 461,
+                    "author": "lIllIlIIIIllIlIlIlII",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Some of the subs that are small dots are huge now.\n\nAnd some are long-banned.",
+                            "score": 369,
+                            "author": "SprinklesFancy5074",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah... Worth pointing out that lot of the bans are a net positive for Reddit. I wouldn't continue to use Reddit if it was still hosted subs dedicated to pics and videos of dead and dying children and animals. Fuck that.",
+                                    "score": 233,
+                                    "author": "Capsaicin_Crusader",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah, fuck those animals.",
+                                            "score": 94,
+                                            "author": "hallowatisdeze",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yeah don\u2019t fuck that",
+                                                    "score": 48,
+                                                    "author": "arolloftide",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I knew it because of the banned or quarantined subs that were on there.  A bunch were from years ago.",
+                    "score": 11,
+                    "author": "NotATroll71106",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Wow really hate to downvote a ton of top level comments but fuck this guy for not attributing at the very least",
+                    "score": 40,
+                    "author": "imbillypardy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's a work of art. Like a universe of depravity. I spotted r/ribcage. WTF?!",
+            "score": 504,
+            "author": "Lotwdo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Exactly what it sounds like, a subreddit for ribcage fetishism.",
+                    "score": 64,
+                    "author": "Safebox",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wording it like that people will think that sub is about dudes jacking off to full gored out ribcages lmao",
+                            "score": 86,
+                            "author": "bgart5566",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Basically slim women",
+                            "score": 10,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "hey those are good drawing references\ngood for someone who just got into.drawing.",
+                    "score": 127,
+                    "author": "tengma8",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Great idea!! Just got Procreate",
+                            "score": 31,
+                            "author": "Herbacult",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Judging from these subreddits, you're gonna need it.",
+                                    "score": 7,
+                                    "author": "Faust2391"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "A new fetish has been born",
+                    "score": 54,
+                    "author": "IamKingDoge",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Rule 41.",
+                            "score": 22,
+                            "author": "Kevs442"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There is a few questionable subs on the list.",
+                    "score": 72,
+                    "author": "SnixPlaysAlot",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A \"few\".",
+                            "score": 93,
+                            "author": "Padsol"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Is there a source list you could share?",
+                            "score": 21,
+                            "author": "BaconDork",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "He just reposted from 5 years ago.\n\nhttps://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/",
+                                    "score": 30,
+                                    "author": "smallfried"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "crosseyedfap is deceptively titled for one",
+                            "score": 9,
+                            "author": "TiltnJimmy",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 40,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "http://redditlist.com/ \n\nI\u2019m on mobile so I don\u2019t know if it\u2019ll work.",
+                    "score": 31,
+                    "author": "Lunchbox815",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "r/NSFW411\n\nThey have an organized list.",
+                    "score": 23,
+                    "author": "AlternateSmithy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There\u2019s some fucked up shit here.",
+            "score": 158,
+            "author": "TheFlightlessPenguin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This was years ago, many subs there doesnt exist anymore like:\n\n/r/killingwomen, /r/bestiality, /r/misoginy etc",
+                    "score": 51,
+                    "author": "Apocalypseos",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "It's a good thing they're a small community, meaning not many actually liked those kind of things.",
+                    "score": 39,
+                    "author": "tyrano_dyroc",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I mean its bad it even exists imo",
+                            "score": 56,
+                            "author": "hyper44713",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I feel like  1 member is too many for a sub like r/SexyAbortion\n\n-edit- \n\nJust dared to click on it... Thank god it's not actually porn. Faith in humanity restored.",
+                            "score": 16,
+                            "author": "AstonVanilla"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/MapsWithoutNZ",
+            "score": 98,
+            "author": "ahdfbnjkfdasbnlkjf",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "r/technicallythetruth",
+                    "score": 13,
+                    "author": "Archidiakon"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Just head up, \"Scatporn\" is NOT \"Ba-da-ba-da-ba-be bop bop bodda bope\" that I thought it was.\n\nNow you'll excuse me, I'm off wash my eyeballs with bleach.",
+            "score": 757,
+            "author": "CuriousHeffa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Go to r/eyebleach",
+                    "score": 156,
+                    "author": "UngusBungus_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 81,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've seen some brutal shit on the internet but this might be the worst.",
+                                    "score": 28,
+                                    "author": "callthewambulance",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Seriously, heed this warning. One of the top posts was literally a collection of chopped up human limbs on the street.",
+                                    "score": 17,
+                                    "author": "911wasadirtyjob",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I made that mistake with r/gayscat I thought I it was going to be photos or something like that dedicated to a cat owned by a guy called gay I was very wrong",
+                    "score": 48,
+                    "author": "Minionmemesaregood",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "a bit ago, someone linked r/ realsCatgirls, and yeah with the capital C.",
+                            "score": 12,
+                            "author": "mrhornyjailbonk",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You sweet summer child",
+                    "score": 16,
+                    "author": "TomboBreaker"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I love how it\u2019s 90% porn and 10% of other shit that nobody wants to see\n\nEdit: i looked closer it\u2019s all porn\n\nEdit 2: 99% is porn",
+            "score": 785,
+            "author": "Undava",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The far left neon orange is actually gore",
+                    "score": 281,
+                    "author": "The_Tuna_Bandit",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, but not really *gore*. That went away when they banned watchpeopledie and I\u2019m sure there was something before that even.",
+                            "score": 56,
+                            "author": "colicab",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah but this map is outdated most of the subs there were gore or death, obviously most of them are banned now",
+                                    "score": 42,
+                                    "author": "The_Tuna_Bandit",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You can still find subs focused around gore and morbid shit. They're just very heavily moderated so posts that have repeatedly gotten other subs banned are controlled and shut down.  WPD wasn't banned for gore.",
+                                    "score": 16,
+                                    "author": "oRAPIER",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's even got r/spacedicks",
+                            "score": 19,
+                            "author": "flapanther33781",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "To be fair, much of that porn nobody (besides the creators) wants to see.",
+                    "score": 71,
+                    "author": "ToxDocUSA",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "This has to be old. Shyla Stylez, Jenna Haze, Eva Angelina? Those are some ancient stars right there",
+                    "score": 24,
+                    "author": "FootsieMcDingus",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "What struck me is that /r/gonewild is still so big. That's like still watching Cinemax at 2am on saturday when pornhub exists.",
+                    "score": 16,
+                    "author": "pm_me_your_taintt",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A lot of people get off to the idea that its a \"real\" girl uploading the pics/vids herself. Have you seen the comments? Very desperate guys in that sub.",
+                            "score": 8,
+                            "author": "anqophora"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not all\n\nr/dolan",
+                    "score": 14,
+                    "author": "Piranh4Plant"
+                },
+                {
+                    "level": 1,
+                    "comment": "Saw /r/cardsagainsthumanity",
+                    "score": 7,
+                    "author": "CaffeinatedGuy",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "third planet southwest of r/imgoingtogellforthis is highly questionable...",
+            "score": 111,
+            "author": "LordRiverknoll",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If I remember correctly, it was quarantined for making jokes about child sex crimes so people started making death threats so they set it to private",
+                    "score": 77,
+                    "author": "bigfudge_drshokkka",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Just looked into ityself... Apparently it was literally mangled corpses of women",
+                            "score": 50,
+                            "author": "LordRiverknoll",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I just realized we\u2019re talking about different subs, and holy shit people need help.",
+                                    "score": 69,
+                                    "author": "bigfudge_drshokkka",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Right??? there's also a kid variant in the neighborhood. It's terrifying. That's been banned too.\n\nWhich one were you looking at?",
+                                            "score": 20,
+                                            "author": "LordRiverknoll",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Going through some of these makes me want to  go cry in the shower. I was talking about r/imgoingtohellforthis",
+                                                    "score": 22,
+                                                    "author": "bigfudge_drshokkka",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Oh! That's been taken down?? It was so popular\n\nAnd yeah - an acid bath... These are just disturbing",
+                                                            "score": 13,
+                                                            "author": "LordRiverknoll",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Basically every neon orange sub on this image except r/morbidreality has been taken down, now this map is somewhat outdated as there are newer subs that would fall into that category",
+                                                                    "score": 25,
+                                                                    "author": "The_Tuna_Bandit"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That little green galaxy on the edge of the circle southwest of r/imgoingtohellforthis is... worse.",
+                    "score": 17,
+                    "author": "AlternateSmithy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Y'all need Jesus. And Muhummad, And probably Odin at this rate.",
+                            "score": 7,
+                            "author": "IncognitoRon"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/dataisbeautiful",
+            "score": 184,
+            "author": "BlendOf7Spices",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[This was originally posted on r/dataisbeautiful nearly 6 years ago](https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/)",
+                    "score": 87,
+                    "author": "mrRobertman",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That makes sense. I went to one of these and saw it was banned two years ago for being unmoderated.",
+                            "score": 9,
+                            "author": "vjmdhzgr"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Now make it clickable links",
+            "score": 72,
+            "author": "mrpoopsalot",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[Ahem.](https://www.reddit.com/r/copypasta/comments/brypgf/a_list_of_nsfw_subreddits_for_all_of_you/?utm_medium=android_app&amp;utm_source=share)",
+                    "score": 23,
+                    "author": "termitubbie",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So this is basically like a table of contents for the good reddit?",
+            "score": 155,
+            "author": "YNGWZRD",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's /r/NSFW411",
+                    "score": 77,
+                    "author": "Rogue__Jedi",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "*holy god there are so many*",
+            "score": 45,
+            "author": "Lonewolf7113",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Some planets I\u2019m not checking out. Dead kids? C\u2019mon.",
+                    "score": 17,
+                    "author": "SneedyK",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I didn\u2019t even realize that was on here (o _o;)",
+                            "score": 7,
+                            "author": "Lonewolf7113"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Looks like the 40K universe lol",
+            "score": 52,
+            "author": "mbattagl",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Way more comprehensible than 40K lore, that's for sure. I swear you need a PhD to make sense of that shit.",
+                    "score": 31,
+                    "author": "tyrano_dyroc",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ive studied it for like seven years, can I put it on my resume?",
+                            "score": 7,
+                            "author": "TheMadHatter_____",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "For what, being a Librarian? You need to be born a Space Marine first and then show signs of psychic capability first, bro.",
+                                    "score": 6,
+                                    "author": "tyrano_dyroc",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm genuine surprised that r/tittydrop isn't more popular. That's the go to sub for women who just wants to feel the thrill of exposing themselves without going overboard.",
+            "score": 128,
+            "author": "tyrano_dyroc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah back when these were still on the front page I remember that was a popular one to be up top",
+                    "score": 46,
+                    "author": "buddboy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And it's cousin r/biggerthanyouthought",
+                            "score": 54,
+                            "author": "notentertained5",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I was always disappointed that some tiny little dude doesn't whip his monster cock out. Don't get me wrong I live and love tits but just saying.... monster dong once would be hilarious.",
+                                    "score": 19,
+                                    "author": "anynamewilld0",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yeah, about 10 years ago this map was **very** different. Here's a list of some of the nsfw shit that used to have subs:\n\n&amp;#x200B;\n\nhttps://www.reddit.com/r/reclassified/comments/fg3608/updated\\_list\\_of\\_all\\_known\\_banned\\_subreddits/",
+            "score": 33,
+            "author": "visicircle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Holy shit that's a disturbing list",
+                    "score": 10,
+                    "author": "dungeonbitch",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "So many N-words",
+                    "score": 7,
+                    "author": "Mason-Derulo"
+                },
+                {
+                    "level": 1,
+                    "comment": "But 5 years ago, this map was exactly the same: https://www.reddit.com/r/dataisbeautiful/comments/3z4k7v/map_of_nsfw_subreddits_oc/",
+                    "score": 4,
+                    "author": "smallfried",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[What the fuck?](https://i.imgur.com/lU65Qrh.jpg)",
+            "score": 30,
+            "author": "braidsfox",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "this is definitely old, most of those have been banned for ages",
+                    "score": 31,
+                    "author": "Kwiatkowski",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Apparently, this is a repost from 5 years ago.",
+                            "score": 11,
+                            "author": "NotATroll71106"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The two orange ones... oof",
+                    "score": 10,
+                    "author": "mitko17"
+                },
+                {
+                    "level": 1,
+                    "comment": "I love \"boy_shorts\" and \"thighs\" just chillin' beside the rest of that nightmarish hellscape",
+                    "score": 8,
+                    "author": "Cessnaporsche01",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "r/aparthigh is pretty clever tho lmao",
+                            "score": 7,
+                            "author": "braidsfox"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/Nofap is the antimatter of this atom",
+            "score": 69,
+            "author": "wildemam",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Just realized that with NNN over we must be moving on to DDD, I'm curious how the fellas are holding up.",
+                    "score": 14,
+                    "author": "Justice_R_Dissenting",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This should have been posted on December 1st",
+            "score": 26,
+            "author": "TheFlightlessPenguin",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "r/dataisugly. Most of the names of the subs are completely unreadable becausw they overlap.",
+            "score": 26,
+            "author": "Platypuss_In_Boots",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "r/avocadosgonewild Not what I was expecting.",
+            "score": 21,
+            "author": "HeezeyBrown",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was so fucking nervous to click on that lmao",
+                    "score": 6,
+                    "author": "JigglyBush"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I just sent this to my husband saying \u201clook babe the only NSFW content that popped up in my feed today was\u2026. \n#allofthem \n\nmwahahahaha\n\nEdit: I probably won\u2019t see my husband for a few ~~hours~~ minutes now\u2026. RIP.",
+            "score": 97,
+            "author": "Sxilla",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I feel like this should be left here.\n\nThis is NOT mine. \n\nhttps://www.reddit.com/r/nsfw+gonewild+boobies+legalteens+realgirls+ass+amateur+ginger+nsfw2+voluptuous+milf+celebs+redheads+girlswithglasses+collegesluts+blowjobs+thick+hardbodies+passionx+bondage+womenofcolor+scenegirls+girlskissing+upskirt+dirtysmall+girlsinyogapants+hotchickswithtattoos+nsfw_wallpapers+hugeboobs+nipples+asianhotties+o_faces+beach+snowgirls+gloryhole+highheels+cumshot+thighhighs+volleyballgirls+asslick+blondes+beefflaps+pigtails+latinas+pinkshoes+tanlines+brickhouse+panties+gothsluts+pornstars+smokin+buttsex+cleavage+mandingo+cumfetish+models+pics_nsfw+analporn+datass+ass_cleavage+bikinibridge+girlsflashing+orgasms+nsfwoutfits+lingerie+PetiteGoneWild+funsized+xsmallgirls+GWNerdy+darkangels+jilling+rule34+asstastic+facedownassup+BubbleButts+videogamebabes+videogamebabes+nsfw_gifs+adultgifs+XXX_Animated_Gifs+AsianHottiesGIFS+Hot_Women_Gifs+cumsluts+GirlsFinishingTheJob+serafuku+Annoyedtobenude+braceface+cfnf+chixxx_gifs+ecchi+femalepov+forcedorgasms+gingerpuss+girlsplayingsports+fuxtaposition+HappyEmbarrassedGirls+hentai+hentai_gif+PublicFlashing+shewantstofuck+StealthVibes+TinyTits+Unashamed+yuri+sukebei+Bottomless_Vixens+boyshorts+camwhores+CollegeAmateurs+creampies+datgap+datgrip+FestivalSluts+Fingering+FTVgirls+happygaps+LaundryDay+LipsThatGrip+NotSafeForNature+NSFW_nospam+pokies+primes+pussy+realbikinis+skinnytail+skivvies+TightShorts+treatemright+undies+WtSSTaDaMiT+xart+YogaPants+AmateurArchives+anal+asshole+boltedontits+burstingout+tits+bustypetite+celebnsfw+changingrooms+gwcouples+iwanttofuckher+lesbians+nobsnsfw+onoff+porn+randomsexiness+fuckyeahsexyteens+JiggleFuck+AsiansGoneWild+holdthemoan+WatchItForThePlot+CandidFashionPolice+GoneMild+tightdresses+BigBoobsGW+workgonewild+fitgirls+altgonewild+porninfifteenseconds+60fpsporn+wifesharing+nsfwhardcore+Tgirls+palegirls+TittyDrop+juicyasians+pantsu+suicidegirls+kpopfap+lesbian_pov+MoxiiAndFriends+SoFuckable+Cumonin+trashyboners+slutsbedrunk+russiangirls+SexiestPetites+snapchat_sluts+cosplaygirls+CosplayBoobs+SocialMediaSluts+sheerpanties",
+            "score": 6,
+            "author": "ConsiderationDeep879"
+        },
+        {
+            "level": 0,
+            "comment": "I don't see r/girl_farts_AirAnytime",
+            "score": 18,
+            "author": "Testicloites",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Fuck. I gotta go shower now.",
+                    "score": 8,
+                    "author": "nacho17",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m having a hard time finding it. Where\u2019s r/SandyCheeksCockVore ?",
+            "score": 19,
+            "author": "loopy183"
+        },
+        {
+            "level": 0,
+            "comment": "It is so much bigger than I thought.",
+            "score": 29,
+            "author": "SaltMineSpelunker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That\u2019s what she said.",
+                    "score": 20,
+                    "author": "GusTheGoober",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What are the colours?",
+            "score": 6,
+            "author": "got_edge",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "What was the algorithm linking them based on?  Cross posts, user activity, similar images...?",
+            "score": 5,
+            "author": "ToxDocUSA"
+        },
+        {
+            "level": 0,
+            "comment": "Yoooo\u2026. r/killingwomen @9o\u2019clock\u2026 can\u2019t believe that even existed. Some real sick fucks out there",
+            "score": 7,
+            "author": "herbaburba",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Also worth pointing out this interactive version that attempts to map all of reddit: https://anvaka.github.io/map-of-reddit/",
+            "score": 7,
+            "author": "shwhjw",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "#Confiscating this for *research*",
+            "score": 30,
+            "author": "NuKidOnThBlokchyn",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "r/substakenliterally",
+            "score": 15,
+            "author": "Jonny-Marx"
+        },
+        {
+            "level": 0,
+            "comment": "Finally a map I'll actually use!",
+            "score": 4,
+            "author": "qaz0101"
+        },
+        {
+            "level": 0,
+            "comment": "a pornmap on mapporn",
+            "score": 6,
+            "author": "pfandflaschenOG"
+        },
+        {
+            "level": 0,
+            "comment": "\u201cThe dictator of pussy\u201d lmao",
+            "score": 5,
+            "author": "DepressedJungler"
+        },
+        {
+            "level": 0,
+            "comment": "Hey! I don't see any subreddit called r/victoriansluts!",
+            "score": 5,
+            "author": "dfassna1"
+        }
+    ]
+}

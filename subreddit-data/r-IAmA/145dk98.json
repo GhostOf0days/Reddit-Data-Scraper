@@ -1,0 +1,243 @@
+{
+    "id": "145dk98",
+    "score": 67,
+    "title": "I am the solo developer of Afterplace, a open-world mobile game that just won an Apple Design Award. Ask me anything!",
+    "author": "evankice",
+    "date": 1686336971.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/145dk98",
+    "media_urls": [
+        "https://www.reddit.com/r/IAmA/comments/145dk98/i_am_the_solo_developer_of_afterplace_a_openworld/"
+    ],
+    "other_urls": [
+        "https://imgur.com/a/QyUpGZI)!"
+    ],
+    "postText": "Update: Alright, I'm signing off. Thank you all for your questions and support! We'll have to do this again sometime.\n\n-------\n\nUpdate: Welp, not sure what exactly happened, but I'm grateful to the 7ish people who did comment! Y'all are the real mvps.\n\nSince I'm not up to much, I'm going to keep the AmA open until sometime this evening. If you've come in late and still want to ask something, go for it!\n\n-------\n\nHello! My name is Evan Kice, I\u2019m the solo developer for Afterplace, and adventurous open-world mobile game with silly characters and terrible secrets. I spent the last four years designing, programming, drawing, writing, and composing every part of the game myself. I went to collage for software engineering, so programming was the only part of game development that I knew going into this project - the rest I learned along the way!\n\nOn Monday, I was honored to receive the Apple Design Award for Delight and Fun, something I never dreamed of when I started all this!\n\nAsk me anything about solo developing a game, Afterplace, or anything tangentially related!\n\nProof: [Here's my proof](https://imgur.com/a/QyUpGZI)!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For more AMAs on this topic, subscribe to r/IAmA_Gaming, and check out our other topic-specific AMA subreddits [here](https://reddit.com/r/IAmA/wiki/index#wiki_affiliate_topic-specific_subreddits).",
+            "score": 1,
+            "author": "IAmAModBot"
+        },
+        {
+            "level": 0,
+            "comment": "Hey Evan, Long time fan of your work. Just here to say I'm proud of you. Congratulations on a well made and polished game! As for a question, are there any plans for sequels/spin offs/ or ports you wanna talk about or can talk about? Would love to continue to support your work! Keep it up and reach for the stars my guy!",
+            "score": 5,
+            "author": "EasyModeStart",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks man! Afterplace is definitely get ports to PC and at least Switch. Those are my next project after localization and postgame content.\n\nAs for a full sequel, I do love the world of Afterplace, and would be happy to make another game in it if a good story allows for it. If I made a sequel or a game though, it would probably look or play much different. I love this incredibly small pixel style, but I'm reaching hard limits on the amount of expressive storytelling it permits.",
+                    "score": 2,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How did you balance finances as a solo dev? Did you have savings you decided to build up before starting, or did you work while developing it?",
+            "score": 5,
+            "author": "DJKokaKola",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Afterplace was brought to you by the good graces of my wife, who paid the bills for the four years I was developing it. That said, I was the primary wage earner for the \\~3 years before that, so it was a (fairly) even exchange.\n\nThat said, Afterplace had almost no overhead, aside from some developer licenses and  trademarking. If I did not have a wonderful spouse to support me, I probably would have just cut down on living expenses as much as possible to focus on game dev. Maybe worked out of a tiny house or camper van for a few years until I made money. But that's just speculation.",
+                    "score": 7,
+                    "author": "evankice",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Three cheers for significant others!!!",
+                            "score": 2,
+                            "author": "surefirelongshot"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What do you do to make sure there aren't any glitches in the open-world?",
+            "score": 2,
+            "author": "PeanutSalsa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Since there don't seem to be a lot of comments tonight, and I'm really procrastinating on these bug fixes, I'll give you another fun fact about solving an open world problem - there's an entire system in Afterplace for making sure NPCs that are placed around the map don't double up, i.e. you don't see Minno sitting on the bridge then immediately in the clearing two screens over.\n\nBut another fun part of this system is that all clones of each NPC exist on the map at the same time in some sort of superstate, then as soon as one Minno or Joxxi or whatever comes onscreen, the game immediately deletes all the other Minnos, etc. off the map, so then there's only one. That way you always run into fun interactions regardless of what direction you wander!",
+                    "score": 5,
+                    "author": "evankice"
+                },
+                {
+                    "level": 1,
+                    "comment": "Good question! Monsters and environments work well without communicating with each other, so the biggest issues were really just \"what order(s) can the player talk to NPCs in\". I would occasionally have to make little flowcharts that let me know what all was interactive in what order, then make sure to have contingencies for each.\n\nFore example, you can &gt;!do the whole library before talking to Joxxi in town, so there are routes where you happen upon Joxxi in the library IF you met them in town, or if you already beat the librarian, it puts them directly at the crossroads!&lt;.\n\nAs for bugs, I do my best to have well organized code (doesn't have to be fancy, just has to be well labeled and such), but I do occasionally just have to run through my whole game, because weird bugs do always get in.",
+                    "score": 1,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Devs weren't able to try them on, but I am super excited for real, immersive AR gaming! The amount of things you could do with it is huge. I would love to see (or make) some sort of game that overlays magic or fantasy elements on a real world environment like a city or park.\n\nAs a dev too, the way it seems to work in Swift/Unity appears to do a LOT of the heavy lifting for us, so also excited to actually work with it!",
+                    "score": 2,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Did you did the music for the game all by yourself? \u00bfinspirations? is incredible.",
+            "score": 2,
+            "author": "Metallito79",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I did do the music myself! It was actually the hardest part for me - whatever neural path people use to make new melodies pop into their heads, I do not have. Most of the melodies were trial and error, and then I used youtube tutorials for \"how to make future bass / edm / horror / etc\" to get those melodies to be full songs. Everything was done in FL Studio.\n\nIn terms of inspirations, I mostly listen to the Hyper Potions / Shawn Wasabi / Subtract side of future bass, so most of it came from that. \n\nAs an extra fun fact, I came up with the entire premise of floating islands and giant machines and other worlds by listening to Porter Robinson's 'Worlds'. Actually, I borrowed the progression for my trailer from \"Goodby to a World\", where a simple melody starts and a completely different one slowly fades in on top of it. Great album, I highly recommend it.",
+                    "score": 2,
+                    "author": "evankice",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Just incredible! Congratulations for a beautiful game .. greetings from Ecuador.. gracias amigo por un gran juego ;D",
+                            "score": 2,
+                            "author": "Metallito79"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "First of all, thank you so much for this hidden (less and less hidden thankfully) gem of a game, and congrats on the Apple Design Awards! \n\nSo, now that it\u2019s been a little while the game is out, is there any\u2026 not regrets, but things you would\u2019ve like to do with Afterplace but couldn\u2019t? \n\nCan\u2019t wait to see what you have in store for Afterplace and beyond!!! \n\nCheers!",
+            "score": 2,
+            "author": "William_Hououin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! There are definitely quite a few things I would have liked to have added - I probably have a hundred trello cards of cut content, but not all of it would work congruently in the same game. So, good material for future games!\n\nAt one point I wanted to have this whole side quest where if you spent too much money in town it would crash the economy, and stores would start inflating prices, but only for you. The ranen store clerk would try to sell you things at lower prices in a back alleyway, but if you bought too much from them they would become some sort of rich mogul and take over the town. Obviously a lot of work, but also I made the money you got from chests an enemies in the game too\u2026 well? No one ever had more money than what they needed at any given time, so the whole premise kind of fell through. Maybe if I ever do a big RPG with lots and lots of side quests. XD\n\nI also wanted to add about 100 more areas to the surreal with just ridiculous stuff in it, but beta testers said it was already way too confusing to navigate.",
+                    "score": 1,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As an indie app developer, it often gets boring and lonely. How did you keep yourself motivated to finish the project even when you felt lonely cause you couldn\u2019t share your progress or you needed more external motivation to keep going?",
+            "score": 2,
+            "author": "Plastic-60ll",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Building or joining indie communities on discord or twitter helps! Other indies are much more likely to be interested with even the blandest in-progress work, because we've all been there. :)",
+                    "score": 1,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Your inspiration behind this game?",
+            "score": 2,
+            "author": "Ok-Feedback5604",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not having a top-down hack and slash on mobile. Also not liking virtual buttons. So, basically just making the game I would have wanted to play myself!\n\nCave Story, Zelda, and Hyper Light Drifter definitely helped inspire too.",
+                    "score": 1,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey Evan! This is a little late, but I hope you can spare the time to answer it.\n\nI\u2019ve been thinking of getting into the gaming industry lately by making some solo indies myself but I\u2019m very lost on how I should start. Do you feel like it\u2019s most important to start with the lore/story telling or gameplay design or something else entirely? Also, how long did it take you to design this game from start to finish?\n\nThanks in advance, and congratulations on winning the award!",
+            "score": 2,
+            "author": "Exactly500kKarma",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I evidently get emails now whenever someone replies to this AMA, so sure, I can answer some stuff.\n\nA game can start from either a story idea or a gameplay idea, but the important thing is that you do Rapid Iteration with it. That means, take your idea, make a little prototype that highlights your idea, show it to friends/family/people on the internet, get feedback, decide what parts of your idea are good and bad, and then do it again! You will want to do this several times, so don't put a ton of work into the prototypes, just enough to get your point across. This way you can be confident that your idea is decent before spending 2-4 years on it! (Afterplace was 4 years, to answer your other question)\n\nAfterplace started out as a little \"I want zelda but on touchscreens\" demo, then I played with the mechanics for several months until I trusted they would work, THEN I started on a story. But, I've done it the other way around too, making little story-based projects then building mechanics that match (though the mechanics still needed to be prototyped). Just don't get caught up in the design docs, or the tech, or the 'what ifs' to start, have an idea and play around in a game engine until you like it or decide on a better one.",
+                    "score": 2,
+                    "author": "evankice",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for the advice. I\u2019ve been pretty stuck on how to approach even the thought of making a game for a while now so although it might seem like the basics this is actually really helpful to me.\n\nHave you ever felt the need for outside helping with making the story? Personally I\u2019m a very gameplay-oriented person so my expertise with storytelling is pretty minimal. I\u2019ve been searching up stuff on world building and basic storytelling to help supplement that, but I feel I\u2019m still a ways off lol.",
+                            "score": 2,
+                            "author": "Exactly500kKarma",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Everyone has different specialties, so do what you can yourself and don't feel bad about asking for help otherwise. Solo dev is not actually the norm, remember that! And working in a group can be better for having a wider breadth of ideas. I only did solo dev because I wanted to see if I could.\n\nThere are a ton of good story writing resources out there. On youtube alone, I would go watch some of Brandon Sanderson's college classes, Film Courage, Just Write, GDC talks like [this one](https://www.youtube.com/watch?v=4mgK2hL33Vw&amp;list=PLDy2oDtElVA2Dk-tN6BdB1reOWPnQrSxb&amp;index=67&amp;t=3116s), Terrible Writing Advice (don't let the name fool you), and Overly Sarcastic Productions's Trope Talks. You can always try pushing your boundaries when working on a project, and if you find out that a particular field of work not for you, you can then go find someone to help you with it (and you'll have some material to pitch them).",
+                                    "score": 2,
+                                    "author": "evankice",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "As a someone just starting in this industry even the thought of making my own game was really overwhelming but this has been a huge help, so I\u2019ll be sure to keep your advice in mind and bookmark those resources lol.\n\nThanks so much and good luck with your future projects!",
+                                            "score": 2,
+                                            "author": "Exactly500kKarma"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is it coming on Android? How much game dev experience you have and how much it took you ti create this game?",
+            "score": 4,
+            "author": "rjsh927",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is already on Android! :)\n\nThis was my first game, but I've been programming little hobby projects in Game Maker for myself since I was 11. It took me four years to make Afterplace.",
+                    "score": 3,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey Evan! Congrats, for your amazing game and the well deserved award. What games did directly or indirectly inspire you? Or what else was maybe an influence? Like movies or other things. And could you name a few of your personal favorite mobile games?",
+            "score": 2,
+            "author": "silentrocco",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! Influences for Afterplace are (obviously) the older top-down Zeldas, but games like Hyper Light Drifter, Titan Souls, and Hollow Knight played a big role in the feel and movement of the game. Secret of Mana was another huge part of my childhood and had a big impact on world feel. Cave Story is actually probably the biggest influence to how the narrative works, with very little given up front. Undertale was an influence on me in general, but I did try my best not let my story or comedy sway too close to it.\n\n&amp;#x200B;\n\nI'm a decent Ghibli fan, so a lot of the strange or surreal environments may have been influenced by that. Higurashi and the novel series Redwall were my intro to loving the \"cute up front but terrifying once you get into it\" genre.",
+                    "score": 4,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi Evan congratulations on the Apple design award! What made you choose iOS game developer as opposed to all the other career options you had? As an aspiring iOS developer can you give any recommendations for resources, tutorials, or a roadmap that helped you on your journey? Thank you and congrats again on the hugely successful launch of Afterplace!",
+            "score": 1,
+            "author": "long_ruler",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! While Apple has been one of my biggest proponents, I am actually both an iOS and Android dev (really a Unity dev and it does all the other work for me). I chose mobile for this specific project because I really loved my gameboy as a kid. Mobile phones are kind of the gameboy of the present, I think more so than things like switch or steam deck. We have these amazingly superpowered devices on us at all times, and it's really saddening that we don't use them for gaming (or at least, the type of indie gaming I love and enjoy).\n\nAs for recommendations and resources, I got most of my knowledge and skills for development from youtube. You can find tutorials for art, music, design, anything. I recommend starting with design channels like Adam Millard, Daryl Talks Games, and GMTK. Swift looks great and I'm sure it's a blast to work in, but Unity is also a great start for an engine, there's tons of tutorials and you will be able to port your game to other platforms in the future. And the best resource is always just trying things yourself! Unity is free, download it and poke around, you'll learn skills and get fun ideas for future projects!",
+                    "score": 2,
+                    "author": "evankice"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Looks like I'll be busy with all these AMAs. But first, can someone beat my high score on Afterplace?",
+            "score": 1,
+            "author": "MammothCarpenter3710"
+        }
+    ]
+}

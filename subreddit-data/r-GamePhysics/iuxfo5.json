@@ -1,0 +1,1281 @@
+{
+    "id": "iuxfo5",
+    "score": 39239,
+    "title": "[FALLGUYS] Why run when you can just do an orbital launch?",
+    "author": "CatPlayer",
+    "date": 1600395044.0,
+    "url": "https://www.reddit.com/r/GamePhysics/comments/iuxfo5",
+    "media_urls": [
+        "https://v.redd.it/49mkicvbetn51"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The community: \"Why can't you just ban anyone that qualifies within seconds of the start of the match before it's possible for legit players to get there?\"\n\nThe physics engine:",
+            "score": 2388,
+            "author": "OreoDragon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "High-level checks like \"anyone who qualifies in a second is obviously a cheater\" sound great on paper, but are all actually terrible ideas. Because of situations like this video, but also because those checks would be easy to get around. If you know the threshold for \"impossible\" qualification time then you can get around it easily by just waiting until 1 second after the cutoff time. \n\nThe real solution is to do low-level checks on player input every server tick. Much more reliable, efficient, and you don't have to worry about endless exceptions and edge cases like players incidentally being launched by physics objects. The catch is that this needs to be done on the server, but fall guys - at least before the most recent patch - did all these checks on the client, so cheaters were able to easily disable them. That's a big no-no in gameplay networking.",
+                    "score": 129,
+                    "author": "wolfpack_charlie",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Lower the invisible ceiling. Reset anyone to the start if they qualify under a set time. Temp ban for anyone who is reset multiple times in a set period.",
+                    "score": 532,
+                    "author": "Disney_World_Native",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Except you'd be punishing the player for interacting with the game. Those objects are designed and coded the way they are and simply playing the game shouldn't be a reason to punish a player.\n\nI get if you want to lower the ceiling but your other suggestions don't seem player friendly.",
+                            "score": 420,
+                            "author": "orang307",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don\u2019t think this was by design to push someone to the end. \n\nYou also have a much greater chance of going out of bounds with no way to reset. So overall it would be a win for players who have unintended interactions. \n\nAnd it would be friendly to the 59 other players who are playing the game and not see someone qualify in a few seconds be it hacking or just crazy physics.",
+                                    "score": 138,
+                                    "author": "Disney_World_Native",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It's not like this happens consistently, is basically winning the lottery, yes bummer for other participants but honestly if I was in that match and saw somebody else get qualified due to something like the video I wouldn't even be mad.",
+                                            "score": 82,
+                                            "author": "Leoxcr",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I would assume it was a cheater, cause this looks exactly like what all the other cheaters look like",
+                                                    "score": 54,
+                                                    "author": "balmung8",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It doesn't really look like how a cheater's bean looks when moving using a hack. It is very jerky and not smooth like this. From what I've read, the physics engine (and the way the hack works) makes it difficult to smoothly fly when using a hack. That is why, even when cheating, a number of cheaters overshoot getting the crown on fall mountain (whatever it is called).",
+                                                            "score": 21,
+                                                            "author": "theshadowiscast"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I've gone flying with theae physics before, but a different direction. This doesn't seem like hacks to me",
+                                                            "score": 8,
+                                                            "author": "EighthClubOfClubs",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Something happening rarely is not a good reason not to take reasonable precautions against it.",
+                                                    "score": 2,
+                                                    "author": "theoriginaled",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I guess it depends on how strongly affects the overall experience for everyone.",
+                                                            "score": 3,
+                                                            "author": "Leoxcr"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I would argue that if the \"physics\" of this game even allow for the possibility that these types of things can happen then you either need to squash the bug or embrace the chaos and random silly element of it. I'm of a mind that the latter makes for a better game in this case.\n\nA reset should exist for falling off the map should things like this happen (and you don't manage to ride the wonkyness to glory) and there should be an invisible wall/ceiling to limit vertical absurdity.\n\nAs for it being more friendly for the other 59 players, I would say that this could happen to anyone. It's purely by chance. If something bonkers happens to other players, good or bad, I don't view it as a slight to me. So long as they're not hacking then it's simply a part of the game.",
+                                            "score": 11,
+                                            "author": "orang307"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's like that one Naruto episode, the test encourages u to cheat.\n\nIf the physics engine was A1 quality with bugs being squashed everywhere where would u get the wacky moments that give the game its unique qualities and make the game fun to watch and play",
+                                    "score": 19,
+                                    "author": "rcmp_moose",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Exactly I understand avoiding cheaters or people that abuse exploits but this is also not an esport, not everything has to be perfectly fair and balanced.",
+                                            "score": 9,
+                                            "author": "Leoxcr"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Reminds me of an episode of the magicians where they had a test that required cheating and they just wanted to see who was willing to do whatever was necessary to pass.",
+                                            "score": 2,
+                                            "author": "RoboDae"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; simply playing the game shouldn't be a reason to punish a player.\n\nDidn't Bethesda ban a load of people just because they reported bugs in Fallout 76?",
+                                    "score": 4,
+                                    "author": "jaysus661",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "A great example of what not to do yes.",
+                                            "score": 3,
+                                            "author": "SomaWolf"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Except then you'd be punishing people for glitches in your game, instead of ya know just patching out the glitches so that it can't happen. Lower the invisible ceiling, yes, fuck someone over because of shit you can just work to get rid of, no.",
+                            "score": 14,
+                            "author": "Turanikan"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This guy fall guys",
+                            "score": 3,
+                            "author": "DaeManYT"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "People take this game really seriously, huh",
+                            "score": 3,
+                            "author": "thanatossassin",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I think that people do deserve to feel that the game is somewhat fair as in addressing hacking. \n\nDoesn\u2019t need to be 100% fair 100% of the time.",
+                                    "score": 2,
+                                    "author": "Disney_World_Native"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I learned something kinda cool from this. You don't need to cross the finish line itself, just land in the area behind it. Wonder if that could be used to break some tracks.",
+            "score": 2453,
+            "author": "TheEmeraldOil",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Can perhaps be used for some cool plays with the new hammers at the end of some levels",
+                    "score": 907,
+                    "author": "CatPlayer",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I\u2019ve already by being launched over the goal on gate crash by the hammer that\u2019s sometimes at the very end after the drop!",
+                            "score": 226,
+                            "author": "ZNasT"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You mean BEEG YEETUS",
+                            "score": 132,
+                            "author": "TheBulletBot",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "OH LAWD HE COMIN",
+                                    "score": 54,
+                                    "author": "milk_ninja",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "AND HE YEETIN",
+                                            "score": 24,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 13,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[This one here!](https://twitter.com/RealBigYeetus)\n\nJust kidding, not only did they introduce anti cheat in the latest update, they also added some remixes of stages and [added a big hammer in some, that will yeet you all over the place](https://youtu.be/VCODxlQ9tmU?t=23s)",
+                                    "score": 38,
+                                    "author": "Elvith",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Holy shit they named it big yeetus",
+                                            "score": 5,
+                                            "author": "caveman512"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That\u2019s how a lot of the people that hack the game win. They just twitch around and glitch right to the end",
+                    "score": 161,
+                    "author": "CaptainAddison",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don't think I've ever seen a hacker win. They're so inherently bad at the game without hacks, that if they have to actually play the game to pass a certain point, they just fail. Saw a hacker who, seemingly, could only fly horizontally, so he absolutely sucked ass on slime climb. I finished quick, so I watched him fail over and over again on simple jumps.",
+                            "score": 149,
+                            "author": "JTVivian56",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've seen people win hex-a-gone and jump showdown by just floating.",
+                                    "score": 92,
+                                    "author": "mordacthedenier",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I watched a hacker on hex-a-gone just fly back and forth on the bottom level removing all the tiles, then work their up doing the same thing. It was actually kind of impressive / entertaining, even though they are a huge douchebag for cheating.",
+                                            "score": 36,
+                                            "author": "thewormauger"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 10,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "So did you jump down?",
+                                                    "score": 3,
+                                                    "author": "caveman512",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Would you? I mean... apparently, that's one of the endgames.",
+                                                            "score": 3,
+                                                            "author": "HasFiveVowels"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "First time I ever got to Fall Mountain, the round ended within a second because one of the two chickenshit hackers (who made the preceding Tip Toe piss easy by hovering across all the tiles revealing the correct path) who were in my game barely gave us a fucking second to move forward before rocketing off to the crown. I\u2019ve been angry at games before, and I\u2019ve been mad at people before, but that was a different feeling right there.",
+                                    "score": 17,
+                                    "author": "LordCharco_iii",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They really do just steal the fun away from it. You made it all of the way to the end, just to have your chance stolen by a cheap hacker",
+                                            "score": 16,
+                                            "author": "JTVivian56"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019ve seen that happen too but just because they suck doesn\u2019t mean they should be allowed to cheat regardless. I think it\u2019s more of a problem because on the first round there are plenty of people that just lose simply because a hacker got in before then and they get DQ\u2019d right at the finish line. Even if the hacker ends up losing it isn\u2019t fair to whoever they replaced that wasn\u2019t cheating in the earlier rounds. They won\u2019t even get the opportunity to suck or win on a later round",
+                                    "score": 42,
+                                    "author": "CaptainAddison",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I wasn't trying to justify cheating or anything, just calling them out for sucking hard at a relatively simple game, hacks aside.",
+                                            "score": 45,
+                                            "author": "JTVivian56",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I am just wondering what kind of person do you need to be to cheat at fucking Fall Guys lol\n\nLike, the game is 95% a random meme generator, you don't play it to win.",
+                                                    "score": 13,
+                                                    "author": "Sinndex",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It's crazy. I've won 3 crowns. I've not won... a large number of crowns. There'd be zero incentive to play if wins were guaranteed.",
+                                                            "score": 2,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Absolutely man wasn\u2019t trying to accuse you of that either just wanted to clarify haha",
+                                                    "score": 10,
+                                                    "author": "CaptainAddison",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "No problemo yo",
+                                                            "score": 8,
+                                                            "author": "JTVivian56",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "thats surprising... you'd expect even being restricted to only flying horizontally.. he'd still be able to slide up the ramps. \n\nso yea, sounds bad.",
+                                    "score": 6,
+                                    "author": "Hobocannibal",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It was hilarious, he managed to get to the second set of the wall pushing things, and he kept trying to fly through them but was knocked to the side over and over again until he hit the slime",
+                                            "score": 5,
+                                            "author": "JTVivian56"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019ve seen hackers float right to the crown in like .5 seconds",
+                                    "score": 4,
+                                    "author": "prguitarman",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I usually see them fail to qualify for the finals moreso than making it",
+                                            "score": 3,
+                                            "author": "JTVivian56"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I once got to the final with tail tag and there were two hackers battling over the tail which was quite a show. Hacker #1 ended up winning",
+                                    "score": 2,
+                                    "author": "UltraExelon"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I think he grabbed the wall then when other people moved it, he used the rotation of the wall knowing that the game would translate it into speed. Or he did it by mistake and lucked out.",
+                            "score": 5,
+                            "author": "Sgshallow",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "i wasn't aware those were grabbable objects. can't say i've tried tbh.",
+                                    "score": 6,
+                                    "author": "Hobocannibal"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The \"Finish Line\" is a 3d box sitting behind the line, you can see he crosses it way before he even hits the ground.",
+                    "score": 13,
+                    "author": "Jaegs"
+                },
+                {
+                    "level": 1,
+                    "comment": "Gotta get pretty close, I've seen some highlights of this where you will fall through the back section and get teleported back to the start.",
+                    "score": 8,
+                    "author": "LocoPojo",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Will you qualify if you are under the map but pass the finish line? Like if you fall off at the right moments s cross the finish line before you get desert to your last checkpoint, does it count as making it across?",
+                    "score": 5,
+                    "author": "TyMT",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 11,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "it might be different map to map, but i saw a video of someone getting hit by big yeetus and they qualified as they passed pretty far over the top of the goal. doesn\u2019t look consistent to what happened here at all",
+                                    "score": 7,
+                                    "author": "fcksean"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "i believe the box also stretches underneath as well for one experience where i qualified at the path finding map by just leaping under the finishline. This needs to be tested though since it could have.just been a one off thing due to lag",
+                    "score": 2,
+                    "author": "Huarrnarg"
+                },
+                {
+                    "level": 1,
+                    "comment": "Not really land, more like touch an invisible trigger that\u2019s slightly higher than how high fall guys jump.",
+                    "score": 2,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "I mean, clearly you can use it to break tracks, like in the damn video.",
+                    "score": 1,
+                    "author": "tribak"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "ODST reporting for duty!",
+            "score": 865,
+            "author": "x3young3x",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Dropping feet first into hell",
+                    "score": 173,
+                    "author": "slimonawsome",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This was clearly a case of head-first",
+                            "score": 38,
+                            "author": "Wilc0NL",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\u201cAnd rookie, if you ever fall for a woman\u2026 make sure she\u2019s got balls.\u201d",
+                                    "score": 27,
+                                    "author": "rimmboy117",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Sir that's a trap",
+                                            "score": 2,
+                                            "author": "Extrodar"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If no one has ever seen the live action ODST trailer I highly recommend it. Shits intense",
+                            "score": 7,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I get chills every time",
+                                    "score": 4,
+                                    "author": "slimonawsome",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It really makes you feel some shit.",
+                                            "score": 3,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "We are green and very very mean!",
+                    "score": 12,
+                    "author": "haboglobotribin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Welcome to the Bullfrogs!",
+                            "score": 4,
+                            "author": "JuggaloThugLife"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I keep rewatching this trying to see how this could have possibly happened. Looks like such a normal object interaction, then you get yeeted into the solar system",
+            "score": 795,
+            "author": "SeriousShirley99",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To infinity, and beyond!",
+                    "score": 305,
+                    "author": "CatPlayer",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Falling... with style!",
+                            "score": 30,
+                            "author": "Kolby_Jack",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "To Sirius, FROM MARS!!!",
+                            "score": 11,
+                            "author": "Xiaxs",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Objects clipping into each other can cause some wild interactions in games. In cases like this it's often something like the game trying to push the objects apart and giving them way too much velocity.",
+                    "score": 232,
+                    "author": "sameth1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I find that fucking the graphics to the point where you get strange frame rates boosts your chances or crazy physics happening",
+                            "score": 69,
+                            "author": "albinorhino215",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's usually caused by the frame rate and the \"tick rate\" or how fast the engine and game logic is running is linked. Higher frame rates make physics glitches more common, lower sometimes makes clipping through objects easier. The world is your oyster",
+                                    "score": 63,
+                                    "author": "deadair3210",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yup! I love to bring up the example of super monkey ball 2 which ran at 60fps but checked collision at 30hrtz so you could hit that sweet spot sometimes and yeet away to another dimension",
+                                            "score": 39,
+                                            "author": "albinorhino215",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Or how old GTA Games such as vise city was doing physics times based on the cpu speed that has increased drastically since 2002 which makes for some insane physics as well",
+                                                    "score": 21,
+                                                    "author": "Rovsnegl",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I think saints row 2 is basically unplayable without mods cause the speed is tied to CPU clock. So it's just in hyperspeed on modern machines.",
+                                                            "score": 10,
+                                                            "author": "fairguinevere"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "How does that work with a multiplayer game tho? I heard something like that also happened in fallout 76 where you could run twice as fast on a 120hz monitor. I don't get how devs let basic things like that be calculated client-side",
+                                            "score": 9,
+                                            "author": "nddragoon",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Because when you have 30 clients all with one character it\u2019s far more efficient to make the clients do the lifting for physics interactions, especially when it\u2019s with player characters involved. \n\nThis happens all the time without issue, it\u2019s just that FO76 isn\u2019t the most robust game.",
+                                                    "score": 21,
+                                                    "author": "RobotApocalypse"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What you need to understand about Fallout 76 is that Bethesda is incompetent. Remember, we are talking about a game where the start of a new year broke all the nukes.",
+                                                    "score": 10,
+                                                    "author": "bilateralrope"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It works poorly.\n\nThe client has to lock the frame rate, if you modify that then there has to be some very intense checks in place. It turns into a complete mess",
+                                                    "score": 3,
+                                                    "author": "justAPhoneUsername"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Because programmers never follow the golden rule\nAlways assume the client is not to be trusted, do as much checking as possible, or just do the work server side\n\nMost of the time it's mostly because physics calculations can become pretty taxing once you realise it would have to be everyone on the server.",
+                                                    "score": 3,
+                                                    "author": "deadair3210"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I don't know if any modern games do this, but Donkey Kong 64 tries to lessen the effect of lag by making characters move twice as fast if the frame rate is halved. This can be used to clip through walls and do other fun stuff.\n\nA modern, online game like fall guys works in a completely different way though and I can't see how messing with the frame rate would cause glitches. Frame rate-associated nonsense usually only happens in games which are built around a single locked frame rate.",
+                                    "score": 15,
+                                    "author": "sameth1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "yeah most engines now-a-days don't do physics == frame rate lock step anymore since people play at vastly different FPS these days.",
+                                            "score": 10,
+                                            "author": "Aakumaru"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Somewhat unrelated but I love that someone decided to turn clipping physics like that into a super-power and we got Mirio from MHA out of it.",
+                            "score": 1,
+                            "author": "Twistervtx"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Collisions are a bit bouncier in Fall Guys than in most. In most games, you hit a wall, and stop. In this game, you hit a wall and bounce. \n\nExcept, the bouncing isn't quite right. You bounce farther than you should. So if you bump into a moving object, and that object is mostly unstoppable, your character bounces *and* takes whatever speed/force that object had. So, you go flying. Momentum is not conserved. It increases. \n\nThis is why players are able to launch themselves off of hammers and other map pieces. Hitting moving things is *supposed* to send you flying farther than if you had just been pushed.\n\nIn this case, it looks like he bounced off another player, and hit a piece of a door. I can't quite tell, but it looks like that door piece hit a wall and the ground, as the player ran into it. So, what I *think* we're seeing is the force of a double- (maybe even a triple) -bounce.",
+                    "score": 40,
+                    "author": "Jazehiah",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think what caused the collision bug was the door itself. They are really wonky even when you don't go off flying. I assume they clipped into the door and the game tried to add velocity to the character and the door, for some reason both in the same direction, to get them unstuck. You can see that they remain clipped together for a few frames as it accelerates",
+                            "score": 12,
+                            "author": "nddragoon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's possible, but I've seen *lots* of wonky collisions in that game. The fact that they're semi-predictable is what makes the game fun.",
+                                    "score": 6,
+                                    "author": "Jazehiah",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Tyler told everyone it\u2019s fun is",
+                                            "score": 1,
+                                            "author": "dirtyviking1337"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Doors are suuuuper 'slippery' as it seems like you aren't really supposed to be on them so they end up accelerating you when you just hop on them when getting through the level. I suspect that since the door went vertical and the player landed on it, the slipperiness didn't know how to account for it and he just slid into the stratosphere.",
+                                    "score": 5,
+                                    "author": "ass_pineapples"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I haven't had anything this crazy, but I've had some ridiculous bounces when interacting with players that, I assume, have poor connections. It seems like when there's a disagreement between server and client on where things are the objects get moved instantaneously to solve the issue, but that leads to massive forces applied if another object is in the way of the one being \"caught up\".",
+                    "score": 5,
+                    "author": "Legend13CNS"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As I'm learning on my first Unity project, Unity has garbage &lt;lots of things&gt;.\n\nOne random example, you can't declare a freaking bitmap in the Engine, because they block that part of the standard libraries from you.",
+                            "score": 8,
+                            "author": "StopBangingThePodium"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Doesn't unity run physics independent of the frame rate? How would a faster frame rate affect the consistent physics step?",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Physics can run either based on frame rate or skipping frames with time.deltaTime depending on how the programmer sets it up.\n\nFrom my previous and current experience both fucks up quite frequently\n\nOn the flip side I also have similar things happen in unreal so it just appears that complex physics is really hard to do",
+                                    "score": 3,
+                                    "author": "kurosujiomake",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Looks like he was parallel to the fallen door at the instant of yeet, so maybe his entire back clipping into it shoved him out with such incredible acceleration for just long enough to thusly yeet him.",
+                    "score": 3,
+                    "author": "samsab"
+                },
+                {
+                    "level": 1,
+                    "comment": "You know the plot from office space and Superman 2? Games use a lot of math and the decimal place gets dropped and math is hard, so, sometimes weird things happen.",
+                    "score": 1,
+                    "author": "NeverInterruptEnemy",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Speedrunners make me feel bad about myself.",
+            "score": 108,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's probably a typical feeling.\n\nIt's hard to find purpose in our modern life, what with all the basic needs being generally met, at least enough to keep us breathing another day. So seeing someone excelling, by throwing themselves fully at a task, which we can't fuly grasp the reasoning for, is hard on us. It makes the little voices in our head louder. The ones that are trying to push us to do more, but can't understand what that more is. As they've been throw into a future they never evolved to comprehend.",
+                    "score": 2,
+                    "author": "StrikingCrayon"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why walk when you can ride?",
+            "score": 41,
+            "author": "MrGraffio",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We make a special trip, just for you. \n\nSAME\n\nLOW\n\nPRICE",
+                    "score": 19,
+                    "author": "Nerevar1924"
+                },
+                {
+                    "level": 1,
+                    "comment": "We\u2019ll need a thumper to call a worm if we are to ride.",
+                    "score": 4,
+                    "author": "HydroGeoPyroAero"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Those doors have got to have the worst physics of all objects in the game. They\u2019re very bouncy for no reason.",
+            "score": 259,
+            "author": "Banjo1812",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The reason is chaos",
+                    "score": 145,
+                    "author": "refuteswithfacts"
+                },
+                {
+                    "level": 1,
+                    "comment": "Fall Guys physics are just a suggestion. They vary depending on the tides. You never know if your gonna get slammed into the ground or launched into space, but most of the time it will be a negative outcome.",
+                    "score": 66,
+                    "author": "Endyo"
+                },
+                {
+                    "level": 1,
+                    "comment": "At 10 seconds into the video you can see the door flying farther and faster in the top right corner.",
+                    "score": 24,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Now the whole match thinks you are cheating",
+            "score": 29,
+            "author": "forever-not-human"
+        },
+        {
+            "level": 0,
+            "comment": "That's probably a non-cheater record lol",
+            "score": 144,
+            "author": "lalder95"
+        },
+        {
+            "level": 0,
+            "comment": "Cheater! Nah jk ...but that was a wonderful chip shot. Was that a sand wedge the computer used?",
+            "score": 183,
+            "author": "vanillaninja16",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 34,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I suggest feathered touch. \nYou have selected POWERDRIVE! \nBall is in parking lot. Would you like to play again?",
+                            "score": 9,
+                            "author": "Imitation_Gruel",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[- P U T T I N G - C H A L L E N G E -](https://youtu.be/k3vWkqfX9fY)",
+                                    "score": 7,
+                                    "author": "ultratensai"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You have selected no",
+                                    "score": 4,
+                                    "author": "MaaaaxPower",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s probably the fastest ever first round qualification tbh",
+            "score": 15,
+            "author": "Tatertot580",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I also got this bug once but didn't go as high. It was more of a line drive shot to the end. Sadly wasn't recording :(",
+                    "score": 2,
+                    "author": "DrumstickVT",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don\u2019t really know how PC recording works but if you play on PlayStation just hold down the share and save a video clip, I don\u2019t get how not many people know this but you can set it to the amount of time it records back in gameplay, personally mines at 5 minutes.",
+                            "score": 2,
+                            "author": "Tatertot580"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "\"2:37 am\" same",
+            "score": 57,
+            "author": "Cloudex109",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Night stands sound great until you wake up 3 hours later to work ;)",
+                    "score": 22,
+                    "author": "CatPlayer"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Seen a few clips of this game. Is it basically a cute and cuddly takeshi's castle?",
+            "score": 9,
+            "author": "ryan34ssj",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes",
+                    "score": 4,
+                    "author": "de4th_metalist"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is why i get nervous whenever i hear about them implementing stricter anti cheat",
+            "score": 6,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "My guess is that you clipped the door and the game tried to add force to unclip you but it happened to be at a weird angle so you had heaps of force applied to the body of your character. Sick!",
+            "score": 5,
+            "author": "Samguy3"
+        },
+        {
+            "level": 0,
+            "comment": "All these posts like this make me wanna buy the game. Should I do it?",
+            "score": 15,
+            "author": "Lobotomite430",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's a very fun experience and even more with friends. Still holds its own very well.",
+                    "score": 15,
+                    "author": "CatPlayer",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My kids got about an hour of gameplay before they were bored and went back to Roblox. I got about 2 hours worth, it's very frustrating and I watched the loading screen for longer than I played. Great if you got it free with PS+, but not worth full price unless they add some longer gameplay between eliminations, IMHO.",
+                            "score": 22,
+                            "author": "HotLaksa",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Jump in the mindset to have some fun and laughs. It's good to lay back after a day of work for a few minutes a day. More than 1 or 2 hours might be stretching it imo, unless with friends. And in the case of kids, remember they have short attention spans. Kids get bored quick of a game, having a series of mini games to do keeps them hooked. That's why roblox is so successful!",
+                                    "score": 9,
+                                    "author": "CatPlayer",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Lol i remember playing doom, quake and civilization 2 on my parents $2000-4000 (i forget how much they said it was) PC when i was a kid. Now kids have stuff like roblox minecraft and fortnite. Its funny how much stuff has changed.",
+                                            "score": 3,
+                                            "author": "Trifuser",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "When I was a kid (well, early teen) I had roblox too - that shits been around for a decade and a half now (2006 initial launch).\n\nI'm actually a software engineer now, and the in-game-world-maker that lets you use Lua scripts to control your game is probably my first entry in to any form of coding/dev. Honestly wonder how much playing that game and enjoying making my own worlds in it influenced my career path today.",
+                                                    "score": 4,
+                                                    "author": "trotski94",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I got it and it's not worth the full price imo.\n\nThe bad:\n\n* ~~the cheating problems where people just sometimes float in the air forever in games where you have to avoid falling or can superman-fly to kick balls into the goals instead of having to slow push a ball~~ (the new anti cheat seems to be effective so far)\n* ping issues(?) where people seem to grab you from half the room away while you basically have to have your arm shoved into their butt up till the elbow before you can grab them\n* random keys in the menu not working when you want to exit a round\n* when in a party you still have to cycle through all possible participants by number to spectate instead of being able to select your party members\n\nThe good:\n\n* It is really fun\n* The maps provide a lot of different types to play like survival, team games or races\n\nNot worth the full price imo but if you don't mind that it's a fun game.",
+                    "score": 10,
+                    "author": "SchwarzerRhobar",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The game is mabinogi and the weapon is loaded",
+                            "score": 5,
+                            "author": "-Listening",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Whilst i'm not sure any of this comment is relevant. I see mabinogi meantioned and i upvote it.",
+                                    "score": 2,
+                                    "author": "Hobocannibal"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I havent seen a cheater since they put in the new anticheat so theres that. Although yeah the ping issues are massive in certain minigames (tail tag, team tail tag and royal fumble specifically) and really need to be worked on.",
+                            "score": 3,
+                            "author": "Trifuser",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I haven't played in a few days so maybe they fixed that, which is nice.",
+                                    "score": 1,
+                                    "author": "SchwarzerRhobar"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Do you like fun?",
+                    "score": 2,
+                    "author": "Imitation_Gruel"
+                },
+                {
+                    "level": 1,
+                    "comment": "Any time I can get 100 hours out of a $20 game, I consider it a huge win.",
+                    "score": 1,
+                    "author": "osufan765"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "FAAAAAAAAAAAAAAAAAAAAAAAALL guys",
+            "score": 3,
+            "author": "noodlenoggin34"
+        },
+        {
+            "level": 0,
+            "comment": "World record lol?",
+            "score": 4,
+            "author": "ChandlerLutherBing"
+        },
+        {
+            "level": 0,
+            "comment": "Leaked footage of KSP 2",
+            "score": 4,
+            "author": "nddragoon",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I was playing the other night and it was the tail game where you need to make sure you have a tail by the end to qualify. While running around during the last 20ish seconds I somehow got out of bounds where no one could get me. So I got to keep my tail and qualify which was nice lol.",
+            "score": 4,
+            "author": "badtz_maru_666"
+        },
+        {
+            "level": 0,
+            "comment": "Oh my",
+            "score": 2,
+            "author": "TyIsSticks"
+        },
+        {
+            "level": 0,
+            "comment": "And here I am, jumping into doors like a sucker...",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Does this count as a world record?",
+            "score": 2,
+            "author": "Pepega_9"
+        },
+        {
+            "level": 0,
+            "comment": "Now that's a orbital strike that has precision accuracy",
+            "score": 2,
+            "author": "Trench_ghost"
+        },
+        {
+            "level": 0,
+            "comment": "We take those",
+            "score": 2,
+            "author": "__TOD__"
+        },
+        {
+            "level": 0,
+            "comment": "This game seems like frustration incarnate.",
+            "score": 2,
+            "author": "itsthevoiceman"
+        },
+        {
+            "level": 0,
+            "comment": "WOOOOORRRRRRRRRLD RECOOOOOOOOOOOORD!",
+            "score": 2,
+            "author": "SleeplessinOslo"
+        },
+        {
+            "level": 0,
+            "comment": "Around 0:08 You can see the door fly off on the top right screen as well",
+            "score": 2,
+            "author": "Bit5keptical"
+        },
+        {
+            "level": 0,
+            "comment": "Imagine all of the players reactions to this happening.",
+            "score": 2,
+            "author": "Umbraios"
+        },
+        {
+            "level": 0,
+            "comment": "putting the \"fall\" into fall guys",
+            "score": 2,
+            "author": "BurnmaNeeGrow"
+        },
+        {
+            "level": 0,
+            "comment": "Omg these fall guys are so adorable",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "\"Hacker\" (anybody there)",
+            "score": 2,
+            "author": "slavshrimp22"
+        },
+        {
+            "level": 0,
+            "comment": "GG",
+            "score": 2,
+            "author": "Sarcasmbruh"
+        },
+        {
+            "level": 0,
+            "comment": "Hacker level 9000",
+            "score": 2,
+            "author": "COOLPIE11"
+        },
+        {
+            "level": 0,
+            "comment": "Bro they prolly think this man was hacking",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "That's a world record!",
+            "score": 2,
+            "author": "lunixss"
+        },
+        {
+            "level": 0,
+            "comment": "\ud83d\ude02 quickest time ever!",
+            "score": 2,
+            "author": "Evry1cansuckit"
+        },
+        {
+            "level": 0,
+            "comment": "It *is* fall guys for a reason",
+            "score": 2,
+            "author": "yung_gravy1"
+        },
+        {
+            "level": 0,
+            "comment": "\u201cAnti cheatus\u201d",
+            "score": 2,
+            "author": "cheemschimken_008"
+        },
+        {
+            "level": 0,
+            "comment": "I have to imagine you were reported. Lol.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Is this MXC in video game form?",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Damn rip this game. It was so much fun while it lasted",
+            "score": 2,
+            "author": "yjvm2cb"
+        },
+        {
+            "level": 0,
+            "comment": "prepare for Titanfall",
+            "score": 2,
+            "author": "Armetron"
+        },
+        {
+            "level": 0,
+            "comment": "u/vredditdownloader",
+            "score": 1,
+            "author": "Gmansam89"
+        },
+        {
+            "level": 0,
+            "comment": "wow",
+            "score": 1,
+            "author": "SomewhatSane77"
+        },
+        {
+            "level": 0,
+            "comment": "Fly Guys",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Best fallguys speedrun I\u2019ve seen",
+            "score": 1,
+            "author": "hmm2969"
+        },
+        {
+            "level": 0,
+            "comment": "And these lucky-unlucky poor man are called 'hackers'... World is cruel",
+            "score": 1,
+            "author": "TheotherJerry"
+        },
+        {
+            "level": 0,
+            "comment": "okay bye fall guy",
+            "score": 1,
+            "author": "xanderrootslayer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "As a 4th grade teacher, it is okay.",
+                    "score": 1,
+                    "author": "dirtyviking1337"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Got some oldschool Super Monkeyball vibes from directing that fall!",
+            "score": 1,
+            "author": "Runic_Bistro"
+        },
+        {
+            "level": 0,
+            "comment": "New meaning to *fall* guys.",
+            "score": 1,
+            "author": "big-boi-dev"
+        },
+        {
+            "level": 0,
+            "comment": "Literally, Fall guy.",
+            "score": 1,
+            "author": "XavierRez"
+        },
+        {
+            "level": 0,
+            "comment": "Calculated",
+            "score": 1,
+            "author": "Gunslinger_11"
+        },
+        {
+            "level": 0,
+            "comment": "I wanna see this re-edited where the fall guy goes off screen, into orbit, set to Shooting Star by the Bag Raiders.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Everyone thought you were a hacker for sure.",
+            "score": 1,
+            "author": "WilburHiggins"
+        },
+        {
+            "level": 0,
+            "comment": "I would have 100% left thinking you was cheating when i saw you qualify that early.",
+            "score": 1,
+            "author": "B23vital"
+        },
+        {
+            "level": 0,
+            "comment": "God gamer",
+            "score": 1,
+            "author": "gajira67"
+        },
+        {
+            "level": 0,
+            "comment": "HOLY SHIT",
+            "score": 1,
+            "author": "MID_AGE_TERMINATOR"
+        },
+        {
+            "level": 0,
+            "comment": "He knows hacx",
+            "score": 1,
+            "author": "Ok_Boomer91664"
+        },
+        {
+            "level": 0,
+            "comment": "What are the odds?",
+            "score": 1,
+            "author": "Bojo-The-Gamer"
+        },
+        {
+            "level": 0,
+            "comment": "That's the name of the game.",
+            "score": 1,
+            "author": "WolfofNothing",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's in the title Fall Guys is the name",
+                    "score": 1,
+                    "author": "FlukyS"
+                }
+            ]
+        }
+    ]
+}

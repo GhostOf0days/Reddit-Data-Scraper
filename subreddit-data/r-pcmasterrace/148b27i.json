@@ -1,0 +1,1211 @@
+{
+    "id": "148b27i",
+    "score": 219,
+    "title": "Does this really have the 1000Mb/s it says?",
+    "author": "Marssav_24",
+    "date": 1686648010.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/148b27i",
+    "media_urls": [
+        "https://i.redd.it/2vdzsphh6r5b1.jpg"
+    ],
+    "other_urls": [],
+    "postText": "I've heard that the 1000Mb are only between the two adapters and that the intake and output of the connection is of only 100Mb/s",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "On manufacturer site it says it have gigabit port but thing is i think that the actual speed will depend on quality of cables in walls and its lenght between one to another and if they re connected to the same circuit but i can be wrong.",
+            "score": 402,
+            "author": "Mad_Arson",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is right, I have powerline adapters in an old house where the electricity is pretty old and the speed is significantly slower than when i measure it at the modem.",
+                    "score": 105,
+                    "author": "Salt-Jesus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Protip: your PC's PSU is a gigantic noise source that emits huge amounts of interference onto the powerline. If you have either of your powerline adapters on the same breaker as a high power DC PSU you will get much lower speeds.\n\nYou can reduce the impact by plugging the PC directly into the pass through outlet on the adapter where it can filter some of it out, or better still by using a UPS with your PC",
+                            "score": 20,
+                            "author": "StaysAwakeAllWeek",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The adapter itself is so old that it doesn\u2019t even have a pass through outlet. But thanks. I don\u2019t really play online games so the biggest problem is download speeds which I was able to fix by just going on a walk with my dog and coming back to it later.",
+                                    "score": 6,
+                                    "author": "Salt-Jesus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Low bandwidth through a powerline adapter shouldn't have any effect on latency. Online games will work just fine.",
+                                            "score": 6,
+                                            "author": "StaysAwakeAllWeek",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh I didn\u2019t know that, looks like I\u2019m garbage at the game after all.",
+                                                    "score": 5,
+                                                    "author": "Salt-Jesus",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "- Me in 2008 when I finally got a pc with dedicated graphics",
+                                                            "score": 1,
+                                                            "author": "Calm-Zombie2678"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yeah.  For bandwidth to have a measurable effect on latency, you'd have to be running at near dial up speeds, such that individual packets take a significant fraction of a second to transmit.",
+                                                    "score": 1,
+                                                    "author": "Masark"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Depends on how low bandwidth we're talking. If you aren't getting enough overall bandwidth to support the game you are playing, you will experience lags and latency adjacent issues. \n\nThe powerline adapter itself is going to add latency though, as you are introducing more pathway length and stops to your setup. Last time I messed with one, it added about 10-20ms to my latencies. Not bad for RPGs, but game breaking in FPSs.",
+                                                    "score": 1,
+                                                    "author": "Davoguha2",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt;Depends on how low bandwidth we're talking. If you aren't getting enough overall bandwidth to support the game you are playing, you will experience lags and latency adjacent issues.\n\nYou are looking at a drop from a few hundred MBPS to a few tens of MBPS. An online game will work with as little as 0.1MBPS.\n\n&gt;The powerline adapter itself is going to add latency though, as you are introducing more pathway length and stops to your setup. Last time I messed with one, it added about 10-20ms to my latencies. Not bad for RPGs, but game breaking in FPSs.\n\nMy cheap 10 year old powerline adds less than 1ms, and that stays true even if I blast it with PSU switching noise.",
+                                                            "score": 1,
+                                                            "author": "StaysAwakeAllWeek",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt;An online game will work with as little as 0.1MBPS.\n\nWorld of Warcraft, one of the most optimized online games available, will average about 10kbps during play - but can peak up to about 1mbps - on a 0.1MBPS connection, you could play... but would likely get disconnected at every loading screen. \n\nThat's a highly optimized game with millions invested in it's performance and accessibility. \"Freemium\" clones of WoW are generally about an order of magnitude worse - but are about as bad as it might get (many such games have you actively downloading and caching textures and other resources, whereas WoW has all of that client-side). Destiny 2 and CS:GO, for example, are 2 titles that have pushed about 10x the bandwidth requirements of WoW, and each, independently, average about 100kbps while playing. \n\nAlternatively, you might have more issues with upload bandwidth than download.\n\nNot to mention all of the other crap that might be tied to your internet, trickling away that connection speed without realizing it. You could have gigabit connections, and still experience bandwidth related latency if you are simultaneously running multiple downloads. \n\nSimply having the bandwidth does not mean it's being dedicated to your game 24/7 either. You'd be surprised at how often 50mbps becomes a bottleneck in a family home.\n\nForgot to address your last point - in my home, the powerline adds 1-2ms on average to the hop between the computer and the router - since communication is 2-way, double that for proper latency. Minimum never drops below 1, maximum is regularly above 20 (meaning there is much instability in that line, but not quite enough to see losses on a 50-packet tests. That's slower than just using WiFi, and significantly slower than ethernet (which averages about .2-.4ms on the same hop, with maximums never breaking 1ms in my tests). Doing a little light research indicates these numbers are pretty normal. What powerline are you using? Are you sure you tested it from a computer that's using it?",
+                                                                    "score": 0,
+                                                                    "author": "Davoguha2",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I have played online games for years with a powerline connection that was attenuated all the way down to 10mbps, over 100m of copper between the two points. I am telling you it doesn't have any noticeable effect.",
+                                                                            "score": 3,
+                                                                            "author": "StaysAwakeAllWeek",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Anecdote vs anecdote, I think we'll simply have to disagree. \"Noticeable effect\" is vague and subjective. For most games I'd agree, no issue at all. For reaction games like FPS, every ms of latency counts, IMO, and I've seen a pretty wide variety of results out of powerline connections - never anything as stable, reliable, and fast as ethernet.",
+                                                                                    "score": 3,
+                                                                                    "author": "Davoguha2"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I just wished I could run an ethernet cable but it's just not an option.\n\nto boot all 4 outlets in my room are on the same breaker and each floor of the house is on a different phase",
+                                    "score": 1,
+                                    "author": "cyborgborg"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "yeah my old house was weird connecting it to powerline adapters, in the room my pc was in only one outlet of the like 10 in there was actually fast connection, but most other lines were pretty slow.",
+                            "score": 3,
+                            "author": "JefferyTheQuaxly"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Same. Old house and has to cross circuits. It works, but the speeds are lower the WIFI",
+                            "score": 1,
+                            "author": "typi_314"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is the important bit to look for - the Ethernet interface speed.\n\nI bought some AV600 (I think) a few years ago - marketed as being 600Mbps but the LAN interface is only 100Mbps so it can never actually achieve 600.  I do feel a little robbed since it's a twist on wording.  There was no point paying for 'higher spec' models at speeds you will literally never achieve.",
+                    "score": 30,
+                    "author": "A9Carlos",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is what I'm talking about",
+                            "score": 9,
+                            "author": "Marssav_24",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Bought something similar in a new house built last year, so i expect the cables to be good.\n\nSpeed achieved was 313mbit/s, if that helps.",
+                                    "score": 12,
+                                    "author": "Simons778"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The main thing is the AV standard underneath that is supported. Say you have a set of AV1000 devices. They can communicated between each other at up to 1000Mbps. If you add in an AV600 it can communicate up to 600Mbps, so it will drag down the other AV1000 to its slower speed. The answer is similar to broadband connections where there are multiple frequency bins it can communicate with. The more bins it can access the faster it goes. \n\nI\u2019m on a system with about 5/6 powerline devices. My AV1000 communicates at 200Mbps. The AV600 at the end of the garden communicates at about 50Mbps. So it\u2019s very dependent on the wiring underneath as that\u2019s the bus you\u2019re using.",
+                                    "score": 3,
+                                    "author": "LonelyPumpernickel"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "About half at best scenario. If it\u2019s not too much trouble a network switch will give you more consistent performance, but they aren\u2019t bad",
+                                    "score": 1,
+                                    "author": "Elegant-Remote6667"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Guy above you misread the specs - see my reply to him.",
+                                    "score": 1,
+                                    "author": "reddit_pengwin"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;marketed as being 600Mbps but the LAN interface is only 100Mbps so it can never actually achieve 600\n\nThat adapter is marketed with 600 Mbps throughput over the powerline with one or two 10/100 Ethernet ports and a 300Mbps WiFi (n).\n\nI'm sorry to say but you failed to read the specs thoroughly. 600Mbps is clearly stated as the upstream connection... hence it is called AV600, not WiFi-600 or Ethernet-600.",
+                            "score": 0,
+                            "author": "reddit_pengwin",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The LAN port is only a single 10/100 interface.  Thus no signal put in or taken out can ever be above 100 Mbps.  Any marketing that twists that fact is playing a sleight of hand.  \n\nOr maybe I'm wrong and need you to tell me how to achieve above 100 Mbps.  Please do.",
+                                    "score": 1,
+                                    "author": "A9Carlos",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I have just explained it to you.\n\n[The manufacturer does not claim you can get 600Mbps over one connection.](https://www.tp-link.com/uk/home-networking/powerline/tl-wpa4220-kit/#specifications) The 600Mbps is available for the hub to distribute over several slower connections. If you put a Gb Ethernet port on such an adapter, plus WiFi, then you would need a 1.5+Gb powerlink connection to supply those two connections.",
+                                            "score": 1,
+                                            "author": "reddit_pengwin"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Or you can be an absolute chad like me and run a 100 ft. CAT6 cable across the house",
+                    "score": 3,
+                    "author": "kingdroxie"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is correct. The shielding of the cables and how they are layed out can also play a role.\n\nThis would be like putting a GTX4090ti in a computer with an intel celeron processor. Its a waste of money.",
+                    "score": 2,
+                    "author": "potate12323"
+                },
+                {
+                    "level": 1,
+                    "comment": "And if it traverses a circuit breaker - that causes massive degradation of signal.",
+                    "score": 2,
+                    "author": "Infamous-Occasion-74"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If the stars align, yes.\n\nI have 1gbps adapters in my house with gigabit internet, and I get 40mbps.\n\nAs it turns out, the two adapters are on different circuits. So the signal has to travel through the distribution box/consumer unit before it reaches my computer, which presumably is a bottleneck.",
+            "score": 55,
+            "author": "Stoyfan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Tbh all the ones I have ever had weren't even able to detect each other if on different circuits, so I'd say that's your problem",
+                    "score": 9,
+                    "author": "Talponz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Unfortunately it is not really a fixable problem as the ground and first floor are different circuits. I pretty much have to abandon powerlines and go for a wifi setup.",
+                            "score": 5,
+                            "author": "Stoyfan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Or install Ethernet in the walls. \n\nIf you\u2019re renting, run a cable out the downstairs window to an upstairs window. It\u2019s not pretty but works a treat. \nJust make sure you get UV stabilised ethernet cable if it\u2019s in sunlight otherwise the cable won\u2019t last much more than 3 months.",
+                                    "score": 4,
+                                    "author": "Infamous-Occasion-74"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; not really a fixable problem \n\nJust need a power drill and a holesaw my friend",
+                                    "score": 1,
+                                    "author": "notchoosingone",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I live in my parent's home for the time being.",
+                                            "score": 2,
+                                            "author": "Stoyfan",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Haha yeah I was mostly joking. I certainly can't imagine my wife would be too happy if I broke out the power tools to run cables through the house.",
+                                                    "score": 1,
+                                                    "author": "notchoosingone"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Even having travelled through the consumer unit, dropping from 1000 to 40 is a hell of a hit. You sure you've got your units right? Ha ha.",
+                    "score": 3,
+                    "author": "Meta-Fox"
+                },
+                {
+                    "level": 1,
+                    "comment": "1000gbps?!!",
+                    "score": 1,
+                    "author": "AIpheratz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If only",
+                            "score": 1,
+                            "author": "Stoyfan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": ":P",
+                                    "score": 1,
+                                    "author": "AIpheratz"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "One day!",
+                                    "score": 1,
+                                    "author": "AIpheratz"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I actually have a pair and I've never had any connection issues with them. I got quiet new wiring so they seem to work fine. However I only get about half the speed. I have 250mbit but only reaching about 100 with these. But that's good enough for me instead of running an ethernet through the entire apartment.",
+            "score": 24,
+            "author": "SantaPreferPepsi",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How\u2019s your latency?",
+                    "score": 2,
+                    "author": "Kahodes04"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I have used Tenda adapters before, and usually the speed ends up being 100mbit/s (home built in 1998).\n\nLikely the same result for most other adapters.",
+            "score": 56,
+            "author": "weegee20",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Kinda scammy based on marketing but that\u2019s not really terrible.",
+                    "score": 2,
+                    "author": "wampapoga",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well it\u2019s saying if your in an ideal spot you get up to 1000. Plugging it in 10 feet from the router in a modern house will have better results.",
+                            "score": 8,
+                            "author": "moldyshrimp",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Also, don't use it with power strips",
+                                    "score": 2,
+                                    "author": "alesimula97"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How was your latency?",
+                    "score": 1,
+                    "author": "Kahodes04"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In theory, yes. In practice, not even close due to how electric wiring is laid.\n\nPowerline should be your last resort only if you cannot under any circumstances route a cable or get a wifi signal.",
+            "score": 52,
+            "author": "Hamilfton",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I would say the wifi vs powerline choice depends on the use case. I was using powerline during 2 years of covid, because even if the wifi was faster, the stable and reliable 60 Mbit/s I got from the powerline was preferable for work. Never had a drop once in the 2 years.",
+                    "score": 22,
+                    "author": "ShadowBannedAugustus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ethernet&gt;Good Wifi&gt; power line / coax&gt; bad wifi",
+                            "score": -5,
+                            "author": "Tirarex"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Things have changed with wifi6. I get 1.2gigbit over WiFi and get better ping in games than my friend who is on wired a few houses down from me.",
+                            "score": -17,
+                            "author": "bob69joe",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In terms of stability wifi doesn't even come close to wired. Just way better than it was to the point some users don't notice it.",
+                                    "score": 23,
+                                    "author": "Tom_Okp",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I mean my pc doesn\u2019t notice either lol",
+                                            "score": -1,
+                                            "author": "CowsAreFriends117",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Do the ping test on meter.net and show me a graph where the difference between max and min ping is lower than 10ms on wifi and I'll delete my comment.",
+                                                    "score": 2,
+                                                    "author": "Tom_Okp"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Put wifi6 at your friends house and it will be the same or worse than the wired tho",
+                                    "score": 1,
+                                    "author": "urprobstupid",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I have done direct wired at my house and WiFi was faster and as reliable as a standard gigabit wired connection. Everyone who is down voting me has not tried a proper modern WiFi setup.",
+                                            "score": -4,
+                                            "author": "bob69joe",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yeah and 802.11b 11mbps is faster than two cans and a pair of string too, doesn\u2019t mean twisted pair Ethernet that can do 40gbps is slower than wifi in any scenario. Amazon should hire you to rip all the cat6 cabling out of their data centers and replace it with wifi 6, it\u2019s faster and just as reliable as u say they would pay you big \ud83d\udcb0",
+                                                    "score": 2,
+                                                    "author": "urprobstupid",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Dude I am comparing WiFi6 to basic 1gig Ethernet. I do network wiring for a living and am well aware of what wired can do. If I was allowed to I would wire my house with 10gig and definitely not use WiFi for my desktop.",
+                                                            "score": -2,
+                                                            "author": "bob69joe"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Disagree on last resort, though modern wifi has gotten to be extremely good in the last few years.\n\nBut there are often occasions where powerline adapters will get you more consistent speeds and performance.",
+                    "score": 6,
+                    "author": "deefop"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah this was my case. I got one for my consoles a few years ago because the wifi connection was too inconsistent and I live with my parents so I couldn't just run Ethernet down there.\n\nThey actually can work pretty well at least compared to the alternative as I've gotten up to 100mb/s speeds using them and they're much more stable than wifi",
+                    "score": 9,
+                    "author": "MonsterHunter6353"
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm getting 1000 Mbps on a 1800 Mbps ZyXEL powerline system, from ground floor, to two floors up. They go for 40 Euros now.",
+                    "score": 3,
+                    "author": "ArduennSchwartzman"
+                },
+                {
+                    "level": 1,
+                    "comment": "It's better than most wifi.",
+                    "score": 5,
+                    "author": "Svvatzenegger"
+                },
+                {
+                    "level": 1,
+                    "comment": "Mine kept tripping my GFCI breaker things lol",
+                    "score": 1,
+                    "author": "gumpythegreat"
+                },
+                {
+                    "level": 1,
+                    "comment": "I've always found powerline to give me a more stable and faster connection than wi-fi. I imagine it varies for every household and their setup.",
+                    "score": 1,
+                    "author": "Life_Drop69"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think there are many factors to consider like the condition of your electric installation, the distance and if there are devices between the two ends that might cause interference.",
+            "score": 4,
+            "author": "ramonchow"
+        },
+        {
+            "level": 0,
+            "comment": "Wirks fine for the most part. In running fibre and linking the ISP router to more powerful router about 5 meters away.  I also used to have a wifi generator on the opposite side of the building.\n\nWhen plugged into the router \"full wired connection\" i get pings of 12ms and can reach 24mb download speeds. \n\nThe only problem is the rare disconnections between the 2 plug sockets (may be linked to power outages in the building) \n\nAlso they DO NOT WORK when plugged into extensions.",
+            "score": 6,
+            "author": "cypherzxxx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "mine works plugged into an extension",
+                    "score": 4,
+                    "author": "thejordman"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In theory. But in real life you wont get mor than 100mbps",
+            "score": 5,
+            "author": "EmoExperat"
+        },
+        {
+            "level": 0,
+            "comment": "I have a tp link one and max out my connection speed with it (400 mb/s).",
+            "score": 5,
+            "author": "SLRMaxime"
+        },
+        {
+            "level": 0,
+            "comment": "These things are like russian roulette. In two different places they didn't work properly. \nConnection speed was about 3mbps, occasionally lost connection or lost connection to each other. \n\nI ended up buying a 20 meter ethernet cable and after an hour of work, I never had a problem again. \n\nIt's worth a shot, but you will most likely face some problems.",
+            "score": 3,
+            "author": "ChrisderBe",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I had a similar experience. The coax cable outlets in my upstairs were horrible with a weak/intermittent signal. The only reliable coax outlet was downstairs, away from all the rooms on the other side of the house. So I tried these things out so I could get a \"wired\"/direct connection upstairs. Depending on the power outlet, they either didn't detect each other, were considerably slow, and/or had intermittent connection issues. I ended up buying a 30 meter (iirc it was a 100 feet long) coaxial cable so my cable modem and router are now located upstairs.",
+                    "score": 1,
+                    "author": "sadnessjoy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Best case, they run at 35 - 40% capacity. There is a forum thread on the TP link forums where a customer service rep confirms this. It's just a limit of the technology. \n\nIn the real world, they operate more at like 10-15% efficiency, so expect 100-150mb in a modern house with modern wiring. That's very similar to what I got with mine. WiFi was faster for me.",
+            "score": 3,
+            "author": "Its_been_emotional"
+        },
+        {
+            "level": 0,
+            "comment": "It really depends on your house, the wiring, and if you have to cross any circuits.\n\nPowerline adapters are great, but the signal degrades very easily, especially if you have devices creating interference.\n\nI have a 2000Mbps model. I actually get about 700Mbps. If I plug them into the same outlet, I get very close to 2000Mbps, so I wouldn't call it false advertising.\n\nWhere I lived previously, with these same adapters, I was lucky to get 50Mbps.\n\nHowever, these have incredibly low latency, so I still prefer them over Wi-Fi.",
+            "score": 3,
+            "author": "Sparon46"
+        },
+        {
+            "level": 0,
+            "comment": "Yes, yes it does. When you use a double outlet and put them next to each other.\nKidding aside they can do 1gbit, in practice i dont even get 200mbit along the same strand in the same wall in the same room on the same circuit in a german building built in the 80s",
+            "score": 2,
+            "author": "UnleashedTriumph"
+        },
+        {
+            "level": 0,
+            "comment": "The ports, yes. The actual throughput, no. Attenuation and line noise will reduce the signal significantly. Use these only when you cannot run a new wire and are desperate.",
+            "score": 2,
+            "author": "TheRealFreakmon"
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s the maximum speed but you\u2019ll probably get like 10-100 mbps. My experience with them was pretty bad - Wi-Fi was substantially better with Wireless 5 standard (6 makes these obsolete imo as even the 2gz band is better than these power line adapters)",
+            "score": 2,
+            "author": "Viktri1"
+        },
+        {
+            "level": 0,
+            "comment": "Unlikely, I don't get gigabit off mine either.",
+            "score": 2,
+            "author": "Miklith"
+        },
+        {
+            "level": 0,
+            "comment": "There are multiple factors that affect bandwidth speeds with Powerline adapters. \n\nThe main one being the quality of the wiring spec used. Older buildings that more than 20 years old, you're not likely to ever even get anywhere close to supporting the theoretical max of the adapter. \n\nMe: I have a house built in 2018, and because it was too much to pay someone to run ethernet to the one room i NEEDED it in, I got a TP-Link powerline adapter thats rated up to 2Gbps. My current ISP max is 1Gbps symmetrical. On speed tests I max out at 1100Mbps down and 900up with 8ms ping on average. \n\nI use a Wifi 6 router and using wifi my PC barely clears 600Mbps down and 400up with 40-50ms ping. Using a long ethernet cable from my stash, the speeds are practically identical to using the powerline adapter - I just dont have a 100foot cable running along the floor that I need to manage.",
+            "score": 2,
+            "author": "Gr3yGhost"
+        },
+        {
+            "level": 0,
+            "comment": "While it could technically support gigabit, you\u2019re probably realistically not gonna get anything past 80-100\n\nBut TP-Link do tend to be quite decent for the price",
+            "score": 2,
+            "author": "ShaunClarke04"
+        },
+        {
+            "level": 0,
+            "comment": "Fuck no. In a lab, maybe. In an actual dwelling with actual wiring, absolutely not.",
+            "score": 2,
+            "author": "CptVague"
+        },
+        {
+            "level": 0,
+            "comment": "No. This is theoretical 1000Mbit (although ethernet interface is 1Gbit as well). In practise, you can expect around ~50-250Mbit give or take, depending on the quality of wiring and noise.\n\nUsually works great in a pinch, but isn't as good as ethernet.",
+            "score": 2,
+            "author": "hojnikb"
+        },
+        {
+            "level": 0,
+            "comment": "Not remotely.",
+            "score": 2,
+            "author": "GlobalEvening4931"
+        },
+        {
+            "level": 0,
+            "comment": "espa\u00f1ol y usuario de firefox, simplemente un grande",
+            "score": 4,
+            "author": "AnthoxGamer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Como debe ser.\n\nEn verdad prefiero chrome en m\u00f3vil pero por privacidad y adblockers y tener sincronizadas las pesta\u00f1as con el pc uso Firefox",
+                    "score": 3,
+                    "author": "Marssav_24",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "literalmente yo lo uso por lo mismo",
+                            "score": 2,
+                            "author": "AnthoxGamer"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They are crap, I cannot recommend them (owned a pair). They constantly lost pairing/connection and I bricked one of them with a firmware update.\n\nTP-Link had good customer support, though.",
+            "score": 3,
+            "author": "artifex78",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's either shitty wiring or defective units...",
+                    "score": 1,
+                    "author": "hojnikb"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "No, i tried these things they dont even reach 50mb/s not worth it at all. Just use utp cable or wifi extender",
+            "score": 1,
+            "author": "AntelopeEqual2907",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I've never used a wifi extender that got anywhere near 50.",
+                    "score": 4,
+                    "author": "Svvatzenegger"
+                },
+                {
+                    "level": 1,
+                    "comment": "I've used them in the past and got a maximum of 600mbps. It really depends on how the wiring is laid out, how old it is, and the amount of noise from appliances.\nTo be honest, hive always had good experiences with these. Looking at the other comments, I must be really lucky.",
+                    "score": 1,
+                    "author": "DV_Red"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If i wrote 2L on a 1L Coca Cola bottle, would you buy it?\ud83d\udc81",
+            "score": -1,
+            "author": "Rastalars"
+        },
+        {
+            "level": 0,
+            "comment": "They are not good",
+            "score": 0,
+            "author": "Supergaz"
+        },
+        {
+            "level": 0,
+            "comment": "Depends on the wiring in your walls. I tried in my place and it was like using dial up, just simply didn\u2019t work at all for me",
+            "score": 1,
+            "author": "Roffles85"
+        },
+        {
+            "level": 0,
+            "comment": "I've used these in the US. If your in an apt and it's your only way it can be better than wireless. But I never got 1000mbs a good day maybe 100mbs. It depends on circuit and a few other things though. So if major appliances are drawing on the same circuit it could interfere.",
+            "score": 1,
+            "author": "Top_Anteater_6076"
+        },
+        {
+            "level": 0,
+            "comment": "I used to use them and they are ik but I got ones called tenda, and they are much more superior.",
+            "score": 1,
+            "author": "ReadyCricket8415"
+        },
+        {
+            "level": 0,
+            "comment": "I work in networking and my advice is stay away from this. I\u2019ve never seen them work in the manner you are thinking.",
+            "score": 1,
+            "author": "Cultural_Parfait7866"
+        },
+        {
+            "level": 0,
+            "comment": "No.  These kind of adapter things, plan to get half of the rated throughput.",
+            "score": 1,
+            "author": "Curun"
+        },
+        {
+            "level": 0,
+            "comment": "I think that's a waste of time if your electrical installations are old. I can't tell you if it works otherwise, but in my case I barely got 10mbit, despite having 300mbit on the modem.",
+            "score": 1,
+            "author": "IllustriousCurrent26"
+        },
+        {
+            "level": 0,
+            "comment": "I tested a bunch of those and no matter how modern my apt was, I've never come over 25-36mbits, the ping also was awful and jumpy between 40-120ms. Worse when somebody was hoovering on the same circuit, using a boiler or ironing. However, this is at least my experience from 5 years ago and things may have improved a little.",
+            "score": 1,
+            "author": "adrenalinda75"
+        },
+        {
+            "level": 0,
+            "comment": "I used this as my main source of Internet for 3 years to an outdoor shed with my gaming pc in it.\n\nIt was honestly terrible. It may be because the shed was on a different circuit but I got 3mb/s max and it cut out every couple days meaning I had to do a full reset. Eventually it wouldn't work at all and I had to swap the plugs over to get it back up and running.\n\nFinally the plug wouldn't light up any more and I managed to get a 30m cable for like \u00a315 connection hasn't done down since.",
+            "score": 1,
+            "author": "AvgRedditUser29"
+        },
+        {
+            "level": 0,
+            "comment": "I have had terrible luck with these, getting way below the advertised speeds, even in a relatively modern (early 2000s) house. I have moved to MoCa 2.5 and never looked back. The restriction is that you need to have coax on that room, but that was the case for me.",
+            "score": 1,
+            "author": "niyoushou"
+        },
+        {
+            "level": 0,
+            "comment": "So long as the are on the same circuit in your house speed should be good.\n\nbut once they are on different circuits having to communicate through RCD / circuit breaker they drastically loose their performance in both bandwidth and latency.\n\nHere in Australia you can get an electrician to put in a cat 6 Ethernet cable in for $330.\n\nMost AV2000 units cost $200.\n\nIn your confidant in doing your own cabling work you can get wall plates the take the RJ 45 plug instead of a keystone network jack.\n\nYou can get pre terminated cables in your required length.\n\nCat6 in more than enough for up to 10g Ethernet when use at length below ~ 55M",
+            "score": 1,
+            "author": "Spinshank"
+        },
+        {
+            "level": 0,
+            "comment": "You really don't want to use this unless there is no other option. \n\nThe general amount of interference will cause packet loss which will probably make you installing an ethernet connection anyway.",
+            "score": 1,
+            "author": "Tomnesia"
+        },
+        {
+            "level": 0,
+            "comment": "Depends on the quality of cables in your walls. The manufacturer will always put the number your homeplug/modem/repeater is capable of under IDEAL conditions. Not what it\u2019s actually capable of with century old copper in your walls\u2026",
+            "score": 1,
+            "author": "Sunspear52"
+        },
+        {
+            "level": 0,
+            "comment": "In a lab under controlled conditions it can achieve the rated 1000Mbps or higher. In the field wiring age, quality, and outlet to outlet run length are going to affect your results.\n\nI tried the US model (different plugs) and never got higher than 80Mbps. Old apartment, suspect wiring, confusing circuits. Returned it for a wifi-6 card, getting 400Mbps. We have 400Mbps service.",
+            "score": 1,
+            "author": "Siferatu"
+        },
+        {
+            "level": 0,
+            "comment": "You will likely not get 1000 through a home plug like this - most of the time I see them cap out at 100mbit",
+            "score": 1,
+            "author": "BanMeYouFascist",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I got nearly 1000 through mine, granted - my house was brand new, but for the 4 years I lived there, i got close to 1000",
+                    "score": 1,
+                    "author": "Qlix0804"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "all depends on your cables",
+            "score": 1,
+            "author": "niemertweis"
+        },
+        {
+            "level": 0,
+            "comment": "Can someone tell me what I'm looking at? Is it an ethernet Router directly plugged to a socket? Why not just use a normal router somewhere else and just plug the ethernet?",
+            "score": 1,
+            "author": "XenonJFt"
+        },
+        {
+            "level": 0,
+            "comment": "These things can work really great if they are on the same circuit. But I have friends where it didn't work at all. Also, they advertising megabits which isn't the same as megabytes if that is what you are asking.",
+            "score": 1,
+            "author": "Akuno-"
+        },
+        {
+            "level": 0,
+            "comment": "I had those (different older models) in the past. I depend on your cables and co, but even in a good (real life) situation, I would assume that not even the half will be possible.\n\n=&gt; I had maybe 10%-25% of the advertised speed (different flats and power plugs), but never more.",
+            "score": 1,
+            "author": "Der_Knob"
+        },
+        {
+            "level": 0,
+            "comment": "I have similar GB ones, I can get about 300mbs on them, not terrible.",
+            "score": 1,
+            "author": "Masrim"
+        },
+        {
+            "level": 0,
+            "comment": "* The terms \u201cAV1000\u201d and \u201c1000Mbps\u201d are derived from applicable specifications and refer to the theoretical maximum physical-layer data transfer rate. Those terms are used on this product solely to indicate its compatibility with other \u201cAV1000\u201d or \u201c1000Mbps\u201d powerline devices. Actual data speeds vary and may be limited by the product\u2019s Ethernet port and other network conditions such as data traffic, electrical noise, and wiring issues. For better performance, powerline devices should be deployed on the same electrical circuit and rated for the same HomePlug standard. A minimum of two powerline devices are required to establish a powerline connection. If you are uncertain about your network conditions, you should consult an IT professional to assist in selecting a networking product.",
+            "score": 1,
+            "author": "gosmall1965"
+        },
+        {
+            "level": 0,
+            "comment": "What about latency?  I don\u2019t really care if it hits 1000 but the low latency is crucial",
+            "score": 1,
+            "author": "jcwillia1"
+        },
+        {
+            "level": 0,
+            "comment": "I used this brand but a different model for my first one. Tried 5 or 6 total over time. Way better speed and connection than wifi but no, you will not even get close to your internet full capabilities. I have never had a powerline adaptors give me more than 100 Mbps.\n\nIf you can't just run a cable, then the powerline adaptors will likely be a better option than wifi by a long shot. I just got tired of not getting my full speed and ran a cable and I would never go back.",
+            "score": 1,
+            "author": "91FrogMachine"
+        },
+        {
+            "level": 0,
+            "comment": "Not 1gbps but 300ish for me. Got the exact model and a gigabit connection.",
+            "score": 1,
+            "author": "qwertyalp1020"
+        },
+        {
+            "level": 0,
+            "comment": "It has 1000mbit/s the same way WiFi 5 has 3200mbit/s\u2026 in a lab it technically does",
+            "score": 1,
+            "author": "IvanIsOnReddit"
+        },
+        {
+            "level": 0,
+            "comment": "I'm gonna say no, simply because manufacturers tend to oversell on this sort of thing. Odds are it will reach its advertised in the utmost ideal condition. And they get away with it because in those ideal conditions, they can  back up their claim.",
+            "score": 1,
+            "author": "WhatsTheRumpuss"
+        },
+        {
+            "level": 0,
+            "comment": "It depends. Powerline is really dependant on the wiring in the house. In one room I'll get 180 Mbps, but on another I'll get 40Mb/s. You'll almost for sure not going to get 1000 Mb/s though.",
+            "score": 1,
+            "author": "DarkDra9on555"
+        },
+        {
+            "level": 0,
+            "comment": "The port is probably wired for Gigabit. I've never seen wallsocket ethernet adapters reach above 300Mbit",
+            "score": 1,
+            "author": "Yama92"
+        },
+        {
+            "level": 0,
+            "comment": "Powerline adapters work, but are dependent on a LOT of factors. If you plug them in on different groupsnwithin your household, they already work lot less well.\nSince this is usually exactly what you want to do, you will very likely never see the max speed.",
+            "score": 1,
+            "author": "boersc"
+        },
+        {
+            "level": 0,
+            "comment": "1000 megabit per second I assume, so divide by 8 and you will find out how much MBps it is: 125 MBps which should be plenty too",
+            "score": 1,
+            "author": "Dennisminjian"
+        },
+        {
+            "level": 0,
+            "comment": "Power line adapter halved my speed, I thought it just my particular unit so went out and got new one, same shit, unless the distance is so unreasonable, I'd just run CAT cable all the way to the modem.",
+            "score": 1,
+            "author": "OperatorWolfie"
+        },
+        {
+            "level": 0,
+            "comment": "(In Uk with 240v standard)  \n\n\nAwww. Kinda cute.",
+            "score": 1,
+            "author": "MedievalFolkDance"
+        },
+        {
+            "level": 0,
+            "comment": "I got a couple of tp-link ones that say 1gb, and depending on distance and quality of cables in your walls they can achieve those speeds. If you buy the 3$ knockoffs from AliExpress tho I'm not so sure",
+            "score": 1,
+            "author": "Talponz"
+        },
+        {
+            "level": 0,
+            "comment": "*coughs* haha that's correct.",
+            "score": 1,
+            "author": "kekehesterprynne"
+        },
+        {
+            "level": 0,
+            "comment": "Get a moca adapter. I get about 750 out of the 800 that comes in",
+            "score": 1,
+            "author": "Fun_Back_6201"
+        },
+        {
+            "level": 0,
+            "comment": "[here](https://www.techadvisor.com/article/719309/tp-link-av1000-gigabit-powerline-kit-review.html) they reached 373Mbps",
+            "score": 1,
+            "author": "erikwarm"
+        },
+        {
+            "level": 0,
+            "comment": "No. There is no scenario in which you would approach 1gbps of actual speed.\n\nI categorically do not recommend powerline adapters unless there are no other options.\n\nI highly recommend MOCA adapters for anyone with coax running through their house. These will give you advertised speeds.",
+            "score": 1,
+            "author": "drinkmorejava"
+        },
+        {
+            "level": 0,
+            "comment": "Probably not, mainly because it depends on the electrical wiring in your home; that should go without also saying, if you're not getting 1000 mb/s directly out of your modem, then you're not getting 1000 mb/s out of your powerline bridge.\n\nPowerlines can be a bit touchy on how well they work, so definitely get them from Amazon or any other retailer that has a good refund policy.\n\nSome people say they work, some say they don't, from my experience, they do work. My room and PC is pretty far out of range to my modem and wifi access point, so I was able to bridge with powerline, the speeds were just about the same (50 down/ 20 up) but latency and packet loss was where I saw the best improvements 200-ish ms to the nearest ISP datacenter to 50-ish ms and almost no packet loss.\n\nI have also tried it in multiple locations in my house all of which worked, so play around with your setup and see what works most effectively.",
+            "score": 1,
+            "author": "mythrilcrafter"
+        },
+        {
+            "level": 0,
+            "comment": "Bottom line l, no way. To get high speed you need to have Rx and Tx pairs, there are 4 pairs in a decent cable AND they are twisted together with a shield around it. So there's no way that a low quality unshielded house cable with many points of reflection would ever get speets compared to a switch.",
+            "score": 1,
+            "author": "stu_pid_1"
+        },
+        {
+            "level": 0,
+            "comment": "They do work for low latency.  Take the readings similar to Wireless Routers and their theoretical limits.  Under the most ideal conditions will you see possibly close to those speeds.   Normal use, no.  My son used them for gaming for a while and they did give low latency, but about 50-100mbit speeds.   Work best if plugged directly into a wall and on the same circuit breaker (which is almost pointless as that would be the same room in most houses).  All depends on distance from each other as far as the breakers go in my experience.",
+            "score": 1,
+            "author": "MrRuckusRCRC"
+        },
+        {
+            "level": 0,
+            "comment": "Man I have these they don't go over a 100Mb/s guaranteed. They have Gigabit ports but that doesn't change what's in your walls. And don't buy them from Media World please, they're overpriced.\n\nAnd you need to be lucky to have them working in the first place",
+            "score": 1,
+            "author": "Pacu99"
+        },
+        {
+            "level": 0,
+            "comment": "Well I have 300mbs internet and I\u2019m in my room using these and am getting like 120 so I don\u2019t knao",
+            "score": 1,
+            "author": "Wilfredlygaming"
+        },
+        {
+            "level": 0,
+            "comment": "Under perfect conditions, yes it can. Your house likely is not perfect conditions.",
+            "score": 1,
+            "author": "bangbangracer"
+        },
+        {
+            "level": 0,
+            "comment": "Hell no. It's a miracle that this even works as good as it does but the connection is without a doubt going to be terrible.",
+            "score": 1,
+            "author": "HavokDJ"
+        },
+        {
+            "level": 0,
+            "comment": "1gb per second?? Ew",
+            "score": 1,
+            "author": "Equivalent_One7928"
+        },
+        {
+            "level": 0,
+            "comment": "How is this used?",
+            "score": 1,
+            "author": "Alienpedestrian"
+        },
+        {
+            "level": 0,
+            "comment": "I've used a bunch of these in the past and they never go that high. Even if we ignore the 100mbps Lan in this model, even 1Gb ones I used in the past gave me 200-400-600mbps max.\nI'm pretty sure it depends on the power line and how that's hooked up. Sometimes they don't work at all because of it.",
+            "score": 1,
+            "author": "DV_Red"
+        },
+        {
+            "level": 0,
+            "comment": "If possible, a MOCA adapter or Mesh WiFi system will be far more effective.",
+            "score": 1,
+            "author": "garyghostman0"
+        },
+        {
+            "level": 0,
+            "comment": "TP-Link is a pretty reliable brand for home networking stuff, never had a problem with tghem. Their stuff just does what it says on the tin.\n\nIf you do not have high quality cabling in your wall then the Gb port is going to be wasted as others have pointed out. Bad cabling usually results in such a high network ping that you will be constantly timing out.",
+            "score": 1,
+            "author": "reddit_pengwin"
+        },
+        {
+            "level": 0,
+            "comment": "I've used powerline adapters for years because my router is in the basement and I'm on the 2nd floor on the opposite side of the house and my wifi connection was abysmal when I first moved here and I've been too lazy to fix it.\n\nYou get nowhere near the advertised speeds, BUT the connection is very stable / consistent which wasn't the case for my wifi situaiton. \n\nI'm sure a proper wifi setup with all the stuff to solve range issues would ultimately perform better but these are cheap and consistent if that's where you're at.\n\nThe big disclaimer is it depends on the wiring in your house. These can be horrific or they can be ok, but they'll almost never be super fast.",
+            "score": 1,
+            "author": "Bacon-muffin"
+        },
+        {
+            "level": 0,
+            "comment": "I have similar ones, and while I have 1Gbps, I get around 240-250Mbps when using them instead of straight ethernetting to the router. The house was built around the 70s-80s IIRC, so I guess it's not bad at all, but it does depend a lot on the electrical installation inside the walls.\n\nUnless your electrical installation is very old/bad or you are super far away from the router, they do a decent job in my experience.",
+            "score": 1,
+            "author": "Dawn_of_Enceladus"
+        },
+        {
+            "level": 0,
+            "comment": "The Gigabit speed only refers to the ethernet jack. Whether you get gigabit speed depends on the quality of your power lines.\n\n&amp;#x200B;\n\njust use a second/spare/old router that has repeater mode. works better.",
+            "score": 1,
+            "author": "Cyrustica"
+        },
+        {
+            "level": 0,
+            "comment": "![gif](giphy|11dR2hEgtN5KoM)",
+            "score": 1,
+            "author": "Please_Log_In"
+        },
+        {
+            "level": 0,
+            "comment": "The overall max speed with these is dictated by the speed of the slowest device on the house system.",
+            "score": 1,
+            "author": "d4dog"
+        },
+        {
+            "level": 0,
+            "comment": "Yes but depend of your cable instalation, meters from A to B etc. Btw i bougth that and i used It no longer than a year. It broke cuz storm fried the pcl and cannot find standalone",
+            "score": 1,
+            "author": "MOMGETTHEWEED"
+        },
+        {
+            "level": 0,
+            "comment": "I have used [This TPlink powerline adapter](https://www.amazon.com/TP-LINK-Powerline-Pass-Through-TL-PA9020P-KIT/dp/B01H74VKZU/) in the passed and have had a really good experience with them. Gave them to my brother not too long ago for his new place.",
+            "score": 1,
+            "author": "NoblePineapples"
+        },
+        {
+            "level": 0,
+            "comment": "I have been using those in my Dad's 60-year-old house and they worked a treat. About 600-800 Mbps on average, which is astonishing to me. I never expected them to work so well in such an old house.",
+            "score": 1,
+            "author": "JAXxXTheRipper"
+        },
+        {
+            "level": 0,
+            "comment": "Dont do it, i used to work that department. Basically because the signal is traveling through the (copper) electricity wires it will reduce in speed significantly.\n\nIt might be a giga port but it will never reach that speed at the pc level",
+            "score": 1,
+            "author": "Pierce2133"
+        },
+        {
+            "level": 0,
+            "comment": "In theory, yes. However, it heavily depends on the electrical wiring of your housing, like if there are different circuits you connect these things to. Also, these kind of products have a huge overhead of protocols to ensure stability which also decreases the actual internet speed by alot. Once I got the information from customer service that about 30-40% of the speed will be used as overhead.",
+            "score": 1,
+            "author": "Nandschgi"
+        },
+        {
+            "level": 0,
+            "comment": "Short answer - No. Less Short Answer - This is shit tier tech that barely functions. Slow and shit. Better off spending money on either doing it the right way or buying some wireless bridges.",
+            "score": 1,
+            "author": "ThicklyApplicationed"
+        },
+        {
+            "level": 0,
+            "comment": "I don't read whatever language that is.  However these things are always UP TO and that up to was in ideal conditions.",
+            "score": 1,
+            "author": "CharAznableLoNZ"
+        },
+        {
+            "level": 0,
+            "comment": "Depends on internet speed and quality of electricity network",
+            "score": 1,
+            "author": "michaelbelgium"
+        },
+        {
+            "level": 0,
+            "comment": "Just pay an electrician to run a cable along the outside of your house from your router to your setup. Its worth the money. I used those things for years and they served their purpose but it depends on how recent the wiring in your walls and sockets was done. Theyre bad for interference too.",
+            "score": 1,
+            "author": "---0---1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;Just pay an electrician\n\nOr just do it yourself, running cat5/6/7/8 is super frickin easy. Paying someone to run the cable is like paying someone to assemble your computer for you..\n\nCan you pay someone to do it? Absolutely.\n\nShould you pay someone to do it? Absolutely not.\n\nElectricians usually charge hundreds of dollars per hour, and often come with a minimum number of hours.",
+                    "score": 1,
+                    "author": "nospamkhanman"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Stay away from these things. Theres is only 1 thing worse than powerline adapters.",
+            "score": 1,
+            "author": "redditisbestanime"
+        },
+        {
+            "level": 0,
+            "comment": "Sort of.  Usually powerline / [G.hn](https://G.hn) adaptors quote double the max bandwidth, as they count both in and out.  So if it says 500mbps it will be 500mbps up / 500mbps down most likely.  However, that assumes completely ideal conditions.\n\nIn reality you'll likely get under 200mbps in my experience.  \n\nThe link speed to the devices themselves will likely be the full gigabit, but since the important part is the speed between teh two devices then that becomes the limiting factor.",
+            "score": 1,
+            "author": "hearnia_2k"
+        },
+        {
+            "level": 0,
+            "comment": "These things suck, have a couple and the stability is crap, ive tried in 2 different homes, they had a lot of trouble staying connected, ended just buying a long Ethernet cable, much more stable and cheap",
+            "score": 1,
+            "author": "Rubfer"
+        },
+        {
+            "level": 0,
+            "comment": "it may, but your power lines wont",
+            "score": 1,
+            "author": "Recipe-Jaded"
+        },
+        {
+            "level": 0,
+            "comment": "Powerline adapters are generally not that great to begin with and I highly doubt you'll get speeds anywhere close to advertised. \n\nI honestly wish people would stop buying these adapters, as well as wifi extenders.",
+            "score": 1,
+            "author": "LiarInGlass"
+        },
+        {
+            "level": 0,
+            "comment": "At my old house I approached 1 Gbps with a set like this going from the basement to the top floor.  In my new house using the same gear I get about 75 Mbps and intermittent packet loss.",
+            "score": 1,
+            "author": "CowbellConcerto"
+        },
+        {
+            "level": 0,
+            "comment": "I bought one of these when I had major lag problems. Solved the issue but it depends on your wiring. I didn't get anywhere close to the advertised speed but no more lag :)",
+            "score": 1,
+            "author": "MakingPie"
+        },
+        {
+            "level": 0,
+            "comment": "I had great results using powerline adapters when I was in an apartment, they don\u2019t like surge protection or seperate circuits but they did a great job and were better than wifi at the time (2006)",
+            "score": 1,
+            "author": "mostlyharmless1971"
+        },
+        {
+            "level": 0,
+            "comment": "I believe that's the theoretical max. Practically, depending on the age of the building it will probably be anywhere from 40-200 Mbps.",
+            "score": 1,
+            "author": "-completely-useles-"
+        },
+        {
+            "level": 0,
+            "comment": "This will bottleneck somewhere for sure",
+            "score": 1,
+            "author": "cyberwicklow"
+        },
+        {
+            "level": 0,
+            "comment": "I can assure you those can't gigabit, I have the Devolo magic that costs around 120 or so and I don't have more than 30Mbit/s even having  300Mbit with direct connection to the router.\nBut in my opinion if you can't use cable it's the best and stable option better than a repeater.\nI would look at other places rather than Media Markt, normally they have expensive prices for pc, internet stuff.\nI'm using PcComponentes and it never disappoints.",
+            "score": 1,
+            "author": "Upset-Mud5058"
+        },
+        {
+            "level": 0,
+            "comment": "I have a 600mbps ones and they give exactly that much so yeah, i believe they are 1gbps",
+            "score": 1,
+            "author": "OneMonthWilly"
+        },
+        {
+            "level": 0,
+            "comment": "I used powerline setup to bypass interferences in the very router crowded appartament building, my ping has never been more stable. Can't tell about the speed though, never bothered to check it",
+            "score": 1,
+            "author": "A_inc_tm"
+        },
+        {
+            "level": 0,
+            "comment": "The signal gets modulated on the power cables in your house.\nIf your house has good electricity, it may be okay.\nNormally, over short length, it may be okay.\nThe longer the signal has to travel, the more interference may ruin it.",
+            "score": 1,
+            "author": "mythymehascome",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Can confirm. I used a similar kit in my old apartment and i would occasionally loose internet for a minute or 2",
+                    "score": 1,
+                    "author": "Doom-Slay"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I had the exact sames, mine gone up to 75mbit in the real use case when i brought them closer to each other the got faster i gues the 1000mbit is an \"up to best case scenario\"",
+            "score": 1,
+            "author": "hias2696"
+        },
+        {
+            "level": 0,
+            "comment": "It depends entirely on the wiring in the walls, and how much \"stuff\" is going on between one adapter and the next.\n\nI had a pair I used in two different old apartments. A test setup with two adapters in the same room did reach the max speed for my fiber at the time - but the real setup across rooms (and probably through the breaker box) reached more like 20% of that. That said, latency has always been very good in every setup I've tried.\n\nIn one setup I occasionally had issues with it cutting out when the microwave was running. So interference issues are possible - though usually rare.\n\nOh, and some of them can run pretty hot.\n\nThese days, there's a good chance decent mesh Wifi will give you better results.",
+            "score": 1,
+            "author": "KittensAndFallout"
+        },
+        {
+            "level": 0,
+            "comment": "Yes",
+            "score": 1,
+            "author": "TeamfightPvP"
+        },
+        {
+            "level": 0,
+            "comment": "we got the same adapters and we have around 20m of copper cables and a breaker between the adapters. the speed is roughly 90mbit/s. most importantly for me the connection is 100% stable. \n\nbefore these adapters we used wifi 5 with \\~5m between PC and router. roughly once per hour i experienced pretty bad lags. this completely went away with the adapters. secondly, even when we turn on other large electrical loads on the same power line the signal stays intact.",
+            "score": 1,
+            "author": "_d0s_"
+        },
+        {
+            "level": 0,
+            "comment": "Depends on how many junction boxes and breakers you pass. \nIf it\u2019s between 2 plugs in the same room I think you can get 1gbs and I\u2019m not sure.\n\nBut for me I\u2019ve used some of these and I get 70mb/s because it\u2019s from one side to another of the house and passes breakers and junction boxes meaning",
+            "score": 1,
+            "author": "Mechanicmonster"
+        },
+        {
+            "level": 0,
+            "comment": "Most I get out of a power line adapter is 200Mbps, doesn't really matter if you keep getting the higher speed ones. Not sure if brand new houses have any improvements over this.",
+            "score": 1,
+            "author": "raith1213"
+        },
+        {
+            "level": 0,
+            "comment": "Depends on the quality of your wire and the length between the ports. Certain breakers will also block or decrease the speed",
+            "score": 1,
+            "author": "hurtinacar"
+        },
+        {
+            "level": 0,
+            "comment": "I think it's actually megabits, not megabytes. Because it is powers of 2, to do the conversion you have to divide by 8.\n\n1 000Mbits / 8 = 125 Mbytes.\n\nIt's a small trick internet providers use in France (and maybe in Spain too, idk). Bigger numbers = better.\nYour max speed with that device is 125Mb/s.",
+            "score": -2,
+            "author": "Zorcky-2C",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That is just measuring bits vs bytes. Is not at all a trick.  \n\nData throughput is almost always done in bits. That is just industry norm, service provider or not.  \n\nYou need to fix your syntax, you are causing confusion in your argument.  \n\n\n125Mb/s or mbps = megabits per second.  \n125MB/s = megabytes per second.  \n125MiB/s = mebibytes per second.  \nThese are 3 different speeds of data throughput.",
+                    "score": 6,
+                    "author": "Curun"
+                },
+                {
+                    "level": 1,
+                    "comment": "Another way to put it is, there are 8 bits to a byte. I don't think it was originally meant to be misleading.",
+                    "score": 1,
+                    "author": "SaltyIncinerawr"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "In my experience with these powerline adapters you can expect about 200-500mbps, but that depends on the quality of your power cables as well as how many other devices run on the same breaker... I would say, with everything optimal you can expect up to 700-900 but never the full 1000\u2026",
+            "score": 0,
+            "author": "Quan0x"
+        },
+        {
+            "level": 0,
+            "comment": "I have these and the connection is not only highly intermittent, but it is much slower\nThan wifi as well.\n\nHave lived and used in 4 houses. Sub 10 megabits and dropped connections. Gave up on them and the steam links.",
+            "score": 0,
+            "author": "OmegaAngelo"
+        },
+        {
+            "level": 0,
+            "comment": "These things are absolutely rip off!\n\nI had some that were supposed to be able to 600Mbits. They had 2 LAN ports. If one LAN cable from the router (fiber connection with 1024 down | 550 up), on the other port, so on the same device came only 80 Mbit. For me, this is a very expensive rip-off!",
+            "score": 0,
+            "author": "mllsm_66"
+        },
+        {
+            "level": 0,
+            "comment": "A friend of mine lost a laptop when using one of these due to the refridgerator causing voltage spikes on the kitchen circuit it was in, which was the same his laptop was plugged into as he worked from his kitchen counter.  The voltage spike somehow crossed over into the network portion of the connection. \n\nI'd avoid.",
+            "score": 0,
+            "author": "GamingVPN"
+        }
+    ]
+}

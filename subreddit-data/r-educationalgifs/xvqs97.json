@@ -1,0 +1,128 @@
+{
+    "id": "xvqs97",
+    "score": 173,
+    "title": "Visualized Explanation of Logistic Regression",
+    "author": "RacerRex9727",
+    "date": 1664917746.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/xvqs97",
+    "media_urls": [
+        "https://i.redd.it/4hsywapotur91.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 9,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's a bit hard to go down that rabbit hole, and I hate to hand-wave over it in a quick animation. But the combined (multiplied)  values of all those dashed lines must be maximized to get the best fit. There are a couple of optimization techniques to do this but I'll have to make a separate animation for that, from hill climbing to gradient descent.\n\nJosh Starmer goes into more depth here: https://www.youtube.com/watch?v=BfKanl1aSG0",
+                    "score": 6,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 4,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You're right it's not clear. I'll work on a better visualization of this later.\n\nBut to calculate the total likelihood, multiply the true y-values, and then for the false values multiply  (1 - y) instead of y. Multiply all those together and you got total likelihood. \n\nIf you have floating point issues on a computer (which is likely)  take the log() of each y and (1 -y) value and add them instead of multiply, and then call exp() to convert the result back.",
+                                    "score": 4,
+                                    "author": "RacerRex9727",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 3,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's most obvious application is education or teaching concepts. But I think it also has potential to be used for any setting that needs to convey complex information in the most visualized way possible. I can see it, for example, being used to train nontechnical managers on how something works.",
+                                                    "score": 2,
+                                                    "author": "RacerRex9727",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 3,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Well for your work, it just might beat PowerPoint!\n\nJust note it takes some practice and getting used to\u2026 but after a dozen or two hours it starts to become quick to use and express ideas.",
+                                                                    "score": 1,
+                                                                    "author": "RacerRex9727",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[deleted]",
+                                                                            "score": 2,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Consider buying this guy\u2019s course. There is some helpful information in it if you\u2019re serious about proficiency. \n\nhttps://www.devtaoism.com/courses",
+                                                                                    "score": 2,
+                                                                                    "author": "RacerRex9727",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This gif sucks just as much as the last time it was posted. It does not explain anything. At all.",
+            "score": 7,
+            "author": "ThePoultryWhisperer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Everything just seems made up and fake.",
+                    "score": 2,
+                    "author": "kdeaton06",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah lol. It is nonsense without a lot more details.",
+                            "score": 1,
+                            "author": "ThePoultryWhisperer"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I like this and it makes sense to me, but I think that\u2019s only because I\u2019m already a data scientist. Maybe you\u2019d have more luck posting this in a data science subreddit? \n\nAs others have said, for a general subreddit like this one you\u2019re gonna need a whole lot more explanation. The animation is very neat though!",
+            "score": 3,
+            "author": "iRoygbiv"
+        },
+        {
+            "level": 0,
+            "comment": "This is original content, and a much-improved version of an older animation I posted. The full video with narration is here: [https://youtu.be/EKm0spFxFG4](https://youtu.be/EKm0spFxFG4)",
+            "score": 2,
+            "author": "RacerRex9727"
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "id": "1495vhp",
+    "score": 70,
+    "title": "Can this configuration work on the PCIE slots?",
+    "author": "kaz213",
+    "date": 1686743495.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/1495vhp",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I have an expansion card M.2 NVME to PCIe Adapter (3.0 x4) and will put an M.2 NVME SSD into it.\n\nWhat I plan on doing is to put this expansion card adapter into the second PCIe 3.0 x16_2 since I have a GPU with a PCIe 3.0 x16 interface currently in place at PCIe 3.0 x16_1 slot. Since the adapter only has x4 it is compatible to fit in the PCIe 3.0 x16_2 slot. \n\nThe adapter is x4 so I'm not totally sure if this will trigger the two PCIe 3.0 x16 slots into a lower mode.\n\nMy question is will this make the 2 PCIe x3.0 x16 slots run in x8 mode since I have this adapter installed in x16_2 slot thus reducing the performance of the GPU?\n\nAlso if it this setup does work without reducing performance of the GPU or any GPU, can I swap the GPU into the PCIe 3.0 x16_2 slot and the adapter into the PCIe 3.0 x16_1 slot? \n\nVery thanks bros.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Yes it will fit in slots number 1, 3, or 4, and yes, if it's installed in slot 3, slot 1 will drop to x8.",
+            "score": 33,
+            "author": "BmanUltima",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Even if the adapter is not a GPU it will make x16_1 slot into x8 mode?",
+                    "score": 9,
+                    "author": "kaz213",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes",
+                            "score": 11,
+                            "author": "Vaporizzor"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yes, putting any PCIe device into that slot will drop the top slot to x8.",
+                            "score": 2,
+                            "author": "BmanUltima"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Have you checked the spec sheet to see if the third x16 slot is at least x4 electrically?\n\nExtra x16 sized slots outside of the primary one are usually at the very least wired for x4, with very rare cases of x2.",
+                            "score": 3,
+                            "author": "WilliamSorry",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not yet but what part of the motherboard manual would that be indicated?",
+                                    "score": 2,
+                                    "author": "kaz213",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Look for pages mentioning pcie lanes/pci express lanes.",
+                                            "score": 3,
+                                            "author": "WilliamSorry",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "On slot four, it does say something about x4 mode. I'd just keep in mind it's going to be limited to PCIe 2.0 speeds (500MB/s per lane, so 2GB/s total bandwidth). For pretty much any practical task, 2GB/s isn't going to be a bottleneck, so I'd put it in slot 4 just to keep it away from stealing lanes from the GPU (and even if for some reason I'm not seeing it gets relegated to x1 mode (500MB/s)... I'd still keep it in that slot, depending on your use case).",
+                                                    "score": 4,
+                                                    "author": "Franklin2543"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Beat me to it. So if it's a big GPU covering the small PCIe slot, the only remaining option would be Slot 4.\n\nI'd consider Slots 1 and 3 \"off-limits\".",
+                    "score": 2,
+                    "author": "Trivo3"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can plug an x1, x4, x8, or x16 card into an x16 slot. You can install a smaller pcie connector inside any same or larger socket on your board with no issues. I currently have my x8 sound card (yes, in 2023 I still use a sound card) plugged into my bottom x16 slot. Motherboard will automatically switch to the mode compatible with what is actually plugged into the slot.\n\nI also use two nvme ssds with my 7900 XTX. No, there are not enough pcie lanes (I only have 20 I think), but you're never smacking your SSDs at the same time you're smacking the gpu (at least while gaming), and have never noticed a speed/bottleneck under normal usage.",
+            "score": 5,
+            "author": "NebraskaGeek",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Your x8 sound card is connected to the PCIe 4.0 x16 am I right? Also how many PCIe 4.0 x16 you have on your Mobo?",
+                    "score": 1,
+                    "author": "kaz213",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "0. Mine are pcie Gen 3. I have 3 x16 slots, full size atx board. Only the bottom x16 is avaliable for other pcie cards because of my giant gpu, and I've used x4 and x8 cards in that x16 slot over the years.",
+                            "score": 2,
+                            "author": "NebraskaGeek",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sorry if this may confuse you but are all the PCIe x16 slots on your Mobo 3.0 or there is one that uses 2.0? Also is your NVME SSD connected also via an adapter x4 or your Mobo has an M.2? Thanks",
+                                    "score": 1,
+                                    "author": "kaz213"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Plug it into slot 4 to avoid a bandwidth hit to the GPU. The SSD speed will be lower but 2GB/s is still really quick compared to SATA.\n\nWith that said, if maximum SSD performance is important, feel free to benchmark the GPU in x8 vs x16 mode. The performance impact may be minimal depending on your configuration and choice of games.\n\nI do need to warn you that you might not be able to boot from NVME without a bootloader on a SATA disk as the board probably does not have a UEFI NVME driver in the firmware. That didn't start showing up often until Haswell CPUs and the later Intel 80 and 90 series chipsets. \n\nTheoretically speaking you might be able to hack one into the firmware but doing so risks bricking the board if the resultant new image is corrupted.",
+            "score": 4,
+            "author": "madscientistEE",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's fine I plan on using it just storage for games and apps. Thanks btw",
+                    "score": 1,
+                    "author": "kaz213"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; The adapter is x4 so I'm not totally sure if this will trigger the two PCIe 3.0 x16 slots into a lower mode. \n\nIt will. It will cause your GPU in the first slot to run in 8x mode. So, you'll be cutting its available bandwidth in half. \n\nUse one of your other slots if possible.",
+            "score": 3,
+            "author": "Ninlilizi"
+        },
+        {
+            "level": 0,
+            "comment": "My recommendation is the number 4 slot despite it being slower PCIe 2.0 slot, as based on your motherboard manual slots 1 and 3 share bandwidth and thus any add-on card in either slot (1 or 3) will downgrade said slots to PCIe x8. \n\nPCIe 2.0 slot itself is limited to x4 mode based on the manual, which is sufficient for decent PCIe 3.0 M.2 NVME SSD performance. You won't get the full theoretical speed from say a Samsung 970 EVO plus, so keep that in mind if you haven't bought an SSD yet.\n\nPCIe 2.0 is 500 MB/lane, so at x4 (four lanes) you'd get about 2GB/s out of it. Which is still far better than a SATAIII SSD at max of 530 MB/s.",
+            "score": 2,
+            "author": "Nordmuth",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I actually plan on getting the 970 Evo Plus but I guess it would be better to look for 2000MB/s NVME SSDs if I'm going to use the PCIe 2.0 x16 slot. Thanks btw.",
+                    "score": 1,
+                    "author": "kaz213"
+                }
+            ]
+        }
+    ]
+}

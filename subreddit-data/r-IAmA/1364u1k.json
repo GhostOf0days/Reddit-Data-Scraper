@@ -1,0 +1,1500 @@
+{
+    "id": "1364u1k",
+    "score": 2710,
+    "title": "I spent five years as a forensic electrical engineer, investigating fires, equipment damage, and personal injury for insurance claims and lawsuits. AMA",
+    "author": "swcollings",
+    "date": 1683072514.0,
+    "url": "https://www.reddit.com/r/IAmA/comments/1364u1k",
+    "media_urls": [
+        "https://www.reddit.com/r/IAmA/comments/1364u1k/i_spent_five_years_as_a_forensic_electrical/"
+    ],
+    "other_urls": [
+        "https://postimg.cc/1gBBF9gV"
+    ],
+    "postText": "https://postimg.cc/1gBBF9gV\n\nYou can compare my photo against my LinkedIn profile, Stephen Collings.\n\nEDIT: Thanks for a good time, everyone! A summary of frequently asked questions.\n\nNo I will not tell you how to start an undetectable fire.\n\nThe job generally requires a bachelor's degree in engineering and a good bit of hands on experience. Licensure is very helpful. If you're interested, look into one of the major forensic firms. Envista, EDT, EFI Global, Jensen Hughes, YA, JS Held, Rimkus...\n\nI very rarely ran into any attempted fraud, though I've seen people lie to cover up their stupid mistakes. I think structural engineers handling roof claims see more outright fraud than I do.\n\nTreat your extension cords properly, follow manufacturer instructions on everything, only buy equipment that's marked UL or ETL or some equivalent certification, and never ever bypass a safety to get something working.\n\nNobody has ever asked me to change my opinion. Adjusters aren't trying to not pay claims. They genuinely don't care which way it lands, they just want to know reality so they can proceed appropriately.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "For more AMAs on this topic, subscribe to r/IAmA_Specialized, and check out our other topic-specific AMA subreddits [here](https://reddit.com/r/IAmA/wiki/index#wiki_affiliate_topic-specific_subreddits).",
+            "score": 1,
+            "author": "IAmAModBot"
+        },
+        {
+            "level": 0,
+            "comment": "What\u2019s the craziest fault you found that helped a client? \n\nI\u2019m reminded of the faulty spring in the ignition that a forensic investigation of a car that caused the electric steering to shut down and caused a girl to swerve into oncoming traffic resulting in her death. She had been assumed as just being a negligent driver but her dad believed otherwise and hired the forensic investigator.",
+            "score": 380,
+            "author": "upvoatsforall",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The first one that comes to mind didn't end up helping the insured but it was close. It was a factory that one morning randomly had a fire in a cable tray. They had contractual obligations to maintain production so they had already ripped out all the cable before I got there. I asked them to ship me the cable, so they did. A few days later a semi backed up to my loading dock and dropped off six tons of burnt cable.\n\nSix. Tons.\n\nI spent the next few days going through every last piece of that cable until I found the culprit. Years before, a single run had been installed improperly. It had extra length, instead of cutting it short, the installer had left it coiled up in the cable tray. The extra heat from that was enough to damage the insulation a little bit every time it ran, until after several years the insulation finally failed entirely.\n\nThey were going to sue the installer, until they realized the installer was their own subsidiary...",
+                    "score": 905,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That only took you a few day? That\u2019s impressive.",
+                            "score": 204,
+                            "author": "drocks27",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "24 man hours is a long time, really.",
+                                    "score": 421,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Still, very impressive. You've already won me over with your dedication, bravo!",
+                                            "score": 61,
+                                            "author": "Nameti"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "a few days \u00f7 6 tons = 1-2 tons of wire inspected a day. sounds impressive",
+                                    "score": 65,
+                                    "author": "Sentarry",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "500kcmil CU is about 1.75lbs a foot so that cuts it down.  Low-voltage wire that can't support an arc (24VDC for instance) cuts it down a little more.",
+                                            "score": 31,
+                                            "author": "baronvonhawkeye",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Plus he could\u2019ve found the problem within the first 3 tons or whatever",
+                                            "score": 28,
+                                            "author": "wetdreamteam",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What kind of cable was it? Is it okay to leave coils in cables below a certain threshold for example? Like signal cable I'm assuming would probably be fine, maybe low voltage stuff, just not mains voltage, or what? I know to fully unwind an extension reel for that reason.",
+                            "score": 23,
+                            "author": "Ziazan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It was some kind of European VFD-rated motor cable, as I recall.\n\nAs for what would be okay, the only answer is \"follow the manufacturer's instructions\" and \"follow the NEC.\" As a broad statement about what's more or less likely to cause a fire, anything running at close to its current limit is more likely to cause a fire when it can't get airflow. So signal wire would, as a broad general statement, be safer to coil up. But it still might have issues, especially considering things like PoE exists, or it might mess up the signal integrity, or or or.\n\nFollow the standards and the manufactuer's instructions.",
+                                    "score": 61,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This X 100!!  I was just telling guys this today. Lots of people talk bad about UF wire.  If you actually install it the way it's written, it'll work.",
+                                            "score": 16,
+                                            "author": "MazdaCapella"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Signal cables are *generally* ok to have the excess coiled up.\n\nFor power cables we usually run the excess past the end point then back again, so it's essentially two parallel cables rather than a big coil that will get hot(ter).\n\nThe same applies to extension cords at home by the way. Unroll them when in use!",
+                                    "score": 29,
+                                    "author": "Lampshader",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I was this many days old before I thought about the wisdom of fully unrolling an extension cable reel.\nI'm 57*\n\n\n*fuck, am I really?",
+                                    "score": 23,
+                                    "author": "yallbegood",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "What does that even look like? How can you tell that the cable was coiled up and overheated? Did they have every cable labelled and give you a detailed map of the building's wiring diagram? I would expect that they would have chopped up the cables to make it easier to pull out and it would look like an eldritch version of the flying spaghetti monster.\n\nAlso, if you've never heard of it, /r/cablefail is a fun sub when you want some schadenfreude (it's geared more towards IT workers, but still).",
+                            "score": 74,
+                            "author": "stickmaster_flex",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; I would expect that they would have chopped up the cables to make it easier to pull out and it would look like an eldritch version of the flying spaghetti monster.\n\nWell said, that was pretty accurate. It helped that most of the cable wasn't burned. I could eliminate anything with no burns, and then narrow to the part that was most burned. Which turned out to be a coil which conveniently had melted itself into shape and couldn't uncoil any more. There were enough markings on it far enough away from the burning that I could ID the cable type, and nobody uses VFD-rated motor cable for anything but running a motor on a VFD.",
+                                    "score": 216,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Damn dude. That's impressive.",
+                                            "score": 38,
+                                            "author": "stickmaster_flex",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I'm honestly more impressed that the plant had accurate enough documentation to narrow it down to a specific device/ installer.\n\nThat's a unicorn in my world",
+                                                    "score": 47,
+                                                    "author": "I_Automate",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Seen this entirely too much.  I mean the hiding the extra, not the failure. Great job finding it!  This is a good example of what an old salt would say when I was young \"It takes just as long to shit it in, in the end\"",
+                            "score": 11,
+                            "author": "MazdaCapella"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not the guy but I worked at a company years ago that did fire forensics and I'd read the reports.\n\nCraziest one I read, it was a shed fire. Nothing wild at first. Early in the report, the engineer mentioned there was a blue canister that said \"gasoline\" near the site of fire. I didn't think much at first other than it was odd they mentioned its color.\n\nThen I got to the part where they recount the insured's story. The guy mentioned he saw his shed on fire and grabbed a nearby blue canister and dumped its contents to try and put it out.\n\nThe dude literally tried putting out a fire with gasoline.",
+                    "score": 19,
+                    "author": "cjog210",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Since there are so many asking about untraceable fires I'll sk instead... What was the dumbest, \"I can't believe some idiot could actually think this would have worked\", insanely stupid, hilariously obvious, blatant attempt to do so (for whatever reason) you ever witnessed?",
+            "score": 90,
+            "author": "_BlueFire_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You know, I didn't see too much in the way of purposeful attempts to start fires. I did get called in to consult on an obvious arson once. (Obvious as in there were witnesses to the guy throwing fuel onto the fire.) They just wanted me to look at the electrical to preempt any attempt by the accused to say, \"look, it was electrical!\"",
+                    "score": 106,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That sounds like a story my SO has from his job. Regular electrical working in gov housing site rn. \n\nTennant says the stove doesn\u2019t work. They go to check the unit. \n\nThe stove has been burnt and the fire so bad the the microwave above it melted. The wall behind it was black, and cord and plug destroyed, so yea, not working was accurate. \n\nTennant, while sitting in his living room making chili on the biggest hot plate ever, says the fuse box was faulty. According to my SO it was not faulty. \n\nThat wasn\u2019t the first time they had to move this Tennant to a new unit for fire damage. \n\nAnyway, thanks for doing this ama! I shared this thread with him. I think it\u2019s a line of work he\u2019s really enjoy once crawling around and pulling wire gets less fun.",
+                            "score": 36,
+                            "author": "dmbf",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You mean there wasnt a dude that was a firefighter for 40 years saying \"smells electrical to me...\" as he notes its 430 on a Friday?  Bonus points if they talk about concrete spall as prima facie evidence of arson...",
+                            "score": 38,
+                            "author": "reddawnman"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "My wife is an Insurance Underwriter. She has said that furniture stores and tobaco stores are common for catching fire miraculously in the night. Multiple cases where it seemed obviously fraudulent but couldnt be proved (some that were proved as arson of course).\n\nHave you experienced that sort of thing with certain thpe of businesses?",
+            "score": 72,
+            "author": "allsgoodd",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, that wasn't usually my end of things with fires. Typically, the scene is owned by the fire marshall until he releases it. Their guys look for arson potential, and if they find it, I basically never get called in. Only afterward does insurance get to the scene and possibly get involved.\n\nArson investigator wants to know, \"Do I need to put anyone in jail?\" Insurance wants to know, \"Do I need to write a check?\" \"How big a check?\" \"Can I sue anyone after I write the check?\" Different goals and priorities.",
+                    "score": 129,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How many incidents have you seen that are related to the cheap unbranded or counterfeit phone chargers and power supplies being sold at Amazon etc?",
+            "score": 190,
+            "author": "matchtaste",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I saw a school burn pretty hard because of one of those, yeah. I was able to identify the exact model, but for some reason the attorney didn't want to pursue against the manufacturer or importer. I still suspect that was a mistake on his part, but I'm not an attorney.\n\nI saw another one in a small restaurant, started in the back office. Couldn't identify the manufacturer of that one, nothing to be done.",
+                    "score": 272,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Fellow forensic EE here - attorneys where I practice wont pursue what they know will be an empty chair in China.  There have been rare exceptions where we were able to determine that the importer might be able to cough up some restitution, but its rare.",
+                            "score": 226,
+                            "author": "reddawnman",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah but if it\u2019s bought from Amazon, a lot of those are FBA \u2014 so even if Amazon isn\u2019t the seller of record, they\u2019re a distributor which probably allows them to be sued as a co-defendant.",
+                                    "score": 44,
+                                    "author": "SamTheGeek",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This wasn't true until fairly recently.",
+                                            "score": 48,
+                                            "author": "4Bongin",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Correct. I'm actually at a conference in DFW where many product safety experts are talking about this very thing. New EU regulations are now going to include cybersecurity requirements as well as changing the law such that if the manufacturer isnt in jurisdiction,  the manufacturers agent can be held criminally liable.",
+                                                    "score": 62,
+                                                    "author": "reddawnman",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "For those curious, my understanding of the law was this wasn't a major problem until recently.  Traditionally, importers were considered the \"producer\" of products.  \n\n\"Producers\" are who is eventually on the hook for products liability cases in the US.  Who is considered the producer depends on the product itself, the merchant, and if it was imported/exported.  As a general rule, it goes as far back in the chain of custody prior to sale to get as close to the manufacturer's organization as possible domestically.  This is one of the reasons importers charge fairly substantial rates, they're taking on the liability for products where the manufacturer doesn't have a domestic business.  For example, if you buy a product from Target, and that product was sold to target by an importer, who bought it from a company in China: you can sue target, then target will loop in the importer with and argue they were merely in the chain of custody and did not alter the product.  The courts would likely find the importer to be the \"producer\" and thus on the hook.  \n\nImport/export is fairly heavily regulated and importers would generally have enough coverage to be held liable domestically.  It got tricky with Amazon because small sellers because they would skirt the appropriate import measures and then still be able to offer their goods on Amazon for sale.  There was a case roughly a year ago where an appellate court affirmed a ruling that Amazon could be considered the producer in said circumstances.  In theory this didn't change much because in product liability cases where the \"producer\" is insolvent then you go back to the next step and hold that party liable.  The case directly addresses Amazon's practices, however, which should make it easier for plaintiffs to cut some red tape.",
+                                                            "score": 38,
+                                                            "author": "4Bongin",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'm seeing small items too that appear to even have UL in some cases. Someone gave my daughter a little dollar store type LED nightlight.\n\nIt was incredibly easy to just push and expose the live leads inside the plastic. Crazy.\n\nI immediately tossed it of course.",
+                            "score": 24,
+                            "author": "MeisterX",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Can you explain this? What is UL and what are live leads? I recently gave my kids a dollar store disco light.",
+                                    "score": 11,
+                                    "author": "ropper1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "UL = Underwriters Laboratories. https://en.wikipedia.org/wiki/UL_(safety_organization)",
+                                            "score": 8,
+                                            "author": "Cutriss"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It's a company that certifies products for safety.",
+                                            "score": 9,
+                                            "author": "I_EAT_HAGOROMO"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "how bad is it really to have a power strip plugged into an extension cord, and other types of daisy-chaining?",
+            "score": 136,
+            "author": "excellent_rectangles",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Follow the manufacturer's instructions, always, 100%.\n\nNow, as ways of abusing extension cords go, there are worse ones than daisy-chaining. Daisy-chaining is more likely to lead to voltage drop rather than overheating, for example, and voltage drop on a motor load (or switching power supply) can result in more current draw and thus fire. But you'd have to chain a whole hell of a lot of cord to achieve that. I think the more likely failure mode is just by having so much exposed cable, you dramatically increase the odds of mechanical damage.\n\nOf course, that's just straight daisy-chaining. Branching multiple high-current loads off one multi-tap could definitely start a fire, as /u/Ziazan points out.\n\nOnce I got into this field, I put arc fault breakers everywhere in my house. I don't understand how we're not all on fire, all the time.",
+                    "score": 284,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What\u2019s an example of a residential fire that arc breakers prevent?",
+                            "score": 61,
+                            "author": "fullercorp",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The typical example is if you have a damaged cord. One failure mode is that the conductor breaks, but can still make intermittent contact. That intermittent contact causes an arc, which (given the right circumstances) can ignite the insulation of the wire. Alternately, you can get an arc from hot to neutral or ground through damaged insulation, same deal. The combination arc fault breaker has pretty good chances of detecting those faults and tripping, where a regular or ground-fault breaker won't.\n\nAmusingly, I once had an arc fault breaker in my house trip spuriously, repeatedly. Every time, it was during a specific moment of a specific episode of Samurai Jack. Turned out my power strip was sitting on my subwoofer, and the signal to generate the sound of gunfire was coupling into my power lines and tricking the breaker. Moved the cord, no more problems.",
+                                    "score": 313,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's actually extremely interesting.",
+                                            "score": 58,
+                                            "author": "xTerraH",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This guy is killing it",
+                                                    "score": 33,
+                                                    "author": "Peuned",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I haven't actually been enthralled in an AMA for about half a decade now.",
+                                                            "score": 26,
+                                                            "author": "Jacollinsver",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It\u2019s good to clarify for people that combination AFCI does *not* provide GFCI protection; the \u201ccombination\u201d is series arc faults and parallel arc faults.  People who also want to protect against electrocution should look for \u201cdual function\u201d breakers which provide both AFCI and GFCI.",
+                                            "score": 33,
+                                            "author": "pcbnoob77"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Why did you watch that one episode multiple times?",
+                                            "score": 21,
+                                            "author": "nrith",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Because the power kept going out in the middle of it!",
+                                                    "score": 158,
+                                                    "author": "swcollings",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Oh, lol. :)",
+                                                            "score": 27,
+                                                            "author": "nrith"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I\u2019m in construction industry and it\u2019s well known that arc fault breakers hate Lg washers and dryers for some reason. I live in a brand new house built by me and my LG washer would constantly trip my arc fault breaker. I had multiple electricians come out and do tests and everything was testing as fine. Ended up running a new wire for the washer with same results, warrantied the washer and got a new one, it worked ok for a bit but the issue came back. I ended up replacing to a non-arc fault breaker, and it works fine now. But it\u2019s always a concern in the back of my mind. Am I overthinking it? I don\u2019t really know what else I could possibly do.\n\nJust wanted to hear your thoughts on it",
+                            "score": 30,
+                            "author": "BruceInc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "False trips already common problem with arc fault breakers, that's true. I don't know particularly about that specific equipment. I don't know that I would do differently than you did.",
+                                    "score": 24,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Appreciate the reply. Thank you",
+                                            "score": 10,
+                                            "author": "BruceInc"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Whered you get the arc fault breakers from?",
+                            "score": 12,
+                            "author": "NerdDexter",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How do you know what a good arc fault breaker is?",
+                            "score": 11,
+                            "author": "yukonwanderer",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There's probably only one that fits in your panel. But if that's a question you need to ask, you probably want an electrician to do the job for you.",
+                                    "score": 36,
+                                    "author": "swcollings",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I could be totally wrong here but I think if you don't exceed the current rating of any one cable then it's okay? Like say you had an extension but then branched off two others from it and had a bunch of stuff plugged into it, but the total draw didn't exceed 10A, you'd be alright doing this? I'm basically asking for a confirm or deny from someone on what I've always assumed, rather than trying to offer you an answer.",
+                    "score": 17,
+                    "author": "Ziazan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think it's against code here, the rational being that someone would 1) use a low rated cable somewhere in the chain and over load it, and 2) that they get kicked and almost disconnected too often, causing heating.",
+                            "score": 6,
+                            "author": "quatch",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Sooo, I have had a case where 2 daisy chained RPTs (that's power strips to you folks) caused a small fire at a university. Only one of the rpts failed, and it was the MOVs (metal oxide varistors) which popped on the failed one but not on the other one. For the life of me I cant remember which one was upstream.",
+                    "score": 9,
+                    "author": "reddawnman"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What were some of the most obvious boneheaded things you've caught?",
+            "score": 130,
+            "author": "3-2-1-backup",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Technician bypassing an overtemp limit to get equipment running again is a classic...",
+                    "score": 269,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wait, isn't that basically the equivalent of hardwiring around a circuit breaker because the breaker kept tripping???",
+                            "score": 121,
+                            "author": "bluemitersaw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, that's a very good analogy. Stick a penny behind your blown fuse, for another older one.\n\nThere's actually a place called Fire Findings in Michigan that puts on a week-long appliance fire course. It's amazing. Their room is full of trophies where students are expected to look at the equipment and figure out what went wrong with it. More than one was that.\n\nLots of people know how to make things work. Far fewer of them know how to make things work so that they won't kill people in almost any imaginable circumstance.",
+                                    "score": 247,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I know someone who used to design industrial machines. He would of course design them to be as safe as user-proof as humanly possible.\n\nThere was this hot-stamping press that was potentially very dangerous, so he designed it in a way that required two separate buttons to be pressed at the same time to activate the press. That way, the worker would have to use both hands to activate the press, thus making sure that no worker would lose any fingers by activating the press while inadvertently having their hand in the press. Pretty standard stuff.\n\nWell, one day this guy saw a worker smoking a cigarette with one hand while operating the press with the other hand. So this guy went to see how the hell the worker was doing this, because the press REQUIRED two separate buttons to be pressed precisely to stop anyone from operating it single-handed.\n\nThe smoking worker had attached a screwdriver to his belt, so he could press one button with a hip thrust, the other button with one hand, and he had the second hand free so he could smoke at work.\n\nAFAIK, the worker was fired instantly, because circumventing safety mesures was a fireable offense. People got second chances for mistakes, even expensive ones. But there were no second chances for people who circumvented safety measures.",
+                                            "score": 84,
+                                            "author": "dailycyberiad",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That's one example yeah. Oh the 5A fuse blew. I'll stick a 13A in there. Oh its on fire.",
+                                    "score": 58,
+                                    "author": "Ziazan",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I used to work on car washes and they had like 20 selonoids that were powered by 1 fuse. One of them goes bad easiest way to figure out which one was to put a 25 amp fuse in. The one that smokes is your problem.",
+                                            "score": 56,
+                                            "author": "magicone2571",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "\"Pft, why's there a lockout on this breaker?  Lock this out!\" *breaks out bolt cutters.*",
+                                            "score": 42,
+                                            "author": "ErikTheAngry",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "\"And that, your honor, is when I beat him to death with his own bolt cutters.\" \"Not guilty!\"",
+                                                    "score": 69,
+                                                    "author": "swcollings",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yeah, you don't fuck with lock out tag out",
+                                                            "score": 23,
+                                                            "author": "thedude5001",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "My husband used to be a health and safety engineer at a naval defense contractor and he was just telling me the other day about a guy that got fired for violating lock out tag out. His plant did not play around with that stuff.",
+                                                                    "score": 14,
+                                                                    "author": "Beep315",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "A lot of safety rules are written in blood.",
+                                                                            "score": 8,
+                                                                            "author": "thedude5001",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "ALL safety rules are written in blood.",
+                                                                                    "score": 10,
+                                                                                    "author": "arkofjoy"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I've been on sites where an operator having cutters without a work permit that specifically required and named them was grounds for dismissal at the discretion of management.\n\n....would you believe I didn't stick around one second after my gear was commissioned?\n\nAutomation and controls guy btw. You are the reason I compulsively take pictures of every panel I touch or even think about.",
+                                                            "score": 9,
+                                                            "author": "I_Automate"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I was on a $24M factory fire where the overtemp cutoff was *completely removed* from its tube in the process heater. Bonus points for connecting the control box to a sprinkler timer.",
+                            "score": 18,
+                            "author": "reddawnman"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Any good crazy ex stories?",
+            "score": 43,
+            "author": "weedstocks",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You know, not that I can think of. Very few of the cases hours involved with had a criminal aspect. I did see one or two I was reasonably certain were insurance fraud of some kind but I couldn't prove it. When a fire mysteriously starts under a toaster, burns downward into the countertop (which fires generally do not do) and the burn pattern is the exact size and shape of an 8.5 x 11 sheet of paper, you do start to wonder.",
+                    "score": 93,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So what you're saying is to stick the lit piece of paper *into* the toaster first.",
+                            "score": 33,
+                            "author": "acertaingestault",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "*Furiously takes notes*\n\n*On the piece of paper to be burned later*",
+                                    "score": 26,
+                                    "author": "Cynyr"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Electrical PE here. Any experience with electrical failures in conjunction with seismic events? I've wondered what kinds of damage from faults might occur during an earthquake, before circuits can be interrupted. (Or other structural failures from tornados, hurricanes, etc.).",
+            "score": 42,
+            "author": "nixxie",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Fellow forensic EE here - we had an arc flash event on the roof of a hospital where a worker was injured pretty badly. Turns out one of the bolts on the bus duct housing was energized because an earthquake I want to say a year or so back had compromised the insulators. \n\nBest part: hospitals facilities chief wrote emails to hospital management stating bluntly that a seismic inspection was needed after the earthquake. Hospital promptly fires him, he saves the emails, the incident happened like 6 months later. Facilities guy approaches plaintiffs atty. They got *paid*",
+                    "score": 111,
+                    "author": "reddawnman",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not surprised, hospitals are awful at doing anything but cosmetic repairs.  At my previous employer, elevators malfunctioned until one led the grevious crush injury and eventual death of a nurse.  Hospital CEO cried big fake  tears while  pointing the finger at the elevator compaony until that company whipped out the certified letter they'd sent the hospital saying explicitately \"do not keep resetting the elevators when they malfunction, it keeps us from figuring out why.\"",
+                            "score": 26,
+                            "author": "aouwoeih",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "No seismic events. I seem to recall hearing about a case where a substation was damaged to a hurricane and the lines falling caused some serious problems for the utility, but that might be the closest I have in my experience.",
+                    "score": 33,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm an electrical PE and sometimes get random linked in people asking me to testify as an expert. Are these people insane or did I miss my calling?",
+            "score": 39,
+            "author": "pedal-force",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's possible that some legitimate attorney might reach out to you that way, especially if you have a unique skillset or background. It's also possible it's some sort of clearinghouse trying to make a list of experts they can sell to attorneys.",
+                    "score": 45,
+                    "author": "swcollings"
+                },
+                {
+                    "level": 1,
+                    "comment": "It's never too late, and expert witnesses make good money.",
+                    "score": 8,
+                    "author": "acertaingestault",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I already make good money, and I'm super specialized at this point, in something that probably isn't that helpful for lawyers.",
+                            "score": 9,
+                            "author": "pedal-force",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I *would* ask you about the least traceable way of starting an electrical fire, but instead I'll ask: what **was** one of the most successful ways to get away with starting an electrical fire in the **past** that you'd never get away with nowadays?",
+            "score": 98,
+            "author": "1714alpha",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;what   \n&gt;  \n&gt;was  \n&gt;  \n&gt; one of the most successful ways to get away with starting an electrical fire in the   \n&gt;  \n&gt;past  \n&gt;  \n&gt; that you'd never get away with nowadays?\n\nOh, that's an interesting question. I think the fact that investigators are vastly more tech-saavy and probably have a digital forensic specialist on speed dial has closed a lot of windows that might have existed for a while there. There being so many cameras everywhere contributes too.",
+                    "score": 110,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Mechanical engineer here, consumer products, etc.  Do you have a couple design defect stories?  Or even better, any common product design aspects you feel are unsafe, or any knowledge we design engineers could use to make better products?  Thank you, I appreciate your perspective.",
+            "score": 96,
+            "author": "invent_or_die",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh, nice question!\n\nOne bugaboo of mine is heating pads. Every heating pad on the market is required by UL standards to have a particular label on it, saying \"Don't use this if you're diabetic\" among other things. Diabetics can have impaired bloodflow and peripheral neuropathy, so the pad can burn them more easily, and they might not feel it. And heating pads, just by the job they are required to do, get quite hot. I got called in on a case where a diabetic ignored the label, put a heating pad on his foot, fell asleep, and when he woke up *most of his foot was burned off*.\n\nQuestion for me was this: did the manufacturer do anything wrong?\n\nWell, the pad didn't malfunction, we confirmed that first thing. And the manufacturer followed all the applicable design standards. They *could* have put a timer on the heating pad, which would have prevented the injury. Why didn't they? Because people don't want heating pads with timers. If you google the subject, the first results are \"how do I defeat this stupid heating pad timer so it stays on?\" The first company to just say \"all our pads have timers now\" will get their lunch eaten by the other companies that don't. But timers would objectively prevent serious injuries at minimal cost and inconvenience. Every heating pad on the market *should* be required to have a timer. The only argument I could possibly make was that *the entire industry was wrong*.\n\nThe lesson here for product design is that the hierarchy of hazard controls applies there too. If you could design the product with a guard to prevent injury, but instead rely on a warning label, your design is wrong. I'm not sure if product designers are generally even aware of the hierarchy of hazard controls. I wasn't when that was my job.",
+                    "score": 248,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wow, great example and discussion about Hierarchy of Hazard Controls.  Do you employ failure mode effects analysis?  I think you do.  If done well, DFMEA can add perspective.  \nYeah that warning label kept you out of court, but someone got burned?  Fail!  Now we need the whole team to understand this.  Must come from the top.",
+                            "score": 48,
+                            "author": "invent_or_die",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Formal FMEA didn't come up much, though I did use fault trees on a couple notable occasions. They're particularly helpful in injury cases, because the whole idea of an event having a single root cause is flawed. By the time someone has an electrical injury there are often ten different things that have gone wrong. So I used fault trees to identify all the contributing factors, so I could identify which ones were unreasonable or otherwise erroneous.",
+                                    "score": 53,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Aviation investigators talk about the [Swiss Cheese model](https://www.aviationfile.com/swiss-cheese-model/), where layers of defence will have holes and accidents happen when the holes line up so a random event bypasses the various layers of safety.",
+                                            "score": 36,
+                                            "author": "RealFrog",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's not just applicable to the aviation industry, its a fairly standard safety engineering tool. I see it more referred to as barrier analysis. A good rigorous fault assessment should flush out these issues which informs design to do better.",
+                                                    "score": 5,
+                                                    "author": "Mister_Sith"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Same thing happened to my dad. Eventually, they took his leg because of the burns and infection not being able to heal. Diabetes and heating pads do not mix.",
+                            "score": 18,
+                            "author": "lindini",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;The only argument I could possibly make was that the entire industry was wrong.\n\n\"A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.\" - Douglas Adams",
+                            "score": 8,
+                            "author": "scotty_beams"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you have any stories involving animals or rodents causing a fire?",
+            "score": 30,
+            "author": "UncoolJ",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh yes. I once got called to the scene of an explosion. The switchgear in the basement of an office building had just exploded, apropos of nothing. Blew the opposing block wall out of the room. (Good thing it wasn't load-bearing.) We tracked it to the underground power feed between the pad transformer and the building. An arc had formed half-way down the cable. Given the recent pest infestation of the building, the best explanation was that a mouse had crawled down the conduit and chewed through the insulation, causing an arc. And since there's not required to be overcurrent protection between the transformer and those cables, that's a whole hell of a lot of energy in that arc, which all turned into blast pressure down the conduit and into the building.\n\nWe didn't find any mouse remains, but then, we wouldn't, after that.",
+                    "score": 76,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Shit, there is a white lighting mouse. My nightmares have come true.",
+                            "score": 9,
+                            "author": "heisenbugtastic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "_\\*shocked pikachu\\*_",
+                                    "score": 22,
+                                    "author": "P8zvli",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not the OP,  but one somewhat common and avoidable animal caused fires is from range top elements igniting stored items.\n\nPeople will commonly store pet food or other foods on range tops, and when left alone the dogs or cats will explore. This can result in a fire occurring, and a video of that made the rounds on Reddit not to long ago.\n\nFor vehicle fires we have seen an uptick in nesting material fires in engine compartments during COVID while people were not driving as much.\n\nHowever the nests can be made of sufficient size in just one night, so an animal nest in a car is nothing but bad luck, and not a sign of poor maintenance.",
+                    "score": 12,
+                    "author": "iamdrsmooth",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why do we hear of many new housing developments catching on fire and being razed to the ground as they are being built?",
+            "score": 84,
+            "author": "kitchen_clinton",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Fire suppression in an incomplete structure is problematic. The structure has to exist before fire suppression can be added to it. Some detectors are easily set off by sawdust, so they end up getting overridden or otherwise defeated by the construction crew. Lots of potential ignition activities occur in the structure while it's being constructed.",
+                    "score": 175,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I just read the news article on the homes I was basing my question on and you were spot on. No fire protection yet. Fire started in one home and spread due to winds to destroy all twenty. Thanks!",
+                            "score": 60,
+                            "author": "kitchen_clinton",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not many completed homes have fire suppression anyways, I don't think I've ever seen a home with a sprinkler system, all you have is small fire extinguishers and smoke alarms (wired smoke alarms if you're fancy).",
+                                    "score": 30,
+                                    "author": "pinkycatcher",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I think some newer codes require residential sprinklers, but I'm not too informed about that.",
+                                            "score": 25,
+                                            "author": "swcollings",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I have a new build rental condo that is tri level and has fire suppression. They are recessed pretty well and all you see is little plastic cover flush with ceiling that match the paint.\n\nPhoenix, AZ. Most new builds or extensive remodels have them now",
+                                                    "score": 11,
+                                                    "author": "ShowersAreForSitting",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Well not fire suppression per se, but drywall, fireblocking and even closed doors slow down fires. Add to that smoke detectors and occupants in the house and adjacent houses and you have a good chance of the FD catching it before it spreads.\n\nAs opposed to 20 houses in close proximity, that are all just plywood and 2x4s, with no one to notice to call the FD.",
+                                            "score": 6,
+                                            "author": "DeadlyNoodleAndAHalf"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How did you get involved in this? Your job is kind of my dream job except I'm a structural engineer. Been trying to find something like this for structures but don't know where to even begin.",
+            "score": 77,
+            "author": "bagelboy565",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I spent ten years in design, got my PE, and then saw an opening. There are relatively few PEs that want to do this sort of thing, so it's not too terribly hard to get into if any of the major firms have an opening near you. The industry seems to constantly be churning, buyouts, companies disintegrating, but once you're in, there's almost always a place for you.",
+                    "score": 95,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Theres a shitton of private equity money buying out firms right now. Whether that's the environment for you or not you'll have to decide, but they certainly can back up the brinks truck when they want to...",
+                            "score": 20,
+                            "author": "reddawnman"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There are plenty of forensic structural guys.  Look at some of the larger firms: Exponent, ESi, Envista, Jensen Hughes, Rimkus, there are a ton.",
+                    "score": 49,
+                    "author": "reddawnman",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yup. Other big names lately include JS Held and YA.",
+                            "score": 37,
+                            "author": "swcollings"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 26,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Unquestionably, bypassing safety systems to make things work.",
+                    "score": 47,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "EE student here, how did you get into this line of work? Thanks for the AMA!",
+            "score": 21,
+            "author": "ClassifiedName",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I spent about ten years in product design, got my PE, and saw an opening. Having a PE is pretty critical to this line of work, because you could end up testifying in court. And the number of experienced PEs who *want* to do this is relatively slim, so at that point it's not the hardest market to enter.",
+                    "score": 23,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is one the best practises people can take to avoid creating fires accidentally that you have seen? \n\nWhat is the most ridiculous case you have seen?",
+            "score": 60,
+            "author": "NotoriousDesktop",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Best practice, don't abuse extension cords. Don't run them under doors. Don't squeeze them in hinges. Don't drill holes in things and permanently install extension cords. If they're damaged, throw them the hell out right now.",
+                    "score": 156,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I had to run two extensions through an exterior door recently, thoroughly wedged the door open and explained to them in very clear terms: these **must** be removed at the end of the night before you close the door. Do not close the door over these cables. Unplug them and remove the cables from the doorway.  \nShow up the next day to take out all the kit that was there, behold, two high quality long extensions jammed under the locked door. When a guy with a key came to meet us to get access to things inside, he asked us if it was okay if he unlocked a different door instead because they had issues getting that door to lock last night.  \nThe cables were internally severed/shorted/mangled but at least that's the only bad thing that came of it.",
+                            "score": 66,
+                            "author": "Ziazan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I found that my mother in law had run an extension cord under her metal storm door. The jacket and neutral insulation were trashed. If it has been the hot, the door would have been electrified.",
+                                    "score": 65,
+                                    "author": "swcollings",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I swear we have to take doors off their hinges to prevent shit like this",
+                                    "score": 18,
+                                    "author": "P8zvli",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How about daisy chaining extensions? Just how dangerous is it?",
+                            "score": 12,
+                            "author": "phate101",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\\[See elsewhere in the thread.\\]",
+                                    "score": 20,
+                                    "author": "swcollings"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Most ridiculous case... someone once had a hole appear in the side wall of a well, a hundred feet under ground, and asked me if lightning could have caused it... In fairness, that's definitely a question they should have asked. For all they knew it could have been possible.",
+                    "score": 58,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Any idea what actually caused it?",
+                            "score": 11,
+                            "author": "bluemitersaw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I could speculate, but it's outside my realm of engineering expertise, so it wouldn't be appropriate for me to have any sort of engineering opinion on it.",
+                                    "score": 40,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This comment is your AMA bona fides as a PE/investigator.",
+                                            "score": 47,
+                                            "author": "subpoenaThis"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How dangerous are space heaters, really?",
+            "score": 20,
+            "author": "Affectionate_Rub_575",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "An modern electric space heater meeting certification standards, in good condition, and used according to the directions is *pretty* unlikely to start a fire under most imaginable circumstances.",
+                    "score": 40,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Op says properly used, not 10 of them on one circuit that haven't been cleaned in years under your desks. Companies ban these because the dust, crap, an too damn many is them on one circuit. \n\nAlso IT will ban them if we can tell what you have painted your toe nails for a few years or what you have been eating without having to be a rat.",
+                            "score": 20,
+                            "author": "heisenbugtastic",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Would you consider it safe to leave certain appliances running whilst you\u2019re out of the house? Say, washing machines and dehumidifiers?",
+            "score": 19,
+            "author": "toferino",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Anything I'd be concerned about leaving running unattended, I wouldn't have in my house in the first place. (Cooktop and oven excepted, of course.)",
+                    "score": 23,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But even expensive, reliable and reputable appliances can fail. I\u2019ve heard that washing machines have been responsible for many house fires. My partner has a habit of putting a load of laundry on before she goes out so she can hang it when she gets back. A reasonable thing to do ordinarily, but I always tell her off!",
+                            "score": 6,
+                            "author": "toferino",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh absolutely. ANYTHING electrical can catch fire, given the right set of odd circumstances.\n\nAlso, wet piles of hay and improperly packed pistachios can spontaneously burst into flame. Laundry sitting in your dryer after the cycle ends can do the same if the clothes have the wrong oils on them. It's a weird little world.",
+                                    "score": 12,
+                                    "author": "swcollings",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not OP, but similar field. Millions of dehumidifiers have been recalled. Don't use a recalled model in any capacity, don't use it with an extension cord, and don't use the hose attachment so it runs 24/7, and you should be OK.",
+                    "score": 14,
+                    "author": "newaha",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh yes, the dehumidifier cases are legendary. I wasn't in the field for a month before some attorney called asking if I'd work on one. Turns out they'd already stiffed my company for quite a bit of money, and they were desperately calling any new engineer that showed up in the entire forensic field.",
+                            "score": 30,
+                            "author": "swcollings",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Are they still an issue with newer dehumidifiers?",
+                                    "score": 9,
+                                    "author": "adudeguyman",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It was one particular brand that had serious problems. I don't think it was a general industry problem.",
+                                            "score": 10,
+                                            "author": "swcollings"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I assume if it goes to court, you become the expert witness? Any stories on craziest defense and best defense from the defending side expert witnesses?\n\nAs a secondary question, how much does \u201cdue diligence\u201d actually absolve anyone?",
+            "score": 17,
+            "author": "ShaunSquatch",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oddly in five years I never had cause to even give a deposition. Just never happened for me. But I did go to some excellent training for being an expert witness, put on by a couple attorneys, which included mock trial. One guy changed \"his\" (fictional) expert opinion on the stand, which resulted in summary judgment against him. Another time, the expert was handed some evidence and asked, \"Is this the evidence you collected\" when it totally did not match the evidence collected.\n\nI did hear of one case where the expert on the stand turned out to not even have an engineering degree or something like that. Summary judgment, client lost some absurd amount of money, it was a thing.\n\nThe standard of what a reasonable person would know is pretty important, yeah. There was one case I did that I'm still fascinated by.\n\nWoman rents an apartment, moves in all her stuff. Not long after, a breaker trips the circuit behind her bed, which doesn't have much plugged into it, basically just an old lamp. Electrician comes out while she's gone, finds burns on the outlet matching a high-resistance connection, replaces the outlet, puts everything back, and leaves. Shortly after, fire, behind the bed where he replaced the outlet.\n\nBest explanation I could come up with was that the lamp cord was damaged and arc'd, which both tripped the breaker and later started the fire. The electrician solved the wrong problem, but didn't actually cause anything new to be wrong. Now, as an engineer, I know that *a high-resistance connection does not trip a breaker*. (Unless you're running some very large non-linear load, I suppose, that draws more current to compensate for the reduced voltage, but that's not this case.) But should an electrician have known that? What would a reasonable electrician have known? I still don't know, but I wonder.",
+                    "score": 40,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What's the most interesting case you came across?",
+            "score": 17,
+            "author": "StrongMazer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh, this one was good.\n\nSetting: a walk-in freezer in a third-story office space. (I think they kept food samples for a sales department.) Being in an office space, there was a sprinkler in the freezer. If you do it right, that's not a problem. And they didn't have problems, until one night the sprinkler suddenly went off for no apparent reason. No fire, no impact to the head, just lots of water. They caught it pretty fast, not much damage.\n\nUntil it happened again, and this time it was hours before anyone stopped it. The law office on the floor below was pissed. (SO. MUCH. PAPER.)\n\nThe only thing in that freezer of interest was the evaporator coil. We looked at it and discovered it was not wired according to the drawing. The defrost timer was bypassed, meaning the defrost resistor was on *all the time*. There were maintenance records of not long before the incident. A tech came out, determined that the defrost timer was shot, and ordered a replacement. Later, another tech came out and installed the replacement. Still later, a third tech determined that there was a refrigerant leak.\n\nHypothesis: the first tech bypassed the faulty timer, in order to get the freezer back online. But he didn't document that he did that, so the second tech didn't know to put it back the right way. This isn't normally a problem, because the heat pump can easily get rid of all the extra heat that resistor generates.\n\nUnless the refrigerant all leaks out and the heat pump shuts down. At which point we now have a 100W resistor dumping heat into an insulated box 24/7.\n\nWe thermocoupled up the room, turned it on, and waited. After eight hours it was over 140 degrees in that space. It would easily have set off a sprinkler head.",
+                    "score": 83,
+                    "author": "swcollings"
+                },
+                {
+                    "level": 1,
+                    "comment": "Hm. I don't know about most interesting, but this is up there.\n\nOne of the first ones I did was a failure in some large (small utility scale) natural gas generators. Parts were corroding well before expected service life. They'd replace the parts, and they'd corrode again. Their big five-figure copper heat exchanger and everything downstream was just getting coated in this green metallic gunk.\n\nTurns out the heat exchanger had a temperature set point, and they'd set it too low. Water was condensing out of the fuel stream, but still in the presence of the other pressurized gasses in the fuel. Those gasses included carbon dioxide. That makes carbonic acid, more commonly called *seltzer water*. The seltzer was dissolving their copper heatsink, then getting blown downstream to evaporate, depositing copper oxides on every surface they could reach.\n\nAmusingly that problem isn't at all electrical.",
+                    "score": 54,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Interesting.  My (natural gas powered) pool heater actually has a warning in the manual about this--that setting the setpoint too low will cause the heat exchanger to corrode.",
+                            "score": 22,
+                            "author": "ThickAsABrickJT",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oooh! Neat!",
+                                    "score": 17,
+                                    "author": "swcollings"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Good day Mr. Collings, thank you for taking the time to do this AMA\n\nAs someone with zero knowledge in electricity, I would like to ask, in case there's a fire because of electricity, how can we know the source of fire? I mean, is there a special sign or something?",
+            "score": 16,
+            "author": "angiearch",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ha! That's a pretty involved question, actually.\n\nSo we talk about fires having *origin* and *cause*. This is all formally defined in NFPA 921, which I haven't lived in lately. But informally, the *origin* of the fire is the place it starts. We determine that by reading fire patterns, which is a whole science in itself that I only dabbled in. I was a CFEI to help me work on suspected electrical fires, but there were full-time fire investigators who saw more fires in six months than I saw in my whole career. So often, there was a lead fire investigator who determined the origin, then brought me in to consult on cause.\n\nThe *cause* of the fire is the combination of fuel, ignition source, oxidizer, and circumstances that bring them together in a self-sustaining reaction. Generally, once you find the origin, you start looking for ignition sources in that area. That's often when we get into \"yes, the cause of this fire was electrical\"",
+                    "score": 33,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm learning a great deal from this AMA about electrical fires but even more about how to structure investigations. I'm in IT, so that's a useful professional skill set for me. Thanks for that.",
+                            "score": 16,
+                            "author": "LogicalTimber"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Have you had any \"that was the last thing I expected\" moments ?",
+            "score": 16,
+            "author": "phoenixbbs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, there was one where the proof surprised me.\n\nThe case involved a residential backup generator with an automatic transfer switch. There was a planned outage in the neighborhood. Linesman was working on the lines and got shocked, and very nearly died. The generator had backfed into the utility grid, which should not be possible with an ATS. (Why he hadn't grounded the lines before touching them is a question for his employer. Nobody asked me about that one, unfortunately.)\n\nThere were two panels in the house garage. One was powered by the ATS, the other was tied directly to the utility. We were shown pictures of a jumper from a load breaker on one panel to a load breaker on the other, which is not kosher in all sorts of ways, and would explain the backfeed phenomenon. I drove through a literal tornado to get to the scheduled inspection so I could see these jumpers, only to find that they'd been thrown in the trash a year before by an engineer whose mandate was to make the utility safe to work on. (So yeah, good call on his part, for sure, even if it screwed up my investigation.)\n\nThe electrician who had installed the generator years before swore up and down he had not put those jumpers in. The homeowner said the system had always worked fine, and nobody else had ever worked on it. One of them was lying. How could we tell who?\n\nThe homeowner was lying. Because if those jumpers had always been there, the generator would always have been tied to the grid. That means during every outage, it would have tried to support the entire neighborhood, and tripped out immediately. *It could never have worked.* If it ever worked, the jumpers weren't there, and then got added by someone to make the generator support the whole house rather than one panel.\n\nOf course, if the electrician had followed procedure, pulled a permit, and gotten his work inspected by the city, he would have had them backing him up as well. So that's a lesson too.",
+                    "score": 46,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m super paranoid about electrical fires for some reason. Before I travel, I unplug everything. Is that crazy? I had a toaster oven and threw it away when someone said they cause fires. Also crazy? When my heat broke, I refused to get a space heater since I was convinced it would kill me. Probably also crazy. I used to keep all my kitchen countertop appliances unplugged until I used them, which I\u2019m sure is crazy, but that got to be a pain in the butt. I have an electric blanket and I keep that unplugged unless I\u2019m currently using it. \n\nThe one thing I do that I\u2019m sure is risky and you\u2019ll probably tell me is crazy - I have heating pads that I leave plugged in. They\u2019re turned off (and have a timer where they turn off after 2 hours on their own - I\u2019m also not a diabetic). I use them every night and sometimes have left the pad on the bed when it was turned off. That\u2019s crazy, right? Probably will kill me someday.",
+            "score": 16,
+            "author": "Flyinghome",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;I\u2019m super paranoid about electrical fires for some reason. Before I travel, I unplug everything. Is that crazy?\n\nThe engineer who trained me said he did the same thing. I just asked, \"Wait, every time you plug and unplug your appliances, don't you increase the chance of a high-resistance connection which could--\" \"SHUT UP!!!\"\n\nSometimes in life there's what we call \"residual risk.\" Even after all safety precautions are taken, there's still some chance something bad will happen, but the benefits outweigh the risks, so we do it anyway. The risk reduction of everything you just said is non-zero, but it's very, very small. The harm caused to you by your stress over it is almost certainly greater. The risk you take driving where you're going is definitely greater.\n\nYour use of heating pads sounds fine to me (though I'm not a medical expert). Toasters are generally quite safe, as long as you don't shove paper in them or something silly. Space heaters are generally even safer. Are they 100% safe? Absolutely not. What is? But their risk level is small enough to be acceptable.",
+                    "score": 41,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This actually made me feel tons better. Thank you!",
+                            "score": 19,
+                            "author": "Flyinghome",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm glad! I often use the risk of driving as a sort of floor. If the risk of a thing is less than the risk I take driving every day, then it's not really rational for me to worry about it *too* much.",
+                                    "score": 21,
+                                    "author": "swcollings",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What do you think about all these cheap uncertified smart outlets and PD outlets being sold everywhere, even Costco?\n\nIs it okay to purchase the $30 ones or should people be buying the $70 Eaton and Leviton?",
+            "score": 101,
+            "author": "Coompa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Buy *nothing* that isn't certified by UL or ETL or some equivalent agency. I'm appalled that any distributor even sells things that aren't.",
+                    "score": 212,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "How do these things pass standards to be sold here?",
+                            "score": 31,
+                            "author": "yukonwanderer",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not OP, but they might not be passing the standards for sale. Here in Australia I often see recalls when shops get busted selling unapproved or unsafe electrical products. Even the biggest retail chains do it.",
+                                    "score": 38,
+                                    "author": "Lampshader",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Australia is pretty good at that, sell something without an n-tick and you will get fucked up, however it does happen a lot \n\nThere was a case a few years ago where a lady was listening to music on her phone while it was charging with a no-name adaptor she bought at the markets. It short circuted and the voltage travelled up through the headphones and electrocuted her.",
+                                            "score": 10,
+                                            "author": "Ijustdoeyes",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Lots of things aren't required to pass UL, ETL, or CSA to be sold. The government dictates which consumer devices must meet which standards. Some are tested anyway. The last product I launched, I insisted on UL markings even though they weren't required because the market research indicated it was expected, even though it was not legally required.",
+                                    "score": 17,
+                                    "author": "Straydapp",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You're saying that a lot of electronics don't have to pass electronic safety standards?",
+                                            "score": 9,
+                                            "author": "yukonwanderer",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The only electronics that have to pass electronic safety standards are medical devices and aircraft/spacecraft avionics. Consumer electronics must pass FCC EM certification tests but those aren't necessarily safety tests unless a pacemaker is involved. (See the former) Otherwise electronics are expected to undergo UL/ETL safety certifications for marketing reasons, not legislative reasons. (nobody wants to be known for electrocuting their customers in the 21st century, that would be really bad for business.)",
+                                                    "score": 10,
+                                                    "author": "P8zvli",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Generally the more expensive options are add-ons, ease of software, and wifi reliability. They all should be approved. Don't buy one not approved.\nIf you don't want ones sometime spring inactive, or want it geofenced now you should be getting the better ones. But sometimes the more expensive is just that, brand price.\n\n... still, always buy the approved one. Helps in every way (except sometimes the wallet)",
+                    "score": 14,
+                    "author": "bob_says_hello_",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I recently bought a home from the 70\u2019s that hasn\u2019t been updated in any way. The breakers fall out of the panel when you try to switch them off. But the house has two original fire extinguishers one dated from 1971 and the other from 1976. I\u2019m wondering if they pose any type of exploding threat and how I should safely dispose of them (already bought new ones)?",
+            "score": 14,
+            "author": "Exoticwombat",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh fuck, get that panel replaced tomorrow. That's a hazard in a few ways all at once.\n\nAsk the fire department about disposing of the extinguishers, they'd probably know.",
+                    "score": 31,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That\u2019s what I was thinking about the extinguishers but thought you might know. Funny thing about the electrical panel was during the home inspection they said it was fine- starting to question the inspector not only on that but with other things popping up\u2026\ufffc\n\nEdit: also, not a GFCI outlet or breaker anywhere.",
+                            "score": 7,
+                            "author": "Exoticwombat",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Disposing of extinguishers is going to depend on type and region. They're not likely to spontaneously explode, but you shouldn't put them in the trash because they could explode in a compactor and damage equipment.\n\nCheck with your local fire department, your garbage company, or a local fire extinguisher service shop. Any of those should be able to let you know about local disposal options. They might even just take them off your hands because they're neat.",
+                    "score": 10,
+                    "author": "Moldy_slug",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How common is insurance fraud as % of claims? Any typical fraudster profile?",
+            "score": 13,
+            "author": "KnownAd494",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Very rare in my experience.\n\nI did hear a story from a colleague. As I recall, some piece of logging equipment caught fire at a worksite in the middle of nowhere. The workers claimed they left the site for lunch, went into town, came back, and the equipment was toast when they returned. Hm, says my colleague. You're an hour from town. You would never, ever take three hours out of your day to eat lunch. *You're lying to me.*\n\nNow, that may be because they set the equipment on fire in order to file an insurance claim. But he concluded that was probably not what happened. The most likely explanation is that someone screwed up. They set the thing on fire on accident, through bad maintenance or usage, and didn't want to get fired by their boss. In trying to cover up their stupidity, they made it look like they committed a felony.\n\nI did have another case where I was pretty confident the insured lied to me to cover up a mistake they made, for similar reasons. So if I can draw a straight line between two points, that might be it.\n\nNow, I've heard of more outright fraud in the area of roofing claims, from structural engineers.",
+                    "score": 36,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So do you mostly operate on the old \"don't ascribe to malice that which can be explained by stupidity?\"",
+                            "score": 17,
+                            "author": "bluemitersaw",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, but conversely, sufficiently advanced stupidity is indistinguishable from malice.",
+                                    "score": 57,
+                                    "author": "swcollings",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I think I'm going to have that made into a bumper sticker",
+                                            "score": 5,
+                                            "author": "DweadPiwateWoberts"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What's the most improbable set of circumstances that led to a reasonably clear conclusion? As in, if any one of these factors had been a little different, it wouldn't have happened, but they just Rube Goldberged into failure and fire.",
+            "score": 9,
+            "author": "evil_timmy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is a great question but I'm not coming up with a good answer right now...",
+                    "score": 8,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How much do forensic electrical engineers make, and how do you get into the field?\n\nLooking into switching careers and this sounds fun",
+            "score": 10,
+            "author": "medioxcore",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Probably comparable to design engineers, most companies have a pretty heavy productivity bonus structure, but how much work you get is somewhat beyond your control. Typically you need a PE and a decent bit of hands-on experience, it's not the first engineering job most people should have.",
+                    "score": 10,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How often are rodents the cause of fires in office buildings?",
+            "score": 9,
+            "author": "JoeFortitude",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Couldn't put numbers on it, but it's a recognized thing.",
+                    "score": 10,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm about to start a reliability engineering internship where part of it will be investigating machine failures, any advice on the overall approach when looking for issues and causes?",
+            "score": 8,
+            "author": "CatLords",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Know the machines and their history of past failures. Most things fail in just a few typical ways.",
+                    "score": 18,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Have you ever been asked to cross a moral line on a finding? In that a big business is paying the bill, so they request a slight manipulation of any results to weight it towards them?",
+            "score": 23,
+            "author": "epictool",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not once. The closest I came was when one insured made a mistake that would have looked bad to their own clients, they asked me to not share the report with their clients. Which I couldn't do anyway, because the report is the property of the insurance company I worked for.",
+                    "score": 53,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Glad there are nice clean lines!",
+                            "score": 7,
+                            "author": "epictool"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I am glad that /u/swcollings hasn't had a pushy client. I have fired clients before for asking me to change an opinion or leave something germane to the investigation out of a report. For many of those clients, the cost of writing off the work is well worth the knowledge of knowing that I dont want to work for that person or entity again.",
+                    "score": 16,
+                    "author": "reddawnman",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, at worst I've been told, \"Don't write a report.\" I don't have any moral problem with that.",
+                            "score": 16,
+                            "author": "swcollings"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What an interesting job, thanks for doing this. My question is do you have any home safety tips or devices you recommend that you discovered through your work or feel should be more widely known?",
+            "score": 23,
+            "author": "sandman_42",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Arc fault breakers. If you don't have them, get them, especially in any room you use lots of extension cords or Christmas lights.\n\nIf your house is old enough to not have ground fault protection in the usual places (kitchen, bathroom, exterior) you can add it easily with a breaker upgrade as well.\n\nAnd as I've said elsewhere, do not abuse extension cords!",
+                    "score": 40,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very interesting AMA, thank you for doing this. I am a building/electrical inspector, what are the most common code related issues/potentials for fire in both residential and commercial construction?",
+            "score": 8,
+            "author": "podzombie",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, it's not a fire issue specifically, but I do think there's a problem with freezers in garages, since we're talking. I believe I'm both required and forbidden to put mine on a GFCI. Any thoughts there? :)\n\nWhen it comes to new construction, the big threat is always that it's going to be done cheaply by inexperienced people. They'll use wire that's too small, staple through the insulation, put too much stuff on one breaker, that kind of thing.",
+                    "score": 17,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi there Stephen, thanks for doing this!  I have a light fixture in my bathroom that was recently recalled with a hazard of \"The internal wires in the lights can be damaged, posing an electric shock hazard to\nthe consumer.\"\n\nThe cost of labor, buying a new fixture, etc. isn't insignificant, so I'm wondering if this actually poses a risk to us to actually combust or create a fire or anything.  I'm sure the advice will be to replace this, but I'm curious - **Does this actually pose any active threat or risk to my family or if this is just the manufacturer covering their rears?**\n\nThank you!\n\n[Here is a link to the recall](https://b3h2.scene7.com/is/content/BedBathandBeyond/PDF/KC/HunterFanRecallsLightingProductsDuetoShockHazard_CPSCgov.pdf)",
+            "score": 6,
+            "author": "krugo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If they're issuing a recall it's because they don't want to get sued because someone got shocked to death.",
+                    "score": 19,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do you have a top3 list of things to do/check on a daily/weekly/monthly bases so that my house won\u2019t burn down?\n\nThe list can also include a significant \u201cDON\u2019T\u201d",
+            "score": 7,
+            "author": "Ungrateful-Ninja",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hm. Regular checks. I can't think of many, honestly. I would say you should definitely have smoke detectors, make sure to replace them every ten years or whatever they specify.",
+                    "score": 12,
+                    "author": "swcollings"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Have you ever seen a claim denied solely because a homeowner did not have the proper permits?",
+            "score": 6,
+            "author": "fengshui",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "If you ever were a victim of damages due to an electrical fire, would people suspect you staged it for insurance fraud? (I.e. is it something you think you could pull off?)",
+            "score": 7,
+            "author": "linecraftman",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Lol I don't know what they'd think, really. Could I pull it off without leaving enough evidence to prove to a jury I did it on purpose? Probably. Except they'd find this Reddit post, and use it as evidence that I knew I could do it. And since I know that, me saying it is evidence I wouldn't do it. But since they know that I know that they know that I know, clearly I cannot choose the glass of accelerant in front of you!\n\nI'm not really sure what anyone would gain from that, though. For insurance fraud to make sense you would have to have some pretty perverse financial setup. Desperately need to sell your house and can't, for example. Doesn't apply to me. I might have the means, but I have no motive, and motive is a big part of arson investigations.",
+                    "score": 42,
+                    "author": "swcollings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;But since they know that I know that they know that I know, clearly I cannot choose the glass of accelerant in front of you!\n\nThis man studies his Agrippa.",
+                            "score": 16,
+                            "author": "LogicalTimber",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I've spent the last few years building up an immunity to accelerants",
+                            "score": 13,
+                            "author": "DweadPiwateWoberts",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I was told (by a firefighter, no less) that if I ever wanted to burn down my house and make it look like an accident, get out a box of Hamburger Helper, put the beef in the pan, start cooking and then \"realize\" that you ran out of an ingredient for the recipe.  Leave your house and go to a store for the ingredients.\n\nAfter I typed this, I think he said make sure you have two pounds of hamburger and the family size box.  I don't own a house, so I am not looking to do anything like this in the near future.  Does this seem like a probable scenario?\n\nEdit: Just realized the fires you investigated were electrical in nature.  Ignore this question if you don't have an answer!",
+            "score": 5,
+            "author": "Cornloaf",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I suspect what he meant was that it might be difficult to prove you did anything on purpose rather than on accident. But then, now this conversation is on record, right?",
+                    "score": 8,
+                    "author": "swcollings",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How much shit did you make up on the spot?",
+            "score": 30,
+            "author": "againstevrythng",
+            "replies": []
+        }
+    ]
+}

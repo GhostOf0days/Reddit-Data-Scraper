@@ -1,0 +1,1109 @@
+{
+    "id": "xfzq4b",
+    "score": 5036,
+    "title": "How Machine Learning \"Learns\" Using Loss Minimization",
+    "author": "RacerRex9727",
+    "date": 1663354524.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/xfzq4b",
+    "media_urls": [
+        "https://i.redd.it/10msjwkgp9o91.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Indubitably\u2026 indubitably\u2026 \n\n*blows bubbles out of old timey pipe",
+            "score": 374,
+            "author": "something_something8",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I assume that's an English word",
+                    "score": 2,
+                    "author": "Cognoto"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Cool video, thanks. It would be good to give some real-world examples to put this into context.",
+            "score": 179,
+            "author": "dunafrank",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is simple linear regression, linear meaning straight line. A real world example might be number of minutes you spend in the supermarket (x axis) versus how much you spend in said supermarket. \n\nYou might want to predict then if you can increase on average a customer\u2019s average time spent in the store by ten minutes what would our increased revenue be. \n\nThe funky stuff comes with non linear relationships, the example above is a simple relationship where you\u2019d expect as x goes up as does y. Unfortunately not everything in life is that simple, and so for non linear relationships we can use other models such as neural nets, decision trees etc etc. \n\nI like to think of Data science as just more tools in the toolbox, you start with your basic linear regression that most people have come across in excel and that is exactly that, it\u2019s a tool to try and model some output based on an input. There are a large array of tools that you can apply. The true art in machine learning comes in messing with parameters, model types etc.",
+                    "score": 21,
+                    "author": "si828"
+                },
+                {
+                    "level": 1,
+                    "comment": "That always seems to be the big question with machine learning. I\u2019m going to put commentary on this later in my channel, on top of other polite rant subjects.",
+                    "score": 51,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for the reply. If you wanted a particular subject matter, perhaps you\u2019ve heard of Salesforce\u2019s \u201cEinstein\u201d AI layer? I believe this is using regression ML to work. I would guess it would be one of the more ubiquitous use-cases (given how many salesforce end-users there are). Could be a good example to illustrate?\n\nHappy to provide some more details if you want.",
+                            "score": 16,
+                            "author": "dunafrank",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes please do! Feel free to post here or DM me, Haven\u2019t heard of that initiative.",
+                                    "score": 7,
+                                    "author": "RacerRex9727",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Cool. Here is the \u201csalesy\u201d intro: https://www.salesforce.com/blog/einstein-case-classification/?bc=OTH\n\nBasically a Case it a database record. Once you have lots of Case records, you tell Einstein \u201chey use the value in fields X and Y to predict what the value of field Z should be. \n\nDoes that make sense/fit with your video?",
+                                            "score": 5,
+                                            "author": "dunafrank",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It might, I\u2019ll bookmark and take a look :)",
+                                                    "score": 3,
+                                                    "author": "RacerRex9727"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "We always have to graph lines from data sets like this in nuclear physics and the methods we use in our Uni are always a pain.. and we'd end up most times with different results from our comrades. So I think it would be great if we can use something like this.\n\nEdit:typos.",
+                    "score": 1,
+                    "author": "fedleesin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Few examples are:\nBeta and/or gamma rays attenuation in alluminum or lead.\nNeutron activation of alluminum.\nAnd more.",
+                            "score": 3,
+                            "author": "fedleesin"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Well this taught me nothing",
+            "score": 155,
+            "author": "BorkusMaximus3742",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Too right - this literally shows nothing at all\u2026",
+                    "score": 32,
+                    "author": "mastermrt"
+                },
+                {
+                    "level": 1,
+                    "comment": "So taking the line of best fit basically on the left, you work out the error by the distance from each point to the line (if all points were slap bang on the line you\u2019d have 0 error). \n\nWhat the ML is doing is moving the line, calculating the error, move it again calculate the error, work out the gradient of the line and that gradient (the slope) will tell you where to go next. \n\nWe want a gradient of 0 basically as that will be the minimum, it will represent the lowest \u201cerror\u201d. \n\nSo what it\u2019s doing therefore is trying to go down to the bottom, if you move the line on the left small steps and plot the error you\u2019ll end up with a parabola ( a U shape). What the machine learning is doing is trying to get to the bottom of the U, where there is paradise and the minimum amount of error. \n\nYou can see it basically draw that parabola\n\nThat will give you your sweet sweet line",
+                    "score": 12,
+                    "author": "si828",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ok, thanks, this helped me understand a little better.",
+                            "score": 1,
+                            "author": "SentientReality"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I know how machine learning works and I would say this gif is absolutely useless without context. At best this gif is just a demonstration of a particular optimization algorithm and how it traverses a cost function, and it doesn't even explain much of anything about how THAT works, either.",
+                    "score": 7,
+                    "author": "mattsprofile"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don\u2019t understand why this is the best method. A simple linear regression could be immediately completed for the same result",
+            "score": 352,
+            "author": "jerbearman10101",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You are right, there are shortcut heuristics for simpler problems like simple linear regression. However for more complex models (think neural networks which use linear functions in each node), the process very much becomes iterative with gradient descent (depicted here) or stochastic gradient descent (much more chaotic, not depicted).",
+                    "score": 269,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I figured that was the reason. You seem really knowledgeable in this area. Very cool, thanks!",
+                            "score": 81,
+                            "author": "jerbearman10101",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m just always curious and like sharing what I learn. But I appreciate that : )",
+                                    "score": 47,
+                                    "author": "RacerRex9727",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Hey is there a good resource or place you would recommend someone to be able to get started learning about machine learning ? I find it interesting but no idea where to start - my background is IT/programming/cyber security. Thank you for your post !!",
+                                            "score": 6,
+                                            "author": "iamnerdyquiteoften",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Hmmmm... well there's this great new book and I hear the author is a swell guy, and it was written for folks with that background and interest.\n\n[https://www.amazon.com/Essential-Math-Data-Science-Fundamental/dp/1098102932/](https://www.amazon.com/Essential-Math-Data-Science-Fundamental/dp/1098102932/?_encoding=UTF8&amp;pd_rd_w=EVH8k&amp;content-id=amzn1.sym.8cf3b8ef-6a74-45dc-9f0d-6409eb523603&amp;pf_rd_p=8cf3b8ef-6a74-45dc-9f0d-6409eb523603&amp;pf_rd_r=H87ABW6RCBRR3CJNQZW1&amp;pd_rd_wg=thxN0&amp;pd_rd_r=73f077d5-05fd-447e-b39c-8a1c8ca57f8f&amp;ref_=pd_gw_ci_mcx_mi)\n\n\\*kidding aside, I'm the author. Reddit folks, I promise I did not plant u/iamnerdyquiteoften for a product placement.",
+                                                    "score": 27,
+                                                    "author": "RacerRex9727",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Did O\u2019Reilly let you pick which woodland creature is on the cover?",
+                                                            "score": 5,
+                                                            "author": "BigFatDumbCat",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I have written two books for O\u2019Reilly and I still don\u2019t 100% know how they pick the animal. My understanding is the cover artist chooses.\n\nSo negative, I did not pick the field mice. We wanted to put our pet cat on the cover but alas\u2026 they were unmoved.",
+                                                                    "score": 14,
+                                                                    "author": "RacerRex9727",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "You should talk to them to see if they will let an AI pick the next one.",
+                                                                            "score": 5,
+                                                                            "author": "[deleted]"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Awesome will have a read - thanks mate \ud83d\udc4d\ud83c\udffb\n\nEdit - just bought the book on Amazon and it arrives tomorrow \ud83e\udd13",
+                                                            "score": 3,
+                                                            "author": "iamnerdyquiteoften",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Thank you! Hope you like it : )",
+                                                                    "score": 2,
+                                                                    "author": "RacerRex9727"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You're the kind of people I like to watch on YouTube. Do you have a channel?",
+                                                            "score": 2,
+                                                            "author": "boom3r84",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Thank you, indeed I do. That\u2019s what I made this animation for. https://youtube.com/channel/UC5fa7_jq9iyN68KZVCtQhIQ",
+                                                                    "score": 2,
+                                                                    "author": "RacerRex9727",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Cheers I'll have a look!",
+                                                                            "score": 1,
+                                                                            "author": "boom3r84"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Use kaggle!\n\nGet stuck in, look at some classic problems like the titanic one, just google kaggle machine learning titanic and you should get some results. \n\nLook at blog posts for people that do step by step analysis. \n\nSome data sets:\n\nTitanic survivor\nIris dataset\nBreast cancer dataset\n\nEnjoy!",
+                                                    "score": 1,
+                                                    "author": "si828"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Stanford's CS231N lecture series on YouTube is great. Watch the 2016 Karpathy version.",
+                                                    "score": 1,
+                                                    "author": "Konexian"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So basically, this is scaleable but linear regression isn't.",
+                            "score": 7,
+                            "author": "yalmes",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If by scaleability you mean other problems it can be used for...  yes the technique is more generalized towards more problems, while the mathematical shortcut techniques for linear regression only work for linear regression.\n\nI personally find algorithms that generalize well to be interesting, but if you become particularly interested in one type of problem you should learn all the shortcuts you can to solve it (which often requires a lot more advanced math and rabbit holes).",
+                                    "score": 10,
+                                    "author": "RacerRex9727",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I was actually referring to complexity vs computational requirements. Like as the problems become more complex the computational requirements grow at a lower rate than other methods. Maybe because it can be run in parallel instead of series or something.\n\n\"#\"NotAnExpert \"#\"JustLaymanThings",
+                                            "score": 5,
+                                            "author": "yalmes",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh absolutely, you\u2019re totally right. That is one of the main motivations behind stochastic gradient descent. Computers start to choke on that amount of computation and you have to resort to approximation, yes, Sorry I misunderstood.",
+                                                    "score": 3,
+                                                    "author": "RacerRex9727"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That sure doesn\u2019t look like a gradient descent to me.",
+                            "score": 2,
+                            "author": "Pbx123456"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Linear regression is just loss minimization isn't it? School was a while back for me and you sound significantly more upto date so apologies. I did some ML and NN the biggest issue at the time was getting a global minimum or a robust nearly global min. Saying slope decent doesnt do it justice. Took a cushy job and turned my brain off!\n\nCant knock the visual though, good work",
+                            "score": 2,
+                            "author": "dogfoodengineer",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, nothing like being stuck in a local minima but very far off from actually good.",
+                                    "score": 1,
+                                    "author": "redpandaeater"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Curious what you mean by shortcut here? Multiple linear regression can capture the relationships you are talking about, the difference is whether the measurement is biased and the resulting precision. Linear regression makes a specific bias-variance tradeoff (min bias at all costs), ML techniques use different tradeoffs.",
+                            "score": 2,
+                            "author": "RelyOnIrony",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you, and that's right. I use the term \"shortcut\" loosely for the non-academic folks to help understand that different heuristics and objectives exist to get a solution faster (or better) depending on which technique you choose, as well as which dataset you are working with.\n\nYou are right about multiple linear regression, and in the deep learning world I'm afraid it's a bit more alchemist in nature and not so methodical. I like how you said ML techniques use different tradeoffs, that's definitely a way to think of it.",
+                                    "score": 1,
+                                    "author": "RacerRex9727"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wouldn\u2019t some method like conjugated gradients be more efficient here? If not I would really like to know why.",
+                            "score": 1,
+                            "author": "Kruemelkacker"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Linear regression is not a \"shortcut heuristic\". It's a provably optimal analytic solution.",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Any solution pursuing a least squares method, be it simple LR or matrix decomposition on higher dimensions/data volume, does use a heuristic as the objective as well as a means to get to it : )\n\nI won\u2019t philosophize here but data always has gaps and is not the source of truth, and we always have to be aware of heuristics and model biases in whatever technique we choose to fill those gaps.",
+                                    "score": 1,
+                                    "author": "RacerRex9727",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not today, Reddit!",
+                                                    "score": 1,
+                                                    "author": "RacerRex9727"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\ud83e\udd13\ud83e\udd13\ud83e\udd13",
+                            "score": 1,
+                            "author": "FloodedYeti"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Lol",
+                            "score": 1,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "stochastic gradient descent. Something I never thought I\u2019d here again. \n\nVery complex, but the picture above is the basic gist of it though",
+                            "score": 1,
+                            "author": "Munsoon22"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "except usually it happens in N-dimensional space and moves with discrete jumps, not a continuous move like this",
+                    "score": 14,
+                    "author": "arbitrageME",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Looks like it is in discrete steps, it's just animated smoothly",
+                            "score": 3,
+                            "author": "Hypponaut"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's not for linear problems.",
+                    "score": 17,
+                    "author": "Fermi_Amarti",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But it's literally a linear model...",
+                            "score": 10,
+                            "author": "guesswho135",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What he's demonstrating is actually gradient descent with an overly large step size. The right image of the loss landscape is the important part. The left is just a visualization of the current model which happens to be linear.  That's why I said he should use a different model.",
+                                    "score": 10,
+                                    "author": "Fermi_Amarti",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I see, I misunderstood your comment as \"it's not used to solve linear problems\" rather than \"it's not the best solution for linear problems\"",
+                                            "score": 4,
+                                            "author": "guesswho135"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I was wondering why is was such a terrible choice of algorithm. I think you are right, gradient descent but with a bad choice of step size.",
+                                            "score": 2,
+                                            "author": "Pbx123456"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "A linear model using the least squared method does exactly what the diagram does, what is shown is the iterative process to achieve the final fit.",
+                    "score": 7,
+                    "author": "Yessbutno",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Actually, solutions so multiple linear regression can be computed much more quickly than using iterative methods.",
+                            "score": 6,
+                            "author": "JustTaxLandLol"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;A linear model using the least squared method does exactly what the diagram does\n\nNo, linear least squares has an analytical solution and is computed directly.\n\nIt is also worth noting that 'linear' here refers only to the problem with respect to the unknown parameters, and fitting polynomials, logs, exponentials, and others can be done using linear least squares.\n\nNonlinear regression, where parameters do not appear independently, is an optimization problem of the kind shown in the gif, although generally much less oscillatory with modern solvers.",
+                            "score": 5,
+                            "author": "OneWithMath",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes y'all are right, I'm in the wrong sub will just be going now\n\nEdit: I was thinking about multiple linear regression 2 or more predictors, is that still fitted using a solution based approach?",
+                                    "score": 2,
+                                    "author": "Yessbutno",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;I was thinking about multiple linear regression 2 or more predictors, is that still fitted using a solution based approach?\n\nYes.\n\nThe OLS estimator for the parameter vector is:\n\nB = (X^T X)^-1 X^T y\n\nWhere X is the matrix of predictors, 1 column per predictor and 1 row per data point. y is the vector of observed quantities.",
+                                            "score": 1,
+                                            "author": "OneWithMath",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thanks for that info, it's always good to learn!",
+                                                    "score": 1,
+                                                    "author": "Yessbutno"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No, only numerical methods do, like this example of Gradient Descent.\n\nThere are analytical solutions to most, if not all, linear least squares",
+                            "score": 3,
+                            "author": "diamondketo"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah. In medical research there's a movement towards ML methods instead of logistic regression for prognostic prediction problems, but I'm aware of no convincing examples where it worked better. Which is not to say these methods don't have use, but people are using them in cases where simpler methods work just fine (or better) just cos they're sexy. This gif is also educational in showing that phenomenon.",
+                    "score": 1,
+                    "author": "intrepid_foxcat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Here's an [example](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0224582) \n\nTime varying neural network outperforms logistic regression in predicting AF using primary care data",
+                            "score": 2,
+                            "author": "DocSOS",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Interesting - but no CIs for AUC, and sensitivity analysis including only baseline variables finds similar performance? The latter seems relevant if the point is to use it for clinical decision making, unless I'm missing something. And I highly doubt frequency of BP measurements would ever be incorporated into a risk model anyone actually used, for quite obvious reasons. And, as they say, stuff like AF diagnoses in secondary care is poorly captured in cprd.\n\nSee https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-022-00126-w for a discussion about some of the problems with recent ML studies!",
+                                    "score": 2,
+                                    "author": "intrepid_foxcat"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I don\u2019t think the point is to solve the problem at hand - this is just show how ML word works with a simple model.    \nYou might as well say that OP should have solved it and just posted the answer, LOL.",
+                    "score": 1,
+                    "author": "_Neoshade_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Or to the layman - \u201cDoor stopper boinggy thingy learning.\u201d",
+            "score": 13,
+            "author": "gravitywind1012",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "https://i.imgur.com/TvYEi.gif",
+                    "score": 2,
+                    "author": "249ba36000029bbe9749"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is one of the worst examples for machine learning I have seen",
+            "score": 8,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This is another animation used for my \"3-Minute Data Science\" series. You can find the video the animation was used for here, which explains linear regression in 3 minutes.\n\n[https://youtu.be/3dhcmeOTZ\\_Q](https://youtu.be/3dhcmeOTZ_Q)\n\nEDIT: As some Redditors remarked below, a simple linear regression typically won't be solved with gradient descent as shown above. These kind of simple problems (especially convex ones) have heuristic shortcuts like matrix decomposition or even a closed form equation (which doesn't scale for multiple variables and large datasets). However for more complex models (think neural networks which use linear functions in each node), the process very much becomes iterative with gradient descent (depicted here) or stochastic gradient descent (much more chaotic, not depicted).",
+            "score": 60,
+            "author": "RacerRex9727",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the video.  Looking forward to watching more.",
+                    "score": 8,
+                    "author": "slo1111",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you, I am almost done with the third one. It will be on logistic regression : )",
+                            "score": 6,
+                            "author": "RacerRex9727"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Demonstrating this with a convex problem probably wasn't a great idea, there are fairly simple nonconvex problems that don't make people think \"wow, that ML solution is really inefficient and terrible\".",
+                    "score": 3,
+                    "author": "FCrange",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ah, but can we not say the same about convoluted neural networks trained this way on recognizing images? They truly are \"inefficient and terrible\" but that's the best optimization algorithm we have currently, and yes there are many, MANY drawbacks I can rant about. \n\nSo I don't consider this misleading at all.",
+                            "score": 0,
+                            "author": "RacerRex9727",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Wait, it's on purpose?  \n\nBravo. Completely sincerely.",
+                                    "score": 1,
+                                    "author": "FCrange",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah,  I did post this with a \\*little\\* \"tongue-in-cheek\" hence the quotes around \"learning.\" : )",
+                                            "score": 0,
+                                            "author": "RacerRex9727"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Beautiful visualization of the residuals! I think you've got some low-hanging fruit modifying this visualization to compare linear regression (minimizing summed square error of \"vertical distance\") with PCA (minimizing summed error of Euclidean distance).\n\nAlso, when you plot the loss function like a manifold, it looks like there is a whole line of optimal values for (B0,B1), but a simple (y ~ x1) OLS regression only has one optimal value. What's going on here?",
+                    "score": 1,
+                    "author": "verabh",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I like the PCA idea, which has been on my list to explore if there's a good visualization I can make. I'll file that away and explore it later. And thank you!",
+                            "score": 2,
+                            "author": "RacerRex9727"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The manifold is unnecessary. I think it's flat in what I assume is the iteration dimension and the info could be conveyed in 2D.",
+                            "score": 1,
+                            "author": "JustTaxLandLol"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Why amplify/square the residuals before trying to minimize them? It was 40 years ago that I learned this stuff. I remember the Mean Square Error is used by don't recall why.",
+                    "score": 1,
+                    "author": "sqgl"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "teach: so timmy did you watch the video? could you explain how the AI works?\n\ntimmy: *pulls out a jaw harp*",
+            "score": 8,
+            "author": "lordkoba",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Timmy: (puts down jaw harp) Golly gee mister, it's fun to play but I don't understand how partial derivative calculus with iterative approximation heuristics is going to lead to Skynet. Arnold Schwarzennegar ain't much more sentient than my math homework (keeps playing jaw harp)",
+                    "score": -2,
+                    "author": "RacerRex9727"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think having it metronome is confusing. Be better to not animate it. Also show an example with a smaller learning rate. So people can see what it's like when your learning isn't just way too high for the model. It looks more normal.",
+            "score": 7,
+            "author": "Fermi_Amarti"
+        },
+        {
+            "level": 0,
+            "comment": "Can you help me understand what part of this is machine learning? There has been an optimisation toolbox with broad application algorithms which can optimise non-linear multi variant systems available in Matlab for decades. \n\nWhy is this different?",
+            "score": 4,
+            "author": "nickthornton2o",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Linear regression, fortunately or unfortunately (depending on which side of the table you're on), has been rebranded as part of the \"machine learning\" toolbox. While shortcut heuristics exist for things like simple regression and matrix decomposition for higher-dimensional linear problems, neural networks and other nonlinear models use gradient descent as depicted here. As a matter of fact, neural network nodes resemble linear functions passed to a nonlinear function.\n\nThis is not to advocate a best practice for linear regression, but rather demonstrate how \"AI\" algorithms in supervised machine learning often work.\n\nI'm actually quite critical of corporate rebranding of statistical techniques as \"machine learning\" so they can charge 5x more, all while ditching best practices and resorting to alchemy approaches. I see this quite a bit as someone who teaches AI System Safety at a university.",
+                    "score": 1,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My experience from industry is exactly that. We have digital teams developing capability and fighting for funding. Senior managers love to be able say they have machine learning capability, so the digital teams rebrand any-old extrapolation, interpolation or optimisation as machine learning.  \n\nIt\u2019s usually just an excel spreadsheet.",
+                            "score": 2,
+                            "author": "nickthornton2o"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;Linear regression, fortunately or unfortunately (depending on which side of the table you're on), has been rebranded as part of the \"machine learning\" toolbox\n\nWhere I work we always like to joke that a mean +/- standard deviation model  is machine learning because a machine has  \"learned\" the distribution of a training dataset and is applying it to a new dataset",
+                            "score": 1,
+                            "author": "Ernold_Same_"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How machine learning learns when you use too high of a learning rate and keep overshooting the optimum",
+            "score": 4,
+            "author": "tornado28"
+        },
+        {
+            "level": 0,
+            "comment": "The only thing that gif taught me is that someone out there can animate a wobbly line?",
+            "score": 4,
+            "author": "Honduriel"
+        },
+        {
+            "level": 0,
+            "comment": "This teaches me nothing.",
+            "score": 4,
+            "author": "EliminateThePenny"
+        },
+        {
+            "level": 0,
+            "comment": "That is an aggressive initial step",
+            "score": 11,
+            "author": "hotairballonfreak",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yup, exaggerated movements make it more fun to watch : D",
+                    "score": 2,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Post the smaller step sizes op!",
+                            "score": 1,
+                            "author": "si828",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Stay tuned and I\u2019ll revisit gradient descent and stochastic gradient descent later.\n\nhttps://youtube.com/channel/UC5fa7_jq9iyN68KZVCtQhIQ",
+                                    "score": 1,
+                                    "author": "RacerRex9727",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Very 3 blue 1 brown like ;) that\u2019s the highest compliment I can give. \n\nOne tip would be to just lower the music volume a bit",
+                                            "score": 2,
+                                            "author": "si828",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thank you, I was kind of going for that style and adapting it to a different purpose, as well as use a faster and more concise pacing, so that means a lot! And yes, had that on my self-improvement checklist already : )",
+                                                    "score": 1,
+                                                    "author": "RacerRex9727"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is a terrible visualisation of ML my guy",
+            "score": 17,
+            "author": "big-blue-balls"
+        },
+        {
+            "level": 0,
+            "comment": "Is a metronome \"learning\" when it slows drown gradually?",
+            "score": 13,
+            "author": "whillderness",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You got it! That\u2019s how SkyNet emerges.",
+                    "score": 10,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "* For the record I\u2019m being very facetious",
+                            "score": 4,
+                            "author": "RacerRex9727"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That\u2019s a kind of \u201ccooling\u201d (settles in a lower energy state) and some problems can be solved through cooling like processes. Might not be classified as machine learning however.\n\nhttps://en.wikipedia.org/wiki/Simulated_annealing\n\nHowever, some gradient descent minimizes may feature \u201cmomentum\u201d where the current state has some energy associated with it, and that momentum is gradually lost, and this looks like a cooling process too.",
+                    "score": 6,
+                    "author": "Fmeson"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Machine learning: the equivalent of smacking your face into a wall until it falls over instead of climbing over it, used solely because sometimes it's just not humanly possible to intelligently parse the amounts of data we now have access to.  \n\nPerfect illustration.",
+            "score": 16,
+            "author": "FCrange",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Lol this made me laugh, thanks. And yes as someone who teaches AI System Safety at a university, I agree.\n\nAnd let's not get started on spurious correlations on large datasets, and Texas Sharpshooter Fallacy. Another video for another time.",
+                    "score": 5,
+                    "author": "RacerRex9727"
+                },
+                {
+                    "level": 1,
+                    "comment": "Except the machine's face doesn't feel it!\n\nHopefully",
+                    "score": 1,
+                    "author": "Seeeab"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Ah yes you must set the m and the b correctly. Interesting.",
+            "score": 7,
+            "author": "SansGray",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Don't forget to wiggle the twirly baton!",
+                    "score": 7,
+                    "author": "22_swoodles"
+                },
+                {
+                    "level": 1,
+                    "comment": "No algorithm learns m and b as it goes",
+                    "score": 2,
+                    "author": "major130"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This looks like a 3Blue1Brown video, is it the same visualisation method?",
+            "score": 3,
+            "author": "kanavi36",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sure is! https://www.manim.community/",
+                    "score": 3,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wow I did not know it was available for anyone to use, that's awesome!",
+                            "score": 1,
+                            "author": "kanavi36"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": ".... except\n\n1. it happens in N-dimensional space\n\n2. it moves with discrete jumps, not a continuous move like this",
+            "score": 6,
+            "author": "arbitrageME",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Let's not even get started on how these properties are highly susceptible to overfitting/underfitting and how difficult it is to generalize models effectively on high-dimensional spaces : )",
+                    "score": 2,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "right, and to start in many random starting locations so you don't accidentally get stuck in a local minima",
+                            "score": 2,
+                            "author": "arbitrageME",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "But don't get caught in too low of a local minimum or you overfit! This is the part of deep learning that drives me crazy. Too many contradictory objectives and alchemy. \n\nhttps://arxiv.org/pdf/1412.0233v3.pdf",
+                                    "score": 1,
+                                    "author": "RacerRex9727"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Out of all things I\u2019m more interested in what font you used lmao",
+            "score": 2,
+            "author": "Alarming-Clue9550",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Haha I actually researched the other day what default font Manim uses. Manim is the Python library I use to render the visualizations.\n\nHere is the fruit of my research from the other day, \"Computer Modern\" is allegedly what we are both looking for.\n\n[https://www.reddit.com/r/manim/comments/gf5h1e/what\\_font\\_is\\_used\\_in\\_manim/](https://www.reddit.com/r/manim/comments/gf5h1e/what_font_is_used_in_manim/)",
+                    "score": 1,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Did a little research, it\u2019s more specifically called \u201cCMU Serif\u201d",
+                            "score": 1,
+                            "author": "Alarming-Clue9550"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Has everyone here watched the Google Lamda conversation yet? It\u2019s been voiced by actors here \n\nComplicated brilliant dialogue with man and machine.  The engineer asks very complicated unique questions, and gets fantastic answers. \n\nAbsolutely shocking. https://youtu.be/aD8PvYbbw3s",
+            "score": 2,
+            "author": "sexpanther50"
+        },
+        {
+            "level": 0,
+            "comment": "So it made a best-fit line I can make using excel in 4 seconds?",
+            "score": 2,
+            "author": "Domodude17"
+        },
+        {
+            "level": 0,
+            "comment": "So correct me if I am wrong since I am not don't finishing my statistics course , but isn't this just a linear regression simulated( with maybe Monte Carlo simulations) to give the optimal result?",
+            "score": 2,
+            "author": "_lemonation",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Pretty much yes. The purpose is to show a simplified toy example that can be visualized easily, as this technique is used on more complex models like neural networks.",
+                    "score": 1,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Definitely an interesting visualization, I wonder how this would look with p-1 independent variables . I have seen the 3 dimensional version of this graph where you have 2 independent variables and it's really trippy",
+                            "score": 1,
+                            "author": "_lemonation"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I feel like this is how machines are teaching us to think, through targeted marketing, and digging us deeper into our own niches and further from the full picture.",
+            "score": 2,
+            "author": "diver5154"
+        },
+        {
+            "level": 0,
+            "comment": "This is false. Linear regression is a closed-form equation which does not require optimization.",
+            "score": 0,
+            "author": "GlitteringBusiness22",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "As stated earlier, this is not to advocate a best practice for linear regression, but rather demonstrate how \"AI\" algorithms in supervised nonlinear machine learning often work.",
+                    "score": 3,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Well, why not make the gif using a 2-D nonlinear problem, then? And what does a 3-D optimization space even mean when you're only fitting for 2 variables?",
+                            "score": 2,
+                            "author": "GlitteringBusiness22",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The vertical axis is the loss on data for those parameters",
+                                    "score": 1,
+                                    "author": "Hypponaut"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is a \"toy\" model that shows a single example in 2D.\n\nYes, obviously this can be modeled more simply using linear regression, but now generalise this to N dimensions and a non-linear problem and this is a good demonstration of how gradient descent in machine learning works (although in this example the learning rate is obviously too high)",
+                    "score": 3,
+                    "author": "Ernold_Same_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Exactly \ud83d\ude0e",
+                            "score": 5,
+                            "author": "RacerRex9727",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I like the visualisation by the way!",
+                                    "score": 2,
+                                    "author": "Ernold_Same_"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'd like to see this with a momentum factor and see hoe well it compares.",
+            "score": 1,
+            "author": "Pneumaniac01"
+        },
+        {
+            "level": 0,
+            "comment": "This would have helped soooo much in learning about bias correction in linear algebra...",
+            "score": 1,
+            "author": "Illustrious-Echo-734"
+        },
+        {
+            "level": 0,
+            "comment": "Whipping out the old \"y=m(x)+b,\" haven't needed that in a while",
+            "score": 1,
+            "author": "Holy_Crackers"
+        },
+        {
+            "level": 0,
+            "comment": "Nice",
+            "score": 1,
+            "author": "ZoobleBat"
+        },
+        {
+            "level": 0,
+            "comment": "( \u0361\u00b0 \u035c\u0296 \u0361\u00b0)",
+            "score": 1,
+            "author": "moi_athee"
+        },
+        {
+            "level": 0,
+            "comment": "Cool. Thanks.",
+            "score": 1,
+            "author": "JunkScientist"
+        },
+        {
+            "level": 0,
+            "comment": "Looks like any PID control mechanism",
+            "score": 1,
+            "author": "ubermeisters"
+        },
+        {
+            "level": 0,
+            "comment": "What",
+            "score": 1,
+            "author": "DadIMeanBill"
+        },
+        {
+            "level": 0,
+            "comment": "\"Sorry, m b\" this machine probably.",
+            "score": 1,
+            "author": "blum4vi"
+        },
+        {
+            "level": 0,
+            "comment": "So it's just a dampened harmonic oscillator?",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019ll take \u201cthings I don\u2019t understand for $500\u201d Alex.",
+            "score": 1,
+            "author": "alexshak83"
+        },
+        {
+            "level": 0,
+            "comment": "Here the correlation is high but what in case of low correlation?",
+            "score": 1,
+            "author": "crybz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Might want to watch this other animated video I did, it will still fit but the correlation coeffficient will suffer.\n\nI\u2019m also going to make a video later on the p-value in linear regresssion.\n\nhttps://youtu.be/rijqfllOq6g",
+                    "score": 2,
+                    "author": "RacerRex9727"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m the same way in the morning.",
+            "score": 1,
+            "author": "THEMACGOD"
+        },
+        {
+            "level": 0,
+            "comment": "Oh yeah now I understand how it learns using loss minimization",
+            "score": 1,
+            "author": "CucumberImpossible82"
+        },
+        {
+            "level": 0,
+            "comment": "Nice OP I like it",
+            "score": 1,
+            "author": "si828"
+        },
+        {
+            "level": 0,
+            "comment": "Can this modeling work with 2d or 3d objects? Was wondering if could provide quantitatively analysis for known qualitative  findings. Maybe can colab on research",
+            "score": 1,
+            "author": "Mystvearn2"
+        },
+        {
+            "level": 0,
+            "comment": "Eliminate the humans = highest ratio of loss minimization ...\nWe're done",
+            "score": 1,
+            "author": "moneybgood23"
+        },
+        {
+            "level": 0,
+            "comment": "Ah yes, gradient descent",
+            "score": 1,
+            "author": "kirsion"
+        },
+        {
+            "level": 0,
+            "comment": "This is only educational if you're already well educated in the subject. This taught me nothing",
+            "score": 1,
+            "author": "Stock_Rush2555"
+        },
+        {
+            "level": 0,
+            "comment": "Wait until the brosefs at WSB learn of this loss minimization trick",
+            "score": 1,
+            "author": "Test_Trick"
+        },
+        {
+            "level": 0,
+            "comment": "I have learned nothing",
+            "score": 1,
+            "author": "Stoltefusser"
+        },
+        {
+            "level": 0,
+            "comment": "I have no idea what any of this means, but I like the wobbly line.",
+            "score": 1,
+            "author": "PM_ME_URFOOD"
+        },
+        {
+            "level": 0,
+            "comment": "Is this 3Blue1Brown?",
+            "score": 1,
+            "author": "dgdosen"
+        },
+        {
+            "level": 0,
+            "comment": "I feel like Hooke\u2019s Law is worked into the virtual physics of this.",
+            "score": 0,
+            "author": "WalrusSwarm"
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s a pity that the error still exists where the first data point has the most influence over the graph. I was hoping that AI could solve that one.",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What is this phenomenon you're talking about? Never heard about it.",
+                    "score": 1,
+                    "author": "Hypponaut"
+                }
+            ]
+        }
+    ]
+}

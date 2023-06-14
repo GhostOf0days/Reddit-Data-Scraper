@@ -1,0 +1,37 @@
+{
+    "id": "1498y5j",
+    "score": 1,
+    "title": "i need help about clean windows install, my C drive is old (MBR HDD) and i need to fresh install on E drive (GPT SSD) so i need to change bios mode from CSM to UEFI then i will format the C drive (MBR HDD) then i will install a fresh install on E drive (GPT SSD) are this the right steps?",
+    "author": "Serazax",
+    "date": 1686751950.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/1498y5j",
+    "media_urls": [
+        "https://i.redd.it/9sb5nkwirz5b1.jpg"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Long story short.\n\nCreate bootable media. Backup any data you wish to keep from E on another drive. Disconnect all drives other than E, then boot from the installation media. On the drive selection screen delete all listed partitions and then just click next.\n\nBut yes for win 10 UEFI is recommended (but not required), for 11 UEFI is required.",
+            "score": 1,
+            "author": "Ch3vr0n",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "is disconnecting all drives necessary?",
+                    "score": 1,
+                    "author": "Serazax",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Needed? No. Highly recommended? Yes. For 2 reasons\n\n1. Any drive connected to the board will show up on the install drive selection screen. This would enable you to accidentally delete the wrong partition(s) resulting in irrecoverable data loss of is then used to install windows on.\n2. Windows setup has a bad habit of placing boot record partition and system partitions on any drive other than the one windows is being installed on. Especially in systems with a HDD+SSD systems.",
+                            "score": 1,
+                            "author": "Ch3vr0n"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

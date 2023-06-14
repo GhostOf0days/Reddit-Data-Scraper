@@ -1,0 +1,1305 @@
+{
+    "id": "780ib7",
+    "score": 17401,
+    "title": "[RotTR]That's... not how arrows work...",
+    "author": "Goldpanda94",
+    "date": 1508682709.0,
+    "url": "https://www.reddit.com/r/GamePhysics/comments/780ib7",
+    "media_urls": [
+        "https://gfycat.com/ablehighleveldachshund"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Thats so interesting, the game counts the screen and crosshair as the actual source instead of the player model",
+            "score": 1685,
+            "author": "Wubbywub",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Developers being lazy or it works better most of the time than them coming from where they should.",
+                    "score": 972,
+                    "author": "kasakka1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Go back to early third person shooters and you'll see some wild ideas. A static cursor where you will always hit is the best method out of all the things tried. One weird one is a dynamic cursor that moves around based on where the characters weapons are pointing. This causes the cursor to rapidly move and change size. I think Drake of the 99 Dragons used this horrible method.",
+                            "score": 603,
+                            "author": "yaosio",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What about Resident Evil 4's laser pointer targetting?",
+                                    "score": 76,
+                                    "author": "Zaphero",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I love that method. But then again, I also just love that game.",
+                                            "score": 41,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Wouldn\u2019t it be fine to just offset the arrow spawn point to the side your character is on the screen? Still flies to the reticle, just not from the center.",
+                                    "score": 141,
+                                    "author": "kasakka1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "But it is flying to the reticle, right? What if the cursor just ignores objects between the camera and the character model, that would seem like a doable fix. ",
+                                            "score": 113,
+                                            "author": "RedditForPresident20",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Some games do this. Ever play a game where your shot hits something very close to you even though your reticle is not on it? They do what you're describing.",
+                                            "score": 98,
+                                            "author": "yaosio",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "And I love it when they do.\n\nNo more missing the creepy crawly that is snuggling me just because it's between my character and the crosshair.",
+                                                    "score": 21,
+                                                    "author": "Hust91",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I hate it. the gun is clearly aiming above the cover, yet soem invisible wall gets hit.  argh.",
+                                                            "score": 5,
+                                                            "author": "Strazdas1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm a game programmer, though I've never made a shooter:\n\nThe problem with that is that if your character is offset a little to the left (or right) of the center of the screen, the game essentially has to draw a vector between the character's position and where the cursor is pointing, and the angle of that vector is different enough from what you'd get if you started from the middle of the screen that it can cause the arrow to land in places you wouldn't expect. It gets even trickier since the arrow (usually unlike bullets) has physics and is effected by gravity.\n\nSay, for example, the vector is between the character (left of the screen) and, say, 30 yards away from the center of the screen. If the arrow travels farther than that it will end up right of center on the screen, and if it doesn't travel as far (it *does* fall due to gravity) it will appear left of center. This will give the player the idea that the developers intentionally made it more difficult to properly aim.",
+                                            "score": 68,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The Last of Us did it well I think. They had the bow (and throwable objects) show the trajectory of where it would land. So if you could get the the reticle on an enemy, it'll hit them no matter what.\n\nI also enjoyed the way MGSV does it. They account for the inaccuracy of the center reticle so they actually have two. A fixed one for the center where you're aiming, and a dynamic one for where the bullet's actually going to hit. So if you're aiming over something and the reticles aren't lined up, then you know you gotta re-adjust your position. I think the second one only shows up if an object's in the way though so it's not obtrusive.",
+                                                    "score": 38,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Because then it'll hit something that otherwise looks like its not in the way, which will annoy people way more than this.",
+                                            "score": 3,
+                                            "author": "RolandTheJabberwocky"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I like how in Fortnite you get a second cursor to show if your shot is going to be blocked by terrain or objects.",
+                                    "score": 38,
+                                    "author": "skyturnedred",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yup a few games do this. MGS the phantom pain comes to mind",
+                                            "score": 14,
+                                            "author": "kenwaystache"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I think pugb does this aswell. It's really neat.\n",
+                                            "score": 3,
+                                            "author": "ffngg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Arma3 uses a dynamic crosshair and it works fine.",
+                                    "score": 25,
+                                    "author": "treesniper12"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[tell me about it](https://i.imgur.com/JScoKpE.gifv)",
+                                    "score": 16,
+                                    "author": "TacticalHog"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "idk, Jedi Knight 2-3 did a good job at 3rd person reticles this way.",
+                                    "score": 14,
+                                    "author": "Jewishzombie"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; This causes the cursor to rapidly move and change size. I think Drake of the 99 Dragons used this horrible method.\n\nIt works perfectly in most modern titles.",
+                                    "score": 13,
+                                    "author": "DizzieM8"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Dynamic cursor sounds like Arma 3",
+                                    "score": 10,
+                                    "author": "AwkwardNoah"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; One weird one is a dynamic cursor that moves around based on where the characters weapons are pointing.\n\nThe original System Shock did something like this. You aimed with the mouse, but it didn't move your POV -- you'd see your weapon move to aim at the point, and you'd hit whatever you were pointing at, so it didn't bother trying to calculate lines of fire.\n\n'Course, it was also 2D sprites in a pseudo-3D map, so there's that. The remake is probably going to use modern FPS aiming, since it's full 3D.",
+                                    "score": 8,
+                                    "author": "LonePaladin"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;One weird one is a dynamic cursor that moves around based on where the characters weapons are pointing. This causes the cursor to rapidly move and change size. I think Drake of the 99 Dragons used this horrible method.\n\nDead space did this and I thought it was done well.  There was a crosshair but you would also see the weapon's laser and it would dart around as it hit different surfaces.",
+                                    "score": 5,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Dynamic reticles are still in use today, in high-profile games.  MGS5 is a perfect example of this.  Not always a bad thing in my mind. ;)",
+                                    "score": 3,
+                                    "author": "drakfyre"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Serious Sam also uses a dynamically moving cursor, despite it mainly being in first person.",
+                                    "score": 2,
+                                    "author": "Dinjoralo"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Drake of the 99 Dragons is a beautiful masterpiece.",
+                                    "score": 2,
+                                    "author": "Minosheep"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "There was this transformer meka game called GunMetal which had the cursor loosely float across the screen as you moved the mouse while it also controlled the camera. It was hard as shit to aim, especially when the screen became a bit more cluttered and you couldn't even see it.",
+                                    "score": 1,
+                                    "author": "KrishaCZ"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not from being lazy. Its not any harder to do it one way or the other. Its because if you have the arrow source from the bow, you end up with situations like this where the crosshair is in a different place than where the arrow will hit. That usually doesnt feel great for gameplay, so they do this.",
+                            "score": 95,
+                            "author": "Splatypus",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's more of a slight oversight, honestly. You'd just have to discard all the traces behind the character which would always ignore clipped geometry. In all likelihood on the easier side of fixes.",
+                                    "score": 14,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\"Lazy.\"\n\nThe decision to do stuff like this is because of the off-center third person camera angles. If you follow a more...\"strict\" interpretation of the character model's firing angle, you can end up with some unpleasant-feeling \"quirks\" in the aiming that players will often be less than pleased to deal with (hello PUBG). Alternatively, you introduce a bunch of after-the-shot processing, that can result in weird delays and other issues with inconsistent performance. I forget the name of the game right now (I think it was some weird fantasy arena shooter kinda thing) but it was from the early 2000s and featured a similar over-the-shoulder firing scheme that sourced shots from the character model but would \"correct\" the shots to compensate for the off-center aim. But you could end up with absolutely fucked up glitches where in the exact situation as presented in the RotTR gif above, your character would actually turn to shoot AT the tree due to the post-shot correction favoring the obstacle.\n\nIt's all a balancing act of finding which combination of pros and cons are best in terms of making the gameplay as consistent and smooth as possible. Heck, the original Gears of War used the EXACT SAME system (and by extension, any other over-the-shoulder shooters on the same Unreal Engine) as shown above. That's why people could run past their target, fire their shotgun with the person in the middle of their screen and get the kill. Even though the actual character model and firing angle wasn't even remotely close to allowing that to happen.",
+                            "score": 82,
+                            "author": "syriquez"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I found out in I think halo 2, the scorpion tank shells come from the turret, not the crosshairs/screen and not the end of the barrel.\n\nIf you stand on the tank so your body is clipped into the barrel, and the gunner shoots, you explode.\n\nBecause the shell has to pass down the barrel, and hits you first. ",
+                            "score": 10,
+                            "author": "xSARGEx117x"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Probably could've been just as lazy by keeping the arrow origin in the center of the screen but just a bit more forward to the same distance of the bow",
+                            "score": 1,
+                            "author": "kevindqc"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 23,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There\u2019s a popular RDR gif of someone shooting their horse because of this.",
+                            "score": 13,
+                            "author": "hobskhan"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This was a big thing in the first Gears of War. It could make for some really dope kills and trick shots.",
+                            "score": 5,
+                            "author": "I_need_proof"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I remember this happening in one of the Rainbow Six games.",
+                    "score": 2,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "At least in this game the arrow is fairly expendable. In Destiny 1 &amp; 2 a character has a bow as a super attack (2+ minute cooldown). It's extremely easy to hit an object behind you or the ceiling because of programming like this. ",
+                    "score": 1,
+                    "author": "PmMe_Your_Perky_Nips"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Pretty sure it works this way because:\n\nA. It is the only way to keep aiming smooth while panning across different depths.\n\nB. If the shot actually came from Lara instead of the centre of the screen you would have to do some trajectory considerations every time you wanted to shoot something and players would get frustrated by hitting cover and obstacles.",
+            "score": 728,
+            "author": "FloppY_",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The cover and obstacles thing is real. I have had so much frustration with it before. ",
+                    "score": 190,
+                    "author": "Nic3GreenNachos",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is how it works in PUBG, isn't it? And it can be pretty frustrating",
+                            "score": 69,
+                            "author": "random_boss",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It can be pretty frustrating for people that don't understand it. Since it's not the same as other games you just need to get used to it first.\n\nThe bullets always come from the gun, and they always go where the gun is pointing. ",
+                                    "score": 68,
+                                    "author": "sinsmi",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Which, frustration be damned, is a better way of doing it",
+                                            "score": 66,
+                                            "author": "PALMER13579",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I mean, it depends on what you meant by \"better.\" Because I'd imagine that aiming from the screen is smoother and works better functionality-wise, but from the weapon is more realistic and adds more depth to the game.",
+                                                    "score": 49,
+                                                    "author": "BunnyOppai",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Realism be damned, theres plenty of it in the real world. I play games for fun. Never understood the people that cant play something because its seemingly impossible in real life. Haha i just dont get it ",
+                                                            "score": 24,
+                                                            "author": "HumanityAscendant",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Well yeah. But without the way PUBG does it you could crouch behind something and be completely hidden while being able to kill people. It's good realism.",
+                                                                    "score": 28,
+                                                                    "author": "imsparkly"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "If you could shoot people in PUBG while standing way out of sight, I promise you would not have much fun. ",
+                                                                    "score": 4,
+                                                                    "author": "spongemandan"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Is it really, though? From a gameplay perspective? It makes a lot more sense from a first person perspective, but third person can complicate things pretty substantially. One of the biggest is that you end up shooting things that are in the line of fire, that you couldn't tell were in the line of fire from your original perspective. It's a simple side-effect of that fact that you are shooting from one perspective, but aiming from another. \n\nIt's something that can be acclimated to, but why should you have to? Why should the perspective itself be a challenge to overcome? \n\nEvery approach has pros and cons, but the unfortunate fact of the matter is that some of them are more intuitive and approachable than others.",
+                                                    "score": 9,
+                                                    "author": "hatesthespace",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In the case of third person PUBG, they've been nice enough to add a red circle infront of your aim if the gun is blocked by a wall, so you know if you have to reposition yourself",
+                                                            "score": 11,
+                                                            "author": "puq123"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Well in PUBG aren't you supposed to scope in anyway? I haven't played it but it looks like hipfire isn't supposed to be good, at least in the default third person mode.",
+                                                            "score": 3,
+                                                            "author": "the_noodle"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just try to play something like Fallout in third person and you'll realize why it's like this in most third person shooters ",
+                    "score": 24,
+                    "author": "Matdir",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This post made me realize why I hate that game in third person. Skyrim is fine but fallout feels like ass",
+                            "score": 5,
+                            "author": "aniforprez",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What does ass feel like? Mine is like a balloon filled with jello.",
+                                    "score": 2,
+                                    "author": "StopReadingMyUser"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; If the shot actually came from Lara instead of the centre of the screen you would have to do some trajectory calculations every time you wanted to shoot something\n\n...you have to do that anyway, no matter what game object you choose to inherit your projectile's position and rotation from.",
+                    "score": 10,
+                    "author": "Dannei",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "By \"trajectory calculations\" he means changes in the direction of the bullet so that it hits the crosshair (or below it because of gravity).\n\nIf you shoot the bullet from the center of the screen, how do you make the bullet hit the crosshair (or below it)? You just shoot it perpendicular to the screen plane. No changes in bullet direction required.\n\nNow if you shoot from Lara's gun, how do you make the bullet hit the crosshair (or below it)? You need to calculate the angle necessary to make the bullet hit the crosshair, and that angle depends on the depth of the point located at the crosshair relative to the camera position.",
+                            "score": 6,
+                            "author": "shitdive",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The last of us got over this by giving projectiles faint arcing paths through the air before you released them so that any interruption would be visible.",
+                    "score": 7,
+                    "author": "23423423423451",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's just with projectiles, though. This effect also applies to guns.",
+                            "score": 11,
+                            "author": "BunnyOppai",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't understand the difference.\n\nThe bullet/projectile can still come from the character, and as long as the reticle on screen accurately shows where it will hit then it shouldn't be any different.",
+                                    "score": 3,
+                                    "author": "falconbox",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You're right about B and the last paragraph. But about point A, for game devs it'd be just as easy to make the arrow come off the bow instead of the crosshairs.",
+                    "score": 1,
+                    "author": "kpagcha"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Gears of war had a similar ummmmm... feature, called backpacking. You could actually shoot someone standing directly behind you if you timed it right.",
+            "score": 289,
+            "author": "BroDoper",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I always heard it called a camera shot.  If a match came down to a 1v1 and I downed someone on the stairs, I'd execute people like that.\n\nI also played against a pro player once who head-shotted me with the long shot while sprinting past me...  Like he just charged straight at me and at the perfect moment he had his camera centered right over my head and he blew my head off.  I just turned the game off after that.",
+                    "score": 109,
+                    "author": "DaftlyPunkish",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I definitely remember in the first Gears of War if you were looking straight up in the air you'd shoot backwards. That headshot woulda been brutal though ",
+                            "score": 32,
+                            "author": "PALMER13579"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "TIL you're not actually playing as Lara, but her apprentice running behind her mimicking her every move.",
+            "score": 153,
+            "author": "skyturnedred"
+        },
+        {
+            "level": 0,
+            "comment": "This reminds me of bullets coming from the chest in halo 1/2\n\nEdit: most upvoted comment &lt;3",
+            "score": 1989,
+            "author": "alpha-null",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There was a similar problem with the FPP mode in PUBG. The guns all shoot from where they're supposed to, but the actual location of the camera used to be somewhere behind the character I believe which caused all kinds of problems, so now the camera is about chest height. Which means when you go to loot houses, the door knobs are near eye level from the player's POV.\n\nAlso makes knowing where your barrel actually is sort of weird and difficult to fire out of windows because almost every single window has bars on it.\n\nEdit: Actually someone else has explained what causes this in a child comment. While I'm unsure what originally happened, the camera is now in the head but BlueHole didn't scale the buildings correctly so your character seems weirdly short.",
+                    "score": 642,
+                    "author": "NatesYourMate",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Can't have people jumping out of windows now can we ",
+                            "score": 229,
+                            "author": "AsterCharge",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "yes you can still crouch jump through them",
+                                    "score": 105,
+                                    "author": "Thebestnickever",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "wait what? You crouch jump out of barred windows?",
+                                            "score": 50,
+                                            "author": "FokkerBoombass",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No, they mean the windows that don't have bars on them. They also have to be big enough.",
+                                                    "score": 61,
+                                                    "author": "William_Buxton",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 17,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Don't tell that to shroud. He always finds a way",
+                                                                    "score": 7,
+                                                                    "author": "Zelotic"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Only unbarred ones",
+                                            "score": 2,
+                                            "author": "drakoman"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The funny part of that is that the worst offenders are already too narrow to jump through. Most of the ones that are big enough only have vertical bars, which are easy to deal with.",
+                                    "score": 4,
+                                    "author": "ChampIDC"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The Camera is actually in the forehead. When you spawn in FPP you can look down at your eyeballs. I think the running theory is that the world isn't scaled properly.\n\nThat being said fuck shooting thru windows etc. I think FPP should shoot like this GIF is and TPP can do what it does now.",
+                            "score": 18,
+                            "author": "Besuh",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Apparently all of the assets in PUBG are from the ~~Unity~~ Unreal store, which means none of them were made specifically for the player height in mind.",
+                                    "score": 6,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ah that makes sense. They look good tho",
+                                            "score": 2,
+                                            "author": "Besuh"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Unity store? The game was made in Unreal, so that would be interesting.",
+                                            "score": 3,
+                                            "author": "shizuo92",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 49,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;Hohoho\n\nits magic? ",
+                                    "score": 38,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You know\n",
+                                            "score": 26,
+                                            "author": "nannal",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Never believe, it's not so \n",
+                                                    "score": 17,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I enjoy how the comma reverses the meaning of the lyric\u2014taking it from a cheery exhortation to always believe in the magic to a dire warning never to believe in what is not so.",
+                                                            "score": 4,
+                                                            "author": "swuboo",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I don't make the lyrics friend. i just copy and paste them from somewhere. \n\nhttps://genius.com/Pilot-band-magic-lyrics\n\nbut also. don't chop me apart with an axe. thanks. ",
+                                                                    "score": 2,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[Hohoho](https://youtu.be/dJ7QHbxNgJQ)",
+                                            "score": 1,
+                                            "author": "PacoTaco321"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Freeza?",
+                                    "score": 2,
+                                    "author": "Ganjisseur",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm thinking he's a happy mask salesman.",
+                                            "score": 2,
+                                            "author": "Fjolsvithr"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "",
+                            "score": 21,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They were bought of the asset store, so they are all slightly off",
+                                    "score": 9,
+                                    "author": "kmrst",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "also one of the reasons the game runs like ass",
+                                            "score": 11,
+                                            "author": "DeadlyPear",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Sometimes I wonder what the actual fuck Blueballs studios is doing. It seems like they talk about doing a lot, but actually does jack shit. There's probably two people working on the game actively, the rest is in the cafeteria circlejerking on why they can't update the game with in-house assets or even release simple hotfixes and patches. Why not just fucking make the maps 30% smaller with 30% less players, so the game is actually playable in the first 10 minutes. The list is fucking endless on the solutions other people would come up with, PlayerUnknowns solution is to make another fucking map the exact same size. This fucking server solution they have managed to throw together obviously can't handle 100 people on such a large map so why the hell do they try and force it?\n\nPUBG is a fucking dumpsterfire and in about one years time there will be less than 100k playing it. The fucking PlayerUnknown guy is one of the most unreliable designers in the industry and people went off the hooks for an unfinished game by this dried up green grape. I hope this motherfucker never touches another game again, because most of it turns into pure unadulterated piss in a few months.\n",
+                                                    "score": 2,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "i really dislike the fpp camera position in that game. apart from being low it also kind of feels like you are leaning forward the whole time, very odd",
+                            "score": 25,
+                            "author": "hulkbro",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I only play FPP. Third person feels too weird to me. ",
+                                    "score": 13,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Good for you. I was saying for me it feels bad. I generally prefer fpp anyway. ",
+                                            "score": 0,
+                                            "author": "hulkbro",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ya it feels like garbage 100%. The game is just badly made in general but for some reason it feels so good to play I can't stop. ",
+                                                    "score": 17,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Probably because you're having fun with it. No matter how angry I get at a glitch or losing to RNG I always come back because the game is just fun to play.",
+                                                            "score": 7,
+                                                            "author": "[deleted]",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The bullets come out too low as well. Feels like the gun is at chest level but the bullets come out of my dick.",
+                                    "score": 1,
+                                    "author": "NeV3RMinD"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "In CSGO, you actually shoot from your face IIRC.",
+                    "score": 88,
+                    "author": "xternal7",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Same with a lot of first person shooters. Head glitching is a bitch",
+                            "score": 56,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The Heavy in TF2 shoots from his eyes iirc. ",
+                    "score": 56,
+                    "author": "tobiderfisch",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I shoot with my heart.",
+                            "score": 36,
+                            "author": "IceNein",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I shoot with my mind and kill with my heart. ",
+                                    "score": 16,
+                                    "author": "bootsechz",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This guy gets it. ",
+                                            "score": 5,
+                                            "author": "RolandKa"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; I shoot with my mind and kill with my heart\n\nThis guy remembers the face of his father.",
+                                            "score": 5,
+                                            "author": "NasalSnack"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's for a good reason. He holds his minigun very low to the ground, any waist-high wall would stop his fire otherwise.\n\nSoldiers with the Original, the Quake-style rocket launcher that fires from the center of the screen like old-school FPS games, have their rockets come out of their faces/chests.",
+                            "score": 12,
+                            "author": "trakmiro"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm pretty sure in H1Z1 bullets shoot from your belt buckle (not sure if they ever fixed because I haven't played in 6 months because fuck you daybreak)",
+                    "score": 24,
+                    "author": "snora41",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 10,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 5,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Nobody cares about your edit",
+                    "score": 22,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I downvote comments whenever I see them edit it to say something like that",
+                            "score": 11,
+                            "author": "Leftcalfday"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "When ADSin Ghost Recon Wildlands, bullets came from the scope\u2019s crosshairs and not the barrel. \nNot sure if it\u2019s been patched or not, I haven\u2019t picked it up in ages. ",
+                    "score": 3,
+                    "author": "Rothyr_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Fairly standard, rainbow six siege does it as well. That way you avoid some bullshit with the crosshairs being on the target but something else obstructing the shot.",
+                            "score": 11,
+                            "author": "thegforce522"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "In Goldeneye the camera and projectile point of origin was in your chest. Grenades would just plop out of your ribcage in multiplayer.",
+                    "score": 3,
+                    "author": "Beorma"
+                },
+                {
+                    "level": 1,
+                    "comment": "I think they still do, I remember they did in 3 so they probably still. ",
+                    "score": 2,
+                    "author": "RogueHelios"
+                },
+                {
+                    "level": 1,
+                    "comment": "They made a Halo before 1? Dude where can I find Halo .5",
+                    "score": 8,
+                    "author": "SupremeDerpDeity",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Damn. Came here to post this joke, but it got downvotes? \nWelp, I thought it was funny!",
+                            "score": 8,
+                            "author": "dhlock",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Same guess it's too \ud83c\udf3d :(",
+                                    "score": 6,
+                                    "author": "SupremeDerpDeity",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Meh. I\u2019m sure it\u2019ll go up in a bit. Just give it an hour. \n\nBut real talk. A halo prequel would be rad. ",
+                                            "score": 3,
+                                            "author": "dhlock",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I just wish the games came close to how 3 made me feel.",
+                                                    "score": 3,
+                                                    "author": "SupremeDerpDeity"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Halo prequel? Reach exists. Or do you mean something further back?",
+                                                    "score": 2,
+                                                    "author": "shizuo92"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's a fraction joke guys...",
+                            "score": 5,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It\u2019s called Call of Duty\n\nDon\u2019t play it ffs",
+                            "score": 6,
+                            "author": "GalagaMarine"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Hunter shadowshot works same as OPs gif",
+                    "score": 1,
+                    "author": "ogrelin"
+                },
+                {
+                    "level": 1,
+                    "comment": "Is that real?",
+                    "score": 1,
+                    "author": "crabsneverdie"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm very ok with this.\n\nThe alternative is way jankier. Some oddity is to be expected when aiming in third person. ",
+            "score": 100,
+            "author": "ASpiralKnight",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It reminds me of in Dishonored when you would put Springrazors on things you aren\u2019t looking at",
+                    "score": 15,
+                    "author": "GalagaMarine",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What exactly do you mean? It's been awhile since I played it and I can't even remember what springrazors are.",
+                            "score": 3,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You attach them to the anything even enemies and they erupt into a shower of razors that cut off enemy limbs.",
+                                    "score": 7,
+                                    "author": "GalagaMarine"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This was a problem in battlefield 4 as well. Since the bullets actually came from eye level, you could shoot others by just exposing your head. They then fixed it by a patch so that the bullets actually came from the gun and you had to expose yourself more iirc. ",
+            "score": 57,
+            "author": "An5Ran",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I remember in BF3, on Metro, there were certain walls in the outdoor buildings that, when destroyed, were shorter on the inside than they were on the outside; so someone in the building could shoot into the Russian spawn but would be completely obscured from the outside.  This made spawn camping the Russians unbelievably easy and pretty much guaranteed you a win. \n\nLoved that game though, easily the best Battlefield I've played. ",
+                    "score": 24,
+                    "author": "Preacherjonson"
+                },
+                {
+                    "level": 1,
+                    "comment": "good ol headglitching. I wish they would fix the bipod shit though",
+                    "score": 11,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What bipod issue? I've played a ton of BF4, but never really used bipods much. There are a few quirks I can think of though...",
+                            "score": 4,
+                            "author": "Brandon23z"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That's crazy, I'd never known of a game that didn't have this from the beginning that added it later on.",
+                    "score": 3,
+                    "author": "mbbird"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Still more believable than swimming in Siberia",
+            "score": 24,
+            "author": "growlgrrl"
+        },
+        {
+            "level": 0,
+            "comment": "What game is this?",
+            "score": 97,
+            "author": "Angus_Mcd0nald",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you for asking this. I was sitting here like, \"Rord of the The Rings?? What game is this?!\" For a split second, I thought someone had modded Rey from SW:E7 into the game. Haha!",
+                    "score": 364,
+                    "author": "timleftwich",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Rord of the Rings. My sides are killing me",
+                            "score": 148,
+                            "author": "Syfilms64",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I read that in Scooby-Doo's voice",
+                                    "score": 35,
+                                    "author": "jacknash"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[Same](http://i0.kym-cdn.com/photos/images/original/000/776/656/757.jpg)",
+                                    "score": 11,
+                                    "author": "revkaboose"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "*Rord of the The Rings",
+                                    "score": 14,
+                                    "author": "aniforprez",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "A lot of people miss the the second the.",
+                                            "score": 5,
+                                            "author": "timleftwich"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The game is called Rise of the Tomb Raider",
+                            "score": 26,
+                            "author": "Dr4gonfru1t"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "rord of the ringurrruuu",
+                            "score": 26,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Lmao i thought the same",
+                            "score": 5,
+                            "author": "Cooldude1311"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Rise of the Tomb Raider",
+                    "score": 97,
+                    "author": "Qu1nlan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "^^* ^^Rord ^^of ^^the ^^Rings",
+                            "score": 83,
+                            "author": "sinsmi",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "*Rord of the The Rings",
+                                    "score": 26,
+                                    "author": "aniforprez"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Rise of the tomb raider :p",
+                    "score": 17,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Rise of the Tomb Raider",
+                    "score": 8,
+                    "author": "zopiac"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Definitely a case of gameplay feel trumps realism.\n\nImagine for a moment that the tree was an enemy you wanted to hit.  You can either allow aiming the reticle at it and firing at it to work, or you can disallow it because Lara technically cant hit it without turning around.  If you choose the latter option, you are doubling the cognitive workload of the player, forcing them to track both whether they can see the target and whether Lara can see it.  They would have to rotate the character and camera 90 degrees away from the action to shoot that one enemy that came up on the side, and then rotate all the way back around toward the action afterward, which would feel unresponsive, clunky and disorienting.\n\nIn theory Lara\u2019s animated pose could aim at whatever point the reticle is currently aiming at.  However, she should generally be aiming in the same direction as the camera is facing, and in this case those goals are mutually exclusive.  Not only would turning around and firing toward the camera be incredibly jarring, you would also get a horrible dance if you decided to strafe and branches passed into and out of view.  The motion of the reticle landing point is in general discontinuous, which is exactly the opposite of what you want for good character animation.\n\nGames can and do work hard to hide the discrepancy between where shots actually come from and where they realistically should come from.  When a slow moving projectile is fired, it can have the visible model spawn at the gun while the hit box spawns at the reticle, and the render geo can travel along a curve that aligns it with the hit box after a few frames.  But preventing the projectile from actually hitting what the camera is aiming at is generally considered to do more harm than good.",
+            "score": 15,
+            "author": "AntiTwister",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is certainly an interesting bit of game design and a good post.  However, a lot of people in this thread are suggesting that it works this way because the devs were \"lazy.\"\n\nEspecially in a single player game, **this is not because of laziness**.  Any other mechanic* would just be confusing and frustrating for the player.  In a multiplayer game, consistency of animations and bullet/arrow firing mechanics is important because opposing players need to be able to react to each other, but in a single player game you want the most intuitive mechanics possible, even at the expense of physical consistency or \"realism.\"  If the situation in this clip was reversed, and the player was aiming at an enemy but the post was in front of the bow, it would be frustrating and *less fun* if the arrows kept being blocked by the post even though the player had a clear line of sight to the enemy.  *That* is why the developers made this choice, probably after lots of discussion by professional game designers.\n\n*Other mechanics might be:  \nProjectiles are fired from the bow to the point being looked at by the camera (reasonable, might lead to frustrating gameplay).  \nReticle is dynamically traced to indicate where projectiles (fired from the bow model) will hit - like a laser sight (reasonable but complicated/unintuitive for a single player game).  \nProjectiles are fired from the bow model parallel to the camera (I would consider this lazy, and it would be garbage to play).  \netc.",
+            "score": 36,
+            "author": "the__storm",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Couldn't they just code it so hitboxes too close to the player's character/camera are ignored?  All of the other mechanics could then be left unchanged.",
+                    "score": 10,
+                    "author": "Day_Bow_Bow",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "deleted  ^^^^^^^^^^^^^^^^0.4376  [^^^What ^^^is ^^^this?](https://pastebin.com/FcrFs94k/72837)",
+                            "score": 7,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Your first \"other mechanic\" makes the most sense to me.\n\nFire from the bow/gun, and have the reticle on screen accurately portray where it will hit.\n\nHow would this be confusing to people?  You're still aiming the reticle.",
+                    "score": 2,
+                    "author": "falconbox",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Because you're not aiming from the character's perspective. It can be frustrating to try to shoot between something narrow when you have no real way of knowing if you're aiming right.\n\nFrom a gameplay perspective, it makes more sense for the projectile to travel in a direction from the player's perspective. ",
+                            "score": 7,
+                            "author": "ChucklefuckBitch"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That would make the reticle constantly jump about. Bow-to-reticle and screen-centre-to-what's-behind-it are different trajectories entirely.",
+                            "score": 3,
+                            "author": "APiousCultist"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If your shooting at a moving target, your trajectory would vary wildly depending on whether you happen to be over your actual target or not.",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yeah, most games have your projectiles come from the camera and not the actual character. Which is actually really helpful for a lot of reasons, in terms of gameplay. If you peak over a wall and try to shoot but your gun doesn't quite get over it that's super annoying. But it also leads to weird shit like this.",
+            "score": 7,
+            "author": "Epicsnailman",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Also without some kind of smart correction, you'd miss every single shot. You'd need to constantly move the reticle based on what the character is aiming at, or move the character's aim to where the reticle is (and possibly get blocked by obstacles that aren't there from the camera's perspective). Both methods would, is not implemented very smartly, result in the camera reticle or character model spazzing out constantly as you moved, trying to align themselves with each other.",
+                    "score": 8,
+                    "author": "APiousCultist"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Could you kill yourself like that?",
+            "score": 8,
+            "author": "ninjacapo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don't think it's possible for the reticle to actually be on the player, to be honest.",
+                    "score": 2,
+                    "author": "BunnyOppai",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 4,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "The division is the first game that made me appreciate aiming a lot more, if the barrel of your gun is facing a wall (wether you're aiming there or not), the bullet will always hit the wall!",
+            "score": 10,
+            "author": "HeyitsFerraro",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Max Payne 3 was similar. If you got close to a wall, Max would point the gun upward, meaning you can shoot the ceiling even if the reticle is pointed forward",
+                    "score": 7,
+                    "author": "daddytwofoot"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does it bother anyone else that she's holding an arrow in her now hand yet drawing from her quiver? ",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's on purpose, it's a skill you unlock. If you hit the attack input immediatly after letting the first arrow fly, Lara will use the arrow she has ready to pop another one in the same place, without giving you time to aim. It's basically a double tap (and triple with another skill).",
+                    "score": 2,
+                    "author": "TheKerth"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They also won't go through a tree like that. Is she pulling a 200 lb bow?? ",
+            "score": 3,
+            "author": "stdoggy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "200 lb \u2248 90 kg\n\n^metric ^units ^bot ^| [^feedback](https://redd.it/73edn2) ^| [^source](https://github.com/cannawen/metric_units_reddit_bot) ^| [^hacktoberfest](https://redd.it/73ef7e) ^| [^block](https://www.reddit.com/message/compose?to=metric_units&amp;subject=block&amp;message=Please%20click%20'block%20user'%20below%20and%20you%20will%20not%20see%20any%20more%20conversions%20from%20this%20bot.%0A%0ASo%20long%2C%20and%20thanks%20for%20all%20the%20fish) ^| [^refresh ^conversion](https://www.reddit.com/message/compose?to=metric_units&amp;subject=refresh%20t1_doqt886&amp;message=Please%20click%20'send'%20below%20and%20I%20will%20update%20my%20comment%20to%20convert%20any%20new%20or%20updated%20values%20in%20your%20comment.) ^| ^v0.11.10",
+                    "score": 7,
+                    "author": "metric_units"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What you guys don't realize (200iq here) is the arrow is actually traveling around the whole planet to hit that tree.... I mean duh ",
+            "score": 7,
+            "author": "illigitimate_brick",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank god a Rick and Morty fan passed by !  \nIt takes at least that IQ to figure this out.",
+                    "score": 4,
+                    "author": "Y_Sam"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "At first i thought this was the winter section of the last of us.",
+            "score": 2,
+            "author": "nirvroxx"
+        },
+        {
+            "level": 0,
+            "comment": "1. Lara Croft (Tomb Raider)\n\n2. Samus Aran (Metroid)\n\n3. Cereza (Bayonetta)\n\n4. Aloy (Horizon: Zero Dawn)\n\n5. Clementine (The Walking Dead)",
+            "score": 2,
+            "author": "KDW3"
+        },
+        {
+            "level": 0,
+            "comment": "This also happens in Destiny 2 using a Nightstalker hunter. Arrows are tricky even when they are made of void light.",
+            "score": 2,
+            "author": "MrSmalls18",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Reminds me of Gears of War 1. The bullets came from the camera instead of the character. That's why you got the [\"backpack shot\"](https://www.youtube.com/watch?v=VqjVEjbIGMQ) and everything wacky that came with it.",
+            "score": 2,
+            "author": "NicolasCageHatesBees"
+        },
+        {
+            "level": 0,
+            "comment": "Teleporting arrows ,cool.",
+            "score": 2,
+            "author": "saidarsaninred"
+        },
+        {
+            "level": 0,
+            "comment": "Pretty hard to design good crosshairs for third person shooters.\n\nI'd say that is a compromise I'm willing to take for consistency's sake",
+            "score": 2,
+            "author": "MpDarkGuy"
+        },
+        {
+            "level": 0,
+            "comment": "Pfft if you think this is bad then you should see the arrows in dark souls 1 those things fly a mile to the right",
+            "score": 2,
+            "author": "soundblaster2k"
+        },
+        {
+            "level": 0,
+            "comment": "This really isn't that uncommon. One of the top posts on r/gaming shows something similar in RDR. It's just the easiest and simplest simplest implementation and, realistically, most people will probably never notice in game, because then you'd be aiming at something that you couldn't actually see. ",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Thats because the projectile system is likely made for first person mode, I made a video game where we had the same \"problem\" We just double traced each line first from the center of the screen, and then from the barrel of the gun, then using the intercept of the two, you got your final projectile location. This was for instant bullets though, not a lobbed projectile...",
+            "score": 4,
+            "author": "TylerRogers"
+        },
+        {
+            "level": 0,
+            "comment": "I feel like this happens a lot with 3rd person cameras.  I usually abuse it to shot from cover without exposing myself at all.  I want to say you could do this in Mass Effect 2, but its been so long I can't recall clearly.  I have a vague memory of doing it in a sci fi setting.",
+            "score": 1,
+            "author": "SasparillaTango"
+        },
+        {
+            "level": 0,
+            "comment": "Brings me back to backpacking in GOW",
+            "score": 1,
+            "author": "Brother-son"
+        },
+        {
+            "level": 0,
+            "comment": "/r/hitboxporn",
+            "score": 1,
+            "author": "sinetwo"
+        },
+        {
+            "level": 0,
+            "comment": "Arrows are shot from the camera? Anyone know why developers would do that? ",
+            "score": 1,
+            "author": "OceanicMeerkat",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is actually probably pretty common option used in games. Gamers really wanna assume that when they have a clear line of sight from camera to NPC, they can hit em. It's just so that in general, it is easier to allow the player to hit anything they put their reticle on.\n\nOne noteable game that does the \"right\" way (bullet coming from weapon itself) has plenty of people complaining they hit doorframes or window frames when it appears they got a clear line of sight. Because the bullet comes out lower than where the camera or the sight is.\n\nCS:GO for example have the bullet coming from the players eye/head instead.",
+                    "score": 6,
+                    "author": "Cartina"
+                },
+                {
+                    "level": 1,
+                    "comment": "Imagine the arrow comes from Lara. What direction should the arrow fire in? Because 'towards the reticle' is only consistent if she's firing directly at the screen. Instead the direction would constantly change. In this instance, she'd be aiming directly behind her at the tree.\n\nYou'd also try and shoot things and be blocked by obstacles in her bow's path, but not the camera's path, which would be confusing to deal with.",
+                    "score": 3,
+                    "author": "APiousCultist",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This reminds of when I'm playing WoW and I try to use a ranged AoE and click quickly after hitting my hot key, and end up dropping it in the rafters where my camera is instead of where I thought it would go. ",
+            "score": 1,
+            "author": "jokerswanted"
+        },
+        {
+            "level": 0,
+            "comment": "RotTr?\n\n\nHZD?",
+            "score": 1,
+            "author": "ScrithWire"
+        }
+    ]
+}

@@ -1,0 +1,387 @@
+{
+    "id": "xugm4a",
+    "score": 3019,
+    "title": "Math Notation | Calculating Summations with Bounds",
+    "author": "RacerRex9727",
+    "date": 1664795895.0,
+    "url": "https://www.reddit.com/r/educationalgifs/comments/xugm4a",
+    "media_urls": [
+        "https://i.redd.it/a6cj7yz5rkr91.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Computer Scientists taking offense to this indexing everywhere",
+            "score": 226,
+            "author": "Buddy77777",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I need a hero to start at zero.",
+                    "score": 50,
+                    "author": "NoDramaIceberg",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Matlab is the hero Engineers  ~~pay for~~ need.",
+                            "score": 22,
+                            "author": "spacejazz3K",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Julia my love \u2764\ufe0f",
+                                    "score": 4,
+                                    "author": "SpaceRiceBowl"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Unless you frequently use scientific programming languages like Fortran.",
+                    "score": 3,
+                    "author": "Occams_l2azor"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "46",
+            "score": 74,
+            "author": "alkyr312pikabu",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oops, what can I say? Math is hard. \n\nActually this is what happens when you hardcode values into LaTex. \n\nI'l have to put a note there on the video : )\n\nhttps://youtu.be/gLpOBp5kJf8",
+                    "score": 31,
+                    "author": "RacerRex9727"
+                },
+                {
+                    "level": 1,
+                    "comment": "You\u2019re right.",
+                    "score": 5,
+                    "author": "Mysterious-Feature24"
+                },
+                {
+                    "level": 1,
+                    "comment": "I couldn't for the life of me understand what the post was trying to say, 36.",
+                    "score": 2,
+                    "author": "scurvydog-uldum"
+                },
+                {
+                    "level": 1,
+                    "comment": "That what I get too.  46.",
+                    "score": 1,
+                    "author": "Altruistic-Text3481"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "as a programmer, realizing it was like a for loop really helped me understand it more, like this\n\n```\nint[] x = [5, 10, 15, 20, 25];\nint out = 0;\n\nfor (i = 0; i &lt; 5; i++)\n    {\n        out += x[i]\n    }\nprint(out);\n```\n\nit also makes it a little more intuitive for me on why you would use it as well, as i can kind of relate it to why i would use it in programming",
+            "score": 52,
+            "author": "Wholesale100Acc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "In hindsight, in the video I wish I put a Python snippit of a loop in the beginning, rather than the end.\n\nhttps://m.youtube.com/watch?v=gLpOBp5kJf8",
+                    "score": 19,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "ah, it is in the video, this is just a shorter version\n\nit honestly is such a nice explanation if you understand any coding language, as you can kind of walk through how it works to understand how it translates back into algebra\n\nalso another interesting thing is that most compilers actually convert it into the example you showed as it takes less instructions to go through that then a for loop, so for my code it would automatically convert it to\n\n```\nout += x[0] + x[1] + x[2] + x[3] + x[4]\n```\n\nalthough in static cases (not for sure if static is the right word, but basically if the numbers in the array arent random) i think it would just automatically set out to that number so it doesnt have to do the math when it runs\n\nalso this compiler magic is why you should make code be the most efficient for human reading and not for the computer, as the compiler will just turn it into the most efficient for the compiler",
+                            "score": 7,
+                            "author": "Wholesale100Acc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Interesting. I have never deep dived into compilers but only speculate how they work and optimize.",
+                                    "score": 3,
+                                    "author": "RacerRex9727"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "and then you get to infinite sums.",
+                    "score": 2,
+                    "author": "bestjakeisbest"
+                },
+                {
+                    "level": 1,
+                    "comment": "I can't figure out why your code gives syntax error on Python. Please help, I'm noob learning the basics of code.",
+                    "score": 2,
+                    "author": "Umbasaman",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "because this is not python",
+                            "score": 16,
+                            "author": "colburp"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I got you.\n\n    x = [5, 10, 15, 20, 25]\n    \n    total = 0\n    \n    for i in range(len(x)): \n        total += x[i]\n    \n    print(total)",
+                            "score": 8,
+                            "author": "RacerRex9727",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You are overwriting the built-in `sum`.",
+                                    "score": 7,
+                                    "author": "Koala_eiO",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Good catch, although I don\u2019t think it harms the example code. Just encourages bad practice of clashing with existing functions.\n\nEDIT: just changed it from \u201csum\u201d to \u201ctotal\u201d",
+                                            "score": 6,
+                                            "author": "RacerRex9727"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "i was writing psuedocode, i think if you just remove the variable type declarations it should work (or maybe even just the [] on the int[]), and replace += with = out + x[i] it should work(?)\n\nalso a little coding challenge, you should try to get it to do the in between numbers like in the gif",
+                            "score": 3,
+                            "author": "Wholesale100Acc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Huh? 36? Looks like 46 to me",
+            "score": 10,
+            "author": "wandering_sailor"
+        },
+        {
+            "level": 0,
+            "comment": "This is OC. Full video is here explaining summations: [https://www.youtube.com/watch?v=gLpOBp5kJf8](https://www.youtube.com/watch?v=gLpOBp5kJf8)\n\nPlease note that I made a typo as someone pointed out, that total is 46 not 36 : )",
+            "score": 15,
+            "author": "RacerRex9727",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Do you use the same software as 3blue 1brown? Looks clean",
+                    "score": 6,
+                    "author": "Oxcell404",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Affirmative, I\u2019ve been having a lot of fun with Manim\n\nhttps://www.manim.community/",
+                            "score": 15,
+                            "author": "RacerRex9727"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why if i = 2 makes it sum just the middle numbers? And not starting at index 2. (2,3,4,5)?",
+            "score": 14,
+            "author": "gluedpixel",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "N = 4 so the summation up to the fourth digit",
+                    "score": 16,
+                    "author": "Joshhawk",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh I see, missed that one. But seems like a wrong explanation \u201csum just the middle ones\u201d without making that clearly since before that it was 5. Thanks for answer.",
+                            "score": 18,
+                            "author": "gluedpixel",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It shows N=5 in yellow when summing the whole array, I'm not sure how much clearer they could make it",
+                                    "score": -8,
+                                    "author": "Charadin",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The video would be clearer if it presented i and N values respectively rather than concurrently.",
+                                            "score": 7,
+                                            "author": "goodnightjohnbouy"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It doesn't explain what the N or i on the summation notation actually translates to. It would be better explained as \"add the elements of X from the i^th term to the N^th term\" instead of just \"add the middle three elements\".",
+                                            "score": 6,
+                                            "author": "DeltaTheGenerous",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It does explain that though? I honestly feel like you didn't watch the video. It clearly shows N represents the upper limit in the first example, then shows how N becomes 4 in the second example when you don't want to sum the whole array. There literally a counter above the array in both examples show what i and N are indexing",
+                                                    "score": -3,
+                                                    "author": "Charadin",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It changed it yes, and it made it clear that it changed *something*, yes, but it doesn't necessarily make it *explicitly* clear how it works.  \nIn the first example, it would be perfectly reasonable for someone with no math background to assume N=\"the total number of elements in the set, X\", as that is what the visuals seem to indicate. Changing 5 to 4, then, could be somewhat of a trip up because it never makes it clear whether N is always the total length of the set or just the last term to include in the summation.  \nIt never explains what i is doing or what it means. You're expected to notice and deduce it for yourself, here. More likely, you're expected to already be familiar with the notation and not need it explained.",
+                                                            "score": 6,
+                                                            "author": "DeltaTheGenerous"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I was initially thinking of 5 as the count of values, so N could be any 4. Sounds like it\u2019s a place position though.",
+                                                            "score": 6,
+                                                            "author": "NortheastStar",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "You're not alone",
+                                                                    "score": 3,
+                                                                    "author": "AloofCommencement"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "That's what I thought it was too, so if you took out the first element you would be left with 4 elements, which is what N was changed to, so I was really confused.",
+                                                                    "score": 1,
+                                                                    "author": "SleepyFox_13_"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Not only are you wrong about any clarity, but you're also a dick about it. The video failed to adequately explain the function of each value, and it resulted in what was explained being misleading and what wasn't explained being confusing. \n\nA clear explanation would have been addressing both values individually and the effect of changing each one before it jumped to \"Here's what happens if you change both of these values at the same time.\" But not only did it not do that, it also told the viewer to only add the middle three elements *before* explaining why, which is even less clear.",
+                                                            "score": 2,
+                                                            "author": "AloofCommencement"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I couldn\u2019t even tell it had turned yellow. So i think they could have made it a lot clearer.",
+                                            "score": 3,
+                                            "author": "Acid_Monster"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "would have been clearer if they had summed it up correctly and shown 46 instead of 36.",
+                                            "score": 2,
+                                            "author": "scurvydog-uldum"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wow. Computer programmer here. This is a lot easier to understand after coding first then seeing this. Math has always been hard for me",
+            "score": 3,
+            "author": "epapi169"
+        },
+        {
+            "level": 0,
+            "comment": "Why didn\u2019t you use { and } instead of [ and ]? The ones you used are also used for setting an interval with including lower and upper bounds. { and } are usually used for a collection.",
+            "score": 7,
+            "author": "lookiecookie_1001",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I believe ( and \\[ are interchangeable and are both conventions used In the context of an ordered collection. My Pythonic side makes me biased towards the \\[ \\] : )",
+                    "score": -2,
+                    "author": "RacerRex9727",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Talking about math notation because you are explaining a mathematical concept.",
+                            "score": 14,
+                            "author": "lookiecookie_1001"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Awesome! Glad you re-iterated on all the feedback you got from the last post.\n\nSmall nitpick, I reckon it would be a liiiiitle more clear if the indices were labeled x\u2081, x\u2082, x\u2083, x\u2084, x\u2085, rather than just 1, 2, 3, 4, 5.\n\nOther than that, fantastic work! Can't imagine any way to make it more clear.",
+            "score": 3,
+            "author": "EverySingleDay"
+        },
+        {
+            "level": 0,
+            "comment": "u/savevideo",
+            "score": 2,
+            "author": "Debora___Melo"
+        },
+        {
+            "level": 0,
+            "comment": "I really wish all the \"parameters\" of \"functions\" in mathematical language were written in one line e.g.:\n\nE(x^(i), 2, 4)\n\nrather than put top and bottom of that letter E having you to stop reading left-to-right, top-to bottom and start reading bottom-to-top wtf. This is really confusing for the reading flow and comprehension.",
+            "score": 2,
+            "author": "YawnTractor_1756",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "it makes it easier to read once you have used it for a while. but how you did it is typically how you put it into programs like wolfram alpha, and matlab.",
+                    "score": 2,
+                    "author": "bestjakeisbest"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You already know from the font and colors which YouTuber made this video. The legend.",
+            "score": 1,
+            "author": "Trutheresy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "3B1B did not make this actually! His visualization software, Manim, is open source and has a community of people who use and modify it :)",
+                    "score": 4,
+                    "author": "Nerds_Galore",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I stand corrected. Thanks!",
+                            "score": 1,
+                            "author": "Trutheresy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If i=3 then the whole expression =11?",
+            "score": 1,
+            "author": "Twillix13"
+        },
+        {
+            "level": 0,
+            "comment": "Math would have been so much easier with animations like this.",
+            "score": 1,
+            "author": "rainwulf"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you! Noice!",
+            "score": 1,
+            "author": "deancrafford"
+        },
+        {
+            "level": 0,
+            "comment": "Great animation .I really enjoy it.Please , can you share your manim code? I'm curious about some of your animations of this video.\r  \nmy email is this :  boubacarkarim225@gmail.com",
+            "score": 1,
+            "author": "Ok_Shower_726"
+        }
+    ]
+}

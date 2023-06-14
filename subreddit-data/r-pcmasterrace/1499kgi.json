@@ -1,0 +1,51 @@
+{
+    "id": "1499kgi",
+    "score": 0,
+    "title": "Just cloned my main OS (C) drive with 500 GB more storage. But can't extend it in disk management. I have one partition that I want to extend the C drive by another 500 GB.",
+    "author": "westonguidero",
+    "date": 1686753515.0,
+    "url": "https://www.reddit.com/r/pcmasterrace/comments/1499kgi",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "It says it's NFTS formatted, but the extend option is unavailable for the main storage partition of the C drive. I just want to extend that partition. Is there any way to do this? - in windows 10 pro",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Partition the new drive so the main part matches your old drives size. The other partition will be a different assigned drive letter.",
+            "score": 1,
+            "author": "Bleachedhashhole",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If I clone a drive i will have to have an additional partition regardless? There's no way around that? I can't have it all on my C drive? I cloned it exactly. Which would make sense why there is a partition of 500GB free on a 1TB drive, but theres no way to combine the two?",
+                    "score": 1,
+                    "author": "westonguidero",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Screenshot of disk management please",
+                            "score": 2,
+                            "author": "Ch3vr0n",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I cant now, because I managed to do it with aomei third party software. but would love to know how to without it for next time.   \n\n\nIt basically just had an additional partition of the empty non cloned space and then the standard C drive partitions of recovery NTFS and the main partition of storage NFTS also. It just had \"extend drive\" option grayed out.   \n\n\nBasically like this but grayed out.\n\nhttps://preview.redd.it/a3h4m4bw906b1.png?width=800&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=98b9caebfd469cdfc2b73b1248f03b1688267b14",
+                                    "score": 1,
+                                    "author": "westonguidero",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You already know what you need to know. Native disk management can only extend to the right and no partition can be in between the partition you wish to expand and the understood space. You already did it right. Use third party software to move that partition out of the way (eg to the end of the drive) so it pushes the unallocated space to the left. Next to the c partiton.\n\nCurious to know what that partition was.",
+                                            "score": 1,
+                                            "author": "Ch3vr0n"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

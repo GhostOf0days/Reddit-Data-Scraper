@@ -1,0 +1,1476 @@
+{
+    "id": "hyr8dn",
+    "score": 28278,
+    "title": "Red Side Cannon Minions have 20 lower attack range than Blue Side ones (for 11 years, since Alpha)",
+    "author": "Caenen_",
+    "date": 1595852458.0,
+    "url": "https://www.reddit.com/r/leagueoflegends/comments/hyr8dn",
+    "media_urls": [
+        "https://www.reddit.com/r/leagueoflegends/comments/hyr8dn/red_side_cannon_minions_have_20_lower_attack/"
+    ],
+    "other_urls": [
+        "https://leagueoflegends.fandom.com/wiki/Size)",
+        "https://cdn.discordapp.com/attachments/334447591372619778/736725095849918484/unknown.png),",
+        "https://cdn.discordapp.com/attachments/334447591372619778/736722781516857444/unknown.png).",
+        "https://www.youtube.com/watch?v=7KGli9vl6LA)",
+        "https://www.youtube.com/watch?v=Spxwe27i6P4)",
+        "https://cdn.discordapp.com/attachments/549266844964618242/737305947759837324/unknown.png)",
+        "https://cdn.discordapp.com/attachments/549266844964618242/737307018922295387/unknown.png)",
+        "https://www.youtube.com/watch?v=PmgKH_Aadps)",
+        "https://cdn.discordapp.com/attachments/549266844964618242/737283877122343043/unknown.png).",
+        "https://cdn.discordapp.com/attachments/549266844964618242/737282716000714802/Cannon_Minion_data.gif)"
+    ],
+    "postText": "I was writing a new wiki page about [unit size](https://leagueoflegends.fandom.com/wiki/Size) the other day. One of the size modifiers that exists is Baron Buff, which only affects minions, but sure enough, this page was about non-champion sizes, too.\n\nSo after I set out to determine those modifiers, I also wanted to confirm the attack range increases on the Baron Buff page, which I asked a friend to get me. For the Cannon Minions, he returned '1050/1030 total range'.\n\nI looked at those 2 values the same way you are right now. Nope, this isn't about other minions on any separate map; these are SR cannon minions. The Blue Cannon has 300 attack range; The Red Cannon only has 280 range!\n\nAs it turned out, this has been a bug since the earliest builds of the game we have access to; all the way back from Alpha! Minions are coded as separate units for both sides of the map; So are skins, technically, albeit they properly draw from the same data file for the gameplay side (the only differences are tags like 'human' and 'freljord' which VO interactions use). Same types of minions...do not draw from the same file. Not a big problem, though, as they only have to get a few values right? Yes, in theory, that isn't a big problem.\n\nUnfortunately, in the game right now, [**this** is an excerpt the Blue Cannon Minion data file](https://cdn.discordapp.com/attachments/334447591372619778/736725095849918484/unknown.png), and [this is the same excerpt in the data for the Red Cannon minion](https://cdn.discordapp.com/attachments/334447591372619778/736722781516857444/unknown.png). apart from the Name ID's, notice a difference?\n\nAnd indeed, in the game, these minions adhere to those range values. \n\n[If you make 2 opposing cannons run into each other without interference, they'll not always start attacking each other at the same time like same-ranged units would](see \\*Edit below for why this link is missing) - instead the Blue Minion goes first a lot of times. The reason it doesn't happen always is that 'is my enemy in attack range yet' is checked only so often, which is also why attacking an enemy moves your champion slightly closer than their attack range would require most of the time. Some would argue that that is to aid in chasing/orb-walking, but I don't think it was set up with that in mind. In any case, attack pathfinding at least doesn't path you into Dragon pit if you want to attack someone on the other side of that wall that is in range of Dragon pit at the time, which would be dumb.\n\n###Edit: I got some help in re-doing the proof for this:\n\nUsing Syndra W, we can get exact range values and eliminate the *'is my enemy in attack range yet' check* by throwing the minion straight from inside its range to slightly further than it was before. If it attacks without walking, it's inside its attack range; If it nudges forward first, it was thrown further than it's attack range.\n\n[Test with Blue Cannon](https://www.youtube.com/watch?v=7KGli9vl6LA) | [Test with Red Cannon](https://www.youtube.com/watch?v=Spxwe27i6P4)\n\nHere is a [comparison for the longest throw at which the minion doesn't nudge forward (= is still in attack range) at.](https://cdn.discordapp.com/attachments/549266844964618242/737305947759837324/unknown.png) The difference isn't large (it's about 5% of attack range against a normal-sized champion), but you can see it [via the cursor location.](https://cdn.discordapp.com/attachments/549266844964618242/737307018922295387/unknown.png)\n\n-\n\nAlso, [there's a Ryze bug that made separating these minions kinda annoying yet kind of fun.](https://www.youtube.com/watch?v=PmgKH_Aadps) This is the reason you canot port a single Rift Herald, or a single minion period, btw (first minion takes last ported champion's position, or won't get a new location at all if no champion was ported).\n\n-\n\nI tried showing off this difference in the one patch where the new HUD showed unit ranges in the collapsed version (5.14), [however minions all show as 0-ranged anyway due to ((bug))](https://cdn.discordapp.com/attachments/549266844964618242/737283877122343043/unknown.png). Which is sad, maybe someone would have noticed it then already!\n\n-\n\nThe fact that blue team seems to generally win when the game is left alone by players entirely might be due to this bug. Blue team also has a higher winrate overall in the game, which is often attributed to the assymetry in HUD and the map, which is reasonable, but I wonder what the impact of this bug has been on that winrate, afterall.\n\n-\n\n\\*Edit: Turns out the mentioned tickrates make this way too hard, and upon reviewing the best clip I have, it has minion damage increase due to my target dummies leveling up, so ~~I'll remake this for you with a proof that's less up-to chance.~~\n\nEdit2: Remade proof. Now definitive. See above.\n\n---\n\n**TL:DR**: [Spot the difference](https://cdn.discordapp.com/attachments/549266844964618242/737282716000714802/Cannon_Minion_data.gif)\n\n---\n\nEdit: Would you believe it, turns out this bug is LITERALLY fixed on PBE this cycle already. I did all this confirmation work for naught. Well, at least we know the fix will be in 10.16 (next full patch), most likely!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This may be why blue side always wins when you let only the minions fight, since the blue cannon minions can attack sooner.",
+            "score": 8619,
+            "author": "Mattiaatje",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah that was my initial thought too once this was discovered, and I actually did a mini-experiment for now - indeed in a decent favour of blue team. Not enough for a statistical proof but yeah - more on that in my vid in the evening today",
+                    "score": 4175,
+                    "author": "Vandirilol",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Anivia wall a lane, kill non-cannon minions. \n\nOnce you have like ten cannons for each side let the wall drop and see how each side performs.",
+                            "score": 733,
+                            "author": "HiMyNameIs_REDACTED_",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "You don't need Anivia to set that up in the practice tool. You can toss some target dummies in the middle of Top/Bot before the point where the minions would crash, and they won't go beyond them. Then, just buy a bunch of IEs and kill the ranged/melees. I guess you use... Ryze ult, maybe, to reposition ally minions? I don't think Tahm can devour them. \n\nWhen you want them to fight, delete all the dummies.",
+                                    "score": 346,
+                                    "author": "Ephemeral_Being",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I tried that and...boy are there things to consider. For instance, if you kill the enemy minions while your allied dummy is still holding them, it gains experience, gaining levels, which increases your level advantage against the enemy, giving your minions bonus damage and incloming damage reduction.\n\nAnd then, as noted in the post, the units also figure out whether they arrived in attack range on a periodic timer, so unless you're lucky with their relative positions, they might just start attacking simultaneously, anyway.\n\nAnd I spent over an hour trying to reproduce it, anyway, whith only hard-to-see results. *REEEEEEEEEEEEEEEEEEEEEEEEEEE*",
+                                            "score": 418,
+                                            "author": "Caenen_",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "why the FUCK does the dummy have xp",
+                                                    "score": 200,
+                                                    "author": "SquidKid47",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It's pretending to be a champion, so it shall behave like a champion.",
+                                                            "score": 242,
+                                                            "author": "Caenen_",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "what if you replaced the dummy whenever it was about to level up?",
+                                                                    "score": 26,
+                                                                    "author": "BravestCashew",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Yes, but very tedious (removing all dummies and placing them again does not clear their level). I could also just place the dummy away while I tanked the minions and cleared them, etc, but god, fuck this shit.",
+                                                                            "score": 54,
+                                                                            "author": "Caenen_",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "league practice tool kinda sucks tbh\n\nthrowback to that clip of the dota player exiting a ranked match, opening practice tool to check an interaction, and loading back into the game all within 40 seconds",
+                                                                                    "score": 113,
+                                                                                    "author": "SquidKid47",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I was thinking the same and put u/vandirilol on the case. The reason the difference is hard to quanitify is that minions are dumb, and the way they 'bounce' off an enemy turret aftr a push might even make their stat advantage into an overall disadvantage!",
+                    "score": 539,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I believe basic attack range is calculated from edge-to-edge, do both cannons have the exact same model size?",
+                            "score": 35,
+                            "author": "robofreak222",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes (see 'gameplay radius override' at the bottom of the data excerpts), relative attack range to center is then 65+300(280)+(enemy radius), which is most often 430 or 410 against champions, respectively for the Blue and Red minion.",
+                                    "score": 35,
+                                    "author": "Caenen_"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "At the start, yes, but since season 8 iirc they changed the balancing for minions. The stronger team will spawn stronger minions.\n\nThis change really fucked a lot of wave management in mid-game at high elo / pro",
+                    "score": 37,
+                    "author": "DelusionalG2fanboy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Soundslike that\u2019s intentional. They prob don\u2019t want massive freezes",
+                            "score": 13,
+                            "author": "dyancat",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This game's been rigged from the start...",
+            "score": 4701,
+            "author": "Obrusnine",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Always has been...",
+                    "score": 2607,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "http://imgur.com/gallery/hPl3Mba",
+                            "score": 1216,
+                            "author": "absolutnoob",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't know why this meme is always so funny.",
+                                    "score": 324,
+                                    "author": "Halofit",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "https://i.imgur.com/UVEgY9b.png",
+                                            "score": 417,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "NANI!? META-MEME!!",
+                                                    "score": 84,
+                                                    "author": "Caenen_"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Holy shit that's next level meta",
+                                                    "score": 19,
+                                                    "author": "Solar_Void_Throwaway"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Don\u2019t care for it myself, but it actually fits well here",
+                                            "score": 34,
+                                            "author": "dowhatchafeel"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Do the meme alreayd with the blue and red minions",
+                            "score": 186,
+                            "author": "L11on",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "u/Z0mbgief could you bless us with your pen-and-paper mastery for this one?",
+                                    "score": 210,
+                                    "author": "Caenen_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "If you\u2019re calling in the big guns I think we\u2019re in for a treat",
+                                            "score": 66,
+                                            "author": "agent_diddykong"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[Took me a while getting the images but its okay im at work](https://imgur.com/a/ciAoPF7)",
+                                    "score": 183,
+                                    "author": "RenegadeIX",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Passable",
+                                            "score": 40,
+                                            "author": "DoctorBosscus"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Did riot acknowledge this bug?",
+                            "score": 50,
+                            "author": "Mahomeboy_",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not yet. Doubt they'll ignore it though!",
+                                    "score": 83,
+                                    "author": "Caenen_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They've ignored it for 10 years, why not just wait until the heat death of the universe?",
+                                            "score": 58,
+                                            "author": "younggun92",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is truly an unjust game, your chances of winning are almost none.",
+                    "score": 189,
+                    "author": "IndianaCrash",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So that's why I keep losing! On red side it's the minions! \n\nWhen I'm blue side, it's still jungle diff, but at least I know red side definitely isn't my fault!",
+                            "score": 148,
+                            "author": "BadRequest121",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "On blue side it's because your jungler secretly knew about this bug and decided to powerfarm despite picking Kayn because \"Our cannon minions have more range, ez game, ez life\"",
+                                    "score": 59,
+                                    "author": "icantdecideonausrnme",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Ah yes a person of culture as well.",
+                            "score": 31,
+                            "author": "Anqb"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Red side awaken their persona",
+                            "score": 18,
+                            "author": "Thecristo96"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "But if my voice is reaching you, there may yet be a possibility open to you... ...I beg you. Please overcome this game... and save the rift...",
+                            "score": 7,
+                            "author": "DragonPup"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If my voice is reaching you, there may yet be a possibility open to you. I beg you, please overcome Riot's game, and save the LCS.",
+                            "score": 8,
+                            "author": "Obrusnine"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "\"They built the world to be a game, and then they rigged it... To make sure they always won.\"",
+                    "score": 27,
+                    "author": "Doctor-Jay"
+                },
+                {
+                    "level": 1,
+                    "comment": "*gets shot by blue cannon minion*",
+                    "score": 22,
+                    "author": "Condomonium"
+                },
+                {
+                    "level": 1,
+                    "comment": "When people were saying that the game was won in the champ select screen they didn't mean drafting, they meant **Minion Side Advantage**",
+                    "score": 32,
+                    "author": "Random_Stealth_Ward"
+                },
+                {
+                    "level": 1,
+                    "comment": "**An Obsidian Entertainment Production**",
+                    "score": 23,
+                    "author": "Prominer44",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is such a weird coincidence. Just last week I was looking through the minion data and found this bug. I legit spent like 2 hours double triple checking to make sure that these values were actually the ones controlling range, like who would've thought this would be in the game since Alpha.\n\nAnyways, the very fabric of league of legends is probably gonna break and minions will never be the same after this. (It seems pretty much the same on internal environments tbh). What a wild bug, and what a hilarious coincidence.",
+            "score": 1777,
+            "author": "RiotPhlox",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Which day last week did you notice it?\n\nAlso, what does design say about it - is 300 the intended attack range, or 280?",
+                    "score": 459,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Last Monday. I went with 300 as the intended range, shouldn't change much though.",
+                            "score": 542,
+                            "author": "RiotPhlox",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm guessing this was not actually a bug since Alpha, but rather since code last got refactored to fix inconsistencies between ability ranges and/or the per side perspective offsets. \n\nIIRC, **ability ranges** used to be calculated from the **center of the unit**, whereas **auto-attacks** were calculated from the **edge of the units model** (perhaps still is). So there could have been per-side adjustments to compensate for the perspective and the red side minion might have been shifted 20 extra units forward, which would also require a 20 unit range offset to make all things the same (likely to make the units hitbox look proper when facing the other direction due to the perspective). \n\nI recall a refactor several years ago that attempted to normalize a lot of these differences and negate the need to adjust each side to make the perspective look correct. I'm guessing that the offset might have been overlooked at the time.",
+                                    "score": 129,
+                                    "author": "corylulu",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "This is absolutely possible! I don't have great insight into the deep lore of league code (and am not an engineer either) so I cant verify this was the case, sadly.",
+                                            "score": 147,
+                                            "author": "RiotPhlox",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "No, I don't think that's what happened. The *vast majority* of targeted spells still do center-to-center, and I can't even think of one that explicitely does edge-to-center. [All spells that do edge-to-edge are listed here](https://leagueoflegends.fandom.com/wiki/Range#Targeted_Abilities_.28Exceptions.29), I updated that list just recently.\n\nMinion radii are centered on their location, and even if they spawned at an offset, attack range seems like the wrong place to tackle that issue at.",
+                                            "score": 31,
+                                            "author": "Caenen_",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yeah, but it was(is?) different for auto attacks, even check the archived reference links [[1](https://web.archive.org/web/20151104044926/http://forums.na.leagueoflegends.com/board/showthread.php?t=2166066)] [[2](https://web.archive.org/web/20151104044928/http://forums.na.leagueoflegends.com/board/showthread.php?t=2161236)] in that post, which also states that auto attacks were edge to edge. \n\nI remember some post that happened around the time the map got remade where they were trying to normalize a bunch of issues that were put in place to make ability ranges *feel* more intuitive because of how the maps perspective distorts range depending on the direction (which is why range indicators were also so bad for a long time) and hitboxes also needed adjustments to actually appear directly beneath the models and whatnot. And since AA's were edge to edge, if they adjust the cannon minion to be a bit more forward, it would make sense that offset was made... And if it was fixed later, it would be easy to miss.",
+                                                    "score": 14,
+                                                    "author": "corylulu",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Maybe they adjusted the model, but everything else is working as it still does.\n\nBasic attacks are still edge-to-edge. That never changed. [The wiki page documents it a bit better than that old forum discussion, btw.](https://leagueoflegends.fandom.com/wiki/Range)\n\nThe only thing that changed at the time of the SRU was minion AI (boards post is no longer accessible pepehands), but not their actual stats.",
+                                                            "score": 6,
+                                                            "author": "Caenen_",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Wow, the one time I think it makes no sense to check whether the bug is fixed on PBE yet because of its age; [Sweet!](https://cdn.discordapp.com/attachments/549266844964618242/737362188049842236/unknown.png)\n\n...now make sure it also makes its way into the bugfixes section in the 10.16 notes ^:\\^)",
+                                    "score": 356,
+                                    "author": "Caenen_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 91,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Unless something very funky happens in the next 8 days, yes.\n\n-\n\nIt's not getting hotfixed or anything, because it's *really not important*, and it was too late to make the cut for 10.15, but now it is on the PBE to be shipped next week in 10.16, at least.",
+                                                    "score": 190,
+                                                    "author": "Caenen_",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 226,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Popcorn is being given out for *free* in the Death Realm!",
+                                                                    "score": 97,
+                                                                    "author": "Caenen_",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Somewhere deep in the abyss of LoL's code:\n\n    if (distance(special_controlled_projectile_5, minion) &lt; 5.0f &amp;&amp; minion.range == 280)\n    {\n        handleCollision(special_controlled_projectile_5, minion);\n    }\n\n\nWait why can't I hit red side cannon minions with Zoe's Q anymore??",
+                                                                            "score": 78,
+                                                                            "author": "vaynebot",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Somewhere else:\n\n    function cast_DarkBinding(target) {\n        //...  \n        rootTarget(target, duration: SRU_ChaosMinionSiege.attackRange - 277f);  \n    }\n\nWait, does Morgana Q actually last the entire game now?",
+                                                                                    "score": 60,
+                                                                                    "author": "corylulu",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Now to look for that age old commit that says \"LOL-107 Changed Red Cannon Minion to 280 for balance reasons\"",
+                    "score": 69,
+                    "author": "franticsheep",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No idea what their internal source control looks like but I feel like this is the type of shit where you have to trace the blame through like 3 file moves, 2 re-formats, 1 version control migration, just to find it's part of a commit that says like \"initial minion values\" and is a commit with the whole file and it's already wrong at it's inception.",
+                            "score": 64,
+                            "author": "tigger0jk",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I think I just got PTSD from this comment",
+                                    "score": 13,
+                                    "author": "ImportantRope"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Have we seen RiotPhlox and Caenen_ in the same room before? Maybe RiotPhlox has raised this to his superior before and was threatened to keep this a secret, so he created Caenen_ as his whistleblower account. *put tinfoil hat*",
+                    "score": 39,
+                    "author": "avscc",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "This is like Calculus being independently developed by Newton and Leibniz at the same time by coincidence!  The groundwork must have been recently laid such that you both could do this great work simultaneously, for the first time!",
+                    "score": 38,
+                    "author": "Betaateb",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's funny because it's not even been any recent change that allowed me to or made me look into it; I just came across the Baron Buff page on the wiki last week by chance and felt like the noted attack range *bonus* for cannon minions was wrong (which it was, it was increased to 750 some time but 600 was still noted last week).\n\nThe rest is...well, I was certainly grinning after that discovery!",
+                            "score": 18,
+                            "author": "Caenen_"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Nice",
+                            "score": 30,
+                            "author": "RiotPhlox",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "No! If that 280 is changed to a 300, the very fabric of the Summoner's Rift will fall apart! This range difference between the two sides is the prime coordinate of all the spaghetti in the game. It is the original noodle, if you will. The creation of all things and origin of the very spaghetti foundation is at stake.",
+            "score": 3364,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "*Due to an unexpected bug, minions have been disabled until 29/4/2023*",
+                    "score": 1082,
+                    "author": "Wobbar",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Soon enough we gonna see \u201c*Due to an unexpected bug, League of Legends has been disabled until we can remake the entire games code from scratch*\u201d",
+                            "score": 355,
+                            "author": "ArcticFoxy1",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Would take less than fixing the bugs",
+                                    "score": 155,
+                                    "author": "benjathje",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Probably not profitable tho. I honestly wonder if Riot would do that given the chance though. Completely remake the games code to make it cleaner and less buggy. While they\u2019re at it, do what almost every other game does and make the Client and Game one instead of booting into a match from a client that hardly works",
+                                            "score": 108,
+                                            "author": "ArcticFoxy1",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The thing with remaking the whole game is, it will never feel the same as before",
+                                                    "score": 66,
+                                                    "author": "benjathje",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Depends I guess. They can use the same models, textures and everything but if the engine is different or the pathing system is different. It could feel really odd. The fact that it\u2019s a whole new coded game could easily make it feel wrong",
+                                                            "score": 62,
+                                                            "author": "ArcticFoxy1",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "As an ex-Runescape player who saw this situation play out first hand from RS2-&gt;RS3, it is NOT worth it.  I would much rather an imperfect game than for them to try rebuild the thing from scratch.",
+                                                            "score": 37,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "That was them wanting to shift to a more modern mmo, not wanting to fix spaghetti code. Jagex wasn't just rebuilding the code base, they were totally changing the game with EoC",
+                                                                    "score": 27,
+                                                                    "author": "themegaweirdthrow",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Just imagine. Minions have been disabled, Mundo is now S tier for being able to infinitely tank tower shots. The only farm on the map is the enemy team. 10 man battle royale in mid to level up",
+                            "score": 86,
+                            "author": "Vexiratus",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Monsters...",
+                                    "score": 20,
+                                    "author": "Ephemeral_Being",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 29,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Actually you just removed basically the entire game.\n\nAll that is left is just real life, which has better graphics (glitched for some) but balance is 100% fubar.",
+                                                    "score": 27,
+                                                    "author": "GabrielNV",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Are you saying we'll be playing Ascension for the next 33 months? YEEEE BOOOI",
+                            "score": 21,
+                            "author": "JustinJakeAshton"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Tonight, we'll only be able to play League in the Death Realm!",
+                    "score": 406,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "*Happy Mordekaiser noises*",
+                            "score": 156,
+                            "author": "AvalancheZ250",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Knowing Mordekaiser's history, fixing the minion range will cause his Q to scale off AD instead of AP, change the cooldown of R to decrease with movement speed instead of CDR, and he will once again be able to summon dragon ghosts, somehow.",
+                                    "score": 53,
+                                    "author": "icantdecideonausrnme",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm all for Dragon Ghosts",
+                                            "score": 20,
+                                            "author": "TatodziadekPL"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Tonight we dine in Mitna Rachnun.",
+                                    "score": 47,
+                                    "author": "Rechulas",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\\**Sion's passive breaks again and crashes the game just from excitement**",
+                                            "score": 39,
+                                            "author": "Caenen_"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Sic Mundus Creatus Est",
+                    "score": 64,
+                    "author": "EamonCain",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I finished that show a couple days ago and I\u2019m still mindfucked",
+                            "score": 11,
+                            "author": "AzureBarrage1"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The ON. Original Noodle",
+                    "score": 16,
+                    "author": "NikT3sla",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "You have been watching too much Dark",
+                    "score": 9,
+                    "author": "dafsuhammer"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "inb4 red side toplaners new scapegoat for bad trades.",
+            "score": 1414,
+            "author": "Snow-Stone",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "gg cannon minion diff",
+                    "score": 415,
+                    "author": "DaItalianFish"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yup, screw this useless 'adc' of minons! Always walks into melee range of the enemy first!",
+                    "score": 302,
+                    "author": "Caenen_",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "A jungler can only hope...",
+                    "score": 45,
+                    "author": "Bl00dylicious",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This invalidates all previous World Championships.",
+            "score": 249,
+            "author": "LogicalEarth",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I knew it! Time for TSM to claim their deserved titles in the rematches!",
+                    "score": 96,
+                    "author": "Caenen_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Had this TL;DR prepared.\nhttps://i.imgur.com/jNJgQLt.png",
+            "score": 1791,
+            "author": "DBlackjack21",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Blue Cannon Doge with the **superior** thigh arms!",
+                    "score": 338,
+                    "author": "Caenen_",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Amazing",
+                    "score": 17,
+                    "author": "TrollingKevi"
+                },
+                {
+                    "level": 1,
+                    "comment": "oh god it's DBlackjack21 the man himself",
+                    "score": 63,
+                    "author": "Giuxeroe"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Things I learned from this post:\n\n\\- Blue cannon &gt; Red cannon\n\n\\- Neeko as thicc as Urgot\n\n\\- Warwick is a Yordle",
+            "score": 675,
+            "author": "JimBottone",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; - Neeko as thicc as Urgot\n\nsource?? \ud83d\udc40",
+                    "score": 100,
+                    "author": "ezekieru",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "https://leagueoflegends.fandom.com/wiki/Size  \nNotice how the 80 gameplay radius category is generally reserved for tank champions, plus Neeko, probably due to excessive cheese bread intake.",
+                            "score": 163,
+                            "author": "olovlupi100",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "holy flying fuck i thought it was some rule34 or something\n\n***SHE CAN'T BE THAT THICK***",
+                                    "score": 85,
+                                    "author": "ezekieru",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[*...or can she*](https://imgur.com/iJwEKXj)",
+                                            "score": 134,
+                                            "author": "olovlupi100",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is going on the poster wall in my room.",
+                                                    "score": 39,
+                                                    "author": "Caenen_"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Omg",
+                                                    "score": 30,
+                                                    "author": "RiotPhlox"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Also apparently [Warwick is a yordle](https://i.imgur.com/gJqgbXJ.png)",
+                                    "score": 12,
+                                    "author": "SkyKiwi",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[Yordle!](https://vignette.wikia.nocookie.net/leagueoflegends/images/5/53/Warwick.tauntYordle02.ogg)",
+                    "score": 145,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Is this... An Up reference?",
+                            "score": 26,
+                            "author": "younggun92",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "dogs in general but probably",
+                                    "score": 14,
+                                    "author": "CSDragon"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A bug that's older than Mordekaiser's existence? There is no telling what could happen if this gets fixed \n\nmonkaW \n\nBut for real hope this gets fixed.",
+            "score": 1279,
+            "author": "Play_more_FFS",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\\*Breaking news: League of Legends, a popular game on the E-Sport scene, has completely deleted itself after a minor bugfix",
+                    "score": 597,
+                    "author": "SylentSymphonies",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You mean we're finally free?",
+                            "score": 350,
+                            "author": "cjdeck1",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not the people locked by Morgana's Q, they will dissapear with the game.",
+                                    "score": 224,
+                                    "author": "Guesswhat7",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Only until Wild Rift comes out.",
+                                    "score": 32,
+                                    "author": "DuduBonesBr",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Am sad my phone\u2019s old and won\u2019t be able to run it",
+                                            "score": 15,
+                                            "author": "Boudac123",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's not a bug though... This was common knowledge back in S1 and S2, when there was also a major jungle advantage and a turret you couldn't path around as easily on blue side. \n\nThe MM would put the team most likely to win on Red Side.",
+                    "score": 73,
+                    "author": "Forest-G-Nome",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I was gonna say, this sounds familiar. But like, everyone having triangles for feet familiar. So season 1/2 makes sense.",
+                            "score": 33,
+                            "author": "CaffinatedPanda"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah, I remember certain walls were jumpable on nid, while the same one on the other side was not. There are minor differences across the map...",
+                            "score": 27,
+                            "author": "Stuhl",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Elise can rappel to wolves on blue side, but not red side",
+                                    "score": 9,
+                                    "author": "ShinyEspeon_"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Oh shit yeah I forgot all about that.  That was HUGE for nid mains back in the day.  Literally decided your pick in draft sometimes.\n\nRemember when Nidalee was considered high mobility?",
+                                    "score": 27,
+                                    "author": "Forest-G-Nome"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I am scared what would happen if they touch that ancient spaghetti.",
+            "score": 515,
+            "author": "Devourer_of_HP",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's probably part of the rock solid fossilized core of the game we know as League of Legends. An attempt to align that strand of spaghetti would be to re chisel a new one in place of the old. Such an attempt could destroy the game as we know it, perhaps forever.",
+                    "score": 158,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Am i reading this correctly? In your TLDR, they also give seperate amounts of gold? 30 and 35 gold given on death",
+            "score": 321,
+            "author": "RAZGRIZTP",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, but these are managed on the script side instead, same as the experience. The combat stats, on the other hand, are used.",
+                    "score": 273,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So this is why im not challenjour?",
+                            "score": 248,
+                            "author": "RAZGRIZTP",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "~~jg diff~~\n\n~~top diff~~\n\n~~adc diff~~\n\n~~draft diff~~\n\n...colour diff",
+                                    "score": 398,
+                                    "author": "Mattaru",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "/r/HolUp",
+                                            "score": 246,
+                                            "author": "gahlo"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wait, why then are they even in this file?",
+                            "score": 54,
+                            "author": "Leyrann_is_taken",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Because when Riot removes things from something, they usually leave the data where it is. Aatrox still has his revive code and the assets for his Mutilator passive - it's just not being triggered!",
+                                    "score": 169,
+                                    "author": "Caenen_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Please bring back Mutilator.",
+                                            "score": 32,
+                                            "author": "JustinJakeAshton",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Even though it really isnt too different from \"Grevious Wounds\" a debuff being called \"Mutilated\" was metal as hell. I thought it was really interesting",
+                                                    "score": 27,
+                                                    "author": "ImNotFromCanada"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yup, I was going through the game files recently and noticed that Riot kept the Star Guardian assets for no reason even though the event is long over.",
+                                            "score": 17,
+                                            "author": "Desmous",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Ah the old: who needs source control, just comment it out!",
+                                            "score": 10,
+                                            "author": "Thy_Gooch",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "So a bit more spaghetti and we can have old stuff back?",
+                                            "score": 28,
+                                            "author": "zabaton",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Programmer here, removing stuff from codebase scary. Things go boom boom.",
+                                                    "score": 82,
+                                                    "author": "LordAmras",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Programmers be like: \"I have no idea what this part of the code does but things are working ok so no touching the code.\"",
+                                                            "score": 58,
+                                                            "author": "SevenHaeven",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I'm fairly certain that this part of the code doesn't do anything, I also checked all the codebase and couldn't found a single reference that would call this thing.\n\nSo I decided to take the brave step and write:\n\n/\\*OLD CODE, NOT UTILIZED ANYMORE\n\nTODO: REMOVE\\*/",
+                                                                    "score": 68,
+                                                                    "author": "LordAmras",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Which is part of why some people think we may be heading towards a collapse in programming.",
+                                                                    "score": 7,
+                                                                    "author": "Gingevere"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Wait, why then are they even in this file?\n\nLegacy code.",
+                                    "score": 54,
+                                    "author": "Scout1Treia"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If they're removed it might break something, so it's better to just leave it there",
+                                    "score": 20,
+                                    "author": "DuduBonesBr",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Redundancy, if you take them out it might cause a problem, as long as they're not actually being used the game is (seemingly) stable so let's maintain status quo.",
+                                    "score": 23,
+                                    "author": "ZecroniWybaut",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Syndra helping to identify bugs.\n\n&amp;#x200B;\n\nHow times have changed.",
+            "score": 121,
+            "author": "KaraveIIe",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Where there are bugs, there are answers. I am not kidding; that is serious QA and reverse-engineering advice!",
+                    "score": 29,
+                    "author": "Caenen_",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Community &gt; 200Years",
+            "score": 479,
+            "author": "Gunfreak2217",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, millions of players playing this game for years have...Millions of Years of Gameplay Experience!",
+                    "score": 316,
+                    "author": "Caenen_",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I may be wrong here, but isn't this intentional actually? I've heard there are minor differences in minions because of the fact top has less screenspace, because of the bottom skillbar.",
+            "score": 135,
+            "author": "Devastraitor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not just the bar, but the angle of the camera.",
+                    "score": 78,
+                    "author": "MrRgrs",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Maybe some day riot will just let us move it somewhere else or make it transparent but that tech hasnt been invented yet sadly",
+                            "score": 39,
+                            "author": "my_user_wastaken",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "maybe some day theyll stop being lazy, texture the backside of terrain, and just flip the camera and minimap 180 when youre on redside...",
+                                    "score": 59,
+                                    "author": "MoiraDoodle",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "yeah imagine where gaming would be if someone had discovered how to display skills&amp;minimap on top of the screen",
+                                    "score": 6,
+                                    "author": "Baji25"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "But isn\u2019t red at more disadvantage than blue?",
+                    "score": 10,
+                    "author": "werewolf1011",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 151,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was about to ask you about your post, but then I became sad...",
+                    "score": 67,
+                    "author": "Caenen_",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Just add a tidbit about assassins abusing this bug and you will have a rally behind you with pitchforks and torches",
+                    "score": 18,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Riot literally explained their reasoning for it pre-season 1.\n\nIn an asymmetrical game, one side will have an advantage over the other, period.  They did this to better control it, and made MM then put the team most likely to lose the match up on Blue side.\n\n\nSo if you ever go in to a match and are on blue, it means Riot thinks statistically, you're likely to lose the match.",
+                    "score": 103,
+                    "author": "Forest-G-Nome",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They did say this but IIRC this was with relation to the asymmetry of the HUD. I never heard them reference cannon minion range as to the reason for the MMR imbalance.",
+                            "score": 8,
+                            "author": "ncburbs",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Maxim neues Why der Woche?",
+            "score": 24,
+            "author": "Acerbird",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "F\u00fcnf von f\u00fcnf *warum*s?!",
+                    "score": 19,
+                    "author": "Caenen_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for the discovery, I never knew this existed! Blue team does have a higher win-rate overall, but there is a valid argument to be made that Blue side having 'stronger' cannon minions is actually a benefit for Red side. \n\nSimilar to the changes in minions this season (the team that is ahead gets stronger minions), this means that the Blue side minions are more likely to win the evenly matched trades, and waves will slow push into red side.  If the game is slower, this means more gold and XP from minions for the Red team.\n\nOf course, on the other hand, if there is a fast paced, heavy split push game, the slow pushes would benefit blue side.",
+            "score": 192,
+            "author": "Lowsmithy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yup! To quantify the impact, I put Vandiril on the case.",
+                    "score": 84,
+                    "author": "Caenen_",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I would say that the difference is likely insignificant compared to differences such as blue side having their duo lane in an easier position to gank compared to red side (whose solo top lane instead has the easier gank opportunity).\n\nBut still a bug like this is at the same time quite big.",
+                    "score": 34,
+                    "author": "Leyrann_is_taken"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "big if true",
+            "score": 105,
+            "author": "Ewolnevets",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Large if factual",
+                    "score": 86,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Humoungous if correct",
+                            "score": 40,
+                            "author": "DuduBonesBr",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is why my losses on blue side should be removed i knew i deserved 80+ winrate",
+            "score": 142,
+            "author": "xXdimmitsarasXx",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "It *might* be intentional because of the tilted top down view and an asimetrical map, ~~but I can't really make any solid arguments for it.~~\n\nEdit: [https://imgur.com/a/k3Hw7jD](https://imgur.com/a/k3Hw7jD) I made this illustration for why red side minions have shorter attack range. Top left corner illustrates that if minions are the same height, their attack ranges are the same. But on mid lane, blue side minions appear to be squashed opposed to the red side minions (see screenshot). If I draw out blue a minion shorter than the red one (bottom left), draw a line from the middle of the body to the closest point on the hitbox and compare their lengths, the red line is a tiny bit shorter (bottom right, the missing length is yellow). Now, these measurements aren't 100% exact because I did this in 2 minutes, but I think perspective is the reason why red side minions have shorter attack range.\n\nEdit 2: I've just realized that the lines indicating the attack range are each tilted differently, meaning the difference between them might be even more significant.\n\nEdit 3: Whatever was the reason for all this, apparently it's getting fixed in the next patch. Thank you for coming to my Ted Talk.",
+            "score": 129,
+            "author": "votchii",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It is. \n\nRiot already explained this in pre-season 1.  Blue gets the better view, a better jungle path, a more favorable path around turrets, and the creep advantage.\n\nMeanwhile it gives Red Side to the team with the higher MMR.  If you're given blue, it means the system thinks you're more likely to lose (at base rate).\n\nedit:  i had my sides backwards on the UI blocking FOV.  Red gets the shaft there too.  Blue side is the better one.",
+                    "score": 136,
+                    "author": "Forest-G-Nome",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So loser's queue is real, it just turns out that it is blue side",
+                            "score": 107,
+                            "author": "Troskyh",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've been Blue side last 18 games in a row. AMA.",
+                                    "score": 52,
+                                    "author": "dezmodez",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "pmuch",
+                                    "score": 6,
+                                    "author": "Forest-G-Nome"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "THIS must be the thing keeping me from getting out of silver",
+            "score": 37,
+            "author": "laughing-stockade"
+        },
+        {
+            "level": 0,
+            "comment": "Holy fuck this is huge imo.  Do you get paid for this?",
+            "score": 110,
+            "author": "hockeydavid97",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nope! Did I ever ask to be? Well, that, neither.",
+                    "score": 105,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I will pay you 5 monetary units a week for your detective skills.",
+                            "score": 45,
+                            "author": "ParrotMafia",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "But monetary units of which currency?",
+                                    "score": 32,
+                                    "author": "Caenen_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "We offer gelt, gil, credits, Schrute bucks, and Flanian pobble beads.",
+                                            "score": 64,
+                                            "author": "ParrotMafia",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Missin out on the schmeckles my boy",
+                                                    "score": 38,
+                                                    "author": "Jankum",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "They just don't hold their value these days...",
+                                                            "score": 18,
+                                                            "author": "ParrotMafia"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "By reading this message, I Caenen do commit to hereby indenture myself to the Parrot Mafia for life for the agreed upon payment of five monetary units per week. This legally binding agreement is in effect immediately, witnessed by each Redditor reading this post. Failure to uphold this legal agreement between parties that stipulates the terms and conditions each party has agreed to carry out in exchange for compensation shall result in mild death.",
+                                            "score": 10,
+                                            "author": "ParrotMafia",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "So this is how [redacted] works?\n\n-\n\nEdit: Ah fuck I almost insulted the Italian playerbase!",
+                                                    "score": 10,
+                                                    "author": "Caenen_",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Zimbabwe bucks",
+                                            "score": 6,
+                                            "author": "Ballaholic09",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Why is the gold also different?",
+            "score": 19,
+            "author": "UnaliverDP",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The gold is managed on the script end nowadays, so these figures don't matter.",
+                    "score": 41,
+                    "author": "Caenen_",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 38,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's not intentional and the developer would want to change it if they knew about it = bug.\n\nSo yes, this is a bug. Chances are that your idea is what actually happened, but without any evidence I can't subscribe to any theory.",
+                    "score": 37,
+                    "author": "Caenen_",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Legend says Caenen responds to every single comment on this thread...",
+            "score": 11,
+            "author": "heine789",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No, but I do answer all the questions. Especially the part where the data also has that unused gold value being different!",
+                    "score": 11,
+                    "author": "Caenen_",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Now wait for a rioter to never address this.",
+            "score": 57,
+            "author": "Duck_mypitifullife",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Remember when I pointed out that Sion's Q Eternal is pay2win 6 months in advance? Yeah...",
+                    "score": 72,
+                    "author": "Caenen_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What's pay2win about it? I missed that post.",
+                            "score": 16,
+                            "author": "BloodTrinity",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sion Q has 0 indication that you hit someone if you cannot see them, unless you have Comet or Manaflow band or something. If you look at your Q Eternal, it will update immediately and even tell you *how many* enemies you hit.\n\nWatch TheBausffs's stream, he now makes use of it by holding C every time he Q's around a corner.",
+                                    "score": 89,
+                                    "author": "Caenen_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "After he gets Ghostblade in his ad sion builds he tends to watch if his movement speed decreases after his Q goes off. This only works if he was cheesing and not in combat beforehand though",
+                                            "score": 13,
+                                            "author": "AmbitiousShacoStream",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": " [https://devtrackers.gg/leagueoflegends/p/f7f14b5d-purchasing-eternals-lets-you-scout-the-fog-of-war-with-spells-that-would-normally-not-grant-you-any-hit-information](https://devtrackers.gg/leagueoflegends/p/f7f14b5d-purchasing-eternals-lets-you-scout-the-fog-of-war-with-spells-that-would-normally-not-grant-you-any-hit-information) \n\nSion's Q doesn't normally tell you if you hit something (there are some circumstances, but not many and they rely on particular rune setups like aftershock, font of life, or ravenous hunter.) Eternal Sion Q told you every time if you hit an enemy champ.",
+                                    "score": 22,
+                                    "author": "Jeutnarg"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "At least they aren't giving us hope like with the client fixes every now and then.",
+                            "score": 14,
+                            "author": "Duck_mypitifullife"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We be eating spaghetti tonight bois",
+            "score": 33,
+            "author": "AvalancheZ250"
+        },
+        {
+            "level": 0,
+            "comment": "THATS WHY IVE BEEN LOSING! Definitely doesnt have anything to do with my skill level. These darn bugs",
+            "score": 7,
+            "author": "Animuboy"
+        },
+        {
+            "level": 0,
+            "comment": "Why is that?",
+            "score": 7,
+            "author": "ResDD",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "So this is why I lose!  Knew it wasn\u2019t the fact I can\u2019t train my eyeballs to look at the minimap!",
+            "score": 8,
+            "author": "[deleted]"
+        }
+    ]
+}

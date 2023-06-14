@@ -1,0 +1,1334 @@
+{
+    "id": "4c7h8b",
+    "score": 8100,
+    "title": "[META] When Netflix asks \"Are you still there?\" my new chrome extension automatically clicks \"Continue watching\" for you",
+    "author": "keyframeezy",
+    "date": 1459117069.0,
+    "url": "https://www.reddit.com/r/NetflixBestOf/comments/4c7h8b",
+    "media_urls": [],
+    "other_urls": [
+        "https://goo.gl/vEdKxX)"
+    ],
+    "postText": "Free of course. It also skips the \"Next episode in..\" countdown that comes up when the credits roll. There were one or two other extensions that do it, but this has 1/30th of the amount of code and no dependencies. \n\n[Chrome link](https://goo.gl/vEdKxX)\n\nHere's the code if you care: \n\n...\n\n    var observer = new MutationObserver(function(mutations) {\n\t\tvar isItOne = document.querySelectorAll('.player-autoplay-interrupter'),\n\t\t\tisItTwo = document.querySelectorAll('.player-postplay-still-hover-container');\n\t\tif (isItOne.length) {\n\t\t    document.querySelectorAll('.player-autoplay-interrupter .button.continue-playing')[0].click();\n\t\t    console.log('skipped the interrupter for you'); \n\t\t}\n\t\tif (isItTwo.length) {\n\t\t    document.querySelectorAll('.player-postplay-still-hover-container')[0].click();\n\t\t    console.log('skipped the countdown for you'); \n\t\t}    \n    });\n    var observerConfig = {attributes: false,childList: true,subtree: true,characterData: false};\n    var targetNode = document.body;\n    setTimeout(function() {\n\t    console.log('starting');\n\t    observer.observe(targetNode, observerConfig);\n    }, 10000);\n\n...\n\n\n**Edit:** after watching about 5 hours of tv, I've learned that the extension never has to click the \"Continue watching\" button. Because when it clicks the next episode button every time the countdown starts, netflix thinks you're there clicking next episode every time so they don't interrupt. I should also mention that if you uncheck the extension, you still have to click refresh to turn it off, because the script will have already ran.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "We live in a weird world.",
+            "score": 569,
+            "author": "AH_Childish",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's hilarious. As I pulled out my cc to pay the five bucks to publish an extension I thought that same thing.",
+                    "score": 347,
+                    "author": "keyframeezy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You'll make a few hundred bucks about 2 years later when a shady Russian/Chinese company offers to buy your extension from you, so they can bundle it with spyware and hope your thousands of users don't notice the \"this extension requires new permissions\" after the update.",
+                            "score": 139,
+                            "author": "moeburn",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Google ought to modernize the Chrome extension permissions policy. Like with the latest Android release, extensions should have to ask for individual permissions on an as-needed basis. As it stands, the extension ecosystem is a security nightmare.",
+                                    "score": 42,
+                                    "author": "28476672831946",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Pretty sure Chrome already allows you to do progressive permissions but it is up to the developer of they want to ask at install time or on a need basis ",
+                                            "score": 4,
+                                            "author": "YOUR_MORAL_BAROMETER"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah, I remember doing that. I then realized it's probably the most effective way to deter scammers continually making 100s of accounts to keep posting bad apps. It's better than having to pay $99 / year to be in the apple developer program.",
+                            "score": 149,
+                            "author": "darkfate",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That $99 probably does better at deterring even more. ",
+                                    "score": 24,
+                                    "author": "thisdesignup",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Have you not seen the iOS Appstore lately? I mean, there's some good games there, but holy shit is 90% of it garbage. There's at least half a dozen Minecraft \"mod\" apps on the store, that trick you into thinking it mods Minecraft Pocket Edition. They're actually just links to mods for the PC version from your phone, but that doesn't stop them from popping up.",
+                                            "score": 48,
+                                            "author": "SexyMrSkeltal",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "They should do that for the play store. Yeah I know it's kinda tough for indie developers but as a user the experience is a shambles. ",
+                                    "score": 5,
+                                    "author": "bacon_cake",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Let me tell you about a place called the Windows Store...",
+                                            "score": 19,
+                                            "author": "WillElMagnifico"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It costs $25 for the play store.",
+                                            "score": 8,
+                                            "author": "DoxKing"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I wish this would work with the Netflix app on my PS4 or 360.  I need to turn the controller on every time and then always forget to turn it back off and end up killing the battery. ",
+                            "score": 10,
+                            "author": "DrobUWP",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Fuck,  I knew there was a reason my battery has been shit lately. ",
+                                    "score": 5,
+                                    "author": "usernamebrainfreeze"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Go into your device settings and make it turn off after the shortest amount of inactivity. Just make sure when you put it down, it's on a table or something because moving it counts as activity. ",
+                                    "score": 4,
+                                    "author": "SandyDFS"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "with the one you can just use smartglass to do it. Really convenient.",
+                                    "score": 2,
+                                    "author": "lancerevo98"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I spent $10 on a remote just for this purpose. The remote is garbage but it gets the job done.",
+                                    "score": 2,
+                                    "author": "YourFatalErrors"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Another option which supports various browsers : make a Greasemonkey script and publish it to greasyfork instead.",
+                            "score": 25,
+                            "author": "andytuba"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "interesting. Would you be able to make money off any extensions? Other than donations that is. ",
+                            "score": 5,
+                            "author": "princessvaginaalpha"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I always read it like the turrets from Portal ",
+            "score": 129,
+            "author": "Its_Always_420",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "New extension idea: have it play that sound clip when that screen comes on.",
+                    "score": 34,
+                    "author": "NominalCaboose",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Now I know what I needed in my life",
+                            "score": 7,
+                            "author": "KeeBlaydMastr"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Goddammit. Now that's gonna be in my head every time, too.",
+                    "score": 25,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I also like to pretend it says \"There you are\" before resuming play",
+                            "score": 25,
+                            "author": "Its_Always_420"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I think the world needs to make an extension for this",
+                    "score": 3,
+                    "author": "FlyingPanties69"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is there a FF version of this?\n\nEdit: How many upvotes do I need?",
+            "score": 665,
+            "author": "game_ovr",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "~~If enough people upvote your comment I'll port it.~~ Or if anyone else wants to make it using the above code (no dependencies) feel free. ",
+                    "score": 205,
+                    "author": "keyframeezy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 84,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm sorry, it's the end of the weekend and I have a bunch of other stuff to take care of yet :( \n\nI will soon if no one else does. ",
+                                    "score": 97,
+                                    "author": "keyframeezy",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "No rush! I'll be on the look out for it though if you ever do get around to it. :)",
+                                            "score": 32,
+                                            "author": "bearshy",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Install Greasemonkey and paste the code in there. Should be easy enough to set up (lots of guides).",
+                                                    "score": 12,
+                                                    "author": "Skullclownlol"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Looking at the code, I see no reason why it wouldn't work in FF as is.\n\nFor anyone that wants to use it, just press \"F12\" copy the code into the \"console\" there and \"run\" it.  \nAnyone can also look at how to turn JS into a bookmark, which is very simple.",
+                                            "score": 18,
+                                            "author": "Sadako_",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ah I remember the days when a little Javascript bookmark could give me all the answers to my homework too..",
+                                                    "score": 5,
+                                                    "author": "N1CK4ND0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; I will soon if no one else does.\n\nWhy not userscripts for Tampermonkey (Chrome)/Greasemonkey (FF)?\n\nIt's the same code. :P",
+                                            "score": 3,
+                                            "author": "Skullclownlol"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Actually, just paste the code into a new script in Greasemonkey and it works easy peazy. I just did it to test, and it skipped right past the next episode part. Awesome!",
+                            "score": 11,
+                            "author": "evilrobert"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; no dependencies\n\nNot even [left-pad](http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/)?",
+                            "score": 10,
+                            "author": "Dafuq_McKwak",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't know shit about code but that was an impressive story. Wow!",
+                                    "score": 2,
+                                    "author": "spook30"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Also throwing in my support for a FF port.",
+                            "score": 6,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'm a CS student with no javascript experience, but I'll give it a shot\n\nEdit: I have a prototype created and running in Firefox 45.0.1. Currently figuring out the best way to test it with the Netflix web player\n\nEdit 2: From what I understand, Netflix will prompt you after 3 consecutive episodes in a series. Futurama has 22 min episodes, so I'm going with that. I was not able to find anything shorter in a reasonable amount of time. Now testing on two machines.\n\nEdit 3: I had it working, but then I made minor edits to the code to clean it up, and now it's not working. I never said I knew what I was doing.\n\nEdit 4: It's working again, but not ready to be published. I'll finish later today when I have more time. I wish this didn't take 45 min to test it.",
+                            "score": 10,
+                            "author": "G_Maharis"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "RemindMe! 1 week \"Firefox Netflix extension thingy\"",
+                            "score": 18,
+                            "author": "cheesestrings76",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I will be messaging you on [**2016-04-04 02:40:50 UTC**](http://www.wolframalpha.com/input/?i=2016-04-04 02:40:50 UTC To Local Time) to remind you of [**this link.**](https://www.reddit.com/r/NetflixBestOf/comments/4c7h8b/meta_when_netflix_asks_are_you_still_there_my_new/d1fx7yb)\n\n[**14 OTHERS CLICKED THIS LINK**](http://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=[https://www.reddit.com/r/NetflixBestOf/comments/4c7h8b/meta_when_netflix_asks_are_you_still_there_my_new/d1fx7yb]%0A%0ARemindMe!  1 week ) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](http://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Delete Comment&amp;message=Delete! d1fx8q1)\n\n_____\n\n|[^([FAQs])](http://www.reddit.com/r/RemindMeBot/comments/24duzp/remindmebot_info/)|[^([Custom])](http://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=[LINK INSIDE SQUARE BRACKETS else default to FAQs]%0A%0ANOTE: Don't forget to add the time options after the command.%0A%0ARemindMe!)|[^([Your Reminders])](http://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=List Of Reminders&amp;message=MyReminders!)|[^([Feedback])](http://www.reddit.com/message/compose/?to=RemindMeBotWrangler&amp;subject=Feedback)|[^([Code])](https://github.com/SIlver--/remindmebot-reddit)\n|-|-|-|-|-|",
+                                    "score": 5,
+                                    "author": "RemindMeBot",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Remindme! 1 day \"figure out how to use remind me\"",
+                                            "score": 16,
+                                            "author": "wulkes",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "RemindMe! 1 day \"message /u/wulkes on how to use remindme bot\"\n",
+                                                    "score": 3,
+                                                    "author": "BinaryWork",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "do you know how I could use the code to make a safari extension?",
+                            "score": 3,
+                            "author": "FagDamager"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How about an Edge extension? ",
+                            "score": 5,
+                            "author": "notsurewhatiam",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "good one",
+                                    "score": 36,
+                                    "author": "IchibanXD",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It is actually a good question if edge lets you have extensions, seeing as its the only browser that can display 1080p netflix at the moment (not counting the all the other non browser ways to do 1080p)",
+                                            "score": 14,
+                                            "author": "covertskippy55",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Netflix puts this feature in for a reason. If you fall asleep, you'll be streaming episodes all night long.",
+                    "score": 49,
+                    "author": "jalapeno_jalopy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don't fall asleep.",
+                            "score": 174,
+                            "author": "game_ovr"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The feature would be ok if it waited a certain amount of time since the last UI event, or only asked between episodes - but it doesn't.  Sometimes I'll get prompted just minutes after selecting a new episode.",
+                            "score": 43,
+                            "author": "macrocephalic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What platform do you use netflix on? I use it on PC and ps4 and I've never once had an issue or glitch with this feature",
+                                    "score": 6,
+                                    "author": "EvilSporkOfDeath",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I use it on a PC.  Sometimes I will have been watching for a couple of hours, I pause and get up, come back, press play, and almost immediately I'm prompted to continue.",
+                                            "score": 27,
+                                            "author": "macrocephalic",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Netflix only asks me if I am still watching about 5 minutes into every 3 episodes. ",
+                                                    "score": 10,
+                                                    "author": "Interested_Student",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Yes, that's the point of it. But if you pause when the third episode starts, go to the bathroom, come back and unpause, Netflix doesn't recognize that and still prompts the pause and ask if you're still watching. Had it happen so many times.",
+                                                            "score": 14,
+                                                            "author": "MrCookiepants",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 18,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Makes sense.  Maybe Netflix could have a feature to choose the number of episodes to stream before stopping.",
+                                    "score": 10,
+                                    "author": "jalapeno_jalopy",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Or something where you can specify during which hours it will ask you if you are still watching. So you could tell it not to bother asking you between 8 a.m. and 11 p.m. or something like that.",
+                                            "score": 9,
+                                            "author": "javakah"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The new Apple TV doesn't have this interrupt screen, it is perfect for epoxy mixing.",
+                                    "score": 7,
+                                    "author": "PoodiniThe3rd",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's a pricey solution.",
+                                            "score": 5,
+                                            "author": "pudgylumpkins",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not even the best option.",
+                                                    "score": 7,
+                                                    "author": "[deleted]"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "What kind of projects?",
+                                    "score": 1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Definitely and while a prudent feature from their point of view, we can certainly manage our usage more precisely. i use a sleep timer chrome extension anyway because so many services i use don't.  ",
+                            "score": 6,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Exactly. I don't wanna fall asleep on season 2 and wake up watching season 6. I don't mind the feature at all.",
+                            "score": 22,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "nigga if you sleeping for 4 seasons of a tv show it's time to go to a doctor",
+                                    "score": 159,
+                                    "author": "elitemouse",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\"What brings you in today?\"  \n  \n\"Season 5\"",
+                                            "score": 12,
+                                            "author": "SQUID_FUCKER"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Let's say an average 20 minute show has around 12 episodes per season. That's 16 hours. \n\nI have slept for 16 hours before. :D",
+                                            "score": 3,
+                                            "author": "aflashyrhetoric",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "About once every other month I wake up terribly confused after sleeping for 24+ hours. It is very disorienting.",
+                                                    "score": 12,
+                                                    "author": "naimina",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Does this happen to be on nights when a full moon begins?",
+                                                            "score": 40,
+                                                            "author": "Dissidence802",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "No but once when I was drunk i licked my cats head just so I would know what the deal with that was. ",
+                                                                    "score": 10,
+                                                                    "author": "naimina",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That happens to me once every day. I fell asleep once in 2002 and just woke up today. Who is this Obama fellow everyone keeps talking about?",
+                                                            "score": 3,
+                                                            "author": "aflashyrhetoric",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "First Asian POTUS",
+                                                                    "score": 5,
+                                                                    "author": "deathwaveisajewshill"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Slept for fourteen years? Thanks Bush/Obama! \n",
+                                                                    "score": 2,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I love that. Ive run through all of american dad and futurama and south park more times than I can count.",
+                                    "score": 1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'd like the feature if I could disable it in my app on my ipad.  Just the ability to turn it off would be nice.. ",
+                            "score": 3,
+                            "author": "Hyperdrunk"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It doesn't do it for mobile, :(",
+                            "score": 2,
+                            "author": "Freedmonster"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "RemindMe! 1 week \"Netflix FF Extension\"",
+                    "score": 4,
+                    "author": "IronMan019"
+                },
+                {
+                    "level": 1,
+                    "comment": "Please",
+                    "score": 2,
+                    "author": "idealreaddit"
+                },
+                {
+                    "level": 1,
+                    "comment": "Could you just use a URL re-directer.",
+                    "score": 1,
+                    "author": "damonpointagates"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is there a way to tell it to only click yes X times?  After two or three times I may not actually be there. \n\n",
+            "score": 137,
+            "author": "Whatswiththelights",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I understand. I do want to add a timeout feature that you can toggle. Just ran out of free time this weekend. For now you can just go to Chrome's extension page and uncheck it if you want to pause the functionality.",
+                    "score": 108,
+                    "author": "keyframeezy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Great, I haven't tried it yet I just wanted to suggest a useful feature of if it didn't have it already. Thanks for doing this project and releasing it for free. ",
+                            "score": 23,
+                            "author": "Whatswiththelights"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You could also add the ability to set a sleep timer. So I do want it to play until I reasonably go to sleep. I don't want it to play all night. So if I could tell it till 2am that'd be awesome. \n\nThanks for making this",
+                            "score": 5,
+                            "author": "lynxtothepast"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "And after you make that a feature, someone will come along with an extension to bypass your time out feature. *are you still...?ception*",
+                            "score": 3,
+                            "author": "Baconegra",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Presumably he will just add it as an option.  \n\nSelect One:\n\n1. Never Stop\n\n2. Disable for __ minutes.  ",
+                                    "score": 1,
+                                    "author": "dubyaohohdee"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Imagine you have a bandwidth cap and you pay $2 per gb over.. You could owe a lotta money coming home to find netflix still on lol",
+                            "score": 6,
+                            "author": "abedfilms",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I feel like using this extension if you have a bandwidth cap would be a very poor idea. It'd be like having a fenced pool with a toddler and then propping the gate open.",
+                                    "score": 17,
+                                    "author": "CrazyCalYa",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yep haha",
+                                            "score": 2,
+                                            "author": "abedfilms"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That sounds hellish. It's bad enough on a phone, but at your own home?",
+                                    "score": 5,
+                                    "author": "SirPremierViceroy"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "But why would you leave netflix on, if you're leaving the house?",
+                                    "score": 3,
+                                    "author": "MrCookiepants",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "lol, at what point are you just remaking Netflix own feature, but longer?",
+                            "score": 2,
+                            "author": "thisdesignup",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "And after X times, the extension could pop up asking if you're *really* there. Then someone can make another extension that clicks Yes for you.",
+                    "score": 44,
+                    "author": "nxlyd"
+                },
+                {
+                    "level": 1,
+                    "comment": "Also, there is an extension for toggling extensions easily, rather than opening the extensions page and unticking the box. I'm on mobile, but if I remember, I'll try to edit this post with the link.",
+                    "score": 3,
+                    "author": "walkinthecow"
+                },
+                {
+                    "level": 1,
+                    "comment": "I use a sleep timer extension that'll close all of chrome (since so many services will just continue streaming) that you could use in conjunction. ",
+                    "score": 3,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yea Netflix already has a thing that automatically pauses after you've been watching for a while.",
+                    "score": 5,
+                    "author": "moneys5",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's exactly what this extension clicks through to keep playing.. ",
+                            "score": 11,
+                            "author": "Mysterious_X",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "that would require further code, i do believe",
+                    "score": 2,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Idk if you can download and modify the code, but simply adding a counting variable that increments each click you could end the program when it hits 3/whatever you want.",
+                    "score": 1,
+                    "author": "JMC_MASK"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 25,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Pasting your code as you suggest when in Internet explorer is a good idea. Mutation observers aren't well supported there.",
+                    "score": 8,
+                    "author": "keyframeezy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 3,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 1,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 9,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That's cool to know, thank you.",
+                                                    "score": 3,
+                                                    "author": "keyframeezy"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "If you weren't already watching video while running this script, I'd argue that it would drain your laptop's or phone's battery faster by waking it up frequently.",
+                                                    "score": 2,
+                                                    "author": "rcfox",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I don't believe you can watch Netflix without the app on your phone/tablet.\n\nOn your laptop though this will have a very negligible impact on battery life, to the point that it's probably not measureable or especially noticeable. When you leave your web browser open it's basically guaranteed you are doing a lot more intensive things quite regularly, such as Ajax requests, other interval timers, and so forth. Throw a traffic analyzer on your laptop and you'll be amazed at how its constantly communicating. And keeping the network connection active is *a lot* more resource intensive than a DOM search every 33ms. But if you're truly worried about this change the 33 to 1000.",
+                                                            "score": 2,
+                                                            "author": "[deleted]"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thank you so much for this. I usually stream a show when I'm coming and my hands are always dirty to have to click continue watching after every other episode. \n\nEdit: whoops, I meant cooking. Meh I'm leaving it. ",
+            "score": 275,
+            "author": "bnc22",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "...when you're what?",
+                    "score": 205,
+                    "author": "abductee92",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There's some strange things on Netflix if you look hard enough. ",
+                            "score": 48,
+                            "author": "WhatSheOrder",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I feel like it's the opposite. You'd have to actually be avoiding hard enough. Gaspar Noe's LOVE is full on actual sex and it came up right away on my new queue. ",
+                                    "score": 12,
+                                    "author": "ex_oh_ex_oh",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I've never heard of that or seen it recommended. But it sounds like Netflix knows what you like... which it's pretty good at.",
+                                            "score": 5,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I'm guessing cleaning but lol",
+                            "score": 2,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "the edit is the best! gave me a good laugh at least.",
+                    "score": 3,
+                    "author": "one_dead_saint"
+                },
+                {
+                    "level": 1,
+                    "comment": "Go on...",
+                    "score": 3,
+                    "author": "wmeredith"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'd actually kinda like the \"Are you still watching?\" feature if it only asked once every 5-6 hours.",
+            "score": 23,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's not there for you. ",
+                    "score": 3,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "To be fair, some people do pay for bandwidth.",
+                            "score": 5,
+                            "author": "NoobInGame"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you're on Xbox One and have a kinect you can say, \"Xbox Play\" and it'll resume.",
+            "score": 31,
+            "author": "pizzagun",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Sometimes it doesn't. It recognizes me and will even make the little dog noise and \"Xbox Play\" flashes in the top right corner. It's seriously so random. Does anyone know why this happens? ",
+                    "score": 7,
+                    "author": "chillwitch",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Idk, but on PC the spacebar pauses/plays Netflix, and sometimes the spacebar will resume playing what you're watching when the \"are you still there\" prompt comes up, but sometimes it doesn't. So far I haven't figured out why it sometimes works",
+                            "score": 6,
+                            "author": "followedthelink"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Same thing happens to me and it boggles my mind.  \n\n\nAlong with having to launch, exit, and relaunch Netflix to get it to recognize my controller. They really need to fix this stuff. ",
+                            "score": 2,
+                            "author": "budgiebum",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Sure do. Very critical and serious issues we're having. ",
+                                    "score": 1,
+                                    "author": "chillwitch"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I have none of those things.",
+                    "score": 3,
+                    "author": "Foulds28"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does this go infinitely? If so I don't know how netflix would feel, it could throw some cost onto their servers. But I really don't know anything about their logistics, to be honest.",
+            "score": 7,
+            "author": "Blue_Rondo_a_la_Dirk",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If 1000 people download this extension, and occasionally a couple people let it run for a week non stop, netflix won't care. It won't cost them hardly anything. If this extension becomes a top extension, netflix could likely change some coding to require more direct interaction, mouse tracking, or such to fix the large problem.",
+                    "score": 9,
+                    "author": "caphits"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes! Now my phone can tell me I missed my goal of exercise by 100% instead of the usual 99. ",
+            "score": 8,
+            "author": "Soperos"
+        },
+        {
+            "level": 0,
+            "comment": "I got the name for this extension...\n\n\"Nextflix\" ",
+            "score": 8,
+            "author": "xricheex",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Ah yes. To save that one stomach crunch!",
+            "score": 28,
+            "author": "guilen",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If I'm watching in my bedroom I'm usually watching on my PC which is hooked up to the flatscreen on my wall on the other side of the room from my bed. Unless I'm chrome casting from my phone or laptop.\n\nEither way this saves me the trouble of making my girlfriend get out from under the covers to go click continue. Sometimes I even have to wake her up. It's a real pain in the ass.",
+                    "score": 5,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This might honestly be one of the laziest things I have ever seen.\n\nGood job OP",
+            "score": 27,
+            "author": "BlatantConservative",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I frequently watch Netflix from bed where I have no access to my mouse and keyboard. Getting up every couple of episodes to resume is kind of annoying, so this is a godsend to me.",
+                    "score": 11,
+                    "author": "Dalkaen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "do you have a smartphone? just get a remote desktop app and control your pc from there.",
+                            "score": 1,
+                            "author": "infecthead",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I would use something like Mobile Mouse instead. Much faster.",
+                                    "score": 1,
+                                    "author": "Bobbyboyle1234"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is amazing, but if it gets too widespread, we could see a massive spike in internet traffic across the world XD\n\nAs it turns out, Netflix has this feature put in to begin with because they are one of the top bandwidth hogs on the entire internet.",
+            "score": 5,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You're amazing. I didn't realize I needed this until you made it",
+            "score": 6,
+            "author": "Janeys",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You didn't realize this till now? What are you, some two episode only watching freak???",
+                    "score": 17,
+                    "author": "minerva_sways",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Anything for mobile? Do want, would pay for. I use chromecast and would love it.",
+            "score": 3,
+            "author": "chrispy_bacon",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You're a good netizen.",
+            "score": 3,
+            "author": "Margatron"
+        },
+        {
+            "level": 0,
+            "comment": "I fucking love you.  And I'm very grateful.  Thank you.",
+            "score": 3,
+            "author": "Cutlerbeast"
+        },
+        {
+            "level": 0,
+            "comment": "This will be the next time metric of died-alone-in-home after cat consumption.  ",
+            "score": 3,
+            "author": "NumberMuncher"
+        },
+        {
+            "level": 0,
+            "comment": "Nice implementation ",
+            "score": 2,
+            "author": "interoth"
+        },
+        {
+            "level": 0,
+            "comment": "You're a goddamn saint.",
+            "score": 2,
+            "author": "flynnski"
+        },
+        {
+            "level": 0,
+            "comment": "I would love an FF version!",
+            "score": 2,
+            "author": "elusivewater",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Soon.",
+                    "score": 1,
+                    "author": "G_Maharis"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Finally, my life was so hard without this.",
+            "score": 2,
+            "author": "thebedshow"
+        },
+        {
+            "level": 0,
+            "comment": "The lord hath risen!",
+            "score": 2,
+            "author": "seifer93"
+        },
+        {
+            "level": 0,
+            "comment": "Would love this on my Xbox. So tired of it asking me that considering I like to have my controller off while watching so it doesn't kill the battery. But nope, every 3 episodes I have to turn it back on for a quick second.",
+            "score": 2,
+            "author": "CarbonCamaroZL1"
+        },
+        {
+            "level": 0,
+            "comment": "thank you I hate that so much when I'm lying in bed. I use my desktop hooked up to my tv so I have to stand up to hit continue. ",
+            "score": 2,
+            "author": "scyther1"
+        },
+        {
+            "level": 0,
+            "comment": "Now you can sleep through the entire show!",
+            "score": 2,
+            "author": "toomuchpork"
+        },
+        {
+            "level": 0,
+            "comment": "I just started using the app they have for Windows 10 and I'm pretty sure that feature doesn't exist. The UI is pretty sleek too. That is if you don't feel like screwing around with the browser much. ",
+            "score": 2,
+            "author": "xAntimonyx"
+        },
+        {
+            "level": 0,
+            "comment": "you OP are a scholar and a gentleman \n\n\nthank you ",
+            "score": 2,
+            "author": "tehnibi"
+        },
+        {
+            "level": 0,
+            "comment": "The hero we have been searching for!",
+            "score": 2,
+            "author": "minnesotan_youbetcha"
+        },
+        {
+            "level": 0,
+            "comment": "You are truly a hero.",
+            "score": 2,
+            "author": "wolfman1911"
+        },
+        {
+            "level": 0,
+            "comment": "As the previous creator of a hacky python script to do the same function that had gained some popularity here on reddit\n\nThis is wonderful :' ) \n\nMaybe now I will stop getting messages to update my script \n&lt;3",
+            "score": 2,
+            "author": "FanaticalFoxBoy"
+        },
+        {
+            "level": 0,
+            "comment": "Duuuude, you're my hero. ",
+            "score": 2,
+            "author": "Stax493"
+        },
+        {
+            "level": 0,
+            "comment": "Great! So while you you fall asleep watching Netflix and it runs all night for 8 hours\nOr while you're gone from the house for 10 hours Netflix keeps running. \nThink about what would happen if even a 1/4 of all Netflix users used this.\nNetflix pays for every GB of bandwidth, and like every business they pass on the costs to the consumer. So if Netflix has to start paying for more bandwidth, we will all see out Netflix rates increased.",
+            "score": 2,
+            "author": "DanPHunt"
+        },
+        {
+            "level": 0,
+            "comment": "Need one for the PS4. I like to just lay back and watch a few episodes, sucks having to reach for the controller so often.",
+            "score": 3,
+            "author": "SBS_Matt"
+        },
+        {
+            "level": 0,
+            "comment": "Personally I've never seen the 'Are you still there' screen. Does it not show up if you don't wait for the timer to tick down and click next episode yourself?",
+            "score": 3,
+            "author": "9Ghillie",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Any interaction should reset the timer.\n\nThey just don't want you to turn on Netflix then go on vacation for a month, leaving it playing.",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Something must be wrong with mine then. I've had the \"are you still there\" thing pop up a few minutes after I actively click the next episode when credits roll.",
+                            "score": 3,
+                            "author": "arcticfawx",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Ik I'm late but you're a god send",
+            "score": 2,
+            "author": "melonthefarm"
+        },
+        {
+            "level": 0,
+            "comment": "Well done! Thanks for sharing.",
+            "score": 1,
+            "author": "phishbowls"
+        },
+        {
+            "level": 0,
+            "comment": "Awesome! Now if only I could do this with my xbox (or can I?)",
+            "score": 1,
+            "author": "ayfilm"
+        },
+        {
+            "level": 0,
+            "comment": "Make it for pandora too please.",
+            "score": 1,
+            "author": "SamBone123"
+        },
+        {
+            "level": 0,
+            "comment": "Netflix tech guys hate you. ",
+            "score": 1,
+            "author": "chakrablocker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They haven't changed those class names in a while, at least a couple months that since I've been looking. If they changed their core code to patch this I would be honored. ",
+                            "score": 2,
+                            "author": "keyframeezy",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Theres also Netflix Pause Removal already",
+            "score": 1,
+            "author": "Deep__Thought"
+        },
+        {
+            "level": 0,
+            "comment": "I have a roku sharp tv. Is there anything I can do about that?\n\nYes. I'm too lazy to push a button on my remote control during a Netflix binge. ",
+            "score": 1,
+            "author": "doveenigma13"
+        },
+        {
+            "level": 0,
+            "comment": "Hey, I have a question. With crunchy roll there was supposedly an issue with things automatically clicking yes for you. Is there anything \"wrong\" or unethical about this? Also, do you think you'll extend it to crunchy roll? :3",
+            "score": 1,
+            "author": "PuppyPunch"
+        },
+        {
+            "level": 0,
+            "comment": "That's awesome, thank you for making this",
+            "score": 1,
+            "author": "bullseyes"
+        },
+        {
+            "level": 0,
+            "comment": "We have a solution to probably the biggest first world problem, yay",
+            "score": 1,
+            "author": "yogatorademe"
+        },
+        {
+            "level": 0,
+            "comment": "I don't have any computer science knowledge besides basic c++. What language is this?",
+            "score": 1,
+            "author": "RemyRemjob",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Java seems to be the most popular language.",
+                            "score": 1,
+                            "author": "RemyRemjob"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I have an extension that completely removes it.. Had it for months",
+            "score": 1,
+            "author": "__________-_-_______"
+        },
+        {
+            "level": 0,
+            "comment": "This is awesome.  Thank you.",
+            "score": 1,
+            "author": "Blatantly_Absurd"
+        },
+        {
+            "level": 0,
+            "comment": "This would be great on my PS3, which is the only device I have this problem with. :&lt;",
+            "score": 1,
+            "author": "Mordy83"
+        },
+        {
+            "level": 0,
+            "comment": "Sometimes the \"are you still there\" prompt is the only reason I am able to go to sleep. ",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Does this work if you're not focused on the page playing netflix? I generally play netflix on a second monitor while gaming or redditing on my primary, would it screw up my mouse placement or not work?",
+            "score": 1,
+            "author": "Soulsbane96"
+        },
+        {
+            "level": 0,
+            "comment": "What causes it to ask that? I've never had it ask me that. Is it based on if your mouse hasn't moved?",
+            "score": 1,
+            "author": "iputtheflexinreflex"
+        },
+        {
+            "level": 0,
+            "comment": "Will this work for Pandora or do you have a similar extension that works for Pandora?",
+            "score": 1,
+            "author": "Calveezzzy"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The extension might have to go into the 18+ category? ",
+                    "score": 2,
+                    "author": "keyframeezy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "AllDayNetflix does this.\n\nhttps://chrome.google.com/webstore/detail/alldaynetflix/hlbbnidhchhkemeieppchepgbnelggdk?hl=en-US\n",
+            "score": 1,
+            "author": "judith_lies"
+        },
+        {
+            "level": 0,
+            "comment": "Chrome only streams Netflix at 720p because it doesn't do DRM as well as Edge, only Edge and the desktop app stream in 1080p.\n\nBecause licensing reasons.",
+            "score": 1,
+            "author": "Videogamer321"
+        },
+        {
+            "level": 0,
+            "comment": "Is there something for Firefox similar?",
+            "score": 1,
+            "author": "MaximusRuckus"
+        },
+        {
+            "level": 0,
+            "comment": "Whenever I see stuff like this, something *so* simple, I always think \"how didn't I think of that\"\n\nSuch a good idea. ",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I totally built the same thing a few months ago: [NetflixGo](https://chrome.google.com/webstore/detail/netflix-go/paeeebcnfgiekoajpjllamdjihpbmokn?hl=en)",
+            "score": 1,
+            "author": "Joshivity"
+        },
+        {
+            "level": 0,
+            "comment": "you know what never asks me if i'm still there, and has a higher bitrate and resolution, too? pirated, lossless bluray rips.",
+            "score": 1,
+            "author": "Fittkuk"
+        },
+        {
+            "level": 0,
+            "comment": "Hey OP \n\nSeems like Object.observe() [is obsolete](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/observe)",
+            "score": 1,
+            "author": "hjklhlkj"
+        },
+        {
+            "level": 0,
+            "comment": "Can you add a line that automatically sends an email to Netflix saying \"Don't you judge me!\"",
+            "score": 1,
+            "author": "silverpaw1786"
+        },
+        {
+            "level": 0,
+            "comment": "the windows 10 app doesnt ask if your still watching. its kinda nice but if i fall asleep while watching i wake up 1 or 2 season ahead",
+            "score": 1,
+            "author": "Noopguy"
+        },
+        {
+            "level": 0,
+            "comment": "Need one of these for Pandora",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "can someone explain to me what this is doing? I'm learning JS at the moment but haven't got up to anything like this",
+            "score": 1,
+            "author": "r4mbini",
+            "replies": []
+        }
+    ]
+}
