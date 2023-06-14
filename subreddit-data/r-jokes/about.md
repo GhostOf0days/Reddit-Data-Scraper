@@ -1,6 +1,6 @@
 # About r/Jokes
 
-Subscribers: 26055539
+Subscribers: 26055517
 
 Created UTC: 1201282272.0
 

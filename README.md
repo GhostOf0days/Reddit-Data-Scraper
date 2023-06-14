@@ -14,6 +14,7 @@ Usage:
 4. Run the script by executing the following command:
 ```python scraper.py```
 The script will automatically scrape data from all the subreddits specified in the subreddits.txt file using distributed computing. It will save the data in the subreddit-data directory. The data will be stored in separate subdirectories for each subreddit.
+Note: If you want to skip already parsed subreddits add '--skip-parsed' at the end of the aforementioned command.
 
 5. Remove all subreddits from the subreddits.txt file. Keep the comment.
 

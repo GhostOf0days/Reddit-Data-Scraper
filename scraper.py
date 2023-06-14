@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import re
+import argparse
 from dask.distributed import Client
 from dask import delayed
 
@@ -190,6 +191,10 @@ def process_subreddit(subreddit):
             print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
 
 def main():
+    parser = argparse.ArgumentParser(description='Reddit Data Scraper')
+    parser.add_argument('--skip-parsed', action='store_true', help='Skip parsing subreddits that have already been parsed')
+    args = parser.parse_args()
+
     client = Client()  # set up local cluster
     print(client)
     
@@ -197,6 +202,11 @@ def main():
     with open('subreddits.txt', 'r', encoding='utf-8') as file:
         subreddits = [line.strip() for line in file if line.strip() and not line.strip().startswith("#")]
         for subreddit in subreddits:
+            if args.skip_parsed:
+                subreddit_dir = os.path.join(DATA_DIRECTORY, f'r-{subreddit}')
+                if os.path.exists(subreddit_dir):
+                    print(f'Skipping subreddit {subreddit} as it has already been parsed')
+                    continue
             result = process_subreddit(subreddit)
             if result is not None:  # Check if the result is not None
                 results.append(result)
