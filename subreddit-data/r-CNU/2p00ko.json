@@ -1,0 +1,55 @@
+{
+    "id": "2p00ko",
+    "score": 14,
+    "title": "[Tool] Chrome extension to show RateMyProfessor scores on CNU Live",
+    "author": "gravity_low",
+    "date": 1418325845.0,
+    "url": "https://www.reddit.com/r/CNU/comments/2p00ko",
+    "media_urls": [],
+    "other_urls": [
+        "http://i.imgur.com/jjlZeSQ.png),",
+        "http://i.imgur.com/B9XVFLM.png),",
+        "http://i.imgur.com/RUcJqyq.png),",
+        "http://i.imgur.com/YSMgAt2.png).",
+        "https://www.dropbox.com/s/fv2nd2alb54szt1/CNU.crx?dl=0",
+        "http://i.imgur.com/wJyqfoR.png).",
+        "https://pulsar.cnu.edu/soc/socquery.aspx)"
+    ],
+    "postText": "Hey guys,\n\nHope everyone is getting sleep and getting through finals alright. When I get stressed, I make things, so I made something for CNU Live. I wanted to be able to see professor's RateMyProfessor scores right from the CNU Live course listings, so I put together a little Google Chrome extension to do just that. Here are some screenshots: [Photo 1](http://i.imgur.com/jjlZeSQ.png), [Photo 2](http://i.imgur.com/B9XVFLM.png), [Photo 3](http://i.imgur.com/RUcJqyq.png), [Photo 4](http://i.imgur.com/YSMgAt2.png).\n\nIf you want to use it yourself you can download it here: https://www.dropbox.com/s/fv2nd2alb54szt1/CNU.crx?dl=0\n\nTo install, open chrome and click on the hamburger icon (the three horizontal bars to the right of the URL bar), click settings, and the select \"Extensions\" from the left side of the settings window (you can also just navigate to chrome://extensions). Drag and drop the CNU.crx file onto the screen and you'll get a popup asking to [add the extension](http://i.imgur.com/wJyqfoR.png). Hit add, and you should be good to go.\n\nI've tested it a bit and it seems to work for most professors. Some don't have a page on RateMyProfessor because they're adjuncts or just haven't been rated yet, but if it doesn't show ratings for a professor who you know has a page, just let me know and I'll figure out what's up. \n\nHopefully that's useful! Good luck with your finals.\n\nEdit 1: can't spell.\n\nEdit 2 (12/30/14): As of today, this extension (version 1.1) now works on the [Schedule of Classes](https://pulsar.cnu.edu/soc/socquery.aspx) page along with the \"Look up classes\" page on CNU Live. Since the Schedule of Classes page only shows the first initial of the professor's names it's a bit harder to do the lookup, but it seems to be pretty accurate. Make sure you let me know of any inconsistencies. \n\nFor those who are reading this for the first time, just install the extension as usual. For those who already have a copy, just download and install the new one from the link above -- it has been updated and will get your version working on the site.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Woah, this is awesome, I wish I had this before registering for classes! Such a good idea. ",
+            "score": 4,
+            "author": "eyeis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's when I had the idea because I got tired of searching people up haha. Counting on it coming in handy for next year's courses!",
+                    "score": 1,
+                    "author": "gravity_low"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't like that this has access to all my data on burke.cnu.edu.  There is a lot of sensitive, private information on that site.",
+            "score": 2,
+            "author": "legonigel",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Very valid concern, thanks for commenting. I'm a huge security guy and I'm glad you're making an effort to stay safe. I'll explain what that message means and give you the tools to verify there's nothing fishy going on on your own if you wish!\n\nThe message chrome gives you \"access to all data on ...\" means is that the extension is going to run when you bring up pages on burke.cnu.edu (CNU Live), as it obviously needs to run on the \"Look up classes\" page there. In the code itself, I do double-checking to make sure it's actually on that page before anything runs - that is, no code is run if you're not really on the course look up page.\n\nWhat happens when it does detect that you're on that page is grab all the professor's names off the table, send them over to RateMyProfessor to get their scores, and then rewrites the table to include those scores. Data never gets sent to anything I own, and any data that's sent to RateMyProfessor is simply your professor's name and CNU's name to get the score - just as if you were accessing the site on your own (instead, the extension automates the lookup for you.)\n\nIf you want to take a look at the code yourself, I've posted the file [here](https://gist.github.com/gravitylow/ba61d831c25ff27a651d) for you to examine yourself. This is the javascript code that is run in your browser when it detects that you're on burke.cnu.edu (CNU Live) or pulsar.cnu.edu (Schedule of courses). You can verify that there's no fishy stuff going on :)\n\nWith all that said, I know there's still cause to be paranoid. If you'd like to compile your own copy of the plugin to verify the code I gave you is legitimate, let me know and I'll provide you with the rest of the files to do so. I'd also be willing to create a version of the plugin which is completely disabled on burke.cnu.edu and only works on pulsar.cnu.edu where there's absolutely no personal information. Obviously that presents the issue that you'd not be able to see scores on CNU Live, but if you are worried about it I completely understand, just let me know if you'd like me to do that and it'd be no problem at all.",
+                    "score": 1,
+                    "author": "gravity_low"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I've updated the extension and the post today (12/30/14) to reflect the 1.1 changes: scores will now show up on the Schedule of Classes page as well as on CNU Live course lookup itself. You can see the edit if you are needing to update from 1.0. Enjoy!",
+            "score": 1,
+            "author": "gravity_low"
+        }
+    ]
+}

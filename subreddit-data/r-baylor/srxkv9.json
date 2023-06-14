@@ -1,0 +1,55 @@
+{
+    "id": "srxkv9",
+    "score": 6,
+    "title": "BSB's Terrible Wi-Fi",
+    "author": "cccreme_brulee",
+    "date": 1644799516.0,
+    "url": "https://www.reddit.com/r/baylor/comments/srxkv9",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Does anyone know what's going on with the wi-fi at the BSB? I can't access the internet the majority of time this last week and if I did have access, it's temporary (like a minute long) and very slow. It's very hard to do some of my labs because the lab manual is online. :/",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I work in the networking group at Baylor IT. Before I begin today's lecture, let me remind the reader that contacting the HelpDesk with the specifics of your location and BearID will result in faster response and resolution of issues with your network performance. \n\nThat aside, let us begin - and given that I am not directly involved in wireless operations, please take the ramblings of an old man with a grain (or bucket) of salt...\n\nYou're in the Baylor Science Building, so I'm making the assumption that you have a solid understanding of physics. You don't specify where in the BSB, so let's further assume you're in the atrium.\n\nAs a practical physics problem, providing consistent wifi coverage to all seats in the BSB atrium is a doozy. The access point (AP) is both receiver and transmitter. In the realm of EMF, that is subject to r^2 attenuation. That means that the distance from the client (you) to the AP is a factor. Imagine the concentric spheres of signal emanating from your laptop and how they overlap with signal coming back from the AP. You'll get better network performance by moving closer to the AP.\n\nFurthermore, wireless access is a shared medium, unlike wired ethernet, which is a dedicated medium. I can dive deeper into what that means, but for the sake of this monologue, the end result is like having a conversation in an elementary school cafeteria. The more kids are talking, the louder they talk, the more difficult it is for speaker and listener to understand each other. By analogy, as the density of population increases on a shared medium, the more difficult it is to sustain useful networking throughput. It's a physical limitation. It can be overcome by throwing lots and lots of APs into that dense space, but then you start working against other factors such as budget and esthetics.\n\nThank you for attending my Ted talk. Be sure to send the specifics of your location to the HelpDesk at helpdesk@baylor.edu next time you run into this situation. It's a numbers game, and reporting your issue to the HelpDesk is the best way we have to track the numbers. The more people that report in on a situation, the stronger our argument is for providing more APs in that space.",
+            "score": 8,
+            "author": "BaylorNetAdmin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'll add a little extra tidbit here to the old man:\n\nThe BSB atrium in particular is *horrible* primarily because there's nowhere for me to land hardware. The building wasn't constructed with atrium coverage in mind, so I had to go back and figure out what I could do and where I could get lines, without the cost ballooning into a critical hit. So, what's in the atrium today is largely a \"best economical effort\" and it's sort of an evil we choose to live with.",
+                    "score": 3,
+                    "author": "DarkLordOfAirbear"
+                },
+                {
+                    "level": 1,
+                    "comment": "[Elder of the internet](https://www.youtube.com/watch?v=iDbyYGrswtg)",
+                    "score": 2,
+                    "author": "Cyber-Bear"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What room and timeframe? Do you know if you're getting an IP address or does it time out with a 169 address? Are you on a Windows machine?",
+            "score": 2,
+            "author": "DarkLordOfAirbear",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "BSB D110 (12:20PM-1:10PM) and BSB A223 (3:30PM-4:45PM)\u2014especially in A223. It's been a week or so of this wi-fi issue. Some students are lucky and had access to the wi-fi. In my case, this is actually the first time that such a situation occured. I asked around and it seems that I wasn't the only person to be going through this circumstance. Surprisingly, my MacBook would connect at the Atrium and even outside (at one of those round tables). Now I have to resort to borrowing a laptop from the Moody Library for the first time because I do not know how to fix this issue, and I have a Canvas exam in-person at the BSB. I'll take up on the other user's advice and seek out the HelpDesk+ immediately (since I have to pick up the rented laptop anyways).",
+                    "score": 1,
+                    "author": "cccreme_brulee",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm actively investigating some problems over there in the BSB, particularly with that side of the building. By chance, do you know if its timing out when trying to obtain an IP address / DHCP? You might be able to see the connection progress and where it fails in the Airport configuration / connection menu.",
+                            "score": 1,
+                            "author": "DarkLordOfAirbear"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

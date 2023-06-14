@@ -1,0 +1,39 @@
+{
+    "id": "yb819l",
+    "score": 4,
+    "title": "Does anyone know how extensively COMP 3761 (Algorithms) goes into dynamic programming?",
+    "author": "commit_to_master",
+    "date": 1666499348.0,
+    "url": "https://www.reddit.com/r/BCIT/comments/yb819l",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I've spent a month trying to learn dynamic programming and I don't understand any of it. This is worrying me because I know technical assessments love to ask dp questions so I'm afraid I might get screened out of many future jobs. Can anyone taking the course right now chime in about how well COMP 3761 goes over dp and recursive type algorithms in general?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Currently doing the full time counterpart Comp 3760, we are going over these techniques for the course \n\u2022 Brute force\n\u2022 Divide and conquer\n\u2022 Decrease and conquer\n\u2022 Transform and conquer\n\u2022 Space and time tradeoffs\n\u2022 Greedy approach\n\u2022 Dynamic programming\n\u2022 Iterative improvement\n\u2022 Backtracking\n\u2022 Branch and bound",
+            "score": 2,
+            "author": "akmarwah0102"
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Sample problem from 3761 last year, Thomas Magliery.\n\nAn old-school arcade video game features an aerial view of a landscape containing prizes of various amounts. The player can choose to enter the map at any position in the starting row. The map scrolls past continually while the player can move from side to side with button or joystick controls. At each \"time step\" the landscape scrolls past by one row, and thus the player moves either straight ahead, ahead-left, or ahead-right. The goal is (naturally) to collect as much prize money as possible.\n\nhttps://i.imgur.com/zFYtFAb.png\n\n**Problem: We would like to calculate, for a given map layout, the maximum possible score that the player can obtain.**\n\nhttps://i.imgur.com/Sja6LhT.png\n\nThe input to your algorithm is a 2D integer array called Map. The map is a series of N rows (N is the length of the landscape). Each row has M cells (the width of the landscape). There are no prizes in the first row (row 0). In subsequent rows every cell contains either 0 (no prize) or a positive integer amount for the prize. For example, in the map shown above, Map[4][1] == 37 and Map[5][3] == 12.\nThis is a job for dynamic programming! First we will create an array called \"Best\" which will represent the best achievable score at every position on the map.\n\n* Part a (2 points): Give the declaration for the array Best.\n* Part b (5 points): Next we need to specify how to calculate the value of a given cell in the Best array. Give the recursive formula for the contents of the cell at row i, position j. Don't worry about edge/boundary cases here, just give the formula for one of the internal cells.\n* Part c (6 points): Write pseudocode that performs the initialization and calculations of the entire Best array. Now is the time to worry about edge/boundary cases!\n* Part d (2 points): After the Best array has been fully calculated, what else must be done to determine the answer to the original problem (largest amount of money that the player can obtain by any path)? You may answer this question in plain English, or in pseudocode.",
+            "score": 2,
+            "author": "lubeskystalker"
+        },
+        {
+            "level": 0,
+            "comment": "I've never heard of Dynamic programming in my life, and I've been a developer for many years. I've never seen it in a tech interview and I've done dozens.\n\nI did algorithms like 10 years ago and it was not a part of the curriculum.",
+            "score": 2,
+            "author": "shaidyn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "man you're lucky if you've never encountered dp in an interview setting. some of the questions are really difficult to solve and it seems like more and more companies are using it in the oa to screen candidates before the actual interview.",
+                    "score": 2,
+                    "author": "commit_to_master"
+                }
+            ]
+        }
+    ]
+}

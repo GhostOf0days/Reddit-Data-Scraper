@@ -1,0 +1,93 @@
+{
+    "id": "100zcxv",
+    "score": 5,
+    "title": "Exporter horaire",
+    "author": "mrrara44",
+    "date": 1672622424.0,
+    "url": "https://www.reddit.com/r/etsmtl/comments/100zcxv",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Avant, il \u00e9tait possible d'exporter son horaire dans un certain format \u00e0 partir de signet pour le charger sur Google Calendar. Maintenant, lorsque j'essaye de consulter mon horaire sur signet \u00e7a dit que maintenant on peut seulement consulter son horaire sur mon \u00e9ts. Avez-vous d'autres techniques pour exporter l'horaire ?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "C'est toujours possible \u00e0 travers le portail d'exporter le calendrier vers un fichier ical et de l'importer dans Google calendar.\n\nPortail-&gt;dans le \"widget\" mon calendrier - &gt; ic\u00f4ne r\u00e9glage (haut \u00e0 droite) - &gt; configuration avanc\u00e9e - &gt; scroll \u00e0 Cours et activit\u00e9s et click sur ical \u00e0 droite.",
+            "score": 9,
+            "author": "ghikft",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "C'est ce que je fais depuis 2018 et \u00e7a marche \u00e0 merveille. Chaque ann\u00e9e/d\u00e9but de session, je me t\u00e9l\u00e9charge un ical avec mes cours et un avec [les dates importantes du calendrier scolaire](https://www.etsmtl.ca/etudes/calendrier-universitaire) que j'int\u00e8gre dans mon calendrier Google.",
+                    "score": 5,
+                    "author": "Vince_Magik"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Malheureusement ils ont kill \u00e7a. Le seul autre moyen que je connais serait de faire: Mon\u00c9TS &gt; Param\u00e8tres au portail &gt; configuration avanc\u00e9e, copier le lien de \"Cours et activit\u00e9s\" et de l'importer dans le calendrier Google. Le probl\u00e8me c'est que tout est d\u00e9cal\u00e9 de 4 heures vu que le fuseau horaire est set \u00e0 \"temps universel coordonn\u00e9\". J'ai d\u00e9j\u00e0 fait une demande au GUS pour changer \u00e7a mais ils s'en branle.",
+            "score": 6,
+            "author": "Engineer--",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Tkt c'est une \u00e9cole de technologie sup\u00e9rieure \ud83e\udd14",
+                    "score": 9,
+                    "author": "mrrara44"
+                },
+                {
+                    "level": 1,
+                    "comment": "Les enseignants ont le m\u00eame pb de d\u00e9calage avec l'URL reli\u00e9 \u00e0 Google pour leurs s\u00e9ances de cours/lab/TP. Si tu sauvegardes le fichier .ics sur un pc, et tu l'importes dans Google, \u00e7a fonctionne. Mais faire \u00e7a pour 4 ou 5 cours est long.\n\nEdit: exemple de URL: `https://portail.etsmtl.ca/ICal/SeancesCours?Sigle=MGL843&amp;Groupe=01&amp;Session=20231`",
+                    "score": 3,
+                    "author": "fuhrmanator"
+                },
+                {
+                    "level": 1,
+                    "comment": "Weird, je fais la m\u00eame chose que toi avec le lien sauf que j'utilise le lien pour Outlook de Office 365 et mes heures de cours sont correct pas de d\u00e9calage. Je me dit que tu peux surement ajuster le fuseau horaire dans le calendrier Google. \n\nPourquoi tu ne veux pas changer le fuseau horaire \u00e0 heure avanc\u00e9e de l'est?",
+                    "score": -1,
+                    "author": "FroKrahDiin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Le fuseau horaire doit \u00eatre d\u00e9fini dans le fichier .ics pour que \u00e7a marche avec Google je crois. Tu peux lire [cette question sur StackOverflow](https://stackoverflow.com/questions/35645402/how-to-specify-timezone-in-ics-file-which-will-work-efficiently-with-google-outl).\n\n1. l'horaire (.ics) fait dans MonETS est fort probablement produit avec une API d\u00e9velopp\u00e9e par Microsoft (l'\u00c9TS utilise beaucoup ces outils pour l'infrastructure, SIGNETS, MonETS, etc.), donc ce fichier est compatible avec les produits Office. Depuis longtemps, l'\u00c9TS vise un support prioritaire pour Office.\n2. l'\u00c9TS g\u00e8re aussi un calendrier universitaire dans Google (je ne pense pas ce soit fait par le STI par contre). Quand je l'ajoute par son URL \u00e0 mon agenda Google \u00e7a fonctionne parfaitement. Le fichier .ics se trouve \u00e0 [https://calendar.google.com/calendar/embed?src=os3630sfdvrklu2d2gcd1t525c%40group.calendar.google.com&amp;ctz=America%2FToronto](https://calendar.google.com/calendar/embed?src=os3630sfdvrklu2d2gcd1t525c%40group.calendar.google.com&amp;ctz=America%2FToronto) et si tu inspectes le fichier .ics, tu trouves la spec du fuseau horaire (qui n'est pas dans le .ics g\u00e9n\u00e9r\u00e9 dans MonETS):\n\n&amp;#8203;\n\n    X-WR-CALNAME:Calendrier \u00c9TS\n    X-WR-TIMEZONE:America/Toronto\n    X-WR-CALDESC:Calendrier de l'\u00c9cole de technologie sup\u00e9rieure\\, selon http:/\n     /www.etsmtl.ca/zone2/programmes/calendrier_univ/index.html#a2007\n    BEGIN:VTIMEZONE\n    TZID:America/New_York\n    X-LIC-LOCATION:America/New_York\n    BEGIN:DAYLIGHT\n    TZOFFSETFROM:-0500\n    TZOFFSETTO:-0400\n    TZNAME:EDT\n    DTSTART:19700308T020000\n    RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\n    END:DAYLIGHT\n    BEGIN:STANDARD\n    TZOFFSETFROM:-0400\n    TZOFFSETTO:-0500\n    TZNAME:EST\n    DTSTART:19701101T020000\n    RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\n    END:STANDARD\n    END:VTIMEZONE\n\nC'est s\u00fbrement l'API de Google qui g\u00e9n\u00e8re cela.",
+                            "score": 1,
+                            "author": "fuhrmanator"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Plus possible je crois depuis que l\u2019horaire n\u2019est plus accessible sur signets..",
+            "score": 3,
+            "author": "Scuba_QC"
+        },
+        {
+            "level": 0,
+            "comment": "Je ne crois pas que c'est encore disponible comme avant.. par contre cela ne t'emp\u00eache pas de cr\u00e9er un event dans ton calendrier et de mettre une r\u00e9p\u00e9tition d'event jusqu'\u00e0 la fin de la session et de changer lors de la semaine de rel\u00e2che et les permutations d'horaire\ud83e\udd37\u200d\u2640\ufe0f c'est ce que j'ai fait",
+            "score": 4,
+            "author": "AffectionatePut4450",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Je le fais manuelle sur une application autre que Google ou Microsoft et je fais des \u00e9v\u00e9nements r\u00e9p\u00e9t\u00e9s. Une fois la session commenc\u00e9 j'adapte mon horaire en fonction des horaires particulier (TP, labo 1 sem / 2, cours qui commence plus tard...). \u00c7a prend peut \u00eatre 1-2h au total mais apr\u00e8s c'est fait pour la session",
+                    "score": 1,
+                    "author": "curius_tech"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Je confirme c\u2019est possible \u00e0 partir de MonETS",
+            "score": 2,
+            "author": "Marcsmith15"
+        },
+        {
+            "level": 0,
+            "comment": "Je ne sais pas si j'ai r\u00e9pondu \u00e0 ta question mais je me suis rajout\u00e9 un microservice dans mon serveur qui rajoute le ```X-WR-TIMEZONE:America/Toronto``` dans le fichier ics. Le nouveau URL de mon serveur me permet de rajouter le calendrier directement en tant qu'URL dans le bon fuseau horaire. \n\nVoici mon nouvel URL \n\n[https://iodium.xyz/nodejs/api/calendar?etu=ENS%5cAQ12345&amp;authtoken=B6-03-91-37-74-A8-17-9C-EA-A1-3C-1A-0C-DA-6E-89-B3-EA-E2-82-1D-97-96-2F-89-F7-2A-08-79-F3-3D-44](https://iodium.xyz/nodejs/api/calendar?etu=ENS%5cAQ12345&amp;authtoken=B6-03-91-37-74-A8-17-9C-EA-A1-3C-1A-0C-DA-6E-89-B3-EA-E2-82-1D-97-96-2F-89-F7-2A-08-79-F3-3D-44)\n\nPour d\u00e9finir tes query params:\n\n```etu``` correspond \u00e0 ton ```username```\n\n```authtoken``` correspond \u00e0 ton  ```AuthToken```\n\nDonc techniquement si tous va bien tu pourras avoir fichier ics compatible avec Google Calendar. Voici une capture d'\u00e9cran de comment \u00e7a ressemble \n\n[Capture d'\u00e9cran](https://iodium.xyz/dl/screenshot2.png)",
+            "score": 1,
+            "author": "FroKrahDiin"
+        }
+    ]
+}

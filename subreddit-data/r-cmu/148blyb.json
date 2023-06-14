@@ -1,6 +1,6 @@
 {
     "id": "148blyb",
-    "score": 4,
+    "score": 5,
     "title": "15213 - Can anyone help me look at this two's-complement truncation problem?",
     "author": "kleinblue2015",
     "date": 1686650085.0,
@@ -21,14 +21,38 @@
         {
             "level": 0,
             "comment": "The answer table doesn't have all the columns. The question asks for the unsigned and two's complement interpretations of the numbers. For some reason, the answer table labels the unsigned interpretations of the numbers as the two's complement interpretation. You cannot represent 6 with three bits in two's complement. \n\n&amp;#x200B;\n\n|Original (2C)|Bits|Truncated Bits|Unsigned|2C|\n|:-|:-|:-|:-|:-|\n|1|0001|001|1|1|\n|3|0011|011|3|3|\n|5|0101|101|5|\\-3|\n|\\-4|1100|100|4|\\-4|\n|\\-2|1110|110|6|\\-2|",
-            "score": 1,
-            "author": "NewYinzer"
+            "score": 3,
+            "author": "NewYinzer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! No wonder. I thought I did not get it right. \n\nNow it makes sense.",
+                    "score": 1,
+                    "author": "kleinblue2015"
+                }
+            ]
         },
         {
             "level": 0,
             "comment": "Yeah looks like they are somehow treating the truncated bits as unsigned",
-            "score": 1,
-            "author": "EquallyObese"
+            "score": 3,
+            "author": "EquallyObese",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 1,
+                    "author": "kleinblue2015",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Thank you!\n\nYou're welcome!",
+                            "score": 1,
+                            "author": "exclaim_bot"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -1,0 +1,19 @@
+{
+    "id": "106pvu6",
+    "score": 0,
+    "title": "Set home internet to always connect to VPN",
+    "author": "Winning-Basil2064",
+    "date": 1673201468.0,
+    "url": "https://www.reddit.com/r/cmu/comments/106pvu6",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Instead of Cisco AnyConnect every time, is there a way to default setting my wifi router?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I don't think it is possible after they required using SSO. Before that you can use openconnect and make a script to connect automatically. Now the only workaround I found is using openconnect-sso. However, despite it can help you automatically fill in the log in page, it still requires a GUI due to the stupid SSO webpage loading requiring a browser window, and you have to manually tap on the phone everytime to get pass that webpage, so that won't work out-of-the-box on a router (especially for a hard one). I don't think there are other workaround unless they get rid of the SSO requirement for connecting to the VPN.\n\nSide note, the CMU VPN does not work easily with openconnect. You may need to modify configuration of openssl to enable Legacy Unsafe Renegotiation to make the whole thing work.",
+            "score": 1,
+            "author": "caoliquor"
+        }
+    ]
+}

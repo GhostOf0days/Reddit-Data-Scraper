@@ -1,6 +1,6 @@
 # About r/stanford
 
-Subscribers: 30768
+Subscribers: 30788
 
 Created UTC: 1253573545.0
 

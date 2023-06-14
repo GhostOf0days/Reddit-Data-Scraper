@@ -1,0 +1,79 @@
+{
+    "id": "yl590b",
+    "score": 5,
+    "title": "CS Labs Advice",
+    "author": "deafeye2001",
+    "date": 1667488072.0,
+    "url": "https://www.reddit.com/r/fullsail/comments/yl590b",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": " Hey, I'm in the CS program and am having trouble with some of the labs involving loops and arrays. Most of them are centered around making a program to solve different math problems. For example, adding up change or telling if a number is prime or not. I've already gotten some assistance from the professors and was wondering if you guys had any advice or books you would recommend. I mostly learn best by reading, but whatever you have helps. Thanks so much.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "C++ Primer is a great resource for the basics. As is stroustrop\u2019s The c++ programming language. \n\nEffective C++ once you\u2019ve got a grasp on that. \n\nCracking the Coding interview once you\u2019ve got a graph on basic algorithms and data structures to start using them in applied ways. \n\nAdditionally coursera and udemy have classes that can supplement. \n\nThe trick to things like \u201csee if the number is prime\u201d  when you\u2019re starting out is to effectively write into code the rules for testing that. Then refine this into  loops/functions/recursion/etc.   Getting to the ideal answer is not required in your first attempt. Refining that is how you arrive there. \n\nBy writing out the problem in language first, or talking it through, you\u2019ll get farther faster. This is also a key technique in passing programming interviews. \n\nLooking at the primes: We know a prime number is divisible by 1 and itself. We\u2019ll use 13 as an example. \n\nFirst we have to address how to tell if something cleanly divides. Integer division in c++ will round, so how do we detect a remainder? The modulo operator (%). Eg 13 % 2 = 1\n\nGiven multiplication and division basics, we know we can determine the maximum possible factors for any number is roughly 1/2 the number. \n\nWe now have our problem space. [2, \u2026 N/2] in this case 2 through 6. \n\nSo if we check all numbers in that problem space, and divide by it, if N % number in range does not have a remainder ( == 0) the number cannot be prime. \n\nNow write that as a for loop.",
+            "score": 4,
+            "author": "pplx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the advice, and I'll make sure to check those books out.",
+                    "score": 1,
+                    "author": "deafeye2001"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Are you on discord? I\u2019m in the same program and took most of those classes I can help",
+            "score": 1,
+            "author": "Mother_Ad4991",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey, I appreciate it. I just turned in both labs and passed all the tests after running the console. I also think I should get a 100 on the practical, but I need to wait for that to be graded. Thanks so much for the offer though, and when I need more help in the future, I'll be sure to reach out. (Also yes I'm in the discord)",
+                    "score": 2,
+                    "author": "deafeye2001",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Here\u2019s my username       Matthew Butler #9201",
+                            "score": 1,
+                            "author": "Mother_Ad4991",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yo matt I\u2019m in pg1 looking for advice where to start labs etc getting basics into visual studio",
+                                    "score": 1,
+                                    "author": "yYoShiJ",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Imma look for you on dc\ud83d\ude43",
+                                            "score": 1,
+                                            "author": "yYoShiJ",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Alright bet no problem",
+                                                    "score": 1,
+                                                    "author": "Mother_Ad4991"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "We\u2019re you able to find it or do you mind sending me yours and we can work from there",
+                                                    "score": 1,
+                                                    "author": "Mother_Ad4991"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

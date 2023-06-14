@@ -1,0 +1,31 @@
+{
+    "id": "10bz7dh",
+    "score": 8,
+    "title": "Calendar export from sio",
+    "author": "Flarrownatural",
+    "date": 1673729908.0,
+    "url": "https://www.reddit.com/r/cmu/comments/10bz7dh",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I\u2019m trying to add my course schedule from sio to my Apple calendar. I usually did this using the calendar export button when viewing my schedule on sio, but when I do it now I just get a page with a bunch of text like this:\n\n\nBEGIN:VCALENDAR PRODID:-CMU SIOiCal4j 1.0EN VERSION:2.0 CALSCALE:GREGORIAN BEGIN:VEVENT DTSTAMP:20230114T205722Z DTSTART:20230118T140000 DTEND:20230118T155000 SUMMARY:Digital Signal Processing :: \n[\u2026] \n\nnInstructor: Fedder\\n END:VEVENT END:VCALENDAR",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The export button is kinda broken right now, but I could manage to make it work by doing so:\n\n* Save the page you get as a text file (if you\u2019re using Safari on macOS, go to File &gt; Save As\u2026 and make sure *Page Source* is the selected format).\n* Change the file you get so its extension is `.ics` instead of `.html`.\n* Open the file, that will import your schedule in the Calendar app.",
+            "score": 11,
+            "author": "Nicolapps"
+        },
+        {
+            "level": 0,
+            "comment": "try\n https://www.andrew.cmu.edu/user/mmx/sched2ics/?semester=S2023\n\nmaybe? it's a bit better than sio",
+            "score": 5,
+            "author": "blueturtle256"
+        },
+        {
+            "level": 0,
+            "comment": "If you have a mac, make sure your calendar sync on icloud is turned on and you should be able to export your schedule on your mac.",
+            "score": 1,
+            "author": "thehoodedarrow"
+        }
+    ]
+}

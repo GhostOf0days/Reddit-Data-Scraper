@@ -1,0 +1,91 @@
+{
+    "id": "12ymc83",
+    "score": 5,
+    "title": "Cellulaire bris\u00e9",
+    "author": "Adventurous-Treat-86",
+    "date": 1682435727.0,
+    "url": "https://www.reddit.com/r/etsmtl/comments/12ymc83",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Salut \u00e0 tous,\n\nMon cell a d\u00e9cid\u00e9 de ne plus recharger. Entre le moment que je je m'en trouve un autre et que j'aie acc\u00e8s \u00e0 un t\u00e9l\u00e9phone fonctionnel, comment est-ce que je m'arrange pour me connecter aux services Outlook/Moodle \u00e9tant donn\u00e9 que leur 2FA prend seulement texto/appel?\n\nPr\u00e9sentement je ne peux plus me connecter nul part sur mon ordi ou autres car de toutes fa\u00e7on \"Keep me signed in\" ne fonctionne plus depuis longtemps.\n\nMerci",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Je vois quelques fa\u00e7ons:\n1. Mettre ta carte SIM dans un vieux t\u00e9l\u00e9phone a toi ou de ta famille.\n2. Installer un \u00e9mulateur Android sur ton pc pour pouvoir installer Microsoft authenticator.\n3. Contacter le support T.I afin de v\u00e9rifier s'il peuvent d\u00e9sactiver le 2fa temporairement ou changer ton num\u00e9ro de t\u00e9l\u00e9phone.\n\nBonne chance !",
+            "score": 9,
+            "author": "jargui2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "1. Je vais faire \u00e7a, mais ca reste int\u00e9ressant de savoir s'il y a d'autres fa\u00e7ons que d'\u00eatre aussi d\u00e9pendant de nos cellulaires...\n2. Bluestack ne laisse pas installer Microsoft Auth.\n3. Pire sc\u00e9nario qui fonctionne mais en c'est temporaire donc il faut d\u00e9pendre d'un cellulaire apr\u00e8s tout!",
+                    "score": 2,
+                    "author": "Adventurous-Treat-86",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Faudrait regard\u00e9 du c\u00f4t\u00e9 des cl\u00e9s physiques style Ubikey qui est pris en charge par Microsoft.",
+                            "score": 1,
+                            "author": "jargui2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Personellement j'ai tout int\u00e9gr\u00e9 dans Bitwarden, aucun probl\u00e8me depuis 2 ans",
+            "score": 4,
+            "author": "owndagab",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "J'utilise Bitwarden ausssi, as-tu un lien vers de la documentation sur comment utiliser Bitwarden pour compl\u00e9ter le 2FA? Pour l'instant avec de la recherche rapide je tombe sur des articles de TOTP qui requiert un abonnement payant de Bitwarden que je ne suis pas encore s\u00fbr de comment \u00e7a fonctionne",
+                    "score": 2,
+                    "author": "Adventurous-Treat-86",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "si je me trompe pas c'est r\u00e9serv\u00e9 aux abonn\u00e9s premium (10$ par ann\u00e9e)",
+                            "score": 2,
+                            "author": "Deathmore80",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Meilleures subscription que j'ai \ud83d\ude02 \u00e7a entre mes password et mes 2fa d'un coup",
+                                    "score": 1,
+                                    "author": "owndagab",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "m\u00eame chose! toute ma famille s'y est convertie",
+                                            "score": 1,
+                                            "author": "Deathmore80"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Wait what, Bitwarden a un forfait pour les 2FA \u00e0 10$ par ann\u00e9e ??? I\u2019m fucking in",
+                                    "score": 1,
+                                    "author": "Narrow_Ad6866"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Damn, faut que j'aille \u00e7a aussi. \u00c7a serait assez utile de se connecter \u00e0 moodle pendant un examen quand tu r\u00e9alises que t'as oubli\u00e9 un powerpoint ou un truc du genre. Surtout que le syst\u00e8me d'authentification est tout croche et te d\u00e9connecte un peu de fa\u00e7on al\u00e9atoire. \n\n Surtout qu'on, justement, d\u00e9pend de notre cell pour se connecter, mais que c'est tol\u00e9rance 0 pour \u00e7a.",
+                            "score": 1,
+                            "author": "tigie11"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "J'ai r\u00e9ussi \u00e0 tout r\u00e9gler sans contacter la STI. Apr\u00e8s tout:\n\nIl est possible d'avoir plusieurs applis authentifieurs sur le compte Microsoft de l'\u00c9TS. \u00c0 ceux qui ne veulent pas payer encore Bitwarden 10$/ann\u00e9e... je sugg\u00e8re d'installer plusieurs authentifieurs pour ne plus d\u00e9pendre du cellulaire\\*:\n\n* Winauth (application pour ordinateur)\n* Authenticator (extension pour Firefox/Chrome/Edge/Opera). Je sugg\u00e8re de l'installer sur tous vos browser car parfois la connexion ne fonctionne pas bien sur un browser ou pour la redondance tout simplement.\n* Authenticator (iOS/Android/sur votre cellulaire). C'est utile si un jour le r\u00e9seau cellulaire d\u00e9cide de planter et qu'envoyer le code via SMS/appel n'est pas possible.\n\nMaintenant j'utilise un extension authenticator sur mes browser. \u00c7a m'emp\u00eache de sortir mon cellulaire et d'en d\u00e9pendre pour me connecter.\n\n(\\*la dependance au cellulaire pour les besoins essentiels est un d\u00e9bat exasp\u00e9rante qui sort du spectre de cette discussion...)\n\nC'est ma le\u00e7on apr\u00e8s toutes les suggestions i\u00e7i et un peu de recherche en ligne. Pour rajouter des m\u00e9thodes de 2FA, rentrez dans vos param\u00e8tre de s\u00e9curit\u00e9 de votre compte Microsoft sur un browser sur l'ordi id\u00e9alement. \n\n[https://mysignins.microsoft.com/security-info](https://mysignins.microsoft.com/security-info)\n\n\u2192 Add sign-in method \u2192 Authenticator app \n\n\u2192 Si vous utilisez autre chose que Microsoft Authenticator, assurez-vous de sp\u00e9cifier \"I want to use a different authenticator app\"\n\n\u2192 Next\n\n\u2192 Scannez le code QR avec votre appli. Sinon, cliquez sur \"Can't scan image\" et copiez-collez le Secret Key en dessous du code QR. Cliques sur le logo les deux petites feuilles pour copier le code (dans le clipboard). Collez ce code dans vottre appli Authenticator.\n\n\u2192 Bada bing badaboom c'est termin\u00e9, c'est beaucoup moins compliqu\u00e9 que ce qui parait \u00e0 l'\u00e9crit et en ligne.\n\nMerci pour toutes les suggestions et l'aide de tous!\n\nTL;DR: Installez plusieurs authenticators sur vos browsers, ordi et t\u00e9l\u00e9phone, le compte Microsoft le permet.",
+            "score": 1,
+            "author": "Adventurous-Treat-86"
+        }
+    ]
+}

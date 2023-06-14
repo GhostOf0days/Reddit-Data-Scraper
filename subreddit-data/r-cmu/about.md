@@ -1,6 +1,6 @@
 # About r/cmu
 
-Subscribers: 13430
+Subscribers: 13434
 
 Created UTC: 1254031476.0
 

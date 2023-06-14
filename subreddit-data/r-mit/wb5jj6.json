@@ -12,7 +12,7 @@
         {
             "level": 0,
             "comment": "I don't think its supported.  However, you can forward mit email to gmail using https://mailto.mit.edu/ which works seamlessly most of the time.  Occasionally it trips up (MS teams invites seem to cause problems) but usually the bounce message from gmail to MIT will itself end up forwarding to gmail, ha.",
-            "score": 6,
+            "score": 7,
             "author": "tystuke",
             "replies": [
                 {
@@ -26,7 +26,7 @@
         {
             "level": 0,
             "comment": "Yes, I've been forwarding my MIT email to Gmail for over a decade. Look up the Athena command \"chpobox\" which forwards mit email to whatever. You'll have to run it either on an Athena computer or the remote dialup website but it's a one time command that sets you up forever. That gets your inbound emails. The outbound can be done through gmail if you go into settings, you can do a \"send as\".\n\nOnly caveat, as someone else mentioned is that sometimes this method has issues with calendar invites. Occasionally an invite just won't make it to Gmail. I did a bit of debugging (ist doesn't support this so they won't help). It seems to be related to Google cal invites being sent to the MIT email - chpobox faithfully forwards the cal invite but then Google flags a security issue related to a Google cal invite coming from a non Google server and discards it. It's clunky but my solution is to configure chpobox to split the forwarding so emails go to both Gmail and MIT owa, then periodically check owa for calendar invites that didn't make it. There's probably a better long term solution",
-            "score": 4,
+            "score": 5,
             "author": "Walmart_Internet",
             "replies": [
                 {

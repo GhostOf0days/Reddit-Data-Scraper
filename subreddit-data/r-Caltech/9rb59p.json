@@ -1,0 +1,42 @@
+{
+    "id": "9rb59p",
+    "score": 3,
+    "title": "What is a \"Canary Page\"? Warrant Canary? Gag Order In Effect?",
+    "author": "bublabubla9292",
+    "date": 1540480132.0,
+    "url": "https://www.reddit.com/r/Caltech/comments/9rb59p",
+    "media_urls": [],
+    "other_urls": [
+        "https://feynmanlectures.caltech.edu/](https://feynmanlectures.caltech.edu/),",
+        "https://preview.redd.it/45tuyzfkedu11.png?width=1600&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=470d08d6ce35733a50c54abd06dcded0bbfc4122)"
+    ],
+    "postText": "# What is a \"Canary Page\"? Warrant Canary? Gag Order In Effect?\n\nI was trying to visit [https://feynmanlectures.caltech.edu/](https://feynmanlectures.caltech.edu/), but only the non-TLS (\"http://\") version displays the website.\n\nThe HTTPS version displays (what is assumed to be) a warrant canary in a cage ('trapped') with a gas mask (assumed to be a symbol for 'gagged').\n\nThe HTTP version displays the expected content.\n\nWhat's up with this? Is this a sign of a Government gag order? If this isn't likely to be a gag order, why wouldn't they include *additional* text? An HTTPS configuration gone (disconcertingly) wrong?\n\n&amp;#x200B;\n\n*EDIT #1:*\n\n# If you visit the link above, you'll most likely get an error (\"Privacy Error,\" \"Security Error,\" etc.) from your browser about the website's certificate.\n\n**For Chrome**, click the text towards the bottom labeled, \"ADVANCED,\" then click on the \"Proceed to ...\" link to ignore the error. You'll still see a red ('unsecure') padlock in the URL/Navigation bar after doing so.\n\n**For Firefox**, click the button towards the bottom labeled, \"ADVANCED,\" then scroll down and click the \"Add Exception\" button.\n\nA window will pop up: uncheck \"Permanently Store this Exception,\" and lastly just click the button \"Confirm Security Exception.\"\n\n# Here's what I'm seeing when viewing the HTTPS version:\n\n[The Certificate window is just a part of Windows. Don't mind it.](https://preview.redd.it/45tuyzfkedu11.png?width=1600&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=470d08d6ce35733a50c54abd06dcded0bbfc4122)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I get a privacy error when I try to access it with Chrome (website sending unusual/incorrect credentials).",
+            "score": 2,
+            "author": "shelchang",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The certificate (the 'credentials' Chrome is mentioning for you) is self-signed (opens you up to Man-In-The-Middle attacks and snooping), as well as expired and needs to be renewed, and thus won't be trusted by browsers/etc. unless they're told to ignore the (glaringly) invalid certificate.\n\nI'll update my post with a picture of what I'm seeing (after I've told my browser to ignore the error).",
+                    "score": 2,
+                    "author": "bublabubla9292"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That image seems to show a lot of results for just \"canary in a coal mine\" which is generally a symbol for early indication of something going wrong (same image is found at [https://www.inclusionevolution.com/segregation-individuals-syndrome-canary-coal-mine/](https://www.inclusionevolution.com/segregation-individuals-syndrome-canary-coal-mine/) for example). \n\n&amp;#x200B;\n\nI have no knowledge of this page specifically, but it might also just be an error page redirect for something going wrong. Symbolism-wise I doubt the clarity of a gas mask being a \"gag\" order, since gas masks let you speak but keep you alive...but I'm not up to date on that kind of thing. ",
+            "score": 1,
+            "author": "coolflower12345"
+        },
+        {
+            "level": 0,
+            "comment": "This is probably due to a corrupted database or something wrong with their website. \"Canary Pages\" can be used to report when something fails. I doubt the feynman lectures were censored.",
+            "score": 1,
+            "author": "juuular"
+        }
+    ]
+}

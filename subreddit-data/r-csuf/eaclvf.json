@@ -1,0 +1,440 @@
+{
+    "id": "eaclvf",
+    "score": 304,
+    "title": "Introducing FullertonGrades: see grade distributions from previous courses for CSU Fullerton",
+    "author": "FullertonGrades",
+    "date": 1576283621.0,
+    "url": "https://www.reddit.com/r/csuf/comments/eaclvf",
+    "media_urls": [
+        "https://www.reddit.com/r/csuf/comments/eaclvf/introducing_fullertongrades_see_grade/"
+    ],
+    "other_urls": [
+        "http://fullertongrades.com)",
+        "http://gradetier.com)**."
+    ],
+    "postText": "Happy holidays!\n\nI've spent the last few weeks working on a new tool for CSUF students:\n\n[fullertongrades.com](http://fullertongrades.com)\n\n**EDIT 1: With the expansion of the website to other universities, I've decided to change the URL of the website to** [**gradetier.com**](http://gradetier.com)**. Sorry for any confusion.** \n\nWith FullertonGrades, you can see grade distribution information for over 8,000 classes, including which instructor taught which course. All undergraduate departments and courses from the Fall and Spring semesters of 2018-2019 should be included.\n\nThere are no paywalls, just a simple design: choose a department (and optionally a course number), and click on the desired course.\n\nThere were quite a few challenges in making this website, from getting the data from CSU Fullerton to dealing with the sheer amount of data, but all in all I think it could serve as a very useful resource in determining which classes to enroll in and with what instructor, especially for those weed-out classes and for pre-med folks.\n\nLet me know what you think, and contact me if you find any issues - thanks!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Another curious person wanting to know where/how you\u2019re getting data! A class I\u2019m in right now showed no one got As last semester which I find crazy, since multiple people I know have over a 100 going into the final. \n\nInterested in knowing if it was a change in teaching style, poor performing class, etc. \n\nWebsite is super cool tho!!!! Good job I\u2019m sure that was no easy feat!",
+            "score": 17,
+            "author": "cayothecat",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow, that's interesting. Could you share or DM the course URL? I can check it against direct data I received from CSUF. \n\nThanks for feedback.",
+                    "score": 7,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is interesting! Where are you pulling the grade data from? As far as I know, there isn't a place where we can see grades in classes.",
+            "score": 29,
+            "author": "astrojules",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Good question!\n\nI made a request to the records office at CSUF using the California Public Records Act for past grade distributions. \n\nhttps://en.m.wikipedia.org/wiki/California_Public_Records_Act\n\nIt took about 2 months to finally get the data, which I got in the format of a csv file. I then created a database based on the csv file and then created the website.\n\nThe database is being hosted on my own Heroku account server.",
+                    "score": 41,
+                    "author": "FullertonGrades",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Is it possible to get the grades for graduate level classes? i.e 500-level classes",
+                            "score": 6,
+                            "author": "methmatician16",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Unfortunately not right now, but I'm working on it. I hope to have the website updated with that data within the next couple of months.",
+                                    "score": 4,
+                                    "author": "FullertonGrades"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 10,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Unfortunately, getting the data was an act of patience. Anyone can make a request to the records office for public data, which I did for grade distributions. \n\nIt took about 2 months to receive a csv file from the records office with about 40,000 courses over the past 5 years.\n\nAlso, glad you like it!",
+                    "score": 13,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I love this and will use this every semester if you decide to keep it running. I already decided to enroll in a class based on this information. \n\nSome feedback: the chart is a bit confusing because it does not have single intervals. If the results listed the number of grades in addition to the percentages, it would be much easier for mathematically challenged people like myself. \n\nPlease keep this site up and let us know if you ever need help doing so! I just hope the school doesn't take it down for some ridiculous reason.",
+            "score": 8,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "When I was making this website I was surprised to see how there could be such large differences in grade distributions for two different classes. Glad someone was able to use this information for good. : ) \n\nIn regards to feedback, I do list the percent who received each grade below the chart. Do you think that's sufficient, or would there be another way to be a bit more clear?\n\nI am thinking about some kind of non-invasive monetization model, like running ads, to subsidize the cost of hosting.",
+                    "score": 6,
+                    "author": "FullertonGrades",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I personally wouldn't mind ads as long as the site stays up. I'm not aware of the legal issues of monetizing public information but it seems fine to me.\n\nI just noticed that it can be confusing to read the charts when I was trying to figure out how many people got A's per class. When I'm trying to decide if taking a class with a hard prof will be worth it, even the difference of 1 extra A can mean a lot.\n\nThank you so much for having the idea and acting on it. Unlike ratemyprofessors, your site is unbiased and based on data. It's much more reliable.",
+                            "score": 3,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What course is it, if you don\u2019t mind me asking?",
+                    "score": 1,
+                    "author": "jennixb",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh dang, I\u2019m currently taking this class as well, but with a professor who\u2019s teaching it for the first time, so no data available.\n\nI agree though, the course is tough and topics are skimmed through and not detailed enough to prepare you for the CPA. Good luck with the course!",
+                                    "score": 1,
+                                    "author": "jennixb"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very interesting! Thank you",
+            "score": 3,
+            "author": "Expatac",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hope it helps!",
+                    "score": 1,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "this is incredible!",
+            "score": 5,
+            "author": "bdagar13",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks!",
+                    "score": 1,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is the singe greatest thing ever. Thank you so much for taking the time to do that!",
+            "score": 3,
+            "author": "Fresshmaker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! I hope it makes life easier.",
+                    "score": 3,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "RIP my brothers in CPSC 335 with Siska. 1.7 avg GPA last semester wtf",
+            "score": 3,
+            "author": "narnoo"
+        },
+        {
+            "level": 0,
+            "comment": "Damn  CPSC 240 | Peiravi, Mehdi is so evenly distributed lol I have a 94 in his class rn I hope it sticks through finals",
+            "score": 3,
+            "author": "ZirJohn"
+        },
+        {
+            "level": 0,
+            "comment": "wow this is amazing work! crazy what you can do with time, patience, and a little bit of heart",
+            "score": 2,
+            "author": "CejasDeOreos"
+        },
+        {
+            "level": 0,
+            "comment": "This is awesome! Thank you.",
+            "score": 2,
+            "author": "friedoysterskinss"
+        },
+        {
+            "level": 0,
+            "comment": "This is amazing! Thank you!!!",
+            "score": 2,
+            "author": "TheSir_72"
+        },
+        {
+            "level": 0,
+            "comment": "This is extremely helpful, thank you!",
+            "score": 2,
+            "author": "stringcheesepls"
+        },
+        {
+            "level": 0,
+            "comment": "I really appreciate the time you took to design the site. The interface is easy to navigate!",
+            "score": 2,
+            "author": "us-of-drain"
+        },
+        {
+            "level": 0,
+            "comment": "I wonder if you could get the professor and course evaluation data this way?",
+            "score": 2,
+            "author": "vapeducator"
+        },
+        {
+            "level": 0,
+            "comment": "Because that's what heroes do",
+            "score": 2,
+            "author": "ItsKaptainKilljoy"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": ": )",
+                    "score": 1,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Amazing I love it!",
+            "score": 2,
+            "author": "eliwigglesworth"
+        },
+        {
+            "level": 0,
+            "comment": "This is incredible, thank you! This combined with Rate My Professor is ensuring I have picked the best classes for Spring",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This is amazingggggy!!!!",
+            "score": 2,
+            "author": "Idesigirl"
+        },
+        {
+            "level": 0,
+            "comment": "Also wondering how you were able to get this data?",
+            "score": 2,
+            "author": "InstaxFilm"
+        },
+        {
+            "level": 0,
+            "comment": "Noticed a small bug on this page:  [https://fullertongrades.com/1521](https://fullertongrades.com/1521)\n\nThe bar for \"A\" is blank, but if you hover over it there's supposed to be 8 A's there.",
+            "score": 1,
+            "author": "4InchesOfury",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the notice! It's  fixed now!\n\n&amp;#x200B;\n\n[https://fullertongrades.com/1521](https://fullertongrades.com/1521)",
+                    "score": 2,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "this is wonderful!",
+            "score": 1,
+            "author": "bravelight-"
+        },
+        {
+            "level": 0,
+            "comment": "Amazing work. Thank you",
+            "score": 1,
+            "author": "Skeezz33"
+        },
+        {
+            "level": 0,
+            "comment": "This is amazing! I dont know if you were given any graduate course information but it would be great to see that in the future if possible.",
+            "score": 1,
+            "author": "karmaticforaday",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Definitely, I'll make a request for graduate data pretty soon.",
+                    "score": 2,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey there, Im looking for a 400 level class and I cant seem to find it on your site?  \nAlso, CTVA Cinema and Television Arts category is missing",
+            "score": 1,
+            "author": "us-of-drain",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; Cinema and Television Arts\n\nCTVA is under Radio-TV-Film. Let me know if you find the class!",
+                    "score": 1,
+                    "author": "FullertonGrades",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks! Found the CTVA class. The other class I'm looking for is AMST 460, American Studies. But I mean take your time man its finals week!",
+                            "score": 2,
+                            "author": "us-of-drain",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Interesting, I don't see AMST 460. Perhaps small classes were excluded for privacy reasons? I notice the 400-level classes have high average GPA's, so let's just assume it was 4.0. \n\n: ) \n\n&amp;#x200B;\n\nGood luck on finals!",
+                                    "score": 1,
+                                    "author": "FullertonGrades",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "No worries. and thank you, you too!",
+                                            "score": 2,
+                                            "author": "us-of-drain"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think the domain name should be csufullertongrades.com/csufgrades.com? Is that better? :))\nThanks for the wonderful website!",
+            "score": 1,
+            "author": "zihaowanggg",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Maybe...  I'm not quite a language scientist. \n\n:) \n\nGlad you like it!",
+                    "score": 1,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great idea!  I like that you show breakdown by letter grade--more informative than the average.",
+            "score": 1,
+            "author": "Fredjob"
+        },
+        {
+            "level": 0,
+            "comment": "Hey this is a great site. Just curious what was your motivation for making this since you\u2019re not making any profit as of rn?",
+            "score": 1,
+            "author": "kochakap",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks!\n\nI thought it was good practice as an introductary web application for me, even if the front-end is a bit simplistic. \n\nHonestly I did also have a monetization plan via Google Adsense mainly to see what the process was like, but I think the website is a bit too simplistic. When I try to place ads Google Adsense auto-rejects the websites with the message: \n\n# Your site isn\u2019t ready to show ads\n\nWe\u2019ve found some policy violations on your site which means your site isn\u2019t ready to show ads yet.\n\n1. **Valuable Inventory: No content**  \nAs stated in our Program policies, we may not show Google ads on pages or apps with little to no value and/or excessive advertising until changes are made. This includes hosted ad pages or pages or apps without content.  \n \n\nIt's honestly kind of a burn by Google. : (",
+                    "score": 2,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very impressive. I\u2019ve worked on campus in a role that specializes in student data. Would love to connect.",
+            "score": 1,
+            "author": "TheDannySka"
+        },
+        {
+            "level": 0,
+            "comment": "I am not surprised by the horrible bell curves found in the psychology department my goodness what a load of crap professors they have!",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "these are very useful especially for the difficult coarses",
+            "score": 1,
+            "author": "glokzz"
+        },
+        {
+            "level": 0,
+            "comment": "anything on physics 301 with Greg Childers?? thanks!",
+            "score": 1,
+            "author": "lola213A"
+        },
+        {
+            "level": 0,
+            "comment": "Can you do this for each semester? :D",
+            "score": 1,
+            "author": "robin1007",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, I plan on adding more data soon, as well as graduate data!",
+                    "score": 2,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "site is down ! anyone know why?",
+            "score": 1,
+            "author": "glokzz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "gradetier.com is the new URL! 301 permanent redirect didn't work as intended because my link contained an https at the beginning. If you try http://fullertongrades.com it should redirect. Sorry!",
+                    "score": 1,
+                    "author": "FullertonGrades"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When do you think you'll be able to upload this past Fall's 2019 data as well as this Spring 2020? Thanks again for this!",
+            "score": 1,
+            "author": "robin1007",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I sent the request about 2 months ago, and it took about 2 months to receive the data last time. If past is prologue, I should get the data and be able to upload it very soon!",
+                    "score": 2,
+                    "author": "FullertonGrades"
+                }
+            ]
+        }
+    ]
+}

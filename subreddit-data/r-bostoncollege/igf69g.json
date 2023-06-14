@@ -1,0 +1,140 @@
+{
+    "id": "igf69g",
+    "score": 96,
+    "title": "I made a dashboard with graphs using BC's coronavirus data.",
+    "author": "PantherMan594",
+    "date": 1598371883.0,
+    "url": "https://www.reddit.com/r/bostoncollege/comments/igf69g",
+    "media_urls": [],
+    "other_urls": [
+        "https://bccovid.dav.sh/](https://bccovid.dav.sh/)",
+        "https://imgur.com/a/LaO2Uwr](https://imgur.com/a/LaO2Uwr),"
+    ],
+    "postText": "[https://bccovid.dav.sh/](https://bccovid.dav.sh/)\n\nBC only shows cumulative numbers so I wrote a scraper to retrieve changes in their numbers, and made a couple graphs using the data. Here's what it looks like with some fake data: [https://imgur.com/a/LaO2Uwr](https://imgur.com/a/LaO2Uwr), but hopefully the real data never gets that interesting. All my data sources are linked at the bottom of the page.\n\nIf you have any suggestions of things to add/change, please let me know. Or, do it yourself and submit a PR, it's open source!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is awesome, thank you \ud83d\ude4f\ud83c\udffd",
+            "score": 21,
+            "author": "bcl123455"
+        },
+        {
+            "level": 0,
+            "comment": "Wtf, this is so good. There's probably some BC alum that's salivating to hire you for a data viz job.",
+            "score": 14,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Can confirm. If I had any open positions I'd prob message OP to see if they're interested haha",
+                    "score": 6,
+                    "author": "forty_three"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can mods pin this?",
+            "score": 12,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "OH WAIT, OP!, are you keepin this updated based on live changes?!??! Cuz you're a fucking legend lol",
+            "score": 11,
+            "author": "ch1kita",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yup! It pulls from BC's website every hour so it should be as up to date as that is.",
+                    "score": 14,
+                    "author": "PantherMan594"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thanks!!",
+            "score": 8,
+            "author": "alyspara"
+        },
+        {
+            "level": 0,
+            "comment": "I would love to see one of these for faculty/staff. Given that faculty tend to be ancient years old and staff tend to be between the ages of 30-65, i think our numbers are pretty crucial. \n\nI'm not techny enough to make one of these myself lol",
+            "score": 5,
+            "author": "ch1kita",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I can add a few graphs on total - undergrads, that'll include faculty and staff but it'll include graduate students as well. Unfortunately BC doesn't break their data down any further than that.",
+                    "score": 8,
+                    "author": "PantherMan594"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey OP, thanks so much for creating this. A quick suggestion/question: on the horizontal axes of some of the graphs, the distance between dates is inconsistent, e.g. the data point for 8/28 on the cumulative test graphs is much closer to the 8/29 data point than the 8/27 one. Is there a reason for this inconsistent spacing? I feel it makes discerning trends a bit confusing.",
+            "score": 2,
+            "author": "samaritanBureaucrat",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Explanation: internally I'm also saving the time when BC updates their website, and this time is what I'm plotting against instead of just the date which is probably why the dates are spaced inconsistently.\n\nI'll change it because I agree the inconsistent spacing is confusing and the time isn't very important since BC doesn't update their website immediately anyways.",
+                    "score": 3,
+                    "author": "PantherMan594"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think there's a bug in the Cumulative Community tests graph\u2013I don't know enough about code to suggest a solution but I think it's something with the way you calculate community tests (by subtracting UG tests from total tests)? Otherwise the dashboard is so cool and thank you x1000 for making it!!\n\n[https://www.reddit.com/r/bostoncollege/comments/ilxtxj/weird\\_shift\\_in\\_community\\_tests\\_to\\_undergrad\\_tests/g3w4yeu/?utm\\_source=reddit&amp;utm\\_medium=web2x&amp;context=3](https://www.reddit.com/r/bostoncollege/comments/ilxtxj/weird_shift_in_community_tests_to_undergrad_tests/g3w4yeu/?utm_source=reddit&amp;utm_medium=web2x&amp;context=3)",
+            "score": 1,
+            "author": "Anon30102135",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for letting me know! I posted a response on that thread, but tl;dr I think the numbers on BC's website (which I'm pulling from) are wrong.\n\n[https://www.reddit.com/r/bostoncollege/comments/ilxtxj/weird\\_shift\\_in\\_community\\_tests\\_to\\_undergrad\\_tests/g3wh8qg?utm\\_source=share&amp;utm\\_medium=web2x&amp;context=3](https://www.reddit.com/r/bostoncollege/comments/ilxtxj/weird_shift_in_community_tests_to_undergrad_tests/g3wh8qg?utm_source=share&amp;utm_medium=web2x&amp;context=3)",
+                    "score": 2,
+                    "author": "PantherMan594"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hmm, so in ur design \"red\" means bad even if it's an absolute increase? I've usually thought of red as a decrease and green as an increase.",
+            "score": 0,
+            "author": "piexterminator",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Red = bad is what I used throughout the rest of the page. The difference in color also stands out more than the up or down arrow, so at first glance I want to say that it is bad; on closer inspection they can see why it's bad.",
+                    "score": 4,
+                    "author": "PantherMan594",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hmm, I'm guess I'm srcing that design language from the stock market, but I suppose this works as well.",
+                            "score": 0,
+                            "author": "piexterminator"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 0,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm not sure where you're seeing that? For me the page currently shows 4 undergrads confirmed positive and 4 undergrads isolated, which is exactly the same as what the official BC page says.",
+                    "score": 2,
+                    "author": "PantherMan594"
+                }
+            ]
+        }
+    ]
+}

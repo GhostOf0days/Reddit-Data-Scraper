@@ -1,0 +1,55 @@
+{
+    "id": "12608dx",
+    "score": 45,
+    "title": "A Better Way To View Course Evaluations",
+    "author": "YoItsMe42",
+    "date": 1680122864.0,
+    "url": "https://www.reddit.com/r/fsu/comments/12608dx",
+    "media_urls": [],
+    "other_urls": [
+        "https://opletter.github.io/course-evals/fsu/](https://opletter.github.io/course-evals/fsu/),",
+        "https://fsu.evaluationkit.com/Report/Public](https://fsu.evaluationkit.com/Report/Public),",
+        "https://github.com/opLetter/course-evals](https://github.com/opLetter/course-evals)."
+    ],
+    "postText": "Hey everyone,\n\nI created  [https://opletter.github.io/course-evals/fsu/](https://opletter.github.io/course-evals/fsu/), a website for viewing and comparing professor course evaluation data. It is based on all of the available data from [https://fsu.evaluationkit.com/Report/Public](https://fsu.evaluationkit.com/Report/Public), spanning from Fall 2013 to Fall 2022. \n\nYou can view professor ratings overall and and by specific course, and compare professors across departments and courses. The website also highlights professors teaching next Fall - feel free to use the toggle to show only profs who are teaching the course you're planning on taking\n\n For anyone interested, the project (including the scraped data) is open source at  [https://github.com/opLetter/course-evals](https://github.com/opLetter/course-evals). 100% of the logic and web UI is built using Kotlin.\n\nIf you run into any issues or have any feature requests, please let me know! Enjoy :)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is really cool! Thanks for making it.",
+            "score": 7,
+            "author": "--serotonin--"
+        },
+        {
+            "level": 0,
+            "comment": "Bro this is freakin awesome!!",
+            "score": 3,
+            "author": "Cheeezyboi"
+        },
+        {
+            "level": 0,
+            "comment": "How long did it take you to put this together? And where were you able to find the underlying data from the course evaluation website?",
+            "score": 3,
+            "author": "FSU_GoNoles",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Originally, I made a version of this website for my own school (Rutgers) over the course of a few months. I then realized I could expand this to other universities, which I spent around a month setting up. \n\nAs for getting the data, I reverse-engineered the API the official website uses for getting the pdf report links, and spent about a week running my code to get and parse each pdf. All of that code can be found [here](https://github.com/opLetter/course-evals/blob/master/colleges/fsu/src/main/kotlin/io/github/opletter/courseevals/fsu/DataScraping.kt).",
+                    "score": 2,
+                    "author": "YoItsMe42"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is fantastic. Thank you!",
+            "score": 3,
+            "author": "BenPractizing"
+        },
+        {
+            "level": 0,
+            "comment": "thanks '",
+            "score": 2,
+            "author": "CarelessSky5867"
+        }
+    ]
+}

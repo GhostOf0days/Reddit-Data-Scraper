@@ -1,0 +1,270 @@
+{
+    "id": "10msp84",
+    "score": 234,
+    "title": "The winner of Conuhacks is a fraud",
+    "author": "goosegeesegoosen",
+    "date": 1674845592.0,
+    "url": "https://www.reddit.com/r/Concordia/comments/10msp84",
+    "media_urls": [],
+    "other_urls": [
+        "https://devpost.com/software/nearbynow",
+        "https://github.com/ShirazSevadjian/ConuHacks),"
+    ],
+    "postText": "This is the winner of Conuhacks: https://devpost.com/software/nearbynow\n\nThey claim, that in the span of 24 hours, they:\n- Designed and custom-trained the DNN \n- Created HTTP requests for the APIs\n- Integrated the OCR\n- Parsed the data received from the APIs (OCR, Google Maps, Geoapify)\n- Integrated the DNN and OCR into the front-end,\n- Created an API call to compare nearby stores using geolocation based on a given radius\n\nThat would be a really impressive task, if it were ever possible to train a DNN in 24 hours with that kind of accuracy with the limited data they had.\n\nYet, in the Github repo they released (https://github.com/ShirazSevadjian/ConuHacks), the code was barebones. They had no Readme, hardly 100 lines of actual code, a lot of default Create-React templates, and very few commits. The code repo does not even demonstrate an effective use of Git (they committed redundant files and modules). \n\nThey called the Google visions API once, and that's it. \nBy dubious presentation methods and by misleading the actual amount of work they did, they won the top prize of four macbooks.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is something that happens very frequently unfortunately... I have seen it last year during the very poorly organized McHacks for 2022. \n\nUnfortunately this has to do with judging, and despite raising concern, there is not much that changes.\n\nHaving done quite a few hackathons, I've seen firsthand many cheaters and it sucks to see...\n\nThe change would have to come from the top. Thanks for mentioning this, because more people have to come up front about these issues. It ruins the experience for all and lowers the value of everybody's work.",
+            "score": 53,
+            "author": "prettycroatian",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What project are you referring to from McHacks 2022 that was cheated? I do agree though, McHacks is poorly organized.",
+                    "score": 4,
+                    "author": "strawberry-smoothies"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey, folks \u2013 \n\nI\u2019m Ryan from [Major League Hacking](https://mlh.io). For those of you who don\u2019t know Major League Hacking, we partner with organizers at universities all over the world to host hackathons every week of the year.\n\nA handful of folks have reached out to our team about this issue. We\u2019re actively investigating it, and plan on working with the hackers, organizers, and other involved folks to resolve it. For those who are curious about how we handle these situations, you can read our [cheating guidelines](https://github.com/MLH/mlh-policies/blob/main/cheating-response.md) and [incident response policies](https://github.com/MLH/mlh-policies/blob/main/incident-response.md). \n\n**At this time, there is no need to submit additional reports regarding this matter** *unless you have new specific information that would be relevant to our team*. If you\u2019d like to reach out to us about a different issue, you\u2019re welcome and encouraged to use incidents@mlh.io and cheating@mlh.io to let our team know what\u2019s going on. \n\n**We\u2019re also asking that everyone be respectful of the hackers who submitted this project while we investigate the situation and resolve any issues.** While we can\u2019t speak to the specifics of the situation here yet, hackathons are meant for folks of all skill levels. Pseudo code, hard coded variables, and all sorts of other best practices may not be present in the work of folks creating a project in 24 hours or less. Again, we can\u2019t speak to the specifics here just yet, but please be respectful to these hackers until we\u2019ve had time to make a decision. \n\nParticularly, if you\u2019re a hacker in our community, you\u2019ll already be familiar with our [Code of Conduct](https://static.mlh.io/docs/mlh-code-of-conduct.pdf) that explicitly states harassment and abuse are never tolerated. While we investigate the allegations, please refrain from reaching out to these hackers directly. You may not intend it to be frightening, but the folks on the other side of this situation are being inundated with messages from people who likely mean well, but are ultimately contributing to the stress of the situation. \n\nThanks for reporting this and we\u2019re working on it right now. We\u2019ll reply back here to close the loop as soon as we can.",
+            "score": 41,
+            "author": "thisisryanswift",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We will be waiting for a follow up.",
+                    "score": 6,
+                    "author": "internetcookiez",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Just posted a reply to my original message",
+                            "score": 1,
+                            "author": "thisisryanswift"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Our team reviewed this project, and spoke with the ConUHacks organizers &amp; NearByNow hackers. **We do not believe NearByNow cheated.** We appreciate y\u2019all\u2019s concern and desire to have a fair event. \n\nWe want to address some of the specific technical concerns that have been mentioned below. However, we wanted to begin with a reminder to everyone that it\u2019s important to understand a situation before publicly accusing anyone of malicious intent. Our team is always willing to investigate and review issues as they arise, but we prefer to do so in private specifically because of situations like this where public backlash can take over before all the facts are available. \n\n**Code Reviews**\nWe spoke with the organizers to get more specifics on the judging process. In addition to each team being seen at least three times (by separate judges), the organizers did complete a check for dishonest projects (that resulted in disqualifications) for all of the top projects. The organizers provided judges with criteria to follow during the judging process, but it\u2019s important to remember that all hackathon judging is on some level subjective. \n\n**Neural Networks**\nMany folks expressed concerns about this team\u2019s neural networks. There was a neural network that was coded separately from the GitHub repo that has been shared. We have reviewed this code and seen commit timestamps that show it was built throughout the event. They built and trained a custom DNN based on the MobileNetv2 architecture with a custom dataset. The code for it is in a google collab .ipynb file that was not added to the final GitHub repo. The training graph is able to be viewed on the Devpost for those who wish to see more.\n\nThe team\u2019s Devpost also mentions specifically that there were two methods used, and that OCR was used while the NN was low accuracy. The live demos used the OCR to detect the storefront, so that there were more stable predictions. \n\n**Filler Data**\nProjects from a 24 hour hackathon are not meant to be perfect. They typically show a proof of concept. The team originally was using the Google Maps API that had all data points needed, but ended up being limited on API calls. They switched mid event to Geoapify, and placed filler data for some of the data the new API did not provide.  \n\nAs always, please let us know if you have any questions. You can reach our team by emailing cheating@mlh.io or incidents@mlh.io as needed.",
+                    "score": 5,
+                    "author": "thisisryanswift",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&amp;#x200B;\n\nTLDR: if you lie about what you did to hype up your project its cool. As long as you code a nice UI with a fake response you deserve a macbook.\n\n&amp;#x200B;\n\nSame issue with McHacks etc",
+                            "score": 12,
+                            "author": "youngintegrator",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "McHacks was even crazier\ud83d\udc80",
+                                    "score": 2,
+                                    "author": "redayosh"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you for your response. We are disappointed with the decision. The concern was raised publicly because it was the unspoken view held by many participants after the closing ceremony.\n\nOf course, it's been a week and the .ipynb file has not been released. You must consider our skepticism reasonable. How can the public know that the notebook has higher quality code than what the Github repo contains? Did the judges check that the DNN works as intended? If it works, why no demo?\n\nI will give the team the benefit of the doubt. The truth remains that the team's demo app did not use DNN (in contrast to their claim that OCR is only used when \"DNN yields a low prediction threshold\"), and the team placed undue emphasis on the DNN aspect and exaggerated their work. Claiming they made a DNN but ended up using the OCR-only to demo was underhanded, to say the least\\*. Hackathons are not \"concept\" or \"UI\" competitions, and implementations matter.\n\nIt sounds like the team had a good concept at the beginning, took steps to implement the concept, encountered some difficulties, and ended up covering things up with filler data.\n\n\\* ^(Reminds me of a startup that misled investors by claiming they developed a revolutionary technology but secretly using existing commercial technologies made by other companies.)",
+                            "score": 2,
+                            "author": "goosegeesegoosen"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "So the mlh is a crooked as the guys that cheated ? \n\nMan you guys lost my respect.",
+                            "score": 2,
+                            "author": "old_memesplis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Too many non-technical judges, misaligned judging criteria between judges and superficial code review for the top 3 can all lead to this happening. Unfortunately this plagues most if not all hackathon judging.\n\nUploading your code to GitHub should be much more strict and if judges see a discrepancy between the claims and the code, the spot on the podium should be lost. IMO of course.",
+            "score": 36,
+            "author": "DJ-MacBeat"
+        },
+        {
+            "level": 0,
+            "comment": "so ...you're saying.. someone hacked a hacking competition ?",
+            "score": 67,
+            "author": "Tuggerfub",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's not really hacking",
+                    "score": 11,
+                    "author": "Retr0_007",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "*Person saved from hacker by hacker who hacked the hacker*\n\nKowalski Analysis",
+                            "score": 5,
+                            "author": "TheBoss7728"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "For anyone who is familiar with software:\n\nYou can inspect their code and see the following...\n\nThey are just using google vision api to annotate the name of the sign on screen and then requesting a list of nearby businesses from geoapify's API (the coordinates are hardcoded), and then searching the list of nearby businesses for the string from the annotation. There is no neural network or AI. They didn't train a model or anything of the sort.\n\nAdditionally they are faking the reviews. The reviews are just a random decimal number between 4 and 5. If you look up the business' they are scanning in the demo on google maps, you'll see they aren't right.\n\nEven the phone numbers are fake, you can see in the demo youtube video that the burger king number is 11 digits long (514-834-68610). That is not a valid phone number. If you inspect the code, they literally generate an 8 digit integer and append it to \"514-\". They didn't even fake it right.\n\nAlso, the website is just the business' name with the spaces removed, casted to lower case and \".ca\" appended to the end. Look at the demo video. \"saq.ca\" , \"concordiacl.ca\" , none of those exist.  \n\n\nAll of their claims debunked: https://imgur.com/a/lMXVRqC",
+            "score": 30,
+            "author": "FrancooMan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Im surprised how they even got so far. Is this the most qualified team they could find?",
+                    "score": 11,
+                    "author": "SpookyIndian"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm always curious, how are these things judged? This seems super freaking obviously fake. Like I know that hackathon code isn't expected to be super robust but also fucking yikes lmao",
+            "score": 8,
+            "author": "ChairYeoman",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yea I knew that your code doesn't need to be great to win as long as u have a good idea, UI, and presentation, but this is next level.\n\nI don't think they even looked at the code.",
+                    "score": 5,
+                    "author": "bob_man47"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[incidents@mlh.io](mailto:incidents@mlh.io) or [cheating@mlh.io](mailto:cheating@mlh.io) for anyone who wishes to report this",
+            "score": 13,
+            "author": "FrancooMan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey all, Ryan from Major League Hacking here! Please see my other comment in this thread before reaching out to us! https://www.reddit.com/r/Concordia/comments/10msp84/the_winner_of_conuhacks_is_a_fraud/j68invu/",
+                    "score": 3,
+                    "author": "thisisryanswift"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They forgot to remove their API credentials in their repo as well...",
+            "score": 11,
+            "author": "vikingcanadian",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yooooo",
+                    "score": 2,
+                    "author": "internetcookiez"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "lol their main.py in classifiers only prints \"hello pycharm\"\ud83d\ude05",
+            "score": 18,
+            "author": "fredpell"
+        },
+        {
+            "level": 0,
+            "comment": "As someone who worked super hard during that hackathon, please drop by the devpost and write your frustrations, this is unacceptable and ruins the integrity of hackathons",
+            "score": 10,
+            "author": "alpaccallama"
+        },
+        {
+            "level": 0,
+            "comment": "[https://imgur.com/a/oB2GwfM](https://imgur.com/a/oB2GwfM) nice code",
+            "score": 10,
+            "author": "allolesbananes"
+        },
+        {
+            "level": 0,
+            "comment": "To be fair I think the presentation part was fair play since I think it\u2019s an integral aspect when you\u2019re presenting a project.\n\nAs for the actual work, are they not allowed to use part of what they made prior to the competition to apply to what they came up with in the competition? Actually now that I say it out loud it does sound stupid so I guess you\u2019re not allowed to\n\nBut overall I think they need to split the judge and scores. One part on presentation and one part on the people with proper knowledge about coding because having them do both will sway them one way or another",
+            "score": 9,
+            "author": "platpx3",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I checked it out and they claimed to have trained a neural network to recognise text but they used google vision instead",
+                    "score": 9,
+                    "author": "McBoyish"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I said it immediately when I saw it too... Google live view...",
+            "score": 8,
+            "author": "AlertedPanic9"
+        },
+        {
+            "level": 0,
+            "comment": "des vrais peteur de guish.",
+            "score": 5,
+            "author": "1742118"
+        },
+        {
+            "level": 0,
+            "comment": "What's your proposed resolution?",
+            "score": 6,
+            "author": "Air-tun-91",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "take their macbooks and give it to the homeless so they too can #code",
+                    "score": 4,
+                    "author": "internetcookiez"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "For punishment they should redo their project with REAL data .",
+            "score": 2,
+            "author": "old_memesplis"
+        },
+        {
+            "level": 0,
+            "comment": "This is so common in hackathons unfortunately :(",
+            "score": 1,
+            "author": "thinkerjuice"
+        },
+        {
+            "level": 0,
+            "comment": "The random rating sent me to outer space. What a fraud. Lying like that should disqualify you.",
+            "score": 1,
+            "author": "Barggen3107"
+        },
+        {
+            "level": 0,
+            "comment": "What a nerd",
+            "score": 1,
+            "author": "ksatavrina"
+        },
+        {
+            "level": 0,
+            "comment": "Personally I'd go with the red and purple\n\n\n*Try to respect other people's opinions; impossible version*",
+            "score": -5,
+            "author": "TheBoss7728"
+        },
+        {
+            "level": 0,
+            "comment": "I just checked on the DEV Post website and NearbyNow is no longer available. Maybe MLH took action or something",
+            "score": -1,
+            "author": "Least_Shift_1214"
+        },
+        {
+            "level": 0,
+            "comment": "Dammnn conuhacks has 4 MacBooks?!?\n\nI wanted to sign up but it wasn't virtual so I didn't",
+            "score": 0,
+            "author": "thinkerjuice"
+        }
+    ]
+}

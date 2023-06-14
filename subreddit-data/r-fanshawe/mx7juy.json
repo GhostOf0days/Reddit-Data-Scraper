@@ -1,0 +1,27 @@
+{
+    "id": "mx7juy",
+    "score": 11,
+    "title": "Respondus messed up my computer",
+    "author": "JordanTheLobster",
+    "date": 1619219534.0,
+    "url": "https://www.reddit.com/r/fanshawe/comments/mx7juy",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Used respondus on an exam on Thursday. It froze and I had to restart my computer. Since then the admin permissions on my computer have been all messed up. I think I got it fixed now but I just wanted to say fuck respondus",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Respondus is the closest thing to malware you can get too. It essentially runs on boot and checks for things, in theory it works as intended but in practice if anyone got access through respondus they could essentially get everything on your computer. I'd run some security checks just as a precaution but it might just be the way the program is responding with your computer's OS.",
+            "score": 7,
+            "author": "DjongelSmog",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;if anyone got access through respondus they could essentially get everything on your computer\n\nIn a way, the same could be said about any software. In elementary school I played around with Beast ([Wikipedia](https://en.wikipedia.org/wiki/Beast_(Trojan_horse)) which could be injected into any exe or dll and would look completely harmless until run, especially if you ponied up for a custom compilation. It came with a rootkit, so you could get control over someone's computer using something as simple as the Spotify installer (which doesn't need admin rights to run). Respondus itself doesn't have a web listener, there's no way to \"get access through\" Respondus because it's not programmed to listen to an API call. It's like saying \"if someone could see you through your monitor they could see everything you do\", true but you can't see through a monitor, it doesn't work that way.\n\nRespondus's compliance agent (anti-tamper and updates) run at boot, but the software doesn't run until called by the browser. It cleans up after itself, if you power off your computer while it's running, it never runs the cleanup code and leaves the system in an unhealthy state (without power options or proper UAC). Launch Respondus from the exe or a quiz, exit cleanly, and reboot your system, it'll clean itself up.\n\nIt's not great software, it has bugs and can be cheated around with ease, but it doesn't need misinformation to discredit it.",
+                    "score": 1,
+                    "author": "stuart-dent"
+                }
+            ]
+        }
+    ]
+}

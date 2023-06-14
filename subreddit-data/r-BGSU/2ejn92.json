@@ -1,0 +1,31 @@
+{
+    "id": "2ejn92",
+    "score": 1,
+    "title": "Can't get on IRC?",
+    "author": "[deleted]",
+    "date": 1408987041.0,
+    "url": "https://www.reddit.com/r/BGSU/comments/2ejn92",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I'm a new transfer to the campus, and during some time between classes, I decided to try and get on Synirc, an online Internet Relay Chat network. But, ever since I got on campus, I have been completely unable to connect to it. It works just fine at other places in town- like the Panera bread on main street- but here, it refuses to connect.  It's just this one network, too, all other IRC networks function properly. Why is BGSU blocking this one network in particular?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I also noticed it was blocked today. And I've been around for several years. My hypothesis is they block IRC because of the many virus networks that operate and receive commands through the chat system.",
+            "score": 3,
+            "author": "ahorner"
+        },
+        {
+            "level": 0,
+            "comment": "My guess is going to be that this is an issue with the way the program looks in packet form.  The university uses a packet shaper that sets priority to Email/FTP/HTTP(s) typed information.  This makes anything else run really slow during off peak hours.  My guess is that your program fails to connect due to timeout.  Try something like https://kiwiirc.com/  Since this runs in your browser, it should connect without issue. \n\nHere is some more information about the university internet:\nhttp://www.bgsu.edu/its/services/network/internet-connectivity.html",
+            "score": 2,
+            "author": "glaven"
+        },
+        {
+            "level": 0,
+            "comment": "IRC is blocked due to its use as a C&amp;C protocol for many nasty bits of malware. ITS is not willing to budge on the position. Many have tried.",
+            "score": 1,
+            "author": "[deleted]"
+        }
+    ]
+}

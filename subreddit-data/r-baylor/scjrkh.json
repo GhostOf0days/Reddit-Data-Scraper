@@ -1,0 +1,39 @@
+{
+    "id": "scjrkh",
+    "score": 7,
+    "title": "Does anybody have any idea how to port forward for the Baylor wi-fi?",
+    "author": "SansReaper",
+    "date": 1643133750.0,
+    "url": "https://www.reddit.com/r/baylor/comments/scjrkh",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I'm trying to set up a server off my laptop so that my friends from back home and I can play one of our favorite games together.  It says I need to have port forwarding, but that does require access to the router.  I don't know of any server hosting sites that you can pay to get the server hosted on their stuff, not like I have the cash flow to support one either.  Anyway, if anyone knows how to do port forwarding here please lmk.  Thanks!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Unfortunately due to the network architecture of campus, this isn't possible in our environment. The best option is to have one of your friends back home host and then you can connect as a client, but you won't be able to host a private server from Baylor campus. \n\nThe more technical explanation here is that, due to the size and scope of campus and the tens of thousands of devices we network together, we are forced to use Network Address Translation on a very wide, aggressive scale. The particular type of NAT we use is called a one-to-many, where your network address is hidden behind a single public IP alongside with thousands of others. Port forwarding requires a public IP and a one-to-one NAT in order to function, as with one-to-many, there's no easy way to know what NAT'ed IP to forward the client connections to in our setup with clients coming and going all the time.",
+            "score": 23,
+            "author": "DarkLordOfAirbear",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ah, ok. Thanks for the help.",
+                    "score": 5,
+                    "author": "SansReaper"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Paging /u/DarkLordOfAirbear",
+            "score": 10,
+            "author": "FriskyHippoSlayer"
+        },
+        {
+            "level": 0,
+            "comment": "While I\u2019m no u/DarkLordOfAirbear, I\u2019m going to say it\u2019s very unlikely that you\u2019ll be able to port forward through Baylor\u2019s network in the conventional way (who has since confirmed since I began this comment, it seems).\n\nThat being said, if your friends are able to set up port forwarding, or if you can setup port forwarding on some other network you have access to/permission to do so on (maybe using a Raspberry Pi at home), you can probably setup some kind of funky SSH forward/reverse tunneling system, such that you can establish a tunnel to them or the forwarding-enabled network, and then they can connect to you through that tunnel. This would allow you to still run the server on your laptop (presuming that is a hard requirement for you, and your friends aren\u2019t able to host on your behalf, as u/DarkLordOfAirbear suggested).\n\nThis seems to be a [decent overview of SSH reverse tunneling](https://www.howtogeek.com/428413/what-is-reverse-ssh-tunneling-and-how-to-use-it/). It\u2019s been a while since I\u2019ve done this, but IIRC you\u2019d need to use this as a foundation, then setup some additional connections on top of it. I\u2019m also not sure what quirks you may run into using the default ssh client in Windows; I\u2019ve generally used a separate ssh build that comes included with the Git Bash client or been running on Mac or Linux.\n\nIf you do find yourself trying to setup something at a third location, it may eventually be a pain trying to keep track of the IP address of that network (presuming no one is there to easily check on your behalf). In that case, you\u2019d probably benefit from some type of DNS service, and I\u2019d highly recommend the (free!) [DuckDNS](https://www.duckdns.org).\n\nI\u2019d enourage you to play around and figure it out on your own (great learning opportunity), but in a pinch I may be able to track down more details on how I\u2019ve done something similar in the past. I also won\u2019t guarentee this doesn\u2019t violate [Baylor\u2019s technology useage policy](https://www.baylor.edu/risk/doc.php/339230.pdf) in some way (does it count as \u201ccircumvent[ing] technology systems or network security?\u201d My understanding is SSH connections in general are fine, but I\u2019m not sure if tunneling runs afoul of good security practices in this context [university wide network with students doing or tunneling into who knows what].).\n\nE: I also can\u2019t speak to what kind of latency you may experience with this approach and how that may impact what you\u2019re trying to do.\n\nE2: I\u2019ll also add that, depending on the game, you may run into other complications (forwarding TCP-based games is likely different from forwarding UDP-based games). Also, if you can connect straight to your friends, you may only need to open a reverse tunnel to each one, as opposed to some more complicated mixture of forward/reverse tunnels like I was suggesting before (the latter of which may run into issues with multiple people\u2014I think I\u2019ve only ever used it for a single client/server pair).\n\nTL;DR: I won\u2019t say it\u2019s impossible, but it will likely be a complicated mess if you\u2019re unfamilar with ssh and tunneling.",
+            "score": 1,
+            "author": "AppleSky"
+        }
+    ]
+}

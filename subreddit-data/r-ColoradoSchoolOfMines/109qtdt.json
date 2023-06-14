@@ -1,0 +1,37 @@
+{
+    "id": "109qtdt",
+    "score": 5,
+    "title": "ReMarkable Tablet connection",
+    "author": "Telekto_",
+    "date": 1673499507.0,
+    "url": "https://www.reddit.com/r/ColoradoSchoolOfMines/comments/109qtdt",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hi, I recently got a reMarkable tablet from Christmas and was wondering how I can connect to the CSMwireless WiFi on campus? Thanks",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Assuming you have a way to get the MAC address (https://support.remarkable.com/s/article/Wi-Fi-settings) then you can go to netreg.mines.edu on a different device and fill out the info for your reMarkable tablet making sure to put the replace the MAC address field with the MAC address from the reMarkable. Then submit, wait up to 5 minutes and connect to CSMwireless and it should work",
+            "score": 6,
+            "author": "manualaton"
+        },
+        {
+            "level": 0,
+            "comment": "There is no need to hack it, you just need to go on your computer and just set up a mobile hotspot, that will be in network settings, then just connect your remarkable to the mobile hotspot and then the computer will display the Mac adress (physical adress) all you need to do then is go to the net reg website and register it on the computer",
+            "score": 4,
+            "author": "lICoreylI"
+        },
+        {
+            "level": 0,
+            "comment": "I have one too. You absolutely can get it onto the network, but it's a bit tricky. Basically you have to hack a web browser onto the device, and use that to log in. This does come with the potential to brick your device, but as long as you're careful, you should be totally fine.\nStep 1 is to install an \"app store\" (package manager) onto the device. Follow  [this](https://toltec-dev.org/#install-toltec) guide. You will need to be somewhere where you *can* connect the device to the internet to do this, or use a hotspot with your phone.\nStep 2 is to install a web browser onto the machine. While you're still in the SSH session you used to install Toltec, type `opkg install lynx`. Lynx is a text-based web browser that works pretty well, certainly well enough to log into the network.\nStep 3 needs to be done with the device connected to the mines network. Type `lynx` in the SSH session to launch lynx. Navigate to https://netreg.mines.edu/, and using the arrow keys and keyboard, fill out all the required info. After this, you should be good to go.\nLet me know if you need me to clarify anything, or if you have further questions.",
+            "score": 1,
+            "author": "RedshiftVelocities"
+        },
+        {
+            "level": 0,
+            "comment": "Once on campus use netreg.mines.edu",
+            "score": 1,
+            "author": "Yepyepreally"
+        }
+    ]
+}
