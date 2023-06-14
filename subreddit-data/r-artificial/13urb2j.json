@@ -4,13 +4,19 @@
     "title": "\"In memory compute\"/neuromorphic chips",
     "author": "BalorNG",
     "date": 1685357051.0,
-    "url": null,
-    "media_url": "https://www.reddit.com/r/artificial/comments/13urb2j/in_memory_computeneuromorphic_chips/",
+    "url": "https://www.reddit.com/r/artificial/comments/13urb2j",
+    "media_urls": [
+        "https://www.reddit.com/r/artificial/comments/13urb2j/in_memory_computeneuromorphic_chips/"
+    ],
+    "other_urls": [
+        "https://blocksandfiles.com/2021/12/16/7bits-cell-flash-in-ai-compute-in-memory-chip/"
+    ],
+    "postText": "How close are they to reality? As much as I understand, the greatest limitation of current AI is data IO due to tho fact that \"neurons\" are emulated and entire model has to be \"recalculated\" for every token - reading and writing to memory *sequentially* with each step, greatly limiting training and inference speed.\n\nIf you use 4-bit data cells as \"hardware neurons\" of a 4-bit quantized model, does it imply that such model, once you load it with data, will have terabytes of \"storage\" like modern SSDs and will be able to output literally thousands (if not millions) \"tokens per second\" as output, with all \"computation\" occuring internally, and model training will be be faster and more effective by several orders of magnitude?\n\nEdit:\nhttps://blocksandfiles.com/2021/12/16/7bits-cell-flash-in-ai-compute-in-memory-chip/\n\nI see there is something like this in the works already. With efficient quantisation algoritms, can this task get easier?\nWhile I unlderstand that \"multilevel\" cells are prone to \"wearing out\", applying this tech to \"frozen\" (read-only) models for inference will likely do the trick?\nI mean, a decent 4bit tlc 1 Tb SSD costs less that a hundred bucks. You can fit a GPT4 inside, if quantized to 4bit!",
     "comments": [
         {
             "level": 0,
             "comment": "These things are analog computers. Instead of processing result of multiplication, they let a little bit of current through, and the current accumulates in parallel from all the cells, in theory adding the results together. So it might be both fast and efficient implementation of something like column vector and row vector multiply, which is the kind of primary operation needed to get a full matrix multiplication done.\n\nHowever, I don't know how easy that is to generalize, as full matrix multiplication involves dot products between every single row and column vector in all their possible permutations. Such analog computer needs good deal of precision for storing the weights, as 4-bit models are actually more like 4.5 bit models, where the extra half bit is spent in describe scaling constants that are specified for groups of quantized weight values. Such scaling constants are probably not going to exist here, so the weight must be specified in higher precision than just 4 bits.",
-            "score": 4,
+            "score": 5,
             "author": "audioen",
             "replies": [
                 {

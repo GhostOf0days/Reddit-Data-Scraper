@@ -1,9 +1,10 @@
 import requests
 import json
 import os
+import re
 
 # Add subreddits to scrape as strings here (e.g. 'artificial') [Remove subreddits from array before commits]
-SUBREDDITS = []  
+SUBREDDITS = ['emotions', 'politics']  
 DATA_DIRECTORY = 'subreddit-data'
 
 def parse_about(subreddit):
@@ -69,16 +70,30 @@ def parse_top(subreddit):
             postTitle = postData['title']
             author = postData['author']
             date = postData['created_utc']
-            url = postData.get('url_overridden_by_dest')
+            post_url = f"https://www.reddit.com/r/{subreddit}/comments/{postID}"
+            postText = postData.get('selftext', '')  # Get post content/description
+
+            all_urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', postText)
+            media_file_extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp', 'mp4', 'webm']
+            media_urls = [url for url in all_urls if any(url.endswith(ext) for ext in media_file_extensions)]
+            other_urls = [url for url in all_urls if url not in media_urls]
+
             media_url = postData.get('url') if postData['is_video'] or 'preview' in postData else None
+            if media_url:
+                media_urls.append(media_url)
+
             comments = parse_comments(subreddit, postID)
+
             posts.append({'id': postID, 'score': score, 'title': postTitle,
-                          'author': author, 'date': date, 'url': url, 'media_url': media_url, 'comments': comments})
+                          'author': author, 'date': date, 'url': post_url, 
+                          'media_urls': media_urls, 'other_urls': other_urls, 
+                          'postText': postText, 'comments': comments})
         return posts
     else:
         print(f'Error {response.status_code}')
         return None
-    
+
+# Do the same for parse function as well.
 def parse(subreddit, after=''):
     urlTemplate = 'https://www.reddit.com/r/{}.json?{}'
     headers = {'User-agent': 'Reddit Data Scraper'}
@@ -97,11 +112,24 @@ def parse(subreddit, after=''):
             postTitle = postData['title']
             author = postData['author']
             date = postData['created_utc']
-            url = postData.get('url_overridden_by_dest')
+            post_url = f"https://www.reddit.com/r/{subreddit}/comments/{postID}"
+            postText = postData.get('selftext', '')  # Get post content/description
+
+            all_urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', postText)
+            media_file_extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp', 'mp4', 'webm']
+            media_urls = [url for url in all_urls if any(url.endswith(ext) for ext in media_file_extensions)]
+            other_urls = [url for url in all_urls if url not in media_urls]
+
             media_url = postData.get('url') if postData['is_video'] or 'preview' in postData else None
+            if media_url:
+                media_urls.append(media_url)
+
             comments = parse_comments(subreddit, postID)
+
             posts.append({'id': postID, 'score': score, 'title': postTitle,
-                          'author': author, 'date': date, 'url': url, 'media_url': media_url, 'comments': comments})
+                          'author': author, 'date': date, 'url': post_url, 
+                          'media_urls': media_urls, 'other_urls': other_urls, 
+                          'postText': postText, 'comments': comments})
         return posts, data['after']
     else:
         print(f'Error {response.status_code}')

@@ -1,6 +1,6 @@
 # About r/AmItheAsshole
 
-Subscribers: 8279397
+Subscribers: 8279499
 
 Created UTC: 1370722490.0
 

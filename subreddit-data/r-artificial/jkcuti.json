@@ -1,11 +1,15 @@
 {
     "id": "jkcuti",
-    "score": 462,
+    "score": 466,
     "title": "Exploring MNIST Latent Space",
     "author": "goatman12341",
     "date": 1603987589.0,
-    "url": "https://v.redd.it/3r9mrdw252w51",
-    "media_url": "https://v.redd.it/3r9mrdw252w51",
+    "url": "https://www.reddit.com/r/artificial/comments/jkcuti",
+    "media_urls": [
+        "https://v.redd.it/3r9mrdw252w51"
+    ],
+    "other_urls": [],
+    "postText": "",
     "comments": [
         {
             "level": 0,
@@ -22,7 +26,7 @@
                         {
                             "level": 2,
                             "comment": "Well, what my model does is it looks at a bunch of images of numbers (60,000 of them), and learns how to represent all the important stuff about what a number looks like in just two numbers.\n\nArtbreeder already does this. The sliders you use to control what image Artbreeder outputs - those are just dimensions of the latent space. My latent space is 2 dimensional, meaning that there are only 2 numbers. But with Artbreeder, their latent space probably has many, many more dimensions, as human faces are way more complex then pixelated images of numbers. The sliders they give you access to probably control those dimensions, and let you traverse the latent space of Artbreeder.\n\nFinally, you could technically represent a whole plethora of human faces in a 2 dimensional latent space (like the one I'm using here.). However, a lot of nuance and important information would be lost - that's why the latent space for Artbreeder is so much bigger.\n\nSo to answer your question, technically, yes, you could represent what Artbreeder with just a 2 dimensional latent space - at the cost losing a lot of important information.\n\n(Please note that I am only just learning about ML myself, and that my answer may have errors.)",
-                            "score": 16,
+                            "score": 17,
                             "author": "goatman12341",
                             "replies": [
                                 {
@@ -34,7 +38,7 @@
                                         {
                                             "level": 4,
                                             "comment": "You're welcome!",
-                                            "score": 5,
+                                            "score": 4,
                                             "author": "goatman12341"
                                         }
                                     ]
@@ -48,7 +52,7 @@
                                         {
                                             "level": 4,
                                             "comment": "I'm using an autoencoder.",
-                                            "score": 3,
+                                            "score": 4,
                                             "author": "goatman12341"
                                         }
                                     ]
@@ -62,7 +66,7 @@
         {
             "level": 0,
             "comment": "can you explain how did you do this ? or give any resource.",
-            "score": 7,
+            "score": 6,
             "author": "rakib__hosen",
             "replies": [
                 {
@@ -336,7 +340,7 @@
                 {
                     "level": 1,
                     "comment": "Not at all. Basically, the AI looked at tens of thousands of images of numbers. It learned to represent an image of a number as only two numbers - so a 28x28 png of a number could be represented by two numbers between -1 and 1. \n\nThen by traversing the possible range of these two numbers, we can see all the different numbers that the model knows. This is interesting because we get to see where the model plots the numbers in this two-dimensional \"latent space\".\n\n Images of the same number will be close together, whereas images of topologically different numbers will be far apart. We also get to see the model generate interesting mixes of different numbers.\n\nI invite you to try it for yourself (the link is above), so you can see first-hand how the model understands and generates numbers.",
-                    "score": 7,
+                    "score": 6,
                     "author": "goatman12341",
                     "replies": [
                         {

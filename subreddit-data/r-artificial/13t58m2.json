@@ -1,11 +1,21 @@
 {
     "id": "13t58m2",
-    "score": 14,
+    "score": 15,
     "title": "Building a basic \"chat with a PDF\" app as my AI learning project",
     "author": "alfarez",
     "date": 1685187783.0,
-    "url": null,
-    "media_url": "https://www.reddit.com/r/artificial/comments/13t58m2/building_a_basic_chat_with_a_pdf_app_as_my_ai/",
+    "url": "https://www.reddit.com/r/artificial/comments/13t58m2",
+    "media_urls": [
+        "https://www.reddit.com/r/artificial/comments/13t58m2/building_a_basic_chat_with_a_pdf_app_as_my_ai/"
+    ],
+    "other_urls": [
+        "https://www.reddit.com/r/artificial/comments/137ha71/topics\\_i\\_should\\_learn\\_about/](https://www.reddit.com/r/artificial/comments/137ha71/topics_i_should_learn_about/)",
+        "https://farez.me/how-to-create-a-chatbot-with-openais-api-a-general-architecture/).",
+        "https://www.gov.uk/government/publications/form-an-guidance).",
+        "https://preview.redd.it/ypoghebfke2b1.png?width=1732&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=a535df558c3cccb38965ea90e4844ef32982ad44",
+        "https://twitter.com/farez/status/1654942532223086592)."
+    ],
+    "postText": "Earlier this month I decided to start learning how to build AI products in my free time. I asked everyone here what topics I should be learning and you guys gave some great suggestions: [https://www.reddit.com/r/artificial/comments/137ha71/topics\\_i\\_should\\_learn\\_about/](https://www.reddit.com/r/artificial/comments/137ha71/topics_i_should_learn_about/)\n\nIt's been quite a satisfying journey. And I turned it into a side project to help guide my learning - it's one of those \"Chat with a PDF\" apps and there are many of these out there. \n\nBased on what I've learned, I even wrote up a sort of [cheat sheet for building chatbots](https://farez.me/how-to-create-a-chatbot-with-openais-api-a-general-architecture/). And once you've learned the new ideas and components of an AI app, it's not that hard.\n\nThe project app uses OpenAI's API and I'm using their GPT-3.5-turbo model. I'm using their embeddings endpoint to create embeddings for the uploaded PDF content, and using the chat endpoint to ask the AI questions about the document.\n\nIn the requests to the API, I asked it to assume the role of \"an explanation bot that explains complex information in simple everyday English\".\n\nThe learning project actually turned into a half-decent app for interrogating PDFs. Even I myself was impressed with how useful a simple AI integration can be.\n\nTo test it out, I uploaded a long [PDF from the UK Home Office](https://www.gov.uk/government/publications/form-an-guidance). It's a document explaining how to apply for UK citizenship. Basically, a long and tedious document to read. Then I asked it a few questions.\n\nhttps://preview.redd.it/ypoghebfke2b1.png?width=1732&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=a535df558c3cccb38965ea90e4844ef32982ad44\n\nI liked how it summarised the answers and explained them back to me in simple English. Actually, I'm more of a bullet-point kinda guy so I would actually have preferred shorter answers in bullets. But this still saved me a tonne of time trying to read through the document.\n\nOnce I had the basic functionality working, then I tidied the frontend up a bit with some simple Tailwind classes. Instead of the usual chat box at the bottom, I decided to put it at the top and have the AI's responses appear below it.\n\nHere's the tech stack for this simple app:\n\n* Backend: Laravel + Nginx\n* Database: PostgresQL + pgvector extension\n* Frontend: Livewire + Tailwind\n* AI API: OpenAI / GPT-3.5\n\nI go into more detail about the above in a [Twitter thread](https://twitter.com/farez/status/1654942532223086592).\n\nFor an indie business like mine, building is just half the story. This weekend I'm going to try and turn it into a product an launch it. It'll be interesting to learn the business side of AI apps and this should give me a great start.\n\nSo this is my task this weekend - polish and launch this learning project as an actual product!",
     "comments": [
         {
             "level": 0,

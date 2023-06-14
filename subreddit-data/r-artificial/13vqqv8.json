@@ -1,16 +1,18 @@
 {
     "id": "13vqqv8",
-    "score": 13,
+    "score": 14,
     "title": "Have GPUs swallowed AI?",
     "author": "lawless_c",
     "date": 1685454245.0,
-    "url": null,
-    "media_url": null,
+    "url": "https://www.reddit.com/r/artificial/comments/13vqqv8",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Wanted to ask is anyone focussing on non gpu AI still?\n\nIt seems like everything is gpu now, particularly nvidia. A bit over ten years ago i did a final year college project with opencv and a simple feed forward network. It used the cpu and worked fine on a laptop in real time.\n\nit feels like if was doing it now i would end up , by default, using some gpu powered deep learning library that may not even be faster.\n\nSorry if i am not explaining it well.",
     "comments": [
         {
             "level": 0,
             "comment": "Most of a CPU\u2019s capabilities are wasted on AI. It\u2019s like a master chef cooking computation in any dish you want. But the AI only wants sandwiches. The master chef\u2019s skills are wasted. Better to hand the task off to a row of line chefs (the GPU).\n\nThey will do the same job faster and cheaper than the CPU in terms of time and electricity.\n\nThis trend will continue until dedicated AI chips are ubiquitous. Then everyone will switch to AI chips. There is no sense in wasting energy and chips using a generalist chip for a task better given to a specialized chip.",
-            "score": 8,
+            "score": 7,
             "author": "Eroticamancer",
             "replies": [
                 {
@@ -38,7 +40,7 @@
         {
             "level": 0,
             "comment": "ML is matrix math and matrix math is 1000x faster on the gpu\n\nIt's simple really. That being said you can run both Llama and stable diffusion cpu side if you feel like it but it's insanely slow",
-            "score": 7,
+            "score": 6,
             "author": "__SlimeQ__",
             "replies": [
                 {
@@ -60,7 +62,7 @@
         {
             "level": 0,
             "comment": "i believe when you say AI you\u2019re mainly referring to large language models, computer vision or other methods working with unstructured data such as text, image, video or audio. in that case, yes, pretty much everything is about GPU right now although there are a few signs that even LLMs might get efficient quickly to make them run on CPU in a practical setting. \n\nHowever, AI is frequently more broadly used, for example when referring to recommender engines used by pretty much every large digital platform. these are typically relying on more efficient algorithms and will run well on GPU.",
-            "score": 5,
+            "score": 6,
             "author": "First_Bullfrog_4861"
         },
         {
@@ -72,7 +74,7 @@
         {
             "level": 0,
             "comment": "gpus are faster but tensorflow and torch still run on cpu. dont really get your point",
-            "score": 12,
+            "score": 13,
             "author": "hans47"
         },
         {
@@ -90,7 +92,7 @@
         {
             "level": 0,
             "comment": "If you read the leaked google memo, one of the things that scares them is that it is suddenly easier for open source libraries on cheap hardware to get competitive results. I think that's why the big AI companies are suddenly pushing for AI regulation. You don't need a huge GPU cluster to be competitive anymore.",
-            "score": 4,
+            "score": 5,
             "author": "kbielefe"
         },
         {

@@ -1,6 +1,6 @@
 # About r/artificial
 
-Subscribers: 329620
+Subscribers: 329727
 
 Created UTC: 1205441449.0
 

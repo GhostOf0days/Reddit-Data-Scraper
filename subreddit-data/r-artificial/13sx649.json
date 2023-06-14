@@ -4,13 +4,15 @@
     "title": "Is it possible to explore the \"Latent space\" of any model ?",
     "author": "transdimensionalmeme",
     "date": 1685159338.0,
-    "url": null,
-    "media_url": null,
+    "url": "https://www.reddit.com/r/artificial/comments/13sx649",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I think the latent space is the range of possible responses for a specific prompt\n\nSo really any model, you run the prompt 100 times through, they should explore a least a little of the latent space. Would that work on every model ? Is there a way to move around in this latent space in a fiber grained manner ? Maybe changing the prompt one token at a time ?\n\n\nWhat else is happening with the mysterious subject of AI latent space ?",
     "comments": [
         {
             "level": 0,
             "comment": "This is not correct usage of the term latent space.\n\nLatent space in this case is the embedding vector space which is the representation of the input tokens -- whole words or fragments of words. They are learnt by some algorithm and typically have the property that conceptually similar tokens end up close to each other in that latent space, which may have thousands of dimensions.\n\nYou seem to be more curious about the output sampling of the LLM function. Normally, a random choice using certain parameters such as top\\_p and temperature are chosen, and sometimes this is combined with lookahead, where the model is queried among couple of most promising-looking continuations of the text and then the overall best continuation in terms of probability of all the follow-up tokens together is chosen.\n\nIt is always somewhat expensive to study the possible responses the model could give at that point, because tokens are not always complete words and to produce even couple of words of text involves running the LLM for large number of times. However, the first token is free -- you already ran the LLM, you have all the probabilities of possible continuations. It would certainly be possible to render them, and perhaps offer the user the ability to select a singular token and query LLM with it, or go back to earlier point and continue with another token.\n\nPrompt can also be varied, but I suspect it doesn't work so well because the text generation process is somewhat chaotic in nature, as each prior token affects the current token being computed. So not only does the prompt change, which has ramifications to the model's response, but the model's response can start completely differently, resulting in output that is probably quite often completely dissimilar. Still, it would be possible to force the prompt and large part of model response and then see if e.g. change in prompt would affect the generation at that point. Attention mechanism is nonlocal, so everything is in principle available to the model as input. If the attention is focusing strongly on tokens in prompt you are currently changing, then you would expect it to influence the output. As an example, if the model wants to write name of person from the prompt as the next token, and you change that name, then it is quite likely that the model's output changes to replicate whatever the new name is.",
-            "score": 5,
+            "score": 6,
             "author": "audioen",
             "replies": [
                 {

@@ -1,6 +1,6 @@
 # About r/AskReddit
 
-Subscribers: 41347936
+Subscribers: 41350089
 
 Created UTC: 1201233135.0
 
