@@ -23,4 +23,4 @@ The script will automatically scrape data from all the subreddits specified in t
 
 7. Your PR will be reviewed, and if everything is in order, it will be merged into the main repository.
 
-Note: Don't worry about errors that appear, such as Compute Failed. However, Error 403 means that specific subreddit is private. Also, it may say compute failed. Don't worry the scraper still worked and correctly added files.
+Note: Don't worry about errors that appear. However, Error 403 means that specific subreddit is private. Also, it may say Compute Failed. Don't worry the scraper still worked and correctly added files.
