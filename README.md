@@ -11,7 +11,7 @@ Usage:
 
 3. Open the subreddits.txt file and add as many subreddits as you want to scrape below the comment with one subreddit line per name. The names should be case-sensitive. Note that the subreddit names should be valid and existing subreddits.
 
-4. (Optional) If you would like to use proxy rotation to avoid rate limiting, open the proxies.txt file and add your proxies below the comment with one proxy per line in the form of ip:port. Make sure your proxies are valid.
+4. (Optional) If you would like to use proxy rotation, open the proxies.txt file and add your proxies below the comment with one proxy per line in the form of ip:port. Make sure your proxies are valid.
 
 5. Run the script by executing the following command (For proxy rotation, run 'python scraper-wth-proxy-rotation.py'):
 ```python scraper.py```

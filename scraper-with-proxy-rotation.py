@@ -5,6 +5,7 @@ import re
 import argparse
 from dask.distributed import Client
 from dask import delayed
+from collections import deque
 
 DATA_DIRECTORY = 'subreddit-data'
 PROXIES_FILE = 'proxies.txt'
@@ -76,12 +77,17 @@ def parse_top(subreddit, proxies):
     headers = {'User-agent': 'Reddit Data Scraper'}
     url = urlTemplate.format(subreddit)
 
-    proxies = {'https': proxies}
+    proxies_queue = deque(proxies)  # Initialize a deque object with the proxies
+    proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+
     response = requests.get(url, headers=headers, proxies=proxies)
     
     if response.ok:
         data = response.json()['data']
         posts = []
+
+        post_count = 0  # Initialize the post count
+
         for post in data['children']:
             postData = post['data']
             postID = postData['id']
@@ -107,24 +113,34 @@ def parse_top(subreddit, proxies):
                           'author': author, 'date': date, 'url': post_url, 
                           'media_urls': media_urls, 'other_urls': other_urls, 
                           'postText': postText, 'comments': comments})
+            
+            post_count += 1  # Increment the post count
+
+            if post_count % 25 == 0:  # Rotate the proxies after every 25 posts
+                proxies_queue.append(proxies_queue.popleft())
+                proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+
         return posts
     else:
         print(f'Error {response.status_code}')
         return None
 
-# Do the same for parse function as well.
 def parse(subreddit, after='', proxies=None):
     urlTemplate = 'https://www.reddit.com/r/{}.json?{}'
     headers = {'User-agent': 'Reddit Data Scraper'}
     params = '' if not after else 'after=' + after
     url = urlTemplate.format(subreddit, params)
 
-    proxies = {'https': proxies}
+    proxies_queue = deque(proxies)  # Initialize a deque object with the proxies
+    proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
     response = requests.get(url, headers=headers, proxies=proxies)
     
     if response.ok:
         data = response.json()['data']
         posts = []
+
+        post_count = 0  # Initialize the post count
+
         for post in data['children']:
             postData = post['data']
             postID = postData['id']
@@ -150,6 +166,13 @@ def parse(subreddit, after='', proxies=None):
                           'author': author, 'date': date, 'url': post_url, 
                           'media_urls': media_urls, 'other_urls': other_urls, 
                           'postText': postText, 'comments': comments})
+            
+            post_count += 1  # Increment the post count
+
+            if post_count % 25 == 0:  # Rotate the proxies after every 25 posts
+                proxies_queue.append(proxies_queue.popleft())
+                proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+
         return posts, data['after']
     else:
         print(f'Error {response.status_code}')
