@@ -13,7 +13,7 @@ Usage:
 
 3. Open the subreddits.txt file and add as many subreddits as you want to scrape below the comment with one subreddit line per name. The names should be case-sensitive. Note that the subreddit names should be valid and existing subreddits.
 
-4. (Optional) Run add-subreddits-from-directory.py if you would like previously added subreddits to be reparsed.
+4. (Optional) Run add-subreddits-from-directory.py if you would like previously parsed subreddits to be reparsed.
 
 5. (Optional) If you would like to use proxy rotation, open the proxies.txt file and add your proxies below the comment with one proxy per line in the form of ip:port. Make sure your proxies are valid.
 
