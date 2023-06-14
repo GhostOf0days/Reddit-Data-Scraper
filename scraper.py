@@ -11,16 +11,21 @@ DATA_DIRECTORY = 'subreddit-data'
 
 def parse_about(subreddit):
     url = f'https://www.reddit.com/r/{subreddit}/about.json'
+    url_rules = f'https://www.reddit.com/r/{subreddit}/about/rules.json'
     headers = {'User-agent': 'Reddit Data Scraper'}
     response = requests.get(url, headers=headers)
+    response_rules = requests.get(url_rules, headers=headers)
 
-    if response.ok:
+    if response.ok and response_rules.ok:
         data = response.json()['data']
+        rules_data = response_rules.json()['rules']
+        rules = [rule['short_name'] + ': ' + rule['description'] for rule in rules_data]
         about_data = {
             'name': data['display_name'],
             'subscribers': data['subscribers'],
             'created_utc': data['created_utc'],
-            'description': data['public_description']
+            'description': data['public_description'],
+            'rules': rules
         }
         return about_data
     else:
@@ -147,7 +152,12 @@ def write_about(subreddit, data):
         f.write(f'# About r/{data["name"]}\n\n')
         f.write(f'Subscribers: {data["subscribers"]}\n\n')
         f.write(f'Created UTC: {data["created_utc"]}\n\n')
-        f.write(f'Description:\n\n{data["description"]}\n')
+        if data["description"]:
+            f.write(f'Description:\n\n{data["description"]}\n\n')
+        if data["rules"]:
+            f.write('Rules:\n\n')
+            for rule in data['rules']:
+                f.write(f'{rule}\n\n')
 
 def write_to_json(subreddit, post_id, data):
     subreddit_dir = os.path.join(DATA_DIRECTORY, f'r-{subreddit}')
@@ -165,21 +175,21 @@ def process_subreddit(subreddit):
         write_about(subreddit, about_data)
         print(f'About data for subreddit {subreddit} written to about.md')
                 
-    top_posts = parse_top(subreddit)
-    if top_posts:
-        for post in top_posts:
-            write_to_json(subreddit, post['id'], post)
-            print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
+    # top_posts = parse_top(subreddit)
+    # if top_posts:
+    #     for post in top_posts:
+    #         write_to_json(subreddit, post['id'], post)
+    #         print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
 
-    after = ''
+    # after = ''
     
-    while True:
-        posts, after = parse(subreddit, after)
-        if not posts or after is None:
-            break
-        for post in posts:
-            write_to_json(subreddit, post['id'], post)
-            print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
+    # while True:
+    #     posts, after = parse(subreddit, after)
+    #     if not posts or after is None:
+    #         break
+    #     for post in posts:
+    #         write_to_json(subreddit, post['id'], post)
+    #         print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
 
 def main():
     client = Client()  # set up local cluster
