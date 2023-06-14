@@ -79,6 +79,7 @@ def parse_top(subreddit, proxies):
 
     proxies_queue = deque(proxies)  # Initialize a deque object with the proxies
     proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+    print(f"Using proxy: {proxies}")
 
     response = requests.get(url, headers=headers, proxies=proxies)
     
@@ -119,6 +120,7 @@ def parse_top(subreddit, proxies):
             if post_count % 25 == 0:  # Rotate the proxies after every 25 posts
                 proxies_queue.append(proxies_queue.popleft())
                 proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+                print(f"Switched to proxy: {proxies}")
 
         return posts
     else:
@@ -133,6 +135,8 @@ def parse(subreddit, after='', proxies=None):
 
     proxies_queue = deque(proxies)  # Initialize a deque object with the proxies
     proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+    print(f"Using proxy: {proxies}")
+
     response = requests.get(url, headers=headers, proxies=proxies)
     
     if response.ok:
@@ -172,6 +176,7 @@ def parse(subreddit, after='', proxies=None):
             if post_count % 25 == 0:  # Rotate the proxies after every 25 posts
                 proxies_queue.append(proxies_queue.popleft())
                 proxies = {'https': proxies_queue[0]}  # Use the first proxy from the deque
+                print(f"Switched to proxy: {proxies}")
 
         return posts, data['after']
     else:

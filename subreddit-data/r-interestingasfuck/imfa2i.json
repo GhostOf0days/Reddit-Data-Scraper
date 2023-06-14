@@ -1,0 +1,1446 @@
+{
+    "id": "imfa2i",
+    "score": 147477,
+    "title": "My friend and I coded Plague Inc\u2026 for a TI-84 calculator",
+    "author": "EverydayCodeNet",
+    "date": 1599223562.0,
+    "url": "https://www.reddit.com/r/interestingasfuck/comments/imfa2i",
+    "media_urls": [
+        "https://i.redd.it/vmdyklpym4l51.jpg"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "\n**Please report this post if:**\n\n* It is spam\n\n* It is NOT interesting as fuck \n\n* It is a social media screen shot\n\n* It has text on an image\n\n* It does NOT have a descriptive title\n\n* It is gossip/tabloid material\n\n* Proof is needed and not provided\n\n *See [the rules](https://www.reddit.com/r/interestingasfuck/about/rules/) for more information.*\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/interestingasfuck) if you have any questions or concerns.*",
+            "score": 1,
+            "author": "AutoModerator"
+        },
+        {
+            "level": 0,
+            "comment": "That is amazing man, you guys have potential.",
+            "score": 2103,
+            "author": "sorrytokillmyself",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 692,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very tempted to buy a ti-84 just to put this on there. Great job man. Back when I was in school we used to do 80085 on our calculators",
+                            "score": 512,
+                            "author": "daffydubs",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "lol, hop back in the market for a TI. It's the WAVE!",
+                                    "score": 239,
+                                    "author": "EverydayCodeNet",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I was very sad after I sold my last TI-83+ There was an incredible ecosystem and community of mobile apps for it long before smartphones existed.\n\nI remember using an old serial cable to get OS shells up and running (Ion and MirageOS) to then support the amazing assembly-programmed games and apps like Mario (ticalc.org!)\n\nNow I see TI has worked to cripple and prevent assembly applications from running with newer editions and firmware. I have a TI-84 and TI-88 but haven't had the chance to scope out the development scene yet, you've inspired me!\n\nGreat job.",
+                                            "score": 61,
+                                            "author": "mattpilz",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That means a lot. I'm saddened by TI's decision too. Hopefully posts like mine catch their eye",
+                                                    "score": 30,
+                                                    "author": "EverydayCodeNet",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I remember my TI-83 plus (I think it was a special Silver edition).  I had a teacher that made the mistake of saying anything on the calculator is fair game.  Maybe in retrospect it was just a kickass teacher that was testing out coding or IT skills but I put some chemistry apps  on my TI that practically solved all of my questions on the test.  It was bomb.  \n\nDid I study for the test?  Nope.  But damn if I spent days getting that shit in my calculator and trying to get it to work ha",
+                                                    "score": 23,
+                                                    "author": "Mountainbiker22",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is Plague Inc. for the TI-84 Plus CE calculator.\n\nHow it was done: [https://youtu.be/DOE36S2dobk](https://youtu.be/DOE36S2dobk)\n\nIt was coded in C with NO game engine, just the [CE C Standard Libraries](https://github.com/CE-Programming/libraries). It took four months of on and off coding to complete it, but it is ready for download for anyone who wants to check it out for themselves.\n\nThe hardest part of this was dealing with the memory constraints of the calculator. The calculator only has 154KB of RAM. The continent sprites took up the most space, but by scaling them down, we got the entire game to fit into 17KB!\n\nThe game features a transportation view, a live, scrolling menu, mutations, and more.\n\nThis was a valuable learning experience. While this will NOT work on any calculator except the TI-84 Plus CE / TI-83 Premium CE, I welcome anyone to make a version for their calculator.\n\nIf you\u2019re interested in the source code: [https://github.com/EverydayCodeNet/CONTAGION-CE](https://github.com/EverydayCodeNet/CONTAGION-CE)\n\nDownload: [https://everydaycode.net/downloads.php](https://everydaycode.net/downloads.php)\n\nFeel free to ask any questions!\n\nEdit: This has gotten an overwhelming response! If you would like to talk to us more directly, feel free to join our Discord server: [https://discord.com/invite/3uYXCJy](https://discord.com/invite/3uYXCJy)\n\nEdit: Check out my friend's channel! [https://www.youtube.com/channel/UChOpsPxBd3WKpJqaDXhe2rg](https://www.youtube.com/channel/UChOpsPxBd3WKpJqaDXhe2rg)",
+            "score": 9091,
+            "author": "EverydayCodeNet",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Beautiful work, man, well done! This is real programming; I have a sincere appreciation for this kind of thing. Keep up the good work.",
+                    "score": 3439,
+                    "author": "wtysonc",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you. This means a lot to a young dev!",
+                            "score": 1977,
+                            "author": "EverydayCodeNet",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That makes it even more impressive! I learned C/C++ around 2004. I had 128MB of RAM on my desktop at the time. You can imagine the impact my environment had on the way I learned to develop applications - - optimization wasn't just a fun challenge or something reserved for niche implementation, but a standard in day to day development. Furthermore, we had more limited access to libraries so there was no getting lost in higher and higher layers of abstraction. Learning to program then developed an intimacy with all the different parts of a computer system: it was the only way to become truly effective. I think you're doing yourself a huge favor with projects like this!",
+                                    "score": 666,
+                                    "author": "wtysonc",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Definitely. I still have a lot to learn with memory optimization, but I'll learn...\n\nOut of curiosity, were you self-taught or did you go to college?",
+                                            "score": 367,
+                                            "author": "EverydayCodeNet",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I checked out a couple of books from the library and taught myself. I wanted to make games, much like any other kid, so I first stumbled upon Game Maker. I wanted to make DLLs for my GML projects so I learned Pascal, which lead to me ultimately making the jump to C++.",
+                                                    "score": 223,
+                                                    "author": "wtysonc",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I took C and MATLAB courses in college, but I'm a CNC Programmer/Machinist. Funny thing, the \"g-code\" FANUC came up with to run their machines and robots was based on the QBASIC language. Pretty sure they violated some copyrights using it as the framework, but it's so different only a QBASIC user would recognize the format.\n\nRemember the computer game magazines that had QBASIC code in them? I couldn't save the program cause I had no HDD and only 1 floppy drive, that Q-BASIC was running on. So I had to type out the whole code just to play the game once. You die, you gotta code again. lol Those were the days.",
+                                                            "score": 88,
+                                                            "author": "Snoo_26884",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[removed]",
+                                                                    "score": 38,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Ha, I remember that game. I had to make it all over from scratch cause no one had it.  Funny thing is that experience is coming in handy now learning the GOTO command. A game about to come out is using the same commands in it's in game programming language.",
+                                                                            "score": 4,
+                                                                            "author": "Cfp0001-Iceman"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Good ol' QBASIC! I have very happy memories of using a Disney \"learn to code\" book (that I think was aimed at BBC BASIC for the Acorn/BBC micro PCs, but the programs ran on QBASIC well enough) with our first home PC, a 486DX running win3.11.\n\nProbably still got it (the book) somewhere.",
+                                                                    "score": 3,
+                                                                    "author": "Consiliarius",
+                                                                    "replies": []
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "&gt;You die, you gotta code again.\n\nThe true origin of permadeath and hardcore games.",
+                                                                    "score": 3,
+                                                                    "author": "VaATC"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Do you still work in the field, this is so interesting. I\u2019d love a continuation until present. Ok so you ultimately made the jump to C++ and then...",
+                                                            "score": 13,
+                                                            "author": "Sethdare",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "C+++",
+                                                                    "score": 12,
+                                                                    "author": "subject_deleted"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Man I wished I did what you did. Instead I got baited into one of those stupid expensive 'GAmE dEsiGN DeGReEs' that really didn't teach me anything and I still have 50k+ student loan debt ten years later.\n\nPretty much everything I know I taught myself outside of school. If I had just bought a kindle and some programming ebooks back when I was thinking about going to college, I would probably know far more and be in a much better spot financially.",
+                                                            "score": 24,
+                                                            "author": "Haskie"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 52,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;2012 grad checking in. I think you mean \"small memory leaks are ~~an acceptable problem~~ standard practice.\"\n\nFTFY",
+                                                    "score": 34,
+                                                    "author": "Raivix",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Crazy how fast this changed",
+                                                    "score": 3,
+                                                    "author": "scruffy_77"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "/u/ndemiccreations",
+                                    "score": 7,
+                                    "author": "dwmfives",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "If he hasn't seen it by now, I don't know how else to get his attention, lol",
+                                            "score": 5,
+                                            "author": "EverydayCodeNet",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Not to be intrusive, but are you in highschool or college?",
+                                    "score": 3,
+                                    "author": "drlaff",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "No worries, I am going into my senior year of high school",
+                                            "score": 9,
+                                            "author": "EverydayCodeNet",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This alone will get you jobs after college. You\u2019re not just a programmer you\u2019re a developer and a creator. Most guys I know graduating with their comp sci degrees only have their shitty senior project to show for it and still haven\u2019t had any trouble finding work.",
+                                                    "score": 7,
+                                                    "author": "OrdinaryM"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Wow! Very well done. Seeing stuff like this makes me feel so far behind in the coding world.",
+                                                    "score": 4,
+                                                    "author": "drlaff",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "We all start somewhere... One year ago today, I was amazed by a quadratic formula. Just make stuff that you love, and the skills will come after!",
+                                                            "score": 7,
+                                                            "author": "EverydayCodeNet"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I just put it together that a dev is a developer....",
+                                    "score": 3,
+                                    "author": "DylanXt",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "lol, what did you think it meant?",
+                                            "score": 5,
+                                            "author": "EverydayCodeNet",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "We gate keeping programming now?",
+                            "score": 11,
+                            "author": "House_of_ill_fame",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "In what way?!",
+                            "score": 3,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Oh, so it isn't actually Plague Inc. being ported, it's your own contagion game.",
+                    "score": 784,
+                    "author": "Xertious",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Which is arguably more impressive",
+                            "score": 1030,
+                            "author": "celt1299",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Defo more impressive.",
+                                    "score": 286,
+                                    "author": "SirauloTRantado"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah, we couldn't directly port like we could with Game Boy Advance games.",
+                            "score": 343,
+                            "author": "EverydayCodeNet",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Game Boy Advance!? Haven\u2019t heard that name in years\u2014the nostalgia",
+                                    "score": 120,
+                                    "author": "BuildMajor",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "*GameBoy C O L O R* with the OG curly light",
+                                            "score": 117,
+                                            "author": "SoDakZak",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That was the shit. Pok\u00e9mon Red all day!",
+                                                    "score": 36,
+                                                    "author": "WishOnSpaceHardware",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Gameboy with the magnifying glass and lamp?",
+                                                    "score": 17,
+                                                    "author": "Bogrolling",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Heh, fucking pleb. \n\nGameboy *no* color with the old school curly light",
+                                                    "score": 10,
+                                                    "author": "Wolfcolaholic",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I'm not suggesting this isn't impressive, I was just confused how you managed to fit all that game down onto the calculators presumably small memory.",
+                                    "score": 29,
+                                    "author": "Xertious",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "If you check out their code, it's only one 33kb file of c! And apparently this new ti-84 has a whopping 3MB of storage, so that's plenty.",
+                                            "score": 31,
+                                            "author": "grapesodabandit",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 4,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No, I mean if it were the actual plague inc game, which is surprising only 500mb.",
+                                                    "score": 8,
+                                                    "author": "Xertious",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Whoa that\u2019s almost enough to fill a whole CD-R",
+                                                            "score": 14,
+                                                            "author": "gamingchicken",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "This guy ROMs",
+                                                                    "score": 10,
+                                                                    "author": "umgrego2"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Did you ever see that game design/compression competition to see what you could fit on a 3.5 inch floppy? They were able to get all sorts of wild shit on floppies with the right compression and coding. There was one guy that made a 17kb game. Something crazy small like that. It was in grayscale and had a miniscule resolution, but you could still move around in a 3D space with enemies. It was nuts. \n\nI'll try to dig it up.\n\nEdit - https://en.m.wikipedia.org/wiki/.kkrieger\n\nHere's the game that won first place. It was apparently 96kb (Wow!) but I definitely remember another competition from I think the late 90s where it was about what you could fit on a standard 3.5 inch floppy.",
+                                                            "score": 9,
+                                                            "author": "DrEmilioLazardo"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I miss the GBA dev scene. Can't believe that was practically twenty years ago now. I was like thirteen back then. I had a flash cart, but do you remember when they figured out how to send code into the memory from a PC with a link cable? Like Nintendo did for Mario Kart multiplayer with one cartridge. It was gone when you completely turned off the console but I would send over LoopyNes and some games for my friends.",
+                                    "score": 7,
+                                    "author": "youbenchbro"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Is the original game open source? I wonder if you might get away with writing a shim interpreter .. then you can port all the things to the calculator!\n\nCurious, what environment does the code run in? Is it sandboxed by the runtime (which I assume is a type of RTOS)? Are you running at system privilege or at some lower level? When your code gets execution does it take over all system resources (i.e. you \\_own\\_ the entire platform) or are you scheduled by a kernel (if it even has one).\n\nI'm interested in the overall architecture of how a calculator runs. Never really considered it being any more than a basic In/Out system,",
+                                    "score": 5,
+                                    "author": "once_pragmatic",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The original game isn't open source, in fact, we didn't even have the ORIGINAL game when we coded this.\n\nWe used the CE C toolchain to compile this to the calculator's 8xp format. I do not know the low level specifics that you are asking, but I will defer to u/adriweb, one of the creators of toolchain. https://github.com/adriweb",
+                                            "score": 9,
+                                            "author": "EverydayCodeNet",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You're a legend",
+                    "score": 38,
+                    "author": "XxLawn_MowerxX"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 25,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 18,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks!",
+                            "score": 12,
+                            "author": "EverydayCodeNet"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": " May be one day student will start using more advanced calculators and not old ass TI that everyone used for the last 25 years...",
+                    "score": 67,
+                    "author": "miragen125",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I doubt they have any intention to update the hardware much again... The most advanced thing most students do with their calculator is a quadratic formula program. Calculator sales also only make up 3% of annual revenue, but their profit margins on these must be INSANE.",
+                            "score": 103,
+                            "author": "EverydayCodeNet",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "https://www.mic.com/articles/125829/your-old-texas-instruments-graphing-calculator-still-costs-a-fortune-heres-why",
+                                    "score": 44,
+                                    "author": "miragen125",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Innovation that doesn't excite.",
+                                            "score": 47,
+                                            "author": "EverydayCodeNet"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I have a TI Nspire CX CAS($200)CAD, its a couple steps up from the 84, but its fantastic for what I do.",
+                                    "score": 13,
+                                    "author": "Ephandrial",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The reason they do that now is to prevent students from having too advanced of a calculator for exams.",
+                            "score": 17,
+                            "author": "Pixel-Wolf",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Any way to get this on the later os that dont has asm mode?",
+                    "score": 4,
+                    "author": "jaapyb1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No... Warn your friends! You'll have to wait for an exploit in the meantime.",
+                            "score": 13,
+                            "author": "EverydayCodeNet",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Well I know what I\u2019ll be doing in class now!",
+                    "score": 4,
+                    "author": "BuhtanDingDing"
+                },
+                {
+                    "level": 1,
+                    "comment": "Very nice. My only regret is I can't use it on my TI-84 Plus. That's really awesome to see! I remember making programs on my TI-83 during middle school that would essentially give me the answers to all of my tests, and then eventually making my own text-based RPG that I sold around the school for $2 a copy. Also made a YuGiOh / MTG life counter that everyone in my school loved using. It's awesome to see what people end up making.",
+                    "score": 6,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Amazing.",
+                    "score": 3,
+                    "author": "lowlandder"
+                },
+                {
+                    "level": 1,
+                    "comment": "You should really consider adding a license. As of now, all rights are reserved by you and the legal ability to use your code is heavily restricted. This may not be what you want.",
+                    "score": 3,
+                    "author": "Pat_The_Hat",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Goddamn. When did TI-84 calculators get a backlit, color display?",
+            "score": 2087,
+            "author": "unr3a1r00t",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Back im my day, the TI-84 was dot matrix.  And playing Tetris and Drug Wars on it was nearly considered witchcraft!\n\nEdit: I should say I never used an 84.  83, 85 and 89 only.",
+                    "score": 831,
+                    "author": "bsputnik",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "And mario!",
+                            "score": 144,
+                            "author": "elvismcvegas",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 98,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The fact that they said Mario means they never actually had any ti-84 games. Phoenix was $$$",
+                                            "score": 28,
+                                            "author": "Karge",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Phoenix was my favorite, but  I also rocked Block Dude and FallDownForever",
+                                                    "score": 12,
+                                                    "author": "Foxley_King",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "and block dude, probably my favorite, never heard of phoenix",
+                                    "score": 15,
+                                    "author": "happy_killmore"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Ah, drug wars I remember that.  Used to be big with ticalc.org, but then they decided censorship was a great thing.  That was at least 20 years ago, and they still suck.\n\nI had an 82, 86 and a 92.  Still have the 92, and it works, but the contrast is all fucked up for some reason.  Hitting keys on it causes the contrast to change :(",
+                            "score": 36,
+                            "author": "W9CR",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I had an 85 in high school then I think an 89 was required for calculus in college.  Maybe a 92?  As you say, 20 yrs ago...can't recall.\n\nI have them somewhere in a box.  Hopefully I was smart enough to take the batteries out.  I will never use them again and apparently they are insanely out of date even for calculators.  I figured there's an app to do all that anyway.",
+                                    "score": 9,
+                                    "author": "bsputnik",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I remember how much it sucked that we required to buy specific models and up and we weren\u2019t even allowed to use them in exams. Had to have a graph calc for the course and a scientific one without graph capabilities for exams.",
+                                            "score": 5,
+                                            "author": "selectash",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That is BS!  I was at least allowed the calculator for everything. I was far more angry at the nearly $200 used textbooks for each of calc 1 &amp; 2.  Like calculus has changed in 100 years at that level.",
+                                                    "score": 6,
+                                                    "author": "bsputnik",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Monopolies and lobbying in higher education was no joke back then, it\u2019s still not in many areas but I\u2019m glad that technological advancements significantly reduced some big player\u2019s influence in book publishing and other unavoidable resources for students.",
+                                                            "score": 3,
+                                                            "author": "selectash",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yes, but my alma mater is 50% more expensive in 2020 dollars.  So that doesn't work out at all either.  I still got the better deal taking the hit on the books.",
+                                                                    "score": 2,
+                                                                    "author": "bsputnik",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I knew about the TI-84 when I was in college, but back in my high school days, the TI-84 didn't exist and I used a TI-83 Plus.\n\nHaha.",
+                            "score": 15,
+                            "author": "unr3a1r00t",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Drug Wars!! I made so many spinoff games based on that gameplay. Loved it!",
+                            "score": 9,
+                            "author": "ItsAllJustASickGame",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "2001 TI-84 Snake Champion right here",
+                            "score": 3,
+                            "author": "OhBestThing",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Right? I remember when I had to use a special cable (which just owning made me the popular star of the school) to transfer my programs written in assembler for the old z80 processors to my ti-85, which had a lcd 128x64 screen capable of displaying about 7 different shades of black on top of a babyshit green creamed spinach color backing (wasn't even backlit!). Oh and we had 32k of memory to work with, of which only about 28k was actually available. Sprites? Forget it, we just handcoded the graphics into our assembler code. I don't think the built in BASIC language even understood unpacking graphics...\n\nKids these days...",
+                    "score": 218,
+                    "author": "cyranix",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The calculator that got me through trig and calculus... https://imgur.com/a/mvUulVz\n\nThink it cost me around $500 around 1999, and I still couldn't code it using C.",
+                            "score": 26,
+                            "author": "cyranix",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Pffft, we used to code right on the (original, basic) TI-83 and it was a great time killer.",
+                            "score": 73,
+                            "author": "alternate_ending",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Likewise, spent the class time programming in all the functions I would need. Much more entertaining than manually doing the same thing 40 times.",
+                                    "score": 34,
+                                    "author": "Enk1ndle",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 13,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I taught my calculator trig. 3 sides (1,2 and 3) and 3 angles (A, B and C). Give me what you got and it would show you how to get the answer. It was great because it didn't just spit out the answer and I was able to show my \"work.\"",
+                                                    "score": 6,
+                                                    "author": "keyaiWork",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "And I thought I was a badass with my TI-81 back in '96 :-(",
+                    "score": 26,
+                    "author": "imatumahimatumah",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Drug Wars ftw. Cocaine is going off!",
+                            "score": 11,
+                            "author": "BroadStreet_Bully5",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ha. I played drug wars on my TI-83 Plus. Good times.",
+                                    "score": 8,
+                                    "author": "unr3a1r00t"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "2014 and it's already time for another hardware update lol",
+                    "score": 50,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "https://xkcd.com/768/",
+                            "score": 66,
+                            "author": "frizbplaya",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "LOL. TI calculators are the definition of the stonks meme",
+                                    "score": 37,
+                                    "author": "EverydayCodeNet"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You could make a simple chat application with the send() and get(), but alas, you needed a long cable.",
+                                    "score": 3,
+                                    "author": "twat_muncher"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "TI-84 CE",
+                    "score": 13,
+                    "author": "CherryDrCoke",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "TI-84 Plus CE",
+                            "score": 16,
+                            "author": "LucyLilium92"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The regular TI-84 doesn't. You have to spend like 80$ extra on top of the regular 100$ to get the different display.",
+                    "score": 3,
+                    "author": "inomshokumotsu",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Don't get cocky kid, you still have 97% infected!",
+            "score": 421,
+            "author": "i_fuckin_luv_it_mate",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;!I lost.!&lt;",
+                    "score": 436,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Fuck greenland",
+                            "score": 303,
+                            "author": "DieIsaac",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "All my homies hate greenland",
+                                    "score": 116,
+                                    "author": "thebiggest123",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "r/fuckgreenland needs to be made\nJust checked, it already has been! Check it out\nEdit: r/FuckPIgreenland",
+                                            "score": 32,
+                                            "author": "Percy-Cabin_Three",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's funny, I used to play Pandemic 2, the flash game that Plague, Inc. was based on, and Greenland was *always* the first one to be 100% killed off. Now it seems that it's one of the hardest.",
+                                    "score": 3,
+                                    "author": "IzarkKiaTarj"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Hey, you got Madagascar though, that\u2019s a mini win in itself.",
+                            "score": 14,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wait the TI84 does color now? Badass. Last time I used one was 2000... Lol",
+            "score": 676,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Forget all this fancy PC gaming. Hop back on",
+                    "score": 461,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I used to hum the Super Mario theme &amp; sound effects when I'd play on the TI-83 because, you know, calculators don't do that.",
+                            "score": 113,
+                            "author": "alternate_ending",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's an OG game, you have to get the full experience",
+                                    "score": 60,
+                                    "author": "EverydayCodeNet"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I still have my TI-83 grayscale bought in 1996. No one was as impress with the Mario clone as I was",
+                                    "score": 9,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "No, not the typical TI84. They now make a TI84 Plus CE, which is considerably more expensive",
+                    "score": 30,
+                    "author": "hollaskey",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "But also superior in every way",
+                            "score": 13,
+                            "author": "AnonGary",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The Ti-Nspire has a touch pad, full keyboard, and the additional WiFi add on",
+                    "score": 13,
+                    "author": "doc4science",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My brother has one, cause he\u2019s in ridiculously advanced math. It\u2019ll auto-solve specific equations that he has saved into it for speed/because he knows them already. It\u2019s crazy.",
+                            "score": 7,
+                            "author": "TFS_Sierra",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "CX CAS = Computer Algebra System\n\nBest thing ever. You can even jailbreak it (Ndless)",
+                                    "score": 3,
+                                    "author": "vorter",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "*Excited Greenland noises*",
+            "score": 484,
+            "author": "AllWaifusBestWaifu",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They never get Greenland...",
+                    "score": 219,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The coronavirus did",
+                            "score": 81,
+                            "author": "rzx0",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Quick google search shows \n\n14 confirmed cases\n\n14 recovered",
+                                    "score": 85,
+                                    "author": "HomieN",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Do they have like a Wakanda type barrier against pathogens or something",
+                                            "score": 33,
+                                            "author": "starkpwnsyou",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Cold island nation with little tourism or international travel hubs and good healtcare. Also very remote villages outside of the capital so it can't really spread much.",
+                                                    "score": 17,
+                                                    "author": "Erebosyeet",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "After this year I think the game should be updated so it\u2019s New Zeland",
+                    "score": 9,
+                    "author": "DangerZoneh"
+                },
+                {
+                    "level": 1,
+                    "comment": "*Angry Iceland noises*\n\nSeriously guys, we exist \ud83e\udd28",
+                    "score": 5,
+                    "author": "MrPuffin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No you dont",
+                            "score": 5,
+                            "author": "Gwerfl"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is impressive, the best we had back in the day was Drugwars.\n\nhttps://i.imgur.com/6Q4EpBf.png",
+            "score": 104,
+            "author": "TooShiftyForYou",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "All this color stuff is cool and all, but we all started off with those text games",
+                    "score": 42,
+                    "author": "EverydayCodeNet"
+                },
+                {
+                    "level": 1,
+                    "comment": "drug wars! oooh the nostalgia. one of the first times a txt only game was exciting.. well besides Artic MUD on the computador",
+                    "score": 16,
+                    "author": "MeThisGuy"
+                },
+                {
+                    "level": 1,
+                    "comment": "As someone who was never smart enough to need one of these what is the \"trenchcoat\" option?",
+                    "score": 11,
+                    "author": "jphx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Inventory",
+                            "score": 13,
+                            "author": "DragonAdam",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\u201cTrenhcoat\u201d",
+                            "score": 4,
+                            "author": "weezzi",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Now you can take down the school system without being caught or suspected. Very smart.",
+            "score": 129,
+            "author": "I-is-are-have-stupid",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Don't reveal my master plan.",
+                    "score": 77,
+                    "author": "EverydayCodeNet"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "But can you type BOOBS?",
+            "score": 196,
+            "author": "JungleLiquor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That might be too advanced for me, but I'll put it on my to-do list.",
+                    "score": 199,
+                    "author": "EverydayCodeNet",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I can even type BOOBIES!  \n(or BOOBLESS depending on who you want to offend)",
+                    "score": 24,
+                    "author": "MeThisGuy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "My friends and I used to do this little trick with a story.\n\nA woman has 9 pounds of boobs. She thinks it's 2, 2 much. So on the 9th at 6 she goes to 68th Street, where Dr. X gives her 6 operations. She ends up BOOBLESS.\n\n9229668 * 6 = 55378008",
+                            "score": 13,
+                            "author": "SpectralGnomes",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Fuckin Greenland man",
+            "score": 42,
+            "author": "Human_Number_88623"
+        },
+        {
+            "level": 0,
+            "comment": "These guys making math classes more fun than ever",
+            "score": 32,
+            "author": "Popcornflakes010",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yep. PacMan, Mario, boring. This is the new wave",
+                    "score": 20,
+                    "author": "EverydayCodeNet",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wow! I wish I still had my free award to give away.",
+            "score": 89,
+            "author": "mindisbigger",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I got you covered fellow human",
+                    "score": 47,
+                    "author": "MeatyMagnus"
+                },
+                {
+                    "level": 1,
+                    "comment": "Free award?",
+                    "score": 3,
+                    "author": "Ace_Phant0m"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Kind of off topic. I\u2019m a sophomore computer science student. I have a ti84+ calculator. This backlit screen has tempted me for so long. Is it worth upgrading?",
+            "score": 20,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Definitely. The CE is A LOT faster and you'll be able to code stuff in C and assembly. If you upgrade, please be careful though. TI removed Asm/C coding in the latest OS, and you cannot revert. I saw Staples selling one for $90, which might still have the old OS, or you could buy a slightly used one",
+                    "score": 25,
+                    "author": "EverydayCodeNet",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "At least these overpriced things still have value, with the ability to play video games on them, almost makes them worth the price",
+            "score": 58,
+            "author": "RawrRRitchie",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Uhh... Except for the fact that they removed the ability to code games like this one in the last update: https://www.theverge.com/2020/5/27/21271625/texas-instruments-programming-support-assembly-ti-84-plus-ce-t-premium",
+                    "score": 81,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wtf. So can I not play Pok\u00e9mon red anymore? Well I\u2019m not updating my calculator like ever",
+                            "score": 39,
+                            "author": "ravenpotter3",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If you update to OS 5.5/5.6, nope. The community is working on an exploit though, so stay tuned if you have.",
+                                    "score": 49,
+                                    "author": "EverydayCodeNet",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Are you active on Cemetech or CodeWalrus or any of those sites? Back in middle school (4-5 years ago) I was pretty active in them and loved programming on my calculator. I just was never very good at it, haha.",
+                                            "score": 9,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yessir. Cemetech represent. That is where I started posting my projects earlier this year. I got roasted a lot for my bad code, but I knew I would prove them wrong!",
+                                                    "score": 19,
+                                                    "author": "EverydayCodeNet"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "See you in hot",
+            "score": 17,
+            "author": "Frallex1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Bruh it happened",
+                    "score": 3,
+                    "author": "Frallex1"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/MapsWithoutTasmania",
+            "score": 14,
+            "author": "Juzzzo",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Another place that doesn't exist.",
+                    "score": 8,
+                    "author": "EverydayCodeNet"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I am a IT Project Manager with a background in software development. I would hire you just based on this project -- and I only manage Python and PHP developers, but if you can do that in C, I wouldn't be the least concerned that you could learn the needed language/framework stuff fast enough for it not to be an issue.\n\nYou have a great future ahead of you.",
+            "score": 39,
+            "author": "CrackInYourWall",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This means a lot! I need to start a LinkedIn to start making connections. I'm graduating high school this year, but I'm still wondering whether or not I should go to college for CS",
+                    "score": 19,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I haven't made the best career choices, but here's the thoughts of someone who is middle aged and has worked in the field for two decades -- without A CS degree. \n\nThings may have changed since \"back in my day\" but most CS classes taught logic and theory and some \"best practice\". \n\nIf I were you, I would see if you can see the syllabus for some of the advanced courses before committing to anything. \n\nA lot of developer jobs don't require a degree, and some of the ones that do don't require a CS degree.  *Most* companies don't give a crap if you know how to correctly write a sorting algorithm. \n\nAs long as you can prove your skill in the language they need by taking a coding test or say... coding Plague Inc on a freaking calculator, you are good to go. \n\nEvery developer job I've applied for (hired and not) wanted  some combination of code samples, review of my Github projects or sample code. Not having a CS degree was never a barrier. \n\nI'm not saying you couldn't learn anything from CS courses, far from it. Just that you might not  *need* to learn that stuff depending on what you are interested in.\n\nIf I were you, I would consider majoring in something you are interested in and maybe taking a minor in CS or Mathematics. A professor I had summed it up nicely once: \"You can teach a rocket scientist to code, but you can't teach a programmer to be a rocket scientist\". \n\nTalk to real guidance councilors and not the old man yelling at clouds on Reddit, but for what it's worth, focusing on the field you want to do coding in might not be a bad idea.",
+                            "score": 18,
+                            "author": "CrackInYourWall",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you for taking the time to respond. I definitely had that thought. A CS degree just teaches you the fundamentals, not really how to code.\n\nI was thinking of going into engineering, so I could learn more of that side of the industry, but I'm not sure if I like it because you have to work with physical resources. If this YouTube thing ever works, maybe I could take some time to reflect.\n\nThanks again!",
+                                    "score": 9,
+                                    "author": "EverydayCodeNet",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 17,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "We had to code everything from SCRATCH. We didn't even have the original game when we started programming this, so we had to rely on YouTube reviews of it.",
+                    "score": 32,
+                    "author": "EverydayCodeNet",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It's projects like this that make me wish I had an imagination. I admire your determination. I should do more about learning C. I know C# but C is a whole other kettle of tricks.",
+            "score": 16,
+            "author": "3xc0wb0y",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I would say the opposite, but maybe it's because I started with C. C# has a lot of extra stuff, but it has OOP, so that's a plus",
+                    "score": 7,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I was under the impression that C was more difficult because of the memory management etc being up to the developer, but I'm probably wrong. The beauty of C is that it's a lot more universal than C#.... Right? :)",
+                            "score": 4,
+                            "author": "3xc0wb0y",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, you can use C in lower level systems like this one. C# is great for game dev because it does a lot for you. If I weren't coding for the calc, I would either use C# or C++",
+                                    "score": 5,
+                                    "author": "EverydayCodeNet",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "r/mapswithouticeland",
+            "score": 6,
+            "author": "Radzuit",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Why u so fuckin smart",
+            "score": 5,
+            "author": "gbbrothers",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It was pain.",
+                    "score": 7,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I bet man. How long did it take?",
+                            "score": 3,
+                            "author": "gbbrothers",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I can write BOOBS on a calculator.... Soooo\ud83e\udd2a\ud83e\udd2a\ud83e\udd2a",
+            "score": 5,
+            "author": "knightus1234",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think you win this one",
+                    "score": 3,
+                    "author": "EverydayCodeNet",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Playing plague inc while outside is a plague",
+            "score": 6,
+            "author": "blackshark99"
+        },
+        {
+            "level": 0,
+            "comment": "As the calculator says, if you're supposed to be focusing in class but you're playing on your calculator, 'The world is looking grim!'",
+            "score": 4,
+            "author": "-Cagafuego-"
+        },
+        {
+            "level": 0,
+            "comment": "This is what I'm here for",
+            "score": 3,
+            "author": "N0madicaleyesed"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 4,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I love how Greenland isn\u2019t infected classic",
+            "score": 4,
+            "author": "Beanos456",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "HOLY COW I WANT TO SEE FOOTAGE",
+            "score": 4,
+            "author": "Defalt_-_"
+        },
+        {
+            "level": 0,
+            "comment": "I literally can\u2019t make myself play this game anymore for obvious reasons. But also, still fuck you Greenland.",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "That looks so cool, you guys must be so talented!",
+            "score": 3,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This was ten percent luck. Twenty percent skill. Fifteen percent concentrated power of will. Five percent pleasure. And 50 percent pain.",
+                    "score": 9,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "and 100% reason that this guy is big brain",
+                            "score": 5,
+                            "author": "atheros32"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "so is there a 100% reason to remember your name?",
+                            "score": 3,
+                            "author": "S-tuFFs"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "download link",
+            "score": 3,
+            "author": "R3D_S7RYK3R",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "https://everydaycode.net/downloads.php",
+                    "score": 3,
+                    "author": "EverydayCodeNet",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "\\*clicks tongue\\* noice\n\nthanks mate",
+                            "score": 8,
+                            "author": "R3D_S7RYK3R"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "thats amazing",
+            "score": 3,
+            "author": "RPGNUB"
+        },
+        {
+            "level": 0,
+            "comment": "Shiddd no way I\u2019m failing social economics in 2028!",
+            "score": 3,
+            "author": "cannibal-sea-urchin"
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s absolutely incredible",
+            "score": 3,
+            "author": "Tmac2019"
+        },
+        {
+            "level": 0,
+            "comment": "Can I download it? I have a TI-83 Premium so I'll show this to the boys",
+            "score": 3,
+            "author": "MapsCharts",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yep, if it's the TI-83 Premium CE. https://everydaycode.net/downloads.php. Make sure you and your friends don't update the OS to 5.5 if you don't have to!",
+                    "score": 3,
+                    "author": "EverydayCodeNet",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "F***ing Greenland",
+            "score": 3,
+            "author": "MrGaber",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Why is no one upvoting this?",
+            "score": 3,
+            "author": "FaultedToast45",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I need a ti-84 calculator,  wonder if I can mod a classic sonic game on there , maybe even the 8 bit version",
+            "score": 3,
+            "author": "Milesprowerismyson",
+            "replies": []
+        }
+    ]
+}
