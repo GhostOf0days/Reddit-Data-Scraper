@@ -175,21 +175,21 @@ def process_subreddit(subreddit):
         write_about(subreddit, about_data)
         print(f'About data for subreddit {subreddit} written to about.md')
                 
-    # top_posts = parse_top(subreddit)
-    # if top_posts:
-    #     for post in top_posts:
-    #         write_to_json(subreddit, post['id'], post)
-    #         print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
+    top_posts = parse_top(subreddit)
+    if top_posts:
+        for post in top_posts:
+            write_to_json(subreddit, post['id'], post)
+            print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
 
-    # after = ''
+    after = ''
     
-    # while True:
-    #     posts, after = parse(subreddit, after)
-    #     if not posts or after is None:
-    #         break
-    #     for post in posts:
-    #         write_to_json(subreddit, post['id'], post)
-    #         print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
+    while True:
+        posts, after = parse(subreddit, after)
+        if not posts or after is None:
+            break
+        for post in posts:
+            write_to_json(subreddit, post['id'], post)
+            print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
 
 def main():
     client = Client()  # set up local cluster
