@@ -1,0 +1,1449 @@
+{
+    "id": "692cr4",
+    "score": 12517,
+    "title": "New Google Docs phishing scam, almost undetectable",
+    "author": "JakeSteam",
+    "date": 1493837643.0,
+    "url": "https://www.reddit.com/r/google/comments/692cr4",
+    "media_urls": [],
+    "other_urls": [
+        "https://myaccount.google.com/secureaccount).",
+        "https://thenextweb.com/security/2017/05/03/massive-google-docs-phishing-attack-currently-sweeping-internet/))*",
+        "https://i.imgur.com/3NRq1yD.png)",
+        "https://i.imgur.com/r56QsM9.png)",
+        "https://i.imgur.com/HNt0yMa.png).",
+        "https://i.imgur.com/JGvHa4H.png).",
+        "https://i.imgur.com/tf02z1R.png),",
+        "https://i.imgur.com/DGSyy1L.png),",
+        "https://www.reddit.com/r/google/comments/692cr4/new_google_docs_phishing_scam_almost_undetectable/dh36pv2/)",
+        "https://myaccount.google.com/permissions)",
+        "https://pastebin.com/EKdKamFq)",
+        "https://www.reddit.com/r/google/comments/692cr4/new_google_docs_phishing_scam_almost_undetectable/dh37uz3/)"
+    ],
+    "postText": "#The scam should now be resolved, good job on the speedy resolution Google!#\n\n## Official statement:\n\n&gt; We realize people are concerned about their Google accounts, and we\u2019re now able to give a fuller explanation after further investigation. We have taken action to protect users against an email spam campaign impersonating Google Docs, which affected fewer than 0.1 percent of Gmail users. We protected users from this attack through a combination of automatic and manual actions, including removing the fake pages and applications, and pushing updates through Safe Browsing, Gmail, and other anti-abuse systems. We were able to stop the campaign within approximately one hour. While contact information was accessed and used by the campaign, our investigations show that no other data was exposed. There\u2019s no further action users need to take regarding this event; users who want to review third party apps connected to their account can visit [Google Security Checkup](https://myaccount.google.com/secureaccount). *([source](https://thenextweb.com/security/2017/05/03/massive-google-docs-phishing-attack-currently-sweeping-internet/))*\n\n---\n\nI received a phishing email today, and very nearly fell for it. I'll go through the steps here:\n\n1. I [received an email](https://i.imgur.com/3NRq1yD.png) that a Google Doc had been shared with me. Looked reasonably legit, and I recognized the sender.\n2. The [button's URL](https://i.imgur.com/r56QsM9.png) was somewhat suspicious, but still reasonably Google based.\n3. I then got taken to [a *real* Google account selection screen](https://i.imgur.com/HNt0yMa.png). It already knew about my 4 accounts, so it's really signing me into Google.\n4. Upon selecting an account, no password was needed, I just needed to [allow \"Google Docs\" to access my account](https://i.imgur.com/JGvHa4H.png).\n5. If I click \"Google Docs\", it shows me it's *actually* published by [a random gmail account](https://i.imgur.com/tf02z1R.png), so that user would receive full access to my emails (and could presumably therefore perform password resets etc).\n6. Shortly afterwards I received [a followup real email from my contact] (https://i.imgur.com/DGSyy1L.png), informing me: \"Delete this is a spam email that spreads to your contacts.\"\n\nTo summarise, this spam email:\n\n* Uses the existing Google login system\n* Uses the name \"Google Docs\"\n* Is only detectable as fake if you happen to click \"Google Docs\" whilst granting permission\n* Replicates itself by sending itself to all your contacts\n* Bypasses any 2 factor authentication / login alerts\n* Will send scam emails to everyone you have ever emailed\n\nGoogle are [investigating this](https://www.reddit.com/r/google/comments/692cr4/new_google_docs_phishing_scam_almost_undetectable/dh36pv2/) as we speak.\n\n---\n\n#FAQ\n\n## How do I know if I've been affected?\n\nIf you clicked \"Allow\", you've been hit. If you didn't click the link, closed the tab first, or pressed deny, you're okay! The app may have removed itself from your account, and may have deleted the sent emails.\n\n## What do I do if I've been affected?\n\n1. [Revoke access to \"Google Docs\"](https://myaccount.google.com/permissions) immediately. It may now have a name ending in `apps.googleusercontent.com` since Google removed it. The real one doesn't need access.\n2. Try and see if your account has sent any spam emails, and send a followup email linking to this post / with your own advice if so.\n3. Inform whoever sent you the email about the spam emails, and that their account is compromised.\n\n## What are the effects?\n\nAll emails have been accessed, and the spam forwarded to all of your contacts. This means they could have all been extracted for reading later. Additionally, password reset emails could have been sent for other services using the infected email address.\n\n[This](https://pastebin.com/EKdKamFq) *may* be the payload, so it *may* just self replicate, and not do anything nastier. This is not at all confirmed, however, so assume the worst until an official Google statement.\n\n## I'm a G Suite sysadmin, what do I do?\n\n*The following steps [by/u/banden](https://www.reddit.com/r/google/comments/692cr4/new_google_docs_phishing_scam_almost_undetectable/dh37uz3/) may help, but I can't verify they'll prevent it.*\n\n1. Block messages containing the hhhhhhhhhhhhhhhh@mailinator.com address from inbound and outbound mail gateway/spamav service.\n\n2. Locate Accounts in Google Admin console and revoke access to Google Doc app. It may now have a name ending in `apps.googleusercontent.com` since Google removed it. \n",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Googler here -- I'm escalating to the correct engineering and product teams now.\n\nEdit: This is now resolved. Less than a half-hour after escalation, wow! =). Here's the official Google statement:\n\n&gt; We have taken action to protect users against an email impersonating Google Docs, and have disabled offending accounts,\u201d the company said in a statement. \u201cWe\u2019ve removed the fake pages, pushed updates through Safe Browsing, and our abuse team is working to prevent this kind of spoofing from happening again. We encourage users to report phishing emails in Gmail.\n",
+            "score": 5844,
+            "author": "the_mighty_skeetadon",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Official response from the eng manager in charge of this stuff: \"yes, I am on it\" =). I'd bet it will be fixed and fully rolled out in a few hours or less.\n\nFinal edit: problem is resolved. I clicked the link and got an \"oauth client disabled\" message. Not pretty, but at least you won't get phished.",
+                    "score": 1661,
+                    "author": "the_mighty_skeetadon",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is such an impressive turnaround time for a problem, but I'm not surprised at all that Google can pull off such a quick fix. Bravo.",
+                            "score": 724,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Final edit: problem is resolved. I clicked the link and got an \"oauth client disabled\" message. Not pretty, but at least you won't get phished.\n\nThat's because all they did was revoke the developer account the attacker was using, they didn't actually fix anything according to this post.",
+                                    "score": 449,
+                                    "author": "snowman4415",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Which makes me wonder? Fundamentally, is this issue really resolved? So far it looks like just this phisher was shut down.",
+                                            "score": 189,
+                                            "author": "enigmamonkey",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt; So far it looks like just this phisher was shut down.\n\nThat is 100% correct. There is actually no bug, it was just a clever way of using functionality that already exists (ie: the same permissions that gmail plugins use). All they did so far was revoke the attacker's account that attained the permissions.",
+                                                    "score": 305,
+                                                    "author": "snowman4415",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I don't know, I think I'd definitely call \"random scammer is allowed to use the name \"Google Docs\" as the name of their application in an OAuth prompt\" a bug of some form.",
+                                                            "score": 208,
+                                                            "author": "Ajedi32",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Not really. That's like Apple blocking the name \"Apple\" in the app store. It's not a bug but a policy decision. The attacker could then use \"Apple.\" or \"Apple - Settings\" or \"Apple - Account\" or \"Apple - User\". \n\nI hate to say it but if you are not technology savvy enough to figure out that was a phishing attack then you aren't savvy enough to know the difference between all the different combinations of names the attacker could use with the word \"Apple\" in them. Trying to block them all would be a logistical nightmare. That said, there are definetly ways to minimize attack vectors but no solid engineering answer.\n\nEdit: The 'To' address in the email was \"hhhhhhhhhhhhhhhh@mailinator.com\" and if you got the email you were BCC'ed. A dead giveaway and actually fairly poor execution by the attacker.",
+                                                                    "score": 167,
+                                                                    "author": "snowman4415",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "That's why you don't let the attacker choose the name of their application in the OAuth prompt at all. Use the domain name of the application you're authorizing, or something else that can't be spoofed.\n\nDisplaying a prompt [like this](https://i.imgur.com/JGvHa4H.png) which implies that the name the untrusted application is identifying itself as is in any way trustworthy is a really bad idea.",
+                                                                            "score": 136,
+                                                                            "author": "Ajedi32",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I feel like adding \"This application was not made by Google\" would achieve the same thing while not blocking false positives.",
+                                                                                    "score": 141,
+                                                                                    "author": "amlybon",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "So who ever created the OAuth spec didn't think of this scenario?   \n\nThey didn't think about some sort of trust/reputation/approval system for what application name is allowed to be presented.\n\nI'm assuming \"Google Docs\" was the 3rd party application name, but when I ran a quick test in the Google API playground, it just shows some arbitrary name.   When I clicked on that arbitrary name, it displayed the popup saying\n\n&gt; Developer info\n&gt; Email: ...email value...\n&gt; Clicking \"Allow\" will redirect you to: ...website address....\n\nSo there's no definition of what the \"Google Docs\" string is.   And you only get an email and website to see who owns this undefined entity.   Here's a screen shot of the actual attack (hacking) application owner email and website:\n\nhttps://arstechnica.com/security/2017/05/dont-trust-oauth-why-the-google-docs-worm-was-so-convincing/\n\nI would expect that if Google is handing out authentication permissions for indirect access to it's applications (with application customer ack/approval), there would be some vetting process for the application.  Guess not.\n\nThat's an architecture flaw.\n\n[edited a few times to make my point clearer]",
+                                                                                    "score": 11,
+                                                                                    "author": "bslade",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "That might help, but it will also be a headache for people who want to access legit applications. Domains names are helpful but not the end all solution. Domain names can also be spoofed fairly easily, ie: accounts.google.com.xyxyx.io",
+                                                                                    "score": 17,
+                                                                                    "author": "snowman4415",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I don't see much reason not to block any nonofficial apps from using the word \"Google\". Fixes the issue more permanently, very easy to implement, hardly any downsides. \n",
+                                                                            "score": 31,
+                                                                            "author": "rasmustrew",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "That'd help somewhat, but it wouldn't stop scammers from using names like \"Microsoft OneDrive\" or \"Bank of America\" or unicode variations of the word Google such as: \"G\u03bf\u03bf\u0261le Docs\".",
+                                                                                    "score": 30,
+                                                                                    "author": "Ajedi32",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "They could easily improve the UI to differentiate between 3rd party developer app and official app permissions. In that particular dialog they could add e.g. a text \"a 3rd party application wants to..\" and use a layout which displays this text prominently.",
+                                                                            "score": 21,
+                                                                            "author": "nawitus",
+                                                                            "replies": []
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[deleted]",
+                                                                            "score": 16,
+                                                                            "author": "[deleted]",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "How about \"Google - Docs\" or \"Google Documents\"? The point is any regex solution is not a real solution, only a roadblock. ",
+                                                                                    "score": 32,
+                                                                                    "author": "snowman4415",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Okay, so this _specific_ scam was stopped, but what's to prevent the exact same thing from happening again in the future?\n\nIn particular, why are OAuth clients seemingly allowed to identify themselves to users with any name they want? It seems like it should definitely not be possible for an OAuth prompt asking users to grant some permissions to \"Google Docs\" to grant those permissions to some random scammer instead when the user clicks \"Allow\". At the very least that \"Developer Info\" shouldn't be hidden behind an extra click.\n\nAre there any plans to address this in future updates to Google's OAuth system?\n\nEdit: According to [this comment](https://www.reddit.com/r/google/comments/692cr4/new_google_docs_phishing_scam_almost_undetectable/dh39k3u/) by /u/the_mighty_skeetadon it is indeed very likely that _something_ will be done to prevent this from happening in the future.",
+                            "score": 90,
+                            "author": "Ajedi32",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Following up for ya. Here's the PR blurb:\n\n&gt; We have taken action to protect users against an email impersonating Google Docs, and have disabled offending accounts,\u201d the company said in a statement. \u201cWe\u2019ve removed the fake pages, pushed updates through Safe Browsing, and our abuse team is working to prevent this kind of spoofing from happening again. We encourage users to report phishing emails in Gmail.\n\nHere's a [Verge article](https://www.theverge.com/2017/5/3/15534768/google-docs-phishing-attack-share-this-document-with-you-spam) that's taken from. Enjoy!",
+                                    "score": 55,
+                                    "author": "the_mighty_skeetadon",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If your interested in how most IT shops address this type of thing look into ITIL processes.  Once the event was identified an Incident ticket would be opened to track impact and mitigation steps. Once the impact was mitigated the incident is resolved and a problem ticket is opened. The problem ticket is used to track root cause analysis and corrective actions. Once the corrective actions are implemented (the work being tracked by Change records) the problem, the vulnerability exploited, will be considered permanently resolved. ",
+                                    "score": 14,
+                                    "author": "Occams_Shotgun",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "As much as it pains me to admit, were it not for that Eng Manager, I would have been phished. If he ever finds himself in the Nova or Portland, Or areas. He's got a drink on me.",
+                            "score": 25,
+                            "author": "Warbringer24",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ha! Glad you enjoyed her response time =)",
+                                    "score": 41,
+                                    "author": "the_mighty_skeetadon",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "And now I'm embarrassed because I shouldn't have assumed it was a dude. lol Either way, the offer still stands for her.",
+                                            "score": 39,
+                                            "author": "Warbringer24",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No worries =)",
+                                                    "score": 16,
+                                                    "author": "the_mighty_skeetadon"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "That casual reveal though",
+                                            "score": 23,
+                                            "author": "TractionCity",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Are you assuming my casualness?",
+                                                    "score": 50,
+                                                    "author": "the_mighty_skeetadon",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "A responsible, responsive Googler AND on top of current memes.\n\nDamn son.",
+                                                            "score": 15,
+                                                            "author": "g0dfather93",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Is this the part where I post the Dam Son kid to disprove you?",
+                                                                    "score": 7,
+                                                                    "author": "the_mighty_skeetadon",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "An hour?\n\nEDIT: 30 min? ",
+                            "score": 40,
+                            "author": "Warsong66",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That is not a lot of time when you actually have to investigate and fix something",
+                                    "score": 86,
+                                    "author": "ludolfina",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "And check you're not breaking anything else.",
+                                            "score": 66,
+                                            "author": "RRyles",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "And roll it out worldwide, making sure nothing else depends on your change.",
+                                                    "score": 71,
+                                                    "author": "the_mighty_skeetadon",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "and have a nap http://www.geek.com/gadgets/google-uses-high-tech-nap-pods-to-keep-employees-energized-1264430/ ",
+                                                            "score": 32,
+                                                            "author": "HollowImage",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I have one of those not 50 feet from my desk. They're *ok* -- get a little hot in that sphere thingy.",
+                                                                    "score": 29,
+                                                                    "author": "the_mighty_skeetadon",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "ha, my bed is like 5 feet away from me :D perks of working from home.\n\nbut yeah. good naps are hard to engineer. everything has to be perfect, otherwise it wont sit quite right",
+                                                                            "score": 12,
+                                                                            "author": "HollowImage",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Is anyone else impressed that GOOG lets its employees hang out on reddit in the name of \"work\"? No? OK then.\n\n(Kudos to u/the_mighty_skeetadon _et al._ for the speedy resolution of this problem.)",
+                                                                                    "score": 14,
+                                                                                    "author": "jalabi99",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "All they had to do was disable the OAuth token the scammers were using?",
+                                                            "score": 11,
+                                                            "author": "vthallam",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Seems like that's the quickest way to stop people from getting phished. I'd imagine they have more in-depth remediation planned.",
+                                                                    "score": 12,
+                                                                    "author": "the_mighty_skeetadon"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Pretty obvious that there is a 3rd party app called \"Google Docs\" on their stuff....",
+                                                            "score": 6,
+                                                            "author": "hypercube33",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Speaking as a dev, if they rolled this out in 30 minutes, they didn't check if it broke anything else. That's perfectly fine if it was a very limited, very specific change. ",
+                                                    "score": 20,
+                                                    "author": "asleepatthewhee1",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Agreed. I suspect they just stopped that specific app from accessing any APIs. That's a very limited and specific change. It's not the end of the story though. They'll need to find a more general fix and I'd expect that to take a fair bit longer.\n\nI'm a dev who works on function safety systems. I just spent 3 hours in a meeting to review the 14 requirements for one part of a project. Occasionally I write some code!",
+                                                            "score": 14,
+                                                            "author": "RRyles"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "lol - so its like when you are at the office and trying to fix something with people standing over your shoulder... magnified to the power of 100000??",
+                                            "score": 16,
+                                            "author": "oil_lio"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Crazy response time! I work IT for a state court system and we just got a ton of emails and calls about it. People were way too trusting, because a lot clicked on it since it was from people they knew. But didn't fill out any of the information. The calls and emails are just now starting to slow down. ",
+                            "score": 8,
+                            "author": "reformedmikey",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This scam went through my office and now IT is sending screen caps of Reddit articles, so I have even more of an excuse to use reddit at work. ",
+                    "score": 93,
+                    "author": "DJFrownyFace",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Can you please tell your office the author of the screenshotted post says hi? ",
+                            "score": 49,
+                            "author": "JakeSteam"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Looks like the service is now down - https://www.google.com/appsstatus\n\nThanks for doing your part!\n\nedit: removed language modifier from link",
+                    "score": 40,
+                    "author": "ignat980",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "IS THAT LINK SAFE???",
+                            "score": 30,
+                            "author": "YouDontSayBro",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "IS IT SECRET???",
+                                    "score": 11,
+                                    "author": "Lord_Blathoxi",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "good, now throw it into the fire",
+                                            "score": 14,
+                                            "author": "HollowImage"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yes",
+                                    "score": 11,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You / this thread are now the best source of information on this. Thank you for escalating to Engineering! Please ask your PR / Comms team to post a statement here as well? I think I am affected... https://twitter.com/bsniz/status/859852379709206529",
+                    "score": 72,
+                    "author": "bsniz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Good idea, I'll loop in identity PR.\n\nEdit: Here's the PR blurb:\n\n&gt; We have taken action to protect users against an email impersonating Google Docs, and have disabled offending accounts,\u201d the company said in a statement. \u201cWe\u2019ve removed the fake pages, pushed updates through Safe Browsing, and our abuse team is working to prevent this kind of spoofing from happening again. We encourage users to report phishing emails in Gmail.\n\nHere's a [Verge article](https://www.theverge.com/2017/5/3/15534768/google-docs-phishing-attack-share-this-document-with-you-spam) that's taken from. Enjoy!",
+                            "score": 30,
+                            "author": "the_mighty_skeetadon"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Looks suspicious. I think the real one says \"Google drive\" and doesn't need such specific permissions.",
+                            "score": 11,
+                            "author": "mDarken"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The real app is called \"Google Drive\" and likely wouldn't have been added today if you were using sheets/docs/etc. before today. \n\nLooking over my permissions page, the real \"Google Drive\" app has access to Google Drive, Hangouts, and some additional access (names/email addresses of contacts), and was added a year ago. It doesn't touch Gmail at all. I'd revoke the one in your tweet immediately.",
+                            "score": 9,
+                            "author": "Mitochondriagon"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How do you tell if any app that already has access is legit? Why can't I see a URL where it originated from, or some sort of identifying information beyond the arbitrary name/icon?",
+                            "score": 6,
+                            "author": "relaxing",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That is a really good point that needs to be raised with Google so this doesn't happen again. ",
+                                    "score": 6,
+                                    "author": "bsniz"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just a thought; maybe it's worth getting a \"Verified\" tag for official Google apps when they ask for permissions, in order to avoid phishing techniques like this? It could even be opened up to popular services, so people can avoid being phished on those, too - though that's obviously more work, since Google would have to approve those verifications.\n\nThough I'm not sure what the best way to mark fakes would be, permission requests pop up pretty rarely, and they rarely visit the app permissions page, so it's not like people would learn to keep an eye out for the verified tag like they do on Twitter - Maybe an infobox on the permissions page/popup to tell people to look out for the verified tag?",
+                    "score": 23,
+                    "author": "Rohaq",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I agree that's a decent approach. Even better would be some sort of review pipeline that ensures your app isn't mishandling sensitive data (like email). Most of the apps you link your Google account to aren't Google apps. What if this came as a \"Facebook Messenger\" invite instead, but was otherwise identical? There needs to be a more generic solution.",
+                            "score": 16,
+                            "author": "the_mighty_skeetadon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'd suggest something along the lines of this:\n\nhttp://i.imgur.com/HHC6HEm.png\n\nStick something similar on the initial Permissions Request page too. It won't always work of course, but hopefully it'll cause a good number of people to stop in their tracks and reconsider before hitting Allow, and at the very least increase the number of malicious apps submitted for review and get them out of circulation that much faster.",
+                                    "score": 16,
+                                    "author": "Rohaq",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I fell for it. I'm an idiot.",
+                    "score": 39,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So many people fell for it that before Google/Cloudflare was able to kill it, the malicious server was pretty much offline from traffic. It was taking up to 90s to respond before finally dying. I wouldn't be too hard on yourself, it was pretty well done",
+                            "score": 47,
+                            "author": "1esproc",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Everyone is, don't worry! It looks like the quick response time hopefully means this will have no real effect beyond essentially useless spam email and degradation of trust in Google =(",
+                            "score": 20,
+                            "author": "the_mighty_skeetadon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Any chance, though, that everyone's emails have already been downloaded and saved elsewhere?",
+                                    "score": 23,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Theoretically possible.",
+                                            "score": 6,
+                                            "author": "zulln"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Will there be a proper analysis on what was accessed? Only mailboxes and contacts or files too?",
+                                    "score": 7,
+                                    "author": "ulab",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I sure hope so.  Someone posted the source code in this thread, and I haven't looked it over fully yet, but it seems like it *only* gets your contacts and sends spam.  I didn't see anything that looked like it downloaded e-mail or saved anything.",
+                                            "score": 6,
+                                            "author": "Synaxxis",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The *unverified* source code. ",
+                                                    "score": 17,
+                                                    "author": "JakeSteam"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "god damn, this seems pretty serious",
+                    "score": 16,
+                    "author": "lodvib"
+                },
+                {
+                    "level": 1,
+                    "comment": "Did you just ban the app, was something put into place to prevent this from happening again?",
+                    "score": 17,
+                    "author": "DoodleFungus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "When something big like this happens, we have a big incident management system and do mandatory post-mortems. So there will surely be something to try to stop this in the future, but that will take longer than 30 mins =). \n\nOh, and I'll probably never see it or know about it, since I don't work in Identity.",
+                            "score": 51,
+                            "author": "the_mighty_skeetadon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "will you notify those affected? I have a very partial list",
+                                    "score": 7,
+                                    "author": "negatorysuppository",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I have no idea! That'll probably be part of the postmortem and remediation plan, all of which I'd imagine will be figured out in the next 24-48 hrs.",
+                                            "score": 8,
+                                            "author": "the_mighty_skeetadon"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 17,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "my favorite part is that they tracked all of this with google analytics",
+                            "score": 14,
+                            "author": "GeckoLogic",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Looks like some script kiddie wrote it from stackoverflow snippets",
+                            "score": 11,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "lol, I love that the author included a Google Analytics web property ID",
+                            "score": 11,
+                            "author": "Drunken_Economist",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Neat, thanks. Simple. ",
+                            "score": 5,
+                            "author": "the_mighty_skeetadon"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just found out about this at lunch with 20 other Googlers",
+                    "score": 31,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Looks like you guys got it fixed. Gave a 401 error when I tried it (on purpose) on a controlled account. Good job guys.",
+                    "score": 14,
+                    "author": "0spore13",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yep! &lt;30 minutes from report to fix. Not too bad!",
+                            "score": 9,
+                            "author": "the_mighty_skeetadon",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's amazing how fast something like that can spread though. It's such a small world.",
+                                    "score": 5,
+                                    "author": "Lord_Blathoxi",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Totally agree. I got one literally WHILE chatting with the lead PM responsible.",
+                                            "score": 7,
+                                            "author": "the_mighty_skeetadon"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Google has people? Seems whenever I try to speak to a person with a unique issue, I just get forwarded to FAQs and the problem never gets resolved ",
+                    "score": 11,
+                    "author": "garrypig",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "WE ARE ALL FLESH HUMAN TYPES, WITH ONLY 0.0000023 PROBABILITY THAT WE ARE ROBOTS.\n",
+                            "score": 20,
+                            "author": "the_mighty_skeetadon",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I bet this whole thing is just a sofsticated ad for mailinator.com",
+                    "score": 8,
+                    "author": "Freetoad",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Just to be clear here, the root of the problem was the ability for someone to make a web app that authenticates with a Google account and a name pretending to be a legit Google service. Does the resolution entail preventing third-party apps from naming themselves to be confusable with a Google service? I find myself rather sceptical that could be done so quickly, mostly because it's more of a UX design flaw than a software bug.",
+                    "score": 4,
+                    "author": "mb862",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you go to mailinator.com, the receiver of the fake links, and type in \"hhhhhhhhhhhhhhhh\" you can see all the emails it's hacking.",
+            "score": 429,
+            "author": "Jaxter9877",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Doesn't seem to be anything in there, although since it's a public inbox it might just be being deleted.",
+                    "score": 116,
+                    "author": "JakeSteam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 77,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yea it was working a few minutes ago but it nothing is showing up anymore",
+                            "score": 23,
+                            "author": "Jaxter9877",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It looks like they are cleaning up after themselves every so often.  Just saw a few more messages accumulate before they disappeared.",
+                                    "score": 21,
+                                    "author": "dgroseph",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "there was just an email sent to it that had this as a message 01001111 01001000 00100000 01001110 01001111 00100000 01011001 01001111 01010101 00100000 01001000 01000001 01010110 01000101 00100000 01000010 01000101 01000101 01001110 00100000 01001000 01000001 01000011 01001011 01000101 01000100 00100000 01000010 01011001 00100000 01001100 01000101 01000101 01010100 00100000 01001000 01000001 01011000 00110000 01010010 which is OH NO YOU HAVE BEEN HACKED BY LEET HAX0R",
+                    "score": 84,
+                    "author": "wikitiki33",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh noez! It must have been the hacker 4chan!",
+                            "score": 38,
+                            "author": "MyWifeDontKnowItsMe",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I did this. It's really fun to watch honestly. Just emails about \"Hey that's mean tell me who you are\" and also random stuff like \"suckit\"",
+                    "score": 41,
+                    "author": "AyeAyeLtd",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; also random stuff like \"suckit\"\n\nThat's a Redditor, no doubt.",
+                            "score": 19,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I was just hit by this, and stupidly opened it because it looked like it was from a very trusted source that I was actually expecting a document from.  Do you know of any way to make sure im no longer still giving accesss to them?",
+            "score": 214,
+            "author": "dillrye",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey,\n\nYeah, I had the same situation, I've shared documents back and forth with the user before. You can revoke the nasty app's access [here](https://myaccount.google.com/security#connectedapps), but the spam has most likely already been sent.",
+                    "score": 140,
+                    "author": "JakeSteam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes! Do that! It will appear as \"Google Docs\". Remove it! The real Google Docs always has access to your account so that is the fake one. remove it!",
+                            "score": 65,
+                            "author": "credomane",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is really helpful! I backed out at the last second, just in time, but I have some other people to inform and this helps a lot. Thank you!",
+                                    "score": 17,
+                                    "author": "feeniksina",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I also backed out at the last second and it didn't add anything to my connected apps. Changed my password and added 2 step to be extra safe.\n",
+                                            "score": 7,
+                                            "author": "Tails94",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "the spam message will still be in your sent mail, so you can see who it was sent to and forward them this info:\n\n&gt;If you've already followed one of these links and signed in with your Google credentials, please change your password and also make sure you remove the fake \"Google Docs\" app from your account. Click here (https://myaccount.google.com/security?pli=1#connectedapps), select \"Manage Apps,\" click on any entries called \"Google Docs\" (the _actual_ Google Docs won't require access in this way), and click the Remove button.",
+                            "score": 13,
+                            "author": "sup3rmark",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't see any sent mail. Does that mean it wasn't forwarded to my contacts? ",
+                                    "score": 7,
+                                    "author": "LisaLies",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Same here. This just happened to me, and I sort of autopilot clicked allow as I was skimming the message (because it was from a friend I trust), but then I saw the permissions it was asking for and had second thoughts. As it was still loading, I closed the tab and went into google security and revoked access. I see no spam messages in sent mail. Checked the trash too for good measure, and nothing in there either.",
+                                            "score": 7,
+                                            "author": "EasyVibeTribe",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Same here friend, as a part of my job I get loads of documents and the links were all legit (e.g. secure, https:// and starting with google.com). Scary stuff. I backed out at the last second with a weird feeling but don't feel stupid, this is a really slick phish.",
+                    "score": 32,
+                    "author": "feeniksina",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ditto; only thing that tweaked my suspicion was the hhhhhhhh and the fact I was bcc'd from a person who wouldn't normally do that.",
+                            "score": 8,
+                            "author": "craigo81",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I got the email from HR at a company I applied to several months ago, it seemed suspicious so I opened it in a VM just in case. Turns out my gut instinct works... ",
+                            "score": 10,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If you opened it in a VM using your real google account, you're no better off unfortunately. ",
+                                    "score": 46,
+                                    "author": "JakeSteam",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I just copied the button link into the VM where no accounts are signed in. Nothing suspicious is showing up connected to any of my Google accounts.",
+                                            "score": 13,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Go to https://myaccount.google.com/permissions (this is not a phishing link I promise :D) and revoke \"Google Docs\" - real Google Docs doesn't need your permission, this is the \"app\" that you gave permission to through the process OP dictated. Also, as always, changing password is recommended.",
+                    "score": 11,
+                    "author": "expensiveramen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I changed my password immediately and followed these instructions but Google Docs does not show up in my approved apps.\n\nI think I am still sending it out because I am getting message delivery failures.",
+                            "score": 7,
+                            "author": "tizod",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Google likely has already removed the app. Depending on the number of contacts and their mail system, you will likely get bounce backs for a while.",
+                                    "score": 7,
+                                    "author": "WhyCantIHaveThatName"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Go to your account security and review the apps and remove the one installed. ",
+                    "score": 6,
+                    "author": "bkbruiser",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "My wife and a client both contacted me within an hour of each other with this issue. Thankfully, my wife knew enough to ask and not click it. My client, not so much, and it got forwarded on to their entire email list.",
+            "score": 78,
+            "author": "Trayf",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm not at all surprised. I've been on the internet a long, long time, and this is the best one I've ever seen. Amazed Google allows third parties to use \"Google\" in the name.\n\nAdditionally, it skips 2 factor authentication and login alerts, so it's far, far worse than a normal phish.",
+                    "score": 108,
+                    "author": "JakeSteam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Using Google in the name or not. I can't believe something like this hasn't happened before now. This is a clear cut case of why I have a great dislike for oauth. For end-users oAuth is an easy-peasy click-through giving the requesting app access to everything.",
+                            "score": 51,
+                            "author": "credomane",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I agree. Assuming they didn't do anything too clever to get the name, it could easily just be a few lines of code. \n\nAlso, considering the extension creator's email is in the format first.last@gmail.com, it's possible it was a proof of concept that accidentally got loose.",
+                                    "score": 25,
+                                    "author": "JakeSteam",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I've seen five different websites so far in the details section [\"Google Docs\"](https://i.imgur.com/tf02z1R.png). So I doubt it is just a proof-of-concept anymore.",
+                                            "score": 9,
+                                            "author": "credomane",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That's the one I got too. Depends, that could just be a Google Cloud CDN spreading the load, and not under the attacker's control.",
+                                                    "score": 10,
+                                                    "author": "JakeSteam",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That *is* your image. I borrowed it to show you the screen I was talking about. :)",
+                                                            "score": 14,
+                                                            "author": "credomane",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "... oops.",
+                                                                    "score": 12,
+                                                                    "author": "JakeSteam"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I'd rather it be oauth and revokable than user-password and they have that from me. For less technical users that might mean they get every account you've ever logged in on.",
+                                    "score": 14,
+                                    "author": "seiyria",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I fully agree with you there but Oauth is way too easy of a blind click-through as it is now. Hopefully this triggers google/facebook/whoever-else to modify their oauth page so it isn't so easy to click through blindly. This thing is a nightmare and will only become worse now that *everyone* knows you can do this.",
+                                            "score": 6,
+                                            "author": "credomane",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "As far as I know something like this has happened before but it was more of a phishing attack targeted towards high-profile individuals in certain political institutions. They even named it Google Defender!\n\nHere is the link BTW: http://www.pcworld.com/article/3192484/security/russian-hackers-use-oauth-fake-google-apps-to-phish-users.html",
+                                    "score": 6,
+                                    "author": "BlueHairedMonk",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah, I've never seen anything like this. My wife just also got it on her work email. ",
+                            "score": 6,
+                            "author": "Trayf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is the process these scammers are using:\n\nThe spammed link points to the Google accounts login, which upon login completion will redirect to a custom url they embedded in the spammed link.\n\nI'll modify all links to use hxxp for safety purposes.\n\nHere's the only link I received so far today from these scammers:\n\nhxxps://accounts.google.com/o/oauth2/auth?client_id=1024674817942-fstip2shineo1lsego38uvsg8n2d3421.apps.googleusercontent.com&amp;scope=hxxps%3A%2F%2Fmail.google.com%2F+hxxps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts&amp;immediate=false&amp;include_granted_scopes=true&amp;response_type=token&amp;redirect_uri=hxxps%3A%2F%2Fgoogledocs.g-docs.pro%2Fg.php&amp;customparam=customparam\n\n---\n\nSplit that up:\n\nhxxps://accounts.google.com/o/oauth2/auth?client_id=1024674817942-fstip2shineo1lsego38uvsg8n2d3421.apps.googleusercontent.com&amp;scope=hxxps%3A%2F%2Fmail.google.com%2F+hxxps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcontacts&amp;immediate=false&amp;include_granted_scopes=true&amp;response_type=token\n\n&amp;redirect_uri=hxxps%3A%2F%2Fgoogledocs.g-docs.pro%2Fg.php\n\n&amp;customparam=customparam\n\n---\n\nde-obfuscate:\n\nredirect_uri=hxxps://googledocs.g-docs.pro/g.php\n\nSo the actual url they're throwing you to is:\n\ngoogledocs.g-docs.pro\n\nBut only after throwing you through Google's login page, which makes it *appear* that it's actually all hosted by Google, which it ultimately is not.\n\nThat domain is down now but was hosted via Cloudflare, who are usually terrible at shutting down phishing sites on their hosting and CDN systems.\n\n[edit: formatting - whoops!]",
+            "score": 64,
+            "author": "adamdee1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They're definitely using more than one domain, I've seen 3-4 in this thread / PMs alone. This looks pretty professional, so wouldn't be surprised if they're putting them behind different CDNs.",
+                    "score": 22,
+                    "author": "JakeSteam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh I guarantee they are. This is not at all a small-scale attack.",
+                            "score": 8,
+                            "author": "adamdee1"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Here are a few of the other ones I've seen:  \ngoogledocs.gdocs.download  \ngoogledocs.docscloud.download  \ngoogledocs.gdocs.pro\n",
+                            "score": 5,
+                            "author": "mistakeknot"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; So the actual url they're throwing you to is:\n&gt; googledocs.g-docs.pro\n\nI'm pretty sure, since that is in the `redirect_uri` param, that it's just the URL google sends you to after having gone through the oauth process. It's the oauth process that gives this program access to your email account, not simply visiting `googledocs.g-docs.pro` at the end.\n\n&gt; But only after throwing you through Google's login page, which makes it appear that it's actually all hosted by Google, which it ultimately is not.\n\nI believe the problem is precisely because it *really* is being done by google to your account that makes it a problem. You're *really* using Google's oauth system to give access to your email account to a third-party calling itself \"Google docs\".\n\n&gt; That domain is down now but was hosted via Cloudflare, who are usually terrible at shutting down phishing sites on their hosting and CDN systems.\n\nJust shutting down that domain name likely won't help. I'm guessing it's just that:\n\n    client_id=1024674817942-fstip2shineo1lsego38uvsg8n2d3421.apps.googleusercontent.com\n\nHas their \"name\" set to \"Google Docs\". And apparently Google just shows you the name when asking to grant access to third-parties and doesn't do any sort of verification of that name. Google just needs to shut down this developer account (I think someone said they already did) and fix they way the third-party name is presented to the user.\n\nEdit: Based on some pastebins posted in the comments it looks like visiting that page *after having already granted oauth access* triggers the code that then sends out emails from your account to others to get them to do the same thing. So disabling those domains will help stop it from spreading, but the author already has access to your email account by then and could do whatever they wanted (had Google not shut down that developer ID) including sending out email from your account another way.",
+                    "score": 15,
+                    "author": "HowIsntBabbyFormed",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 117,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "A bit infuriating that Google dismissed Cantino's bug report 3 years ago and hasn't addressed the issue since.\n(edit): Until it was too late, that is",
+                    "score": 35,
+                    "author": "FutureNickProblems"
+                },
+                {
+                    "level": 1,
+                    "comment": "Google's response to Cantino is mind blowing:\n\n&gt; The team will take this suggestion into consideration, but per our discussion with them, this is currently working as designed and is not a technical vulnerability\n\nIe., \"it's not a code bug\".   It betrays the \"genius coders rule the world\" mentality at Google.  The human factors design questions get short shrift.\n\n",
+                    "score": 19,
+                    "author": "bslade",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "**NEW UPDATE: APP APPEARS TO DELETE ITSELF AFTER IT HAS EMAILED ALL YOUR CONTACTS**\n\nHey sysadmin here, we are getting users hit with this but can't find the \"Google Docs\" application in Sign-in &amp; Security, but it is still sending spam emails. Anyone else running into this?",
+            "score": 113,
+            "author": "Zaskeu",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It should appear in here: https://myaccount.google.com/security#connectedapps",
+                    "score": 28,
+                    "author": "xblackdemonx",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Sysadmin here too, I'm not seeing a \"Google Docs\" app listed anywhere (connected apps nor permissions pages.)\n\nAnywhere else this thing might be hiding? I'm not seeing the emails it sent out in my Sent folder either, but I know it sent out emails because I got some bouncebacks.",
+                    "score": 18,
+                    "author": "snthennumbers",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The app deletes itself when it emails everyone in your contacts. Change your passwords!",
+                            "score": 15,
+                            "author": "Zaskeu",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Roger that, thanks for clarifying. Password already changed. That's what I get for sacrificing my PC and accounts to make sure my users' emails are legit...",
+                                    "score": 8,
+                                    "author": "snthennumbers",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Received about 90 of these spoofing various clients of ours in the last half-hour or so. Already told my boss not to open any of them but she's clicked on that link perhaps 20 times already. Sigh.",
+            "score": 54,
+            "author": "AnimalPragmatism",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow at this point I'm wondering if this isn't a real virus, but some kind of experimental research from hacking organisations.\n\nThis shit is exploding exponentially like a real biological virus. If Skynet ever wanted the email of every Google account in existence, this comes pretty close",
+                    "score": 15,
+                    "author": "H4xolotl"
+                },
+                {
+                    "level": 1,
+                    "comment": "It hit both my school and my work. I immediately knew something was up when I received a shit ton of the emails from random students simultaneously. It happened when I was in class, and my professor said, \"huh that's weird, about 30 people just shared a google doc with me\". ",
+                    "score": 4,
+                    "author": "True_Jack_Falstaff"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Since this whole brings up the whole issue of Google allowing some random person to create a oauth client named \"Google Docs\" and actually, ya know... Allow it to be created by a 3rd party.\n\nIt begs the question:\n\nI'm looking through my approved app permissions right now.\n\n1) \"Google Chrome\" (With the generic icon, NOT a Chrome icon) has 'Full Access'\n\n2) \"Google Drive\" (Generic icon) - \"Has some account access, Including Google Drive, Google Hangouts\"\n\n3) \"Google Play Movies\" and \"Google Play Music Manager\" are listed as showing what seem to be logical permissions, BUT they have the ACTUAL icons for those apps... Not the generic looking, whatever that icon is?\n\nI guess what I am getting at there is this:\n\nWHAT Google apps/products actually need/should be listed in the \"Apps connected to your account\" page?\n\nThis is suddenly very concerning, no?",
+            "score": 31,
+            "author": "RidiculousBacklog",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "As a Google Chrome, Drive, and Music user I can confirm that I have all of those and they've been auth'd for a long, long time. Same level of permissions.\n\nI'm going to say you're good - but yes - concerning. ",
+                    "score": 14,
+                    "author": "mantra2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think google should mark their official service differently. Like a \"verified\" symbol or similar.",
+                            "score": 15,
+                            "author": "fireattack"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 7,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I opened it, but I since deleted it. It directed me to a site that was offline. What's the payload? What's the creator hoping to get out of it? ",
+            "score": 27,
+            "author": "LisaLies",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, the creator now has *full* access to your emails. They can initiate password resets, then delete the emails afterwards. \n\nBasically anything that doesn't use 2 factor (way, way too much) linked to your email is at risk. There's no evidence of it doing that yet, so revoke the access *immediately*.",
+                    "score": 48,
+                    "author": "JakeSteam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I revoked access as soon as I found this. It had access for about 10 minutes. It also only wanted access to read my contacts and send emails ",
+                            "score": 11,
+                            "author": "LisaLies",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\"Read, send, delete, and manage your email\". Manage your email is the keyword here. If they still had access, they can ask a third party for a password reset or whatever then delete it. Tricky stuff!",
+                                    "score": 22,
+                                    "author": "ignat980",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "If you got that far then your account has been compromised!\n\nThe creator has 100% access and control over your google emails and google contacts!\n\ngo to https://myaccount.google.com/permissions and remove \"Google Docs\" it is the fake app. The real Google Docs is never in that list\n\n[edit]  \nYou are not safe until you remove that fake \"Google Docs\"!  \ntwo-factor auth and password resets will not even slow this malware creator down as long as that fake app has permissions to your account!!",
+                    "score": 17,
+                    "author": "credomane",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Proof of concept? I've never seen anything spread like this.",
+                    "score": 11,
+                    "author": "Trayf",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Proof of concept? I've never seen anything spread like this.\n\nI have, I remember the ILOVEYOU virus/worm.  My boss clicked it and everyone felt the love.\n\nhttps://en.wikipedia.org/wiki/ILOVEYOU\n\nI also remember the Melissa virus... I haven't seen anything spread like this since then.\n\n",
+                            "score": 16,
+                            "author": "ockhams-razor",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sysadmin here, got hit by this thing this morning. Surprising none of my users fell for it. They called me immediately. I'm actually kinda proud of them. :)",
+            "score": 23,
+            "author": "Ace-Ventura",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That is pretty amazing. ",
+                    "score": 9,
+                    "author": "arfyness"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How did Google allow an app to use the OAuth named \"google docs\"?",
+            "score": 20,
+            "author": "Age_of_Serenity",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 15,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "And will they be able to do the exact same thing tomorrow using 'goog1e docs' or 'google calender'?  I'm hopeful Google will find a better solution than just blocking the specific OAuth.",
+                    "score": 8,
+                    "author": "Ric0ch3t"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The real problem is that this grants the fake \"Google Docs\" app full email permissions. I'm opening a case with Google to get it shut down.\n\nedit. Can't get through to Google Apps For Business support. gogoRedditArmy?\nedit2: Looks like some awesome Googlers are already taking care of it.",
+            "score": 17,
+            "author": "onejdc",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This seems to have been the worm's payload. The actual live sites appear to be down now.\n\nhttps://pastebin.com/EKdKamFq\n\nIf that's true, it doesn't seem to do anything other than spread itself.",
+            "score": 18,
+            "author": "mave_of_wutilation",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Really curious about the line\n&gt; !(email.search('google') != -1 || email.search('keeper') != -1 || email.search('unty') != -1))\n\nWhat's of interest in email addresses containing \"keeper\" or \"unty\"?",
+                    "score": 17,
+                    "author": "relaxing",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "If all it did was self-replicate, that's a massive waste of opportunity (criminally speaking). What's the source on that? ",
+                    "score": 10,
+                    "author": "JakeSteam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It doesn't need to send out the same payload to every IP. What if downloading the php page from a certain country, or from a government IP block, caused a different payload to be run?",
+                            "score": 11,
+                            "author": "kuilin"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Worked out okay for Samy Kamkar",
+                            "score": 5,
+                            "author": "mave_of_wutilation",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Samy is my hero!\n\nHe had to plead guilty to a felony, though. https://en.wikipedia.org/wiki/Samy_Kamkar#Samy_worm",
+                                    "score": 8,
+                                    "author": "bobcat"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Ha! I had this sent from a client and to be honest it wasn't the kind of virus I expected to catch when I became a sex worker. ",
+            "score": 17,
+            "author": "HaileyHeartless",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Shit, my entire company just clicked this",
+            "score": 15,
+            "author": "MagnanimousCannabis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was the first to receive it so I slacked a warning message to the entire company immediately. Within 15 mins over half my company had received the Google docs email. ",
+                    "score": 6,
+                    "author": "OnTheEveOfWar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Step One - Block messages containing the hhhhhhhhhhhhhhhh@mailinator.com address from inbound and outbound mail gateway/spamav service.\n\n\nStep Two - Locate Accounts in Google Admin console and revoke access to Google Doc app.\n\n\nUsers can remove access too by going to myaccount.google.com/permissions and scrolling to the Google Doc app.",
+            "score": 12,
+            "author": "banden",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Looks like this is the source code that was used:\n\nhttps://gist.github.com/bevacqua/f34200ec8bd2cd929d2004ccb32520fa",
+            "score": 12,
+            "author": "bevacqua",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "it has Google Analytics tracking code in it... that means GA could graph and track its spread which I would love to see.  ",
+                    "score": 17,
+                    "author": "BruisedGhost",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That would be awesome. I can see /r/dataisbeautiful having a field day with that.",
+                            "score": 12,
+                            "author": "the5souls"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 11,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, being a GApps admin at a University today is a special sort of hell.\nI will be toasting my post-work beer to both of us tonight.",
+                    "score": 10,
+                    "author": "FishCantHoldGuns",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In G. Suite Admin Panel, go to Reports &gt; Token and you can view recently authorized API tokens. You should be able to search for \"Google Docs\" in the Application Name field. Here's [what a compromise looks like](http://i.imgur.com/Dm0NNTn.png).",
+                            "score": 6,
+                            "author": "TyIzaeL",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Our organization works with teachers and schools. I literally got 45 of these emails in about 30 minutes' time.",
+            "score": 11,
+            "author": "meeshahope",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thats becuse school staff have no idea how to spot phishing scams, I work at a school as well.",
+                    "score": 12,
+                    "author": "Nazgul1313",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "To be fair, this is some next level stuff. I get shared google docs all the time at work, and I clicked it, because it came from someone from my job. I had no reason to distrust it. It's incredibly convincing. ",
+                            "score": 17,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "eh, i'm a nerd since i was toddling and i got phished. damn convincing link",
+                            "score": 6,
+                            "author": "Sebbean"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "One of my professors just got hit with it.\n\nIt looked off since normally those kinds of \"invitation to edit\" emails get sent to my Updates tab instead of my Primary tab.",
+            "score": 9,
+            "author": "TheEngy_",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 11,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "So what's the extent of damage if we clicked through the link and granted the app permission? Asking, uh... for a friend. ",
+            "score": 8,
+            "author": "oldirtyrestaurant",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Never have I seen Redditors try to help each other so much.",
+            "score": 14,
+            "author": "vrotographer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You must not hang out in the IT subs much?",
+                    "score": 18,
+                    "author": "hypercube33",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "GAAAAAH my co-worker here asked i could help with opening this doc this is what it looked like: \n\nFrom: xxxxxx@xxxxxx.com [mailto:xxxxxx@xxxxxx.com] \nSent: Wednesday, May 03, 2017 11:34 AM\nTo: hhhhhhhhhhhhhhhh@mailinator.com\nSubject: xxxxxx xxxxxx has shared a document on Google Docs with you\n\nxxxxxx xxxxxx has invited you to view the following document:\n\nOpen in Docs\n\n\"open in docs\" was highlighted blue and took me to a log in page that listed all my google email accounts (i have 7).\ni picked one then clicked on \"allow\"\nnothing happened just a spinning wheel and after trying again without ever landing on any page, i gave up and closed the window while it was still a \"spinning\" wheel.\n\nthen 10 mins later, got a message from the co-worker that it was a hacked email that she got and not to open...\nTOO FUCKING LATE!!!\n\nso i freaked and went through my account and changed the password and deleted any saved passwords.\n\ni also checked all connected apps and i had nothing that labeled itself as \"google docs\" or anything similar.\nall of the connected apps i recognized.\ndoes this mean that this phishing email scam didn't take?\n\n",
+            "score": 8,
+            "author": "mushedroom",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hey,\n\nAnother user reported that the app uninstalls itself after sending out the spam, so unfortunately it looks like you were hit by it.",
+                    "score": 6,
+                    "author": "JakeSteam",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 8,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Good that so many IR and IT people are on Reddit all the time. ",
+            "score": 6,
+            "author": "dcikid12"
+        },
+        {
+            "level": 0,
+            "comment": "https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en\n\nhttps://support.google.com/mail/answer/8253?hl=en",
+            "score": 5,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "So, I was dumb enough to click allow, but I was taken to a page titled \"Google Alert\" and a pop-up told me my PC is infected and I need to run an anti-virus. From looking at the comments here, this wasn't anyone else's experience?",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nope, that might be some new variant of it. ",
+                    "score": 6,
+                    "author": "JakeSteam"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I only have like 2 email contacts so I think I'm alright.",
+            "score": 6,
+            "author": "jerdub1993"
+        },
+        {
+            "level": 0,
+            "comment": "This email is going out to millions of people. Anyone who clicks the link and allows access to their account immediately sends the same email to all of their contacts. Victims are also exposing their entire google account to the attackers.",
+            "score": 4,
+            "author": "Terrorbeard",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "If you want to cleanup your Google domain, bring up the Admin Console, search Report -&gt; Audit -&gt; Token. \nSearch for Application Name: Google Docs. Users should have added it with a date of May 3 and should say something on the lines of :\n\nFirstname LastName authorized access to Google Docs for https://mail.google.com/, https://www.googleapis.com/auth/contacts scopes",
+            "score": 5,
+            "author": "dly12"
+        },
+        {
+            "level": 0,
+            "comment": "It's important to note that it will keep trying to share until you remove app access!",
+            "score": 4,
+            "author": "HTOutdoorBro"
+        },
+        {
+            "level": 0,
+            "comment": "wow this thing hit about 4 of my friends in the last 20 minutes. ",
+            "score": 4,
+            "author": "HollowImage"
+        },
+        {
+            "level": 0,
+            "comment": "Fell for it like an idiot, email came from appstate.edu. Changed my password right away but do not see the \"Google\" docs on my privacy setting. What else can I do to remove access to my info or to check if it still has such access",
+            "score": 5,
+            "author": "aar1918",
+            "replies": []
+        }
+    ]
+}

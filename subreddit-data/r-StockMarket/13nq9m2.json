@@ -1,0 +1,113 @@
+{
+    "id": "13nq9m2",
+    "score": 1,
+    "title": "Very Basic Question",
+    "author": "blabbllss",
+    "date": 1684667612.0,
+    "url": "https://www.reddit.com/r/StockMarket/comments/13nq9m2",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hello\n\nI have very recently got into trading.\nI'm having a hard time trying to understand what affect price movement of a stock.\n\nI know it's supply and demand, but I feel like I'm missing something on a deeper level.\n\nHere's an example from an article explaining supply and demand:\n\n\"Imagine there are 1,000 people willing to buy one share of stock XYZ for $10, but there are only 500 people willing to sell one share of XYZ for $10. The first 500 buyers each snag a share for $10. The other 500 buyers who were left out then raise their offer price to $10.50. This higher offer price persuades some owners of XYZ who didn't want to sell at $10 to sell at $10.50. The\u00a0stock\u00a0price is now $10.50 instead of $10 since that was the price of the latest transaction.\"\n\nSo, as a short-time trader/day trader, we wait for the price to move (hopefully) according to our analysis of the market, and then we buy/sell. Let's say someone wants to buy my shares, but the price is not yet at my take-profit level. so it's not like I I can sell it for a dollar more that what it is worth at the moment, right? When it reaches my target level it has nothing to do with me.\n\nBut from the article's example, it's like there are negotiations between people, unrelated to price anticipation. \n\nSo when we (daytraders) buy/sell shares of a stock, it is because it has reached our targeted price, but when the \"big players\"\nbuy/sell shares of a stock, is it in truth a live negotiation between 2 parties? And that's what makes the price move?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "No. There is no live negotiating between people.  If your platform has level 2 you can see the bid/ask stack.",
+            "score": 3,
+            "author": "Constant-Dot5760",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you\n\nSo, hypothetically, if people will only buy at market price the price will never change right?\n\nThe only thing that makes the price go up is when people buy at ask price (?)\n\nAnd, hypothetically, if people are only buying at market price, eventually you won't be able to buy shares.\n\nSo, in this situation, you have to offer to pay more to be able to buy.\n\nI think it's making sense to me now! \nBut is it correct?",
+                    "score": 1,
+                    "author": "blabbllss",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "For every buyer there is a seller, you can only buy on market price if there is a market. The market price when buying is the lowest ask price. The lowest price someone is willing to sell at. \n\nThat\u2019s why a limit order is called maker, and a market order is called taker. One is \u201cmaking the market\u201d (makes an offer) the other is called \u201ctaker\u201d (takes an offer). \n\nWhen you place a limit order (\u201cI am willing to buy at this price\u201d) you make a bid and it gets recorded in the order book. Other people making the opposite offers (\u201cI am willing to sell for x price\u201d) are asking for x in exchange for the asset.\n \nThere\u2019s always a very slight difference between bid and ask. \u201cBid\u201d is the highest amount someone is willing to pay = the limit buy order with the highest price = bid price. \u201cAsk\u201d is the opposite, the lowest price someone is willing to sell = the limit sell order with the lowest price. \n \nWhen someone is buying or selling \u201con market\u201d they are on the taker side. They take the best offer made by others. The other side of the transaction is the \u201cmaker\u201d (makes the market by placing limit buy/sell orders) whose offer gets taken. \n\nThese offers are recorded in the \u201corder book\u201d, it [looks like this](https://i.imgur.com/wThDt8Q.jpg). It\u2019s the same for stocks, I had to use btc for the example because it\u2019s Sunday and the stock market is closed, but it\u2019s the same thing. \n \nOn the left side you see the bid and ask prices. On the right side you see the amount of shares/coins/potatoes available for that price. This is called \u201clevel 2 data\u201d. The platform you use may or may not show you this. If you use let\u2019s say IBKR (just an example) they show you the data because they have a fee per transaction. If you use a broker that has no fee you will most likely not see this data, because that\u2019s how they make money. If yours doesn\u2019t show it, that means when you make a market buy order they take the best offer they can get (the lowest ask price), then sell it to you for a bit higher. This is why \u201cthe fee is built into the spread\u201d. \n\nThe spread is the difference between the lowest ask price and the highest bid price. Brokers that have a transaction fee generally show you this data, because they have no incentive not to. The \u201cfree\u201d brokers will simply show you one bid and one ask price. This includes their markup. \n\nBut this is getting too long, just ask away if you still have questions.\n\nEdit: the \u201cbig players\u201d you mentioned. They don\u2019t use the order book, but yes they still negotiate between each other. They make transactions \u201cOTC\u201d (over the counter). Large players do this because if they wouldn\u2019t the transaction itself would move the price. \n \nLook at the order book, there\u2019s only a finite amount of the asset is available at a given price. If someone wants to buy a large amount compared to what\u2019s available their buys would \u201ceat into the order book\u201d, so they would get their first shares for a good price but in order to buy more they would have to take more and more expensive offers. So the price would rise just because they bought, all the lowest offers are gone because they took them. Only more expensive offers remain (=higher ask price).\n\nIf there is not enough liquidity (amount of shares on offer) or in other words the \u201corder book is thin\u201d large players negotiate between themselves and make the transaction OTC. This way they won\u2019t move the price against themselves. An OTC transaction is just an agreement between two parties: \u201cpay me X directly and I will give you Y shares\u201d.",
+                            "score": 12,
+                            "author": "lalananula",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you!!\nSuper helpful",
+                                    "score": 4,
+                                    "author": "blabbllss"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It is very helpful. Thank you",
+                                    "score": 3,
+                                    "author": "Monika8370"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I appreciate you taking the time to write this",
+                                    "score": 2,
+                                    "author": "ShaggyShaftedVelma"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's waaaay more complicated.  You are talking about a market with 100s of millions of human and machine participants and middle-man (and machine) market makers who are buying and selling for reasons of their own.  Some want to own it right now regardless of price, some who are willing to wait, some who want to sell right now, and again some who are willing to wait. \n\nDon't overthink it. Just buy low, sell high, not necessarily in that order.",
+                            "score": 5,
+                            "author": "Constant-Dot5760"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is an ELI5 answer: buying and selling of course affects the price as described above, but what drives buying and selling are changes in a company's 1) cash flow, 2) growth and 3) risk. What a company reports as earnings each quarter, changes in competition and customer behavior, and various types of risk a company faces will change investors perception of a company's value per share and the price they are willing to pay to own its shares. All three can drive price action significantly, but earnings reports are especially helpful in understanding what's going on inside a company and why the stock price changes.",
+            "score": 1,
+            "author": "Command905",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 1,
+                    "author": "blabbllss",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You're welcome. You can learn a lot about corporate finance and valuation for free from NYU Prof. Aswath Damodaran's youtube channel which also has links to free textbooks...ect.\n\nhttps://www.youtube.com/@AswathDamodaranonValuation/about\n\nAs an aside to that, it's very unlikely you will become rich day trading. I don't say that to dissuade you, just know there is an opportunity cost to spending the time to learn to day trade and you should consider, if you have not already, what you can do with that time and your investable money to increase your income rather than (or in addition to) investing/trading. E.g. learning a skill that pays you an extra 1k per month is a safer bet vs trying to turn $1000 into $2000 in the stock market in one month's time.",
+                            "score": 2,
+                            "author": "Command905",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you! I will definitely check it out.\n\nWise words, will take it into consideration.",
+                                    "score": 1,
+                                    "author": "blabbllss",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "More wisdom from the professor: [https://www.morningstar.in/posts/73902/remember-these-5-principles-when-valuing-a-stock.aspx](https://www.morningstar.in/posts/73902/remember-these-5-principles-when-valuing-a-stock.aspx)\n\nIt also occurred to me to make this final point to you that day trading is not investing. You probably know the difference. Plenty of books can teach you to invest, but you'll likely never find a fool proof strategy online to day trade because the person who's worked out how to reliably pull money out of stock markets would never divulge such a thing, especially for free, for the same reason that Apple would never share its patents with Samsung for free-it would generate more competition. Day trading teachers are selling a product (course) like everyone else and it's impossible to know how much of their success is from trading or selling guides.\n\nInvesting is different, the time horizons are longer but with a diversified portfolio you can expect to double your money about every 7 years. My final word of advice would be unless you're willing to spend many hours paper trading to improve in day trading, it's best to invest for the long haul, a portion of which should be allocated to low cost index funds.",
+                                            "score": 1,
+                                            "author": "Command905",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thank you!\nVery interesting points.\nWhen i first decided i want to try my luck at that buisness I actually did find a lot more attraction in the investing world as opposed to trading. Exactly because it is a lot more certain. The problem is I don't have any money. I do plan on becoming an investor eventually.",
+                                                    "score": 1,
+                                                    "author": "blabbllss"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s manipulated \u2026. Period",
+            "score": 0,
+            "author": "Nam3ofTheGame"
+        }
+    ]
+}

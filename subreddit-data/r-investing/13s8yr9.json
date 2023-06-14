@@ -1,0 +1,115 @@
+{
+    "id": "13s8yr9",
+    "score": 1,
+    "title": "ETF for Short term Treasury yields",
+    "author": "Far-Broccoli593",
+    "date": 1685095671.0,
+    "url": "https://www.reddit.com/r/investing/comments/13s8yr9",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "\rIs there some ETF for the Short term treasury yields (2 year for example), that will substantially rise in price if the yields come down?\r  \n\r  \nI saw some short term treasuries ETFs but they barely change their price and do not bring capital gain. I need something like TLT or even TMF that will give me a capital gain, but only for the short term treasuries.\r  \n\r  \nThan you",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I don't think that you would be able to find a US domiciled ETF that accumulates. ETFS are generally '40 Act registered investment funds. By law, the fund must distribute net capital gains and accrued income to its shareholders at least once per year.\n\nIf you have a thesis that 2 year interest yields will go down, you could explore using interest rate futures products like /ztm instead. More info on the CME site here - [https://www.cmegroup.com/markets/interest-rates.html](https://www.cmegroup.com/markets/interest-rates.html)\n\nIf you are outside the US - there are accumulating treasury UCITS funds from investment managers like Blackrock, Invesco, and Vanguard with both accumulating and distributing funds. Link here - [https://www.blackrock.com/uk/individual/products/287340/ishares-treasury-bond-1-3yr-ucits-etf](https://www.blackrock.com/uk/individual/products/287340/ishares-treasury-bond-1-3yr-ucits-etf)\n\n[https://etf.invesco.com/gb/financialprofessional/en/products/focus/government-bonds/region/north-america](https://etf.invesco.com/gb/financialprofessional/en/products/focus/government-bonds/region/north-america) \n\nNote - that your country of residency may have specific tax rules on the use of accumulating funds.",
+            "score": 5,
+            "author": "greytoc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OP asked about funds that don't distribute net capital gains. In a bond fund, that would imply an accumulating fund assuming that local tax laws permit it. Hence the comment by u/hydrocyanide. \n\nExample:\n\n[https://www.londonstockexchange.com/stock/IBTA/ishares/company-page](https://www.londonstockexchange.com/stock/IBTA/ishares/company-page)\n\nvs\n\n[https://www.londonstockexchange.com/stock/IBTS/ishares/company-page](https://www.londonstockexchange.com/stock/IBTS/ishares/company-page)\n\nHowever - from a taxable perspective - it probably depends on the country.",
+                            "score": 3,
+                            "author": "greytoc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 4,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;I think OP doesn't understand duration and rate sensitivity.\n\nIt would appear so. OP hasn't responded so \u00af\\\\\\_(\u30c4)\\_/\u00af\n\nI assumed that OP was seeking a fund where they could profit via capital gains if the 2 year treasury yields fall. Only way that I know how to speculate on interest rates with a cap gain is by using options or futures products. Maybe there are other ways which would be interesting to know.",
+                                            "score": 5,
+                                            "author": "greytoc",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yes, for example if the 2 year yield fall from 4% to 2%, I would like to have 50% capital gain, just like TLT would do for the 20-30 year yield.\n\nBut I understood from the comments that unfortunately its impossible.",
+                                                    "score": 1,
+                                                    "author": "Far-Broccoli593",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "TLT has an effective duration of 17.17 yrs, so if 20-30yr yields fell 2%, it would gain a bit more than 34%, not 50%.  \n\nIt is possible for a fund to get that much duration in 2yr notes by using futures. TUA holds 2yr futures with a target duration equivalent to 10yr bonds (~8yrs). No fund I know has more, but it is easy to implement yourself by buying the futures yourself.  \n\nhttps://www.cmegroup.com/markets/interest-rates/us-treasury/2-year-us-treasury-note.contractSpecs.html That's the main one. It has $200k face value per contract. If that's more than you want there's also newer micro futures https://www.cmegroup.com/markets/interest-rates/us-treasury/micro-2-year-yield.contractSpecs.html  \n\nhttps://www.cmegroup.com/education/files/understanding-treasury-futures.pdf",
+                                                            "score": 3,
+                                                            "author": "kiwimancy",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Thank you so much :)\n\nI would by the micro 2 year yield, So for example if I buy the may2023 (which is 4.55%), or the june2023 (which is 4.43%), and hypothetically if during the spring 2024 the 2 year yield drops to 2%, do you think that I would gain like around 50% capital gain from this investment?",
+                                                                    "score": 1,
+                                                                    "author": "Far-Broccoli593",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "1 if you want to profit from a drop in spring 2024, you will need to be holding a contract during that time. June 2023 contracts expire next month, so you would need to roll your position to the next contract shortly before then. Often people keeping a long term futures position will roll it quarterly (though it looks like these are only listed out for a month? strange).  \n\n2 The micro yield futures, unlike the underlying notes or the regular treasury note futures, rise with rising yields, so if you want to profit from a drop in yields, you need to sell it, not buy it.  \n\n3 One micro 2yr yield futures contract will rise $10 for each basis point change in yield, so $2000 for +200 bps rise. In order for that amount to be a 50% gain for you, you would need to have an account size of $4000. If your account size is $25k (which was the minimum account size TDA asked me when I opened a futures account, other brokers may require less), you would sell six or seven contracts to get a proportionally equivalent position.",
+                                                                            "score": 3,
+                                                                            "author": "kiwimancy"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "The only way that I'm aware to have a capital gain is by using section 1256 interest rate futures contracts. \n\nYou may want to check out the futures based ETF suggested by u/kiwimancy here - [https://www.reddit.com/r/investing/comments/13s8yr9/comment/jlph552/?utm\\_source=share&amp;utm\\_medium=web2x&amp;context=3](https://www.reddit.com/r/investing/comments/13s8yr9/comment/jlph552/?utm_source=share&amp;utm_medium=web2x&amp;context=3)",
+                                                            "score": 2,
+                                                            "author": "greytoc"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 4,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "true, I apology.",
+                    "score": 2,
+                    "author": "Far-Broccoli593"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Here is all the information you need to realize such a product does not exist: https://en.m.wikipedia.org/wiki/Bond_duration",
+            "score": 3,
+            "author": "hydrocyanide"
+        },
+        {
+            "level": 0,
+            "comment": "https://www.simplify.us/etfs/tua-simplify-short-term-treasury-futures-strategy-etf 8.39yrs duration, 1.8yrs maturity.  \nIf you want more duration than that, you'll need to buy the futures yourself.",
+            "score": 2,
+            "author": "kiwimancy"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "id": "1420ya3",
+    "score": 0,
+    "title": "How to minimize theta bleed for event-driven strategies?",
+    "author": "J1M_LAHEY",
+    "date": 1686019209.0,
+    "url": "https://www.reddit.com/r/investing/comments/1420ya3",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Let's say I want to put on a merger arbitrage trade. Company X plans to acquire Company Y in an all-stock deal, 1 share of Company X for 1 share of Company Y. Market doesn't think the deal will go through so there so is a significant premium - let's say Company X trades at $10 and Company Y trades at $6.\n\nI buy Company Y and sell Company X, since I anticipate price convergence, but I also want to hedge my risks by buying a $10 call on Company X. Now I'm nicely hedged, but I'm paying theta on this option that I might have to hold for months. Is there any way to minimized the bleed, or am I just resigned to paying it to \"lock in\" this final payoff?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Sounds like you are just trying to make it complicated for yourself.",
+            "score": 4,
+            "author": "funpolice99"
+        },
+        {
+            "level": 0,
+            "comment": "technically, youre long theta so you need to hedge your negative gamma, which you'd use a straddle on whatever index has the highest beta to company x/y.  spx, qqq, r2k whatever.\n\n&amp;#x200B;\n\ni should add this is vast overkill, and in a merger arb strategy, you wouldn't bother, and youd consider the call a sunk cost / part of your payoff profile.",
+            "score": 2,
+            "author": "this_guy_fks",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! First response on here from someone who understands what I\u2019m trying to get at. Makes sense that it\u2019s overkill - my main concern is just if I am leaving money on the table, then why should I behave suboptimally, right?\n\nYou said I\u2019m long theta, but since I\u2019m long the call I\u2019d be short, not long (i.e. paying theta). So that would just mean I\u2019m long gamma and can sell this gamma that is useless to me to hedge that out. So I suppose I could gamma scalp on Company X, which I really don\u2019t want to do because (a) I don\u2019t really know how, and (b) transaction costs. \n\nYour idea of selling the straddle is intriguing but it seems like a very dirty hedge, but I suppose that\u2019s really the only option if I don\u2019t want to gamma scalp on Company X. It does make sense provided that there is a high R-squared on the beta/tight correlation. But can I ask why a straddle, and not a strangle, or just sell a call on the index (since you\u2019re long a call on Company X)? \n\nThanks for the info - if you feel like responding to this I\u2019d appreciate it, if not, no worries",
+                    "score": 1,
+                    "author": "J1M_LAHEY"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Just make sure you're not over-leveraged, use options to hedge your exposure and don't forget to keep an eye on the VIX. Easy-peasy, lemon squeezy!",
+            "score": 1,
+            "author": "tilakaimposuress9"
+        },
+        {
+            "level": 0,
+            "comment": "Just go all in and pray, bro! Works for me every time!",
+            "score": 1,
+            "author": "manoshbabanex"
+        },
+        {
+            "level": 0,
+            "comment": "Theta bleed? Who cares about that when you can just YOLO your way through event-driven strategies and make bank! But, if you're really asking for advice, just hire a team of expert Al traders like me who can handle all the heavy lifting.",
+            "score": 1,
+            "author": "hipsnitwitsmu3"
+        }
+    ]
+}

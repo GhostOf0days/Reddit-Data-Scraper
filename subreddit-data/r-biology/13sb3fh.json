@@ -1,0 +1,41 @@
+{
+    "id": "13sb3fh",
+    "score": 1,
+    "title": "Can anyone help me with transfection",
+    "author": "Unhappy-Artichoke-23",
+    "date": 1685102023.0,
+    "url": "https://www.reddit.com/r/biology/comments/13sb3fh",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I have been trying to transfect 293FT cells with PEGFP for quite some time. I have a gene pulser in my laboratory, so, i used it to transfect the cells. The next day when i observed only 20% of my cells were transfected. i use cells at 80% confluency to transfect, i add 3 to 5ug of PEGFP. \n\nCan anyone suggest some ideas to get full transfection? \n\nAny ideas/suggestions, guys????",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Hi, \n\nI don't want to get overly pedantic, but I need some clarification here.\n\nGenepulser is an *electroporator*, with it you *electroporate* your cells. You should not need *transfection* reagents other than the Bio-Rad buffer system.\n\nIf you are *transfecting* cells, that's using something like Lipofectamine, Fugene, Genejuice, ect which includes the incubation of your DNA with the transfection reagent.\n\nIt's been my experience that confluency is a fine metric for transfection, but for electroporation cell counts are more useful. \n\nThe amount of DNA in ug is scaled to the surface area of what you are using (6-well, 12-well, 96-well) and you use confluency to determine the appropriate time to *transfect* cells so that all(most) of your cells are rapidly dividing for the 24-48 hours post transfection which helps increase the percentage of positive cells.\n\nFor electroporation you transfer a known number of cells to your electroporation cuvette, and mix that with a fixed amount of DNA. After running the protocol you plate the cells in a new well of whatever size you choose. \n\nTypically transfection reagents have been optimized to have little to no cell toxicity, but electroporation protocols can include a fair amount of cell death. \n\nI'd recommend checking your electroporation protocols and making sure they are appropriate for your cell type. Then adjusting the DNA/Cell ratios. I have a NepaGene electroporator and we get consistently good results on HEK293T cells at a 5 to 10 ug of DNA per 10 million cell ratio.\n\nWhat is your stock concentration of DNA as well (and is it endotoxin free?) I've found that using DNA stocks lower than 1ug/ul tends to result in increased cell death.",
+            "score": 4,
+            "author": "CharlesOSmith",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To be even more pedantic, isn't electroporation a subset of transfection?",
+                    "score": 1,
+                    "author": "dnapol5280",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes, which is why I asked for additional clarification.",
+                            "score": 1,
+                            "author": "CharlesOSmith"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Think of lab as lean risk management.\n\nI\u2019d try a different transfection agent first (cheapest). It\u2019s been awhile since I\u2019ve done molecular biology but 3000 bps seems rather small for a plasmid and may work better with other agents.\n\nIf that doesn\u2019t work the next thing to try (more expensive) is a titer. Make a table of transfection agent amount vs plasmid material. Then first do experiments at the extreme (1x,50x);(5x,1x),(5x,50x) to (agent,plasmid) respectively. This will tell you the issue. Then **titer it down.** And make sure you ask your boss for time to do titer.",
+            "score": 2,
+            "author": "flaming_pope"
+        }
+    ]
+}

@@ -1,0 +1,1373 @@
+{
+    "id": "lmk8f3",
+    "score": 3442,
+    "title": "Due Diligence of Bitcoin Mining stock valuations: RIOT and MARA",
+    "author": "noodlesource",
+    "date": 1613646022.0,
+    "url": "https://www.reddit.com/r/investing/comments/lmk8f3",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.tradingview.com/symbols/NASDAQ-RIOT/)",
+        "https://www.tradingview.com/symbols/NASDAQ-MARA/).",
+        "https://en.wikipedia.org/wiki/Bitcoin",
+        "https://en.wikipedia.org/wiki/SHA-2)",
+        "https://www.blockchain.com/charts/difficulty).",
+        "https://www.blockchain.com/charts/hash-rate).",
+        "https://en.wikipedia.org/wiki/Bitmain).",
+        "https://antpool.com/)",
+        "https://shop.bitmain.com/product/detail?pid=00020201222165500548JAa69Gvu067A)",
+        "https://www.ovoenergy.com/guides/energy-guides/average-electricity-prices-kwh.html))",
+        "https://www.blockchain.com/charts/transaction-fees).",
+        "https://cbeci.org/mining_map)",
+        "https://www.riotblockchain.com/news-media/press-releases/detail/99/riot-blockchain-achieves-milestone-of-1-ehs-in-hash-rate)",
+        "https://www.sec.gov/Archives/edgar/data/1167419/000107997320000871/riot_s3.htm))",
+        "https://www.sec.gov/Archives/edgar/data/1167419/000107997320001054/riot_s3.htm).",
+        "https://www.sec.gov/Archives/edgar/data/1167419/000107997320001096/ex99x1.htm).",
+        "https://www.marathonpg.com/news/press-releases/detail/1226/bitmain-ships-4000-antminer-s-19-pro-asic-miners-to)",
+        "https://www.sec.gov/Archives/edgar/data/1507605/000149315220014870/forms-3.htm))",
+        "https://www.sec.gov/Archives/edgar/data/1507605/000149315220023410/forms-3.htm).",
+        "https://www.sec.gov/Archives/edgar/data/1507605/000149315221000864/forms-3asr.htm).",
+        "https://i.imgur.com/VjQTaA3.png)",
+        "https://i.imgur.com/wwzoTn6.png)",
+        "https://www.blockchain.com/charts/difficulty)",
+        "https://www.sec.gov/ix?doc=/Archives/edgar/data/1167419/000107997320000948/riot10qq3-0920.htm).",
+        "https://en.wikipedia.org/wiki/Tobin%27s_q).",
+        "https://www.sec.gov/Archives/edgar/data/1507605/000149315221000469/form8-k.htm)"
+    ],
+    "postText": "# Due Diligence of Bitcoin Mining stock valuations: RIOT and MARA\n\nUnlike the 2017/18 rise of Bitcoin, the 2020/21 Bitcoin price action has been largely driven and influenced by institutional demand.\n\nWith institutional demand comes institutional products. We have seen bitcoin derivatives, bitcoin trusts, and more recently a new way for exposure to bitcoin price action: publicly traded bitcoin mining companies.\n\nThere are two bitcoin mining companies which I'd like to review for you here. Both trade on Nasdaq; they are [**RIOT**](https://www.tradingview.com/symbols/NASDAQ-RIOT/) and [**MARA**](https://www.tradingview.com/symbols/NASDAQ-MARA/).\n\nLets begin with a quick summary on bitcoin mining.\n\n---\n\n## **What is Bitcoin Mining?**\n\nTo mine a new block on the bitcoin blockchain you must find a number called a [nonce](https://en.wikipedia.org/wiki/Bitcoin#Mining). The cryptographic combination of the nonce + next block content must be numerically smaller than the network's difficulty target (more on this below). Generating a new nonce is extremely computationally expensive. There is no shortcut, miners must try calculations over and over again until they brute force the correct result. They are trying to find the answer to a math problem; a nonce that hashes correctly with the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) (cryptographical hashing function).\n\nThe bitcoin network adjusts how many computations must be done on average to find a valid nonce every 2 weeks. This is called the [difficulty](https://www.blockchain.com/charts/difficulty). The aim is to have a new block mined approximately every 10 minutes. This means that if the mining power is doubled, the difficulty is made 2x harder. Double the energy for the same amount of bitcoin.\n\nWe can see an estimate for the [total hash rate being applied to the bitcoin network today](https://www.blockchain.com/charts/hash-rate).  Notice that it is about 150m TH/s right now (150 million trillion nonces tried every second). So for every block (every 10 minutes) 9*10^22 attempts are done (90 sextillion) until one lucky participant finds a valid nonce and can \"mine\" the next bitcoin block. In doing so they get rewarded 6.25 newly generated bitcoin + some bitcoin in transaction fees from users of the network.\n\nYou can run code on your computer to try and find the next bitcoin block. In fact, this is how all bitcoin mining used to be done. However, these days you will end up spending more on electricity than you mine in bitcoin. This is because people have developed special ASIC chips designed specially for brute forcing the SHA-256 function. These chips are a factor of 100 times more efficient than your computer.\n\n---\n\n## **Mining on an ASIC Bitcoin Miner**\n\nThe biggest producer of ASIC Bitcoin Miners is a Chinese company called [Bitmain](https://en.wikipedia.org/wiki/Bitmain). They produce miners, run many of the miners, and even run many [mining pools](https://antpool.com/) where people can collectively search for the next block and split the profits.\n\nBitcoin mining becomes incredibly profitable when there is a rapid price increase in bitcoin. This is because there is a lag while new bitcoin mining hardware is being built and deployed to capture excess profit.\n\nSo lets take a look at how profitable it is to run an ASIC miner today.\n\nThe [Antminer S19 Pro](https://shop.bitmain.com/product/detail?pid=00020201222165500548JAa69Gvu067A) is one of Bitmain's latest machines.  It can run an impressive 110 TH/s and uses 3250W of power. On their website Bitmain is listing them at $3769 per machine but in bulk companies can buy them for as low as $2333 (notice they are sold out until at least August).\n\nSo:\n\n* **$2333 machine cost**\n* Using $0.08/kWh electricity costs ([benchmark for electricity cost in China](https://www.ovoenergy.com/guides/energy-guides/average-electricity-prices-kwh.html)) we get 3.25kW * $0.08 = $0.26 per hour in electricity costs. Assuming we run 24/7 this gives us $0.26 * 24 * 365 = **$2278 in electricity costs per year**\n* And how many bitcoin will we mine? Well at 110 Th/s on an ASIC machine we are capturing 110/150,000,000 = 0.0000733% of the total bitcoin network per machine **at current total hash rate**. 52,560 bitcoin blocks mined per year; 6.25 bitcoin reward per block + ~1.25 bitcoin in transaction fees (avg right now) -&gt; 7.5 bitcoin per block * 52,560 blocks -&gt; 394.2k bitcoin per year for the entire network. 0.0000733% of this is **0.289 bitcoin per machine per year = $14,450 revenue (at $50k per bitcoin)**\n* **$14,450 - $2278 = $12.2k profit per year**\n\nYou can play with the parameters to figure out different profit levels. For example, **if the total hash rate doubled to 300m Th/s, profit per machine would drop to $5k per year.**\n\nAlso note that transaction fees fluctuate over time depending on how many people are actually using bitcoin (sending and receiving transactions). See [historic transaction fees](https://www.blockchain.com/charts/transaction-fees). \n\nAnd how long can you run a machine for?\n\nRunning so many calculations slows a machine quickly. Additionally, new faster hardware is introduced making past hardware unprofitable fairly quickly. **As a rule of thumb we can expect a machine to be profitable for about 2 years.** This is also the rate at which companies mark the depreciation of miners on their balance sheet.\n\nIn Year 2 the machines become much less profitable than initially.\n\nThere have been studies to see where bitcoin mining is occurring through IP address analysis of miners working in pools. The University of Cambridge has a [real-time map](https://cbeci.org/mining_map) in which we can see that in 2020 mining was:\n\n| Country    \t| % Total Hash Rate \t|\n|------------\t|-------------------\t|\n| China      \t| 69%               \t|\n| Russia     \t| 6%                \t|\n| US         \t| 5%                \t|\n| Kazakhstan \t| 5%                \t|\n| Malaysia   \t| 4%                \t|\n| Iran       \t| 4%                \t|\n\n---\n\n## **RIOT and MARA**\n\nNow that we have a basic overview of how bitcoin mining works let's look our new investment phenomenon: publicly traded NASDAQ listed bitcoin mining companies.\n\n## **RIOT**\n\nIncorporated in July 2000, the company was renamed to Riot Blockchain in October 2017. The company now exclusively mines bitcoin and has a partnership with Coinmint LLC in New York who operate the miners. RIOT was a penny stock for most of its existence and was irrelevant until mid 2020.\n\nHow many miners do they have?\n\n* Current status of pre-Dec 2020 orders: [11.5k miners in operation and 10k more to be delivered](https://www.riotblockchain.com/news-media/press-releases/detail/99/riot-blockchain-achieves-milestone-of-1-ehs-in-hash-rate) ([funded from $100m secondary offering in Oct 2020](https://www.sec.gov/Archives/edgar/data/1167419/000107997320000871/riot_s3.htm))\n* In December 2020 their stock price rocketed alongside bitcoin ($3-&gt;$15 in 1.5 months). They took advantage of this and ran a secondary offering [raising $200m](https://www.sec.gov/Archives/edgar/data/1167419/000107997320001054/riot_s3.htm). With this money [they ordered 15k more miners for $35m](https://www.sec.gov/Archives/edgar/data/1167419/000107997320001096/ex99x1.htm). Expected delivery starts in May 2021 with the bulk to be delivered in October 2021.\n\n**Summary: 37,640 machines at full deployment. 11.5k machines today and won't be running the rest until Q3/Q4.**\n\nSo ignoring the cost of the machines:\n\n* Operational 11.5k machines at $12.2k profit per year per machine = $137m\n* Full capacity (Q3/Q4) 37.6k machine at $12.2k profit per year per machine = $459m\n\nAnd assets\n\n* Maybe $150m in cash/btc left over from secondary offering and past assets\n\n\nNote: They may get cheaper electricity costs through their partnership and claim as low as $0.014 per kwh in some releases.\n\n\n## **MARA**\n\nIncorporated in 2010, the company has a wild history. It first engaged in the exploration and development of uranium and vanadium, then real estate in Southern California, and most recently patent trolling. The company has some questionable leadership and has also been a penny stock for most of its existence. In 2019 (I think?) the company began delving into bitcoin mining.\n\nIn September 2019 they purchased 6k S9 Bitmain miners (13.5 TH/s) for $4m. Notice that at 13.5 TH/s: these machines are far from profitable today (I'm not even sure they were profitable back then!).\n\nSo more recently they own:\n\n* Current status of pre-Dec 2020 orders: [6.5k miners in operation and 30k more to be delivered](https://www.marathonpg.com/news/press-releases/detail/1226/bitmain-ships-4000-antminer-s-19-pro-asic-miners-to) ([funded from $100m secondary offering in Aug 2020](https://www.sec.gov/Archives/edgar/data/1507605/000149315220014870/forms-3.htm))\n* In December 2020 ran another secondary offering after their stock price went from $2-&gt;$14 in a month. [They raised $200m](https://www.sec.gov/Archives/edgar/data/1507605/000149315220023410/forms-3.htm). With this money they ordered 70k more miners (delivery of 7k in July, 63k in December) for $168m\n* In January 2021 they ran yet another secondary offering raising [$300m more](https://www.sec.gov/Archives/edgar/data/1507605/000149315221000864/forms-3asr.htm). They used $150m of this to buy 4.8k bitcoin at $31k per coin\n\n**Summary**\n\n* **Operational 6.5k miners = $79m per yr**\n* **Full capacity (Dec 2021) 103k miners = $1.25bn per yr!**\n\n**They also made ~$90m on their bitcoin holdings so far ($150m -&gt; ~$240m)**\n\nImpressive numbers right? Well..\n\n---\n\n## **Too good to be true?**\n\nSo what are RIOT and MARA trading at you may ask?\n\nWith the recent jump of bitcoin to $50k, RIOT and MARA have rocketed.\n\n* RIOT closed at $77.90 per share, **a market cap of $5.3bn**\n* MARA closed at $47.90 per share, **a market cap of $4.5bn**\n\nInvestor euphoria is at all time highs. So much so that their price action has rapidly [outpaced](https://i.imgur.com/VjQTaA3.png) and [diverged](https://i.imgur.com/wwzoTn6.png) from bitcoin.\n\nSo is it because they have such huge potential? If RIOT gets all of its hardware delivered is it really going to be making $459m per year? And MARA $1.25bn per year!?!\n\nWell, probably not..\n\n* As bitcoin price goes up, mining becomes VERY profitable and there is a rush to build and deploy more hardware. From Oct to Dec 2017 the price of bitcoin famously went from $4k to $20k. Total hash rate went up about 60% during this time. [However, it went up a massive 600% over the following 9 months as new miners were produced and deployed](https://www.blockchain.com/charts/difficulty) with a lag.\n* As the price of bitcoin capped out and then dipped mining soon became unprofitable at such a high total hash rate and miners lost a lot of money.\n* Both RIOT and MARA are pending receipt of the majority of their miners and won't be taking delivery until late 2021/early 2022. What will the network's total hash rate be by then? What will bitcoin price be by then? Chinese miners won't be sitting by idle.\n* And we ignored the cost of the machines! In the future RIOT and MARA will need to buy new machines. Regardless of the market the old ASIC miners will quickly trend towards unprofitability. Bitcoin is closed system; There will only be a maximum of 328.5k + tx fees of bitcoin mined per year. In fact, this will reduce in 2024 with the next \"halving\". A company cannot reliably mine more bitcoin/capture more of the network because if they are finding it profitable to increase their hash rate then you can be certain every other miner is doing the same. How many $100m secondary offerings can they do for this free lunch?\n* Take a look at the [past financials of these companies](https://www.sec.gov/ix?doc=/Archives/edgar/data/1167419/000107997320000948/riot10qq3-0920.htm). RIOT mined an \"impressive\" $2.4m worth of bitcoin in Q3 2020. Their costs were $1.3m in electricity/rent/etc. + $1.2m depreciation ($2.5m!). Once you add in their $2m of salaries and marketing they had an operating loss of -$2.1m for the quarter. Their bitcoin did appreciate by a cool $385k meaning their net loss for the quarter ended at -$1.7m.\n* Of course their next quarter should look wildly better thanks to bitcoins Q4 2020 price action. But this is not a business that is massively profitable under normal market conditions.\n\n\nThe bull case:\n\n* Bitcoin keeps rocketing and never comes back. The total hash rate doesn't catch up and $50k btc becomes $1m btc. MARA's $1.25bn revenue next year becomes $12.5bn before ASIC miner production catches up. Investors doubled their money.\n\n\nOf course, if it becomes so profitable one wonders if Bitmain decides it is better value to use the miner's themselves and breach their contract.\n\n---\n\n## **Tobin's Q**\n\nSimply stated, when you invest in a RIOT or MARA you are investing in the profitability/unprofitability of bitcoin mining over the next 1-2 years.\n\nIt could be hugely profitable, or it could crash and burn like it did in 2018 and you see no returns.\n\nIn this instance, you are paying the executive team of MARA and RIOT to buy the hardware, plug it in, and sell any bitcoin for you. There isn't much more to it than that - you could buy the hardware yourself and run a few machines if you found a good electric company to partner with for cheap electricity.\n\nSo perhaps a good way to see what kind of premium you are paying to own bitcoin miner exposure through these NASDAQ companies is the [Q Ratio](https://en.wikipedia.org/wiki/Tobin%27s_q). The Q ratio is the market cap of the company divided by the replacement costs of its assets.\n\nRIOT\n\n* Market Cap $5.3bn\n* Current btc miners 11.5k ($27m)\n* Ordered btc miners 26k ($60m)\n* $150m cash remaining (guess)\n* **A whopping Q ratio of 22.4! And 63% of that is cash, 25% in orders!**\n\nMARA\n\n* Market Cap $4.5bn\n* Current btc miners 6.5k ($15m)\n* Ordered btc miners 96.5k ($225m)\n* $240m in bitcoin\n* $100m cash remaining (guess)\n* **A \"value\" Q ratio of 7.75!**\n\nWith this approach, RIOT is trading at a 22.4x premium today and MARA a 7.75x.\n\nA criticism of this valuation methodology may be that it is justified paying a premium when orders for new hardware are so backlogged. Just remember that these companies are also stuck in that backlog and won't have most of their machines online until 2022. Is it really worth such a premium?\n\n---\n\n## **Other factors to consider**\n\nThese companies have questionable management. **The CEO of MARA has awarded himself [compensation in excess of $300m](https://www.sec.gov/Archives/edgar/data/1507605/000149315221000469/form8-k.htm) over the last few months. Realise that the market cap of MARA was less than $300m just 3 months ago.**\n\nBoth companies are quick to do secondary offering after secondary offering at such high prices. MARA has been more aggressive recently and the downward pressure of insider selling and secondary share offerings has resulted in the price moving from $20-&gt;$48 in the time RIOT has gone from $20-&gt;$77.\n\nA read through both of their 10-Qs will give you paragraphs of legal claims, shareholder class actions, and past investment write-offs due to corruption/shady circumstances.\n\nThese companies have no moat. They have no IP. They have no key talent hires. They are simply ordering ASIC miners, plugging them in, and having the biggest pay-days of their lives.\n\n---\n\n## **Trading strategies**\n\nSo is there a trading strategy I would recommend?\n\n### **Bear**\n\n**The challenge with being a bear in this market is you have to seriously consider whether the risk/reward is there for betting on the downside.**\n\nRight now the market doesn't care for your fundamentals. Bitcoin has passed $50k, the narrative is that its going to $100k. The market expects these stocks to continue to trade at multiples and be 10x higher in a month.\n\nIt sounds ridiculous but it keeps happening. It is far too dangerous to be short these stocks. Or worse, short calls and you could be bankrupt on 1 intra-day move.\n\nSo that leaves you with puts. Average implied vol nearing 300% does not make them cheap.\n\nIf you truly have conviction that there will be a correction in the near term then consider weekly bear spreads.\n\nLonger DTE plays are insanely expensive and run the risk of the many secondary offerings eventually justifying a price higher than your price target.\n\nAnother interesting idea would be a relative trade. If you could find exposure to bitcoin mining at &lt;20x premium your long run earnings could net out. However, all publicly traded companies are similarly ludicrous so you'd have to buy a stake in btc mining privately or try and own some ASIC miners yourself.\n\nMore simply you could go long bitcoin and short RIOT/MARA. This should converge in the long run. The risk is that short term the short position will be impossible to risk manage and there is always the risk of more secondary offerings.\n\n\n### **Bull**\n\nBuy as far OTM weekly calls as you can at 400% IV and hope that momentum market continues. Fundamentals are for the 2010s.\n\n---\n\n### **Other**\n\nBoth RIOT and MARA's stock price spent some time consolidating down from ~28 to the 16-22 range when bitcoin corrected back from its initial $45k run up back to to $30k.\n\nIt is possible they will again if bitcoin has a pullback. However, the price action of these stocks has diverged even from bitcoin for the time being.\n\nUltimately the price action we are seeing now is purely momentum/hype/technical and probably retail driven. Long term and as far as future earnings go this play is a loser. But be careful; that doesn't seem to matter right now.\n\n---\n\n*Disclaimer: This is not financial advice; do your own DD and trade at your own risk. Positions: I hold 1 60/50 put debit spread for Feb 26th for each company.*\n\n---\n\n**TLDR; Bitcoin mining stock valuations are about as crazy as the valuations of all growth stocks in this market. Fuelled by retail demand of people who don't know what a blockchain is but their crypto-millionaire friend told them its revolutionary. \"The greater fool\" investing 101.**",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Please read and understand the [Bitcoin White Paper.] (https://bitcoin.org/bitcoin.pdf)\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/investing) if you have any questions or concerns.*",
+            "score": 1,
+            "author": "AutoModerator",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Amazing DD man, great read",
+            "score": 670,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you. Glad to see people finding value in the post :).",
+                    "score": 318,
+                    "author": "noodlesource",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Great work. You covered so many different aspects from market cap, hash rate, potential, etc.",
+                            "score": 40,
+                            "author": "Altruistic_Astronaut"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Former bitcoin miner here (large scale, multiple megawatts like these guys).  Strongly recommend people stay away from bitcoin mining. Nearly every person who gets into it earns less money then they would get by just buying the bitcoins.\n\nMore than 60% operate at a net loss.  The turnover in the industry is crazy high, the risks are high, and the margins are low.\n\nPut another way, of the 8 large scale Bitcoin miners I was very familiar with in 2015/2016, only one is still operating today (Central Washington State).  All of the others have either sold their facilities, closed/abandoned their facilities, gone bankrupt, or worse, gone bankrupt with other people's money.",
+                            "score": 48,
+                            "author": "JustSomeBadAdvice",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It\u2019s quite simple, to be successful mining Bitcoin you either need access to free electricity, or advanced access to the latest ASIC hardware. If you don\u2019t have either of these you are just a chump.",
+                                    "score": 21,
+                                    "author": "tsloteconomist",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; It\u2019s quite simple, to be successful mining Bitcoin you either need access to free electricity, or advanced access to the latest ASIC hardware. \n\n\\^^\n\nThis guy gets it.",
+                                            "score": 6,
+                                            "author": "JustSomeBadAdvice",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Is there a market for recycling out dated Bitcoin mining machines every two years as the DD states?",
+                                    "score": 2,
+                                    "author": "moosejacket",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "If you get $15 per device then I'd call that a win.\n\nThere's valuable resources in the miners- a tiny amount of gold/silver, a lot of aluminum, steel cases, copper wiring...  But separating the raw materials back out to be used is a very difficult and expensive proposition.  At that point it's more about not harming the earth with added waste than it is getting any money back.\n\nSometimes the heatsinks and fans from one generation to the next can be used, but it's very costly in the labor (in America) to manage it.  Fans are tricky because they are still likely to fail in the second generation... And you don't want failing fans.",
+                                            "score": 3,
+                                            "author": "JustSomeBadAdvice",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Just seems like a problem to be solved, at least for recycling for the earth\u2019s sake. Like could the government ever force mining companies to dispose of things in a way that creates some new market.",
+                                                    "score": 3,
+                                                    "author": "moosejacket",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Maybe, realistically it's not that different from regular recycling.  With regular recycling the plastic is great and plenty re-usable... The problem is the oils, the grease left on them, the labels, the paper they are attached to, the ink and any other food particles.  And the sorting by type of plastic (and maybe color).\n\nWith bitcoin miners it's the same idea but different materials (and mostly heavier).  Separating the gold and silver from the silicon and circuit boards requires a big chemical process to soak the boards in.  Nets a very small amount of gold.  The copper wiring needs to be separated from the plastic protection, also not easy, as well as the silicon/pcb's.\n\nThe aluminum heatsinks are easy at least once you get off the thermal paste/pads, but they're also not worth very much.\n\nRecycling is a hard problem to solve.",
+                                                            "score": 4,
+                                                            "author": "JustSomeBadAdvice",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I just started reading about these companies yesterday. Crazy times we are in. This was a great read, thank you!",
+                            "score": 25,
+                            "author": "a_blue_ducks"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Now teach me how to make 5k usd in 5 minutes",
+                            "score": 16,
+                            "author": "verified_potato",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Are you a hot girl? Young boy in red state? Near a roulette table and willing to risk $5k?",
+                                    "score": 33,
+                                    "author": "PMyour_dirty_secrets",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; Young boy in red state?\n\nI'm ded lol",
+                                            "score": 6,
+                                            "author": "NearEarthOrbit"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Anyone know where he got the \"MARA has awarded himself compensation in excess of $300m over the last few months.\"\n\nI cant find this info",
+                    "score": 6,
+                    "author": "AlaskanSnowDragon",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A big part of it was in an 8-K on 31/12/2020 for 2020 executive compensation. I've added this [link](https://www.sec.gov/Archives/edgar/data/1507605/000149315221000469/form8-k.htm) to the main post now too. You will find some more recent [additional compensation](https://www.sec.gov/Archives/edgar/data/1507605/000149315221003252/forms-8.htm) if you dig through their SEC filings.\n\n&gt; Merrick Okamoto, CEO was awarded a cash bonus of $2,000,000 which was paid before year end 2020. He was also awarded a special bonus of 1,000,000 RSUs with immediate vesting. He was given a new three-year employment agreement effective January 1, 2021 with the same salary and bonus as the prior agreement. He was also granted the following: award of 1,000,000 RSUs when the company\u2019s market capitalization reaches and sustains a market capitalization for 30 consecutive days above $500,000,000; award of 1,000,000 RSUs priced when the company\u2019s market capitalization reaches and sustains a market capitalization for 30 consecutive days above $750,000,000; award of 2,000,000 RSUs priced at lowest closing stock price in past 30 trading days when the company\u2019s market capitalization reaches and sustains a market capitalization for 30 consecutive days above $1,000,000,000; and award of 2,000,000 RSUs when the company\u2019s market capitalization reaches and sustains a market capitalization for 30 consecutive days above $2,000,000,000.\n&gt; \n&gt;",
+                            "score": 20,
+                            "author": "noodlesource",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I found riot by accident...\nBy searching for riot games.",
+            "score": 302,
+            "author": "SpliTTMark",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Riot Games is owned by Tencent, TCEHY",
+                    "score": 88,
+                    "author": "Rageoftheage"
+                },
+                {
+                    "level": 1,
+                    "comment": "SAME SHIT LMAO\n\nI was like \u201cValorant should be competing pretty nicely with CSGO over the years, lemme invest in it! Google gave me the RIOT ticker and I never even questioned it...",
+                    "score": 20,
+                    "author": "The_Bolenator"
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't think that was an accident.",
+                    "score": 5,
+                    "author": "the_snook"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "FINALLY a decent analysis of mining that understands network difficulty.\n\nThere\u2019s still a couple nits:\n\nTwo years is still an optimistic lifetime for a miner. Just because that\u2019s the depreciation rate doesn\u2019t mean they\u2019re actually in service that long. 18 months is probably more realistic.\n\nThe cost of hardware is _critical_. When you have such a short lifespan on hardware, capex is _actually your dominant cost not electricity/opex_. The reason miners talk about electric costs so much is because it\u2019s the only thing they sortof control. You can\u2019t do anything about the price Bitmain charges. Capex is the majority of your miner\u2019s lifetime cost, and since you pay it upfront, cash flow sucks.\n\nNetwork difficulty will more than double and be worse than your estimates. BitMain will absolutely oversell miners. Also, since difficulty adjusts every two weeks, you can\u2019t just multiply profitability by a year. You really need to project a difficulty curve and integrate it. I can\u2019t emphasize enough how much and how quickly difficulty plummets profitability.\n\nI completely agree with your conclusions that these are severely overpriced losers, and want to emphasize that _there is no moat_.\n\nSource: I formerly ran a mine",
+            "score": 58,
+            "author": "7366241494",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for sharing - this is great additional information.\n\nI tried to find a balance in the post and avoid getting too technical/detailed and tweaking too many parameters because even with generous inputs it demonstrates the insanity of the valuations.\n\nNetwork difficulty I see it rose 400-600% in 2018 and will be very interested in seeing how miners respond this time round. Difficulty curves for profitability, hardware efficiency depreciation, and halvings definitely key to model and forecast for thoroughness and will add to the bear case.\n\nAlso very interesting to hear about cash flow and dealing with BitMain from someone who used to run miners.",
+                    "score": 14,
+                    "author": "noodlesource",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yah in 2018 people were buying miners at a price that _wasn\u2019t even profitable on Day 1 of delivery_, if you could even buy a miner. It was completely irrational, but that\u2019s crypto for ya.\n\nThe fact that you can\u2019t get delivery until October is both a red flag and a profit opportunity. The chip shortage means TSMC can\u2019t keep up with Bitmain\u2019s orders, which take at least 3 months from P.O. to chip delivery, so the network difficulty will only rise as fast as chips can be made. This is good news for miners that go online this quarter. Expect profitability to be near 0 by October though, unless BTC/USD doubles or triples again.  Think of buying miners right now as buying a forward contract for Bitcoin delivery several months from now. You are betting on future BTC price action to be _higher than people already anticipate_.  You have to be not just bullish but _more bullish than everyone else_ about the price of BTC. \n\n~~I find the 0.14\u00a2 kWh to be unbelievable. Like an order of magnitude off.~~ ** EDIT: original post did have an extra zero in the electric price ** I\u2019ve been out of the game for a few years, but the lowest I\u2019d heard of back then was sub-3\u00a2 power. Even in China I don\u2019t think they were getting less than 2\u00a2.  Things could have changed since then but 1.4\u00a2 is very cheap. The benefit of cheap power is that your miners have a longer running time and you actually get that full 2+ years out of the hardware. Your competitors with 4\u00a2 power drop out when the difficulty shrinks the revenue only 4\u00a2, while the players with 3\u00a2 power can still earn a penny per kWh for another few months.",
+                            "score": 10,
+                            "author": "7366241494",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I hunted around and found my source again for the 1.4\u00a2 kWh. It was from a [press release](https://www.riotblockchain.com/news-media/press-releases/detail/97/riot-blockchain-announces-s19-pro-antminer-fleet-expansion) by Riot Blockchain in January. \n\n&gt; This shipment will expand the Company\u2019s mining fleet operating at Coinmint LLC\u2019s (\u201cCoinmint\u201d) facility in Massena, New York as part of a hosting relationship between the two companies. Riot has significantly reduced its energy and direct operational costs since relocating its miners to Coinmint, aided by the level of excess renewable energy available in the Massena area. The Coinmint facility draws a significant portion of its energy from hydroelectric sources and the annual average generation cost has been approximately 1.4 cents per kilowatt-hour (\u201ckWh\u201d) net of distribution related costs.\n\nI'm sure some very favourable interpretation of costs there.",
+                                    "score": 3,
+                                    "author": "noodlesource",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "1.4\u00a2 is in the realm of possibility. Certainly a _very_ good rate. Your original post said 0.14\u00a2 which must have an extra 0 in there.",
+                                            "score": 3,
+                                            "author": "7366241494",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh yes my bad. Corrected.",
+                                                    "score": 2,
+                                                    "author": "noodlesource"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 3,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Here is my problem.  This seems to not have organic visibility.  It looks like this is getting pumped due all the publicity around Bitcoin right now.  It looks like trying to ride the coat tails of bitcoin.  \n\nSomething is off about these stocks.  It was probably a good stock to buy into a month ago, but that steep wall going straight up right now looks like a dump is on the way.  \n\nI've been watching these and I personally would avoid them.\n\nStrictly my opinion.",
+            "score": 251,
+            "author": "Dawg4923",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I believe that was essentially their summary of where these miners sit right now",
+                    "score": 75,
+                    "author": "MnkyBzns",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I Guess I should have started with \"I agree.\" \n\nI won't touch this stock right now.  It's an overpriced penny stock.",
+                            "score": 51,
+                            "author": "Dawg4923",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Everybody's been saying that since the beginning, guess what, theyre still going up, ive had them since they were sub 5$, and I wont even think about selling until they reach triple digits, their market cap is still small, especially considering NKLA, a fucking fraud, reached a 15B market cap.",
+                                    "score": 24,
+                                    "author": "Clarity_Spin97",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "They have been pumped massively. Argo blockchain is a mining company with a higher hash rate than either of these and it's worth less than $5",
+                    "score": 36,
+                    "author": "DeeSeeDub",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Also Argo's CEO is super transparent and seems like he has a good head on his shoulders.  There's a handful of other good things about them so I'd encourage anyone to do their own DD, I'm not here to sell anything to anyone.  I'm in both mara and argo but my confidence is in argo.",
+                            "score": 14,
+                            "author": "Jo-Sef",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ill throw Clean Spark into the ring. They are primarily in the Microgrid and Micro Controller business (They are in a new tesla giga factory also check out how they kept power on at the US embassay in Beruit)\n\nAnyways they are now adding mining to their business. They may have the technology to be the most energy efficient miners",
+                                    "score": 4,
+                                    "author": "HelloImustbegoing",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'll check it out.  Also caveat on Argo, their sub is full of bots/new accounts.  Idk if it's just a reddit-wide thing since GME or if it's cause for concern with them specifically.  I've read some good DD and done my own but the amount of weirdness around them on reddit does give me pause.",
+                                            "score": 3,
+                                            "author": "Jo-Sef",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Reddit is compromised. These artificial pumps are a game of hot potato.",
+                                                    "score": 5,
+                                                    "author": "HelloImustbegoing"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Same can be said for Hut 8 Mining. It's pure speculation and confidence because they're on larger exchanges.",
+                            "score": 9,
+                            "author": "downtownmiami"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Why is ARGO not on robinhood?",
+                            "score": 5,
+                            "author": "dub_life20",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Why are you using robinhood?",
+                                    "score": 5,
+                                    "author": "Ellron23",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Was just lookin hit up on RH, thanks for your concern.",
+                                            "score": 2,
+                                            "author": "dub_life20",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes, I bought at $8 thinking it would be good to have bitcoin/blockchain diversity in my portfolio and it shot up so fast it made me nervous so I sold my whole position at $50.  Definitely felt I was in a pump.",
+                    "score": 12,
+                    "author": "Bowes91",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm in the same boat as you.\n\nIt really doesn't seem sustainable at this price level. I want to buy puts on RIOT, but I'd be IV crushed into smithereens if I tried.",
+                    "score": 7,
+                    "author": "roytown"
+                },
+                {
+                    "level": 1,
+                    "comment": "When it comes to bitcoin, it\u2019s better to just buy the coin itself in my opinion. It\u2019ll outlive any mining operation",
+                    "score": 7,
+                    "author": "[deleted]",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "100% agree. The ride is over and even getting to $77 was wild. I sold at 68 and still happy. Will buy back in the dip and watching how bitcoin does.",
+                    "score": 16,
+                    "author": "GuessxWho",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; his seems to not have organic visibility. It looks like this is getting pumped due all the publicity around Bitcoin right now. It looks like trying to ride the coat tails of bitcoin.\n\nThere is no \"seems\" this is 100% on the money.",
+                    "score": 3,
+                    "author": "oarabbus",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Absolutely right. These were great stocks to buy weeks or months ago, but now everyone is pretty late to the party and a lot of people will get burned if they don't watch out.",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Solid DD! My small circle of investor buddies and I have been looking into this space a lot. \n\nArgo Blockchain and BitFarms are way undervalued compared to Riot, Mara, and SOS. \n\nArgo is on track to produce 7BTC daily and BitFarms 9BTC daily. This is including their newest orders of miners not yet operating.",
+            "score": 52,
+            "author": "PullingUpFrom40",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I've heard Bitfarms takes a bit too much off the top to stay profitable if they get much competition, but Argo is news to me. Care to speak more on them? (Or defend BitFarms, if you want.)",
+                    "score": 14,
+                    "author": "emsenn0",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm in on Argo. The short of it is that they have a higher hash rate than both RIOT and MARA at 772 petahash - this is expected to increase to 1,685 by the end of Q2.\n\nThey claim to be one of the most efficient miners in the world. In December they mined 96 BTC at an operating margin of 60%. In January the margin increased to 70% with 93 BTC mined (and purchased another 172 BTC during the 25% decline).\n\nI'm curious how their next quarterly report looks - the monthly updates only provide revenue, so of course no depreciation of their mining machines is included (which have about 2 years of profitability).\n\nAs OP pointed out these miners will keep diluting shares to continuously replace their mining machines; the result being very small net margins at best. Worth a speculative investment for 3-12 months during this bull run, but I don't see any miners being a good long term hold, even if Bitcoin doesn't crash back down.",
+                            "score": 15,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not to mention their CEO is the most transparent out all miners. They post monthly YouTube videos to answer ALL investor questions on Twitter. You don\u2019t see that from any other mining companies. You can tell they really care about increasing shareholder value",
+                                    "score": 8,
+                                    "author": "curvedbymykind",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for this insight. Saw a quick increase on my paltry speculative investment in ARB last month, curious about whether I should hold or take my profits now, or put more in and see where it goes.\n\nProblem is the correlation with Bitcoin value, if there is a crash any time soon then it's all for nought.",
+                                    "score": 3,
+                                    "author": "rattleandhum",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "ARBKF is my biggest miner position - check out their videos of CEO answering investor questions on youtube/twitter. They do this monthly and are the only miners who are this transparent with their business strategies. With miners you have to be a little careful with who you can trust and Argo definitely gets my confidence.",
+                            "score": 2,
+                            "author": "curvedbymykind",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I know what Bitcoin is and what mining is in principle, but I'm completely ignroant to the details, other than what I just read here -- very educational. Thank you!\n\nMy question -- does anyone know how BTSC fits into this picture. Why is it so cheap when it seems to be doing the same thing as RIOT and MARA.? \n\nThanks.",
+            "score": 92,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "take a peek at this video, completely explains the basis of Bitcoin in manageable terms [3Blue1Brown](https://youtu.be/bBC-nXj3Ng4)",
+                    "score": 47,
+                    "author": "wonkysalamander",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is the one video that finally made it click for me!",
+                            "score": 16,
+                            "author": "b8561",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "RIOT is pretty risky in such a bull run for Bitcoin. There's no knowing when a correction will occur and how big of a correction it will be. RIOT share price basically follows Bitcoin's price it could end up back to being a penny stock in no time (52 week low was .51 cents!) I think you'd be better off just buying Bitcoin instead, if the coin crashes at least you'll still have some crypto to hold on to vs. the possibility of RIOT going out of business after a crash and ending up with nothing.",
+            "score": 54,
+            "author": "1o010o1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That's fairly well thought out.  I wonder how large the niche market exists of those still afraid to invest directly in crypto.",
+                    "score": 3,
+                    "author": "Puppybeater"
+                },
+                {
+                    "level": 1,
+                    "comment": "that's my question, too . . .\n\nHow could buying shares of a company that mines bitcoin ever be more profitable than simply buying bitcoin?",
+                    "score": 2,
+                    "author": "Wolfir",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I bought a few long dated puts at like 10 strike. They are very cheap. If riot crashes it might offset my loss of my stolen Bitcoin.",
+            "score": 9,
+            "author": "Rhona_Redtail",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I would wait and buy these on a dip. Been investing in crypto since 2015. Bitcoin always dips.",
+            "score": 93,
+            "author": "FestivalPapii",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "ATH , rubberband snap pullback.\n\n3 Years later.\n\nRinse. Repeat.",
+                    "score": 32,
+                    "author": "T8ert0t",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 11,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Been thinking about this too, obviously can't expect 20x again it's safe to assume the ATH price growth percentage would decelerate, just not sure what that number is. 10x? 5x? Maybe it is 2.5x.",
+                                    "score": 4,
+                                    "author": "whipstickagopop"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm new to crypto. Does the phrase \"time IN the market beats timING the market\" still apply to crypto?",
+                    "score": 6,
+                    "author": "cptstupendous",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "None of this is financial advice:\n\nFor Bitcoin, historically, the answer to \"time in market?\" is overwhelmingly yes.  But looking forward, who knows when the music is going to stop.  If you bought at the top three years ago, you'd be almost 3x right now, but it took over 2.5 years to break even.  If you'd been DCAing $100/month since 2015 , [you'd have $275K now](https://dcabtc.com/) from $6K invested (ignoring fees).  To have the same amount of money during that period, you'd have had to buy a lump at some point less than $1135.  So, who knows?  As someone who's been watching BTC for a long time, my gut tells me that if this were to crash again, it would settle in around $20K-$25K, but that's based on nothing but gut.  Even so, if you were to buy today and it crashed to that, history tells you to sit tight.  But who knows if we're at the top of this bubble; you could wait and it would \"crash\" eventually to $75K.  I wouldn't even know where to begin with respect to timing it.  You'll know the big crash when it happens, but not before.  Maybe invest half DCA-style, and save half for when the big crash comes?\n\nOne of the interesting things about BTC is that it's \"based on nothing\".  This is a double-edged sword; the downside is talked about a lot (\"It's worthless!\"  \"You only make money by finding a greater fool!\"), but the upside is that there isn't really any external news that can ruin it.  There isn't going to be any news that comes out that will cause it to collapse, like accounting scandals, or a bad year for revenue, or coronavirus or whatever.  The only thing that affects it seems to be when the enthusiasm flags and the bubble pops, but never all the way.",
+                            "score": 20,
+                            "author": "steve_b",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If the news comes out that tether is backed by nothing and other stablecoins are backed by btc and tether the market will tank back to 3k.",
+                                    "score": 6,
+                                    "author": "willyrekintosh",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Id look into the 4 year cycle on Bitcoin. I believe like at the end of previous cycles it will drop significantly at its peak, likely around september. I know a lot of people are saying this time it's different and yes I believe after other cycles it will be much higher than this cycles peak at whatever price it gets to. \n\nI have a longer time frame trade, I started buying around spring and summer and will try and get out near its peak. Even with institutions this time I don't believe it will be that much different than previous cycles. Just in case Ill leave a little in but will sell 90% of my total bitcoin. \n\nI still think its rather early but I wouldn't recommend anyone hold through the end of this cycle. In the next 4 years there could be alot that could happen to how governments want to regulate crypto. Plus you could take your profits from this cycle peak and buy in before the next bull phase.",
+                            "score": 11,
+                            "author": "nightastheold"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Absolutely, Just DCA and dont all in FOMO something at their ATH. Take this from someone who went all in on ALTS before the infamous 2017 crash",
+                            "score": 11,
+                            "author": "ArPak",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks!",
+                                    "score": 2,
+                                    "author": "cptstupendous",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Be careful. Bitcoin doesn\u2019t work like the indexes or general market",
+                                            "score": 2,
+                                            "author": "GOPokemonMaster"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Anyone hodling from pre-2017 (or even 2017 ATH) would answer that with a resounding YES.",
+                            "score": 2,
+                            "author": "monkeyhold99"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Bearish statement in a bull market.... might miss out waiting for a dip!",
+                    "score": 36,
+                    "author": "Unable_Ocelot_4435",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Or cash out routinely in a bull market and buy back gradually in a bear market",
+                            "score": 24,
+                            "author": "I_waterboard_cats"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Bitcoin crashed HARD back in feb-march 2018 and caused a downwards spiral that took two years to recover. Will it happen again? Nobody knows but if it happens I sure as hell will buy some.",
+                            "score": 14,
+                            "author": "XSC",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The previous Crypto Craze was backed by retail buyers like us, but this time it seems different with the backing of large corporations like Tesla, market volatility going up, and an easier way for retailers to buy in. BTC may consolidate, but I would not be surprised if it continues to go up before it goes down...",
+                                    "score": 10,
+                                    "author": "Unable_Ocelot_4435",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This is why it won't happen.  Too many people waiting for dips.\n\nThe big dip WILL eventually  come but it will be from so much higher...",
+                                    "score": 2,
+                                    "author": "TulsaGrassFire"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Might not see a bigger dip than the 2017 one ever again but the occasional dip from whales or big market movement is always possible. IMO, the biggest one to come would be when the stock market bubble bursts... Gonna have to keep an eye out for that..",
+                    "score": 2,
+                    "author": "ArPak",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I wouldn't be so sure there will be dips as big as the last couple bull runs. You didn't have companies in the S&amp;P 500 buying. There is a completely different level of money coming in now.",
+                    "score": 2,
+                    "author": "SharksFan1"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Page 10 SEC report by RIOT https://ir.riotblockchain.com/annual-reports/content/0001079973-20-000216/riot_10k-123119.htm?TB_iframe=true&amp;height=auto&amp;width=auto&amp;preload=false\n\n\n\"We have a history of operating losses, and we may not be able to achieve or sustain profitability; we have recently shifted our focus to our blockchain and cryptocurrency mining business, and we may not be successful in this business.\"\n\n\"We were previously engaged in animal health and life science-oriented businesses and were not successful in those businesses. \"\n\n\"Our mining operating costs outpace our mining revenues, which could seriously harm our business or increase our losses.\"\n\n\"As of December 31, 2019, we had approximate balances of cash and cash equivalents of $7.4 million, working capital of $9.3 million, total stockholders' equity of $26.2 million and an accumulated deficit of $217.2 million. To date, we have, in large part, relied on equity financings to fund our operations.\"",
+            "score": 21,
+            "author": "Adhuk",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You need to consider bitcoins appreciation since that report. All bitcoin miners\u2019 balance sheets are going to look very different come earnings.",
+                    "score": 8,
+                    "author": "ertzrentacar",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The market cap is $4 billion.  It can't even be close fundamentally.",
+                            "score": 12,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Expected next month for Riot",
+                            "score": 2,
+                            "author": "Adhuk"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Bitcoin mining is like gold mining back in the 1800\u2019s. You might strike it rich, best you can realistically hopeful is breaking even.\n \n\nI threw a little bit of money into MARA and BLOK for fun. We\u2019ll see what happens.",
+            "score": 6,
+            "author": "TheNonDuality",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Great write up. I had similar thoughts about how much MARA has run up compared to bitcoin. I ended up selling MARA yesterday for about 100% gains.  \nThough I'm still bullish on bitcoin, the price and valuation of MARA is just too high for me to hold.  \nI do want to stay in on miners so decided to buy a small position in SOS. (Yes, I know it's more risky but it allows me to stay in a miner stock and not have to put up too much capital as well)",
+            "score": 11,
+            "author": "ImprSLF",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Consider arb over sos if you want a small position",
+                    "score": 2,
+                    "author": "yb206"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Another important bearish-lite trading strategy you didn't mention: a pair trade.\n\nTake short positions on these companies (long term puts, option spreads), but go long bitcoin at the same time.\n\nThis way you don't get fucked if the price of bitcoin continues to explode, you've hedged that risk, and are isolating the variable you care about: these companies are overvalued\n\nEDIT: either I missed this in OP, or he added it after the fact. Either way, it's there now!",
+            "score": 31,
+            "author": "welliamwallace",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Pretty sure OP did suggest this strategy.....\n\n\n\u201cMore simply you could go long on Bitcoin and short RIOT/MARA. This should converge in the long run.\u201d",
+                    "score": 18,
+                    "author": "abigail36"
+                },
+                {
+                    "level": 1,
+                    "comment": "I almost feel like OP chose not to mention that angle on things to avoid making the conversation too centered around blockchain or bitcoin, instead of these two companies. Bitcoin, crypto, and blockchain are all their own separate investments: this is some fine DD on RIOT and MARA.",
+                    "score": 5,
+                    "author": "emsenn0",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;More simply you could go long bitcoin and short RIOT/MARA. This should converge in the long run. The risk is that short term the short position will be impossible to risk manage and there is always the risk of more secondary offerings.\n\nThis is the last paragraph of the bear case.",
+                    "score": 3,
+                    "author": "DPX90"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "i dont understand why you wouldnt just buy crypto.  its gonna all be correlated. Now when coinbase has its ipo, thats different and ill be buying at some point.",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Awesome work and thank you for sharing!",
+            "score": 9,
+            "author": "TraderX19"
+        },
+        {
+            "level": 0,
+            "comment": "No mention of ARBKF?",
+            "score": 6,
+            "author": "redditspeechcensor",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Look at Argo Blockchain. A fraction of the price of these  but capable of mining more than both.",
+            "score": 7,
+            "author": "DeeSeeDub",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes I keep wondering why it doesnt have more hype? Maybe bc its not listed on a US exchange?",
+                    "score": 3,
+                    "author": "kochsson",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Not really a fraction their market cap is 1.2 billion, so about 3-4x less than MARA / RIOT",
+                    "score": 2,
+                    "author": "Adamant11",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So about 1/4th to 1/3rd I guess",
+                            "score": 3,
+                            "author": "vVwWWwVv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm riding the $SOS wave hoping it's the next RIOT and MARA.",
+            "score": 14,
+            "author": "bupizzle",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There's been some suspicious activity across trading subreddits about SOS in the past 24 hours. Dormant accounts coming alive and alleging SOS is a scam. Haven't gotten a chance to realize dive into what they're actually saying yet tho.",
+                    "score": 6,
+                    "author": "Pelvic_Sorcery420",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm so used to bots pumping up stocks that I'm not really sure what to think if there's bots saying SOS is a scam lol",
+                            "score": 5,
+                            "author": "DustyTurboTurtle",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "HUT 8 is the true miner . How come no ones taking about them !",
+            "score": 17,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "HUT 8 doesn\u2019t trade on the US stock market. More capital moves around in the US than Canada so HUT8 won\u2019t experience the same price run up. Heard rumors of HUT8 is going to be listed on Nasdaq",
+                    "score": 7,
+                    "author": "Keys_13",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No way it doesn\u2019t get up listed sometime this year. Their PR team is very responsive and they for some reason ignore any and all questions about nasdaq uplisting on Twitter. Might mean there is something in the works they cannot legally talk about",
+                            "score": 2,
+                            "author": "ertzrentacar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; listed sometime this year. Their PR team is very responsive and they for some reason ignore any and all questions about nasdaq uplisting on Twitter. Might mean there is something in the works they cannot legally talk about\n\nDefinitely not legal to talk about lol same goes for ARBKF. I own both.",
+                                    "score": 2,
+                                    "author": "curvedbymykind"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Also BITF . They will catch up 100%",
+                    "score": 12,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Bc not everyone has access to buying it",
+                    "score": 3,
+                    "author": "yb206"
+                },
+                {
+                    "level": 1,
+                    "comment": "Bifury sold all their shares last months.\nThey are done now.",
+                    "score": 5,
+                    "author": "rd3321",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "BITFARMS all the way",
+                            "score": 5,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How's that saying go?\n\nIn a gold rush, better to invest in the shovel company than XAU?",
+            "score": 4,
+            "author": "hobskhan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Oh so true. If you owned any equity in Bitmain (the company producing most of these miners) you would be laughing to the bank right now.\n\nUnfortunately its privately owned. Probably because it makes a profit \ud83d\ude43",
+                    "score": 3,
+                    "author": "noodlesource"
+                },
+                {
+                    "level": 1,
+                    "comment": "Has alwaysn been more profitable to buy Bitcoin than to mine.",
+                    "score": 2,
+                    "author": "TulsaGrassFire"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Look into HIVE Blockchain Technologies ($HIVE). They have by far the most healthy financial statements, and being the only Ethereum miner is quite special. \n\nTheir earnings release is in less than 2 weeks, and I expect it to be amazing and 'knock all the other crypto miners out' in terms of current revenue and profits and not just the promise of future revenue. \n\nHIVE is definitely undervalued compared to MARA and RIOT, but that is most easily explained by it not being listed on NASDAQ.",
+            "score": 4,
+            "author": "Specialis_Sapientia",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Fantastic writeup",
+            "score": 5,
+            "author": "palantard1",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "So with that siad are there any crypto miners or companies that you like?\n\nI like HIVE however they have the same struggles as MARA/RIOT I'm sure\n\nand I also like GLXY but they don't mine",
+            "score": 6,
+            "author": "cannainform2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I love GLXY because they don\u2019t mine!  Seriously.\n\nAs someone who\u2019s long Bitcoin and agrees with OPs dd,  I only hold shares in companies like GLXY, VYGVF, PBTS, BIGG, and hopefully coinbase soon.  \n\nSure the gains aren\u2019t as spectacular as they would\u2019ve been if I was still holding basically every miner I acquired sub-1.00, but late last year a read a similar bit on the value of miners and gradually exited my positions.",
+                    "score": 2,
+                    "author": "inmaniylem",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Heads up for others interested in this area, Coinbase will IPO this year, which is the most popular trading platform for everyday crypto traders. They charge a small fee for every transaction on their platform, so no matter if the crypto market is up or down, there will be people using the system. IPO hasn\u2019t already debuted yet, but people are speculating it to be over $300/share at debut: https://cryptocrunchapp.com/news/coinbase-valued-at-77-billion-on-nasdaq-prior-to-public-listing/",
+            "score": 6,
+            "author": "diarpiiiii",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "the RIOT CEO was on yesterday or the day before saying they have 1 Exahash and current totals are 150 Exahash worldwide.  Using 900 coins a day at $50k each, that is  $45MM worldwide daily...their 1/150 is $300k/day.  So, $27MM/Quarter or $100MM yearly.  That's revenue, costs would be large.   \n\nFor anything longer than a few months, there has not been a point in bitcoin's history where it was better to buy mining equipment than buy actual bitcoin.    \nSigned - Former miner sold his equipment and bought bitcoin.",
+            "score": 6,
+            "author": "TulsaGrassFire",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 6,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Just remember everyone, if it\u2019s on WSB that means you are already too late. The RIOT train is long gone",
+            "score": 18,
+            "author": "Stereodog",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "TF do you mean by that. They were doing GME last year Q2/3 already if that's what you're referring to.",
+                    "score": 6,
+                    "author": "scramsamsax",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The most promising and undervalued Bitcoin mining and blockchain technology stocks are **not RIOT or MARA**, they are:\n\n* Argo Blockchain (OTCMKTS: **ARBKF**)\n* Hut 8 Mining (OTCMKTS: **HUTMF**)\n* HIVE Blockchain Technologies Ltd (OTCMKTS: **HVBTF**)\n* Kr1 / Kryptonite 1 plc (OTCMKTS: **KROEF**)\n* Bitfarms Ltd (OTCMKTS: **BFARF**)\n\nThey're all OTC's, but likely in the works to reach Nasdaq. These are all companies that have survived Bitcoin bear markets and are taking immediate and immense action to assure they're strengthened during this bull market; for example, by adding hash rate, Bitcoin's to their balance sheet, or expanding into DeFi asset management.\n\nArgo Blockchain and their [CEO Peter Wall](https://www.youtube.com/channel/UCb70mqrKLNq62UGvD6EwHsQ), in particular, break the mold of murkiness in this sector. Wall appears regularly on YouTube, sharing information from their board meetings and explaining the companies rationale behind decisions, like share dilution.\n\nFor a far more in depth analysis on these companies, check out [BLONITY's YouTube channel](https://www.youtube.com/channel/UCPJvLknI9JEwW_p4m8xaAow). He goes deep on all of these companies' potential and crunches the numbers.\n\nu/noodlesource lastly, thank you for your thorough post and assessment of what is overall the 'bearish case' for the sector. It's helped me understand my bullish case better!",
+            "score": 7,
+            "author": "M_V_V_",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Great post\n\nThere's another called argo blockchain it's on London stock exchange \u00a3ARB the price action is a very similar rocket.",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Argo blockchain is the best",
+            "score": 11,
+            "author": "Lemoncrap",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "arbkf",
+                    "score": 3,
+                    "author": "ojnvvv"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s called a nonce? What the fuck hahahaha",
+            "score": 39,
+            "author": "Professional-Lab6751",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The name isn't new to cryptocurrencies, it has long been used in the cryptography field. \n\nIt's a number that is meant to be used only once and then thrown away/forgotten, usually because using it more than once (in the same context) introduces some security weakness.",
+                    "score": 36,
+                    "author": "ric2b",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In comp sci in general",
+                            "score": 13,
+                            "author": "notevenlooking",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "cryptography came before comp sci tho",
+                                    "score": 6,
+                                    "author": "iwishihadmorecharact",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I think in the UK nonce is slang for pedophile",
+                                    "score": 4,
+                                    "author": "rayrayrex"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "https://en.m.wikipedia.org/wiki/Cryptographic_nonce",
+                    "score": 6,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This was phenomenally well done.",
+            "score": 3,
+            "author": "JoeDirtBuffett",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Don't forget ARGO blockchain who basically does the same thing",
+            "score": 8,
+            "author": "Spartoz",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This is some quality DD. Thank you for putting the time into writing this.",
+            "score": 4,
+            "author": "flatplanecrankshaft"
+        },
+        {
+            "level": 0,
+            "comment": "$si + $riot + $mara \n\nanyone else?",
+            "score": 4,
+            "author": "fiomortis",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for taking the time to do this.",
+            "score": 5,
+            "author": "dytele"
+        },
+        {
+            "level": 0,
+            "comment": "At these valuations, there\u2019s no point in not just being exposed to Bitcoin yourself instead of investing in these companies. If you truly believe these companies are worth what they are now, then you believe Bitcoin is worth more than it is now",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Your TLDR is gold. Also, great post, DD and views.",
+            "score": 3,
+            "author": "wilsfavdel"
+        },
+        {
+            "level": 0,
+            "comment": "Not enough love for HUT8 around here.",
+            "score": 4,
+            "author": "Carljul"
+        },
+        {
+            "level": 0,
+            "comment": "No mention of ARGO, ARB. Hugely undervalued miner",
+            "score": 12,
+            "author": "DangerousDavey",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Riot is a fraudulent reverse merger once controlled by one the shaddiest operator in modern investing pump and dump manipulation. Wouldn't touch it. Great short with OTM put. Will drop like a soap when the market panics.",
+            "score": 5,
+            "author": "orishasinc2"
+        },
+        {
+            "level": 0,
+            "comment": "I have DPW. They are in BTC mining and EV sector. They were doing well the last cryto boom. Now it's sitting under $10.",
+            "score": 3,
+            "author": "MinntyFr3sh"
+        },
+        {
+            "level": 0,
+            "comment": "Would I be correct in saying after reading everything you wrote that RIOT is the overall better one to invest in?",
+            "score": 3,
+            "author": "Versace__01",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Based on DD both seem iffy but yes RIOT is the better of the two although that's not saying much with what OP has laid out here. Honestly it just feels like DD means little to nothing with stocks like these that are so closely tied to BTC. If BTC goes up so do they and BTC is looking pretty solid for now.",
+                    "score": 5,
+                    "author": "sun_dawg"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; Unlike the 2017/18 rise of Bitcoin, the 2020/21 Bitcoin price action has been largely driven and influenced by institutional demand.\n\n*Laughs in USDT printing*",
+            "score": 3,
+            "author": "MairusuPawa"
+        },
+        {
+            "level": 0,
+            "comment": "This is phenomenal DD.\n\nI have one question though.  Does the profit account for the value of each Bitcoin?  Each Bitcoin mined will increase in value as well increasing the overall value of the companies.",
+            "score": 3,
+            "author": "odmichael"
+        },
+        {
+            "level": 0,
+            "comment": "Great DD but missing one thing....competition. SOS, EBON and CANN, are also going to be right there with RIOT and MARA. EBON has an exchange coming in the near future and SOS has another 10k miners on the way. All three currently have a smaller market cap.",
+            "score": 3,
+            "author": "LtGuile"
+        },
+        {
+            "level": 0,
+            "comment": "Do you see SOS joining the ranks of these two in terms of market cap and general hype any time soon?",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Great read, even as a crypto lover, I couldn't agree more that mining companies are anything but a good investment",
+            "score": 3,
+            "author": "CorneredSponge"
+        },
+        {
+            "level": 0,
+            "comment": "Amazing knowledge. Congratulations and thanks for sharing.  I have MARA since before Thanksgiving and already recouped my initial investment so no losses if it tanks . Except better use of those gains. \n\nI was under the impression that at the moment HUTMF was a serious contender along with RIOT and MARA. \n\nI remember MARA and RIOT being both $9 and then $13 and then noticing that recently RIOT is much higher than MARA .\n\nThese days any business that touches on BTC seems to go up in price . Integrated Ventures jumped non-stop these last few days including today.",
+            "score": 3,
+            "author": "NPRjunkieDC"
+        },
+        {
+            "level": 0,
+            "comment": "Any thoughts on SOS?",
+            "score": 3,
+            "author": "wilkins348",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Great report.  Hut 8 is a fair superior miner then both RIOT and MARA and is trading at a significantly lower market cap.  It\u2019s even got 3012 BTC in the bank currently",
+            "score": 3,
+            "author": "SupermarketRadiant80"
+        },
+        {
+            "level": 0,
+            "comment": "Beautiful write-up with an unbiased view.\n\nThank you.",
+            "score": 4,
+            "author": "path2light17"
+        },
+        {
+            "level": 0,
+            "comment": "Why is nobody talking about HUT8??\nCompare the market caps, mining PH/s, and bitcoin reserves. \nHut holds 3,012 bitcoin...\nSeverely undervalued IMO.",
+            "score": 5,
+            "author": "ertzrentacar"
+        },
+        {
+            "level": 0,
+            "comment": "All the while DD is great, thanks for writing this up. I would like to point out the fallacy, or plain wrong smoke and mirrors, which is the belief that this time it is institutions and big hedge funds buying up (and therefore the price increase) all the bitcoin. \n\n Here is the thing:\n\nThe 2017 mania was Gartner hype cycle peak and what followed would have (at best) reached plateau of productivity (perhaps half of all time high after many years). Back then, the retail mania was legitimate (although even back then, tether spiced up the price here and there, but nothing comparable what is going on this time around). Crypto enthusiasts act vindicated after 2020, all the while conveniently glossing over the fact, that without \\~30B empty air + defi leverage billions, it would have continued to fizzle into abyss as hundreds similar Gartner hype cycles before and after crypto. Those who are not aware, here are few facts to think about:\n\n\\- Through last 11 months, Tether (which, in kind wording, is sketchy as FUCK entity that is like federal reserve of crypto assets on steroids) has printed 88% of their all historic circulating supply/\\~29B worth of dollars, which are always soon after transfered into major crypto exchanges (Binance, Huobi etc.), purchased bitcoins and offloaded to \"unknown wallets\". It is an entity, which has never had official audit done nor are very highly unlikely to have almost no dollar backing. Hilarious is though, that they are backed to a degree by those bitcoins that they just bought with \"minted\" dollars. Ridiculous nature in which you print out of thin air, purchase an asset, that then pumps in price, offering you further collateral in the form of bitcoin, followed by another and another round of tether minting to further pump up the price of bitcoin ad infinitum.\n\n\\- Also consider the fact, that in greed periods of markets, notoriously thin order books in crypto mean, that dollar : MC ratio is at the very least 1:30, which essentially means, that those currently printed 33B worth of tether already account to 2/3 of total crypto asset class market cap. And this is not taking into account other stable coins, which have also increased in 2020 time period in billions. Those stable coins in nature are similar to tether, as they use something called defi, which in Laymans terms means, that crypto participants use their crypto as a collateral, with interest, to further \"mint\" more stable coins for themselves, which they then use to purchase more crypto. It is basically usual leverage that exchanges offer. The whole thing is such a ugly house of cards, that the fallout will be horrible for usual retail participants.\n\nIts a ponzi, blatant fraud and will end ugly for majority of participants.\n\nAll these things considered, considering the nature of pump and dump of crypto, even something as simple as looking at the yearly price chart, the business model for both RIOT and MARA will be short lived. As you stated of course, timing is difficult, tether could manipulate the price further into million, but the fallout once the manipulation and no real fiat in the system, will result in collapse of the price and both mentioned stocks and their business model. I personally have already purchased long term puts and will continue doing so. In short term, i actually hope this mania fueled by blatant scam, continues.",
+            "score": 8,
+            "author": "Ordinary_investor",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "All this electricity and power to create... nothing of substance. Pathetic waste of resources.",
+            "score": 6,
+            "author": "Jezawan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is my biggest bear position on bitcoin in the long run. We are moving towards a more energy efficient, more green world, and especially if climate change gets worse, there will be lots of pressure for things like bitcoin mining to cease.",
+                    "score": 3,
+                    "author": "dbag127"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I've always thought the whole bitcoin/blockchain thing was a joke that would crash eventually (still might) but there have been some big players the last 2 weeks putting in bullish bets on it (Visa, Mastercard, Musk, etc) -- Not saying I'm sold on it, but damn",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "The past month ive been screaming Ebang [EBON] to anyone that listens. They create the hardware for miners. They literally have started mining and are revealing their crypto exchange this quarter, the first exchange on Nasdaq. I bought 400 shares at $5 3 weeks ago and it's now at 12. I dont understand why no one, literally no one is watching this stock.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Definitely some valid points. It is always good to see both sides to understand the risk vs rewards.  \n\n\nI do agree that MARA and RIOT were getting overweight when it was peaking at high $40s and high $70s (MARA and RIOT respectively).  \n\n\nI disagree about these companies trading with BTC, they were tracking the SPY and BTC increase was merely a catalyst.  \n\n\nIf you want to take a position on these miners, you better hope these price of BTC stays in this range or continue to uptrend, you do not want huge spikes.  \n\n\nMARA and RIOT are currently the poster child but this is why you go after the picks and shovels like CAN (Canaan Inc.) and EBON (Ebang).  Bitmain cannot keep up with the demand, Ebang also purchase the patent Bitmain used to get an edge in the mining boom in 2017.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I bought 330 shares RIOT when it was at $17 then sold at $29. Got back in at $42 with 75 shares and sold at $68. I jumped back in last Friday with 75 more shares at $65. I\u2019m down about $1600 on this run but I\u2019m going to hold through this dip. I was only able to add 2 more shares around 46 for a total of 77 shares. I see btc hit 50,000 again so hope tomorrow prints a big green daily candle.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Played MARA for the short term and know it's a bit of wobbly play but nothing that it concerns me if I lose it. Wild to know their background and really puts me off from them. Still bullish on bitcoin (I've worked in the blockchain space for the past 3 years). What do you think of Bit Digital in comparison to the RIOT/MARA combo?",
+            "score": 2,
+            "author": "SorryLifeguard7"
+        },
+        {
+            "level": 0,
+            "comment": "Been thinking about buying LEAP puts on either of these to pair against the disproportionate amount of BTC I own, but the premiums make it hard to rationalize.",
+            "score": 2,
+            "author": "fakehalo",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Right on...Ride the wave while the tide is rising but always remember low tide always follows",
+            "score": 2,
+            "author": "Big-Special-7804",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This is a really great read. Gave me some insight on some unknown companies.",
+            "score": 2,
+            "author": "gamers542"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for this, truly.  I've finally warmed up to the crypto kool-aid and wanted to include some of it in my portfolio.  I took a look at MARA and I'd seen the questionable rumblings about it but at this point I still don't know how to research a company and do my own due diligence to this degree.  I'm feeling that Square may be the safer option that touches on cryptos/btc and has sound fundamentals and an established history and product but Marathon is reeeaaalllly enticing.",
+            "score": 2,
+            "author": "DJAshian"
+        },
+        {
+            "level": 0,
+            "comment": "Very interesting work. Only thing I can think is this:\n\nWhat is the point of investing in RIOT or MARA instead of just bitcoin?\n\nUltimately these stocks rely on BTC price going up. If they require BTC going up, just buy BTC.\n\nNot precisely sure why you would invest in such a company when the executive team seems to be compensating themselves a lot for providing little to their shareholders.",
+            "score": 2,
+            "author": "wumbotarian"
+        },
+        {
+            "level": 0,
+            "comment": "Who builds the mining rigs/ hardware and is there a play there? Would that be AMD and Nividia?",
+            "score": 2,
+            "author": "Crocoppertones"
+        },
+        {
+            "level": 0,
+            "comment": "I agree, those valuations are wild! Puts it is.",
+            "score": 2,
+            "author": "AwesomeMathUse"
+        },
+        {
+            "level": 0,
+            "comment": "I just got into SOS recently, but have now just thought.\n\n\nWhy invest in bitcoin mining and just not bitcoin itself?",
+            "score": 2,
+            "author": "Pluckt007",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If you get in at the right time, the mining companies outpace BTC growth because people are stupid and throw money at them due to hype. I bought RIOT in January and it's up like 250% while BTC is up like 75% in the same time frame.",
+                    "score": 3,
+                    "author": "AbysmalScepter"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great presentation! I looked at MSTR, not as in depth as your DD, but came to conclusion that it\u2019s too high of a premium to pay, better off buying BTC outright if so inclined.",
+            "score": 2,
+            "author": "CrazyHorse68"
+        },
+        {
+            "level": 0,
+            "comment": "Would recommend taking a look at CLSK too. They're currently expanding their mining operations",
+            "score": 2,
+            "author": "dw717"
+        },
+        {
+            "level": 0,
+            "comment": "How does EBON fit into all this?\n\nEdit: Ebang International Holdings Inc. is a blockchain technology company. It engages in the research and development of ASIC chip technology used in blockchain applications in China. The company also manufactures bitcoin mining machines.",
+            "score": 2,
+            "author": "InterBeard"
+        },
+        {
+            "level": 0,
+            "comment": "I agree both stocks are currently not trading on fundaments, but rather momentum based on Bitcoin price action. Based on that they seem like more of a short to mid term traded based on the current crypto bull run.\n\nHowever it wouldn't shock me if Bitcoin continues to run into the 6 figures and even stabilizes there over the next 2-3 years. If that is true I wonder how profitable these mining companies can be. There is also the big unknown of hash rate competition as the price of Bitcoin soars which may hurt profits even if Bitcoin gets to and stays above $100k.\n\nUnfortunately or maybe fortunately based on the recent price action, MARA and RIOT along with MSRT are really the only way I can get Bitcoin exposure in 401k. I guess you could also consider SQ and PYPL as a way to get less direct exposure.",
+            "score": 2,
+            "author": "SharksFan1"
+        },
+        {
+            "level": 0,
+            "comment": "Bought a few shares of MARA and CAN this morning as well as some more shares of BLOK the etf I have some shares of that invests in blockchain related companies, its done 3x in the past month. I think these mining stocks have already blown their wad so i went in tippie toes but still a fun lotto ticket long term",
+            "score": 2,
+            "author": "SnooJokes352"
+        },
+        {
+            "level": 0,
+            "comment": "That is why I like these companies as a speculative investment into btc. If it goes up these companies are gaining more than if I put cash into BTC itself, so I can risk less capital for greater upside than buying it outright. Just don\u2019t want to be caught bag holding, but I only put in an amount I would be comfortable losing. Bought HIVE for $3 cost basis, already more than doubled. Now I can take out 50% and play with house money - I think institutional investors have some faith after the Tesla purchase. Will ride the next run up and then likely cash out the majority.",
+            "score": 2,
+            "author": "Poodogmillionaire"
+        },
+        {
+            "level": 0,
+            "comment": "Great insight. I\u2019m sure sos is gonna be with these as well",
+            "score": 2,
+            "author": "dayobeats11",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "This is what I signed up for. Top notch DD.",
+            "score": 2,
+            "author": "OliveRelative"
+        },
+        {
+            "level": 0,
+            "comment": "If someone is interested in Bitcoin and wants a slice of the pie, what are some of the reasons they'd invest in a mining company instead of BTC itself?\n\nMy understanding is that when you buy BTC, you're dependant on the price of BTC and regulation. When you buy a stock like this, you're dependant on the price of BTC, crypto regulation, the price of their electricity bill, the supply chain of their mining hardware, the difficulty of the network going up due to increasing hashrate, hardware, developments at Bitmain, and most likely a lot of other factors I'm forgetting or do not even know.\n\nIf BTC suddenly takes a downturn and I want to step out, I can sell BTC any time of the week.\n\nTo me it seems like taking up an extraordinary amount of risk in an already risky field. What am I missing? Is this banking on the company outperforming BTC by large margins?",
+            "score": 2,
+            "author": "Nathanielsan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the most logical way to invest in BTC however the market is very much irrational. It\u2019s a frenzy and will probably end badly",
+                    "score": 2,
+                    "author": "chadpig"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great DD \ud83d\udc4d",
+            "score": 2,
+            "author": "Swinghodler"
+        },
+        {
+            "level": 0,
+            "comment": "Checkout : HUT8 , Bitfarms and Hive for true value and they are the true current leaders of this entire space.",
+            "score": 2,
+            "author": "jmack64"
+        },
+        {
+            "level": 0,
+            "comment": "Call me crazy but what I gather is that China is going to own 60% of the worlds Bitcoin in the coming year(s), and that's scary to me.",
+            "score": 2,
+            "author": "balthus1880"
+        },
+        {
+            "level": 0,
+            "comment": "RIOT used to be called Bioptix, they researched something to do with in vitro fertilization and were very unsuccessful. Stock reverse split a bunch of times. I recall the company having 3 employees. \n\nThey changed their name to Riot Blockchain during the first big crypto pump in 2017 and their stock went up 10x. The company had nothing to do with blockchain. \n\nIt appears they have 6 employees now, maybe they're mining bitcoin while day drinking on their yachts",
+            "score": 2,
+            "author": "roflkitten"
+        },
+        {
+            "level": 0,
+            "comment": "Check out ARBFK. Penny stock btc miner with great fundamentals.",
+            "score": 2,
+            "author": "ageofdescent"
+        },
+        {
+            "level": 0,
+            "comment": "There other company's that Mine too ..that are very competitive CLSK for one,",
+            "score": 2,
+            "author": "Joeponds"
+        },
+        {
+            "level": 0,
+            "comment": "Anyone own CAN?  Also in China",
+            "score": 2,
+            "author": "Fun_Pin5982"
+        },
+        {
+            "level": 0,
+            "comment": "are there any publicly traded companies that are mining ETH instead of BTC?",
+            "score": 2,
+            "author": "MilitaryAttractions",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Believe Hive Blockchain is mostly in ETH mining",
+                    "score": 2,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Your DD is amazing!! Good job",
+            "score": 2,
+            "author": "mjalloh2"
+        },
+        {
+            "level": 0,
+            "comment": "If you are expecting a 90% pull back in Bitcoin as has happened in the past then shorting the miners would be the way to go.  Timing it right would be the key.",
+            "score": 2,
+            "author": "Tieline001",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Excellent read, you definitely did your homework for your analysis. Makes me rethink my  MARA strategy. Your analysis is a gold mine!",
+            "score": 2,
+            "author": "I-Mingis-I"
+        },
+        {
+            "level": 0,
+            "comment": "Bearish Strategy : with high IV sell call credit spreads,  no?",
+            "score": 2,
+            "author": "YOLOfbgmki100",
+            "replies": []
+        }
+    ]
+}

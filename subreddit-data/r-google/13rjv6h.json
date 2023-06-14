@@ -1,0 +1,250 @@
+{
+    "id": "13rjv6h",
+    "score": 95,
+    "title": "I'm building a tool that finds faster and more efficient routes on Google Maps\ud83d\ude97",
+    "author": "t-bands",
+    "date": 1685026357.0,
+    "url": "https://www.reddit.com/r/google/comments/13rjv6h",
+    "media_urls": [
+        "https://www.reddit.com/r/google/comments/13rjv6h/im_building_a_tool_that_finds_faster_and_more/"
+    ],
+    "other_urls": [
+        "https://chrome.google.com/webstore/detail/routora-google-maps-route/jdddfnfohdeaklgkpglonlofgapjgfbp)",
+        "https://docs.google.com/forms/d/e/1FAIpQLSeuZWly2YNaaxh4GDvOGJmv-OycnU1tF-KV9pAbEmmoNsG2TA/viewform)"
+    ],
+    "postText": "Not sure why Google Maps doesn't have this already.\n\nI'm building a **mobile app** (like this chrome [extension](https://chrome.google.com/webstore/detail/routora-google-maps-route/jdddfnfohdeaklgkpglonlofgapjgfbp) I built with 12k users) that takes my multi-stop route on Google Maps and rearranges it to give the fastest, most efficient route (*TSP Problem*). It basically tells me what stops I should go to in what order to ensure that I\u2019m spending the least amount of **time** and **gas** on the road.\n\nI'm looking for what kind of features you guys would like to see based on what you have experienced so far with Google Maps. Any feedback would be awesome! You can join the waitlist here: [App Waitlist:)](https://docs.google.com/forms/d/e/1FAIpQLSeuZWly2YNaaxh4GDvOGJmv-OycnU1tF-KV9pAbEmmoNsG2TA/viewform)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "The best way to summarize what this tool does is that it automatically re-orders multi-stop routes, basically telling you the **best order** in which you should go about your stops.\n\nFor example on Google Maps if you were to enter in route **A, B, C, D, E** you will get the best route in that order, but a better order might be **A, D, C, B, E** which is what my app finds.\n\nHope that helps:)",
+            "score": 28,
+            "author": "t-bands",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I guess this are different routes. Sometimes I have to go to B first before I can go to C, which is default. But if it does not matter, sure that would be an option.",
+                    "score": 4,
+                    "author": "Pascalwb"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great idea and Google should totally steal it. Suggestion: Nobody knows what \"TSP\" stands for, spell it out: \"traveling salesman problem.\" Nobody knows what that is either, explain it:  \"Hit all the stops, but don't care what order.\" Or skip 1&amp;2 and explain it right off.",
+            "score": 37,
+            "author": "haight6716",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I assume you are using SPF to find the quickest, with traffic in the weights of the edges.",
+                    "score": 1,
+                    "author": "mybadcode",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I doubt it's that sophisticated. It probably enters all permutations of the stops into google maps and picks the one with the least travel time.",
+                            "score": 0,
+                            "author": "Financiaga",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "All permutations? That's unbounded and exponential to the number of stops. It's the whole point of the problem (difficult because...).",
+                                    "score": 1,
+                                    "author": "haight6716"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "r/iamverysmart\n\nEveryone knows the Traveling Salesman Problem.",
+                    "score": -39,
+                    "author": "mannesmannschwanz",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You give \u201ceveryone\u201d far too much credit.",
+                            "score": 10,
+                            "author": "Bring_dem"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I've literally never heard of it",
+                            "score": 4,
+                            "author": "stumblinghunter"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Never heard of it until 3 minutes ago",
+                            "score": 1,
+                            "author": "AlecTr1ck"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Weird",
+                            "score": 1,
+                            "author": "IncelDetected"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think Google Maps uses real-time traffic information as a factor, and also optimised for gas consumption, not just time.\n\nSo if there's a route which is technically a little longer by distance, but is faster because of traffic, and/or means less stop-and-go (lower fuel consumption), then it'll recommend that instead.",
+            "score": 14,
+            "author": "uniquorndawg",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yup this is true",
+                    "score": 1,
+                    "author": "t-bands"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Google maps tends to route people away from smaller roads onto bigger ones, which is why it isn't just the direct fastest route. It works out better for smaller neighborhoods and the like so that certain not built for it roads don't have to deal with heavy traffic",
+            "score": 4,
+            "author": "fredthefishlord"
+        },
+        {
+            "level": 0,
+            "comment": "What's the max number of stops?",
+            "score": 2,
+            "author": "isaacwdavis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "google maps caps at 10 stops but the routora website does more",
+                    "score": 0,
+                    "author": "t-bands",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Optimizing route for multiple stops that can be updated in real-time, adding or removing stops with no cap. Also the option to turn on or off route tracking for other users.",
+                            "score": 1,
+                            "author": "turniptruck"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "avoiding dirt roads",
+            "score": 1,
+            "author": "Diabolik77",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "is this really an option? I could really use it this weekend lol",
+                            "score": 0,
+                            "author": "t-bands"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great timing; just tonight I was gonna have to deliver some flyers to a list of addresses and needed to find the most efficient routes. Can't believe this hasn't been an automatic feature in every navigation app by now.",
+            "score": 1,
+            "author": "Auntypasto",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "that\u2019s perfect timing lmao",
+                    "score": 2,
+                    "author": "t-bands"
+                },
+                {
+                    "level": 1,
+                    "comment": "Microsoft streets and trips was good at this 15yrs ago but it seems like the feature just faded away.",
+                    "score": 0,
+                    "author": "turniptruck"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hi, this is awesome! Good work!\n\nOne thing I don't grt is in the timeliness features.\n\nI go to client sites, do work, and move on to the next one, or back my office.\n\nI charge for travel time. \n\nTimeliness is a great feature, but it only shows 1 day at a time.\n\nI can name clients Client A, Client B etc on the timeliness. It comes in handy. I can audit, and even screen shot that data to my calendar/ accounting system for billing.\n\nOnt thing is does not do is say I want to see a list of dates I went to Client A's site. I  cannot. I can't export it either.\n\nI'd like to filter by addresses or my friendly names for a whole year. \n\nThis way I can audit all billable drive times for a client, and get that info from my employees. Missed appointment and travel times is serious $$$. \n\nNo, I have to start at Jan 1 and click through every day while watching the msp display that site. \n\nAs a plus, if I can export that information from that timeliness, to excel, or even Outlook (or any calendar, that too would be good. \n\nThat would be killer useful and worth paying for.",
+            "score": 1,
+            "author": "Euphoric-Blue-59",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you for this, this sounds pretty reasonable tbh",
+                    "score": 1,
+                    "author": "t-bands",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If yiu can do this, you'd be my hero.\nHaha!\nI been banging on that for over a year.\n\nWhy the menu doesn't have a \"filter\" menu where you can select a location and date range, I don't know. The data is definately there. I can go back to 2009! Lol",
+                            "score": 0,
+                            "author": "Euphoric-Blue-59"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "oh my god I've been begging for this to be a thing for ages and someone finally went and did it\n\nfucking hero",
+            "score": 1,
+            "author": "legowerewolf"
+        },
+        {
+            "level": 0,
+            "comment": "Like mapquest does? Or used to do\u2026is mapquest still even around? Thats what I used as a social worker because it did this exact thing- i could order by mileage or time",
+            "score": 1,
+            "author": "One_Instruction1712"
+        },
+        {
+            "level": 0,
+            "comment": "That would be great. Also, if the app considers current traffic status on those routes and re-routes if needed.",
+            "score": 1,
+            "author": "timetraveller1977"
+        },
+        {
+            "level": 0,
+            "comment": "is this just focused on cars? i use Google maps on my bike and i never feel like it gives me the best route *for a bike*. like it will always send you on roads with bike lanes, when it's perfectly fine to take roads without bike lanes, or even alleys. also routes with the least drastic inclines and declines, and customizable routes (i might want to go over X bridge, but Google maps only shows routes over bridges Y and Z).",
+            "score": 1,
+            "author": "irishgambin0",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This will work for driving, walking and biking modes!",
+                    "score": 1,
+                    "author": "t-bands"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Please also tell when NOT no take flyovers!!!",
+            "score": 1,
+            "author": "aakash-varma"
+        },
+        {
+            "level": 0,
+            "comment": "Be able to switch on, that the route always take right turn\u00e9, because there is typical less waiting in crossovers going right :-)",
+            "score": 1,
+            "author": "Conflict-Jazzlike"
+        },
+        {
+            "level": 0,
+            "comment": "What about a version that plots the safest route? No unprotected left turns, use accident data to know what intersections to avoid, etc.",
+            "score": 0,
+            "author": "Only_Standard_9159"
+        }
+    ]
+}

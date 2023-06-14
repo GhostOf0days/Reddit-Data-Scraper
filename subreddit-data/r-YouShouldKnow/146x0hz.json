@@ -1,0 +1,1415 @@
+{
+    "id": "146x0hz",
+    "score": 15264,
+    "title": "YSK You aren\u2019t supposed to use apostrophes to pluralize years.",
+    "author": "kgxv",
+    "date": 1686497834.0,
+    "url": "https://www.reddit.com/r/YouShouldKnow/comments/146x0hz",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "It\u2019s 1900s, not 1900\u2019s.  You only use an apostrophe when you\u2019re omitting the first two digits: \u201890s, not 90\u2019s or \u201890\u2019s.\n\nWhy YSK: It\u2019s an incredibly common error and can detract from academic writing as it is factually incorrect punctuation.\n\n**EDIT:** Since trolls and contrarians have decided to bombard this thread with mental gymnastics about things they have no understanding of, I will be disabling notifications and discontinuing responses.  Y\u2019all can thank the uneducated trolls for that.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Retired editor here\n\nThis is correct. The manuals of style are consistent here, though it is just accepted convention unrelated to grammatical rules.",
+            "score": 3187,
+            "author": "Njtotx3",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Current editor here!  That\u2019s why I made the post actually.  I was sick of correcting this error in pieces submitted to me.",
+                    "score": 1164,
+                    "author": "kgxv",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's what you get the big bucks for. Global replacement of 0's with 0s.",
+                            "score": 433,
+                            "author": "Njtotx3",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "One day I'll make some regexes to automatically find and replace `0's` with `0s`, `alot` with `a lot`, `should of` with `should have`, and `could care less` with `couldn't care less`. And then I'll rake in the cash.",
+                                    "score": 227,
+                                    "author": "TehBrian",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "As a non native English speaker I am surprised how common the \"should of\" mistake is. It makes sense that native speakers are more prone to mix up things that sound the same since their understanding of grammar came *after* they learned the language and not during.",
+                                            "score": 83,
+                                            "author": "LauraDourire",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I totally agree with what you say, and it reminded me that interestingly apparently as babies we learn grammar before we learn language (hence baby talk), just not the complex bits and spelling!",
+                                                    "score": 6,
+                                                    "author": "High-Plains-Grifter"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's due to literacy, no doubt. A lot of people around the world have gotten by with speaking, but probably never written anything, like... ever. And when they do write, it's usually a paper form for some administrative task where they wouldn't get feedback on their grammar anyway.\n\nIt's hard to imagine the case of \"should of\" but I'm trying to think of something similar I face with my native language. I'm sure there is one, just can't remember it right now.",
+                                                    "score": 13,
+                                                    "author": "booryani",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "\"Good, your grammar is not!\" \\~ Yoda",
+                                                            "score": 4,
+                                                            "author": "Redline951"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Absolutely I'm french and I have encountered plenty of such common mistakes in French. It strikes me more when it's in english because I learnt the language pretty much by associating sounds with the appropriate text (movie with subtitles, games with UI), so \"should of\" literally makes no sense to me, it's an illegal combination of words haha.",
+                                                            "score": 3,
+                                                            "author": "LauraDourire"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I replied to the guy below you, but I wanted to share with you as well, so:\n\n&gt;Honestly, I don't think it's so much a mixup between \"should of\" or \"should have\", but rather a case of using \"should've\" in spoken language and very rarely seeing it written and thinking it's just been \"should of\" the whole time. More of an eggcorn than a proper grammatical mistake.",
+                                                    "score": 11,
+                                                    "author": "notmyrealusernamme",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That's because most people never read anything more complicated than a stop sign nowadays. When your spoken language is not at all influenced by print, you are likely to write I should of instead of I should have.",
+                                                    "score": 3,
+                                                    "author": "hipsterfromhell"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You want one that will really grind those gears? I have a supervisor who instead of saying \u201chave to\u201d they say \u201chafta\u201d in professional emails to the whole department.",
+                                                    "score": 3,
+                                                    "author": "cam7595",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Thats wildly unprofessional, innit",
+                                                            "score": 7,
+                                                            "author": "theredeemer",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "You\u2019re prolly right.",
+                                                                    "score": 5,
+                                                                    "author": "chuckmarla12"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "`s/(?&lt;=[0-9]{3,})\\'(?=s)//g`",
+                                            "score": 42,
+                                            "author": "Fjorge0411",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Since no one really knows regex, I'm going to assume this is correct and deploy to prod post haste",
+                                                    "score": 60,
+                                                    "author": "rang14",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It's ridiculous how write only regexes are. Here I am happily writing a regex, the moment i get 10 characters all it takes is one look away and it looks like hieroglyphics.",
+                                                            "score": 18,
+                                                            "author": "amstan",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I\u2019ve successfully composed \u201creadable\u201d regexes before. In some languages you can create smaller regexes and combine them in various ways, so you break down a concept into a smaller form and compose them with others, complete with comments for each part.\n\nIt\u2019s frankly tedious, but it does genuinely help me later if I have to review it for some reason.",
+                                                                    "score": 4,
+                                                                    "author": "ScientificBeastMode"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It finds all apostrophes preceded (`?&lt;=`) by a digit (`[0-9]`) three or more times in a row (`{3,}`) and followed (`?=`) by an s and replaces them with nothing (`//`)",
+                                                            "score": 9,
+                                                            "author": "glenbolake",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "When someone tells me they wrote a regex, I often have to refrain from asking which site they used.",
+                                                            "score": 5,
+                                                            "author": "dethblud",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; alot with a lot\n\nIf only. I can't stand this and it's everywhere.\n\nAdd 'atleast' and the misuse of than/then to that.",
+                                            "score": 25,
+                                            "author": "Mysterious_Command41",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "\"Noone\". I read it like noon-ay",
+                                                    "score": 15,
+                                                    "author": "ChickenPicture",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I usually read it as a really long nooooon",
+                                                            "score": 17,
+                                                            "author": "jaysun92",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I've been seeing are/our/or used interchangeably and it makes me want to cease to exist.",
+                                                            "score": 4,
+                                                            "author": "1iota_"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I bet alot actually becomes a word. Atleast is a new one to me, I haven't seen that one before.",
+                                                    "score": 8,
+                                                    "author": "PerpetualCalamity"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Loose when you mean lose.",
+                                                    "score": 2,
+                                                    "author": "feeltheberncream"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Weird Al has entered the chat.",
+                                            "score": 14,
+                                            "author": "Inevitable_Chicken70"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "My add in would be \"eat your cake and have it too\" for the very wrong \"have your cake and eat it too\".",
+                                            "score": 3,
+                                            "author": "squarebodynewb"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Still bugs me less than omitted Oxford Commas.",
+                                    "score": 283,
+                                    "author": "kgxv",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Or when they create pretty alignment with spaces.",
+                                            "score": 88,
+                                            "author": "Njtotx3",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Omg yes! I used to start every editing project by replacing all duplicate spaces with single ones and there were ALWAYS so many!",
+                                                    "score": 33,
+                                                    "author": "CrashOuch",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "They totally taught us that until like Windows XP made it unnecessary.",
+                                                            "score": 9,
+                                                            "author": "slackfrop",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Alright, I\u2019ll admit that I still double spaced up until 2 weeks ago.  I\u2019m 35, and was taught to in school. No one ever told me otherwise until my coworker questioned what I was doing.  My bad.",
+                                                            "score": 7,
+                                                            "author": "Elektguitarz",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "It\u2019s funny, my wife is a bit older than 35, and I\u2019m about 5 years younger than her. She was taught to use double spaces, and I was taught to use single spaces. Perhaps you barely missed the transition in teaching?",
+                                                                    "score": 3,
+                                                                    "author": "ScientificBeastMode",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I'm the person that has double spaces everywhere, but only because I learned to type with the guideline \"double space after fill stop\" and never un-learned that, it's completely subconscious.",
+                                                            "score": 21,
+                                                            "author": "asquared31415",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "You can have my double spaces when you pry them from my cold, dead fingers.\n\nNow get off my lawn.",
+                                                                    "score": 10,
+                                                                    "author": "talonXIII"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Wait, are we not double spacing after full stops now?",
+                                                    "score": 16,
+                                                    "author": "nah2daysun",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It's an old typewriter convention. If you're old enough then you might have ended up doing it because the people teaching you how to use a word processor probably used type writers.",
+                                                            "score": 6,
+                                                            "author": "mebutnew",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "One space after the full stop in ALL published work. Many websites (like this one) remove a second space automatically.",
+                                                            "score": 3,
+                                                            "author": "nolotusnote"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "/r/keming",
+                                                    "score": 7,
+                                                    "author": "eddie_the_zombie"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I have told people that if I ever make a post on social media, and I don't use an Oxford Comma, that I have been kidnapped and posting under duress.",
+                                            "score": 28,
+                                            "author": "TenMoon",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It would have been great to write this comment as a three item list with an omitted oxford comma",
+                                                    "score": 5,
+                                                    "author": "Zealousideal_Tale266",
+                                                    "replies": []
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I was taught all through school that you never use a comma before the word AND, because the AND serves as a comma, and doing so would be redundant.\n\n(I threw a comma in there before and just for you. Lol.\nDid I use it correctly? Or does it only apply when listing multiple things?)",
+                                                    "score": 9,
+                                                    "author": "-Hezmor-",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I always use Oxford Commas. It is correct to use them right?",
+                                            "score": 70,
+                                            "author": "GoldIsAMetal",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yes!",
+                                                    "score": 43,
+                                                    "author": "urban-pharmer"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;I always use Oxford Commas. It is correct to use them right?\n\nYes it is correct. However it is also acceptable to not use it. Both conventions are accepted practice.",
+                                                    "score": 32,
+                                                    "author": "nomnommish",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt;However it is also acceptable to not use it.\n\nI mean, it might not be wrong, but I'd hardly call it *acceptable*. (Die hard Oxford comma user, the grammatical hill I will die on)",
+                                                            "score": 59,
+                                                            "author": "kantankerouskat84",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "To quote:\n\n\"AP style\u2014based on\u00a0The Associated Press Stylebook, the style guide that American news organizations generally adhere to\u2014does not use the Oxford comma.\u00a0\"\n\nhttps://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/#:~:text=The%20Oxford%20(or%20serial)%20comma,use%20while%20others%20don't.",
+                                                                    "score": 18,
+                                                                    "author": "nomnommish",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Dude, I'm a librarian and lived by the APA during my Master's program (and before, to be honest - I remember learning about commas in the third grade some 30 years ago and that the Oxford comma was optional ... and immediately deciding it was not). I live and die by the Oxford comma. \n\nI'm not saying it's the only style; just saying it's the only one I will use ... and will correct the hell out of any non-Oxford that comes across my desk. The main reason being that there is never any grammatical ambiguity when it comes to Oxford commas, but there occasionally is when it is not used. English is hard enough without ambiguity that can be eliminated by the use of a single punctuation mark.",
+                                                                            "score": 39,
+                                                                            "author": "kantankerouskat84",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I have to write lots of reports that get reviewed and torn apart by people much smarter than I am. Ambiguity is the enemy and the Oxford comma is my savior.",
+                                                                                    "score": 15,
+                                                                                    "author": "dreadedgrin"
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I appreciate what you're saying but i think it goes a little too far.  Never any ambiguity?  like, what if you use Oxford commas in a sentence and it is unclear whether the word following the first comma might be clarifying the prior word , or whether the author is listing three different things, like this example i pulled from Google\n\n\" Joe went to the store with his father, Superman, and Noob Saibot\"\n\ndid he go with his father (who is Superman) and also with the wraith of Bi Han, or did he go with Bi Han, Superman, and his dad?  you can restructure the sentence to make its meaning more clear, but that doesn't change the fact that there is ambiguity in this use of the Oxford comma.",
+                                                                                    "score": 8,
+                                                                                    "author": "Terrazo",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "My teacher said they\u2019re \u201coptional\u201d and I recoiled in fear (I\u2019m a sophomore in college)",
+                                            "score": 38,
+                                            "author": "Kaleb8804",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Teacher is dead-wrong for many instiutions, nowadays at least.",
+                                                    "score": 21,
+                                                    "author": "urban-pharmer",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Just find and replace all commas with nothing and go full Cormac McCarthy",
+                                            "score": 3,
+                                            "author": "postvolta"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "it's ok soon AI will have replaced all grammar nazis as well as all critical science writing anyway\n\nyay progress!",
+                                            "score": 6,
+                                            "author": "laihipp",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Ah yes, I love his Word Crimes song. \n\n[\"Weird Al\" Yankovic - Word Crimes (Official 4K Video)](https://youtube.com/watch?v=8Gv0H-vPoDc&amp;feature=share)\n\nOh\u2026 AI not Al",
+                                                    "score": 9,
+                                                    "author": "Adama0001",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I'm ok with this",
+                                                            "score": 3,
+                                                            "author": "laihipp"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you! I don't know how apostrophes started cropping up in the weirdest places over the last decade.",
+                            "score": 28,
+                            "author": "megaphone369",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's the blind leading the blind. Prior to the explosion of the internet, the vast overwhelming majority of written reading material was written by professional writers and reviewed by editors and proofreaders before the public saw it. Your average dingaling who doesn't know how to apostrophe didn't know how to apostrophe then either, but at least any time the middle ground fence sitters read anything written, they had the rules reinforced by repetition. \n\nContrast now. Most of the writing is generated by *regular people*, so now the dingalings who can't apostrophe are everywhere in the comments, and the repetition of the error is just confusing the fence sitters and dragging them into dingaling territory.",
+                                    "score": 34,
+                                    "author": "Lampwick",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It's absolutely this. A few years ago I went from writing professional material fairly regularly to hardly needing to write professionally at all, and it was *so hard* to not start making common mistakes I've never regularly made in my life (apostrophes for possession, wrong form of two/to/too or there/their/they're, etc.) because so much of what I read these days is on reddit or other forums with no literary quality control.",
+                                            "score": 17,
+                                            "author": "metatron207"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "My biggest pet peeve is when people say \u201cin regards to\u201d \n\nThere should be no s in \u201cregard\u201d in this context.",
+                            "score": 23,
+                            "author": "Ravenclawer18",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm an editor, so I have a thousand grammatical pet peeves. But here's one that blows a lot of people's minds: The word *travesty* does not mean \"tragedy\"; rather, it means \"poor imitation.\" So a \"travesty of justice\" is a poor imitation of justice. But whenever people just say that something \"is a travesty,\" without specifying what it's a travesty *of*, they're not making any sense. The word *travesty* gets misused that way probably about as often as it ever gets used correctly anymore.",
+                                    "score": 74,
+                                    "author": "queerbychoice",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "How about when the comparison is implied. For example, \"That football game was a travesty\".",
+                                            "score": 16,
+                                            "author": "nomnommish",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Is travesty a travesty of tragedy?",
+                                            "score": 4,
+                                            "author": "SnooPuppers1978",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Since language is descriptive and not prescriptive and what is right is based on how people use it. Once enough people use something \"incorrectly\" it becomes correct. Kinda like how the word gay had its meaning changed.",
+                                            "score": 26,
+                                            "author": "Lia69",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is true up to a point. However, etymology holds some weight, and dictionary-makers will be more reluctant to accept a change of language that is so obviously derived from a mistake such as confusing *travesty* with *tragedy* just because they sound similar.",
+                                                    "score": 15,
+                                                    "author": "queerbychoice",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In etymology, there are no mistakes.  It's a way to describe the history of words, not to dictate their future.  There are countless examples of people using words completely incorrectly and the words taking on a different meaning because of it.\n\n\"Decimation\" is a good example that many people are familiar with.  And more recently, \"irony\" has undergone a transition as more and more people use it incorrectly.",
+                                                            "score": 15,
+                                                            "author": "THEBHR",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Or Drinking the Koolaid. \n\n It was Flavour-Aid at Jonestown. By saying drinking the koolaid, the speaker is drinking the flavouraid,  thus validating the drinking the koolaid phrase.\n\nI'm outta here like  a bad metaphor",
+                                                                    "score": 4,
+                                                                    "author": "FlopsyBunny"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I\u2019ve started writing, could you recommend a hard copy resource for the technical aspects?",
+                            "score": 7,
+                            "author": "atlas_eater",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "*Chicago Manual of Style*",
+                                    "score": 8,
+                                    "author": "UsbyCJThape"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Okay quick question for the editor - when did it stop being okay to spell \"alright.\" Whenever I send \"That's alright\" now spell-check keeps trying to tell me I'm wrong... Have I really been doing it wrong for 30 years?",
+                            "score": 3,
+                            "author": "Holy_crap_its_me",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Editor here. *Alright* is listed in most dictionaries, even though it's not listed in your spellcheck dictionary. Its correctness is somewhat disputed; it falls into a gray area in which it's not considered an outright error but is best avoided in formal contexts. So you probably shouldn't use it in the cover letter of a job application, for example. But it's \"alright\" to use *alright* in any situation where you don't mind running some risk of a few nitpicky people looking down on you for it.\n\nhttps://www.grammarly.com/blog/alright-vs-all-right/",
+                                    "score": 9,
+                                    "author": "queerbychoice"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Question:\n\nShould you use the apostrophe if you are using the decade in a possessive fashion?\n\nEx:  Hypercolor clothing used a temperature reactive dye (thermochromic) that was a fad of 90's style.\n\nOr would this be a better format\n\nEx: Thermochromic dyes defined Hypercolor clothing, witch was a fad in the 90s.\n\nThank you for the clarification.",
+                            "score": 4,
+                            "author": "breathless_RACEHORSE",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "In your first example it's still not possessive, it's an adjective akin to saying \"in Victorian style.\" You don't need an apostrophe. It is possible to write a sentence that requires an apostrophe, but since you're talking about multiple years, it would go *after* the s, as a plural. \"The 90s' optimism was destroyed by 9/11.\" I think most editors would still encourage you to rewrite the sentence, but it's technically correct with the apostrophe after the s.",
+                                    "score": 24,
+                                    "author": "metatron207"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Its alway's good when someone use's apostrophe's correctly.",
+                    "score": 32,
+                    "author": "warrant2k",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Aaaaand I'm triggered.",
+                            "score": 18,
+                            "author": "asomek"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "A tired redditor here.\nJust to rhyme with you.",
+                    "score": 21,
+                    "author": "smartdark",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I learned something new today. What about if you\u2019re saying something like \u201cthese type of products were the 1900\u2019s most profitable..\u201d as in showing that the 1900s possessed them? Does that make sense? Basically are there any possessive punctuations for time periods?\n\nOr have I been using punctuations wrong my entire life? I always assumed you\u2019d add one to show possessives. Like if I said:\n\n&gt;\u201cWalmarts of the world are draining small business\u2019 profits and this is a core issue with Walmart\u2019s ethics due to their aggressive capitalistic nature.\u201d\n\nIs that a proper sentence with proper use of punctuations? Sorry for the random questions.. my coffee just kicked in and I haven\u2019t had my ADD medication yet.",
+                    "score": 12,
+                    "author": "mightylordredbeard",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "1900s'.  Otherwise, you are limiting your statement specifically to the calendar year 1900 (and then you should say *the year 1900's most profitable* so it's clear).\n\nIt would be even more clear to just say one of these:  *the 20th century's* or *most profitable during the 1900s*.",
+                            "score": 48,
+                            "author": "NotEasilyConfused",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I wrote out a whole post about single year, decade and century but bailed on it. Lol",
+                                    "score": 7,
+                                    "author": "Crazy_by_Design",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I think that's not technically incorrect, but it would indicate that 1900 (the one year) possessed them, rather than the whole decade. e.g.  \"1989's smash hit, Pump Up The Jam.\" This while being a little odd and calling it \"The 1900\".\n\nIf you wanted it to be possessive on the whole decade as intended, my uneducated guess is you could do what you do with other words ending in \"s\" and place the apostrophe at the end - e.g., \"The 1990s' most profitable software...\"\n\nThis is consistent with the extended written form, incidentally;  \nNineteen-ninety (1990)  \nNineteen-ninety's (1990's)  \nNineteen-nineties (1990s)  \nNineteen-nineties' (1990s')",
+                            "score": 8,
+                            "author": "enternationalist"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "*businesses\u2019",
+                            "score": 8,
+                            "author": "bsiekie",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "First question:\n\n&gt; These types of products were the 1900s' most profitable\n\nor\n\n&gt; This type of product was the 1900s' most profitable\n\n-------\n\nSecond question:\n\n&gt; Walmarts of the world are draining small businesses\u2019 profits",
+                            "score": 2,
+                            "author": "ahundreddots"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s the 1900 is!",
+            "score": 351,
+            "author": "SCP-173irl",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Also applicable to ~~acronyms~~ initialisms. For example, it's ATMs, not ATM's. POs not PO's. IDs, not ID's.",
+                    "score": 80,
+                    "author": "TensorForce",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "YSK, those are initialisms, not acronyms. Acronyms are pronounced as words. E.g scuba or NASA.",
+                            "score": 4,
+                            "author": "fwubglubbel"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "1900's people dislike this fact.",
+                    "score": 10,
+                    "author": "weirdplacetogoonfire",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yep. Why do so many people use an apostrophe to mean \"holy shit here comes an S\"",
+            "score": 864,
+            "author": "disflux",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I know this is meant as a broad criticism, and you're not actually asking, but the answer is that they see the apostrophe S show up in other contexts, then apply it incorrectly because they don't fully understand the language and its mechanics.\n\nPutting ourselves in their position, our thinking might go something like this:\n\n* Start with a word that doesn't have an S at the end, like Steve.\n* \"Today should be Steve's last day as CEO.\" or \"Steve's really fucking up Reddit right now.\" are two different examples where the apostrophe S is added.\n* Our (incorrect) observation: any time you add an S, you actually add an apostrophe S, as shown by the above sentences.\n* Now we're faced with describing what happened in the nineties, but we're well equipped to handle this with our observation.\n* The 1990s, wait, the 1990's (nailed it) were when I was supposed to learn rules of apostrophes, but didn't.",
+                    "score": 366,
+                    "author": "itsthehumidity",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What a great example that is totally unrelated to current events lol",
+                            "score": 81,
+                            "author": "maniclucky"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "If you wrote a grammar book in this style I would read it more than once omg.",
+                            "score": 6,
+                            "author": "TooCupcake"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Apostrophes are not *added*; they only ever *replace*. The possessive apostrophe is a hangover from when we had a genitive case which was usually an -es ending. The apostrophe replaces the e. Possessives which never had that e, like its and whose, do not have an apostrophe. This is consistent with other uses of the apostrophes for elisions, like don't (do not).",
+                            "score": 16,
+                            "author": "tunisia3507",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Right, I understand apostrophes. This was an exercise to put ourselves in the position of those who do not for the purpose of understanding a common way they misuse them.",
+                                    "score": 13,
+                                    "author": "itsthehumidity"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Why would you forget the question mark?",
+                    "score": 66,
+                    "author": "ABabyAteMyDingo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I can handle only so many surprises in one day",
+                            "score": 22,
+                            "author": "iamapizza"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "How did you know his name was Mark?",
+                            "score": 10,
+                            "author": "southern__dude",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Holy shit? Here comes an S",
+                            "score": 2,
+                            "author": "Progrum"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Now I'm going to think that every time I see an unnecessary apostrophe lol",
+                    "score": 4,
+                    "author": "Antique-Ad-936"
+                },
+                {
+                    "level": 1,
+                    "comment": "\u201cHere come\u2019s an S\u201d",
+                    "score": 5,
+                    "author": "football2106"
+                },
+                {
+                    "level": 1,
+                    "comment": "My question is why do they use it on one plural word in a sentence and not another?",
+                    "score": 2,
+                    "author": "T3n4ci0us_G"
+                },
+                {
+                    "level": 1,
+                    "comment": "My iPhone tries to autocorrect to add an apostrophe S all the time because it\u2019s dumb. I bet most folks just don\u2019t put forth the effort to fix it when their phone does that.",
+                    "score": 2,
+                    "author": "FILTER_OUT_T_D"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not only for years; simply put: apostrophes don\u2019t make plurals.",
+            "score": 617,
+            "author": "lazyant",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "THANK YOU, came in to point this out if not already handled. \n\nI had to explain to my fianc\u00e9e that the phrase is properly written as \u201cKeeping up with the Joneses\u201d, not her English-teacher former classmate\u2019s \u201cJones\u2019s\u201d.  \n\nIf you\u2019re pluralizing something ending in s, you\u2019ll be adding an \u2018es\u2019 and no apostrophes are involved",
+                    "score": 141,
+                    "author": "Auslander42",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Why did I think you\u2019d write Jones\u2019 instead?",
+                            "score": 13,
+                            "author": "Undecided_Username_",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Oh, Jesus, you just brought me back to my youth, sitting in the station wagon listening to my English and English teacher mother point out every grammatically incorrect\u2019The Smith\u2019s\u2019 lawn sighs she drove by (quite a few, as it turns out).",
+                            "score": 19,
+                            "author": "StinkypieTicklebum",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What's wrong with The Smiths? Heaven knows I'm miserable now.",
+                                    "score": 9,
+                                    "author": "NotAddison",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The Apostrophe Is Dead",
+                                            "score": 4,
+                                            "author": "boibig57"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "people need to start using less apostrophes. It's better to make a mistake by not using it than make mistakes cuz they don't know how to use them.",
+                    "score": 7,
+                    "author": "kaiseresc",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "fewer",
+                            "score": 5,
+                            "author": "shakethatbubblebut"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "lol was gonna say this; since when do apostrophes pluralize anything??",
+                    "score": 29,
+                    "author": "zordonbyrd",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "When you pluralize letters, such as a handful of w's.",
+                            "score": 16,
+                            "author": "SalvationSycamore",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's because most other rules do have an exception.\n\nThis is Tom's shoe. (Possessive apostrophe)\n\nI gave my cat its medicine. (Possessive no apostrophe)\n\nIt's time for school. (Not possessive apostrophe)\n\nTom's running late. (Not possessive apostrophe)\n\nSo when you find one rule without an exception, it's still hard to believe and follow along because there are so many related exceptions.",
+                    "score": 2,
+                    "author": "akatherder"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "THANK YOU FOR THIS POST. Apple autocorrect has miseducated so many people.",
+            "score": 23,
+            "author": "anc0022",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Autocorrect is like a tiny elf inside your phone, and he's trying to help but he's very drunk.",
+                    "score": 3,
+                    "author": "dmnhntr86",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is also just plurals in general",
+            "score": 186,
+            "author": "Narwalacorn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think you meant plural's\n\n^/s",
+                    "score": 96,
+                    "author": "TheMoris",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think you meant  /'s",
+                            "score": 39,
+                            "author": "BowSonic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Dammit, you're right",
+                                    "score": 8,
+                                    "author": "TheMoris",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Correct.",
+                    "score": 18,
+                    "author": "kgxv",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, it's a very common mistake. So why did you limit the YSK to just years? It's oddly specific that way. It should have been:\n\n&gt;YSK You aren\u2019t supposed to use apostrophes to pluralize ~~years~~\n\nIt's like saying \"YSK you're not supposed to steal coca cola from stores.\" Well... yeah. But not just coke, all items, in all stores everywhere.",
+                            "score": 4,
+                            "author": "rvH3Ah8zFtRX"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "All my apostrophes are possessive.  That's for my safety.",
+            "score": 235,
+            "author": "feelingood41",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;That's\n\nThat's contractive, not possessive.",
+                    "score": 56,
+                    "author": "puunannie",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Apostrophes don\u2019t actually pluralize in any context (despite consistent and widespread misuse) so I don\u2019t blame you.\n\nDownvote all you want, this is a fact lmao.",
+                    "score": 179,
+                    "author": "kgxv",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "100 times this! Apostrophes don\u2019t pluralize anything!  I feel like I\u2019m taking crazy pills!",
+                            "score": 76,
+                            "author": "_johnsmallberries",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "*crazy pill\u2019s",
+                                    "score": 6,
+                                    "author": "Lazarus_Legbones",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "After years on reddit, it's obvious that at least half of native English speakers have absolutely no idea why we use apostrophes. And it's just so simple, it's not some convoluted system of bizarre rules.    \n\n\nThere are a lot of apostrophe crimes, but I think my absolute favourite is when people use a single one for possessive or even plural on Z or X.  \n\nThe top voted comment on a thread yesterday: \n\n\n&gt;Here is /u/Spez' comment...   \n\n\nAnd I saw one recently where a guy said something like \"I've had a few ex' like that\".  \n\nWhat were these people paying attention to in grades 1-4? How do you graduate middle school without even a basic understanding of punctuation, let alone high school or university? It's so annoying trying to communicate with these people, having to resist the urge to correct every text and email they send you.",
+                                    "score": 46,
+                                    "author": "fruitmask",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;There are a lot of apostrophe crimes, but I think my absolute favourite is when people use a single one for possessive or even plural on Z or X.\n\nGenX -- I was literally (as in literally) taught this consistently throughout school, including for names ending in S.\n\n\"...that's Marcus' car\"",
+                                            "score": 31,
+                                            "author": "peepee_longstonking",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I was taught this too",
+                                                    "score": 13,
+                                                    "author": "Youareyou64"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yep. We were taught that it was optional to put the second *s* after the apostrophe when indicating possession by someone whose name ends in *s.* To wit, \"that is Marcus's car\" is correct, and \"that is Marcus' car\" was acceptable.     \n     \nIf that convention has fallen from favor, I'm happy to cease following it. I generally try to stay current. I don't have a bodywave in my hair, and I don't wear acid-washed jeans either. Fashion changes. \n     \nAfter all, both the rules of fashion and of grammar are inventions, subject to human tastes and whimsy.\n\nEdit for clarity.",
+                                                    "score": 12,
+                                                    "author": "DisfunkyMonkey",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I'll never give up my windbreakers!",
+                                                            "score": 5,
+                                                            "author": "peepee_longstonking",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Or my flannels!",
+                                                                    "score": 2,
+                                                                    "author": "savetheunstable"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I 1000% don\u2019t think I use them correctly half the time. If there is a word that I am not confident on with a apostrophe I just rewrite my sentence to avoid the potential embarrassment.",
+                                            "score": 2,
+                                            "author": "mystictofuoctopi"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "https://i.imgur.com/sHZlNWY.jpg",
+                            "score": 10,
+                            "author": "maxwellsearcy",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is why we must double check our work, to make sure all the is are dotted and ts are crossed.",
+                            "score": 10,
+                            "author": "ForgetTheWords",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "They do pluralize singular lowercase letters, actually \ud83e\udd37\u200d\u2640\ufe0f",
+                            "score": 17,
+                            "author": "Krexpdx"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I think I read somewhere that acronyms are the only exception to this. Is that incorrect? (It\u2019s ATMs and not ATM\u2019s).",
+                            "score": 2,
+                            "author": "brazzersjanitor"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Such a good joke, that all the ba humbug grammar tryhards missed. Like, we are joking about the syntax of writing, chill.",
+                    "score": 5,
+                    "author": "BlameGameChanger"
+                },
+                {
+                    "level": 1,
+                    "comment": "Except its. It's is it is and its is possessive. Because we can't have nice things.\n\nEdit: I missed the that's joke.",
+                    "score": 2,
+                    "author": "InsertFunnyPost",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Correct me if I\u2019m wrong, but would you say:\n\u201cI finished my Sophomore year with all As\u201d",
+            "score": 39,
+            "author": "Powerful_Scientist47",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes but there should be a question mark at the end of that sentence :-P",
+                    "score": 31,
+                    "author": "arcxjo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "What about when talking about Chemistry:\nHow would you say multiple H or Cs",
+                            "score": 2,
+                            "author": "Powerful_Scientist47",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If you're talking about Hydrogen and Carbon those are non-count nouns so you'd just say \"H\" and \"C\". You'd never say \"hydrogens\" anyhow (unless I guess you're talking about different isotopes in which case you would just say \"hydrogen isotopes include deuterium and tritium\").\n\nIf you mean individual atoms you could just say \"6.022 x 10^(23) **C atoms**\".\n\nBut you'd never write \"Cs\" in chemistry unless you're talking about cesium. And even if you **did** mean \"carbons\" you specifically wouldn't write \"C's\" because that apostrophe would be too easy to miss or assume was a typo or a stray mark on the page and assume actually did mean cesium, which would have disastrous consequences all because someone didn't think the humanities were as important as STEM.",
+                                    "score": 7,
+                                    "author": "arcxjo",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Hi in my field (biochemistry) you commonly hear \"the oxygens\" the o's etc when talking about the atoms which make of a structure.",
+                                            "score": 4,
+                                            "author": "surelynotaduck",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It seems like that could be confusing for O2 or ozone molecules.",
+                                                    "score": 3,
+                                                    "author": "arcxjo",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is something I've always questioned too. Even if the apostrophe is unecessary grammatically, I think it helps with clarity and understanding so I include it. It's also common enough that I don't stress about it anymore",
+                    "score": 8,
+                    "author": "Callmeperch_again"
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes",
+                    "score": 3,
+                    "author": "professor_tots"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Part of the problem is that this error is baked into the iPhone autocorrect system. I'm not sure about Android. Infuriating.",
+            "score": 10,
+            "author": "disywbdkdiwbe",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "The USD ($) symbol goes before the number! Come on, people!",
+            "score": 46,
+            "author": "rebelx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Also when people write \u201cdollars\u201d even though the symbol is included. Like $1 million dollars. No shit I thought it was Euro.",
+                    "score": 25,
+                    "author": "Hullababoob",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "$ is not specific to USD. $ is used for &gt;30 different dollar currencies.",
+                    "score": 15,
+                    "author": "ArseQuake-1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Context. As long as it's referring to USD, it should go in the front. I'll make a conscious effort to put the euro symbol behind the number, for instance",
+                            "score": 15,
+                            "author": "rebelx",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This bugs the hell out of me! So many people I know will put it after and I can't stand it.",
+                    "score": 6,
+                    "author": "Kazan22",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "And you flip the apostrophes when it\u2019s numbers. Basically, the tail of the apostrophe points to the character it\u2019s replacing.",
+            "score": 22,
+            "author": "StinkypieTicklebum",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This. 1997 is \u201997, not \u201897.\n\nThankfully, most keyboards make people use a prime rather than an apostrophe (`'` rather than `\u2018` or `\u2019`) so it isn't ALWAYS an issue... always.",
+                    "score": 5,
+                    "author": "YellsAtGoats"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Additionally...\n\nDO NOT USE APOSTROPHES TO PLURALIZE WORDS\n\nI can't tell you how mad it makes me see to see shit like \"I walked my dog's to the park\" or \"reacting to funny tiktok's\"",
+            "score": 4,
+            "author": "zinc-182",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You aren't supposed to use apostrophes to pluralize *anything*. \n\nThe crazy thing is I have known this all my life and yet I occasionally catch myself typing it.",
+            "score": 68,
+            "author": "grizzburger",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Technically, you can use it when pluralizing single letters, particularly if it would otherwise be confusing (like i's and a's being otherwise indistinguishable from \"as\" and \"is\").",
+                    "score": 16,
+                    "author": "space_cadet_pinball",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "According to OP you're a troll and contrarian.",
+                            "score": 13,
+                            "author": "hijo_de_puta_69",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oops, forgot nuance wasn't allowed on the Internet. I'll stick to getting irrationally angry at headlines and not reading the articles.",
+                                    "score": 9,
+                                    "author": "space_cadet_pinball"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What if it\u2019s referring to something that belongs to that era, ie 1990\u2019s fashion?",
+            "score": 38,
+            "author": "Lucky_Pyxi",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\"1990's fashion\" would mean the fashion of 1990.  \n\nYou might say \"1990s' fashion\" or \"fashion of the 90s\"",
+                    "score": 99,
+                    "author": "5tyhnmik",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wait, so if I omit the first 2 numbers I should write '90s' fashion?",
+                            "score": 8,
+                            "author": "uziau",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is the way.",
+                            "score": 29,
+                            "author": "kgxv"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That would mean fashion of the single year 1990.  The fashion of the decade (in possessive form) would be \u201c1990s\u2019 fashion,\u201d but \u201c1990s fashion\u201d is typically the more accepted form because it implies the possessive without having to stylize it as such.",
+                    "score": 56,
+                    "author": "kgxv",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In this case, \"1990s\" is adjectival rather than possessive.",
+                            "score": 15,
+                            "author": "Irritating_Pedant",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yep. Like you would say punk fashion, not punk's fashion.",
+                                    "score": 9,
+                                    "author": "IanSan5653"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "While we're correcting stuff, \"e.g.\" is what you want here, not \"ie\". \n\ne.g. is for giving examples.",
+                    "score": 5,
+                    "author": "beka13",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't know, would that be a possessive, like saying that it's fashion that belongs to the 1990s?",
+                    "score": 10,
+                    "author": "Prairiewill",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes, that\u2019s why I asked if it was an exception.",
+                            "score": 8,
+                            "author": "Lucky_Pyxi",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\n\u201cI like 1990s fashion.\u201d  Would be fine to not use it because the \u201c1990s\u201d is just identifying the fashion as of that decade.\n\n\u201c1990\u2019s fashion was the best.\u201d  Means that you like the fashion of the year 1990 the best. \n\nYou might use the plural 1990s if you were saying the 1990s\u2019 or 1990s\u2019s (the latter of which I think is weirder but I\u2019ve seen people so that to plural possessives). eg. \u201cI like fashion from the \u201880s and \u201890s but 1990s\u2019 is better.\u201d\n\nI don\u2019t think \u201c1990\u2019s\u201d is ever correct if referring to the whole decade.",
+                                    "score": 12,
+                                    "author": "SilverAg11",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "1990s here is used more as an adjective, so you wouldn\u2019t need an apostrophe. The way you wrote it, it would mean \u2018the fashion of 1990\u2019.",
+                    "score": 3,
+                    "author": "astropeche"
+                },
+                {
+                    "level": 1,
+                    "comment": "Not unless you're referring to the fashion of the year 1990. Just write 1990s fashion.",
+                    "score": 2,
+                    "author": "Irritating_Pedant"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I think that autocorrect puts the apostrophes in and people don't know or care to correct them.",
+            "score": 2,
+            "author": "snapcracklepop26"
+        },
+        {
+            "level": 0,
+            "comment": "Where can I subscribe to more grammar facts?",
+            "score": 5,
+            "author": "oxjox"
+        },
+        {
+            "level": 0,
+            "comment": "What I can't get into is 'years old'. Sure he's 12 years old but not a 12 years old. To me he would be a 12 year old.",
+            "score": 12,
+            "author": "RichGrinchlea",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Alternatively, when someone refers to a child that\u2019s \u201cone years old\u201d. It\u2019s a singular year. One year. \n\nWhen the kid racks up another year, THEN you can pluralize. The child is \u201ctwo years old\u201d.",
+                    "score": 11,
+                    "author": "shmadus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As a pediatrician... someone kill me. \"A 6 month years old child\"....I'm sorry, a what?",
+                            "score": 3,
+                            "author": "coxiella_burnetii",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "THIS IS MY PET PEEVE!!",
+                            "score": 2,
+                            "author": "ghostguessed"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "\u201cA 12 years old\u201d isn\u2019t correct.  It\u2019s \u201ca 12 year old.\u201d  If there\u2019s a noun after, it becomes \u201ca 12-year-old __.\u201d",
+                    "score": 40,
+                    "author": "kgxv",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If you're gonna bother with hyphenation, the noun form is hyphenated as well.",
+                            "score": 8,
+                            "author": "cucumbercat57"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt; it is factually incorrect punctuation.\n\nYou mean gramatically incorrect. There are no facts in dispute here.",
+            "score": 39,
+            "author": "fragglet",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is actually an orthographical issue, not a grammatical one.",
+                    "score": 21,
+                    "author": "tkdgns",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Bird law is so confusing. It really isnt governed by reason.",
+                            "score": 4,
+                            "author": "3rdPartyTittiePic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's what happens when you allow government drones that aren't real to make up the rules.",
+                                    "score": 3,
+                                    "author": "LeLBigB0ss2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I would concede the errant apostrophe and I can add in the Oxford comma, but I will never EVER forgive using \u201cshould of\u201d when they mean \u201cshould have\u201d \u2014 this is a hill I will gladly die on.",
+            "score": 11,
+            "author": "thatawfulbastard",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ditto.",
+                    "score": 3,
+                    "author": "SQLDave"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The amount of times I see people say something like, \"Yeah, back in 09', I was...\"\n\nLike. You clearly know you're supposed to use the mark to denote you removed part of the year, so how can you also *not* know where to put it? Putting it at the end makes absolutely no sense. *09'* means *0920*, not *2009*.\n\nSame as when people use *em'* when meaning *them*. You clearly know you're supposed to use the mark to denote you removed the *th*, so why the fuck aren't you putting it where the *th* was? The word isn't *emth*.",
+            "score": 3,
+            "author": "ybtlamlliw",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for the clarification!",
+            "score": 3,
+            "author": "davwad2"
+        },
+        {
+            "level": 0,
+            "comment": "Oh cool, I never actually knew the definitive answer for this, so thank you!",
+            "score": 3,
+            "author": "pie_12th"
+        },
+        {
+            "level": 0,
+            "comment": "Also YSK it's paid. Not payed",
+            "score": 3,
+            "author": "evilbeaver7",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "And when describing money, stop typing \"PAYED\" when it's supposed to be *\"PAID!!\"*",
+            "score": 3,
+            "author": "Neon-Lemon",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I actually needed this reminder. Odd for a Sunday morning but I\u2019ll take it.",
+            "score": 11,
+            "author": "Pleasant_desert",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You are not supposed to use an apostrophe to pluralize anything.",
+            "score": 10,
+            "author": "rebelx"
+        },
+        {
+            "level": 0,
+            "comment": "I've been guilty of this, thank you for the clarification.",
+            "score": 10,
+            "author": "tawnie_kelly"
+        },
+        {
+            "level": 0,
+            "comment": "Unfortunately, no one who needs to hear this will care enough to read this and get it right.",
+            "score": 5,
+            "author": "koeneker",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I should know this, yet every time I go to write one I question it all over again.",
+            "score": 4,
+            "author": "justadrtrdsrvvr"
+        },
+        {
+            "level": 0,
+            "comment": "Yes!! Any time something is pluralized. I can\u2019t count the amount of times my kids\u2019 teachers send stuff home like this.",
+            "score": 2,
+            "author": "Chemical_Violinist43"
+        }
+    ]
+}

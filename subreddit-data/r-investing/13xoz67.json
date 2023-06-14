@@ -1,0 +1,123 @@
+{
+    "id": "13xoz67",
+    "score": 2,
+    "title": "Best course of action when sold covered calls are now in the money",
+    "author": "41yroldRedditVirgin",
+    "date": 1685643319.0,
+    "url": "https://www.reddit.com/r/investing/comments/13xoz67",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I\u2019m somewhat new to options. For the most part I\u2019ve been  selling covered calls to generate a bit of cash every month or so. Accumulating cash and buying shares. \n\nThis time it didn\u2019t go as planned. The shares are now in the money and I\u2019m a few weeks out of expiration on the options. \n\nWhat do people typically do in this situation? \nDo you buy back the contracts? \nHold on and hope the share price drops before the expiration? \n\n**** Is there any financial difference between me paying to buy the calls back now at a premium or letting my share get sold? ****\n\nLet\u2019s assume the stock price is $20 or so more than the strike, does it behove me to buy back the calls or let my shares get sold? Or is the math basically the same? I\u2019d the share price continues to go up, say $5-10 from here, for every $1 up, does the call cost the same to buy back? Is there a formula or website that can help me compute this with hypotheticals? \n\nDidn\u2019t expect these names to pop up so fast so soon. Still making money on the shares, but the options I guess cancels that out.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Just my 2 cents - but generally speaking when you trade options, you kinda want to have an exit strategy for if the trade goes in your favor or if it goes against your favor.\n\nYour choices depend on your original trade thesis and your current and future thesis on the underlying. For example:\n\nIf you sold the calls at a strike and dte that you think makes the stock overvalued then do nothing and take the assignment and collect your profits.\n\nIf you think that the underlying will be in a range and the stock is fairly valued and you want to hold onto the stock - then roll the call - ie a calendar where you btc the call and write a call further out in dte.\n\nIf you think that the stock will raise even more - you can roll the stock out in time and a higher strike ideally for a credit or even.\n\nIf you are accumulating the underlying and you think that the stock will rise or stay flat, you can turn the spread into a covered strangle and write puts.\n\nThere are other things that you can do - but I tend to favor simpler option writing techniques.",
+            "score": 5,
+            "author": "greytoc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I hadn\u2019t thought about rolling out in time and using that strategy. So hypothetically I sell more calls further out and use the premiums to buy back the initial calls I sold?",
+                    "score": 2,
+                    "author": "41yroldRedditVirgin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes - it's basically a calendar spread so you can do it as a single spread transaction. Many brokers even have a pre-defined option order type called \"roll\". If not - just look at the appropriate calendar spread where the long call will buy-to-close your your short call.",
+                            "score": 4,
+                            "author": "greytoc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt;\\*\\*\\*\\* Is there any financial difference between me paying to buy thecalls back now at a premium or letting my share get sold? \\*\\*\\*\\*\n\nIf you buy back the call right now you will pay a bit extra premium due to the extrinsic value on the options\n\nMeaning if the price of the stock stays flat(big assumption) you would be better off waiting to buy the call back until the day it expires as it will be cheaper and there will be less extrinsic value or just let your shares get sold (although this will trigger a capital gain)\n\nI guess the best course of action depends on if the stock continues to rise or not. If the stock keeps rising its better to buy back the option now to capture that upside.\n\nIf the stock stays flat or drops it will be better to hold or buy back the option the day it expires, but since you cannot really know what will happen its a judgement call",
+            "score": 5,
+            "author": "SirGlass"
+        },
+        {
+            "level": 0,
+            "comment": "Your options:\n\n* Do nothing. You have a few weeks left you said, and things can change.\n\n* Stay the course if it stays above strike. Collect the premium and capital from selling the stocks at the agreed price. Then use the proceeds to do something like sell a CSP.\n\n* Buy back the calls and take a loss, since you sold an OTM call, and you're buying back an ITM call.\n\nYour choice.",
+            "score": 2,
+            "author": "i_like_my_dog_more",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What\u2019s a CSP?",
+                    "score": 1,
+                    "author": "41yroldRedditVirgin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Cash secured put. It's what you do next in the cycle if you are following the wheel strategy (/r/thetagang would be a good place to check out).",
+                            "score": 2,
+                            "author": "i_like_my_dog_more",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "At this point, the market is volatile, I can get close to 5% close to liquid and if I get sold, then I would take the cash and probably park it for a little bit until things somewhat calm down. I have no idea what to expect!",
+                                    "score": 1,
+                                    "author": "41yroldRedditVirgin"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Either let the shares go (probably the best decision \u2014 if you're trading, never cling to a position), or if you're extremely bullish on the underlying, roll the short contract to the highest possible strike for a break-even amount (e.g., buy to close the short contract for 2.00 and sell to open a new, longer-dated contract at a higher strike for 2.05).\n\nIf you do the latter, just make sure you don't forget that the 2.05 number is not premium in your pocket, it's just delaying the assignment to a higher strike!",
+            "score": 2,
+            "author": "HaHawk",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Which is alright\u2026.because I still own the shares and possibly sell for even more profit if it sells for a higher strike price. \n\nDownside\u2026.if the shares revert down, now the shares haven\u2019t sold at my previously targeted price. \n\nWho\u2019s got a crystal ball I can borrow? \ud83d\ude02",
+                    "score": 1,
+                    "author": "41yroldRedditVirgin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Please remember that you can be assigned at any time, not just at the end of an auction.\n\nIf the gap between the market price and the strike price is large enough, there's a good chance that you'll get assigned. IOW, the holder of that Call will want your shares so that they can flip them on the market or sell Covered Calls against them at a higher strike.",
+                            "score": 2,
+                            "author": "BlueSkyToday",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What\u2019s IOW?",
+                                    "score": 1,
+                                    "author": "41yroldRedditVirgin",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Short for: In Other Words\n\nAnyway, what I'm going on about is that it's easy to assume that rolling a Call to a higher strike at a later date will make them you safe from having the shares called away. It's true that rolling may result in your shares not being called, but it's no guarantee.\n\nSorry if that's obvious but it's something that I've seen people forget.",
+                                            "score": 2,
+                                            "author": "BlueSkyToday",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Great point. I was reading up on that last night about how call holders will exercise the option to cash in on the dividends and to be weary of the ex dividend date.",
+                                                    "score": 1,
+                                                    "author": "41yroldRedditVirgin"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey, thought I\u2019d add a bit of info here. \n\nCovered call funds are often sold on their high yields and \"stronger risk-adjusted performance\" than stocks.\n\nIf this sounds too good to be true, it's because it is.\n\nRisk cannot be destroyed, only transformed or transferred.\n\nA call option is a financial contract that gives the buyer the right to purchase a security at a set price from the seller.\nA covered call is when a call option is sold on a security that you own.\n\nSelling calls generates income through option premiums but puts a cap on upside.\nIf options are fairly priced the cap on the upside offsets the premium.\nIn other words, those high yields are expected to be offset by foregone returns.\nThe income is still taxable, so it's not ideal for taxable investors.\nRegarding CC funds. \n\nCovered call funds look attractive due to their high yields, but their yields are offset by forgone returns.\nTheir risk-adjusted returns may look great, but only when risk is inadequately measured.\nFinally, they are hindered by high fees, costs, and tax drag.\nTaking a total return perspective and determining how much can be sustainably spent from an appropriate asset allocation is a more efficient and reliable approach to consuming a portfolio than relying on high yield products for income\nReferences and further reading:\ndoi.org/10.2469/faj.v31.n4.36\u2026\nhttp://doi.org/10.2469/faj.v70.n6.3\u2026\nhttp://doi.org/10.1142/9789812565457_0011\u2026\nhttp://doi.org/10.3905/jod.2019.1.087\u2026\nhttp://doi.org/10.1093/rfs/hhm025\u2026\nhttp://doi.org/10.2139/ssrn.2938146\n\n\nThe TLDR.. is that\n\nYou\u2019re likely better off holding a broadly diversified index fund. \n\nThe extra income you\u2019re producing through CC is empirically detrimental to long term wealth.",
+            "score": 2,
+            "author": "SuccessfulCrew661"
+        }
+    ]
+}

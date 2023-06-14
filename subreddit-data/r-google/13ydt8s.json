@@ -1,0 +1,76 @@
+{
+    "id": "13ydt8s",
+    "score": 0,
+    "title": "Google takeout doesn't comply with EU GDPR",
+    "author": "hikeallup",
+    "date": 1685714859.0,
+    "url": "https://www.reddit.com/r/google/comments/13ydt8s",
+    "media_urls": [
+        "https://www.reddit.com/r/google/comments/13ydt8s/google_takeout_doesnt_comply_with_eu_gdpr/"
+    ],
+    "other_urls": [
+        "https://commission.europa.eu/law/law-topic/data-protection/reform/rights-citizens/my-rights/what-are-my-rights\\_en](https://commission.europa.eu/law/law-topic/data-protection/reform/rights-citizens/my-rights/what-are-my-rights_en)",
+        "https://www.google.com/maps/place/London/data=!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99](https://www.google.com/maps/place/London/data=!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99),"
+    ],
+    "postText": "&amp;#x200B;\n\nGoogle takeout exports Google Maps Saved Lists.  \nHowever, except for the Starred places list, all the other lists, the data exported doesn't includes GPS information, which therefore not accessible by other \"controllers\" as defined in EU GDPR.  \nAs you can read from the link bellow:  \n[https://commission.europa.eu/law/law-topic/data-protection/reform/rights-citizens/my-rights/what-are-my-rights\\_en](https://commission.europa.eu/law/law-topic/data-protection/reform/rights-citizens/my-rights/what-are-my-rights_en)  \n\n\nAs EU citizen, I have the right to:  \nreceive your personal data in a machine-readable format and send it to another controller (\u2018**data portability**\u2019);  \n\n\nExample:   \nThe data exported for a pin in \"London\" is:  \nLondon,,[https://www.google.com/maps/place/London/data=!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99](https://www.google.com/maps/place/London/data=!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99),\n\nThe last 2 hexadecimal numbers aren't mappable to gps coordinates, and I have made countless attempts to \"decrypt\" those 2 numbers into an useful form.  \nI started from converting the numbers to decimal, and then try to break the hex into several pieces and converted them in separate into decimal. And nothing, would represent the associated gps coordinates.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Doesn\u2019t take a genius to figure out how to decode it\n\nhttps://stackoverflow.com/questions/18413193/how-do-i-decode-encode-the-url-parameters-for-the-new-google-maps",
+            "score": 2,
+            "author": "cofffffeeeeeeee",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It doesn't take a genius to first read the post I wrote, and then read the link that you sent and see that doesn't decode those parameters.\n\nBut, since you are so much smarter, and like to call other people names, instead of trying to help people, go ahead:  \nThis is the link exported from google takeout:  \nLondon,,[https://www.google.com/maps/place/London/data=!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99](https://www.google.com/maps/place/London/data=!4m2!3m1!1s0x47d8a00baf21de75:0x52963a5addd52a99)  \n\n\nThis is gps according to google maps: 51.5286416,-0.1015987\n\nDo the math, genius. a use the formula on the link that you sent and convert the address into those gps coordinates.",
+                    "score": 1,
+                    "author": "hikeallup"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s probably because a pair of coordinates are \u201cderived\u201d information. What you saved is the *place*, not its coordinates, address, phone number, opening hours, etc.\n\nPlaces can move, or in this case, not be defined by a single coordinate. London is an area.",
+            "score": 1,
+            "author": "natto-848008381",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That fact the coordinates can be retrieve from the link, prevents the information to be used in other application, thus, doesn't comply with EU GDPR.\nThat is the information is tie to Google maps only.",
+                    "score": 1,
+                    "author": "hikeallup"
+                },
+                {
+                    "level": 1,
+                    "comment": "And as for a clear answer, yes, it can be defined as single coordinate, unlike you claim.\nAnd to proof my claim, if that link is pasted on Google maps, it will generate another link that contains a precise gps coordinate.",
+                    "score": 0,
+                    "author": "hikeallup",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; it can be defined as single coordinate\n\nIs that coordinate on Wikipedia, or london.gov.uk?",
+                            "score": 1,
+                            "author": "natto-848008381",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If the exact same place is stored in the Starred lists than the gps information on the export data.\nFurthermore, London was just an example, the same occurs for a restaurant, hotel or museum.\nYou aren't going to claim again that a restaurant is an area?\nYou just trying to find poor excuses, instead of accepting that this a compliance issue.\nAnd, if Google wants to operate within the EU space, it must comply with EU laws, including its GDPR.\nAnd EU is legendary to apply heavy fines for noncompliance.",
+                                    "score": 0,
+                                    "author": "hikeallup",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Just speculating. I have no stake in this. As I mentioned before, coordinates are derived information, not a definition of a place.\n\nGDPR doesn\u2019t say they have to export all internal or derived metadata about the place you saved. It just needs to be enough info to represent your data (the entity you saved) into an exportable format. The place name is that info.\n\nThe word \u201cLondon\u201d is enough to paste into OpenStreetMap to pull up that entity (where, incidentally, you can find its [complex entity-based definition](https://www.openstreetmap.org/relation/175342) - not a single coordinate).\n\nWhat you\u2019re trying to do is *geocode* places. You should use a different approach for that, like Google Maps or OpenStreetMap APIs.",
+                                            "score": 1,
+                                            "author": "natto-848008381"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

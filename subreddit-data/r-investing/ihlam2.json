@@ -1,0 +1,1312 @@
+{
+    "id": "ihlam2",
+    "score": 3863,
+    "title": "I graphed whether Reddit panics before the stock market does, or vice versa",
+    "author": "atc2017",
+    "date": 1598535944.0,
+    "url": "https://www.reddit.com/r/investing/comments/ihlam2",
+    "media_urls": [],
+    "other_urls": [
+        "https://imgur.com/yUI2c0N](https://imgur.com/yUI2c0N)",
+        "http://www.alternative-analytics.eu/dashboard/sentiment.html](http://www.alternative-analytics.eu/dashboard/sentiment.html)"
+    ],
+    "postText": "So I did some quantitative sentiment analysis to see if News websites/Reddit/Twitter panics before the stock market does, or if the stock market panics before Reddit/Twitter does.\n\nI have written an algo determining (stock specific) sentiment, I ran this on a dataset with (financial) news headlines (about 900k headlines), Twitter headlines en (stock related) Reddit headlines. From that I compared sentiment to the SP500 and I compared the intensity and volume of negative headlines to the VIX. This resulted in the two plots shown.\n\nSince the plot is somewhat full, I made it interactive so one can show for example only Reddit sentiment and zoom in and out of datapoints. This is in html, but Im not sure whether its allowed to share the link here so in case one is interested to play around with it shoot me a pm.\n\n[https://imgur.com/yUI2c0N](https://imgur.com/yUI2c0N)\n\nOn request,  interactive html is on:  [http://www.alternative-analytics.eu/dashboard/sentiment.html](http://www.alternative-analytics.eu/dashboard/sentiment.html)  (just a plain clean html, no ads, links etc, base url also is not a general website), I update the graph daily.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "**Hi, welcome to /r/investing. Please note that as a topic focused subreddit we have higher posting standards than much of Reddit:**\n\n**1)** Please direct all **advice requests and beginner questions to the stickied daily threads.** This includes beginner questions and portfolio help.\n\n**2) Important: We have strict political posting guidelines** (described [here](https://www.reddit.com/r/investing/comments/cyee69/formal_posting_guidelines_for_political_topics/) and [here](https://www.reddit.com/r/investing/comments/escewo/temporary_rule_change_what_happens_to_stocks_if/)). Violations will result in a minimum 30 and likely 60 day ban upon **first instance.**\n\n**3)** This is an open forum but we expect you to conduct yourself like an adult. Disagree, argue, criticize, but **no personal attacks.**\n\n--\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/investing) if you have any questions or concerns.*",
+            "score": 1,
+            "author": "AutoModerator"
+        },
+        {
+            "level": 0,
+            "comment": "I will be the first to say it : nice job bro.\n\nI like people who puts time and effort into something trying to understand and analyze stuff and aren't afraid to go deep into the process.\n\nI salute your effort. Keep it going!",
+            "score": 2360,
+            "author": "sacdecorsair",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "thanks, appreciate it.",
+                    "score": 402,
+                    "author": "atc2017",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 77,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "(1) each sentiment line is scaled  across its own medium (news, twitter, reddit). This because some mediums are consistently more negative or positive. I am interested in the delta (change) over time and therefore these overlapping scales.\n\n(2)  Since Im comparing delta I can compare them alongside each other (since I check which direction it is moving rather than the absolute level).",
+                                    "score": 57,
+                                    "author": "atc2017",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 19,
+                                            "author": "[deleted]",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Man I am absolutely intrigued by this stuff. Just out of curiosity, what do you do for a living? I'm guessing you're in the finance world or possibly data science.\n\nI'm in my last semester of college and I'll be fine with my bachelor's in stats. I really wanna migrate into data science roles (I was originally more focused on actuarial science so trying to talk to real humans who do data science so I can figure out if that's really something i wanna do)",
+                            "score": 2,
+                            "author": "FreddyLynn345_",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "\"Just a plain clean html, no ads, links etc\"\n\nWhat are you some kinda psycopath?",
+                    "score": 91,
+                    "author": "eatchkn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "He just likes data bro.\n\n&amp;#x200B;\n\n(\ud83d\udc80)",
+                            "score": 27,
+                            "author": "The_Sigma_Enigma",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\"databro\" let this be a title worthy of praise.",
+                                    "score": 10,
+                                    "author": "darkmoose"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I like it as well because most seasoned investors don't actually focus much or place value on technical analysis. I think it's super fun! Putting \"time and effort\" into it makes it sound almost like a chore when really I feel like most of the people, including myself, who do it are just doing it as a somewhat healthy form of escapism.",
+                    "score": 9,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks but I definitely wouldnt classify this as technical analysis. Its quite an elaborate algo and I just happen to plot it as a time series, but it is something different than a head and shoulder inverted triangle analysis;)",
+                            "score": 60,
+                            "author": "atc2017",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 37,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What if it\u2019s a TT v8?",
+                                            "score": 4,
+                                            "author": "wexlaxx",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Mercedes m278.  I has.",
+                                                    "score": 5,
+                                                    "author": "BuckySpanklestein",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Hi fellow Mercedes owner! I\u2019m an m177 nerd. Love me some AMG fury.",
+                                                            "score": 2,
+                                                            "author": "wexlaxx",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Im too cheap for AMG parts prices... ;-)",
+                                                                    "score": 2,
+                                                                    "author": "BuckySpanklestein"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Don't forget the triple-brontosaurus crunch burger",
+                                            "score": 8,
+                                            "author": "the_clam_farmer"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It\u2019s not technical analysis, it\u2019s data science",
+                                    "score": 14,
+                                    "author": "intothecryptoverse",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "And from time to time you learn a thing or two.\n\nI own and run a business since 15 years and my favorite hobby is to analyze my sales, clients, trends, etc.  I know everything about this company and yet, by deep analyzing my shit I spot oddities here and there that were 100% unnoticed by anyone.\n\nIt's fun, and healthy management.",
+                            "score": 20,
+                            "author": "sacdecorsair",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Happy birthday",
+                    "score": 1,
+                    "author": "hiddenearl",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Where is there a place to put your DOB in your reddit profile?  The cake icon indicates the anniversary of the registration of the user\u2019s account.",
+                            "score": 6,
+                            "author": "lowtierdeity",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "There isn't, he's talking about the cake day",
+                                    "score": 13,
+                                    "author": "Wires77",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Summary of conclusions?",
+            "score": 590,
+            "author": "b1ackfyre",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I conclude squiggly lines with tiny illegible writing",
+                    "score": 994,
+                    "author": "8008135_please",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Extrapolating to current market conditions, we can say, with certainty, that if the line squiggles more then the stocks will go up. Thus, all we need to do is measure the sentiment of the news headlines posted on reddit for today and once we do that the stocks will continue to go up. The only thing that can prevent this is another new pandemic though that will only have a temporary dampening effect",
+                            "score": 151,
+                            "author": "drewhead118",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Recent advancements in squiggly line and tiny illegible text technology are pretty impressive. I'm looking at a few startups in this new space to put some venture capital in. I'd name the companies but you probably wouldn't see them anyway. That's how good they are!!",
+                                    "score": 63,
+                                    "author": "8008135_please",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "BRB - puts on Squiggles (SQGL).",
+                                            "score": 20,
+                                            "author": "LateralThinkerer",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is the 2020.  Squiggles would be called something like SkwiG",
+                                                    "score": 4,
+                                                    "author": "Pleather_Boots",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Only if the app would post your selfie to Insta.",
+                                                            "score": 3,
+                                                            "author": "LateralThinkerer"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Imo the first plot definitely shows how sentiment precedes sp500. But as already commented a longer horizon would be needed for stronger claims",
+                    "score": 276,
+                    "author": "atc2017",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Reddit seems to have predicted all 7 of the 2 dips, if I look at how many times they get bearish.",
+                            "score": 246,
+                            "author": "meeni131",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "When you\u2019re always negative, you always see the dip.",
+                                    "score": 3,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "When will the next dip happen? Which week?",
+                                    "score": 4,
+                                    "author": "roninXpl",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Holy shit I laughed way too hard at this",
+                                    "score": 2,
+                                    "author": "smeaking"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I don\u2019t see this. If anything it seems like sentiment reacts to the market. \n\nWould be interesting to see certain subreddits compared to the market... WSB vs Investing vs Politics vs News",
+                            "score": 173,
+                            "author": "1sweets",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I have the plot also available as html which allows to interactively remove some lines from the chart (eg only see Twitter sentiment) which makes it more clear. Not sure on whether I am allowed to share the link.",
+                                    "score": 40,
+                                    "author": "atc2017",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I say you can... but then again I\u2019m not a mod",
+                                            "score": 25,
+                                            "author": "1sweets",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You can play around with it at:  [http://www.alternative-analytics.eu/dashboard/sentiment.html](http://www.alternative-analytics.eu/dashboard/sentiment.html) its just an url I once purchased and has nothing on it except this html page in case someone suspects hidden advertising. The graph is updated daily though.",
+                                                    "score": 43,
+                                                    "author": "atc2017",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "This is really helpful thanks OP!",
+                                                            "score": 3,
+                                                            "author": "quadraticog"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "i don't see why not.  you aren't trying to sell anything.  It can't be worse than linking to other sites for articles.",
+                                            "score": 7,
+                                            "author": "Red8Rain"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Agreed, I\u00b4d love to see by how much WSB outperforms the rest of the heap.",
+                                    "score": 26,
+                                    "author": "Sciencemelon69",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "By outperforms do you mean inverses lol",
+                                            "score": 42,
+                                            "author": "1sweets",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Except when I bought AMD and WSB was going nuts over it while this sub was making fun of them. I'm up over 100% now.",
+                                                    "score": 23,
+                                                    "author": "deelowe",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "WSB went crazy with AMD when it was at $3. I exited at $60, but it was quite a ride.",
+                                                            "score": 24,
+                                                            "author": "davidleo24",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I think we'll see AMD sales growth into 2021 and then it'll start dropping off. They have a strong foothold in both the cloud and game consoles. This will drive growth throughout next year unless other market factors influence it. \n\nGPCPUs are are threatened in general by companies making their own chips based on RISC-V or ARM as we can see with Apple's latest announcements and I think the market will eventually go that direction soon. The end of Moore's law is forcing software companies to start caring about silicon. As a result, the market will likely split into ISA and foundry segments with physical silicon becoming a commodity. Foundries will operate on thin margins similar to other asia manufacturers while ISAs will become a mix of open/semi open solutions mixed with proprietary vendor specific items (e.g. ML extensions or something similar).\n\nI could be wrong of course, but this seems to be the way things are heading.",
+                                                                    "score": 6,
+                                                                    "author": "deelowe",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "AMD has turned itself around and poses a strong threat to Intel on the processor side. However when it comes to GPU's the leader by far is Nvidia, as who else has figured out how to put 54 billion transistors on a piece of silicon.",
+                                                                            "score": 2,
+                                                                            "author": "stockpikr",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I believe intel will pivot into other areas. We'll see, but they seem to have lost the battle on GPCPUs. Maybe this is intentional? They are certainly trying some interesting things with their purchase of Altera.\n\nGPUs are an interesting space. I'm somewhat on the fence here. Nvidia is certainly doing well right now, but as the ML space continues to mature, the similarities between GPUs and accelerators might diminish. Then again, I'm sure the fans of DEC, Sun, and IBM were saying similar things back in the early 90s and we see how that played out.\n\nAll in all, it's a tumultuous time for the high performance silicon. AMD is clearly a winner right now and this will certainly continue into the next year or so. Same for Nvidia. Intel may shock the world soon if they have something revolutionary cooking, but the last time they tried that, it failed miserably. TSMC is certainly going to be in a good spot for a while, but at the end of the day, they make etched glass. Not exactly a high margin business unless they start building some moats. I'm sticking with AMD for now and will be watching what Apple is trying very closely to see if it'll signal a shift for the industry in the near future.",
+                                                                                    "score": 1,
+                                                                                    "author": "deelowe",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Apple is like 2% of Intel's processor sales. It's not that important and RISC-V is not going to make a dent into anything next year.\n\nAMD in 2021 will be extremely strong",
+                                                                            "score": 1,
+                                                                            "author": "iopq",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yep got into it way back when it was $2 and cashed out half at $25. I lost half those gains on $RAD the next month, speculative arbitrage ffs.\n\nIt seems like wsb these days is filled with astroturfers, clueless front pagers and actual gambling addicts who don't know the greeks. The OGs lost their money while knowing their finance 101.",
+                                                                    "score": 5,
+                                                                    "author": "DestructiveA",
+                                                                    "replies": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That's a bingo!",
+                                                    "score": 2,
+                                                    "author": "Sciencemelon69"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 10,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I don\u2019t see it anywhere else...",
+                                            "score": 11,
+                                            "author": "1sweets",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 10,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It\u2019s not straight. There are points where sentiment deviated as much as it did before corona crash without a shift in market. \n\nI think a longer graph will show the same. Investment houses have already tried these strategies",
+                                                            "score": 9,
+                                                            "author": "1sweets",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Agree with you. This is why we use actual statistical analysis to make causal inference instead of looking at the graph. Our intuition can be misleading.",
+                                                                    "score": 3,
+                                                                    "author": "Halostar"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yeah I suppose that\u2019s true",
+                                                                    "score": 1,
+                                                                    "author": "[deleted]"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "There were Reddit sentiment bubbles (Dec 2019 and Jan 2020) predicting nothing and returning the same level it was on Dec 9 by Feb 9.\n\nSeems like Reddit sentiment predicted two big upward swings that didn't happen. Then sentiment returned to baseline. Then sentiment lagged the Covid drop: Index drop started Feb 20, Reddit sentiment kept trending upward until about Feb 26.",
+                                            "score": 3,
+                                            "author": "miraj31415"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "In that case only.",
+                                            "score": 1,
+                                            "author": "18845683"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "sentiment of WSB definitely preceded the market crash in March. How could you not see that? lol",
+                                    "score": 4,
+                                    "author": "Dvdpjr"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The problem is doing this for only the COVID drop. I\u2019d be interested in seeing 2015 and 2018 pullbacks as well. \n\n2008 would probably be useless as Reddit and Twitter were too new to provide relevant data.",
+                            "score": 18,
+                            "author": "Steb20"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Everyone seems to be suggesting cross correlation for seeing how well of a predictor each news source is but I think a [Granger Causality Test](https://www.statsmodels.org/stable/generated/statsmodels.tsa.vector_ar.var_model.VARResults.test_causality.html) on a VAR model would be better.",
+                            "score": 7,
+                            "author": "Antique-Effort"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "July looks interesting. Very bearish, on no change, then very bullish on little movement.",
+                            "score": 2,
+                            "author": "b1ackfyre"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I agree. There is a delay, but sentiments come first, then it takes time for the market to adjust.\n  \nI guess there is a kind of momentum at work.",
+                            "score": 1,
+                            "author": "Ghune"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Top plot implies the dip could have been predicted.\n\nCurious to know how OP evaluated it. The disadvantage of running the analysis now is that OP is biased and knows what sentiments to look for. Unless this was done with machine learning?",
+                    "score": 32,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It also implies that it predicted a crash in August 2019 which never happened, so its 50% correct on the current sample size of 2.",
+                            "score": 41,
+                            "author": "DisturbedForever92",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes. I was talking about the March one. And I never said it was correct, just what it looks like.\n\nAs for the August one, it looks like it happened simultaneously. So no prediction there.\n\nSince it's so accurate after Covid-19 I questioned bias.",
+                                    "score": 5,
+                                    "author": "[deleted]"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "There was a pretty big lead time rolling into March so there is still time for it to be 2 for 2... still a small sample though.",
+                                    "score": 2,
+                                    "author": "MrRabbit",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Im talking about august 2019, big drop in confidence, tiny blip in market",
+                                            "score": 1,
+                                            "author": "DisturbedForever92",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh gotcha. Right on.",
+                                                    "score": 1,
+                                                    "author": "MrRabbit"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No there is no hindsight bias. Sentiment is of all headlines, so there no covid specific tag or anything.",
+                            "score": 9,
+                            "author": "atc2017",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How was sentiment classified?",
+                                    "score": 8,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Basically I score each individual headline (about 900k) from -1 (negative) to +1 (postive). Than i look how it evolves over time. It has a bit more nuance to it but this is the basic idea.",
+                                            "score": 14,
+                                            "author": "atc2017",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "But how is it ranked? Do you look for specific words and rank them based on your own analysis? Or do you use machine learning for it? Because if it's the former I just don't see how you avoided bias.",
+                                                    "score": 12,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Is mostly hinges on Vader ( [https://pypi.org/project/vaderSentiment/](https://pypi.org/project/vaderSentiment/) ) which I enriched somewhat for stock specific terms (bear, bull etc)",
+                                                            "score": 33,
+                                                            "author": "atc2017",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Oh, I see. Thank you for that.",
+                                                                    "score": 9,
+                                                                    "author": "[deleted]"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Anyway you can add correlation coefficients to this analysis? \n\nWould be interesting to see the magnitude of correlation between news/Reddit and S&amp;P index. Also what % of days (probability) does the correlation hold true for Reddit being a leading indicator.",
+                                                                    "score": 3,
+                                                                    "author": "nickstrr"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Don't turn to Reddit for market predictions",
+                    "score": 12,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "If you look at the lag, Reddit was a big contributor to predicting the market crash on March. The declines precede the actual index fall. However, post-recovery, you can see a lot of misinformation spread in the Reddit community. A lot was told to hold onto their SPY puts but you can clearly see it was a mixed sentiment. They both trended up but now Reddit is lagging behind with weaker sentiment. \n\nBasically, in a novel doomsday event Reddit sentiment is best indicator but worst at recovery.",
+                    "score": 3,
+                    "author": "Yin-Hei"
+                },
+                {
+                    "level": 1,
+                    "comment": "I see when there is a big dip in Reddit morale/sentiment \u2014 doom and gloom \u2014 the market went the opposite direction. That has actually been reflective of my experience, when the world of ending posts increased saw big gains",
+                    "score": 5,
+                    "author": "Ragnarocket21",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Isn't this the Warren Buffett adage of \"Be bold when others are fearful...\"?",
+                            "score": 7,
+                            "author": "LateralThinkerer",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": -2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "There's nothing wrong with asking a pertinent question. OP can ignore if he wishes.",
+                            "score": 17,
+                            "author": "TheDreadReCaptcha"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You forgot the part where people will also completely reject it and brush off all the effort if it doesn't satisfy their biases.",
+                            "score": 14,
+                            "author": "robalob30"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Haha Ill probably do spec request next time before coding and posting;)",
+                            "score": 4,
+                            "author": "atc2017"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "So Reddit comments are a leading indicator! Just do what Reddit comments say and I'll be a billionaire in no time! /s",
+            "score": 193,
+            "author": "skilliard7",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean isn't that literally what some of the users in some reddit subs are doing \ud83d\ude05",
+                    "score": 77,
+                    "author": "anthony81212",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not so loud, r/WallStreetBets can hear you...",
+                            "score": 58,
+                            "author": "Mathblasta",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Don't worry they can't read anyway",
+                                    "score": 41,
+                                    "author": "Lead_Lion",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "What did you just said about me bitch?",
+                                            "score": 22,
+                                            "author": "Fortheseoccasions",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Haha that's how I bought RKT at $19 and FSLY at $82 before selling at its peak",
+                            "score": 21,
+                            "author": "2BigBottlesOfWater",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, I bought FSLY at the peak and it's been low since \ud83e\udd23\n\ntrue WSB fashion.",
+                                    "score": 20,
+                                    "author": "anthony81212"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Awesome. What stack did you use to do this analysis?",
+            "score": 50,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks, Python with mainly following libraries: Vader, BS4, Ploty/Dash (and of course pandas, numpy etc).",
+                    "score": 57,
+                    "author": "atc2017",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very cool. Do you have a public repo? I\u2019d love to see how the sentiment algo works.",
+                            "score": 21,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "no, code has a lot of private references so its not public (yet, maybe in the future). The sentiment algo mainly hinges on Vader library (   [https://pypi.org/project/vaderSentiment/](https://pypi.org/project/vaderSentiment/)  ) in case you're interested",
+                                    "score": 24,
+                                    "author": "atc2017"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Seconded, do you have a public repo ? You definitely put time and effort into this",
+                            "score": 2,
+                            "author": "Estarrol"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is the beauty of a place like Reddit. You do get immediate information from posters and also stuff like this that helps us understand sentiment that changes over time. This is great work.",
+            "score": 39,
+            "author": "howtoreadspaghetti",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks",
+                    "score": 13,
+                    "author": "atc2017"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can you do a correlation coefficient or cross-correlation analysis of the signals?",
+            "score": 29,
+            "author": "badboyfreud",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Interesting, but I think you need a much longer time frame. Can you do this over, say, 5 years?",
+            "score": 55,
+            "author": "SirGasleak",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No unfortunately I dont have any data going back that further, for now Im updating the graph daily to see how it evolves over time.",
+                    "score": 65,
+                    "author": "atc2017",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Remind me! 5 years\n\n\ud83d\ude11",
+                            "score": 63,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I will be messaging you in 5 years on [**2025-08-27 14:12:15 UTC**](http://www.wolframalpha.com/input/?i=2025-08-27%2014:12:15%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/investing/comments/ihlam2/i_graphed_whether_reddit_panics_before_the_stock/g30v4h6/?context=3)\n\n[**32 OTHERS CLICKED THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Finvesting%2Fcomments%2Fihlam2%2Fi_graphed_whether_reddit_panics_before_the_stock%2Fg30v4h6%2F%5D%0A%0ARemindMe%21%202025-08-27%2014%3A12%3A15%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Delete%20Comment&amp;message=Delete%21%20ihlam2)\n\n*****\n\n|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=Reminder&amp;message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&amp;subject=List%20Of%20Reminders&amp;message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&amp;subject=RemindMeBot%20Feedback)|\n|-|-|-|-|",
+                                    "score": 12,
+                                    "author": "RemindMeBot"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "*\ud83d\udc40 Remember to type kminder in the future for reminder to be picked up or your reminder confirmation will be delayed.*\n\n**pakicetus_inachus**, kminder in **5 years** on [**2025-08-27 14:12:15Z**](https://www.reminddit.com/time?dt=2025-08-27 14:12:15Z&amp;reminder_id=631c65554ef142ff8cdb21d5fcaeb655&amp;subreddit=investing)\n\n&gt; [**r/investing: I_graphed_whether_reddit_panics_before_the_stock**](/r/investing/comments/ihlam2/i_graphed_whether_reddit_panics_before_the_stock/g30v4h6/?context=3)\n\n&gt; kminder 5 years\n\nThis thread is popping \ud83c\udf7f. Here is [reminderception thread](https://np.reddit.com/r/RemindditReminders/comments/ihwt3u/investing: I_graphed_whether_reddit_panics_before_the_stock).\n\n[**8 OTHERS CLICKED THIS LINK**](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Reminder%20from%20Link&amp;message=your_message%0Akminder%202025-08-27T14%3A12%3A15%0A%0A%0A%0A---Server%20settings%20below.%20Do%20not%20change---%0A%0Apermalink%21%20%2Fr%2Finvesting%2Fcomments%2Fihlam2%2Fi_graphed_whether_reddit_panics_before_the_stock%2Fg30v4h6%2F) to also be reminded. Thread has 27 reminders and maxed out 3 confirmation comments.\n\n^(OP can )[^(**Delete comment, Add email notification, and more options here**)](https://www.reminddit.com/time?dt=2025-08-27 14:12:15Z&amp;reminder_id=631c65554ef142ff8cdb21d5fcaeb655&amp;subreddit=investing)\n\n**Protip!** We are lean and mean and stay in motion to serve people. If there is any change you want, contact us by email.\n\n\n\n*****\n\n[**Reminddit**](https://www.reminddit.com) \u00b7 [Create Reminder](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Reminder&amp;message=your_message%0A%0Akminder%20time_or_time_from_now) \u00b7 [Your Reminders](https://reddit.com/message/compose/?to=remindditbot&amp;subject=List%20Of%20Reminders&amp;message=listReminders%21)",
+                                    "score": 2,
+                                    "author": "remindditbot"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "This is really, really neat. Thanks for sharing",
+                            "score": 2,
+                            "author": "candacebernhard"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Remind me! 1 year",
+                            "score": 1,
+                            "author": "candacebernhard",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "*\ud83d\udc40 Remember to type kminder in the future for reminder to be picked up or your reminder confirmation will be delayed.*\n\n**candacebernhard**, kminder in **1 year** on [**2021-08-27 16:56:16Z**](https://www.reminddit.com/time?dt=2021-08-27 16:56:16Z&amp;reminder_id=c6713bbde05c46f59d4148ece441def7&amp;subreddit=investing)\n\n&gt; [**r/investing: I_graphed_whether_reddit_panics_before_the_stock#2**](/r/investing/comments/ihlam2/i_graphed_whether_reddit_panics_before_the_stock/g31fll6/?context=3)\n\n&gt; kminder 1 year\n\nThis thread is popping \ud83c\udf7f. Here is [reminderception thread](https://np.reddit.com/r/RemindditReminders/comments/ihwt3u/investing: I_graphed_whether_reddit_panics_before_the_stock).\n\n[**14 OTHERS CLICKED THIS LINK**](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Reminder%20from%20Link&amp;message=your_message%0Akminder%202021-08-27T16%3A56%3A16%0A%0A%0A%0A---Server%20settings%20below.%20Do%20not%20change---%0A%0Apermalink%21%20%2Fr%2Finvesting%2Fcomments%2Fihlam2%2Fi_graphed_whether_reddit_panics_before_the_stock%2Fg31fll6%2F) to also be reminded. Thread has 28 reminders and maxed out 3 confirmation comments.\n\n^(OP can )[^(**Update message, Add email notification, and more options here**)](https://www.reminddit.com/time?dt=2021-08-27 16:56:16Z&amp;reminder_id=c6713bbde05c46f59d4148ece441def7&amp;subreddit=investing)\n\n**Protip!** We are lean and mean and stay in motion to serve people. If there is any change you want, contact us by email.\n\n\n\n*****\n\n[**Reminddit**](https://www.reminddit.com) \u00b7 [Create Reminder](https://reddit.com/message/compose/?to=remindditbot&amp;subject=Reminder&amp;message=your_message%0A%0Akminder%20time_or_time_from_now) \u00b7 [Your Reminders](https://reddit.com/message/compose/?to=remindditbot&amp;subject=List%20Of%20Reminders&amp;message=listReminders%21)",
+                                    "score": 1,
+                                    "author": "remindditbot",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I can tell you 2018 and 2020 peak reddit fear was always the bottom. When everyone on WSB is making some outrageous claims for puts on the SPY, it\u2019s time to buy.\n\nAlso both bull runs were started by the same thing. The Fed.\n\nSo while sentiment is important, keep and eye on the Fed, that\u2019s the true indicator.",
+                    "score": 5,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very interesting, one suggestion: to detect if reddit leads the index, you can run regressions using lagged sentiment variable. For example, using reddit sentiment at (t-1) against index at (t),  t is time, and t-1 is observation before t.\n\nFrom my observation twitter is most volatile and almost all sentiment variables are more volatile than the index. Overaction? But I am just looking at graphs.\n\nAnother way is you can build a trading rule based on sentiment and back-test if the rule based portfolio makes money.",
+            "score": 18,
+            "author": "owenhehe",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "It would be interesting to see what the cross correlation between the index and the sentiment signals. \n\n[https://www.wikiwand.com/en/Cross-correlation](https://www.wikiwand.com/en/Cross-correlation)",
+            "score": 12,
+            "author": "RollingZepp"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for this.\n\nHow did you source the raw data?\n\nCan you extend the study backward by as long as possible, ideally 10+ years.",
+            "score": 24,
+            "author": "einbein_in_action",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I have private server collecting data for a couple of years, unfortunately is doenst go back more than 10 years.",
+                    "score": 38,
+                    "author": "atc2017",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ah, well keep it running!\n\nThe out-of-sample validity of a study of such short length is very small.\n\nIt would be dangerous to trade on this so please don't.  Perhaps when there is a lot more data, a robust result will appear.\n\nAlso, you may note that around August 2019, sentiment (incorrectly) indicated nearly as much of a \"sell signal\" as it did early in the spread of COVID.",
+                            "score": 12,
+                            "author": "einbein_in_action"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Why? You planning on selling it or is it just for your own personal amusement?",
+                            "score": 6,
+                            "author": "TendiesMeWant",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Personal amusement. But I work in the financial sector so I also either win or learn;)",
+                                    "score": 12,
+                                    "author": "atc2017"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you have this day-to-day data in a .csv, with all cells filled, let me know. We can run a dynamic model to determine both lagged and contemporaneous effects across time, which speak to the direct nature of these effects day-to-day",
+            "score": 12,
+            "author": "Demi_em",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s not enough that the Reddit sentiment fell before the market. It needs to fall more than the normal background noise of ups and downs. Otherwise you are predicting a crash every month and it\u2019s not helpful.\n\nI would take a time derivative of this and plot it in units of standard deviation.",
+            "score": 19,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Can you make reddit but for each major sub? Lets say investing wsb and economics?",
+            "score": 8,
+            "author": "Penki-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Cmon man. One of those subs is just a bunch of screaming autists who have no idea what they're talking about. And the other is wsb.",
+                    "score": 14,
+                    "author": "Wild_Space"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Strong DD man.\n\nOnly advice I need though is #inverseWSB",
+            "score": 12,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Considering you didn\u2019t produce a correlation statistic I\u2019m not sure this is super helpful. It\u2019s just noise. You need something to help cut through this.",
+            "score": 20,
+            "author": "klabboy"
+        },
+        {
+            "level": 0,
+            "comment": "Well if Reddit sentiment is to be believed, the market is over hyped at the moment. Our negativity seems like a signal for major drops, however we\u2019re consistently reactionary on small changes.",
+            "score": 4,
+            "author": "o5mfiHTNsH748KVq"
+        },
+        {
+            "level": 0,
+            "comment": "Ha! You can see right where the summer bears died.\n\n[https://i.imgur.com/RkMNoaU.png](https://i.imgur.com/RkMNoaU.png)",
+            "score": 10,
+            "author": "caiuscorvus"
+        },
+        {
+            "level": 0,
+            "comment": "I understand this is r/investing but I\u2019m really curious how you did this. Which language, and what not. I find it very amazing to be able to crunch these huge volumes of data to produce findings and insights.",
+            "score": 3,
+            "author": "redditme789",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Mostly Python with an interface to an SQL database. Libraries i mainly use for this are pandas, vader, bs4 and numpy. Charting is done with Plotly/Dash",
+                    "score": 4,
+                    "author": "atc2017",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Units?\n\nTwitter and Reddit y-values are in the magnitude of thousands, but the news y-value is typically &lt;1. Is the sentiment supposed to be a sum of positive and negative remarks? Meaning that if the value is positive for any data set, the net sentiment is positive?",
+            "score": 3,
+            "author": "staniel_diverson"
+        },
+        {
+            "level": 0,
+            "comment": "i can\u2019t interact well on mobile... TLDR of overall relation?",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "For people like me who aren\u2019t really sure how to read this lol, what\u2019s the conclusion?",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "very cool.  they appear correlated but I don't see any early warning signs from social media.",
+            "score": 2,
+            "author": "manager_dave"
+        },
+        {
+            "level": 0,
+            "comment": "github link?",
+            "score": 2,
+            "author": "MangoToothpaste"
+        },
+        {
+            "level": 0,
+            "comment": "Reactionary.",
+            "score": 2,
+            "author": "Dew_It_Now"
+        },
+        {
+            "level": 0,
+            "comment": "So it's all reactionary?",
+            "score": 2,
+            "author": "jamminjalepeno"
+        },
+        {
+            "level": 0,
+            "comment": "What\u2019s the key takeaway?",
+            "score": 2,
+            "author": "squire212"
+        },
+        {
+            "level": 0,
+            "comment": "Honestly I can't find much correlation but it's a great study you did",
+            "score": 2,
+            "author": "SnapPunch"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for Sharing",
+            "score": 2,
+            "author": "lymeriq"
+        },
+        {
+            "level": 0,
+            "comment": "Reddit appears to be a perma-bear most of the time",
+            "score": 2,
+            "author": "Obamasamerica420"
+        },
+        {
+            "level": 0,
+            "comment": "interesting data.  now that you have the graph, I think you should write some indicator on top of the graph that shows how often redditor got the market move correct (whether the sentiment predicted the move up or down (within some specified time interval and within some specified movement band).  That would allow you to write a tool to make decisions on whether to invest.",
+            "score": 2,
+            "author": "spicytacohotdog"
+        },
+        {
+            "level": 0,
+            "comment": "so.... $SPY calls or puts?",
+            "score": 2,
+            "author": "CastnetCracker",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Butterfly spreads",
+                    "score": 2,
+                    "author": "atc2017"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I interpreted reddit as being more pessimistic about everything. Seems about right lmao, anyone else?",
+            "score": 2,
+            "author": "ihatethisplebsite",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Important question: How much of this was from WSB?",
+            "score": 2,
+            "author": "xrubicon13",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "But does the stock market respond to the news?",
+            "score": 2,
+            "author": "sldarb1"
+        },
+        {
+            "level": 0,
+            "comment": "So, what's the answer?",
+            "score": 2,
+            "author": "Duzand"
+        },
+        {
+            "level": 0,
+            "comment": "r/dataisbeautiful might like this plus your dataset",
+            "score": 4,
+            "author": "Stepthinkrepeat"
+        },
+        {
+            "level": 0,
+            "comment": "It looks like the reddit sentiment dipped to below 3000 right before the SP 500 took a tumble in late February.   \n\n\nHowever - the reddit sentiment was also consistently below 3000 from July 2019 to December 2019 - so at the time if I was using this indicator I could easily see myself ignoring the dip in sentiment as noise.",
+            "score": 1,
+            "author": "bonjarno65"
+        },
+        {
+            "level": 0,
+            "comment": "Interesting chart. I thought many stocks in Red&amp;it panics are excluded in S&amp;P500.  What is the correlation plotted using Nasdaq or Russell index and its inverse?",
+            "score": 1,
+            "author": "Vast_Cricket"
+        },
+        {
+            "level": 0,
+            "comment": "The first of two graphs you display are Average Daily Negative headlines and S&amp;p over time.  It seems to have a positive correlation.  As the market went up so did the negative headlines. As the market went down so did the negative headlines. The second of two shows daily negative headlines and the vix. But the negative headlines lines don\u2019t look anything alike.  They look like the opposites of one another. \n\nHow can these be the same lines? It\u2019s not clear to me.  Are these meant to be the same lines or different?",
+            "score": 1,
+            "author": "Mojeaux18",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Second graph shows amount of negative headlines. So here higher -&gt; more negative, where the first plot shows average sentiment (so higher -&gt; more positive).",
+                    "score": 1,
+                    "author": "atc2017",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The y axis label on your second graph is reversed then",
+                            "score": 2,
+                            "author": "di3inaf1r3",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes true, Im going to reverse it in a future update",
+                                    "score": 2,
+                                    "author": "atc2017"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks:)  I have a database with headlines from financial news website, Financial Tweets and financial Reddit posts. I measure sentiment by letting the algo score each headlines from negative (-1) to positive (+1). For this I use Vader with a customized lexicon",
+                    "score": 3,
+                    "author": "atc2017",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is insane",
+            "score": 1,
+            "author": "BoiForBeans"
+        },
+        {
+            "level": 0,
+            "comment": "This is really fucking interesting.  I remember people telling me back in August, 2019 about how the market *has to* tank.  One guy I know even held onto his rollover check because he was so certain.  As per usual, the market punished him for trying to outsmart it.  \n\nThe Fed had talked about \"economic crosswinds\" around that time.  Cool to see the sentiment.  Thanks for doing this!  I would love to see a longer time horizon, but that would be a fuckton of work.",
+            "score": 1,
+            "author": "underwoodsing"
+        },
+        {
+            "level": 0,
+            "comment": "Damn, you can clearly see the covid crash coming. But on other times the news does not predict a drop.",
+            "score": 1,
+            "author": "KoffieA"
+        },
+        {
+            "level": 0,
+            "comment": "Why do the headline charts look different in each case?  Shouldn't the headline sentiment be the same in the top and bottom chart?  Or are they different headlines that you're looking at?\n\nFor example, the top chart shows Reddit sentiment trending down in Aug 2019, and up in the bottom chart for the same period.",
+            "score": 1,
+            "author": "rich000",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The top chart is all headlines on a negative to positive scale. The bottom is a measure of negativity. So a higher value on the bottom chart means more negative.",
+                    "score": 1,
+                    "author": "manofthewild07",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You might want to fix the axis then - it says up is more positive. What you're saying makes sense though to compare VIX.",
+                            "score": 1,
+                            "author": "rich000",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm not OP, but yes that has been pointed out by a couple people. The Axis needs to be fixed.",
+                                    "score": 1,
+                                    "author": "manofthewild07"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very cool - this looks a lot like the game of playing moving averages with prices (\"When the lines cross, then you buy/sell\").  That has a few false positives, but still has general value.  Since \"blurred eyeball\" analysis suggests that there's some value in predicting drops, I wonder if you'd considered playing with some smoothing functions?",
+            "score": 1,
+            "author": "LateralThinkerer"
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s really cool",
+            "score": 1,
+            "author": "DumplingGoddessTe"
+        },
+        {
+            "level": 0,
+            "comment": "Looks like in general reddit is more pessimistic and volatile, but they did have a little bit of a leg up in predicting the crash. However that\u2019s exactly Reddit\u2018s MO - catastrophic everything- so it\u2019s not surprising that they were right for once.",
+            "score": 1,
+            "author": "Rocketbird"
+        },
+        {
+            "level": 0,
+            "comment": "This is awesome! It seems like twitter sentiment pretty accurately preceded market downturns in summer 2019 and Feb 2020. It would be cool to see the same type of analysis but for specific stocks rather than the s&amp;p500. \n\nIf you ever make the code public please update us! I'd be super interested in learning how the code works",
+            "score": 1,
+            "author": "NearbyPanda0"
+        },
+        {
+            "level": 0,
+            "comment": "If you can use this chart to make money then you are smarter than me.",
+            "score": 1,
+            "author": "hcazualcc"
+        },
+        {
+            "level": 0,
+            "comment": "This is very interesting - we made a very rudimentary thing with the same idea about 5 years ago at uni. \n\nDo you have any statistical analysis for the relationship yet?",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "You should have added stockwits for laughs.  That line would be huge.",
+            "score": 1,
+            "author": "emperorxyn"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I feel like Reddit needs the Red/Orange line (here we go..)",
+            "score": 1,
+            "author": "mrinvertigo"
+        },
+        {
+            "level": 0,
+            "comment": "this is awesome great job!!",
+            "score": 1,
+            "author": "Djmaumau84"
+        },
+        {
+            "level": 0,
+            "comment": "Interesting to see that divergence between media sentiment and the index in Feb. It would be even more interesting to see if media sentiment also \"predicted\" the 2018 drop, and maybe even futher back to the 2008 crash.",
+            "score": 1,
+            "author": "JustinianIV"
+        },
+        {
+            "level": 0,
+            "comment": "What courses did you take to learn to organize this information?",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Makes sense, the stock market is a collective of investor sentiment based on available news at the time...\nNot sure it has much predictive power.\nThe market is forward looking.\nBy definition, when new information comes out it\u2019s priced in and not longer relevant.\nAlso, over this specific time frame, the news was more often than not been catching up with the market which was shaping the narrative.\nGreat work nonetheless, Thanks for sharing!",
+            "score": 1,
+            "author": "bull_mkt"
+        },
+        {
+            "level": 0,
+            "comment": "Great job and really cool! Was the dataset you used to improve VadeR manually labelled? If so, you could try to do sentiment analysis with a more modern model such as BERT.",
+            "score": 1,
+            "author": "MouldyDoughnut"
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s tough to assume this correlation persists, bar a zombie apocalypse or more dangerous pandemic.\n\nCheck the start date on the original wuhanvirus and coronavirus subs. There were doom sayers joining those subs by thousands/day in Jan and Feb with a height of fear in March when Trump had his shit my pants press covfefe and we had some nasty limits down after that. In any case, the negative sentiment avalanche was unprecedented and I\u2019d say those subs were good indicators of how people were bound to feel eventually here in the states.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Looks like Reddit is most accurate on the drop and news is most accurate on the gains. Anyone else?",
+            "score": 1,
+            "author": "Aspanu24"
+        },
+        {
+            "level": 0,
+            "comment": "Hey man can you make the lines on the graph more gray or beige? I literally cannot tell the difference as it is",
+            "score": 1,
+            "author": "jb_liaison"
+        },
+        {
+            "level": 0,
+            "comment": "now profit off of this",
+            "score": 1,
+            "author": "rachonandoff"
+        },
+        {
+            "level": 0,
+            "comment": "This just makes it seem like a crash is unlikely and the crash in March was a unicorn anomaly....",
+            "score": 1,
+            "author": "Pelagic_Nudibranch"
+        },
+        {
+            "level": 0,
+            "comment": "Seems like news is the most optimistic",
+            "score": 1,
+            "author": "BayesOrBust"
+        },
+        {
+            "level": 0,
+            "comment": "Man this is cool",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "this says to definitely sell the news and you'd be ahead of the market.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "!Remind me 1 day",
+            "score": 1,
+            "author": "dirkdiggler_1"
+        },
+        {
+            "level": 0,
+            "comment": "Should the Y Axis label in the bottom graph be reversed?",
+            "score": 1,
+            "author": "slothonvacay",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "So what you\u2019re saying is I should listen to Reddit?\n\nDone and done. \u2705\n\nNice job btw, thanks for doing this.",
+            "score": 1,
+            "author": "v-dubb"
+        },
+        {
+            "level": 0,
+            "comment": "Basicly the VIX",
+            "score": 1,
+            "author": "Chicken_Buck"
+        },
+        {
+            "level": 0,
+            "comment": "When the prognosis is bad, twitter/news/reddit leads.\n\nWhen the prognosis is good, the market leads.",
+            "score": 1,
+            "author": "digitally404"
+        }
+    ]
+}

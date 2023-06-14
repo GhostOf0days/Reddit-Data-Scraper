@@ -1,0 +1,157 @@
+{
+    "id": "13xmbwb",
+    "score": 30,
+    "title": "Something strange with google drive file paths",
+    "author": "rhapsodiangreen",
+    "date": 1685637327.0,
+    "url": "https://www.reddit.com/r/google/comments/13xmbwb",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hey everyone! \n\nSo, I'm working on this project and the person in charge refuses to do anything off of this one google drive folder \ud83d\ude02\ud83d\ude48 \n\n&amp;#x200B;\n\nI'm curious if there's a way to have the updates made in this folder (It usually ends up being around 4 docs a week, then a separate nested folder for each month) go directly into one document of my own? If it's possible, I imagine it couldn't be retroactive. Idk, is this a pipedream? \n\n&amp;#x200B;\n\nPlease let me know if you feel compelled :) \n\n&amp;#x200B;\n\nCheers,",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Can you rephrase? I don\u2019t understand what you\u2019re looking to do",
+            "score": 14,
+            "author": "crudemandarin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks u/crudemandarin. Sure thing. This person shares a new Google doc after our meetings (This is just the way it is. They aren't going to do it any other way). Instead of accessing these documents one by one, I'd like to start my own document that puts copies of the text from those documents onto one of my own documents. So, for example, I create this document on Monday, then this person creates a new shared (viewable only) document of their own on their employer's drive; the contents from that document get copied onto the document I made on Monday. Then, on Wednesday, this person creates a new document, again, then those contents get copied onto the same document that I created, following the last update.... and so forth.",
+                    "score": 2,
+                    "author": "rhapsodiangreen"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 4,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This would be ideal, however, their employer won't allow them. Honestly, they're pretty inefficient when it comes to tech stuff. The material is actually for a training course, so I guess it makes sense why they'd be so separated. There are still better ways to do this imo. I just think it's where they are as an org tho.",
+                    "score": 1,
+                    "author": "rhapsodiangreen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks, u/Userna-mey. Yeah, I tend to agree. I can see why they didn't with this though. It's a student/teacher-type situation and a lot of different backgrounds. Also, I feel like they just don't have the bandwidth for a lot of things. Admin is a little chaotic, to say the least.",
+                                    "score": 1,
+                                    "author": "rhapsodiangreen"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not exactly sure what you mean but probably possible with AppScript or via the API",
+            "score": 3,
+            "author": "hardonchairs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks, u/hardonchairs. That's what I'm gathering, but to clarify, this person shares a new Google doc after our meetings (This is just the way it is. They aren't going to do it any other way). Instead of accessing these documents one by one, I'd like to start my own document that puts copies of the text from those documents onto one of my own documents. So, for example, I create this document on Monday, then this person creates a new shared (viewable only) document of their own on their employer's drive; the contents from that document get copied onto the document I made on Monday. Then, on Wednesday, this person creates a new document, again, then those contents get copied onto the same document that I created, following the last update.... and so forth.",
+                    "score": 1,
+                    "author": "rhapsodiangreen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The documents are each individually shared? Or do they put them into a folder that is shared with you?",
+                            "score": 1,
+                            "author": "hardonchairs",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "the latter. they use their personal org login to create new documents in the shared folder with us. We then access those individual documents in the shared folder at our convenience.",
+                                    "score": 1,
+                                    "author": "rhapsodiangreen"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "google drive api.",
+            "score": 3,
+            "author": "speedx10",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "yeah, my first thought too, and use folder ID, but I'm not sure I understand OP's real challenge.",
+                    "score": 2,
+                    "author": "ramkam2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "thanks, u/ramkam2 . I think you all might be onto something :)",
+                            "score": 2,
+                            "author": "rhapsodiangreen"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thanks u/speedx10! This is actually what I've been thinking. Is it easier than it sounds to do it Google to Google? Pointers would be helpful if you have any :)   \n\n\nAnd to clarify a little more. This person shares a new Google doc after our meetings (This is just the way it is. They aren't going to do it any other way). Instead of accessing these documents one by one, I'd like to start my own document that puts copies of the text from each of those documents onto ONE of my own documents. So, for example, I create this document on Monday, then this person creates a new shared (viewable only) document of their own on their employer's drive; the contents from that document get copied onto the document I made on Monday. Then, on Wednesday, this person creates a new document, again, then those contents get copied onto the same document that I created, following the last update.... and so forth.",
+                    "score": 1,
+                    "author": "rhapsodiangreen"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As the people have mentioned, this is a clear cut job for a Google App script that uses the Drive API. Create one in your own document that fetches the contents of the other documents.",
+            "score": 2,
+            "author": "brannefterlasning",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the clear-cut response, u/brannefterlasning! Setting it up now :)",
+                    "score": 2,
+                    "author": "rhapsodiangreen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Good luck! ( :",
+                            "score": 2,
+                            "author": "brannefterlasning"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[removed]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\ud83d\ude02 that would've been a nice gesture. luckily, I already had Chatgpt do that for me. Sadly, not all of us are born with this information :p",
+                    "score": 1,
+                    "author": "rhapsodiangreen"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Govt tab how to normal it",
+            "score": 0,
+            "author": "Viney_Cheesecake_725"
+        }
+    ]
+}

@@ -1,0 +1,293 @@
+{
+    "id": "822o3n",
+    "score": 481,
+    "title": "Michelin Star Map of Tokyo",
+    "author": "gabbagabbahey38",
+    "date": 1520216818.0,
+    "url": "https://www.reddit.com/r/JapanTravel/comments/822o3n",
+    "media_urls": [],
+    "other_urls": [
+        "https://drive.google.com/open?id=1odUZqpAZ02-E6jaKX_6yDAa6qqxoD7N3&amp;usp=sharing",
+        "https://docs.google.com/spreadsheets/d/1ve9_5R1QD6hE4AsKhFkHBGYpmbSUuEMxzSGs3u1NGUM/edit?usp=sharing",
+        "https://docs.google.com/spreadsheets/d/1EAHRZ1bZ1tDqc_blG_N--zgFDNRQEVfuXy_7uSVOTto/edit?usp=sharing"
+    ],
+    "postText": "Couldn't stand the Michelin star guide website. I wrote a scraper to get all michelin star restaurants with their accompanying information.\n\nhttps://drive.google.com/open?id=1odUZqpAZ02-E6jaKX_6yDAa6qqxoD7N3&amp;usp=sharing\n\nEdit: Here is the raw info in a csv: https://docs.google.com/spreadsheets/d/1ve9_5R1QD6hE4AsKhFkHBGYpmbSUuEMxzSGs3u1NGUM/edit?usp=sharing\n\nEdit 2: Kyoto: https://docs.google.com/spreadsheets/d/1EAHRZ1bZ1tDqc_blG_N--zgFDNRQEVfuXy_7uSVOTto/edit?usp=sharing\n\nDefinitely not perfect, but it's a good start. Hope this helps someone. ",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Here is Kyoto:\n\nhttps://docs.google.com/spreadsheets/d/1EAHRZ1bZ1tDqc_blG_N--zgFDNRQEVfuXy_7uSVOTto/edit?usp=sharing\n\nIt wouldn't upload to Google maps, not sure why...",
+            "score": 27,
+            "author": "gabbagabbahey38",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "By chance can you make one for osaka please",
+                    "score": 3,
+                    "author": "TheOnlyCreed"
+                },
+                {
+                    "level": 1,
+                    "comment": "Thank you so much for this! It\u2019s still not working for me what could I be doing wrong? I\u2019m just on mobile but it worked perfectly for Tokyo...",
+                    "score": 2,
+                    "author": "FelixThaam"
+                },
+                {
+                    "level": 1,
+                    "comment": "I updated the Kyoto one [https://docs.google.com/spreadsheets/d/1IFkFmFEoXFa4Dxaz\\_\\_oURneoIEdGwXDnnyZF0ES9iMs/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1IFkFmFEoXFa4Dxaz__oURneoIEdGwXDnnyZF0ES9iMs/edit?usp=sharing)\n\nI geocoded most (all but 14) of the addresses to Lat/Long and now you can upload them to a google map as people have mentioned.",
+                    "score": 1,
+                    "author": "RobotDeathSquad"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "awesome.  i'm gonna throw this into Tableau.",
+            "score": 14,
+            "author": "mikeczyz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "oh hey!  i briefly looked into it, but the address data wasn't specific enough and I would need to do some geocoding to grab longitude/latitude. ",
+                            "score": 1,
+                            "author": "mikeczyz"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 12,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Happy to do it! I\u2019ll probably do the same for Kyoto!",
+                    "score": 10,
+                    "author": "gabbagabbahey38",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If u do this for Kyoto u deserve the best poster of the year award lol \n\nAwesome job!",
+                            "score": 5,
+                            "author": "Leoncio22",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Done! Check the edit  ",
+                                    "score": 6,
+                                    "author": "gabbagabbahey38",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thanks!!!\u2019 The award is yours! ",
+                                            "score": 3,
+                                            "author": "Leoncio22"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is brilliant! You should crosspost it to /r/Tokyo.\n\nAny way to set different icons for the bib's and actual stars?",
+            "score": 9,
+            "author": "biwook",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Filter the CSV by rating. Add layers to mymaps for each layer. Upload each rating to a separate layer. Set a custom icon for each layer.",
+                    "score": 2,
+                    "author": "BuzzMowgli"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "&gt;155 rows couldn't be shown on the map. Fix errors highlighted red in the data table.\n\nThanks! When I tried importing though, I get this error. Looks like it's an issue with addresses with the floor and building name in front: `1F, Wakatsuki Bldg, 4-13-16 Ginza, Chuo-ku, Tokyo`.",
+            "score": 5,
+            "author": "apparition47",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Ah yeah that\u2019s probably it.",
+                    "score": 2,
+                    "author": "gabbagabbahey38",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Was this address thing fixed? I gave up after I realized how many addresses My Maps didn't want to import.",
+                            "score": 2,
+                            "author": "CercleRouge"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "http://arcg.is/1raabD  \n\nHope this is helpful.  At some point I might make improvements.  PM with suggestions and I'll get to it if I can.\n\nI had to limit Tokyo to only the Starred options bc of limits on ArcGIS free version.  If anyone has a paid version (even at work) I can show how to do this.",
+            "score": 3,
+            "author": "nathantonym",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "you bloody legend",
+                    "score": 1,
+                    "author": "6ft5",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I just saw this reply in context.  I'm 6'7, and figured the reply had to to with some tall dude subreddit, but I'd never posted to it.  Thanks.  Hope this was helpful.",
+                            "score": 1,
+                            "author": "nathantonym"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Cool, would love to incorporate this to my Google map that has 200+ points on it. It there a function to keep it to starred restaurants only and not Bib Gourmands?",
+            "score": 2,
+            "author": "CercleRouge",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The raw csv can be filtered to only bib gourmand if you want. You can upload directly from csv to any google map. ",
+                    "score": 1,
+                    "author": "gabbagabbahey38",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "awesome, since it's view only can I just copy and paste the whole thing into a new google sheet? not sure how this works.",
+                            "score": 1,
+                            "author": "CercleRouge",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah you can copy it to your own csv and then delete all but bib gourmand. ",
+                                    "score": 1,
+                                    "author": "gabbagabbahey38"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Hey, hope this helped someone. Anyone with lots of Japan travel under their belt care to PM with me? I have some questions about itineraries that I don't think need an extra post.",
+            "score": 2,
+            "author": "gabbagabbahey38"
+        },
+        {
+            "level": 0,
+            "comment": "How do I read the price section, looks a bit confusing. ",
+            "score": 1,
+            "author": "TheOnlyCreed",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah it\u2019s just be exact text from the site. Still needs to be cleaned up a bit",
+                    "score": 1,
+                    "author": "gabbagabbahey38"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Awesooooome! Thanks a lot really, this is gonna help a lot!\n\nAnyway I could copy this map into my maps in google, sorry but I\u2019m a complete noob on mymaps \n\nThanks!!!!!!!",
+            "score": 1,
+            "author": "Leoncio22"
+        },
+        {
+            "level": 0,
+            "comment": "This is quality content right here. Thanks!",
+            "score": 1,
+            "author": "NayBowGeeJoeAh"
+        },
+        {
+            "level": 0,
+            "comment": "Awesome! Turns out I was staying in walking distance of a restaurant but didn't know :(",
+            "score": 1,
+            "author": "stijnx"
+        },
+        {
+            "level": 0,
+            "comment": "Awesome. Thank you for this! I\u2019ll be visiting some time next year, depending on leave approval, and am a big foodie. This is great :)",
+            "score": 1,
+            "author": "Ziggyz0m"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you! This will be super helpful. Is there a way for me to do this with Fukuoka too? I was trying to use their site yesterday and was getting frustrated.",
+            "score": 1,
+            "author": "Pinionedspiral",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah I\u2019m going to spend some time this evening making the script a bit better and then I\u2019ll open source it on github. ",
+                    "score": 3,
+                    "author": "gabbagabbahey38"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great work. There is a bunch of restaurants missing though.\n\nEDIT: Saw the map version only at first, but the spreadsheet seems to have got it all. Maybe some addresses don't translate properly? Excellent stuff still.",
+            "score": 1,
+            "author": "Tentacle77"
+        },
+        {
+            "level": 0,
+            "comment": "Give this man a Medal!!",
+            "score": 1,
+            "author": "lecaptainfoodie"
+        },
+        {
+            "level": 0,
+            "comment": "Dude this is amazing! How did you feed the data back into maps?",
+            "score": 1,
+            "author": "ThatLucidGuy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You can upload csv directly to your own map. They have a wizard to do it if you click import or add layer in your own google map. ",
+                    "score": 1,
+                    "author": "gabbagabbahey38"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Has anyone been able to upload the kyoto csv?",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This is great, thanks! Can you do one for Osaka as well? ",
+            "score": 1,
+            "author": "Th3Boss"
+        },
+        {
+            "level": 0,
+            "comment": "Which is the cheapest / most affordable to go to? ",
+            "score": 1,
+            "author": "ad33zy"
+        }
+    ]
+}

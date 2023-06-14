@@ -1,0 +1,41 @@
+{
+    "id": "1490aln",
+    "score": 2,
+    "title": "Why doesn't the free usage limit for Reddit APIs work?",
+    "author": "kalni",
+    "date": 1686723542.0,
+    "url": "https://www.reddit.com/r/NoStupidQuestions/comments/1490aln",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "This is a question I had ever since I saw the AMA where it was mentioned that the oauth based free usage limit for the APIs is 100 req/min per user. Now as long as you are a logged in user, why is this not enough for 99.99% users who are using the 3rd party apps?\n\n 100 req/min is around 1.67 req/sec, which is basically more than 1 request per second. Even including everything that you need the APIs for, fetching a thread,fetching sub listings, commenting, liking, etc. how many people will be doing these things at a rate of more than 1 per second? \n\nIsn't it reasonable to assume that for a very large majority, being allowed to do 100 reqs/min will more than suffice their needs? Am I missing something over here? Also as far as I know, all 3rd party clients are already using oAuth APIs for logged in users, otherwise you wouldn't be able to use the write APIs or personalized read APIs anyway. \n\nI didn't see anyone discussing this before, so I have to assume I am missing something, can someone please help me figure out where I am going wrong?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You'd have to ask everyone that uses your third party app to generate and send you an Oauth keyso already depending on how reddit manages them, you're removing  anyone that tries to use said API for themselves from your userbase.\n\nBeyond that, asking someone to generate and send said key is a \"quit moment\", a lot of people will go \" oh, I can't just log-in and go, well back to the app thzt already worked I go\"\n\nAlso it makes your app more sensitive in terms of security and less practical to get stats on.\n\nThat's just some of the issues that comes to mind with your approach, there's reasons why nobody does this for any APIs.",
+            "score": 2,
+            "author": "Taewyth"
+        },
+        {
+            "level": 0,
+            "comment": "You\u2019re thinking of a Reddit account rather than an API account.\n\nEach user has their own Reddit account.\n\nEach Reddit Client needs their own API account and this is the one that will be chargeable.",
+            "score": 1,
+            "author": "ThannBanis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "According to this doc: https://github.com/reddit-archive/reddit/wiki/OAuth2\n\n&gt; In order to make requests to reddit's API via OAuth, you must acquire an Authorization token, **either on behalf of a user** or for your client.\n&gt; \n\nThis would indicate, its possible to make requests to the Reddit API \non behalf of the user directly and use their oAuth in this case. In fact for all write APIs (making comments, voting, posting, etc.) the app has to use oAuth on behalf of the user only, which has to be already happening.",
+                    "score": 1,
+                    "author": "kalni",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It is, but apparently that is not the point from Reddits POV.\n\nReddit wants to make money, they do that by either showing ads or getting people to pay for premium.\n\nCurrently people using third party apps don\u2019t have to do either\u2026",
+                            "score": 1,
+                            "author": "ThannBanis"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

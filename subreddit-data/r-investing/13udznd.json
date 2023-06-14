@@ -1,0 +1,94 @@
+{
+    "id": "13udznd",
+    "score": 38,
+    "title": "1880 - 2023 Graph Showing Maximum Drawdown from Last Highs",
+    "author": "MoilC8",
+    "date": 1685315317.0,
+    "url": "https://www.reddit.com/r/investing/comments/13udznd",
+    "media_urls": [],
+    "other_urls": [
+        "https://postimg.cc/s1KFmD3t](https://postimg.cc/s1KFmD3t))",
+        "https://stooq.com/q/d/l/?s=^spx&amp;i=d)"
+    ],
+    "postText": "I've been conducting some recent analysis, and I thought I'd share some interesting graphs with all of you.\n\nThe graph below illustrates the drawdown from previous highs. It demonstrates that, apart from the 1929 crash, all other drops have experienced drawdowns ranging from 40% to 55% for over a century.\n\nAdditionally, the time frame between the graph reaching zero and then declining back to zero represents the duration it took to recover from each fall. This is why you can observe a significant \"window\" from 1929 until around 1955 (approximately), as it took more than 20 years to recover from that particular crash.\n\n([https://postimg.cc/s1KFmD3t](https://postimg.cc/s1KFmD3t))\n\nCODE:\n\n    close_prices = etf['Close']\n    cum_max_prices = close_prices.cummax()\n    drawdown = (cum_max_prices - close_prices) / cum_max_prices * 100\n    \n    plt.plot(drawdown)\n    \n\nData: \"snp500\" estimation by [stooq](https://stooq.com/q/d/l/?s=^spx&amp;i=d)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Some graphing advice:  usually drawdown graphs are flipped so that the y axis shows negative numbers and 0 is at the top.",
+            "score": 22,
+            "author": "weightedslanket",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You are right, thanks!",
+                    "score": 1,
+                    "author": "MoilC8"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Bear markets without recession -20%\n\nBear markets with recession -45%\n\nAverages.\n\nIf there is no recession the bear market is over. According to the averages.",
+            "score": 13,
+            "author": "1UpUrBum"
+        },
+        {
+            "level": 0,
+            "comment": "Explain it to me like I'm a small child or a golden retriever.  I assure you, it wasn't brains that got me here...",
+            "score": 36,
+            "author": "DannyGyear2525",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Imagine the tide of the ocean coming in and going out. The blue line is the number of inches/cm below the absolute highest (previous) water level that the ocean is currently at.\n\nThis is why it never goes below zero. When it hits a new record, it is exactly 0 inches below the peak.\n\nWhen the blue line is high, their is a low tide (or stocks have fallen a lot from their peak)",
+                    "score": 10,
+                    "author": "mistressbitcoin"
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm here for one reason and one reason alone. I'm here to guess what the music might do a week, a month, a year from now. That's it. Nothing more. And standing here tonight, I'm afraid that I don't hear a thing. Just...silence.",
+                    "score": 7,
+                    "author": "r_silver1"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is this inflation-adjusted? The Great Depression involved a deflationary spiral, so if it isn't it might overemphasize it (still definitely not a fun time, regardless). \n\nAnyway, cool stuff, and a useful reminder that 40%+ drawdowns are not that uncommon and that one should definitely be prepared for such an eventuality.\n\n**EDIT:** Also, what about dividends? Is this total return, or does it only look at prices?",
+            "score": 5,
+            "author": "Lyrolepis",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Looks like neither inflation or dividend adjusted.\n\nWhich is significant because I think after 1929 you would actually recover around 1938 in real, total return.",
+                    "score": 4,
+                    "author": "Squezeplay"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Haha, you wrote cum.\n\nEdit: sorry, I thought this was the other sub. Chart doesn\u2019t really tell you anything though.",
+            "score": 8,
+            "author": "DigitalSheikh"
+        },
+        {
+            "level": 0,
+            "comment": "So it\u2019s random gotcha",
+            "score": 1,
+            "author": "EyeBeeStone"
+        },
+        {
+            "level": 0,
+            "comment": "Man the 90's were a great time but I swear fuuuuck those George W years.",
+            "score": 0,
+            "author": "GhettoChemist"
+        },
+        {
+            "level": 0,
+            "comment": "Yeah but how much higher are we now from where we were back then during those crashes? You might have to have patience, but those crash levels are 90% below where we are now.",
+            "score": -1,
+            "author": "Un-Scammable"
+        }
+    ]
+}

@@ -1,0 +1,1292 @@
+{
+    "id": "n958n7",
+    "score": 4361,
+    "title": "I analyzed 9000+ trades made by U.S Senators in the last two years and benchmarked it against S&amp;P500. Here are the results.",
+    "author": "nobjos",
+    "date": 1620655565.0,
+    "url": "https://www.reddit.com/r/StockMarket/comments/n958n7",
+    "media_urls": [
+        "https://www.reddit.com/r/StockMarket/comments/n958n7/i_analyzed_9000_trades_made_by_us_senators_in_the/"
+    ],
+    "other_urls": [
+        "https://www.reddit.com/u/rambat1994/)",
+        "https://www.citizen.org/article/personal-financial-disclosure-requirements-for-public-officials/),",
+        "https://preview.redd.it/ir6jqgjwsay61.png?width=644&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=3d7d039f7948ea29b46d42ef4c395b4ef2fcf1d8",
+        "https://preview.redd.it/mnijwbqwsay61.png?width=948&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=f18cb38c4e61bfb6ecb62d0dfb98efaa1492c2a2",
+        "https://preview.redd.it/95cl91nwsay61.png?width=945&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=276e4b6ad6f81b849c3de25339986c663ada1e3c",
+        "https://preview.redd.it/75nyoa5ltay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=4f36fc9af7105988486b65821cbbae02fedbb987",
+        "https://preview.redd.it/xing6reltay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=f645ae27bb275de952a4026a882cb1c1d387d8f1",
+        "https://preview.redd.it/k4r34rpusay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=c929141f7b4f11056b6c59b3a14cb2c1ab8b9b80",
+        "https://preview.redd.it/igyz3jwdvay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=acd8e04b8e2b99c5c05002b795af850b322a182d",
+        "https://preview.redd.it/fd66tjagvay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=0d453de46a9a418ea854517dee9143fe335e7f19",
+        "https://docs.google.com/spreadsheets/d/1Rg5jMYG-X4I7cidQylzCNc_UpJZGNhGrjAt7g0QkXYs/edit?usp=sharing)"
+    ],
+    "postText": "P**reamble:** The ability of Senators to trade stocks has been controversial from the start. The 2020 congressional insider trading scandal where Senators used insider knowledge to trade large positions in stocks just before the coronavirus pandemic crash was just one example where they used their privileged position for gain. \u00a0While there is scope for a lot of discussion regarding the legality/ethical aspects of this, what I wanted to know is\n\n**Did Senators beat the market and can I beat the market if I follow their trades after its been made public?**\n\n**Where is the data from:** senatestockwatcher.com\n\nMassive shoutout to [u/rambat1994](https://www.reddit.com/u/rambat1994/) for putting in the efforts to create this site and make the knowledge public. The website has data of Senator trading from 2019. While I could observe that all the trades may not be captured by the site, given that we have more than 9K trades to work with, I feel that we should be good from a statistical significance perspective. Also, please note that the data will contain trades done by senators who are not currently in the senate (Either they were in Senate earlier and now in the house of representative or another position of power which forces them to disclose their trades)\n\nWhile senators are supposed to [report the transaction within 30 days](https://www.citizen.org/article/personal-financial-disclosure-requirements-for-public-officials/), the median delay in reporting that I observed for the trades was 28 days and the average delay was 52 days. There were some outliers that pushed the average up and are most likely due to the fact that their broker might not report the trade to them immediately.\n\nAll the trades and my analysis are shared as a google sheet at the end.\n\n**Analysis:**\n\nhttps://preview.redd.it/ir6jqgjwsay61.png?width=644&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=3d7d039f7948ea29b46d42ef4c395b4ef2fcf1d8\n\nA total of 9,676 trades were made by the senators in the past two years. This analysis would be focusing on the stock purchases made by the senators. (The stock sales and the pandemic controversy can be a standalone analysis by itself). Out of the 4,911 Buy\u2019s what I am really interested in is the 1,375 transactions which were over $15K. I decided on this cutoff as I did not want small transactions (&lt;5K) to affect the analysis. The hypothesis being that if someone is putting almost 10% of their annual salary into one trade, they should be very confident about the stock. (I know that some senators are millionaires and this hypothesis would not apply to them, but adding their net worth would again complicate the calculations unnecessarily)\n\n**Results:** For all the stock purchases I calculated the stock price change across 3 periods and benchmarked it against S&amp;P500 returns during the same period.\u00a0\n\na.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 One Month\n\nb.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 One Quarter\n\nc.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Till Date (From the date of purchase to Today)\n\nhttps://preview.redd.it/mnijwbqwsay61.png?width=948&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=f18cb38c4e61bfb6ecb62d0dfb98efaa1492c2a2\n\nAt this point, it should not come as a surprise, but Senators did beat SP500 across the different time periods. But what I am really interested in is if it's possible to follow their trades after disclosure (after a time lag of 30 days) and still beat the benchmark.\n\nhttps://preview.redd.it/95cl91nwsay61.png?width=945&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=276e4b6ad6f81b849c3de25339986c663ada1e3c\n\nIf you had invested in the stocks Senators bought, even after adjusting for the lag of disclosure, you would beat SP500 over the long run. My theory for this is that Senators usually play the long game and invest having a time horizon of more than a year as sudden short-term gains can put a spotlight on their trades. This gives the retail investors a window of opportunity where they can follow the trades and make a significant profit.\n\nNow that our main question is out of the way, we can really deep dive into the data and see some interesting patterns. The next question I wanted to be answered was which were the best trades made by Senators over the last 2 years.\n\nhttps://preview.redd.it/75nyoa5ltay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=4f36fc9af7105988486b65821cbbae02fedbb987\n\nBrian Mast seems to be the frontrunner with making almost 100% gain in one month, investing in lesser-known companies. Michael Garcia also seems to have made it rain with his Tesla plays. But not all the trades made by Senators were successful as shown below.\n\nhttps://preview.redd.it/xing6reltay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=f645ae27bb275de952a4026a882cb1c1d387d8f1\n\nThese are the worst trades made by Senators with Greg losing more than 80% of investment value within the disclosure period.\n\nBut even Warren Buffet can go wrong on a stock pick. So, I wanted to know was who made the most returns over all their investments in the last 2 years. I only considered senators having at least $100K in investments and a minimum of 5 trades\n\nhttps://preview.redd.it/k4r34rpusay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=c929141f7b4f11056b6c59b3a14cb2c1ab8b9b80\n\nJohn Curtis made a whopping 95% average return on his investments. All the top 10 Senators comfortably beat the market return of 26.4% during the same investment period. The next thing I looked at is the Senators that had the most amount of money invested in stocks during the last 2 years.\n\nhttps://preview.redd.it/igyz3jwdvay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=acd8e04b8e2b99c5c05002b795af850b322a182d\n\nThe top 3 senators as shown above invested more than $15MM over the last 2 years and were also able to beat the market at the same time.\n\nFinally, this leads us to the last question of which were the most popular stocks among U.S senators\n\nhttps://preview.redd.it/fd66tjagvay61.png?width=624&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=0d453de46a9a418ea854517dee9143fe335e7f19\n\nAs expected, big tech dominates the investments but what was surprising was the skew of investment towards Microsoft which had more money invested in it than the rest of the top 9 put together. One important thing to note here is that except for Antero, the rest all the companies have a $100B+ valuation.\n\n**Limitations of analysis:** There are multiple limitations to the analysis.\n\n1. The time period of the analysis is 2 years during which the market experienced a significant bull run. So, the results might change in a market downturn/recession\n2. The data has been sourced from senatestockwatcher.com as parsing the data from the official government site is extremely difficult. All the recorded transactions have a pdf of the disclosure linked to them (you can find it in the google sheet). I have made my best effort to QC the data and make sure there are no false positives. But this might not contain all the transactions made by Senators.\n3. There is no disclosure for the exact amount of money invested by Senators. The disclosure is always in ranges (e.g., $100k \u2013 $200k). So, for calculating the investment amount, I have taken the average of the given range.\n\n**Conclusion:**\n\nThis analysis proves that Senators indeed get a better return than the overall market. Whether it is due to insider trading or due to their superior stock-picking capability is something that can\u2019t be proven from the data and is left to the reader\u2019s judgment. I intentionally left out the party affiliation of the Senators as I felt that it would bias the reader and was not the objective of this analysis.\n\nWhichever side of the political spectrum you lean-to, the above analysis shows that you get to gain by following their trades!\n\nLink to Google Sheet containing all the analysis and trades: [here](https://docs.google.com/spreadsheets/d/1Rg5jMYG-X4I7cidQylzCNc_UpJZGNhGrjAt7g0QkXYs/edit?usp=sharing)\n\n*Disclaimer: I am not a financial advisor*\n\nEdit: \n\n&gt; There are two chambers in the legislative branch: Senate and House. Not all of these people are \u201csenators\u201d as you describe. \n\nI mistakenly classified all of the trades under the broad term of Senators! This is a mixture of trades done by both houses. So please keep this in mind while reading the post. Apologies again as politics is not really my strong suit. ",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is some valuable information. Thank you for mining it for us.",
+            "score": 709,
+            "author": "Thebusinessman343",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You are welcome :)  \n\nIn case you missed out on any of my previous analyses, you can find them here!\n\n1. [Benchmarking Motley Fool Premium recommendations against S&amp;P500](https://marketsentiment.live/blog/?p=120)\n2. [Due Diligence on Corsair](https://marketsentiment.live/blog/?p=47)\n3. [Benchmarking 66K+ analyst recommendations made over the last decade](https://marketsentiment.live/blog/?p=113)\n4. [Performance of Jim Cramer\u2019s 2021 stock picks](https://marketsentiment.live/blog/?p=106) (I know there is some controversy regarding using the closing price \u2013 I am working on increasing the time frame of the analysis and using the opening price)\n\nDo check it out and tell me what you think. Thanks!",
+                    "score": 599,
+                    "author": "nobjos",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is the type of content that makes me love reddit.",
+                            "score": 154,
+                            "author": "feel-T_ornado",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "And hate our politicians",
+                                    "score": 32,
+                                    "author": "chubbshuevos",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Most definitely, the system is broken.",
+                                            "score": 16,
+                                            "author": "feel-T_ornado",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Poor Mark Green though, has 4/10 worst trades in his name. So... puts on Mark Green?",
+                                                    "score": 5,
+                                                    "author": "RecreationalMaryJane",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Nah, just goes to show how much of a fricking casino the whole deal is. Step 1, have tons of money, step 2, invest randomly and with insider info, step 3, cash in returns way above those of your average Joe.",
+                                                            "score": 5,
+                                                            "author": "feel-T_ornado"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, you won't find these information anywhere on the internet other than Reddit. Reddit\u2019s full of intelligent people.",
+                                    "score": 43,
+                                    "author": "1percentRolexWinner",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "*is. Change \"was\" to \"is\"",
+                                            "score": 13,
+                                            "author": "xProtege16x"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Not really. Platform got super popular and is full of all kinds of people now. I was one of the late joiners, I just know some of the history",
+                                            "score": 3,
+                                            "author": "EpochYT"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Ageeed",
+                                    "score": 2,
+                                    "author": "M34PREZ420"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You could create a fascinating book highlighting trends across, for example, profession. For example: how do Senators perform compared to FinTwit billionaires? What is the same and what is different? How do their networks (lobbyists) connect and how does that influence stock picks?\n\nAnother group would be company executives. Are there relationships between executives trading their own business\u2019 stocks and politicians following suit (before the market knows the reasons)?\n\nI\u2019m a huge fan of Jack Schwager\u2019s books (that highlight psychological and operational traits). The idea of a book that bridges politics, policy, lobbyists, business leaders and market movers is really appealing.",
+                            "score": 23,
+                            "author": "jamwakes"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Dude, you're a fucking beast. The world needs more people like you. Keep up the great work! Outstanding!!",
+                            "score": 20,
+                            "author": "hevea_brasiliensis"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The Motley post was super interesting. I think it\u2019s important we remove judgements on their marketing tactics and focus on the pure data and results. Great posts!",
+                            "score": 29,
+                            "author": "Bogey_Kingston",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m interested to see Motley returns in a full cycle. It says the OP used data since 2013 because that\u2019s what was available but I\u2019m curious how they hold up in a non bull environment",
+                                    "score": 3,
+                                    "author": "buttstuff_magoo"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Do you happen to have an RSS feed for your blog?  I didn't see a link but I'd like to stay on top of your posts.",
+                            "score": 5,
+                            "author": "derekhans"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Did you ever consider looking at the amount of money, different ranges, as a proxy for how confident they were in an investment and compare how it did vs SPY? As in, an investment in the $500,000 range might hold more confidence in its returns vs a $100,000 might be a \u201cI heard it might do well, so I\u2019ll throw a bit at it and see\u201d sort of thing.\n\nAnyway thanks for this awesome analysis!",
+                            "score": 5,
+                            "author": "Red_Panda_Geiko"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "First, thank you this is all incredibly interesting and you clearly put a ton of work into it. As a diehard indexer and boglehead I\u2019m having difficulty reconciling this with what I\u2019ve read regarding stock picking.\n\nYour analysis seems to indicate that following politicians, motley fool, Wall Street analysts and Jim Cramer would all lead one to successfully beat the S&amp;P500!\n\nCan you help me understand why? There are plethora of academic papers saying this isn\u2019t the case and following newsletters like motley fool or Cramer is a losing strategy. \n\nDo you think it is because your data set is all encompassed within the latest bull market? Were the academics missing something? I\u2019m at a loss.",
+                            "score": 2,
+                            "author": "sirlimeintheeye",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Insider trading?",
+                                    "score": 2,
+                                    "author": "Anusien",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Very cool, especially the analysts one. Great job!",
+                            "score": 1,
+                            "author": "SatouWrites"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wow, just wow.",
+                            "score": 1,
+                            "author": "HawkExciting"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "A lot of respect for people like this!! Giving this info for free is amazing",
+                    "score": 19,
+                    "author": "stocksmakethebedrock"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "these are house members. \n\nwonder what the differences would be between senate vs house or committee members vs non committee members.",
+            "score": 148,
+            "author": "ebrownzzz",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Well, I saw a post a while back that analyzed N Pelosi, and found that she nearly doubled her net worth as a result of her committee appointments. (Sorry, but no link.)",
+                    "score": 49,
+                    "author": "Monarc73",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's questionable at best.  Her husband is owns a VC and investment firm, so it's easy to say she's benefiting from him.  It's hard to say (but possible) that he is benefiting from her.",
+                            "score": 45,
+                            "author": "proverbialbunny",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "She had a large sum of LEAPS on Tesla calls and she sure did a good job championing and getting passed that EV tax credit right before it expired",
+                                    "score": 16,
+                                    "author": "CMISF350",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That Tesla isn't eligible for?",
+                                            "score": 6,
+                                            "author": "misanthpope",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Like the rest of the world was doing?",
+                                            "score": 1,
+                                            "author": "NicoJuicy"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Ummmm what.  Nancy go back to work and get off Reddit",
+                                    "score": 12,
+                                    "author": "tacobell999"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Someone should make a Nancy Pelosi ETF.",
+            "score": 221,
+            "author": "AloneForever",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Or a senate ETF that tracks what they're doing in a general sense",
+                    "score": 78,
+                    "author": "AlwaysOTM",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "That\u2019s actually a brilliant idea",
+                    "score": 49,
+                    "author": "irache"
+                },
+                {
+                    "level": 1,
+                    "comment": "Id buy.",
+                    "score": 20,
+                    "author": "YogiTheBear131"
+                },
+                {
+                    "level": 1,
+                    "comment": "Odds are she'd do better than Cathie Wood! (My god this ARK Space shit is garbage.)",
+                    "score": 19,
+                    "author": "Awkward-Painter-2024",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It\u2019s actually made up of a lot of security companies and companies that would benefit from war. Think of it as a defensive hedge against potential war with North Korea, China, Iran, Turkey. It\u2019s not a bad price to hold the companies that are in it considering most of them are expensive individually.",
+                            "score": 5,
+                            "author": "Oceanclose",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've already been holding CIBR for a while. I really should have thought it through more. Oh well... Thanks for the reply though. \ud83d\ude0e",
+                                    "score": 2,
+                                    "author": "Awkward-Painter-2024"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It would be delayed by like 2 months tho",
+                    "score": 11,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Op showed that even with the delay, buying what senators bought still beats the spy long-term (at least in their dataset)",
+                            "score": 39,
+                            "author": "joeschlek"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[removed]",
+                    "score": -1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It would take months to get a trade...",
+                            "score": 7,
+                            "author": "eventualist"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That's really great work! But overall shouldn't this concern us a little?",
+            "score": 133,
+            "author": "andulomitorus",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's easy to see how this could be a direct link to insider trading or corruption concerns. A more boring answer is these people are generally high wealth and have access to better advisors. The truth is probably somewhere in the middle.",
+                    "score": 161,
+                    "author": "Sinsyxx",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Statically, hasn't it been proven even the best financial planners have a hard time beating 12% ROI over time?",
+                            "score": 66,
+                            "author": "AUCE05",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "A very difficult question to answer. First, average SP500 return over time is about 8%, so 12% would be 50% better. Not sure where you got the 12% number, but that would be very good. \n\nSecond, according to a quick google search, studies by both Vanguard and Russell investments show a good FA can increase returns for investors by 3-3.5%. A sizable return for average investors.\n\nThe issue here is that Senators are not average investors. They have access to teams of advisors with potential insider knowledge. It seems clear from this study that they are getting a big benefit from their position in government, but they may not be acting in any corrupt or fraudulent manner. It could be a simple fact that they are incredibly tuned into economies and markets.",
+                                    "score": 38,
+                                    "author": "Sinsyxx",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Or making decisions which directly benefit their investments, demonstrating a direct benefit from arising from a conflict of interest",
+                                            "score": 21,
+                                            "author": "elppaenip",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "In my opinion, the solution is simply requiring all politicians above a certain grade to only be eligible for broad based domestic index funds. Now their interest is directly tied to the country\u2019s interest. Simple pipe dream though.",
+                                                    "score": 27,
+                                                    "author": "Sinsyxx"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; average SP500 return over time is about 8%\n\nThis might be either excluding dividends, or inflation adjusted, depending on the period.\n\nIf you include dividends, the long-term (100 year) return of the S&amp;P500 is more like 10%. 10.75% to be exact over the last 100 years (April 1921 - April 2021). Over the last decade, it's far higher, 14%.\n\nhttps://dqydj.com/sp-500-return-calculator/",
+                                            "score": 1,
+                                            "author": "blorg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "SPY has a hard time beating 12% ROI lol\n\nAnyway, any \"statistical analysis\" is just looking at averages. Just because the best financial advisors, on average, have trouble beating 12% consistently doesn't mean that it's impossible to do so, or that there aren't financial planners out there rocking 20% YOY returns consistently.",
+                                    "score": 8,
+                                    "author": "energetic-dad",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Data from Ben Felix suggest beating risk-adjusted returns can be mostly attributed to LUCK for advisors/funds. Luck tend to fade away.\n\nEven the Oracle of Omaha credits [luck.](http://blog.umd.edu/davidkass/2019/08/31/warren-buffett-describes-the-important-role-of-luck-in-his-investment-career/)",
+                                            "score": 7,
+                                            "author": "ZenoxDemin",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is true, but when the full set of data follow a normal distribution curve, every statistic will read this way.  What is important are the ends of the curve measured over time - ie.  There are consistent outperformers, yet they are outliers.  \n\nRenaissance Medallion fund is a great example of this 39% average return for 30 years",
+                                                    "score": 2,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That 39% is including the insane MER right? I remember from a podcast that Renaissance did 70% average return for 20 years without the fees they charge",
+                                                            "score": 2,
+                                                            "author": "themkane"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Jojo the stock monkey beat most f advisors for a whole year, so....",
+                                    "score": 3,
+                                    "author": "Monarc73"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "They invested in tech in 2020. Of course they did well",
+                                    "score": 1,
+                                    "author": "GivesCredit"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Lol the cesspool that is politicians get payed by the people that control the markets and you think these politicians are better at picking stocks than people that dedicate their life to picking stocks? Haha wake up these guys are insider trading.",
+                            "score": 3,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Do you think politicians pick their own stocks? They're wealthy, they pay FA's just like any successful person.",
+                                    "score": 2,
+                                    "author": "Sinsyxx"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It\u2019s also a lot easier to make a big play into a high risk high reward stock if you have tens of millions in assets and you won\u2019t bankrupt yourself if it doesn\u2019t pay off.",
+                            "score": 1,
+                            "author": "Onatel"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Just copy all of Nancy's trades and you too can get rich off her position.",
+                    "score": 55,
+                    "author": "AloneForever",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I legitimately want to do this but I don\u2019t know how",
+                            "score": 12,
+                            "author": "Bogey_Kingston",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Same. Is there some sort of alert system you can subscribe to in order to get notifications for when House and Senate members buy/sell?",
+                                    "score": 12,
+                                    "author": "MisterDallas",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not really they have like up to 45 days or something to report their trades",
+                                            "score": 9,
+                                            "author": "One_Engineering_3659",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Where would you look after the 45 days to see the information. I\u2019d like to see this myself, if anyone knows",
+                                                    "score": 5,
+                                                    "author": "waynef12370",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You should read the post that started this entire discussion. Ya know, the big one at the top with the graphs and all of the information.",
+                                                            "score": 22,
+                                                            "author": "osufan765",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Have you ever thought about reading the original post?",
+                                                            "score": 12,
+                                                            "author": "randomcluster"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Sec filings. Google.",
+                                                            "score": 2,
+                                                            "author": "Altruistic_Prior1932"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "OP linked the website they used.  If you learn some basic programming skills it can be easily automated so you don't have to check the website every day.  Eg, you could write a bot that emails you when they've made a trade.",
+                                            "score": 7,
+                                            "author": "proverbialbunny"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "You can't, per OP's post, she doesn't have disclose them until ~1 month after the fact.",
+                            "score": 2,
+                            "author": "smartredditor",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They're not traders, they're investors, so 1 month is no problem.  You'd still profit probably just as much.",
+                                    "score": 7,
+                                    "author": "proverbialbunny"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Overall, there's a ton of things about our political system and our politicians that should concern us lol",
+                    "score": 8,
+                    "author": "Darktyde"
+                },
+                {
+                    "level": 1,
+                    "comment": "It should, but it is allowed so nothing will happen to those guys anyway.",
+                    "score": 5,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "A little, but their investments where in the blue chip stocks, save tesla.  Those stocks typically beat the market anyway.",
+                    "score": 3,
+                    "author": "parkforestmusic"
+                },
+                {
+                    "level": 1,
+                    "comment": "A little?",
+                    "score": 3,
+                    "author": "Monarc73"
+                },
+                {
+                    "level": 1,
+                    "comment": "Shut up plebe. \n\nCongresspeoples net worth increasing by 100x is just the way it works and there\u2019s nothing you can (or should) do about it. \n\n(Very obvious /s)",
+                    "score": 5,
+                    "author": "HiIAmFromTheInternet"
+                },
+                {
+                    "level": 1,
+                    "comment": "Interestingly, I found the data comforting.  It would be a problem if they were making the trades for quick short term gains.  But the data suggests that's not the case, they're instead profiting over the long-term.  If they're willing to buy stocks for 2-5 year horizons, then that's great!  That means they are incentivized to pass laws and enact policies that generally benefit their investments (and presumably the broader economy) over the long-term.  Isn't that exactly what we want them to do?",
+                    "score": 4,
+                    "author": "SannySen",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; That means they are incentivized to pass laws and enact policies that generally benefit their investments (and presumably the broader economy) over the long-term.  Isn't that exactly what we want them to do?\n\nDepends. Do you mean as someone that wants to sit back and earn your living from the profit you get out of investing in the same stock as Pelosi, or do you mean from the perspective of being a citizen that has to live in this country with the rest of us and may not want to have legislators skip on doing their job and just give Microsoft whatever they want because we are all invested in that stock?\n\nBecause as a citizen, you should probably want your elected lawmakers to pass sensible legislation regardless of who is being legislated.",
+                            "score": 14,
+                            "author": "Banner80",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is all true, but I fall back on the fact that the evidence demonstrates that they're not experiencing significant short term returns in excess of the market.  Assuming their holdings are diversified in the economy as a whole (and it seems they are), I am OK with them thinking about the impacts their laws will have on the market as a whole.  In contrast, I would not want them to make decisions without considering the market at all, since it's always easy to score cheap populist political points by passing inane laws that hurt business without actually helping people.",
+                                    "score": 3,
+                                    "author": "SannySen"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's a HUGE conflict of interest. If X is investing in Microsoft, how likely are they to investigate them for being a monopoly, or stealing your private info and lying about it? (Pssst. Here's a hint: indictments are typically bad for business.)",
+                            "score": 7,
+                            "author": "Monarc73",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "But based on the evidence, the returns are realized over the long-term.  This suggests there isn't really an opportunity to do what you're suggesting.  No one knows years in advance that such and such company will do some terrible thing, and it's not really the legislative branch in any event that pursues them.  That would be the executive branch, including the various regulatory agencies and DOJ, and yeah, it would be a conflict of interest if, for example, the Attorney General owned stock in a company that is beimg investigated.  But we're talking about senators and congressmen, and it's vastly more challenging for them to manipulate the market for any particular stock.",
+                                    "score": 2,
+                                    "author": "SannySen"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 52,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Congress. That good?",
+                    "score": 2,
+                    "author": "flyingroundmound"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "A lot of these are house representatives and not senators.",
+            "score": 8,
+            "author": "Jaybedia"
+        },
+        {
+            "level": 0,
+            "comment": "Appreciate the research, shame there isn't a politician index fund :/",
+            "score": 27,
+            "author": "BloodyNoobs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That would benefit you. But why would politicians want to do that?",
+                    "score": 22,
+                    "author": "chicu111",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Politicians wouldn't be involved.  Any company that wants to start an ETF could do it.  I could do it even, if I had the seed money.  You need millions to start an ETF.",
+                            "score": 6,
+                            "author": "proverbialbunny"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Very true",
+                            "score": 4,
+                            "author": "BloodyNoobs"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Wouldn\u2019t more people buying into the stocks their buying benefit them? But it would also highlight any potential issues on insider trading",
+                            "score": 2,
+                            "author": "Inferno456"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Last time I research this (ps I wrote this idea, politicians ETF, in a book I published in 2018) it would be illegal to make this an ETF. Something like, though these records are public, a company cannot use that information in a money-making venture.",
+                    "score": 2,
+                    "author": "Youareme2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I could see a politician easily gaming that system.",
+                            "score": 2,
+                            "author": "kevtoria"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great information but really concerning.",
+            "score": 19,
+            "author": "DiekeanZero"
+        },
+        {
+            "level": 0,
+            "comment": "&gt;This analysis proves that Senators indeed get a better return than the overall market. Whether it is due to insider trading or due to their superior stock-picking capability is something that can\u2019t be proven from the data and is left to the reader\u2019s judgment.\n\nIta pretty obvious whats going on.",
+            "score": 5,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "I am starting a new ETF that will buy the stocks that senators bought and sell them as soon as senators sell. Ticker will be SNTR. \n\nWho wants to provide seed money?",
+            "score": 7,
+            "author": "vinylbond",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "lol nice",
+                    "score": 1,
+                    "author": "proverbialbunny"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "remember the time when they pulled the stocks out just before the financial crash (pardon me, pandemic)? Yeah..",
+            "score": 6,
+            "author": "dyz3l"
+        },
+        {
+            "level": 0,
+            "comment": "Does this info only take into account trades made in the Senator\u2019s name or does it include their spouses as well? I know Nancy Pelosi\u2019s husband has made some very well timed trades in the past, I would imagine it\u2019s due to insider information from Nancy but hard to prove these things definitively. I think Kelly Loeffler and her husband did something similar when she was a Senator.",
+            "score": 19,
+            "author": "pegging_enthusiast69",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Of course it is insider info.",
+                    "score": 20,
+                    "author": "anothertr8er",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh yeah I think so too I just didn\u2019t wanna say it with certainty with no actual evidence",
+                            "score": 9,
+                            "author": "pegging_enthusiast69",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "https://investmentu.com/why-congressional-insider-trading-legal-profitable/",
+                                    "score": 2,
+                                    "author": "anothertr8er",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Oh thank you!",
+                                            "score": 3,
+                                            "author": "pegging_enthusiast69"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "^ Caution: this article is cherry picking its data.",
+                                            "score": 2,
+                                            "author": "proverbialbunny"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "This is actual evidence\n\nA statistically significant difference was found, that means that something is definitely going on\n\nNow that this is discovered, the detective work for WHAT causes that difference is going on\n\nBest case its a coincidence, and nothing illegal is happening",
+                                    "score": 1,
+                                    "author": "elppaenip"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The rules are (D)ifferent for her.",
+                    "score": -2,
+                    "author": "_BreatheManually_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "anyone working for Bloomberg here?",
+            "score": 4,
+            "author": "dutchbaroness"
+        },
+        {
+            "level": 0,
+            "comment": "Fantastic post, award given!",
+            "score": 2,
+            "author": "drase"
+        },
+        {
+            "level": 0,
+            "comment": "Mmh, it would be interesting to build an investment strategy from it. \ud83e\uddd0",
+            "score": 5,
+            "author": "Thebigbet"
+        },
+        {
+            "level": 0,
+            "comment": "This is the most compelling post I've probably ever seen on this board. Well done, sir.",
+            "score": 3,
+            "author": "Silas_Dont_Trip"
+        },
+        {
+            "level": 0,
+            "comment": "This is a BIG problem if true, and needs to be corrected swiftly if possible. Where is the separation of economy and state?",
+            "score": 3,
+            "author": "MilesTailsPrower92"
+        },
+        {
+            "level": 0,
+            "comment": "This is significant dive into an important issue.  Even if there is not insider trading (there is probably) the perception of government officials committing illegal activities is also damaging to the political process and to the trust (however small) that the public places on their political figures. The truth of the matter is that federal elected officials are frequently privy to knowledge that the public is not. As such, they and their spouses should be disqualified from purchasing or selling stocks while in office. I suppose officials could set up preset contributions into general funds ahead of taking office but these could not be change during their time in office.",
+            "score": 3,
+            "author": "Extra-Computer6303"
+        },
+        {
+            "level": 0,
+            "comment": "The senators have their wealth management handling investments and pickings based on their clients risk tolerance. Nancy  Perosi is at least 120M and invest in high tech heavily is doing well.  Yes, 50,000 s of Tsla just follow her by 1 share.\n\nThe rookie senators may handle their own investment. Many are as just broke.\n\nInteresting studies.",
+            "score": 7,
+            "author": "Vast_Cricket"
+        },
+        {
+            "level": 0,
+            "comment": "This is probably most valuable post on Reddit that I came across like ever. Thanks",
+            "score": 8,
+            "author": "tortikolis"
+        },
+        {
+            "level": 0,
+            "comment": "Great work once again! Because all the comments seem to be interpreting this as an \u201cinsider trading\u201d meter, I want to point out that at least some of these trades are most surely not happening based on \u201cinside info.\u201d\n\nTSLA is a perfect example, since those purchases listed as November 2020 correlate with the announcement that TSLA was being included in the S&amp;P 500. I too bought a whole bunch of TSLA that month. \n\nNot EVERYthing our government officials do is insidious lol.",
+            "score": 8,
+            "author": "PotatoFro"
+        },
+        {
+            "level": 0,
+            "comment": "Nancy isnt a senator",
+            "score": 7,
+            "author": "Tel3visi0n"
+        },
+        {
+            "level": 0,
+            "comment": "TLDR: Copy Brian Mast.\n\nSeriously though, this is excellent. Datawrapper looks like a great product as well, haven't heard of them before.",
+            "score": 5,
+            "author": "mark_et_cap",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Brian Mast had two of the best returns, but he also had two of the worst losses. Which is exactly what should be happening. He\u2019s investing in highly volatile stocks. When you win, you win big, and vice versa.",
+                    "score": 19,
+                    "author": "tristanryan"
+                },
+                {
+                    "level": 1,
+                    "comment": "Nah, follow Josh Gottheimer. $11.5MM invested, decent number of trades, 50% RoI to date. Mast/Green/Gianforte are all featured on biggest losers. Michael Garcia doesn't have the capital or the volume to be of major interest. Gottheimer and Pelosi are definitely the ones to follow.",
+                    "score": 7,
+                    "author": "osufan765",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ya - you're spot on...I saw green($) and tunneled a bit. Still absolutely crazy to me that they are immune to insider trading laws and do not have to disclose until that long after the trade execution considering the \"public servant\" nature of their roles.",
+                            "score": 2,
+                            "author": "mark_et_cap",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I didn't do my DD either. Turns out Gottheimer just dumped a lot of money into MSFT.\n\nThere's definitely some trades that make my ears perk up, though. Going to have to follow this document very closely.\n\ne: Debbie Wasserman Schultz, former DNC chair, doesn't have a spectacular net worth. In the document, she only has 3 trades listed, and they're all recent. 3 purchases of $EMKR (EMCORE Corporation), and it seems they're owned by a dependent. The purchases total somewhere between $3k-$45k.\n\nNow, EMCORE is a fiber optics company with a Market Cap under $300M. Very out of the ordinary compared to the rest of what the purchase disclosures. It's also up over 20% since it was purchased.",
+                                    "score": 4,
+                                    "author": "osufan765"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Mark should change his last name to Red",
+                            "score": 2,
+                            "author": "RecreationalMaryJane"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is incredible Work! Thank you for sharing!",
+            "score": 2,
+            "author": "hitdifferently"
+        },
+        {
+            "level": 0,
+            "comment": "Outstanding information. Thank you.",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "The problem is, they were told about Covid coming to the US when it was widely known Covid was coming to the US. \ud83d\ude02",
+            "score": 2,
+            "author": "Thevinegru2"
+        },
+        {
+            "level": 0,
+            "comment": "Something to keep in mind is if you followed their trades, if you're currently working when you sell^1, even if it's long term capital gains, you would end up paying higher taxes, which then would end up under performing the S&amp;P.\n\n^1 This assumes you are not working minimum wage.",
+            "score": 2,
+            "author": "proverbialbunny",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very interesting analysis, thank you! I'm curious to know if any Senators or Representatives avoided a big loss (or a bigger loss) by selling before negative news became public (a la Martha Stewart). She lost money, but avoided a bigger loss, by acting on insider information. I know there are a few well known examples, like the Senators who sold shares after getting a confidential Coronavirus briefing. Even if they lost money on the trade, they avoiding losing much more, so that wouldn't come out in a typical analysis of their gains vs  losses.",
+            "score": 2,
+            "author": "DotComBomb1999"
+        },
+        {
+            "level": 0,
+            "comment": "Where can you find the senators trade data",
+            "score": 2,
+            "author": "CLEVELAND-99"
+        },
+        {
+            "level": 0,
+            "comment": "Personally I think Senators should not be allowed to invest in the Market or Own businesses.  They should only be paid from there position and their source of revenue should be tax.\n\nOf course if I was in charge I would make it so that Senators had to sacrifice something to take their position.  Something important to them.  Maybe make it like a semi religious thing.  Where they have to fast for some many days or something.  Because,  people in that position need to see beyond money, wealth and greed.  At some point they are supposed to look out at the world and say I have enough and I am just doing my job.",
+            "score": 2,
+            "author": "Techdesciple"
+        },
+        {
+            "level": 0,
+            "comment": "&gt;Among U.S\n\nhaha like the game mungus imposter sus!",
+            "score": -1,
+            "author": "Its_anomic"
+        },
+        {
+            "level": 0,
+            "comment": "This is awesome, but please note that there are 2 houses of congress. There are only 100 senators. Pelosi is speaker of the house. House representatives can be called congressman/woman/people or representatives whereas senators are usually just called senators. It does make a difference and seeing how well you stuck with typical research format, it\u2019ll make this report even better.",
+            "score": 1,
+            "author": "bingeflying"
+        },
+        {
+            "level": 0,
+            "comment": "People in representative government are legally allowed to insider trade, BTW.",
+            "score": 1,
+            "author": "anothertr8er"
+        },
+        {
+            "level": 0,
+            "comment": "Thank you for this analysis. Can we somehow make this information publicly available and bring in some muscle power to sift through all the PDFs and disclosures and also can we somehow push for legislation that makes it mandatory for senators or representatives to disclose all their financial information before and after serving in a public office ? \n\nRemember these people are servants of the public. They are voted in and can be voted out. They are there to serve the interests of these here United States of America. Corruption/Graft etc.. needs to be of utmost importance. We as a younger generation can enact and encourage laws that brings much more transparency to the dealings of these Public Servants.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Posting because I can't read all this right now, but I need to.",
+            "score": 1,
+            "author": "Bouric87"
+        },
+        {
+            "level": 0,
+            "comment": "On the most popular stock chart could you normalize by the total amount invested by each senator before combining? I would like to know the distribution of investments without the more wealthy insiders, I mean senators, dominating the results.",
+            "score": 1,
+            "author": "deep_anal"
+        },
+        {
+            "level": 0,
+            "comment": "Interesting... more interesting would be to see the performance of sells 6 months following, sure, not a great record but did they avoid catastrophic stuff with insider knowledge?",
+            "score": 1,
+            "author": "Whiskeywilly77"
+        },
+        {
+            "level": 0,
+            "comment": "Hmm these stats are very interesting. I hate politicians. More and more every day.",
+            "score": 1,
+            "author": "Ape_Waffen"
+        },
+        {
+            "level": 0,
+            "comment": "Now do a comparison of which congress people trade directly on sectors they over see laws on.. ya know their special pow wow teams.\n\nThen let's see when they traded before public news\nThen let's see their returns before and after news.\n\n\nOh wait - I'll save the effort; all if them do it and get away with it.\n\nBut remember - \" ReTaiL bRokE the StoNks!!! \"",
+            "score": 1,
+            "author": "WRL23"
+        },
+        {
+            "level": 0,
+            "comment": "MSFT was probably from the JEDI project that the department of defense was having them work on",
+            "score": 1,
+            "author": "jmccarter1126"
+        },
+        {
+            "level": 0,
+            "comment": "I greatly enjoyed reading this! I have talked with my SO about this in the past once I heard about how much Pelosi was investing. \n\nNow for the disclosure of the trades, is there a law in place that states they have to disclose the trade within 30 days? I know you said they were more in it for the long term investment, but what if they decided to back out at let's say 26 days for a quick profit, if the stock was projected to do well. Would they not be required to share that information then because it's within the 30 days? I hope this makes sense lol.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "This needs more appreciation than 1k upvotes! Thank you \ud83d\udc15",
+            "score": 1,
+            "author": "itztylaa"
+        },
+        {
+            "level": 0,
+            "comment": "*Members of Congress\n\nNot all are Senators",
+            "score": 1,
+            "author": "bluegrassbarman"
+        },
+        {
+            "level": 0,
+            "comment": "This is the stuff that should be in The New York times etc but we redditors have to find. You have blown my mind but I cant say I am surprised one bit. Thanks friend.",
+            "score": 1,
+            "author": "jonmulholland2006"
+        },
+        {
+            "level": 0,
+            "comment": "Nice analysis, great work, adding the senator bias to my DD sounds like a winner even with the disclosure delay.",
+            "score": 1,
+            "author": "MasterYoda68"
+        },
+        {
+            "level": 0,
+            "comment": "OK, this was interesting!",
+            "score": 1,
+            "author": "DividendPower"
+        },
+        {
+            "level": 0,
+            "comment": "Super interesting. Makes one wonder about the spouses' trading returns as well.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "The reason they're so heavily invested in Microsoft: https://www.fool.com/investing/2021/04/08/what-new-22-billion-contract-means-for-microsoft/",
+            "score": 1,
+            "author": "proverbialbunny"
+        },
+        {
+            "level": 0,
+            "comment": "New ETF coming: ARKS =&gt; ARK Senators ETF",
+            "score": 1,
+            "author": "Cat-Is-My-Advisor"
+        },
+        {
+            "level": 0,
+            "comment": "I want to be a senator so bad lol",
+            "score": 1,
+            "author": "Tempounplugged"
+        },
+        {
+            "level": 0,
+            "comment": "Ideal power huh",
+            "score": 1,
+            "author": "dramatic_hydrangea"
+        },
+        {
+            "level": 0,
+            "comment": "Ye invest in rolls Royce",
+            "score": 1,
+            "author": "Raph-Kobz"
+        },
+        {
+            "level": 0,
+            "comment": "Nice work! Keep it up! /u/chaintip",
+            "score": 1,
+            "author": "sq66",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "***\nu/nobjos has [claimed](https://explorer.bitcoin.com/bch/tx/d6d0451fe02bd87ee1d5dabb33a15580e902459ab2a16563bff97f54fea30f00) the `0.00354437 BCH` | `~5.28 USD` sent by u/sq66\nvia [chaintip](http://www.chaintip.org).\n***",
+                    "score": 1,
+                    "author": "chaintip"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Its all insider trading.",
+            "score": 1,
+            "author": "Rockefeller07"
+        },
+        {
+            "level": 0,
+            "comment": "You should run for office....it has its perks",
+            "score": 1,
+            "author": "Equivalent_School_58"
+        },
+        {
+            "level": 0,
+            "comment": "Last order opportunity before market closes\nPLTR earning calls tomorrow\n\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80\ud83d\ude80",
+            "score": 1,
+            "author": "hazemb"
+        },
+        {
+            "level": 0,
+            "comment": "Soooooo who wants to start a fund that tracks congresspeoples\u2019 trades???",
+            "score": 1,
+            "author": "robotdevilhands"
+        },
+        {
+            "level": 0,
+            "comment": "So they are boomers?",
+            "score": 1,
+            "author": "MarginMiguel69"
+        },
+        {
+            "level": 0,
+            "comment": "Do",
+            "score": 1,
+            "author": "sevyn183"
+        },
+        {
+            "level": 0,
+            "comment": "Congress is legally allowed to participate in insider trading",
+            "score": 1,
+            "author": "GardinerAndrew"
+        },
+        {
+            "level": 0,
+            "comment": "I would be very interested in seeing which member had the least losses over all.",
+            "score": 1,
+            "author": "MrMediaShill"
+        },
+        {
+            "level": 0,
+            "comment": "make a blog or smth we can follow",
+            "score": 1,
+            "author": "demo_gosu"
+        },
+        {
+            "level": 0,
+            "comment": "Well done, thank you!",
+            "score": 1,
+            "author": "rockn53"
+        },
+        {
+            "level": 0,
+            "comment": "I always get so excited when I see one of these posts. u/nobjos you are amazing!",
+            "score": 1,
+            "author": "FritzDingle"
+        },
+        {
+            "level": 0,
+            "comment": "Man this is amazing. Now I just need an ETF around this.",
+            "score": 1,
+            "author": "CanAgent"
+        },
+        {
+            "level": 0,
+            "comment": "Great info! Thanks for the time you put into this!!!",
+            "score": 1,
+            "author": "nick_grrrr"
+        },
+        {
+            "level": 0,
+            "comment": "Can any conclusion be made From this analysis",
+            "score": 1,
+            "author": "PoolCultural4137"
+        },
+        {
+            "level": 0,
+            "comment": "These returns are pretty good, but if you factor in the average intelligence of our Senators, they're absolutely outrageous.",
+            "score": 1,
+            "author": "msnf"
+        },
+        {
+            "level": 0,
+            "comment": "Is it possible to get an. \"ELIA\"  - explain like I'm ape )) explanation.",
+            "score": 1,
+            "author": "Daddy616"
+        },
+        {
+            "level": 0,
+            "comment": "[Iconic labs (icon) LSE](https://www.lse.co.uk/SharePrice.asp?shareprice=ICON&amp;share=Iconic-Labs)",
+            "score": 1,
+            "author": "2hotty42"
+        },
+        {
+            "level": 0,
+            "comment": "They should all be removed.",
+            "score": 1,
+            "author": "1fortehlulz519982"
+        },
+        {
+            "level": 0,
+            "comment": "Nice work",
+            "score": 1,
+            "author": "Realplaya713"
+        },
+        {
+            "level": 0,
+            "comment": "Senators trade stocks for a living, the senate is just a side hustle.",
+            "score": 1,
+            "author": "innatestead"
+        },
+        {
+            "level": 0,
+            "comment": "TLDR; if you invest in Amazon, Apple, and Microsoft, your return will be better than the S&amp;P average return.",
+            "score": 1,
+            "author": "jfk_47"
+        },
+        {
+            "level": 0,
+            "comment": "Now we all know what they mean when they call us uninformed. Clearly they know things we don\u2019t!",
+            "score": 1,
+            "author": "SteelCityJohn"
+        },
+        {
+            "level": 0,
+            "comment": "If u added family and friends the numbers would be even more skewed",
+            "score": 1,
+            "author": "pcs33"
+        },
+        {
+            "level": 0,
+            "comment": "You sir are a very stable genius. Salute emoji.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "US Congress ETF when?",
+            "score": 1,
+            "author": "under-done"
+        },
+        {
+            "level": 0,
+            "comment": "BIG thx for his work.",
+            "score": 1,
+            "author": "McDowellsNo1"
+        },
+        {
+            "level": 0,
+            "comment": "Just note, these are not just Senators, but Representatives too.",
+            "score": 1,
+            "author": "Inferdo12"
+        },
+        {
+            "level": 0,
+            "comment": "good shit op",
+            "score": 1,
+            "author": "water_boat"
+        },
+        {
+            "level": 0,
+            "comment": "Excellent work",
+            "score": 1,
+            "author": "hobbies4lyfe"
+        },
+        {
+            "level": 0,
+            "comment": "So who is one of us?",
+            "score": 1,
+            "author": "bluecgene"
+        },
+        {
+            "level": 0,
+            "comment": "You have missed a huge piece of the puzzle. Who does the trading for Senators, or any politician for that matter?\n\nStocks and speaking fees are just bribery with lines and food, like being good and getting McDonald's.",
+            "score": 1,
+            "author": "MisanthropicZombie"
+        },
+        {
+            "level": 0,
+            "comment": "They don\u2019t hold google. That\u2019s weird.",
+            "score": 1,
+            "author": "532v"
+        },
+        {
+            "level": 0,
+            "comment": "More than likely, the closer you are to US policy, the more likely you are to able to react to economic changes. But the biggest winners were those who had the income to invest in 2020 when the market's tanked.",
+            "score": 1,
+            "author": "Impossible-Fact7659"
+        },
+        {
+            "level": 0,
+            "comment": " This analysis ~~proves~~ *provides evidence* that Senators ~~indeed~~  *over a period less than a market cycle* get a better return than the ~~overall market~~  *S&amp;P 500 Price Return Index*. *Additionally, this does not take into account risk adjustment. Due to the short period and low annualized excess return (&lt;3% p.a.) it cannot be said with any level of confidence that this sample of returns is any different from random chance.*\n\nFTFY",
+            "score": 1,
+            "author": "Capn-Stabn"
+        },
+        {
+            "level": 0,
+            "comment": "I wish I could do my homework that well!",
+            "score": 1,
+            "author": "Arcblunt"
+        },
+        {
+            "level": 0,
+            "comment": "great work and you might be a complete psychopath haha but I love it.",
+            "score": 1,
+            "author": "PIGGIESMALLSINVESTS",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "most wondrous worketh and thee might beest a complete psychopath haha but i love t\n\n***\n\n\n\n^(I am a bot and I swapp'd some of thy words with Shakespeare words.)\n\nCommands: `!ShakespeareInsult`, `!fordo`, `!optout`",
+                    "score": 2,
+                    "author": "Shakespeare-Bot"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Great topic.\n\nCongressmen are actually allowed to make insider trades, so their superior returns shouldn't be surprising.\n\n&gt; [https://i.redd.it/k4r34rpusay61.png](https://i.redd.it/k4r34rpusay61.png)  \n&gt;  \n&gt;John  Curtis made a whopping 95% average return on his investments. All the  top 10 Senators comfortably beat the market return of 26.4% during the  same investment period.\n\nHere I just wanted to point out that the % gain is negatively correlated with cash value invested. That is, the more money invested, the lower % gain. And this is true for other traders as well, which is why hedge funds with millions or billions hardly ever beat SP500.",
+            "score": 1,
+            "author": "SatouWrites"
+        },
+        {
+            "level": 0,
+            "comment": "The MSFT trades seem to have a proportionally huge impact on your results. What would the return indicators be if you excluded MSFT from the analysis?",
+            "score": 1,
+            "author": "sanderudam"
+        },
+        {
+            "level": 0,
+            "comment": "You would think that posting return X+\u201dSPX\u201d&gt;\u201dSPX\u201d and \u201cclick here to learn more\u201d would be a simple sale.\n\n*edit* this is in regards to the motley fool advertising/marketing comment below. No idea why it went here.",
+            "score": 1,
+            "author": "Make_some"
+        },
+        {
+            "level": 0,
+            "comment": "Huh",
+            "score": 1,
+            "author": "Megabyte7637"
+        },
+        {
+            "level": 0,
+            "comment": "Your bound to beat the game when you are the person that can change the rules",
+            "score": 1,
+            "author": "Dufthadon"
+        },
+        {
+            "level": 0,
+            "comment": "People are complaining about possible insider trading in the comments but are these margins above the market really that large? By just following there trades after they become publicly available, even with the lag, you would see an almost identical return for all three time periods. He also notes that the most popular stocks are in companies that have massive valuations. The most popularly owned stocks - MSFT, AAPL, AMZN, etc aren\u2019t like these esoteric things but something that most people invest in already. None of this seems out of the ordinary to me frankly",
+            "score": 1,
+            "author": "vhemetclef"
+        },
+        {
+            "level": 0,
+            "comment": "#  To Get DOGE To $100, FREE Stocks, &amp; DOGECOIN Merch ===&gt;  [https://www.dogeto100.com](https://www.dogeto100.com/)",
+            "score": 1,
+            "author": "epic-gamertag"
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m actually blown away that government officials could own that much cash in stocks for big huge companies that have such massive implications on citizens. This is truly corrupt. How could you possible expect someone to make a sound judgement on policy with such huge investments. This is absolutely insane like I\u2019m floored by this",
+            "score": 1,
+            "author": "forcedtouseapp"
+        }
+    ]
+}

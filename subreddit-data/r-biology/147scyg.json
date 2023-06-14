@@ -1,0 +1,172 @@
+{
+    "id": "147scyg",
+    "score": 12,
+    "title": "HEK293T cells clumping - need help",
+    "author": "disaster-dendrite",
+    "date": 1686590274.0,
+    "url": "https://www.reddit.com/r/biology/comments/147scyg",
+    "media_urls": [],
+    "other_urls": [
+        "https://preview.redd.it/tt0y9l8nem5b1.jpg?width=2084&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=14034e05798ba19aeecaae0579c34dad49aa64af)",
+        "https://preview.redd.it/hwxx7htpem5b1.jpg?width=2084&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=2aceba4af8c696fbde25afffcfba34e7da2ed2fd)"
+    ],
+    "postText": "Not sure if this is allowed - I would post on r/labrats but that's not an option today. Please help if you can! I am plating HEK293T cells for transfection on 6-well plates, but they keep clumping around the edges and eventually floating. I also put some cells in our normal 100mm dishes, and those spread evenly and look normal. Not sure what the problem could be since I took the cells from the same plate, mixed them thoroughly, and observed a single cell suspension before incubating. I'm using DMEM with 10% FBS. Attached pictures for reference - is it possible that the cell density is too high in the 6 well plates? I'm using 1 mL for adhering and adding 1 mL of media afterwards (following my transfection protocol). Hope someone can help :)\n\n[100 mm dish](https://preview.redd.it/tt0y9l8nem5b1.jpg?width=2084&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=14034e05798ba19aeecaae0579c34dad49aa64af)\n\n&amp;#x200B;\n\n[6-well plate](https://preview.redd.it/hwxx7htpem5b1.jpg?width=2084&amp;format=pjpg&amp;auto=webp&amp;v=enabled&amp;s=2aceba4af8c696fbde25afffcfba34e7da2ed2fd)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Dumb question, but is the plate coated or TC treated? as it doesn't look like the cells attached at all, it's normal for the monolayer to peel off when they are over confluent, but they are far from confluent.",
+            "score": 9,
+            "author": "ashyjay",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the reply! It isn't treated or coated, and for what it's worth, I've used these same plates before and it has been successful. Using Corning 3736",
+                    "score": 1,
+                    "author": "disaster-dendrite",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's most likely the issue, 293Ts can grow in suspension but they don't like it all that much",
+                            "score": 3,
+                            "author": "ashyjay",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I didn't know that, thanks! I'll look around to see if we have different types of plates.",
+                                    "score": 1,
+                                    "author": "disaster-dendrite",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I think your plate would state coated with Poly-L",
+                                            "score": 1,
+                                            "author": "JacksonSxcc"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "We had the same problem. We thought that we used the exact same 96 well plates like always. Turns out that (because of Covid and all the ordering chaos following that) they were not, they were suspension culture plates but looked exactly the same as the TC plates. Have a closer look again, maybe also that lot is affected in some way.",
+                            "score": 2,
+                            "author": "melanogaster_24"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "And one more thing: we aliquote 4%PFA and PenStrep in the same type of falcon tubes. A colleague grabbed the wrong tube and kind of fixed his cells because of that. Could something like that be a thing in your scenario?",
+                            "score": 1,
+                            "author": "melanogaster_24",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for the reply! I definitely see what you're saying - unfortunately, I'm sure I used the same plates before. I opened a fresh bag last time and taped it shut, grabbed a plate from the same bag this time.",
+                                    "score": 2,
+                                    "author": "disaster-dendrite"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Plates being untreated is the most likely answer. They may adhere for the first few passages but overtime you'll see what you've been seeing.",
+                            "score": 1,
+                            "author": "fox_n_soks",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Seems like it - didn't know that it made such a difference! I'll scavenge for a treated plate today.",
+                                    "score": 1,
+                                    "author": "disaster-dendrite",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yep, learning experience. I also worked on transfecting HEK293t cells a few years ago and found this out the hard way. We would grow them using TC treated culture ware, then the day of lift and transfer them to untreated plates just for the transfection only.",
+                                            "score": 1,
+                                            "author": "fox_n_soks",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "That makes sense! I found some TC-treated plates thankfully so I will hopefully have some successful transfections tomorrow. Thanks for your help!",
+                                                    "score": 1,
+                                                    "author": "disaster-dendrite"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Something changed. Figure out what it is. If what worked before is no longer working, figure out why rather than introducing protocol drift by changing your plating density, protocol, etc.\n\nA simpler and cheaper-in-the-long-run option is to start over completely. Thaw new cells, get a fresh package of plates, make new media using new reagents. Like another user mentioned, you could have a contamination due to someone else in the lab being careless. \n\nLab mantra: \"If in doubt, throw it out\"",
+            "score": 2,
+            "author": "tiredPigeonGhost"
+        },
+        {
+            "level": 0,
+            "comment": "Quite intriguing",
+            "score": -1,
+            "author": "Global-Mission-007"
+        },
+        {
+            "level": 0,
+            "comment": "Plate coating has been mentioned already. A few things I can think of are cell density being too high for uncoated plate, as you have guessed. Cells could be overmixed, cells could be settling and clumping before you added your media or your DMEM could be expired. All the best.",
+            "score": 1,
+            "author": "Impossible_Initial_7",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! I will try to seed fewer cells tomorrow and hopefully that helps, as this would be a faster fix than ordering new plates. DMEM is also fresh, and I don't think overmixing would be the case but I can play around with that too. I appreciate your input!",
+                    "score": 1,
+                    "author": "disaster-dendrite"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Woah shienshe",
+            "score": 1,
+            "author": "Keira-78"
+        },
+        {
+            "level": 0,
+            "comment": "What happen to r/labrats sub???",
+            "score": 1,
+            "author": "JacksonSxcc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Mods made it private from the 12th to the 14th (I think) to protest against some changing Reddit rules, not too sure about the details. Unfortunate timing for me haha",
+                    "score": 1,
+                    "author": "disaster-dendrite",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I see :(",
+                            "score": 1,
+                            "author": "JacksonSxcc"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It looks to me like they\u2019re not singularized enough. How are you singularizing them? I know I was taught to be a bit rough with them. I usually press the end of the serological pipette almost flat to the bottom of the plate and pipette the cell suspension with full power through the small gap. I repeat that 4-5x and that usually works well. The other issue could be not incubating in trypsin long enough.",
+            "score": 0,
+            "author": "datura1010",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I agree that that is usually the case but I do basically the same thing as you - I trypsinize for about 3-4 minutes and then pipette up and down around 10 times or until I see single cells. I also don't believe this to be the case since I see pretty good distribution in the normal dish. I can definitely try to be rougher though, they are pretty sturdy. Thanks for the response!",
+                    "score": 1,
+                    "author": "disaster-dendrite"
+                }
+            ]
+        }
+    ]
+}

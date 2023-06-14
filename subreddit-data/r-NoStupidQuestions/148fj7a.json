@@ -1,0 +1,119 @@
+{
+    "id": "148fj7a",
+    "score": 3,
+    "title": "Why do computer chips need to be so small?",
+    "author": "BMF1976",
+    "date": 1686663022.0,
+    "url": "https://www.reddit.com/r/NoStupidQuestions/comments/148fj7a",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I was blowing the dust out of my desktop and though does the CPU really need to be so small or smaller? Would it really matter if if it were twice to there times it size?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Smaller chips means faster computers because the distance the electricity has to travel is shorter. It also makes that less electricity is needed in total to run the chip. We're actually bumping up against the physical limitations of computer chips right now, fun fact. We literally cannot make them smaller.",
+            "score": 15,
+            "author": "AveragelyAlive",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean we can make them smaller, it's just not in the financial interests of megacorporations yet. If I remember correctly the smallest transistor ever created was only something like a dozen atoms wide or something like that. However, that was in a research lab, and they spent millions of dollars building that one transistor.",
+                    "score": 3,
+                    "author": "HaElfParagon"
+                },
+                {
+                    "level": 1,
+                    "comment": "Was working with semi-conductors for a little bit, we had a space of 7 microns, the most you can go is 5 before particles start getting swapped between pathways.",
+                    "score": 2,
+                    "author": "WelcomeFormer"
+                },
+                {
+                    "level": 1,
+                    "comment": "We can, but we need to shoot lasers at the wafer to cool it down increasing the total energy required to run it",
+                    "score": 1,
+                    "author": "Accurate_Koala_4698"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes, the closer transistors are together the faster information can get processed, and the less heat is generated. Thats why you keep seeing smaller \"nm\" ratings on faster CPU's/",
+            "score": 5,
+            "author": "TargetReciept"
+        },
+        {
+            "level": 0,
+            "comment": "Adding to some comments here already, computers in general today use some very rare elements and happen to be very expensive. \n\nIt\u2019s possible that making some components bigger could greatly increase the cost of the computers themselves while unnecessarily wasting extremely rare and valuable resources",
+            "score": 6,
+            "author": "GronlandicReddit"
+        },
+        {
+            "level": 0,
+            "comment": "Yup, it does. \n\nElectricity moves at close to the speed of light, but it *is* constrained by that speed. By physically moving parts of the CPU away from each other, signals take longer to reach those parts. That slows the whole thing down.",
+            "score": 7,
+            "author": "km89"
+        },
+        {
+            "level": 0,
+            "comment": "Yes, there are a few significant advantages you get when building smaller transistors. But there are a few misconceptions floating around here.\n\nTransistor switching frequency isn't determined by channel length but rather by gate capacitance. Larger gates (the thing switching the transistors) generally have a larger capacitance. Large capacitance also increases power consumption: You need to load and unload the gate every time you switch the transistor. \n\nThen there is flash memory, which only works because things are so small that electrons sometimes ignore the laws of (classical) physics. \n\nAnother point is manufacturing. Any tiny spec of dust embedded in the silicone or anywhere during the manufacturing process may kill the entire chip. Assuming you need a fixed amount of transistors for a chip and your ability to build clean rooms doesn't change, increasing the chip area will decrease the likelihood of it working.",
+            "score": 3,
+            "author": "SgtMarv",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; Then there is flash memory, which only works because things are so small that electrons sometimes ignore the laws of (classical) physics\n\nCan you explain a bit more about this? Sounds fascinating",
+                    "score": 1,
+                    "author": "phoeniks",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Tldr: Quantum tunneling effects allow electrons to pass through a thin layer of insulation where they could otherwise not get to. That insulation layer is just a couple of atoms thick. If you take away the supply voltage the tunneling is not possible anymore and a charge gets trapped and information is retained even during a power off state.",
+                            "score": 1,
+                            "author": "SgtMarv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Its for a number of reasons, but mainly, making it small makes it easier to remove the heat from it. This way you can run the cpu faster just as long as you cool it properly.",
+            "score": 5,
+            "author": "The_Quackening",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No, quite the opposite. A large die or package has more surface area (assuming same TDP) so it's actually easier to cool. Smaller dies also mean its harder to get enough power into the die in the first place.",
+                    "score": 1,
+                    "author": "SgtMarv",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I mean size in a more general sense.\n\nCPUs are designed to be able to transfer as much heat away from them as possible. If they were thicker, they wouldn't work as well.",
+                            "score": 1,
+                            "author": "The_Quackening"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I guess it's also to decrease material cost. Think about how many chips we use in our daily life. Saving just a few % is huge, especially since there are so many expensive materials used in a chip.",
+            "score": 1,
+            "author": "Wumamichl"
+        },
+        {
+            "level": 0,
+            "comment": "It does actually matter.\n\nGenerally you want the individual components to be very very close.  Spacing them out causes things like radio interference, higher latency, higher energy consumption, and increased heat output.  Shrinking chips down really does make a difference.  \n\nAnd that's all before getting to side benefits like easier packaging in finished products.",
+            "score": 1,
+            "author": "bangbangracer"
+        },
+        {
+            "level": 0,
+            "comment": "Do you see any space for a CPU 2 or 3 times the size?",
+            "score": 0,
+            "author": "YourTimeIsOver127"
+        }
+    ]
+}

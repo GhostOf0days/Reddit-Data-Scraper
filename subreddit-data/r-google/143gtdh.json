@@ -1,0 +1,89 @@
+{
+    "id": "143gtdh",
+    "score": 213,
+    "title": "Google finds faster sorting algorithm using deep reinforced learning",
+    "author": "bartturner",
+    "date": 1686152930.0,
+    "url": "https://www.reddit.com/r/google/comments/143gtdh",
+    "media_urls": [
+        "https://www.nature.com/articles/s41586-023-06004-9"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Very interesting",
+            "score": 15,
+            "author": "hatethatmalware"
+        },
+        {
+            "level": 0,
+            "comment": " I\u2019m planning to apply it to sort billions of rows using only 32GB of memory. Previously I had completed algorithm for billion-row Distinct, GroupBy, Filter and JoinTable.  Sorting is the last one I cannot solve at the moment.",
+            "score": 4,
+            "author": "100GB-CSV"
+        },
+        {
+            "level": 0,
+            "comment": "tldr what is the algorithm",
+            "score": 6,
+            "author": "Nodebunny",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I think if they want to sort 4 or more numbers they sort the first 3 first then sort the next one, then the next one, on and on. Seems like it's just minimizing branching? Says it's currently in the LLVM libc++ library so try sorting five numbers and check the assembly",
+                    "score": 21,
+                    "author": "throwwwawytty"
+                },
+                {
+                    "level": 1,
+                    "comment": "https://www.nature.com/articles/s41586-023-06004-9/figures/3",
+                    "score": 2,
+                    "author": "milordi"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes, yes, well of course.",
+            "score": 4,
+            "author": "Digital-Exploration",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "N(Fast)",
+                    "score": 2,
+                    "author": "hamfraigaar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What's the time complexity?",
+            "score": 1,
+            "author": "marvolonewt",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Same as before. These are assembly level micro-optimizations, they don't actually change the fundamental sort algorithm.",
+                    "score": 9,
+                    "author": "omniuni",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Not true. It fundamentally changed the sort4 algorithm, and I suspect same for sort5 because they claim a 70% improvement. They are still the same time complexity though.",
+                            "score": 1,
+                            "author": "born_to_be_intj"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Blog post here: https://www.deepmind.com/blog/alphadev-discovers-faster-sorting-algorithms",
+            "score": 1,
+            "author": "sharky6000"
+        }
+    ]
+}

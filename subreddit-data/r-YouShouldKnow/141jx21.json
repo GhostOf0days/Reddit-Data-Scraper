@@ -1,0 +1,759 @@
+{
+    "id": "141jx21",
+    "score": 3413,
+    "title": "YSK about vector image formats",
+    "author": "WetBiscuit-McGlee",
+    "date": 1685982370.0,
+    "url": "https://www.reddit.com/r/YouShouldKnow/comments/141jx21",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Why YSK: Using vector formats will make your large event poster or advertisement look pleasing and professional instead of pixelated.\n\nPicture formats like jpg and png are \u201craster\u201d formats, where the image is stored as an array of pixels. If you scale these up, they look pixelated (blocky) and unprofessional. Formats like svg and eps are \u201cvector\u201c formats, where the image is stored as shapes and lines. These can be scaled up cleanly. \n\nYou can use free software such as Inkscape or Vectornator to convert raster images to vector images, before sending them to your poster printing service, so that they will still look clean and professional when scaled up to poster size.\n\nEDIT: I should have clarified this to begin with: Vector formats work best for simple clip-art style graphics or company logos. For photos, it\u2019s better to use a high-resolution jpeg (either taken with a decent camera, or upscaled with software).",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Isn't that only for drawn graphics or text. If you want photos on your large poster, you're just gonna need a quality camera.",
+            "score": 90,
+            "author": "Vesk123",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Great point, I\u2019m gonna edit the post to clarify that.",
+                    "score": 17,
+                    "author": "WetBiscuit-McGlee"
+                },
+                {
+                    "level": 1,
+                    "comment": "In a situation where you only have a low quality photograph that is not appropriate for a large printing size, it may be beneficial to vectorize the photograph. The final look will not be pixelated, although it will have different artifacts like flat colors for imprecise shapes",
+                    "score": 4,
+                    "author": "gedaliyah"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You can\u2019t just convert a raster image into a vector image\u2026 The pixels will still be there, if you want a quality image then you either need to upscale it or start at a higher resolution. \n\nVector images use math to calculate line, points and curves and doesn\u2019t contain pixels which is why you can scale it infinitely.",
+            "score": 765,
+            "author": "Lion_21",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 207,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Depends on the context. I've been a print designer for a decade or so and I convert customer's supplied PNG/etc. graphics to vector successfully somewhat regularly, it just depends on the quality of what you receive and if it has any fine details or is mostly simple shapes and no gradients.\n\nI mainly use Vector Magic, but there is also Photopea as a free option, and Live Trace in Illustrator (although it's not that great honestly).",
+                            "score": 116,
+                            "author": "unthused",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 19,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I *really* wish live trace worked as well as VM. The company I'm at doesn't want to spend the extra for it since we have the full Adobe CC suite already so I'm using an old personal PC copy.",
+                                            "score": 5,
+                                            "author": "unthused",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Adobe will match vm if you do it right.",
+                                                    "score": 3,
+                                                    "author": "asharwood",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Any tips? I swear I can spend several minutes futzing with settings in Illustrator and still get a worse result than a few clicks in VM.",
+                                                            "score": 2,
+                                                            "author": "unthused",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "https://vectorizer.ai/",
+                                                                    "score": 2,
+                                                                    "author": "GuiltySarcasm",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I mainly meant getting better results from Live Trace, but I'm always up for learning of new resources!",
+                                                                            "score": 1,
+                                                                            "author": "unthused"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; Vector Magic\n\nI also have been a designer in print for 10ish years and have never heard of vector magic, been getting by with livetrace  in illustrator. What does vector magic do that livetrace cant?",
+                                    "score": 3,
+                                    "author": "elvismcvegas",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The results are a lot cleaner than what you'd get from Illustrator. Less artifacts etc. Also, it's just one click, no playing about with settings in an attempt to get a better result",
+                                            "score": 2,
+                                            "author": "rweedn"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Late reply but the other comment mostly covered it; cleaner results and much faster. It\u2019s vastly superior to live trace honestly.",
+                                            "score": 1,
+                                            "author": "unthused"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Inkscape does a pretty damn good job for a free program, at tracing bitmap to vector. It can output most formats as well. just FWIW.\n\nEdit: Also, Photoshop selection to \"working path\" (aka vector) can be handy as well.",
+                                    "score": 4,
+                                    "author": "ubermeisters"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;I mean, you can. You just shouldn't.\n\nThe event planner was so preoccupied with whether or not they could, they didn't stop to think if they should.",
+                            "score": 2,
+                            "author": "nurvingiel"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "But what if the client says the logo should be bigger?",
+                            "score": 0,
+                            "author": "JRockstar50"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I mean you can\u2019t just change the file extension, if that\u2019s what you mean. But you *can* use software like Inkscape to trace raster images into vectors. It\u2019s not always perfect but it usually does pretty well.",
+                    "score": 24,
+                    "author": "WetBiscuit-McGlee",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It depends on the picture, if it\u2019s simple line work then it\u2019ll probably do a good job. Complex colors and fine details? It\u2019s not going to look very good, especially when you go to scale it up. \n\nBut with the rise of AI it will probably vastly improve in the next couple of months.",
+                            "score": 46,
+                            "author": "Lion_21",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Good point. I\u2019ve now edited the original post to clarify.",
+                                    "score": 10,
+                                    "author": "WetBiscuit-McGlee",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You shouldn't use a high quality jpg either. Jpg is still is not a lossless format, you should use a TIFF file.",
+                                            "score": 8,
+                                            "author": "bravecoward",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;JPGis still is not a lossless format\n\nLossless JPG exists though, but it is almost never used.",
+                                                    "score": 1,
+                                                    "author": "Javlington"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I imagine it is highly dependent on the content of the source image. A company logo and slogan? Probably fine.\n\nStock photo of a server room or factory floor? I can't imagine that conversion turning out well.",
+                            "score": 5,
+                            "author": "sirreldar"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Vector images use what is called a Bezier Curve. A lot of them. [They are EXTREMELY cool](https://youtu.be/aVwxzDHniEw).",
+                    "score": 5,
+                    "author": "BiGEnD",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hexagon is the bestagon.",
+                            "score": 3,
+                            "author": "FolsgaardSE"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It's NURBS or nothing for me and *my family*.",
+                            "score": 1,
+                            "author": "ubermeisters"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Generally a vector image will look better scaled up than the same raster image. Obviously it won't have any more information, but it won't turn pixelated or blurry. For graphics and text this will be especially true. Less so for photos, but still an improvement for most cases.\n\nObviously you need quality software and preferably a graphics artist to \"vectorize\" your raster image. Of course, you can achieve it pretty easily with free software like inkscape, but it will never look as good as with human help.",
+                    "score": 1,
+                    "author": "gedaliyah",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Obviously it won't have any more information\n\nDoes it not? Isn't that the entire purpose of compression? To strike a balance between removing unnecessary information and maintaining quality? I'm confused on the subject and just trying to learn more. Why would we not use vector images everywhere, then?",
+                            "score": 1,
+                            "author": "Metallic_Hedgehog",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Because not everything can be represented as a vector. If you want a picture of a circle, that's something that is a vector per nature, so you can easily get a vector image of a circle that can be scaled infinitely.\n\nBut if you take a picture of a bird, that's just a representation, as a bunch of tiny pixels, of what the bird looks like. There's so many pixels there that your eyes see a bird, but it actually is just a bunch of colored squares. If you scale it up enough, you'll notice the squares. If you wanted to actually have a vector representation of a bird, some artist would need to \"draw\" this bird, using conventional shapes (circles, squares, curves...). Then you could also scale it up as much as you wanted, but drawing such a bird is no easy task, and most of the time is a pointless task, when you can just take another picture with greater resolution (more, smaller pixels). \n\nSo, in the end, vector formats are useful for \"man made\" drawings that can easily be represented as a composition of basic shapes, like a logo or a cartoon. But any realistic photograph won't fit in this description, so converting it to a vector format will be hard, if not impossible.",
+                                    "score": 1,
+                                    "author": "jesjimher",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "There is such a thing as vector photography. The file sizes aren't necessarily smaller, although they can be if the algorithm for making the vector is very advanced. There are some advantages and trade-offs, but generally photographs will look a lot better as raster images. A vector photograph will not look pixelated when enlarged, but instead will look very flat. Think of the famous Obama \"Hope\" image by Shepherd Fairy. That's an extreme example that is using the flatness of a vector image as part of the intended effect.\n\n[Here is an example of a high quality svg photograph.](https://freesvg.org/bright-blue-grapes)\n\nEdit - Weird down votes but I guess I'm sorry for providing factual information and multiple examples and sources.",
+                                            "score": 1,
+                                            "author": "gedaliyah"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "We use vector images a lot more than you probably realize. However, usually they are for logos and graphics, which is where their strengths are best applied. Modern fonts are all vector images, for example.",
+                                    "score": 1,
+                                    "author": "gedaliyah"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;You can\u2019t just convert a raster image into a vector image\n\nYes, you can. For &lt;=$5, on fiverr, or on countless softwares yourself for essentially free.",
+                    "score": 0,
+                    "author": "puunannie"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Inkscape FTW.",
+            "score": 46,
+            "author": "DrRotwang",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Inkscape is absolutely insanely good. I can't believe how much it's come along over the years.",
+                    "score": 17,
+                    "author": "deathboyuk",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As a professional designer, I lost my access to creative cloud through my work on personal devices and gave Inkscape a try. It\u2019s actually quite good. The commands and interactions are pretty non-standard, though, which I find frustrating. Most professional design tools use similar shortcuts (including non-Adobe ones), but Inkscape does its own thing. Sort of senseless, but I\u2019m sure I could get used to it. Im most likely going to buy affinity designer and affinity photo, though.",
+                            "score": 14,
+                            "author": "maowai",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Affinity products are stupid hood for the cheap one-time fee.",
+                                    "score": 4,
+                                    "author": "OnePieceTwoPiece"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Do I look like I know what a JPEG is? I just want a picture of a got-dang hot dog.",
+            "score": 873,
+            "author": "le1ca",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I tell you hwhat",
+                    "score": 105,
+                    "author": "Replicant-512"
+                },
+                {
+                    "level": 1,
+                    "comment": "Here you are: https://www.pictureofhotdog.com/about",
+                    "score": 24,
+                    "author": "qwerty-1999",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The web is nearing completion isn't it",
+                            "score": 16,
+                            "author": "51CK54DW0RLD"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "[Do I look like I know what a JPEG is? I just WA\u00bf\u256b%\u0393F\u2593\u2229?\u2022\u2591\u2590](https://www.youtube.com/watch?v=jmaUIyvy8E8)",
+                    "score": 83,
+                    "author": "NoCelery1168",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[Once more but with feeling](https://youtu.be/ZXVhOPiM4mk)",
+                            "score": 50,
+                            "author": "cfrizzadydiz",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "https://youtu.be/tT_lKUzdwqE?t=72",
+                                    "score": 18,
+                                    "author": "npsimons"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Propane and Propane accessories. \n\nAll we need is sweet lady Propane",
+                    "score": 6,
+                    "author": "iamfromanislandd"
+                },
+                {
+                    "level": 1,
+                    "comment": "I. don't know what it was you were talking about till the comments.  I thought it was Tim Robinson line",
+                    "score": 3,
+                    "author": "Jar_of_Cats"
+                },
+                {
+                    "level": 1,
+                    "comment": "https://www.pictureofhotdog.com/home-margot",
+                    "score": 2,
+                    "author": "Rude-Painter-6499"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Years ago I had a client want me to do some signage for them. I had requested a vector file of their logo so I can scale it (think billboard). They supplied a fuzzy png that was used in their website. I tried explaining to ask their designer to send it, they didn't have their info. So finally, I said \"did the designer send you a PDF, AI, or some other file type? Usually they'll send a PDF version for this type of work.\". \n\nThe guy printed his png on his desktop printer, then scanned it back into to his computer as a PDF and sent me that file. \n\nStill have a good laugh about it from time to time.",
+            "score": 28,
+            "author": "KourteousKrome",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Its all good, you can use 72 dpi art for billboard and it will look good, I worked at a super grande format print shop and we printed billboards at like 15 dpi, so just for future reference his crappy image would have been fine.",
+                    "score": 6,
+                    "author": "elvismcvegas",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Y'ain't jokin\n\nAt a 12 foot billboard height (leaving a 1 foot margin), 15 dpi is 2160 pixels, or exactly the height of a 4k image.",
+                            "score": 4,
+                            "author": "runfayfun"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I was at a job where that was the standard way of converting documents to PDF: print them and feed the paper to the copier, which would scan and mail a fancy (albeit huge) PDF file to you.",
+                    "score": 1,
+                    "author": "jesjimher",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Why?",
+                            "score": 2,
+                            "author": "KourteousKrome"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The pain is you know someone has the file you need. But getting to that someone can be hell.",
+                    "score": 1,
+                    "author": "medoy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "FWIW, I get decent enough results throwing an illustration or picture into Illustrator and selecting Image Trace &gt; High Quality Photo.",
+            "score": 13,
+            "author": "thisismeingradenine"
+        },
+        {
+            "level": 0,
+            "comment": "A helpful example I found: https://i.kym-cdn.com/entries/icons/original/000/023/977/cover3.jpg",
+            "score": 184,
+            "author": "Ancient_Green_3979",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "that's a vector as a jpg who wants to scale down the moon",
+                    "score": 22,
+                    "author": "PranshuKhandal"
+                },
+                {
+                    "level": 1,
+                    "comment": "Minon",
+                    "score": 9,
+                    "author": "DethInHFIL",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Mioui",
+                            "score": 2,
+                            "author": "CodySutherland"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "#OH YEAH!",
+                    "score": 5,
+                    "author": "MechanicalHorse"
+                },
+                {
+                    "level": 1,
+                    "comment": "I hate you \ud83d\ude02 r/angryupvote",
+                    "score": 4,
+                    "author": "LordOfTheWeebsYT"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;/cover3.jpg\n\n\ud83e\udd14\ud83e\udd14",
+                    "score": 1,
+                    "author": "Devuluh"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Getting a raster based image to vector is not always straightforward. Also vector file size can increase depending on the detail you choose.",
+            "score": 5,
+            "author": "qpr_canada7"
+        },
+        {
+            "level": 0,
+            "comment": "People in the know use LaTeX ;)",
+            "score": 20,
+            "author": "reddit_user33",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "In uni i used to make beautiful reports in latex. Now, one year after graduating and working for a multinational company, I write documentation in Word. It's ugly as sin",
+                    "score": 13,
+                    "author": "ForsbergsSlipper"
+                },
+                {
+                    "level": 1,
+                    "comment": "hang on, I've got some complex fractions I want to typeset beautifully... BOOM!",
+                    "score": 7,
+                    "author": "deathboyuk"
+                },
+                {
+                    "level": 1,
+                    "comment": "\\LaTeX users unite! There should be a browser extension to convert LaTeX markup into vector images in the browser. God that'd be so useful for math subreddits and stuff.",
+                    "score": 5,
+                    "author": "SpikyLlama",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "MathJax?",
+                            "score": 1,
+                            "author": "tunisia3507",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "your mom's a mathjax",
+                                    "score": 1,
+                                    "author": "SpikyLlama"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Some people are allergic.",
+                    "score": 3,
+                    "author": "IWantALargeFarva"
+                },
+                {
+                    "level": 1,
+                    "comment": "I use LaTeX to render all of my Word doc financial spreadsheets into a practical Comic Sans font JPEG that can be sent more easily to my in-laws and fourth cousins",
+                    "score": 2,
+                    "author": "runfayfun"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This needs to be sent out to all the tumbler makers at the craft fairs. All I see are pixels, and I'm just dying to tell them to vectorize their image",
+            "score": 5,
+            "author": "youthfulsins"
+        },
+        {
+            "level": 0,
+            "comment": "In really simple terms, a vector format is a set of instructions for \"drawing\" your image, much like a human with a pencil might. Imagine a \"connect the dots\" drawing (or multiple layers of \"connect the dots\" drawings). There's slightly more to it than that, but that captures the basic idea of vector formats. Some images are better candidates for \"vectorization\" than others.",
+            "score": 3,
+            "author": "brush_between_meals"
+        },
+        {
+            "level": 0,
+            "comment": "Question: This has been around fort a very long time.  I used to develop flash games for fun back in the day and could use these.  Why did they never catch on?",
+            "score": 3,
+            "author": "ShortBusBully",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Screws have been around for a long time, but we still use nails. Vector graphics are a different tool for a different use, not a better tool.\n\nVector graphics are probably great for flash games and mobile games today, because they let you draw a lot of shapes really efficiently. They're very precise with a very small file size. But raster graphics are great if you want to add textures. Modern games do a lot of both, using vectors to define where the walls and shapes go, then mapping the raster textures onto them. \n\nYou can think of an audio example as well. You could teach a computer what each note sounds like, then give it sheet music and tell it to play it. Or you could have a musician play the music, and put the audio file into the computer game. The former is a lot more precise and uses way less space, but the latter has a lot more texture.\n\nAlso, we really only convert real life into raster data, not vectors. When you take a photo, your camera is recording each pixel and saving information about it. That's raster data. Your camera can't look at an image and trace outlines it sees in the scene to record it as geometry. Same idea for audio, but your microphone sensor works on all the wavelengths. When you listen to a song, you might recognize the words and notes, but the microphone just samples every wavelength and can't tell what any of it *means*.\n\nOP talked about converting from raster to vector. You can do that. But the thing is that only certain types of images make sense as vector data. Your company's logo and wordmarks are excellent candidates to be vector graphics, so you should definitely be asking your artist for the vector files and be using those. Basically anything that you could trace as geometry and have it be coherent would be good as a vector (although converting it can be difficult or sloppy). Something like a photo of you and dog would be entirely transformed if you converted it to a vector. It might look good, or it might be hot garbage. But at that point you're basically just using your pose in the photo as a model for you to trace, so it's going to turn into a cartoon. If you want that, great. But it's not going to look \"better\" if you convert it. It'll look different.",
+                    "score": 5,
+                    "author": "halberdierbowman"
+                },
+                {
+                    "level": 1,
+                    "comment": "When simple shapes start to outnumber pixels the processing power gets gobbled up rendering things which can't be seen.\n\nSo, great for flash games and movies because it strips away blurry details but in doing so takes away any nuances or shading.\n\nSo raster images \"caught on\" pretty well actually in industry but for casual graphic editing / sharing there's no need for the full \"source code\" for the image.",
+                    "score": 4,
+                    "author": "nearvana"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I am a graphic designer and the amount of times I get a jpeg placed in a ai or eps file and called vector is astonishing.",
+            "score": 2,
+            "author": "elvismcvegas"
+        },
+        {
+            "level": 0,
+            "comment": "i don't have a large event poster or advertisement. this info is useless to most people",
+            "score": 2,
+            "author": "MobiusCube",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "And you never will with that attitude.",
+                    "score": 1,
+                    "author": "BigToeHamster",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "thank you",
+                            "score": 2,
+                            "author": "MobiusCube"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As a web developer - I LOVE THESE",
+            "score": 4,
+            "author": "ZebrAlpha"
+        },
+        {
+            "level": 0,
+            "comment": "There are services out there that use AI to \u201cdepixelate\u201d images with varying levels of quality. If you\u2019re trying to upscale an image and you\u2019re not too worried about staying 100% accurate to the original that can work. Really good for making posters out of slack emojis.",
+            "score": 2,
+            "author": "geeeeeeep"
+        },
+        {
+            "level": 0,
+            "comment": "RemindMe! 5 days",
+            "score": -1,
+            "author": "ashrin",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Why are we doing reminders for this?",
+                    "score": 9,
+                    "author": "aerodeck",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh, just because I\u2019m procrastinating and don\u2019t have time until the weekend haha.",
+                            "score": 10,
+                            "author": "ashrin"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I\u2019m assuming this also works for personal photos? I send some to be made in a large poster to hang in my home and they come out more pixelated as a JPEG.",
+            "score": 1,
+            "author": "Lebensmude_YT",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, but you should be aware that it can be much harder to convert photos in a way that looks nice. You will usually lose a lot of detail, because you're simplifying the image into lots of little shapes, like a mosaic.\n\nThe more shapes, the bigger the file size and the slower your computer will run when opening the file.",
+                    "score": 6,
+                    "author": "LinkThe8th"
+                },
+                {
+                    "level": 1,
+                    "comment": "I probably should have clarified this in the original post, oops.\n\nFor photos, it\u2019s usually best to use a very high-resolution jpeg. Vector images work better for clip-art kind of things. You could try looking for upscaling software - AI upscaling is getting pretty good - if your original photo is not big enough / high enough resolution for the size you want to print at.",
+                    "score": 4,
+                    "author": "WetBiscuit-McGlee"
+                },
+                {
+                    "level": 1,
+                    "comment": "Photos can't be converted into vector images. They can be stored with varying levels of compression though.",
+                    "score": 6,
+                    "author": "BrunoEye",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 6,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I'm not saying the program will crash or not give an output, but I'm assuming that isn't what they were asking about.",
+                                    "score": 5,
+                                    "author": "BrunoEye"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "No, the OP is misinformed and not knowledgeable about graphics formats and best practices. Converting photographs to vector formats is not common and will not make your low resolution photos look better when printed.",
+                    "score": 2,
+                    "author": "maowai"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Who else misses Adobe Fireworks?",
+            "score": 1,
+            "author": "51CK54DW0RLD"
+        },
+        {
+            "level": 0,
+            "comment": "Also the color space of your vector makes a huge difference. I've downloaded a few online that look great in the preview but once converted to CMYK look awful. Some of the effects that some artists use look great on an RGB screen but get pretty wacked out for print.",
+            "score": 1,
+            "author": "NogardDerorrim"
+        },
+        {
+            "level": 0,
+            "comment": "that's a vector as a jpg who wants to scale down the moon",
+            "score": 1,
+            "author": "Imaginary_Arm_499"
+        },
+        {
+            "level": 0,
+            "comment": "Is there a chart for upper limits like how big of a jpeg image can be be scaled up to how big of a vector image?",
+            "score": 1,
+            "author": "Nonameswhere",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Vector is basically infinitely scalable. If you look for how big to print without pixelation you\u2019ll see some numbers. Dpi is a factor for jpeg too. 300 is considered high \u201cprint\u201d quality. Lower is less like 72 for web to save memory.",
+                    "score": 1,
+                    "author": "Primary_Way_265",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very cool thanks.",
+                            "score": 1,
+                            "author": "Nonameswhere"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "`ren mypic.jpg mypic.svg`\n\nThere you go",
+            "score": 1,
+            "author": "lazyfck"
+        },
+        {
+            "level": 0,
+            "comment": "Mmm... Love me some raster. Great for cartography.",
+            "score": 1,
+            "author": "thisismydayjob_"
+        },
+        {
+            "level": 0,
+            "comment": "Enhance......enhance.....enhance",
+            "score": 1,
+            "author": "marianoes"
+        },
+        {
+            "level": 0,
+            "comment": "But can I buy an NFT of an SVG? Because buying pixels is one thing, but buying an XML document that describes paths, lines, and fills doesn't really feel as valuable?",
+            "score": 1,
+            "author": "brandonscript"
+        },
+        {
+            "level": 0,
+            "comment": "I wish I knew this LPT 3 years ago.",
+            "score": 1,
+            "author": "AdministrativeElk6"
+        },
+        {
+            "level": 0,
+            "comment": "Shhhhhhhhhhhhh",
+            "score": 1,
+            "author": "simfray"
+        },
+        {
+            "level": 0,
+            "comment": "Can you do something like this to I\u2019m prove picture quality on your iPhone?",
+            "score": 1,
+            "author": "Ahad0"
+        },
+        {
+            "level": 0,
+            "comment": "Just make the logo bigger.",
+            "score": 1,
+            "author": "westwood913"
+        },
+        {
+            "level": 0,
+            "comment": "Isn't that only for drawn graphics or text. If you want photos on your large poster, you're just gonna need a quality camera.",
+            "score": 1,
+            "author": "No_Nefariousness105"
+        },
+        {
+            "level": 0,
+            "comment": "What is rendering?",
+            "score": 1,
+            "author": "alphaclosure"
+        },
+        {
+            "level": 0,
+            "comment": "RemindMe! 5 days",
+            "score": -3,
+            "author": "Mischievous_Bean"
+        },
+        {
+            "level": 0,
+            "comment": "The 3D effect \ud83d\ude0a",
+            "score": -20,
+            "author": "Grouchy_Addendum_988"
+        },
+        {
+            "level": 0,
+            "comment": "I would give this an award if i could",
+            "score": -5,
+            "author": "bootycumwave69"
+        }
+    ]
+}

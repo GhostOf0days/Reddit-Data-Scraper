@@ -1,0 +1,75 @@
+{
+    "id": "148w9i3",
+    "score": 1,
+    "title": "Can I just copy files to a new drive, rename the new drive to the old drive's name, and everything just work fine?",
+    "author": "Earl_of_Cola",
+    "date": 1686709985.0,
+    "url": "https://www.reddit.com/r/NoStupidQuestions/comments/148w9i3",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I bought a new 10tb HDD since my 2tb one is five years old. I want to move all the files from the 2tb to the 10tb one. I see software is willing to do this for me, but its pricey and it occured to me: why can't I just copy/paste the files from the 2tb HDD to the 10tb?\n\nIf the 10tb one has the same drive letter and the same name it should have the same file paths... right? Same file paths means when the PC is trying to run something, it will look in the 10tb path rather than the 2tb path (which I would obviously rename to something else after) Then again if its this simple I must be missing something since these drive cloning programs are a really big industry. People must be paying money for it for a reason...\n\nSo thats my stupid tech question. Will this work as easily as I imagined? Did I just learn the secret billion dollar tech companies do not want me to know, or am I just a dope missing the obvious? Help me out /r/NoStupidQuestions!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You don't need to re-name anything at all. Copying files from one drive to another will update their file structure to start with the new drive letter instead of the old one. The only thing you may have an issue with is file shortcuts.",
+            "score": 2,
+            "author": "AveragelyAlive",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I thought I cracked the code, but wow I honestly didn't think it would be that easy. Man, what is the point of these drive transfer programs then? Anyone can drag and drop files.",
+                    "score": 1,
+                    "author": "Earl_of_Cola"
+                },
+                {
+                    "level": 1,
+                    "comment": "Like this works for installed programs too, right? Not just text files, but if I have a game on my 2tb HDD and copy the files over, Windows will still run it on the 10tb? No reinstall needed?",
+                    "score": 1,
+                    "author": "Earl_of_Cola",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm not sure about that, actually. If it's a game you installed through, say, Steam, the launcher program might not recognize that the drive letter changed. But I'm pretty sure that if you press the install button and then change the desired directory to the existing one, Steam will do a quick check of what's in that folder and know the game is installed there.",
+                            "score": 1,
+                            "author": "AveragelyAlive"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Is this the only drive in your machine? If so, it won't work because your mbr won't be configured correctly.",
+            "score": 2,
+            "author": "PlumFister",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No, I have an SSD C drive I keep Windows installed on. I am investigating my D drive right now.",
+                    "score": 1,
+                    "author": "Earl_of_Cola",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You should be good then",
+                            "score": 1,
+                            "author": "PlumFister"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I usually keep my files in my sd card.  Had several bad experiences when my hard drive either died or computer repair had wiped out my files.",
+            "score": 1,
+            "author": "Signal_Tomorrow_2138"
+        },
+        {
+            "level": 0,
+            "comment": "There are normally two timestamps associated with each file. One is the last-modified time, which will stay the same on the copied files. The other is the file creation time, which will probably be set to when you made the copy, not the date the file was created on the original drive. If knowing when you got a file is not important to you, don't worry about it.\n\nSomeone mentioned file shortcuts. Those won't be a problem because they are treated as the .lnk files that they actually are. But if you use hard links or junction points, you will probably want to take special care to make sure they are preserved, instead of treated na\u00efvely like the files and folders they pretend to be. If this is just a \"data\" drive (not boot drive with your OS on it), and you don't know what hard links or junction points are, then you probably aren't using them, and it's fine.\n\n\"Cloning\" will make an *exact* copy of the drive, byte for byte, which will preserve everything perfectly, including fragmentation, hidden partitions, and the part of the drive that is needed during bootup (if the drive is bootable). Cloning can be done with free software, but yes, it's a big industry for the replacement drive market.\n\nFor copying, rather than cloning, on Windows, you might try using [https://fastcopy.jp/](https://fastcopy.jp/) ... I have had good luck with it.",
+            "score": 1,
+            "author": "mjb2012"
+        }
+    ]
+}

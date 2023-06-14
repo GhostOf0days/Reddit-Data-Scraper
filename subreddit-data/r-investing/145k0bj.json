@@ -1,0 +1,95 @@
+{
+    "id": "145k0bj",
+    "score": 10,
+    "title": "Basic limit order question",
+    "author": "s4xce",
+    "date": 1686352580.0,
+    "url": "https://www.reddit.com/r/investing/comments/145k0bj",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hello, I have a quick question regarding limit orders just to make sure I understand this. Let\u2019s say two people simultaneously put in limit orders, one to bid 5 at $20, and one to sell 5 at $16, what is the price at which this trade is executed? Thanks.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If these are the only two orders available, then I believe the trade would be executed at $16 dollars. But given how there will be other bids/asks on the market that might fill these it\u2019s hard to say.\n\nBut if these orders do get filled, the most expensive price the buyer could get is $20 and the lowest price the seller could get is $16.",
+            "score": 15,
+            "author": "ldiotSandwich",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the correct answer.. No more, no less. Have platinum.",
+                    "score": 5,
+                    "author": "FesterCluck",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thank you kind sir",
+                            "score": 2,
+                            "author": "ldiotSandwich"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not saying you're wrong, since I'm not sure how it works in this case. But do you have any source where it states that in this case it would be filled at $16? It seems that even ChatGPT gets it wrong:\n\n&gt;In the scenario you described, the first order placed was a bid for 5 units at $20. Then, a sell order for 5 units at $16 was placed. Since the bid was placed before the sell order and at a higher price, the trade would be executed at the best available price, which is the price of the bid at $20 per unit.\n\nThis assumes 20 comes before 16, as to what happens when they're at the same time:\n\n&gt;if two market orders are placed at the same time, the order in which they are processed and executed depends on the system's order handling rules.\n\nAlso, I found this on Quora:\n\n&gt;Remember, your limit order means fill at or better price else don\u2019t fill\n\nSo if someone places 16 after 20, then it can get filled at 20 if I understood correctly.",
+                    "score": 0,
+                    "author": "isonil",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I see what you mean there, I definitely rushed into my initial answer too quickly. When I said the trade would execute at $16 I was biasing the price in favor of the buyer (the buyer gets a price lower than $20 while the seller gets their worst possible price).\n\nLooking at this problem again I really can\u2019t say a specific number, but I\u2019d say if these are the only two orders on the market it\u2019d execute at a price between $16-$20 (depending on some mechanisms I frankly don\u2019t know enough about lol).",
+                            "score": 1,
+                            "author": "ldiotSandwich"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There is no way to answer your question without knowing the current spread on the stock.\n\nThere are liquidity providers that will quote a bid and ask. The execution price will depend on what the current NBBO (national best bid offer) of the stock is at the time the orders are placed. Market makers on listed exchanges are required to quote their best spread during trading hours. \n\nA buy order - whether it's marketable or limit - will not exceed the best ask.\n\nA sell order - whether it's marketable or limit - will not exceed the best bid.\n\nThere are also times when a liquidity provider or internalized crossing system may result in a price improvement inside the NBBO spread.",
+            "score": 3,
+            "author": "greytoc"
+        },
+        {
+            "level": 0,
+            "comment": "I can't speak to a stock exchange specifically so maybe I'm wrong, but as someone who used to write simple software, my guess is multiple orders can't be added to an order book simultaneously and will be processed sequentially. Even if they literally arrive on the same clock cycle, one will be processed to the book first.",
+            "score": 3,
+            "author": "geniusboy91",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is the right answer. Even if two orders arrive at the exact same time to the exchange network, the network switching will put one of them first. It is not just logically but also physically impossible to have two order packets reach the matching engine for a given product at the same time.",
+                    "score": 2,
+                    "author": "Ieafeator"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "When puchasing shares, the trade executes when the limit price matches the \"ask\" price. When selling shares, the trade executes when the limit price matches the \"bid\" price.",
+            "score": 3,
+            "author": "Perfect-Platform-681"
+        },
+        {
+            "level": 0,
+            "comment": "Two people cannot simultaneously put orders in. The exchange will see one of them first. If these are the only two orders in the order book, the price will be whichever came in first.",
+            "score": 1,
+            "author": "kiwimancy"
+        },
+        {
+            "level": 0,
+            "comment": "The correct answer is that some HFT algo will buy at $16 and sell at $20.\n\nI'm joking .. mostly.",
+            "score": 1,
+            "author": "CUNT_PUNCHER_9000",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This isn't a joke, but it's not exactly HFT''s, it's your broker. \n\nReal orders execute when the prices match, nothing more, nothing less. \"Types\" of orders are a function of how your broker behaves. The standard ones are just common agreements. Even with brokers that seem to be purely electronic, I guarantee you the functionality exists to pull orders out of that queue and execute them in a manual queue.\n\nAll types are just instructions on how they may vary that price to the market. If you think this could open up matters of conflict of interest, you're right. I think the only help in this situation is to check what the broker's buy/hold/sell is. If your order is in line with that, you're likely good.  If it's contrary, you may not want to order there.\n\nIf you see an instance where they recommend one way, but treat your order in another, sue the shit out of that broker.",
+                    "score": 1,
+                    "author": "FesterCluck"
+                }
+            ]
+        }
+    ]
+}

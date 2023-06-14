@@ -1,0 +1,295 @@
+{
+    "id": "13v4of4",
+    "score": 239,
+    "title": "Why short sell an equity (and paying borrowing costs of 5-10%) when selling a deep ITM call option has a substantially similar payout without an interest charge?",
+    "author": "GR8-N8",
+    "date": 1685389949.0,
+    "url": "https://www.reddit.com/r/investing/comments/13v4of4",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Say I wanted to short SPY. I can either short sell the underlying or short sell a call option. Which is better?\n\nMy retail broker TDA allows me to sell naked call options, earning interest on the premium, without any interest expenses. A Jan 2024 180 call option can be sold for 243.44 using the midpoint. As an aside, since SPY is selling at 420.49 (nice), that excess 0.95 (243.44-420.49) can be interpreted as the cost of leverage. \n\nShort selling SPY would yield me a larger premium (420.49 rather than 243.44), but my broker charges me 10% to borrow the stock. \n\nIf my math is right, short selling the underlying would cost ~8% more than selling the option. While is it\u2019s true that the upside is capped so short selling the call would underperform when the underlying moves below the strike, let\u2019s assume the chance of that happening is negligible. Is there anything I\u2019m missing?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "An option has an expiration date",
+            "score": 184,
+            "author": "desquibnt",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "So does a short position, you just don't know when it will be (potential margin call).",
+                    "score": 1,
+                    "author": "ragnaroksunset"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you look at the payoff diagram for a naked call, it is the same as a covered put which is to short the underlying and sell a put. It's not the same as being short the underlying. \n\nImo - a better solution than deep itm naked calls is a synthetic short or sometimes called a short synthetic future.\n\nAlso - I think that your borrow fee on SPY looks wrong to me. It's a lot higher than I would expect at most US brokers. \n\nWhat investment thesis are you trying to implement? Or is this more of a theorical question about deep itm naked calls?",
+            "score": 62,
+            "author": "greytoc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Looking at current prices on Yahoo finance, an ATM synthetic short on SPY for Jan 2024, where you sell at the bid and buy at the ask, yields you a total of $8.69 (420C is trading at 28.30 and 420P at 19.61). SPY is currently trading at $420.49, 49\u00a2 above the strike, so you are effectively \"paid\" $8.20.\n\nHowever, note that if you actually shorted the underlying, you would receive $420.49 in cash, which you could immediately flip into T-bills that expire in Jan '24 for a yield of about 5.4% (annualized). Over 8 months, this works out to a return of 3.57%, or $15.01.\n\nSince you are only getting paid $8.20 instead of $15.01, there is an additional cost to the synthetic short, which works out to the difference, $6.81. Expressed as an annualized percentage figure, it works out to 2.4%.\n\nSo there you have it. If your borrow fee for $SPY is more than 2.4% annualized, it's theoretically better to use a synthetic short.\n\nBut wait, this is assuming you pay the market spread both ways. What if you make the spread instead? Now you are paid $10.02 instead of $8.69. Going through the same calculations, we get an annual borrow fee of 2.0% where you would be indifferent between shorting and synthetic shorting.\n\nAlthough synthetic shorting seems like a winner here, there are still many other relative benefits of shorting the underlying, which have not been accounted for. Specifically: shorting an odd lot (not a multiple of 100 shares), being able to exit out of the trade early without paying a lot of spreads, being able to take a very large position (i.e. liquidity, a big issue for large funds), shorting for a long time period without having to continually roll your trade out, potentially tax reasons? (idk, I'm not an accountant), etc.\n\nNote that all of these calculations are approximate, may have errors, and should not be used as financial advice. Do your own research, folks.",
+                    "score": 35,
+                    "author": "throw3142",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks for the comment. Glad someone did some of the math.\n\nYour point about placing the short sale proceeds into t-bills to generate yield may be captured by a synthetic short. But I'm not well versed enough in how to calculate and contrast that. \n\nSince a long call has positive rho and a long put has negative rho, doesn't the short call capture the risk free rate. And conversely, there would be a discount to the risk free rate on the long put leg. \n\nI'm not sure if I'm expressing it correctly but my intuition is that rho would price in the yield in a synthetic short. \n\nIs that something that you or anyone else are familiar with calculating?",
+                            "score": 3,
+                            "author": "greytoc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't think rho really factors in here because it's very easy for the market maker to arbitrage this trade while negating exposure to interest rate risk. If you do a synthetic short on something like SPY, the market maker now has a net long position, which can be easily hedged by shorting SPX index futures. Now that they've essentially \"borrowed money\" from the futures market, they can invest it in treasuries maturing at the same time, in order to cancel out the effects of rate fluctuations.\n\nOf course it matters a lot that the firm in question is a market maker, and not, say, a bank. Banks need to worry about unrealized gains / losses while their bonds are still maturing, so that they don't go all SVB on their depositors.",
+                                    "score": 5,
+                                    "author": "throw3142"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It sounds like you\u2019re making a directional play. If you sell an option that far in the money - delta has to be close to 1 and it will be exercised before the ex-div date. Make sure you have the money to back it up",
+            "score": 26,
+            "author": "birdsaresnitches",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You\u2019re correct that I\u2019m making a directional play. Can you explain more why it would be exercised?",
+                    "score": 5,
+                    "author": "GR8-N8",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The extrinsic value of the option will eventually become less than the dividend received from owning the shares - it will make financial sense to exercise the options, collect the dividends, and then sell the shares. This is my very basic understanding of it, although capital gains tax may have to be taken into account if the exerciser sells the shares right away and there are a lot more nuances I have not taken the time to study - I\u2019ve been early exercised multiple times although that\u2019s generally taken into account when I sell ITM options specifically for special dividend captures",
+                            "score": 14,
+                            "author": "birdsaresnitches",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Although I guess exercising the option would technically mean a short term loss on the difference from the strike - I wonder if the option premium would get calculated into the cost basis. If not, that\u2019s an interesting way to tax harvest a short term loss into a long term gain if held for a year plus\n\nEdit: think I said this wrong - I\u2019d look into it more if I had a bunch of gains at the end of the year though as a potential way to push those gains until the next year",
+                                    "score": 5,
+                                    "author": "birdsaresnitches"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Lots of reasons, one of which is dividend harvesting. Lol cmon man",
+                            "score": 4,
+                            "author": "dumpsterfire_account",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, if someone isn't factoring that in, they are probably not valuing their contracts/risk appropriately. \n\n\nIf early assignment wasn't an issue (i.e. European style), there might be some logic, though I don't trade those types of options or futures. It seems too easy to enter into silly positions by going deep ITM when early assignment is looming. \n\nI got lazy and got dividend sniped once. Hopefully never again, or if so, ideal the person exercising is giving up a ton of time premium for it.",
+                                    "score": 8,
+                                    "author": "my_name_is_gato"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Which broker? 10% sounds very high for SPY.",
+            "score": 43,
+            "author": "EveryPassage",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You\u2019re right. It seems like it\u2019s more like 7% for SPY on TD Ameritrade.",
+                    "score": 17,
+                    "author": "GR8-N8",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Call TD and ask about the borrow rate on SPY. They told me nearly 0% borrow.",
+                            "score": 15,
+                            "author": "Timelapze"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "That's still incredibly high. The borrow rate for SPY on IBKR is 0.30% per year.\n\nThe other thing is, if you want to get short the S&amp;P 500, you can do it via futures, and that makes more sense than the ETF for a lot of people.",
+                            "score": 47,
+                            "author": "bonghits96",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "check the margin rates - 6.5 to 7.5",
+                                    "score": -2,
+                                    "author": "pilzenschwanzmeister",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Margin interest is charged on your cash balance if it's negative.\n\nLet's say I short 100 SPY. What happens to my cash balance?",
+                                            "score": 6,
+                                            "author": "bonghits96"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "SPY should always be at the GC rate, currently ~0.30% fee.\n\nTD may be quoting you in rebate terms vs fee terms. The conversion to fee from rebate should be OBFR-rebate",
+                            "score": 5,
+                            "author": "cryptodolphins"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It should be a rounding error to zero",
+                            "score": 4,
+                            "author": "IHateHangovers"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Selling a short call that deep in the strike will likely be very wide between the bid and ask so you will pay a lot on the spread to get into and out of the position. It is likely to not be very liquid at all. I don\u2019t see why a short SPY would cost that much. Also at the strike make sure you move the cash received for the short call to something with interest. Either a mmf or a treasury bill / ladder as TDA pays little interest and does not have an automatic sweep.",
+            "score": 6,
+            "author": "trader_dennis"
+        },
+        {
+            "level": 0,
+            "comment": "There\u2019s no free lunch here. The cost for the market maker to short the stock instead of you, in order to hedge selling you the option, is basically priced into it. If it were, you could put on both sides of the trade and collect the difference.\n\nWhere are you getting the 5 to 10%? The borrow fee for most general collateral equities and indices is nowhere close to 10%?",
+            "score": 7,
+            "author": "TravelerMSY"
+        },
+        {
+            "level": 0,
+            "comment": "I don't understand how selling a deep ITM call option is considered a short.\n\nWhen you sell short, you're using margin and so you pay the broker's margin interest rate. This is definitely something to consider when initiating a short position. \n\nI short stocks in three ways: 1) short selling, 2) call credit spreads and 3) put debit spreads. I use margin for all three of these strategies.",
+            "score": 14,
+            "author": "gls2220",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They mean short on the broader sense, ie not long / taking a bearish position.",
+                    "score": 9,
+                    "author": "herzy3",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "He's talking about borrowing costs though.",
+                            "score": 1,
+                            "author": "gls2220",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Is your main sticking point where he said 'short selling a call'? \n\nI don't really understand the the confusion, the point seems clear to me.\n\nAnd technically OP is short selling a call in their scenario.",
+                                    "score": 14,
+                                    "author": "herzy3",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah, I figured it out finally. Slow day, slow brain I guess. :)",
+                                            "score": 3,
+                                            "author": "gls2220"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The borrowing costs were in reference to short selling shares. He\u2019s comparing short selling to selling calls.",
+                                    "score": 1,
+                                    "author": "Ignitus1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "in options lingo, to write an option, is to be short the option. It's just the terminology that is used.",
+                    "score": 3,
+                    "author": "Ordinary-Lobster-710"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Short selling the SPY will land you in the poor house",
+            "score": 8,
+            "author": "Un-Scammable"
+        },
+        {
+            "level": 0,
+            "comment": "your math is right\n\nYou are giving up downside potential and time (you can hold the short forever, whereas the option expires) in exchange for a cheaper way to short the Index.",
+            "score": 2,
+            "author": "Bman409"
+        },
+        {
+            "level": 0,
+            "comment": "In addition to what others said, interest rates are baked into an options premium. It is one of the Greeks",
+            "score": 2,
+            "author": "dirtyculture808"
+        },
+        {
+            "level": 0,
+            "comment": "Any borrow fees are always included in option prices. That\u2019s why you occasionally see put call parity violation in equities, because their borrow fees can be up to 1000%. In the case of low fees, it\u2019s just in the skew of calls and puts, hard to split out but you can be sure it is there.",
+            "score": 2,
+            "author": "davesmith001"
+        },
+        {
+            "level": 0,
+            "comment": "The most simple answer is that **most people do not understand options enough to play them**. Other factors:\n\n* Options will always result in some amount of leverage which could be mitigated by holding cash reserves, but again this is too advanced a concept for most people.\n* For quick plays that do not go to expiration, the bid-ask spread may kill the play altogether.\n*  Options are called on a specific date which as you see, it is a deterrent for most people, granted it is defined risk where as vanilla margin will be called exactly at the worst time once you dip below margin maintenance. So I wouldn't see it as con, but as you see, it scares people.\n\nIf I did a short I would Deep ITM Put LEAPS.",
+            "score": 3,
+            "author": "RedditMapz"
+        },
+        {
+            "level": 0,
+            "comment": "The downside to selling a naked call is not capped, your losses can be infinite.\n\nIf you don't find a more sophisticated way to play this game, it's only a matter of time before whatever capital you have has been turned into a pile of debt.\n\nMy recommendation is that you find a real job, make more conservative investments that you really understand well, and stop using phrases like \"as an aside\".",
+            "score": 0,
+            "author": "manual_tranny"
+        },
+        {
+            "level": 0,
+            "comment": "As you point out, there's a small chance S&amp;P goes below your strike price in which case you stop profiting vs a vanilla short sale.\n\nYou're leaving a bit of the potential upside from your trade on the table. The expected value of that upside reduces the cost of the time value of money which is built in the option price. In addition to selling the call, you could buy a put with the same strike price to produce a true replica of the short, aka a synthetic short and then the price comparison would be valid.\n\nBut yeah as others have pointed out the main thing is the very high spread that your broker charges you vs the actual cost of borrowing SPY. Because of this you're better using options or maybe futures on that broker.",
+            "score": 1,
+            "author": "WindHero"
+        },
+        {
+            "level": 0,
+            "comment": "Or you can buy a put",
+            "score": 1,
+            "author": "themanclark"
+        },
+        {
+            "level": 0,
+            "comment": "Why not just buy a put without all the risk",
+            "score": 1,
+            "author": "SomethingForNothings",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "He's shorting the call premium\n\nthat means he gets paid if we go sideways.\n\ngoing long the put means it has to go down more than the premium on the put, in order to get paid",
+                    "score": 2,
+                    "author": "Bman409"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Short it , infinite losses. Have fun.",
+            "score": 1,
+            "author": "CannadaFarmGuy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "when was the last time the $SPX went to infinity?",
+                    "score": 2,
+                    "author": "Bman409"
+                }
+            ]
+        }
+    ]
+}

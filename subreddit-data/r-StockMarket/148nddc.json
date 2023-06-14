@@ -1,0 +1,137 @@
+{
+    "id": "148nddc",
+    "score": 70,
+    "title": "AMD reveals new A.I. chip to challenge Nvidia\u2019s dominance",
+    "author": "UnixxinU",
+    "date": 1686684237.0,
+    "url": "https://www.reddit.com/r/StockMarket/comments/148nddc",
+    "media_urls": [
+        "https://www.cnbc.com/2023/06/13/amd-reveals-new-ai-chip-to-challenge-nvidias-dominance.html"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Investors were at least expecting a direct comparison between MI300X and H100 for most common use cases. But there was none. Not a confidence inspiring presentation for sure.",
+            "score": 18,
+            "author": "desmond2046",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The more relevant comparison is MI300A vs Grace-Hopper, I think.  Looking forward to perf/watt benchmarks.",
+                    "score": 3,
+                    "author": "ttkciar"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "aaaaand\u2026dip",
+            "score": 13,
+            "author": "whistlerite"
+        },
+        {
+            "level": 0,
+            "comment": "Let us wait and see how its adopted. AMD's achilees heel here is software side. CUDA are iron grip on enterprise AI space. Ian Cutress did call it out recently. [https://twitter.com/IanCutress/status/1653529604043292672](https://twitter.com/IanCutress/status/1653529604043292672)",
+            "score": 9,
+            "author": "shawman123",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;CUDA are iron grip on enterprise AI space\n\ntools such as pytorch and tensorflow already support AMD's ROCm platform in addition to CUDA. \n\nrelated sources:\n\nhttps://www.amd.com/en/graphics/servers-solutions-rocm\n\nhttps://pytorch.org/blog/experience-power-pytorch-2.0/\n\nhttps://www.amd.com/en/technologies/infinity-hub/tensorflow",
+                    "score": 2,
+                    "author": "mauros_lykos",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As a data science practitioner this is what has occurred to me. Because the average model is metal agnostic and has a software abstraction between the model specification language and the driver... It means the average model and the average scientist could swap hardware tomorrow with the right driver support and not have to learn or do a single thing different.\n\n The only thing that could protect cuda is patents, but most of this is just math and prior art.  If an ai company gets a critical patent that's when a 1000 pe might make sense. Not before.\n\n\n There is not much of a driver moat if big money starts being a factor. Amd missed the boat on cuda because there wasn't a huge upside. \n\nTwo things should make you believe in amd\n1. They have been in this position before with cpus and Intel and played catchup just fine.\n2. They can write a good graphics driver which almost unarguably is more difficult then a deep learning driver.\n\nThey can if they want. And now they might want...",
+                            "score": 5,
+                            "author": "quts3",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "As a Data science practitioner myself, unless big 3 cloud providers support AMD, gpu natively on their platform it doesn't matter for enterprise. Because enterprise are the ones who throw big money. In last 10 years, i have set up bare metal servers to infra and platform as a service on Cloud for data science at couple of fortune 100 companies. In retrospective I rather prefer infra that's available natively on GCP, AWS and Azure. And the point is if these 3 provide amd, i would use it and rest of fortune 100+ companies would use it too. As you said, for data scientists and ML Engineers it's not about amd or nvidia, it's about what's available on cloud platform. Unless it's offered on cloud, amd has to stick to data science amateurs and enthusiasts who like to work on thier laptop. \n\nTomorrow morning when I wake up, If amd gpu's are available on GCP or Azure, I'm gonna get on my windows laptop log into cloud platform and create a amd Theia instance and continue working.",
+                                    "score": 3,
+                                    "author": "redbottoms-neon"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;The only thing that could protect cuda is patents, \n\nPatents don't play well with open source software ;)",
+                                    "score": 2,
+                                    "author": "mauros_lykos"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yep.  This release has sparked debates over at r/LocalLLaMa regarding NVIDIA vs AMD for large language models.\n\nAt first it seemed like standard brand fanboyism, but it became clear that there is a disconnect between Windows users and Linux users, since Linux enjoys excellent AMD GPU support and Windows does not.\n\nDisproportionately many LLM researchers and developers are using Linux, while Windows is more popular among amateur LLM enthusiasts.\n\nI would assume Enterprise LLM work is also being done on Linux systems, if for no other reason than because that's what cloud GPU vendors are selling, but I have no hard data.",
+                            "score": 2,
+                            "author": "ttkciar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "As per my experience in IT field (I'm a developer/sysadmin) I guess that linux today powers more enterprises compared to windows, with the exception of the financial sector. I mean for the server side at least. \n\nData centric/oriented Enterprises have no choice but to use linux. Although CUDA seems to be supported (haven't tried that) in WSL2, I don''t think that many data analysts and devs would adapt that. Most people would just use WSL2 in order to connect to some linux server and do whatever they need to do there.",
+                                    "score": 2,
+                                    "author": "mauros_lykos"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "doesnt matter if it's \"supported.\" it's just not smooth enough vs cuda. why would anyone want to deal with bugs when they dont have to? it's gonna be hard getting people to switch to amd for ai. even to this day, amd's software for almost everything is not as good as nvidia. it's always the poor man's verison of everything and when it comes to professional work, nobody is gonna put up with it.",
+                            "score": 1,
+                            "author": "YesMan847",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "We all know (I like to believe that this is the case) that eventually all these issues will be resolved. So having that in mind, I guess you can act accordingly.",
+                                    "score": 1,
+                                    "author": "mauros_lykos"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Does anybody here think that AMD\u2019s secret weapon here might be cost? 60% performance for half the cost might seems like a reasonable trade off (the numbers are just an example mind you)",
+            "score": 3,
+            "author": "dimaghnakhardt001",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There's also supply shortages to consider. If everybody is going to sell out, you don't need to be that competitive.",
+                    "score": 5,
+                    "author": "way2lazy2care"
+                },
+                {
+                    "level": 1,
+                    "comment": "It's not about the cost. They need to make it available on cloud platform providers and work closely with open source AI tool s to support their GPU's natively. They really need to lobby with Google, Amazon and Microsoft",
+                    "score": 3,
+                    "author": "redbottoms-neon"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "AMD has been a way off pace of nVidia in consumer cards for years (and I am Team Red cpu/GPU).\n\nThe AI cuck-trap is hitting its stride I guess if even news like this gets the bobbleheads tossing their money at anything that moves with AI in its prospectus.",
+            "score": 4,
+            "author": "SilentThunder-00"
+        },
+        {
+            "level": 0,
+            "comment": "AMD is trading at a P/E of 633 while Nvidia is trading at 213. By this comparison, not sure why Nvidia cannot go up further even with this news when the market is still growing.",
+            "score": 1,
+            "author": "DrCalFun"
+        },
+        {
+            "level": 0,
+            "comment": "And then there\u2019s Intel\u2026",
+            "score": 0,
+            "author": "ZhangtheGreat"
+        }
+    ]
+}

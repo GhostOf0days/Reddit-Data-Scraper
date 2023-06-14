@@ -1,0 +1,1327 @@
+{
+    "id": "13h1h2q",
+    "score": 3038,
+    "title": "YSK: VPNs can leak even when leak tests tell you everything is OK. It is found on multiple platforms that existing connections are not closed after VPN is connected.",
+    "author": "pcwrt",
+    "date": 1684035491.0,
+    "url": "https://www.reddit.com/r/YouShouldKnow/comments/13h1h2q",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.wired.com/story/apple-ios-vpn-data-leak/)",
+        "https://www.pcwrt.com/2023/05/a-vpn-leak-in-windows-10/)",
+        "https://www.bleepingcomputer.com/news/google/android-leaks-some-traffic-even-when-always-on-vpn-is-enabled/)"
+    ],
+    "postText": "Why YSK: You might be puzzled why your data is leaked while using a VPN when the kill switch is turned on and no leak is detected with multiple leak tests.\n\nExisting connections before the VPN is connected stay open after the VPN is connected. When you do a leak test, it will tell you that everything is OK because the test creates new connections which will stay within the VPN tunnel.\n\nHere are three examples:\n\n1. [iOS Can Stop VPNs From Working as Expected\u2014and Expose Your Data](https://www.wired.com/story/apple-ios-vpn-data-leak/)\n2. [A VPN Leak in Windows 10](https://www.pcwrt.com/2023/05/a-vpn-leak-in-windows-10/)\n3. [Android leaks some traffic even when 'Always-on VPN' is enabled](https://www.bleepingcomputer.com/news/google/android-leaks-some-traffic-even-when-always-on-vpn-is-enabled/) (added by /u/w2ltp comments)\n\nThere may be more. If you know another instance, please add to this list.\n\nThere's no easy way to detect this type of leaks for the general public. It seems that a Wireshark session is warranted.\n\nTo prevent this kind of leak for BT clients, you can bind the program to the VPN interface. In general, running the VPN client on a dedicated router is a viable option.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Don't forget that if someone really wants to get you, you can never not use a VPN.  If you go to a website it can fingerprint your browser.  If you visit a page without a VPN as yourself a fingerprint is established that identifies your computer.  Then if you visit a page with a VPN and the same fingerprint shows up authorities can be reasonably sure that it is your computer (and by extension you) again.  I can't find an article about it but I've read where someone would visit darkweb sites to do illegal things.  Authorities were tracking the computer but couldn't find the person.  Then the person visited a website as themselves on the same browser and it got back to the authorities of the match.\n\n[Here's an article on fingerprinting.](https://www.techradar.com/features/browser-fingerprinting-explained)",
+            "score": 581,
+            "author": "Burninator05",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Most of the early stories of this ere university students eventually checking their university email from the same computer they used for technically illegal activities.",
+                    "score": 207,
+                    "author": "BigMikeInAustin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Reminds me of a story of some students who stole stuff from their university. They had wifi auto-connect enabled on their phones.",
+                            "score": 7,
+                            "author": "Ruben_NL"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 16,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So it does, but there's a catch. Keep in mind I'm also a layperson so I don't necessarily have technical jargon to back it up.\n\nEssentially, you have a bunch of data that is used when you access a website. Yes, your IP Address, but also other things like information about your web browser (for cookies) and computer hardware. This is for a ton of reasons, but the only thing that is actually hidden, as far as I'm aware, when you use a VPN is your actual IP Address.\n\nBasically what happens is your VPN routes your traffic through a bunch of different servers before sending it to the one that you want. It's all encrypted traffic so all your ISP can see is that you were connected and used x amount of data, but not what it was or what you ended up connecting to. (This could be a bad explanation, but that's my understanding)\n\nWhat the other comments are saying is that the additional data that's tracked was not changed in any way (you could use a virtual machine or emulator to try and get around this, but that's a conscious decision you have to make every time). When they did an illegal activity, it was traced back to something specific (probably not this in this case, but something like a MAC address that's unchanging and hardware specific). The user was on their VPN though so they couldn't be caught personally, except they didn't use their VPN when they connected somewhere else and that hardware showed up again on someone's register - triggering the response to arrest the individual.",
+                                    "score": 21,
+                                    "author": "AAA1374",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The common analogy for internet traffic is mail, like old school snail mail. It's not a perfect analogy, because there are some things that aren't really analogous, but it works well enough.\n\nIn ye olden days of the internet, it was like sending a postcard. You write your data on the card, and send it off to whoever needed to get it. The glaring issue here is of course that whoever intercepts the postcard can read whatever you wrote on it.  \nThat's where HTTPS comes in. Now you've sealed it in an envelope, and people can't read it any more. But they can still see that you're sending mail to Bob a lot, and to Mohammed, and to Hua.  \nWhich is where a VPN comes in. Now you're sending all of your postcards to the same address, and they then forward it to the actual recipient. Think of this like putting your postcard in an envelope, in another envelope. They open the first envelope, see that it needs to go to Raksha, so they stick it in another one, and send it to her.  \nThe issue with fingerprinting, is that you're still writing the postcard. And when you do, there's maybe some cat hair left on it, and some pollen from some plants, and some soot from a badly burning gas stove, and... Each of these pieces of data are meaningless on their own: lots of people have cats, lots of people live near those plants... but all together, they hone in onto your person.\n\nSo let's say that you're sending these postcards to order drugs, using a VPN. The coppers figure out that someone is buying drugs, but they don't know who. All of the orders come from the same address, your VPN, and they go \"Sorry, we don't know. We just look at where the post needs to go, not where it came from.\" The fuzz only knows that they have a cat, live near an ash tree, and should call someone to take a look at their gas stove.  \nBut then on some day, you ask your friend (and not-criminal) Tanaka for something, and either you forgot, or figured it was safe, but you don't use your VPN. The bobbies discover this, and now they have the same cat hair, pollen and soot linked to your address, and thus to your person.",
+                                            "score": 7,
+                                            "author": "Kidiri90",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is precisely why you should never engage in any sensitive or nefarious activity while using an Ethernet connection; the CAT cables leave behind far too much hair",
+                                                    "score": 4,
+                                                    "author": "BestOf_X_WorstOf_X_"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah I work as an Analyst for a site with millions of visitors and you can reasonably narrow down a specific person down to just a couple instances using their exact browser version and device details, we never really need to go further as we don't need that complete accuracy (we use it for spammers and fraud attempts). This is a \"not even trying\" approach. You look at behavior and it's obvious. \n\nWe don't track this but I imagine the speed and accuracy of mouse pointer movement would be something that can be tracked, and could be an amazing digital fingerprint.",
+                    "score": 53,
+                    "author": "Otherwise_Soil39",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;I imagine the speed and accuracy of mouse pointer movement would be something that can be tracked, and could be an amazing digital fingerprint\n\nThat's a large part of what Captcha is doing when you solve those 'not a bot' puzzles.  It's less about clicking the right photos and more *how* you click them.",
+                            "score": 28,
+                            "author": "Burstar1"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Another very important thing to remember about this is that, even though it may only be circumstantial evidence, and it *could possibly* have been someone else's browser or computer, or even if someone else could've been using your device - it doesn't matter to a jury or a judge. The state of police forensics is such that they can absolutely make something up out of whole cloth and they *will* get away with it. It happens *all the time*. All they have to do is put a lab coat on, and there isn't a jury in the western world that won't believe them.",
+                    "score": 122,
+                    "author": "SquidwardWoodward",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Also, circumstantial evidence doesn\u2019t mean bad evidence. The proverbial smoking gun is circumstantial evidence.",
+                            "score": 38,
+                            "author": "pecos_chill",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Direct evidence is the only evidence that should ever be used to convict someone.",
+                                    "score": -1,
+                                    "author": "SquidwardWoodward",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That\u2019s not how criminal law works at all, but okay. Eyewitness testimony and circumstantial evidence work together to create a comprehensive theory of a case. You cannot rely on just one or the other. People giving a lesser connotation to circumstantial evidence have no idea what they\u2019re talking about.\n\nA killer\u2019s fingerprint in the victim\u2019s blood is circumstantial evidence, so is someone possessing a gun that matches the ballistic pattern of the bullet.",
+                                            "score": 3,
+                                            "author": "pecos_chill",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I know what I'm talking about, and I'm talking about the way it *should* be, not the way it is. A bloody fingerprint is direct-*ish* evidence, and ballistics is junk science.",
+                                                    "score": -3,
+                                                    "author": "SquidwardWoodward",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "That proves you don\u2019t know what you\u2019re talking about. A bloody fingerprint is unequivocally circumstantial evidence. If you want to ignore it and reclassify it according to some personal ideology I guess you are free to do so, but you\u2019d be wrong.",
+                                                            "score": 2,
+                                                            "author": "pecos_chill",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Nah. It's not open to as much interpretation as, say, \"I saw a guy who looked like that guy\". It's more direct than it is circumstantial, but yeah, technically, according to Hoyle, according to the textbook definition, it's \"circumstantial\". But then, so is being apprehended while standing over a corpse holding a bloody knife, so \ud83e\udd37\u200d\u2642\ufe0f",
+                                                                    "score": -1,
+                                                                    "author": "SquidwardWoodward",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Yeah, according to the actual definition of it and the way it\u2019s used in criminal law. You are reacting to it as a concept based on your incorrect understanding of what circumstantial evidence is. \n\nHence, anyone who has any idea what they are talking about doesn\u2019t look down on circumstantial evidence.\n\nEDIT: Lol and he blocked me. I guess people can\u2019t handle being called out when they are talking out of their ass.",
+                                                                            "score": 2,
+                                                                            "author": "pecos_chill",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "I'm using the colloquial understanding of it, because most people don't understand that basically all evidence is circumstantial. I wasn't really expecting an arch pedant to fly in and correct me, which was my mistake.",
+                                                                                    "score": -1,
+                                                                                    "author": "SquidwardWoodward"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Called parallel investigation.",
+                            "score": 4,
+                            "author": "FuzzyCrocks",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ah, the end-run around the poisonous tree",
+                                    "score": 2,
+                                    "author": "SquidwardWoodward"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "the circumstantial evidence reference should be a ysk on its own, as in, \" you should know circumstantial evidence is enough to convict\" half the time if not more. id even go as far to say that all evidence is circumstantial.",
+                            "score": 2,
+                            "author": "doeslifesuck22",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "That\u2019s why I \u201cbrowse\u201d the web using curl from a series of VMs running different OSes and different hardware configurations that are destroyed and rebuilt  every hour \u2014 all through randomly select vpn endpoints.",
+                    "score": 79,
+                    "author": "ovirto",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Gonna need an AMA from you",
+                            "score": 18,
+                            "author": "quescondido",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "then ask him who he is. poof anonymity defeated",
+                                    "score": 19,
+                                    "author": "Destigeous"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If you want to do shady stuff on the dark web just Google tails os. It is far less complicated.",
+                                    "score": 5,
+                                    "author": "bokononpreist",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Oh it\u2019s not that I just don\u2019t want my ISP to know I\u2019m a swiftie",
+                                            "score": 2,
+                                            "author": "quescondido"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Good luck, I'm behind 7 proxies",
+                            "score": 18,
+                            "author": "PsychoticBananaSplit",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How does gaming work when you do that",
+                                    "score": 6,
+                                    "author": "Reble77",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 14,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I bet \ud83d\ude02",
+                                                    "score": 1,
+                                                    "author": "Reble77"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I understood some of those words.",
+                            "score": 15,
+                            "author": "WingedDefeat"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Who needs GUI amirite?",
+                            "score": 3,
+                            "author": "ToastyCrumb",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Unironically agree.",
+                                    "score": 2,
+                                    "author": "sje46"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Can you please describe some of the logistical details? I'm interested in this for myself. \n\nOr maybe just point me to a resource to get me going ?",
+                            "score": 1,
+                            "author": "Punsire"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So would a way around this be to use a VM? When I visited the Darkweb I used a VM. Didn't do anything illegal, just there for curiosity but I assume using a VM with scriptblocking with a VPN going through tor was enough.",
+                    "score": 10,
+                    "author": "CiggODoggo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As long as you didn't use the vm for anything else you should be fine.\n\nI'd argue a VPN with tor is overkill. In a lot of countries VPNs are legally required to keep logs so now they have a log that you used tor(although not what you did on it). Tor itself is a VPN if sorts.\n\nIf you're going to use a virtual machine I'd recommend TAILs, it's an operating system that only connects through TOR. No data can leak because it all goes through tor. TAILs also doesn't remember any information. You can also get it as a usb bootstick so it's running directly on the hardware.\n\nTor browser (don't use a plugin) alone should be fine as long as you don't fullscreen the window and don't immediately open anything you download. It's specifically designed to not leave a unique fingerprint and you shouldn't be using it to connect to your normal sites anyway. The website will know you're using tor but not who you are, loads of people use tor, there's no way to sort you out.\n\nPlus (highly dependent on jurisdiction) just using tor isn't illegal. So it really doesn't matter if people know you use it. Hell, your ISP probably already has a log you visited the tor website, and the black vans aren't here yet.\n\nTor has a document of best practices, I recommend checking them out.\n\nEdit: the tor browser doesn't recommend using a VPN with tor as you can misconfigure it and de-anonymise yourself [TOR FAQs](https://support.torproject.org/faq/)",
+                            "score": 41,
+                            "author": "other_usernames_gone",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Wait why should you avoid full screening? I didn't see anything about that on the FAQ but that seems like a really odd thing to have to avoid doing",
+                                    "score": 18,
+                                    "author": "SgtAsskick",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 38,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "OBFUSCATE EVERYTHING",
+                                                    "score": 2,
+                                                    "author": "radicalelation"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "\"Customizing\" your browser makes it more unique. Most people like their browser a certain way and change it so that it is that way every time. Leaving it at default makes your fingerprint less identifiable as far as your browser settings go.",
+                                            "score": 7,
+                                            "author": "Winstonthewinstonian"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "There's tails for going in the dark Web with as little traces as possible",
+                            "score": 2,
+                            "author": "Mccobsta"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Well yknow you can use idk ZAP (zed attack proxy) or something and intercept/alter your headers en route at least for browser fingerprinting. Really bad idea for user expetience though. Lots of sites detect your browser and load css rules based on that.",
+                    "score": 2,
+                    "author": "TheRedmanCometh"
+                },
+                {
+                    "level": 1,
+                    "comment": "That's part of how they caught the owner of [Silk Road](https://youtu.be/HBTYVVUBAGs)",
+                    "score": -13,
+                    "author": "toylenny",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 32,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So he was caught because he gave his full name. \n\n\nGenius, I always get scared when I watch real crime docs or read about them, the criminal always makes some ludicrously stupid mistake and it's still hard to find them and that's  with a lot of attention drawn to them",
+                                    "score": 7,
+                                    "author": "Otherwise_Soil39",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "[deleted]",
+                                            "score": 6,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I know about the hitman part, I thought that's what he was mainly imprisoned for. But never caught the detail on him literally giving away his name lol",
+                                                    "score": 3,
+                                                    "author": "Otherwise_Soil39"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Is it enough to delete all the saved stuff you can (saved passwords and usernames, cookies), download and run the extensions in your link, exit the browser, fire up the VPN, then restart the browser? Is there some deeper purging that needs to happen? I don't know how deep the rabbit hole goes, but switching operating systems isn't an option for me.",
+                    "score": 1,
+                    "author": "WingedDefeat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Is there some deeper purging that needs to happen? \n\nIn most cases, when stuff is \"deleted,\" its just marked \"this space is available to have stuff written to\" without the data actually being deleted. When the guys in black SUVs show up and confiscate your computer, that's how they find the deleted stuff.There are utilities out there that \"nuke\" your drives/data by purposefully writing data to the entire thing on multiple passes (literally writing all 1 bits, then all 0 bits, possibly repeated). \n\nLook into the TAILS operating system. You don't have to change systems at all, its run off of a flash drive, and it's designed to not hold any data that can identify you; it operates as if it's completely new every time you open it, and wipes your stuff when it's shut off. If you're extra paranoid, mount it on one of those micro USB sticks and be prepared to swallow it every time there's a knock on the door you aren't expecting. Or just smash it with a hammer, but that doesn't feel enough like espionage to be any fun.",
+                            "score": 7,
+                            "author": "Ornithologist_MD",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Or microwave like mr. Robot",
+                                    "score": 5,
+                                    "author": "Winstonthewinstonian"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Thank you. I will be looking into TAILS.",
+                                    "score": 2,
+                                    "author": "WingedDefeat"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'm not sure how this whole dark web thing works, but from your explanation here wouldn't the solution be to use a different browser when on your vpn?",
+                    "score": 1,
+                    "author": "y0y0y99"
+                },
+                {
+                    "level": 1,
+                    "comment": "Great article, thanks.\n\nDo I understand that a VPN does NOT protect from fingerprinting? Is there any good defense against fingerprinting?\n\nAlso, when I use a VPN and \"put myself\" in the Netherlands sites allow me to choose low/no cookies. How much does this help if I'm being fingerprinted?",
+                    "score": 1,
+                    "author": "01ARayOfSunlight",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Do I understand that a VPN does NOT protect from fingerprinting?\n\nCorrect.  A VPN does not protect against fingerprinting.  It only provides anonymity for your fingerprint as long as you never don't use a VPN.\n\n &gt; Is there any good defense against fingerprinting?\n\nOthers have mentioned using the operating system Tails.  I do not have any experience with that.  You can also use a computer (or VM) that you don't use for anything other than what you don't want tied back to you so that gets a different fingerprint than what you use for other stuff.\n\n&gt; How much does this help if I'm being fingerprinted?\n\nCookies are small files that are stored on your local machine that help websites track you across multiple sites.  Fingerprinting is the website querying your computer for a bunch of information about itself that is stored server side.  Disabling cookies likely helps a little but not very much.",
+                            "score": 2,
+                            "author": "Burninator05"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Finger print or just... The cookie session id they generated and asked you to resend over and over that you still do even with a VPN.\n\nAlso, commercial VPN tend to comply with authority in some extent and will log stuff about you. So you still have no real privacy most of the them (even if they tell you otherwise) in regard with authority or once that leak somehow",
+                    "score": 1,
+                    "author": "who_you_are"
+                },
+                {
+                    "level": 1,
+                    "comment": "Is there any plugin or browser addon to scramble fingerprinting? How about using a virtual machine?",
+                    "score": 1,
+                    "author": "switched_reluctance"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 439,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "First day in the numeric far-west?",
+                    "score": 94,
+                    "author": "Seth_Imperator"
+                },
+                {
+                    "level": 1,
+                    "comment": "There's always [Qubes OS](https://www.qubes-os.org/) and [Whonix](https://www.whonix.org/). They require willingness to dive into Linux and virtual machines, but will give you a reasonably secure system. \n\nPrivacy and security *should* be available to all by default, but it's still available for those willing to work for it.",
+                    "score": 6,
+                    "author": "gullwings",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I like Tails, and it's a very secure option. Personally though I wouldn't use it as my daily driver because it doesn't have all the functionality I need.",
+                                    "score": 1,
+                                    "author": "gullwings"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Back to BBS!",
+                    "score": 16,
+                    "author": "Renovatio_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Can always go back to gopher or use it's noddern sister Gemini",
+                            "score": 5,
+                            "author": "Mccobsta"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Always has been. \n\nTheres a reason why these VPNs are one of the largest users of datacenters. And its not for the network, its for all that yummy user data.",
+                    "score": 47,
+                    "author": "azdood85",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;  its for all that yummy user data.\n\nIf you're using HTTPS, just about all the VPN company or datacenter could get is what IP addresses you're accessing.",
+                            "score": 24,
+                            "author": "billdietrich1",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Current HTTPS sends the domain name in plaintext, which is a bit more specific than just ip, and can be quite a bit more revealing depending on how many sites the server hosts",
+                                    "score": 18,
+                                    "author": "adamsogm",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "True.",
+                                            "score": 2,
+                                            "author": "billdietrich1"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "HTTPS doesn't send anything in plaintext.\n\nDNS does (by default) which browsers still use to resolve domain names to IP addresses _before_ opening an HTTPS connection. But there are encrypted DNS variants.",
+                                            "score": 1,
+                                            "author": "Bill_D_Wall",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The plaintext domain is part of the [SNI](https://www.cloudflare.com/learning/ssl/what-is-sni/) used during the TLS handshake",
+                                                    "score": 1,
+                                                    "author": "adamsogm",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "SNI was a somewhat decent hack to get rid of the old limitation of one SSL site per IP, but I really think they should have instead done something where the SNI data is encrypted too, for example by having a public key in DNS, encrypting the hostname using the public key, and decrypting it on the server using the private key.\n\nIt's interesting to think about an alternate reality where IPv6 had rolled out a long time ago. In that case, I don't think SNI would have ever been invented, as the limitation that resulted in its invention (not having enough IPs to have one per SSL/TLS site) wouldn't have existed. NAT wouldn't exist either.",
+                                                            "score": 1,
+                                                            "author": "Daniel15"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That is so much data. Which bank you use, which shops you visit, howToDealWithSmallPenis.com ~~google.com/search/how%to%deal%with%small%penis%size~~, etc. It's so much information. From there advertisement companies can just reach out to the sites they know you visit thanks to vpn and know literally everything about you.",
+                                    "score": 8,
+                                    "author": "Sereczeq",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt;google.com/search/how%to%deal%with%small%penis%size\n\nOnly `google.com` in that URL is plain text when using HTTPS.",
+                                            "score": 11,
+                                            "author": "Kainotomiu",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thanks for correction",
+                                                    "score": 1,
+                                                    "author": "Sereczeq"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It's some data, yes.  Would you rather expose that data to the ISP (which already knows a LOT about you, such as your name and home address) or to the VPN (which doesn't know much about you if you were careful when signing up) ?  Clearly the VPN is the better choice.\n\n&gt; From there advertisement companies can just reach out to the sites they know you visit thanks to vpn and know literally everything about you.\n\nYou make it sound simple; it's not.  Each company will be protective of the (small part of your) data they have.  And I don't give \"everything\" to sites I visit.",
+                                            "score": 2,
+                                            "author": "billdietrich1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Also your DNS requests.",
+                                    "score": 1,
+                                    "author": "superspeck",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Which is the same as IP addresses (and domain names, which I forgot to mention) as in the HTTPS traffic.",
+                                            "score": 2,
+                                            "author": "billdietrich1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Convenient internet is not secure internet.",
+                    "score": 4,
+                    "author": "RodasAPC"
+                },
+                {
+                    "level": 1,
+                    "comment": "Hell, read the book *The Art of Invisibility*. It\u2019s a fact!",
+                    "score": 4,
+                    "author": "ncc-x"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": " (about [example 2](https://www.pcwrt.com/2023/05/a-vpn-leak-in-windows-10/))\n\nBoth tests were OpenVPN right? Test it using a proper modern alternative like [WireGuard](https://www.wireguard.com/) since it has a kill switch feature.\n\nEDIT: Also the second link leads to a blog post from a company that sells routers with VPN features and OP has the same username as the company.. Not saying it's wrong but they didn't test the best modern vpn protocol even though their own router supports it, additionally protonVPN supports Wireguard and yet they used OpenVPN..\n\nI'm just saying that I'm not convinced that WireGuard would cause the same and that's what most modern VPN services recommend these days.\n\nEDIT 2: Blog says that you use \"ProtonVPN version 2.3.2\" but that's the old version for windows 7/8, 32 bit etc, the latest version of ProtonVPN for windows 10 is 3.0.5: https://protonvpn.com/download-windows",
+            "score": 24,
+            "author": "Forcen",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Good catches. Defo seems like there are too many issues with the tests to take any notice.",
+                    "score": 10,
+                    "author": "Yamikoa"
+                },
+                {
+                    "level": 1,
+                    "comment": "Example 2 is our blog post. It's been updated with test results for Proton VPN version 3.0.5 running WireGuard. Test results are the same as with version 2.3.2 OpenVPN.",
+                    "score": 1,
+                    "author": "pcwrt",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nice, thanks for the update.",
+                            "score": 2,
+                            "author": "Forcen"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sounds like an OS-level problem.  I'm not sure I would want to give the VPN the power to terminate all existing connections.\n\nWould unplugging the Ethernet cable for a moment, or turning Wi-Fi off/on, make all connections drop ?",
+            "score": 16,
+            "author": "billdietrich1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes unplugging ethernet will fully disconnect you from the internet, however, giving your vpn permission to drop the connection for you is not a big deal. In fact, it is actually a security feature to help you in cases like your vpn server dropping your connection and forcing your computer to use your regular IP. All it takes is 1 singular packet of data to leave your system from your regular IP for your previous efforts to go to waste.",
+                    "score": 13,
+                    "author": "Rare_Register_4181",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Yes unplugging ethernet will fully disconnect you from the internet\n\nYeah, while the cable is unplugged. But if you plug it back in too soon, the connections will just resume because they haven't timed out yet and there's a lot of error-recovery in the internet protocols.",
+                            "score": 2,
+                            "author": "[deleted]"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;unplugging the Ethernet cable for a moment, or turning Wi-Fi off/on\n\nYes it would drop all connections, including the VPN connection. When you plugin the the cable again, VPN will reconnect. But so do other programs. There's possibility of leaking when these other programs get connected first.\n\nBTW, ProtonVPN client with \"permanent kill switch\" turned on avoids leaks of this kind (on Windows).",
+                    "score": 2,
+                    "author": "pcwrt"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Who watches the watchmen? I don\u2019t understand why people trust VPN\u2019s. Who knows what the VPN companies themselves might be doing with your data, or they could be compromised themselves and now a bad actor has full access to your traffic.",
+            "score": 182,
+            "author": "rmwpnb",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; I don\u2019t understand why people trust VPN\u2019s.\n\nDo everything you can to remove any need to trust the VPN provider:\n\n- use HTTPS.\n\n- give fake info when signing up for VPN; all they care is that your payment works.\n\n- use your OS's generic VPN client (usually OpenVPN), or a protocol project's generic VPN client (usually Wireguard, strongSwan), instead of VPN company's VPN client.\n\n- don't install any root certificate from the VPN into your browser's cert store.\n\nIf you do those things, all the VPN knows is \"someone at IP address N is accessing domains A, B, C\".  So even the most malicious VPN in the world can't do much damage to you by selling or using that data.\n\nA different question: why use a VPN ?  And the answer partly is because you want to hide data from your ISP, a company which knows FAR too much about you (starting with your home postal address and real name) and can do much damage to you by selling your data.  Using a VPN reduces the damage your ISP could do to you.  [Also hides your home IP address from destination web sites.]\n\nBottom line: don't trust your ISP, your VPN, your banks, etc.  Compartmentalize, encrypt, monitor them, test them.  You can use them without trusting them.",
+                    "score": 31,
+                    "author": "billdietrich1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If you're in this situation, why even use the internet? I think it's better to go live in a cabin in the woods.",
+                            "score": -2,
+                            "author": "notluciferforreal",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's pretty easy to use blockers and a VPN and enjoy the benefits of the internet without giving away all your info.\n\nAnd most of the things I mentioned are one-time efforts, they just work in the background after a small amount of initial work.",
+                                    "score": 5,
+                                    "author": "billdietrich1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "To be fair, sounds like a lot of work to the regular person",
+                                            "score": -1,
+                                            "author": "Money_launder",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It's not, really.  Once, you:\n\n- install uBlock Origin extension in the browser.\n\n- install VPN and set it to run always.\n\n- in each of your accounts, set maximum privacy settings, and fill in as little profile info as possible.\n\n- enable 2FA on important accounts (for security, not privacy).\n\nAfter that, what matters is your behavior.  Don't post private info, don't download sketchy stuff, keep your software updated, etc.",
+                                                    "score": 2,
+                                                    "author": "billdietrich1",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Well thank you for the help. I will look into that",
+                                                            "score": 0,
+                                                            "author": "Money_launder"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "When you say the browser, does that work on your phone as well or just your desktop?  Obviously most people use mobile so I assume you mean mobile but I just want to make sure",
+                                                            "score": 0,
+                                                            "author": "Money_launder",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I'm not sure which mobile browsers support which ad-blockers, but Firefox on mobile does support uBlock Origin.",
+                                                                    "score": 1,
+                                                                    "author": "billdietrich1",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Thank you",
+                                                                            "score": 1,
+                                                                            "author": "Money_launder"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes but they won\u2019t throttle you or disconnect you for downloading media.",
+                    "score": 124,
+                    "author": "aloofone",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nordvpn fucking decimates my download speed",
+                            "score": 16,
+                            "author": "checkmypants",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not necessarily Nord's fault, this is a side effect of any VPN you might choose. Your traffic needs to travel to the VPN server, get encrypted and sent to you through a secure tunnel, and then get decrypted on your end. You're gonna lose a lot of speed in exchange for a bit more security.",
+                                    "score": 45,
+                                    "author": "brokenbentou",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It\u2019s not the VPN\u2019s fault, it\u2019s the transit path to the provider and back to you that roughly depends on what speeds you get. It almost always goes through a provider\u2019s transit, which they pay for, unlike peering. So they can filter or throttle traffic depending upon what it is. VPN can be easily detected. \n\nThat and what protocol you use plays a huge role. Wireguard for example is very fast. OpenVPN on the other hand is slow and uses a ton of power to keep things flowing.\n\nEDIT: added more info about transit traffic throttling.",
+                                            "score": 9,
+                                            "author": "agneev"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; get encrypted and sent to you through a secure tunnel, and then get decrypted on your end. \n\nThis does not add any significant latency. Your traffic is already being encrypted by commonly used transfer protocols, and with current hardware it more or less happens instantenously. What actually adds latency is the physical location of the whole route (ex.: instead of your signal going from your house in Melbourne to a CDN in a data center in Sydney, the signal now goes from Melbourne to Stuttgart to a CDN in Amsterdam). That can add significant delay. At the same time, long routes have a significantly larger chance of being not 'wide' enough to accomodate your full advertised speed due to it being used by more people or being specifically throttled to accomodate more clients at once. A shorter route is much more likely to have much higher download speeds (because money) and lower latency (because physics).",
+                                            "score": 2,
+                                            "author": "CaspianRoach"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The same NordVPN that was hacked a few years back? Why would you use then?",
+                                    "score": 5,
+                                    "author": "skoomaki",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "R/vpn still has it at top, followed by surfsark, mullvad and protonvpn.",
+                                            "score": 1,
+                                            "author": "notluciferforreal"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Always use Mullvad, it\u2019s cheaper and anonymoys",
+                                    "score": 13,
+                                    "author": "Winterfukk",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Helps with it just being a Id number instead of login details",
+                                            "score": 7,
+                                            "author": "Mccobsta",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "And the prepaid aspect it marvelous",
+                                                    "score": 4,
+                                                    "author": "Winterfukk",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Oh it's great they have as littel data as possible so if they get hacked or are forced to hand it over they mostly have fuck all",
+                                                            "score": 5,
+                                                            "author": "Mccobsta",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "[deleted]",
+                                                                    "score": -6,
+                                                                    "author": "[deleted]",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Sure let's go with that I guess\n\nTry this vpn it's way better than nord [Ultraprivatevpn.ru](https://www.youtube.com/watch?v=dQw4w9WgXcQ)",
+                                                                            "score": 3,
+                                                                            "author": "Mccobsta",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Sure, let's use a russian vpn. That's waaaay more secure.",
+                                                                                    "score": 4,
+                                                                                    "author": "notluciferforreal",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It's not cheaper than nordvpn.",
+                                            "score": 0,
+                                            "author": "notluciferforreal"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Spoiler alert ,every vpn does ghat",
+                                    "score": 2,
+                                    "author": "Willar71"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "There are two things with VPNs. One, you go with one who has been proven or that you trust. As for compromise, you just trust their security, but if an entity had the capability to break into multiple servers of a given VPN provider, there are more lucrative targets than user data. If they had that power, and were targeting a specific user, there are probably better ways to go about it",
+                    "score": 37,
+                    "author": "Prowler1000",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's the same principle for home security systems.  Sure, there could be bad actors.  An employee could steal your codes or disable it to steal your stuff.  Unfortunately, that leaves us with trust.  Gotta put your trust in something and hope you were right.",
+                            "score": 16,
+                            "author": "riversofgore"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; you go with one who has been proven or that you trust.\n\nTrying to guess \"trustworthiness\" or \"not logging\" is a losing game.  You never can be sure, about any product or service.  Even an audit or court case just establishes one data point.\n\nSo, instead DON'T trust: compartmentalize, encrypt (outside the service), use defense in depth, test, verify, don't use VPN's custom client, don't use a root cert from them, don't post private stuff, maybe don't do illegal stuff.  And give fake/anon info where possible: fake name, throwaway or unique email address, pay with gift card or virtual credit card or crypto or cash.\n\nYou can use a VPN, ISP, bank, etc without having to trust them.",
+                            "score": 5,
+                            "author": "billdietrich1"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Ahem, when I use a VPN to download *Linux ISOs*, I know I am not leaking data because my network firewall is configured to only allow the specific traffic for the VPN termination from my Linux ISO downloading box and block everything else.\n\nConsumer VPNs get touted as this magical silver bullet, but they're not. They're just handy for bypassing certain geo based content limitations and *cough* allowing you to download your Linux isos without any pesky issues associated with it.",
+                    "score": 44,
+                    "author": "Internet-of-cruft",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "VPNs are useful for general public privacy violations/restrictions/etc...mass data collection, geolocation, etc.  For general people.\n\nThey are not so useful if you're being targeted by hackers, other malicious people, or federal authorities.  Are you the CTO of a major company?  An american diplomat visiting another country?  Your security will need to be much higher, with the assumption that you, specifically, are being targeted.  People are actively trying to crack your passwords now, using details about your life to aid them.  \n\nI wish people stopped conflating the two kinds of security.  If you're not a \"whale\" (in the phishing sense) or a criminal you don't necessarily need 8-factor security and two guys in a bunker turning two keys at the same time in order to log into facebook (lol).  Using a vpn, password manager, adblock, and other common sense things should suffice for most cases.  And, personally, I highly recommend Linux and firefox as well.",
+                            "score": 1,
+                            "author": "sje46"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;\tWho watches the watchmen? I don\u2019t understand why people trust VPN\u2019s. \n\nBecause they don\u2019t rat you out when you \u201cdownload\u201d copyrighted material that\u2019s why.",
+                    "score": 4,
+                    "author": "zold5"
+                },
+                {
+                    "level": 1,
+                    "comment": "Most web traffic is encrypted anyways.",
+                    "score": 1,
+                    "author": "ImBrokeNowBoi",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "You're right, HTTPS is everywhere now. I think this is more about privacy than security",
+                            "score": 1,
+                            "author": "0IMGLISSININ"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No, I don't think so",
+                            "score": -3,
+                            "author": "Money_launder",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ever heard of HTTPS and TLS?",
+                                    "score": 2,
+                                    "author": "ImBrokeNowBoi",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes, I have on desktop.  Most people browse the internet on mobile.  So help me out. You can download me how you want. I don't give a shit I'm just a regular person trying to get a little bit of help\n\n**Downvote",
+                                            "score": 0,
+                                            "author": "Money_launder",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Your phone uses HTTPS as well. If you can access Google, YouTube, Reddit, banking apps, etc. on your phone, you're already using HTTPS.",
+                                                    "score": 2,
+                                                    "author": "ImBrokeNowBoi",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Well so what's the best way I can stay anonymous",
+                                                            "score": 1,
+                                                            "author": "Money_launder"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Their success as a company relies on them holding their word. They could be lying, but they have. Financial incentive not to, or at least to lie very very well. It\u2019s reasonable to \u201ctrust\u201d them in that sense.",
+                    "score": 1,
+                    "author": "Chthulu_"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "As long as the VPN stops me from getting angry letters from my ISP that's all I care about.",
+            "score": 10,
+            "author": "Dirty_Dragons"
+        },
+        {
+            "level": 0,
+            "comment": "YSK that VPNs help but if someone really wants to find you good opsec won't save you",
+            "score": 4,
+            "author": "RAZRr1275",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thought the point of a VPN was to hide your traffic from your isp. Not other users.",
+                    "score": 3,
+                    "author": "Terakahn",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Unless you're the CIA or FBI, other users aren't going to see your traffic",
+                            "score": 6,
+                            "author": "LocalYeetery",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I mean this is what I meant -- if you're using a VPN for anything more than bypassing location protected content that the CIA or FBI might take interest in you might want to use something more than a VPN because they can pretty easily get around you having one if they have a reason to want to know who you are.",
+                                    "score": 1,
+                                    "author": "RAZRr1275"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Point of a VPN is to be able to connect 2 networks  together without exposing them to the internet.  I can use my laptop anywhere in the world and e connect to my file server at home\u2026",
+                            "score": 3,
+                            "author": "ilikewines"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Get with the times and use Wireguard \ud83d\ude44",
+            "score": 4,
+            "author": "TheOriginalSamBell"
+        },
+        {
+            "level": 0,
+            "comment": "I can't keep up with this shit. I'm smart enough to know it's bad, but not to understand how to fix it.",
+            "score": 5,
+            "author": "Mr_Gilmore_Jr",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For illegal activities, like selling drugs and shit, it's bad, you can be tracked. But for normal users, just use common sense and you'll be just fine.",
+                    "score": 4,
+                    "author": "notluciferforreal"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I once accidentally found a Hackerman IRL. When you have to enter email/password (!) and then select \"I am not a robot\" and play the picture games, you can skip all that nonsense buy just going back to where I left the (!) And hitting \"enter.\"",
+            "score": 22,
+            "author": "Vyxen17",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Is that a pasta?",
+                    "score": 0,
+                    "author": "sharm00t",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A what?",
+                            "score": 2,
+                            "author": "Vyxen17",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "A pasta, you know, like fettuccine",
+                                    "score": 1,
+                                    "author": "ohBloom",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I prefer bowties",
+                                            "score": 1,
+                                            "author": "Vyxen17"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Y'all still believe in privacy?",
+            "score": 11,
+            "author": "Imma_Lick_Your_Ass2",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[Poll](https://reddit.com/r/polls/comments/zeb2jb/do_you_typically_use_a_vpn_when_engaging_in/) I ran a while back was enough to talk me out of it.",
+                    "score": 4,
+                    "author": "favela4life",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Your loss. Have fun paying inflated prices to get things on Day 1 instead of being able to get them immediately while waiting for them to drop to a reasonable price in a sale later. Have fun not being able to test games before you buy them. VPNs are super easy to use and super cheap. Totally worth it.",
+                            "score": 1,
+                            "author": "[deleted]"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Android also [leaks](https://www.bleepingcomputer.com/news/google/android-leaks-some-traffic-even-when-always-on-vpn-is-enabled/)",
+            "score": 3,
+            "author": "w2ltp",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Added your link to the list of leak examples.",
+                    "score": 1,
+                    "author": "pcwrt"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Valuable information about VPNs",
+            "score": 2,
+            "author": "tempo90909"
+        },
+        {
+            "level": 0,
+            "comment": "Ez, add this script \n\nIfdown eth0\nIfup eth0",
+            "score": 2,
+            "author": "NotSteveJobZ"
+        },
+        {
+            "level": 0,
+            "comment": "what about VPN and TOR together?",
+            "score": 2,
+            "author": "j0hn0wnz"
+        },
+        {
+            "level": 0,
+            "comment": "honestly, I always assume it's impossible for the average user to really be anonymous on a VPN. like most people will forget to even turn off GPS, close out of active windows where they're signed into accounts, or turn off sync which automatically and periodically updates all your accounts\n\nand beyond that, I just assume google/android/your wireless provider are always setting little packets of data for something\n\neven something like spotify, which loves to randomly open itself up in your notifications bar, even if you disabled all its permissions",
+            "score": 2,
+            "author": "_welcome",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "The concern here is not about anonymity. There are situations where people want to use a VPN to hide communications from the \"man in the middle\" or to hide their ISP IP address, which a VPN promises to deliver. A leak breaks the promise. One may feel \"protected\" but in reality they are not.",
+                    "score": 1,
+                    "author": "pcwrt"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I guess your typical redditor is also doing insane illegal shit and needs to route their browser history through 25 different countries.",
+            "score": 6,
+            "author": "Terakahn",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is something I've been meaning to ask as well. I don't live in the West, but I do live in a country where computer literacy is arguably pretty ok. I get the point of internet hygiene being good. Things like adblocker, deGoogling, using a VPN, rerouting your DNS, password safety, using email aliases, tracker blockers, not using obvious 'social media' apps. These things you can set up in 10 minutes, or can pretty much live without in terms of the apps, and they're pretty good to do it general.\n\nBut setting up maximum security pi-holes, using absolutely nothing but FOSS, and all the stuff about completely erasing your presence from the internet (an umbrella term, but you get what I mean). Why? Do Western governments want to completely screw each and every person from every background? Is piracy, for instance, taken so seriously that you need to completely erase your online presence to do such things? Is a good chunk of redditors doing things that require absolute anonymity?\n\nI would get it if it's a niche subculture to be completely anonymous, but the privacy subreddit and posts like this get so popular here that I start to question whether I'm missing something here that is very important to a person's safety.",
+                    "score": 7,
+                    "author": "Immediate_Tear_8000",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think people just learn about it and think it makes them badass",
+                            "score": 5,
+                            "author": "Terakahn"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That's not a leak, that is a feature.\n\nSomewhat seriously, that's the point of sessions and why you always start a VPN 1st.\n\nYou can even find similar behavior on non TCP connections sometimes when the existing route is continued to be used until the process is stopped and started again.",
+            "score": 0,
+            "author": "QSquared"
+        },
+        {
+            "level": 0,
+            "comment": "Malwarebytes screws up VPNs as well",
+            "score": -2,
+            "author": "n3m37h",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How so?",
+                    "score": 7,
+                    "author": "gentlegermicide",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Never had an email from my ISP till I installed that shit",
+                            "score": -25,
+                            "author": "n3m37h",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Did you not configure your client to use the vpn instead?",
+                                    "score": 1,
+                                    "author": "Mccobsta",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "PIA using tunneling",
+                                            "score": 1,
+                                            "author": "n3m37h",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "You may need to tell your client to use the vpn adapter many just use the default",
+                                                    "score": 2,
+                                                    "author": "Mccobsta",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It's properly setup. An hour after I installed Malwarebytes I had an email from my ISP.  Been using the same setup for over 2 years.",
+                                                            "score": 1,
+                                                            "author": "n3m37h",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Do you get an email for using a VPN?",
+                                                                    "score": 1,
+                                                                    "author": "oubris",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "r/piracy",
+                                                                            "score": 1,
+                                                                            "author": "n3m37h"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -10,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Literally everything you said is bullshit.  All of it.  Every.  Single.  Thing.",
+                    "score": 3,
+                    "author": "jakk86",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Lol all corporate devices use VPNs - that guy has no idea what he\u2019s talking about",
+                            "score": 2,
+                            "author": "trentyz"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Isps have a thing called netflow data they know where your connected to if your vpns out ip is what you're connected to they can find out what your doing  if your vpn has multi hop use it",
+            "score": -6,
+            "author": "Mccobsta"
+        },
+        {
+            "level": 0,
+            "comment": "es",
+            "score": 1,
+            "author": "EpicChef"
+        },
+        {
+            "level": 0,
+            "comment": "Well thats a bummer.",
+            "score": 1,
+            "author": "middlemangv"
+        },
+        {
+            "level": 0,
+            "comment": "Couldn't you avoid any issues with BT clients by using a seedbox instead?",
+            "score": 1,
+            "author": "BeefSupremeTA",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Or you can run a Docker container with Transmission that only runs when the VPN is connected.",
+                    "score": 2,
+                    "author": "RunicSwordIIDX"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "That's why you analyze with Wireshark when you try a new vpn.",
+            "score": 1,
+            "author": "Electronic_Rule5945"
+        },
+        {
+            "level": 0,
+            "comment": "Metadata. \n\nThe only way to avoid being fingerprinted afaik is to use a dedicated machine with something like Tails installed on it, and never even boot into the operating system of that device (or not have an os installed on it at all, rather boot from a usb stick or external SSD).\n\nYou have to be seriously paranoid or up to no good if you are doing that though.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Also, circumstantial evidence doesn\u2019t mean bad evidence. The proverbial smoking gun is circumstantial evidence.",
+            "score": 1,
+            "author": "Sad_Bank6312"
+        },
+        {
+            "level": 0,
+            "comment": "A few hundred racists show up in Washington.  You could get a few hundred of anything to a national rally.  Theremin players, earthworm collectors, Branch Davidians.... It is disgusting how much oxygen they are getting.  The hysterical coverage virtually guarantees that next time there will be thousands.",
+            "score": 1,
+            "author": "businesslaw1000"
+        },
+        {
+            "level": 0,
+            "comment": "the circumstantial evidence reference should be a ysk on its own, as in, \" you should know circumstantial evidence is enough to convict\" half the time if not more. id even go as far to say that all evidence is circumstantial.",
+            "score": 1,
+            "author": "Sleepy_Guidance"
+        },
+        {
+            "level": 0,
+            "comment": "So would a way around this be to use a VM? When I visited the Darkweb I used a VM. Didn't do anything illegal, just there for curiosity but I assume using a VM with scriptblocking with a VPN going through tor was enough.",
+            "score": 1,
+            "author": "Just-Honeydew4657"
+        },
+        {
+            "level": 0,
+            "comment": "That\u2019s why I \u201cbrowse\u201d the web using curl from a series of VMs running different OSes and different hardware configurations that are destroyed and rebuilt every hour \u2014 all through randomly select vpn endpoints.",
+            "score": 1,
+            "author": "Smooth_Goose2832"
+        },
+        {
+            "level": 0,
+            "comment": "Yeah there are definite loopholes in every technology.. Be it VPN!!! You are assigned with a different network ID &amp; the existing ID corresponds with the new ID to give access to private entities.. So in between all the layers lay bare.. This gives access to the hackers &amp; third parties \ud83e\udd37\u200d\u2642\ufe0f\u2763\ufe0f\ud83d\ude10",
+            "score": -8,
+            "author": "Grouchy_Addendum_988"
+        },
+        {
+            "level": 0,
+            "comment": "If you are this paranoid about security, you either got Schizophrenia or is doing something illegal",
+            "score": -5,
+            "author": "oubris"
+        },
+        {
+            "level": 0,
+            "comment": "Is there an open source solution to this?",
+            "score": -3,
+            "author": "TwistedOperator",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Quit all apps, turn on VPN, launch all apps again.",
+                    "score": 9,
+                    "author": "billdietrich1",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "In all honesty, does this work or you just being a jackass?",
+                            "score": 0,
+                            "author": "Money_launder",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It works.  It's inconvenient.",
+                                    "score": 1,
+                                    "author": "billdietrich1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

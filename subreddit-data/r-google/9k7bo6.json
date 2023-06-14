@@ -1,0 +1,1285 @@
+{
+    "id": "9k7bo6",
+    "score": 3857,
+    "title": "Almost enough RAM for Chrome to run smoothly",
+    "author": "tarabt",
+    "date": 1538322370.0,
+    "url": "https://www.reddit.com/r/google/comments/9k7bo6",
+    "media_urls": [
+        "https://i.redd.it/uufangjncep11.jpg"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "What exactly is that used for? ",
+            "score": 192,
+            "author": "howmanymeninthenorth",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Skynet...",
+                    "score": 166,
+                    "author": "anbeasley",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hopefully skynet won't be intelligent enough to count the number of sticks of RAM, and divide to discover that these would have to be 21.3GB sticks of RAM to make an even TB... Otherwise the rise of the machines might be triggered by calling OP out on their BS.",
+                            "score": 21,
+                            "author": "tepkel",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "From the original article about this:\n\"What you\u2019re seeing is a server with 16 memory banks, each one outfitted with 3 memory modules: a 1 x 32GB stick and 2 x 16GB sticks. That means 64GB per bank, which comes out to 16 x 64GB = 1,024GB of total RAM. This image is actually a few years old, and servers with 1TB of RAM are increasingly more commonplace these days.\"\n\nSource: https://www.makeuseof.com/tag/things-do-with-1tb-ram/",
+                                    "score": 22,
+                                    "author": "kylemcisaac",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "That's a TiB for you",
+                                            "score": 2,
+                                            "author": "mrfokker"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I can almost guarantee this is a [memcached](https://memcached.org/) server. It's sort of a webserver but you cache parts of the JIT compiled code here so you can serve up pages REALLY fast.\n\nThis is how big websites (think millions of hits an hour) can serve up customized pages so quickly.",
+                    "score": 156,
+                    "author": "punisher1005",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 52,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "256GB is a normal amount of ram per CPU? boy i'm behinds the times",
+                                    "score": 43,
+                                    "author": "Digitman801",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They said per *core*. So divide that 256 by, 4 or 8 cores per CPU (since I have no idea which CPUs those are), and you get something closer to the usual realm of reality for servers.",
+                                            "score": 24,
+                                            "author": "SuperNanoCat",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "22 cores, possibly, per chip for servers. ",
+                                                    "score": 14,
+                                                    "author": "nscale",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Holy moly",
+                                                            "score": 6,
+                                                            "author": "SuperNanoCat",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I\u2019ve bought 88 core (4x22) 1.5 TB machines before. VM servers. 150-200 VMs per server. ",
+                                                                    "score": 11,
+                                                                    "author": "nscale",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "What kind of storage were you using. Would have to be an insane big bucks SAN I'd presume.",
+                                                                            "score": 7,
+                                                                            "author": "punisher1005",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "VMs dedupe really well in most cases, and for a lot of application servers you get a lot of cold blocks, so a pile of spinning platter with an SSD cache layer works well. ",
+                                                                                    "score": 5,
+                                                                                    "author": "nomecks",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "All flash SAN over. 40GE iSCSI. \n\nWhile the dollars are big, it\u2019s cheaper per VM to go big on both the server and and storage. ",
+                                                                                    "score": 3,
+                                                                                    "author": "nscale",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Still 32 GB for a 4 core in a desktop environment is a lot, i'm not really a server guy i was just surprising.",
+                                                    "score": 1,
+                                                    "author": "Digitman801",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I use 32 GB Just opening up my projects.",
+                                                            "score": 1,
+                                                            "author": "flamingspew"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "It\u2019s also a server board so it\u2019s going to be way more padded than a normal PC. It has its downsides in comparison. ",
+                                            "score": 1,
+                                            "author": "[deleted]"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Actually the new Gen10 HPE DL360 can go up to 768GB per CPU. You can get 1.5TB or RAM from just 2 CPU's with 12 slots per CPU.",
+                                            "score": 1,
+                                            "author": "snapilica2003"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It could also be a database\n\nHolding databases in memory is awesome especially if they are read heavy",
+                            "score": 8,
+                            "author": "mrcrassic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've seen this exactly one time where I wrote a script to mount a ram drive then replicate a database to it. Worked amazing but felt like shoestrings and wire. Is there a purely RAM based TSQL database now?\n\nI've seen those (insanely expensive) RAM cards too but never bought one before. The iOPS are always insane but so is the price. ",
+                                    "score": 1,
+                                    "author": "punisher1005",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I\u2019ve heard things about HANA but I haven\u2019t used it so can\u2019t confirm. But I know that MSSQLSERVER has had support for in-memory databases since forever and I assume that Postgres and MySQL/MariaDB have similar options ",
+                                            "score": 1,
+                                            "author": "mrcrassic",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Can you link me to MSSQL docs I've never heard of this? Thanks ahead of time. ",
+                                                    "score": 1,
+                                                    "author": "punisher1005"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "If you are relying on reads that much you might want to cache data in memcahed or redis. Which is often run in RAM i believe.\n\nHave your point of truth somewhere, but use a in memory database as a fast cache.",
+                                            "score": 1,
+                                            "author": "Singularity42"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "The last couple of versions of MS SQL Server support for persisted, in-memory tables. They have a few minor limitations but otherwise it seems to be quite painless. Nothing stopping someone to have all the tables in a DB be in-memory.\n\n[https://docs.microsoft.com/en-us/sql/relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization?view=sql-server-2017](https://docs.microsoft.com/en-us/sql/relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization?view=sql-server-2017)",
+                                            "score": 1,
+                                            "author": "ours"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Yep.",
+                                    "score": 1,
+                                    "author": "nettdata"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not for caching code (or jit compiled code for that matter). The code that runs most websites is lucky to be more than 10 or 20 MB big.\n\nMemcached is used for storing the most recently used or most frequently used objects in ram - using reddit as an example, they might store authentication tokens, images, comments, links, post relationships, etc.",
+                            "score": 14,
+                            "author": "antiduh",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I believe reddit use redis, but yes you are exactly right.",
+                                    "score": 2,
+                                    "author": "Singularity42"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Or a medium-sized SQL server?\n\nOr a caching server?\n\nOr a virtualization box?\n\nOr a NAS with a DAS?\n\n1TB of RAM isn't exactly an extreme amount for plenty of use cases.",
+                            "score": 3,
+                            "author": "appropriateinside",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Could be VM host with like a SAN backend. But most of those use cases I've seen turn out to be disk I/O bound and not memory and this would be a massive overkill for those cases. ",
+                                    "score": 1,
+                                    "author": "punisher1005",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Shit man. I sell 2 socket boxes with 512gb of ram all day as VM hosts. 1tb of ram isnt overkill at all these days. ",
+                                            "score": 1,
+                                            "author": "LessWorseMoreBad"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; memcached\n\nI thought you use it for the largest DDoS ever? ^/s",
+                            "score": 8,
+                            "author": "MusicPi"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thank you",
+                            "score": 2,
+                            "author": "repopulate_mars"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Most likely VM machine of some sort I would hazard to guess. ",
+                            "score": 1,
+                            "author": "titanicx"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "TWO windows of Chrome",
+                    "score": 45,
+                    "author": "RisingFire",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Woah!",
+                            "score": 7,
+                            "author": "ententionter"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Whoa there. He said a terabyte not a petabyte. ",
+                            "score": 6,
+                            "author": "jstock104",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "As funny as this is, opening more tabs or windows of Chrome doesn't make an appreciable difference (until you get up into a *lot* of tabs...). Just wanted to point that out.",
+                                    "score": 2,
+                                    "author": "nolan1971",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "r/woosh ",
+                                            "score": 1,
+                                            "author": "SilenceWillFa11",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not at all",
+                                                    "score": 2,
+                                                    "author": "nolan1971"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Database servers. For something like SAP HANA it would use a cluster of these.\n\n",
+                    "score": 5,
+                    "author": "NexusOrBust",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Cache based Databases?",
+                    "score": 7,
+                    "author": "aldileon",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Never used this much memory, but the response time between in memory store and even an SSD is phenomenal.  To the point where I have had to verify it was really doing what I wanted it to because results came back so fast.",
+                            "score": 6,
+                            "author": "ExBritNStuff",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Opening 4 seperate chromes",
+                    "score": 2,
+                    "author": "nneems"
+                },
+                {
+                    "level": 1,
+                    "comment": "City skylines",
+                    "score": 1,
+                    "author": "myalwaysthrowaway"
+                },
+                {
+                    "level": 1,
+                    "comment": "Chrome",
+                    "score": 1,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "Running chrome smoothly",
+                    "score": 1,
+                    "author": "Trevdog18"
+                },
+                {
+                    "level": 1,
+                    "comment": "Chrome browser",
+                    "score": 1,
+                    "author": "itachixsasuke"
+                },
+                {
+                    "level": 1,
+                    "comment": "For battlefield 5",
+                    "score": 1,
+                    "author": "kKomraDd"
+                },
+                {
+                    "level": 1,
+                    "comment": "Science",
+                    "score": 1,
+                    "author": "P000kie"
+                },
+                {
+                    "level": 1,
+                    "comment": "Games and stuff",
+                    "score": 1,
+                    "author": "BitMoon-"
+                },
+                {
+                    "level": 1,
+                    "comment": "TO MAKE THE ULTIMATE HACKINTOSH\n\n&amp;#x200B;",
+                    "score": 1,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "I would say that is probably used for a VM farm. ",
+                    "score": 1,
+                    "author": "LessWorseMoreBad"
+                },
+                {
+                    "level": 1,
+                    "comment": "Computing.\n\nPersonal computers only account for part of the computing needs of the world.",
+                    "score": 1,
+                    "author": "fj333"
+                },
+                {
+                    "level": 1,
+                    "comment": "Take over the North Korean industrial complex ",
+                    "score": 1,
+                    "author": "darkbro20"
+                },
+                {
+                    "level": 1,
+                    "comment": "Servers - PHP is Ram hungry ",
+                    "score": 1,
+                    "author": "yelow13"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "We asked if it could be done, we didn\u2019t say it should be done",
+            "score": 62,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Unused RAM is wasted RAM.",
+            "score": 342,
+            "author": "qtx",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "-Google Chrome",
+                    "score": 301,
+                    "author": "Megasus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "-Any good computer....",
+                            "score": 13,
+                            "author": "titanicx",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Your computer fills ram with what you find useful. Chrome fills ram with what it finds useful.",
+                                    "score": 7,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Chrome fills ram ~~with what it finds useful.~~",
+                                            "score": 1,
+                                            "author": "Yaglis"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "A good computer would value limiting \"Misappropriated RAM\" before \"wasted RAM\". AND I'm not saying that Chrome takes RAM the computer needs for other things. I'm aware it will be less memory intensive and make itself a low priority if you open something else. But making sure to use as much RAM as possible isn't and shouldn't be the prime directive",
+                                    "score": 0,
+                                    "author": "Megasus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Why? If the Ram is available, let it use it. ",
+                                            "score": 0,
+                                            "author": "titanicx"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "True, but this may actually use the RAM. It's a server, it may be running a massive amount of VMs or some serious DB or something.",
+                    "score": 92,
+                    "author": "dbeta",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Could it be an in memory DB?",
+                            "score": 27,
+                            "author": "stuckInForLoop",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I don't see why not",
+                                    "score": 7,
+                                    "author": "kn33",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You node?",
+                                            "score": 3,
+                                            "author": "ucefkh",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 2,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "They only phping I guess",
+                                                            "score": 1,
+                                                            "author": "ucefkh"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 5,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "*tipping intensifies*",
+                                    "score": 1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Any other applications running, besides Chrome, are a waste, leave them no resources.\n\n\u2014 Original quote from Google's advertising and metric-creating team, probably",
+                    "score": 7,
+                    "author": "Who_GNU"
+                },
+                {
+                    "level": 1,
+                    "comment": "You can always download more",
+                    "score": 12,
+                    "author": "DataKnights"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 17,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Chrome also has blue, yellow and green in the logo though",
+                            "score": 13,
+                            "author": "saloalv"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not if you\u2019re power constrained (mobile mostly).  Ram regions that are unused don\u2019t need to be refreshed and that saves power.",
+                    "score": 3,
+                    "author": "inio"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;Unused RAM is wasted RAM.\n\nFuck this brain dead claim. Whoever is teaching it needs to be drawn and quartered.\n\nNo application has *ANY* insight into the ***FUTURE*** needs of other applications, and preemptively consuming all the available RAM is detrimental to overall system performance. \n\nVirtual memory (A.K.A. swap) is ***SLOW***, even if it's on an SSD.\n\nStop writing applications that consume vastly more memory than the application requires.",
+                    "score": 31,
+                    "author": "playaspec",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That's not what this claim is. A really common use of this phrase was when people would look at some sort of system monitor on Linux and ask \"Why is all my RAM used all the time?\"\n\nThe answer: Because Linux will use 100% of your \"free\" RAM for a filesystem cache. Because unused RAM is wasted RAM, and it's easy enough to drop this memory and make it available to an application. And some system monitors show buffers and cache as \"free\" or \"available\", and some show it as \"used\", thus the confusion. What people should care about is how much RAM *could* be made immediately available to an application that needs it, not how much memory is *actually* unused.\n\nIt's even more relevant to Android -- on Android, it's vastly more efficient to fill 100% of your RAM with a bunch of apps you only use once/day than to leave it \"free\", as that's a bunch of apps you don't need to boot from scratch every time. If that memory is needed, the OS is reasonably quick about killing off background apps that weren't doing anything important. There's even a way for an app to be notified of memory pressure so it can do things like run garbage collection, because keeping the smallest memory footprint possible can burn way more aggregate CPU (and thus battery) than periodic garbage collection.\n\nIt's true that most OSes (especially traditional desktop/server OSes) don't provide a good way to allow one application to use a bunch of unused memory, and drop it in response to memory pressure, but that's not the application's fault.\n\n(Also, it's not Chrome's fault if you run with a few hundred tabs and then complain about memory usage.)\n\nAlso:\n\n&gt; Virtual memory (A.K.A. swap) is SLOW\n\nVirtual memory is not automatically swapping. Virtual memory covers things like separate address spaces (so apps segfault instead of scribbling over each other's working memory) and memory-mapped files.\n\nSwap is slow when it's *thrashing,* but it's not just inherently slow. If you have particularly cold (infrequently accessed) sections of memory, pushing those to swap even if you're only making room for the filesystem cache can still improve performance. If you have a long-running system with plenty of RAM available, chances are you'll start to see a few megabytes of swap used anyway, even though your working set fits comfortably in RAM.\n\nSure, I tend to disable swap on my systems to avoid the nasty failure mode where I'd rather just OOM-kill something than thrash the swap, but it's not just automatically slower to use swap than not.",
+                            "score": 26,
+                            "author": "SanityInAnarchy"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "... wow. You really don't know anything about memory management do you?",
+                            "score": 6,
+                            "author": "SecureAsItWillEverBe"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yeah. I hate people saying this. The most obvious real world counter example is swap usage. When the RAM is fully utilized - or well before that point in many cases - the system begins to use swap for memory. Everything begins to slow down and of course it wears the physical space. \n\nI overspecced my system and disabled swap specifically to avoid this issue. It runs fantastically well. Chrome still ends up using like 18+ gigs of the 32 the system has; I'm considering filling the spare 4 sockets for another 32. ",
+                            "score": 5,
+                            "author": "gimpwiz",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 1,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Maybe with Windows. I've never had random swap problems with Linux running for weeks without a reboot.",
+                                            "score": 1,
+                                            "author": "NuMux",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "[deleted]",
+                                                    "score": 1,
+                                                    "author": "[deleted]",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Interesting. I've never seen a hard reason to disable swap on Linux. I work for a rather large company myself and the specific product I support is a Linux VM appliance and we do keep swap on by default. I have seen plenty of them using a good amount of swap space and showing no signs of degraded performance. Believe me that our customers would notice a performance hit. Actually, for reference these appliances are mostly stock CentOS with our software slapped on top of it.\n\nOn top of that, I have been personally running Linux as my primary OS at home and have never had a problem with swap usage degrading what I am doing unless I have actually run out of free RAM.\n\nIf you are seeing problems with swap turned on then it sounds like the server is out of RAM. The swap in that case is just preventing the whole server from crashing until you can free up resources. But yes it would run slow in that state.",
+                                                            "score": 1,
+                                                            "author": "NuMux"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Are... are you okay?",
+                            "score": 2,
+                            "author": "Anpandu",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "He\u2019s FINE, he just has a POINT to make about COMPUTERS",
+                                    "score": 0,
+                                    "author": "santaliqueur"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Don\u2019t be scared, you\u2019ll be a zombie slayer soon too.",
+                                    "score": -1,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": -1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's not a good thing when it fucking interferes with with system by causing the swap to be needlessly used. \n\nChrome isn't the first class citizen on my damn computer. It's only a browser. ",
+                                    "score": 1,
+                                    "author": "gimpwiz"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "assuming that box is running 22 core procs that would be roughly 11.6 gb of ram per physical core... that is not a lot at all. ",
+                    "score": 1,
+                    "author": "LessWorseMoreBad"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What $15000 worth of RAM looks like",
+            "score": 51,
+            "author": "Synacku"
+        },
+        {
+            "level": 0,
+            "comment": "Almoust enough RAM to open 2 Chrome tabs",
+            "score": 141,
+            "author": "jnll02",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I see you're an optimist.",
+                    "score": 80,
+                    "author": "fourdebt",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "For real, I love Chrome but I use Firefox because my eye starts to twitch when I open a web browser and my cooling fans kick on.",
+                            "score": 24,
+                            "author": "jaspersgroove",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "How much ram does your laptop have 500mb? ",
+                                    "score": 8,
+                                    "author": "TheDon724"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Your system must suck dick. I have 4 GB RAM on an I5 laptop, I run multiple tabs in Chrome, while running discord, pidgin, and steam. IN Steam I'll either play Skyrim, Empyrion, or World of Tanks normally. My fans don't kick in, my ram swaps fine. I have a CPU bottleneck from time to time with Empyrion running while I stream Netflix or Prime. But thats about it. ",
+                                    "score": 10,
+                                    "author": "titanicx",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Don't ruin the meme...",
+                                            "score": 22,
+                                            "author": "londonnotlandon"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Which i5 just out of curiosity? ",
+                                            "score": 5,
+                                            "author": "iamthegemfinder",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "7200U. It's an ideapad 310-15IKB Signature edition I picked up for 225$ on clearance a year and a half ago. ",
+                                                    "score": 3,
+                                                    "author": "titanicx"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I have +900 tabs open in chrome with only 32GB of RAM ;p",
+                    "score": 0,
+                    "author": "ucefkh"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Would still struggle to run android studio",
+            "score": 32,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For that you need to rent an entire data server, don't you know",
+                    "score": 13,
+                    "author": "CanadianRegi"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What is a reasonable amount of ram for your average gamer?",
+            "score": 14,
+            "author": "Lord_Clucky",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I\u2019d go with 16 if you someone who open other programs while gaming.",
+                    "score": 28,
+                    "author": "3zoz1888"
+                },
+                {
+                    "level": 1,
+                    "comment": "6-16gb",
+                    "score": 13,
+                    "author": "ivvmor",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don't think 6 cuts it anymore. Its definitely 8-16 right now. (At least if you want to play the AAA Games.)",
+                            "score": 15,
+                            "author": "KermitDaToadstool",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I got you. ",
+                                    "score": 2,
+                                    "author": "ivvmor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "8 GB. 12-16GB if you want to play something like Destiny 2 on max.",
+                    "score": 13,
+                    "author": "Gezeni"
+                },
+                {
+                    "level": 1,
+                    "comment": "8gb will serve you well if you only have 1 or 2 programs open at any time. If you like opening lots of programs and/or want to future proof, go with 16gb",
+                    "score": 12,
+                    "author": "NaethanC"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you keep using adblock, you will never have enough RAM",
+            "score": 19,
+            "author": "PolpettoneTonnato",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Honest question, I thought an ad blocker (ublock origin, for example) would reduce memory requirements by preventing downloading and caching of extra \"stuff\" (trackers, ads..etc.), does it increase RAM requirements?",
+                    "score": 18,
+                    "author": "CanadianRegi",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "~~ublock~~ ublock Origin* is very light on memory compared to adblock. A comparison between the resources needed to run a website w/o an ad blocker and with it+resources to run the extension itself would be sufficient to test I believe.\n\n*not to be confused with ublock, a commercial &amp; far inferior ad blocker.",
+                            "score": 12,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Ublock *Origin*\n\nThere is a difference, and that is the better one.",
+                                    "score": 9,
+                                    "author": "Realtrain",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ublock is the knock-off _technically_ original that was basically stolen and the original developer had to make their own. Use ublock origin.",
+                                            "score": 4,
+                                            "author": "AshyAspen"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "True ture. Will point it out now.",
+                                            "score": 1,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Adblockers probably don\u2019t need to utilize significantly more resources to block additional ads beyond the initial resources consumed, as most of that should be able to be shared between tabs and not private memory.\n\nIf you are only opening 1 tab with minimal ads, an ad blocker would likely consume more resources than just rendering the ads, but as you get into more ad-heavy pages or many pages, then you\u2019ll probably see the gains",
+                                    "score": 1,
+                                    "author": "zelmarvalarion"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How big are those sticks and I assume they\u2019re not uniform sizes since 48 of 16/32 doesn\u2019t come to 1TB, either 768GB or 1.5TB. I know enterprise modules have gotten to 128GB and 64GB for non-enterprise so maybe a mishmash or some of those too?",
+            "score": 5,
+            "author": "itsaride",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I was thinking the same thing. 24 slots each with 21.3 GB does not sound right. ",
+                    "score": 2,
+                    "author": "Shadowthrice"
+                },
+                {
+                    "level": 1,
+                    "comment": "That was my first thought as well. Counted the slots and divided by 1024. Immediately knew OP was a bundle of sticks.",
+                    "score": 1,
+                    "author": "El_Impresionante",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What CPU\u2019s are those, I imagined them to be slightly bigger ",
+            "score": 3,
+            "author": "NeoBlue22",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm pretty sure they are intel xeons",
+                    "score": 5,
+                    "author": "NaethanC"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I dunno what you guys are talking about.... my chrome is only using 3.3 GB of RAM.\n\nEDIT: I know it's a meme guys, I'm in on the joke.  I'm playing devils advocate here.",
+            "score": 9,
+            "author": "MystikIncarnate",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's a meme",
+                    "score": 3,
+                    "author": "beornog",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "/r/whoooosh",
+                            "score": -4,
+                            "author": "NaethanC",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It's a meme",
+                    "score": 3,
+                    "author": "beornog"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very funny and original joke. Never heard that one before!",
+            "score": 2,
+            "author": "Jerememe_13"
+        },
+        {
+            "level": 0,
+            "comment": "But can it run crysis? ",
+            "score": 2,
+            "author": "CoastalPond40"
+        },
+        {
+            "level": 0,
+            "comment": "Chrome used to use more ram than it does now. I have 32GB of RAM and Chrome is only using 1.5GB right now. I remember back when I had 8GB RAM and chrome would regularly take over 2.5GB",
+            "score": 2,
+            "author": "morphinapg",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "My gmail tab alone used to hit 2GB pretty frequently. That was my sign that I needed to restart Chrome",
+                    "score": 1,
+                    "author": "zelmarvalarion"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Its not a simple computer system, its super duper tetra server and price for this RAM = 1 Bitcoin\n\nHa ha ha\n\n&amp;#x200B;",
+            "score": 2,
+            "author": "vrunvyas"
+        },
+        {
+            "level": 0,
+            "comment": "I personally prefer to download my RAM. It makes it more compact. \u00af\\\\\\_(\u30c4)\\_/\u00af",
+            "score": 2,
+            "author": "steevee1337"
+        },
+        {
+            "level": 0,
+            "comment": "I was wondering what is the recommended amount of dedicated RAM I must have to server?",
+            "score": 2,
+            "author": "360noscopeMLG"
+        },
+        {
+            "level": 0,
+            "comment": "DAE CHROME AND RAM?!?",
+            "score": 2,
+            "author": "JimboLodisC"
+        },
+        {
+            "level": 0,
+            "comment": "What are you people doing with Chrome? I don't have any issues.",
+            "score": 6,
+            "author": "Lobanium",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 6,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nah I work for Google and it drains my battery so fast",
+                            "score": 1,
+                            "author": "jonhenny"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "But fr tho. Thank you, someone else",
+                    "score": 2,
+                    "author": "uredthis"
+                },
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 0,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "At that point, I'd stop blaming Chrome and start blaming whatever site you have open that eats up that much RAM.",
+                            "score": 3,
+                            "author": "SanityInAnarchy"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "*heavy breathing*",
+            "score": 2,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Just wait for AMD \"Rome\" 7nm EPYC server CPUs to come out, the amount of memory those suckers can support is unholy\n\nQuick edit: it will support 4TB of RAM per socket, so a 4 socket design like this could have 16TB of memory on Rome ",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "How much did it cost ",
+            "score": 2,
+            "author": "TheAncient_1",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Everything",
+                    "score": 8,
+                    "author": "Kevpup01",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "r/unexpectedthanos",
+                            "score": 3,
+                            "author": "richiepr77"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Chrome be like - Challenge Accepted",
+            "score": 2,
+            "author": "selvaracp"
+        },
+        {
+            "level": 0,
+            "comment": "Enough RAM to run the current version of Gmail smoothly",
+            "score": 2,
+            "author": "NaethanC",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Every time Google updates their applications, to make them rounder and more pastel, it also cuts the speed in half.",
+                    "score": 2,
+                    "author": "Who_GNU",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "^This.\nIf Google actually cared about their customers, they would let the people who don't like the new Gmail look use the old one.",
+                            "score": 2,
+                            "author": "NaethanC"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Crazy thing is, give it a decade and 1TB ram in a phone will probably be the standard.",
+            "score": 2,
+            "author": "tallperson117",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "2 decades for iPhones.  ",
+                    "score": 2,
+                    "author": "[deleted]"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Chrome is lit af when it comes to use RAM. \ud83d\ude02\ud83d\ude02",
+            "score": 1,
+            "author": "click4kesh"
+        },
+        {
+            "level": 0,
+            "comment": "So much power it can see the future. ",
+            "score": 1,
+            "author": "JohnCameronE"
+        },
+        {
+            "level": 0,
+            "comment": "Hahaha chrome uses a lot of RAM right guys hahah /s",
+            "score": 1,
+            "author": "SecureAsItWillEverBe"
+        },
+        {
+            "level": 0,
+            "comment": "The extra RAM does give you protection from Spectre.\n\nhttps://security.googleblog.com/2018/07/mitigating-spectre-with-site-isolation.html\nMitigating Spectre with Site Isolation in Chrome - Google Security Blog\n\nTo me worth it.   Think chrome might be the only browser that has the isolation.",
+            "score": 1,
+            "author": "bartturner"
+        },
+        {
+            "level": 0,
+            "comment": "But where can I download it??",
+            "score": 1,
+            "author": "TheOriginalJayse"
+        },
+        {
+            "level": 0,
+            "comment": "Opens second tab. Task manager *83% ram usage*",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Meanwhile. Firefox has memory leaks",
+            "score": 1,
+            "author": "Huffm4n"
+        },
+        {
+            "level": 0,
+            "comment": "Modded Minecraft loading times reduced by 0.00000000001 seconds.",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "That is godlike",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "There's nothing next to a determine the scale of this which is pointless",
+            "score": 1,
+            "author": "mwooddog"
+        },
+        {
+            "level": 0,
+            "comment": "Post a benchmark result with system stats and what CPUs are those?",
+            "score": 1,
+            "author": "coffeebeard"
+        },
+        {
+            "level": 0,
+            "comment": "How many tabs you reckon you can open and keep it all running smoothly?",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I have 32 GB of RAM and regularly get up to 30-40 tabs, plus a Mint VM, Android Studio, Deluge, and Steam. Still have never run out of RAM. So given that, 1000+ easily. Probably close to 2000 considering how much my other programs use and I still have leftover. ",
+                    "score": 2,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019ve had well over 100 tabs open on 14GB of ram ",
+                                    "score": 1,
+                                    "author": "radfordra1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I've never experimented as I've never needed that many open ",
+                                            "score": 1,
+                                            "author": "[deleted]",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Oh no I was being a dick to someone who was bitching at me for having three windows with 20 tabs each open. ",
+                                                    "score": 1,
+                                                    "author": "radfordra1",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 1,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "When I did the 100+ tabs thing I was being a dick to that person. Because he was bitching to me about having 60 tabs open between 3 windows. I don\u2019t normally have 100+ open ",
+                                                                    "score": 1,
+                                                                    "author": "radfordra1",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "I thought you were fucking with me bro in sorry lol",
+                                                                            "score": 1,
+                                                                            "author": "[deleted]"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What a random post... ",
+            "score": 1,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "For me I prefer the Spectre protection and using a bit more RAM.  I am not aware of any other browser providing protection for Spectre?\n\nI had thought containers was doing it with Firefox but recently been corrected.\n\n\"Mitigating Spectre with Site Isolation in Chrome\"\n\nhttps://security.googleblog.com/2018/07/mitigating-spectre-with-site-isolation.html\n\nI really think people are not being as serious as they should about Spectre.",
+            "score": 1,
+            "author": "bartturner"
+        },
+        {
+            "level": 0,
+            "comment": "General reposti",
+            "score": 1,
+            "author": "LebronsHairline25"
+        },
+        {
+            "level": 0,
+            "comment": "That's so chrome",
+            "score": 1,
+            "author": "BiologyJ"
+        },
+        {
+            "level": 0,
+            "comment": "I run it on a measly 8Gb perfectly... ",
+            "score": 1,
+            "author": "Ryrynz"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Because at launch, it *was* fast. Faster than everyone else, by a ridiculous margin. It was the first proper JIT-ed JavaScript implementation. Plus, the multiprocess model made it more responsive, even when one tab was being slow.",
+                    "score": 3,
+                    "author": "SanityInAnarchy",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I can\u2018t stand Firefox and never had any issues with Chrome",
+                    "score": 8,
+                    "author": "Coffeinated",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Same here ",
+                            "score": 3,
+                            "author": "uredthis"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I thought FireFox was a bit outdated now. Would you rather use Internet Explorer than Chrome? ",
+                    "score": 1,
+                    "author": "uredthis",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "As far as the mobile versions go, I've found that Firefox is just as slow as Chrome, but Opera is much, much faster.\n\nIn my computer I use SeaMonkey, which is more feature packed, and less resource intensive, than Firefox.",
+                    "score": 1,
+                    "author": "Who_GNU"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Still cheaper than Apple... ",
+            "score": 1,
+            "author": "woshiiGeneus"
+        },
+        {
+            "level": 0,
+            "comment": "But will it run Photoshop with no issues?",
+            "score": 0,
+            "author": "hackphotographer"
+        }
+    ]
+}

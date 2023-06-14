@@ -1,0 +1,597 @@
+{
+    "id": "ac8zx0",
+    "score": 3214,
+    "title": "State of this sub",
+    "author": "churs_rs",
+    "date": 1546542718.0,
+    "url": "https://www.reddit.com/r/google/comments/ac8zx0",
+    "media_urls": [
+        "https://i.redd.it/g3lve02zb9821.jpg"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "My question is how you guys are getting these perfect article-worthy pictures while holding the phone with your hands.\n\nMy attempts look fine on my phone, but have some slight noise or blur when I open them in Chrome on my PC.",
+            "score": 176,
+            "author": "Dual-Screen",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "have you tried holding your phone really....really still.",
+                    "score": 113,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I tried but it was so still that it turned invisible.",
+                            "score": 47,
+                            "author": "Kapibaro",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Okay Drax",
+                                    "score": 19,
+                                    "author": "SnipingNinja"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I lean my arms against something sturdy to stabilize my phone. It helps, though sometimes takes a few tries.",
+                    "score": 30,
+                    "author": "[deleted]"
+                },
+                {
+                    "level": 1,
+                    "comment": "What kind of phone do you have?\n\nNight Sight uses one technology on Pixel 3, and a different technology on Pixel 1 and Pixel 2.\n\nIf you're not using one of those phones, you're not really using Night Sight.\n\nPS: Night Sight works by *utilizing* the small motion you have while you hold the phone.  If you try to take a Night Sight photo on a tripod, the phone will artificially use Optical Image Stabilization to *shake* the image around a little.\n\nEDIT: Nope, I was thinking of the zoom feature.  Never mind.",
+                    "score": 35,
+                    "author": "VikingCoder",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "From what I recall from a Google presentation that is incorrect. The new zoom feature uses the shaking, but night sight does not.\n\nEdit: Found it. It changes how it works based on hand movement, but it does not utilize it like the new zoom\n\n&gt; How Night Sight works\nNight Sight constantly adapts to you and the environment, whether you\u2019re holding Pixel or propping it on a steady surface. Before you press the shutter button, Night Sight measures your natural hand shake, as well as how much motion is in the scene. If Pixel is stable and the scene is still, Night Sight will spend more time capturing light to minimize noise; if Pixel is moving or there\u2019s significant scene motion, Night Sight will use shorter exposures, capturing less light to minimize motion blur.\n\n\n\n\nhttps://www.blog.google/products/pixel/see-light-night-sight/\n\nAs opposed to \n\n&gt; However, we turn this difficulty on its head, by using the hand-motion to our advantage. When we capture a burst of photos with a handheld camera or phone, there is always some movement present between the frames.\u00a0Optical Image Stabilization\u00a0(OIS) systems compensate for large camera motions - typically 5-20 pixels between successive frames spaced 1/30 second apart - but are unable to completely eliminate faster, lower magnitude, natural hand tremor, which occurs for everyone (even those with \u201csteady hands\u201d). When taking photos using mobile phones with a high resolution sensor, this hand tremor has a magnitude of just a few pixels.\n\nFrom https://ai.googleblog.com/2018/10/see-better-and-further-with-super-res.html?m=1",
+                            "score": 10,
+                            "author": "pwnstar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Check the Night Sight blog:\n\n\"\"\"\nNight Sight uses a similar principle, although at full sensor resolution and not in real time. On Pixel 1 and 2 we use\u00a0HDR+'s merging algorithm, modified and re-tuned to strengthen its ability to detect and reject misaligned pieces of frames, even in very noisy scenes. On Pixel 3 we use\u00a0Super Res Zoom, similarly re-tuned, whether you zoom or not. While the latter was developed for super-resolution, it also works to reduce noise, since it averages multiple images together. Super Res Zoom produces better results for some nighttime scenes than HDR+, but it requires the faster processor of the Pixel 3.\n\"\"\"",
+                                    "score": 5,
+                                    "author": "energeticmater",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Interesting, I've not heard that before. Good info",
+                                            "score": 2,
+                                            "author": "pwnstar"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I read that more as \"we use super-zoom's alignment tech to compensate for movement, improving image sharpness and brightness\" than \"we use movement to improve image sharpness and brightness\".\n\nSo that movement is compensated for, but not required like it is for super zoom. They just share the same tech for merging images.",
+                                            "score": 2,
+                                            "author": "IndefiniteBen",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "The Super Res Zoom blog clarifies this:\n\n&gt;However, we turn this difficulty on its head, by using the hand-motion to our advantage. When we capture a burst of photos with a handheld camera or phone, there is always some movement present between the frames. ... To take advantage of hand tremor, we first need to align the pictures in a burst together. ... Of course, handshake is unlikely to move the image by exactly single pixels, so we need to interpolate between adjacent pixels in each newly captured frame before injecting the colors into the pixel grid of our base frame. \n\nAnd one of the examples images linked from the Night Sight blog confirms this further:\n\n&gt;by Florian Kainz, Googler. If you use Night Sight during the day, and are willing to hold still after shutter press, you'll get the denoising and resolution improvements of Super Res Zoom, as shown in this landscape shot in Marin County, California.\n\nBasically Super Res Zoom was designed specifically to improve noise and detail by utilizing handshake. It cannot work any other way. The fact that Night Sight produces better images than the normal mode in daylight, because it uses Super Res Zoom rather than HDR+ merge, confirms that it works this way. ",
+                                                    "score": 0,
+                                                    "author": "energeticmater"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "A Pixel XL, 1st gen.\n\nNight shot is fantastic, and I regularly get decent photos with this phone, however the photos I've seen on here and /r/GooglePixel put mine to shame, yes even back when it was just the 1st generation.\n\nI know post-processing and photoshop are used in professional shots, but yet again a lot of these shots were apparently straight from the phone without any additional gear.",
+                            "score": 6,
+                            "author": "Dual-Screen",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "My guess is that it's the difference between the generations.\n\nI have a Pixel 3 and took a directly overhead, straight-down over a coffee table photo last night of some papers using Night Sight. I actually laughed right when it started the processing because it was, by far, the least stable I had been and I knew it was going to blur. That shit came out so crisp, I didn't understand it. I could zoom in and read each letter, even though it was from ~4 feet above.\n\nI think I've actually only had one blurry Night Sight photo, and I'm not sure what the hell happened because I *felt* like I was stable during it.",
+                                    "score": 19,
+                                    "author": "DecentDudeDustin",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I'm pretty sure that if you move too much it just ignores the extra exposure. I've taken photos where things have dramatically changed while taking the shot and it just turns out like a more noisey, darker night sight picture.",
+                                            "score": 9,
+                                            "author": "Saigot"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "1st Gen doesn't have OIS that's probably the biggest factor.",
+                                    "score": 9,
+                                    "author": "ishboo3002",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Correct. The tech blog post from Google says the maximum exposure duration is shorter on Pixel 1 for this reason.",
+                                            "score": 3,
+                                            "author": "energeticmater"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "They're actually all a little different according to their technical blog. \n\nPixel 3 uses Super Res Zoom (rather than HDR+ merge) and OIS. Pixel uses just OIS, not Super Res Zoom. OG Pixel uses neither. \n\nAnything not a Pixel phone is not Night Sight either.",
+                            "score": 2,
+                            "author": "energeticmater"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Isn\u2019t that the super zoom?",
+                            "score": 1,
+                            "author": "April_Tsukinose",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Night Sight uses the functionality in Super Res Zoom to reduce noise. ",
+                                    "score": 3,
+                                    "author": "1206549",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Oh cool!",
+                                            "score": 1,
+                                            "author": "April_Tsukinose"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "An iPhone ",
+                            "score": 1,
+                            "author": "turbo_dude",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Too bad, Night Sight is awesome.",
+                                    "score": 1,
+                                    "author": "VikingCoder"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "wrong tech, bro. you're referring to that zoom tech used in the pixel 3. it uses small shakes.\n\nnight sight is amped up hdr+ plus NN based color correction.  Same tech used in pixel 3/2/1 and ported to other phones.",
+                            "score": 1,
+                            "author": "EmergencySarcasm"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I'll be waiting here for and answer too",
+                    "score": 18,
+                    "author": "frostcanadian",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Easy, people just edit their pictures, even if it's basic editing through an app.",
+                            "score": 4,
+                            "author": "loulan",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well I mean the picture has to be clear in the first place no? If the picture is all blurry because the camera cannot focus, you won't be able to do something through Photoshop",
+                                    "score": 6,
+                                    "author": "frostcanadian",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Well of course when you shoot pictures at night without a tripod, you try to hold your camera *very* still, and you take lots of pictures and take the one that is the least blurry. That doesn't mean you directly get a \"perfect article-worthy picture\" after that though. If there is still a slight blur, a sharpening/high-pass filter can do wonders. If your black sky has a bit of noise, you can do the opposite on that area, use some denoise/blur/low-pass filter.\n\nEven with pictures taken without a phone that has NightShift you can take pretty good night pictures if you're trying your best when you take them and if you're ready to spend a bit of time editing them afterwards.",
+                                            "score": 2,
+                                            "author": "loulan"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Stabilizers. ",
+                    "score": 6,
+                    "author": "CyanoTex",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I understand a tripod goes a long way, but a *lot* of the near-perfect pictures that get posted here daily are often situations where a carrying around a tripod would be impractical, like that concert image on the front page right now.",
+                            "score": 6,
+                            "author": "Dual-Screen",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I believe I saw something about the Pixel taking multiple photos? Could be that, the amount of processing going on in the Pixel or the OIS.",
+                                    "score": 6,
+                                    "author": "CyanoTex"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Itt: you're holding it wrong. ",
+                    "score": 0,
+                    "author": "MacNulty"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Same for posts about using call screen on the wife.",
+            "score": 48,
+            "author": "ChamferedWobble",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "At least some of those are funny!",
+                    "score": 8,
+                    "author": "mikek587",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If you are 14",
+                            "score": 11,
+                            "author": "gordito_gr",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "\"LOL i used call screen on my wife and she told me to pick up!\"",
+                                    "score": 3,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "\"John, pick up the f****ing phone\" ",
+                                            "score": 5,
+                                            "author": "gordito_gr"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "You'd think all these night-sight people would've found r/pixelography by now. \n\nEdit: spaaaaace",
+            "score": 23,
+            "author": "TheOldNewGraig",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "You missed space before \"by\"",
+                    "score": 7,
+                    "author": "SnipingNinja",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "/r/pixelography\n\nI'm feeling generous today",
+                            "score": 1,
+                            "author": "SKR47CH",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Did you entry a lot of space in the comment? Coz if so, reddit edited it out \ud83d\ude02",
+                                    "score": 1,
+                                    "author": "SnipingNinja"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Thanks",
+                            "score": 1,
+                            "author": "TheOldNewGraig"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "To be fair, those Night Sight pics \\*are\\* damn impressive. \n\nI got myself the Samsung S6 four years ago because back then it had the best camera and other hardware - I still use that today, and daylight pics are still great, I don't need a new phone yet. But low light photos? Sheesh. ",
+            "score": 53,
+            "author": "FinibusBonorum",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "you can download the apk for the pixel camera on your phone. just took some night sight pics on my s8!",
+                    "score": 5,
+                    "author": "smoool"
+                },
+                {
+                    "level": 1,
+                    "comment": "S6 never had a great camera, was way overhyped by the media.\n\nSpecially the night shots were bad. It makes sense you are impressed because what you own and know is mediocre by today's standards. ",
+                    "score": -1,
+                    "author": "gordito_gr",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nah, gotta disagree with you there. Its nighttime shots were only ever ok, even for back then, but IMO it took better daytime shots than any other phone on the market at the time. It certainly took better shots than that year's iPhone. ",
+                            "score": 2,
+                            "author": "dark_roast",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That's what the average Joe says, because they are just impressed by the oversaturated screen and 'fancy colors and contrast' of galaxy s6's screen, where they see the pics. \n\nIt can make the average Joe think that the photo is great but see the same pics on a calibrated monitor. Nothing special.\n\nAnd an oversaturated screen can't save the night pics, because the noise of the bad lens and software is there.\n\nDon't disagree with me, I know better.\n\u00af\\\\\\_(\u30c4)\\_/\u00af",
+                                    "score": 1,
+                                    "author": "gordito_gr",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Oversaturated screens have nothing to do with why the camera was good on the S6.",
+                                            "score": 1,
+                                            "author": "dark_roast",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thank you for proving me right.\n\nI didn't need it, cause I know I'm right, but Thanx anyway. ",
+                                                    "score": 2,
+                                                    "author": "gordito_gr",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I can't tell if you're just a weird troll or what, but I'll assume that you're not... \n\nhttps://www.tomsguide.com/us/galaxy-s6-vs-iphone-6-cameras,review-2704.html\n\nhttps://www.anandtech.com/show/9146/the-samsung-galaxy-s6-and-s6-edge-review/9\n\nHere are a couple side by side comparisons of the still image performance between the iPhone 6 Plus and the S6. Both reviews basically call it a wash, with superior detail in the S6 just because it had higher resolution. At the time that was a big win for Samsung, which had struggled with cameras that fell short of Apple's efforts. \n\nAs I previously stated, you can't chalk this up to monitor calibration - you're viewing it on the same device.\n\nMy parents have an iPhone 6, and my personal experience is that the S6 takes better or similar photos in most cases than the iPhone 6. The 6 Plus has OIS, as does the S6, which gave both devices a serious advantage in low light conditions. So that the regular 6 falls short isn't surprising.\n\nI'd actually forgotten how good the S6 did against the iPhone 6 Plus in low light without flash. It was closer than I was remembering, largely because that's something which has improved drastically since, while daytime performance hasn't gotten notably better. And of course it had a better flash, but I tend to avoid flash shots so it wasn't part of my decision to buy that phone. ",
+                                                            "score": 0,
+                                                            "author": "dark_roast",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Nahhh, I disagree with you ",
+                                                                    "score": 1,
+                                                                    "author": "gordito_gr"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Well, much has happened in the years since I bought the phone. But I did my research and the S6 was the best product that had all of the features I wanted, and I am still happy with it. That doesn't prevent me from being pleasantly impressed by other models. Even so, I will continue using my S6 for as long as I can. Phones are expensive.",
+                            "score": 1,
+                            "author": "FinibusBonorum"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is perfect for this sub",
+            "score": 5,
+            "author": "dobbiethefella"
+        },
+        {
+            "level": 0,
+            "comment": "Rather see that than the million Sunset photos on the Los Angeles subreddit. At least the Night Site photos are different.",
+            "score": 10,
+            "author": "GreenYoshi22",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Or the \"I finally got my first Mac. Here it is\" pictures in /r/mac",
+                    "score": 2,
+                    "author": "M9E2RFE6WYALS8Y0"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Accurate",
+            "score": 3,
+            "author": "Shadowhunter34"
+        },
+        {
+            "level": 0,
+            "comment": "Tru that",
+            "score": 4,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Good point, Unsubbing lol",
+            "score": 3,
+            "author": "[deleted]"
+        },
+        {
+            "level": 0,
+            "comment": "Facts\n\n&amp;#x200B;",
+            "score": 1,
+            "author": "InForced"
+        },
+        {
+            "level": 0,
+            "comment": "You can see with computer?",
+            "score": 1,
+            "author": "EarlyEndTimes"
+        },
+        {
+            "level": 0,
+            "comment": "The best part is that you don't even need to have taken a picture with Night Sight. Just take any picture in the afternoon or evening, turn up the Bloom, and claim it's Night Sight - Ding!",
+            "score": -3,
+            "author": "Reelix",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Exactly. I am most annoyed that no one even bothers posting a comparison photo without using night sight.",
+                    "score": 3,
+                    "author": "154927"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Well I guess when it's literally the only thing the fanboys have going for them as the rest of the phone sucks, and the rest of Google's ecosystem is just as much of a clusterfuck as ever, it's easy karma here.",
+            "score": -20,
+            "author": "JamesR624",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "If you don't like the phones what attracts you to this sub?",
+                    "score": 1,
+                    "author": "startedfire",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I have nothing against the phones, but this isn't the *pixel* sub. It's the *Google* sub. A",
+                            "score": 9,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Exactly. I\u2019m an iPhone user who likes Google\u2019s services. The night site photos are very impressive but I no longer care. This isn\u2019t the Android sub either. ",
+                                    "score": 4,
+                                    "author": "sereko"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 0,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I just stated a fact. The person asking the question is acting like this subreddit is only for the pixels. ",
+                                            "score": 1,
+                                            "author": "[deleted]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Google's potential. I agree with him on this, the pixel has enough software issues snd short comings that make it unreasonable to purchase it unless camera quality is your main focus in getting a phone.",
+                            "score": 5,
+                            "author": "kamekaze1024"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Really? I switched back to Android specifically because I really like the software on Pixel phones. What phone are you guys using these days?",
+                            "score": 3,
+                            "author": "startedfire",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is /r/google, not /r/android or /r/pixel*. \n\nNot that it matters, but I use an iPhone and don\u2019t really care about night sight. ",
+                                    "score": 2,
+                                    "author": "sereko"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Not sure why you're downvoted...\n\nOh wait, I know **exactly** why you're downvoted.\n\n&gt;! fanboys!&lt;",
+                    "score": 2,
+                    "author": "M3L0NM4N",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": -1,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The fanboy collection? Of course.",
+                                    "score": -1,
+                                    "author": "M3L0NM4N",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "as if r/oneplus or r/xiaomi or r/samsung are any different. they're all communities dedicated for people who are fans of the namesake. r/google is not a place to shit on google, its a place to celebrate it. if you want to shit on google, r/android or r/apple are great for so.\n\n&amp;#x200B;\n\nthe night sight posts are plenty annoying, but that doesn't mean the entire sub just sucks, and even if so, it doesn't mean you get to shit on google for no particular reason.",
+                                            "score": 1,
+                                            "author": "themajod"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "* Click - downvote\n* Click - hide\n",
+            "score": -6,
+            "author": "bloodguard"
+        },
+        {
+            "level": 0,
+            "comment": "Maybe I am unusual but just love the photos.  They have typically not been boring photos and they are just incredible.\n\n",
+            "score": -1,
+            "author": "bartturner"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I doubt they are gonna get it... ",
+                    "score": 4,
+                    "author": "oidabiiguad",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 0,
+                            "author": "[deleted]",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "regardless, its definitely not going to be as good as Google's.",
+                                    "score": 1,
+                                    "author": "themajod"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "But Samsung is not good at AI.    So why would it matter?   I mean Google is years ahead with computational photography.",
+                                    "score": 1,
+                                    "author": "bartturner"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "*cries in I\u2019m sorry I\u2019m not sure I understand*",
+            "score": -2,
+            "author": "Colin_XD"
+        }
+    ]
+}

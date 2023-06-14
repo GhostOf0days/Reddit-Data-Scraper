@@ -1,0 +1,65 @@
+{
+    "id": "141oyn9",
+    "score": 0,
+    "title": "Does brokerage charge interest before option is exercised?",
+    "author": "gh0rard1m71",
+    "date": 1685993305.0,
+    "url": "https://www.reddit.com/r/investing/comments/141oyn9",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Say I have 6k cash in my margin account. XYZ stock is trading at 55 and I write a 1 CSP for 50.\n\nNow i have 6k + premium - fees on my account.\n\nIf I use the cash to buy another stock and sell it before the CSP gets exercised, will that be considered as using margin? Will I be charged interest even if doesn't get exercised?\n\nDoes it differ brokerage to brokerage?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "In your example - you are only charged margin if you are assigned on your short put and your cash balance goes negative.\n\nMargin accrues on a settlement to settlement basis. So if you sell the other stock and it settles before the assignment on the put settles, margin fees are not accrued.\n\nIt how many people generate yield on cash when writing puts - by holding treasuries and money market mutual funds - since mutual funds settle T+1 and equities settle T+2.",
+            "score": 3,
+            "author": "greytoc",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That was my thought too but when I asked my brokerage this is what I got which got me confused.\n\n\n\"The second is, if you make a purchase of another stock while you have an option in your account, you will use your margin and therefore interest will be charged from the moment the purchase of the security is placed. \n\nThis even if your option is not exercised. As soon as the available cash is no longer sufficient to cover your purchases, you will use your margin and hence triggers the payment of interest.\"",
+                    "score": 1,
+                    "author": "gh0rard1m71",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Did you ask the first rep you got or did you get transferred to a trader? Most reps would not understand the question because most reps are barely trained in options that aren\u2019t long calls. You should always take the time to be transferred to your brokerages trade desk if that\u2019s an option.",
+                            "score": 2,
+                            "author": "sirideletereddit",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I didn't, i have a webinar tomorrow on margin account with the brokerage online tutoring. I'll ask there.",
+                                    "score": 1,
+                                    "author": "gh0rard1m71"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Perhaps it was a misunderstanding. \n\nThe answer that you received sounds like the answer to a question about long option positions since the answer mentions exercise not assignment. It doesn't read like an answer about short option positions.",
+                            "score": 1,
+                            "author": "greytoc",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Here's the explanation the rep gave.\n\n&gt;\"So let's pretend that the option price is 3$, and has to be at 2.75$ to be in-the-money and the stock is eligible for reduced margin (70% loan value).(1 contract \\* 100 shares \\* 3$) + (30% reduced margin rate \\* 1 contract \\* 100 shares \\* 50$) - (2.75 \\* 1 contract \\* 100 shares) = 1675$ that needs to remain in your cash balance in case you are assigned.  \n&gt;  \n&gt;If you purchase for 5000$ of stock on the 6000$ cash available in your margin account, you will have a negative cash balance of 675$ (6000 - 1675 - 5000 = 675$).\"",
+                                    "score": 1,
+                                    "author": "Ghorardim71",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I could be mistaken. But it's my understanding that the margin requirements of the short put doesn't impact your cash balance. I would have expected it to impact your buying power and margin.\n\nWho's your broker?\n\n\\[edit\\] fwiw - my comments are based on the assumption that you are asking about a US domiciled margin account that is subject to Reg-T. If you are in a different country - my comments may not apply.",
+                                            "score": 1,
+                                            "author": "greytoc"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

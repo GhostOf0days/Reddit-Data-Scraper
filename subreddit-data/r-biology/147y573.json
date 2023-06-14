@@ -1,0 +1,65 @@
+{
+    "id": "147y573",
+    "score": 1,
+    "title": "PCR Troubleshooting",
+    "author": "Psychological-Lynx83",
+    "date": 1686605166.0,
+    "url": "https://www.reddit.com/r/biology/comments/147y573",
+    "media_urls": [],
+    "other_urls": [
+        "https://preview.redd.it/8ak8j1l9nn5b1.png?width=306&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=0ac9b7eee7d90ea0f9a62ca5ab9e57e07037b1a6"
+    ],
+    "postText": "I NEED HELP. I am running some gels. There should be bands showing up at 160bp for Pax7 Cre gene, but I have bands only showing up at around 500bp. I've run these samples twice and I'm about to cry :') Has anyone had issues with clear bands showing up the wrong length?\n\nhttps://preview.redd.it/8ak8j1l9nn5b1.png?width=306&amp;format=png&amp;auto=webp&amp;v=enabled&amp;s=0ac9b7eee7d90ea0f9a62ca5ab9e57e07037b1a6",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Have you used new primer? When I doubt, dilute a new batch of primers. How much do you use? What is the melting point of the primer and what annealing temp do you use? What is the GC content of your template? Have you checked your primer for GC and possible cross-binding or secondary structures?\nClear bands at wrong length must mean that the primer bind to the wrong sequence, thus the polymerase is able to make such a long product in the first place. You need to find out where the primer might bind and why",
+            "score": 2,
+            "author": "TriggerAlice",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Addendum: I don't know about your procedure but are there supposed to be more bands like the smaller ones? If not, something is off with the template itself (check by linearizing and running a gel; is it still the length it should have or somewhat degraded?) or said primer. Maybe a contamination?",
+                    "score": 2,
+                    "author": "TriggerAlice",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hi,\n\nThank you for your reply. For context, I am running gels for genotyping our mouse colony. We just bought a new primer and it worked for the other DNA samples. The correct bands showing up (without the mess of the smaller bands) has always been consistent with our other mouse lines, but just the bands from this specific mouse line is not showing up at the right length. I do think it might be some possible cross-binding, but I don't know how to start investigating that and optimizing the protocol. I reference this page as this is where we got the mice: https://www.jax.org/Protocol?stockNumber=017763&amp;protocolID=20897",
+                            "score": 1,
+                            "author": "Psychological-Lynx83"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Where are your controls? Each primer alone (no pair) with template, and both primers (pair) together but lacking template?",
+            "score": 2,
+            "author": "BolivianDancer"
+        },
+        {
+            "level": 0,
+            "comment": "In addition to the comment about controls, we\u2019d need to know more about your method. In lieu of sitting down in front of a whiteboard:\n- did you design this assay or was it provided to you with an amplification profile already worked out?\n- if the former, did you optimize via an annealing temperature gradient? \n- what is are the sequences?\n- what is the amplification profile?\n- getting back to controls, do you have linearized plasmid or synthetic sequence as a positive control?\n- what is your template?",
+            "score": 1,
+            "author": "Scr33ble",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hi,\n\nThank you for your reply.  The information for the sequences and amplification profile can be found on this page. I use this protocol from Jax here: [https://www.jax.org/Protocol?stockNumber=017763&amp;protocolID=20897](https://www.jax.org/Protocol?stockNumber=017763&amp;protocolID=20897)\n\nThis PCR protocol works for our other crossbred lines such as Pax7/MetRS (with clear bands shown at 160bp), but the Pax7/MitoTag mouse line has issues (showing clear bands at 500).",
+                    "score": 1,
+                    "author": "Psychological-Lynx83",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Have you run this side-by-side with the 2 separate strains? This may really be the true size of your MitoTag strain!",
+                            "score": 1,
+                            "author": "Scr33ble"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

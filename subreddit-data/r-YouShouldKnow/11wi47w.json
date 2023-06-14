@@ -1,0 +1,1374 @@
+{
+    "id": "11wi47w",
+    "score": 18092,
+    "title": "YSK that when you open marketing emails, they immediately know that you have opened it.",
+    "author": "Daren620",
+    "date": 1679316851.0,
+    "url": "https://www.reddit.com/r/YouShouldKnow/comments/11wi47w",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Why YSK: Not only do they know it was opened, email trackers embedded in the email will provide additional data such as what time, how many times, on what device, and often times the location. \n\nThe email trackers are becoming more common and more complex. If you receive a lot of unuseful marketing emails, it is often best to mark it as spam or delete without opening.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Not if you deactivate automatic image download ( they use pixel pictures to know that)",
+            "score": 5600,
+            "author": "Cyserg",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Conversely some email providers will automatically preload linked images as these emails arrive. So it's not like the metric is even reliably useful to the sender.",
+                    "score": 1700,
+                    "author": "dontbeanegatron",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "ProtonMail does this if you use their web app. And I recall Apple preloads the images on their end using different IPs.",
+                            "score": 19,
+                            "author": "worMatty",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Re: ProtonMail, you can turn this off in the settings.",
+                                    "score": 6,
+                                    "author": "dontbeanegatron",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Good to know.",
+                                            "score": 2,
+                                            "author": "worMatty"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Not only that, they do it *badly*. I have serious issues with Yahoo! right now (the *worst* e-mail provider btw, don't use them). We send out a newsletter every morning, and Yahoo! absolutely *hammers* our website with the same requests for the same images for every single individual user that gets an e-mail from us.",
+                            "score": 742,
+                            "author": "aftli",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "If they give marketers trouble then I'm glad I've used them for my spam email account for the past 20+ years.",
+                                    "score": 707,
+                                    "author": "chiphead2332",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Sure. To be fair the list I'm working with is double-opt-in and people who are genuinely interested in receiving this newsletter. But yeah, I'm now in the habit of screenshotting every time I uncheck \"Yes, I want to receive junk from you!\" so I can reference it later.\n\nFWIW, I don't use a \"junk\" e-mail provider. I host my e-mail on a personal domain (you can do this with Gmail) and use a catchall, so if I sign up for something, I use \"annoying_company@example.com\" as my e-mail, and if I ever start receiving junk there, I can reject/spam every e-mail that comes to that \"box\" forever, and never hear from them again at my option.\n\nI used to use the subaddress thing (eg. you'd use \"yourname+annoying_company@gmail.com\"), but, sometimes they get wise to that and just remove the \"+annoying_company\" from their database, and then my actual e-mail address is out there.",
+                                            "score": 235,
+                                            "author": "aftli",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I've been using my domain to do the \"company specific email\" thing for over a decade. \n\nI still haven't caught anyone selling my info using this technique. \n\nI *have* seen a few emails where the \"to\" address revealed a problem, but they've all been \"hacks\" or similar. (For example, I started getting spam at `Adobe @ mydomain` in 2013 following their big data breach.)\n\nI have \"cheated\", though, by using Gmail spam filtering. It's quite possible that my addresses have been sold many times and I just never noticed.",
+                                                    "score": 53,
+                                                    "author": "ErraticDragon",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I have an ancient iCloud account that has been dumped all over the Internet from big data breaches. Apple doesn\u2019t allow me to delete that account, and over the years I\u2019ve used Gmail (custom domain) on and off and yeah, most definitely it\u2019s Google\u2019s spam filtering and/or SPF, DMARC/DKIM catching everything. Anything that comes in from iCloud gets reported (I use it as a honeypot these days). Apple isn\u2019t rejecting mail based on those validation checks while Gmail does.\n\nI\u2019ve written to Apple several times about deleting my account, rejecting mail that doesn\u2019t pass SPF and DMARC/DKIM but no one cares. Honestly it really pisses me off.",
+                                                            "score": 14,
+                                                            "author": "vegan_html_hacker",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Is there somewhere out there that ELI5 how to go about doing this? I think it'd save me a lot of headaches",
+                                                    "score": 23,
+                                                    "author": "bruhidkwhat2put",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Looks like some domain name registrars include email aliasing which saves you from having to buy hosting services. I don't remember it being this way when I did a lot more web development years ago. Google has apparently gotten into the registrar game and gives you 100 email aliases, which you would use to create different aliases (alias1@yourdomain.com, alias2@yourdomain.com, etc.) to redirect to a real email address. If you notice an alias getting unsolicited spam, log into your registrar and delete that alias.",
+                                                            "score": 17,
+                                                            "author": "jasper99",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Either through a catch-all email box or a forwarding service such as Simplelogin or Firefox relay. A forwarding service is simplest for this usecase.",
+                                                            "score": 6,
+                                                            "author": "RsX-"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Easy mode with no need for anything extra: Gmail ignores periods in your username. Sidestep companies breaking the email RFC by using those instead of plus signs. So instead of myname@gmail.com, you can use my.name@gmail.com.\n\nPick a style for real use and another for spam catching and stick with it. Then you just filter out incoming emails that include a period in the To field, or ones lacking the period, whichever you went with for spam.",
+                                                            "score": 4,
+                                                            "author": "EvadesBans"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 39,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I mean a lot of people these days will setup their own CDN. It's not that expensive, plus you have more control.",
+                                            "score": 18,
+                                            "author": "_oscilloscope"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Are those image URLs personalised by your email sending tool? I\u2019ve seen that with Pardot and similar where all URLs are changed - I\u2019d assume to enable tracking.",
+                                    "score": 5,
+                                    "author": "Foolastic",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "So you're saying we should use yahoo.",
+                                    "score": 13,
+                                    "author": "foggy-sunrise"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Doesn\u2018t sound great for you, but I\u2018m happy to hear that yahoo fucks up e-mail spammers",
+                                    "score": 5,
+                                    "author": "hobo_stew"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 15,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "You\u2019re sending out a massive e-mail with an embedded URL to an image that\u2019s directing the receiver to download it from your server and you\u2019re complaining that they are downloading it from your server.\n\nEmbed the images in the email if you don\u2019t want them to hammer the server.",
+                                    "score": 2,
+                                    "author": "On2you"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "All these people in the comments have their pitch forks out for you like *you're* sending *them* spam. A daily newsletter can be a lot of work. People subscribe to avoid doing that work themselves. \n\nAs long as you honor people's unsubscribe requests and respect their privacy by not selling their email address, you're not doing anything wrong. \n\nIf the image url is identical in each newsletter and Yahoo still hits the server for each one,  Yahoo is making themselves vulnerable to being a part of a DoS attack. A malicious actor could spam every known Yahoo user with an email that contains multiple image urls that may or may not exist on a target server. Then Yahoo would DoS that server with a flood of requests. \n\nEven if they do cache unique urls, they're proactively revealing the existence of its valid users' email addresses.\n\nNeither is good.",
+                                    "score": 2,
+                                    "author": "3IIIIIIIIIIIIIIIIIID",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; All these people in the comments have their pitch forks out for you like you're sending them spam. A daily newsletter can be a lot of work. People subscribe to avoid doing that work themselves.\n&gt; \n&gt; \n&gt; \n&gt; As long as you honor people's unsubscribe requests and respect their privacy by not selling their email address, you're not doing anything wrong. \n\nThanks, yeah as I mentioned elsewhere, these are customers who are double-opt-in and interested in receiving the content, so, I'm just ignoring everybody accusing me of sending spam.\n\n&gt; If the image url is identical in each newsletter and Yahoo still hits the server for each one\n\nYou know what, thanks - you may have just clued me in to something. I bet they're not all unique URLs, and that's why these services aren't caching them (they think they're distinct URLs).\n\nThe problem is still ours, because we have to build infrastructure such that it can handle high loads no matter what (and it's *not* as simple as \"just throw CloudFlare in front of it, dummy!\"), but, there may be a way to work around this problem in the mean-time. Thanks!",
+                                            "score": 3,
+                                            "author": "aftli",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Strictly speaking, you put the URL in the e-mail. They're just doing exactly what the HTML says.",
+                                    "score": 2,
+                                    "author": "Lord_Emperor"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I mean... why should Yahoo cache your images?  Embed them in the message next time.",
+                                    "score": 2,
+                                    "author": "ThirdEncounter",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Just ignore responses within x time of email sending?",
+                            "score": 2,
+                            "author": "Okonomiyaki_lover"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Thus specufic form of tracking was actually gotten rid of several years ago. Email providers now do the tracking for you",
+                    "score": 113,
+                    "author": "frogsexchange",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Came to say this. Many still do this as a backup mechanism but providers such as Google, Microsoft, and so on all provide this data to marketers. Source: I work in the field.",
+                            "score": 66,
+                            "author": "ars265",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "+1 also in the field. \n\nAlmost every YSK I see on how to avoid being tracked by marketing hasn't been applicable for years.\n\nIncognito? Hah. Cookies? Long solved. 1 time email address? Not a problem. Username+spammer@gmail.com trick? solved before people even knew it existed.\n\nIf we took 1% of the effort we put into targeted advertising and applied that to housing or hunger or climate change or literally anything net positive we'd be in a Gene Roddenberry Utopia.",
+                                    "score": 58,
+                                    "author": "RubertVonRubens",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Curious about the 1 time email address as I try to f with you guys by using 10minutemail for most things. \n\nHow do you get around this?",
+                                            "score": 11,
+                                            "author": "ToyCannon1982",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Depends on the site.  If you're purchasing anything, they can't share your credit card details, but you usually have to put in your first+last name and phone number, and they can share those.   So that makes it easy to tie all your one-time emails together.\n\nNow, speaking about web marketing in general, it's not that hard to track a specific browser across the web.\n\n**Info you give away:**\n\n* Even though your ISP doesn't provide a static IP address (unless you pay extra for a business account), your IPv4 address usually doesn't change until you reboot both your router and modem/ONT.  For \"normal\" people, all the devices in your house will share one external IPv4 address.\n* Even though your computer will periodically generate a new IPv6 address, the network prefix (first 56/60/64 bits, depending on how much your garbage ISP hates RFC 6177) will generally remain the same until you reboot both your router and modem/ONT.\n* Your rough location (ISPs provide the approximate location of every IP address, mostly for anti-abuse purposes)\n\n**Fingerprinting:**\n\n* The UserAgent string your browser sends (basically browser name + version) \n* Modern browsers support the &lt;canvas&gt; tag for drawing things in the browser window, with lots of browser-specific bugs/quirks (even different versions of the same browser).\n* A website can detect which fonts you have installed, which tends to be unique-ish\n* What features your have enabled (Java/ECMAscript, cookies, etc)\n* Whether you have adblockers installed (and which ones)\n\nThe combination of all the fingerprinting stuff is usually fairly unique in the world: No other person on your continent probably has the *exact* same combination of those attributes.\n\nYour best bet is to hide in the crowd by using completely stock (no extensions) Safari on the latest or next-to-latest iOS with iCloud private relay enabled.  All stock Safari on a given iOS version pretty much look the same, and private relay masks your location.  Also, use the privacy settings in Mail.app, which also use private relay.",
+                                                    "score": 33,
+                                                    "author": "NovelPolicy5557",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "All of this, plus one key thing:\n\nMaybe you have been identified and fingerprinted on your work computer. And also fingerprinted on your home computer. Then you log into the same service (Facebook, twitter, etc) on both computers, your two fingerprints are now linked in many marketing systems. So if you log into a one time email service from home, that is known to the sites you browse from work (in a hand-wavey summarize things for a Reddit post sort of way)",
+                                                            "score": 21,
+                                                            "author": "RubertVonRubens",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I was actually amazed by this when it happened to me. Started working at a company, got an email address from them, freshly created but with my full name in the address. I open the browser on a company pc, fresh account, I instantly get ads from stuff I was looking at on my phone at home. Even before doing anything with that email address, they already found me. Scares the shit out of me.",
+                                                                    "score": 5,
+                                                                    "author": "nepp951"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "First I've heard of this as well... I am pretty sure that using 1 time email addresses not linked to you with personal data can't be used by marketing. I am hoping I am wrong and I can learn something here.",
+                                                    "score": 3,
+                                                    "author": "CustomerComfortable7",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Google \"unified individual Marketing\"\n\nIf you open that one time email on a device that is known by a marketing platform, that email just gets added as one of many identifiers that is attached to your profile. These systems don't care how many identifiers you have and they have powerful ways to say which is the best email to use. \n\nhttps://www.adweek.com/sponsored/the-secret-to-marketing-transformation-is-a-unified-customer-view/\n\nThink of it as infection spread. If you're existing \"anonymously\" the second that anonymous activity touches something known about you (browser fingerprint, android or iOS device identifiers, a common ad tech partner, etc), it's no longer anonymous.",
+                                                            "score": 8,
+                                                            "author": "RubertVonRubens",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Maybe I am not understanding. I read the article you posted and I searched the term you gave. I am not seeing how they can connect your individual profile with 1 time email addresses, though. The majority of what I've read is talking about aggregating your various emails you actively use and have tied to your personal information within their platform(s).\n\nWhat unique identifier are they using when you open the email? The device it was opened on?\n\nThank you for explaining this stuff, I've never come across it before!!",
+                                                                    "score": 2,
+                                                                    "author": "CustomerComfortable7",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Yeah, the device is a common way \n\nTldr: the profile that is built up around you by marketing companies can be matched against the profile that is built up around some anonymous user using a 1 time email and those 2 profiles can then merge to create an even more robust profile about you. Making it even harder for you to be anonymous next time.\n\n\nFull transparency: I work on some of the software that powers this. I don't actually use the software so I'm not 100% on how it's used, but I know the capabilities.\n\nThe concept from a marketer's point of view is this: I want to know who is interested in my product.\n\nTypically it goes something like: a guest user is browsing my site. We can I fingerprint that browser and assign that person a unique identifier within our system.\n\nUser adds stuff to a shopping cart then creates an account adding PII (personally identifiable information -- this is the goldmine). That PII -- including email address and shipping address is now linked to that formerly anonymous identifier.\n\nThe user used a 1 time email so the company has no way to target them with more marketing.\n\nBut now it's a month later (or 2 years earlier. Doesn't matter) and, using the same browser used to make the purchase, the user likes the company's Facebook page. Or they create a separate account with the same shipping address.\n\nNow, that anonymous interaction has been linked. The purchase that was made using an anonymous account has been tied to a real person.\n\nThese interactions can get more complicated that this  -- especially given how few companies are actually involved and how tightly partnered they all are. But the net result is: any link that can be made between your anonymous online usage and your known online usage will be made -- a common browser, a common mobile device, a common social media or e commerce login. And once that link is made, it won't be unmade.  So the next time one tries to use a one time email from the same device or browser, it's too late -- they've already been identified.",
+                                                                            "score": 54,
+                                                                            "author": "RubertVonRubens",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "One thing to note is that device finger printing isn't _that_ reliable - in most cases it's 'ok' but from what I've seen as a developer is that it's not too hard to sidestep if you know what to do (that is unless youve found a way to do this really reliably, on which case kudos to you I guess)",
+                                                                                    "score": 7,
+                                                                                    "author": "poomplex",
+                                                                                    "replies": []
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Brilliant write up! Makes complete sense to me, thanks again.",
+                                                                                    "score": 4,
+                                                                                    "author": "CustomerComfortable7"
+                                                                                },
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Email tracking isn't that great unless you click on something to land on their site where additional trackers are. For instance, Gmail \"automatically opens\" your email, which is to say they download the image pixel to their server located where you're not.",
+                                                                                    "score": 3,
+                                                                                    "author": "TheCryptonian",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "https://simplelogin.io/",
+                                                    "score": 3,
+                                                    "author": "KalpolIntro"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 2,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Trust me bro",
+                                            "score": 2,
+                                            "author": "CyBot"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Marketing tech like MailChimp and Sendinblue still use it.",
+                                    "score": 2,
+                                    "author": "_Oce_"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Nope, it's still heavily used by marketing tech specialists like MailChimp and Sendinblue.",
+                            "score": 12,
+                            "author": "_Oce_"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "There is no way that an email provider sends such data to a 3rd party. I wouldn't be surprised to find out that they in fact do, but that's a huge violation of privacy.\n\nWith the image approach, 3rd party gets the data appropriately.\n\nEdit: holy shit it's likely is true\n\nhttps://www.rightinbox.com/blog/email-tracking-gmail#:~:text=Click%20on%20your%20sent%20folder,and%20on%20how%20many%20devices\n\nAbsolutely disgusting. Shame on Google",
+                            "score": 3,
+                            "author": "miraagex",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "As someone who works in emarketing and sends those emails this is true. But people should also know that tracking opens is becoming less common. My company stopped doing it a few years ago due to GDPR/CASL and other similar laws. The reason being that people can't consent to an open being tracked, whereas for click tracking you can consent prior to clicking a link (as long as language exists telling you we're doing it, you can always choose not to click a link). For us we mail to people all over the world so we don't track opens anymore, but any US-only companies may still do so. But yes, not downloading pictures should prevent that, just know that if you click a link they'll still have a record of that (which tells them you opened it anyway).\n\nThat being said, I don't find it to be a big deal. It's not like we're getting personal information out of email tracking. It helps us to see whose interested in what we're sending, target mailings and lists better, etc. Ideally it would be used to mail you less of the things you're not interested in and more of the things you are. As far as data collection goes, it's completely benign.\n\nIf you're annoyed by too many marketing emails, the best practice is to unsubscribe, and not merely delete it. That actually has some legal weight to it - they do need to remove you and most emails these days have automatic systems for immediately removing you from a list as soon as you click the link. So always scroll to the bottom to find the unsubscribe language - it will always be there as long as it's a legit email and not complete spam. We have no way of knowing you're not interested if you don't tell us and we are legally required to stop mailing to you once you do.",
+                    "score": 10,
+                    "author": "Kyralea"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is the answer I came to post. On iOS you deactivate the automatic image download. It\u2019s actually surprising how many companies do it.",
+                    "score": 24,
+                    "author": "PowerfulandPure",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I always wondered how that worked! Thank you!",
+                    "score": 4,
+                    "author": "Cadamar"
+                },
+                {
+                    "level": 1,
+                    "comment": "one thing proton mail provides and one of the reasons i use it.",
+                    "score": 4,
+                    "author": "Stromberg-Carlson"
+                },
+                {
+                    "level": 1,
+                    "comment": "Use Protonmail or tutanota",
+                    "score": 13,
+                    "author": "Kastranrob",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I use ProtonMail, but still kept the old emails on yahoo,Gmail and Hotmail.\n\nI also use a temp email service (ironvest, bnt abime) to make unique emails for one service and delete if any abuse.",
+                            "score": 6,
+                            "author": "Cyserg"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "How to do so on Gmail and outlook",
+                    "score": 7,
+                    "author": "Stroov",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": " Gmail : \nOn your computer,  \ngo to Gmail. In the top right, click  \nSettings. See all settings.Scroll down to the  \n\"Images\" section.Click Ask before displaying  \nexternal images.At the bottom of the page,  \nclick Save Changes.\u00a0\n\n\nFrom the Outlook  \n window, select the File tab, choose Options &gt; Trust Center.Under Microsoft  \n Outlook Trust Center, click Trust Center Settings.Select the Don't  \n download pictures automatically in HTML email messages or RSS items check box.\n\nEdit: Sorry for the format, don't know what it wants from me, and reddit won't listen to logic",
+                            "score": 10,
+                            "author": "Cyserg"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It is like OP is living in 2004.",
+                    "score": 3,
+                    "author": "DrunkenGolfer"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I recently received an email admonishing me for NOT reading their emails and saying I'll be unsubscribed without action.  It was a newsletter about navigating digital distractions, so the automated unsubscribing was aligned with their ethos.",
+            "score": 653,
+            "author": "w24x192",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They are probably trying to clear inactive emails. So they have lower cost for smaller database.\nLast few weeks emailing services increased the cost of packages",
+                    "score": 29,
+                    "author": "LordGuru",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yup we do this all the time. No reason to waste emails to people who don\u2019t want them or open them.",
+                            "score": 12,
+                            "author": "williamtbash"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "May I ask what newsletter?",
+                    "score": 61,
+                    "author": "KibethTheWalker",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Any decent marketing team will have a reengagement campaign that triggers when you don't open any of their emails for 60-90-120 days (different teams use different thresholds depending on how many emails they send).\n\nIf Gmail sees a lot of emails from a company aren't getting opened, they'll be more inclined to send their emails to spam.\n\nTo avoid this, marketers set up reengagement campaigns which are basically emails that say \"hey FYI, you're not opening our emails but you also haven't unsubscribed, so unless you XYZ were going to go ahead and unsubscribe you\". \n\nThey do bring a small number of people back into the fold, but mainly they keep your list clean.",
+                            "score": 99,
+                            "author": "InternetWeakGuy",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "\"Nir and Far\" from Nir Eyal.",
+                            "score": 38,
+                            "author": "w24x192"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Morning brew does this also",
+                            "score": 11,
+                            "author": "4ellights"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I was at a work conference and signed up for an email list in order to get a free shirt or something last year.\n\nAfter not replying to maybe 5 or so emails, the dude literally emailed me and said \"I can see that you've been reading my emails, don't worry about how but feel free to check this offer for our service out since I know you're reading this :)\"\n\nI immediately unsubscribed and blocked the motherfucker. I met the dude in person and spoke with him too. Who in their right mind sends that from a work email to another business?",
+                    "score": 41,
+                    "author": "atx705",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That was probably automated. You can see who is opening emails but not clicking on any links in them. You could simply have the email app (like hubspot) automate a comms workflow that messages anyone with several opens but no click-throughs.",
+                            "score": 18,
+                            "author": "CapOnFoam",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Open rates affect whether email clients will label you as spam or not. Good email marketing companies won't send emails to users who aren't opening them because they don't want to lower their open rates.",
+                    "score": 10,
+                    "author": "206-Ginge"
+                },
+                {
+                    "level": 1,
+                    "comment": "I run the automated marketing for my company. Basically, if you aren\u2019t opening up emails they want you off the list as it effects their overall open rates and depending on their operating platform, keeping excessive users can add to overall marketing costs.",
+                    "score": 4,
+                    "author": "dinozombiesaur"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Thunderbird will automatically prevent external elements from loading. If the sender asked for a confirmation mail thunderbird will ask what to do.\n\nYour email program will most likely mark the mail as read, load the tracker and send a confirmation email if they requested it as soon as you click it.",
+            "score": 789,
+            "author": "7eggert",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wow Thunderbird! Now that's a name I haven't heard for a long time.",
+                    "score": 56,
+                    "author": "gdmfr",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thunderbird is still going strong. I use it with the Owl Mail plugin for work. They're in the process of redesigning the UI now, apparently.",
+                            "score": 10,
+                            "author": "Lt_Riza_Hawkeye"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;Thunderbird will automatically prevent external elements from loading.\n\nand gmail - and outlook - and probably almost all other major email clients.\n\nI'd actually be interested to see a list of email clients/providers that DO download images automatically by default.",
+                    "score": 195,
+                    "author": "Douche_Baguette",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Dude outlook is so zealous sometimes I can't get pictures to load even in emails where I actually want to see the marketing. I guess I know why now and I'm not even mad anymore.",
+                            "score": 17,
+                            "author": "dexmonic",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 4,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I don\u2019t get the option on iOS default mail app. I suppose you can change it in settings but this is the default behavior.",
+                            "score": 16,
+                            "author": "danielleiellle",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, apparently the default behavior in iOS is \"protect mail activity\" - which remotely downloads mail images on Apple's servers then proxies them to you, to prevent senders from getting your IP address.\n\nWhich is a good feature in itself - it shouldn't prevent disabling image downloading alltogether - but it does.",
+                                    "score": 36,
+                                    "author": "Douche_Baguette",
+                                    "replies": []
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Gmail downloads images automatically by default.",
+                            "score": 4,
+                            "author": "fox-friend"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "gmail also has this option:\n\nhttps://abcnews.go.com/US/block-images-gmail-iphone-ipad/story?id=65482728\n\n1. settings\n1. show all settings\n1. images \n1. \"Ask before displaying external images - This option also disables dynamic email.\"",
+                    "score": 21,
+                    "author": "altcodeinterrobang",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Isn't that on by default? I've never looked in the settings, but it always asks me if I wanna load images.",
+                            "score": 3,
+                            "author": "00wolfer00",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So does Proton",
+                    "score": 31,
+                    "author": "yaCuzImBaby",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Had such a bad experience with protons support lying to me I'll never use them ever. Took months with my bank to get my money back.",
+                            "score": 6,
+                            "author": "SiscoSquared",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What happened? I just recently started using one of their paid services.",
+                                    "score": 12,
+                                    "author": "ObiWanHelloThere_wav",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I\u2019ve been using them for years. Never had a problem",
+                                            "score": 5,
+                                            "author": "1chemistdown"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Been using them for years, never had problems. Some months ago they had an outage of some hours, but I think it was related to a third-party broken update",
+                                            "score": 3,
+                                            "author": "send_me_a_naked_pic",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Does Thunderbird have a mobile app?",
+                    "score": 5,
+                    "author": "Tytonic7_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Fairemail exists and works quite well https://email.faircode.eu/",
+                            "score": 4,
+                            "author": "ronaldvr",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "So does Proton",
+                    "score": 9,
+                    "author": "yaCuzImBaby",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 312,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Damn fellow CRM vendor employee (or ex employee in your case). Can vouch for all of this, except the vendor I work for is muuuuuuuch nicer to employees than salesforce",
+                    "score": 56,
+                    "author": "unounounounosanity"
+                },
+                {
+                    "level": 1,
+                    "comment": "Wouldn't it be Guitar Center using Salesforce to do that? I mean, everyone's a scumbag sure, but from what I understand Salesforce won't do anything unless the company tells it to do it. It would be like blaming Outlook or Google Mail. \n\nSource: ignorance.",
+                    "score": 28,
+                    "author": "RepliesPantsless",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Huh? Yes Salesforce is a software. Companies ultimately uses it as a tool and make decisions on how to approach their customers.",
+                            "score": 14,
+                            "author": "CapybaraForever",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So if I'm understanding correctly, it's not exactly fair to lay the blame on \"companies like Salesforce.\" In your example it would be Guitar Center who are making the decisions on sending the 11 vs. 2 monthly.",
+                                    "score": 9,
+                                    "author": "RepliesPantsless",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Probably more of a Kafka-esque thing where everyone denies their own agency in the decision process.",
+                                            "score": 8,
+                                            "author": "Rufus_Reddit",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "What does that clown from FF3 have to do with this?",
+                                                    "score": 3,
+                                                    "author": "umbrajoke"
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It\u2019s 100% Guitar Center though. Salesforce is just a tool.",
+                                                    "score": 2,
+                                                    "author": "RaiseHellPraiseDale3"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "idk, I worked for a company that used saleforce, and sf was there in house constantly advising on what to do and how to strategize using their software.",
+                                            "score": 2,
+                                            "author": "JRR_SWOLEkien"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Some tools \"push\" their users to make certain decisions through design choices though. I don't know if that's the case here, but tool makers can be partially responsible in some cases.",
+                            "score": 2,
+                            "author": "CherimoyaChump"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "If you choose an email provider that helps you protect your privacy, you don\u2019t need to worry about this. Proton Mail automatically removes all trackers from emails so that advertisers don\u2019t know anything about you.",
+            "score": 136,
+            "author": "IrinaOzzy",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It\u2019s a built in feature of Apple\u2019s mail app as well",
+                    "score": 54,
+                    "author": "Sea-Builder-1709",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Apple mail takes a different approach actually:\n\n&gt;\tIf you choose to turn it on, Mail Privacy Protection helps protect your privacy by preventing email senders, including Apple, from learning information about your Mail activity. When you receive an email in the Mail app, rather than downloading remote content when you open an email, Mail Privacy Protection downloads remote content in the background by default - regardless of how you do or don't engage with the email. Apple does not learn any information about the content.\n\n&gt;\tIn addition, all remote content downloaded by Mail is routed through multiple proxy servers, preventing the sender from learning your IP address. Rather than share your IP address, which can allow the email sender to learn your location, Apple's proxy network will randomly assign an IP address that corresponds only to the region your device is in. As a result, email senders will only receive generic information rather than information about your behavior. Apple does not access your IP address.\n\n[source](https://www.macrumors.com/2021/06/10/ios-15-mail-privacy-protection-tracking-pixels/)\n\nSo what\u2019s actually happening is that the tracking pixel will be downloaded as soon as it\u2019s received in your inbox. The tracking pixel being downloaded is supposed to tell the tracker that you\u2019ve opened their email, but that signal becomes completely unreliable for apple mail users. This ends up not only ruins these tracking metrics for all Apple mail users, but also burdens the company by basically DDOS\u2019ing their servers with tracking pixel hits. \n\nThe company I work for does some email marketing and we\u2019ve found that tracking metrics from customers using apple mail is pretty much useless because of this, and we had to put checks in place so that our servers didn\u2019t crash when apple made this change",
+                            "score": 52,
+                            "author": "LVT_Baron",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I run both my Gmail addresses through the iOS mail client and it\u2019s awesome.",
+                                    "score": 4,
+                                    "author": "Brittle_Hollow"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "It doesn\u2019t work tho. I have Protect My Email turned on, but the preview text will trigger the opening trackers. I\u2019m disputing a subscription. The merchant sent a screenshot from their Klayvio account showing the bank that I opened all their emails, which I specifically avoided opening. Klayvio says on their website that preview text will trigger their opening tracker.",
+                            "score": 24,
+                            "author": "BurstTheGravity",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Apple downloads EVERY email image / tracking pixel when it hits their servers. That is what the merchant most likely saw.  \n\nhttps://www.apple.com/legal/privacy/data/en/mail-privacy-protection/\n\nhttps://support.apple.com/guide/mail/use-mail-privacy-protection-mlhl03be2866/mac",
+                                    "score": 20,
+                                    "author": "panicalways",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "That just means the feature was working exactly as intended. \n\nThe merchant should have known that the metrics from Apple Mail users are basically useless. Emails sent to an Apple Mail address will show up as opened regardless of what the recipient did with them.",
+                                    "score": 12,
+                                    "author": "MaryKeay",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not just Apple Mail addresses - it applies to anyone who uses the Apple Mail application  (including on iOS) to access their email, regardless of the address used.",
+                                            "score": 5,
+                                            "author": "Imnotsureimright",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yup, that's what I pictured in my head as I typed out wrong info! \ud83d\ude05 You're absolutely right.",
+                                                    "score": 2,
+                                                    "author": "MaryKeay"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Gmail (somewhat controversiallly) rehosts all images in emails so that when you open an email it loads the image from Google's servers and so the original email sender won't know you opened the email.",
+                    "score": 6,
+                    "author": "perfectfire"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I'm a marketer, we don't really care unless you click something. Open rate on emails doesn't have much impact. We are interested in remarketing to those who show the most propensity to buy. \n\nSo if you opened and clicked the last 2 campaigns but didn't buy a company might qualify you for a discount to try and close the deal. \n\nAlso a lot of software has email preview and it counts as an open. So open rate doesn't hold a ton of weight.",
+            "score": 127,
+            "author": "nitrosunman",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, I am a markter for b2b saas so we don\u2019t really spam you per se (i just send some \u201ceducational\u201d newsletter) and email open rates don\u2019t really mean much \u2014 it just tells the marketer she succeeded in having the potential customers click on the title but that alone is not enough or necessarily useful.",
+                    "score": 11,
+                    "author": "iamnottheuser"
+                },
+                {
+                    "level": 1,
+                    "comment": "Curious about one thing. If I like some youtubers and want to support them, will they get extra money if I click all ads \ud83e\udd23",
+                    "score": 4,
+                    "author": "LiteratureNearby",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Marketing guy here.\n\nThe only information I get are open rate and click-through rate.  No individual information.\n\nWe use this to gauge if the subject line was effective (open rate) and if the content was effective (CTR) so that we can tweak those in the future as needed.\n\nAs to the time you open it, device you open it on, and what you had for breakfast, we don't get those.  We don't want those.\n\nWhile every company is different, at mine we're not collecting any of your personal information.  We're just trying to do the bare minimum to not get fired just like everyone else.",
+            "score": 360,
+            "author": "rohlinxeg",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[deleted]",
+                    "score": 42,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, we're *definitely* not putting 3rd party code in our e-mails for heat mapping.  Jesus, that's a hard no.",
+                            "score": 23,
+                            "author": "rohlinxeg",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Each link has a separate tracker id. They\u2019re literally just putting a fancy heat map around where people click links. There\u2019s no \u201c3rd party code\u201d. Mail clients can\u2019t run scripts.",
+                                    "score": 17,
+                                    "author": "kev0ut",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Oh come on, it\u2019d be so interesting! \n\nBut also so much work, ugh.",
+                                    "score": 5,
+                                    "author": "FamousOrphan"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Even a basic MailChimp account can show heat maps.",
+                                    "score": 3,
+                                    "author": "MaryKeay"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I was going to say something similar. I\u2019m also in marketing and this isn\u2019t as sinister as OP makes it sound. Everyone is just a statistic to the marketing team. They are trying to determine the best strategy to get the attention of their target audience. They want to know if you opened it, if you removed yourself from the mailing list, and if there are any links inside the email they want to know the % of people that clicked those links. It\u2019s just to help them build a better email campaign for next time. We don\u2019t learn anything about you personally. \nIf you delete or don\u2019t open the email, it just tells us that you A. Didn\u2019t like that specific campaign or B. The content was fine but we targeted the wrong person.",
+                    "score": 128,
+                    "author": "letgoofthepizza",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Another marketing person chiming in to agree that it\u2019s not sinister. We don\u2019t want to send emails to people who don\u2019t want them or don\u2019t care. We want to know when you open an email because that means you care or you resonated with the subject line. Sometimes we send out two batches with different subject lines and if more people clicked one or the other, we can better understand what our audience likes. We don\u2019t draw a pentagram on the floor and chant as the emails analytics come through and sell your email to the dark lord. We just look at our dashboard and say \u201coh look, people clicked this more than that.\u201d\nAnd if you click an email because you\u2019re trying to figure out what the heck it is, and decide it\u2019s garbage, by clicking unsubscribe, we\u2019re legally bound to not email you again.",
+                            "score": 56,
+                            "author": "CharlieAlfaBravo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;\tWe don\u2019t draw a pentagram on the floor and chant as the emails analytics come through and sell your email to the dark lord. \n\n But\u2026that would be a good show.",
+                                    "score": 20,
+                                    "author": "dumbleberry",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Developer chiming in to say it can easily be that sinister and many marketers are actually like that.",
+                                    "score": 4,
+                                    "author": "LaPlimbare"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; by clicking unsubscribe, we\u2019re legally bound to not email you again\n\nI have often encountered emails from lists I had long since unsubscribed from. Do you (or anyone) happen to know if there's an easy way to seek legal recourse for that?",
+                                    "score": 2,
+                                    "author": "Breadhook"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Also no smart marketer wants to send emails to people who obviously don't want to receive them. Its a waste of money.",
+                    "score": 10,
+                    "author": "delightfuldinosaur"
+                },
+                {
+                    "level": 1,
+                    "comment": "I work in email marketing and can confirm. Though I will add that open/click metrics are also often used to determine how many emails a specific contact receives from a brand. If you open regularly (or appear to open regularly because of your chosen email provider), some brands will take that as an invitation or ramp up their sending cadence for you. On the flip side, you might also get access to deals that way, like early access to major sales. But some brands do the opposite and target their unengaged recipients with their best offers in a last-ditch effort to retain them\u2026 \n\nMany brands pay for their sending platform by the contact and/or by the quantity of emails they send. So it\u2019s in their best interest to identify their most/least engaged users via open/click data.",
+                    "score": 6,
+                    "author": "greyhamismyman"
+                },
+                {
+                    "level": 1,
+                    "comment": "At least for me, the issue is less with legitimate marketing emails from real companies, and more with spam and scam emails that would use trackers to inundate me with more spam and scams. This is especially true when real companies honor unsubscribes, while spam/scams use attempted unsubscribes to send more junk.",
+                    "score": 6,
+                    "author": "adambulb",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; As to the time you open it, device you open it on ... We don't want those.\n\nI don't know what ESP you're using but most of the industry leading vendors absolutely do collect this data, and many store it visibly and openly on the user profile (source: years in agency-side martech ops, have worked with 15+ ESPs and dozens of clients including FAANG and Fortune 100s). Send time optimization is a big-time thing in marketing automation and I've been involved in plenty of projects crunching analytics or segmenting audiences by device, OS version, ISP, email client, timezone, country, etc. (Never for nefarious reasons, usually just to troubleshoot deliverability or prove to execs that it's a waste of time to worry about HTML rendering for the 15 people in our audience that use LotusNotes on their iPhone 3 or some shit, but still.)\n\nYour point stands though that no marketer is opening up Bob Smith's profile to see what time Bob Smith opens his emails so they can send Bob Smith more emails to read at the breakfast table. It's all segmented and automated and batched out by the thousands or hundreds of thousands or even millions. Nobody in marketing cares about *you,* specifically.",
+                    "score": 18,
+                    "author": "NOODL3",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah this is basically it. Email marketing is still crazy old school. They've been using this pixel stuff for tracking since the old pre CAN SPAM days. Only when users hit landing pages do they start gathering the good stuff.",
+                    "score": 5,
+                    "author": "soonerguy11"
+                },
+                {
+                    "level": 1,
+                    "comment": "100%. Way too many people demonize marketing departments. We\u2019re all just chill young folks, many of us on Reddit lol. We\u2019re very much not the ones being sleazy and shit, that\u2019s usually either salespeople, heads of marketing/execs, etc, depending on the company, obviously with a lot of variance from company to company, I\u2019ve been lucky to work at good companies with marketing teams and bosses all being on the up and up.",
+                    "score": 10,
+                    "author": "ruffsnap"
+                },
+                {
+                    "level": 1,
+                    "comment": "Another marketing person chiming in to agree that it\u2019s not sinister. We don\u2019t want to send emails to people who don\u2019t want them or don\u2019t care. We want to know when you open an email because that means you care or you resonated with the subject line. Sometimes we send out two batches with different subject lines and if more people clicked one or the other, we can better understand what our audience likes. We don\u2019t draw a pentagram on the floor and chant as the emails analytics come through and sell your email to the dark lord. We just look at our dashboard and say \u201coh look, people clicked this more than that.\u201d",
+                    "score": 13,
+                    "author": "CharlieAlfaBravo",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I mean the issue isn't legitimate newsletters I subscribed to, the issue is malicious spam mail and nigerian princes who then mark my e-mail as active and send me even more literal spam",
+                            "score": 4,
+                            "author": "-Reverend"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; at mine we're not collecting any of your personal information.\n\nWell, that you know of anyway. \n\nMarketing guy, but the guy who builds those tools / engineering workflows - even small agencies I've consulted for horde PII like it's going out of style.",
+                    "score": 3,
+                    "author": "Cyndershade"
+                },
+                {
+                    "level": 1,
+                    "comment": "Ex-sales guy here from a probably-different company.\n\nWe got your first name, last name, email, and address/phone number if at all possible. We were then expected to hound you over and over, even if you literally tell us over the phone that you're not buying.\n\nI could tell my boss, \"Hey, that person isn't interested,\" and he'd say, \"Well, you don't want to leave a sale on the table,\" and it didn't help that **number of calls made** was one of my KPI's.\n\nThere's a reason I left sales :)",
+                    "score": 3,
+                    "author": "TTTrisss"
+                },
+                {
+                    "level": 1,
+                    "comment": "I used to write software for an email marketing supplier (over a decade ago) and I can guarantee you that the individual opens and clicks are indeed tracked. You, in your specific role or as a client of the provider, may not see anything more than aggregate data, but I am 100% assuring you that every major player in the space has been tracking individual opens/clicks for as long as email clients have allowed images.",
+                    "score": 3,
+                    "author": "TriangleTransplant"
+                },
+                {
+                    "level": 1,
+                    "comment": "You bring up some excellent points. I am delving into Data/ML stuff and it seems like that would all be a **ton** of useless data that would both need to be stored and then eventually sorted. There are just some data sets that don't provide enough useful information to be applied to outcomes of learning models.",
+                    "score": 3,
+                    "author": "PartyClock"
+                },
+                {
+                    "level": 1,
+                    "comment": "This should be the only thing legal. Nice work. Honestly this is enough. Any personal information going over the internet without the owner of it knowing is a bad thing.",
+                    "score": 3,
+                    "author": "nepp951"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; ... The only information I get are open rate and click-through rate. No individual information. ...\n\nThere's a difference between what information that gets sent, and what information the receiver chooses to pay attention to.  It's pretty easy to send and track individualized links (even if you or your company choose not to).  There are also well-documented techniques for analyzing requests made by web clients and extracting various information from them.\n\nThe possibility that there are some \"good actors\" out there that are magically only going to do things that we're OK with doesn't change the reality that there are plenty of bad actors who will exploit things as much as they can.",
+                    "score": 8,
+                    "author": "Rufus_Reddit"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not only do they know you opened it, but pretty standard marketing methodology is to send the same email to customers, but with a couple different subject lines and then they track with subject lines have a higher open rate. Some companies will track which types of subject lines have a higher open rate by you personally, and use that to determine which subject line options you personally get in the future.\n\nAlso-I used to work for a CRM company (like SalesForce but smaller and it was specifically designed for one industry).  One big selling point to clients is if they sent their email marketing out of our software, not only did we get the normal basic info like which customers opened the email, when, how many times, and if they clicked any of the links in the email, but if they DID click an email link we captured their IP address and then cross referenced the log we were keeping separately of every IP address that went on their website and knew what their website activity was going forward-what product pages they were looking at and when.  \n\nThis meant too that you could make first contact with somebody, mark them in your CRM as low interest because of the vibes they gave you when you talked to them, but you send them an email and they click a link and suddenly you get all the historical data and see they\u2019ve been on your website looking at one specific product twice a day for the last two weeks. You now know to mark them as a much higher interest level and market to them more aggressively.\n\nAnd of course, that means if you have a sale that seems like it went cold-the customer stopped replying to emails answering your phone calls and hasn\u2019t even opened an email in a while-you know they are still interested because you can secretly see that they are still going on your website and window shopping the item they were interested in.  You have all the info because they opened one email and clicked one link one time.",
+            "score": 13,
+            "author": "shellybearcat"
+        },
+        {
+            "level": 0,
+            "comment": "What email client still downloads images automatically?",
+            "score": 90,
+            "author": "seweso",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Webmail viewers.",
+                    "score": 17,
+                    "author": "kent_eh",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Gmail for sure does not download images from untrusted senders - and Outlook 365. Which webmail viewers DO automatically download images from untrusted senders?",
+                            "score": 27,
+                            "author": "Douche_Baguette",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Will this work to prevent automatic image downloading in gmail?\n\nhttps://www.pcmag.com/how-to/how-to-stop-images-from-automatically-downloading-in-emails",
+                                    "score": 3,
+                                    "author": "zzx101",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "My bad, I wasn't clear. Gmail does NOT automatically download images from untrusted senders. Example: https://i.imgur.com/0t99sdM.jpg",
+                                            "score": 8,
+                                            "author": "Douche_Baguette",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Shitty ones.",
+                    "score": 2,
+                    "author": "ostereje"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I posted this as a response to another query below, but figured it seemed apropos here as well:  \nThere are tools used by Internet marketing services that record when an image is loaded from an email that has been opened. A 'read' email is one that has been opened and listed in your client as having been read.\nAs far as deleting emails, most emails are not deleted, they are assigned a flag of 'deleted' and moved to another virtual 'folder', aka, 'Deleted'. Even if you go into the Deleted folder and empty it/delete forever, etc. They are still not truly gone; they are only gone from your view. There are backups, and in some cases, particularly those associated with business accounts, they are put on what is known as litigation hold, that is to say they are stored by the email provider to be made available in the case of an e-discovery subpoena.\nOn basically all free email accounts, your emails are yours in the same way a leased building is yours. You have a right to use it, but in the end the final say is belongs with the actual owner.\nThere are a few services in progressive minded nations that truly do not store your emails and do not have access to them. Protonmail is one of those service companies that provide truly secure email and actual complete deletion.\nDoes that answer your question?  \nEdit:  To address some people who just /have/ to have things excessively detailed, or so my source is not my asshole, here is a little more information.  The pixel is a single pixel that is loaded from a web server using what is called an HTML tag.  HTML tags are what amount to lists of ingredients in the recipe that makes the email or a webpage.  So, when someone opens an email, the tag is instantiated, the pixel requested and loaded from a webserver into your client.  The computer from which that pixel was requested (yours) is recorded on the webserver.  A reasonable analogy is purchasing something over the Internet, you have to supply the sender your address; same thing here.  What is being requested is a very small image, and the pixel-sender has to know where to send the pixel.  They are exploiting a foundational component of what allows the Internet to work, for marketing purposes.  \nIf you, at some later date, open a webpage with a pixel tag pointing to the same webserver, the webserver will say 'oh, hey, such and such a computer has touched this site before.'    This is not exactly the full detail and not written with absolute precision, but it is sufficient to give laypeople something of an idea of what this stuff is used for and how it is invasive.  To the couple of snide replies to my response, I will repeat; slag off.",
+            "score": 72,
+            "author": "circular_file",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "[I'm not sure how true that is re: protonmail anymore. They were recently subpoenaed and changed their policies in response. ](https://www.wired.com/story/protonmail-amends-policy-after-giving-up-activists-data/)",
+                    "score": 19,
+                    "author": "OldHagFashion",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "wow that is embarrassing, they advertised not retaining ip address logs and then quietly deleted that part when it turns out they were",
+                            "score": 7,
+                            "author": "teraflux",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It seems like something called a warrant canary where a company will explicitly state they wont hand over data to law enforcement but after that tos changes you know they have been court ordered to give up some of their users data",
+                                    "score": 2,
+                                    "author": "The_Alaska_Shibe",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I highly recommend DuckDuckGo email protection, described in the link here. \n\nIt not only strips trackers, but generates instant alias emails that you can later deactivate with a click. \n\nI\u2019ve been using it for a while now and get way less spam email. \n\nhttps://www.wired.com/story/how-to-use-duckduckgo-privacy-first-email/",
+            "score": 7,
+            "author": "trekingMTB",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "The company I work for does this with invoices. It\u2019s funny when people try to say \u201cwell we never got the invoice\u201d because I know they\u2019re lying.",
+            "score": 36,
+            "author": "gxbcab",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "All they get is whether you opened it, if so how many times and when, and what you clicked on. It just helps with their own work performance tracking.",
+            "score": 5,
+            "author": "FamousOrphan",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You should also know, very few sales and marketing organizations know how do use this data. After working at a number startups I can say it was single to low double digit percent that even looked at the data... Half of that had no clue what that meant in terms of actually targeting you as a consumer. The data only matters if someone does something with it.",
+            "score": 6,
+            "author": "captainpistoff"
+        },
+        {
+            "level": 0,
+            "comment": "I can assure you that we do not care your device, time, or your web browser.\n\nYou are just one of the minuscule data that shows in our side as open rate\n\nSource: works in marketing",
+            "score": 6,
+            "author": "beautifulafro"
+        },
+        {
+            "level": 0,
+            "comment": "plenty of email clients that block tracking",
+            "score": 5,
+            "author": "No_Wall118"
+        },
+        {
+            "level": 0,
+            "comment": "True. I know when it's opened. How many times it was opened and with what type of device. If you click on any link I know how long you were on what Videos or texts. So far it doesn't matter what privacy settings or devices people use / apple vs Mac or Gmail vs other services. It always works. It's super scary shit. After I got into sales I changed many things in my life away from big data.",
+            "score": 4,
+            "author": "iTravelLots"
+        },
+        {
+            "level": 0,
+            "comment": "\n&gt;The email trackers are becoming [\u2026] more complex\n\nEh, this is about as complex as it gets. There's not a whole lot more room for innovation without more capabilities being added to the standard inbox.",
+            "score": 3,
+            "author": "AyeAmReddit"
+        },
+        {
+            "level": 0,
+            "comment": "Especially spam emails, they become very good at bypassing the spam detection and land in the main part, so when u see a suspicious email like from Coinbase or \"Interpol police\".. justice select it and mark it as spam because if you open it, they gonna know it's a real ema, l and they gonna send more..",
+            "score": 5,
+            "author": "XACHREFX"
+        },
+        {
+            "level": 0,
+            "comment": "this may have already been mentioned but disabling images prevents email marketers from knowing when an email was opened.\n\nEmail marketing software usually attaches a tracker (small 1px by 1px transparent image) and when you open the email, your email client downloads that image, that\u2019s how they find out.",
+            "score": 4,
+            "author": "tiberiuion91"
+        },
+        {
+            "level": 0,
+            "comment": "Yeah, OP. That's how it's been for a long time. It's not always dire and most marketers aren't out to hack your Facebooks. It's simply used to better target you with marketing that you would be interested in. It's truly horrible for the company when you mark their emails as spam so they will do everything they can to prevent that.",
+            "score": 13,
+            "author": "BadassSasquatch",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, as someone who wears the email marketing hat on regular occasions, one of the biggest reasons we track this stuff is one the end-user should ultimately be happy about: if you aren't opening or clicking inside our emails, we stop sending them to you. People who don't engage with our marketing content are more likely to mark the emails as spam or to unsubscribe (revoking our ability to send you marketing content entirely), which we definitely don't want.\n\nIf you haven't engaged for long enough, you'll stop receiving regular emails from most companies and will instead only receive the occasional \"You still interested in this stuff?\" email every once in a long while.",
+                    "score": 3,
+                    "author": "Reead"
+                },
+                {
+                    "level": 1,
+                    "comment": "I religiously unsubscribe from every marketing email. Most companies go waaaaay overboard, thinking daily or multiple times a week emails is a good way to engage with people.\n\nIt ends up as a race to bottom so you end up with two types of people: those like me who keep inbox zero and unsubscribe from everything, or those who have 3,986 unread emails with the majority of it being marketing spam. Instead of email marketers thinking \u201chmm, maybe we should focus more on providing actual value with our emails so people will want them\u201d they end up \u201cthe best way to stand out among the 3,986 unread emails is to send 3,987 emails of our own\u201d.",
+                    "score": 2,
+                    "author": "dizzy_absent0i"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Use Proton Mail",
+            "score": 3,
+            "author": "nonchalan8t"
+        },
+        {
+            "level": 0,
+            "comment": "Can also happen when you\u2019re emailing someone within a business directly. Worked in a marketing agency and the crm (customer relationship manager) we used had an email add on that told you exactly when someone had looked at the email",
+            "score": 3,
+            "author": "barrenvagoina"
+        },
+        {
+            "level": 0,
+            "comment": "Is that why they keep sending me their digital trash after I unsubscribe?",
+            "score": 3,
+            "author": "BaconBombThief",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "I used to work for a large financial firm and part of my job was to blast out marketing emails to my branches clientele. I was able to tell at exactly what time the e-mail was opened and even how many times the client opened the e-mail. The ones who would open the e-mail multiple times would usually then get a call from me to follow up.",
+            "score": 3,
+            "author": "Upbeat_Shock_6807"
+        },
+        {
+            "level": 0,
+            "comment": "Can confirm, used to work sales at an auto dealership. Our systems would notify us or really just show if emails had been opened and how many times. We were instructed to keep on top of them and if we saw that a customer open an email to call as soon as possible and use a line like \u2018hello Mr customer, I just sent you and email and forgot to put the updated price for you, so that price listed is generic. Please call me for your specific price, or just email/text if that works better.\u2019 \n\nDid that work? Fuck no, most people aren\u2019t that stupid to fall for it, but a very small percentage of people would be looking at the email and think, shit, I wonder what \u2018my\u2019 price is, especially if they\u2019ve been shopping and have a handful of different prices or even dealerships that wouldn\u2019t give prices. \n\nThe funny thing is how many people would call to complain that their salesperson hadn\u2019t even attempted a single contact and they wanted a $5k discount as a disgruntled customer. The manager would look and say \u2018well, our system shows 7 voicemails left over the last 48 hours at this number that you\u2019ve called me from, is that your current number? Oh, it\u2019s a friends phone that you are borrowing, and they didn\u2019t tell you about the messages? Ok. Well, they also sent 5 emails in the last 48 hrs to (imanidiot@moron.com), that\u2019s the email address you requested we email. Oh, of course, they must have all been routed to spam. I can confirm that all 5 emails were immediately opened, and the most recent one sent 10 minutes prior to this call, which is how you got this number I\u2019m assuming. I\u2019m sorry but I can\u2019t authorize what you are asking, but I\u2019m still happy to make you a deal, and if you are unhappy with your salesperson I\u2019d be happy to deal with you personally when you arrive, is 4pm fine for you or would 7pm work better?\u2019",
+            "score": 3,
+            "author": "eatfreshguy407"
+        },
+        {
+            "level": 0,
+            "comment": "As someone who recently started working in sales, I am shocked by how much of a persons information I can see sometimes. A company can see if you\u2019ve opened an email, how many times you opened it, and if they want to keep that info, it\u2019ll be attached to a bunch of other information that is tracked, like where you work and what you do there, so that you can be prospected for cold calls. I have software that we pay for where I can find someone\u2019s number, email, cell, even current address and past addresses. I can see who your brother and sister are sometimes.  \n\nFucking. Freaky.",
+            "score": 3,
+            "author": "pleaseletmedieplease"
+        },
+        {
+            "level": 0,
+            "comment": "Once again, a YSK that misses the mark...",
+            "score": 3,
+            "author": "notblackblackguy"
+        },
+        {
+            "level": 0,
+            "comment": "You can also unsubscribe to marketing emails.\n\nMost of the time, we sign up to brands' marketing emails because we're interested in their products at the time but the interest definitely falls off overtime. And their promo emails just accumulate unopened.\n\nBut yes, it can get worse if you open it. Depending on their marketing strategy, they can send more emails just because you opened an email.",
+            "score": 3,
+            "author": "egg1e"
+        },
+        {
+            "level": 0,
+            "comment": "In a former professional life I ran a global email marketing operation on Pardot and optimizing our lead gen and website to work with it and our CMS gave us a lot more info than this. It was all legal but ethically it was one of the things that drove me to resign and walk away from my position as marketing manager.",
+            "score": 3,
+            "author": "TVC15Technician"
+        },
+        {
+            "level": 0,
+            "comment": "Is this 1990 ?!?! Is this news ?",
+            "score": 3,
+            "author": "patrick24601"
+        },
+        {
+            "level": 0,
+            "comment": "I work in email marketing! Apple actually has banned us (in a way) from seeing this info on Apple mail. We can no longer see the data about this as of sometime last year for Apple users.",
+            "score": 3,
+            "author": "pixels_and_paint"
+        },
+        {
+            "level": 0,
+            "comment": "I know and I hope they also know when I report them as spam. How the f do I end up on the mailing list every time after UN checking \u201csubscribe me to mailing list\u201d",
+            "score": 3,
+            "author": "NeuralShock"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 9,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm not sure it removes your information to unsubscribe - your profile just gets set to inactive/unsubscribed (at least in MailChimp). They still have access to any info you gave them, example: email, personal address, amount you spent with them. They can purge this data, but I don't think it happens automatically when you unsubscribe (depending on the service I guess).",
+                    "score": 5,
+                    "author": "KibethTheWalker",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "HubSpot is the same way, it labels you as do not mail but doesn\u2019t delete you from the CRM.",
+                            "score": 2,
+                            "author": "EmiliaDreper"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": []
+                        },
+                        {
+                            "level": 2,
+                            "comment": "[deleted]",
+                            "score": 2,
+                            "author": "[deleted]",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "YSK that you should not mark emails that you signed up for as spam. If you no longer find the email useful and want to stop them, use the Unsubscribe link in the email footer.",
+            "score": 10,
+            "author": "arnhdgs",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "What should you do if they do not unsubscribe you?",
+                    "score": 3,
+                    "author": "Kamarmarli",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What's the actual difference between an \"unread\" email and a \"read\" email? When I delete an email, what gets deleted? Informed answers only, please.",
+            "score": 7,
+            "author": "ReThinkingForMyself",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt;Mail arrives, it is listed in your mail client...It is bold texted.\n   that is unread mail. If you deleted it right from here you deleted unread mail.\n\n&gt;You tapped on the mail, it loaded completely. You can see the content. You mail is marked as read. Now if you are deleting it you're deleting a read message.",
+                    "score": 6,
+                    "author": "Kastranrob"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Not if you DNS block ads and trackers on every device you own",
+            "score": 2,
+            "author": "klippekort"
+        },
+        {
+            "level": 0,
+            "comment": "false, apple sort of ruined open rates.",
+            "score": 2,
+            "author": "NeutralHockeyPoster"
+        },
+        {
+            "level": 0,
+            "comment": "Not with pixel block",
+            "score": 2,
+            "author": "SourSackAttack"
+        },
+        {
+            "level": 0,
+            "comment": "duck domain ftw &lt;3",
+            "score": 2,
+            "author": "Gaurav-07"
+        },
+        {
+            "level": 0,
+            "comment": "The native ios app prevents this.",
+            "score": 2,
+            "author": "Kimantha_Allerdings"
+        },
+        {
+            "level": 0,
+            "comment": "Everyone should be using DuckDuckGo\u2019s private email service. It generates random disposable emails you can use and also blocks trackers.",
+            "score": 2,
+            "author": "itsDANdeeMAN"
+        },
+        {
+            "level": 0,
+            "comment": "\ud83d\ude02\ud83d\ude02\ud83d\ude02 I\u2019m a marketer with 15 years experience; AMA. \n\nYes, the trackers show you when emails are opened, how often what links were clicked. It helps us know what info was useful to the audience. If it\u2019s a company you like, just unsubscribe. If it truly is a spam email, report and delete.\n\nWait until you learn about A/B email testing\u2026.",
+            "score": 2,
+            "author": "Huli_Blue_Eyes"
+        },
+        {
+            "level": 0,
+            "comment": "I've always wondered if feeds in any app can tell how long you stop scrolling and hold over a post, and use the data, even if you don't react with/upvote/comment on said post. You just stop scrolling for a bit, then continue scrolling",
+            "score": 2,
+            "author": "__BIFF__"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 2,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\"The item you wishlisted is now on sale at 90% off\"\n\n\"You're invited to join the beta test for [the online service/game you specifically registered for]\"\n\n\"The abc widget that you've purchased from us repeatedly over the past 5 years is being discontinued. Buy it on clearance now at 50% off before stock runs out\"\n\n\"Our [insert season] Sale for [xyz store you frequently purchase from] begins today\"\n\nThose are all marketing emails.",
+                    "score": 4,
+                    "author": "overfloaterx",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s a good thing I just don\u2019t ever read my emails",
+            "score": 2,
+            "author": "TGITC"
+        },
+        {
+            "level": 0,
+            "comment": "Not if you have an internal firewall program to block them from calling home\u2026.\n\nLITTLE SNITCH\u2026.",
+            "score": 2,
+            "author": "parker1019"
+        },
+        {
+            "level": 0,
+            "comment": "Similarly, if you answer the phone from a random number and don't hear anything on the other end.  \nIt was likely a robo dailing bot that kept track of phone numbers that answered.  \nIf you answered, the bot now had another active number on a list to sell.",
+            "score": 2,
+            "author": "WikipediaBurntSienna"
+        },
+        {
+            "level": 0,
+            "comment": "Proton mail blocks this by default",
+            "score": 2,
+            "author": "1chemistdown"
+        },
+        {
+            "level": 0,
+            "comment": "I mean, this tracking is done on literally every digital platform. \n\nEmail relies on Web technologies - the open tracker is simply a small unique image file hosted on a server.",
+            "score": 2,
+            "author": "rowdiness"
+        },
+        {
+            "level": 0,
+            "comment": "Shoutout to ProtonMail for their privacy-focused services that block stuff like this by default.",
+            "score": 2,
+            "author": "roombaSailor"
+        },
+        {
+            "level": 0,
+            "comment": "I use email marketing to my advantage for brands I like/purchase from regularly. Deliberately opening email around the time of purchase usually results in some kind of promotion or discount being sent through within the week due to retargeting campaigns. Cart abandonment emails are also good for this.",
+            "score": 2,
+            "author": "unintrestedunicorn"
+        },
+        {
+            "level": 0,
+            "comment": "I didn\u2019t see this mentioned in the comments but Apple\u2019s Mail Privacy Protection, if enabled for an iCloud account, is designed specifically to prevent marketing companies from knowing if you\u2019ve opened one of their emails as well as hide your ip address to boot.",
+            "score": 2,
+            "author": "adidasnmotion"
+        },
+        {
+            "level": 0,
+            "comment": "I use @duck.com email. It\u2019s free and prevents tracking. You create an email account with them and give them the email you want the mail to be directed to. When I receive my emails, it tells me if it stopped any trackers and how many. Check it out",
+            "score": 2,
+            "author": "subiegal2013"
+        }
+    ]
+}

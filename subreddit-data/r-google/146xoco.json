@@ -1,0 +1,649 @@
+{
+    "id": "146xoco",
+    "score": 766,
+    "title": "Twitter is refusing to pay its Google Cloud bills, Platformer reports",
+    "author": "tyw7",
+    "date": 1686499460.0,
+    "url": "https://www.reddit.com/r/google/comments/146xoco",
+    "media_urls": [
+        "https://www.reuters.com/technology/twitter-is-refusing-pay-its-google-cloud-bills-platformer-2023-06-10/"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "If you go read the Platformer article, one of the GCP services that they use is detecting child abuse images. This is a complicated system to setup and to generate detection data.\n\nI\u2019m not sure how they can operate if Google pulls the plug  or even just rate limits them.\n\nhttps://www.platformer.news/p/twitter-stiffs-google",
+            "score": 110,
+            "author": "jeffbell",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Not complicated to setup. It\u2019s just illegal to set it up unless you get very special permissions from the government.",
+                    "score": 30,
+                    "author": "sluuuurp",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "OK.  True.It's not technically complicated to set up.  It's legally complicated to set up the generation of the data.",
+                            "score": 22,
+                            "author": "jeffbell",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Uh, youre both way off-base. Twitter doesnt use any sort of advanced AI or anything, the Missing and Exploited Children place maintains a GIGANTIC database of all known/reported abuse images (I believe its over 32 million at this point) in a hashed format. All twitter or any other social media network does is hash uploaded images and compare the hash to the database. Bare minimum.",
+                                    "score": 2,
+                                    "author": "topato",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Wrong. Hashes only work for nearly identical photos. It doesn't work for new images / videos that has not been identified and put into the database yet. In that case, you still need AI (i.e. Google's services) to detect it.",
+                                            "score": 0,
+                                            "author": "ohThisUsername",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Hey dingus if you read what they said. It says whats uploaded already. Reading is hard I know",
+                                                    "score": 0,
+                                                    "author": "LiquidTron"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "oh, so you need child porn material to train AI to detect them. It must be fun for the devs who work on this system.",
+                            "score": 6,
+                            "author": "lynxerious",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's actually a legitimate concern.  Same thing happens in the computer forensics field of law enforcement, they're typically provided mandatory mental health services and most agencies rotate them out every 6 months.  Even still the average time before forensic analysts burn out is only like 3 years last I checked.\n\nLooking at a firehose of child sexual abuse imagery as part of your job duties to catch the people making it is *real* rough on the people doing it.",
+                                    "score": 21,
+                                    "author": "ffxivthrowaway03",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Christ, I've never thought of that job and that level of trauma",
+                                            "score": 2,
+                                            "author": "RedSlipperyClippers",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Right?  It's not nearly as fun and glamorous as they make it out on all the cop dramas lol.\n\nIt's a field that has the chance to benefit *greatly* from all of these new AI image technologies.  If they can up their automated detection accuracy by offloading the bulk of the verification work onto an elaborate robot and then do reliable spot checking with human forensic analysts, it would take a whole lot of the burden off of these folks.",
+                                                    "score": 1,
+                                                    "author": "ffxivthrowaway03"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Not true. There's something called \"embeddings\" which is numerical representations of these images which can be used to detect it. The government provides it and there's no way to recreate the image from the embeddings. Companies don't literally store terabytes of this stuff.",
+                                    "score": 0,
+                                    "author": "coke-grass",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "And how are these embeddings created?",
+                                            "score": 0,
+                                            "author": "ozzie123",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Created by the government from confiscated material and probably anything they find online",
+                                                    "score": 0,
+                                                    "author": "coke-grass",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You mean, these embeddings are trained using real CP? Which some server somewhere who originally trained this image recognition software does store the images like what OP inferred?",
+                                                            "score": 0,
+                                                            "author": "ozzie123",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Embeddings aren't trained and OP implied that the devs of each company stored their own CP to get this data from, which is not true. Why are you so combative? Just cause you misunderstood something? Typical redditor lol. It's nobody's job to \"train\" these ML models, because like I said, they make embeddings from them, not \"train\" from them by looking at millions of these images.",
+                                                                    "score": 0,
+                                                                    "author": "coke-grass",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "Why am I combative for asking questions? Typical redditor lol.",
+                                                                            "score": 0,
+                                                                            "author": "ozzie123",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "Cope harder, can't even admit when you're wrong \ud83e\udd23",
+                                                                                    "score": 1,
+                                                                                    "author": "coke-grass"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "i wonder how they get the child p-",
+                                    "score": 0,
+                                    "author": "NewSouthWalesMan"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Let me grab my popcorn. It would be so funny to see Google suspend the Twitter GCP account.",
+            "score": 417,
+            "author": "Tridie2000",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Kinda hope they do. Even if just for funsies",
+                    "score": 132,
+                    "author": "Incendiomf"
+                },
+                {
+                    "level": 1,
+                    "comment": "lol :)\n\nelon musk be like \"NOOOOOoooooooo!\"",
+                    "score": 1,
+                    "author": "tiagorangel2011"
+                },
+                {
+                    "level": 1,
+                    "comment": "nah - no one wants to piss off Elon. Remember when Tim Apple had to scramble all jets and invite Elon over to his Campus and profusely apologize to cutting into his profits like they do for everyone else?\n\nThe thing with Elon is that he starts going off on \"xyz company/person doesn't love humanity because they're doing abc against Twitter\" rants. That stirs the hornets nest of his followers who go after that company and people. It's a PR nightmare.",
+                    "score": -108,
+                    "author": "ThatCrankyGuy",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The opposite of this is true now. Associating with him isn\u2019t good for your company.",
+                            "score": 25,
+                            "author": "BumderFromDownUnder"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Please explain how Elon is gonna abuse Google on Twitter after they shut that shit down?",
+                            "score": 15,
+                            "author": "vital8"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "it might have been back in the day but he\u2019s mostly a big fat joke everywhere now. He made the mistake of opening his stupid ass bigot mouth.",
+                            "score": 60,
+                            "author": "dotslashpunk",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "As my wise father said to me so many times\u2026\n\n\u201cBetter to keep your mouth shut and let people think you are an idiot, that to open it and leave no doubts.\u201d",
+                                    "score": 40,
+                                    "author": "dlev_"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Honestly, I feel like the tide change started around when he proposed designing a miniature sub to help the trapped minors after a collapse. It wasn\u2019t a wave or anything, but it was a headline that made me think, \u201chmm, he\u2019s not quite right\u201d For the first time",
+                                    "score": 15,
+                                    "author": "B1-Bloom",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yup that\u2019s when my eyebrows raised",
+                                            "score": 5,
+                                            "author": "slymm"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "yeah that was a weird one. I took it as a desperate attempt to think of an idea that would make this about him being the hero.",
+                                            "score": 4,
+                                            "author": "dotslashpunk"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Should have used Oracle\u2019s cloud. They\u2019re so desperate they\u2019d give it to him free just for the publicity!",
+            "score": 136,
+            "author": "eric987235",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "They'd claim to give it away for free and then send an invoice charging per user-agent or something equally egregious",
+                    "score": 80,
+                    "author": "lps2",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Nah, they won't do that to high profile customers. \n\nAlso to remember, Oracle CEO is friends with Trump and Musk is on the same wavelength. They might as well move to Oracle, who knows..",
+                            "score": 12,
+                            "author": "ani625"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "But then they would be stuck with Oracle. Compared to that, deplatforming doesn't seem so bad.",
+                    "score": 18,
+                    "author": "UnlikelyAdventurer"
+                },
+                {
+                    "level": 1,
+                    "comment": "*Larry Ellison verbally abuses with approval*",
+                    "score": 13,
+                    "author": "TheMindfulnessShaman"
+                },
+                {
+                    "level": 1,
+                    "comment": "It isn't general cloud services it is Google's child porn detector.",
+                    "score": 5,
+                    "author": "QtPlatypus"
+                },
+                {
+                    "level": 1,
+                    "comment": "Oracles free ARM tier beats Googles free tier. Sure, it's ARM-based so you run into some compatibility issues, but it has way higher specs and zeroes out the international bandwidth costs (Which the GCP \"Always-Free\" tier does not)",
+                    "score": 5,
+                    "author": "Reelix",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Completely agree it's amazing for free. Just be sure to move to paid account otherwise you lose your VM every 60 days or so",
+                            "score": 1,
+                            "author": "UpvotingLooksHard",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've used mine for over a year - You only lose it if it has an extended period of zero activity.",
+                                    "score": 1,
+                                    "author": "Reelix",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "On a free account or a PAYG account? I had free, shut down after 30 days. Switched to PAYG (and paying nothing) without any shutdowns since",
+                                            "score": 1,
+                                            "author": "UpvotingLooksHard"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Today I found out that oracle has a cloud platform...\n\nThe more you know",
+                    "score": 1,
+                    "author": "ice_bunny28"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very Trumpian",
+            "score": 19,
+            "author": "_PC__LOAD__LETTER_"
+        },
+        {
+            "level": 0,
+            "comment": "I'll pay good money to see TK and Musk fight. Off to pop popcorn",
+            "score": 44,
+            "author": "CatapultemHabeo"
+        },
+        {
+            "level": 0,
+            "comment": "Gotta be careful. Google may kill Elon's Google account and there goes his Gmail.",
+            "score": 15,
+            "author": "PacketGain"
+        },
+        {
+            "level": 0,
+            "comment": "This is one of Elon's whole schtick, he refuses to pay his bills and then threatens protracted legal motions until the service provider caves and either gives him a better rate or takes a cheaper settlement. \n\nIt's a terrible way of doing business, but it seems to work for him because he can bankroll his legal department.\n\nThe guy is basically the reincarnation of the ol' robber baron's of the late 1800's / early 1900's.",
+            "score": 229,
+            "author": "VegasKL",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "This is unfortunately common amongst rich people. Once your bills get big enough that it's cheaper to pay lawyers to get them lowered, it becomes a post-hoc negotiation tactic. It works against small companies who can't afford to fight back too hard, but Google is big enough that they might decide this a high profile lawsuit like this is a way to get other delinquent customers in line.",
+                    "score": 135,
+                    "author": "lengau",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "*My lawyer used to work for the Justice Department. Who\u2019s your lawyer, Mr. Fucking Magoo?* - Logan Roy",
+                            "score": 38,
+                            "author": "Realtrain"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Besides, Twitter is not rocket science.  They probably have 2 or 3 sitting around from 20% projects they could fire up.",
+                            "score": 18,
+                            "author": "BigGrayBeast",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Meta is working on one",
+                                    "score": 13,
+                                    "author": "FredH5",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah and it'll be built on the open source protocol mastodon is built on. Kinda interesting",
+                                            "score": 10,
+                                            "author": "DearSergio",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "First time hearing that part. I know they're readying an Instagram text app like Twitter but i didn't know they're using the Mastodon network instead of a proprietary one",
+                                                    "score": 3,
+                                                    "author": "rohmish"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "The hard problem to solve with an app like Twitter is it\u2019s sheer scale and constant number of writes. Google can definitely handle the scale, but I wouldn\u2019t put my faith in them to create a worthy competitor that people would actually migrate to. Google Wave, Google Plus - both hot messes, and they haven\u2019t put out anything since to garner faith in them being capable of handling any social networking app. They can\u2019t even get a simple messaging/video app straight.",
+                                    "score": 6,
+                                    "author": "corner",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Google plus was honestly amazing. And people who actually used it will all say so. Most people just hated it because Google forced that and real name requirements on everyone out of nowhere.",
+                                            "score": 11,
+                                            "author": "rohmish",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I had been using a fake name/handle for so long that they incorrectly thought it was a real name. And the handle was nothing close to a name. I was shocked\n\nI loved the idea of circles inside plus. \n\nBut the absolute best was Google spaces. It was perfect and nothing replicate it",
+                                                    "score": 5,
+                                                    "author": "slymm",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "&gt; Google spaces\n\nI love getting to ask \"which one\" questions with old Google products - this is referring to the vaguely Slack-like message board system, and not the rooms in Chat system, correct?",
+                                                            "score": 1,
+                                                            "author": "Nerdwiththehat",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Yes (I think). You'd make topics of things you were interested in, invite friends who shared that interest, and then shared articles, left comments, etc. \n\nHere's why it worked so well:. Let's say i had ten friends. Nine are interested in baseball and 8 are interested in soccer etc etc. Even if there's overlap, the spaces were useful because someone may not want to read about soccer NOW. There were topics that I only cared about once a month, or when I reached the end of the internet. And when I got to that point I could jump right in.\n\nI'm old so my most used form of communication is email. Friends also text random stuff for me to read. That all gets lost very quickly. Is slack a decent alternative to spaces?",
+                                                                    "score": 3,
+                                                                    "author": "slymm",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "The whole idea of creating circles to manage your followings. You could essentially create different spaces (not that spaces) with people and topic you cared about.",
+                                                                            "score": 1,
+                                                                            "author": "rohmish"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This tactic, as scummy and dishonest as it is, can work for goods and services already delivered. But when you have a continuing need for said goods and services\u2026\n\nGoogle has the option to terminate service and tell twitter to freeload from someone else if they find a sucker who will have them.",
+                    "score": 41,
+                    "author": "irregardless",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They'd do it with any of us and never give us a chance to fight it. I know Twitter is bigger, but Google just needs to tell them to pay or get banned like the rest of us.",
+                            "score": 14,
+                            "author": "itwasquiteawhileago"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This isn't going to work against google.",
+                    "score": 86,
+                    "author": "spazzcat",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yea Google doesn't care.  Twitter has far more to lose if they just lock out all twitters files.",
+                            "score": 43,
+                            "author": "mrubuto22"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "The problem here is that Google can bankroll their legal department too",
+                    "score": 64,
+                    "author": "ryankiefer"
+                },
+                {
+                    "level": 1,
+                    "comment": "Right out of the trump playbook",
+                    "score": 12,
+                    "author": "glassesjacketshirt"
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't get it. No money, no service.",
+                    "score": 27,
+                    "author": "oskaremil",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "This is the exact answer.  If they don\u2019t pay and don\u2019t respond to requests for payment, turn them off.  They can certainly sue, but I don\u2019t see how it would get very far at all.  \u201cDid you agree to pay?  Did you pay?\u201d  Case dismissed!",
+                            "score": 30,
+                            "author": "ExBritNStuff",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, exactly \ud83d\udcaf. They can argue all they want it the price is fair or not, but in the end Google is a service provider and if they don't want to pay for a service they are free to host it elsewhere.",
+                                    "score": 10,
+                                    "author": "oskaremil"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "If your lawyers are better than anyone elses, you control the world.",
+                    "score": 4,
+                    "author": "Reelix"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is how a lot of companies do business. Unlike you and I, who will very quickly get our accounts suspended anywhere if we don't pay a bill, large companies can run up balances. They get a PO and it's paid some time later. They usually don't have a credit card on file paying millions each month. \n\nThey'll run up balances with vendors, contractors, etc. That's why large companies have large accounting departments handling account receivables and POs. \n\nWhen you see \"goodwill\" payments on these companies balance sheets, they are forgiving a part of another companies debt to them. They'll use this in negotiations for renewals, cancellations, etc. \n\nThis isn't unusual. \n\nThe only thing different is that it's Google, Elon and Twitter which is almost always going to be in the news.",
+                    "score": 2,
+                    "author": "gscjj",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, strategically not paying your bills is super common in the business world.  Feels shitty to anyone with even an ounce of a conscience but it's just how a lot of it is done.  Google won't be turning off any services here, not a chance.  Even after the negotiations Twitter will still be an account worth *hundreds of millions* in revenue that Google isn't going to just throw away in a tantrum.",
+                            "score": 4,
+                            "author": "ffxivthrowaway03",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yup at the end of the day, Twitter will pay something. It might be the actual amount or a lesser amount (which is most likely). \n\nIts very unlikely that Google will turn off services and take the debt to court.",
+                                    "score": 2,
+                                    "author": "gscjj"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Behind the Bastards recently did a Musk series - the common theme between all stories: Elon doesn't pay for shit and instead just does whatever he wants, then ties up the vendors when they refuse service.",
+            "score": 11,
+            "author": "ooomayor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Wonder who else that sounds like?",
+                    "score": 9,
+                    "author": "thuktun"
+                },
+                {
+                    "level": 1,
+                    "comment": "Love that podcast, haven\u2019t listened in a while, thanks for reminding me.",
+                    "score": 1,
+                    "author": "NEUR0M4NCER"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "just turn off the service like you would for a normal person that didnt pay their bills.",
+            "score": 36,
+            "author": "shakuyi"
+        },
+        {
+            "level": 0,
+            "comment": "Maybe Google could just seize Twitter and install competent management.",
+            "score": 7,
+            "author": "teb_art"
+        },
+        {
+            "level": 0,
+            "comment": "So Elon's gonna call remote workers ill morale for wanting to save the commute, and the expense. But then he's gonna refuse to pay his cloud bill...interesting.",
+            "score": 15,
+            "author": "Impossible-Oil2345"
+        },
+        {
+            "level": 0,
+            "comment": "So... deplatform it.  \n\n\nMusk just like that other rich loser cratering in public, a deadbeat.",
+            "score": 14,
+            "author": "UnlikelyAdventurer"
+        },
+        {
+            "level": 0,
+            "comment": "Good, get rid of it already.",
+            "score": 3,
+            "author": "shlornartposterguy"
+        },
+        {
+            "level": 0,
+            "comment": "So that\u2019s why they\u2019re making them RTO",
+            "score": 3,
+            "author": "morpho4444"
+        },
+        {
+            "level": 0,
+            "comment": "Twitter really went from my favorite social media platform to the worst, real quick.",
+            "score": 3,
+            "author": "VDizzle12"
+        },
+        {
+            "level": 0,
+            "comment": "Lol Elon",
+            "score": -2,
+            "author": "FarazRizvi"
+        },
+        {
+            "level": 0,
+            "comment": "Twitter is not concerned about its platform being used for all kind of atrocities. So missing out on Google's AI checks system is definitely not a concern for them.",
+            "score": 1,
+            "author": "shopchin"
+        },
+        {
+            "level": 0,
+            "comment": "\\*grabs popcorn\\*",
+            "score": 1,
+            "author": "tiagorangel2011"
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -41,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, we'd be in r/Microsoft",
+                    "score": 25,
+                    "author": "Realtrain"
+                },
+                {
+                    "level": 1,
+                    "comment": "Why?",
+                    "score": 24,
+                    "author": "pm_me_pretty_shizzle"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Cry harder redditors",
+            "score": -27,
+            "author": "AnimalGlassworks",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I don\u2019t they are crying. I think some of them are just laughing their butts off. I mean refusing to pay for a service, and still using the service doesn\u2019t sound like a good idea\u2026",
+                    "score": 3,
+                    "author": "FlamingPhoenix2003"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": -5,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "How many times are you going to type the same comment over and over?",
+                    "score": 4,
+                    "author": "tyw7",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Forever, because everyone who disagrees with him pibes rent free in his head. Like he kept replying to my comments on different subreddits. And he can\u2019t read.",
+                            "score": 2,
+                            "author": "FlamingPhoenix2003"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Twitter is about to create it's own Cloud Platform called TCP ( Twitter Cloud Platform)",
+            "score": -3,
+            "author": "venkeythemonkey"
+        }
+    ]
+}

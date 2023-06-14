@@ -1,0 +1,247 @@
+{
+    "id": "147ntkf",
+    "score": 54,
+    "title": "What drives the price of a stock vs. ETF?",
+    "author": "ericson1998",
+    "date": 1686575519.0,
+    "url": "https://www.reddit.com/r/investing/comments/147ntkf",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Hello,\nI was wondering, what's the difference, that drives price changes of stocks vs. ETFs.\nStock price is determined solely on the basic demand/supply principle, but the ETF price is determined on the NAV of the fund, right?\nYes, as ETFs are exchange traded, market price can be a bit different from the NAV due to the demand/supply, but the main factor that drives market price of ETFs is the value of the underlying companies, right?\nI just wanted to clear this out.\nThank you",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "In the short term, the price of an ETF is driven by supply and demand for the ETF, similar to the price of an individual company's stock price. However, there is a mechanism in place that helps keep an ETF's price equal to the NAV of the assets within the ETF. This is done through authorized participants (APs). APs are large banks, brokers, and other market makers that are allowed to either\n\na) Exchange 1 share of the ETF for a corresponding quantity of all of the underlying assets in the fund\n\nor\n\nb) Exchange a corresponding quantity of all of the underlying assets in the fund for 1 share of the ETF\n\nThe APs use these two actions to arbitrage risk free profits, and this arbitrage keeps the ETF price at the NAV of the underlying assets.\n\nHere's how this works in practice. Let's say demand for an ETF has caused the price of the ETF to be higher than the NAV of the underlying assets. An AP now buys all of the underlying assets, executes action b), and then sells the share of the ETF. This is a risk free profit to the AP. The result is that the price of the ETF is pushed down (because the AP has sold it) and the price of the underlying assets goes up (because the AP purchased it). This is repeated millions of times per second until the two prices equalize.\n\nThe same process happens in reverse if the price of the ETF is below that of the underlying assets. The APs buys shares of the fund, executes action a), then sells the underlying assets.",
+            "score": 86,
+            "author": "CrimsonRaider2357",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; This is repeated millions of times per second\n\nI don\u2019t think trades happen that fast.",
+                    "score": 10,
+                    "author": "FinndBors",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "They dont",
+                            "score": 2,
+                            "author": "RiffRaffCOD"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Whoa.  Now I need to read more to understand.  If the AP can realize risk free profit, doesn't that mean that I (the retail holder) get a more inefficient investment with lower profit?  Is that the expense fee, or is this inefficiency in addition to the expense fee?",
+                    "score": 11,
+                    "author": "Trench4569",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Technically, yes, it\u2019s possible you\u2019re paying slightly above the NAV of the underlying assets when you buy an ETF. The amount is probably less than the bid ask spread anyway, of say, $0.01 per share. It\u2019s really not significant enough to worry about, and the liquidity and convenience of ETFs is well worth it anyway. You would need to buy millions of shares before this added up to a significant cost. Since the APs can buy millions of shares, those fractions of a penny per share do add up.",
+                            "score": 29,
+                            "author": "CrimsonRaider2357",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; the liquidity and convenience of ETFs is well worth it anyway\n\nUnfortunately, even though this is true, plenty of people love to call it market rigging.",
+                                    "score": 4,
+                                    "author": "HulksInvinciblePants",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Those people are idiots.",
+                                            "score": 1,
+                                            "author": "yerrmomgoes2college"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The reverse can also happen, ie you buy shares at a discount",
+                            "score": 7,
+                            "author": "InterestingRadio"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yes, exactly. You mentioned this arbitrage happens millions of times per second. I thought it happens like at the end of the day or something. Like during the day the price is driven by the market, at the end of the day the price is altered by APs to match the NAV, and repeat the next day.",
+                    "score": 7,
+                    "author": "ericson1998",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "An AP that waits until the end of the day would lose out on the profit to another AP that does it sooner. There are typically several APs who are competing against each other for these arbitrage profits. They develop algorithms that can identify and execute these mismatches in fractions of a second, because if they don\u2019t, a competitor will.",
+                            "score": 9,
+                            "author": "CrimsonRaider2357",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Right, makes sense. I always knew that there are some APs, market makers, but I didn't really know how they actually in reality work.\nSo on most exchange markets there are a few big players/companies above all retail investors, they need some license or permit to do these arbitrage trades or something?",
+                                    "score": 2,
+                                    "author": "ericson1998",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It\u2019s not necessarily that they\u2019re above retail investors, it\u2019s just that the company that creates and manages the ETF has agreements with them to allow them to make these exchanges for new shares. They are usually done in blocks of, say, 1000 or 10000 shares at the time, so the expense would be too high for an ordinary investor.",
+                                            "score": 1,
+                                            "author": "CrimsonRaider2357"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Also, do these market makers operate mostly on the exchange markets where ETFs are traded? Or do they try to take advantage of any arbitrage opportunity with any security like options or simple stocks?",
+                                    "score": 1,
+                                    "author": "ericson1998",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Were ever they can get the lowest fees or best price I guess.",
+                                            "score": 1,
+                                            "author": "apmspammer"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Also worth noting that ETF pricing include a spread over NAV which includes the APs margin + trading costs + other premiums (i.e. some securities in the nav basket are illiquid so current pricing is not available). The arbitrage is NAV to ETF price + this spread.",
+                    "score": 1,
+                    "author": "loveinthesun1"
+                },
+                {
+                    "level": 1,
+                    "comment": "This is very interesting, thanks a lot! \n\nI do not understand though how Sovereign Bond ETFs go sometimes down, even if non of the countries included in the ETF defaulted. This is a question I had for a long time. Shouldn' they just go up slowly all the time?",
+                    "score": 1,
+                    "author": "Jerome_de_Ferra",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "The value of the underlying bonds goes down when interest rates go up, so the NAV of the fund goes down. An increase in interest rates means the amount of money you need to invest to obtain a particular payout stream goes down, which means the price of the bonds goes down. Another way of looking at it, is that the price of existing bonds goes down to compete against new bonds that are issued with higher yields.",
+                            "score": 2,
+                            "author": "CrimsonRaider2357"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There are big players in the brokerage/banking world that are called APs (Active Participants) in the ETF world.  In general they are huge, like Goldman Sachs, JP Morgan , etc.  They are given the ability to engage in arbitrage on ETFs, a process that keeps ETF prices in line with the underlying basket of stocks in a given ETF.  They also make some money in the process, but it keeps ETFs priced properly for everyone.  \n\nTo give you an example of how it works, just imagine that for every share of an ETF, it holds only three stocks:  1 share of ABC at $10, 1 share of DEF at $30, and one share of XYZ at $60.  And at the beginning of a day, the ETF is priced at $100, in line with its holdings. But during the course of the day, each of its three underlying stocks rises by a dollar per share. So now the underlying basket of stocks is worth $103 but the ETF is still priced at $100.  \nIn the last five minutes of the day, the APs will submit Creation (buy) orders big enough to boost the price to $103. They have models that tell them how much they need to create/buy in order to raise the price by the right amount.  \nThe same goes for days in which the ETF becomes overvalued relative to the underlying basket of stocks, but the APs would sell (Redeem) ETF shares to bring its price back in line with the underlying basket of stocks. \nSo the last five or 10 minutes on an ETF trading desk is pretty chaotic, with all the APs, trying desperately to get their orders in and executed before the market closes.\nIf you\u2019re interested, you can read more about the process [here](https://www.etf.com/etf-education-center/etf-basics/what-is-the-creationredemption-mechanism)",
+            "score": 10,
+            "author": "NowIDoWhatTheyTellMe",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Alright, from what you wrote, it looks like the market price is driven mostly by supply/demand. I thought it's more the NAV.\nWhen the underlying price of each stock rises by 1 to $103, I though the price of the ETF automatically changes to 103 as well, because it holds the same underlying stocks. Or not?",
+                    "score": 1,
+                    "author": "ericson1998",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; I though the price of the ETF automatically changes to 103 as well, because it holds the same underlying stocks. Or not?\n\nI mean that is sort of what happens but how can the ETF just change its own price, it really cannot change or set its own price any more than a company can.\n\nIf an ETF trades at a discount an AP will start buying and the buying pressure will raise the price back to NAV\n\nIf the ETF trades at a discount an AP will start selling and again this sort of pushes price back to NAV",
+                            "score": 3,
+                            "author": "SirGlass"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "No.  The ETF price doesn\u2019t change automatically.  It\u2019s the arbitrage process of APs that keeps it in line with the underlying basket of stocks.\nKeep in mind this is only for open-ended ETFs.",
+                            "score": 1,
+                            "author": "NowIDoWhatTheyTellMe"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Price is set by supply and demand based on bid/ask just like a stock.   So, why even have a NAV?  The answer is, the fund needs a NAV because it's tracking to an index.  \nSo let's look at an example, XBI, which tracks to the S&amp;P Biotechnology Select Industry Index.    \n\n\nDuring the day, supply and demand fluctuations result in a fluctuating real time market price (MP).  But what about the underlying assets?  How do they keep it all in sync? The fund will re-sync to it's index by buying and selling shares in the index and feeding (or removing) them back into the fund as shares.  So in cases of very high demand, the fund may trading with the MP &gt; NAV.  And on the contrary, in the case of very low demand, the fund may trade with MP &lt; NAV.  When the MP is less than the NAV, the ETF is trading at a DISCOUNT.  When MP &gt; NAV, it's trading at a PREMIUM.  These variances between MP and NAV will need to be addressed by the fund in a timely manner.  \n\n\nSo what if the fund doesn't address it?  How do you know how well the fund is doing in resolving MP to NAV differential based on market volatility (supply/demand).  That's Tracking Error.  Here's a graph of the difference in MP and NAV for XBI, and you can see the corrections being made along the time axis, and just how tough it can be for the fund to keep the fund on track in cases of spiking demand or supply.  In fact, you can see a trading arbitrage opportunity on 1/18, which is another story all together.  Hope this helps your understanding.  \n[https://ycharts.com/companies/XBI/discount\\_or\\_premium\\_to\\_nav](https://ycharts.com/companies/XBI/discount_or_premium_to_nav)",
+            "score": 1,
+            "author": "Meet_The_Moment",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Can a retail investor buy when the MP &gt; NAV in any meaningful way?",
+                    "score": 1,
+                    "author": "Mr_Mouthbreather",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sorry, I'm not sure what you mean by 'meaningful way'. Can you add a little context there, and then I can try and answer.",
+                            "score": 2,
+                            "author": "Meet_The_Moment",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Can/should a retail investor time their buys for an ETF based on the spread between the MP and NAV?",
+                                    "score": 1,
+                                    "author": "Mr_Mouthbreather",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Can-Yes.  Should is another question altogether.  A trade of this nature has it's own unique set of risks and rewards like any other trade.  In practice, for the average retail investor, I don't recommend the strategy.  These trades are very short lived, and really involve timing based on short term market exuberance and/or stress.  You need to know why the variance exists, and if that variance is warranted.  It's certainly possible to do these trades, but as is usually the case, it's not as easy or simple as it seems.  Here's more info on the subject that I think may be helpful:  \nhttps://www.blackrock.com/us/individual/literature/investor-education/understanding-closed-end-fund-premiums-and-discounts.pdf",
+                                            "score": 2,
+                                            "author": "Meet_The_Moment",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Thank you for the detailed response!",
+                                                    "score": 1,
+                                                    "author": "Mr_Mouthbreather",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You are most welcome!",
+                                                            "score": 3,
+                                                            "author": "Meet_The_Moment"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Yes you are correct.  The mutual companies have relationships with large banks called APs who in turn have relationships with market makers to make sure the ETF stays near NAV almost all the time.  That relationship can fall apart during times of high market stress but in general it won't.",
+            "score": 1,
+            "author": "JeffB1517"
+        },
+        {
+            "level": 0,
+            "comment": "There are open end funds and closed end funds... You're talking about open end funds.  \n\nBut it's worth remembering that closed end funds exist -- they don't create shares after the initial ones, so they are supply/demand just like stocks on the secondary market.",
+            "score": 1,
+            "author": "MattieShoes"
+        },
+        {
+            "level": 0,
+            "comment": "Provided we're talking about open ended funds\n\nETF prices are driven by NAV provided sufficient liquidity exists to justify the creation/redemption process.\n\nWhile in some senses it's true that supply and demand can push market price, we're really talking about the ability of the market to clear exchanges at the NAV.\n\nThe only time large deviations between NAV and ticker price \\[of a large fund\\] can occur is when the entire market is undergoing a large liquidity event (a massive selloff).\n\nYou can (and should) research the usual range of NAV premiums/discounts for any ETF you wish to invest into along with other indicators of the \"tradability\" of the ETF.  For the average retail investor, you should IMO consider the average of the absolute value of the premium/discount a one time cost of ownership (basically look at the premium/discount chart and assume that you're going to pay a premium of roughly half the max premium).\n\nFor large funds like SPY or VOO, the premium/discount is going to average around .05%\n\nWhich is basically well within the realm of daily trading noise.\n\nThis topic really isn't worth wrapping your mind around unless you're doing very rapid trades (like an algo trader), investing in very small ETFs, or investing in closed funds (which would be an entirely different conversation).",
+            "score": 1,
+            "author": "ghostwriter85"
+        },
+        {
+            "level": 0,
+            "comment": "Thanks for asking this. I\u2019ve been wondering how ETFs are priced as well.",
+            "score": 1,
+            "author": "redditoranna"
+        },
+        {
+            "level": 0,
+            "comment": "I would say 85% by demand and supply rest is by NAV as suggests.",
+            "score": -4,
+            "author": "Vast_Cricket"
+        }
+    ]
+}

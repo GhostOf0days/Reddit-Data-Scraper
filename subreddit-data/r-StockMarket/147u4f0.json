@@ -1,0 +1,31 @@
+{
+    "id": "147u4f0",
+    "score": 0,
+    "title": "Measuring uncertainty with round number trades",
+    "author": "bigAlgorithm",
+    "date": 1686594833.0,
+    "url": "https://www.reddit.com/r/StockMarket/comments/147u4f0",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.cairn.info/revue-finance-2018-1-page-71.htm?ref=doi),",
+        "https://github.com/rshahid26/diophantine-methods).",
+        "https://en.wikipedia.org/wiki/Smith_normal_form)"
+    ],
+    "postText": "Traders use round numbers as a heuristic to simplify the complex task of buying and selling. To quote a bit from [this recent paper](https://www.cairn.info/revue-finance-2018-1-page-71.htm?ref=doi), \"Data provides evidence of the use of cognitive shortcuts in the futures market, such that traders submit a disproportionate number of limit orders at round-number prices. Psychological biases are also magnified when there is more uncertainty (Zhang, 2006; Hirshleifer, 2001).\"\n\nPulling up Level 2 data in your favorite stock will also show a disproportionate number of limit orders priced at round numbers, each with round or integer order size. To see if there's a profitable strategy here, I've been working on an **open-source algorithm to** [**solve Diophantine equations**](https://github.com/rshahid26/diophantine-methods). The time complexity is low enough to provide solutions in real time.\n\nIntuition\n\nDiophantine equations (specifically linear ones) take n variables x\\_1, x\\_2, ... x\\_n and equate some linear combination of them to an integer, i.e. a\\_1x\\_1 + a\\_2x\\_2 ... a\\_(x-1)n\\_(x-1) = C.\n\nThe solution set can be parameterized using n-1 perpendicular planes that intersect at an integer coordinate for integer values of x\\_i. Every system of linear Diophantine equations can then be solved by computing the [Smith normal form](https://en.wikipedia.org/wiki/Smith_normal_form) of its matrix.\n\nOne idea is to take the integers or round numbers near the current price C and find how divisible they are by a combination of potential buy and sell order sizes (call them b and s.) Then a\\_1b + a\\_2s = C, and the more divisible they are, the greater number of round order sizes can transact near that price. Add other variables to quantify exposure through derivatives of the security with a scalar c\\_i applied to a\\_i.\n\nAnother idea is to take a stock's current price (P), bid price (B), and ask price (A) and find how \"round\" their relationship is. This is encoded in the equation a\\_1P + a\\_2B + a\\_3A = C, where n, m, and k are the quantities of the stock traded at the current, bid, and ask prices, respectively, while C is a round constant.\n\nAlternatively, I can use a diophantine study of historical market data to create a realistic statistical distribution that increases the number of elements near round values.\n\nThoughts on these strategies? I'd love to hear it!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Is your assumption that computers never place round number orders? \n\nI think computers might have no mechanism for avoiding round number orders; and, market makers might be programmed by people who took mental shortcuts.",
+            "score": 1,
+            "author": "Motorbarge",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, to define a relationship between round number trades and uncertainty I would be assuming the round trades are primarily desk traders acting on impulse. But, I would backtest this to get a typical rate of round trades over total volume first so I can discount that.\n\nThis strategy will probably hold a position for less than 2 minutes. It also requires a constant survey of the order book, which is totally fine because of the low time complexity of the algorithm.",
+                    "score": 1,
+                    "author": "bigAlgorithm"
+                }
+            ]
+        }
+    ]
+}
