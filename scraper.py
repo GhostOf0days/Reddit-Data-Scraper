@@ -5,8 +5,6 @@ import re
 from dask.distributed import Client
 from dask import delayed
 
-# Add subreddits to scrape as strings here (e.g. 'artificial') [Remove subreddits from array before commits]
-SUBREDDITS = []  
 DATA_DIRECTORY = 'subreddit-data'
 
 def parse_about(subreddit):
@@ -196,10 +194,12 @@ def main():
     print(client)
     
     results = []
-    for subreddit in SUBREDDITS:
-        result = process_subreddit(subreddit)
-        if result is not None:  # Check if the result is not None
-            results.append(result)
+    with open('subreddits.txt', 'r', encoding='utf-8') as file:
+        subreddits = [line.strip() for line in file if line.strip() and not line.strip().startswith("#")]
+        for subreddit in subreddits:
+            result = process_subreddit(subreddit)
+            if result is not None:  # Check if the result is not None
+                results.append(result)
     
     if results:  # Check if the results list is not empty
         total = delayed(sum)(results)  # aggregate with a sum function
