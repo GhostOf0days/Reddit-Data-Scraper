@@ -1,0 +1,169 @@
+{
+    "id": "13y859k",
+    "score": 120,
+    "title": "Marvel's Spider-Man Remastered v.2.512.0.0 Patch Notes",
+    "author": "Turbostrider27",
+    "date": 1685699056.0,
+    "url": "https://www.reddit.com/r/Games/comments/13y859k",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Nice to see progress being made on wireless Dualsense feature support through Steam Input. Hopefully this gets streamlined into all of Sony's ports and hapctics also get integrated in time.",
+            "score": 49,
+            "author": "gronblangotei",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Patch notes say you need to be wired up to use the Dualsense features  are you saying they work wireless too?",
+                    "score": 17,
+                    "author": "Malemansam",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's a bit complicated what works via Bluetooth and what requires being wired, while also depending on the game.\n\n[https://www.pcgamingwiki.com/wiki/Controller:DualSense#Support\\_in\\_games](https://www.pcgamingwiki.com/wiki/Controller:DualSense#Support_in_games)\n\nSpider-Man and Miles Morales have the most support for wireless Dualsense features through the use of Steam Input.",
+                            "score": 19,
+                            "author": "MyNameIs-Anthony"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt; Patch notes say you need to be wired up to use the Dualsense features are you saying they work wireless too?\n\nThey actually say that you need wired for controller speaker and haptic feedback (HD rumble). \n\nAdaptive trigger seemingly work now wirelessly (not tested myself) as long as Steam Input (which supports this) is enabled, which kind of makes sense considering that the app DSX on Steam allows you to set static adaptive trigger effects in every game as well as fully dynamic effects in a few games that have 3rd party mods that interact with DSX, all fully wirelessly.",
+                            "score": 3,
+                            "author": "xxTheGoDxx",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I wonder why they don't work wirelessly, doesn't make sense to me",
+                                    "score": 4,
+                                    "author": "SomeIndividual1",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Likely something to do with multiple audio channels out which is something Windows typically struggles with. The haptics by default are driven by the audio when you plug the controller into a PC. You'll notice that the audio device changes to the Dualsense and any audio you play will be recreated via the HD Rumble in the controller. Since the PS5 OS is bespoke, it was built into it that it could handle multiple audio outputs (think multiple local controllers all having distinct audio speakers built in).\n\nI haven't worked with the PS5 but I've developed on the PS4 and I imagine they're similar given the support for backwards compatibility.",
+                                            "score": 3,
+                                            "author": "Falcs"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It probably won't ever work natively considering the Dualshock 4 needed a USB adaptor to work wirelessly.",
+                    "score": 1,
+                    "author": "snappums"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "From the article:\n\n&gt; Today we are releasing an update for Marvel's Spider-Man Remastered with improved Bluetooth support for Sony PlayStation DualShock and DualSense controllers. Adaptive trigger feedback on DualSense controllers is now available when using Steam Input. To use the full range of DualSense features, including the controller speaker and haptic feedback, a wired USB connection is required.\n&gt; \n&gt; This update also finetunes optimizations for some Intel CPUs and we have updated the game to use Intel Xe Super Sampling version 1.1.\n&gt; \n&gt; Thank you for all your feedback and contributions that helped us improve the game.",
+            "score": 41,
+            "author": "Turbostrider27",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nice XeSS 1.1 is a significant improvement over the original.",
+                    "score": 9,
+                    "author": "Flowerstar1"
+                },
+                {
+                    "level": 1,
+                    "comment": "Did they ever fix the massive performance hit you get from having multithreading in this game?\n\nBack when I played it on a 3700x, I tested the same scene getting 50-70 FPS with SMT enabled, getting 90-110 with it disabled in BIOS",
+                    "score": 3,
+                    "author": "Stealthy_Facka",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Hyperthreading not Multithreading. (Though since you\u2019re AMD, SMT is correct)\n\nThe game IS multithreaded. You can\u2019t escape that. But like many high occupancy multithreaded applications, SMT/HyperThreading will tank performance since it\u2019s really just splitting each cores time.",
+                            "score": 3,
+                            "author": "dagmx",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah, my bad. Had SMT on the brain when I wrote that!",
+                                    "score": 1,
+                                    "author": "Stealthy_Facka",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Fair enough. Though in general SMT/HT are bad for apps that do make use of many threads. \n\nIt\u2019s very common for people who do things like rendering to turn it off because the performance impact is pretty gnarly as you\u2019re seeing. \n\nGenerally, they really only exist to help lots of single threaded workloads get distributed easier, but even then, OS schedulers are sophisticated enough these days that you can usually just disable it and not notice it.",
+                                            "score": 1,
+                                            "author": "dagmx"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I wonder if it changed anything at all that fixes the constant crashing I was dealing with.  I just ended up uninstalling.  I've never played a game that crashed that much.",
+            "score": 2,
+            "author": "jackcatalyst",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah my partner played near launch on PC and was frequently complaining about crashing. I've finally gotten around to playing it in the last few weeks and haven't had a single crash yet (touch wood!), so it looks like they've made up some significant ground there (at least anecdotally).",
+                    "score": 5,
+                    "author": "mrmogel",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "No, my crashes were recent.  Like two to three weeks ago recent.",
+                            "score": 1,
+                            "author": "jackcatalyst",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I've never crashed once, did you play with RT on?",
+                                    "score": 2,
+                                    "author": "Opt112",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; I've never crashed once, did you play with RT on?\n\nIt never crashed once with RT on for me, why should it? The game isn't known to crash no matter your settings.",
+                                            "score": 6,
+                                            "author": "xxTheGoDxx"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I have tried everything under the sun that you can google to keep the game from crashing.",
+                                            "score": 1,
+                                            "author": "jackcatalyst"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Also played since launch without any crashes, beaten the game several times across different patches. RT off.",
+                                            "score": 1,
+                                            "author": "Stealthy_Facka"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Edge finally works now, wired at least, no need for steam controller/ dsx\n\n  \nMy graphic settings look weird though, is this a bug in the patch?\n\nhttps://imgur.com/vQD7n6R",
+            "score": 1,
+            "author": "xboxhaxorz"
+        },
+        {
+            "level": 0,
+            "comment": "Seems like the games basically shored up and reaching final version - nothing too crazy with this patch. /r/patientgamers enjoy, not that this was at all bad at launch.",
+            "score": -3,
+            "author": "Dantai"
+        }
+    ]
+}

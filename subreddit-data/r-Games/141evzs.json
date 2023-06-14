@@ -1,0 +1,49 @@
+{
+    "id": "141evzs",
+    "score": 0,
+    "title": "I Hacked Magic the Gathering: Arena for a 100% Winrate",
+    "author": "speckz",
+    "date": 1685972334.0,
+    "url": "https://www.reddit.com/r/Games/comments/141evzs",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This was a really interesting breakdown of how the hack works without going too crazy in the details. \n\ntl;dr is card games are nigh impossible to hack since everything is done on their servers however when you do a bot game you AND the bot are both playing on the servers from your game client. Since the bot is local, you can hack it to make it concede. This isn't too useful on its own (yay you can get a 100% winrate against easy bots!) but some of the other tools in there allowed him to matchmake in PVP modes but forced the bot to come in as his opponent. This means he can get very quick easy wins whether for getting MMR or quickly progressing in the in game economy. \n\nI do wonder if this only worked for normal matchmade games or if it could be used in some of the more high stakes/rewards modes. If it was the latter then that would be a very effective way to get everything you wanted from the in game economy.",
+            "score": 30,
+            "author": "Dracious"
+        },
+        {
+            "level": 0,
+            "comment": "This was a neat little article! The author included a solid amount of technical detail without getting bogged down.\n\nI hadn't heard of reflection before. It seems like a fun concept to play around with.",
+            "score": 14,
+            "author": "Gars0n",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yeah, reflections are pretty common. They're supported by multiple languages, but it's always been something that feels jank and *shouldn't* be supported imo. Like the whole idea behind private fields are that...well they're private.\n\nReflection attacks are a whole other thing tho.",
+                    "score": 6,
+                    "author": "deathspate",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Ah, its a .net exclusive it seems? So i read the msoft post thats linked in their but its not exactly all encompassing. The article says it allows you access to private objects, but msoft says you are not working directly with the objects (sounds like just making a copy in which you do have access too).\n\nEither way its crazy to me that .net has a built in library to throw away the entire fundamentals of encapsulation.....seems so backwards and dangerous.",
+                            "score": 2,
+                            "author": "Complete-Monk-1072",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Java has it as well",
+                                    "score": 3,
+                                    "author": "deathspate"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

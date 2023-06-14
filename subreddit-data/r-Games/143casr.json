@@ -1,0 +1,397 @@
+{
+    "id": "143casr",
+    "score": 160,
+    "title": "Apple\u2019s new Proton-like tool can run Windows games on a Mac",
+    "author": "ema_G",
+    "date": 1686141963.0,
+    "url": "https://www.reddit.com/r/Games/comments/143casr",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "From a different thread (c/o u/subway):\n\n[https://www.applegamingwiki.com/wiki/Game\\_Porting\\_Toolkit](https://www.applegamingwiki.com/wiki/Game_Porting_Toolkit)\n\n  \nAlready working games:\n\n  \n\u2022 Cyberpunk 2077  \n\u2022 Elden Ring  \n\u2022 SpongeBob SquarePants: The Cosmic Shake  \n\u2022 Diablo IV  \n\u2022 Hogwarts Legacy  \n\u2022 Deep Rock Galactic  \n\u2022 Sonic Omens  \n\u2022 Spider-Man (2018)  \n\u2022 Warframe  \n\u2022 Horizon Zero Dawn (with slowdown issues)",
+            "score": 81,
+            "author": "shadowstripes",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\ud83c\udfb5one of these games is not like the others\ud83c\udfb5",
+                    "score": 1,
+                    "author": "rikyy"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Oooooh. Intrigued. So far I\u2019ve used Wine (old games) or something proprietary to the game (OpenMw for Morrowind). I assume this streamlines the whole process somehow?\n\nOops. Looked at the link AFTER I posted the first paragraph and this appears to be wine-related?",
+            "score": 33,
+            "author": "AintKnowShitAboutFuk",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It's basically MacProton. The intent is for it to be used for developers to see how well their game would run on MacOS and then use a native toolkit to do the bulk of the porting work. \n\nThe entire system is actually really cool and it will be exciting to see this developed further.",
+                    "score": 40,
+                    "author": "LofiLute",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh so it's not consumer-oriented? The idea is for developers of Windows games to be able to easily make them Mac-compatible so we (users) don't have to do the porting/find workarounds? That's neat. Unless I misunderstood.",
+                            "score": 11,
+                            "author": "AintKnowShitAboutFuk",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yes, with a but. It's definitely for game developers to make porting really easy (and it looks like it's done the job)\n\nBut, It looks like Apple may have also open-sourced the actual tech. So It might be possible for another group to make this available to everyone in a significantly less annoying manner (You have to do some work as it stands).",
+                                    "score": 15,
+                                    "author": "LofiLute",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Ah cool. I haven't had too much trouble on the few games I've messed with, USUALLY have been successful but still have to go hunting for some file buried deep and drop it somewhere etc. etc. if that's what you mean.",
+                                            "score": 3,
+                                            "author": "AintKnowShitAboutFuk"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's not consumer-oriented, but it is freely available. Much of the work done here was contributed back to Wine in a huge 20k line pull request.\n\nApple intends this to be used by developers, but there's nothing stopping the community stepping in and giving it a better end-user experience (a la programs like Lutris on Linux)",
+                                    "score": 1,
+                                    "author": "beefcat_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Cool. I confess I\u2019m not crazy about PC/Mac gaming in general compared to the dumbed down console experience, simply because of the comfort factor (for me)\u2026have to sit at the desk or run a long cable to tv from computer, pair my PS4 controller, etc.  Set up some kind of goofy lap tray system if it\u2019s a mouse and keyboard only game. BUT, when I do mess with it occasionally (cough cough Ultima 6 3D fan remake) this stuff is useful.",
+                                            "score": 0,
+                                            "author": "AintKnowShitAboutFuk"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Well, Proton is really Crossover - a variant of Codeweavers' tuned Wine package.\n\nNot only that, but the latest Codeweavers blog [post](https://www.codeweavers.com/blog/mjohnson/2023/6/6/wine-comes-to-macos-apple-s-game-porting-toolkit-powered-by-crossover-source-code) indicates that their code forms the basis for this particular toolset (but they didn't work directly with Apple for developing it).\n\nWhy is this important?  Well, it clearly demonstrates an inheritance from Wine, but it also means that users who are used to the vagaries of Crossover will have a head start on understanding what will and won't work, and the sort of errors that are likely to be encountered (which differ from a hand-rolled Wine install in unique ways).\n\nIt is clear that Codeweavers have quite a bit of experience fine tuning Wine and making a workable product (Crossover for years,  Proton, and now this framework), but it isn't perfect and users shouldn't expect everything to work simply.\n\nNow, any MacOS users who have been looking for wrappers since Wineskin and Cider (Transgaming's closed equivalent) wil understand the sort of magic incantations that are required to get some games to work, as well as just how random some games were in accepting being run in a wrapper.\n\nThe ONE issue I have with how Apple have labelled this particular toolset is that \"Porting Kit\" has been the name of a framework of [customised individual Wineskins](https://www.portingkit.com) that have been fine tuned and managed by people like Paulthetall (a name that should be familiar to anyone who's spent time trying to get apps to work).",
+                            "score": 2,
+                            "author": "Aussierotica"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Makes sense for MS to push this, Mac users are just more potential Gamepass subs so having a version full of Mac titles is good for them.",
+                            "score": -5,
+                            "author": "NuPNua",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This is Apple tech, not Microsoft",
+                                    "score": 5,
+                                    "author": "LofiLute"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is pretty interesting, presumably the intention is to make gaming on a mac as easy as gaming on linux via proton. You only have to look at protondb to see how sucessful that's been for getting games working on linux machines.",
+            "score": 5,
+            "author": "BloomEPU"
+        },
+        {
+            "level": 0,
+            "comment": "If this takes off, I would instantly move to Mac for my next computer. I\u2019ve recently switched over to Pop OS because Windows 11 is increasingly focused on shoving Microsoft services in my face, regardless of whether or not I want them.\n\nMy only holdup is that (unless you\u2019re willing to use the tools yourself) it sounds like its official use case is for devs to use as part of the porting process, rather than an end user compatibility layer. Which is still great, but I won\u2019t be taking my Steam library cross platform, like I can with Proton.\n\nBut who knows, it\u2019s brand new and this could just be the beginning.",
+            "score": 23,
+            "author": "SpontyMadness",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean, it's not like apple also forced their service in your face. Best option if you don't want that would be switching to linux",
+                    "score": 14,
+                    "author": "xXPumbaXx"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Windows 11 is increasingly focused on shoving Microsoft services in my face\n\nIn that case, McOS seems like the worst possible choice considering it's one big walled garden tailor made to get you to use their shit.",
+                    "score": 27,
+                    "author": "trillykins",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "How is Mac OS a walled garden? It\u2019s not iOS and you can install whatever you want.",
+                            "score": 3,
+                            "author": "shadowstripes"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "MacOs is much better when it comes to stuff like that atleast MacOs doesn't install candy crush.",
+                            "score": -9,
+                            "author": "Top_Ok",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Neither does Windows, it's just a store link that takes 3 seconds to remove. I'm still astounded that people are bitching about this since it's only an \"issue\" on brand new installations and take 2 clicks to change. You'd think people are installing Windows freshly every hour.",
+                                    "score": 3,
+                                    "author": "uss_wstar",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "(eating poop) it's not that bad!! don't go to the not-eating-poop restaurant!!",
+                                            "score": -12,
+                                            "author": "waywardreach",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Are you really comparing modifying the start menu to eating poop?",
+                                                    "score": 11,
+                                                    "author": "uss_wstar",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "When all you have is shitting on things, everything starts to look like eating poop.",
+                                                            "score": 4,
+                                                            "author": "TheGazelle"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Don't understand this, you dont like Microsoft shoving their ecosystem but OK with being in a walled garden when you only can use apples ecosystem?",
+                    "score": 9,
+                    "author": "Dru_Zod47",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Why do people say this? iOS is a walled garden, but you can install and do whatever you want on MacOS.",
+                            "score": 11,
+                            "author": "mprey_",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "What are you talking about. You only can do what Apple allows you to do.\n\nAs a user, you can do way more with Linux and Windows.\n\nTill now, there was a reason why there were no games on Apple environment.",
+                                    "score": -15,
+                                    "author": "Dru_Zod47",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Uhh...no you can absolutely do whatever you want, and macOS is Unix based. You just have to change a setting to be able to install unsigned software which takes 5 seconds.\n\nThere's also been tons of commercial game ports available already for many years now, have you ever even used a Mac?",
+                                            "score": 16,
+                                            "author": "mprey_"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Stop talking out of your ass, it\u2019s clear you have never used a Mac.",
+                                            "score": 15,
+                                            "author": "Stepepper"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "This is flat out not true. macOS has a huge ecosystem of community software. It's very popular with developers because it is a UNIX operating system with a polished user interface.\n\nGaming on Mac has been a crapshoot for a few reasons.\n\n1. Small market share. This has been slowly changing as Windows becomes less and less important for productivity.\n\n2. Unstable ABI. The '90s and '00s were pretty turbulent for the platform, leading to lots of changes that break backwards compatibility.",
+                                            "score": 6,
+                                            "author": "beefcat_"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Not with any amount of ease",
+                                    "score": 0,
+                                    "author": "onometre"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "At least windows 11 had some great gaming focused features like auto hdr",
+                    "score": 1,
+                    "author": "Dotaproffessional"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; Which is still great, but I won\u2019t be taking my Steam library cross platform, like I can with Proton.\n\nUnless this supports 32-bit apps, a huge part of your library still won\u2019t be represented on a Mac.",
+                    "score": 0,
+                    "author": "Trenchman",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "It's built on Wine, which actually does support running 32-bit Windows binaries on modern macOS. There is an added performance penalty, but likely not too bad for any game old enough to be 32-bit only.",
+                            "score": 3,
+                            "author": "beefcat_",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Thanks for the correction.",
+                                    "score": 3,
+                                    "author": "Trenchman"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The only reason I stuck around with Windows is because of games. If the MacOS can run games comparable to a PC with their new chips, I\u2019m switching over.",
+            "score": 15,
+            "author": "RazorThought",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Linux can already run mores games than MacOS _today_.",
+                    "score": 19,
+                    "author": "MrPootisBrights",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "As a Linux user, there are lots of reasons to not want to use Linux.",
+                            "score": 5,
+                            "author": "beefcat_",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Even more to not use macOS",
+                                    "score": 3,
+                                    "author": "onometre",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "And all the reasons to not use Windows",
+                                            "score": 1,
+                                            "author": "sage2k"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If the intent is to leave Windows but only sticking around because of gaming, then Linux is a way better choice available \\_now\\_ than waiting around for MacOS to get its act together.\n\n&amp;#x200B;\n\nWhich is what I proposed for the OP.",
+                                    "score": 1,
+                                    "author": "MrPootisBrights"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "But then you have to use Linux.",
+                            "score": 6,
+                            "author": "Mandelmus100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is fantastic. I've used windows for 30 years and basically hated every moment of it, but since I play a lot of games, that's my only serious option. I hope this leads to some actual competition between consumer operating systems.",
+            "score": 20,
+            "author": "Kingbarbarossa",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I hope that this + SteamOS really lights a fire under Microsoft.",
+                    "score": 27,
+                    "author": "henrebotha",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm just curious if this just leads to Wine being a universal games platform.\n\nedit: Looks like Apple is using wine as a emulation layer for dev testing, but I kinda feel like someone could probably wrap this into a steam tool for playing games on mac.\n\nOf course it looks like it's locked behind developer.apple.com so I can't be bothered to see if it's a binary or the actual source code.",
+                            "score": 11,
+                            "author": "atomic1fire",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "This Apple thing is based on CrossOver, which is based on Wine.",
+                                    "score": 6,
+                                    "author": "henrebotha",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yup, and so is Proton (as in it's also a Codeweavers product developed from Wine underpinnings).",
+                                            "score": 1,
+                                            "author": "Aussierotica"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;\tI\u2019ve used windows for 30 years and basically hated every moment of it\n\nHow is it that different than other OSes? Not saying that Windows is perfect by any stretch but they all have their own issues. I know it\u2019s easy to think the grass is always greener on the other side, but in my experience, it\u2019s really no different. At most you\u2019re trading one set of issues for another.",
+                    "score": 49,
+                    "author": "BoyzIIWolves",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Overall I\u2019d say Windows is built with (backwards) compatibility in mind (which is why there\u2019s so, so much legacy UI everywhere), MacOS is built with ease-of-use in mind and Linux is built with customization in mind. \n\nI personally don\u2019t know how they\u2019re even close to you, but I acknowledge everyone has different use cases. Anytime time I try searching for a file on my Windows work computer I think of the Macbook I have at home.",
+                            "score": 10,
+                            "author": "tlvrtm"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;at most you\u2019re trading one set of issues for another. \n\n\nYeah, I think that\u2019s spot on - it\u2019s just that some specific issues are more important to some than to others.",
+                            "score": 43,
+                            "author": "yung_dilfslayer"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "&gt;\tyou\u2019re trading one set of issues for another\n\nThis is 100% spot on. I love the idea of using Linux but like you said, the grass really isn\u2019t that much greener over there and you trade one set of issues for another.",
+                            "score": 14,
+                            "author": "MrNegativ1ty"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "All I can say is that Linux has never shown me Candy Crush ads, and MacOS has never forced me to use PowerShell.\n\nThose two alone are fairly big cons",
+                            "score": 4,
+                            "author": "WannabeDadbod"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Capitalism requires real competition to function properly, and windows has never had it. MS locked down the market early, and behaved like any other corporation with a monopoly. All notable innovation ceased in favor of rent seeking. I'm not saying macOS is better, but I'll cheer for anything that shakes up the OS market in any way, shape or form.",
+                            "score": 2,
+                            "author": "Kingbarbarossa"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Mac OS has been a \\*NIX system since the development of OS 10. As a result, the experience and compatibility is very similar to almost every enterprise sever. This can be an excellent boon for development.\n\nSome people also really like iPhones and iPads; the experience of using them with a Mac is much smoother than with Windows.\n\nEDIT Yikes, I'm wondering who got offended by this. Surely someone who doesn't even know what a \\*NIX system is, or has a bone to pick. Some people like Macs some like Windows, it's extremely weird to take it personally when someone else likes one or the others.",
+                            "score": 1,
+                            "author": "JJJSchmidt_etAl"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I use Mac for work, but this won't get me to switch over for gaming unless you can build your own Mac with intel/amd cpu and nvidia/amd gpu. Their gpus outperform Mac chips and Apple is always slow to add new features. If nvidia has raytracing Apple will support it like a year later. I know you can build some Hacintosh but I want official support.",
+            "score": 3,
+            "author": "sinefine"
+        },
+        {
+            "level": 0,
+            "comment": "Hold up\u2026 DEEP ROCK GALACTIC? \n\nROCK AND STONE!!!",
+            "score": -1,
+            "author": "GlyphidGruntSTEEVE"
+        },
+        {
+            "level": 0,
+            "comment": "This is great. A mac for every price point, great power for the price, now they are focusing on games.\n\nI have pretty much replaced every PC in my life with an Apple silicon Mac, except for my gaming PC.",
+            "score": -3,
+            "author": "kiwii4k"
+        }
+    ]
+}

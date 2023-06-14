@@ -2,9 +2,11 @@ import requests
 import json
 import os
 import re
+from dask.distributed import Client
+from dask import delayed
 
 # Add subreddits to scrape as strings here (e.g. 'artificial') [Remove subreddits from array before commits]
-SUBREDDITS = ['emotions', 'politics']  
+SUBREDDITS = []  
 DATA_DIRECTORY = 'subreddit-data'
 
 def parse_about(subreddit):
@@ -155,29 +157,43 @@ def write_to_json(subreddit, post_id, data):
     with open(os.path.join(subreddit_dir, f'{post_id}.json'), 'w') as f:
         json.dump(data, f, indent=4)
 
-def main():
-    for subreddit in SUBREDDITS:
-
-        about_data = parse_about(subreddit)
-        if about_data:
-            write_about(subreddit, about_data)
-            print(f'About data for subreddit {subreddit} written to about.md')
+# This is a wrapper function for everything a single subreddit has to do
+@delayed
+def process_subreddit(subreddit):
+    about_data = parse_about(subreddit)
+    if about_data:
+        write_about(subreddit, about_data)
+        print(f'About data for subreddit {subreddit} written to about.md')
                 
-        top_posts = parse_top(subreddit)
-        if top_posts:
-            for post in top_posts:
-                write_to_json(subreddit, post['id'], post)
-                print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
+    top_posts = parse_top(subreddit)
+    if top_posts:
+        for post in top_posts:
+            write_to_json(subreddit, post['id'], post)
+            print(f'Data for top post {post["id"]} in subreddit {subreddit} written to JSON')
 
-        after = ''
+    after = ''
+    
+    while True:
+        posts, after = parse(subreddit, after)
+        if not posts or after is None:
+            break
+        for post in posts:
+            write_to_json(subreddit, post['id'], post)
+            print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
 
-        while True:
-            posts, after = parse(subreddit, after)
-            if not posts or after is None:
-                break
-            for post in posts:
-                write_to_json(subreddit, post['id'], post)
-                print(f'Data for post {post["id"]} in subreddit {subreddit} written to JSON')
+def main():
+    client = Client()  # set up local cluster
+    print(client)
+    
+    results = []
+    for subreddit in SUBREDDITS:
+        result = process_subreddit(subreddit)
+        if result is not None:  # Check if the result is not None
+            results.append(result)
+    
+    if results:  # Check if the results list is not empty
+        total = delayed(sum)(results)  # aggregate with a sum function
+        total.compute()  # execute
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,289 @@
+{
+    "id": "140cidb",
+    "score": 168,
+    "title": "Metropolis 1998 - Yesbox Studios - City Builder, Sandbox, Sim",
+    "author": "YesBoxStudios",
+    "date": 1685883952.0,
+    "url": "https://www.reddit.com/r/Games/comments/140cidb",
+    "media_urls": [],
+    "other_urls": [
+        "https://store.steampowered.com/app/2287430/Metropolis_1998/)",
+        "https://www.reddit.com/r/Archapolis/)",
+        "https://twitter.com/YesboxStudios)"
+    ],
+    "postText": "[Steam](https://store.steampowered.com/app/2287430/Metropolis_1998/) | [Subreddit](https://www.reddit.com/r/Archapolis/) | [Twitter](https://twitter.com/YesboxStudios)\n\nHey everyone, my name is Chase. Over the last 18 months I've been working on a modern city builder in a retro style, inspired by the classic pixel art games of the 90s and 00s. Check out my subreddit or twitter for clips. \n\nIm also heavily inspired by modern day base builders/colony sims (Dwarf Fortress, Rimworld), and wanted to bring individual agent simulation to the city building genre.\n\nOther features:\n\n* Design your own buildings, save them as blue prints\n\n* Agents will utilize specific room and objects in the game\n\n* Agents will have schedules, go to work, shop, etc. \n\n* Real time traffic, just like Cities: Skylines\n\n* Plus building off all the core city building elements of the classics!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Bicycle lanes?",
+            "score": 15,
+            "author": "itmejamesfranco",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Probably wont make it by 1.0, but I'd like to add them!",
+                    "score": 18,
+                    "author": "YesBoxStudios",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "just like real life",
+                            "score": 34,
+                            "author": "MASTODON_ROCKS"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Cool, excited to check it out",
+                            "score": 4,
+                            "author": "itmejamesfranco"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I looked at the steam page and I have to mention that the way the cars rotate 90 degrees with no turning animation kinda ruins the otherwise chill vibes.",
+            "score": 7,
+            "author": "GuyWithPants",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I agree. I plan on adding 45 degree rotations, at the minimum",
+                    "score": 3,
+                    "author": "YesBoxStudios",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Would a full voxel animation be possible? I think that would look even better.",
+                            "score": 2,
+                            "author": "GuyWithPants",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "No, this is a 2D game/engine behind the scenes.",
+                                    "score": 3,
+                                    "author": "YesBoxStudios",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Not sure what your art pipeline is like, but if a voxel (or full 3D) rendering subsystem is available to you at all, you might try having a model and rendering it to the sprite for the turns only, swapping back when the turn is complete. But maybe that'll look out of place too; not sure.",
+                                            "score": 2,
+                                            "author": "GuyWithPants",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I plan on hiring a 3D modeler at some point to model a vehicle and output the rotations I need. Then I can swap sprites without rendering in game",
+                                                    "score": 4,
+                                                    "author": "YesBoxStudios"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This seems really cool!",
+            "score": 6,
+            "author": "megazver",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you! Much appreciated",
+                    "score": 4,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "How many agents are you able to handle? Will there be multi story buildings? Game looks really cool.",
+            "score": 7,
+            "author": "MaciejSamoistny",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Right now, the game can handle pathing 100K units at the same time. Im not sure what the limit is for units not moving (havent tested it), but it's probably much higher since there's little to check at a standstill.",
+                    "score": 7,
+                    "author": "YesBoxStudios",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "So how would you go about increasing the pathing for more? Like what's the bottleneck?",
+                            "score": 3,
+                            "author": "pupunoob",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "That city would be HUGE. Most cities have around 10% of their population on the road at most, during rush hour. But if I needed to, I would just use more CPU cores. The 100K figure is per core.",
+                                    "score": 6,
+                                    "author": "YesBoxStudios"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Following. Looks great and reminds me of the classic Rollercoaster Tycoon.",
+            "score": 6,
+            "author": "incrementality",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! RCT is a huge influence",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "What sort of city management will be included besides traffic? Water? Electricity? Agent likes and dislikes ? Food ? Imports exports? Mayoral decisions?",
+            "score": 3,
+            "author": "moodie31",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Good questions\n\nWater and electricity: yes\n\nAgent likes/dislikes: yes, the commercial/service demand will be based on this\n\nFood: Wanted but not guaranteed to be granular for 1.0\n\nImports/exports: Sort of. A unit will drive out of  (not leave) the city if it wants/needs something that your city does not offer (then return after)\n\nMayoral decisions: I assume you mean policy? Still planning this part out, so hopefully. Problem is making these fun and impactful. Other city builder games I've played is just a bunch of check boxes that make your city more expensive to operate with almost no visible changes/effects.",
+                    "score": 5,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Oh, wow. One look at the screenshots and I was taken back to my UFO: Enemy Unknown days. I find myself really hoping you decide to add an alien invasion disaster/event in the future. \ud83d\ude09",
+            "score": 3,
+            "author": "five35"
+        },
+        {
+            "level": 0,
+            "comment": "Checked out the subreddit and the progress has been incredible!  I think your choice in isometric is the way to go and the art style is excellent and appropriate.  Keep it up!\n\nWishlisted.",
+            "score": 2,
+            "author": "StyleNo5834",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This looks really fun!",
+            "score": 2,
+            "author": "JaxonJackrabbit",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks! Making the game has been really fun too",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I've got this on my wishlist already, any thoughts on release date?",
+            "score": 2,
+            "author": "Omnitographer",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It should be less than a year before there's enough content for a solid early access. 1.0 is around 2 years away.",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Wishlisted. Love the art style, reminds me a lot of Roller coaster tycoon in the best ways. :)",
+            "score": 2,
+            "author": "AetherStarshine",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This sounds cool. Can you expand a bit more on how people use objects in buildings? I\u2019m assuming it has to do with producing resources.",
+            "score": 2,
+            "author": "Youre_a_transistor",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Units will path to certain objects when they do certain activities. e.g. they will path to their bed to sleep, the shower to bath, the stove to cook.\n\nI dont plan on having a microeconomy around resource development, though there will be some macro management TBD.",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Will there be multi-story structures in this game?",
+            "score": 2,
+            "author": "bicameral_mind",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Yes, as well as terrain height",
+                    "score": 2,
+                    "author": "YesBoxStudios",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Awesome, way more interested in this now than I was originally.  Wishlisted.",
+                            "score": 2,
+                            "author": "bicameral_mind"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This looks so good. Adding to wish list",
+            "score": 2,
+            "author": "A-Hind-D",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thank you!",
+                    "score": 1,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Looks nice, but it seems very car-centric. Will you add public transport? Sidewalks? Pedestrian-only streets? \n\n\"Manage real-time traffic\" can be done in more ways than optimizing roads, there is a large push against the car-centric approach to city planning in favor of the \"15-minute city\" where citizens should be able to walk/commute to work/shopping/entertainment. \n\nSeems like every city builder just has the 50s car-is-king urban planning ideology.\n\nSorry if I sound a bit rash, but there are more ways to do city planning than around cars.\n\nBuses, subways, trams, **walking**, bicycle, etc, create more dynamic and interesting neighborhoods, where human interaction is the focal point rather than the car. Eliminating the car from urban planning can greatly increase the density of buildings which in turn increases land exploitation for humans to live and have businesses on the bottom floor. \n\nWhich in turn would make your game unique in the city-building genre :) \n\n[You can do some google street view of the Gothic Quarters in Barcelona for example](https://www.google.com/maps/@41.3859012,2.1799267,3a,90y,4.38h,90.32t/data=!3m6!1e1!3m4!1se0Euaab8xqZMygynuIHpUQ!2e0!7i16384!8i8192?entry=ttu).\n\n[Or Utrecht in Netherlands](https://www.google.com/maps/@52.0946032,5.1182212,3a,75y,187.38h,86.42t/data=!3m6!1e1!3m4!1sRmaoKXnO_U0kz8ORaN6n3w!2e0!7i16384!8i8192?entry=ttu)\n\n[Or Gamla Stan in Stockholm](https://www.google.com/maps/@59.3236155,18.0701759,3a,75y,329.12h,83.95t/data=!3m6!1e1!3m4!1sv8Gbn121zdW4Z-Ism5c70g!2e0!7i13312!8i6656?entry=ttu)",
+            "score": 2,
+            "author": "omgbambi",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm nearly done with adding sidewalks. Pubic transport is planned for 1.0. Ped. only streets is likely for 1.0 as well.",
+                    "score": 2,
+                    "author": "YesBoxStudios"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1451 @@
+{
+    "id": "11yooao",
+    "score": 13856,
+    "title": "Valve announces Counter-Strike 2, coming Summer 2023",
+    "author": "Soledo",
+    "date": 1679503366.0,
+    "url": "https://www.reddit.com/r/Games/comments/11yooao",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "&gt;Sub-tick  \n updates are the heart of Counter-Strike 2. Previously, the server only   \nevaluated the world in discrete time intervals (called ticks). Thanks to  \n Counter-Strike 2\u2019s sub-tick update architecture, servers know the exact  \n instant that motion starts, a shot is fired, or a \u2018nade is thrown.As  \n a result, regardless of tick rate, your moving and shooting will be   \nequally responsive and your grenades will always land the same way.\n\nAbsolutely nuts.",
+            "score": 4157,
+            "author": "CTRL_S_Before_Render",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Can anyone Eli5? No idea what this means\n\nEdit:  thanks for the good info",
+                    "score": 682,
+                    "author": "iwannahitthelotto",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Previously, the server would think an event happened at the tick that the player performed it. Now, the engine instead stores the actual timestamp of the event and calculates effects based on that. This means that the resolution of time is much, much higher than before, because timestamps can be stored with very high precision without it costing more CPU power.",
+                            "score": 1444,
+                            "author": "Hnefi",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "For anyone who thinks this kind of precision is pointless, let me share a passage of book by the xkcd author:\n\n&gt; Throwing is hard.1 In order to deliver a baseball to a batter, a pitcher has to release the ball at exactly the right point in the throw. A timing error of half a millisecond in either direction is enough to cause the ball to miss the strike zone.\n\n&gt; To put that in perspective, it takes about five milliseconds for the fastest nerve impulse to travel the length of the arm. That means that when your arm is still rotating toward the correct position, the signal to release the ball is already at your wrist. \n\n&gt; In terms of timing, this is like a drummer dropping a drumstick from the tenth story and hitting a drum on the ground on the correct beat.\n\nWe're really, REALLY, ***REALLY*** good at training precise timing.",
+                                    "score": 1240,
+                                    "author": "DrQuint",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "For a more direct example, in CSGO the smoke grenade trajectory and bounce are calculated on the tick. This results in jumping+throwing a smoke producing a different result on different tick rates. This is relevant because match making is 64 tick, but tournaments are all 128 tick.\n\nThis system should make it so match making and pro play are consistent.",
+                                            "score": 462,
+                                            "author": "HppilyPancakes",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "&gt;This is relevant because match making is 64 tick, but tournaments are all 128 tick.\n\nHow was this a good idea? Even assuming 128 is better, you're going to be training two different muscle memories on identical sensory inputs.",
+                                                    "score": 155,
+                                                    "author": "andeleidun",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "At high levels players don't play on the official match-making servers, they user a 3rd party client such as FACEIT which hosts 128 tick servers.",
+                                                            "score": 360,
+                                                            "author": "TheodoeBhabrot"
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "It was never intentional. CS was always 64 tick and independent servers decided to host 128 tick. Eventually 128 tick became the professional standard due to its naturally higher accuracy, but CS's official servers were never updated.\n\n\nOnce players reach the peak of Valve's matchmaking ratings and are likely to show up to tournaments, they move to third-party servers at 128 tick. Most don't practice on Valve's servers at that point except to maintain a rank.",
+                                                            "score": 254,
+                                                            "author": "Even-Citron-1479",
+                                                            "replies": []
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "High tick servers are expensive, and there are a LOT of CSGO players. FACEIT greatly incentivizes you to pay their premium service so they can pay for 128 tick servers. Generally, if you're playing FACEIT you're already a bit more serious about the game than your average CSGO noob, so you'll be more likely to spend that money, and actually see the difference 128 tick makes",
+                                                            "score": 27,
+                                                            "author": "coldblade2000",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "As a VR developer, I feel this. Getting accurate trajectories out of controller inputs is super tricky because of how much any error stacks up. They go into a bit of detail on all the tricks they pull to make granade throws smooth in HL:Alyx's developer commentary.  \nIf I recall correctly, they average velocity a few frames before release because the act of releasing a button causes extra unwanted movement in the controller.",
+                                            "score": 139,
+                                            "author": "xthexder",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "This is why I love the tracking performance on Index. It leads to better immersion and suspension of belief. PSVR2 doesn\u2019t feel nearly as tight to me.",
+                                                    "score": 44,
+                                                    "author": "JeffCrossSF",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Ticks were basically rounding",
+                                    "score": 26,
+                                    "author": "spexau"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Typically shooters would run at a tick rate. Actions would be registered based on this tick rate. Things like pulling a trigger, or moving your character. A higher tick rate meant the game felt more responsive.\n\nFor example, let's say a game has a tick rate of 60. This means, every second, the server polls for actions 60 times. If you click to pull the trigger, the game server won't register it until the next tick. This could be as soon as a single millisecond, or an entire 1/60th of a second. \n\nThis is how in some games, two people can shoot each other and kill each other at the same time. One person might have clicked sooner by a few milliseconds, but because of the tick rate, the server only registered the shot at the same tick, so as far as the server is concerned, the players shot each other at the exact same time, killing each other at the exact same time. Even though in reality, one player might have pulled the trigger faster than the other.\n\nThis is why some people complain about games having low tick rates. It makes the game feel less responsive. \n\nAnd CS2 having the server record everything in real time instead of using ticks is a huge positive change from every other major game in the shooter genre as a result.",
+                            "score": 217,
+                            "author": "iwumbo2",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; This is how in some games, two people can shoot each other and kill each other at the same time. One person might have clicked sooner by a few milliseconds, but because of the tick rate, the server only registered the shot at the same tick, so as far as the server is concerned, the players shot each other at the exact same time, killing each other at the exact same time. Even though in reality, one player might have pulled the trigger faster than the other.\n\nGoing a step farther, there is something in games like CS and Val called \"no bullets from beyond the grave\" which means that even if two players DO kill each other on the same tick, the game had to choose a victor and invalidate the losers shot. What CS used was who joined the server first to determine the winner on same tick mutual kills. this is a much better system.",
+                                    "score": 121,
+                                    "author": "[deleted]",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt;This is how in some games, two people can shoot each other and kill each other at the same time. One person might have clicked sooner by a few milliseconds, but because of the tick rate, the server only registered the shot at the same tick, so as far as the server is concerned, the players shot each other at the exact same time, killing each other at the exact same time.\n\nSo, this would be why Halo 3 and Reach had melee \u201ccontests\u201d (as Bungie called them) where both people could end up dying even if one player was faster in meleeing?  Which was actually a \u201csolution\u201d to a huge complaint people had about Halo 3\u2019s initial way of handling those situations, where the player with more health would win even if they were slower to the draw.",
+                                    "score": 36,
+                                    "author": "Wheresthesass",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yep, Halo used ticks, and still is on ticks. I know a criticism of Halo Infinite was its low tick rate despite being a modern game. I think it was something low like 24 or 30? For comparison when I Googled, Overwatch is on over 60.",
+                                            "score": 33,
+                                            "author": "iwumbo2",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Infinite's tick rate is decent, but its netcode and lag comp aren't great",
+                                                    "score": 5,
+                                                    "author": "Fr3shRadish",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Tick rate of 30 is straight ass",
+                                                            "score": 12,
+                                                            "author": "Smackdaddy122",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Every time you clap your hands to the rhythm of music something happens in CSGO - aka. tick-rate. If anything happens in between the claps the game never knows it happens or skews into happening too late. \n\nPreviously the community would double the amounts of ticks/\"claps\" - to make it happen less often (64 to 128). \n\nValve said fuck it, created a system that doesn't rely on the ticks/\"claps\" to update with, instead it's more \"just-in-time\" feedback to the server. (of course ticks still happen but the timing isn't the only deciding factor anymore.)\n\nThis is much easier said than done and will require more from hardware and data transfers. Remember that the foundation of all online fps games even today rely on techniques developed in the mid to late 90's - specifically Quake.\n\nThe gaming industry has no real financial incentive to create good networking condition - vocal minority might delude you so we haven't really seen major innovations in regards to accurate and reliable feedback when playing online. Just more players and shit happening with less accurecy.",
+                            "score": 193,
+                            "author": "seezed",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Until people stop buying your game because the lack of good netcode completely destroys any possible online community to form (fighting games)",
+                                    "score": 85,
+                                    "author": "JoeyKingX",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah, newer fighting games coming out now have a big emphasis on good net code and online performance. Developers are even retroactively adding rollback net code into older fighting games because of how prevalent online gaming is now.",
+                                            "score": 68,
+                                            "author": "Underscore_Guru",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "To be fair, in that case it was because most of those fighting games still hadn't adopted that 90's technology.",
+                                            "score": 8,
+                                            "author": "b0bba_Fett"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I straight up stopped playing fighting games because the online was horrible",
+                                            "score": 9,
+                                            "author": "consume_mcdonalds",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; The gaming industry has no real financial incentive to create good networking condition - vocal minority might delude you so we haven't really seen major innovations in regards to accurate and reliable feedback when playing online. Just more players and shit happening with less accurecy.\n\nUntil valorant made it an arms race.",
+                                    "score": 76,
+                                    "author": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "are there any other games that do something similar?",
+                    "score": 109,
+                    "author": "jerryTitan",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes. Quake II did this back in 1997, and Quake III inherited it. I assume that this is a step above what Q2 did, but, essentially Q2 allowed the server to react immediately to movement commands (and even firing commands) on the sub-frame they are received on (since the server receives client movement packets as fast as they can), and since Q2's server tickrate was 10hz it was very important to making weapons \"appear\" instantaneous. The feedback of the weapon firing wasn't visible to the client until the server frame arrived, though.\n\nQuake 3 and Quake Live had client prediction for weaponry, so the clients felt like their weapons were acting immediately (and missiles would even simulate enough movement so that they synced up on both ends).",
+                            "score": 250,
+                            "author": "Paril101",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Vanilla Quake 3 clients respond immediately to player input, but the actual projectiles (and hitscans) don\u2019t spawn client side until verified by the server. It becomes pretty noticeable with higher pings. I believe Quake Live fixed this.\n\nQuake 3 servers also ran at a 20 hz tick rate, which Quake Live improved significantly.\n\nThere were mods for Quake 3 like Unlagged that improved the experience quite a bit for people on fast connections, though it\u2019s important to remember that the original networking code was designed with the limitations of dialup modems in mind.",
+                                    "score": 34,
+                                    "author": "beefcat_",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "I might be thinking of Quake Live then, yeah. I remember talking to sponge about this. I thought Q3A did missile prediction as well, but I think it's only for the visuals and not for the firing time.",
+                                            "score": 9,
+                                            "author": "Paril101",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Fuck I miss Quake 2 so badly.  I just want a modern looking game that plays like Quake 2 *and doesn't have all the extra bullshit*.",
+                                    "score": 100,
+                                    "author": "monthlymeeples",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "You and me both",
+                                            "score": 20,
+                                            "author": "Paril101"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "You can still find servers to play on. There are public servers you can find the addresses to online that, last time I played, were well populated",
+                                            "score": 14,
+                                            "author": "bored_gunman"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "The issue is that when people make their arena shooters at the end of the day if it's too close to Quake, *people are just going to play quake*. You need an twitch shooter that actually deviates from the norm and sadly the people who play those things don't really want that.",
+                                            "score": 5,
+                                            "author": "Noilaedi"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Overwatch, partly: https://us.forums.blizzard.com/en/overwatch/t/new-feature-%E2%80%93-high-precision-mouse-input-gameplay-option/422094",
+                            "score": 49,
+                            "author": "Individual_Original"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "my guess is that servers will still be running on tickrates, IE X times every second the game state updates. Its just that instead of checking input at that time, they have figured out how to be checking/processing input between updates and then interpolating.\n\nIt seems like this will require more trust on the client side, I wonder if this has implications for cheating",
+                    "score": 22,
+                    "author": "L0rdenglish",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I\u2019m really curious how this plays out. I imagine with this new sub tick system that lower ping gives even better advantage than before. Wifi warriors in shambles.",
+                    "score": 719,
+                    "author": "KeyboardSheikh",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Sounds more like it levels the advantage, if anything. They don't even mention anything about ping or latency in the video so I'm not 100% that this really has anything to do with latency.\n\nBefore, any commands you sent in between ticks would, as far as the server is concerned, happen at the end of the tick. So this eliminates any weird delays as the server can figure out what's happening between ticks now.",
+                            "score": 442,
+                            "author": "ScrewAttackThis",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "[deleted]",
+                                    "score": 111,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "&gt; Technically, it could be exploited on the client side, by making actions happen as early as possible between the server ticks.\n\nThere are ways to verify clients aren't making crap up in client/server communications so I wouldn't say this without knowing a lot more details about how it's implemented.\n\nE: also just setting the sub ticks to the earliest time possible would just introduce the exact problems this is trying to solve so I'm not sure there's really a need to lie.",
+                                            "score": 88,
+                                            "author": "ScrewAttackThis",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Latency is already accounted for by rolling back inputs to the server tick they occurred on. They're just doing the same thing at a higher resolution now.  \nIt's the difference of inputs getting backdated by 2 ticks vs 2.1474 ticks. It just makes the results more accurate and introduces less error from sub-tick events being in the wrong order.",
+                                            "score": 29,
+                                            "author": "xthexder"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "This is huge, no? Does any other FPS do this?",
+                    "score": 42,
+                    "author": "_AaBbCc_",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yes, subticking has been around for a while, but it's only practical to do for some games.",
+                            "score": 46,
+                            "author": "Recatek"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "The concept has been around for a long time. QuakeWorld &amp; Quake II (which basically share the same networking concepts, since QW was the base for Q2) allow for this to happen, although I don't know offhand if QW allowed weapon firing between server frames. Q2 does, however.",
+                            "score": 77,
+                            "author": "Paril101"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "All those graphics changes just for people to play it on the smallest res and graphics settings just to get 300fps in it.",
+            "score": 906,
+            "author": "ratonbox",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Imagine the outcry if Source 2 doesn't support 4:3 aspect ratio LMAO\n\nOh no, how will I play without my horse blinders?",
+                    "score": 469,
+                    "author": "KyleTheWalrus",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Some people who got to test it earlier this year already confirmed that you can play stretched 4:3.",
+                            "score": 199,
+                            "author": "cynicalspindle",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Not surprised at all lol. Reminds me of how South Korean ceiling fans are manufactured with auto-shutoff timers to win over buyers who are scared that fans will kill you in your sleep if they run overnight.",
+                                    "score": 144,
+                                    "author": "KyleTheWalrus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "LMAO i didnt expect to read about korean fan death here",
+                                            "score": 60,
+                                            "author": "BoganRoo"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Has this actually happened for the fear to be rational??\n\nfeels like it's as likely as dying in a plane crash, which is very very low",
+                                            "score": 10,
+                                            "author": "LoL_is_pepega_BIA",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not in the way koreans fear it. They think fans literally suck the air away from you, causing you to die. It's not about it falling on you.",
+                                                    "score": 43,
+                                                    "author": "Tuxhorn",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Ohh.. i don't know what to say to that..",
+                                                            "score": 9,
+                                                            "author": "LoL_is_pepega_BIA",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "When players say 4:3 they don't mean the classic 4:3 with the black borders, they mean streched 4:3. Everything, most importantly heads, is wider but things move horizzontally faster.",
+                            "score": 88,
+                            "author": "Sasy00",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "So almost like having low fov but ugly?",
+                                    "score": 108,
+                                    "author": "littlefrank",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Kinda yes",
+                                            "score": 43,
+                                            "author": "Sasy00"
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Yeah and training to that.",
+                                            "score": 5,
+                                            "author": "ipaqmaster"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Oh I'm aware. You're still cutting off 25% of your vision either way, though. I've never, ever bought into the idea that 4:3 gives you any objective advantage.\n\nThe decision to play in 4:3 came first because old school pros didn't want to change their setups, then the justifications came after. It's essentially an aesthetic choice to indicate to other people that you're a serious player, which strikes me as odd because there's video proof it has caused pros to get shot by people they would've been able to see in 16:9. To each their own I guess?",
+                                    "score": 54,
+                                    "author": "KyleTheWalrus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Cue the clip of those 2 guys straight walking past each other because they couldn\u2019t see each other in 4:3 lmao",
+                                            "score": 9,
+                                            "author": "Sofruz"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Good lord....that sounds horrible....why do people play like this?",
+                                    "score": 25,
+                                    "author": "make_love_to_potato",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "1337 skillz",
+                                            "score": 6,
+                                            "author": "SolarClipz"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "They released 3 videos, and 2 of them are huge game changers that will totally shake up the competitive aspects of the game. So it's quite a big deal.\n\n&gt; Counter-Strike 2 arrives this summer as a free upgrade to CS:GO. So build your loadout, hone your skills, and prepare yourself for what\u2019s next!\n\n&gt; Bring your entire CS:GO inventory with you to Counter-Strike 2. Not only will you keep every item you\u2019ve collected over the years, but they\u2019ll all benefit from Source 2 lighting and materials.\n\nIt's free, and skins will be ported. But I wonder if CSGO itself will be archived as an old branch, or be archived as a separate application altogether.\n\nIf they plan to have the skins work from CSGO to CS2, it's probably the former. If CSGO remains playable, I wonder if they can just somehow have both games' skin drops be shared. Since they're actual items in your Steam inventory, I don't see why that can't be the case.",
+            "score": 696,
+            "author": "rollin340",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "But I thought NFTs were the only way to make skins crossover from game to game.",
+                    "score": 473,
+                    "author": "mrfuzzydog4",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Pretty sure the main argument was that they could be across different game *publisher's* games",
+                            "score": 90,
+                            "author": "League_of_leisure",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I still dont get why the crypto bros were all over that. It's not like a game dev is going to spend money implementing another companies content and not see the profit of selling it.",
+                                    "score": 257,
+                                    "author": "WekonosChosen",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "See the difference here is you have some brain activity",
+                                            "score": 284,
+                                            "author": "League_of_leisure",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "No, they had brain activity. It was just being used to make any shit up to support money making. Modern day snake oil salesman. If they could, they'd argue NFTs fought cancer too.",
+                                                    "score": 46,
+                                                    "author": "SirGigglesandLaughs",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "I kind of lost track of the number of times I saw crypto bros try to argue that people criticizing them were racist, ableist or homophobic because they insisted NFTs would allow marginalized communities to pull themselves up by their bootstraps, as if somehow adding the blockchain to things would just magically solve the discrimination those artists experience trying to sell their work elsewhere.\n\nI wouldn't be surprised if some of them had made the same argument by imagining an artist with cancer paying for treatment through NFTs sales in the the same way.",
+                                                            "score": 11,
+                                                            "author": "SwineHerald",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Very interested to see why they landed on this level of brightness. I would assume it\u2019s for easily picking out players from the environment, but it\u2019s super soft lighting everywhere.\n\nAlso Valve continues to subscribe to the Kingdom Hearts system of Numbering LOL.",
+            "score": 925,
+            "author": "Maxjes",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "&gt; Also Valve continues to subscribe to the Kingdom Hearts system of Numbering LOL.\n\nValve: \"Condition Zero, Source, and Global Offensive don't count\"",
+                    "score": 541,
+                    "author": "ascagnel____",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "[removed]",
+                            "score": 97,
+                            "author": "[deleted]"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Officially, none of those were considered sequels. Condition Zero was a spin-off, Source was supposed to be a titular Source port of 1.6, and Global offensive was a consolified version of CS that was branched into its own thing.",
+                            "score": 164,
+                            "author": "TheWorldisFullofWar",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Condition Zero was supposed to be a visual update among other things. It got delayed to the point that Source came out the same year",
+                                    "score": 16,
+                                    "author": "novae_ampholyt",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "and it was a full on single player campaign!! I remember playing the leak in the early 2000s thinking, what the actual fuck is this rubbish?",
+                                            "score": 17,
+                                            "author": "excellentlistener",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "CZ: 1.7.\n\nCSS: 1.8.\n\nCSGO: 1.9.",
+                            "score": 74,
+                            "author": "Blueson",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "CS2: 1.10",
+                                    "score": 73,
+                                    "author": "Wires77",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I think the lighting in general looks much better, even if it is softer. The reflections etc especially look much nicer so having the game be a bit brighter to make players easier to see is welcome IMO",
+                    "score": 221,
+                    "author": "GammaGames",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, I think they've struck a good balance between keeping the ambiance and making the environment more readable.",
+                            "score": 58,
+                            "author": "TaleOfDash",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The maps look a bit less dreary from the pictures they've shown, I do hope there is a bit more contrast in some areas but overall the visual improvements look great for visibility.\n\nNow let's see how it is with the agent skins.",
+                                    "score": 25,
+                                    "author": "Lehsyrus"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I\u2019m glad that after 23 years, we finally have a sequel to Counter-Strike",
+                    "score": 45,
+                    "author": "Xelanders"
+                },
+                {
+                    "level": 1,
+                    "comment": "Source engine 1 vs source engine 2.\n\nEdit: in relation to why it's called counterstrike 2.",
+                    "score": 75,
+                    "author": "omega12008",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yeah, same thing as Unreal Tournament III, but still funny to me.",
+                            "score": 34,
+                            "author": "Maxjes",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Well, also because UT 2003 and UT 2004 were very similar and collectively just served as UT 2",
+                                    "score": 10,
+                                    "author": "stufff"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "It\u2019s the ambient occlusion that looks changed. Looks kind of like the AMD RTAO Forspoken had on release where the ambient occlusion shadows are all barely noticeable thin outlines of edges and corners.",
+                    "score": 24,
+                    "author": "holo_gram_17",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Its clearly not just that, they clearly cranked up brightness to 11, among other changes like how the lighting works itself. Looks more like real time global illumination than baked lightmaps like it did previously. Personally I don't dislike the change, though I think they could tone down the brightness in some maps",
+                            "score": 11,
+                            "author": "AssFingerFuck3000"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; \n&gt; \n&gt; \n&gt; \n&gt; Also Valve continues to subscribe to the Kingdom Hearts system of Numbering LOL.\n\nThere have been like 4 discrete Counter Strike releases. Original Counter Strike (now called 1.6), Condition Zero (just single-player content essentially), Source (because it was ported to the source engine instead of the Srcgold engine that Half-life ran on), and Global Offensive/GO.\n\nAlso Kingdom Hearts has a lot of reasons why actually numbering them sequels doesn't make sense. The stories are constantly changing and in weird spots in the world's timeline. Counter Strike is literally just Tactical Search and Destroy gameplay with minimal single-player content.",
+                    "score": 53,
+                    "author": "Novanious90675",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt; Condition Zero (just single-player content essentially)\n\nIt had a multiplayer mode, but it was a tweaked version of CS1.6 -- maps and models were tweaked, and there was a texture pass.  It wasn't cross-compatible with 1.6 and released a few months before CS:S, so it died pretty fast.",
+                            "score": 29,
+                            "author": "ascagnel____"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Some of the pics gave me a mirrors edge vibe from the brightness which was unexpected.",
+                    "score": 5,
+                    "author": "insomniacc"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This has got me really hopeful for TF2. It's older and has way more jank in terms of Source Engine... \"Spaghetti code\", as people call it, but an upgrade to Source 2 would be wonderful for it. The game wouldn't even need an \"update\" packaged with it necessarily - just the fact that it was finally optimized would be so nice.",
+            "score": 510,
+            "author": "Novanious90675",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'd give anything for a Team Fortress 3",
+                    "score": 371,
+                    "author": "GRAIN_DIV_20",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yea, at this point I think they should just do a full rebuild. Gives us TF3.",
+                            "score": 178,
+                            "author": "Depth_Creative",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I might cry if they do Team Fortress Source 2",
+                                    "score": 54,
+                                    "author": "JKTwice",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "I doubt they'll do a Team Fortress 3. Mostly because I don't think they know the number 3 exists. \n\nThey might do a Team Fortress 2 Part 2.",
+                                    "score": 83,
+                                    "author": "teamchuckles",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Team Fortress 2: Episode 1",
+                                            "score": 30,
+                                            "author": "P2Mc28",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Team Fortress: Alyx",
+                                                    "score": 17,
+                                                    "author": "jaiwithani",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Earlier this month someone pointed out to me that SteamOS technically showed them count to 3 via the release of SteamOS 3, and I still haven't recovered from that spiritual sundering.",
+                                            "score": 6,
+                                            "author": "DrkvnKavod"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "We can dream. TF2 was the best game of all time.",
+                            "score": 98,
+                            "author": "dsaddons",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I played Dustbowl for 8 years.",
+                                    "score": 60,
+                                    "author": "fife55",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Dustbowl, Badwater and Gold Rush. \n\nImo, Badwater IS tf2.",
+                                            "score": 25,
+                                            "author": "NooAccountWhoDis",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "!rtv pl_upward",
+                                                    "score": 7,
+                                                    "author": "chaorace"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "I too have been in a Dustbowl stalemate which lasted 8 years.",
+                                            "score": 8,
+                                            "author": "d20diceman"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I hope valve skips over 3 and releases 4. For any titles of theirs. Portal 4, half life 4. Just to fuck with everyone.",
+                            "score": 35,
+                            "author": "Sad-Vacation",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Team Fortress 2 + 1",
+                                    "score": 9,
+                                    "author": "shadowcoll"
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Don\u2019t hold your breath with Valve and anything *3*",
+                            "score": 42,
+                            "author": "Serafiniert",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Team Fortress 2 II",
+                                    "score": 34,
+                                    "author": "GRAIN_DIV_20",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Team Fortress 2 Episode 1",
+                                            "score": 17,
+                                            "author": "Serafiniert"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I will be 6 feet under before anyone at valve considers touching tf2. The TF IP on the other hand",
+                    "score": 152,
+                    "author": "kpba32",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;I will be 6 feet under before anyone at valve considers touching tf2. \n\nThe game has still been getting 3 minor updates a year for 5 years now. They just put out a blog post saying they're doing more too. Yes, most of the changes were submitted by community members, but somebody at valve has to push the update packages. Try not to exaggerate.",
+                            "score": 72,
+                            "author": "Novanious90675",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "They did just put out a blog stating they were going to do more, and then like a couple hours after it was published they edited the blog to clarify that they are continuing to just do the small updates they\u2019ve been doing and nothing more.",
+                                    "score": 27,
+                                    "author": "hemlo86",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "They used to do two updates per year that add new maps to the game (Halloween and winter). The blog post says they\u2019ll bring that up to three with a summer update. And the maps from that update will likely stay in the game permanently and not just be available seasonally like the maps from the Halloween and winter updates. So definitely more content/year than before.",
+                                            "score": 10,
+                                            "author": "milkkore",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Yes it is more content, but its just community made maps and cosmetics. Something that TF2 doesn\u2019t really need. I mean its nice sure, but i think most players would much rather have an anti cheat update.",
+                                                    "score": 17,
+                                                    "author": "hemlo86",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "Personally I want an MvM update. Baffling that they never bothered adding more Australiums.",
+                                                            "score": 7,
+                                                            "author": "2giga2dweebish",
+                                                            "replies": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "&gt; but somebody at valve has to push the update packages\n\nits probably one of those \"drinking bird\" toys pushing a button every once in a while.",
+                                    "score": 108,
+                                    "author": "AbanoMex",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "The community consensus is that it's a janitor and perhaps a potted plant pushing the updates, but this seems just as likely.",
+                                            "score": 37,
+                                            "author": "COD4CaptMac",
+                                            "replies": []
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "Hardest working employee at valve",
+                                            "score": 56,
+                                            "author": "shiftup1772"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "My pc is soo old I wouldn't be able to play it, but if they released a TF3, I would build a new pc just for that game.",
+                    "score": 15,
+                    "author": "Jak33",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Can they give us back as_oilrig?\n\nHow about terrorists that can move hostages? \n\nI want my 1.3 back dammit",
+            "score": 22,
+            "author": "natrapsmai",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Looks fresh af. But I really hope the original Source engine version of CSGO will be archived and playable somewhere if this is an 'upgrade' to that game.",
+            "score": 1184,
+            "author": "shinto29",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There is a 2013 build in the beta folder that you can still play, and the Xbox 360 version is still alive with the servers up, although you can't buy it as of a month ago.",
+                    "score": 345,
+                    "author": "FUTURE10S",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Jesus. I remember I bought that as a kid, it fucking sucked ass, but good point -- reminds me of vanilla TF2 being on the 360 and PS3 still, think it's getting shut down soon though.",
+                            "score": 118,
+                            "author": "shinto29",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Fun fact, cs:go was originally only intended as a console version of CS... well we see how that turned out. I wouldn't be surprised to see them bring CS2 to console either.",
+                                    "score": 37,
+                                    "author": "[deleted]",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Their directives changed.\n\nCSGO started off as a console port of CSS. Then became its own game.\n\nValve did a big push towards the console market that didn\u2019t pan out well for them. Both TF2 and CSGO failed on PS3 and X360.\n\nMore than 10 years on, it\u2019s all a different scene. CS2 won\u2019t hit consoles.",
+                                            "score": 18,
+                                            "author": "Bolt_995",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "If Sony and Microsoft let Valve make content updates without having to charge both Valve for the update AND the players for new content, this wouldn't have been an issue. Seriously, a bug fix would have cost Valve $50,000 to send out and Valve wanted the L4D2 DLC to be free, but Microsoft told them to fuck off and put a price tag on it.",
+                                                    "score": 18,
+                                                    "author": "FUTURE10S",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "360 I think is still up, PS3 shuts down later this week. Gonna have to set up a PS3 to record some OG gameplay.",
+                                    "score": 33,
+                                    "author": "FUTURE10S"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "When Dota 2 switched to Source 2 it completely replaced the original Source 1 version, that will probably be the case here as well.",
+                    "score": 492,
+                    "author": "hnwcs",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "If they're calling this CS2, then it's not really just upgrading CSGO, it should be an entirely new application I'd think. But who knows, it's Valve, they do what they want.",
+                            "score": 215,
+                            "author": "shawnaroo",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Dota2 moved to source 2 was called dota2 reborn tho yet maintain same apps.",
+                                    "score": 190,
+                                    "author": "thedotapaten",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Also the game folder is still \"dota 2 beta\" to this day lol",
+                                            "score": 250,
+                                            "author": "jerryfrz",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Game still in beta, please no complaining.",
+                                                    "score": 162,
+                                                    "author": "Key_Feeling_3083",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "[deleted]",
+                                                            "score": 98,
+                                                            "author": "[deleted]",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Sweet lord I haven't played Dota in years and I still shivered remembering that little bastard.",
+                                                                    "score": 46,
+                                                                    "author": "ZaheerUchiha",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "[deleted]",
+                                                                            "score": 20,
+                                                                            "author": "[deleted]",
+                                                                            "replies": []
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You mean \"free game no bitching\"?",
+                                                            "score": 30,
+                                                            "author": "jerryfrz",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "i still remember that post like it was yesterday.",
+                                                                    "score": 6,
+                                                                    "author": "AbanoMex"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Almost as funny as the valve dev that named himself \"King shit of fuck mountain\" at my old job, whose tech product valve owned licenses of so we could see titles/names etc in the backend. No, no other company even came close to a hilarious name in the backend.",
+                                                    "score": 22,
+                                                    "author": "[deleted]",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "If you click on the link in the OP, it explicitly states it\u2019s a free update for CS:GO. Does everyone just comment without reading?",
+                                    "score": 89,
+                                    "author": "Dense_Organization31",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Yes. Reddit is just a comment browser.",
+                                            "score": 47,
+                                            "author": "grandladdydonglegs"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I think the biggest question is whether the main menu music will change.",
+                    "score": 20,
+                    "author": "fightingnetentropy",
+                    "replies": []
+                },
+                {
+                    "level": 1,
+                    "comment": "I also hope that when/if Source 2 is released to the public, the world might see a renaissance in new SourceMods.",
+                    "score": 12,
+                    "author": "wq1119"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I didn't really play much CS:GO but spent hundreds of hours into Condition Zero. I'm looking forward to trying it when it launches. I'm just excited that Valve is making another game lol. And it's a free upgrade... damn...",
+            "score": 63,
+            "author": "coolgaara",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "As long as I can still play it on a toaster I\u2019ll be happy. Its the only PC game I play and basically 90% of my gaming",
+            "score": 321,
+            "author": "xSlappy-",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "When I was looking at the videos I was thinking so many toasters are going to have to get upgraded. It would be interesting to see if CS2 causes a run on low end computer parts. 1660s just got discontinued 5 months ago.The good thing about the low end is there's plenty of options for CPU and gpu.",
+                    "score": 178,
+                    "author": "SrslyCmmon",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "minimum will increase, but valve game optimization is outstanding",
+                            "score": 94,
+                            "author": "jollifishe",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Yeah Valve is the only developer nowadays I would trust with optimization",
+                                    "score": 20,
+                                    "author": "nilslorand",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Id tech is up there, doom 2016 and eternal are amazing",
+                                            "score": 25,
+                                            "author": "jollifishe"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Being a competitive title, and the high-level setups reaching 500hz now, it'll be optimized for super high frame-rates.",
+                    "score": 53,
+                    "author": "NovaS1X"
+                },
+                {
+                    "level": 1,
+                    "comment": "I would imagine that is why the bullet effects on smoke is a real \"big punched out circle\" rather that rippling and wafting holes in the smoke",
+                    "score": 34,
+                    "author": "TaciturnIncognito",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "i'm sure it's mostly a game play decision. smokes have been pretty powerful for a long time to the point of almost being broken (smoke glitches, one-way smokes). the he grenade being able to, if even momentarily, completely negate a smoke grenade has huge game balancing implications.",
+                            "score": 47,
+                            "author": "KepplerObject"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Probably simpler to make, which is important if you want to maintain consistency between all players to avoid 1-way smokes, and also stop the game's hardware requirements from increasing too much. The average CSGO player probably plays it on some shitty family Toshiba laptop from 2012.",
+                            "score": 5,
+                            "author": "coldblade2000"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The amount of people here who really seem to hate the fact that valve calling it \"Counter strike 2\" is just absurd. This is a whole new engine upgrade for a ten year old game bringing several fixes and changes the community has been requesting for years. And it's all free! They can call it \"Counter-strike 2077\" for all I care.",
+            "score": 545,
+            "author": "TheBoogeyman97",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "After CoD's titles the past few years, I can't believe their heads haven't already imploded.",
+                    "score": 172,
+                    "author": "grandladdydonglegs",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "nothing will ever be dumber than the \"Xbox One\" and \"Xbox Series X\" if everyone is seriously letting those names slide i really don't wanna hear it about anything else lol",
+                            "score": 227,
+                            "author": "WhornyNarwhal",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Oh man, for real. They really painted themselves into a corner with 360. I know *why* they did it, PS3&gt;Xbox2, but still.",
+                                    "score": 19,
+                                    "author": "grandladdydonglegs",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "But then the did the opposite next generation. PS4 &gt; Xbox 1",
+                                            "score": 28,
+                                            "author": "brave_legunator"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Windows 7 -&gt; Windows 8 -&gt; Windows 10 is still the funniest by far.",
+                                    "score": 89,
+                                    "author": "DMonitor",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "At least they reasoned that \"Windows 9\" would be too similar to \"Windows 9x\", which was the catch-all name for Windows 95 and 98. The Xbox situation is sillier.",
+                                            "score": 94,
+                                            "author": "TroperCase",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "Not just visually similar, but older applications would check if you were using Windows 95/98 by getting your OS name and checking if the number following \"Windows\" was a 9. It would break some things, probably cause issues on billion-dollar companies",
+                                                    "score": 43,
+                                                    "author": "coldblade2000",
+                                                    "replies": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "That actually has a reason, though.  Windows 9 would break old shitty code where people would check for the windows version and assumed anything starting with a 9 meant Windows 95 or 98.  It could have broken tons of legacy software.",
+                                            "score": 36,
+                                            "author": "PM_YOUR_BOOBS_PLS_",
+                                            "replies": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Even worse is Xbox One X and Xbox Series X",
+                                    "score": 8,
+                                    "author": "TemporaryFed"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "It's even worse, there's like the Series X and the Series S but then there's the One, One X, One S? Or something? \n\nLike what the fuck lmao.",
+                                    "score": 7,
+                                    "author": "ScreamingGordita"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "New Nintendo 3DS",
+                                    "score": 6,
+                                    "author": "Sarria22",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't understand why people are so nitpicky over the Counterstrike 2 name. I mean isn't this a big upgrade from Counterstrike (1999)? It's not called CSGO2 \ud83e\udd2a",
+                    "score": 49,
+                    "author": "LosingSteak",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think it's the sequel to 1.6",
+                            "score": 28,
+                            "author": "Rebelgecko",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "24 years and only 0.4 of a game.\n\n*now that's Valve time*",
+                                    "score": 71,
+                                    "author": "Mein_Captian",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "yeah, that's just how versioning works \n\n1, 1.0b, 1.1, 1.1c, 1.2, 1.3, 1.4, 1.5, 1.6, 1.Condition Zero, 1.Source, 1.Global Offensive, 2\n\nmakes perfect sense to me! haha",
+                                    "score": 19,
+                                    "author": "rookie-mistake"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Looks so good! The effects section is exciting, the directional bloodsplatter would be amazing in something like *Left for Dead 3*... also they [brought over that spectacular liquid shader from Alyx](https://cdn.akamai.steamstatic.com/apps/csgo/images/csgo_react/cs2/vfx/explosions.webm). \n\nCan't wait for more info.",
+            "score": 250,
+            "author": "jelly_dad",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "liquid looks great but that fire effect....",
+                    "score": 96,
+                    "author": "oioioi9537",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "fire effect is shit, hope they work on it",
+                            "score": 51,
+                            "author": "Odd-Scene4636",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "The C4 explosion too, just a slow fireball... That's not how C4 detonates lol",
+                                    "score": 15,
+                                    "author": "jansteffen"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "DUDE YES the blood is insane looking and the volumetric smoke is so fucking cool plus from listening to pro players talk about it on stream apparently the audio is absolutely nuts too. \n\nIf they actually put the source 2 engine to use it could be a new golden age for valve games and I am so fucking here for it.",
+                    "score": 22,
+                    "author": "rbcornhole",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I don't play Dota or Alyx, but the little I've seen of the engine from Aperture Desk Job running on my own PC really made me want to see all Valve games getting the Source 2 treatment.\n\nIt just looks so clean! I still can't get over how nice [Grady looks](https://cdn.akamai.steamstatic.com/steam/apps/1902490/ss_4b8b8d6ab04d3c42584abb31b5b4d7d534478d1d.1920x1080.jpg?t=1646262842) with all the reflections and scratches. And what I love is how the colors pop compared to Source 1 while keeping that Valve game atmosphere \n\nFingers crossed for either L4D or TF (tho not expecting much lol)",
+                            "score": 8,
+                            "author": "Ordinal43NotFound"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "[deleted]",
+            "score": 798,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "There are a ton of developers that view PC as their primary playerbase, they're just in genres like strategy, crpgs, etc.",
+                    "score": 448,
+                    "author": "Thorzaim",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "That is somewhat changing, a lot of 4x games are being ported to console and you can sometimes find weird features that have consoles in mind. Some strat games have a action wheel for no reason on pc.",
+                            "score": 96,
+                            "author": "Goatsonice",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I couldnt imagine eg. EU4 on console.",
+                                    "score": 8,
+                                    "author": "Teekoo",
+                                    "replies": []
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "People can use controllers on PC. It makes no sense to exclude it for PC just because it requires a controller to use nicely. CSGO has actions wheels too when buying at the start of rounds (originally for consoles).",
+                                    "score": 75,
+                                    "author": "OkayThatsKindaCool",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "In fact, it's super frustrating when the console interface isn't ported to PC as an option. Like Civ 6 has a super easy control scheme for consoles (I played Switch) but playing on Steam Deck or just with a controller in general is garbage die to the PC UI. I want the controller UI on PC!",
+                                            "score": 8,
+                                            "author": "PlentyOfKiwi",
+                                            "replies": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Yup also indie, every time I see a cool interesting really niche indie game on twitch it\u2019s never on console\n\nEdit: Which is crazy bc when Xbox360 was really firing on all cylinders a big thing was it was the home for indie developers",
+                            "score": 5,
+                            "author": "WredditSmark",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "You've got a funny definition of \"regularly\".",
+                    "score": 130,
+                    "author": "Myrsephone",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A major release every few years isn\u2019t regularly? How much faster can they go? Lol",
+                            "score": 98,
+                            "author": "zaviex",
+                            "replies": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "There was a clip a long time ago with a guy asking Gabe when Counter-Strike 2 was coming.\n\nI didn't think that's what they'd actually name it.",
+            "score": 46,
+            "author": "JKTwice",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "Well, that's it. This is the last one, folks. Let's enjoy it while it lasts, as Valve doesn't count to 3.",
+            "score": 118,
+            "author": "CreaturesLieHere",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "1.6\n\nCondition Zero\n\nSource\n\nGlobal Offensive \n\n2. \n\nThey\u2019ll do anything not to use 3.",
+                    "score": 36,
+                    "author": "countingthedays",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Half Life 2: Electric Boogaloo",
+                            "score": 4,
+                            "author": "octaviona"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "CS: Alyx out 2026 for VR headsets.",
+                    "score": 5,
+                    "author": "fleakill"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I was here for this! Been waiting 8 years and finally, CS on Source 2 is real\u2026feels like a part of my youth can now be laid to rest. Bring it on!",
+            "score": 69,
+            "author": "istherereallyamind",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "maaaan iv been dead for games since the 9th playthrough of Elden ring and now D4 and CS2 in the same month ......",
+            "score": 6,
+            "author": "Randomonium5",
+            "replies": []
+        },
+        {
+            "level": 0,
+            "comment": "You remember how people were making jokes like 10 years ago about how Valve never makes games with 3 in them? It's crazy that that is still true.",
+            "score": 19,
+            "author": "MichaeltheMagician"
+        },
+        {
+            "level": 0,
+            "comment": "Will there be surfing?????",
+            "score": 34,
+            "author": "HugeBrainsOnly",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "No reason for not having it",
+                    "score": 18,
+                    "author": "R1ston"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I don't care much about CS, I just realized they announced the Source 2 SDK so get ready for some exciting stuff if you like me are not much into CS but deeply into HL and modding",
+            "score": 6,
+            "author": "Blatanikov7"
+        },
+        {
+            "level": 0,
+            "comment": "God I hope Valve is back to making games again.\n\nImagine Left4Dead3, Portal 3, or Team Fortress 3 in Source 2. Hell, they could make a new IP too, as long as it's not autochess or a card game.",
+            "score": 38,
+            "author": "BlishBlash",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Nah dude, why would they make games when they can just, you know, make money instead?",
+                    "score": 25,
+                    "author": "sharkysharkasaurus",
+                    "replies": []
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "It\u2019s sad to hear they\u2019re retiring the franchise. What happens when it\u2019s time for a change, CS2: Episode 1&amp;2?",
+            "score": 129,
+            "author": "someonelse13",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Counter-Strike: The Trading Card Game.",
+                    "score": 74,
+                    "author": "yeeiser",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Counter Strike: The T-Shirt\n\nCounter Strike: The Lunchbox\n\nCounter Strike: The Breakfast Cereal\n\nCounter Strike: The **Flamethrower**",
+                            "score": 19,
+                            "author": "Kylestache",
+                            "replies": []
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "CS 2.5, then 2.6, then CS: GO2",
+                    "score": 41,
+                    "author": "michael199310"
+                },
+                {
+                    "level": 1,
+                    "comment": "Then a VR prequel explaining the backstory of Mr. Strike himself.",
+                    "score": 56,
+                    "author": "withoutapaddle",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "&gt;Then a VR prequel explaining the backstory of Mr. Strike himself.\n\n\"What is this, some kind of 'Counter-Strike?'\"",
+                            "score": 25,
+                            "author": "angethedude",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Counter: \"It's striking time!\"",
+                                    "score": 7,
+                                    "author": "withoutapaddle"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
