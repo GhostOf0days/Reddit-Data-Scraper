@@ -1,0 +1,41 @@
+{
+    "id": "dt2l1z",
+    "score": 15,
+    "title": "I created a website to easily create/preview schedules [Spring 2020]",
+    "author": "flaminghotcheetos4me",
+    "date": 1573154034.0,
+    "url": "https://www.reddit.com/r/IIT/comments/dt2l1z",
+    "media_urls": [],
+    "other_urls": [
+        "https://camero2734.github.io/iitschedulegen/](https://camero2734.github.io/iitschedulegen/)"
+    ],
+    "postText": "Just search for the classes you want to take and it will automatically create all possible schedules- it automatically adds labs where required, so no need to manually add them.\n\n&amp;#x200B;\n\nI still have yet to add **Sort** options, but I'll add that soon. If you have any suggestions or if there's any weird bugs, let me know!\n\n&amp;#x200B;\n\nLink:  [https://camero2734.github.io/iitschedulegen/](https://camero2734.github.io/iitschedulegen/)",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Very well done. Modify this every term for new classes and I\u2019m sure you\u2019ll have a lot of students using this.",
+            "score": 3,
+            "author": "Fcabdallah"
+        },
+        {
+            "level": 0,
+            "comment": "nice. ill see if I can use it.",
+            "score": 1,
+            "author": "conscious_superbot"
+        },
+        {
+            "level": 0,
+            "comment": "How can I modify this for it to work for my university courses?",
+            "score": 1,
+            "author": "[deleted]",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Hmmm, I didn't make it with the intention of other colleges using it, but it should actually be pretty easy, you just need to modify 2 things:\n\n1. The classes folder needs to contain all of the class information in a JSON file. I made a helper script that generates these automatically for my school, so I would recommend figuring out how to do that for your school. The general structure is:\n\n```json\n\n    {\n        \"Teacher1\": {\n            \"UniqueClassID(CRN)\": {\n                \"name\": \"Class Name\",\n                \"crn\": \"UniqueClassID(CRN)\",\n                \"course\": \"CLS 100\",\n                \"section\": \"01\",\n                \"link\": \"Link1\",\n                \"term\": \"Spring 2020\",\n                \"type\": \"Lecture\",\n                \"instructional_method\": \"Traditional Instructional Method\",\n                \"credits\": 3,\n                \"catalog\": \"Link2\",\n                \"instructors\": [\"Array\", \"Of\", \"Teachers\"],\n                \"classes\": {\n                    \"T\": {\n                        \"start\": 915,\n                        \"end\": 990,\n                        \"location\": \"Classroom 123\"\n                    },\n                    \"R\": {\n                        \"start\": 915,\n                        \"end\": 990,\n                        \"location\": \"Classroom 123\"\n                    }\n                }\n            }\n        }\n    }\n```\n\n2. Edit the `classes.json` file to contain all of the **course** names. In the class above, this was `CLS 100`.\n\nThose two changes alone should make everything work!",
+                    "score": 2,
+                    "author": "flaminghotcheetos4me"
+                }
+            ]
+        }
+    ]
+}

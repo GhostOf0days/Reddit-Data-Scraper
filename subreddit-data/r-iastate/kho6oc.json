@@ -1,0 +1,285 @@
+{
+    "id": "kho6oc",
+    "score": 442,
+    "title": "A gif of ISU central campus buildings as they were built",
+    "author": "BlankeTheBard",
+    "date": 1608578672.0,
+    "url": "https://www.reddit.com/r/iastate/comments/kho6oc",
+    "media_urls": [
+        "https://i.redd.it/ftue266b9l661.gif"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I always knew Lagomarcino Hall was never built and only existed as part of the shadow realm",
+            "score": 45,
+            "author": "ApicalFuraha",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "wait holy shit I didn't realize that it never materialized in the gif. Dang! I'll have to fix that.\n\nedit: [I fixed it!](https://i.imgur.com/fu1Mpta.gif) I accidentally deleted the Lagomarcino shape in QGIS at some point, so it never made it over.",
+                    "score": 23,
+                    "author": "BlankeTheBard"
+                },
+                {
+                    "level": 1,
+                    "comment": "I was eyeballing for lago too!!",
+                    "score": 3,
+                    "author": "mindfulzucchini"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Howdy, y\u2019all!\n\nMy obsession with making campus maps continues! For a while, I\u2019ve wanted to make an animated map that reveals buildings as they were constructed. I started working on this roughly 2 weeks ago.\n\nMy process:\n\nI downloaded a high-res satellite map from a USDA database (edit: I pulled the satellite imagery from the [Iowa Geographic Map Server](https://ortho.gis.iastate.edu/) ). After importing it into QGIS, I made a layer for buildings/Lake Laverne, where I drew those features and entered the construction date available from FPM. I made a second layer that had roads on it to give the viewer more context for building placement.\n\nIn R, I used the ggplot2 and gganimate packages to create an animation of the map. Here\u2019s my code:\n   \n    # Load necessary packages\n    library(tidyverse) # For piping, mutating\n    library(sf) # For importing shapefiles\n    library(gganimate) # For animations\n    library(transformr) # For using gganimate (?)\n    \n    # Load in files for campus buildings, roads\n    shapes &lt;- st_read('~/Documents/buildings_campus/buildings.shp') # Campus buildings\n    features &lt;- st_read('~/Documents/buildings_campus/features.shp') # Roads\n    \n    # Create an animated plot object\n    anim &lt;- shapes %&gt;%\n      mutate(year = as.factor(year_built)) %&gt;% # Converts the \"year_built\" variable from numeric to factor\n      ggplot() + # Specifies that we're plotting something\n      geom_sf(data = shapes,\n              color = \"black\",\n              fill = \"black\") + # Displays campus buildings in black\n      transition_states(year_built,\n                        transition_length = 1,\n                        state_length = 2) + # Reveals buildings based on year_built\n      geom_sf(data = features,\n              color = \"gray\",\n              fill = \"gray\") + # Displays roads in gray\n      shadow_mark() + # Keeps the buildings in frames as year_built progresses\n      theme_void() + # Gets rid of grid lines/labels\n      labs(title = \"Iowa State University central campus buildings\",\n           subtitle = \"{closest_state}\") + # Titles the plot, says the subtitle should show year of current frame\n      theme(legend.position = \"none\",\n            plot.title = element_text(hjust = 0.5),\n            plot.subtitle = element_text(face = \"bold\",\n                                         size = 16)) # Gets rid of legend, centers title, makes subtitle bold and larger\n    animate(plot = anim,\n            nframes = 330,\n            fps = 4,\n            end_pause = 10) # Animates the plot with 330 frames, 4 frames per second, and 10 frames at the end of gif\n    anim_save(\"anim.gif\", animation = last_animation()) # Saves the last animation as a gif\n\nAnyway, this was fun to make! I hope you find it interesting and informative!\n\nedit 2: I also forgot to mention that I've only included buildings that are currently on campus, and that I had trouble discerning original buildings from extensions/additions built later on. I was able to tell some additions apart but not for the majority of buildings.",
+            "score": 57,
+            "author": "BlankeTheBard",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Man, I love this!  I had done something similar with a map one time but ended up exporting like 20 maps out of R and then making the gif lol.  If only I had looked for gganimate!  Love it!",
+                    "score": 9,
+                    "author": "jebustin",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think I would've done it that way too, if I didn't know about gganimate going into it. If you're into R, there's a group on campus called LunchinatoRs (a lot of EEOB people) that holds an R-related lecture every Friday on Zoom. I learned about gganimate through a lecture that was held about a month ago. In fact, when I ran into issues with my code I asked the lecturer some questions and he pointed me down the right direction.",
+                            "score": 3,
+                            "author": "BlankeTheBard"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Yeah, Nuke E was under where SIC is now and Old Sweeney was south of where Sweeney is. I had an office for several years in Old Sweeney, so I was disappointed it didn't make the cut since it was torn down. Also, I think there was a building called the Engineering Annex somewhere around where Hoover is now, but that was before my time.",
+                    "score": 5,
+                    "author": "wwj",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think I'm going to work toward including buildings that are no longer with us! It may take a while but it would definitely be interesting to see.",
+                            "score": 2,
+                            "author": "BlankeTheBard"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "My office was in nuc e and I'm very glad it's gone now. That place was horrible.",
+                            "score": 1,
+                            "author": "stealth550"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Making sure you know of [*Iowa State University Campus and Its Buildings*](https://archive.org/details/ISUCampusAndItsBuildings18591979SummerfieldDay/mode/2up), which I've been obsessed with for several years. The book has a few old re-created campus maps in the back, but the biggest plus is the old info on buildings no longer around. Being able to do the streets like they were in the past would be the biggest plus, though it is a big task. However, the [Ames History Center](https://archive.org/details/Ames-History-Archives) has several old phone books and student directories, which frequently includes maps, on its Internet Archive page.\n\nI attempted a similar project for Campustown and the dormitories some years ago. It still sits very incomplete and mostly an outline.",
+                    "score": 3,
+                    "author": "Amadeus3000",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Someone linked the campus buildings book PDFs, it's really cool! I'm working on overlaying the maps the author made to figure out where buildings were. There's some scaling issues but it's helpful. I think I'll be able to make a more detailed map with the info that's there.",
+                            "score": 1,
+                            "author": "BlankeTheBard"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "I don't see Lago Marcino Hall.",
+                    "score": 1,
+                    "author": "tguy0720",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Yep, someone else pointed that out. I accidentally deleted it from my shapefile at some point, but I fixed it. Unfortunately I can't replace the gif I uploaded on the main post :(",
+                            "score": 3,
+                            "author": "BlankeTheBard"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "omg i thought u were a bot",
+                    "score": 1,
+                    "author": "[deleted]",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I'm curious as to why you thought that lol",
+                            "score": 2,
+                            "author": "BlankeTheBard"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is really dope! Could you please link the USDA database you pulled the layers from? Ty",
+            "score": 15,
+            "author": "sohtrap",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "For sure! I got the base map from https://ortho.gis.iastate.edu/, and I believe the resolution/scale I went with was 5 meters per pixel. So I guess technically, it wasn't a USDA database I pulled from but the USDA was responsible for taking the imagery originally.\n\nI had to draw the features on top of it. Unfortunately there doesn't seem to be a shapefile publicly available of campus buildings.",
+                    "score": 9,
+                    "author": "BlankeTheBard",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "5 meters is 5.47 yards",
+                            "score": 4,
+                            "author": "converter-bot",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "Good bot",
+                                    "score": 2,
+                                    "author": "grave-osmosis",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Thank you, grave-osmosis, for voting on converter-bot.\n\nThis bot wants to find the best and worst bots on Reddit. [You can view results here](https://botrank.pastimes.eu/).\n\n***\n\n^(Even if I don't reply to your comment, I'm still listening for votes. Check the webpage to see if your vote registered!)",
+                                            "score": 1,
+                                            "author": "B0tRank"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Have I got a fun link for you. \n\nhttps://digital.lib.iastate.edu/online-exhibits/iowa-state-sesquicentennial/campus-buildings/campus-and-its-buildings\n\n\nWith this you can add in the buildings that have burned down!",
+            "score": 10,
+            "author": "original-moosebear",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Thanks for the link! It may be difficult to add them since the files on that site are all PDFs rather than TIFFs, but I could make that my new project.",
+                    "score": 5,
+                    "author": "BlankeTheBard",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I had a similar thought too, that this could be expanded a bit by adding buildings that have since been torn down - NukE and old Sweeney for example, as others have stated, and I happen to know there used to be a building where Music is currently that was for student health or something (it was torn down and then the current music hall was built on top). But those would require a lot more research and manual additions to the database",
+                            "score": 2,
+                            "author": "musicalme17"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is really cool!",
+            "score": 5,
+            "author": "nopenotamanda"
+        },
+        {
+            "level": 0,
+            "comment": "Really cool map! It reminds me of maps created by the architect Nolli. It\u2019d be cool to see the names of each building as they\u2019re constructed and maybe even the secondary and tertiary pathways too. \n\nFun fact: central campus was designed by Frederick Law Olmsted, whose regarded as \u2018the father of landscape architecture.\u2019 He is also the designer for some of the most noteworthy public spaces in the US, including Central Park.\n\nThere was a plaque recognizing that in front of Curtiss Hall but it was stolen a few years ago. Not sure if it\u2019s been replaced but can almost guarantee the pedestal for it is still there.",
+            "score": 6,
+            "author": "Agile_Slothh",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "That would be an interesting challenge! I'm not sure how doable it would be to display building names on top of them (may be difficult to read) but I could certainly see about showing a list on the side. \n\nThe pathways wouldn't be too difficult to put in.",
+                    "score": 3,
+                    "author": "BlankeTheBard"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Kinda surprised how \"young\" the MU is compared to some university buildings",
+            "score": 3,
+            "author": "VoluptuousVelvetfish"
+        },
+        {
+            "level": 0,
+            "comment": "A little animation of the buildings that burnt down would be a nice touch. Not enough people know about Old Main and Margaret Hall, or the first Armory for that matter...",
+            "score": 4,
+            "author": "Maya_Who",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I've been working through some old maps circa 1875 - 1930, and it's surprising how many buildings were on campus (hint: lots of cottages and barns).\n\nI was going to remake the map and include razed buildings, while coloring them based on presence in 2020 vs not. Instead, I think I may color them categorically (present, purposefully razed/demolished, burnt down/destroyed). It's gonna take a while though. So many buildings, plus the maps I'm referencing are not as to-scale as I would like (they were drawn in 1980, so I'm not surprised)",
+                    "score": 1,
+                    "author": "BlankeTheBard"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Where the hell is towers &gt;:(",
+            "score": 3,
+            "author": "celluj34",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "too far away from main campus bb\n\n(seriously though, the map would've been really zoomed out and I would have felt obligated to put in all the Freddy Ct. buildings too which would actually be death)",
+                    "score": 9,
+                    "author": "BlankeTheBard",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Just put them on the map like Alaska and Hawaii \ud83d\ude01",
+                            "score": 8,
+                            "author": "celluj34"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Nice",
+            "score": 2,
+            "author": "AreWeThereYet61"
+        },
+        {
+            "level": 0,
+            "comment": "I did this as a student for design college with transparency sheets layered onto themselves. Oh the good old days.",
+            "score": 2,
+            "author": "Guitarchitect7"
+        },
+        {
+            "level": 0,
+            "comment": "Anybody else notice no new buildings from 1939-1947-ish? Obviously World War Two impeded any new buildings which makes sense but it was cool to see that visually. Thanks OP!",
+            "score": 2,
+            "author": "lucas_with_an_L",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I would guess the Great Depression also played a role in that! Less funding, and probably less enrollment too.\n\nThank you!",
+                    "score": 2,
+                    "author": "BlankeTheBard"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "I've dug through those maps, I got bit by the same bug some years back. If all else fails, ask the special collections desk on the 5th floor of the library.",
+            "score": 2,
+            "author": "Maya_Who"
+        },
+        {
+            "level": 0,
+            "comment": "It's as if Davidson never existed.",
+            "score": 1,
+            "author": "Dshark"
+        },
+        {
+            "level": 0,
+            "comment": "You gotta show them building Helser early and then lopping off the north end in like 2002.",
+            "score": 1,
+            "author": "aplarsen"
+        }
+    ]
+}

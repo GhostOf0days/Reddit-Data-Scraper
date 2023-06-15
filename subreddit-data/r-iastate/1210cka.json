@@ -1,0 +1,59 @@
+{
+    "id": "1210cka",
+    "score": 3,
+    "title": "What file types should my Solidwork files be to use the 3D printers in the SIC?",
+    "author": "Greginator777",
+    "date": 1679695388.0,
+    "url": "https://www.reddit.com/r/iastate/comments/1210cka",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "I want to 3D print some parts I made in Solidworks for my Senior Design Project. I want to use the \"Ultimaker\" printers (the white boxes) found on the 2nd floor of the SIC.\n\nWhat file types should my 3D models be if I want to print them? I've tried .stl and .obj files and the printer couldn't find them on my Flash Drive. Am I missing a step?\n\nThank you for the help.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Try downloading Ultimaker Cura and importing it through there",
+            "score": 3,
+            "author": "TrueLegend777",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Would I be able to import my Solidworks files, then print them from there?",
+                    "score": 1,
+                    "author": "Greginator777"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "3d printers require a stl format. In your 3d software see if you can save as copy .stl.  Then download the ultimsker cura app and see if you can input the file. I would also walk in and talk to the person in there. They will get you set up with training for the printers there",
+            "score": 2,
+            "author": "vibraslap_2640"
+        },
+        {
+            "level": 0,
+            "comment": "You need to export the file from SOLIDWORKS to an .stl file. You can then take this file and put it in a slicing software of your choice. I use ultimaker cura. From there you can slice the model into the gcode the printer will need to print the file. You would also input your temp settings and other stuff at that point depending on how \"pretty\" you want your print to be.\n\nEdit: I went and traced the export steps... \n\nIn SOLIDWORKS with your part open go to:\n1.  file \n2. print3d \n3. Then click on the model\n4. Go to the bottom where it says save to file and open the drop-down\n5. Select stl\n\n6.save the file to your computer using the save file button\n\nYou would then need to place this file in a slicing software to create the gcode needed to print. Then you give that file to the printer to actually print the item.",
+            "score": 1,
+            "author": "MINIWHEATS69420"
+        },
+        {
+            "level": 0,
+            "comment": "3d printers can\u2019t see stl files, they need gcode which is basically raw instructions on how to build the model. Import an stl file into a slicer like ultimaker cura then export the gcode to your drive",
+            "score": 1,
+            "author": "yopro101",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Do you know if you are able to do that in SIC or do you need to do that with your stl files before showing up?",
+                    "score": 1,
+                    "author": "OrangeFortress"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "it probably won\u2019t be as good but if you pay for the filament i\u2019ll print whatever you need for no extra cost. if it\u2019s small i\u2019ll do it for free",
+            "score": 1,
+            "author": "Piglet_Mountain"
+        }
+    ]
+}

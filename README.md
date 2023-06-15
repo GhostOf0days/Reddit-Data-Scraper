@@ -39,4 +39,4 @@ If any subreddits were unsuccessfully scraped, remove all subreddits from the su
 
 13. Your PR will be reviewed, and if everything is in order, it will be merged into the main repository.
 
-Note: Don't worry about errors that appear. However, Error 403 means that specific subreddit is private. Remove that subreddit and rerun the parser for the other ones. Also, it may say Compute Failed. Don't worry the scraper still worked and correctly added files.
+Note: Don't worry about errors that appear. However, Error 403 means that specific subreddit is private. Remove that subreddit and rerun the parser for the other ones. Also, it may say Compute Failed. Don't worry the scraper still worked and correctly added files. Also, less distribution by scraping less subreddits at a time means more scraping power for each subreddit. As for
