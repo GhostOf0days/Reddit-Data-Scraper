@@ -1,0 +1,149 @@
+{
+    "id": "1443qak",
+    "score": 1080,
+    "title": "anime_irl",
+    "author": "Hitman7128",
+    "date": 1686214105.0,
+    "url": "https://www.reddit.com/r/anime_irl/comments/1443qak",
+    "media_urls": [
+        "https://v.redd.it/gq4jjrz6cr4b1"
+    ],
+    "other_urls": [],
+    "postText": "",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "Nene is 100% my favorite character because she spent the time and effort to learn how to code and I have huge respect for that.",
+            "score": 105,
+            "author": "The_Exkalamity",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "All i could think about the whole show is how much i despised her voice.",
+                    "score": 1,
+                    "author": "FkinShtManEySuck"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "The game is written in C++ (Visual C++, usually with Visual Studio), using Visual Studio (idk the version but according to the message box, I can tell it was similar to the Visual Studio 2019 which is I currently used). Was currently debugging so she not directly run the executable but just compiled and run inside Visual Studio.\n\nAs the error tell, there\u2019s an error on line 52 in the the extremely long c++ file name. And why the executable file name is as long as the c++ file name?\n\nAnyway, the error caused by (maybe macro) _BLOCK_TYPE_IS_VALID_ with 1 or 2 parameters.\n\nBecause of the quality of the video, I can\u2019t parse the expression for the error. Anyway, according to the name of the macro and the \u2018getHead- ++something\u2019 part, there\u2019s two reasons I can think of that caused the error.\n\n1. \u2018getHead\u2019 maybe is a function or macro. And if it was, probably not calling this function caused the error.\n\n2. \u2018++something\u2019 maybe is a pointer. And maybe the error occurred because of \u2018something\u2019 was a nullptr, or it was out of an allocated memory block range (which may appear to cause undefined behavior, and passing it to the function/macro which occurred error because the function is using a pointer that pointing to a not allocated position in the memory).\n\nAnyway, it\u2019s just my theory. Don\u2019t take this serious guy. I\u2019m just not an expert or indeterminate on Visual C++ or something (I usually use mingw with VSCode instead) and I just use Visual Studio for 6 months so don\u2019t expect much. I just spent 20 minutes of my life analyzing an error message in an anime. The anime was good, this comment is just for someone curious about what happened with her game (besides the game executable file name was not \u2018Nene Quest\u2019 or something like that but instead an file name that contain more than 30 characters).\n\nAnd, they\u2019re really good trying to change the title error message box from \u201cMicrosoft Visual C++ Runtime Library\u201d to \u201cMicroPerosoft (MisaoPerosoft?) Visual C++ Runtime Library\u201d.\n\nThanks for spending 1 minutes reading my comment.",
+            "score": 83,
+            "author": "AdrianParry13526",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "\n\n**Something** - ([AL](http://anilist.co/manga/160533), [MU](https://www.mangaupdates.com/series.html?id=31970488840))\n\n^(Manga | Status: Finished | Volumes: 4 | Chapters: 22)\n\n\n\n\n\n---\n\n^{anime},&amp;#32;&lt;manga&gt;,&amp;#32;]LN[,&amp;#32;|VN|&amp;#32;|&amp;#32;[FAQ](http://www.reddit.com/r/Roboragi/wiki/index)&amp;#32;|&amp;#32;[/r/](http://www.reddit.com/r/Roboragi/)&amp;#32;|&amp;#32;[Edit](https://www.reddit.com/r/Roboragi/wiki/index#wiki_i_made_a_mistake.2C_how_do_i_get_my_comment_reprocessed.3F)&amp;#32;|&amp;#32;[Mistake?](http://www.reddit.com/r/Roboragi/submit?selftext=true&amp;title=[ISSUE]&amp;text=/r/anime_irl/comments/1443qak/anime_irl/jnea3g9/)&amp;#32;|&amp;#32;[Source](https://github.com/Nihilate/Roboragi)&amp;#32;|&amp;#32;[Synonyms](https://www.reddit.com/r/Roboragi/wiki/synonyms)&amp;#32;|&amp;#32;[\u26d3](https://www.reddit.com/r/Roboragi/wiki/interestinglinks)&amp;#32;|&amp;#32;[\u2665](https://www.reddit.com/r/Roboragi/wiki/thanks)",
+                    "score": 23,
+                    "author": "Roboragi"
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt; 1 minutes \n\nBOT ALERT",
+                    "score": 13,
+                    "author": "discussatron",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Because I think people will probably skip some part, it was too long btw",
+                            "score": 3,
+                            "author": "AdrianParry13526"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "\"Use After Free\" I believe.",
+                    "score": 5,
+                    "author": "Dominis"
+                },
+                {
+                    "level": 1,
+                    "comment": "It's a pointer.\n\nBLOCK\\_TYPE\\_IS\\_VALID(pHead-&gt;nBlockUse)",
+                    "score": 6,
+                    "author": "poesviertwintig",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Oh, so now it\u2019s more clear that maybe pHead is a nullptr and caused the error.\n\nOr maybe because of the implementation of the macro/function BLOCK_TYPE_IS_VALID idk, or maybe nBlockUse caused error because it contains a invalid value, or an error occurred while checking nBlockUse (idk man, I\u2019m not writing the code and anything I know is just from the error message box)",
+                            "score": 5,
+                            "author": "AdrianParry13526",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "It's an assertion for true (non-zero). dbgdel.cpp is a VC++ internal file. It's confirming the heap page is allocated.",
+                                    "score": 2,
+                                    "author": "Dominis"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "&gt;long c++ file name\n\nthe file name is actually just `dbgdel.cpp` everything else is the absolute path of the file. The program name is NeneQuest.exe \n\n&amp;#x200B;\n\n&gt;I can\u2019t parse the expression for the error\n\nit's not really an error per se but a failed assertion, as it says in the error window. She asserted that `pHead-&gt;nBlockUse` is a valid block through the macro but it appears to be not.\n\nit's not an error because the program didn't execute any invalid code, it stopped before and instead of showing some generic error, it clearly says that `nBlockUse` is not a valid block, so the programmers can direct their effort to make `nBlockUse` never get into a invalid state. Assertions are very useful.",
+                    "score": 2,
+                    "author": "Ekank",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Wait, how? Do you have the error message box with higher resolution or something? Sorry if I was wrong because I can\u2019t just parse because of the video resolution.",
+                            "score": 2,
+                            "author": "AdrianParry13526"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "Also, if you\u2019re an c++ expert, I have nothing left to say.",
+                            "score": 2,
+                            "author": "AdrianParry13526"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Sauce {{NEW GAME!!}}",
+            "score": 24,
+            "author": "Hitman7128",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "**NEW GAME!!** - ([AL](http://anilist.co/anime/98292 \"English: NEW GAME!!\"), [A-P](https://www.anime-planet.com/anime/new-game-2), [KIT](https://kitsu.io/anime/new-game-2 \"English: New Game!!\"), [MAL](http://myanimelist.net/anime/34914))\n\n^^NEW ^^GAME!!\n\n^(**TV** | **2017** | **Status:** Finished | **Episodes:** 12 | **Genres:** Slice of Life)  \n^(**Stats:** 48 requests across 5 subreddits - 0.005% of all requests)\n\n&gt;The second season of &lt;i&gt;New Game!&lt;/i&gt;.\n\n&gt;Aoba Suzukaze starts another year designing characters at Eagle Jump, and she can\u2019t wait to meet the newbie recruits\u2026if any are hired. But before she can even unlock her senpai status, she finds herself in a lead designer position for the company\u2019s newest game! Following in her manager\u2019s footsteps, Aoba\u2019s gotta get good if she wants her skills to compete with Ko Yagami\u2019s. Working hard alongside some interesting new coworkers, only time will tell if Aoba gets her best ending.\n\n\n---\n\n^{anime},&amp;#32;&lt;manga&gt;,&amp;#32;]LN[,&amp;#32;|VN|&amp;#32;|&amp;#32;[FAQ](http://www.reddit.com/r/Roboragi/wiki/index)&amp;#32;|&amp;#32;[/r/](http://www.reddit.com/r/Roboragi/)&amp;#32;|&amp;#32;[Edit](https://www.reddit.com/r/Roboragi/wiki/index#wiki_i_made_a_mistake.2C_how_do_i_get_my_comment_reprocessed.3F)&amp;#32;|&amp;#32;[Mistake?](http://www.reddit.com/r/Roboragi/submit?selftext=true&amp;title=[ISSUE]&amp;text=/r/anime_irl/comments/1443qak/anime_irl/jndd4ml/)&amp;#32;|&amp;#32;[Source](https://github.com/Nihilate/Roboragi)&amp;#32;|&amp;#32;[Synonyms](https://www.reddit.com/r/Roboragi/wiki/synonyms)&amp;#32;|&amp;#32;[\u26d3](https://www.reddit.com/r/Roboragi/wiki/interestinglinks)&amp;#32;|&amp;#32;[\u2665](https://www.reddit.com/r/Roboragi/wiki/thanks)",
+                    "score": 9,
+                    "author": "Roboragi"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "This is me. That's why they don't let 3D artists get close to the code anymore :(",
+            "score": 17,
+            "author": "Cless_Aurion"
+        },
+        {
+            "level": 0,
+            "comment": "Nene such a love",
+            "score": 8,
+            "author": "rodriguezkevin"
+        },
+        {
+            "level": 0,
+            "comment": "This is me except i don\u2019t know how to draw or code or do anything really",
+            "score": 3,
+            "author": "FoxMcCloud3173"
+        },
+        {
+            "level": 0,
+            "comment": "I remember this scene. I appreciated how supportive Ahagon (her mentor there) was.",
+            "score": 3,
+            "author": "BarAgent"
+        },
+        {
+            "level": 0,
+            "comment": "Fix, compile, fix, compile, fix, compile, fix, compile,  fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile,  fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile,  fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile,  fix, compile, fix, compile, fix, compile, fix, compile, fix, compile, fix, compile.",
+            "score": 2,
+            "author": "Asgeras"
+        }
+    ]
+}
