@@ -18,6 +18,6 @@ for subreddit in subreddits:
 
 # Print the failed subreddits
 if failed_subreddits:
-    print('The following subreddits do not exist: ' + ', '.join(failed_subreddits))
+    print('The following subreddits do not exist or are private: ' + ', '.join(failed_subreddits))
 else:
     print('All subreddits exist.')

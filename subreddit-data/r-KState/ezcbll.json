@@ -1,0 +1,43 @@
+{
+    "id": "ezcbll",
+    "score": 24,
+    "title": "Alexa skill for the lazy (and hungry)",
+    "author": "chhawkins2001",
+    "date": 1580921068.0,
+    "url": "https://www.reddit.com/r/KState/comments/ezcbll",
+    "media_urls": [],
+    "other_urls": [
+        "https://www.amazon.com/dp/B084GK99DX](https://www.amazon.com/dp/B084GK99DX)"
+    ],
+    "postText": "Hey everybody, I made an Alexa skill to get the menu from the dining halls with minimal effort\n\n [https://www.amazon.com/dp/B084GK99DX](https://www.amazon.com/dp/B084GK99DX) \n\nThe command is a bit specific (you have to choose your words carefully)\n\nYou start by calling the skill: \"Alexa, open K-State menu\"\n\nThen you can ask things like:  \n\"What is being served at Southwestern for dinner?\"\n\n\"What is on the menu for pizza at lunch?\"\n\n\"What is available at the wok for lunch?\"\n\nThese commands all assume you want the menu from Kramer and for today.\n\nThere's also a longer command if you want to know the derby/van zile menu or a menu for a day other than today:  \n\"What is being served at the wok at dinner at derby tomorrow?\"\n\nSo the first command structure is:\n\n{what is being served/what is on the menu/what is available} at {meal station} for/at {breakfast, lunch, afternoon, dinner (mealtimes)}\n\nThe command structure for the longer command is :  \n{same beginning phrases} at {meal station} for/at {mealtime} at {dining center} {on day or today/tomorrow/wednesday}\n\nIf you have any questions, I'd be glad to answer them",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "How do you set this type of thing up?",
+            "score": 6,
+            "author": "cyberphlash",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "To put it simply,\n\nYou use the Alexa developer console to do the front end (what you say to Alexa and what she gives to the back end)\n\nThen you use whatever backend you want (they also do provide one, if you don't have a personal server) and you set that up to respond to the different inputs given and send info back to the frontend\n\nThere's lots of tutorials online for this sort of thing",
+                    "score": 7,
+                    "author": "chhawkins2001",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Thanks",
+                            "score": 2,
+                            "author": "cyberphlash"
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "comment": "Probably parsing the website with the menu available on it and handing back to Alexa to read.",
+                    "score": 3,
+                    "author": "Yurishimo"
+                }
+            ]
+        }
+    ]
+}
