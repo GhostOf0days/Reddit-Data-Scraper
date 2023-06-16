@@ -1,0 +1,98 @@
+{
+    "id": "13na3b1",
+    "score": 1,
+    "title": "Algorithms course help",
+    "author": "historiaaPPle",
+    "date": 1684619156.0,
+    "url": "https://www.reddit.com/r/princeton/comments/13na3b1",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": " I am taking Algorithms course and I'm unable to use algs4.jar. I keep getting this error when trying to compile and run RandomWord.java:  \n$ java -classpath algs4.jar RandomWord.java  \nRandomWord.java:2: error: package edu.princeton.cs.algs4 does not exist  \nimport edu.princeton.cs.algs4.StdIn;  \n\\^  \nRandomWord.java:3: error: package edu.princeton.cs.algs4 does not exist  \nimport edu.princeton.cs.algs4.StdOut;\n\nI added the jar file to the project structure and IntelliJ could find the library and auto add import statements when I used the methods, but I'm unable to execute the file. Could someone help with this problem? Thanks!",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "You need to use *javac* to compile (not Java). Also, put \u201c.:\u201d before algs4.jar\n\n\nCompile:\n\njavac -classpath .:algs4.jar RandomWord.java\n\nRun:\n\njava -classpath .:algs4.jar RandomWord",
+            "score": 2,
+            "author": "Goodman9473",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "It still gives me the same error. I ran javac -classpath .:algs4.jar src/RandomWord.java\r in src's parent folder, which contains .lift folder and src folder.",
+                    "score": 1,
+                    "author": "historiaaPPle",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Are you using windows or Mac? \n\nOn windows it\u2019s .;algs4.jar \n\nOn Mac it\u2019s .:algs4.jar\n\nAlso, you need to supply the proper path to algs4\n\nHere\u2019s the easiest way. Move algs4.jar to the SAME directory as RandomWord.java. It seems like that directory would be src. Then execute:\n\nMac:\n\njavac -classpath .:algs4.jar RandomWord.java\n\nWindows:\n\njavac -classpath .;algs4.jar RandomWord.java",
+                            "score": 2,
+                            "author": "Goodman9473",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m using windows, they gave the same errors when i did that, and it says bash: algs4.jar : command not found and error: no source files. When i moved the jar file to the same folder, it gives the same error",
+                                    "score": 1,
+                                    "author": "historiaaPPle",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Can you print the absolute pathname of the src folder (using cd) and list it\u2019s contents (using dir)? That\u2019ll help me understand the issue",
+                                            "score": 2,
+                                            "author": "Goodman9473",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "It has HelloWorld and HelloGoodbye .java and .class, and RandomWord.java. Since I can\u2019t compile it there\u2019s no RandomWord.class",
+                                                    "score": 1,
+                                                    "author": "historiaaPPle",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "You need to move algs4.jar to that directory. Do you know how to do that?",
+                                                            "score": 2,
+                                                            "author": "Goodman9473",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "I did that and it gave me the same error so i moved it back",
+                                                                    "score": 1,
+                                                                    "author": "historiaaPPle"
+                                                                },
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Actually it gave me more errors since intellij could no longer detect the libraries and add the import statements",
+                                                                    "score": 1,
+                                                                    "author": "historiaaPPle",
+                                                                    "replies": [
+                                                                        {
+                                                                            "level": 8,
+                                                                            "comment": "If you send me the exact details it\u2019s easier for me to try to figure out the issue. Can you send the exact import statements you\u2019re using, as well as the exact errors you\u2019re getting? Most importantly for then algs4.jar was in src and the command still didn\u2019t work",
+                                                                            "score": 2,
+                                                                            "author": "Goodman9473",
+                                                                            "replies": [
+                                                                                {
+                                                                                    "level": 9,
+                                                                                    "comment": "[https://imgur.com/a/fxtKqXS](https://imgur.com/a/fxtKqXS)\n\nThis is what I have",
+                                                                                    "score": 1,
+                                                                                    "author": "historiaaPPle",
+                                                                                    "replies": []
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

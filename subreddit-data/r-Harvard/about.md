@@ -1,6 +1,6 @@
 # About r/Harvard
 
-Subscribers: 29613
+Subscribers: 29642
 
 Created UTC: 1217194122.0
 

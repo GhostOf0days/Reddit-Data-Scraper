@@ -1,6 +1,6 @@
 # About r/dartmouth
 
-Subscribers: 5733
+Subscribers: 5745
 
 Created UTC: 1257745234.0
 

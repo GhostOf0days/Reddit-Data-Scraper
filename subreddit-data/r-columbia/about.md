@@ -1,6 +1,6 @@
 # About r/columbia
 
-Subscribers: 24345
+Subscribers: 24420
 
 Created UTC: 1229500631.0
 

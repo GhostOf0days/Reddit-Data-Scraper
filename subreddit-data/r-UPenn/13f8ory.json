@@ -1,0 +1,93 @@
+{
+    "id": "13f8ory",
+    "score": 40,
+    "title": "Survivor's Manual for CIS 1600",
+    "author": "Hitman7128",
+    "date": 1683860364.0,
+    "url": "https://www.reddit.com/r/UPenn/comments/13f8ory",
+    "media_urls": [],
+    "other_urls": [
+        "https://hitman7128.github.io/CIS-1600/CIS-1600.pdf](https://hitman7128.github.io/CIS-1600/CIS-1600.pdf)"
+    ],
+    "postText": "To help prospective students out with CIS 1600 and ease feelings of intimidation, I typed out this guide where I explain the material in Layman\u2019s terms, as well as give pointers on when and where to apply techniques as well as midterm/final advice:\n\n[https://hitman7128.github.io/CIS-1600/CIS-1600.pdf](https://hitman7128.github.io/CIS-1600/CIS-1600.pdf)\n\nI\u2019m open to constructive criticism on this guide, as my goal is for this to be a resource that is accessible and easy to use, as well as to give people the momentum to succeed in CIS 1600. Don\u2019t get me wrong, you still need to put in the effort yourself. But perhaps some of the magic bullets I provide in the guide will remove the shock factor and make one more equipped to tackle the course.\n\nEDIT: Important disclaimer as pointed out - I took CIS 1600 specifically in Spring 2023 with Val Tannen, so the advice for midterm 2 and the final are not accurate to how Rajiv teaches it in the Fall.",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "This is awesome but if u take it with rajiv this will not prepare u at all for midterm 2 or the final. So maybe add a little disclaimer.",
+            "score": 13,
+            "author": "Place_Then",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm guessing there are crucial changes to the material and a different style of exams?\n\nI guess what I could do to is try to keep myself in the loop about the differences between spring and fall. Maybe I'll have open Q&amp;A for those struggling to understand material that the guide doesn't cover, since I could inform myself on the conceptual stuff ahead of time. Then, I make edits to the guide once I figure out how the course specifically wants you to use the material.",
+                    "score": 3,
+                    "author": "Hitman7128",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "I think around the last third of Rajiv\u2019s course is not even covered in the Spring. Our graph theory stuff was completely different as Tannen covers some stuff rajiv covers in 121. Also Rajiv\u2019s exams aren\u2019t as direct and are more of coming up with a clever proof for something\u2014more like competition math.\n\nOff the top of my head Rajiv covers: Probabilistic method, Ramsey Theory, Matchings/Relations (Halls Theorem), Eulerian/Hamiltonian cycles etc \u2014 don\u2019t think Tannen covers these?",
+                            "score": 11,
+                            "author": "Place_Then",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019ve TA\u2019ed for the course in the past but it was a few years back. Val should cover relations to a solid extent (he\u2019s a logic/databases guy and I would even argue it\u2019s more up his wheelhouse than Rajiv\u2019s). I would agree that Val\u2019s exams are typically more \u201cvanilla\u201d but also often end up tricky in that students often make mistakes in ways we don\u2019t expect; the tough points of Rajiv\u2019s exams are generally more along the lines of \u201cokay we expected this to be hard but it was harder than we thought.\u201d\n\nRajiv was also typically pushing the pace of the course pretty hard \u2014 in my time there, he pretty much added one new topic every year, but based on your comments, it seems like it\u2019s somewhat stabilized.",
+                                    "score": 4,
+                                    "author": "ExistentAndUnique"
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Can affirm Tannen didn\u2019t cover any of that",
+                                    "score": 2,
+                                    "author": "Hitman7128"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Overall, this is a solid (and very thorough) guide to the course concepts \u2014 with the caveat mentioned above that different versions of the course can differ in content. The TeX and graphics in particular are very nice. The intuitive explanations can lack rigor, but it should serve as a handy companion to the course materials. Some notes on the graph portion:\n\nThe claim that \u201cwalks can be turned into paths\u201d should be made slightly more precise \u2014 I believe the point you\u2019re getting at is \u201ca walk from x to y can be turned into a path from x to y,\u201d which is evident from the explanation afterwards, but not the blurb itself\n\nThe \u201cmaximal path property\u201d has a couple issues. For one, a maximal path is any path which is not contained in a strictly longer path (i.e. cannot be extended). This is different from a path of maximum length \u2014 you can have very short maximal paths. However, it is true that the latter forms a subset of the former so it\u2019s generally safe to just pick a path of maximum length when you\u2019re not sure (since these generally lend themselves to contradiction, you now have another avenue through which to produce one). Additionally, the well-ordering principle shouldn\u2019t be required here, since all graphs considered in the course are finite (or at least they were when I last saw the material). On a similar note, the well-ordering principle/minimal counterexample technique is one which was part of the course in my time there (though perhaps it no longer shows up) and which would fit appropriately alongside induction, as the two assumptions are logically equivalent.\n\nIt might also be good to have a discussion on graph induction (or more generally, induction on objects more complicated than algebraic expressions). You should generally start with an instance of the k+1 case (the object you\u2019re trying to prove something about) and delete something to go to the k case, rather than starting at the k case and adding something on. (As an aside, this usually isn\u2019t strictly necessary, but other methods typically end up making the solution much more complicated). This strategy falls under the more general umbrella of \u201cto prove a \u2018for all\u2019 claim, start by picking an arbitrary member of the domain.\u201d The reasoning here is a bit subtle but intuitively, there can be instances of the k+1 case which can\u2019t be reached by addition.\n\nOne example of this in play is the (false) claim that any graph where all vertices have positive degree is connected. For the base case, start with k=2 and clearly there is only one valid graph, which is connected. Then if you assume this is true for k, consider how you can get a graph with k+1 \u2014 well, if you start with k vertices and edges, clearly when you add in the new vertex, it must have an edge to an existing vertex to have positive degree, so the graph is connected. But the claim is not true \u2014 we just never got to consider the cases that do not arise as a result of adding a single new vertex and edge(s).",
+            "score": 3,
+            "author": "ExistentAndUnique",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "Fixed the first two things. I'll get to the graph induction when I coherently put together an example of it in action and an easy-to-understand explanation of when and where to use it.\n\nYes, I was conflating \"maximal path\" and \"path of maximum length.\" WOP is what they cited though for showing a path of maximum length exists so that they can say a path of maximum length is an example of a maximal path.",
+                    "score": 1,
+                    "author": "Hitman7128"
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "Love u man",
+            "score": 3,
+            "author": "varunchitturi"
+        },
+        {
+            "level": 0,
+            "comment": "Would you be willing to post your source files? Always looking to improve my LaTeX skills and would love to take a look at how you formatted this.",
+            "score": 2,
+            "author": "ergfan",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I'm not particularly good at LaTeX either, but here's the source file like you asked:\n\n[https://github.com/Hitman7128/Hitman7128.github.io/blob/main/CIS-1600/main.tex](https://github.com/Hitman7128/Hitman7128.github.io/blob/main/CIS-1600/main.tex)\n\nImportant note though! I specifically used a personal style file evan.sty, which comes with neat features like those lemma and advice boxes you see.\n\nAfter you have the main.tex from that link above on Overleaf, what you need to do is add a new file to the project, name it evan.sty, and copy and paste the lines from here:\n\n[https://github.com/vEnhance/dotfiles/blob/main/texmf/tex/latex/evan/evan.sty](https://github.com/vEnhance/dotfiles/blob/main/texmf/tex/latex/evan/evan.sty)\n\ninto evan.sty.\n\nIf you don't do that, the main.tex won't render.",
+                    "score": 3,
+                    "author": "Hitman7128",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "Very cool, thanks for sharing!",
+                            "score": 1,
+                            "author": "ergfan"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

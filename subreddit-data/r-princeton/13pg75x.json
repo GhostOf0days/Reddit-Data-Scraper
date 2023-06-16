@@ -1,0 +1,137 @@
+{
+    "id": "13pg75x",
+    "score": 2,
+    "title": "How do you think Princeton will handle the challenges posed (to them) by chatGPT?",
+    "author": "Goodman9473",
+    "date": 1684823212.0,
+    "url": "https://www.reddit.com/r/princeton/comments/13pg75x",
+    "media_urls": [],
+    "other_urls": [],
+    "postText": "Let\u2019s be honest. ChatGPT can pretty much complete the assignments of all introductory classes, and let\u2019s be real\u2014for STEM classes, it\u2019s virtually impossible to detect it, so long as the student isn\u2019t a complete idiot. \n\nFor example, all coding assignments in introductory classes can be completed in a matter of minutes. So too with math and Econ assignments. Personally the only solution I see is for Princeton to significantly reduce the impact of homework on grades and instead rely on _in person_ exams, but what are your thoughts?",
+    "comments": [
+        {
+            "level": 0,
+            "comment": "I've been trying to guess the answers to a sweepstakes question on a ham radio website and ChatGPT has been wrong several times when I ask the search engines that use it.\n\nUse at your own risk.",
+            "score": 5,
+            "author": "EnergyLantern"
+        },
+        {
+            "level": 0,
+            "comment": "Think bigger. Companies and schools will just value experiences and original research over coursework.",
+            "score": 4,
+            "author": "nutshells1"
+        },
+        {
+            "level": 0,
+            "comment": "I think proof of work becomes paramount. In person examinations will be more important for many courses. Also, Professors are pretty smart, I know a few who have been looking for ways to shake up the traditional curriculum test structures, this is an excellent excuse for more creative methods.",
+            "score": 3,
+            "author": "qhasti"
+        },
+        {
+            "level": 0,
+            "comment": "I built an automatic plagiarism detector for software assignments as an undergrad almost 30 years ago. As far as I know it's still in use.  It would easily nail any gpt using student.\n\nAlso who cares?  People who cheat don't learn things, and consequently fail when asked to demonstrate knowledge.",
+            "score": 4,
+            "author": "Deflator_Mouse7",
+            "replies": [
+                {
+                    "level": 1,
+                    "comment": "I mean no disrespect, but I\u2019m very doubtful that your software can accurately detect ChatGPT. Even ChatGPT\u2019s own AI checker is, by their own admission, highly flawed. And that\u2019s for direct copy-and-paste of essays. \n\nCode? Math? Nah. Definitely not.",
+                    "score": 2,
+                    "author": "Goodman9473",
+                    "replies": [
+                        {
+                            "level": 2,
+                            "comment": "A plagiarism checker won't detect ChatGPT directly, but it *can* link people using ChatGPT to one another if their answers are too similar.\n\nFor coding-heavy classes, minimizing ChatGPT use might mean less freedom to choose projects so that code can be more closely compared between students, which sucks. And/or rely more on in-person, write code by hand on paper type assessments. Maybe we'll see a greater implementation of in-class presentations, or even a resurgence of the oral exam format.",
+                            "score": 4,
+                            "author": "Twist-Gold"
+                        },
+                        {
+                            "level": 2,
+                            "comment": "I've tested it.  Anyone using GPT would find themselves in front of an honor committee.   GPT just doesnt have enough variety. Plagiarism detection on any but the smallest code is trivial, even in the face of renamed variables, strings, comments, rearranged code, etc.",
+                            "score": 2,
+                            "author": "Deflator_Mouse7",
+                            "replies": [
+                                {
+                                    "level": 3,
+                                    "comment": "I\u2019m sorry to say, but you\u2019re simply not correct. Perhaps you\u2019re underestimating the power of chapGPT. \n\nIt can do a lot more than trivial changes to code. It can completely refactor it in any arbitrary manner you request it to. And when it comes to STEM homework, such as math or even Econ, even if a solution were so specialized that it could be detected, a student can easily make small alterations.",
+                                    "score": 2,
+                                    "author": "Goodman9473",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "Again, I have tested it. I was a computer science professor for many years. I have used these tools every year since I built them at Princeton. I have tried to defeat them with chatgpt. I have asked others to try to do so. They cannot. Software plagiarism is comically easy to detect.",
+                                            "score": 3,
+                                            "author": "Deflator_Mouse7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "level": 3,
+                                    "comment": "Does it have many false positives? My understanding is that the issue with GPT detectors is that they over-detect, not under-detect.",
+                                    "score": 2,
+                                    "author": "PlacatedPlatypus",
+                                    "replies": [
+                                        {
+                                            "level": 4,
+                                            "comment": "It's not a gpt detector. It's a plagiarism detector. You have gpt solve the assignment a few times and throw it's solutions into the mix (comparing all pairs of submissions for similarity). Boom out pops the copied ones. \n\nIn my experiments, about 3-4 gpt solutions was more than sufficient to find anyone who used it.",
+                                            "score": 1,
+                                            "author": "Deflator_Mouse7",
+                                            "replies": [
+                                                {
+                                                    "level": 5,
+                                                    "comment": "I see, so it's just comparing to \"usual\" solutions that GPT would spit out. Do you think it's possible to falsely detect a student solution with it as \"too similar\" or would it need major structural similarity that wouldn't happen by chance? I've written a lot of code but never used GPT, I assume a lot of intended solutions have very similar structure though.",
+                                                    "score": 1,
+                                                    "author": "PlacatedPlatypus",
+                                                    "replies": [
+                                                        {
+                                                            "level": 6,
+                                                            "comment": "In all my years as a faculty member I've never seen a false positive, and I always hand inspect anything below the suspicious threshold. \n\nThe detector assigns each pair of submissions a score; lower is more likely to have cheated.  0 is identical. \n\nIf you sort the pairs by this score and plot the values, there is always a pretty significant discontinuity. I just look at everything below it. Never seen anything below the discontinuity that didn't immediately result in tears and begging the moment I ask them to come see me.",
+                                                            "score": 1,
+                                                            "author": "Deflator_Mouse7",
+                                                            "replies": [
+                                                                {
+                                                                    "level": 7,
+                                                                    "comment": "Interesting, thanks for the info.",
+                                                                    "score": 1,
+                                                                    "author": "PlacatedPlatypus"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "level": 4,
+                                            "comment": "And again, it's robust to almost all forms of attempted evasion.",
+                                            "score": 1,
+                                            "author": "Deflator_Mouse7"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 0,
+            "comment": "ChatGPT does not think. I have seen it screw up lower-level math questions and higher-level math questions, even after you tell it that it is incorrect.  The errors remind me of the following excerpt from \n\nhttps://www.theonion.com/ask-a-high-school-student-who-didnt-do-the-required-rea-1819583863 :\n\n&gt; Edmund Wilson from The New Yorker sure knew what he was talking about when he said the book was \"Absolutely first-rate\u2026 on par with Voltaire and Swift.\" All in all, George Orwell did a great job, and Animal Farm is a Signet Classic in every sense of the word, and well worth the $5.99 purchase price. It's so good, in fact, that if I was in Canada, I would be happy to pay the higher price of $7.99. If you liked \"Voltaire and Swift,\" then you will love Animal Farm.",
+            "score": 4,
+            "author": "user1746"
+        },
+        {
+            "level": 0,
+            "comment": "This could just be because I didn\u2019t find the optimal inputs, but for a large amount of problems across a variety of STEM classes, using ChatGPT (even GPT 4) did not lead to the correct solution. This test cases included computer science multiple choice, physics and linear algebra questions.\n\nRegardless, it boils down to the idea that if you don\u2019t do the PSETs, you\u2019ll inevitably suffer down the line. You easily could find someone to copy a math or econ PSET; ChatGPT is just another way for students to get around doing assignments, not the end of homework as we know it.",
+            "score": 2,
+            "author": "wm_lemonade"
+        },
+        {
+            "level": 0,
+            "comment": "If you Google it, there's headlines that this is the \"end of grading\" so yeah it's probably going to change the way homework plays into grades, at this school and many many others. The idea of assignments is to gauge the student's grasp of the material and if they can get a \"good answer\" without that grasp then it's meaningless. However, in the flip side, there's also the honor code. And for some of the econ homework or other textbooks the idea of finding the answers online isn't that new. So, time will tell how things change I guess. It's definitely a hard problem to face.",
+            "score": 1,
+            "author": "jackashe"
+        }
+    ]
+}
