@@ -1,6 +1,6 @@
 # Reddit-Data-Scraper
 
-Reddit Data Scraper is a distributed computing-based scraper designed to automatically scrape data from multiple subreddits. Its primary objective is to enable efficient data retrieval from Reddit before any potential changes in the Reddit API that might increase the cost of data acquisition.
+Reddit Data Scraper is a distributed computing-based scraper designed to automatically scrape data from multiple subreddits.
 
 Please note there are two scraper files, scraper.py and scraper-with-proxy-rotation.py. Currently, scraper-with-proxy-rotation.py is broken, but its purpose is proxy rotation. Proxy rotation is essentially when you rotate a queue of proxies (with format ip:port) after every x number of requests and ensure your request uses the first item in the queue to prevent rate limiting.
 
